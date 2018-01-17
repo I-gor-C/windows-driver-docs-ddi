@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTOutputStream.SetWritePacket
+UID: NF:portcls.IMiniportWaveRTOutputStream.SetWritePacket
 title: IMiniportWaveRTOutputStream::SetWritePacket method
 author: windows-driver-content
 description: SetWritePacket informs the driver that the OS has written valid data to the WaveRT buffer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTOutputStream::SetWritePacket method
@@ -96,7 +97,7 @@ After the OS calls this routine, the driver may optionally use the provided info
 
 
 
-Except when the OS specifies the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM flag, the packet size is the WaveRT buffer size divided by the NotificationCount passed to <a href="audio.iminiportwavertstreamnotification_allocatebufferwithnotification">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>.  
+Except when the OS specifies the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM flag, the packet size is the WaveRT buffer size divided by the NotificationCount passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536740">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>.  
 
 
 
@@ -105,41 +106,6 @@ Depending on hardware capabilities, if the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM 
 
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
- Passive level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

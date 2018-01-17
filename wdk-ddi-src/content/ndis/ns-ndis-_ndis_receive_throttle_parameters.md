@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_RECEIVE_THROTTLE_PARAMETERS
+UID: NS:ndis._NDIS_RECEIVE_THROTTLE_PARAMETERS
 title: _NDIS_RECEIVE_THROTTLE_PARAMETERS
 author: windows-driver-content
 description: The NDIS_RECEIVE_THROTTLE_PARAMETERS structure specifies the maximum number of NET_BUFFER_LIST structures that a miniport driver should indicate in a deferred procedure call (DPC).
 old-location: netvista\ndis_receive_throttle_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ad51cc5c-7385-405b-8b65-20b079a3265c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_RECEIVE_THROTTLE_PARAMETERS, *PNDIS_RECEIVE_THROTTLE_PARAMETERS, PNDIS_RECEIVE_THROTTLE_PARAMETERS, NDIS_RECEIVE_THROTTLE_PARAMETERS
+ms.date: 1/11/2018
+ms.keywords: _NDIS_RECEIVE_THROTTLE_PARAMETERS, NDIS_RECEIVE_THROTTLE_PARAMETERS, *PNDIS_RECEIVE_THROTTLE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_RECEIVE_THROTTLE_PARAMETERS, *PNDIS_RECEIVE_THROTTLE_PARAMETERS
 ---
 
 # _NDIS_RECEIVE_THROTTLE_PARAMETERS structure
@@ -39,7 +40,7 @@ req.irql: See Remarks section
 
 ## -description
 The NDIS_RECEIVE_THROTTLE_PARAMETERS structure specifies the maximum number of 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that a miniport
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that a miniport
   driver should indicate in a deferred procedure call (DPC).
 
 
@@ -59,7 +60,7 @@ typedef struct _NDIS_RECEIVE_THROTTLE_PARAMETERS {
 ### -field MaxNblsToIndicate
 
 The maximum number of 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that a miniport
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that a miniport
      driver should include in a receive indication. If this value is NDIS_INDICATE_ALL_NBLS, the miniport can
      indicate all of the NET_BUFFER_LIST structures that it has.
 
@@ -89,7 +90,7 @@ The
 On entry to the DPC handler, the 
     <b>MaxNblsToIndicate</b> member of the NDIS_RECEIVE_THROTTLE_PARAMETERS structure specifies the maximum
     number of 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that the miniport
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that the miniport
     driver should indicate in the DPC. If this value is NDIS_INDICATE_ALL_NBLS, the miniport driver can
     indicate all of the NET_BUFFER_LIST structures that it has in its queues.
 
@@ -118,7 +119,7 @@ If the miniport driver is using line-based interrupts or a single MSI message, i
     interrupt-processing for all of the interrupt sources that it has. If there are packets in the receive
     queue, it should indicate at most 
     <b>MaxNblsToIndicate</b> NET_BUFFER_LIST structures to NDIS with the 
-    <a href="netvista.ndismindicatereceivenetbufferlists">
+    <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
     NdisMIndicateReceiveNetBufferLists</a> function.
 
 If the miniport driver is using multiple MSI messages to differentiate different interrupt sources, it
@@ -127,31 +128,6 @@ If the miniport driver is using multiple MSI messages to differentiate different
     For receive interrupt messages, the miniport driver should indicate at most 
     <b>MaxNblsToIndicate</b> NET_BUFFER_LIST structures.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.20 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -162,16 +138,16 @@ Header
 <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">MiniportMessageInterruptDPC</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatereceivenetbufferlists">
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_RECEIVE_THROTTLE_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_THROTTLE_PARAMETERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILPROVISIONSTATUS
+UID: NS:ntddrilapitypes.RILPROVISIONSTATUS
 title: RILPROVISIONSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilprovisionstatus.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5295f07d-9800-47f0-a827-515fcdad04eb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILPROVISIONSTATUS, RILPROVISIONSTATUS, LPRILPROVISIONSTATUS, *LPRILPROVISIONSTATUS
+ms.date: 1/11/2018
+ms.keywords: RILPROVISIONSTATUS, RILPROVISIONSTATUS, *LPRILPROVISIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPROVISIONSTATUS, *LPRILPROVISIONSTATUS
 ---
 
 # RILPROVISIONSTATUS structure
@@ -65,19 +66,3 @@ typedef struct _RILPROVISIONSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

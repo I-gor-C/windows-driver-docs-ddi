@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IAdapterPowerManagement2.PowerChangeState2
+UID: NF:portcls.IAdapterPowerManagement2.PowerChangeState2
 title: IAdapterPowerManagement2::PowerChangeState2 method
 author: windows-driver-content
 description: Portcls calls the IAdapterPowerManagement2::PowerChangeState2 method to request a change to the new power state. This request is passed on to the adapter driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IAdapterPowerManagement2::PowerChangeState2 method
@@ -56,12 +57,12 @@ void PowerChangeState2(
 
 ### -param NewDeviceState [in]
 
-Specifies the new power state that Portcls has requested for the device. This parameter is an enumeration of type <a href="kernel.device_power_state">DEVICE_POWER_STATE</a>.
+Specifies the new power state that Portcls has requested for the device. This parameter is an enumeration of type <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>.
 
 
 ### -param NewSystemState [in]
 
-Specifies the new power state that Portcls has requested for the system. This parameter is an enumeration of type <a href="kernel.system_power_state">SYSTEM_POWER_STATE</a>.
+Specifies the new power state that Portcls has requested for the system. This parameter is an enumeration of type <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>.
 
 
 ## -returns
@@ -74,52 +75,16 @@ A power state indicates the level of power consumption of a device or system. As
 For more information about system power states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546941">Handling System Power State Requests</a>. For more information about device power states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554397">Managing Power for Individual Devices</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
 </dt>
 <dt>
-<a href="kernel.device_power_state">DEVICE_POWER_STATE</a>
+<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
 </dt>
 <dt>
-<a href="kernel.system_power_state">SYSTEM_POWER_STATE</a>
+<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546941">Handling System Power State Requests</a>

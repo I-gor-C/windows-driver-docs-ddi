@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILCBMSGCONFIG
+UID: NS:rilapitypes.RILCBMSGCONFIG
 title: RILCBMSGCONFIG
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcbmsgconfig_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7cdab678-5c83-4590-b911-5961db89e7ce
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCBMSGCONFIG, *LPRILCBMSGCONFIG, RILCBMSGCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCBMSGCONFIG, RILCBMSGCONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -78,19 +79,3 @@ typedef struct _RILCBMSGCONFIG {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

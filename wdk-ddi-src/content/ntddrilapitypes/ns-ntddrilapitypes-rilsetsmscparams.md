@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSETSMSCPARAMS
+UID: NS:ntddrilapitypes.RILSETSMSCPARAMS
 title: RILSETSMSCPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetsmscparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ebfb768a-fa6b-4781-96e1-787278237d5f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS, RILSETSMSCPARAMS, LPRILSETSMSCPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETSMSCPARAMS, RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS
 ---
 
 # RILSETSMSCPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILSETSMSCPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,14 +1,14 @@
 ---
-UID: NS.WDBGEXTS._SYM_DUMP_PARAM
+UID: NS:wdbgexts._SYM_DUMP_PARAM
 title: _SYM_DUMP_PARAM
 author: windows-driver-content
 description: The IG_DUMP_SYMBOL_INFO Ioctl operation provides information about the type of a symbol.
 old-location: debugger\ig_dump_symbol_info.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5a00f401-89e5-4863-ab14-a8ab7eec1869
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYM_DUMP_PARAM, *PSYM_DUMP_PARAM, SYM_DUMP_PARAM, PSYM_DUMP_PARAM
+ms.date: 1/10/2018
+ms.keywords: _SYM_DUMP_PARAM, *PSYM_DUMP_PARAM, SYM_DUMP_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYM_DUMP_PARAM, SYM_DUMP_PARAM
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The IG_DUMP_SYMBOL_INFO <a href="debugger.ioctl">Ioctl</a> operation provides information about the type of a symbol.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_DUMP_SYMBOL_INFO, <i>IpvData</i> should contain an instance of the SYM_DUMP_PARAM structure.
+The IG_DUMP_SYMBOL_INFO <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation provides information about the type of a symbol.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_DUMP_SYMBOL_INFO, <i>IpvData</i> should contain an instance of the SYM_DUMP_PARAM structure.
 
 
 
@@ -96,7 +97,7 @@ Specifies the address of the symbol.
 
 ### -field listLink
 
-Specifies the field that contains the next item in a linked list.  If the symbol is an entry in a linked list, this <b>Ioctl</b> operation can iterate over the items in the list using the field specified here as the pointer to the next item in the list.  The type of this structure is <a href="debugger.field_info">FIELD_INFO</a>.
+Specifies the field that contains the next item in a linked list.  If the symbol is an entry in a linked list, this <b>Ioctl</b> operation can iterate over the items in the list using the field specified here as the pointer to the next item in the list.  The type of this structure is <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>.
 
 The callback function specified in the <b>fieldCallBack</b> member of this structure is called, during this <b>Ioctl</b> operation, for each item in the list.  When it is called, it is passed this <b>linkList</b> structure with the members filled in for the list entry along with the contents of the <b>Context</b> member.
 
@@ -125,7 +126,7 @@ Specifies the number of entries in the <b>Fields</b> array.
 
 ### -field Fields
 
-Specifies an array of <a href="debugger.field_info">FIELD_INFO</a> structures that control the behavior of this operation for individual members of the specified symbol. See FIELD_INFO for details.
+Specifies an array of <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a> structures that control the behavior of this operation for individual members of the specified symbol. See FIELD_INFO for details.
 
 
 ### -field ModBase
@@ -172,7 +173,7 @@ Receives a Boolean value that indicates whether the symbol is a constant.  <b>fC
 
 
 ## -remarks
-The parameters for the IG_DUMP_SYMBOL_INFO <a href="debugger.ioctl">Ioctl</a> operation are the members of the SYM_DUMP_PARAM structure.
+The parameters for the IG_DUMP_SYMBOL_INFO <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the SYM_DUMP_PARAM structure.
 
 This <b>Ioctl</b> operation looks up the module information for the symbol, loading module symbols if possible.
 
@@ -180,7 +181,7 @@ If <b>nFields</b> is zero and DBG_DUMP_CALL_FOR_EACH is set in <b>Options</b>, t
 
 If <b>nFields</b> is non-zero and DBG_DUMP_CALL_FOR_EACH is set in <b>Options</b>, callbacks are only made for those fields matching the <b>fName</b> member of one of the <b>Fields</b> elements.  If a field matches a <b>fName</b> member and the <b>fieldCallBack</b> member is not <b>NULL</b>, the callback function in  <b>fieldCallBack</b> is called; if it is <b>NULL</b>, the callback function in <b>CallbackRoutine</b> is called instead.
 
-The DBG_DUMP_<i>XXX</i> bit flags are used by the <b>Options</b> member of the SYM_DUMP_PARAM structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="debugger.ioctl">Ioctl</a> operation.
+The DBG_DUMP_<i>XXX</i> bit flags are used by the <b>Options</b> member of the SYM_DUMP_PARAM structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation.
 
 The following flags can be present.
 
@@ -246,7 +247,7 @@ Recurse through nested structures; but do not follow pointers.
 
 In addition, the result of the macro DBG_DUMP_RECUR_LEVEL(<i>Level</i>) can be added to the bit-set to specify how deep into structures to recurse.  <i>Level</i> can be a number between 0 and 15.
 
-The DBG_DUMP_FIELD_<i>XXX</i> bit flags are used by the <b>fOptions</b> member of the <a href="debugger.field_info">FIELD_INFO</a> structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="debugger.ioctl">Ioctl</a> operation.
+The DBG_DUMP_FIELD_<i>XXX</i> bit flags are used by the <b>fOptions</b> member of the <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a> structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation.
 
 DBG_DUMP_FIELD_CALL_BEFORE_PRINT
 
@@ -291,25 +292,10 @@ DBG_DUMP_FIELD_DEFAULT_STRING DBG_DUMP_FIELD_WCHAR_STRING DBG_DUMP_FIELD_MULTI_S
 If the member is a pointer, it is printed as a string, ANSI string , WCHAR string, MULTI string, or GUID.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="debugger.ioctl">Ioctl</a>
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550910">IG_DUMP_SYMBOL_INFO Error Codes</a>
@@ -318,12 +304,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540433">DBG_DUMP_XXX</a>
 </dt>
 <dt>
-<a href="debugger.field_info">FIELD_INFO</a>
+<a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20SYM_DUMP_PARAM structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20SYM_DUMP_PARAM structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

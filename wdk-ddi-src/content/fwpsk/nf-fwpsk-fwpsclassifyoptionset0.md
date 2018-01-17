@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsClassifyOptionSet0
+UID: NF:fwpsk.FwpsClassifyOptionSet0
 title: FwpsClassifyOptionSet0 function
 author: windows-driver-content
 description: The FwpsClassifyOptionSet0 function is called by a callout filter's classifyFn function to specify additional information that affects the characteristics of permitted filtering operations.Note  FwpsClassifyOptionSet0 is a specific version of FwpsClassifyOptionSet. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwpsclassifyoptionset0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8653fac0-8b2f-4e77-9588-2854ae168c1a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FwpsClassifyOptionSet0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsClassifyOptionSet0 function
@@ -61,14 +62,14 @@ NTSTATUS NTAPI FwpsClassifyOptionSet0(
 ### -param inMetadataValues [in]
 
 A pointer to an 
-     <a href="netvista.fwps_incoming_metadata_values0">FWPS_INCOMING_METADATA_VALUES0</a> structure. This structure contains the values for each of the
+     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">FWPS_INCOMING_METADATA_VALUES0</a> structure. This structure contains the values for each of the
      metadata fields at the layer that is being filtered.
 
 
 ### -param option [in]
 
 An 
-     <a href="netvista.fwp_classify_option_type">FWP_CLASSIFY_OPTION_TYPE</a> enumeration
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552428">FWP_CLASSIFY_OPTION_TYPE</a> enumeration
      constant that indicates whether the 
      <i>newValue</i> parameter refers to unicast, multicast, or loose source mapping states, or to data
      time-out values. For more information, see Remarks.
@@ -77,7 +78,7 @@ An
 ### -param newValue [in]
 
 A pointer to an array of 
-     <a href="netvista.fwp_value0">FWP_VALUE0</a> structures. Each structure in the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552450">FWP_VALUE0</a> structures. Each structure in the
      array contains particular values for a particular FWP_OPTION_VALUE_XXX constant. For more information, see
      Remarks.
 
@@ -92,7 +93,7 @@ The
 <dt><b>STATUS_FWP_INVALID_ENUMERATOR</b></dt>
 </dl>The 
        <i>option</i> parameter does not match any of the values in the 
-       <a href="netvista.fwp_classify_option_type">
+       <a href="https://msdn.microsoft.com/4731b03d-4c51-414b-a07d-0957b9a04db2">
        FWP_CLASSIFY_OPTION_TYPE</a> enumeration.
 <dl>
 <dt><b>STATUS_FWP_OUT_OF_BOUNDS</b></dt>
@@ -120,7 +121,7 @@ This function should be called only by a callout filter's
 
 The following are the allowed values of the 
     <i>option</i> parameter and members of the 
-    <a href="netvista.fwp_value0">FWP_VALUE0</a> structure pointed to by the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552450">FWP_VALUE0</a> structure pointed to by the 
     <i>newValue</i> parameter.
 
 FWP_CLASSIFY_OPTION_LOOSE_SOURCE_MAPPING
@@ -175,82 +176,25 @@ The first (highest weight) caller to set a particular option will be granted tha
     other options.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpkclnt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="netvista.fwp_classify_option_type">FWP_CLASSIFY_OPTION_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552428">FWP_CLASSIFY_OPTION_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.fwp_value0">FWP_VALUE0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552450">FWP_VALUE0</a>
 </dt>
 <dt>
-<a href="netvista.fwpm_classify_option0">FWPM_CLASSIFY_OPTION0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550078">FWPM_CLASSIFY_OPTION0</a>
 </dt>
 <dt>
-<a href="netvista.fwpm_classify_options0">FWPM_CLASSIFY_OPTIONS0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550079">FWPM_CLASSIFY_OPTIONS0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_incoming_metadata_values0">
+<a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
    FWPS_INCOMING_METADATA_VALUES0</a>
 </dt>
 </dl>
@@ -258,5 +202,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsClassifyOptionSet0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsClassifyOptionSet0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

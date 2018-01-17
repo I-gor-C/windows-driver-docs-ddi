@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._TXN_PARAMETER_BLOCK
+UID: NS:ntddk._TXN_PARAMETER_BLOCK
 title: _TXN_PARAMETER_BLOCK
 author: windows-driver-content
 description: The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation.
@@ -7,8 +7,8 @@ old-location: ifsk\txn_parameter_block.htm
 old-project: ifsk
 ms.assetid: 973f440a-ba17-466a-a9f4-f21c07e854d8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _TXN_PARAMETER_BLOCK, PTXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK
+ms.date: 1/9/2018
+ms.keywords: _TXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK
 ---
 
 # _TXN_PARAMETER_BLOCK structure
@@ -77,45 +78,20 @@ If a specific miniversion number for the file is not provided, the <b>TxFsContex
 
 The <b>TxFsContext</b> member of the <b>TXN_PARAMETER_BLOCK</b> uses TXF_MINIVERSION_DEFAULT_VIEW to get the default view of the requested file that is based on the value of the <b>TransactionObject</b> member.  So if <b>TransactionObject</b> is the same transaction that has the requested file locked for transacted modification, the caller can see those modifications (the "dirty" view of the file) if the caller can specify the value of the <b>TransactionObject</b> member.  If <b>TransactionObject</b> is not the same transaction that has the requested file locked for transacted modification, the caller gets a transactionally isolated view of the file if it specifies this value.  
 
-A miniversion exists only as a point-in-time view of a file and has not yet been written as an actual on-disk variant of a given file.  A transacted writer creates a miniversion by using the <a href="http://go.microsoft.com/fwlink/p/?linkid=139790">FSCTL_TXFS_CREATE_MINIVERSION</a> control code to call <a href="kernel.zwfscontrolfile">ZwFsControlFile</a>.  In response, the system creates a miniversion and returns its miniversion ID.  The transacted writer can continue to make changes to the file thereafter.  If the file is opened later by using the returned miniversion ID as the <b>TxFsContext</b> member of the <b>TXN_PARAMETER_BLOCK</b> structure, the resulting file handle shows the file as it was at the time that miniversion was created.
+A miniversion exists only as a point-in-time view of a file and has not yet been written as an actual on-disk variant of a given file.  A transacted writer creates a miniversion by using the <a href="http://go.microsoft.com/fwlink/p/?linkid=139790">FSCTL_TXFS_CREATE_MINIVERSION</a> control code to call <a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>.  In response, the system creates a miniversion and returns its miniversion ID.  The transacted writer can continue to make changes to the file thereafter.  If the file is opened later by using the returned miniversion ID as the <b>TxFsContext</b> member of the <b>TXN_PARAMETER_BLOCK</b> structure, the resulting file handle shows the file as it was at the time that miniversion was created.
 
 All miniversions created in a transaction go away when the transaction ends.  Afterwards, the file can no longer be opened by using the miniversion IDs.
 
-The <a href="ifsk.iogettransactionparameterblock">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure. 
+The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The TXN_PARAMETER_BLOCK structure is available on Windows Vista and later Windows operating systems. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h, Ntifs.h, or FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.iogettransactionparameterblock">IoGetTransactionParameterBlock</a>
+<a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a>
 </dt>
 <dt>
-<a href="kernel.zwfscontrolfile">ZwFsControlFile</a>
+<a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=139790">FSCTL_TXFS_CREATE_MINIVERSION</a></dt>
 </dl>
@@ -123,5 +99,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TXN_PARAMETER_BLOCK structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TXN_PARAMETER_BLOCK structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

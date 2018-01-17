@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILUICCAPPDATACHANGE
+UID: NS:rilapitypes.RILUICCAPPDATACHANGE
 title: RILUICCAPPDATACHANGE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccappdatachange_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b812cd5d-73a1-42bc-a1ae-1c1494369288
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE
+ms.date: 1/11/2018
+ms.keywords: RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef struct _RILUICCAPPDATACHANGE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

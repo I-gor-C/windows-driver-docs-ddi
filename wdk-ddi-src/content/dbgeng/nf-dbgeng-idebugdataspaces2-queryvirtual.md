@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces2.QueryVirtual
+UID: NF:dbgeng.IDebugDataSpaces2.QueryVirtual
 title: IDebugDataSpaces2::QueryVirtual method
 author: windows-driver-content
 description: The QueryVirtual method provides information about the specified pages in the target's virtual address space.
 old-location: debugger\queryvirtual.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 2d607433-0d2d-4662-acd6-9adbce290b97
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces2, IDebugDataSpaces2::QueryVirtual, QueryVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces2::QueryVirtual method
@@ -80,31 +81,4 @@ This method returns attributes for a range of pages.  This range is determined b
 
 MEMORY_BASIC_INFORMATION64 appears in the Microsoft Windows SDK header file winnt.h.  It is the 64-bit equivalent of MEMORY_BASIC_INFORMATION, which is described in the Windows SDK documentation.
 
-This method behaves in a similar way to the Windows SDK function <b>VirtualQuery</b>.  See Windows SDK documentation for details.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This method behaves in a similar way to the Windows SDK function <b>VirtualQuery</b>.  See Windows SDK documentation for details.</p>

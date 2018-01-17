@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._GETPATHCONFIGURATION_IN
+UID: NS:mpiowmi._GetPathConfiguration_IN
 title: _GetPathConfiguration_IN
 author: windows-driver-content
 description: The GetPathConfiguration_IN structure is used to retrieve the per path device information.
@@ -7,8 +7,8 @@ old-location: storage\getpathconfiguration_in.htm
 old-project: storage
 ms.assetid: 38396f75-6bcf-493e-9aab-661db59637ae
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _GetPathConfiguration_IN, GetPathConfiguration_IN, PGetPathConfiguration_IN, *PGetPathConfiguration_IN
+ms.date: 1/10/2018
+ms.keywords: _GetPathConfiguration_IN, GetPathConfiguration_IN, *PGetPathConfiguration_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GetPathConfiguration_IN, *PGetPathConfiguration_IN
 ---
 
 # _GetPathConfiguration_IN structure
@@ -59,19 +60,3 @@ A 64-bitfield that specifies the path that is associated with the device.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
+UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 title: _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 author: windows-driver-content
 description: Specifies the number of current Desktop Duplication API (DDA) clients that are attached to a given video present network (VidPN).
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputduplcontextscount.htm
 old-project: display
 ms.assetid: db63b984-73da-4b66-8a5e-06704dd7c031
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 ---
 
 # _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-Specifies the number of current <a href="direct3ddxgi.desktop_dup_api">Desktop Duplication API</a> (DDA) clients that are attached to a given video present network (VidPN).
+Specifies the number of current <a href="https://msdn.microsoft.com/523FBFAD-5D78-4EE3-A3B7-8FD5BA39DC46">Desktop Duplication API</a> (DDA) clients that are attached to a given video present network (VidPN).
 
 
 
@@ -65,39 +66,3 @@ The number of current DDA clients that are attached to the VidPN specified by th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILDMCONFIGINFOTYPE
+UID: NE:ntddrilapitypes.RILDMCONFIGINFOTYPE
 title: RILDMCONFIGINFOTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildmconfiginfotype.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c6dc14a5-59de-42dd-9e45-99f632bf6a57
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILDMCONFIGINFOTYPE, RILDMCONFIGINFOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDMCONFIGINFOTYPE
 ---
 
 # RILDMCONFIGINFOTYPE enumeration
@@ -69,19 +70,3 @@ typedef enum _RILDMCONFIGINFOTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

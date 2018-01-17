@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDICAPS_TYPE
+UID: NE:d3d12umddi.D3D12DDICAPS_TYPE
 title: D3D12DDICAPS_TYPE
 author: windows-driver-content
 description: Specifies a capability type.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddicaps_type.htm
 old-project: display
 ms.assetid: C74697BF-A191-4371-9F23-7F655EBC53B3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDICAPS_TYPE, D3D12DDICAPS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDICAPS_TYPE
 ---
 
 # D3D12DDICAPS_TYPE enumeration
@@ -161,19 +162,3 @@ UMD-based command queue priority.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

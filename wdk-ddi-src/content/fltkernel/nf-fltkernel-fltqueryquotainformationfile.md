@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltQueryQuotaInformationFile
+UID: NF:fltkernel.FltQueryQuotaInformationFile
 title: FltQueryQuotaInformationFile function
 author: windows-driver-content
 description: The FltQueryQuotaInformationFile routine retrieves quota entries associated with a file object.
@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryquotainformationfile.htm
 old-project: ifsk
 ms.assetid: B460BE83-7050-469A-9AD6-68A47F03EB4B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltQueryQuotaInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltQueryQuotaInformationFile function
@@ -80,7 +81,7 @@ A caller-supplied <b>IO_STATUS_BLOCK</b> to receive the result of the call to <b
 
 ### -param Buffer [out]
 
-A pointer to a caller-supplied <a href="ifsk.file_get_ea_information"> FILE_GET_QUOTA_INFORMATION</a>-structured input buffer where the quota information values are to be returned. 
+A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs-_file_get_ea_information.md"> FILE_GET_QUOTA_INFORMATION</a>-structured input buffer where the quota information values are to be returned. 
 
 
 ### -param Length [in]
@@ -95,7 +96,7 @@ Set to <b>TRUE</b> if <b>FltQueryQuotaInformationFile</b> should return only the
 
 ### -param SidList [in, optional]
 
-A pointer to a caller-supplied <a href="ifsk.file_get_quota_information">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that specifies the quota information to be queried. This parameter is optional and can be <b>NULL</b>. 
+A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that specifies the quota information to be queried. This parameter is optional and can be <b>NULL</b>. 
 
 
 ### -param SidListLength [in]
@@ -130,89 +131,21 @@ A pointer to a caller-allocated variable that receives the size, in bytes, of th
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltmgr.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_get_quota_information">FILE_GET_QUOTA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetquotainformationfile">FltSetQuotaInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetquotainformationfile.md">FltSetQuotaInformationFile</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryquotainformationfile">ZwQueryQuotaInformationFile</a>
+<a href="..\ntifs\nf-ntifs-zwqueryquotainformationfile.md">ZwQueryQuotaInformationFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryQuotaInformationFile function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryQuotaInformationFile function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

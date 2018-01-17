@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_CREATEHWCONTEXT
+UID: NS:d3dkmthk._D3DKMT_CREATEHWCONTEXT
 title: _D3DKMT_CREATEHWCONTEXT
 author: windows-driver-content
 description: A structure holding information to create a hardware context.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_createhwcontext.htm
 old-project: display
 ms.assetid: 9B6EA552-B576-45F3-A0BD-7EB721638D7F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_CREATEHWCONTEXT, D3DKMT_CREATEHWCONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_CREATEHWCONTEXT
 ---
 
 # _D3DKMT_CREATEHWCONTEXT structure
@@ -97,19 +98,3 @@ Handle of the created context.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

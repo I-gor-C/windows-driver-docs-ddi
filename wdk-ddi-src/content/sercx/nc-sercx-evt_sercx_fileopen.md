@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX_FILEOPEN
-title: EVT_SERCX_FILEOPEN
+UID: NC:sercx.EVT_SERCX_FILEOPEN
+title: EVT_SERCX_FILEOPEN function
 author: windows-driver-content
 description: The EvtSerCxFileOpen event callback function notifies the serial controller driver that a client opened a file handle on the serial controller device and that a file object has been created to represent the device.
 old-location: serports\evtsercxfileopen.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: 90D08857-69E0-4DD9-9588-86900466E8DE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX_FILEOPEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX_FILEOPEN callback
+# EVT_SERCX_FILEOPEN function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCxFileOpen</i> event callback function notifies the serial controll
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX_FILEOPEN EvtSerCxFileOpen;
@@ -69,9 +70,9 @@ The <i>EvtSerCxFileOpen</i> function returns STATUS_SUCCESS if the call is succe
 ## -remarks
 The serial framework extension (SerCx) calls this function to prepare the serial controller hardware to accept requests for I/O operations. This function should configure the controller in a state in which it is ready to receive and transmit data. If interrupts are required, this function should enable interrupts. In addition, this function should allocate any memory that is required only during the lifetime of the file object. For example, this function can allocate an interrupt data buffer.
 
-To register an <i>EvtSerCxFileOpen</i> callback function, the driver must call the <a href="serports.sercxinitialize">SerCxInitialize</a> method.
+To register an <i>EvtSerCxFileOpen</i> callback function, the driver must call the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method.
 
-For more information, see <a href="kmdf.framework_file_objects">Framework File Objects</a>.
+For more information, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
 
 The function type for this callback is declared in Sercx.h, as follows.
 
@@ -82,56 +83,10 @@ Then, implement your callback function as follows.
 For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercxinitialize">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 </dl>
  

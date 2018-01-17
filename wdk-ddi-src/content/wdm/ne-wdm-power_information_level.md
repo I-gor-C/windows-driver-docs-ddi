@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm.POWER_INFORMATION_LEVEL
+UID: NE:wdm.POWER_INFORMATION_LEVEL
 title: POWER_INFORMATION_LEVEL
 author: windows-driver-content
 description: Indicates power level information.
@@ -7,7 +7,7 @@ old-location: kernel\power_information_level.htm
 old-project: kernel
 ms.assetid: DCAB0482-C0E3-4F75-B5A7-FB8DFFA89D6F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: POWER_INFORMATION_LEVEL, POWER_INFORMATION_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: POWER_INFORMATION_LEVEL
 req.product: Windows 10 or later.
 ---
 
@@ -630,19 +631,3 @@ Indicates the maximum power level.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>

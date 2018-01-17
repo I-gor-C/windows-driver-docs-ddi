@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_GETTARGETMAPPING_IN
+UID: NS:hbapiwmi._SM_GetTargetMapping_IN
 title: _SM_GetTargetMapping_IN
 author: windows-driver-content
 description: The SM_GetTargetMapping_IN structure is used to provide input parameters to the SM_GetTargetMapping method.
@@ -7,8 +7,8 @@ old-location: storage\sm_gettargetmapping_in.htm
 old-project: storage
 ms.assetid: d6f73582-5eaf-452f-ad5a-cdf5ab99d809
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_GetTargetMapping_IN, PSM_GetTargetMapping_IN, SM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_GetTargetMapping_IN, SM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN
 ---
 
 # _SM_GetTargetMapping_IN structure
@@ -71,20 +72,4 @@ The number of persistent bindings that are associated with the HBA.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_GetTargetMapping_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_GetTargetMapping_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>

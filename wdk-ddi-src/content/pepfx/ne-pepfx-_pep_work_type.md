@@ -1,5 +1,5 @@
 ---
-UID: NE.pepfx._PEP_WORK_TYPE
+UID: NE:pepfx._PEP_WORK_TYPE
 title: _PEP_WORK_TYPE
 author: windows-driver-content
 description: The PEP_WORK_TYPE enumeration describes the type of work that the platform extension plug-in (PEP) is requesting.
@@ -7,8 +7,8 @@ old-location: kernel\pep_work_type.htm
 old-project: kernel
 ms.assetid: 5AED6B9E-5DB8-44AF-925C-4B587D100040
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_WORK_TYPE, PEP_WORK_TYPE, *PPEP_WORK_TYPE, PPEP_WORK_TYPE
+ms.date: 1/4/2018
+ms.keywords: _PEP_WORK_TYPE, PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 # _PEP_WORK_TYPE enumeration
@@ -79,12 +80,12 @@ Reserved for use by the operating system.
 
 ### -field PepWorkRequestPowerControl
 
-A request for the device driver to perform a custom power-control operation that uses a device-specific context that the PEP provides for the operation. The driver handles this request in its <a href="kernel.powercontrolcallback">PowerControlCallback</a> routine.
+A request for the device driver to perform a custom power-control operation that uses a device-specific context that the PEP provides for the operation. The driver handles this request in its <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a> routine.
 
 
 ### -field PepWorkDeviceIdle
 
-A request for the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) either to start ignoring idle time-outs for the specified device, or to start monitoring these time-outs.
+A request for the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) either to start ignoring idle time-outs for the specified device, or to start monitoring these time-outs.
 
 
 ### -field PepWorkCompleteIdleState
@@ -113,33 +114,8 @@ Reserved for use by operating system.
 
 
 ## -remarks
-This enumeration is used by the <a href="kernel.pep_work_information">PEP_WORK_INFORMATION</a> structure to describe the type of work item that the PEP is requesting.
+This enumeration is used by the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure to describe the type of work item that the PEP is requesting.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -153,15 +129,15 @@ Header
 <a href="kernel.pep_notify_acpi_evaluate_control_method">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
 </dt>
 <dt>
-<a href="kernel.pep_work_information">PEP_WORK_INFORMATION</a>
+<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.powercontrolcallback">PowerControlCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_WORK_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_WORK_TYPE enumeration%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

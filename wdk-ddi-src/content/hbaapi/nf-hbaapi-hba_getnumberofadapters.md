@@ -1,5 +1,5 @@
 ---
-UID: NF.hbaapi.HBA_GetNumberOfAdapters
+UID: NF:hbaapi.HBA_GetNumberOfAdapters
 title: HBA_GetNumberOfAdapters function
 author: windows-driver-content
 description: The HBA_GetNumberOfAdapters routine returns the number of HBAs supported by the library.
@@ -7,7 +7,7 @@ old-location: storage\hba_getnumberofadapters.htm
 old-project: storage
 ms.assetid: 5864a535-4ff8-4c9a-abf9-f835c7fde305
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: HBA_GetNumberOfAdapters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hbaapi.lib
 req.dll: Hbaapi.dll
 req.irql: 
+req.typenames: HBA_WWNTYPE
 ---
 
 # HBA_GetNumberOfAdapters function
@@ -61,53 +62,4 @@ The <b>HBA_GetNumberOfAdapters</b> routine returns the number of adapters suppor
 
 
 ## -remarks
-The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically determine the size of the HBA inventory without having to restart the system, the HBA drivers, or the library. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
+The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically determine the size of the HBA inventory without having to restart the system, the HBA drivers, or the library. </p>

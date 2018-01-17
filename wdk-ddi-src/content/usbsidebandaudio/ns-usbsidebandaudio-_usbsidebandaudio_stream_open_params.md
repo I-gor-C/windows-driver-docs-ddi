@@ -1,5 +1,5 @@
 ---
-UID: NS.USBSIDEBANDAUDIO._USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
 title: _USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
 author: windows-driver-content
 description: TBD.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: B7FFCD5B-ED00-4B56-806F-61AB43481578
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
+ms.keywords: _USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -68,19 +69,3 @@ TBD
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbsidebandaudio.h (include Usbsidebandaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

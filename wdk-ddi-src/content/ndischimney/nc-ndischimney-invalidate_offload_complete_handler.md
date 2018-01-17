@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.INVALIDATE_OFFLOAD_COMPLETE_HANDLER
+UID: NC:ndischimney.INVALIDATE_OFFLOAD_COMPLETE_HANDLER
 title: INVALIDATE_OFFLOAD_COMPLETE_HANDLER
 author: windows-driver-content
 description: NDIS calls a protocol driver's or intermediate driver's ProtocolInvalidateOffloadComplete function to complete an invalidate operation that the driver previously initiated by calling the NdisInvalidateOffload function.
 old-location: netvista\protocolinvalidateoffloadcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6d2c71d0-9686-4eb5-9715-27de3dc8b390
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback
@@ -43,7 +44,7 @@ req.irql:
 NDIS calls a protocol driver's or intermediate driver's 
   <i>ProtocolInvalidateOffloadComplete</i> function to complete an invalidate operation that the driver
   previously initiated by calling the 
-  <a href="netvista.ndisinvalidateoffload">NdisInvalidateOffload</a> function.
+  <a href="..\ndischimney\nf-ndischimney-ndisinvalidateoffload.md">NdisInvalidateOffload</a> function.
 
 
 
@@ -67,13 +68,13 @@ VOID ProtocolInvalidateOffloadComplete(
 A handle to a context area allocated by the protocol driver. The driver maintains the per binding
      context information in this context area. The driver supplied this handle to NDIS when the driver called
      the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 ### -param OffloadBlockList [in]
 
 A pointer to an 
-     <a href="netvista.ndis_protocol_offload_block_list">
+     <a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
      linked list of such structures. These structures identify the state that was invalidated or that was
      attempted to be invalidated.
@@ -85,7 +86,7 @@ None
 
 ## -remarks
 In response to an underlying offload target's or intermediate driver's call to the 
-    <a href="netvista.ndisminvalidateoffloadcomplete">
+    <a href="..\ndischimney\nf-ndischimney-ndisminvalidateoffloadcomplete.md">
     NdisMInvalidateOffloadComplete</a> function, NDIS calls the overlying protocol or intermediate driver's
     
     <i>ProtocolInvalidateOffloadComplete</i> function.
@@ -98,7 +99,7 @@ An intermediate driver must propagate the completion of the initiate offload ope
 
 From the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure that was passed to its 
     <i>ProtocolInvalidateOffloadComplete</i> function, the intermediate driver constructs an 
-    <a href="netvista.ndis_miniport_offload_block_list">
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. For more information, see 
     <a href="netvista.reusing_an_ndis_protocol_offload_block_list_structure">Reusing an
     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST Structure</a>. When calling the 
@@ -107,42 +108,27 @@ From the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure that was passed to its
     structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">MiniportInvalidateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndisinvalidateoffload">NdisInvalidateOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisinvalidateoffload.md">NdisInvalidateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndisminvalidateoffloadcomplete">
+<a href="..\ndischimney\nf-ndischimney-ndisminvalidateoffloadcomplete.md">
    NdisMInvalidateOffloadComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
    NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a>
 </dt>
 </dl>
@@ -150,5 +136,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugRegisters2.GetNumberPseudoRegisters
+UID: NF:dbgeng.IDebugRegisters2.GetNumberPseudoRegisters
 title: IDebugRegisters2::GetNumberPseudoRegisters method
 author: windows-driver-content
 description: The GetNumberPseudoRegisters method returns the number of pseudo-registers that are maintained by the debugger engine.
 old-location: debugger\getnumberpseudoregisters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5a71a8e9-323e-4f14-8c97-d6ce4e9bfe65
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugRegisters2, IDebugRegisters2::GetNumberPseudoRegisters, GetNumberPseudoRegisters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugRegisters2::GetNumberPseudoRegisters method
@@ -72,31 +73,4 @@ Not all of the pseudo-registers are available in all debugging sessions or at al
 
 The valid indices for pseudo-registers are between zero and the number of pseudo-registers, minus one.
 
-For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a> interface and other register-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a> interface and other register-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.</p>

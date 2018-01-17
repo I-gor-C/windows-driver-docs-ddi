@@ -1,5 +1,5 @@
 ---
-UID: NS.STRMINI._STREAM_METHOD_DESCRIPTOR
+UID: NS:strmini._STREAM_METHOD_DESCRIPTOR
 title: _STREAM_METHOD_DESCRIPTOR
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\stream_method_descriptor.htm
 old-project: stream
 ms.assetid: 2C35EF9F-143C-4DE2-93D0-5BCF8AADF11B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR, PSTREAM_METHOD_DESCRIPTOR, *PSTREAM_METHOD_DESCRIPTOR
+ms.date: 1/9/2018
+ms.keywords: _STREAM_METHOD_DESCRIPTOR, *PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef struct _STREAM_METHOD_DESCRIPTOR {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h</dt>
-</dl>
-</td>
-</tr>
-</table>

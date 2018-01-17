@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._WDI_TX_METADATA
+UID: NS:dot11wdi._WDI_TX_METADATA
 title: _WDI_TX_METADATA
 author: windows-driver-content
 description: The WDI_TX_METADATA structure defines the TX metadata.
 old-location: netvista\wdi_tx_metadata.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 21833980-0098-43c2-822c-9d8292f7120a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_TX_METADATA, WDI_TX_METADATA, PWDI_TX_METADATA, *PWDI_TX_METADATA
+ms.date: 1/11/2018
+ms.keywords: _WDI_TX_METADATA, WDI_TX_METADATA, *PWDI_TX_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # _WDI_TX_METADATA structure
@@ -115,7 +116,7 @@ Specifies the number of credits required to dequeue the frame.
 
 ### -field ExemptionAction
 
-Specifies the <a href="netvista.wdi_exemption_action_type">WDI_EXEMPTION_ACTION_TYPE</a> value for this frame.
+Specifies the <a href="..\dot11wdi\ne-dot11wdi-_wdi_exemption_action_type.md">WDI_EXEMPTION_ACTION_TYPE</a> value for this frame.
 
 
 ### -field MpduPn
@@ -146,53 +147,18 @@ Reserved.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wdi_exemption_action_type">WDI_EXEMPTION_ACTION_TYPE</a>
+<a href="..\dot11wdi\ne-dot11wdi-_wdi_exemption_action_type.md">WDI_EXEMPTION_ACTION_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.wdi_txrx_capabilities">WDI_TXRX_CAPABILITIES</a>
+<a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_capabilities.md">WDI_TXRX_CAPABILITIES</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WDI_TX_METADATA structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_METADATA structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

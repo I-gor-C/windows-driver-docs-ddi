@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.GetInputLine
+UID: NF:wdbgexts.GetInputLine
 title: GetInputLine function
 author: windows-driver-content
 description: The GetInputLine function requests an input string from the debugger.
 old-location: debugger\getinputline.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 18d4aae5-dd11-4c3a-8088-52121f46d208
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: GetInputLine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -76,30 +77,3 @@ Specifies the size, in characters, of the buffer <i>Buffer</i>.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

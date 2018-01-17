@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_PHY_TYPE
+UID: NE:wditypes._WDI_PHY_TYPE
 title: _WDI_PHY_TYPE
 author: windows-driver-content
 description: The WDI_PHY_TYPE enumeration defines the PHY types.
 old-location: netvista\wdi_phy_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: BDA90056-6DAA-4FC8-82EC-3062087E02C4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_PHY_TYPE, WDI_PHY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_PHY_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -140,39 +141,3 @@ Specifies the end of the range that is used to define proprietary PHY types that
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltCreateFileEx
+UID: NF:fltkernel.FltCreateFileEx
 title: FltCreateFileEx function
 author: windows-driver-content
 description: Minifilter drivers call FltCreateFileEx to create a new file or open an existing file.
@@ -7,7 +7,7 @@ old-location: ifsk\fltcreatefileex.htm
 old-project: ifsk
 ms.assetid: 83b672dd-26fc-4c22-815d-72143159983d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltCreateFileEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fltmgr.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltCreateFileEx function
@@ -144,7 +145,7 @@ READ_CONTROL
 
 </td>
 <td>
-The access control list (<a href="ifsk.acl">ACL</a>) and ownership information associated with the file can be read.
+The access control list (<a href="..\wdm\ns-wdm-_acl.md">ACL</a>) and ownership information associated with the file can be read.
 
 </td>
 </tr>
@@ -194,7 +195,7 @@ WRITE_DAC
 
 </td>
 <td>
-The discretionary access control list (<a href="ifsk.acl">DACL</a>) associated with the file can be written.
+The discretionary access control list (<a href="..\wdm\ns-wdm-_acl.md">DACL</a>) associated with the file can be written.
 
 </td>
 </tr>
@@ -304,7 +305,7 @@ The directory can be traversed: that is, it can be part of the pathname of a fil
 
 ### -param ObjectAttributes [in]
 
-A pointer to a structure already initialized with <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object include the following. 
+A pointer to a structure already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object include the following. 
 
 <table>
 <tr>
@@ -327,7 +328,7 @@ Specifies the number of bytes of <i>ObjectAttributes</i> data supplied. This val
 
 </td>
 <td>
-Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure containing the name of the file to be created or opened. This name must be a fully qualified file specification or the name of a device object unless it is the name of a file relative to the directory specified by <b>RootDirectory</b>. For example, \Device\Floppy1\myfile.dat or \??\B:\myfile.dat could be the fully qualified file specification, if the floppy driver and overlying file system are already loaded. (Note: \?? replaces \DosDevices as the name of the Win32 object namespace. \DosDevices still works, but \?? is translated faster by the object manager.)
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the name of the file to be created or opened. This name must be a fully qualified file specification or the name of a device object unless it is the name of a file relative to the directory specified by <b>RootDirectory</b>. For example, \Device\Floppy1\myfile.dat or \??\B:\myfile.dat could be the fully qualified file specification, if the floppy driver and overlying file system are already loaded. (Note: \?? replaces \DosDevices as the name of the Win32 object namespace. \DosDevices still works, but \?? is translated faster by the object manager.)
 
 </td>
 </tr>
@@ -347,7 +348,7 @@ Optionally specifies a handle to a directory obtained by a preceding call to <b>
 
 </td>
 <td>
-Optionally specifies a security descriptor (<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>) to be applied to a file. <a href="ifsk.acl">ACLs</a> specified by such a security descriptor are only applied to the file when it is created. If the value is <b>NULL</b> when a file is created, the ACL placed on the file is file-system-dependent; most file systems propagate some part of such an ACL from the parent directory file combined with the caller's default ACL. 
+Optionally specifies a security descriptor (<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>) to be applied to a file. <a href="..\wdm\ns-wdm-_acl.md">ACLs</a> specified by such a security descriptor are only applied to the file when it is created. If the value is <b>NULL</b> when a file is created, the ACL placed on the file is file-system-dependent; most file systems propagate some part of such an ACL from the parent directory file combined with the caller's default ACL. 
 
 </td>
 </tr>
@@ -367,7 +368,7 @@ Is a set of flags that controls the file object attributes. If the caller is run
 
 ### -param IoStatusBlock [out]
 
-A pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateFileEx</b>, the <b>Information</b> member contains one of the following values.
+A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateFileEx</b>, the <b>Information</b> member contains one of the following values.
 
 <dl>
 <dd>
@@ -725,7 +726,7 @@ FILE_DELETE_ON_CLOSE
 
 </td>
 <td>
-Delete the file when the last handle to it is passed to <a href="ifsk.fltclose">FltClose</a>. 
+Delete the file when the last handle to it is passed to <a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>. 
 
 </td>
 </tr>
@@ -777,7 +778,7 @@ This flag allows an application to request a Filter opportunistic lock (oplock) 
 
 ### -param EaBuffer [in, optional]
 
-A pointer to a caller-supplied <a href="kernel.file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file. 
+A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file. 
 
 
 ### -param EaLength [in]
@@ -846,7 +847,7 @@ Indicates that the parameters for this call should not be validated before attem
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>
-<a href="ifsk.fltcreatefileex">FltCreateFileEx</a> encountered a pool allocation failure. This is an error code. 
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a> encountered a pool allocation failure. This is an error code. 
 <dl>
 <dt><b>STATUS_MOUNT_POINT_NOT_RESOLVED</b></dt>
 </dl>The file or directory name contains a mount point that resolves to a volume other than the one that the specified minifilter driver instance is attached to. This is an error code. 
@@ -858,9 +859,9 @@ Indicates that the parameters for this call should not be validated before attem
 
 
 ## -remarks
-<b>FltCreateFileEx</b> is identical to <a href="ifsk.fltcreatefile">FltCreateFile</a> except for the addition of an optional <i>FileObject</i> output parameter. 
+<b>FltCreateFileEx</b> is identical to <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> except for the addition of an optional <i>FileObject</i> output parameter. 
 
-File system minifilter drivers should call <b>FltCreateFileEx</b> instead of <a href="ifsk.fltcreatefile">FltCreateFile</a> to obtain a file object pointer for use with <b>Flt</b><i>Xxx</i> I/O routines such as <a href="ifsk.fltreadfile">FltReadFile</a> and <a href="ifsk.fltqueryinformationfile">FltQueryInformationFile</a>. 
+File system minifilter drivers should call <b>FltCreateFileEx</b> instead of <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> to obtain a file object pointer for use with <b>Flt</b><i>Xxx</i> I/O routines such as <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> and <a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>. 
 
 <b>FltCreateFileEx</b> sends the create request only to the instances attached below the specified minifilter driver instance and to the file system. The specified instance and the instances attached above it do not receive the create request. If no instance is specified, the request goes to the top of the stack and is received by all instances and the file system. 
 
@@ -870,7 +871,7 @@ As a fully qualified pathname, supplied in the <b>ObjectName</b> member of the i
 
 As a pathname relative to the directory file represented by the handle in the <b>RootDirectory</b> member of the input <i>ObjectAttributes</i>
 
-Any <i>FileHandle</i> that is obtained from <b>FltCreateFileEx</b> must eventually be released by calling <a href="ifsk.fltclose">FltClose</a>. In addition, any returned <i>FileObject</i> pointer must be dereferenced when it is no longer needed by calling <a href="kernel.obdereferenceobject">ObDereferenceObject</a>. 
+Any <i>FileHandle</i> that is obtained from <b>FltCreateFileEx</b> must eventually be released by calling <a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>. In addition, any returned <i>FileObject</i> pointer must be dereferenced when it is no longer needed by calling <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>. 
 
 Driver routines that do not run in the system process context must set the OBJ_KERNEL_HANDLE attribute for the <i>ObjectAttributes</i> parameter of <b>FltCreateFileEx</b>. Setting this attribute restricts the use of the handle that is returned by <b>FltCreateFileEx</b> to processes running in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running. 
 
@@ -886,7 +887,7 @@ If only the FILE_EXECUTE and SYNCHRONIZE flags are set, the caller cannot use th
 
 The <i>ShareAccess</i> parameter determines whether separate threads can access the same file, possibly simultaneously. If both file openers have the privilege to access a file in the specified manner, the file can be successfully opened and shared. If the original caller of <b>FltCreateFileEx</b> does not specify FILE_SHARE_READ, FILE_SHARE_WRITE, or FILE_SHARE_DELETE, no other open operations can be performed on the file because the original caller is given exclusive access to the file. 
 
-For a shared file to be successfully opened, the requested <i>DesiredAccess</i> to the file must be compatible with both the <i>DesiredAccess</i> and <i>ShareAccess</i> specifications of all preceding opens that have not yet been released with <a href="ifsk.fltclose">FltClose</a>. That is, the <i>DesiredAccess</i> specified to <b>FltCreateFileEx</b> for a given file must not conflict with the accesses that other openers of the file have disallowed. 
+For a shared file to be successfully opened, the requested <i>DesiredAccess</i> to the file must be compatible with both the <i>DesiredAccess</i> and <i>ShareAccess</i> specifications of all preceding opens that have not yet been released with <a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>. That is, the <i>DesiredAccess</i> specified to <b>FltCreateFileEx</b> for a given file must not conflict with the accesses that other openers of the file have disallowed. 
 
 The <i>CreateDisposition</i> value FILE_SUPERSEDE requires that the caller have DELETE access to an existing file object. If so, a successful call to <b>FltCreateFileEx</b> with FILE_SUPERSEDE on an existing file effectively deletes that file and then recreates it. This implies that if the file has already been opened by another thread, it opened the file by specifying a <i>ShareAccess </i>parameter with the FILE_SHARE_DELETE flag set. Note that this type of disposition is consistent with the POSIX style of overwriting files. 
 
@@ -902,15 +903,15 @@ The <i>CreateOptions</i> FILE_DIRECTORY_FILE value specifies that the file to be
 
 The <i>CreateOptions</i> FILE_NO_INTERMEDIATE_BUFFERING flag prevents the file system from performing any intermediate buffering on behalf of the caller. Specifying this value places certain restrictions on the caller's parameters to other <b>Flt..File</b> routines or <b>Zw..File</b> routines, including the following: 
 
-Any byte <i>Offset</i> value passed to <a href="ifsk.fltreadfile">FltReadFile</a>, <a href="kernel.zwreadfile">ZwReadFile</a>, <a href="ifsk.fltwritefile">FltWriteFile</a>, or <a href="kernel.zwwritefile">ZwWriteFile</a> must be a multiple of the sector size. 
+Any byte <i>Offset</i> value passed to <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>, <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>, <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>, or <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a> must be a multiple of the sector size. 
 
-The <i>Length</i> passed to <a href="ifsk.fltreadfile">FltReadFile</a>, <a href="kernel.zwreadfile">ZwReadFile</a>, <a href="ifsk.fltwritefile">FltWriteFile</a>, or <a href="kernel.zwwritefile">ZwWriteFile</a> must be a multiple of the sector size. Note that specifying a read operation to a buffer whose length is exactly the sector size might result in fewer significant bytes being transferred to that buffer if the end of the file was reached during the transfer. 
+The <i>Length</i> passed to <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>, <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>, <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>, or <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a> must be a multiple of the sector size. Note that specifying a read operation to a buffer whose length is exactly the sector size might result in fewer significant bytes being transferred to that buffer if the end of the file was reached during the transfer. 
 
-Buffers must be aligned in accordance with the alignment requirement of the underlying storage device. This information can be obtained by calling <b>FltCreateFileEx</b> to get a handle for the file object that represents the physical device and then calling <a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a> with that handle, specifying FileAlignmentInformation as the <i>FileInformationClass</i>. For more information about the system FILE_<i>XXX</i>_ALIGNMENT values, which are defined in ntifs.h, see <a href="kernel.device_object">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. 
+Buffers must be aligned in accordance with the alignment requirement of the underlying storage device. This information can be obtained by calling <b>FltCreateFileEx</b> to get a handle for the file object that represents the physical device and then calling <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> with that handle, specifying FileAlignmentInformation as the <i>FileInformationClass</i>. For more information about the system FILE_<i>XXX</i>_ALIGNMENT values, which are defined in ntifs.h, see <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. 
 
-Calls to <a href="ifsk.fltsetinformationfile">FltSetInformationFile</a> or <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a> with the <i>FileInformationClass</i> parameter set to <b>FilePositionInformation</b> must specify an offset that is a multiple of the sector size. 
+Calls to <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a> or <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a> with the <i>FileInformationClass</i> parameter set to <b>FilePositionInformation</b> must specify an offset that is a multiple of the sector size. 
 
-The <i>CreateOptions</i> FILE_SYNCHRONOUS_IO_ALERT and FILE_SYNCHRONOUS_IO_NONALERT, which are mutually exclusive as their names suggest, specify that the file is being opened for synchronous I/O. This means that all I/O operations on the file are to be synchronous as long as they occur through the file object that the returned <i>FileHandle</i> refers to. All I/O on such a file is serialized across all threads by using the returned handle. With either of these <i>CreateOptions</i> set, the I/O Manager maintains the current file position offset in the file object's <b>CurrentByteOffset</b> field. This offset can be used in calls to <a href="kernel.zwreadfile">ZwReadFile</a> and <a href="kernel.zwwritefile">ZwWriteFile</a>. It can also be queried or set by calling <a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a> or <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>. 
+The <i>CreateOptions</i> FILE_SYNCHRONOUS_IO_ALERT and FILE_SYNCHRONOUS_IO_NONALERT, which are mutually exclusive as their names suggest, specify that the file is being opened for synchronous I/O. This means that all I/O operations on the file are to be synchronous as long as they occur through the file object that the returned <i>FileHandle</i> refers to. All I/O on such a file is serialized across all threads by using the returned handle. With either of these <i>CreateOptions</i> set, the I/O Manager maintains the current file position offset in the file object's <b>CurrentByteOffset</b> field. This offset can be used in calls to <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a> and <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a>. It can also be queried or set by calling <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> or <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>. 
 
 If the <i>CreateOptions</i> FILE_OPEN_REPARSE_POINT flag is not specified and <b>FltCreateFileEx</b> attempts to open a file with a reparse point, normal reparse point processing occurs for the file.  If, on the other hand, the FILE_OPEN_REPARSE_POINT flag is specified, normal reparse processing does not occur and <b>FltCreateFileEx</b> attempts to directly open the reparse point file.  In either case, if the open operation was successful, <b>FltCreateFileEx</b> returns STATUS_SUCCESS; otherwise, the routine returns an NTSTATUS error code. <b>FltCreateFileEx</b> never returns STATUS_REPARSE.
 
@@ -934,7 +935,7 @@ The <i>Options</i> IO_NO_PARAMETER_CHECKING flag can be useful if a kernel-mode 
 
 NTFS is the only Microsoft file system that implements FILE_RESERVE_OPFILTER. 
 
-Minifilter drivers must use <a href="ifsk.fltsetinformationfile">FltSetInformationFile</a>, not <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>, to rename a file. 
+Minifilter drivers must use <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>, not <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>, to rename a file. 
 
 FILE_READ_ATTRIBUTES
 
@@ -945,65 +946,8 @@ WRITE_DAC
 WRITE_OWNER
 
 SYNCHRONIZE
-<p class="note">You must not use <b>FltCreateFileEx</b> to open a handle with direct access to the storage device for the volume or you will leak system resources. If you want to open a handle with direct access to a storage device, call the <a href="ifsk.iocreatefileex">IoCreateFileEx</a>, <a href="ifsk.iocreatefilespecifydeviceobjecthint">IoCreateFileSpecifyDeviceObjectHint</a>, or <a href="kernel.zwcreatefile">ZwCreateFile</a> function instead.
+<p class="note">You must not use <b>FltCreateFileEx</b> to open a handle with direct access to the storage device for the volume or you will leak system resources. If you want to open a handle with direct access to a storage device, call the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>, <a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a>, or <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> function instead.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltmgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -1011,69 +955,69 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="ifsk.acl">ACL</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.file_full_ea_information">FILE_FULL_EA_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltclose">FltClose</a>
+<a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 </dt>
 <dt>
-<a href="ifsk.fltreadfile">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltqueryinformationfile">FltQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetinformationfile">FltSetInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltwritefile">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 </dt>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
-<a href="kernel.iocreatefile">IoCreateFile</a>
+<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefilespecifydeviceobjecthint">IoCreateFileSpecifyDeviceObjectHint</a>
+<a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a>
 </dt>
 <dt>
-<a href="kernel.obdereferenceobject">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 </dt>
 <dt>
-<a href="kernel.zwreadfile">ZwReadFile</a>
+<a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>
 </dt>
 <dt>
-<a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>
+<a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 </dt>
 <dt>
-<a href="kernel.zwwritefile">ZwWriteFile</a>
+<a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateFileEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateFileEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_ACTION_FRAME_CATEGORY
+UID: NE:wditypes._WDI_ACTION_FRAME_CATEGORY
 title: _WDI_ACTION_FRAME_CATEGORY
 author: windows-driver-content
 description: The WDI_ACTION_FRAME_CATEGORY enumeration defines the action frame categories.
 old-location: netvista\wdi_action_frame_category.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: F2A3D1F0-E6E7-46DC-875A-7F36E6ACBC6D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_ACTION_FRAME_CATEGORY, WDI_ACTION_FRAME_CATEGORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_ACTION_FRAME_CATEGORY
 req.product: Windows 10 or later.
 ---
 
@@ -83,39 +84,3 @@ Specifies a Wireless Network Management Action frame.  In Windows 10, it is onl
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

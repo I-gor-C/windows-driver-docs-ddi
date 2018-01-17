@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._IO_STACK_LOCATION
+UID: NS:wdm._IO_STACK_LOCATION
 title: _IO_STACK_LOCATION
 author: windows-driver-content
 description: The IO_STACK_LOCATION structure defines an I/O stack location, which is an entry in the I/O stack that is associated with each IRP.
@@ -7,8 +7,8 @@ old-location: kernel\io_stack_location.htm
 old-project: kernel
 ms.assetid: b339d6aa-71e1-4835-8ef2-a84594166bb1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IO_STACK_LOCATION, IO_STACK_LOCATION, PIO_STACK_LOCATION, *PIO_STACK_LOCATION
+ms.date: 1/4/2018
+ms.keywords: _IO_STACK_LOCATION, IO_STACK_LOCATION, *PIO_STACK_LOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: IO_STACK_LOCATION, *PIO_STACK_LOCATION
 req.product: Windows 10 or later.
 ---
 
@@ -313,7 +314,7 @@ This flag lets kernel-mode drivers write to volume areas that they normally cann
 </b>
 
 
-<div class="alert"><b>Note</b>  Direct write blocking, introduced in Windows Vista helps improve security. This flag is checked both at the file system layer and storage stack layer. For more information about direct write blocking, see <a href="storage.blocking_direct_write_operations_to_volumes_and_disks">Blocking Direct Write Operations to Volumes and Disks</a>.</div>
+<div class="alert"><b>Note</b>  Direct write blocking, introduced in Windows Vista helps improve security. This flag is checked both at the file system layer and storage stack layer. For more information about direct write blocking, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551353">Blocking Direct Write Operations to Volumes and Disks</a>.</div>
 <div> </div>
 
 
@@ -393,7 +394,7 @@ A union that depends on the major and minor IRP function code values contained i
 <tr>
 <td><b>QueryVolume</b></td>
 <td>
-<a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
 </td>
 </tr>
 <tr>
@@ -430,7 +431,7 @@ A union that depends on the major and minor IRP function code values contained i
 <tr>
 <td><b>DeviceCapabilities</b></td>
 <td>
-<a href="kernel.irp_mn_query_capabilities">IRP_MN_QUERY_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551664">IRP_MN_QUERY_CAPABILITIES</a>
 </td>
 </tr>
 <tr>
@@ -650,12 +651,12 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ### -field DeviceObject
 
-A pointer to the driver-created <a href="kernel.device_object">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.
+A pointer to the driver-created <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.
 
 
 ### -field FileObject
 
-A pointer to a <a href="kernel.file_object">FILE_OBJECT</a> structure that represents the file object, if any, that is associated with <b>DeviceObject</b> pointer. 
+A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure that represents the file object, if any, that is associated with <b>DeviceObject</b> pointer. 
 
 
 ### -field CompletionRoutine
@@ -665,11 +666,11 @@ A pointer to a <a href="kernel.file_object">FILE_OBJECT</a> structure that repre
 
 
 ## -remarks
-For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="kernel.irp">IRP</a> structure.
+For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure.
 
-Every higher-level driver is responsible for setting up the I/O stack location for the next-lower driver in each IRP. A driver must call <a href="kernel.iogetcurrentirpstacklocation">IoGetCurrentIrpStackLocation</a> to get a pointer to its own stack location for each IRP. Higher-level drivers can call <a href="kernel.iogetnextirpstacklocation">IoGetNextIrpStackLocation</a> to get a pointer to the next-lower driver's stack location.
+Every higher-level driver is responsible for setting up the I/O stack location for the next-lower driver in each IRP. A driver must call <a href="..\wdm\nf-wdm-iogetcurrentirpstacklocation.md">IoGetCurrentIrpStackLocation</a> to get a pointer to its own stack location for each IRP. Higher-level drivers can call <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a> to get a pointer to the next-lower driver's stack location.
 
-The higher-level driver must set up the stack location contents before calling <a href="kernel.iocalldriver">IoCallDriver</a> to pass an IRP to the lower-level driver. If the driver will pass the input IRP on to the next lower-level driver, the dispatch routine should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a> or <a href="kernel.iocopycurrentirpstacklocationtonext">IoCopyCurrentIrpStackLocationToNext</a> to set up the I/O stack location of the next-lower driver.
+The higher-level driver must set up the stack location contents before calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> to pass an IRP to the lower-level driver. If the driver will pass the input IRP on to the next lower-level driver, the dispatch routine should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a> or <a href="..\wdm\nf-wdm-iocopycurrentirpstacklocationtonext.md">IoCopyCurrentIrpStackLocationToNext</a> to set up the I/O stack location of the next-lower driver.
 
 A higher-level driver's call to <b>IoCallDriver</b> sets the <b>DeviceObject</b> member to the next-lower-level driver's target device object, in the I/O stack location of the lower driver. The I/O manager passes each higher-level driver's <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> routine a pointer to its own device object when the <i>IoCompletion</i> routine is called on completion of the IRP.
 
@@ -678,54 +679,39 @@ If a higher-level driver allocates IRPs to make requests of its own, its <i>IoCo
 In some cases, a higher-level driver layered over a mass-storage device driver is responsible for splitting up large transfer requests for the underlying device driver. In particular, SCSI class drivers must check the <b>Parameters.Read.Length</b> and <b>Parameters.Write.Length</b>, determine whether the size of the requested transfer exceeds the underlying HBA's transfer capabilities, and, if so, split the <b>Length</b> of the original request into a sequence of partial transfers to satisfy the original IRP.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iocalldriver">IoCallDriver</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
 <dt>
-<a href="kernel.iocopycurrentirpstacklocationtonext">IoCopyCurrentIrpStackLocationToNext</a>
+<a href="..\wdm\nf-wdm-iocopycurrentirpstacklocationtonext.md">IoCopyCurrentIrpStackLocationToNext</a>
 </dt>
 <dt>
-<a href="kernel.iogetcurrentirpstacklocation">IoGetCurrentIrpStackLocation</a>
+<a href="..\wdm\nf-wdm-iogetcurrentirpstacklocation.md">IoGetCurrentIrpStackLocation</a>
 </dt>
 <dt>
-<a href="kernel.iogetnextirpstacklocation">IoGetNextIrpStackLocation</a>
+<a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a>
 </dt>
 <dt>
-<a href="kernel.iosetcompletionroutine">IoSetCompletionRoutine</a>
+<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>
 </dt>
 <dt>
-<a href="kernel.iosetnextirpstacklocation">IoSetNextIrpStackLocation</a>
+<a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
 </dt>
 <dt>
-<a href="kernel.io_status_block">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_STACK_LOCATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_STACK_LOCATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

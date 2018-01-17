@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.StartEnumTagged
+UID: NF:dbgeng.IDebugDataSpaces4.StartEnumTagged
 title: IDebugDataSpaces4::StartEnumTagged method
 author: windows-driver-content
 description: The StartEnumTagged method initializes a enumeration over the tagged data associated with a debugger session.
 old-location: debugger\startenumtagged.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b79b1f09-baff-4071-a209-6fc399c9aef9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::StartEnumTagged, StartEnumTagged
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::StartEnumTagged method
@@ -55,7 +56,7 @@ HRESULT StartEnumTagged(
 
 ### -param Handle [out]
 
-Receives the handle identifying the enumeration.  This handle can be passed to <a href="debugger.getnexttagged">GetNextTagged</a> and <a href="debugger.endenumtagged">EndEnumTagged</a>.
+Receives the handle identifying the enumeration.  This handle can be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547874">GetNextTagged</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542978">EndEnumTagged</a>.
 
 
 ## -returns
@@ -68,31 +69,4 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-The resources held by an enumeration created with this method can be released using <a href="debugger.endenumtagged">EndEnumTagged</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The resources held by an enumeration created with this method can be released using <a href="https://msdn.microsoft.com/library/windows/hardware/ff542978">EndEnumTagged</a>.</p>

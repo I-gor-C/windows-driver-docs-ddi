@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
+UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
 title: _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
 author: windows-driver-content
 description: DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE is used as part of a page table update operation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_buildpagingbuffer_updatepagetable.htm
 old-project: display
 ms.assetid: 734B2E28-75F8-49AE-AAAB-EB0C037C6432
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
 ---
 
 # _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure
@@ -104,7 +105,7 @@ This member is reserved and should be set to zero.
 ### -field Flags
 
 
-<a href="display.dxgk_updatepagetableflags">DXGK_UPDATEPAGETABLEFLAGS</a> structure describing the update operation.
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_updatepagetableflags.md">DXGK_UPDATEPAGETABLEFLAGS</a> structure describing the update operation.
 
 
 ### -field DriverProtection
@@ -140,39 +141,3 @@ The GPU virtual address that is mapped by the first updated page table entry.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

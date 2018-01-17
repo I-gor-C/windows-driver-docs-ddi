@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfdevice._WDF_DEVICE_POWER_POLICY_STATE
+UID: NE:wdfdevice._WDF_DEVICE_POWER_POLICY_STATE
 title: _WDF_DEVICE_POWER_POLICY_STATE
 author: windows-driver-content
 description: The WDF_DEVICE_POWER_POLICY_STATE enumeration identifies all of the states that the framework's power policy state machine can enter.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_power_policy_state.htm
 old-project: wdf
 ms.assetid: 87fa78f7-417a-4720-9520-0eb90486630a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_DEVICE_POWER_POLICY_STATE, PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE, *PWDF_DEVICE_POWER_POLICY_STATE
+ms.date: 1/11/2018
+ms.keywords: _WDF_DEVICE_POWER_POLICY_STATE, *PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: See Remarks section.
+req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -676,30 +677,4 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
 
 
 ## -remarks
-The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="wdf.wdf_device_power_policy_notification_data">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="wdf.wdfdevicegetdevicepowerpolicystate">WdfDeviceGetDevicePowerPolicyState</a> method.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdevice.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_notification_data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a> method.</p>

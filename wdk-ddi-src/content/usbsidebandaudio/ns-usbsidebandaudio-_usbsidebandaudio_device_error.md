@@ -1,5 +1,5 @@
 ---
-UID: NS.USBSIDEBANDAUDIO._USBSIDEBANDAUDIO_DEVICE_ERROR
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_DEVICE_ERROR
 title: _USBSIDEBANDAUDIO_DEVICE_ERROR
 author: windows-driver-content
 description: TBD.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: EB5AFAF3-D75C-4B91-823C-E1C6784CB13B
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, PUSBSIDEBANDAUDIO_DEVICE_ERROR
+ms.keywords: _USBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ TBD
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbsidebandaudio.h (include Usbsidebandaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

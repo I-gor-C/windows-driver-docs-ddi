@@ -1,13 +1,13 @@
 ---
-UID: NS.FWPSK.FWPS_STREAM_CALLOUT_IO_PACKET0_
+UID: NS:fwpsk.FWPS_STREAM_CALLOUT_IO_PACKET0_
 title: FWPS_STREAM_CALLOUT_IO_PACKET0_
 author: windows-driver-content
 description: The FWPS_STREAM_CALLOUT_IO_PACKET0 structure describes the data passed by the filter engine to a callout's classifyFn callout function when filtering a data stream.Note  FWPS_STREAM_CALLOUT_IO_PACKET0 is a specific version of FWPS_STREAM_CALLOUT_IO_PACKET. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwps_stream_callout_io_packet0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2c0539f0-116e-4344-9584-db7416d258e0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_STREAM_CALLOUT_IO_PACKET0_, FWPS_STREAM_CALLOUT_IO_PACKET0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_STREAM_CALLOUT_IO_PACKET0
 ---
 
 # FWPS_STREAM_CALLOUT_IO_PACKET0_ structure
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The <b>FWPS_STREAM_CALLOUT_IO_PACKET0</b> structure describes the data passed by the filter engine to a
   callout's 
-  <a href="netvista.classifyfn">classifyFn</a> callout function when filtering a
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function when filtering a
   data stream.
 
 
@@ -63,15 +64,15 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 ### -field streamData
 
 A pointer to an 
-     <a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a> structure that
+     <a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a> structure that
      describes the portion of the data stream available to the callout driver's 
-     <a href="netvista.classifyfn">classifyFn</a> callout function for processing.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function for processing.
 
 
 ### -field missedBytes
 
 The number of bytes in the data stream that are missing since the last time the callout driver's 
-     <a href="netvista.classifyfn">classifyFn</a> callout function was called. This
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function was called. This
      member is nonzero if a higher weight filter in the filter engine prevented the callout driver's 
      classifyFn callout function from processing a
      portion of the data stream.
@@ -80,7 +81,7 @@ The number of bytes in the data stream that are missing since the last time the 
 ### -field countBytesRequired
 
 A value set by a callout's 
-     <a href="netvista.classifyfn">classifyFn</a> callout function. This value
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. This value
      specifies how many additional bytes of stream data are required by the callout function if it sets the 
      <b>streamAction</b> member to <b>FWPS_STREAM_ACTION_NEED_MORE_DATA</b>. The filter engine waits until it
      receives at least this many additional bytes of stream data before calling the callout driver's 
@@ -88,7 +89,7 @@ A value set by a callout's
      
 
 If a callout's 
-     <a href="netvista.classifyfn">classifyFn</a> callout function sets the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function sets the 
      <b>streamAction</b> member to a value other than <b>FWPS_STREAM_ACTION_NEED_MORE_DATA</b>, then it should set
      this member to zero.
 
@@ -96,7 +97,7 @@ If a callout's
 ### -field countBytesEnforced
 
 A value set by a callout's 
-     <a href="netvista.classifyfn">classifyFn</a> callout function. This value
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. This value
      specifies the number of leading bytes of data in the portion of the data stream being processed to which
      the action specified by the 
      <b>streamAction</b> member or by the action returned by the callout function applies. Any remaining data
@@ -108,7 +109,7 @@ A value set by a callout's
 ### -field streamAction
 
 An <b>FWPS_STREAM_ACTION_TYPE</b> value set by a callout's 
-     <a href="netvista.classifyfn">classifyFn</a> callout function that specifies
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function that specifies
      the action to be applied to the data stream. This action is independent of the action returned by the
      callout function. A callout's 
      classifyFn callout function sets this member
@@ -136,11 +137,11 @@ More stream data is required by the callout function.
 ### -field FWPS_STREAM_ACTION_DROP_CONNECTION
 
 The stream connection should be dropped. A callout's 
-       <a href="netvista.classifyfn">classifyFn</a> callout function should only set
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function should only set
        the 
        <b>streamAction</b> member to this value if the 
        <b>action.type</b> member of the 
-       <a href="netvista.fwps_filter0">FWPS_FILTER0</a> structure that the filter
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff552387">FWPS_FILTER0</a> structure that the filter
        engine passed to the callout driver's 
        classifyFn callout function contains the value <b>FWP_ACTION_CALLOUT_UNKNOWN</b>. If a callout's 
        classifyFn callout function sets the 
@@ -152,7 +153,7 @@ The stream connection should be dropped. A callout's
 ### -field FWPS_STREAM_ACTION_DEFER
 
 Processing of the stream data will be deferred until the callout driver calls the 
-       <a href="netvista.fwpsstreamcontinue0">FwpsStreamContinue0</a> function. This
+       <a href="..\fwpsk\nf-fwpsk-fwpsstreamcontinue0.md">FwpsStreamContinue0</a> function. This
        action can only be set for an inbound data stream.
        
 
@@ -165,7 +166,7 @@ Deferring an inbound data stream will cause the network stack to stop acknowledg
 The <b>FWPS_STREAM_ACTION_TYPE_MAX</b> value is a maximum value for testing purposes.
 
 If a callout's 
-     <a href="netvista.classifyfn">classifyFn</a> callout function sets this member
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function sets this member
      to a value other than <b>FWPS_STREAM_ACTION_NONE</b>, then the action returned by the callout function is
      ignored by the filter engine.
 
@@ -176,49 +177,24 @@ The filter engine passes a pointer to an <b>FWPS_STREAM_CALLOUT_IO_PACKET0</b> s
     <i>layerData</i> parameter when filtering a data stream.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.classifyfn">classifyFn</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
 </dt>
 <dt>
-<a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsstreamcontinue0">FwpsStreamContinue0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsstreamcontinue0.md">FwpsStreamContinue0</a>
 </dt>
 <dt>
-<a href="netvista.types_of_callouts">Types of Callouts</a>
+<a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._DXGK_PRE_START_INFO
+UID: NS:dispmprt._DXGK_PRE_START_INFO
 title: _DXGK_PRE_START_INFO
 author: windows-driver-content
 description: Structure to allow very simple data to be exchanged between the OS and driver which may be required prior to start device being called and therefore cannot be queried through normal caps or adapter info DDIs.
@@ -7,8 +7,8 @@ old-location: display\dxgk_pre_start_info.htm
 old-project: display
 ms.assetid: 4CCDA951-A583-48C4-98D7-D278183D8893
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_PRE_START_INFO, DXGK_PRE_START_INFO, *PDXGK_PRE_START_INFO, PDXGK_PRE_START_INFO
+ms.date: 12/29/2017
+ms.keywords: _DXGK_PRE_START_INFO, *PDXGK_PRE_START_INFO, DXGK_PRE_START_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PDXGK_PRE_START_INFO, DXGK_PRE_START_INFO
 ---
 
 # _DXGK_PRE_START_INFO structure
@@ -97,19 +98,3 @@ The combined UINT value operated on.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>

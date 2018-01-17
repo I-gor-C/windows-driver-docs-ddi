@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
+UID: NS:1394._IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 title: _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a SendPhyConfigurationPacket request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 ---
 
 # _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET structure
@@ -59,20 +60,4 @@ Points to the PHY_CONFIGURATION_PACKET structure.
 
 
 ## -remarks
-The packet is sent to all nodes on the bus. See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for a description of Phy packets.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The packet is sent to all nodes on the bus. See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for a description of Phy packets.</p>

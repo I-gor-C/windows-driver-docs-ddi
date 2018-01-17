@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MS_SMHBA_SAS_PORT
+UID: NS:hbapiwmi._MS_SMHBA_SAS_Port
 title: _MS_SMHBA_SAS_Port
 author: windows-driver-content
 description: The MS_SMHBA_SAS_Port structure is used to report the SAS port information.
@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_sas_port.htm
 old-project: storage
 ms.assetid: d294d97a-e6b2-4ab3-bebf-e545aa2f862d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port
+ms.date: 1/10/2018
+ms.keywords: _MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port
 ---
 
 # _MS_SMHBA_SAS_Port structure
@@ -83,19 +84,3 @@ The number of physical ports that are associated with this SAS port. If the valu
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

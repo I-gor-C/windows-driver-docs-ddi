@@ -1,6 +1,6 @@
 ---
-UID: NC.ntddpcm.PCMCIA_SET_VPP
-title: PCMCIA_SET_VPP
+UID: NC:ntddpcm.PCMCIA_SET_VPP
+title: PCMCIA_SET_VPP function
 author: windows-driver-content
 description: The PCMCIA_SET_VPP interface routine sets the power level of the Vpp PCMCIA pin (secondary power source).
 old-location: pcmcia\pcmcia_set_vpp.htm
@@ -8,10 +8,10 @@ old-project: PCMCIA
 ms.assetid: 63c34784-6ea5-49e5-8ee7-79b70e5137f7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PAR_SET_INFORMATION, *PPAR_SET_INFORMATION, PPAR_SET_INFORMATION, PAR_SET_INFORMATION
+ms.keywords: PCMCIA_SET_VPP
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ntddpcm.h
 req.include-header: Ntddpcm.h
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL (See Remarks section.)
+req.typenames: *PWHEA_XPF_TLB_CHECK, WHEA_XPF_TLB_CHECK
 ---
 
-# PCMCIA_SET_VPP callback
+# PCMCIA_SET_VPP function
 
 
 
@@ -42,7 +43,7 @@ The <b>PCMCIA_SET_VPP</b> interface routine sets the power level of the Vpp PCMC
 
 
 
-## -prototype
+## -syntax
 
 ````
 PCMCIA_SET_VPP SetVpp;
@@ -97,42 +98,6 @@ A caller must set the <i>Context</i> parameter to the context that is specified 
 
 Callers of this routine can run at IRQL &lt;= DISPATCH_LEVEL. To maintain overall system performance, it is recommended that drivers call this routine at IRQL &lt; DISPATCH_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddpcm.h (include Ntddpcm.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL (See Remarks section.)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

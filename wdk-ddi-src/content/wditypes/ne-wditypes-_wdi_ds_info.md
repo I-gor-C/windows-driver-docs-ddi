@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_DS_INFO
+UID: NE:wditypes._WDI_DS_INFO
 title: _WDI_DS_INFO
 author: windows-driver-content
 description: The WDI_DS_INFO enumeration defines values that specify whether the port is connected to the same DS that it was previously associated to.
 old-location: netvista\wdi_ds_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4375FF5C-8772-43AB-844B-4AD5E044AF55
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_DS_INFO, WDI_DS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_DS_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -72,39 +73,3 @@ Unable to determine if the DS has changed.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

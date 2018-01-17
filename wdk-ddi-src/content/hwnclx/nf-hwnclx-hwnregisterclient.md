@@ -1,5 +1,5 @@
 ---
-UID: NF.hwnclx.HwNRegisterClient
+UID: NF:hwnclx.HwNRegisterClient
 title: HwNRegisterClient function
 author: windows-driver-content
 description: Registers the hardware notification client driver and its callback functions with the class extension.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Mshwnclxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 # HwNRegisterClient function
@@ -67,7 +68,7 @@ Pointer to the <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGIS
 
 ### -param RegistryPath [in]
 
-Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the path to the client driver’s registry key. 
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the path to the client driver’s registry key. 
 
 
 ## -returns
@@ -77,67 +78,11 @@ Returns STATUS_SUCCESS if function succeeds. Returns STATUS_INVALID_PARAMETER if
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hwnclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mshwnclxstub.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
 <dt>
-<a href="gpiobtn.hardware_notifications_reference">Hardware notifications reference</a>
+<a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 </dt>
 </dl>
  

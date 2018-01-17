@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcDeferWrite
+UID: NF:ntifs.CcDeferWrite
 title: CcDeferWrite function
 author: windows-driver-content
 description: The CcDeferWrite routine defers writing to a cached file.
@@ -7,7 +7,7 @@ old-location: ifsk\ccdeferwrite.htm
 old-project: ifsk
 ms.assetid: a655bcde-c627-4c90-8579-348ab0174c27
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcDeferWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: 
+req.typenames: TOKEN_TYPE
 ---
 
 # CcDeferWrite function
@@ -65,7 +66,7 @@ Pointer to a file object for the cached file to which the data is to be written.
 
 ### -param PostRoutine [in]
 
-Address of a routine for the cache manager to call to write to the cached file. Note that it is possible that this routine will be called immediately, even if <a href="ifsk.cccaniwrite">CcCanIWrite</a> has just returned <b>FALSE</b> .
+Address of a routine for the cache manager to call to write to the cached file. Note that it is possible that this routine will be called immediately, even if <a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a> has just returned <b>FALSE</b> .
 
 The post routine is defined in ntifs.h as:
 
@@ -109,76 +110,28 @@ None
 
 
 ## -remarks
-A file system would normally call <b>CcDeferWrite</b> after receiving a return value of <b>FALSE</b> from <a href="ifsk.cccaniwrite">CcCanIWrite</a>.
+A file system would normally call <b>CcDeferWrite</b> after receiving a return value of <b>FALSE</b> from <a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>.
 
-To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
+To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
 The context parameters passed to <i>PostRoutine</i> are typically the I/O request and related context data.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.cccaniwrite">CcCanIWrite</a>
+<a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>
 </dt>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
-<a href="ifsk.ccsetdirtypagethreshold">CcSetDirtyPageThreshold</a>
+<a href="..\ntifs\nf-ntifs-ccsetdirtypagethreshold.md">CcSetDirtyPageThreshold</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcDeferWrite routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcDeferWrite routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

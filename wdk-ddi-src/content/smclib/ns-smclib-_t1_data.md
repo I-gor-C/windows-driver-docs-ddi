@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._T1_DATA
+UID: NS:smclib._T1_DATA
 title: _T1_DATA
 author: windows-driver-content
 description: The T1_DATA structure is used by the smart card driver library to process T1 I/O.
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: af20cab0-c70b-404c-b6bd-54d9ecf75714
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _T1_DATA, T1_DATA, *PT1_DATA, PT1_DATA
+ms.keywords: _T1_DATA, T1_DATA, *PT1_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: T1_DATA, *PT1_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -144,20 +145,4 @@ If <b>TRUE</b>, execute the operation synchronously.
 
 
 ## -remarks
-This structure must not be directly modified by a reader driver.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure must not be directly modified by a reader driver.</p>

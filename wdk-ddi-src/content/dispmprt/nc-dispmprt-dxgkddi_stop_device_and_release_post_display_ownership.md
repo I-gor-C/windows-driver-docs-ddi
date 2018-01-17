@@ -1,17 +1,17 @@
 ---
-UID: NC.dispmprt.DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
-title: DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
+UID: NC:dispmprt.DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
+title: DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP function
 author: windows-driver-content
 description: Called by the operating system to request the display miniport driver to reset the display device and to release ownership of the current power-on self-test (POST) device.
 old-location: display\dxgkddireleasepostdisplayownership.htm
 old-project: display
 ms.assetid: 6AF170BF-C422-4340-8935-31A4D4F3EFA5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
-# DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP callback
+# DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP function
 
 
 
@@ -42,11 +43,11 @@ Called by the operating system to request the display miniport driver to reset t
 
 Starting with Windows 8, the operating system calls this function during a Plug and Play (PnP) stop operation.
 
-To indicate to the operating system that this function is supported, the driver must set the <b>NonVGASupport</b> member of the <a href="display.dxgk_drivercaps">DXGK_DRIVERCAPS</a> structure when the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> function is called.
+To indicate to the operating system that this function is supported, the driver must set the <b>NonVGASupport</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a> structure when the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> function is called.
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP DxgkDdiStopDeviceAndReleasePostDisplayOwnership;
@@ -78,7 +79,7 @@ For more details about the use of the <i>TargetId</i> parameter, see the followi
 
 ### -param DisplayInfo [out]
 
-A pointer to a <a href="display.dxgk_display_information">DXGK_DISPLAY_INFORMATION</a> structure that is allocated by the operating system.
+A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_display_information.md">DXGK_DISPLAY_INFORMATION</a> structure that is allocated by the operating system.
 
 
 ## -returns
@@ -96,7 +97,7 @@ The display miniport driver must follow these steps when its <i>DxgkDdiStopDevic
 
 The driver must stop the display device associated with the video present target indicated by the <i>TargetId</i> parameter but must keep the display associated with this target powered on and visible.
 
-If the driver cannot maintain the current display mode, or if the target is not part of the active topology, the driver should select an alternate active target and attempt to maintain the current resolution of that target. If that is not possible, the driver should attempt to set the display to its native resolution or to a high-resolution mode. In this case, the  display resolution must be set to at least 800 x 600 pixels in either <b>D3DDDIFMT_R8G8B8</b> (24 bits per pixel) or <b>D3DDDIFMT_X8R8G8B8</b> (32 bpp) color formats of the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration.
+If the driver cannot maintain the current display mode, or if the target is not part of the active topology, the driver should select an alternate active target and attempt to maintain the current resolution of that target. If that is not possible, the driver should attempt to set the display to its native resolution or to a high-resolution mode. In this case, the  display resolution must be set to at least 800 x 600 pixels in either <b>D3DDDIFMT_R8G8B8</b> (24 bits per pixel) or <b>D3DDDIFMT_X8R8G8B8</b> (32 bpp) color formats of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration.
 
 If possible, the driver must	clear the current frame buffer and disable the hardware cursor and all display overlays.
 
@@ -106,7 +107,7 @@ The driver must 	set the current frame buffer to be in a linear mode. The driver
 
 	The driver must make the current frame buffer accessible to the CPU by mapping the  current frame buffer linearly into the CPU address space.
 
-After the display miniport driver performs these steps, it must return the current display settings for the device. The driver returns this information by setting the members of the <a href="display.dxgk_display_information">DXGK_DISPLAY_INFORMATION</a> structure that is referenced by the <i>DisplayInfo</i> parameter.
+After the display miniport driver performs these steps, it must return the current display settings for the device. The driver returns this information by setting the members of the <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_display_information.md">DXGK_DISPLAY_INFORMATION</a> structure that is referenced by the <i>DisplayInfo</i> parameter.
 
 On systems that support the Unified Extensible Firmware Interface (UEFI), a VGA basic input/output system (BIOS) does not exist. To support PnP stop operations on these systems, Windows Display Driver Model (WDDM) 1.2 and later provides support for the operating system to reset the POST device and to get its display information during a PnP stop operation.  The operating system does this by calling the display miniport driver's <i>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</i> function.
 
@@ -121,75 +122,19 @@ On UEFI-only systems, if the display miniport driver fails a call to this functi
 For more information on how this function is used in PnP scenarios, see <a href="https://msdn.microsoft.com/A95DCFEA-BC1B-4A13-9850-13814725D53E">Plug and Play (PnP) in WDDM 1.2 and later</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_display_information">DXGK_DISPLAY_INFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_display_information.md">DXGK_DISPLAY_INFORMATION</a>
 </dt>
 <dt>
-<a href="display.dxgk_drivercaps">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a>
 </dt>
 <dt>
-<a href="display.DxgkCbAcquirePostDisplayOwnership">DxgkCbAcquirePostDisplayOwnership</a>
+<a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
@@ -208,5 +153,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION
-title: DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION
+UID: NC:d3dkmddi.DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION
+title: DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION function
 author: windows-driver-content
 description: Used to destroy a periodic frame notification.
 old-location: display\dxgkddi_destroyperiodicframenotification.htm
 old-project: display
 ms.assetid: 4C6B6FB2-A699-40F5-ACA3-62E8620E99AB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION callback
+# DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION function
 
 
 
@@ -42,7 +43,7 @@ Used to destroy a periodic frame notification.
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION(
@@ -71,19 +72,3 @@ DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION returns one of the following values:
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_CANCEL_DIRECT_OID_REQUEST
-title: FILTER_CANCEL_DIRECT_OID_REQUEST
+UID: NC:ndis.FILTER_CANCEL_DIRECT_OID_REQUEST
+title: FILTER_CANCEL_DIRECT_OID_REQUEST function
 author: windows-driver-content
 description: NDIS calls a filter driver's FilterCancelDirectOidRequest function to cancel a direct OID request.Note  You must declare the function by using the FILTER_CANCEL_DIRECT_OID_REQUEST type.
 old-location: netvista\filtercanceldirectoidrequest.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_CANCEL_DIRECT_OID_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_CANCEL_DIRECT_OID_REQUEST callback
+# FILTER_CANCEL_DIRECT_OID_REQUEST function
 
 
 
@@ -43,7 +44,7 @@ NDIS calls a filter driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_CANCEL_DIRECT_OID_REQUEST FilterCancelDirectOidRequest;
@@ -70,7 +71,7 @@ A handle to the context area for the filter module that is the target of this re
 A cancellation identifier for the request. This identifier specifies the direct OID requests that
      match this value in the 
      <b>RequestId</b> member of the 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure.
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure.
 
 
 ## -returns
@@ -80,12 +81,12 @@ None
 ## -remarks
 <i>FilterCancelDirectOidRequest</i> is an optional function. If a filter driver does
     not use direct OID requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="netvista.ndisfregisterfilterdriver">
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
     NdisFRegisterFilterDriver</a> function.
 
 When NDIS calls 
     <i>FilterCancelDirectOidRequest</i>, the filter driver should attempt to call 
-    <a href="netvista.ndisfdirectoidrequestcomplete">
+    <a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
     NdisFDirectOidRequestComplete</a> function as soon as possible.
 
 If a filter driver does not queue direct OID requests, the driver is not required to provide a 
@@ -102,7 +103,7 @@ If the request processing is still not complete in a filter driver, the driver c
 
 If the filter driver forwarded the request to an underlying driver and the processing is still not
     complete, the filter driver calls the 
-    <a href="netvista.ndisfcanceldirectoidrequest">
+    <a href="..\ndis\nf-ndis-ndisfcanceldirectoidrequest.md">
     NdisFCancelDirectOidRequest</a> function with the 
     <i>OidRequest</i> parameter set to the value that it sent to the underlying
     driver.
@@ -121,63 +122,28 @@ The <b>FILTER_CANCEL_DIRECT_OID_REQUEST</b> function type is defined in the Ndis
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.1 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.ndisfcanceldirectoidrequest">NdisFCancelDirectOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfcanceldirectoidrequest.md">NdisFCancelDirectOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndisfdirectoidrequestcomplete">
+<a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
    NdisFDirectOidRequestComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_CANCEL_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_CANCEL_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

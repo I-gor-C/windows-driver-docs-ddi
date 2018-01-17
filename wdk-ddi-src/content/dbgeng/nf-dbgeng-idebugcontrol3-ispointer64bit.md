@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.IsPointer64Bit
+UID: NF:dbgeng.IDebugControl3.IsPointer64Bit
 title: IDebugControl3::IsPointer64Bit method
 author: windows-driver-content
 description: The IsPointer64Bit method determines if the effective processor uses 64-bit pointers.
 old-location: debugger\ispointer64bit.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 01003268-844e-4613-ac13-0306396e56b9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::IsPointer64Bit, IsPointer64Bit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugControl3::IsPointer64Bit method
@@ -86,30 +87,3 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h</dt>
-</dl>
-</td>
-</tr>
-</table>

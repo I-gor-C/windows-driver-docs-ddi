@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.SET_OPTIONS
-title: SET_OPTIONS
+UID: NC:ndis.SET_OPTIONS
+title: SET_OPTIONS function
 author: windows-driver-content
 description: NDIS calls a driver's XxxSetOptions function to allow the driver to register optional services.
 old-location: netvista\protocolsetoptions.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 342e23ad-d38b-4100-949a-220b8fbdcf6e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: SET_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# SET_OPTIONS callback
+# SET_OPTIONS function
 
 
 
@@ -43,7 +44,7 @@ NDIS calls a driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 SET_OPTIONS SetOptions;
@@ -60,9 +61,9 @@ NDIS_STATUS SetOptions(
 
 ### -param NdisDriverHandle [in]
 
-A handle that identifies a driver. NDIS returns this handle to the driver when it returns from the driver registration function (<a href="netvista.ndismregisterminiportdriver">
-     NdisMRegisterMiniportDriver</a> for miniport drivers, <a href="netvista.ndisregisterprotocoldriver">
-     NdisRegisterProtocolDriver</a> for protocol drivers, and <a href="netvista.ndisfregisterfilterdriver">
+A handle that identifies a driver. NDIS returns this handle to the driver when it returns from the driver registration function (<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a> for miniport drivers, <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
+     NdisRegisterProtocolDriver</a> for protocol drivers, and <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
      NdisFRegisterFilterDriver</a> for filter drivers).
 
 
@@ -99,7 +100,7 @@ The handle that the driver passed to
 <i>XxxSetOptions</i> registers optional services and can allocate other driver resources. To register
     optional 
     <i>MiniportXxx</i>, <i>ProtocolXxx</i>, or <i>FilterXxx</i> functions, the driver calls the 
-    <a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a> function.
+    <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function.
     The driver passes the handle from the 
     <i>NdisDriverHandle</i> parameter at the 
     <i>NdisHandle</i> parameter of 
@@ -109,28 +110,28 @@ The handle that the driver passed to
 Miniport drivers can apply to the optional services defined in the following characteristics structures:<dl>
 <dd>
 
-<a href="netvista.ndis_miniport_co_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_co_characteristics.md">
        NDIS_MINIPORT_CO_CHARACTERISTICS</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndis_miniport_pnp_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
        NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndis_co_call_manager_optional_handlers">
+<a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
        NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndis_provider_chimney_offload_generic_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_provider_chimney_offload_generic_characteristics.md">
       NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS</a>(see 
       <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
       documentation</a>)
@@ -138,7 +139,7 @@ Miniport drivers can apply to the optional services defined in the following cha
 </dd>
 <dd>
 
-<a href="netvista.ndis_provider_chimney_offload_tcp_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_provider_chimney_offload_tcp_characteristics.md">
       NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS</a>(see 
       <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
       documentation</a>)
@@ -148,28 +149,28 @@ Miniport drivers can apply to the optional services defined in the following cha
 
 
 
-<a href="netvista.ndis_miniport_co_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_co_characteristics.md">
        NDIS_MINIPORT_CO_CHARACTERISTICS</a>
 
 
 
-<a href="netvista.ndis_miniport_pnp_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
        NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 
 
 
-<a href="netvista.ndis_co_call_manager_optional_handlers">
+<a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
        NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>
 
 
 
-<a href="netvista.ndis_provider_chimney_offload_generic_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_provider_chimney_offload_generic_characteristics.md">
       NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS</a>(see 
       <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
       documentation</a>)
 
 
-<a href="netvista.ndis_provider_chimney_offload_tcp_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_provider_chimney_offload_tcp_characteristics.md">
       NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS</a>(see 
       <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
       documentation</a>)
@@ -177,21 +178,21 @@ Miniport drivers can apply to the optional services defined in the following cha
 Protocol drivers can apply to the optional services defined in the following characteristics structures:<dl>
 <dd>
 
-<a href="netvista.ndis_protocol_co_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_protocol_co_characteristics.md">
        NDIS_PROTOCOL_CO_CHARACTERISTICS</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndis_co_client_optional_handlers">
+<a href="..\ndis\ns-ndis-_ndis_co_client_optional_handlers.md">
        NDIS_CO_CLIENT_OPTIONAL_HANDLERS</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndis_co_call_manager_optional_handlers">
+<a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
        NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>
 
 
@@ -200,12 +201,12 @@ Protocol drivers can apply to the optional services defined in the following cha
 
 
 
-<a href="netvista.ndis_protocol_co_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_protocol_co_characteristics.md">
        NDIS_PROTOCOL_CO_CHARACTERISTICS</a>
 
 
 
-<a href="netvista.ndis_co_client_optional_handlers">
+<a href="..\ndis\ns-ndis-_ndis_co_client_optional_handlers.md">
        NDIS_CO_CLIENT_OPTIONAL_HANDLERS</a>
 
 
@@ -251,71 +252,36 @@ The <b>SET_OPTIONS</b> function type is defined in the Ndis.h header file. To mo
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_co_call_manager_optional_handlers">
+<a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
    NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_co_client_optional_handlers">
+<a href="..\ndis\ns-ndis-_ndis_co_client_optional_handlers.md">
    NDIS_CO_CLIENT_OPTIONAL_HANDLERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_co_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_protocol_co_characteristics.md">
    NDIS_PROTOCOL_CO_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20SET_OPTIONS callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20SET_OPTIONS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

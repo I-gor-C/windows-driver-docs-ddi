@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ASYNC_STREAM
+UID: NS:1394._IRB_REQ_ASYNC_STREAM
 title: _IRB_REQ_ASYNC_STREAM
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 bus driver to carry out an asynchronous write request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ASYNC_STREAM
 ---
 
 # _IRB_REQ_ASYNC_STREAM structure
@@ -141,19 +142,3 @@ SPEED_FLAGS_400
 <div> </div>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

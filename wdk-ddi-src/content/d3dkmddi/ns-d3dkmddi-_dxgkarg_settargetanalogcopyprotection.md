@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_SETTARGETANALOGCOPYPROTECTION
+UID: NS:d3dkmddi._DXGKARG_SETTARGETANALOGCOPYPROTECTION
 title: _DXGKARG_SETTARGETANALOGCOPYPROTECTION
 author: windows-driver-content
 description: Holds information to set analog copy protection on a display adapter's video present target.
@@ -7,7 +7,7 @@ old-location: display\dxgkarg_settargetanalogcopyprotection.htm
 old-project: display
 ms.assetid: F5A853B2-4A8C-4929-AAEC-28844DEF0B29
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_SETTARGETANALOGCOPYPROTECTION
 ---
 
 # _DXGKARG_SETTARGETANALOGCOPYPROTECTION structure
@@ -77,19 +78,3 @@ typedef struct _DXGKARG_SETTARGETANALOGCOPYPROTECTION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

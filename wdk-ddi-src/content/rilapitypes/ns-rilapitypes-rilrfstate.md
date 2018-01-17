@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILRFSTATE
+UID: NS:rilapitypes.RILRFSTATE
 title: RILRFSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrfstate_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1e185734-21d9-4047-9e74-cf5a765857ed
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRFSTATE, RILRFSTATE, *LPRILRFSTATE
+ms.date: 1/11/2018
+ms.keywords: RILRFSTATE, *LPRILRFSTATE, RILRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILRFSTATE, RILRFSTATE
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef struct _RILRFSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDIARG_CREATEDECODEDEVICE
+UID: NS:d3dumddi._D3DDDIARG_CREATEDECODEDEVICE
 title: _D3DDDIARG_CREATEDECODEDEVICE
 author: windows-driver-content
 description: The D3DDDIARG_CREATEDECODEDEVICE structure describes a Microsoft DirectX Video Acceleration (DirectX VA) decode device to create.
@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_createdecodedevice.htm
 old-project: display
 ms.assetid: 15750301-da36-4341-8d5a-ab76a2edb970
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIARG_CREATEDECODEDEVICE, D3DDDIARG_CREATEDECODEDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIARG_CREATEDECODEDEVICE
 ---
 
 # _D3DDDIARG_CREATEDECODEDEVICE structure
@@ -63,12 +64,12 @@ typedef struct _D3DDDIARG_CREATEDECODEDEVICE {
 
 ### -field VideoDesc
 
-[in] The <a href="display.dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure for the video stream that the decode device should decode.
+[in] The <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a> structure for the video stream that the decode device should decode.
 
 
 ### -field pConfig
 
-[in] A pointer to the <a href="display.dxvaddi_configpicturedecode">DXVADDI_CONFIGPICTUREDECODE</a> structure that contains the DirectX VA connection configuration data for compressed picture decoding that the decode device requires. The Direct3D runtime calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to query for the supported configurations.
+[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_configpicturedecode.md">DXVADDI_CONFIGPICTUREDECODE</a> structure that contains the DirectX VA connection configuration data for compressed picture decoding that the decode device requires. The Direct3D runtime calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to query for the supported configurations.
 
 
 ### -field hDecode
@@ -79,41 +80,16 @@ typedef struct _D3DDDIARG_CREATEDECODEDEVICE {
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
 </dt>
 <dt>
-<a href="display.dxvaddi_configpicturedecode">DXVADDI_CONFIGPICTUREDECODE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_configpicturedecode.md">DXVADDI_CONFIGPICTUREDECODE</a>
 </dt>
 <dt>
-<a href="display.dxvaddi_videodesc">DXVADDI_VIDEODESC</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
@@ -123,5 +99,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEDECODEDEVICE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEDECODEDEVICE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

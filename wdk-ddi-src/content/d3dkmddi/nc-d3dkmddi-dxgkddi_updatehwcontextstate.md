@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_UPDATEHWCONTEXTSTATE
-title: DXGKDDI_UPDATEHWCONTEXTSTATE
+UID: NC:d3dkmddi.DXGKDDI_UPDATEHWCONTEXTSTATE
+title: DXGKDDI_UPDATEHWCONTEXTSTATE function
 author: windows-driver-content
 description: Used to update the hardware context state.
 old-location: display\dxgkddi_updatehwcontextstate.htm
 old-project: display
 ms.assetid: 1187A302-CD7D-418E-B48F-74D1FF29C991
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_UPDATEHWCONTEXTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: requires_(PASSIVE_LEVEL)
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_UPDATEHWCONTEXTSTATE callback
+# DXGKDDI_UPDATEHWCONTEXTSTATE function
 
 
 
@@ -42,7 +43,7 @@ Used to update the hardware context state.
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_UPDATEHWCONTEXTSTATE(
@@ -69,29 +70,3 @@ Returns STATUS_SUCCESS if completed successfully.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-requires_(PASSIVE_LEVEL)
-
-</td>
-</tr>
-</table>

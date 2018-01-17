@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_AER_BRIDGE_DESCRIPTOR
+UID: NS:ntddk._WHEA_AER_BRIDGE_DESCRIPTOR
 title: _WHEA_AER_BRIDGE_DESCRIPTOR
 author: windows-driver-content
 description: The WHEA_AER_BRIDGE_DESCRIPTOR structure describes a PCI Express (PCIe) bridge error source.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 33cc9d34-cffb-410d-9948-37c8a409e0a5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR, PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR
+ms.keywords: _WHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
 ---
 
 # _WHEA_AER_BRIDGE_DESCRIPTOR structure
@@ -88,7 +89,7 @@ The bridge's primary bus number.
 
 ### -field Slot
 
-A <a href="whea.whea_pci_slot_number">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
+A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
 
 
 ### -field DeviceControl
@@ -208,42 +209,16 @@ The contents of the bridge's Secondary Error Capabilities and Control register.
 
 
 ## -remarks
-A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_pci_slot_number">WHEA_PCI_SLOT_NUMBER</a>
+<a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a>
 </dt>
 </dl>
  

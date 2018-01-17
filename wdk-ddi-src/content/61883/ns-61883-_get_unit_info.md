@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._GET_UNIT_INFO
+UID: NS:61883._GET_UNIT_INFO
 title: _GET_UNIT_INFO
 author: windows-driver-content
 description: This structure is used to get unit information.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 2FE13A53-5B88-40B8-B129-8DD141F1B160
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_UNIT_INFO, GET_UNIT_INFO, PGET_UNIT_INFO, *PGET_UNIT_INFO
+ms.keywords: _GET_UNIT_INFO, *PGET_UNIT_INFO, GET_UNIT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGET_UNIT_INFO, GET_UNIT_INFO
 ---
 
 # _GET_UNIT_INFO structure
@@ -147,21 +148,6 @@ The protocol driver writes current diag level to the caller-allocated <a href="h
 ## -remarks
 <b>Flags</b> in the request specifies either RETRIEVE_DEVICE_UNIT_INFO or RETRIEVE_LOCAL_UNIT_INFO. Only used when <b>nLevel</b> is set to GET_UNIT_INFO_CAPABILITIES.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_GET_GENERATION_COUNT
+UID: NS:1394._IRB_REQ_GET_GENERATION_COUNT
 title: _IRB_REQ_GET_GENERATION_COUNT
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 bus driver to carry out a GetGenerationCount request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_GET_GENERATION_COUNT
 ---
 
 # _IRB_REQ_GET_GENERATION_COUNT structure
@@ -59,19 +60,3 @@ Specifies the current generation count.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

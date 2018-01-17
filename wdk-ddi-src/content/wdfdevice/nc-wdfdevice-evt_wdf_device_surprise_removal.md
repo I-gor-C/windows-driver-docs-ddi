@@ -1,17 +1,17 @@
 ---
-UID: NC.wdfdevice.EVT_WDF_DEVICE_SURPRISE_REMOVAL
-title: EVT_WDF_DEVICE_SURPRISE_REMOVAL
+UID: NC:wdfdevice.EVT_WDF_DEVICE_SURPRISE_REMOVAL
+title: EVT_WDF_DEVICE_SURPRISE_REMOVAL function
 author: windows-driver-content
 description: A driver's EvtDeviceSurpriseRemoval event callback function performs any operations that are needed after a device has been unexpectedly removed from the system or after a driver reports that the device has failed.
 old-location: wdf\evtdevicesurpriseremoval.htm
 old-project: wdf
 ms.assetid: 0fa0eb7e-7fbb-4838-b1d7-ef5a9d5024d4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WDF_REL_TIMEOUT_IN_US
+ms.date: 1/11/2018
+ms.keywords: EVT_WDF_DEVICE_SURPRISE_REMOVAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: wdfdevice.h
 req.include-header: Wdf.h
 req.target-type: Universal
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
 req.product: Windows 10 or later.
 ---
 
-# EVT_WDF_DEVICE_SURPRISE_REMOVAL callback
+# EVT_WDF_DEVICE_SURPRISE_REMOVAL function
 
 
 
@@ -45,7 +46,7 @@ A driver's <i>EvtDeviceSurpriseRemoval</i> event callback function performs any 
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_WDF_DEVICE_SURPRISE_REMOVAL EvtDeviceSurpriseRemoval;
@@ -69,11 +70,11 @@ None
 
 
 ## -remarks
-To register an <i>EvtDeviceSurpriseRemoval</i> callback function, a driver must call <a href="wdf.wdfdeviceinitsetpnppowereventcallbacks">WdfDeviceInitSetPnpPowerEventCallbacks</a>. 
+To register an <i>EvtDeviceSurpriseRemoval</i> callback function, a driver must call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a>. 
 
-The framework does not synchronize the <i>EvtDeviceSurpriseRemoval</i> callback function with other PnP and power management callback functions. For information about how the framework synchronizes the execution of a driver's event callback functions, see <a href="wdf.using_automatic_synchronization">Using Automatic Synchronization</a>. 
+The framework does not synchronize the <i>EvtDeviceSurpriseRemoval</i> callback function with other PnP and power management callback functions. For information about how the framework synchronizes the execution of a driver's event callback functions, see <a href="https://msdn.microsoft.com/be7d3c0e-c3cf-4104-ab81-5ecdcb9163c8">Using Automatic Synchronization</a>. 
 
-For more information about when the framework calls this callback function, and for more information about synchronization issues, see <a href="wdf.a_user_unplugs_a_device">A User Unplugs a Device</a>.
+For more information about when the framework calls this callback function, and for more information about synchronization issues, see <a href="https://msdn.microsoft.com/85e69401-0128-4641-aa0f-fd7c4f22f395">A User Unplugs a Device</a>.
 
 
 
@@ -83,61 +84,4 @@ For example, to define an <i>EvtDeviceSurpriseRemoval</i> callback function that
 
 Then, implement your callback function as follows:
 
-The <b>EVT_WDF_DEVICE_SURPRISE_REMOVAL</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_SURPRISE_REMOVAL</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdevice.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The <b>EVT_WDF_DEVICE_SURPRISE_REMOVAL</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_SURPRISE_REMOVAL</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IInterruptSync.Connect
+UID: NF:portcls.IInterruptSync.Connect
 title: IInterruptSync::Connect method
 author: windows-driver-content
 description: The Connect method connects the synchronization object to the interrupt.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IInterruptSync::Connect method
@@ -61,44 +62,8 @@ NTSTATUS Connect(
 
 
 ## -remarks
-This method connects the synchronization object to the interrupt that was specified in the call to <a href="audio.pcnewinterruptsync">PcNewInterruptSync</a> that created the synchronization object. The interrupt is specified in the <b>PcNewInterruptSync</b> function's <i>ResourceList</i> and <i>ResourceIndex</i> parameters.
+This method connects the synchronization object to the interrupt that was specified in the call to <a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a> that created the synchronization object. The interrupt is specified in the <b>PcNewInterruptSync</b> function's <i>ResourceList</i> and <i>ResourceIndex</i> parameters.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -106,10 +71,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 </dt>
 <dt>
-<a href="audio.pcnewinterruptsync">PcNewInterruptSync</a>
+<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
 </dt>
 <dt>
-<a href="kernel.ioconnectinterrupt">IoConnectInterrupt</a>
+<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IPnpCallback.OnQueryStop
+UID: NF:wudfddi.IPnpCallback.OnQueryStop
 title: IPnpCallback::OnQueryStop method
 author: windows-driver-content
 description: The OnQueryStop method notifies a driver before a device is stopped.
@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallback_onquerystop.htm
 old-project: wdf
 ms.assetid: e0cb14fa-82d0-4ce3-8672-801e7f04d522
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IPnpCallback, IPnpCallback::OnQueryStop, OnQueryStop
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -68,29 +69,14 @@ This method must use the HRESULT_FROM_NT macro to return a specific HRESULT valu
 
 
 ## -remarks
-A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a> interface when it calls the <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a> method to create a device object. 
+A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. 
 
 The framework does not synchronize the <b>OnQueryStop</b> callback function with other PnP and power management callback functions.  
 
 <b>OnQueryStop</b> is not called in framework versions 1.7 and earlier.
 
-For more information about the <b>OnQueryStop</b> callback method, see <a href="wdf.the_pnp_manager_redistributes_system_resources">The PnP Manager Redistributes System Resources</a>.
+For more information about the <b>OnQueryStop</b> callback method, see <a href="https://msdn.microsoft.com/fc88ae0a-5b78-4292-a101-29d2fc383555">The PnP Manager Redistributes System Resources</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -101,12 +87,12 @@ Header
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IPnpCallback::OnQueryStop method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IPnpCallback::OnQueryStop method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

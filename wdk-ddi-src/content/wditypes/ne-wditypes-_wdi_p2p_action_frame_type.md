@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_P2P_ACTION_FRAME_TYPE
+UID: NE:wditypes._WDI_P2P_ACTION_FRAME_TYPE
 title: _WDI_P2P_ACTION_FRAME_TYPE
 author: windows-driver-content
 description: The WDI_P2P_ACTION_FRAME_TYPE enumeration defines the Wi-Fi Direct action frame types.
 old-location: netvista\wdi_p2p_action_frame_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3E1C92D2-FFE0-402F-BE14-18AFB03F3FE4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_P2P_ACTION_FRAME_TYPE, WDI_P2P_ACTION_FRAME_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_P2P_ACTION_FRAME_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -96,39 +97,3 @@ Wi-Fi Direct Provision Discovery Response.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

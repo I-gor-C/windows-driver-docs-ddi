@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_
+UID: NE:fwpsk.FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_
 title: FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_
 author: windows-driver-content
 description: The FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE enumeration type specifies the data field identifiers for the FWPS_LAYER_OUTBOUND_MAC_FRAME_NATIVE run-time filtering layer.
 old-location: netvista\fwps_fields_outbound_mac_frame_native.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 71244290-3DCD-45AF-9EF0-AD1C9103A69C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_, FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE
 ---
 
 # FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_ enumeration
@@ -104,19 +105,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

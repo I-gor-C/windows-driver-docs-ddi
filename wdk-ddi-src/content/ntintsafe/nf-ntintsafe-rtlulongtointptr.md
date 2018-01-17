@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlULongToIntPtr
+UID: NF:ntintsafe.RtlULongToIntPtr
 title: RtlULongToIntPtr function
 author: windows-driver-content
 description: Converts a value of type ULONG to a value of type INT_PTR.
@@ -7,7 +7,7 @@ old-location: kernel\rtlulongtointptr.htm
 old-project: kernel
 ms.assetid: EEAA1C05-BB93-4D8A-9AD6-6F109BBE4FE0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlULongToIntPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlULongToIntPtr function
@@ -65,31 +66,4 @@ A pointer to the converted value. In the case where the conversion causes a trun
 
 
 ## -remarks
-This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.</p>

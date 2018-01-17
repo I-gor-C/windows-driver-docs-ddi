@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_ENABLE_INTERRUPT_PARAMETERS
+UID: NS:gpioclx._GPIO_ENABLE_INTERRUPT_PARAMETERS
 title: _GPIO_ENABLE_INTERRUPT_PARAMETERS
 author: windows-driver-content
 description: The GPIO_ENABLE_INTERRUPT_PARAMETERS structure specifies a general-purpose I/O (GPIO) pin and describes the interrupt attributes of this pin.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 9F9AA4C1-A202-4AF8-8E1D-F7E56C08A2C1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS, PGPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS
+ms.keywords: _GPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS
 ---
 
 # _GPIO_ENABLE_INTERRUPT_PARAMETERS structure
@@ -84,7 +85,7 @@ Whether the interrupt request from this GPIO pin is level-sensitive or edge-trig
 <li><b>LevelSensitive</b></li>
 <li><b>Latched</b></li>
 </ul>
-For more information, see <a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>.
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>.
 
 
 ### -field Polarity
@@ -98,7 +99,7 @@ Whether the interrupt line from this GPIO pin is active-high or active-low. This
 <li><b>InterruptFallingEdge</b></li>
 <li><b>InterruptActiveBoth</b></li>
 </ul>
-For more information, see <a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a>.
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>.
 
 
 ### -field PullConfiguration
@@ -158,31 +159,6 @@ The <b>PullConfiguration</b> member of the <b>GPIO_ENABLE_INTERRUPT_PARAMETERS</
 If none of the system-defined <b>GPIO_PIN_PULL_CONFIGURATION_<i>XXX</i></b> constants appropriately describes the pin configuration, this member can be set to a vendor-defined constant in the range 128 to 255.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -198,10 +174,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439435">CLIENT_UnmaskInterrupt</a>
 </dt>
 <dt>
-<a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>
+<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
 </dt>
 <dt>
-<a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a>
+<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
 </dt>
 </dl>
  

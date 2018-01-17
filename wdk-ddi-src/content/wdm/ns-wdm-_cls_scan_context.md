@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._CLS_SCAN_CONTEXT
+UID: NS:wdm._CLS_SCAN_CONTEXT
 title: _CLS_SCAN_CONTEXT
 author: windows-driver-content
 description: The CLFS_SCAN_CONTEXT structure holds context information to support a scan of the containers in a Common Log File System (CLFS) log.
@@ -7,8 +7,8 @@ old-location: kernel\clfs_scan_context.htm
 old-project: kernel
 ms.assetid: 4f10abc6-1c86-4401-9af7-26d6c30f6fe8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CLS_SCAN_CONTEXT, PCLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT
+ms.date: 1/4/2018
+ms.keywords: _CLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT, *PCLFS_SCAN_CONTEXT, CLFS_SCAN_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>CLFS_SCAN_CONTEXT</b> structure holds context information to support a scan of the containers in a Common Log File System (CLFS) log. The client allocates this structure by calling <a href="kernel.clfscreatescancontext">ClfsCreateScanContext</a>. Then, the client passes the structure repeatedly to <a href="kernel.clfsscanlogcontainers">ClfsScanLogContainers</a>. 
+The <b>CLFS_SCAN_CONTEXT</b> structure holds context information to support a scan of the containers in a Common Log File System (CLFS) log. The client allocates this structure by calling <a href="..\wdm\nf-wdm-clfscreatescancontext.md">ClfsCreateScanContext</a>. Then, the client passes the structure repeatedly to <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>. 
 
 
 
@@ -62,12 +63,12 @@ typedef struct _CLS_SCAN_CONTEXT {
 
 ### -field cidNode
 
-A <a href="fs.clfs_node_id">CLFS_NODE_ID</a> structure that contains the scan context's node identity and type.
+A <a href="https://msdn.microsoft.com/99132138-b7ba-47a1-ac40-353d5d70db42">CLFS_NODE_ID</a> structure that contains the scan context's node identity and type.
 
 
 ### -field plfoLog
 
-A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS log.
+A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents a CLFS log.
 
 
 ### -field cIndex
@@ -140,23 +141,7 @@ The scan is closed. No containers are scanned.
 
 ### -field pinfoContainer
 
-A pointer to an array of <a href="kernel.clfs_container_information">CLFS_CONTAINER_INFORMATION</a> structures. The <i>cContainers</i> parameter specifies the number of elements in this array. 
+A pointer to an array of <a href="..\wdm\ns-wdm-_cls_container_information.md">CLFS_CONTAINER_INFORMATION</a> structures. The <i>cContainers</i> parameter specifies the number of elements in this array. 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_RESOLVESHAREDRESOURCE
+UID: NC:d3dumddi.PFND3DDDI_RESOLVESHAREDRESOURCE
 title: PFND3DDDI_RESOLVESHAREDRESOURCE
 author: windows-driver-content
 description: The ResolveSharedResource function informs a user-mode display driver that ownership of a shared surface changed or that a surface is being used for GDI interoperation.
@@ -7,8 +7,8 @@ old-location: display\resolvesharedresource.htm
 old-project: display
 ms.assetid: 8ad9130e-bade-4fd2-b345-b6361fd001ef
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_RESOLVESHAREDRESOURCE callback
@@ -64,7 +65,7 @@ __checkReturn HRESULT APIENTRY ResolveSharedResource(
 
 ### -param pData [in]
 
- A pointer to a <a href="display.d3dddiarg_resolvesharedresource">D3DDDIARG_RESOLVESHAREDRESOURCE</a> structure that contains a handle to the surface. 
+ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_resolvesharedresource.md">D3DDDIARG_RESOLVESHAREDRESOURCE</a> structure that contains a handle to the surface. 
 
 
 ## -returns
@@ -91,54 +92,18 @@ The runtime calls the driver's <i>ResolveSharedResource</i> function every time 
 The driver implements <i>ResolveSharedResource</i> to appropriately manage resources for multiple GPU scenarios. Each resource might be divided across memory for multiple GPUs to render on. The driver can implement <i>ResolveSharedResource</i> to remerge each resource so that the new resource owner has the merged resource. The driver must flush any partially built command buffers that might modify the resource.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-<i>ResolveSharedResource</i> is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_resolvesharedresource">D3DDDIARG_RESOLVESHAREDRESOURCE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_resolvesharedresource.md">D3DDDIARG_RESOLVESHAREDRESOURCE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_RESOLVESHAREDRESOURCE callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_RESOLVESHAREDRESOURCE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

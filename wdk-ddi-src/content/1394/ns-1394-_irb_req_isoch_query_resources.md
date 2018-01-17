@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_QUERY_RESOURCES
+UID: NS:1394._IRB_REQ_ISOCH_QUERY_RESOURCES
 title: _IRB_REQ_ISOCH_QUERY_RESOURCES
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a IsochQueryResources request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_QUERY_RESOURCES
 ---
 
 # _IRB_REQ_ISOCH_QUERY_RESOURCES structure
@@ -111,19 +112,3 @@ On success, points to a bitmap of available channels.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

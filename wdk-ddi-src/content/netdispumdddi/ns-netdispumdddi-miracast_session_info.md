@@ -1,5 +1,5 @@
 ---
-UID: NS.NETDISPUMDDDI.MIRACAST_SESSION_INFO
+UID: NS:netdispumdddi.MIRACAST_SESSION_INFO
 title: MIRACAST_SESSION_INFO
 author: windows-driver-content
 description: Contains info on a wireless display (Miracast) connected session.
@@ -7,7 +7,7 @@ old-location: display\miracast_session_info.htm
 old-project: display
 ms.assetid: 48F3CB86-5181-4E1E-9E7F-88FB2CD3640A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: MIRACAST_SESSION_INFO, MIRACAST_SESSION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MIRACAST_SESSION_INFO
 ---
 
 # MIRACAST_SESSION_INFO structure
@@ -79,39 +80,3 @@ Holds a 32-bit value that identifies the Miracast connected session.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netdispumdddi.h (include Netdispumdddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

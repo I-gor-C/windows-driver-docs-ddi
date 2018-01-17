@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
+UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 title: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 author: windows-driver-content
 description: Video process support data.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-process-support-data-0032.htm
 old-project: display
 ms.assetid: ea2dabc5-6853-4491-8c1f-f3f5ae516952
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 ---
 
 # D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 structure
@@ -143,19 +144,3 @@ Filter range support.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

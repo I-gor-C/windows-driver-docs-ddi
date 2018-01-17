@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLRTTACTION
+UID: NE:ntddrilapitypes.RILCALLRTTACTION
 title: RILCALLRTTACTION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallrttaction.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c080c4da-097d-4ae3-b1ca-96d9b5b6e8c9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCALLRTTACTION, RILCALLRTTACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLRTTACTION
 ---
 
 # RILCALLRTTACTION enumeration
@@ -69,19 +70,3 @@ typedef enum _RILCALLRTTACTION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

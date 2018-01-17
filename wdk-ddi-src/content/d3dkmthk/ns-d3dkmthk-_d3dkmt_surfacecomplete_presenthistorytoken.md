@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
+UID: NS:d3dkmthk._D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
 title: _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
 author: windows-driver-content
 description: A structure used to present the history token for a surface.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_surfacecomplete_presenthistorytoken.htm
 old-project: display
 ms.assetid: AF58684E-3516-48F9-B771-63701C00645F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
 ---
 
 # _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN structure
@@ -59,19 +60,3 @@ The logical surface that the token is being presented for.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

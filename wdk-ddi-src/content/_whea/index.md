@@ -1,10 +1,17 @@
 ---
-UID: NA:
+UID: TP:whea
+ms.assetid: 069ae67e-570f-3fce-99d4-d889f7094ff1
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Windows Hardware Error Architecture (WHEA)
 
-## -description
+
 Overview of the Windows Hardware Error Architecture (WHEA) technology.
 
 To develop Windows Hardware Error Architecture (WHEA), you need these headers:
@@ -59,22 +66,18 @@ For the programming guide, see [Windows Hardware Error Architecture (WHEA)](http
 | [_WHEA_ERROR_INJECTION_CAPABILITIES structure](..\ntddk\ns-ntddk-_whea_error_injection_capabilities.md) | The WHEA_ERROR_INJECTION_CAPABILITIES union describes the types of hardware errors that can be injected into a hardware platform. |
 | [_WHEA_ERROR_PACKET_FLAGS structure](..\ntddk\ns-ntddk-_whea_error_packet_flags.md) | The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a WHEA_ERROR_PACKET structure. |
 | [_WHEA_ERROR_PACKET_V1 structure](..\ntddk\ns-ntddk-_whea_error_packet_v1.md) | The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1. |
-| [_WHEA_ERROR_PACKET_V1 structure](..\ntddk\ns-ntddk-_whea_error_packet_v1~r1.md) | The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1. |
 | [_WHEA_ERROR_PACKET_V2 structure](..\ntddk\ns-ntddk-_whea_error_packet_v2.md) | The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows. |
-| [_WHEA_ERROR_PACKET_V2 structure](..\ntddk\ns-ntddk-_whea_error_packet_v2~r1.md) | The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows. |
-| [_WHEA_ERROR_RECORD structure](..\ntddk\ns-ntddk-_whea_error_record~r2.md) | The WHEA_ERROR_RECORD structure describes an error record that contains error information about a hardware error condition that occurred. |
+| [_WHEA_ERROR_RECORD structure](..\ntddk\ns-ntddk-_whea_error_record.md) | The WHEA_ERROR_RECORD structure describes an error record that contains error information about a hardware error condition that occurred. |
 | [_WHEA_ERROR_RECORD_HEADER structure](..\ntddk\ns-ntddk-_whea_error_record_header.md) | The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition. |
 | [_WHEA_ERROR_RECORD_HEADER_VALIDBITS structure](..\ntddk\ns-ntddk-_whea_error_record_header_validbits.md) | The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_HEADER structure contain valid data. |
 | [_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure](..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md) | The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure describes a section of error information that is part of an error record. |
 | [_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS structure](..\ntddk\ns-ntddk-_whea_error_record_section_descriptor_validbits.md) | The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure contain valid data. |
 | [_WHEA_ERROR_SOURCE_DESCRIPTOR structure](..\ntddk\ns-ntddk-_whea_error_source_descriptor.md) | The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source. |
-| [_WHEA_ERROR_SOURCE_DESCRIPTOR structure](..\ntddk\ns-ntddk-_whea_error_source_descriptor~r1.md) | The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source. |
 | [_WHEA_ERROR_STATUS structure](..\ntddk\ns-ntddk-_whea_error_status.md) | The WHEA_ERROR_STATUS union describes generic error codes that are abstracted from the data contained in implementation-specific error registers. |
 | [_WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure](..\ntddk\ns-ntddk-_whea_firmware_error_record_reference.md) | The WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure describes a reference to a firmware error record that is specific to the Itanium processor architecture. |
 | [_WHEA_GENERIC_ERROR structure](..\ntddk\ns-ntddk-_whea_generic_error.md) | The WHEA_GENERIC_ERROR structure describes error status data for a generic error source. |
 | [_WHEA_GENERIC_ERROR_BLOCKSTATUS structure](..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md) | The WHEA_GENERIC_ERROR_BLOCKSTATUS union indicates what kind of error data is reported in a generic error status block. |
 | [_WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure](..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md) | The WHEA_GENERIC_ERROR_DATA_ENTRY structure describes an error data section in a generic error status block. |
-| [_WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure](..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2~r1.md) | The WHEA_GENERIC_ERROR_DATA_ENTRY structure describes an error data section in a generic error status block. |
 | [_WHEA_GENERIC_ERROR_DESCRIPTOR structure](..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md) | The WHEA_GENERIC_ERROR_DESCRIPTOR structure describes a generic error source. |
 | [_WHEA_IPF_CMC_DESCRIPTOR structure](..\ntddk\ns-ntddk-_whea_ipf_cmc_descriptor.md) | The WHEA_IPF_CMC_DESCRIPTOR structure describes a corrected machine check (CMC) error source for an Itanium processor. |
 | [_WHEA_IPF_CPE_DESCRIPTOR structure](..\ntddk\ns-ntddk-_whea_ipf_cpe_descriptor.md) | The WHEA_IPF_CPE_DESCRIPTOR structure describes a corrected platform error (CPE) error source for an Itanium processor. |

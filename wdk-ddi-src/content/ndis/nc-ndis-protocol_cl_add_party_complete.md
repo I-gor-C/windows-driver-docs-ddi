@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_ADD_PARTY_COMPLETE
-title: PROTOCOL_CL_ADD_PARTY_COMPLETE
+UID: NC:ndis.PROTOCOL_CL_ADD_PARTY_COMPLETE
+title: PROTOCOL_CL_ADD_PARTY_COMPLETE function
 author: windows-driver-content
 description: The ProtocolClAddPartyComplete function is required for connection-oriented NDIS clients that set up multipoint connections.
 old-location: netvista\protocolcladdpartycomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ea3ebbe9-fd94-44b8-8801-639d099c5158
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_ADD_PARTY_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_ADD_PARTY_COMPLETE callback
+# PROTOCOL_CL_ADD_PARTY_COMPLETE function
 
 
 
@@ -42,13 +43,13 @@ The
   <i>ProtocolClAddPartyComplete</i> function is required for connection-oriented NDIS clients that set up
   multipoint connections. Such clients must have 
   <i>ProtocolClAddPartyComplete</i> functions to complete the asynchronous operations that they initiate with 
-  <a href="netvista.ndiscladdparty">NdisClAddParty</a>. Otherwise, such a protocol
+  <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>. Otherwise, such a protocol
   driver's registered 
   <i>ProtocolClAddPartyComplete</i> function can simply return control.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_ADD_PARTY_COMPLETE ProtocolClAddPartyComplete;
@@ -130,7 +131,7 @@ None
 A call to 
     <i>ProtocolClAddPartyComplete</i> indicates completion of the asynchronous operation initiated when the
     client called 
-    <a href="netvista.ndiscladdparty">NdisClAddParty</a>. If the input 
+    <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>. If the input 
     <i>Status</i> is set to anything other than NDIS_STATUS_SUCCESS, 
     <i>ProtocolClAddPartyComplete</i> can release or reuse the client-allocated buffers at 
     <i>ProtocolPartyContext</i> and at 
@@ -141,7 +142,7 @@ If the attempt to add a party succeeded,
     <i>NdisPartyHandle</i> for subsequent calls to NDIS library functions concerning this party in the
     client's 
     <i>ProtocolPartyContext</i> area. For example, the client must pass this handle in a subsequent call to 
-    <a href="netvista.ndiscldropparty">NdisClDropParty</a> eventually unless the
+    <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a> eventually unless the
     remote party that it represents closes its connection first.
 
 The structure at 
@@ -162,7 +163,7 @@ Depending on the signaling protocol of the call manager, the traffic parameters 
     <i>CallParameters</i> can be identical for all parties on any particular multipoint connection. That is,
     as the client of such a call manager adds parties on a multipoint connection that the client originally
     set up with 
-    <a href="netvista.ndisclmakecall">NdisClMakeCall</a>, it can supply only the
+    <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>, it can supply only the
     target address of each party and leave the traffic parameters as originally set up for the multipoint VC
     each time it calls 
     <b>NdisClAddParty</b>.
@@ -178,64 +179,25 @@ The <b>PROTOCOL_CL_ADD_PARTY_COMPLETE</b> function type is defined in the Ndis.h
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/e78b2cfa-2c60-4a70-8926-97b2ef75914c">ProtocolClAddPartyComplete
-   (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolClAddPartyComplete
-   (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscladdparty">NdisClAddParty</a>
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 </dt>
 <dt>
-<a href="netvista.ndiscldropparty">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmaddpartycomplete">NdisCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmaddpartycomplete">NdisMCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
@@ -248,5 +210,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_ADD_PARTY_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_ADD_PARTY_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

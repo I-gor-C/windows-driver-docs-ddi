@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlInt8Sub
+UID: NF:ntintsafe.RtlInt8Sub
 title: RtlInt8Sub function
 author: windows-driver-content
 description: Subtracts one value of type INT8 from another.
@@ -7,7 +7,7 @@ old-location: kernel\rtlint8sub.htm
 old-project: kernel
 ms.assetid: 3648668C-65CD-45F9-80E0-490AE2FE405E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlInt8Sub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlInt8Sub function
@@ -71,31 +72,4 @@ A pointer to the result. If the operation results in a value that overflows or u
 
 
 ## -remarks
-This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>

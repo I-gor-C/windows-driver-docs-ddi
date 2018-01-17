@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisAllocateFragmentNetBufferList
+UID: NF:ndis.NdisAllocateFragmentNetBufferList
 title: NdisAllocateFragmentNetBufferList function
 author: windows-driver-content
 description: Call the NdisAllocateFragmentNetBufferList function to create a new fragmented NET_BUFFER_LIST structure based upon the data in an existing NET_BUFFER_LIST structure.
 old-location: netvista\ndisallocatefragmentnetbufferlist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 40b6596b-7ab8-4336-8c38-21b9f32d8558
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisAllocateFragmentNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisAllocateFragmentNetBufferList function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisAllocateFragmentNetBufferList</b> function to create a new fragmented 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure based upon the data
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure based upon the data
   in an existing NET_BUFFER_LIST structure.
 
 
@@ -71,21 +72,21 @@ A pointer to an existing NET_BUFFER_LIST structure.
 ### -param NetBufferListPoolHandle [in, optional]
 
 A handle that was obtained from a call to the 
-     <a href="netvista.ndisallocatenetbufferlistpool">
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
      NdisAllocateNetBufferListPool</a> function.
 
 
 ### -param NetBufferPoolHandle [in, optional]
 
 A NET_BUFFER structure pool handle that was previously returned from a call to 
-     <a href="netvista.ndisallocatenetbufferpool">
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
      NdisAllocateNetBufferPool</a>.
 
 
 ### -param StartOffset [in]
 
 An additional byte offset from the start of the data in each 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structure. This offset is in addition
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. This offset is in addition
      to the value of the 
      <b>DataOffset</b> member specified in each NET_BUFFER structure.
 
@@ -124,8 +125,8 @@ NDIS flags that can be combined with an OR operation. Set this parameter to zero
 
 ## -remarks
 <b>NdisAllocateFragmentNetBufferList</b> allocates and initializes a new fragment 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure and 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structures that describe the same data
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure and 
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures that describe the same data
     that is described by the NET_BUFFER_LIST structure that the caller passed to 
     <b>NdisAllocateFragmentNetBufferList</b>.
 
@@ -164,108 +165,42 @@ If NDIS must allocate memory to supply the data space requested in
 
 The new fragment NET_BUFFER_LIST structure that 
     <b>NdisAllocateFragmentNetBufferList</b> creates does not include an initial 
-    <a href="netvista.net_buffer_list_context">
+    <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">
     NET_BUFFER_LIST_CONTEXT</a> structure.
 
 Call the 
-    <a href="netvista.ndisfreefragmentnetbufferlist">
+    <a href="..\ndis\nf-ndis-ndisfreefragmentnetbufferlist.md">
     NdisFreeFragmentNetBufferList</a> function to free a NET_BUFFER_LIST structure and all associated
     NET_BUFFER structures and MDL chains that were previously allocated by calling 
     <b>NdisAllocateFragmentNetBufferList</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisallocatenetbufferlistpool">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferpool">NdisAllocateNetBufferPool</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreefragmentnetbufferlist">
+<a href="..\ndis\nf-ndis-ndisfreefragmentnetbufferlist.md">
    NdisFreeFragmentNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisAllocateFragmentNetBufferList function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateFragmentNetBufferList function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

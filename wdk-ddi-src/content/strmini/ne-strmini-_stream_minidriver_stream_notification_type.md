@@ -1,5 +1,5 @@
 ---
-UID: NE.strmini._STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
+UID: NE:strmini._STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
 title: _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\stream_minidriver_stream_notification_type.htm
 old-project: stream
 ms.assetid: 13D8152C-FE7E-46EB-9C7F-9CA0135A4B76
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
+ms.date: 1/9/2018
+ms.keywords: _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -94,19 +95,3 @@ Indicates that the specified stream SRB has completed.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h</dt>
-</dl>
-</td>
-</tr>
-</table>

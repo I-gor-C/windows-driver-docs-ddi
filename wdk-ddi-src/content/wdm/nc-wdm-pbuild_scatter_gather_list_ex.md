@@ -1,5 +1,5 @@
 ---
-UID: NC.wdm.PBUILD_SCATTER_GATHER_LIST_EX
+UID: NC:wdm.PBUILD_SCATTER_GATHER_LIST_EX
 title: PBUILD_SCATTER_GATHER_LIST_EX
 author: windows-driver-content
 description: The BuildScatterGatherListEx routine allocates the resources that are required for a DMA transfer, builds a scatter/gather list, and calls the driver-supplied AdapterListControl routine to initiate the DMA transfer.
@@ -7,8 +7,8 @@ old-location: kernel\buildscattergatherlistex.htm
 old-project: kernel
 ms.assetid: A1A89D52-5F39-45E4-AFBE-20DAD0E49442
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/4/2018
+ms.keywords: KSYNCHRONIZE_ROUTINE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -73,12 +74,12 @@ NTSTATUS BuildScatterGatherListEx(
 
 ### -param DmaAdapter [in]
 
-A pointer to a <a href="kernel.dma_adapter">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine.
+A pointer to a <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine.
 
 
 ### -param DeviceObject [in]
 
-A pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure. This structure is the physical device object (PDO) that represents the target device for the requested DMA operation.
+A pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure. This structure is the physical device object (PDO) that represents the target device for the requested DMA operation.
 
 
 ### -param DmaTransferContext [in]
@@ -145,7 +146,7 @@ The direction of the DMA transfer. Set this parameter to <b>TRUE</b> for a write
 
 ### -param ScatterGatherBuffer [in]
 
-A pointer to a caller-allocated buffer into which the routine writes the scatter/gather list for the DMA transfer. This list begins with a <a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a> structure, which is followed by a <b>SCATTER_GATHER_ELEMENT</b> array.
+A pointer to a caller-allocated buffer into which the routine writes the scatter/gather list for the DMA transfer. This list begins with a <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure, which is followed by a <b>SCATTER_GATHER_ELEMENT</b> array.
 
 
 ### -param ScatterGatherBufferLength [in]
@@ -165,7 +166,7 @@ Not used. Set to <b>NULL</b>.
 
 ### -param ScatterGatherList [out, optional]
 
-A pointer to a variable into which the routine writes a pointer to the scatter/gather list for the DMA transfer. This list begins with a <a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a> structure, which contains a pointer to a <b>SCATTER_GATHER_ELEMENT</b> array. This output pointer always matches the <i>ScatterGatherBuffer</i> parameter value.
+A pointer to a variable into which the routine writes a pointer to the scatter/gather list for the DMA transfer. This list begins with a <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure, which contains a pointer to a <b>SCATTER_GATHER_ELEMENT</b> array. This output pointer always matches the <i>ScatterGatherBuffer</i> parameter value.
 
 If the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag is set and the <i>ExecutionRoutine</i> parameter is <b>NULL</b>, <i>ScatterGatherList</i> must be a valid, non-<b>NULL</b> pointer. If <i>ExecutionRoutine</i> is non-<b>NULL</b>, <i>ScatterGatherList</i> is optional and can be <b>NULL</b> if the calling driver does not require the scatter/gather list. The <b>BuildScatterGatherListEx</b> call fails if the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag is set and <i>ScatterGatherList</i> and <i>ExecutionRoutine</i> are both <b>NULL</b>, or if the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag is not set and <i>ExecutionRoutine</i> is <b>NULL</b>.
 
@@ -186,7 +187,7 @@ If the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag is set and the <i>ExecutionRoutine</
 
 
 ## -remarks
-<b>BuildScatterGatherListEx</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="kernel.dma_operations">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
+<b>BuildScatterGatherListEx</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
 
 Use <b>BuildScatterGatherListEx</b> only for bus-master adapters. Do not use this routine for a system DMA adapter.
 
@@ -217,52 +218,6 @@ The driver can call <a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAda
 The driver can set the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag to request that the driver-supplied <i>AdapterListControl</i> routine be called in the calling thread, before <b>BuildScatterGatherListEx</b> returns.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -275,10 +230,10 @@ DISPATCH_LEVEL
 <a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a>
 </dt>
 <dt>
-<a href="kernel.dmacompletionroutine">DmaCompletionRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a>
 </dt>
 <dt>
-<a href="kernel.dma_operations">DMA_OPERATIONS</a>
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pfree_adapter_object.md">FreeAdapterObject</a>
@@ -297,5 +252,5 @@ DISPATCH_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PBUILD_SCATTER_GATHER_LIST_EX callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PBUILD_SCATTER_GATHER_LIST_EX callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlSizeTMult
+UID: NF:ntintsafe.RtlSizeTMult
 title: RtlSizeTMult function
 author: windows-driver-content
 description: Multiplies one value of type SIZE_T by another.
@@ -7,7 +7,7 @@ old-location: kernel\rtlsizetmult.htm
 old-project: kernel
 ms.assetid: 3EC72857-2880-4F03-8CC3-9B9A80F19273
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlSizeTMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlSizeTMult function
@@ -71,31 +72,4 @@ A pointer to the result. If the operation results in a value that overflows or u
 
 
 ## -remarks
-This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>

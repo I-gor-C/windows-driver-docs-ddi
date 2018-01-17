@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_REMOVE_DEVICE
-title: MINIPORT_REMOVE_DEVICE
+UID: NC:ndis.MINIPORT_REMOVE_DEVICE
+title: MINIPORT_REMOVE_DEVICE function
 author: windows-driver-content
 description: The MiniportRemoveDevice function releases resources that the MiniportAddDevice function allocated.
 old-location: netvista\miniportremovedevice.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 24dd887b-575f-4790-bb53-7c3fb825bd61
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_REMOVE_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_REMOVE_DEVICE callback
+# MINIPORT_REMOVE_DEVICE function
 
 
 
@@ -45,7 +46,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_REMOVE_DEVICE MiniportRemoveDevice;
@@ -73,7 +74,7 @@ None
 The 
     <i>MiniportRemoveDevice</i> function is an optional function. Miniport drivers that
     support MSI-X should specify an entry point for this function in the 
-    <a href="netvista.ndis_miniport_pnp_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
     NDIS_MINIPORT_PNP_CHARACTERISTICS</a> structure.
 
 When NDIS receives a request from the Plug and Play (PnP) manager to remove a device, NDIS calls the 
@@ -102,51 +103,16 @@ The <b>MINIPORT_REMOVE_DEVICE</b> function type is defined in the Ndis.h header 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_add_device.md">MiniportAddDevice</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_init_parameters">NDIS_MINIPORT_INIT_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_pnp_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
    NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 </dt>
 </dl>
@@ -154,5 +120,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_REMOVE_DEVICE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_REMOVE_DEVICE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

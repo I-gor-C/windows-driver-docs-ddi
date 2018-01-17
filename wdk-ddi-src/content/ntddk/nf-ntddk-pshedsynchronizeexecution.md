@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PshedSynchronizeExecution
+UID: NF:ntddk.PshedSynchronizeExecution
 title: PshedSynchronizeExecution function
 author: windows-driver-content
 description: The PshedSynchronizeExecution function synchronizes the execution of a given function with the hardware error processing for an error source.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Pshed.lib
 req.dll: Pshed.dll
 req.irql: <= DIRQL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PshedSynchronizeExecution function
@@ -57,7 +58,7 @@ BOOLEAN PshedSynchronizeExecution(
 
 ### -param ErrorSource [in]
 
-A pointer to a <a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.
+A pointer to a <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.
 
 
 ### -param SynchronizeRoutine [in]
@@ -110,79 +111,10 @@ The function specified in the <i>SynchronizeRoutine</i> parameter is called.
 Callers of the <b>PshedSynchronizeExecution</b> function must be running at IRQL &lt;= DIRQL, that is, less than or equal to the IRQL at which the LLHEH for the error source executes.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pshed.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pshed.dll</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DIRQL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  

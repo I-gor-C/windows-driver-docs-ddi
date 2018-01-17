@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.IsPtr64
+UID: NF:wdbgexts.IsPtr64
 title: IsPtr64 function
 author: windows-driver-content
 description: The IsPtr64 function determines if the target uses 64-bit pointers.
 old-location: debugger\isptr64.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0474a8dc-e2e3-4c84-8058-6229bf0e9d62
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IsPtr64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -62,30 +63,3 @@ The function returns <b>TRUE</b> if the target uses 64-bit pointers; <b>FALSE</b
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

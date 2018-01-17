@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDD8042._OUTPUT_PACKET
+UID: NS:ntdd8042._OUTPUT_PACKET
 title: _OUTPUT_PACKET
 author: windows-driver-content
 description: OUTPUT_PACKET contains information about the data that is being written to a keyboard or mouse device by I8042prt.
@@ -7,8 +7,8 @@ old-location: hid\output_packet.htm
 old-project: hid
 ms.assetid: 1d8d723f-aae5-499e-94cf-c7ccdb24c45f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OUTPUT_PACKET, OUTPUT_PACKET, *POUTPUT_PACKET, POUTPUT_PACKET
+ms.date: 12/21/2017
+ms.keywords: _OUTPUT_PACKET, OUTPUT_PACKET, *POUTPUT_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OUTPUT_PACKET, *POUTPUT_PACKET
 ---
 
 # _OUTPUT_PACKET structure
@@ -107,21 +108,6 @@ Identifies that a write is in progress.
 This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a> callback routine and a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback routine.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdd8042.h (include Ntdd8042.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -141,5 +127,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20OUTPUT_PACKET structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20OUTPUT_PACKET structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

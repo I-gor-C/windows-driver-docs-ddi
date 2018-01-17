@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_READ_PINS_PARAMETERS
+UID: NS:gpioclx._GPIO_READ_PINS_PARAMETERS
 title: _GPIO_READ_PINS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_READ_PINS_PARAMETERS structure describes a read operation on a group of general-purpose I/O (GPIO) pins.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: D04C836E-C440-4AB9-BB44-7D1E8E0F681D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS, GPIO_READ_PINS_PARAMETERS
+ms.keywords: _GPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS, GPIO_READ_PINS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_READ_PINS_PARAMETERS, GPIO_READ_PINS_PARAMETERS
 ---
 
 # _GPIO_READ_PINS_PARAMETERS structure
@@ -91,31 +92,6 @@ Reserved for system use.
 ## -remarks
 The <i>ReadParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439404">CLIENT_ReadGpioPins</a> event callback function is a pointer to a caller-allocated <b>GPIO_READ_PINS_PARAMETERS</b> structure. All of the pins that this function reads are part of the same bank of GPIO pins.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

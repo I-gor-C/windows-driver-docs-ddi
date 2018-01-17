@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_SYMBOL_PARAMETERS
+UID: NS:dbgeng._DEBUG_SYMBOL_PARAMETERS
 title: _DEBUG_SYMBOL_PARAMETERS
 author: windows-driver-content
 description: The DEBUG_SYMBOL_PARAMETERS structure describes a symbol in a symbol group.
 old-location: debugger\debug_symbol_parameters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c73ea2b0-e87a-4fb1-9164-ff14d43f1426
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS, PDEBUG_SYMBOL_PARAMETERS
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS
 ---
 
 # _DEBUG_SYMBOL_PARAMETERS structure
@@ -89,19 +90,3 @@ Set to zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.GetNumberEventFilters
+UID: NF:dbgeng.IDebugControl3.GetNumberEventFilters
 title: IDebugControl3::GetNumberEventFilters method
 author: windows-driver-content
 description: The GetNumberEventFilters method returns the number of event filters currently used by the engine.
 old-location: debugger\getnumbereventfilters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6bb80c64-bb2e-4388-b1a8-479bdaa8b635
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::GetNumberEventFilters, GetNumberEventFilters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugControl3::GetNumberEventFilters method
@@ -80,31 +81,4 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-For more information about event filters, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543071">Event Filters</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about event filters, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543071">Event Filters</a>.</p>

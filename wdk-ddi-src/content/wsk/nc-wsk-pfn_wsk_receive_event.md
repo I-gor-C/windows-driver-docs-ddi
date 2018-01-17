@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_RECEIVE_EVENT
+UID: NC:wsk.PFN_WSK_RECEIVE_EVENT
 title: PFN_WSK_RECEIVE_EVENT
 author: windows-driver-content
 description: The WskReceiveEvent event callback function notifies a WSK application that data has been received on a connection-oriented socket.
 old-location: netvista\wskreceiveevent.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2a7a7570-ed26-48be-b27b-dc240588ecfc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/11/2018
+ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -151,7 +152,7 @@ The WSK subsystem called the
 ### -param DataIndication [in, optional]
 
 A pointer to a linked list of 
-     <a href="netvista.wsk_data_indication">WSK_DATA_INDICATION</a> structures that
+     <a href="..\wsk\ns-wsk-_wsk_data_indication.md">WSK_DATA_INDICATION</a> structures that
      describe the received data. If this parameter is <b>NULL</b>, the socket is no longer functional and the WSK
      application must call the 
      <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
@@ -161,7 +162,7 @@ A pointer to a linked list of
 ### -param BytesIndicated [in]
 
 The number of bytes of received data described by the linked list of 
-     <a href="netvista.wsk_data_indication">WSK_DATA_INDICATION</a> structures.
+     <a href="..\wsk\ns-wsk-_wsk_data_indication.md">WSK_DATA_INDICATION</a> structures.
 
 
 ### -param BytesAccepted [in, out]
@@ -198,7 +199,7 @@ A WSK application's
 <dt><b>STATUS_PENDING</b></dt>
 </dl>The WSK application accepted the data but did not retrieve all of the data contained in the
        linked list of 
-       <a href="netvista.wsk_data_indication">WSK_DATA_INDICATION</a> structures. The
+       <a href="..\wsk\ns-wsk-_wsk_data_indication.md">WSK_DATA_INDICATION</a> structures. The
        WSK application retains the linked list of WSK_DATA_INDICATION structures until all of the data has
        been retrieved. After the WSK application has retrieved all of the data it calls the 
        <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a> function to release the linked
@@ -258,42 +259,6 @@ The WSK subsystem calls a WSK application's
 A WSK application's <i>WskReceiveEvent</i> event callback function must not wait for completion of other WSK requests in the context of WSK completion or event callback functions. The callback can initiate other WSK requests (assuming that it doesn't spend too much time at DISPATCH_LEVEL), but it must not wait for their completion even when the callback is called at IRQL = PASSIVE_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wsk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -321,10 +286,10 @@ IRQL
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 </dt>
 <dt>
-<a href="netvista.wsk_data_indication">WSK_DATA_INDICATION</a>
+<a href="..\wsk\ns-wsk-_wsk_data_indication.md">WSK_DATA_INDICATION</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
    WSK_CLIENT_CONNECTION_DISPATCH</a>
 </dt>
 </dl>
@@ -332,5 +297,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_RECEIVE_EVENT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_EVENT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

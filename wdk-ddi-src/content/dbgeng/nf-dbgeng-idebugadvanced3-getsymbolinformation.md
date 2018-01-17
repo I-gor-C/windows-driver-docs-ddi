@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugAdvanced3.GetSymbolInformation
+UID: NF:dbgeng.IDebugAdvanced3.GetSymbolInformation
 title: IDebugAdvanced3::GetSymbolInformation method
 author: windows-driver-content
 description: The GetSymbolInformation method returns specified information about a symbol.
 old-location: debugger\getsymbolinformation.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugAdvanced3, IDebugAdvanced3::GetSymbolInformation, GetSymbolInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugAdvanced3::GetSymbolInformation method
@@ -217,30 +218,3 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

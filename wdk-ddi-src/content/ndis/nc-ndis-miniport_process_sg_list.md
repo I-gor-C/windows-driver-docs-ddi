@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_PROCESS_SG_LIST
-title: MINIPORT_PROCESS_SG_LIST
+UID: NC:ndis.MINIPORT_PROCESS_SG_LIST
+title: MINIPORT_PROCESS_SG_LIST function
 author: windows-driver-content
 description: A bus-master miniport driver provides a MiniportProcessSGList function to process scatter/gather lists for network data.
 old-location: netvista\miniportprocesssglist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ddd5d14f-f886-40d0-9fc8-eeb37da63ebd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_PROCESS_SG_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_PROCESS_SG_LIST callback
+# MINIPORT_PROCESS_SG_LIST function
 
 
 
@@ -43,7 +44,7 @@ A bus-master miniport driver provides a
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_PROCESS_SG_LIST MiniportProcessSGList;
@@ -74,7 +75,7 @@ Miniport drivers should ignore this parameter.
 
 A pointer to a scatter/gather list buffer. This is not necessarily the same buffer as the one the
      driver specified in the call to the 
-     <a href="netvista.ndismallocatenetbuffersglist">
+     <a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">
      NdisMAllocateNetBufferSGList</a> function
 
 
@@ -90,7 +91,7 @@ None
 
 ## -remarks
 Miniport drivers call the 
-    <a href="netvista.ndismregisterscattergatherdma">
+    <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
     NdisMRegisterScatterGatherDma</a> function to register a 
     <i>MiniportProcessSGList</i> function. When a miniport driver calls 
     <b>NdisMAllocateNetBufferSGList</b> to create a scatter/gather list, NDIS calls HAL to create the list.
@@ -121,48 +122,13 @@ The <b>MINIPORT_PROCESS_SG_LIST</b> function type is defined in the Ndis.h heade
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndismallocatenetbuffersglist">NdisMAllocateNetBufferSGList</a>
+<a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterscattergatherdma">
+<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
 </dt>
 </dl>
@@ -170,5 +136,5 @@ DISPATCH_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_PROCESS_SG_LIST callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_PROCESS_SG_LIST callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

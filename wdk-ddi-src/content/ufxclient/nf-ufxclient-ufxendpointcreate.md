@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxEndpointCreate
+UID: NF:ufxclient.UfxEndpointCreate
 title: UfxEndpointCreate function
 author: windows-driver-content
 description: Creates an endpoint object.
 old-location: buses\ufxendpointcreate.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 060CADB7-AAC9-401A-9198-FC306CE74A34
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxEndpointCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ NTSTATUS UfxEndpointCreate(
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.
 
 
 ### -param EndpointInit [in, out]
@@ -73,27 +74,27 @@ Opaque structure passed by UFX in the call to <a href="..\ufxclient\nc-ufxclient
 
 ### -param Attributes [in, optional]
 
-A pointer to caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure. This structure must be initialized with <a href="wdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
+A pointer to caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure. This structure must be initialized with <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
 
 
 ### -param TransferQueueConfig [in]
 
-A pointer to a caller allocated <a href="wdf.wdf_io_queue_config">WDF_IO_QUEUE_CONFIG</a> structure.  This structure must be initialized with <a href="wdf.wdf_io_queue_config_init">WDF_IO_QUEUE_CONFIG_INIT</a>.
+A pointer to a caller allocated <a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a> structure.  This structure must be initialized with <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a>.
 
 
 ### -param TransferQueueAttributes [in, optional]
 
-A pointer to caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure. This structure must be initialized with <a href="wdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
+A pointer to caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure. This structure must be initialized with <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
 
 
 ### -param CommandQueueConfig [in]
 
-A pointer to a caller allocated <a href="wdf.wdf_io_queue_config">WDF_IO_QUEUE_CONFIG</a> structure.  This structure must be initialized with <a href="wdf.wdf_io_queue_config_init">WDF_IO_QUEUE_CONFIG_INIT</a>.
+A pointer to a caller allocated <a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a> structure.  This structure must be initialized with <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a>.
 
 
 ### -param CommandQueueAttributes [in, optional]
 
-A pointer to caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure. This structure must be initialized with <a href="wdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
+A pointer to caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure. This structure must be initialized with <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>. This parameter is optional and can be <b>WDF_NO_OBJECT_ATTRIBUTES</b>.
 
 
 ### -param UfxEndpoint [out]
@@ -111,40 +112,4 @@ If the operation is successful, the method returns STATUS_SUCCESS, or another st
 
 The command queue will handle the following IOCTLs:
 
-The following example shows how to create a UFXENDPOINT object and initialize its context.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The following example shows how to create a UFXENDPOINT object and initialize its context.</p>

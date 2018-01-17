@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSYSTEMSELECTIONPREFS_V1
+UID: NS:ntddrilapitypes.RILSYSTEMSELECTIONPREFS_V1
 title: RILSYSTEMSELECTIONPREFS_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefs_v1.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a2ba47e6-9dec-46b4-ac8b-a863345f228f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1, LPRILSYSTEMSELECTIONPREFS_V1
+ms.date: 1/11/2018
+ms.keywords: RILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
 ---
 
 # RILSYSTEMSELECTIONPREFS_V1 structure
@@ -81,19 +82,3 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

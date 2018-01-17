@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILTERMINALCAPABILITYINFO
+UID: NS:rilapitypes.RILTERMINALCAPABILITYINFO
 title: RILTERMINALCAPABILITYINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilterminalcapabilityinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 29d9bf92-ea35-4d74-bc4c-3f386e7fb3fa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO, *LPRILTERMINALCAPABILITYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILTERMINALCAPABILITYINFO, *LPRILTERMINALCAPABILITYINFO
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILTERMINALCAPABILITYINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

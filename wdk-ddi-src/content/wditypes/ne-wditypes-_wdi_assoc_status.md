@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_ASSOC_STATUS
+UID: NE:wditypes._WDI_ASSOC_STATUS
 title: _WDI_ASSOC_STATUS
 author: windows-driver-content
 description: The WDI_ASSOC_STATUS enumeration defines the association status values.
 old-location: netvista\wdi_assoc_status.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8268031A-7493-4A42-9211-D02B8AA50F34
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_ASSOC_STATUS, WDI_ASSOC_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_ASSOC_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -234,39 +235,3 @@ The disassociation is because the port believes it needs to reassociate to the p
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

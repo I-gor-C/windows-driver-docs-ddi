@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MS_SMHBA_FC_PHY
+UID: NS:hbapiwmi._MS_SMHBA_FC_PHY
 title: _MS_SMHBA_FC_PHY
 author: windows-driver-content
 description: The MS_SMHBA_FC_PHY structure is used to report the physical attributes of a fibre channel port.
@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_fc_phy.htm
 old-project: storage
 ms.assetid: 7fb199b6-dcdb-41fc-b1c4-4eef2177018e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MS_SMHBA_FC_PHY, PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
+ms.date: 1/10/2018
+ms.keywords: _MS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
 ---
 
 # _MS_SMHBA_FC_PHY structure
@@ -275,19 +276,3 @@ The maximum frame size, in bytes, that is supported by PortWWN.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

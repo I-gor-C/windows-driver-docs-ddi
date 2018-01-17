@@ -1,5 +1,5 @@
 ---
-UID: NS.DMUSICKS._DMUS_KERNEL_EVENT
+UID: NS:dmusicks._DMUS_KERNEL_EVENT
 title: _DMUS_KERNEL_EVENT
 author: windows-driver-content
 description: The DMUS_KERNEL_EVENT structure is used to package time-stamped music events.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 652f64e2-310b-46c9-8b00-c827a7475b07
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _DMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT
+ms.keywords: _DMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT
 ---
 
 # _DMUS_KERNEL_EVENT structure
@@ -150,7 +151,7 @@ Pointer to a chain of events, which is in the form of a linked list of DMUS_KERN
 ## -remarks
 The DMUS_KERNEL_EVENT structure is used by WDM audio drivers that provide kernel streaming support for DirectMusic.
 
-While capturing a MIDI stream, the DMus port driver calls the <a href="audio.iallocatormxf_getmessage">IAllocatorMXF::GetMessage</a> method to retrieve DMUS_KERNEL_EVENT structures to hold the captured data. While rendering a MIDI stream, the port driver calls the <a href="audio.imxf_putmessage">IMXF::PutMessage</a> method to discard DMUS_KERNEL_EVENT structures as it finishes reading them. For more information, see <a href="https://msdn.microsoft.com/ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13">MIDI Transport</a>.
+While capturing a MIDI stream, the DMus port driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536494">IAllocatorMXF::GetMessage</a> method to retrieve DMUS_KERNEL_EVENT structures to hold the captured data. While rendering a MIDI stream, the port driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a> method to discard DMUS_KERNEL_EVENT structures as it finishes reading them. For more information, see <a href="https://msdn.microsoft.com/ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13">MIDI Transport</a>.
 
 In the case of MIDI capture, the DMUS_KERNEL_EVENT structure can be packaged with single, multiple, or fragmentary MIDI messages. The <b>usFlags</b> member should be set to DMUS_KEF_EVENT_INCOMPLETE unless it is a single complete MIDI message. This structure also contains:
 
@@ -165,28 +166,13 @@ Mapping to the correct DLS instrument is implicit in the triplet of
 Presentation time does not advance during the states KSSTATE_PAUSE and KSSTATE_STOP, and is reset during KSSTATE_STOP. For more information, see <a href="https://msdn.microsoft.com/e3ffc7ca-f3cd-4989-af40-78b6a2438f95">KS Clocks</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="audio.imxf_putmessage">IMXF::PutMessage</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
 </dt>
 <dt>
-<a href="audio.iallocatormxf_getmessage">IAllocatorMXF::GetMessage</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536494">IAllocatorMXF::GetMessage</a>
 </dt>
 </dl>
  

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.WriteIo
+UID: NF:dbgeng.IDebugDataSpaces4.WriteIo
 title: IDebugDataSpaces4::WriteIo method
 author: windows-driver-content
 description: The WriteIo method writes to the system and bus I/O memory.
 old-location: debugger\writeio.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3bc84b15-7c13-4ad9-b9a1-6abd5a7389eb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WriteIo, WriteIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::WriteIo method
@@ -104,31 +105,4 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-This method is only available in kernel-mode debugging.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This method is only available in kernel-mode debugging.</p>

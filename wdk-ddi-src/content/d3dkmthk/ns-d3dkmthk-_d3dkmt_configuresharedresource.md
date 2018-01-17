@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_CONFIGURESHAREDRESOURCE
+UID: NS:d3dkmthk._D3DKMT_CONFIGURESHAREDRESOURCE
 title: _D3DKMT_CONFIGURESHAREDRESOURCE
 author: windows-driver-content
 description: The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the D3DKMTConfigureSharedResource function uses to configure a shared resource.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_configuresharedresource.htm
 old-project: display
 ms.assetid: ba190f01-428a-4574-8032-c800ce19ba3e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_CONFIGURESHAREDRESOURCE, D3DKMT_CONFIGURESHAREDRESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_CONFIGURESHAREDRESOURCE
 ---
 
 # _D3DKMT_CONFIGURESHAREDRESOURCE structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="display.d3dkmtconfiguresharedresource">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource. 
+The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource. 
 
 
 
@@ -79,46 +80,21 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 
 ### -field AllowAccess
 
-[in] A Boolean value that specifies whether the <a href="display.d3dkmtconfiguresharedresource">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access. 
+[in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access. 
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3DKMT_CONFIGURESHAREDRESOURCE is supported beginning with the Windows 7 operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmtconfiguresharedresource">D3DKMTConfigureSharedResource</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_CONFIGURESHAREDRESOURCE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_CONFIGURESHAREDRESOURCE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

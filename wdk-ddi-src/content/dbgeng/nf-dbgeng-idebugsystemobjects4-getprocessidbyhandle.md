@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetProcessIdByHandle
+UID: NF:dbgeng.IDebugSystemObjects4.GetProcessIdByHandle
 title: IDebugSystemObjects4::GetProcessIdByHandle method
 author: windows-driver-content
 description: The GetProcessIdByHandle method returns the engine process ID for the specified process. The process is specified by its system handle.
 old-location: debugger\getprocessidbyhandle.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6920cbd3-0a20-4d38-8538-85f46d0f0d5b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetProcessIdByHandle, GetProcessIdByHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetProcessIdByHandle method
@@ -74,31 +75,4 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="wdkgloss.h#wdkgloss.handle#wdkgloss.handle"><i>Handles</i></a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="wdkgloss.h#wdkgloss.handle#wdkgloss.handle"><i>Handles</i></a>.</p>

@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._WDI_MAC_ADDRESS
+UID: NS:dot11wdi._WDI_MAC_ADDRESS
 title: _WDI_MAC_ADDRESS
 author: windows-driver-content
 description: The WDI_MAC_ADDRESS structure defines an IEEE media access control (MAC) address.
 old-location: netvista\wdi_mac_address.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e170b797-f8bb-4d3c-a3ee-5fd1a817a500
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_MAC_ADDRESS, PWDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS, WDI_MAC_ADDRESS
+ms.date: 1/11/2018
+ms.keywords: _WDI_MAC_ADDRESS, WDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS
 ---
 
 # _WDI_MAC_ADDRESS structure
@@ -60,39 +61,3 @@ A Wi-Fi MAC address.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

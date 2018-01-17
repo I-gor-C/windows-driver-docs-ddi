@@ -1,5 +1,5 @@
 ---
-UID: NS.ACPITABL._GIC_ITS
+UID: NS:acpitabl._GIC_ITS
 title: _GIC_ITS
 author: windows-driver-content
 description: This topic describes the GIC_ITS structure.
@@ -7,8 +7,8 @@ old-location: acpi\gic_its.htm
 old-project: acpi
 ms.assetid: C0DA1B09-230E-4DE6-98CD-F80243D63B95
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _GIC_ITS, GIC_ITS
+ms.date: 12/31/2017
+ms.keywords: _GIC_ITS, GIC_ITS, *PGIC_ITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GIC_ITS
 ---
 
 # _GIC_ITS structure
@@ -89,29 +90,3 @@ Reserved for future use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 10, version 1709 and later versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Acpitabl.h (include Acpitabl.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

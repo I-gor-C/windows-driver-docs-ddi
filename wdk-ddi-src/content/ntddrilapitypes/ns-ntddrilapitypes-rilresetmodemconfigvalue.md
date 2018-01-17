@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILRESETMODEMCONFIGVALUE
+UID: NS:ntddrilapitypes.RILRESETMODEMCONFIGVALUE
 title: RILRESETMODEMCONFIGVALUE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilresetmodemconfigvalue.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 48068d1d-3fe7-4bd6-8c91-094e4187ca1f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE, LPRILRESETMODEMCONFIGVALUE
+ms.date: 1/11/2018
+ms.keywords: RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE
 ---
 
 # RILRESETMODEMCONFIGVALUE structure
@@ -81,19 +82,3 @@ typedef struct _RILRESETMODEMCONFIGVALUE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

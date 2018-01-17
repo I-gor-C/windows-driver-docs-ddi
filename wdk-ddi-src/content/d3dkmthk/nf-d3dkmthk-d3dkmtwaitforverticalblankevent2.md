@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTWaitForVerticalBlankEvent2
+UID: NF:d3dkmthk.D3DKMTWaitForVerticalBlankEvent2
 title: D3DKMTWaitForVerticalBlankEvent2 function
 author: windows-driver-content
 description: Waits for specified wait objects, including a vertical blank event, to occur and then returns. Supported starting with Windows 8.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtwaitforverticalblankevent2.htm
 old-project: display
 ms.assetid: 71a48c1f-1eca-4f3e-a085-99ffc207a7e0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTWaitForVerticalBlankEvent2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTWaitForVerticalBlankEvent2 function
@@ -74,50 +75,3 @@ Returns one of the following values:
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

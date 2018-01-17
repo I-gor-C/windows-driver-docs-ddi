@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILADDITIONALCALLERINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILADDITIONALCALLERINFOPARAMMASK
 title: RILADDITIONALCALLERINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riladditionalcallerinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b37246ed-37b8-4d5f-aace-41053ea839da
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILADDITIONALCALLERINFOPARAMMASK, RILADDITIONALCALLERINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILADDITIONALCALLERINFOPARAMMASK
 ---
 
 # RILADDITIONALCALLERINFOPARAMMASK enumeration
@@ -69,19 +70,3 @@ typedef enum _RILADDITIONALCALLERINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

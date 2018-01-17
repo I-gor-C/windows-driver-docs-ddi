@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP
-title: EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP
+UID: NC:sercx.EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP
+title: EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP function
 author: windows-driver-content
 description: The EvtSerCx2CustomTransmitTransactionCleanup event callback function is called by version 2 of the serial framework extension (SerCx2) to clean up the serial controller's hardware state after a custom-transmit transaction ends.
 old-location: serports\evtsercx2customtransmittransactioncleanup.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: CEADF06B-FD60-4B4C-AB59-1ED6B1226204
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP callback
+# EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCx2CustomTransmitTransactionCleanup</i> event callback function  is
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP EvtSerCx2CustomTransmitTransactionCleanup;
@@ -59,7 +60,7 @@ VOID EvtSerCx2CustomTransmitTransactionCleanup(
 
 ### -param CustomTransmitTransaction [in]
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a> handle to a custom-transmit object. The serial controller driver previously called the <a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a> method to create this object.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a> handle to a custom-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method to create this object.
 
 
 ## -returns
@@ -67,9 +68,9 @@ None.
 
 
 ## -remarks
-Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a> call that creates the custom-transmit object.
+Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> call that creates the custom-transmit object.
 
-Your serial controller driver should implement an <i>EvtSerCx2CustomTransmitTransactionCleanup</i> function if it needs to clean up the serial controller state at the end of a custom-transmit transaction. SerCx2 calls this function, if it is implemented, after a custom-transmit transaction ends. In response to the <i>EvtSerCx2CustomTransmitTransactionCleanup</i> call, the serial controller driver must call the <a href="serports.sercx2customtransmittransactioncleanupcomplete">SerCx2CustomTransmitTransactionCleanupComplete</a> method to notify SerCx2 after the clean-up work is done.
+Your serial controller driver should implement an <i>EvtSerCx2CustomTransmitTransactionCleanup</i> function if it needs to clean up the serial controller state at the end of a custom-transmit transaction. SerCx2 calls this function, if it is implemented, after a custom-transmit transaction ends. In response to the <i>EvtSerCx2CustomTransmitTransactionCleanup</i> call, the serial controller driver must call the <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncleanupcomplete.md">SerCx2CustomTransmitTransactionCleanupComplete</a> method to notify SerCx2 after the clean-up work is done.
 
 For more information, see <a href="https://msdn.microsoft.com/E72E68BC-A60A-41BE-8606-92A608648042">SerCx2 Custom-Transmit Transactions</a>.
 
@@ -82,62 +83,16 @@ Then, implement your callback function as follows:
 The <b>EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CLEANUP</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL.
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a>
 </dt>
 <dt>
-<a href="serports.sercx2customtransmittransactioncleanupcomplete">SerCx2CustomTransmitTransactionCleanupComplete</a>
+<a href="..\sercx\nf-sercx-sercx2customtransmittransactioncleanupcomplete.md">SerCx2CustomTransmitTransactionCleanupComplete</a>
 </dt>
 <dt>
-<a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a>
 </dt>
 </dl>
  

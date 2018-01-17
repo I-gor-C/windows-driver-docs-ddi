@@ -1,5 +1,5 @@
 ---
-UID: NS.KSI.KSCLOCKINSTANCE
+UID: NS:ksi.KSCLOCKINSTANCE
 title: KSCLOCKINSTANCE
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\ksclockinstance.htm
 old-project: stream
 ms.assetid: DC8A7CE9-7FDE-4FC9-8C71-3F3368E7E5C1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSCLOCKINSTANCE, KSCLOCKINSTANCE, PKSCLOCKINSTANCE, *PKSCLOCKINSTANCE
+ms.date: 1/9/2018
+ms.keywords: KSCLOCKINSTANCE, *PKSCLOCKINSTANCE, KSCLOCKINSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: PASSIVE_LEVEL
+req.typenames: *PKSCLOCKINSTANCE, KSCLOCKINSTANCE
 ---
 
 # KSCLOCKINSTANCE structure
@@ -65,19 +66,3 @@ typedef struct {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ksi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

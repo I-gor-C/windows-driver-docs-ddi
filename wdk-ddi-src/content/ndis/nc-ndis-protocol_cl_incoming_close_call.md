@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_INCOMING_CLOSE_CALL
-title: PROTOCOL_CL_INCOMING_CLOSE_CALL
+UID: NC:ndis.PROTOCOL_CL_INCOMING_CLOSE_CALL
+title: PROTOCOL_CL_INCOMING_CLOSE_CALL function
 author: windows-driver-content
 description: The ProtocolClIncomingCloseCall function is used by all connection-oriented NDIS clients.
 old-location: netvista\protocolclincomingclosecall.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 01c7d887-eb54-47c3-98f0-bc567b60fb4b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_INCOMING_CLOSE_CALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_INCOMING_CLOSE_CALL callback
+# PROTOCOL_CL_INCOMING_CLOSE_CALL function
 
 
 
@@ -45,7 +46,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_INCOMING_CLOSE_CALL ProtocolClIncomingCloseCall;
@@ -119,12 +120,12 @@ In either case,
     the client's own client(s) that the connection is being broken. For example, if the call to be closed is
     a multipoint VC created by the client, 
     <i>ProtocolClIncomingCloseCall</i> must call 
-    <a href="netvista.ndiscldropparty">NdisClDropParty</a> one or more times until
+    <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a> one or more times until
     only a single party remains on its multipoint VC.
 
 Whether the given VC is a single-point or multipoint connection, 
     <i>ProtocolClIncomingCloseCall</i> must call 
-    <a href="netvista.ndisclclosecall">NdisClCloseCall</a> to acknowledge that the
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a> to acknowledge that the
     client will neither attempt to send nor expect to receive data on this particular VC. If the call manager
     created this VC, 
     <i>ProtocolClIncomingCloseCall</i> should return control after it calls 
@@ -138,14 +139,14 @@ If the client originally created this VC for an outgoing call,
 
 If 
       <i>CloseStatus</i> is NDIS_STATUS_SUCCESS, tear down the VC with 
-      <a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a> and either release the
+      <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a> and either release the
       client's per-VC context area or prepare it for reuse in a subsequent call to 
-      <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>.
+      <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>.
 
 If 
       <i>CloseStatus</i> is NDIS_STATUS_SUCCESS, retain the VC that the client created and prepare its per-VC
       context area for reuse in a subsequent call to 
-      <a href="netvista.ndisclmakecall">NdisClMakeCall</a>.
+      <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.
 
 Otherwise, tear down the VC with 
       <b>NdisCoDeleteVc</b> and release its per-VC context area if the call manager indicated that the network
@@ -162,75 +163,36 @@ The <b>PROTOCOL_CL_INCOMING_CLOSE_CALL</b> function type is defined in the Ndis.
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/485db86b-f494-48ee-920a-cd9606ead9d4">
-   ProtocolClIncomingCloseCall (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>
-   ProtocolClIncomingCloseCall (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscldropparty">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingclosecall">
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingclosecall.md">
    NdisCmDispatchIncomingCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreememory">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreetonpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
    NdisFreeToNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingclosecall">
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
    NdisMCmDispatchIncomingCloseCall</a>
 </dt>
 <dt>
@@ -244,5 +206,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_INCOMING_CLOSE_CALL callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_INCOMING_CLOSE_CALL callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

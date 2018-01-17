@@ -1,13 +1,13 @@
 ---
-UID: NF.netioddk.NmrWaitForClientDeregisterComplete
+UID: NF:netioddk.NmrWaitForClientDeregisterComplete
 title: NmrWaitForClientDeregisterComplete function
 author: windows-driver-content
 description: The NmrWaitForClientDeregisterComplete function waits for the deregistration of a client module to complete.
 old-location: netvista\nmrwaitforclientderegistercomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: aed0a69e-868c-4c7d-b601-003ff357da38
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NmrWaitForClientDeregisterComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Netio.lib
 req.dll: 
 req.irql: < DISPATCH_LEVEL
+req.typenames: *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 # NmrWaitForClientDeregisterComplete function
@@ -59,7 +60,7 @@ NTSTATUS NmrWaitForClientDeregisterComplete(
 
 A handle used by the NMR to represent the registration of the client module. The NMR returns this
      handle to the client module when the client module calls the 
-     <a href="netvista.nmrregisterclient">NmrRegisterClient</a> function.
+     <a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a> function.
 
 
 ## -returns
@@ -72,7 +73,7 @@ The
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>The client module called the 
        <b>NmrWaitForClientDeregisterComplete</b> function before calling the 
-       <a href="netvista.nmrderegisterclient">NmrDeregisterClient</a> function, or
+       <a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a> function, or
        the handle specified in the NmrClientHandle parameter is not a valid client handle.
 <dl>
 <dt><b>Other status codes</b></dt>
@@ -86,11 +87,11 @@ A client module calls the
     <b>NmrWaitForClientDeregisterComplete</b> function to wait for the deregistration of the client module to
     complete. A client module calls the 
     <b>NmrWaitForClientDeregisterComplete</b> function only after calling the 
-    <a href="netvista.nmrderegisterclient">NmrDeregisterClient</a> function.
+    <a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a> function.
 
 A client module typically calls the 
     <b>NmrWaitForClientDeregisterComplete</b> function from its 
-    <a href="kernel.unload">Unload</a> function to wait until it is completely
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> function to wait until it is completely
     deregistered from the NMR before the client module is unloaded from the system. A client module must not
     return from a call to its 
     <b>Unload</b> function until after deregistration is
@@ -107,73 +108,15 @@ A client module typically calls the
 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netioddk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netio.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt; DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.nmrderegisterclient">NmrDeregisterClient</a>
+<a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NmrWaitForClientDeregisterComplete function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrWaitForClientDeregisterComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

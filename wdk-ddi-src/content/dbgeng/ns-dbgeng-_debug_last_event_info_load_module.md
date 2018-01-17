@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_LAST_EVENT_INFO_LOAD_MODULE
+UID: NS:dbgeng._DEBUG_LAST_EVENT_INFO_LOAD_MODULE
 title: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE
 author: windows-driver-content
 description: Describes the load module of the last event.
 old-location: debugger\debug_last_event_info_load_module.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0C2371FE-935A-499B-8E7C-09AA6C03FC90
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE, PDEBUG_LAST_EVENT_INFO_LOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_LOAD_MODULE, DEBUG_LAST_EVENT_INFO_LOAD_MODULE
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_LAST_EVENT_INFO_LOAD_MODULE, DEBUG_LAST_EVENT_INFO_LOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_LOAD_MODULE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_LAST_EVENT_INFO_LOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_LOAD_MODULE
 ---
 
 # _DEBUG_LAST_EVENT_INFO_LOAD_MODULE structure
@@ -59,19 +60,3 @@ The base of the load module.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

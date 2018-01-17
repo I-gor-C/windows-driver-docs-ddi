@@ -1,5 +1,5 @@
 ---
-UID: NS.SWENUM._SWENUM_INSTALL_INTERFACE
+UID: NS:swenum._SWENUM_INSTALL_INTERFACE
 title: _SWENUM_INSTALL_INTERFACE
 author: windows-driver-content
 description: The SWENUM_INSTALL_INTERFACE structure describes a specific demand-load bus enumerator object interface to install.
@@ -7,8 +7,8 @@ old-location: stream\swenum_install_interface.htm
 old-project: stream
 ms.assetid: 05280f35-7728-464e-9a8a-e45ab797e8a9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SWENUM_INSTALL_INTERFACE, *PSWENUM_INSTALL_INTERFACE, PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE
+ms.date: 1/9/2018
+ms.keywords: _SWENUM_INSTALL_INTERFACE, *PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -75,33 +76,18 @@ A reference string that a driver can use to uniquely identify multiple interface
 The <i>swenum</i> driver uses device interface instances as placeholders for software devices created on demand.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Swenum.h (include Swenum.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksinstallbusenuminterface">KsInstallBusEnumInterface</a>
+<a href="..\swenum\nf-swenum-ksinstallbusenuminterface.md">KsInstallBusEnumInterface</a>
 </dt>
 <dt>
-<a href="stream.ksremovebusenuminterface">KsRemoveBusEnumInterface</a>
+<a href="..\swenum\nf-swenum-ksremovebusenuminterface.md">KsRemoveBusEnumInterface</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20SWENUM_INSTALL_INTERFACE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20SWENUM_INSTALL_INTERFACE structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

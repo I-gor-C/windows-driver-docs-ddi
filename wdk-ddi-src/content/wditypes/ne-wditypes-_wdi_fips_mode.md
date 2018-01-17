@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_FIPS_MODE
+UID: NE:wditypes._WDI_FIPS_MODE
 title: _WDI_FIPS_MODE
 author: windows-driver-content
 description: The WDI_FIPS_MODE enumeration defines values that specify if FIPS mode is enabled or not.
 old-location: netvista\wdi_fips_mode.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 88EE4C63-C9D8-41D2-800E-9FFD5EF4962A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_FIPS_MODE, WDI_FIPS_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_FIPS_MODE
 req.product: Windows 10 or later.
 ---
 
@@ -73,39 +74,3 @@ Unknown.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

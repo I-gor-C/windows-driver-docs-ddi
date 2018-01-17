@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILIMSSIPCAUSECODE
+UID: NE:ntddrilapitypes.RILIMSSIPCAUSECODE
 title: RILIMSSIPCAUSECODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimssipcausecode.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b76ea0fb-8139-4272-b9a0-2daa5b660c7d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILIMSSIPCAUSECODE, RILIMSSIPCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILIMSSIPCAUSECODE
 ---
 
 # RILIMSSIPCAUSECODE enumeration
@@ -205,19 +206,3 @@ typedef enum _RILIMSSIPCAUSECODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILLINECONTROLINFO
+UID: NS:ntddrilapitypes.RILLINECONTROLINFO
 title: RILLINECONTROLINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rillinecontrolinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4a3bcbda-58e8-4b40-bcc2-fe7b1e624973
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILLINECONTROLINFO, LPRILLINECONTROLINFO, *LPRILLINECONTROLINFO, RILLINECONTROLINFO
+ms.date: 1/11/2018
+ms.keywords: RILLINECONTROLINFO, RILLINECONTROLINFO, *LPRILLINECONTROLINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILLINECONTROLINFO, *LPRILLINECONTROLINFO
 ---
 
 # RILLINECONTROLINFO structure
@@ -77,19 +78,3 @@ typedef struct _RILLINECONTROLINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

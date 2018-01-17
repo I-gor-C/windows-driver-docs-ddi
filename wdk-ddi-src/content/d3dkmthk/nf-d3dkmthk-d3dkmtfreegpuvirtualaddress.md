@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTFreeGpuVirtualAddress
+UID: NF:d3dkmthk.D3DKMTFreeGpuVirtualAddress
 title: D3DKMTFreeGpuVirtualAddress function
 author: windows-driver-content
 description: D3DKMTFreeGpuVirtualAddress releases a range of graphics processing unit (GPU) virtual addresses, which was previously reserved or mapped.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtfreegpuvirtualaddress.htm
 old-project: display
 ms.assetid: E076E9E6-FA7E-4F46-88B4-D3971E62DE1A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTFreeGpuVirtualAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: GDI32.lib
 req.dll: GDI32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTFreeGpuVirtualAddress function
@@ -55,7 +56,7 @@ NTSTATUS APIENTRY D3DKMTFreeGpuVirtualAddress(
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dkmt_freegpuvirtualaddress">D3DKMT_FREEGPUVIRTUALADDRESS</a> structure that describes the operation.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_freegpuvirtualaddress.md">D3DKMT_FREEGPUVIRTUALADDRESS</a> structure that describes the operation.
 
 
 ## -returns
@@ -72,92 +73,24 @@ This function might also return other <b>NTSTATUS</b> values.
 
 
 ## -remarks
-The freed virtual address should not be accessed immediately after the call. If there are outstanding <a href="display.d3dkmtmapgpuvirtualaddress">MapGpuVirtualAddress</a> and <a href="display.d3dkmtupdategpuvirtualaddress">UpdateGpuVirtualAddress</a> operations, which reference the virtual address, they will be ignored after the virtual address is freed. A new virtual address range can be allocated in place of the freed one immediately after return from the function.
+The freed virtual address should not be accessed immediately after the call. If there are outstanding <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmapgpuvirtualaddress.md">MapGpuVirtualAddress</a> and <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdategpuvirtualaddress.md">UpdateGpuVirtualAddress</a> operations, which reference the virtual address, they will be ignored after the virtual address is freed. A new virtual address range can be allocated in place of the freed one immediately after return from the function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>GDI32.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>GDI32.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_freegpuvirtualaddress">D3DKMT_FREEGPUVIRTUALADDRESS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_freegpuvirtualaddress.md">D3DKMT_FREEGPUVIRTUALADDRESS</a>
 </dt>
 <dt>
-<a href="display.d3dkmtmapgpuvirtualaddress">MapGpuVirtualAddress</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmapgpuvirtualaddress.md">MapGpuVirtualAddress</a>
 </dt>
 <dt>
-<a href="display.d3dkmtupdategpuvirtualaddress">UpdateGpuVirtualAddress</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdategpuvirtualaddress.md">UpdateGpuVirtualAddress</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTFreeGpuVirtualAddress function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTFreeGpuVirtualAddress function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCLOSEUICCLOGICALCHANNELGROUPPARAMS
+UID: NS:ntddrilapitypes.RILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 title: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcloseuicclogicalchannelgroupparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9442df60-7280-4c09-bea0-45ed2ac70694
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 ---
 
 # RILCLOSEUICCLOGICALCHANNELGROUPPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELGROUPPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

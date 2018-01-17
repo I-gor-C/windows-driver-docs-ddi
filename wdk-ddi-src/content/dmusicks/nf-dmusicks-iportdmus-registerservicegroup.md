@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IPortDMus.RegisterServiceGroup
+UID: NF:dmusicks.IPortDMus.RegisterServiceGroup
 title: IPortDMus::RegisterServiceGroup method
 author: windows-driver-content
 description: The RegisterServiceGroup method registers a service group with the DMus port driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IPortDMus::RegisterServiceGroup method
@@ -63,9 +64,9 @@ None
 
 
 ## -remarks
-The miniport driver calls the <code>RegisterServiceGroup</code> method to register a service group (<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object) with the port driver. The port driver can insert one or more of its service sinks (<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> objects) into this service group. The miniport driver sends notification (by calling <a href="audio.iportdmus_notify">IPortDMus::Notify</a>) to the service group each time an interrupt occurs. Upon receiving notification, the service group schedules a deferred procedure call (DPC). The DPC iterates through all of the service sinks in the service group and sends notification to each.
+The miniport driver calls the <code>RegisterServiceGroup</code> method to register a service group (<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object) with the port driver. The port driver can insert one or more of its service sinks (<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> objects) into this service group. The miniport driver sends notification (by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>) to the service group each time an interrupt occurs. Upon receiving notification, the service group schedules a deferred procedure call (DPC). The DPC iterates through all of the service sinks in the service group and sends notification to each.
 
-The miniport driver typically calls <b>RegisterServiceSink</b> during the execution of its <a href="audio.iminiportdmus_init">IMiniportDMus::Init</a> method. The purpose of this call is to register the service group with the port driver early enough to begin handling interrupts just as soon as they are enabled. Note that the service group that the <b>Init</b> method outputs is not available to the port driver until after the return from the <b>Init</b> method.
+The miniport driver typically calls <b>RegisterServiceSink</b> during the execution of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff536700">IMiniportDMus::Init</a> method. The purpose of this call is to register the service group with the port driver early enough to begin handling interrupts just as soon as they are enabled. Note that the service group that the <b>Init</b> method outputs is not available to the port driver until after the return from the <b>Init</b> method.
 
 If the miniport driver calls <code>RegisterServiceSink</code>, the service group that the miniport driver passes to the <code>RegisterServiceSink</code> method should be the same one that the miniport driver outputs through its <b>Init</b> method.
 
@@ -75,42 +76,6 @@ See the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK) f
 
 The <i>pServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -124,10 +89,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
 </dt>
 <dt>
-<a href="audio.iportdmus_notify">IPortDMus::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>
 </dt>
 <dt>
-<a href="audio.iminiportdmus_init">IMiniportDMus::Init</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536700">IMiniportDMus::Init</a>
 </dt>
 </dl>
  

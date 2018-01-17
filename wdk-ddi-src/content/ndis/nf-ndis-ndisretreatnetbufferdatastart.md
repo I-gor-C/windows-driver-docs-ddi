@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisRetreatNetBufferDataStart
+UID: NF:ndis.NdisRetreatNetBufferDataStart
 title: NdisRetreatNetBufferDataStart function
 author: windows-driver-content
 description: Call the NdisRetreatNetBufferDataStart function to access more used data space in the MDL chain of a NET_BUFFER structure.
 old-location: netvista\ndisretreatnetbufferdatastart.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4b58a1dc-8a5a-464b-a2a2-deb952febe25
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisRetreatNetBufferDataStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisRetreatNetBufferDataStart function
@@ -41,7 +42,7 @@ req.irql: <= DISPATCH_LEVEL
 Call the 
   <b>NdisRetreatNetBufferDataStart</b> function to access more 
   <i>used data space</i> in the MDL chain of a 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure.
 
 
 
@@ -108,7 +109,7 @@ An optional entry point for an
 ## -remarks
 <b>NdisRetreatNetBufferDataStart</b> attempts to satisfy the request by reducing the value of the 
     <b>DataOffset</b> member of the 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure.
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure.
 
 If there isn't enough 
     <i>unused data space</i>, this function allocates a new buffer and an MDL to describe the new buffer and
@@ -119,94 +120,28 @@ If there isn't enough
     driver's design requirements.
 
 Call the 
-    <a href="netvista.ndisadvancenetbufferdatastart">
+    <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
     NdisAdvanceNetBufferDataStart</a> function to release the 
     <i>used data space</i> that was added with 
     <b>NdisRetreatNetBufferDataStart</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisadvancenetbufferdatastart">
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
    NdisAdvanceNetBufferDataStart</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-net_buffer_allocate_mdl_handler.md">NetAllocateMdl</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisRetreatNetBufferDataStart function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetreatNetBufferDataStart function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.wudfddi_types._WDF_PNP_STATE
+UID: NE:wudfddi_types._WDF_PNP_STATE
 title: _WDF_PNP_STATE
 author: windows-driver-content
 description: The WDF_PNP_STATE enumeration contains values that identify the status of Plug and Play (PnP) for a device.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_pnp_state.htm
 old-project: wdf
 ms.assetid: f17a6d52-5f68-470c-9f45-6a175e0fbf01
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: _WDF_PNP_STATE, WDF_PNP_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_PNP_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -104,36 +105,21 @@ Valid enumeration values were exceeded.
 
 
 ## -remarks
-A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href="wdf.iwdfdevice_getpnpstate">IWDFDevice::GetPnpState</a> or <a href="wdf.iwdfdevice_setpnpstate">IWDFDevice::SetPnpState</a> method to identify the PnP property to retrieve or set status for.
+A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a> method to identify the PnP property to retrieve or set status for.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi_types.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.iwdfdevice_getpnpstate">IWDFDevice::GetPnpState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdevice_setpnpstate">IWDFDevice::SetPnpState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_STATE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_STATE enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

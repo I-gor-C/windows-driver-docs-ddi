@@ -1,5 +1,5 @@
 ---
-UID: NF.poscx.PosCxMarkPosApp
+UID: NF:poscx.PosCxMarkPosApp
 title: PosCxMarkPosApp function
 author: windows-driver-content
 description: PosCxMarkPosApp marks the open instance as associated or not associated with a point-of-service application.
@@ -7,7 +7,7 @@ old-location: pos\poscxmarkposapp.htm
 old-project: pos
 ms.assetid: 6BFFD014-E9DC-495C-9810-0D23BD93C41A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: PosCxMarkPosApp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ A handle to a framework device object that represents the device.
 
 ### -param fileObject [in]
 
-A handle to a framework file object that identifies the caller, usually acquired with <a href="wdf.wdfrequestgetfileobject">WdfRequestGetFileObject</a>.
+A handle to a framework file object that identifies the caller, usually acquired with <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>.
 
 
 ### -param isPosApp [in]
@@ -80,29 +81,3 @@ Possible return values are:
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

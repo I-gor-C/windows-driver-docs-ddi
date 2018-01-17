@@ -1,5 +1,5 @@
 ---
-UID: NI.charging.IOCTL_CAD_DISABLE_CHARGING
+UID: NI:charging.IOCTL_CAD_DISABLE_CHARGING
 title: IOCTL_CAD_DISABLE_CHARGING
 author: windows-driver-content
 description: This IOCTL is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 51E91097-7315-489A-8C07-0946481BF573
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPOWERSOURCEID, POWERSOURCEID
 ---
 
 # IOCTL_CAD_DISABLE_CHARGING IOCTL
@@ -77,19 +78,3 @@ Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h</dt>
-</dl>
-</td>
-</tr>
-</table>

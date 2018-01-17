@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_SHADERCACHE_CALLBACKS_0021
+UID: NS:d3d12umddi.D3D12DDI_SHADERCACHE_CALLBACKS_0021
 title: D3D12DDI_SHADERCACHE_CALLBACKS_0021
 author: windows-driver-content
 description: Specifies shader cache callback functions.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_shadercache_callbacks_0021.htm
 old-project: display
 ms.assetid: EBA976B0-3B44-4482-B1B0-31A84150C056
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_SHADERCACHE_CALLBACKS_0021, D3D12DDI_SHADERCACHE_CALLBACKS_0021
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_SHADERCACHE_CALLBACKS_0021
 ---
 
 # D3D12DDI_SHADERCACHE_CALLBACKS_0021 structure
@@ -65,19 +66,3 @@ A callback function that stores a shader cache value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

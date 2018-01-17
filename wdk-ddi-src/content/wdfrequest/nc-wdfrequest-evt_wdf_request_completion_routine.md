@@ -1,17 +1,17 @@
 ---
-UID: NC.wdfrequest.EVT_WDF_REQUEST_COMPLETION_ROUTINE
-title: EVT_WDF_REQUEST_COMPLETION_ROUTINE
+UID: NC:wdfrequest.EVT_WDF_REQUEST_COMPLETION_ROUTINE
+title: EVT_WDF_REQUEST_COMPLETION_ROUTINE function
 author: windows-driver-content
 description: A driver's CompletionRoutine event callback function executes when another driver completes a specified I/O request.
 old-location: wdf\completionroutine.htm
 old-project: wdf
 ms.assetid: 7d3eb4d6-9fc7-4924-9b95-f5824713049b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WdfRegistryWdmGetHandle
+ms.date: 1/11/2018
+ms.keywords: EVT_WDF_REQUEST_COMPLETION_ROUTINE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: wdfrequest.h
 req.include-header: Wdf.h
 req.target-type: Universal
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_WDF_REQUEST_COMPLETION_ROUTINE callback
+# EVT_WDF_REQUEST_COMPLETION_ROUTINE function
 
 
 
@@ -45,7 +46,7 @@ A driver's <i>CompletionRoutine</i> event callback function executes when anothe
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_WDF_REQUEST_COMPLETION_ROUTINE CompletionRoutine;
@@ -74,12 +75,12 @@ A handle to an I/O target object that represents the I/O target that completed t
 
 ### -param Params [in]
 
-A pointer to a <a href="wdf.wdf_request_completion_params">WDF_REQUEST_COMPLETION_PARAMS</a> structure that contains information about the completed request.
+A pointer to a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structure that contains information about the completed request.
 
 
 ### -param Context [in]
 
-Driver-supplied context information, which the driver specified in a previous call to <a href="wdf.wdfrequestsetcompletionroutine">WdfRequestSetCompletionRoutine</a>.
+Driver-supplied context information, which the driver specified in a previous call to <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>.
 
 
 ## -returns
@@ -87,11 +88,11 @@ None
 
 
 ## -remarks
-To register a <i>CompletionRoutine</i> callback function for an I/O request, a driver must call <a href="wdf.wdfrequestsetcompletionroutine">WdfRequestSetCompletionRoutine</a>. For more information about this callback function, see <a href="wdf.completing_i_o_requests">Completing I/O Requests</a>.
+To register a <i>CompletionRoutine</i> callback function for an I/O request, a driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>. For more information about this callback function, see <a href="https://msdn.microsoft.com/ec5aef7a-110e-430c-902d-669ccc7095ac">Completing I/O Requests</a>.
 
-Note that the completion parameters structure contains valid information only if the driver has formatted the request by calling one of the <b>WdfIoTargetFormat</b><i>Xxx</i> methods. For an example, see <a href="wdf.wdfiotargetformatrequestforread">WdfIoTargetFormatRequestForRead</a>.
+Note that the completion parameters structure contains valid information only if the driver has formatted the request by calling one of the <b>WdfIoTargetFormat</b><i>Xxx</i> methods. For an example, see <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetformatrequestforread.md">WdfIoTargetFormatRequestForRead</a>.
 
-A KMDF driver's <i>CompletionRoutine</i> can run at IRQL &lt;= DISPATCH_LEVEL regardless of the  <b>ExecutionLevel</b> specified in the <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure for the I/O request object.  
+A KMDF driver's <i>CompletionRoutine</i> can run at IRQL &lt;= DISPATCH_LEVEL regardless of the  <b>ExecutionLevel</b> specified in the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure for the I/O request object.  
 
 The function type is declared in <i>Wdfrequest.h</i>, as follows.
 
@@ -100,74 +101,18 @@ To define a <i>CompletionRoutine</i> callback function that is named <b>MyComple
 Then, implement your callback function as follows:
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfrequest.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfrequestsetcompletionroutine">WdfRequestSetCompletionRoutine</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>
 </dt>
 <dt>
-<a href="wdf.wdf_request_completion_params">WDF_REQUEST_COMPLETION_PARAMS</a>
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_REQUEST_COMPLETION_ROUTINE callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_REQUEST_COMPLETION_ROUTINE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

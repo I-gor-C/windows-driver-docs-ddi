@@ -1,14 +1,14 @@
 ---
-UID: NC.dot11wdi.MINIPORT_WDI_POST_ADAPTER_RESTART
+UID: NC:dot11wdi.MINIPORT_WDI_POST_ADAPTER_RESTART
 title: MINIPORT_WDI_POST_ADAPTER_RESTART
 author: windows-driver-content
 description: The MiniportWdiPostAdapterRestart handler function is called by the Microsoft component after it finishes restarting the data path as part of the NDIS MiniportRestart requirements.
 old-location: netvista\miniportwdipostadapterrestart.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1686A3CA-AD4A-4560-8665-9AFBE920CDDA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS, PSYNTH_STATS
+ms.date: 1/11/2018
+ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYNTH_STATS, SYNTH_STATS
 ---
 
 # MINIPORT_WDI_POST_ADAPTER_RESTART callback
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 The MiniportWdiPostAdapterRestart handler function is called by the Microsoft component after it finishes restarting the data path as part of the NDIS <a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a> requirements.
 
-This is a WDI miniport handler inside <a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
+This is a WDI miniport handler inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
 
 The NDIS <a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a> requirements are handled by the Microsoft component. As part of <i>MiniportRestart</i>, it undoes the data path pause work that it performed as part of <a href="..\ndis\nc-ndis-miniport_pause.md">MiniportPause</a>. The WDI IHV miniport can optionally register for a <i>MiniportWdiPostAdapterRestart</i> callback that is called by the Microsoft component after it finishes restarting the data path.
 
@@ -68,7 +69,7 @@ The handle to the context area that the miniport driver allocated.
 
 ### -param RestartParameters [in]
 
-A pointer to an <a href="netvista.ndis_miniport_restart_parameters">NDIS_MINIPORT_RESTART_PARAMETERS</a> structure that defines the restart parameters for the miniport adapter.
+A pointer to an <a href="..\ndis\ns-ndis-_ndis_miniport_restart_parameters.md">NDIS_MINIPORT_RESTART_PARAMETERS</a> structure that defines the restart parameters for the miniport adapter.
 
 
 ## -returns
@@ -99,41 +100,6 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -143,15 +109,15 @@ Header
 <a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_restart_parameters">NDIS_MINIPORT_RESTART_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_restart_parameters.md">NDIS_MINIPORT_RESTART_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_WDI_POST_ADAPTER_RESTART callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_WDI_POST_ADAPTER_RESTART callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

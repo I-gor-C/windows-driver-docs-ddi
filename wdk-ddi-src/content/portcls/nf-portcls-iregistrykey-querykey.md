@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IRegistryKey.QueryKey
+UID: NF:portcls.IRegistryKey.QueryKey
 title: IRegistryKey::QueryKey method
 author: windows-driver-content
 description: The QueryKey method retrieves information about a registry key, including the key name, key class, and the number of subkeys and their sizes.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IRegistryKey::QueryKey method
@@ -77,7 +78,7 @@ Specifies the type of information to be returned in the buffer. Set this paramet
 
 ### -param KeyInformation [out]
 
-Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer holds a structure of type <a href="kernel.key_basic_information">KEY_BASIC_INFORMATION</a>, <a href="kernel.key_full_information">KEY_FULL_INFORMATION</a>, or <a href="kernel.key_node_information">KEY_NODE_INFORMATION</a>, depending on the value of <i>KeyInformationClass</i>. The structure is followed by a string of Unicode characters whose size depends on the type of information being requested about the key and the length of the key's name or class string.
+Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer holds a structure of type <a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>, or <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>, depending on the value of <i>KeyInformationClass</i>. The structure is followed by a string of Unicode characters whose size depends on the type of information being requested about the key and the length of the key's name or class string.
 
 
 ### -param Length [in]
@@ -103,58 +104,22 @@ Output pointer for the length of the resulting data. This parameter points to a 
 If the <i>KeyInformation</i> buffer is too small to hold the requested information, the method writes the required size to *<i>ResultLength</i> and returns a status code of either STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. The method returns STATUS_BUFFER_OVERFLOW if it succeeded in writing only part of the requested information to the buffer. The method returns STATUS_BUFFER_TOO_SMALL if it was unable to write any information to the buffer. The value written to *<i>ResultLength</i> indicates the minimum buffer size required to hold all the requested information.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 </dt>
 <dt>
-<a href="kernel.key_basic_information">KEY_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_full_information">KEY_FULL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_node_information">KEY_NODE_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.zwquerykey">ZwQueryKey</a>
+<a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_BUILDPAGINGBUFFER_OPERATION
+UID: NE:d3dkmddi._DXGK_BUILDPAGINGBUFFER_OPERATION
 title: _DXGK_BUILDPAGINGBUFFER_OPERATION
 author: windows-driver-content
 description: Indicates the type of memory operation to perform.
@@ -7,7 +7,7 @@ old-location: display\dxgk_buildpagingbuffer_operation.htm
 old-project: display
 ms.assetid: D170D828-A0BC-4CBC-9F3F-E384AAD11FCC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_BUILDPAGINGBUFFER_OPERATION, DXGK_BUILDPAGINGBUFFER_OPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_BUILDPAGINGBUFFER_OPERATION
 ---
 
 # _DXGK_BUILDPAGINGBUFFER_OPERATION enumeration
@@ -162,39 +163,3 @@ The paging operation is issued every time an allocation residency is changed (wh
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

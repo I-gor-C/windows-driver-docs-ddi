@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_RPC_EPMAP_
+UID: NE:fwpsk.FWPS_FIELDS_RPC_EPMAP_
 title: FWPS_FIELDS_RPC_EPMAP_
 author: windows-driver-content
 description: The FWPS_FIELDS_RPC_EPMAP enumeration type specifies the data field identifiers for the FWPS_LAYER_RPC_EPMAP run-time filtering layer.
 old-location: netvista\fwps_fields_rpc_epmap.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 78960e0c-6b27-4331-a0e0-3f7ba13a54cf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_RPC_EPMAP_, FWPS_FIELDS_RPC_EPMAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_RPC_EPMAP
 ---
 
 # FWPS_FIELDS_RPC_EPMAP_ enumeration
@@ -158,29 +159,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

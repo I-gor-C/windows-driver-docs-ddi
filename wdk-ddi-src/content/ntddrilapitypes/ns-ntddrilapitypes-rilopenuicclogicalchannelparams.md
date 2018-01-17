@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILOPENUICCLOGICALCHANNELPARAMS
+UID: NS:ntddrilapitypes.RILOPENUICCLOGICALCHANNELPARAMS
 title: RILOPENUICCLOGICALCHANNELPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilopenuicclogicalchannelparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4bc3a16b-dc9e-4c15-9083-75ac4608def5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS, LPRILOPENUICCLOGICALCHANNELPARAMS, *LPRILOPENUICCLOGICALCHANNELPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS, *LPRILOPENUICCLOGICALCHANNELPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILOPENUICCLOGICALCHANNELPARAMS, *LPRILOPENUICCLOGICALCHANNELPARAMS
 ---
 
 # RILOPENUICCLOGICALCHANNELPARAMS structure
@@ -73,19 +74,3 @@ typedef struct _RILOPENUICCLOGICALCHANNELPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

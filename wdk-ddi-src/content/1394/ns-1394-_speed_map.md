@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._SPEED_MAP
+UID: NS:1394._SPEED_MAP
 title: _SPEED_MAP
 author: windows-driver-content
 description: The SPEED_MAP structure is stores a IEEE 1394 bus speed map.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 52b2b97e-217b-445b-9c7a-093808f37aba
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SPEED_MAP, PSPEED_MAP, SPEED_MAP, *PSPEED_MAP
+ms.keywords: _SPEED_MAP, SPEED_MAP, *PSPEED_MAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SPEED_MAP, *PSPEED_MAP
 ---
 
 # _SPEED_MAP structure
@@ -93,21 +94,6 @@ SCODE_400_RATE
 ## -remarks
 The SPEED_MAP structure describes the maximum speed that devices on the bus can attain. All values in this structure are recorded in big-endian format.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

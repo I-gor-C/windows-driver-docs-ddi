@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsNotifications.AllocNotificationBuffer
+UID: NF:portcls.IPortClsNotifications.AllocNotificationBuffer
 title: IPortClsNotifications::AllocNotificationBuffer method
 author: windows-driver-content
 description: Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsNotifications::AllocNotificationBuffer method
@@ -69,7 +70,7 @@ Number of bytes to allocate.
 
 ### -param PPCNOTIFICATION*  [out]
 
-Pointer to a <a href="audio.pcnotification_buffer">PCNOTIFICATION_BUFFER</a> which the method writes the address of the allocated notification.
+Pointer to a <a href="..\portcls\ns-portcls-_pcnotification_buffer.md">PCNOTIFICATION_BUFFER</a> which the method writes the address of the allocated notification.
 
 
 ## -returns
@@ -89,63 +90,6 @@ Additional standard status codes may be returned. For example, STATUS_INSUFFICIE
 ## -remarks
 Callers of <b>AllocNotificationBuffer</b> must be running at IRQL &lt;= DISPATCH_LEVEL. If a driver writer calls this routine at IRQL = DISPATCH_LEVEL, the NotificationStructure must be allocated from nonpaged memory.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1703 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL (see Remarks section)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

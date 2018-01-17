@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ALLOCATE_ADDRESS_RANGE
+UID: NS:1394._IRB_REQ_ALLOCATE_ADDRESS_RANGE
 title: _IRB_REQ_ALLOCATE_ADDRESS_RANGE
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 stack to carry out a request to allocate an address range.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ALLOCATE_ADDRESS_RANGE
 ---
 
 # _IRB_REQ_ALLOCATE_ADDRESS_RANGE structure
@@ -73,7 +74,7 @@ typedef struct {
 
 ### -field Mdl
 
-If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="kernel.mmprobeandlockpages">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.
+If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.
 
 
 ### -field fulFlags
@@ -279,19 +280,3 @@ Points to the device extension associated with the device object. Not setting th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

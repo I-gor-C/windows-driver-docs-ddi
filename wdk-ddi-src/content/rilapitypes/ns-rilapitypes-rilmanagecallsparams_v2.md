@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILMANAGECALLSPARAMS_V2
+UID: NS:rilapitypes.RILMANAGECALLSPARAMS_V2
 title: RILMANAGECALLSPARAMS_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmanagecallsparams_v2_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6da5ba7b-60d5-4f98-b75b-67956b9a85f8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMANAGECALLSPARAMS_V2, *LPRILMANAGECALLSPARAMS_V2, RILMANAGECALLSPARAMS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILMANAGECALLSPARAMS_V2, RILMANAGECALLSPARAMS_V2
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef struct _RILMANAGECALLSPARAMS_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

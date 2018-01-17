@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILPHONEENTRYSTORELOCATION
+UID: NE:rilapitypes.RILPHONEENTRYSTORELOCATION
 title: RILPHONEENTRYSTORELOCATION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphoneentrystorelocation_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f9166dfa-e895-4aca-8080-af3cfe9c143f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILPHONEENTRYSTORELOCATION, RILPHONEENTRYSTORELOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPHONEENTRYSTORELOCATION
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef enum _RILPHONEENTRYSTORELOCATION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILSYSTEMSELECTIONPREFSMODE
+UID: NE:ntddrilapitypes.RILSYSTEMSELECTIONPREFSMODE
 title: RILSYSTEMSELECTIONPREFSMODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefsmode.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f2d9bb70-cb0c-4e4b-be7a-11a89df739be
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSYSTEMSELECTIONPREFSMODE, RILSYSTEMSELECTIONPREFSMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMSELECTIONPREFSMODE
 ---
 
 # RILSYSTEMSELECTIONPREFSMODE enumeration
@@ -61,19 +62,3 @@ typedef enum _RILSYSTEMSELECTIONPREFSMODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

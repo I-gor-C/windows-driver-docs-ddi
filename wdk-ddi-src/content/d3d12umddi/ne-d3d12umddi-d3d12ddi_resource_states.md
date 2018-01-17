@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_RESOURCE_STATES
+UID: NE:d3d12umddi.D3D12DDI_RESOURCE_STATES
 title: D3D12DDI_RESOURCE_STATES
 author: windows-driver-content
 description: Contains resource states.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_states.htm
 old-project: display
 ms.assetid: E5DB8AF3-A6ED-4CD7-9723-78ACD57F1723
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_RESOURCE_STATES, D3D12DDI_RESOURCE_STATES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_RESOURCE_STATES
 ---
 
 # D3D12DDI_RESOURCE_STATES enumeration
@@ -171,20 +172,4 @@ Resource barriers allow transitioning between hardware specific states for a cor
 
 Resource barriers are an existing concept in D3D12 that is extended to support video decode by adding new usage flags.
 The write state is used for the decode target.  The write state is also used when decode conversion is enabled for the non-converted reference.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

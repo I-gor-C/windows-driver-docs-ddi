@@ -1,5 +1,5 @@
 ---
-UID: NS.WUDFINTERRUPT._WUDF_INTERRUPT_CONFIG
+UID: NS:wudfinterrupt._WUDF_INTERRUPT_CONFIG
 title: _WUDF_INTERRUPT_CONFIG
 author: windows-driver-content
 description: The WUDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt.
@@ -7,8 +7,8 @@ old-location: wdf\wudf_interrupt_config.htm
 old-project: wdf
 ms.assetid: 7A849A10-2C47-42E2-8BEB-E1D979D3C893
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WUDF_INTERRUPT_CONFIG, PWUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG, *PWUDF_INTERRUPT_CONFIG
+ms.date: 1/11/2018
+ms.keywords: _WUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG, *PWUDF_INTERRUPT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WUDF_INTERRUPT_CONFIG, *PWUDF_INTERRUPT_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -72,7 +73,7 @@ The size, in bytes, of this structure.
 
 ### -field ShareVector
 
-A <a href="wdf.wdf_tri_state">WDF_TRI_STATE</a>-typed value. If this value is <b>WdfTrue</b>, the interrupt vector can be shared. If the value is <b>WdfFalse</b>, the interrupt vector cannot be shared. If the value is <b>WdfDefault</b> and the interrupt is level-triggered,  the Plug and Play manager uses the bus driver's value. If the value is <b>WdfDefault</b> and the interrupt is not level-triggered, the interrupt vector cannot be shared.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value. If this value is <b>WdfTrue</b>, the interrupt vector can be shared. If the value is <b>WdfFalse</b>, the interrupt vector cannot be shared. If the value is <b>WdfDefault</b> and the interrupt is level-triggered,  the Plug and Play manager uses the bus driver's value. If the value is <b>WdfDefault</b> and the interrupt is not level-triggered, the interrupt vector cannot be shared.
 
 
 ### -field AutomaticSerialization
@@ -102,20 +103,20 @@ A pointer to the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf_interr
 
 ### -field InterruptRaw
 
-A pointer to the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">raw resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="wdf.ipnpcallbackhardware_onpreparehardware">OnPrepareHardware</a> callback.
+A pointer to the <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">raw resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a> callback.
 
 
 ### -field InterruptTranslated
 
-A pointer to the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">translated resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="wdf.ipnpcallbackhardware_onpreparehardware">OnPrepareHardware</a> callback.
+A pointer to the <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the <a href="wdf.raw_and_translated_resources">translated resources</a> that the system assigned to the interrupt. This member is only used if the interrupt is created in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a> callback.
 
 
 ## -remarks
-The <b>WUDF_INTERRUPT_CONFIG</b> structure is used as input to <a href="wdf.iwdfdevice3_createinterrupt">IWDFDevice3::CreateInterrupt</a>.
+The <b>WUDF_INTERRUPT_CONFIG</b> structure is used as input to <a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice3::CreateInterrupt</a>.
 
-To initialize a <b>WUDF_INTERRUPT_CONFIG</b> structure, your driver should first call <a href="wdf.wudf_interrupt_config_init">WUDF_INTERRUPT_CONFIG_INIT</a> and then fill in structure members that <b>WUDF_INTERRUPT_CONFIG_INIT</b> does not initialize.
+To initialize a <b>WUDF_INTERRUPT_CONFIG</b> structure, your driver should first call <a href="..\wudfinterrupt\nf-wudfinterrupt-wudf_interrupt_config_init.md">WUDF_INTERRUPT_CONFIG_INIT</a> and then fill in structure members that <b>WUDF_INTERRUPT_CONFIG_INIT</b> does not initialize.
 
-Before setting <b>AutomaticSerialization</b> to TRUE, the driver must call <a href="wdf.iwdfdeviceinitialize_setlockingconstraint">IWDFDeviceInitialize::SetLockingConstraint</a> with the <i>LockType</i> parameter set to <b>WdfDeviceLevel</b>.
+Before setting <b>AutomaticSerialization</b> to TRUE, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff556991">IWDFDeviceInitialize::SetLockingConstraint</a> with the <i>LockType</i> parameter set to <b>WdfDeviceLevel</b>.
 
 Your driver should include Wudfwdm.h, which contains the definition of CM_PARTIAL_RESOURCE_DESCRIPTOR.
 
@@ -123,56 +124,21 @@ Your driver should include Wudfwdm.h, which contains the definition of CM_PARTIA
 UMDF supports edge-triggered, line-based interrupts and message-signaled interrupts (MSI) on all framework-supported operating systems. Because these types of interrupt resources are not shared, a driver that uses them should set the <b>ShareVector</b> member of this structure to WdfFalse or WdfUseDefault. If the driver specifies an invalid <b>ShareVector</b> value, the driver fails to start.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.11
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfinterrupt.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.iwdfdeviceinitialize_setlockingconstraint">IWDFDeviceInitialize::SetLockingConstraint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556991">IWDFDeviceInitialize::SetLockingConstraint</a>
 </dt>
 <dt>
-<a href="wdf.wudf_interrupt_config_init">WUDF_INTERRUPT_CONFIG_INIT</a>
+<a href="..\wudfinterrupt\nf-wudfinterrupt-wudf_interrupt_config_init.md">WUDF_INTERRUPT_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdevice3_createinterrupt">IWDFDevice3::CreateInterrupt</a>
+<a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice3::CreateInterrupt</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_CONFIG structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_CONFIG structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

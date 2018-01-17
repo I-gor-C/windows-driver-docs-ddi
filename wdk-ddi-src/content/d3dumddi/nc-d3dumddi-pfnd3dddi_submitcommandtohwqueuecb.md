@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_SUBMITCOMMANDTOHWQUEUECB
+UID: NC:d3dumddi.PFND3DDDI_SUBMITCOMMANDTOHWQUEUECB
 title: PFND3DDDI_SUBMITCOMMANDTOHWQUEUECB
 author: windows-driver-content
 description: A callback to submit a command to the hardware queue.
@@ -7,8 +7,8 @@ old-location: display\pfnd3dddi_submitcommandtohwqueuecb.htm
 old-project: display
 ms.assetid: 8E8B0FE6-ACE5-4610-A0F7-95D426A4AA97
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_SUBMITCOMMANDTOHWQUEUECB callback
@@ -75,19 +76,3 @@ This function might also return other HRESULT values.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

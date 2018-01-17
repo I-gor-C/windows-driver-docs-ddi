@@ -1,14 +1,14 @@
 ---
-UID: NC.dot11wdi.NDIS_WDI_PEER_CREATE_IND
+UID: NC:dot11wdi.NDIS_WDI_PEER_CREATE_IND
 title: NDIS_WDI_PEER_CREATE_IND
 author: windows-driver-content
 description: The NdisWdiPeerCreateIndication callback function specifies a peer ID to associate with a peer MAC address.
 old-location: netvista\ndiswdipeercreateindication.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 58B60160-FE04-4EDE-900F-244D0F76E50D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS, PSYNTH_STATS
+ms.date: 1/11/2018
+ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYNTH_STATS, SYNTH_STATS
 ---
 
 # NDIS_WDI_PEER_CREATE_IND callback
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 The NdisWdiPeerCreateIndication callback function specifies a peer ID to associate with a peer MAC address.
 
-This is a callback inside <a href="netvista.ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
+This is a callback inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>.
 
 
 
@@ -97,48 +98,13 @@ To facilitate TDLS implementation in the IHV component, a port operating in STA 
 In peer queuing mode, a peer is created with all TIDs paused with <b>WDI_TX_PAUSE_REASON_PEER_CREATE</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_wdi_data_api">NDIS_WDI_DATA_API</a>
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
 </dt>
 <dt>
-<a href="netvista.wdi_mac_address">WDI_MAC_ADDRESS</a>
+<a href="..\dot11wdi\ns-dot11wdi-_wdi_mac_address.md">WDI_MAC_ADDRESS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt297658">WDI_PEER_ID</a>
@@ -147,12 +113,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt269099">WDI_PORT_ID</a>
 </dt>
 <dt>
-<a href="netvista.wdi_general_datapath_interfaces">WDI general datapath interfaces</a>
+<a href="https://msdn.microsoft.com/5B40171C-4E5F-4C35-A6E7-1EA5181C02E8">WDI general datapath interfaces</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_WDI_PEER_CREATE_IND callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_PEER_CREATE_IND callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

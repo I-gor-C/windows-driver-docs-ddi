@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._PTS_DATA
+UID: NS:smclib._PTS_DATA
 title: _PTS_DATA
 author: windows-driver-content
 description: The PTS_DATA structure is used for protocol type selection (PTS).
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: aa542c6f-24f9-4ef4-a425-93905cca976a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PTS_DATA, PPTS_DATA, PTS_DATA, *PPTS_DATA
+ms.keywords: _PTS_DATA, *PPTS_DATA, PTS_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPTS_DATA, PTS_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -111,20 +112,4 @@ Contains the number of stop bits to use with the inserted card.
 
 
 ## -remarks
-The smart card reader driver library assigns values to the members of this structure before it calls the callback function that sets the protocol. The driver library considers the characteristics of the inserted smart card, the supported clock frequencies, and supported data rates of the reader when it assigns the values. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The smart card reader driver library assigns values to the members of this structure before it calls the callback function that sets the protocol. The driver library considers the characteristics of the inserted smart card, the supported clock frequencies, and supported data rates of the reader when it assigns the values. </p>

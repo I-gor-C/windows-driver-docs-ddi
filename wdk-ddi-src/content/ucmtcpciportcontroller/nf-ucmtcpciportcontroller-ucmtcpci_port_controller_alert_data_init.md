@@ -1,13 +1,13 @@
 ---
-UID: NF.ucmtcpciportcontroller.UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT
+UID: NF:ucmtcpciportcontroller.UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT
 title: UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT function
 author: windows-driver-content
 description: Initializes the UCMTCPCI_PORT_CONTROLLER_ALERT_DATA structure.
 old-location: buses\ucmtcpci_port_controller_alert_data_init.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 7c3276cc-9194-4c18-b1d8-2795efbeb357
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -43,7 +44,7 @@ req.product: Windows 10 or later.
                         Initializes the <b>UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</b> structure.
                 
             
-        Call this function before calling <a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a>.
+        Call this function before calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrolleralert.md">UcmTcpciPortControllerAlert</a>.
 
 
 
@@ -68,49 +69,3 @@ This method does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtcpciportcontroller.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>

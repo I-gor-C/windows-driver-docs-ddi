@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IAdapterPowerManagement3.D3ExitLatencyChanged
+UID: NF:portcls.IAdapterPowerManagement3.D3ExitLatencyChanged
 title: IAdapterPowerManagement3::D3ExitLatencyChanged method
 author: windows-driver-content
 description: PortCls calls the D3ExitLatencyChanged method while the device is in sleep (D3) power state, to provide a new exit latency value.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IAdapterPowerManagement3::D3ExitLatencyChanged method
@@ -55,7 +56,7 @@ NTSTATUS D3ExitLatencyChanged(
 
 ### -param NewD3ExitLatency [in]
 
-The  <a href="audio.pc_exit_latency">PC_EXIT_LATENCY</a> enumerated value that Portcls has determined for the device.
+The  <a href="..\portcls\ne-portcls-_pc_exit_latency.md">PC_EXIT_LATENCY</a> enumerated value that Portcls has determined for the device.
 
 
 ## -returns
@@ -63,7 +64,7 @@ This method returns an NTSTATUS value.
 
 
 ## -remarks
- The D3ExitLatencyChanged method is only called when the device is the D3 power state. When Portcls wakes the device into D0, it does so via <a href="audio.iadapterpowermanagement3_powerchangestate3">PowerChangeState3</a>, and the device must be able to exit its sleep state within the latency period indicated by <i>NewD3ExitLatency</i>. Waking the audio adapter in this manner allows the driver to use the most appropriate method to adjust the power state of the audio adapter within the time-frame indicated  by the <i>NewD3ExitLatency</i> value.
+ The D3ExitLatencyChanged method is only called when the device is the D3 power state. When Portcls wakes the device into D0, it does so via <a href="https://msdn.microsoft.com/library/windows/hardware/jj200332">PowerChangeState3</a>, and the device must be able to exit its sleep state within the latency period indicated by <i>NewD3ExitLatency</i>. Waking the audio adapter in this manner allows the driver to use the most appropriate method to adjust the power state of the audio adapter within the time-frame indicated  by the <i>NewD3ExitLatency</i> value.
 
 The following table shows the possible values for <i>NewD3ExitLatency</i>.
   <table>
@@ -89,62 +90,16 @@ The following table shows the possible values for <i>NewD3ExitLatency</i>.
 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iadapterpowermanagement3.md">IAdapterPowerManagement3</a>
 </dt>
 <dt>
-<a href="audio.pc_exit_latency">PC_EXIT_LATENCY</a>
+<a href="..\portcls\ne-portcls-_pc_exit_latency.md">PC_EXIT_LATENCY</a>
 </dt>
 <dt>
-<a href="audio.iadapterpowermanagement3_powerchangestate3">PowerChangeState3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj200332">PowerChangeState3</a>
 </dt>
 </dl>
  

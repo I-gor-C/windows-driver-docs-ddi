@@ -1,14 +1,14 @@
 ---
-UID: NS.UCXROOTHUB._ROOTHUB_30PORT_INFO_EX
+UID: NS:ucxroothub._ROOTHUB_30PORT_INFO_EX
 title: _ROOTHUB_30PORT_INFO_EX
 author: windows-driver-content
 description: Provides extended USB 3.0 port information about speed.
 old-location: buses\_roothub_30port_info_ex.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 3FA3494F-DFFF-414E-B88C-DF7C034B96C6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX, *PROOTHUB_30PORT_INFO_EX, PROOTHUB_30PORT_INFO_EX
+ms.date: 1/4/2018
+ms.keywords: _ROOTHUB_30PORT_INFO_EX, *PROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ typedef struct _ROOTHUB_30PORT_INFO_EX {
 
 ### -field Info
 
-A <a href="buses._roothub_30port_info">ROOTHUB_30PORT_INFO</a> structure.
+A <a href="..\ucxroothub\ns-ucxroothub-_roothub_30port_info.md">ROOTHUB_30PORT_INFO</a> structure.
 
 
 ### -field MaxSpeedsCount
@@ -82,19 +83,3 @@ A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,19 +1,19 @@
 ---
-UID: NE.rilapitypes.RILSYSTEMTYPE
+UID: NE:rilapitypes.RILSYSTEMTYPE
 title: RILSYSTEMTYPE
 author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilsystemtype_2.htm
-old-project: NetVista
-ms.assetid: 5342333e-6119-4800-896e-4c388706d97e
+description: This enumeration represents RILSYSTEMTYPE.
+old-location: netvista\rilsystemtype.htm
+old-project: netvista
+ms.assetid: 5a95969c-d7cd-4afa-affa-7095979ee56b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSYSTEMTYPE, RILSYSTEMTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
 req.header: rilapitypes.h
-req.include-header: 
+req.include-header: Rilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMTYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,31 +40,30 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
 
 ## -syntax
 
 ````
-typedef enum _RILSYSTEMTYPE { 
-  RIL_SYSTEMTYPE_1XRTT,
-  RIL_SYSTEMTYPE_EVDO,
-  RIL_SYSTEMTYPE_GSM,
-  RIL_SYSTEMTYPE_UMTS,
-  RIL_SYSTEMTYPE_LTE,
-  RIL_SYSTEMTYPE_TDSCDMA,
-  RIL_SYSTEMTYPE_CDMA,
-  RIL_SYSTEMTYPE_GSMUMTS,
-  RIL_SYSTEMTYPE_GSMTDS,
-  RIL_SYSTEMTYPE_GSMUMTSTDS,
-  RIL_SYSTEMTYPE_3GPP,
-  RIL_SYSTEMTYPE_ALL
-} RILSYSTEMTYPE;
+enum RILSYSTEMTYPE {
+  RIL_SYSTEMTYPE_NONE     = 0x00000000, 
+  RIL_SYSTEMTYPE_1XRTT    = 0x00000001, 
+  RIL_SYSTEMTYPE_EVDO     = 0x00000002, 
+  RIL_SYSTEMTYPE_GSM      = 0x00000004, 
+  RIL_SYSTEMTYPE_UMTS     = 0x00000008, 
+  RIL_SYSTEMTYPE_LTE      = 0x00000010, 
+  RIL_SYSTEMTYPE_TDSCDMA  = 0x00000020, 
+  RIL_SYSTEMTYPE_CDMA     = RIL_SYSTEMTYPE_1XRTT | RIL_SYSTEMTYPE_EVDO, 
+  RIL_SYSTEMTYPE_GSMUMTS  = RIL_SYSTEMTYPE_GSM | RIL_SYSTEMTYPE_UMTS, 
+  RIL_SYSTEMTYPE_ALL      = 0x0000003F 
+
+};
 ````
 
 
 ## -enum-fields
+
+### -field RIL_SYSTEMTYPE_NONE
+
 
 ### -field RIL_SYSTEMTYPE_1XRTT
 
@@ -89,32 +89,21 @@ typedef enum _RILSYSTEMTYPE {
 ### -field RIL_SYSTEMTYPE_GSMUMTS
 
 
-### -field RIL_SYSTEMTYPE_GSMTDS
-
-
-### -field RIL_SYSTEMTYPE_GSMUMTSTDS
-
-
-### -field RIL_SYSTEMTYPE_3GPP
-
-
 ### -field RIL_SYSTEMTYPE_ALL
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
+## -see-also
 <dl>
-<dt>Rilapitypes.h</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+</dt>
 </dl>
-</td>
-</tr>
-</table>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILSYSTEMTYPE enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILRESETMODEMIMSENABLEMENTSTATE
+UID: NE:ntddrilapitypes.RILRESETMODEMIMSENABLEMENTSTATE
 title: RILRESETMODEMIMSENABLEMENTSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilresetmodemimsenablementstate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 50fae043-3575-4eff-869a-fae94168a4a1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILRESETMODEMIMSENABLEMENTSTATE, RILRESETMODEMIMSENABLEMENTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRESETMODEMIMSENABLEMENTSTATE
 ---
 
 # RILRESETMODEMIMSENABLEMENTSTATE enumeration
@@ -57,19 +58,3 @@ typedef enum _RILRESETMODEMIMSENABLEMENTSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

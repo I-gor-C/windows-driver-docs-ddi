@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_RESOURCE_FLAGS_0003
+UID: NE:d3d12umddi.D3D12DDI_RESOURCE_FLAGS_0003
 title: D3D12DDI_RESOURCE_FLAGS_0003
 author: windows-driver-content
 description: Specifies resource flag values.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_flags_0003.htm
 old-project: display
 ms.assetid: 595A4177-4A18-48D6-8B5C-D7D2FBD9FE9B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_RESOURCE_FLAGS_0003, D3D12DDI_RESOURCE_FLAGS_0003
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_RESOURCE_FLAGS_0003
 ---
 
 # D3D12DDI_RESOURCE_FLAGS_0003 enumeration
@@ -107,19 +108,3 @@ Unordered access. This value is available as a resource flag for the fallback pl
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

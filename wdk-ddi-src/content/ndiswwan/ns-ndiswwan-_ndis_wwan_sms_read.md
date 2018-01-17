@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISWWAN._NDIS_WWAN_SMS_READ
+UID: NS:ndiswwan._NDIS_WWAN_SMS_READ
 title: _NDIS_WWAN_SMS_READ
 author: windows-driver-content
 description: The NDIS_WWAN_SMS_READ structure represents an SMS message to read.
 old-location: netvista\ndis_wwan_sms_read.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2c15c16f-773b-415d-80a1-fd0b3bcf6fbf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ, *PNDIS_WWAN_SMS_READ, PNDIS_WWAN_SMS_READ
+ms.date: 1/11/2018
+ms.keywords: _NDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ, *PNDIS_WWAN_SMS_READ
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_WWAN_SMS_READ, *PNDIS_WWAN_SMS_READ
 ---
 
 # _NDIS_WWAN_SMS_READ structure
@@ -102,56 +103,31 @@ sizeof(NDIS_WWAN_SMS_READ)
  
 
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field SmsRead
 
 A formatted 
-     <a href="netvista.wwan_sms_read">WWAN_SMS_READ</a> object that represents the
+     <a href="..\wwan\ns-wwan-_wwan_sms_read.md">WWAN_SMS_READ</a> object that represents the
      format and filter of SMS messages to read.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndiswwan.h (include Ndiswwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.wwan_sms_read">WWAN_SMS_READ</a>
+<a href="..\wwan\ns-wwan-_wwan_sms_read.md">WWAN_SMS_READ</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_WWAN_SMS_READ structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SMS_READ structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

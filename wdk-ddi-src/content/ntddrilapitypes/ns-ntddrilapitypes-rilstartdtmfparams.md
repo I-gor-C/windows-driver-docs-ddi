@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSTARTDTMFPARAMS
+UID: NS:ntddrilapitypes.RILSTARTDTMFPARAMS
 title: RILSTARTDTMFPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilstartdtmfparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3837fcee-7b94-464f-904c-c6eaa1002620
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSTARTDTMFPARAMS, *LPRILSTARTDTMFPARAMS, RILSTARTDTMFPARAMS, LPRILSTARTDTMFPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSTARTDTMFPARAMS, RILSTARTDTMFPARAMS, *LPRILSTARTDTMFPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSTARTDTMFPARAMS, *LPRILSTARTDTMFPARAMS
 ---
 
 # RILSTARTDTMFPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILSTARTDTMFPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

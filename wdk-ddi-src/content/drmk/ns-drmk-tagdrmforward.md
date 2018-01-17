@@ -1,5 +1,5 @@
 ---
-UID: NS.DRMK.TAGDRMFORWARD
+UID: NS:drmk.tagDRMFORWARD
 title: tagDRMFORWARD
 author: windows-driver-content
 description: The DRMFORWARD structure contains the information that the DRMK system driver needs in order to forward a DRM content ID to a device that handles protected content.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 30e2e62a-3ae4-4efe-a6e9-6aece6bfbb46
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: tagDRMFORWARD, *PDRMFORWARD, PDRMFORWARD, DRMFORWARD
+ms.keywords: tagDRMFORWARD, *PDRMFORWARD, DRMFORWARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PDRMFORWARD, DRMFORWARD
 ---
 
 # tagDRMFORWARD structure
@@ -63,12 +64,12 @@ No flag bits are currently defined. Set this member to zero.
 
 ### -field DeviceObject
 
-Pointer to the device object, which is a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device object, which is a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
 
 
 ### -field FileObject
 
-Pointer to the file object, which is a system structure of type <a href="kernel.file_object">FILE_OBJECT</a>.
+Pointer to the file object, which is a system structure of type <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>.
 
 
 ### -field Context
@@ -77,7 +78,7 @@ Pointer to context data. For more information, see the following Remarks section
 
 
 ## -remarks
-This structure is one of the <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a> function's call parameters. The structure contains the information that the function needs to send a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>set-property request to a WDM driver.
+This structure is one of the <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a> function's call parameters. The structure contains the information that the function needs to send a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>set-property request to a WDM driver.
 
 The WDM driver manages the device that is represented by the <b>DeviceObject</b> member. The <b>DrmForwardContentToDeviceObject</b> function sends the property request to this device object.
 
@@ -87,7 +88,7 @@ The <b>Context</b> member contains a context value that the <b>DrmForwardContent
 
 By convention, if the downstream module is a KS filter, the <b>Context</b> member points to a file object that specifies the KS pin to which the <b>DrmForwardContentToDeviceObject</b> function sends the property request. In other words, the <b>Context</b> member points to the same file object as the <b>FileObject</b> member.
 
-The DRMFORWARD structure is also used by the <a href="audio.pcforwardcontenttodeviceobject">PcForwardContentToDeviceObject</a> function and the <a href="audio.idrmport2_forwardcontenttodeviceobject">IDrmPort2::ForwardContentToDeviceObject</a> method, which are alternative entry points for the <b>DrmForwardContentToDeviceObject</b> function. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
+The DRMFORWARD structure is also used by the <a href="..\portcls\nf-portcls-pcforwardcontenttodeviceobject.md">PcForwardContentToDeviceObject</a> function and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536579">IDrmPort2::ForwardContentToDeviceObject</a> method, which are alternative entry points for the <b>DrmForwardContentToDeviceObject</b> function. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
 
 When an audio driver forwards DRM content to a system-supplied USB driver, the following conditions apply: <ul>
 <li><b>DRMFORWARD.DeviceObject</b> must be placed at the top of the device stack.</li>
@@ -99,31 +100,16 @@ When an audio driver forwards DRM content to a system-supplied USB driver, the f
 For general information about DRM, see <a href="https://msdn.microsoft.com/7ce19196-5180-421f-b6be-ac4a235a8c16">Digital Rights Management</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h (include Drmk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.file_object">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
@@ -132,10 +118,10 @@ Header
 <a href="..\drmk\ns-drmk-ksp_drmaudiostream_contentid.md">KSP_DRMAUDIOSTREAM_CONTENTID</a>
 </dt>
 <dt>
-<a href="audio.pcforwardcontenttodeviceobject">PcForwardContentToDeviceObject</a>
+<a href="..\portcls\nf-portcls-pcforwardcontenttodeviceobject.md">PcForwardContentToDeviceObject</a>
 </dt>
 <dt>
-<a href="audio.idrmport2_forwardcontenttodeviceobject">IDrmPort2::ForwardContentToDeviceObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536579">IDrmPort2::ForwardContentToDeviceObject</a>
 </dt>
 </dl>
  

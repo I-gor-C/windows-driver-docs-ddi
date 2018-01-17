@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugAdvanced3.GetSymbolInformationWide
+UID: NF:dbgeng.IDebugAdvanced3.GetSymbolInformationWide
 title: IDebugAdvanced3::GetSymbolInformationWide method
 author: windows-driver-content
 description: The SetSymbolInformationWide method returns specified information about a symbol.
 old-location: debugger\getsymbolinformationwide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 8fa6a00d-ad4e-47e2-bffe-4d9d70846fd6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugAdvanced3, IDebugAdvanced3::GetSymbolInformationWide, GetSymbolInformationWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugAdvanced3::GetSymbolInformationWide method
@@ -217,30 +218,3 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

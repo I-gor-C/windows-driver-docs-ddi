@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.WriteMsr
+UID: NF:dbgeng.IDebugDataSpaces4.WriteMsr
 title: IDebugDataSpaces4::WriteMsr method
 author: windows-driver-content
 description: The WriteMsr method writes a value to the specified Model-Specific Register (MSR).
 old-location: debugger\writemsr2.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c9838b9e-b390-455d-98d6-249a49c9165d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WriteMsr, WriteMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::WriteMsr method
@@ -77,31 +78,4 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 ## -remarks
 This method is only available in kernel-mode debugging.
 
-For details on the addresses and values of MSRs, see the processor documentation.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For details on the addresses and values of MSRs, see the processor documentation.</p>

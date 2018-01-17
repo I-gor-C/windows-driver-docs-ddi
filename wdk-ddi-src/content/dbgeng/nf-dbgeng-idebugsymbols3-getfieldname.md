@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetFieldName
+UID: NF:dbgeng.IDebugSymbols3.GetFieldName
 title: IDebugSymbols3::GetFieldName method
 author: windows-driver-content
 description: The GetFieldName method returns the name of a field within a structure.
 old-location: debugger\getfieldname.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3fb9abdd-f2c0-41b4-8df9-2f7f5065f90c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetFieldName, GetFieldName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetFieldName method
@@ -101,31 +102,4 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>

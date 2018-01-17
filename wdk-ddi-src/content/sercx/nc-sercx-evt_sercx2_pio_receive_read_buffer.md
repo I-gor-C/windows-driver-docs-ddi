@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX2_PIO_RECEIVE_READ_BUFFER
-title: EVT_SERCX2_PIO_RECEIVE_READ_BUFFER
+UID: NC:sercx.EVT_SERCX2_PIO_RECEIVE_READ_BUFFER
+title: EVT_SERCX2_PIO_RECEIVE_READ_BUFFER function
 author: windows-driver-content
 description: The EvtSerCx2PioReceiveReadBuffer event callback function is called by version 2 of the serial framework extension (SerCx2) to use programmed I/O (PIO) to transfer data from the receive FIFO in the serial controller to a read buffer.
 old-location: serports\evtsercx2pioreceivereadbuffer.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: B69A128A-B1B0-47BC-9783-32780FC9C447
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX2_PIO_RECEIVE_READ_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX2_PIO_RECEIVE_READ_BUFFER callback
+# EVT_SERCX2_PIO_RECEIVE_READ_BUFFER function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCx2PioReceiveReadBuffer</i> event callback function is called by ve
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX2_PIO_RECEIVE_READ_BUFFER EvtSerCx2PioReceiveReadBuffer;
@@ -61,7 +62,7 @@ ULONG EvtSerCx2PioReceiveReadBuffer(
 
 ### -param PioReceive [in]
 
-A <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
+A <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method to create this object.
 
 
 ### -param Buffer [out]
@@ -79,7 +80,7 @@ The <i>EvtSerCx2PioReceiveReadBuffer</i> function returns the number of bytes of
 
 
 ## -remarks
-Your serial controller driver must implement this function. The driver registers the function in the <a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> call that creates the PIO-receive object.
+Your serial controller driver must implement this function. The driver registers the function in the <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> call that creates the PIO-receive object.
 
 SerCx2 might call the <i>EvtSerCx2PioReceiveReadBuffer</i> function more than once during a PIO-receive transaction. A single <i>EvtSerCx2PioReceiveReadBuffer</i> call is sufficient if this call can fill the read buffer with data from the receive FIFO. Otherwise, SerCx2 continues to call this function, as more data becomes available in the receive FIFO, until the read buffer is filled.
 
@@ -89,11 +90,11 @@ Typically, the <i>EvtSerCx2PioReceiveReadBuffer</i> function does not enable any
 
 For each successive call to the <i>EvtSerCx2PioReceiveReadBuffer</i> function, SerCx2 adjusts <i>Buffer</i> to point to the next buffer region to be filled, and sets <i>Length</i> to the number of bytes of unfilled space that remain in the buffer.
 
-The ready notification is never enabled when SerCx2 calls the <i>EvtSerCx2PioReceiveEnableReadyNotification</i> function. However, SerCx2 might call this function from the same thread from which the driver called the <a href="serports.sercx2pioreceiveready">SerCx2PioReceiveReady</a> method.
+The ready notification is never enabled when SerCx2 calls the <i>EvtSerCx2PioReceiveEnableReadyNotification</i> function. However, SerCx2 might call this function from the same thread from which the driver called the <a href="..\sercx\nf-sercx-sercx2pioreceiveready.md">SerCx2PioReceiveReady</a> method.
 
 If the driver implements an <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_initialize_transaction.md">EvtSerCx2PioReceiveInitializeTransaction</a> function, SerCx2 calls this function at the start of a PIO-transmit transaction, before the first call to the <i>EvtSerCx2PioReceiveReadBuffer</i> function. If the driver implements an <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a> function, SerCx2 calls this function at the end of a PIO-receive transaction, after the final call to the <i>EvtSerCx2PioReceiveReadBuffer</i> function.
 
-In addition to calling the <i>EvtSerCx2PioReceiveReadBuffer</i> function during PIO-receive transactions, SerCx2 calls this function to save the state of the receive FIFO just before the serial controller exits the D0 device power state. For more information, see <a href="serports.sercx2savereceivefifoond0exit">SerCx2SaveReceiveFifoOnD0Exit</a>.
+In addition to calling the <i>EvtSerCx2PioReceiveReadBuffer</i> function during PIO-receive transactions, SerCx2 calls this function to save the state of the receive FIFO just before the serial controller exits the D0 device power state. For more information, see <a href="..\sercx\nf-sercx-sercx2savereceivefifoond0exit.md">SerCx2SaveReceiveFifoOnD0Exit</a>.
 
 For more information about PIO-receive transactions, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265332">SerCx2 PIO-Receive Transactions</a>.
 
@@ -105,52 +106,6 @@ Then, implement your callback function as follows:
 
 The <b>EVT_SERCX2_PIO_RECEIVE_READ_BUFFER</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_PIO_RECEIVE_READ_BUFFER</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -167,7 +122,7 @@ Called at IRQL &lt;= DISPATCH_LEVEL.
 <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a>
 </dt>
 <dt>
-<a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IRegistryKey.SetValueKey
+UID: NF:portcls.IRegistryKey.SetValueKey
 title: IRegistryKey::SetValueKey method
 author: windows-driver-content
 description: The SetValueKey method replaces or creates a value entry under the open key.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IRegistryKey::SetValueKey method
@@ -58,7 +59,7 @@ NTSTATUS SetValueKey(
 
 ### -param ValueName [in, optional]
 
-Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="kernel.unicode_string">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.
+Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.
 
 
 ### -param Type [in]
@@ -115,7 +116,7 @@ REG_FULL_RESOURCE_DESCRIPTOR
 
 </dd>
 </dl>
-These parameter types are explained in <a href="kernel.zwsetvaluekey">ZwSetValueKey</a>.
+These parameter types are explained in <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.
 
 
 ### -param Data [in]
@@ -144,52 +145,16 @@ Specifies the size in bytes of <i>Data</i>. This parameter specifies how many by
 If the given key has no existing value entry with a name matching the given <i>ValueName</i>, <code>SetValueKey</code> creates a new value entry with the given name. If a matching value entry name exists, this routine overwrites the original value entry for the given <i>ValueName</i>. Thus, <code>SetValueKey</code> preserves a unique name for each value entry of any particular key. While each value entry name must be unique to its containing key, many different keys in the registry can have value entries with the same names.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 </dt>
 <dt>
-<a href="kernel.zwsetvaluekey">ZwSetValueKey</a>
+<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  

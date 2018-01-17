@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_EXTRACTBUNDLEOBJECT
+UID: NS:d3dkmthk._D3DKMT_EXTRACTBUNDLEOBJECT
 title: _D3DKMT_EXTRACTBUNDLEOBJECT
 author: windows-driver-content
 description: Used to extract the bundle object.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-extractbundleobject.htm
 old-project: display
 ms.assetid: 85112ddb-47e6-4874-bd64-a7e4d7ca0fd3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_EXTRACTBUNDLEOBJECT, D3DKMT_EXTRACTBUNDLEOBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_EXTRACTBUNDLEOBJECT
 ---
 
 # _D3DKMT_EXTRACTBUNDLEOBJECT structure
@@ -77,19 +78,3 @@ The pointer to an array of NT handles for each DXGK object.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

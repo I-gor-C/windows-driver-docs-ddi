@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_IPADDRESS_ENTRY
+UID: NS:wwan._WWAN_IPADDRESS_ENTRY
 title: _WWAN_IPADDRESS_ENTRY
 author: windows-driver-content
 description: The WWAN_IPADDRESS_ENTRY structure represents either the IPV4 or IPV6 address of a PDP context.
 old-location: netvista\wwan_ipaddress_entry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 85615799-5AA0-4D83-9246-73F3C7ABFFF6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_IPADDRESS_ENTRY, PWWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
+ms.date: 1/11/2018
+ms.keywords: _WWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -100,29 +101,3 @@ The IPV6 address of the PDP context, if <b>IsIpv6</b> is set.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8.1 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

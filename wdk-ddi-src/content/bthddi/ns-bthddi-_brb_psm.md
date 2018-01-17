@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._BRB_PSM
+UID: NS:bthddi._BRB_PSM
 title: _BRB_PSM
 author: windows-driver-content
 description: The _BRB_PSM structure describes a Protocol/Service Multiplexer (PSM) to register or unregister.
@@ -7,7 +7,7 @@ old-location: bltooth\_brb_psm.htm
 old-project: bltooth
 ms.assetid: 893edad2-8419-4c93-bf0b-2cca8ca5a2f6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: _BRB_PSM,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: 
 ---
 
 # _BRB_PSM structure
@@ -58,7 +59,7 @@ struct _BRB_PSM {
 ### -field Hdr
 
 A 
-     <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 
@@ -127,7 +128,7 @@ For more information about L2CAP servers and PSMs, see
 Profile drivers cannot register a PSM that has already been registered by another driver. If one
     attempts to do so, a STATUS_ALREADY_COMMITTED error will be returned. The <b>BRB_REGISTER_PSM</b> request has no
     effect on SDP records. After registering a PSM, drivers can advertise the PSM over SDP by sending the 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record.md">
+    <a href="https://msdn.microsoft.com/ec6739d3-5956-4cc2-90ff-75c67c0a84e7">
     IOCTL_BTH_SDP_SUBMIT_RECORD</a> IOCTL.
 
 To unregister a previously registered PSM, profile drivers should 
@@ -140,39 +141,14 @@ To unregister a previously registered PSM, profile drivers should
 
 A <b>BRB_UNREGISTER_PSM</b> request has no effect on SDP records that attempt to connect to the PSM. Profile
     drivers can remove relevant SDP records by sending the 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_remove_record.md">
+    <a href="https://msdn.microsoft.com/8d559078-ece5-4e15-b010-e39b86679398">
     IOCTL_BTH_SDP_REMOVE_RECORD</a> IOCTL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.brb_header">BRB_HEADER</a>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536621">BRB_REGISTER_PSM</a>
@@ -185,15 +161,15 @@ Header
    BRB_L2CA_OPEN_CHANNEL_RESPONSE</a>
 </dt>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record.md">IOCTL_BTH_SDP_SUBMIT_RECORD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536693">IOCTL_BTH_SDP_SUBMIT_RECORD</a>
 </dt>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_remove_record.md">IOCTL_BTH_SDP_REMOVE_RECORD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536690">IOCTL_BTH_SDP_REMOVE_RECORD</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_PSM structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_PSM structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

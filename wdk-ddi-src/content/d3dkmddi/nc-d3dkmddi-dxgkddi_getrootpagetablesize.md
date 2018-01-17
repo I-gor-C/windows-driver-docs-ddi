@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_GETROOTPAGETABLESIZE
-title: DXGKDDI_GETROOTPAGETABLESIZE
+UID: NC:d3dkmddi.DXGKDDI_GETROOTPAGETABLESIZE
+title: DXGKDDI_GETROOTPAGETABLESIZE function
 author: windows-driver-content
 description: DxgkDdiGetRootPageTableSize returns the minimum root page table size, in bytes, that is needed to hold the given number of page table entries.
 old-location: display\dxgkddigetrootpagetablesize.htm
 old-project: display
 ms.assetid: 474F1772-0DF9-487B-AEB9-302392AE0B98
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_GETROOTPAGETABLESIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_GETROOTPAGETABLESIZE callback
+# DXGKDDI_GETROOTPAGETABLESIZE function
 
 
 
@@ -46,7 +47,7 @@ req.irql:
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_GETROOTPAGETABLESIZE DxgkDdiGetRootPageTableSize;
@@ -68,7 +69,7 @@ A handle to the display adapter.
 
 ### -param pArgs [in, out]
 
-The <a href="display.dxgkarg_getrootpagetablesize">DXGKARG_GETROOTPAGETABLESIZE</a> structure that describes the operation.
+The <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_getrootpagetablesize.md">DXGKARG_GETROOTPAGETABLESIZE</a> structure that describes the operation.
 
 
 ## -returns
@@ -76,50 +77,3 @@ The page table size in bytes. The size must be a multiple of the page size of th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

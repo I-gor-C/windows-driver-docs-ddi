@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_READ_PORT_BUFFER_USHORT
+UID: NF:wdfhwaccess.WDF_READ_PORT_BUFFER_USHORT
 title: WDF_READ_PORT_BUFFER_USHORT function
 author: windows-driver-content
 description: The WDF_READ_PORT_BUFFER_USHORT function reads a number of USHORT values from the specified port address into a buffer.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_port_buffer_ushort.htm
 old-project: wdf
 ms.assetid: 74784405-8435-4305-A630-255D7BB24157
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_READ_PORT_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 
@@ -84,50 +85,3 @@ This function does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfhwaccess.h</dt>
-</dl>
-</td>
-</tr>
-</table>

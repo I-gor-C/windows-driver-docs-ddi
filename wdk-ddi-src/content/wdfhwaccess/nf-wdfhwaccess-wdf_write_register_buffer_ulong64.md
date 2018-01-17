@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_WRITE_REGISTER_BUFFER_ULONG64
+UID: NF:wdfhwaccess.WDF_WRITE_REGISTER_BUFFER_ULONG64
 title: WDF_WRITE_REGISTER_BUFFER_ULONG64 function
 author: windows-driver-content
 description: The WDF_WRITE_REGISTER_BUFFER_ULONG64 function writes a number of ULONG64 values from a buffer to the specified register.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_buffer_ulong64.htm
 old-project: wdf
 ms.assetid: 56DF217B-47AA-4D78-A7CC-0C50880AF7AF
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_WRITE_REGISTER_BUFFER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 
@@ -84,51 +85,4 @@ This function does not return a value.
 
 
 ## -remarks
-The size of the buffer must be large enough to contain at least the specified number of bytes.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfhwaccess.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The size of the buffer must be large enough to contain at least the specified number of bytes.</p>

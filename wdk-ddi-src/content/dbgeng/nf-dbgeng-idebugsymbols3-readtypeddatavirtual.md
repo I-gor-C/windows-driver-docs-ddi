@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.ReadTypedDataVirtual
+UID: NF:dbgeng.IDebugSymbols3.ReadTypedDataVirtual
 title: IDebugSymbols3::ReadTypedDataVirtual method
 author: windows-driver-content
 description: The ReadTypedDataVirtual method reads the value of a variable in the target's virtual memory.
 old-location: debugger\readtypeddatavirtual.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 526bebd8-95af-4f6f-a381-eb60273d1af5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::ReadTypedDataVirtual, ReadTypedDataVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::ReadTypedDataVirtual method
@@ -104,33 +105,6 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 ## -remarks
 The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.
 
-This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="debugger.readvirtual">ReadVirtual</a>.
+This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554359">ReadVirtual</a>.
 
-For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>

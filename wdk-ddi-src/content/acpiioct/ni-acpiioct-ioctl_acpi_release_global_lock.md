@@ -1,5 +1,5 @@
 ---
-UID: NI.acpiioct.IOCTL_ACPI_RELEASE_GLOBAL_LOCK
+UID: NI:acpiioct.IOCTL_ACPI_RELEASE_GLOBAL_LOCK
 title: IOCTL_ACPI_RELEASE_GLOBAL_LOCK
 author: windows-driver-content
 description: The IOCTL_ACPI_RELEASE_GLOBAL_LOCK device control request is reserved for internal use only.
@@ -7,8 +7,8 @@ old-location: acpi\ioctl_acpi_release_global_lock.htm
 old-project: acpi
 ms.assetid: dcc74af4-500b-4fea-ba2b-9d1ea3a05ef6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, PUNIT_ISOCH_PARAMS
+ms.date: 12/31/2017
+ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_RELEASE_GLOBAL_LOCK IOCTL
@@ -75,29 +76,3 @@ Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows Vista and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Acpiioct.h (include Acpiioct.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

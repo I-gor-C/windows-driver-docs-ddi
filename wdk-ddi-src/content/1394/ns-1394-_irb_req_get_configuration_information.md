@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_GET_CONFIGURATION_INFORMATION
+UID: NS:1394._IRB_REQ_GET_CONFIGURATION_INFORMATION
 title: _IRB_REQ_GET_CONFIGURATION_INFORMATION
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 bus driver to carry out a GetConfigurationInformation request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_GET_CONFIGURATION_INFORMATION
 ---
 
 # _IRB_REQ_GET_CONFIGURATION_INFORMATION structure
@@ -120,19 +121,3 @@ Points to a buffer to receive the model leaf TEXTUAL_LEAF structure, which descr
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

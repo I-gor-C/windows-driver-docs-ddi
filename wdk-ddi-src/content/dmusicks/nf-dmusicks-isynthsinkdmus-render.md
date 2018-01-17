@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.ISynthSinkDMus.Render
+UID: NF:dmusicks.ISynthSinkDMus.Render
 title: ISynthSinkDMus::Render method
 author: windows-driver-content
 description: The Render method renders wave data into a destination sink.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # ISynthSinkDMus::Render method
@@ -75,31 +76,4 @@ None
 
 
 ## -remarks
-The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.</p>

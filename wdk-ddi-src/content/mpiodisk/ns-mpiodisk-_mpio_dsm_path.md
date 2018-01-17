@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIODISK._MPIO_DSM_PATH
+UID: NS:mpiodisk._MPIO_DSM_Path
 title: _MPIO_DSM_Path
 author: windows-driver-content
 description: The MPIO_DSM_Path structure is used to represent the DSM's definition of a path.
@@ -7,8 +7,8 @@ old-location: storage\mpio_dsm_path.htm
 old-project: storage
 ms.assetid: 17338526-d682-4d11-89b9-730b1a275870
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_DSM_Path, MPIO_DSM_Path, PMPIO_DSM_Path, *PMPIO_DSM_Path
+ms.date: 1/10/2018
+ms.keywords: _MPIO_DSM_Path, *PMPIO_DSM_Path, MPIO_DSM_Path
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMPIO_DSM_Path, MPIO_DSM_Path
 ---
 
 # _MPIO_DSM_Path structure
@@ -77,19 +78,3 @@ An unsigned 32-bitfield that is used as a flag to indicate the path state when a
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

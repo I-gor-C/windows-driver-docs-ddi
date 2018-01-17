@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX_CONTROL
-title: EVT_SERCX_CONTROL
+UID: NC:sercx.EVT_SERCX_CONTROL
+title: EVT_SERCX_CONTROL function
 author: windows-driver-content
 description: The EvtSerCxControl event callback function handles an I/O control request that has an I/O control code (IOCTL) that the serial framework extension (SerCx) supports.
 old-location: serports\evtsercxcontrol.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: 2A88BA68-48A7-4C00-8031-CCC50A0C090D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX_CONTROL callback
+# EVT_SERCX_CONTROL function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCxControl</i> event callback function handles an I/O control reques
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX_CONTROL EvtSerCxControl;
@@ -99,7 +100,7 @@ The <i>EvtSerCxControl</i> function's return value must match the status value t
 
 The following is a list of the IOCTLs that this callback function must be prepared to handle:
 
-To register an <i>EvtSerCxControl</i> callback function, the controller driver calls the <a href="serports.sercxinitialize">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback.
+To register an <i>EvtSerCxControl</i> callback function, the controller driver calls the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback.
 
 The function type for this callback is declared in Sercx.h, as follows.
 
@@ -110,59 +111,13 @@ Then, implement your callback function as follows.
 For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="serports.sercxinitialize">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 </dl>
  

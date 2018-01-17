@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PCI_SLOT_NUMBER
+UID: NS:ntddk._WHEA_PCI_SLOT_NUMBER
 title: _WHEA_PCI_SLOT_NUMBER
 author: windows-driver-content
 description: The WHEA_PCI_SLOT_NUMBER structure describes a logical PCI slot.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 4e2938a2-6301-4d2a-a467-eca1f5bbb260
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PCI_SLOT_NUMBER, *PWHEA_PCI_SLOT_NUMBER, WHEA_PCI_SLOT_NUMBER, PWHEA_PCI_SLOT_NUMBER
+ms.keywords: _WHEA_PCI_SLOT_NUMBER, WHEA_PCI_SLOT_NUMBER, *PWHEA_PCI_SLOT_NUMBER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_PCI_SLOT_NUMBER, *PWHEA_PCI_SLOT_NUMBER
 ---
 
 # _WHEA_PCI_SLOT_NUMBER structure
@@ -95,45 +96,19 @@ A ULONG representation of the contents of the WHEA_PCI_SLOT_NUMBER structure.
 </dl>
 
 ## -remarks
-A WHEA_PCI_SLOT_NUMBER structure is contained within the <a href="whea.whea_aer_bridge_descriptor">WHEA_AER_BRIDGE_DESCRIPTOR</a>, <a href="whea.whea_aer_endpoint_descriptor">WHEA_AER_ENDPOINT_DESCRIPTOR</a>, and <a href="whea.whea_aer_rootport_descriptor">WHEA_AER_ROOTPORT_DESCRIPTOR</a> structures.
+A WHEA_PCI_SLOT_NUMBER structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_aer_bridge_descriptor.md">WHEA_AER_BRIDGE_DESCRIPTOR</a>, <a href="..\ntddk\ns-ntddk-_whea_aer_endpoint_descriptor.md">WHEA_AER_ENDPOINT_DESCRIPTOR</a>, and <a href="..\ntddk\ns-ntddk-_whea_aer_rootport_descriptor.md">WHEA_AER_ROOTPORT_DESCRIPTOR</a> structures.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_aer_bridge_descriptor">WHEA_AER_BRIDGE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_aer_bridge_descriptor.md">WHEA_AER_BRIDGE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_aer_endpoint_descriptor">WHEA_AER_ENDPOINT_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_aer_endpoint_descriptor.md">WHEA_AER_ENDPOINT_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_aer_rootport_descriptor">WHEA_AER_ROOTPORT_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_aer_rootport_descriptor.md">WHEA_AER_ROOTPORT_DESCRIPTOR</a>
 </dt>
 </dl>
  

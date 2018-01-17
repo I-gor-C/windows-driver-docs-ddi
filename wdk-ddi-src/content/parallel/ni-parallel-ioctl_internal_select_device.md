@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_SELECT_DEVICE
+UID: NI:parallel.IOCTL_INTERNAL_SELECT_DEVICE
 title: IOCTL_INTERNAL_SELECT_DEVICE
 author: windows-driver-content
 description: The IOCTL_INTERNAL_SELECT_DEVICE request:Allocates the parallel portThe system-supplied function driver for parallel ports allocates the parallel port if the client does not set the PAR_HAVE_PORT_KEEP_PORT flag in the CommandFlags member of the input PARALLEL_1284_COMMAND structure. Otherwise, the parallel port function driver does not allocate the parallel port.Selects an IEEE 1284.3 daisy chain parallel device or an end-of-chain device attached to the parallel portAlthough a client can select an end-of-chain device using a select device request, Microsoft recommends using an IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE request instead. The parallel port function driver selects the end-of-chain device before it allocates the parallel port to a client.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_SELECT_DEVICE IOCTL
@@ -74,7 +75,7 @@ For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> points to a <a href="parports.parallel_1284_command">PARALLEL_1284_COMMAND</a> structure that the client allocates to input the select device information.
+The <b>AssociatedIrp.SystemBuffer</b> points to a <a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a> structure that the client allocates to input the select device information.
 
 
 ### -input-buffer-length
@@ -113,28 +114,13 @@ The specified device is not flagged internally as an end-of-chain device and the
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="parports.parallel_1284_command">PARALLEL_1284_COMMAND</a>
+<a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a>
 </dt>
 </dl>
  

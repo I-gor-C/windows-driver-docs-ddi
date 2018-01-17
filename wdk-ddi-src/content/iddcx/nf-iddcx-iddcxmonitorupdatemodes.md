@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IddCxMonitorUpdateModes
+UID: NF:iddcx.IddCxMonitorUpdateModes
 title: IddCxMonitorUpdateModes function
 author: windows-driver-content
 description: An OS callback function the driver calls to update the mode list.
@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorupdatemodes.htm
 old-project: display
 ms.assetid: 0f05931a-2327-454a-9ba7-da02cb2f13d9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IddCxMonitorUpdateModes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _Must_inspect_result_
+req.typenames: 
 ---
 
 # IddCxMonitorUpdateModes function
@@ -73,49 +74,3 @@ Input arguments of function
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_Must_inspect_result_
-
-</td>
-</tr>
-</table>

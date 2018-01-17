@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetCurrentThreadTeb
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadTeb
 title: IDebugSystemObjects4::GetCurrentThreadTeb method
 author: windows-driver-content
 description: The GetCurrentThreadTeb method returns the location of the thread environment block (TEB) for the current thread.
 old-location: debugger\getcurrentthreadteb.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f5acd64c-c5a8-4977-8059-cc0bd12ef0c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetCurrentThreadTeb, GetCurrentThreadTeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetCurrentThreadTeb method
@@ -68,35 +69,8 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-In user-mode debugging, this method provides the same information as <a href="debugger.getcurrentthreaddataoffset">GetCurrentThreadDataOffset</a>.
+In user-mode debugging, this method provides the same information as <a href="https://msdn.microsoft.com/library/windows/hardware/ff545894">GetCurrentThreadDataOffset</a>.
 
 In kernel-mode debugging, the location returned is of the TEB structure of the system thread that was executing on the processor represented by the current thread when the last event occurred.
 
-For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on the TEB structure, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on the TEB structure, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>

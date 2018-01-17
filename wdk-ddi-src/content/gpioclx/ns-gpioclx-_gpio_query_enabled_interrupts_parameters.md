@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
 title: _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure indicates which interrupt pins in a bank of general-purpose I/O (GPIO) pins are enabled.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: CC2EEF26-CCC0-4093-8A44-12FF1EDD2FF9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
+ms.keywords: _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure
@@ -67,31 +68,6 @@ A 64-bit mask that indicates which interrupts are enabled in the specified bank.
 ## -remarks
 The <i>QueryEnabledParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265184">CLIENT_QueryEnabledInterrupts</a> event callback function is a pointer to a caller-allocated <b>GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS</b> structure. Before calling this function, the caller writes a bank ID to the <b>BankId</b> member of this structure to specify which bank of GPIO pins to query. The function writes a mask value to the <b>EnabledMask</b> member of this structure to indicate which interrupts are enabled in the specified bank.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

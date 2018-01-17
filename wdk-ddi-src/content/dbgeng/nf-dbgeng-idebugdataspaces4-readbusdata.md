@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.ReadBusData
+UID: NF:dbgeng.IDebugDataSpaces4.ReadBusData
 title: IDebugDataSpaces4::ReadBusData method
 author: windows-driver-content
 description: The ReadBusData method reads data from a system bus.
 old-location: debugger\readbusdata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5790b133-dbdc-4f77-a70e-616b0902794e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::ReadBusData, ReadBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadBusData method
@@ -107,31 +108,4 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 ## -remarks
 This method is only available in kernel-mode debugging.
 
-The nature of the data read from the bus is system, bus, and slot dependent.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The nature of the data read from the bus is system, bus, and slot dependent.</p>

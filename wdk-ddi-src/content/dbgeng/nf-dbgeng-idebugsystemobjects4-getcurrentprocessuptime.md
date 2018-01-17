@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetCurrentProcessUpTime
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessUpTime
 title: IDebugSystemObjects4::GetCurrentProcessUpTime method
 author: windows-driver-content
 description: The GetCurrentProcessUpTime method returns the length of time the current process has been running.
 old-location: debugger\getcurrentprocessuptime.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6c6f3824-5e04-45df-8128-f3778aaa3636
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetCurrentProcessUpTime, GetCurrentProcessUpTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetCurrentProcessUpTime method
@@ -68,30 +69,3 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

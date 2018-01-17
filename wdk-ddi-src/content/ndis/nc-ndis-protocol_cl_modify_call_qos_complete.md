@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE
-title: PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE
+UID: NC:ndis.PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE
+title: PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE function
 author: windows-driver-content
 description: The ProtocolClModifyCallQoSComplete function is used by connection-oriented NDIS clients that can modify the quality of service on a connection dynamically.
 old-location: netvista\protocolclmodifycallqoscomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0d925862-49af-4579-b877-c9a033e73be0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback
+# PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE function
 
 
 
@@ -43,13 +44,13 @@ The
   the quality of service on a connection dynamically. Such clients must have 
   <i>ProtocolClModifyCallQoSComplete</i> functions to complete the asynchronous operations that they initate
   with 
-  <a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a>. Otherwise, such a
+  <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>. Otherwise, such a
   protocol driver's registered 
   <i>ProtocolClModifyCallQoSComplete</i> function can simply return control.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE ProtocolClModifyCallQoSComplete;
@@ -109,7 +110,7 @@ The call manager failed to change the QoS, and NDIS propagated the CM-determined
 
 Specifies the handle to the client's per-VC context area, which the client originally supplied to
      NDIS when it called 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> to set up the VC for its
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> to set up the VC for its
      outgoing call request or from its 
      <i>ProtocolCoCreateVc</i> function if the client accepted an incoming call on this VC.
 
@@ -133,13 +134,13 @@ A call to
     VC.
 
 If the client's call to 
-    <a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a> succeeds, 
+    <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a> succeeds, 
     <i>ProtocolClModifyCallQoSComplete</i> can accept the QoS change by simply returning control. Otherwise, 
     <i>ProtocolClModifyCallQoSComplete</i> can engage in further negotiation with the call manager as long as
     the client's developer places some reasonable limit on the number of possible renegotiations.
     Alternatively, 
     <i>ProtocolClModifyCallQoSComplete</i> can simply tear down the call with 
-    <a href="netvista.ndisclclosecall">NdisClCloseCall</a> whenever the call manager
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a> whenever the call manager
     rejects a request to change the QoS and the previously established QoS has become unacceptable to the
     client.
 
@@ -154,61 +155,22 @@ The <b>PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE</b> function type is defined in the 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/4efa0174-902e-4056-8dc6-1ad7b2fc5090">
-   ProtocolClModifyCallQoSComplete (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>
-   ProtocolClModifyCallQoSComplete (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmmodifycallqoscomplete">NdisCmModifyCallQoSComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmmodifycallqoscomplete.md">NdisCmModifyCallQoSComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmmodifycallqoscomplete">NdisMCmModifyCallQoSComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmmodifycallqoscomplete.md">NdisMCmModifyCallQoSComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
@@ -221,5 +183,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

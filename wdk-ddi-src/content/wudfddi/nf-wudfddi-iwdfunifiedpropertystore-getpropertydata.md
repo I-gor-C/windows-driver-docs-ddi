@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFUnifiedPropertyStore.GetPropertyData
+UID: NF:wudfddi.IWDFUnifiedPropertyStore.GetPropertyData
 title: IWDFUnifiedPropertyStore::GetPropertyData method
 author: windows-driver-content
 description: The GetPropertyData method retrieves the current setting for a device property.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfunifiedpropertystore_getpropertydata.htm
 old-project: wdf
 ms.assetid: 0AAEB2F1-0449-4F0E-807A-1D2420CF6858
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFUnifiedPropertyStore, IWDFUnifiedPropertyStore::GetPropertyData, GetPropertyData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -121,9 +122,9 @@ This method might return one of the other values that <i>Winerror.h</i> contains
 ## -remarks
 Framework-based drivers use the <b>GetPropertyData</b> method to retrieve device properties that are defined as part of the unified device property model.
 
-In particular, you can use this method to retrieve a device's <a href="wdf.using_the_registry_in_umdf_drivers">hardware key</a> or an instance of a device interface class. When you call <a href="wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore">IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore</a>, set the <i>RootSpecifier</i> parameter's <b>RootClass</b> member to <b>WdfPropertyStoreRootClassHardwareKey</b> or <b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>.
+In particular, you can use this method to retrieve a device's <a href="wdf.using_the_registry_in_umdf_drivers">hardware key</a> or an instance of a device interface class. When you call <a href="https://msdn.microsoft.com/A54E56A6-9A6C-435D-83FD-84BB0E072C74">IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore</a>, set the <i>RootSpecifier</i> parameter's <b>RootClass</b> member to <b>WdfPropertyStoreRootClassHardwareKey</b> or <b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>.
 
-If you specify  <b>WdfPropertyStoreRootClassHardwareKey</b>, then when you call <b>GetPropertyData</b>, you must provide a custom <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> value in the <i>PropertyKey</i> parameter, and  not a PnP-defined key. The value must have been previously set by calling <a href="wdf.iwdfunifiedpropertystore_setpropertydata">SetPropertyData</a>, a <a href="devinst.using_device_installation_functions#ddk_setupdi_device_property_functions_dg#ddk_setupdi_device_property_functions_dg">SetupDI device property function</a>, or by using the <a href="devinst.using_the_inf_addproperty_directive_and_the_inf_delproperty_directive">INF AddProperty directive</a>.
+If you specify  <b>WdfPropertyStoreRootClassHardwareKey</b>, then when you call <b>GetPropertyData</b>, you must provide a custom <a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a> value in the <i>PropertyKey</i> parameter, and  not a PnP-defined key. The value must have been previously set by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a>, a <a href="devinst.using_device_installation_functions#ddk_setupdi_device_property_functions_dg#ddk_setupdi_device_property_functions_dg">SetupDI device property function</a>, or by using the <a href="https://msdn.microsoft.com/8fcb1355-f13d-4d96-aa73-62a094a52267">INF AddProperty directive</a>.
 
 For more information about device properties, see <a href="https://msdn.microsoft.com/f41040c5-0eac-450d-b532-9165c543cc1a">Device Properties</a>.
 
@@ -136,87 +137,30 @@ The following example demonstrates this
 pattern.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.11
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystorefactory.md">IWDFUnifiedPropertyStoreFactory</a>
 </dt>
 <dt>
-<a href="wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore">RetrieveUnifiedDevicePropertyStore</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451406">RetrieveUnifiedDevicePropertyStore</a>
 </dt>
 <dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystore.md">IWDFUnifiedPropertyStore</a>
 </dt>
 <dt>
-<a href="wdf.iwdfunifiedpropertystore_setpropertydata">SetPropertyData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a>
 </dt>
 <dt>
-<a href="wdf.wdf_property_store_root">WDF_PROPERTY_STORE_ROOT</a>
+<a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a>
 </dt>
 <dt>
-<a href="wdf.wdf_property_store_root_class">WDF_PROPERTY_STORE_ROOT_CLASS</a>
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_property_store_root_class.md">WDF_PROPERTY_STORE_ROOT_CLASS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStore::GetPropertyData method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStore::GetPropertyData method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

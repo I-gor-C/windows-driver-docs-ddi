@@ -1,13 +1,13 @@
 ---
-UID: NS.FWPSK.FWPS_INCOMING_METADATA_VALUES0_
+UID: NS:fwpsk.FWPS_INCOMING_METADATA_VALUES0_
 title: FWPS_INCOMING_METADATA_VALUES0_
 author: windows-driver-content
 description: The FWPS_INCOMING_METADATA_VALUES0 structure defines metadata values that the filter engine passes to a callout's classifyFn callout function.Note  FWPS_INCOMING_METADATA_VALUES0 is a specific version of FWPS_INCOMING_METADATA_VALUES.
 old-location: netvista\fwps_incoming_metadata_values0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fba7eb60-0d19-4bfd-b484-2e615d3e9237
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_INCOMING_METADATA_VALUES0_, FWPS_INCOMING_METADATA_VALUES0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_INCOMING_METADATA_VALUES0
 ---
 
 # FWPS_INCOMING_METADATA_VALUES0_ structure
@@ -129,7 +130,7 @@ Reserved for system use. Callout drivers should ignore this member.
 ### -field discardMetadata
 
 An 
-     <a href="netvista.fwps_discard_metadata0">FWPS_DISCARD_METADATA0</a> structure
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551235">FWPS_DISCARD_METADATA0</a> structure
      that describes the reason why the data was discarded. This member contains valid data only if the
      FWPS_METADATA_FIELD_DISCARD_REASON flag is set in the 
      <b>currentMetadataValues</b> member.
@@ -244,7 +245,7 @@ This member contains valid data only if the FWPS_METADATA_FIELD_TRANSPORT_HEADER
 ### -field processPath
 
 A pointer to an 
-     <a href="netvista.fwp_byte_blob">FWP_BYTE_BLOB</a> structure that contains the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552427">FWP_BYTE_BLOB</a> structure that contains the
      full path to the process that owns the endpoint. This member contains valid data only if the
      FWPS_METADATA_FIELD_PROCESS_PATH flag is set in the 
      <b>currentMetadataValues</b> member.
@@ -290,7 +291,7 @@ The identifier of the routing compartment in which the packet either was receive
 ### -field fragmentMetadata
 
 An 
-     <a href="netvista.fwps_inbound_fragment_metadata0">
+     <a href="https://msdn.microsoft.com/9bead001-7ea7-4a51-8a7c-82fe01017dd7">
      FWPS_INBOUND_FRAGMENT_METADATA0</a> structure that describes the fragment data for a received packet
      fragment. This member contains valid data only if the FWPS_METADATA_FIELD_FRAGMENT_DATA flag is set in
      the 
@@ -333,7 +334,7 @@ An optional socket control data object. This member contains valid data only if 
      FWPS_METADATA_FIELD_TRANSPORT_CONTROL_DATA flag is set in the 
      <b>currentMetadataValues</b> member. For information about the WSACMSGHDR type,
      see 
-     <a href="netvista.cmsghdr">CMSGHDR</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>.
 
 
 ### -field controlDataLength
@@ -346,7 +347,7 @@ The length, in bytes, of the
 
 The direction of network traffic (inbound or outbound) as specified by one of the constant values of
       
-      <a href="netvista.fwp_direction">FWP_DIRECTION</a>. This member is set at the
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff552433">FWP_DIRECTION</a>. This member is set at the
       application layer enforcement (ALE) connect or receive/accept layers during a reauthorization classify
       operation. For more information, see the Remarks section.
 
@@ -424,7 +425,7 @@ The original destination of a redirected connection.
 
 ### -field redirectRecords
 
-A redirect records handle that can be passed to the <a href="netvista.fwpsqueryconnectionredirectstate0">FwpsQueryConnectionRedirectState0</a> function to get the redirect state. 
+A redirect records handle that can be passed to the <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a> function to get the redirect state. 
 
 <div class="alert"><b>Note</b>  Available only in <i>Windows 8</i> and later versions of Windows.</div>
 <div> </div>
@@ -568,7 +569,7 @@ The size, in bytes,  of the MAC header if the FWPS_L2_METADATA_FIELD_802_3_MAC_H
 
 ### -field wiFiOperationMode
 
-The  current Native 802.11  operation mode  if the FWPS_L2_METADATA_FIELD_802_11_OPERATION_MODE flag is set. For more information, see <a href="netvista.dot11_current_operation_mode">DOT11_CURRENT_OPERATION_MODE</a>.
+The  current Native 802.11  operation mode  if the FWPS_L2_METADATA_FIELD_802_11_OPERATION_MODE flag is set. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547678">DOT11_CURRENT_OPERATION_MODE</a>.
      
 
 <div class="alert"><b>Note</b>  Available only in <i>Windows 8</i> and later versions of Windows.</div>
@@ -671,62 +672,37 @@ If the FWPS_METADATA_FIELD_PACKET_DIRECTION metadata value is present in an
 The callout driver must follow these guidelines when it inspects the packet:
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="netvista.cmsghdr">CMSGHDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 </dt>
 <dt>
-<a href="netvista.fwp_byte_blob">FWP_BYTE_BLOB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552427">FWP_BYTE_BLOB</a>
 </dt>
 <dt>
-<a href="netvista.fwp_direction">FWP_DIRECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552433">FWP_DIRECTION</a>
 </dt>
 <dt>
-<a href="netvista.fwps_discard_metadata0">FWPS_DISCARD_METADATA0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551235">FWPS_DISCARD_METADATA0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_inbound_fragment_metadata0">
+<a href="https://msdn.microsoft.com/9bead001-7ea7-4a51-8a7c-82fe01017dd7">
    FWPS_INBOUND_FRAGMENT_METADATA0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsqueryconnectionredirectstate0">FwpsQueryConnectionRedirectState0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_INCOMING_METADATA_VALUES0 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INCOMING_METADATA_VALUES0 structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

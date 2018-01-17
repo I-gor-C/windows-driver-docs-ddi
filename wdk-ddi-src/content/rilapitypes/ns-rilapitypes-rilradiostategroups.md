@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILRADIOSTATEGROUPS
+UID: NS:rilapitypes.RILRADIOSTATEGROUPS
 title: RILRADIOSTATEGROUPS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostategroups_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6ef17ba4-2e87-44d6-904c-609030fe9b9b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILRADIOSTATEGROUPS, *LPRILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILRADIOSTATEGROUPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

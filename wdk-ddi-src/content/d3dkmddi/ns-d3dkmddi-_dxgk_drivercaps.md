@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_DRIVERCAPS
+UID: NS:d3dkmddi._DXGK_DRIVERCAPS
 title: _DXGK_DRIVERCAPS
 author: windows-driver-content
 description: The DXGK_DRIVERCAPS structure describes capabilities of a display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
@@ -7,7 +7,7 @@ old-location: display\dxgk_drivercaps.htm
 old-project: display
 ms.assetid: 1ee8eb02-066c-4a54-b31a-cd6644cbce06
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_DRIVERCAPS, DXGK_DRIVERCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_DRIVERCAPS
 ---
 
 # _DXGK_DRIVERCAPS structure
@@ -121,7 +122,7 @@ typedef struct _DXGK_DRIVERCAPS {
 
 ### -field PointerCaps
 
-[out] A <a href="display.dxgk_pointerflags">DXGK_POINTERFLAGS</a> structure that identifies the mouse pointer capabilities, in bit-field flags, that the driver can support.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a> structure that identifies the mouse pointer capabilities, in bit-field flags, that the driver can support.
 
 
 ### -field InterruptMessageNumber
@@ -141,7 +142,7 @@ typedef struct _DXGK_DRIVERCAPS {
 
 ### -field GammaRampCaps
 
-[out] A <a href="display.dxgk_gammarampcaps">DXGK_GAMMARAMPCAPS</a> structure that identifies the gamma-ramp capabilities, in bit-field flags, that the driver can support.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gammarampcaps.md">DXGK_GAMMARAMPCAPS</a> structure that identifies the gamma-ramp capabilities, in bit-field flags, that the driver can support.
 
 
 ### -field ColorTransformCaps
@@ -153,7 +154,7 @@ Flags to describe gamma and colorspace transform capabilities of the display pip
 
 ### -field PresentationCaps
 
-[out] A <a href="display.dxgk_presentationcaps">DXGK_PRESENTATIONCAPS</a> structure that identifies the presentation capabilities, in bit-field flags, that the driver can support.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure that identifies the presentation capabilities, in bit-field flags, that the driver can support.
 
 
 ### -field MaxQueuedFlipOnVSync
@@ -163,22 +164,22 @@ Flags to describe gamma and colorspace transform capabilities of the display pip
 
 ### -field FlipCaps
 
-[out] A <a href="display.dxgk_flipcaps">DXGK_FLIPCAPS</a> structure that identifies the flipping capabilities, in bit-field flags, that the driver can support.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_flipcaps.md">DXGK_FLIPCAPS</a> structure that identifies the flipping capabilities, in bit-field flags, that the driver can support.
 
 
 ### -field SchedulingCaps
 
-[out] A <a href="display.dxgk_vidschcaps">DXGK_VIDSCHCAPS</a> structure that identifies the graphics processing unit (GPU) scheduling capabilities, in bit-field flags, that the driver can support.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidschcaps.md">DXGK_VIDSCHCAPS</a> structure that identifies the graphics processing unit (GPU) scheduling capabilities, in bit-field flags, that the driver can support.
 
 
 ### -field MemoryManagementCaps
 
-[out] A <a href="display.dxgk_vidmmcaps">DXGK_VIDMMCAPS</a> structure that identifies the video memory management capabilities that the driver can support.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidmmcaps.md">DXGK_VIDMMCAPS</a> structure that identifies the video memory management capabilities that the driver can support.
 
 
 ### -field GpuEngineTopology
 
-[out] A <a href="display.dxgk_gpuenginetopology">DXGK_GPUENGINETOPOLOGY</a> structure that describes the GPU-engine topology that the driver can support.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gpuenginetopology.md">DXGK_GPUENGINETOPOLOGY</a> structure that describes the GPU-engine topology that the driver can support.
 
 
 ### -field WDDMVersion
@@ -212,7 +213,7 @@ Supported starting with Windows 7.
 
 ### -field PreemptionCaps
 
-[out] A <a href="display.d3dkmdt_preemption_caps">D3DKMDT_PREEMPTION_CAPS</a> structure that describes the capabilities for the preemption of GPU graphics requests that the driver supports.
+[out] A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_preemption_caps.md">D3DKMDT_PREEMPTION_CAPS</a> structure that describes the capabilities for the preemption of GPU graphics requests that the driver supports.
 
 Supported starting with Windows 8.
 
@@ -245,7 +246,7 @@ Supported starting with Windows 8.
 [out] If <b>TRUE</b>, the driver supports the creation and opening of shared managed primary allocations. A value of <b>TRUE</b> also indicates the following:
 
 <ul>
-<li>The display miniport driver guarantees that when the <a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a> function is called, the driver does not allow video memory to be flipped to an incompatible allocation.</li>
+<li>The display miniport driver guarantees that when the <a href="https://msdn.microsoft.com/488c929b-3816-457f-b5c2-c176b93d5546">DxgkDdiSetVidPnSourceAddress</a> function is called, the driver does not allow video memory to be flipped to an incompatible allocation.</li>
 <li>The user mode driver validates Direct Flip resources before the Desktop Windows Manager (DWM) uses them.</li>
 </ul>
 Only the DWM can flip video memory to Direct Flip resources. The DWM validates these resources using the user-mode <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_checkdirectflipsupport.md">CheckDirectFlipSupport</a> function.
@@ -264,7 +265,7 @@ Supported starting with Windows 8.1.
 
 [out] If <b>TRUE</b>, the display miniport driver supports run-time power management.
 
-If this member is set, the display miniport driver must implement the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddisetpowercomponentfstate.md">DxgkDdiSetPowerComponentFState</a> and <a href="display.dxgkddipowerruntimecontrolrequest">DxgkDdiPowerRuntimeControlRequest</a> functions.
+If this member is set, the display miniport driver must implement the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddisetpowercomponentfstate.md">DxgkDdiSetPowerComponentFState</a> and <a href="https://msdn.microsoft.com/56535128-3107-4fb5-b0e1-2e913c386cc2">DxgkDdiPowerRuntimeControlRequest</a> functions.
 
 Supported starting with Windows 8.
 
@@ -321,62 +322,37 @@ Supported starting with Windows 8.1.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_checkdirectflipsupport.md">CheckDirectFlipSupport</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_preemption_caps">D3DKMDT_PREEMPTION_CAPS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_preemption_caps.md">D3DKMDT_PREEMPTION_CAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_flipcaps">DXGK_FLIPCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_flipcaps.md">DXGK_FLIPCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_gammarampcaps">DXGK_GAMMARAMPCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gammarampcaps.md">DXGK_GAMMARAMPCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_gpuenginetopology">DXGK_GPUENGINETOPOLOGY</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gpuenginetopology.md">DXGK_GPUENGINETOPOLOGY</a>
 </dt>
 <dt>
-<a href="display.dxgk_pointerflags">DXGK_POINTERFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgk_presentationcaps">DXGK_PRESENTATIONCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_vidmmcaps">DXGK_VIDMMCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidmmcaps.md">DXGK_VIDMMCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_vidschcaps">DXGK_VIDSCHCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidschcaps.md">DXGK_VIDSCHCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgkarg_queryadapterinfo">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
@@ -385,7 +361,7 @@ Header
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_notify_surprise_removal.md">DxgkDdiNotifySurpriseRemoval</a>
 </dt>
 <dt>
-<a href="display.dxgkddipowerruntimecontrolrequest">DxgkDdiPowerRuntimeControlRequest</a>
+<a href="https://msdn.microsoft.com/56535128-3107-4fb5-b0e1-2e913c386cc2">DxgkDdiPowerRuntimeControlRequest</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
@@ -403,7 +379,7 @@ Header
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddisetpowercomponentfstate.md">DxgkDdiSetPowerComponentFState</a>
 </dt>
 <dt>
-<a href="display.dxgkddisetvidpnsourceaddress">DxgkDdiSetVidPnSourceAddress</a>
+<a href="https://msdn.microsoft.com/488c929b-3816-457f-b5c2-c176b93d5546">DxgkDdiSetVidPnSourceAddress</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership.md">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a>
@@ -416,5 +392,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_DRIVERCAPS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_DRIVERCAPS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.DbgPrintEx
+UID: NF:wdm.DbgPrintEx
 title: DbgPrintEx function
 author: windows-driver-content
 description: The DbgPrintEx routine sends a string to the kernel debugger if the conditions you specify are met.
@@ -7,7 +7,7 @@ old-location: devtest\dbgprintex.htm
 old-project: devtest
 ms.assetid: 0fe82f72-e3dd-49de-a12a-1997e9651bac
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: DbgPrintEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DIRQL (see Comments section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -119,94 +120,24 @@ Unless it is absolutely necessary, you should not obtain a string from user inpu
 There is no upper limit to the size of the <i>Format</i> string or the number of arguments. However, any single call to <b>DbgPrintEx</b> will only transmit 512 bytes of information. There is also a limit to the size of the DbgPrint buffer. See <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a> for details.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows XP and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtDll.lib (user mode); </dt>
-<dt>NtosKrnl.lib (kernel mode)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtDll.dll (user mode); </dt>
-<dt>NtosKrnl.exe (kernel mode)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DIRQL (see Comments section)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="devtest.dbgprint">DbgPrint</a>
+<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
 </dt>
 <dt>
-<a href="devtest.kdprint">KdPrint</a>
+<a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
 </dt>
 <dt>
-<a href="devtest.kdprintex">KdPrintEx</a>
+<a href="..\wdm\nf-wdm-kdprintex.md">KdPrintEx</a>
 </dt>
 <dt>
-<a href="devtest.vdbgprintex">vDbgPrintEx</a>
+<a href="..\wdm\nf-wdm-vdbgprintex.md">vDbgPrintEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20DbgPrintEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20DbgPrintEx routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

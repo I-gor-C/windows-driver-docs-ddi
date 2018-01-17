@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.RtlConvertLongToLargeInteger
+UID: NF:wdm.RtlConvertLongToLargeInteger
 title: RtlConvertLongToLargeInteger function
 author: windows-driver-content
 description: The RtlConvertLongToLargeInteger routine converts the input signed integer to a signed large integer.
@@ -7,7 +7,7 @@ old-location: kernel\rtlconvertlongtolargeinteger.htm
 old-project: kernel
 ms.assetid: 8c1f6cd3-f54b-4104-bd14-63d2c284946c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlConvertLongToLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,73 +65,4 @@ Specifies an integer of type LONG.
 
 
 ## -remarks
-This routine is not supported in Windows XP. Use native support for <b>__int64</b> instead. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
+This routine is not supported in Windows XP. Use native support for <b>__int64</b> instead. </p>

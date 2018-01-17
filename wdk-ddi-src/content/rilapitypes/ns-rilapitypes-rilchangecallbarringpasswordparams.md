@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILCHANGECALLBARRINGPASSWORDPARAMS
+UID: NS:rilapitypes.RILCHANGECALLBARRINGPASSWORDPARAMS
 title: RILCHANGECALLBARRINGPASSWORDPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilchangecallbarringpasswordparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1a9dda19-329b-4046-bba1-1bbedf37fa31
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCHANGECALLBARRINGPASSWORDPARAMS, *LPRILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef struct _RILCHANGECALLBARRINGPASSWORDPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

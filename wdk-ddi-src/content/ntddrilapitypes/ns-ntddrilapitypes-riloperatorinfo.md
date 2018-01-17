@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILOPERATORINFO
+UID: NS:ntddrilapitypes.RILOPERATORINFO
 title: RILOPERATORINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riloperatorinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 213a4d4e-d19a-40c4-9bc4-8cf6f8aa2d07
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILOPERATORINFO, LPRILOPERATORINFO, RILOPERATORINFO, *LPRILOPERATORINFO
+ms.date: 1/11/2018
+ms.keywords: RILOPERATORINFO, RILOPERATORINFO, *LPRILOPERATORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILOPERATORINFO, *LPRILOPERATORINFO
 ---
 
 # RILOPERATORINFO structure
@@ -73,19 +74,3 @@ typedef struct _RILOPERATORINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

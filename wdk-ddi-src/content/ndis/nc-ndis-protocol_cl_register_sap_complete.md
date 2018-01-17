@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_REGISTER_SAP_COMPLETE
-title: PROTOCOL_CL_REGISTER_SAP_COMPLETE
+UID: NC:ndis.PROTOCOL_CL_REGISTER_SAP_COMPLETE
+title: PROTOCOL_CL_REGISTER_SAP_COMPLETE function
 author: windows-driver-content
 description: A connection-oriented NDIS client that accepts incoming calls must have a ProtocolClRegisterSapComplete function to complete the asynchronous operations that it initiates with NdisClRegisterSap.
 old-location: netvista\protocolclregistersapcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b0a2a224-3353-4f20-b14f-ed5d633a6ead
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_REGISTER_SAP_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_REGISTER_SAP_COMPLETE callback
+# PROTOCOL_CL_REGISTER_SAP_COMPLETE function
 
 
 
@@ -41,13 +42,13 @@ req.irql: <= DISPATCH_LEVEL
 A connection-oriented NDIS client that accepts incoming calls must have 
   a <i>ProtocolClRegisterSapComplete</i> function to complete the asynchronous operations that it initiates
   with 
-  <a href="netvista.ndisclregistersap">NdisClRegisterSap</a>. Otherwise, such a
+  <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>. Otherwise, such a
   protocol driver's registered 
   <i>ProtocolClRegisterSapComplete</i> function can simply return control.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_REGISTER_SAP_COMPLETE ProtocolClRegisterSapComplete;
@@ -76,7 +77,7 @@ Specifies the final status of the client's call to
 ### -param NDIS_STATUS_SUCCESS
 
 The SAP has been registered both with NDIS and the call manager, which will subsequently call 
-       <a href="netvista.ndiscmdispatchincomingcall">
+       <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
        NdisCmDispatchIncomingCall</a> whenever it receives an incoming call offer directed to the given
        SAP, thereby causing NDIS to call the client's 
        <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">
@@ -109,7 +110,7 @@ The call manager encountered an error in attempting to register the given SAP an
 
 Specifies the handle to the client's per-SAP context area, which the client originally supplied to
      NDIS when it called 
-     <a href="netvista.ndisclregistersap">NdisClRegisterSap</a>. If the registration
+     <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>. If the registration
      is successful, NDIS retains this context handle and uses it subsequently in calls to the client's 
      <i>ProtocolClIncomingCall</i> function pertaining to this SAP.
 
@@ -129,7 +130,7 @@ If
      the client-specified SAP. Otherwise, this parameter is <b>NULL</b>. The client must save a valid handle,
      preferably in its 
      <i>ProtocolSapContext</i> area, for an eventual call to 
-     <a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>.
+     <a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>.
 
 
 ## -returns
@@ -159,7 +160,7 @@ To register each SAP, the client calls
     <i>ProtocolClRegisterSapComplete</i> must save each valid 
     <i>NdisSapHandle</i>, usually in the client's per-SAP 
     <i>ProtocolSapContext</i> area so it can release the SAP later with 
-    <a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>.
+    <a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>.
 
 The format of a SAP is specific to the call manager. If the call manager does not recognize the SAP
     that the client is attempting to register or if the specified SAP is already in use, the call manager can
@@ -186,71 +187,32 @@ The <b>PROTOCOL_CL_REGISTER_SAP_COMPLETE</b> function type is defined in the Ndi
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/e3455864-a948-40d1-a180-aa1a00f157a2">
-   ProtocolClRegisterSapComplete (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>
-   ProtocolClRegisterSapComplete (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndisclregistersap">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingcall">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmregistersapcomplete">NdisCmRegisterSapComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmregistersapcomplete.md">NdisCmRegisterSapComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreememory">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreetonpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
    NdisFreeToNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingcall">NdisMCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmregistersapcomplete">NdisMCmRegisterSapComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmregistersapcomplete.md">NdisMCmRegisterSapComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
@@ -269,5 +231,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_REGISTER_SAP_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_REGISTER_SAP_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

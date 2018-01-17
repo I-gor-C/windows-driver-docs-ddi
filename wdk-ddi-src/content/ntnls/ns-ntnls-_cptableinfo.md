@@ -1,5 +1,5 @@
 ---
-UID: NS.NTNLS._CPTABLEINFO
+UID: NS:ntnls._CPTABLEINFO
 title: _CPTABLEINFO
 author: windows-driver-content
 description: Stores the NLS file formats.
@@ -7,8 +7,8 @@ old-location: kernel\cptableinfo.htm
 old-project: kernel
 ms.assetid: 20EE0017-760E-48A1-8658-2A0278843074
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CPTABLEINFO, *PCPTABLEINFO, PCPTABLEINFO, CPTABLEINFO
+ms.date: 1/4/2018
+ms.keywords: _CPTABLEINFO, *PCPTABLEINFO, CPTABLEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCPTABLEINFO, CPTABLEINFO
 ---
 
 # _CPTABLEINFO structure
@@ -125,19 +126,3 @@ Specifies a pointer to DBCS offsets.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntnls.h</dt>
-</dl>
-</td>
-</tr>
-</table>

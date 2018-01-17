@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcUnregisterIoTimeout
+UID: NF:portcls.PcUnregisterIoTimeout
 title: PcUnregisterIoTimeout function
 author: windows-driver-content
 description: The PcUnregisterIoTimeout function unregisters a driver-supplied I/O-timer callback routine for a specified device object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcUnregisterIoTimeout function
@@ -57,18 +58,18 @@ NTSTATUS PcUnregisterIoTimeout(
 
 ### -param pDeviceObject [in]
 
-Pointer to the same device object that the driver supplied when it previously called <a href="audio.pcregisteriotimeout">PcRegisterIoTimeout</a>. The device object is a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the same device object that the driver supplied when it previously called <a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a>. The device object is a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
 
 
 ### -param pTimerRoutine [in]
 
-Pointer to the same I/O-timer callback routine that the driver supplied when it previously called <a href="audio.pcregisteriotimeout">PcRegisterIoTimeout</a>
+Pointer to the same I/O-timer callback routine that the driver supplied when it previously called <a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a>
 
 
 
 ### -param pContext [in]
 
-Pointer to the same driver-determined context that the driver supplied when it previously called <a href="audio.pcregisteriotimeout">PcRegisterIoTimeout</a>
+Pointer to the same driver-determined context that the driver supplied when it previously called <a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a>
 
 
 
@@ -82,73 +83,16 @@ Pointer to the same driver-determined context that the driver supplied when it p
 
 
 ## -remarks
-This call succeeds only if a time-out callback with the same device object, timer routine, and context was previously registered with a call to the <a href="audio.pcregisteriotimeout">PcRegisterIoTimeout</a> function.
+This call succeeds only if a time-out callback with the same device object, timer routine, and context was previously registered with a call to the <a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a> function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PortCls system driver implements the PcUnregisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcregisteriotimeout">PcRegisterIoTimeout</a>
+<a href="..\portcls\nf-portcls-pcregisteriotimeout.md">PcRegisterIoTimeout</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 </dl>
  

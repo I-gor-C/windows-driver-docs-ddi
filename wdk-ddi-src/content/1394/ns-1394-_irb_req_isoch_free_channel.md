@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_FREE_CHANNEL
+UID: NS:1394._IRB_REQ_ISOCH_FREE_CHANNEL
 title: _IRB_REQ_ISOCH_FREE_CHANNEL
 author: windows-driver-content
 description: This structure contains the fields required to carry out a IsochFreeChannel request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_FREE_CHANNEL
 ---
 
 # _IRB_REQ_ISOCH_FREE_CHANNEL structure
@@ -59,20 +60,4 @@ Specifies which allocated channel to release.
 
 
 ## -remarks
-If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous channel is returned to the pool of available channels.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous channel is returned to the pool of available channels.</p>

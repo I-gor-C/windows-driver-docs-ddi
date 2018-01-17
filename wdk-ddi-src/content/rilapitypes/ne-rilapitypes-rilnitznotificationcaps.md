@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILNITZNOTIFICATIONCAPS
+UID: NE:rilapitypes.RILNITZNOTIFICATIONCAPS
 title: RILNITZNOTIFICATIONCAPS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnitznotificationcaps_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 74f62528-57ec-4142-a1b0-0d779e9d0ca0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILNITZNOTIFICATIONCAPS, RILNITZNOTIFICATIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILNITZNOTIFICATIONCAPS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef enum _RILNITZNOTIFICATIONCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

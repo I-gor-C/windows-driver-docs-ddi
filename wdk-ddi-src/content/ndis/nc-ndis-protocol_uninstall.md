@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_UNINSTALL
-title: PROTOCOL_UNINSTALL
+UID: NC:ndis.PROTOCOL_UNINSTALL
+title: PROTOCOL_UNINSTALL function
 author: windows-driver-content
 description: NDIS calls a protocol driver's ProtocolUninstall function to perform cleanup operations before a protocol driver is uninstalled.Note  You must declare the function by using the PROTOCOL_UNINSTALL type.
 old-location: netvista\protocoluninstall.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 959baf54-849c-4bb1-b4c5-4d5537e1d688
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_UNINSTALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_UNINSTALL callback
+# PROTOCOL_UNINSTALL function
 
 
 
@@ -44,7 +45,7 @@ NDIS calls a protocol driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_UNINSTALL ProtocolUninstall;
@@ -69,9 +70,9 @@ None
 The 
     <i>ProtocolUninstall</i> function is optional. The protocol driver registered an entry point, if any, for
     this function in the 
-    <a href="netvista.ndis_protocol_driver_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_protocol_driver_characteristics.md">
     NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a> structure that it passed to the 
-    <a href="netvista.ndisregisterprotocoldriver">
+    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
     NdisRegisterProtocolDriver</a> function.
 
 In response to a user request to uninstall a protocol driver, NDIS calls a protocol driver's 
@@ -83,12 +84,12 @@ In response to a user request to uninstall a protocol driver, NDIS calls a proto
 <i>ProtocolUninstall</i> performs driver-determined cleanup operations. For example, 
     <i>ProtocolUninstall</i> could request clients to close open handles to device objects that the protocol
     driver exported. Until all such handles are closed, the I/O manager will not call the 
-    <a href="kernel.unload">Unload</a> routine that the protocol driver registered in
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine that the protocol driver registered in
     the driver object passed to its 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. After all the handles are
     closed, 
     <i>ProtocolUninstall</i> can call 
-    <a href="netvista.ndisderegisterdeviceex">NdisDeregisterDeviceEx</a> to delete
+    <a href="..\ndis\nf-ndis-ndisderegisterdeviceex.md">NdisDeregisterDeviceEx</a> to delete
     any device objects created by the protocol driver.
 
 The protocol lower edge of an intermediate driver might require a 
@@ -110,41 +111,6 @@ The <b>PROTOCOL_UNINSTALL</b> function type is defined in the Ndis.h header file
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -157,22 +123,22 @@ PASSIVE_LEVEL
 <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_driver_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_protocol_driver_characteristics.md">
    NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndisderegisterdeviceex">NdisDeregisterDeviceEx</a>
+<a href="..\ndis\nf-ndis-ndisderegisterdeviceex.md">NdisDeregisterDeviceEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="kernel.unload">Unload</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_UNINSTALL callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_UNINSTALL callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

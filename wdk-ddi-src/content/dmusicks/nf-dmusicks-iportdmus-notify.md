@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IPortDMus.Notify
+UID: NF:dmusicks.IPortDMus.Notify
 title: IPortDMus::Notify method
 author: windows-driver-content
 description: The Notify method should be called from the miniport driver's interrupt service routine (ISR) when a hardware interrupt has occurred.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IPortDMus::Notify method
@@ -71,7 +72,7 @@ The miniport driver typically calls <code>Notify</code> to notify the port drive
 
 When the miniport driver's ISR calls <code>Notify</code>, the port driver receives the notification at the elevated hardware interrupt IRQL and puts a DPC on the queue. When IRQL drops to the DISPATCH_LEVEL, the port driver's DPC fires and services the miniport driver.
 
-Within the DPC, the port driver calls <a href="audio.imxf_putmessage">IMXF::PutMessage</a> on the miniport driver's input stream with a parameter of <b>NULL</b> to signify that the miniport driver can now put the previously stored MIDI message into the MXF graph because the IRQL has dropped back to DISPATCH_LEVEL.
+Within the DPC, the port driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a> on the miniport driver's input stream with a parameter of <b>NULL</b> to signify that the miniport driver can now put the previously stored MIDI message into the MXF graph because the IRQL has dropped back to DISPATCH_LEVEL.
 
 This method is vital for accurate timing. Most miniports will call this method in response to a notification interrupt after having cleared the interrupt source. Although the miniport driver is free to use other methods for determining when to call this method, precise timing is important and should be maintained.
 
@@ -79,42 +80,6 @@ When an adapter driver installs an ISR, it submits a <i>ServiceContext</i> param
 
 The <i>pServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -125,16 +90,16 @@ Any level
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iportdmus_registerservicegroup">IPortDMus::RegisterServiceGroup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536882">IPortDMus::RegisterServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iminiportdmus_init">IMiniportDMus::Init</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536700">IMiniportDMus::Init</a>
 </dt>
 <dt>
-<a href="audio.iminiportdmus_newstream">IMiniportDMus::NewStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536701">IMiniportDMus::NewStream</a>
 </dt>
 <dt>
-<a href="audio.imxf_putmessage">IMXF::PutMessage</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
 </dt>
 </dl>
  

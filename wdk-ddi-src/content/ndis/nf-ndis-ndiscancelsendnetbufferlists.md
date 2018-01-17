@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCancelSendNetBufferLists
+UID: NF:ndis.NdisCancelSendNetBufferLists
 title: NdisCancelSendNetBufferLists function
 author: windows-driver-content
 description: Protocol drivers call the NdisCancelSendNetBufferLists function to cancel the transmission of network data.
 old-location: netvista\ndiscancelsendnetbufferlists.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7b61db73-ddd4-4d46-b378-9a82fdf041ea
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisCancelSendNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCancelSendNetBufferLists function
@@ -58,7 +59,7 @@ VOID NdisCancelSendNetBufferLists(
 ### -param NdisBindingHandle [in]
 
 The handle returned by the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function that
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function that
      identifies the miniport driver or virtual miniport to which the cancellation applies.
 
 
@@ -75,7 +76,7 @@ None
 ## -remarks
 A protocol driver maps IRPs that it receives from higher-level software to NDIS network data. A list
     of 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures describes the
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures describes the
     network data that the protocol driver sends to lower-level drivers for transmission. If an IRP is
     canceled, a protocol driver can call the 
     <b>NdisCancelSendNetBufferLists</b> function to cancel the pending transmission of the corresponding NDIS
@@ -100,7 +101,7 @@ The
 The protocol driver must ensure that the handle that the 
     <i>NdisBindingHandle</i> parameter specifies remains valid for the duration of the call to 
     <b>NdisCancelSendNetBufferLists</b>. That is, the protocol driver must not call the 
-    <a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a> function to close
+    <a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a> function to close
     the binding before 
     <b>NdisCancelSendNetBufferLists</b> returns.
 
@@ -121,72 +122,6 @@ In all cases, NDIS returns network data that was submitted for transmission to t
     therefore cannot be exactly specified.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_sendrcv_function">Irql_SendRcv_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -197,13 +132,13 @@ DDI compliance rules
    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a>
 </dt>
 <dt>
-<a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_send_net_buffer_lists_complete.md">
@@ -214,5 +149,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCancelSendNetBufferLists function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCancelSendNetBufferLists function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

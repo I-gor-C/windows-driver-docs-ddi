@@ -1,5 +1,5 @@
 ---
-UID: NE.sensorsclassextension.__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001
+UID: NE:sensorsclassextension.__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001
 title: __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001
 author: windows-driver-content
 description: The SensorState enumeration type specifies the current operational state of a sensor.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: SensorState
 req.product: Windows 10 or later.
 ---
 
@@ -103,61 +104,16 @@ Reserved.
 
 
 ## -remarks
-This enumeration also defines values used for the <a href="https://msdn.microsoft.com/a9f88dad-a81d-45dc-b607-e7b4c5036774">SENSOR_PROPERTY_STATE</a> property.
+This enumeration also defines values used for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_PROPERTY_STATE</a> property.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 7
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="sensors.isensordriver_ongetproperties">ISensorDriver::OnGetProperties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
 </dt>
 <dt>
-<a href="sensors.isensorclassextension_poststatechange">ISensorClassExtension::PostStateChange</a>
+<a href="https://msdn.microsoft.com/ae3bc846-df63-4186-9554-f4600e1f2066">ISensorClassExtension::PostStateChange</a>
 </dt>
 </dl>
  

@@ -1,17 +1,17 @@
 ---
-UID: NC.dispmprt.DXGKDDI_QUERY_INTERFACE
-title: DXGKDDI_QUERY_INTERFACE
+UID: NC:dispmprt.DXGKDDI_QUERY_INTERFACE
+title: DXGKDDI_QUERY_INTERFACE function
 author: windows-driver-content
 description: The DxgkDdiQueryInterface function returns a functional interface that is implemented by the display miniport driver.
 old-location: display\dxgkddiqueryinterface.htm
 old-project: display
 ms.assetid: d8255f36-be3a-4b19-ac8d-8748ac9b6a24
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_QUERY_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
-# DXGKDDI_QUERY_INTERFACE callback
+# DXGKDDI_QUERY_INTERFACE function
 
 
 
@@ -42,7 +43,7 @@ The <i>DxgkDdiQueryInterface</i> function returns a functional interface that is
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_QUERY_INTERFACE DxgkDdiQueryInterface;
@@ -64,7 +65,7 @@ A handle to a context block associated with a display adapter. The display minip
 
 ### -param QueryInterface [in]
 
-A pointer to a <a href="display.query_interface">QUERY_INTERFACE</a> structure in which the display miniport driver should return information about the interface it supports.
+A pointer to a <a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a> structure in which the display miniport driver should return information about the interface it supports.
 
 
 ## -returns
@@ -74,7 +75,7 @@ A pointer to a <a href="display.query_interface">QUERY_INTERFACE</a> structure i
 ## -remarks
 <i>DxgkDdiQueryInterface</i> exposes a communication mechanism between the display miniport driver and the driver of a child device (for example, a video capture device). A display miniport driver that exposes such a mechanism should implement this function.
 
-<i>DxgkDdiQueryInterface</i> should fill in the members of the <a href="kernel.interface">INTERFACE</a> structure that <i>QueryInterface</i>-&gt;<b>Interface</b> points to as follows:
+<i>DxgkDdiQueryInterface</i> should fill in the members of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure that <i>QueryInterface</i>-&gt;<b>Interface</b> points to as follows:
 
 Set <b>Size</b> to the number of bytes in the INTERFACE structure. This value must not exceed the number of bytes specified by <i>QueryInterface</i>-&gt;<b>Size</b>.
 
@@ -89,56 +90,10 @@ Initialize all additional interface-specific members to point to the appropriate
 <i>DxgkDdiQueryInterface</i> runs at IRQL = PASSIVE_LEVEL and should be made pageable.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.query_interface">QUERY_INTERFACE</a>
+<a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
@@ -151,5 +106,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_QUERY_INTERFACE callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_QUERY_INTERFACE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

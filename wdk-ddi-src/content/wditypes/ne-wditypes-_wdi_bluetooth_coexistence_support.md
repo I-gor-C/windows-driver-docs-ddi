@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_BLUETOOTH_COEXISTENCE_SUPPORT
+UID: NE:wditypes._WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 title: _WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 author: windows-driver-content
 description: The WDI_BLUETOOTH_COEXISTENCE_SUPPORT enumeration defines Bluetooth coexistence support values.
 old-location: netvista\wdi_bluetooth_coexistence_support.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 88642615-D5DD-4C0E-BAAA-308EB6050E77
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_BLUETOOTH_COEXISTENCE_SUPPORT, WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 req.product: Windows 10 or later.
 ---
 
@@ -84,39 +85,3 @@ Wi-Fi and Bluetooth are mutually exclusive. One of the two stops working.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

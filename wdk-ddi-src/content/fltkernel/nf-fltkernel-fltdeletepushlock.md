@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltDeletePushLock
+UID: NF:fltkernel.FltDeletePushLock
 title: FltDeletePushLock function
 author: windows-driver-content
 description: The FltDeletePushLock routine deletes a given push lock.
@@ -7,7 +7,7 @@ old-location: ifsk\fltdeletepushlock.htm
 old-project: ifsk
 ms.assetid: 93b4914c-53a1-4594-ac8d-4be1b0c9e4d7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltDeletePushLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltDeletePushLock function
@@ -55,7 +56,7 @@ VOID FltDeletePushLock(
 
 ### -param PushLock [in]
 
-Opaque push lock pointer. This pointer must have been initialized by a previous call to <a href="ifsk.fltinitializepushlock">FltInitializePushLock</a>. 
+Opaque push lock pointer. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializepushlock.md">FltInitializePushLock</a>. 
 
 
 ## -returns
@@ -67,82 +68,35 @@ This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 
 
 After calling <b>FltDeletePushLock</b>, the caller can free the memory that it allocated for the push lock. 
 
-For more information about push locks, see the reference entry for <a href="ifsk.fltinitializepushlock">FltInitializePushLock</a>. 
+For more information about push locks, see the reference entry for <a href="..\fltkernel\nf-fltkernel-fltinitializepushlock.md">FltInitializePushLock</a>. 
 
-To acquire a push lock for exclusive access, call <a href="ifsk.fltacquirepushlockexclusive">FltAcquirePushLockExclusive</a>. 
+To acquire a push lock for exclusive access, call <a href="..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md">FltAcquirePushLockExclusive</a>. 
 
-To acquire a push lock for shared access, call <a href="ifsk.fltacquirepushlockshared">FltAcquirePushLockShared</a>. 
+To acquire a push lock for shared access, call <a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>. 
 
-To release a push lock, call <a href="ifsk.fltreleasepushlock">FltReleasePushLock</a>. 
+To release a push lock, call <a href="..\fltkernel\nf-fltkernel-fltreleasepushlock.md">FltReleasePushLock</a>. 
 
-To initialize a push lock, call <a href="ifsk.fltinitializepushlock">FltInitializePushLock</a>. 
+To initialize a push lock, call <a href="..\fltkernel\nf-fltkernel-fltinitializepushlock.md">FltInitializePushLock</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltacquirepushlockexclusive">FltAcquirePushLockExclusive</a>
+<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md">FltAcquirePushLockExclusive</a>
 </dt>
 <dt>
-<a href="ifsk.fltacquirepushlockshared">FltAcquirePushLockShared</a>
+<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>
 </dt>
 <dt>
-<a href="ifsk.fltinitializepushlock">FltInitializePushLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitializepushlock.md">FltInitializePushLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltreleasepushlock">FltReleasePushLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasepushlock.md">FltReleasePushLock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltDeletePushLock routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltDeletePushLock routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

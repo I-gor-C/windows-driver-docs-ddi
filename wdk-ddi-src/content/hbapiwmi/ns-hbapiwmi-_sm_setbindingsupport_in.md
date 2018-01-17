@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_SETBINDINGSUPPORT_IN
+UID: NS:hbapiwmi._SM_SetBindingSupport_IN
 title: _SM_SetBindingSupport_IN
 author: windows-driver-content
 description: The SM_SetBindingSupport_IN structure is used to provide input parameters to the SM_SetBindingSupport method.
@@ -7,8 +7,8 @@ old-location: storage\sm_setbindingsupport_in.htm
 old-project: storage
 ms.assetid: 7bcee845-9b3f-4ad7-843f-1f4cd74ee1be
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_SetBindingSupport_IN, *PSM_SetBindingSupport_IN, PSM_SetBindingSupport_IN, SM_SetBindingSupport_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_SetBindingSupport_IN, *PSM_SetBindingSupport_IN, SM_SetBindingSupport_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSM_SetBindingSupport_IN, SM_SetBindingSupport_IN
 ---
 
 # _SM_SetBindingSupport_IN structure
@@ -71,20 +72,4 @@ The HBA_BIND_CAPABILITY binding capabilities.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_SetBindingSupport_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SMHBA_BindingEntry WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_SetBindingSupport_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SMHBA_BindingEntry WMI class.</p>

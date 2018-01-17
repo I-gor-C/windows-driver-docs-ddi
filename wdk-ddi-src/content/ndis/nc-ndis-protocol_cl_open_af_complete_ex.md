@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_OPEN_AF_COMPLETE_EX
-title: PROTOCOL_CL_OPEN_AF_COMPLETE_EX
+UID: NC:ndis.PROTOCOL_CL_OPEN_AF_COMPLETE_EX
+title: PROTOCOL_CL_OPEN_AF_COMPLETE_EX function
 author: windows-driver-content
 description: The ProtocolClOpenAfCompleteEx function completes the opening of an address family (AF) that was started when a CoNDIS client called the NdisClOpenAddressFamilyEx function.Note  You must declare the function by using the PROTOCOL_CL_OPEN_AF_COMPLETE_EX type. For more information, see the following Examples section.
 old-location: netvista\protocolclopenafcompleteex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 03ddbbfd-8fe8-44b6-8d3e-12a7bf6f8f6b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_OPEN_AF_COMPLETE_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback
+# PROTOCOL_CL_OPEN_AF_COMPLETE_EX function
 
 
 
@@ -41,11 +42,11 @@ req.irql: PASSIVE_LEVEL
 The 
   <i>ProtocolClOpenAfCompleteEx</i> function completes the opening of an address family (AF) that was started
   when a CoNDIS client called the 
-  <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a> function.
+  <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a> function.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_OPEN_AF_COMPLETE_EX ProtocolClOpenAfCompleteEx;
@@ -65,7 +66,7 @@ VOID ProtocolClOpenAfCompleteEx(
 
 A client-supplied handle to its context area for an address AF. The client allocated this context
      area and passed this handle to NDIS in its call to the 
-     <a href="netvista.ndisclopenaddressfamilyex">
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
      NdisClOpenAddressFamilyEx</a> function.
 
 
@@ -96,7 +97,7 @@ The AF has been opened, so the client can initialize its state at
        <i>NdisAfHandle</i> in subsequent calls to 
        <b>NdisCl<i>Xxx</i></b> and 
        <b>NdisCo<i>Xxx</i></b> functions, such as 
-       <a href="netvista.ndiscooidrequest">NdisCoOidRequest</a>.
+       <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>.
 
 
 ### -param NDIS_STATUS_RESOURCES
@@ -139,7 +140,7 @@ The
     <i>ProtocolClOpenAfCompleteEx</i> function is required for CoNDIS clients. CoNDIS clients must provide 
     <i>ProtocolClOpenAfCompleteEx</i> to complete the asynchronous operations that the clients initiate by
     calling the 
-    <a href="netvista.ndisclopenaddressfamilyex">
+    <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
     NdisClOpenAddressFamilyEx</a> function.
 
 NDIS calls 
@@ -160,7 +161,7 @@ The call manager has examined the specification that the client's
 If the client's attempt to open an AF fails, NDIS cleans up its saved state before calling 
     <i>ProtocolClOpenAfCompleteEx</i>. In this case, 
     <i>ProtocolClOpenAfCompleteEx</i> can release the resources that the client allocated for its call to 
-    <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a> or
+    <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a> or
     prepare them for reuse.
 
 Otherwise, 
@@ -171,10 +172,10 @@ Otherwise,
 
 If the client accepts incoming calls, it might allocate a per-service access point (SAP) state area
     and call the 
-    <a href="netvista.ndisclregistersap">NdisClRegisterSap</a> function. If the
+    <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a> function. If the
     client makes outgoing calls, it might allocate a per-virtual connection (VC) state area and create a VC
     with the 
-    <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> function to prepare for an
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> function to prepare for an
     incoming request from one of the client's own clients to make an outgoing call to a remote node.
 
 NDIS calls 
@@ -191,54 +192,19 @@ The <b>PROTOCOL_CL_OPEN_AF_COMPLETE_EX</b> function type is defined in the Ndis.
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisclregistersap">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscooidrequest">NdisCoOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
@@ -251,5 +217,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

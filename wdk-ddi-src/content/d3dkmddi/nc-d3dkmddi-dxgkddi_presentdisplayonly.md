@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_PRESENTDISPLAYONLY
-title: DXGKDDI_PRESENTDISPLAYONLY
+UID: NC:d3dkmddi.DXGKDDI_PRESENTDISPLAYONLY
+title: DXGKDDI_PRESENTDISPLAYONLY function
 author: windows-driver-content
 description: Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
 old-location: display\dxgkddipresentdisplayonly.htm
 old-project: display
 ms.assetid: b68839e3-ad82-4fcc-8e5a-02dea5db08d9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_PRESENTDISPLAYONLY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_PRESENTDISPLAYONLY callback
+# DXGKDDI_PRESENTDISPLAYONLY function
 
 
 
@@ -42,7 +43,7 @@ Presents the screen image to the display device of a kernel mode display-only dr
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_PRESENTDISPLAYONLY DxgkDdiPresentDisplayOnly;
@@ -64,7 +65,7 @@ A handle to the device context for the display adapter. The KMDOD's <a href="..\
 
 ### -param pPresentDisplayOnly [in]
 
-A pointer to a <a href="display.dxgkarg_present_displayonly">DXGKARG_PRESENT_DISPLAYONLY</a> structure that contains information about the present operation.
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_present_displayonly.md">DXGKARG_PRESENT_DISPLAYONLY</a> structure that contains information about the present operation.
 
 
 ## -returns
@@ -99,76 +100,20 @@ When the KMDOD receives a call to <i>DxgkDdiPresentDisplayOnly</i>, it prepares 
 
 When the KMDOD receives a call to <i>DxgkDdiPresentDisplayOnly</i>, it prepares hardware commands, sends them to the hardware, and immediately returns <b>STATUS_SUCCESS</b>. Later, when the KMDOD receives the interrupt notification of command completion, it should call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>, <a href="..\dispmprt\nc-dispmprt-dxgkcb_queue_dpc.md">DxgkCbQueueDpc</a>, and <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a> functions to notify the operating system about the progress of the current present operation. See Remarks of the <b>DxgkCbNotifyInterrupt</b> function on how to use these three functions with an interrupt service routine (ISR).
 
-In this case, when the driver calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> in an ISR, it should specify the <b>InterruptType</b> member of the <a href="display.dxgkargcb_notify_interrupt_data">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure as type <b>DXGK_INTERRUPT_DISPLAYONLY_PRESENT_PROGRESS</b>, and it should fill in the <b>DisplayOnlyPresentProgress</b> member with an appropriate value for the progress.
+In this case, when the driver calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> in an ISR, it should specify the <b>InterruptType</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure as type <b>DXGK_INTERRUPT_DISPLAYONLY_PRESENT_PROGRESS</b>, and it should fill in the <b>DisplayOnlyPresentProgress</b> member with an appropriate value for the progress.
 
 The operating system guarantees that for each VidPN source there is only one pending present operation.
 
 The operating system guarantees that this function follows the  zero level  synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgkarg_present_displayonly">DXGKARG_PRESENT_DISPLAYONLY</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_present_displayonly.md">DXGKARG_PRESENT_DISPLAYONLY</a>
 </dt>
 <dt>
-<a href="display.dxgkargcb_notify_interrupt_data">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a>
@@ -190,5 +135,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_PRESENTDISPLAYONLY callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_PRESENTDISPLAYONLY callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

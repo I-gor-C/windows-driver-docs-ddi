@@ -1,5 +1,5 @@
 ---
-UID: NS.PARALLEL._PARCLASS_INFORMATION
+UID: NS:parallel._PARCLASS_INFORMATION
 title: _PARCLASS_INFORMATION
 author: windows-driver-content
 description: The PARCLASS_INFORMATION structure specifies information about a parallel port, pointers to callback routines to operate a parallel port, and pointers to callback routines to read and write to a parallel device.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: abad8ebd-a9fc-4cfb-8495-aca4e38ee45a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 # _PARCLASS_INFORMATION structure
@@ -163,21 +164,6 @@ A client uses this information to operate a parallel port and to read and write 
 
 For more information, see <a href="https://msdn.microsoft.com/c05a1a1e-308a-4b9f-af43-761c4c14d6af">Connecting to a Parallel Device</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

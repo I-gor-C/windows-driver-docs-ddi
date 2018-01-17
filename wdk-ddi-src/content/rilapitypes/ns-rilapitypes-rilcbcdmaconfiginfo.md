@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILCBCDMACONFIGINFO
+UID: NS:rilapitypes.RILCBCDMACONFIGINFO
 title: RILCBCDMACONFIGINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcbcdmaconfiginfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a12254b0-fb4d-49ff-a046-cae99c12f535
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCBCDMACONFIGINFO, RILCBCDMACONFIGINFO, *LPRILCBCDMACONFIGINFO
+ms.date: 1/11/2018
+ms.keywords: RILCBCDMACONFIGINFO, *LPRILCBCDMACONFIGINFO, RILCBCDMACONFIGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCBCDMACONFIGINFO, RILCBCDMACONFIGINFO
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef struct _RILCBCDMACONFIGINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

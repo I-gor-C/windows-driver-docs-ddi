@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILEXECUTORCONFIG
+UID: NS:rilapitypes.RILEXECUTORCONFIG
 title: RILEXECUTORCONFIG
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexecutorconfig_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8f10bb0f-2a9e-4310-946d-c1c9250391e7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG, RILEXECUTORCONFIG
+ms.date: 1/11/2018
+ms.keywords: RILEXECUTORCONFIG, RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -70,19 +71,3 @@ typedef struct _RILEXECUTORCONFIG {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

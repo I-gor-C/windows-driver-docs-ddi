@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IRegistryKey.QueryValueKey
+UID: NF:portcls.IRegistryKey.QueryValueKey
 title: IRegistryKey::QueryValueKey method
 author: windows-driver-content
 description: The QueryValueKey method retrieves information about a registry key's value entries, including their names, types, data sizes, and values.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IRegistryKey::QueryValueKey method
@@ -59,7 +60,7 @@ NTSTATUS QueryValueKey(
 
 ### -param ValueName [in]
 
-Pointer to the manufacturer-supplied name of the value entry. The name string is specified by a structure of type <a href="kernel.unicode_string">UNICODE_STRING</a>.
+Pointer to the manufacturer-supplied name of the value entry. The name string is specified by a structure of type <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>.
 
 
 ### -param KeyValueInformationClass [in]
@@ -83,7 +84,7 @@ Specifies the type of information to be returned in the buffer. Set this paramet
 
 ### -param KeyValueInformation [out]
 
-Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>, <a href="kernel.key_value_full_information">KEY_VALUE_FULL_INFORMATION</a>, or <a href="kernel.key_value_partial_information">KEY_VALUE_PARTIAL_INFORMATION</a>, depending on the value of <i>KeyValueInformationClass</i>. The structure is followed by additional data whose size depends on the data type of the key value.
+Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>, or <a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>, depending on the value of <i>KeyValueInformationClass</i>. The structure is followed by additional data whose size depends on the data type of the key value.
 
 
 ### -param Length [in]
@@ -112,61 +113,25 @@ Output pointer for the length of the resulting data. This parameter points to a 
 If the <i>KeyValueInformation</i> buffer is too small to hold the requested information, the method writes the required size to *<i>ResultLength</i> and returns a status code of either STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. The method returns STATUS_BUFFER_OVERFLOW if it succeeded in writing only part of the requested information to the buffer. The method returns STATUS_BUFFER_TOO_SMALL if it was unable to write any information to the buffer. The value written to *<i>ResultLength</i> indicates the minimum buffer size required to hold all the requested information.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 </dt>
 <dt>
-<a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_value_full_information">KEY_VALUE_FULL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_value_partial_information">KEY_VALUE_PARTIAL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryvaluekey">ZwQueryValueKey</a>
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  

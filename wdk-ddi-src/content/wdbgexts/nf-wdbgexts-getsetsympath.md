@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.GetSetSympath
+UID: NF:wdbgexts.GetSetSympath
 title: GetSetSympath function
 author: windows-driver-content
 description: The GetSetSympath function can be used to either get or set the symbol search path.
 old-location: debugger\getsetsympath.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 2c7392c2-49c8-4b27-addc-0200eabbe87e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: GetSetSympath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -76,31 +77,4 @@ None
 
 
 ## -remarks
-When the symbol path is changed, a call to <b>ReloadSymbols</b> is made implicitly.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+When the symbol path is changed, a call to <b>ReloadSymbols</b> is made implicitly.</p>

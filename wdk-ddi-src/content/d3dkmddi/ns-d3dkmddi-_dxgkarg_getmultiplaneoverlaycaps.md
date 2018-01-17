@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_GETMULTIPLANEOVERLAYCAPS
+UID: NS:d3dkmddi._DXGKARG_GETMULTIPLANEOVERLAYCAPS
 title: _DXGKARG_GETMULTIPLANEOVERLAYCAPS
 author: windows-driver-content
 description: Arguments to the DxgkDdiGetMultiPlaneOverlayCaps function.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_getmultiplaneoverlaycaps.htm
 old-project: display
 ms.assetid: 4792107C-BAAA-48B5-AC9A-829C05795303
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_GETMULTIPLANEOVERLAYCAPS, DXGKARG_GETMULTIPLANEOVERLAYCAPS
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_GETMULTIPLANEOVERLAYCAPS, DXGKARG_GETMULTIPLANEOVERLAYCAPS, *IN_OUT_PDXGKARG_GETMULTIPLANEOVERLAYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_GETMULTIPLANEOVERLAYCAPS
 ---
 
 # _DXGKARG_GETMULTIPLANEOVERLAYCAPS structure
@@ -95,19 +96,3 @@ typedef struct _DXGKARG_GETMULTIPLANEOVERLAYCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

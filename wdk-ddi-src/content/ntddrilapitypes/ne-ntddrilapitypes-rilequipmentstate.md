@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILEQUIPMENTSTATE
+UID: NE:ntddrilapitypes.RILEQUIPMENTSTATE
 title: RILEQUIPMENTSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilequipmentstate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: aa00ebc4-c8de-4a73-ad43-77f4e173e617
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILEQUIPMENTSTATE, RILEQUIPMENTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEQUIPMENTSTATE
 ---
 
 # RILEQUIPMENTSTATE enumeration
@@ -65,19 +66,3 @@ typedef enum _RILEQUIPMENTSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

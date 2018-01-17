@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILVERSIONPARAMS
+UID: NS:ntddrilapitypes.RILVERSIONPARAMS
 title: RILVERSIONPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilversionparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c6931cee-2b86-4bf8-9e9d-b04e2df9eb12
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILVERSIONPARAMS, LPRILVERSIONPARAMS, RILVERSIONPARAMS, *LPRILVERSIONPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILVERSIONPARAMS, *LPRILVERSIONPARAMS, RILVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILVERSIONPARAMS, RILVERSIONPARAMS
 ---
 
 # RILVERSIONPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILVERSIONPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

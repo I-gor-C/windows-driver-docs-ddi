@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ASYNC_WRITE
+UID: NS:1394._IRB_REQ_ASYNC_WRITE
 title: _IRB_REQ_ASYNC_WRITE
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 stack to carry out an asynchronous write request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ASYNC_WRITE
 ---
 
 # _IRB_REQ_ASYNC_WRITE structure
@@ -168,19 +169,3 @@ Elapsed time in nanoseconds. Only valid for flag <b>ASYNC_FLAGS_PING</b>.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

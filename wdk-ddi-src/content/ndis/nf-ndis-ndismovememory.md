@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMoveMemory
+UID: NF:ndis.NdisMoveMemory
 title: NdisMoveMemory macro
 author: windows-driver-content
 description: The NdisMoveMemory function copies a specified number of bytes from one caller-supplied location to another.
 old-location: netvista\ndismovememory.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1be08720-be44-4e1b-b0ec-b4eb0a2718a0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMoveMemory macro
@@ -82,7 +83,7 @@ Both
     <i>Destination</i> are virtual addresses.
 
 If either address falls within a range of device memory that was mapped with 
-    <a href="netvista.ndismmapiospace">NdisMMapIoSpace</a>, a miniport driver should
+    <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>, a miniport driver should
     call one of the 
     <b>Ndis..MappedMemory</b> functions instead of 
     <b>NdisMoveMemory</b>.
@@ -99,65 +100,19 @@ Callers of
     example if either address is on the stack.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
- Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="kernel.rtlcopymemory">RtlCopyMemory</a> (not <a href="kernel.rtlmovememory">RtlMoveMemory</a>) instead.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisallocatememorywithtagpriority">
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
    NdisAllocateMemoryWithTagPriority</a>
 </dt>
 <dt>
-<a href="netvista.ndismmapiospace">NdisMMapIoSpace</a>
+<a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMoveMemory macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMoveMemory macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

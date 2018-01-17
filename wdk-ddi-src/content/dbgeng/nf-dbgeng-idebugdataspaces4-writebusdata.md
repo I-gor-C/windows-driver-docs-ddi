@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.WriteBusData
+UID: NF:dbgeng.IDebugDataSpaces4.WriteBusData
 title: IDebugDataSpaces4::WriteBusData method
 author: windows-driver-content
 description: The WriteBusData method writes data to a system bus.
 old-location: debugger\writebusdata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: bd4e762d-b3d5-4a4c-bdeb-998cd72783b4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WriteBusData, WriteBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::WriteBusData method
@@ -106,31 +107,4 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 ## -remarks
 This method is only available in kernel-mode debugging.
 
-The nature of the data read from the bus is system, bus, and slot dependent.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The nature of the data read from the bus is system, bus, and slot dependent.</p>

@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_GETMULTIPLANEOVERLAYCAPS
-title: DXGKDDI_GETMULTIPLANEOVERLAYCAPS
+UID: NC:d3dkmddi.DXGKDDI_GETMULTIPLANEOVERLAYCAPS
+title: DXGKDDI_GETMULTIPLANEOVERLAYCAPS function
 author: windows-driver-content
 description: Called to retrieve multiplane overlay capabilities. Support for this DDI is required for any WDDM 2.2 driver that wants to support multiple planes.
 old-location: display\dxgkddi_getmultiplaneoverlaycaps.htm
 old-project: display
 ms.assetid: 17A9B769-D280-491D-844E-A9B2C66D2207
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_GETMULTIPLANEOVERLAYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_GETMULTIPLANEOVERLAYCAPS callback
+# DXGKDDI_GETMULTIPLANEOVERLAYCAPS function
 
 
 
@@ -42,7 +43,7 @@ Called to retrieve multiplane overlay capabilities. Support for this DDI is requ
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_GETMULTIPLANEOVERLAYCAPS(
@@ -79,20 +80,4 @@ This function is called at PASSIVE_LEVEL.
 The multiplane overlay capabilities are allowed to change due to display configuration changes.
 
 For WDDM 2.2 drivers, this DDI is used to retrieve the multiplane overlay capabilities rather than the user mode DDIs. 
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

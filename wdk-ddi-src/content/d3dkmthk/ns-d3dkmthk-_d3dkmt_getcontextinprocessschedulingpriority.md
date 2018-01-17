@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY
+UID: NS:d3dkmthk._D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY
 title: _D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY
 author: windows-driver-content
 description: Describes information that is required for an in-process (in-proc) Microsoft Direct3D composition device to retrieve the scheduling priority for a device context that is in the same process as other device contexts.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_getcontextinprocessschedulingpriority.htm
 old-project: display
 ms.assetid: a72dd755-efd9-4950-8400-179eb1d63e9a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY, D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY
 ---
 
 # _D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY structure
@@ -69,39 +70,3 @@ A value of 1 indicates that the context is scheduled ahead of other contexts wit
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

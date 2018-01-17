@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILRADIOCONFIGURATIONRADIOTYPE
+UID: NE:ntddrilapitypes.RILRADIOCONFIGURATIONRADIOTYPE
 title: RILRADIOCONFIGURATIONRADIOTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradioconfigurationradiotype.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f4efebb4-0258-44f6-bdf0-ff61d3b13792
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILRADIOCONFIGURATIONRADIOTYPE, RILRADIOCONFIGURATIONRADIOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRADIOCONFIGURATIONRADIOTYPE
 ---
 
 # RILRADIOCONFIGURATIONRADIOTYPE enumeration
@@ -97,19 +98,3 @@ typedef enum _RILRADIOCONFIGURATIONRADIOTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

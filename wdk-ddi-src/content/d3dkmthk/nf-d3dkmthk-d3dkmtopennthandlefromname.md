@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTOpenNtHandleFromName
+UID: NF:d3dkmthk.D3DKMTOpenNtHandleFromName
 title: D3DKMTOpenNtHandleFromName function
 author: windows-driver-content
 description: From a given graphics adapter name, opens an NT handle to the process.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtopennthandlefromname.htm
 old-project: display
 ms.assetid: bcd33f64-7ad0-4e26-af73-e4f2b1b6e5fb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTOpenNtHandleFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTOpenNtHandleFromName function
@@ -55,7 +56,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenNtHandleFromName(
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dkmt_opennthandlefromname">D3DKMT_OPENNTHANDLEFROMNAME</a> structure that describes information required to open an NT handle.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_opennthandlefromname.md">D3DKMT_OPENNTHANDLEFROMNAME</a> structure that describes information required to open an NT handle.
 
 
 ## -returns
@@ -74,72 +75,3 @@ This function might also return other NTSTATUS values.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gdi32.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gdi32.dll</dt>
-</dl>
-</td>
-</tr>
-</table>

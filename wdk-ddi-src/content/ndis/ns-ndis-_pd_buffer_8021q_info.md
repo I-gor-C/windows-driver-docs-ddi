@@ -1,13 +1,13 @@
 ---
-UID: NS.NDIS._PD_BUFFER_8021Q_INFO
+UID: NS:ndis._PD_BUFFER_8021Q_INFO
 title: _PD_BUFFER_8021Q_INFO
 author: windows-driver-content
 description: This structure contains the IEEE 802.1Q information.
 old-location: netvista\pd_buffer_8021q_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: B5B2051E-C62F-4E3D-9C52-DE46145A2C24
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: PD_BUFFER_8021Q_INFO
 ---
 
 # _PD_BUFFER_8021Q_INFO structure
@@ -71,39 +72,3 @@ The virtual LAN ID.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h</dt>
-</dl>
-</td>
-</tr>
-</table>

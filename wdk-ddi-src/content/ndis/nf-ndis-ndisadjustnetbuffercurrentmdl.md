@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisAdjustNetBufferCurrentMdl
+UID: NF:ndis.NdisAdjustNetBufferCurrentMdl
 title: NdisAdjustNetBufferCurrentMdl function
 author: windows-driver-content
 description: The NdisAdjustNetBufferCurrentMdl function updates a NET_BUFFER structure based on the current data offset.
 old-location: netvista\ndisadjustnetbuffercurrentmdl.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5d05793b-cb35-435d-aa59-6ac380668d91
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisAdjustNetBufferCurrentMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisAdjustNetBufferCurrentMdl function
@@ -40,7 +41,7 @@ req.irql: Any level (see Remarks section)
 ## -description
 The 
   <b>NdisAdjustNetBufferCurrentMdl</b> function updates a 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structure based on the current data
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure based on the current data
   offset.
 
 
@@ -59,7 +60,7 @@ VOID NdisAdjustNetBufferCurrentMdl(
 ### -param NetBuffer [in]
 
 A pointer to a 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structure.
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure.
 
 
 ## -returns
@@ -71,7 +72,7 @@ The
     <b>NdisAdjustNetBufferCurrentMdl</b> function recalculates and sets the 
     <b>CurrentMdl</b> and 
     <b>CurrentMdlOffset</b> members of a 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure based on the 
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure based on the 
     <b>DataOffset</b> member of the NET_BUFFER structure.
 
 Callers of 
@@ -79,72 +80,15 @@ Callers of
     DISPATCH_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level (see Remarks section)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisAdjustNetBufferCurrentMdl function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAdjustNetBufferCurrentMdl function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

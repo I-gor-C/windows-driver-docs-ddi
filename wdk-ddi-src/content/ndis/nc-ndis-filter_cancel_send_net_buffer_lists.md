@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_CANCEL_SEND_NET_BUFFER_LISTS
-title: FILTER_CANCEL_SEND_NET_BUFFER_LISTS
+UID: NC:ndis.FILTER_CANCEL_SEND_NET_BUFFER_LISTS
+title: FILTER_CANCEL_SEND_NET_BUFFER_LISTS function
 author: windows-driver-content
 description: NDIS calls a filter driver's FilterCancelSendNetBufferLists function to cancel the transmission of all NET_BUFFER_LIST structures that are marked with a specified cancellation identifier.Note  You must declare the function by using the FILTER_CANCEL_SEND_NET_BUFFER_LISTS type. For more information, see the following Examples section.
 old-location: netvista\filtercancelsendnetbufferlists.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 55979b0d-61a6-43da-8fa5-11159b1a48d1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_CANCEL_SEND_NET_BUFFER_LISTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,21 +31,22 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_CANCEL_SEND_NET_BUFFER_LISTS callback
+# FILTER_CANCEL_SEND_NET_BUFFER_LISTS function
 
 
 
 ## -description
 NDIS calls a filter driver's 
   <i>FilterCancelSendNetBufferLists</i> function to cancel the transmission of all 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that are marked
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that are marked
   with a specified cancellation identifier.
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_CANCEL_SEND_NET_BUFFER_LISTS FilterCancelSendNetBufferLists;
@@ -83,20 +84,20 @@ None
 The
     <i>FilterCancelSendNetBufferLists</i> function is optional. If a filter driver does not filter send
     requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="netvista.ndisfregisterfilterdriver">
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
     NdisFRegisterFilterDriver</a> function.
 
 Filter drivers that queue 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures before sending
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures before sending
     should export a 
     <i>FilterCancelSendNetBufferLists</i> function. The 
     <i>FilterCancelSendNetBufferLists</i> function cancels the pending transmission of the specified
     NET_BUFFER_LIST structures.
 
 When an overlying NDIS driver calls the 
-    <a href="netvista.ndiscancelsendnetbufferlists">
+    <a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">
     NdisCancelSendNetBufferLists</a> or 
-    <a href="netvista.ndisfcancelsendnetbufferlists">
+    <a href="..\ndis\nf-ndis-ndisfcancelsendnetbufferlists.md">
     NdisFCancelSendNetBufferLists</a> function, NDIS calls the 
     <i>FilterCancelSendNetBufferLists</i> function of the filter modules on the binding.
 
@@ -116,7 +117,7 @@ Removes from the send queue (unlinks) all
       cancellation identifiers match the specified cancellation identifier.
 
 Calls the 
-      <a href="netvista.ndisfsendnetbufferlistscomplete">
+      <a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
       NdisFSendNetBufferListsComplete</a> function for all unlinked NET_BUFFER_LIST structures to return
       the structures. The filter driver sets the status field of the NET_BUFFER_LIST structures to
       NDIS_STATUS_SEND_ABORTED.
@@ -138,41 +139,6 @@ The <b>FILTER_CANCEL_SEND_NET_BUFFER_LISTS</b> function type is defined in the N
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -183,29 +149,29 @@ IRQL
    NDIS_GET_NET_BUFFER_LIST_CANCEL_ID</a>
 </dt>
 <dt>
-<a href="netvista.ndiscancelsendnetbufferlists">NdisCancelSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">NdisCancelSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndisfcancelsendnetbufferlists">
+<a href="..\ndis\nf-ndis-ndisfcancelsendnetbufferlists.md">
    NdisFCancelSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndisfsendnetbufferlistscomplete">
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
    NdisFSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_CANCEL_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_CANCEL_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

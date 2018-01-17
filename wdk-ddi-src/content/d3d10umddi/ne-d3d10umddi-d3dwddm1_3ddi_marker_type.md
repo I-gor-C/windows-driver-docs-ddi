@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3DWDDM1_3DDI_MARKER_TYPE
+UID: NE:d3d10umddi.D3DWDDM1_3DDI_MARKER_TYPE
 title: D3DWDDM1_3DDI_MARKER_TYPE
 author: windows-driver-content
 description: Indicates the type of marker that the user-mode display driver supports.
@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_marker_type.htm
 old-project: display
 ms.assetid: E57CA17F-FB96-4E9B-A38D-67A4F925D3B4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DWDDM1_3DDI_MARKER_TYPE, D3DWDDM1_3DDI_MARKER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DWDDM1_3DDI_MARKER_TYPE
 ---
 
 # D3DWDDM1_3DDI_MARKER_TYPE enumeration
@@ -65,39 +66,3 @@ The context submits GPU work for single-threaded user-mode DDIs. In this case, e
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlIntToUChar
+UID: NF:ntintsafe.RtlIntToUChar
 title: RtlIntToUChar function
 author: windows-driver-content
 description: Converts a value of type INT to a value of type UCHAR.
@@ -7,7 +7,7 @@ old-location: kernel\rtlinttouchar.htm
 old-project: kernel
 ms.assetid: A733140D-2F0D-4E5A-A3AD-C27756584200
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlIntToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlIntToUChar function
@@ -67,31 +68,4 @@ A pointer to the converted value. In the case where the conversion causes a trun
 ## -remarks
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
-This function uses the following alternate name:
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This function uses the following alternate name:</p>

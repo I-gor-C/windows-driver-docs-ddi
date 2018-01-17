@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_UPDATEGPUVIRTUALADDRESS
+UID: NS:d3dkmthk._D3DKMT_UPDATEGPUVIRTUALADDRESS
 title: _D3DKMT_UPDATEGPUVIRTUALADDRESS
 author: windows-driver-content
 description: D3DKMT_UPDATEGPUVIRTUALADDRESS is used with UpdateGpuVirtualAddress to allow the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_updategpuvirtualaddress.htm
 old-project: display
 ms.assetid: B6586406-6CAD-479F-AE41-93EFBA195B99
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_UPDATEGPUVIRTUALADDRESS, D3DKMT_UPDATEGPUVIRTUALADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_UPDATEGPUVIRTUALADDRESS
 ---
 
 # _D3DKMT_UPDATEGPUVIRTUALADDRESS structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-<b>D3DKMT_UPDATEGPUVIRTUALADDRESS</b> is used with <a href="display.d3dkmtupdategpuvirtualaddress">UpdateGpuVirtualAddress</a> to allow the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates. 
+<b>D3DKMT_UPDATEGPUVIRTUALADDRESS</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdategpuvirtualaddress.md">UpdateGpuVirtualAddress</a> to allow the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates. 
 
 
 
@@ -91,7 +92,7 @@ Specifies the number of operations in the <b>Operations</b> array.
 ### -field Operations
 
 
-<a href="display.d3dddi_updategpuvirtualaddress_operation">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a> array of operations to perform on the GPU virtual address space.
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906329">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a> array of operations to perform on the GPU virtual address space.
 
 
 ### -field Reserved0
@@ -130,39 +131,3 @@ The consolidated value of the <b>Flags</b> union.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

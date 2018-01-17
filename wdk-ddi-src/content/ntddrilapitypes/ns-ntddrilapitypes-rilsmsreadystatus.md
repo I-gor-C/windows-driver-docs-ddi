@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSMSREADYSTATUS
+UID: NS:ntddrilapitypes.RILSMSREADYSTATUS
 title: RILSMSREADYSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsmsreadystatus.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0f2d6a06-18af-4e7a-9f88-c81d98575f56
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS, RILSMSREADYSTATUS, LPRILSMSREADYSTATUS
+ms.date: 1/11/2018
+ms.keywords: RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS, RILSMSREADYSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSMSREADYSTATUS, RILSMSREADYSTATUS
 ---
 
 # RILSMSREADYSTATUS structure
@@ -69,19 +70,3 @@ typedef struct _RILSMSREADYSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

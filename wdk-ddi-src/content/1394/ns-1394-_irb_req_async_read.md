@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ASYNC_READ
+UID: NS:1394._IRB_REQ_ASYNC_READ
 title: _IRB_REQ_ASYNC_READ
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 stack to carry out an asynchronous read request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ASYNC_READ
 ---
 
 # _IRB_REQ_ASYNC_READ structure
@@ -158,19 +159,3 @@ Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

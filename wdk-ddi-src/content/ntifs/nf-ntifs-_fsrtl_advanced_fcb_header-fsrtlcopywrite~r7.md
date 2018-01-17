@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlCopyWrite~r7
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlCopyWrite~r7
 title: FsRtlCopyWrite function
 author: windows-driver-content
 description: The FsRtlCopyWrite routine copies data from a user buffer to a cached file.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlcopywrite.htm
 old-project: ifsk
 ms.assetid: badff1ac-ccb2-418d-94be-c30d323f0464
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlCopyWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlCopyWrite function
@@ -126,84 +127,26 @@ If <i>Wait</i> is <b>TRUE</b>, <b>FsRtlCopyWrite</b> is guaranteed to copy the d
 
 If <i>Wait</i> is <b>FALSE</b>, <b>FsRtlCopyWrite</b> will refuse to block, and will return <b>FALSE</b>, if it cannot acquire the file's main resource or if the required pages of the cached file are not already resident in memory.
 
-The file system's <b>FastIoCheckIfPossible</b> routine is responsible for ensuring that the byte range defined by <i>FileOffset</i> and <i>Length</i> does not include any exclusively locked byte range for which the caller does not pass the appropriate <i>LockKey</i> value. If the file system uses the <b>FsRtl..Lock</b><i>Xxx</i> support routines to manage byte-range locks, this can be accomplished by calling <a href="ifsk.fsrtlfastchecklockforwrite">FsRtlFastCheckLockForWrite</a> from the <b>FastIoCheckIfPossible</b> routine before calling <b>FsRtlCopyWrite</b>.
+The file system's <b>FastIoCheckIfPossible</b> routine is responsible for ensuring that the byte range defined by <i>FileOffset</i> and <i>Length</i> does not include any exclusively locked byte range for which the caller does not pass the appropriate <i>LockKey</i> value. If the file system uses the <b>FsRtl..Lock</b><i>Xxx</i> support routines to manage byte-range locks, this can be accomplished by calling <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforwrite~r5.md">FsRtlFastCheckLockForWrite</a> from the <b>FastIoCheckIfPossible</b> routine before calling <b>FsRtlCopyWrite</b>.
 
-To cache a file, use the <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a> routine.
+To cache a file, use the <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlcopyread">FsRtlCopyRead</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastchecklockforwrite">FsRtlFastCheckLockForWrite</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforwrite~r5.md">FsRtlFastCheckLockForWrite</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCopyWrite routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCopyWrite routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

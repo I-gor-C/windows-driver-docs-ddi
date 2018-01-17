@@ -1,5 +1,5 @@
 ---
-UID: NF.usbcamdi.USBCAMD_Debug_LogEntry
+UID: NF:usbcamdi.USBCAMD_Debug_LogEntry
 title: USBCAMD_Debug_LogEntry function
 author: windows-driver-content
 description: The USBCAMD_Debug_LogEntry function is called by the camera minidriver to log debugging information to a file.
@@ -7,7 +7,7 @@ old-location: stream\usbcamd_debug_logentry.htm
 old-project: stream
 ms.assetid: a718cf3e-8359-4560-a88e-dd7789b61be6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: USBCAMD_Debug_LogEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Usbcamd2.lib
 req.dll: 
 req.irql: 
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -82,42 +83,4 @@ Specifies the third information value to be written to the log file.
 
 
 ## -remarks
-The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamd2.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.</p>

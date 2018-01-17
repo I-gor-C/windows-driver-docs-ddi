@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMSGSERVICEINFO
+UID: NS:ntddrilapitypes.RILMSGSERVICEINFO
 title: RILMSGSERVICEINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgserviceinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 21b1c6ef-b8f3-4230-bc3f-7ac19c6cb2d1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMSGSERVICEINFO, LPRILMSGSERVICEINFO, *LPRILMSGSERVICEINFO, RILMSGSERVICEINFO
+ms.date: 1/11/2018
+ms.keywords: RILMSGSERVICEINFO, RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO
 ---
 
 # RILMSGSERVICEINFO structure
@@ -73,19 +74,3 @@ typedef struct _RILMSGSERVICEINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

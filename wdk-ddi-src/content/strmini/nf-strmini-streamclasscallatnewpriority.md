@@ -1,5 +1,5 @@
 ---
-UID: NF.strmini.StreamClassCallAtNewPriority
+UID: NF:strmini.StreamClassCallAtNewPriority
 title: StreamClassCallAtNewPriority function
 author: windows-driver-content
 description: The StreamClassCallAtNewPriority routine schedules a routine to be called at a different priority.
@@ -7,7 +7,7 @@ old-location: stream\streamclasscallatnewpriority.htm
 old-project: stream
 ms.assetid: 86c4e9da-7c71-4d79-b8e2-f602489da647
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: StreamClassCallAtNewPriority
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Stream.lib
 req.dll: 
 req.irql: (See Parameters section)
+req.typenames: *PSTREAM_PRIORITY, STREAM_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ Pointer to an HW_STREAM_OBJECT structure specifying the stream is associated wit
 
 ### -param HwDeviceExtension [in]
 
-Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
+Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
 
 ### -param Priority [in]
@@ -123,7 +124,7 @@ Used to allow a thread called at low priority to return to high priority so that
 
 ### -param PriorityRoutine [in]
 
-Pointer to a minidriver-supplied <a href="stream.strminipriorityroutine">StrMiniPriorityRoutine</a> to be called at the specified priority level.
+Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff568462">StrMiniPriorityRoutine</a> to be called at the specified priority level.
 
 
 ### -param Context [in]
@@ -136,51 +137,3 @@ None
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Stream.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-(See Parameters section)
-
-</td>
-</tr>
-</table>

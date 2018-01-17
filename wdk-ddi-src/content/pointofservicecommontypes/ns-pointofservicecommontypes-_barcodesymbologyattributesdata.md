@@ -1,5 +1,5 @@
 ---
-UID: NS.POINTOFSERVICECOMMONTYPES._BARCODESYMBOLOGYATTRIBUTESDATA
+UID: NS:pointofservicecommontypes._BarcodeSymbologyAttributesData
 title: _BarcodeSymbologyAttributesData
 author: windows-driver-content
 description: The BarcodeSymbologyAttributesData structure contains the attribute information for a barcode symbology.
@@ -7,7 +7,7 @@ old-location: pos\barcodesymbologyattributesdata.htm
 old-project: pos
 ms.assetid: 0682B3AA-13F5-4686-AD78-D45DA85398B7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _BarcodeSymbologyAttributesData, BarcodeSymbologyAttributesData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: BarcodeSymbologyAttributesData
 ---
 
 # _BarcodeSymbologyAttributesData structure
@@ -65,7 +66,7 @@ typedef struct _BarcodeSymbologyAttributesData {
 
 The barcode symbology  to set or get attributes to or from.
 
-For more information, see the <a href="pos.barcodesymbology">BarcodeSymbology</a> enumeration topic.
+For more information, see the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a> enumeration topic.
 
 
 ### -field IsCheckDigitValidationSupported
@@ -100,7 +101,7 @@ For example, the API can be used to set to read barcodes of decode length betwee
 ### -field DecodeLengthType
 
  The decode length type, which can be set to support a range, two discrete values, or be set to any length.
- For more information, see the <a href="pos.barcodesymbologydecodelengthtype">BarcodeSymbologyDecodeLengthType</a>.
+ For more information, see the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbologydecodelengthtype.md">BarcodeSymbologyDecodeLengthType</a>.
 
 
 ### -field DecodeLength1
@@ -114,19 +115,3 @@ The last value in a range, or a second discrete value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicecommontypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

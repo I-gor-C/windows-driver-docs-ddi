@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_CONTROLINTERRUPT
-title: DXGKDDI_CONTROLINTERRUPT
+UID: NC:d3dkmddi.DXGKDDI_CONTROLINTERRUPT
+title: DXGKDDI_CONTROLINTERRUPT function
 author: windows-driver-content
 description: The DxgkDdiControlInterrupt function enables or disables the given interrupt type on the graphics hardware.
 old-location: display\dxgkddicontrolinterrupt.htm
 old-project: display
 ms.assetid: d6bef242-bafc-4d9e-a729-d62ccdbd2667
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_CONTROLINTERRUPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_CONTROLINTERRUPT callback
+# DXGKDDI_CONTROLINTERRUPT function
 
 
 
@@ -42,7 +43,7 @@ The <i>DxgkDdiControlInterrupt</i> function enables or disables the given interr
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_CONTROLINTERRUPT DxgkDdiControlInterrupt;
@@ -65,7 +66,7 @@ NTSTATUS APIENTRY* DxgkDdiControlInterrupt(
 
 ### -param InterruptType [in]
 
-[in] A <a href="display.dxgk_interrupt_type">DXGK_INTERRUPT_TYPE</a>-type value that supplies the interrupt type.
+[in] A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>-type value that supplies the interrupt type.
 
 
 ### -param Enable [in]
@@ -95,52 +96,6 @@ The driver must return STATUS_NOT_IMPLEMENTED if an interrupt type other than DX
 <i>DxgkDdiControlInterrupt</i> should be made pageable.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -150,12 +105,12 @@ PASSIVE_LEVEL
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 </dt>
 <dt>
-<a href="display.dxgk_interrupt_type">DXGK_INTERRUPT_TYPE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_CONTROLINTERRUPT callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_CONTROLINTERRUPT callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

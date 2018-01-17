@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILEXCHANGEUICCAPDURESPONSE
+UID: NS:rilapitypes.RILEXCHANGEUICCAPDURESPONSE
 title: RILEXCHANGEUICCAPDURESPONSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexchangeuiccapduresponse_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c9e3a4b3-2ce2-4f90-8be2-01d9870cc982
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILEXCHANGEUICCAPDURESPONSE, RILEXCHANGEUICCAPDURESPONSE, *LPRILEXCHANGEUICCAPDURESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEXCHANGEUICCAPDURESPONSE, *LPRILEXCHANGEUICCAPDURESPONSE
 req.product: Windows 10 or later.
 ---
 
@@ -70,19 +71,3 @@ typedef struct _RILEXCHANGEUICCAPDURESPONSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

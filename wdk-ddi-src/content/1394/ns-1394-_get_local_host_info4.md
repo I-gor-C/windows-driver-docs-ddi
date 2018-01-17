@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._GET_LOCAL_HOST_INFO4
+UID: NS:1394._GET_LOCAL_HOST_INFO4
 title: _GET_LOCAL_HOST_INFO4
 author: windows-driver-content
 description: The GET_LOCAL_HOST_INFO4 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_PHYS_ADDR_ROUTINE.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 72bc1d4b-cc68-4ea8-9431-c85cbcf135d8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO4, GET_LOCAL_HOST_INFO4, *PGET_LOCAL_HOST_INFO4, PGET_LOCAL_HOST_INFO4
+ms.keywords: _GET_LOCAL_HOST_INFO4, GET_LOCAL_HOST_INFO4, *PGET_LOCAL_HOST_INFO4
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GET_LOCAL_HOST_INFO4, *PGET_LOCAL_HOST_INFO4
 ---
 
 # _GET_LOCAL_HOST_INFO4 structure
@@ -82,21 +83,6 @@ Specifies the argument that should be passed as the Context argument of the phys
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

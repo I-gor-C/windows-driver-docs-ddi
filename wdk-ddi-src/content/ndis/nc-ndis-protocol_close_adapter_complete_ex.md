@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX
-title: PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX
+UID: NC:ndis.PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX
+title: PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX function
 author: windows-driver-content
 description: NDIS calls a protocol driver's ProtocolCloseAdapterCompleteEx function to complete a close adapter operation for which the NdisCloseAdapterEx function returned NDIS_STATUS_PENDING.Note  You must declare the function by using the PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX type. For more information, see the following Examples section.
 old-location: netvista\protocolcloseadaptercompleteex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 62cc047a-bc91-4e1e-817e-7fd509d4d90e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,21 +31,22 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX callback
+# PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX function
 
 
 
 ## -description
 NDIS calls a protocol driver's 
   <i>ProtocolCloseAdapterCompleteEx</i> function to complete a close adapter operation for which the 
-  <a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a> function returned
+  <a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a> function returned
   NDIS_STATUS_PENDING.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX ProtocolCloseAdapterCompleteEx;
@@ -64,7 +65,7 @@ VOID ProtocolCloseAdapterCompleteEx(
 A handle to a context area allocated by the protocol driver. The protocol driver maintains the
      per-binding context information in this context area. The driver supplied this handle to NDIS when the
      driver called the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 ## -returns
@@ -82,9 +83,9 @@ If
     <i>ProtocolCloseAdapterCompleteEx</i> function to complete the unbind operation.
 
 After the protocol driver calls the 
-    <a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a> function, the 
+    <a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a> function, the 
     <i>NdisBindingHandle</i> handle that the 
-    <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function returned is
+    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function returned is
     no longer valid. Therefore, 
     <i>ProtocolCloseAdapterCompleteEx</i> cannot call any 
     <b>Ndis<i>Xxx</i></b> functions that require this handle as a parameter.
@@ -100,7 +101,7 @@ If
     <i>UnbindContext</i> handle in the context area at 
     <i>ProtocolBindingContext</i>, 
     <i>ProtocolCloseAdapterCompleteEx</i> can call the 
-    <a href="netvista.ndiscompleteunbindadapterex">
+    <a href="..\ndis\nf-ndis-ndiscompleteunbindadapterex.md">
     NdisCompleteUnbindAdapterEx</a> function to complete the unbinding operation. Consequently, 
     <i>ProtocolCloseAdapterCompleteEx</i> should not release the context area until after it calls 
     <b>NdisCompleteUnbindAdapterEx</b>.
@@ -119,51 +120,16 @@ The <b>PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX</b> function type is defined in the Nd
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndiscompleteunbindadapterex">NdisCompleteUnbindAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscompleteunbindadapterex.md">NdisCompleteUnbindAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
@@ -173,5 +139,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CLOSE_ADAPTER_COMPLETE_EX callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

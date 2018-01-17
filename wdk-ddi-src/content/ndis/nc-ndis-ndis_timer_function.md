@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.NDIS_TIMER_FUNCTION
-title: NDIS_TIMER_FUNCTION
+UID: NC:ndis.NDIS_TIMER_FUNCTION
+title: NDIS_TIMER_FUNCTION function
 author: windows-driver-content
 description: The NetTimerCallback function is called by NDIS after a driver sets a one-shot or periodic timer when a timer fires.Note  You must declare the function by using the NDIS_TIMER_FUNCTION type.
 old-location: netvista\nettimercallback.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 76e59376-58a4-4e35-bac4-ec5938c88cd7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: NDIS_TIMER_FUNCTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# NDIS_TIMER_FUNCTION callback
+# NDIS_TIMER_FUNCTION function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 NDIS_TIMER_FUNCTION NetTimerCallback;
@@ -69,12 +70,12 @@ A pointer to a system-specific value that is reserved for system use.
 ### -param FunctionContext [in]
 
 A pointer to a driver-supplied context area that the driver passed to the 
-     <a href="netvista.ndissettimerobject">NdisSetTimerObject</a> function. If the 
+     <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a> function. If the 
      <i>FunctionContext</i> parameter of 
      <b>NdisSetTimerObject</b> was <b>NULL</b>, NDIS uses the default value that the driver specified in the 
-     <a href="netvista.ndis_timer_characteristics">
+     <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">
      NDIS_TIMER_CHARACTERISTICS</a> structure. The driver passed the structure to the 
-     <a href="netvista.ndisallocatetimerobject">NdisAllocateTimerObject</a> function
+     <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a> function
      to initialize the associated timer object.
 
 
@@ -99,17 +100,17 @@ Any NDIS driver can have one or more
     timer object.
 
 The driver initializes a driver-allocated timer object by calling the 
-    <a href="netvista.ndisallocatetimerobject">
+    <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">
     NdisAllocateTimerObject</a> function.
 
 A subsequent call to the 
-    <a href="netvista.ndissettimerobject">NdisSetTimerObject</a> function causes the 
+    <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a> function causes the 
     <i>NetTimerCallback</i> function that is associated with the timer object to be run after a specified
     interval or periodically.
 
 To cancel calls to 
     <i>NetTimerCallback</i>, call the 
-    <a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a> function. NDIS
+    <a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a> function. NDIS
     might still call 
     <i>NetTimerCallback</i> if the timeout has already expired before the call to 
     <b>NdisCancelTimerObject</b>.
@@ -129,68 +130,33 @@ The <b>NDIS_TIMER_FUNCTION</b> function type is defined in the Ndis.h header fil
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_timer_characteristics">NDIS_TIMER_CHARACTERISTICS</a>
+<a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a>
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatetimerobject">NdisAllocateTimerObject</a>
+<a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.ndissettimerobject">NdisSetTimerObject</a>
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.initializing_ndis_timers">Initializing NDIS Timers</a>
+<a href="https://msdn.microsoft.com/2f304f5c-fa70-441e-853e-a48ad70d61a0">Initializing NDIS Timers</a>
 </dt>
 <dt>
-<a href="netvista.servicing_timers">Servicing Timers</a>
+<a href="https://msdn.microsoft.com/6a80a55b-4c7e-4a48-8903-0a1fb28af153">Servicing Timers</a>
 </dt>
 <dt>
-<a href="netvista.setting_and_clearing_timers">Setting and Clearing Timers</a>
+<a href="https://msdn.microsoft.com/75f348f7-173f-4799-88aa-1ca50a6df023">Setting and Clearing Timers</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TIMER_FUNCTION callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TIMER_FUNCTION callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

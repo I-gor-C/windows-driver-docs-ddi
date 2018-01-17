@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_STATUS_INDICATION
+UID: NS:ndis._NDIS_STATUS_INDICATION
 title: _NDIS_STATUS_INDICATION
 author: windows-driver-content
 description: NDIS and underlying drivers use the NDIS_STATUS_INDICATION structure to provide status indications to overlying protocol drivers.
 old-location: netvista\ndis_status_indication.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bfab907d-a90d-46a0-bd51-6f2b418e3f39
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_STATUS_INDICATION, PNDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION, *PNDIS_STATUS_INDICATION
+ms.date: 1/11/2018
+ms.keywords: _NDIS_STATUS_INDICATION, *PNDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION
 ---
 
 # _NDIS_STATUS_INDICATION structure
@@ -67,7 +68,7 @@ typedef struct _NDIS_STATUS_INDICATION {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_STATUS_INDICATION structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_STATUS_INDICATION, the 
@@ -96,7 +97,7 @@ The source port of the status indication. If the status indication is not specif
 
 The status code, either provided by NDIS or propagated from the underlying drivers. The value is
      an NDIS_STATUS_<i>XXX</i> code. For more information about NDIS_STATUS_<i>XXX</i> codes, see 
-     <a href="netvista.status_indications">Status Indications</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570879">Status Indications</a>.
 
 
 ### -field Flags
@@ -138,7 +139,7 @@ For example, if
      <b>StatusCode</b> is 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff567391">NDIS_STATUS_LINK_STATE</a>, this
      parameter points to an 
-     <a href="netvista.ndis_link_state">NDIS_LINK_STATE</a> structure and 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/hh205390">NDIS_LINK_STATE</a> structure and 
      <b>StatusBufferSize</b> is 
      sizeof(NDIS_LINK_STATE).
 
@@ -166,9 +167,9 @@ Reserved for NDIS.
 
 ## -remarks
 Miniport drivers indicate status by calling the 
-    <a href="netvista.ndismindicatestatusex">NdisMIndicateStatusEx</a> function.
+    <a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a> function.
     Filter drivers call the 
-    <a href="netvista.ndisfindicatestatus">NdisFIndicateStatus</a> function.
+    <a href="..\ndis\nf-ndis-ndisfindicatestatus.md">NdisFIndicateStatus</a> function.
 
 Some OID requests enable a miniport driver to provide an OID completion status with a status
     indication. In this case, the miniport driver returns NDIS_STATUS_INDICATION_REQUIRED for the completion
@@ -185,7 +186,7 @@ In this case, the driver sets the
     <b>RequestId</b> members to the values from the 
     <b>RequestHandle</b> and 
     <b>RequestId</b> members in the 
-    <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure,
+    <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure,
     respectively.
 
 For example, in wireless networking, the processing of an OID request can take a very long time to
@@ -197,31 +198,6 @@ Protocol drivers receive status indications at the
     drivers receive status indications at the 
     <a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a> function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -235,13 +211,13 @@ Header
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_link_state">NDIS_LINK_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh205390">NDIS_LINK_STATE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567391">NDIS_STATUS_LINK_STATE</a>
@@ -250,13 +226,13 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558986">NDIS_TAPI_EVENT</a>
 </dt>
 <dt>
-<a href="netvista.ndisfindicatestatus">NdisFindicateStatus</a>
+<a href="..\ndis\nf-ndis-ndisfindicatestatus.md">NdisFindicateStatus</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatestatusex">NdisMIndicateStatusEx</a>
+<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569641">OID_GEN_SUPPORTED_GUIDS</a>
@@ -269,5 +245,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_STATUS_INDICATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_STATUS_INDICATION structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

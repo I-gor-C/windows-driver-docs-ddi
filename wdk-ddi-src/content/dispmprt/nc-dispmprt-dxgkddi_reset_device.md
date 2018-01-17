@@ -1,17 +1,17 @@
 ---
-UID: NC.dispmprt.DXGKDDI_RESET_DEVICE
-title: DXGKDDI_RESET_DEVICE
+UID: NC:dispmprt.DXGKDDI_RESET_DEVICE
+title: DXGKDDI_RESET_DEVICE function
 author: windows-driver-content
 description: The DxgkDdiResetDevice function sets a display adapter to VGA character mode (80 x 50).
 old-location: display\dxgkddiresetdevice.htm
 old-project: display
 ms.assetid: e757e63d-6d78-4b20-9471-290f56c1bcde
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_RESET_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
-# DXGKDDI_RESET_DEVICE callback
+# DXGKDDI_RESET_DEVICE function
 
 
 
@@ -42,7 +43,7 @@ The <i>DxgkDdiResetDevice</i> function sets a display adapter to VGA character m
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_RESET_DEVICE DxgkDdiResetDevice;
@@ -68,51 +69,4 @@ None
 ## -remarks
 The HAL calls this function so it can display information on the screen during hibernation, bug checks, and the like.
 
-<i>DxgkDdiResetDevice</i> can be called at any IRQL, so it must be in nonpageable memory. <i>DxgkDdiResetDevice</i> must not call any code that is in pageable memory and must not manipulate any data that is in pageable memory.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level (see Remarks section)
-
-</td>
-</tr>
-</table>
+<i>DxgkDdiResetDevice</i> can be called at any IRQL, so it must be in nonpageable memory. <i>DxgkDdiResetDevice</i> must not call any code that is in pageable memory and must not manipulate any data that is in pageable memory.</p>

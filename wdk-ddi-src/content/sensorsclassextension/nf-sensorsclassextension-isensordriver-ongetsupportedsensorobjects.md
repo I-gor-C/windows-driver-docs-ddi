@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnGetSupportedSensorObjects
+UID: NF:sensorsclassextension.ISensorDriver.OnGetSupportedSensorObjects
 title: ISensorDriver::OnGetSupportedSensorObjects method
 author: windows-driver-content
 description: The ISensorDriver::OnGetSupportedSensorObjects method retrieves the list of sensors that the driver provides.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_ongetsupportedsensorobjects">ISensorDriver::OnGetSupportedSensorObjects</a> method retrieves the list of sensors that the driver provides.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545633">ISensorDriver::OnGetSupportedSensorObjects</a> method retrieves the list of sensors that the driver provides.
 
 
 
@@ -64,30 +65,3 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sensorsclassextension.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

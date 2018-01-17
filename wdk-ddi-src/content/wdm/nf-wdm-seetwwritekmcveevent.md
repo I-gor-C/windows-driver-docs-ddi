@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.SeEtwWriteKMCveEvent
+UID: NF:wdm.SeEtwWriteKMCveEvent
 title: SeEtwWriteKMCveEvent function
 author: windows-driver-content
 description: The SeEtwWriteKMCveEvent function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.
@@ -7,7 +7,7 @@ old-location: devtest\seetwwritekmcveevent.htm
 old-project: devtest
 ms.assetid: 9CF6C8FC-869A-4667-9859-845BFF093549
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: SeEtwWriteKMCveEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: Ntoskrnl.exe
 req.irql: 
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -84,52 +85,4 @@ The <b> 	SeEtwWriteKMCveEvent</b> function publishes a CVE-based event. This fun
 
 Provider GUID: 85a62a0d-7e17-485f-9d4f-749a287193a6
 
-Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10 and later versions of Windows
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntoskrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntoskrnl.exe</dt>
-</dl>
-</td>
-</tr>
-</table>
+Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit</p>

@@ -1,5 +1,5 @@
 ---
-UID: NC.storport.HW_ADAPTER_CONTROL
+UID: NC:storport.HW_ADAPTER_CONTROL
 title: HW_ADAPTER_CONTROL
 author: windows-driver-content
 description: A miniport driver's HwStorAdapterControl routine is called to perform synchronous operations to control the state or behavior of an adapter, such as stopping or restarting the HBA for power management.
@@ -7,8 +7,8 @@ old-location: storage\hwstoradaptercontrol.htm
 old-project: storage
 ms.assetid: e1944f1b-97db-4ac2-848e-e69359c09589
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 req.product: Windows 10 or later.
 ---
 
@@ -109,7 +110,7 @@ After <b>HwStorAdapterControl</b> returns from stopping the HBA, any data struct
 
 Note that the Storport driver might call <b>HwStorAdapterControl</b> to stop the adapter after the HBA has already been physically removed from the system, so the miniport driver's <b>HwStorAdapterControl</b> routine must not perform any operations that require the HBA to be physically present while it is stopping the HBA.
 
-The miniport driver is not called again for the HBA until either the PnP manager requests that the HBA be started, in which case the Storport driver (re)initializes by calling its <b>HwStorAdapterControl</b> and <a href="storage.hwstorinitialize">HwStorInitialize</a> routines, or an HBA that was stopped for power management is powered up, in which case the Storport driver calls the miniport driver's <b>HwStorAdapterControl</b> routine with <b>ScsiRestartAdapter</b> or, if the miniport driver does not implement that control type, repeats the initialization sequence for the HBA. 
+The miniport driver is not called again for the HBA until either the PnP manager requests that the HBA be started, in which case the Storport driver (re)initializes by calling its <b>HwStorAdapterControl</b> and <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routines, or an HBA that was stopped for power management is powered up, in which case the Storport driver calls the miniport driver's <b>HwStorAdapterControl</b> routine with <b>ScsiRestartAdapter</b> or, if the miniport driver does not implement that control type, repeats the initialization sequence for the HBA. 
 
 </td>
 <td>
@@ -129,11 +130,11 @@ InterruptLock
 <td>
 Reinitializes an HBA. The Storport driver calls <b>HwStorAdapterControl</b> with this control type to power up an HBA that was shut down for power management. All resources previously assigned to the miniport driver are still available, and its device extension and logical unit extensions, if any, are intact.
 
-The miniport driver performs the same operations as in its <a href="storage.hwstorinitialize">HwStorInitialize</a> routine, such as setting up the HBA's registers and its initial state, if any.
+The miniport driver performs the same operations as in its <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine, such as setting up the HBA's registers and its initial state, if any.
 
-The miniport driver must not call routines that can only be called from <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> or from <b>HwStorAdapterControl</b> when the control type is <b>ScsiSetRunningConfig</b>, such as <a href="storage.storportgetbusdata">StorPortGetBusData</a> and <a href="storage.storportsetbusdatabyoffset">StorPortSetBusDataByOffset</a>. If the miniport driver must call such routines to restart its HBA, it must also implement <b>ScsiSetRunningConfig</b>.
+The miniport driver must not call routines that can only be called from <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> or from <b>HwStorAdapterControl</b> when the control type is <b>ScsiSetRunningConfig</b>, such as <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> and <a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a>. If the miniport driver must call such routines to restart its HBA, it must also implement <b>ScsiSetRunningConfig</b>.
 
-If the miniport driver does not implement <b>ScsiRestartAdapter</b>, the Storport driver calls the miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> and <a href="storage.hwstorinitialize">HwStorInitialize</a> routines. However, because such routines might do detection work unnecessary for restarting the HBA, such a miniport driver will not power up its HBA as quickly as a miniport driver that implements <b>ScsiRestartAdapter</b>. 
+If the miniport driver does not implement <b>ScsiRestartAdapter</b>, the Storport driver calls the miniport driver's <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> and <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routines. However, because such routines might do detection work unnecessary for restarting the HBA, such a miniport driver will not power up its HBA as quickly as a miniport driver that implements <b>ScsiRestartAdapter</b>. 
 
 </td>
 <td>
@@ -153,7 +154,7 @@ InterruptLock
 <td>
 Restores any settings on an HBA that the BIOS might need to reboot. The Storport driver calls <b>HwStorAdapterControl</b> with this control type after calling this routine with <b>ScsiStopAdapter</b>. 
 
-A miniport driver must implement <b>ScsiSetBootConfig</b> if it must call <a href="storage.storportgetbusdata">StorPortGetBusData</a> or <a href="storage.storportsetbusdatabyoffset">StorPortSetBusDataByOffset</a> before the system will be able to reboot. 
+A miniport driver must implement <b>ScsiSetBootConfig</b> if it must call <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> or <a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a> before the system will be able to reboot. 
 
 </td>
 <td>
@@ -175,7 +176,7 @@ Restores any settings on an HBA that the miniport driver might need to control t
 
 The HBA's interrupt is not yet connected when the Storport driver makes this call, so the miniport driver must take care not to generate an interrupt.
 
-A miniport driver must implement <b>ScsiSetRunningConfig</b> if it must call <a href="storage.storportgetbusdata">StorPortGetBusData</a> and <a href="storage.storportsetbusdatabyoffset">StorPortSetBusDataByOffset</a> to restore the appropriate running configuration to the HBA before it can be restarted.
+A miniport driver must implement <b>ScsiSetRunningConfig</b> if it must call <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> and <a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a> to restore the appropriate running configuration to the HBA before it can be restarted.
 
 </td>
 <td>
@@ -193,7 +194,7 @@ None
 
 </td>
 <td>
-Notification for a registered power setting change. The Storport driver calls <b>HwStorAdapterControl</b> with this control type if a power setting change occurs. Miniports register for power setting notifications by calling  <a href="storage.storportsetpowersettingnotificationguids">StorPortSetPowerSettingNotificationGuids</a> with a list of GUIDs representing the power change events of interest. This control type is valid in Windows 8 and later.
+Notification for a registered power setting change. The Storport driver calls <b>HwStorAdapterControl</b> with this control type if a power setting change occurs. Miniports register for power setting notifications by calling  <a href="..\storport\nf-storport-storportsetpowersettingnotificationguids.md">StorPortSetPowerSettingNotificationGuids</a> with a list of GUIDs representing the power change events of interest. This control type is valid in Windows 8 and later.
 
 </td>
 <td>
@@ -547,7 +548,7 @@ The size of this structure.
 
 ### -param IoResourceRequirementsList
 
-The IO resource requirements list. For more information see the <a href="kernel.io_resource_requirements_list">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.
+The IO resource requirements list. For more information see the <a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.
 
 </dd>
 </dl>
@@ -910,53 +911,27 @@ Then, implement your callback routine as follows:
 The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_ADAPTER_CONTROL</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="storage.hwstorinitialize">HwStorInitialize</a>
+<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
 </dt>
 <dt>
-<a href="storage.storportgetbusdata">StorPortGetBusData</a>
+<a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a>
 </dt>
 <dt>
-<a href="storage.storportsetbusdatabyoffset">StorPortSetBusDataByOffset</a>
+<a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a>
 </dt>
 <dt>
-<a href="storage.storportsetpowersettingnotificationguids">StorPortSetPowerSettingNotificationGuids</a>
+<a href="..\storport\nf-storport-storportsetpowersettingnotificationguids.md">StorPortSetPowerSettingNotificationGuids</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HwStorAdapterControl routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HW_ADAPTER_CONTROL routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

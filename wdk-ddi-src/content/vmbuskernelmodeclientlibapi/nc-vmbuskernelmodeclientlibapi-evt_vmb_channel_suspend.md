@@ -1,17 +1,17 @@
 ---
-UID: NC.vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_SUSPEND
-title: EVT_VMB_CHANNEL_SUSPEND
+UID: NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_SUSPEND
+title: EVT_VMB_CHANNEL_SUSPEND function
 author: windows-driver-content
 description: The EvtVmbChannelSuspend callback function is invoked at the server endpoint when the channel is being closed or deleted by the client endpoint, which moves the server into the Stopped state.
 old-location: netvista\evt_vmb_channel_suspend.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 31FED6BE-2E89-4D36-A833-9144AD61B885
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _VIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES, PVIDEO_PORT_AGP_SERVICES
+ms.date: 1/11/2018
+ms.keywords: EVT_VMB_CHANNEL_SUSPEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: vmbuskernelmodeclientlibapi.h
 req.include-header: VmbusKernelModeClientLibApi.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
-# EVT_VMB_CHANNEL_SUSPEND callback
+# EVT_VMB_CHANNEL_SUSPEND function
 
 
 
@@ -47,7 +48,7 @@ state.
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_VMB_CHANNEL_SUSPEND EvtVmbChannelSuspend;
@@ -73,9 +74,9 @@ This callback function does not return a value.
 
 
 ## -remarks
-After a channel is created, a client driver can specify callback functions for state changes, including  <i>EvtVmbChannelSuspend</i>, by using the <a href="netvista.vmb_channel_state_change_callbacks_init">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a> function.
+After a channel is created, a client driver can specify callback functions for state changes, including  <i>EvtVmbChannelSuspend</i>, by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmb_channel_state_change_callbacks_init.md">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a> function.
 
-If a running channel is suspended by using the <a href="netvista.vmbchannelpause">VmbChannelPause</a> function or closed by using the <a href="netvista.vmbchanneldisable">VmbChannelDisable</a> function or by the opposite endpoint, Kernel Mode Client Library (KMCL) calls <i>EvtVmbChannelSuspend</i>.  This callback guarantees that no more 
+If a running channel is suspended by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpause.md">VmbChannelPause</a> function or closed by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldisable.md">VmbChannelDisable</a> function or by the opposite endpoint, Kernel Mode Client Library (KMCL) calls <i>EvtVmbChannelSuspend</i>.  This callback guarantees that no more 
 <a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_process_packet.md">EvtVmbChannelProcessPacket</a> callbacks are running or will be queued.
 
 <i>EvtVmbChannelSuspend</i> is also a 
@@ -84,42 +85,17 @@ packets indicated by using  <a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskern
 not have to be completed synchronously.  KMCL blocks until they have 
 been completed.  
 
-The KMCL client must also stop sending packets by using the <a href="netvista.vmbpacketsend">VmbPacketSend</a>, <a href="netvista.vmbpacketsendwithexternalmdl">VmbPacketSendWithExternalMdl</a>, or <a href="netvista.vmbpacketsendwithexternalpfns">VmbPacketSendWithExternalPfns</a> functions.  
+The KMCL client must also stop sending packets by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>, <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>, or <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a> functions.  
 
 
 
-A call to <a href="netvista.vmbchannelpause">VmbChannelPause</a> on an active channel blocks until 
+A call to <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpause.md">VmbChannelPause</a> on an active channel blocks until 
 <i>EvtVmbChannelSuspend</i> is called and no more outstanding incoming packets exist.  
-A call to <a href="netvista.vmbchanneldisable">VmbChannelDisable</a> block until the channel is paused and closed.
+A call to <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldisable.md">VmbChannelDisable</a> block until the channel is paused and closed.
 
 This function does guarantee completion of outstanding transactions.  The client may be buggy, malicious,
 or the guest virtual machine may have crashed.  The server must retire any outstanding transactions, probably by cancelling them. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>VmbusKernelModeClientLibApi.h (include VmbusKernelModeClientLibApi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -127,27 +103,27 @@ PASSIVE_LEVEL
 <a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_process_packet.md">EvtVmbChannelProcessPacket</a>
 </dt>
 <dt>
-<a href="netvista.vmb_channel_state_change_callbacks_init">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmb_channel_state_change_callbacks_init.md">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="netvista.vmbchanneldisable">VmbChannelDisable</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldisable.md">VmbChannelDisable</a>
 </dt>
 <dt>
-<a href="netvista.vmbchannelpause">VmbChannelPause</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpause.md">VmbChannelPause</a>
 </dt>
 <dt>
-<a href="netvista.vmbpacketsend">VmbPacketSend</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>
 </dt>
 <dt>
-<a href="netvista.vmbpacketsendwithexternalmdl">VmbPacketSendWithExternalMdl</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>
 </dt>
 <dt>
-<a href="netvista.vmbpacketsendwithexternalpfns">VmbPacketSendWithExternalPfns</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20EVT_VMB_CHANNEL_SUSPEND callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_SUSPEND callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

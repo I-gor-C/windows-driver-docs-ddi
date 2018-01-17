@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX_RECEIVE_CANCEL
-title: EVT_SERCX_RECEIVE_CANCEL
+UID: NC:sercx.EVT_SERCX_RECEIVE_CANCEL
+title: EVT_SERCX_RECEIVE_CANCEL function
 author: windows-driver-content
 description: The EvtSerCxReceiveCancel event callback function notifies the serial controller driver that the pending receive request is canceled.
 old-location: serports\evtsercxreceivecancel.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: 17362701-67C9-4275-B072-CB17111A838F
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX_RECEIVE_CANCEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX_RECEIVE_CANCEL callback
+# EVT_SERCX_RECEIVE_CANCEL function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCxReceiveCancel</i> event callback function notifies the serial con
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX_RECEIVE_CANCEL EvtSerCxReceiveCancel;
@@ -67,9 +68,9 @@ None.
 
 
 ## -remarks
-The serial framework extension (SerCx) calls this function to inform the serial controller driver that the current receive request has been canceled.  If the driver has an outstanding receive operation in progress, the driver should cancel this operation and call the <a href="serports.sercxprogressreceive">SerCxProgressReceive</a> method to report the cancellation. In the <b>SerCxProgressReceive</b> call, set <i>BytesReceived</i> to the number of bytes received before the operation was canceled, and set <i>ReceiveStatus</i> to <b>SerCxStatusCancelled</b>.
+The serial framework extension (SerCx) calls this function to inform the serial controller driver that the current receive request has been canceled.  If the driver has an outstanding receive operation in progress, the driver should cancel this operation and call the <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a> method to report the cancellation. In the <b>SerCxProgressReceive</b> call, set <i>BytesReceived</i> to the number of bytes received before the operation was canceled, and set <i>ReceiveStatus</i> to <b>SerCxStatusCancelled</b>.
 
-To register an <i>EvtSerCxReceiveCancel</i> callback function, the driver must call the <a href="serports.sercxinitialize">SerCxInitialize</a> method.
+To register an <i>EvtSerCxReceiveCancel</i> callback function, the driver must call the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method.
 
 The function type for this callback is declared in Sercx.h, as follows.
 
@@ -80,59 +81,13 @@ Then, implement your callback function as follows.
 For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercxinitialize">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 <dt>
-<a href="serports.sercxprogressreceive">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 </dt>
 </dl>
  

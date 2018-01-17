@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisRawReadPortBufferUlong
+UID: NF:ndis.NdisRawReadPortBufferUlong
 title: NdisRawReadPortBufferUlong macro
 author: windows-driver-content
 description: NdisRawReadPortBufferUlong reads a specified number of ULONGs into a caller-supplied buffer.
 old-location: netvista\ndisrawreadportbufferulong.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 86a0b7c4-ef3a-4dd9-961d-35f96182e30c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisRawReadPortBufferUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisRawReadPortBufferUlong macro
@@ -58,7 +59,7 @@ VOID NdisRawReadPortBufferUlong(
 ### -param Port [in]
 
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
-     <a href="netvista.ndismregisterioportrange">
+     <a href="..\ndis\nf-ndis-ndismregisterioportrange.md">
      NdisMRegisterIoPortRange</a>.
 
 
@@ -81,80 +82,30 @@ Specifies how many ULONGs to transfer from the NIC.
     given buffer.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/110f4a7a-aebc-4a51-93b9-b63f1ce9cc7d">NdisRawReadPortBufferUlong
-   (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisRawReadPortBufferUlong
-   (NDIS 5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterioportrange">NdisMRegisterIoPortRange</a>
+<a href="..\ndis\nf-ndis-ndismregisterioportrange.md">NdisMRegisterIoPortRange</a>
 </dt>
 <dt>
-<a href="netvista.ndisrawreadportbufferuchar">NdisRawReadPortBufferUchar</a>
+<a href="..\ndis\nf-ndis-ndisrawreadportbufferuchar.md">NdisRawReadPortBufferUchar</a>
 </dt>
 <dt>
-<a href="netvista.ndisrawreadportbufferushort">NdisRawReadPortBufferUshort</a>
+<a href="..\ndis\nf-ndis-ndisrawreadportbufferushort.md">NdisRawReadPortBufferUshort</a>
 </dt>
 <dt>
-<a href="netvista.ndisrawreadportulong">NdisRawReadPortUlong</a>
+<a href="..\ndis\nf-ndis-ndisrawreadportulong.md">NdisRawReadPortUlong</a>
 </dt>
 <dt>
-<a href="netvista.ndisrawwriteportbufferulong">NdisRawWritePortBufferUlong</a>
+<a href="..\ndis\nf-ndis-ndisrawwriteportbufferulong.md">NdisRawWritePortBufferUlong</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisRawReadPortBufferUlong macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRawReadPortBufferUlong macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

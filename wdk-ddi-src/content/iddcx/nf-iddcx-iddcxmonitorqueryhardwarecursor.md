@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IddCxMonitorQueryHardwareCursor
+UID: NF:iddcx.IddCxMonitorQueryHardwareCursor
 title: IddCxMonitorQueryHardwareCursor function
 author: windows-driver-content
 description: An OS callback function the driver calls when it wants obtain the updated cursor information. The driver normally only calls this when the event that signals cursor update has triggered.
@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorqueryhardwarecursor.htm
 old-project: display
 ms.assetid: e954b7e7-9e4a-47ae-9b0f-8c7e051cc00e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IddCxMonitorQueryHardwareCursor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _Must_inspect_result_
+req.typenames: 
 ---
 
 # IddCxMonitorQueryHardwareCursor function
@@ -59,7 +60,7 @@ NTSTATUS IddCxMonitorQueryHardwareCursor(
 
 ### -param MonitorObject [in]
 
-This is the OS context handle for this monitor returned by the <a href="display.iddcxmonitorarrival">IddCxMonitorArrival</a> call
+This is the OS context handle for this monitor returned by the <a href="..\iddcx\nf-iddcx-iddcxmonitorarrival.md">IddCxMonitorArrival</a> call
 
 
 ### -param pInArgs [in]
@@ -79,49 +80,3 @@ Output arguments of the function
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_Must_inspect_result_
-
-</td>
-</tr>
-</table>

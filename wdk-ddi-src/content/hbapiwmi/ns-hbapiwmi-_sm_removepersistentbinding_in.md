@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_REMOVEPERSISTENTBINDING_IN
+UID: NS:hbapiwmi._SM_RemovePersistentBinding_IN
 title: _SM_RemovePersistentBinding_IN
 author: windows-driver-content
 description: The SM_RemovePersistentBinding_IN structure is used to provide input parameters to the SM_RemovePersistentBinding method.
@@ -7,8 +7,8 @@ old-location: storage\sm_removepersistentbinding_in.htm
 old-project: storage
 ms.assetid: 47e6a189-4b16-411a-8552-3e6f998516ba
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_RemovePersistentBinding_IN, *PSM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN, PSM_RemovePersistentBinding_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_RemovePersistentBinding_IN, *PSM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN
 ---
 
 # _SM_RemovePersistentBinding_IN structure
@@ -77,20 +78,4 @@ An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings 
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_RemovePersistentBinding_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_RemovePersistentBinding_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>

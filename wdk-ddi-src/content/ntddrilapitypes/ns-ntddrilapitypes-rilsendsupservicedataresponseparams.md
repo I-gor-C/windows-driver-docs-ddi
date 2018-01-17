@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSENDSUPSERVICEDATARESPONSEPARAMS
+UID: NS:ntddrilapitypes.RILSENDSUPSERVICEDATARESPONSEPARAMS
 title: RILSENDSUPSERVICEDATARESPONSEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendsupservicedataresponseparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a339c4fc-87e9-485e-914e-a26e8fac527e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDSUPSERVICEDATARESPONSEPARAMS, RILSENDSUPSERVICEDATARESPONSEPARAMS, *LPRILSENDSUPSERVICEDATARESPONSEPARAMS, LPRILSENDSUPSERVICEDATARESPONSEPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDSUPSERVICEDATARESPONSEPARAMS, *LPRILSENDSUPSERVICEDATARESPONSEPARAMS, RILSENDSUPSERVICEDATARESPONSEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSENDSUPSERVICEDATARESPONSEPARAMS, RILSENDSUPSERVICEDATARESPONSEPARAMS
 ---
 
 # RILSENDSUPSERVICEDATARESPONSEPARAMS structure
@@ -65,19 +66,3 @@ typedef struct _RILSENDSUPSERVICEDATARESPONSEPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

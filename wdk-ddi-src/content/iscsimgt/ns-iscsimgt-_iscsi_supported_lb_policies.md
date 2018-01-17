@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIMGT._ISCSI_SUPPORTED_LB_POLICIES
+UID: NS:iscsimgt._ISCSI_Supported_LB_Policies
 title: _ISCSI_Supported_LB_Policies
 author: windows-driver-content
 description: The ISCSI_Supported_LB_Policies structure contains information about load balancing policies for multiple connections per session (MCS).
@@ -7,8 +7,8 @@ old-location: storage\iscsi_supported_lb_policies.htm
 old-project: storage
 ms.assetid: 053b9f14-7319-4599-886e-3c03c717b348
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ISCSI_Supported_LB_Policies, ISCSI_Supported_LB_Policies, *PISCSI_Supported_LB_Policies, PISCSI_Supported_LB_Policies
+ms.date: 1/10/2018
+ms.keywords: _ISCSI_Supported_LB_Policies, *PISCSI_Supported_LB_Policies, ISCSI_Supported_LB_Policies
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PISCSI_Supported_LB_Policies, ISCSI_Supported_LB_Policies
 ---
 
 # _ISCSI_Supported_LB_Policies structure
@@ -58,7 +59,7 @@ typedef struct _ISCSI_Supported_LB_Policies {
 
 ### -field UniqueSessionId
 
-A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.
+A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.
 
 
 ### -field LoadBalancePolicy
@@ -141,39 +142,24 @@ The number of paths associated with a target in the context of this session.
 
 ### -field iSCSI_Paths
 
-Path information as shown in the <a href="storage.iscsi_path">ISCSI_Path</a> structure.
+Path information as shown in the <a href="..\iscsimgt\ns-iscsimgt-_iscsi_path.md">ISCSI_Path</a> structure.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.addconnectiontosession">AddConnectionToSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="storage.logintotarget">LoginToTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_Supported_LB_Policies structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_Supported_LB_Policies structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

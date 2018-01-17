@@ -1,19 +1,19 @@
 ---
-UID: NE.rilapitypes.RILNOTIFICATIONCLASSES
+UID: NE:rilapitypes.RILNOTIFICATIONCLASSES
 title: RILNOTIFICATIONCLASSES
 author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilnotificationclasses_2.htm
-old-project: NetVista
-ms.assetid: 04681c2b-aadb-466e-bd14-f6a08c99a8e2
+description: This enumeration describes the RILNOTIFICATIONCLASSES.
+old-location: netvista\rilnotificationclasses.htm
+old-project: netvista
+ms.assetid: f61fc609-40ca-40eb-a877-88c73cf3506e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILNOTIFICATIONCLASSES, RILNOTIFICATIONCLASSES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
 req.header: rilapitypes.h
-req.include-header: 
+req.include-header: Rilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILNOTIFICATIONCLASSES
 req.product: Windows 10 or later.
 ---
 
@@ -39,20 +40,22 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
 
 ## -syntax
 
 ````
-typedef enum _RILNOTIFICATIONCLASSES { 
-  RIL_NCLASS_NOTIFICATIONS
-} RILNOTIFICATIONCLASSES;
+enum RILNOTIFICATIONCLASSES {
+  RIL_NCLASS_FUNCRESULT     = 0x00000000, 
+  RIL_NCLASS_NOTIFICATIONS  = 0x10000000 
+
+};
 ````
 
 
 ## -enum-fields
+
+### -field RIL_NCLASS_FUNCRESULT
+
 
 ### -field RIL_NCLASS_NOTIFICATIONS
 
@@ -60,17 +63,15 @@ typedef enum _RILNOTIFICATIONCLASSES {
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
+## -see-also
 <dl>
-<dt>Rilapitypes.h</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+</dt>
 </dl>
-</td>
-</tr>
-</table>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILNOTIFICATIONCLASSES enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

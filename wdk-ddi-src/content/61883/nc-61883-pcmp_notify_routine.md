@@ -1,5 +1,5 @@
 ---
-UID: NC.61883.PCMP_NOTIFY_ROUTINE
+UID: NC:61883.PCMP_NOTIFY_ROUTINE
 title: PCMP_NOTIFY_ROUTINE
 author: windows-driver-content
 description: This routine is called for plug notification.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 0576D73A-0A36-4AB7-952C-19B56FD246D8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _TOPOLOGY_MAP, *PTOPOLOGY_MAP, TOPOLOGY_MAP, PTOPOLOGY_MAP
+ms.keywords: _TOPOLOGY_MAP, *PTOPOLOGY_MAP, TOPOLOGY_MAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTOPOLOGY_MAP, TOPOLOGY_MAP
 ---
 
 # PCMP_NOTIFY_ROUTINE callback
@@ -68,19 +69,3 @@ This callback does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>

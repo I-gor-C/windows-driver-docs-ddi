@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_BUS_RESET
+UID: NS:1394._IRB_REQ_BUS_RESET
 title: _IRB_REQ_BUS_RESET
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 bus driver to create a bus reset request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_BUS_RESET
 ---
 
 # _IRB_REQ_BUS_RESET structure
@@ -59,19 +60,3 @@ Set this flag to BUS_RESET_FLAGS_FORCE_ROOT to make the local node the root node
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

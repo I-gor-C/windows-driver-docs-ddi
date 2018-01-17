@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoSetActivityIdIrp
+UID: NF:ntddk.IoSetActivityIdIrp
 title: IoSetActivityIdIrp function
 author: windows-driver-content
 description: The IoSetActivityIdIrp routine associates an activity ID with an IRP.
@@ -7,7 +7,7 @@ old-location: kernel\iosetactivityidirp.htm
 old-project: kernel
 ms.assetid: 81D3BE8C-D6E0-47E2-959C-3834988E4C61
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoSetActivityIdIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level if a GUID is passed in, otherwise PASSIVE_LEVEL.
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoSetActivityIdIrp function
@@ -77,73 +78,4 @@ IoSetActivityIdIrp returns STATUS_SUCCESS if the call is successful. Possible er
 
 
 ## -remarks
-Drivers should use IoSetActivityIdIrp only on IRPs that have been allocated using <a href="kernel.ioallocateirp">IoAllocateIrp</a> (and freed using <a href="kernel.iofreeirp">IoFreeIrp</a>). Otherwise, memory leakage may result.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level if a GUID is passed in, otherwise PASSIVE_LEVEL.
-
-</td>
-</tr>
-</table>
+Drivers should use IoSetActivityIdIrp only on IRPs that have been allocated using <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a> (and freed using <a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>). Otherwise, memory leakage may result.</p>

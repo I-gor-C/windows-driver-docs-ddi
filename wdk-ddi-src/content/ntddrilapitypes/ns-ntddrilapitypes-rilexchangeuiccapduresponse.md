@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILEXCHANGEUICCAPDURESPONSE
+UID: NS:ntddrilapitypes.RILEXCHANGEUICCAPDURESPONSE
 title: RILEXCHANGEUICCAPDURESPONSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexchangeuiccapduresponse.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 57418ab1-e341-41ad-a120-cc4f7e0b0227
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILEXCHANGEUICCAPDURESPONSE, LPRILEXCHANGEUICCAPDURESPONSE, RILEXCHANGEUICCAPDURESPONSE, *LPRILEXCHANGEUICCAPDURESPONSE
+ms.date: 1/11/2018
+ms.keywords: RILEXCHANGEUICCAPDURESPONSE, RILEXCHANGEUICCAPDURESPONSE, *LPRILEXCHANGEUICCAPDURESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEXCHANGEUICCAPDURESPONSE, *LPRILEXCHANGEUICCAPDURESPONSE
 ---
 
 # RILEXCHANGEUICCAPDURESPONSE structure
@@ -69,19 +70,3 @@ typedef struct _RILEXCHANGEUICCAPDURESPONSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

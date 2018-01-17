@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMusicTechnology.SetTechnology
+UID: NF:portcls.IMusicTechnology.SetTechnology
 title: IMusicTechnology::SetTechnology method
 author: windows-driver-content
 description: The SetTechnology method changes the Technology member of each KSDATARANGE_MUSIC structure in the data ranges for the miniport driver's pins.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMusicTechnology::SetTechnology method
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <code>SetTechnology</code> method changes the <b>Technology</b> member of each <a href="..\ksmedia\ns-ksmedia-ksdatarange_music.md">KSDATARANGE_MUSIC</a> structure in the data ranges for the miniport driver's pins.
+The <code>SetTechnology</code> method changes the <b>Technology</b> member of each <a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a> structure in the data ranges for the miniport driver's pins.
 
 
 
@@ -55,7 +56,7 @@ NTSTATUS SetTechnology(
 
 ### -param Technology [in]
 
-Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="..\ksmedia\ns-ksmedia-ksdatarange_music.md">KSDATARANGE_MUSIC</a> structure.
+Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a> structure.
 
 
 ## -returns
@@ -90,49 +91,13 @@ MOD_SWSYNTH
 For more information, see <a href="https://msdn.microsoft.com/3b7c2907-e67f-458e-809d-080dcc30be1a">Music Technology GUIDs</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-imusictechnology.md">IMusicTechnology</a>
 </dt>
 <dt>
-<a href="..\ksmedia\ns-ksmedia-ksdatarange_music.md">KSDATARANGE_MUSIC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a>
 </dt>
 </dl>
  

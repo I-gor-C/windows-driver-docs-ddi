@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._PROCESS_MITIGATION_CHILD_PROCESS_POLICY
+UID: NS:ntddk._PROCESS_MITIGATION_CHILD_PROCESS_POLICY
 title: _PROCESS_MITIGATION_CHILD_PROCESS_POLICY
 author: windows-driver-content
 description: Stores policy information about creating child processes.
@@ -7,8 +7,8 @@ old-location: kernel\process_mitigation_child_process_policy.htm
 old-project: kernel
 ms.assetid: 8f388c0e-41ee-40e4-b633-687eeff74a0a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PROCESS_MITIGATION_CHILD_PROCESS_POLICY, *PPROCESS_MITIGATION_CHILD_PROCESS_POLICY, PPROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY
+ms.date: 1/4/2018
+ms.keywords: _PROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY, *PPROCESS_MITIGATION_CHILD_PROCESS_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PROCESS_MITIGATION_CHILD_PROCESS_POLICY, *PPROCESS_MITIGATION_CHILD_PROCESS_POLICY
 ---
 
 # _PROCESS_MITIGATION_CHILD_PROCESS_POLICY structure
@@ -78,7 +79,7 @@ If set, causes audit events to be generated when child processes are created by 
 
 ### -field AllowSecureProcessCreation
 
-Denies creation of child processes unless the child process is a secure process and if creation was previously blocked. It allows a process to spawn a child process on behalf of another process that cannot itself create child processes. See PROCESS_CREATION_CHILD_PROCESS_OVERRIDE in <a href="base.updateprocthreadattribute">UpdateProcThreadAttribute</a>.
+Denies creation of child processes unless the child process is a secure process and if creation was previously blocked. It allows a process to spawn a child process on behalf of another process that cannot itself create child processes. See PROCESS_CREATION_CHILD_PROCESS_OVERRIDE in <a href="https://msdn.microsoft.com/5fc3e04f-9b2a-440c-a9aa-d78d9b25b341">UpdateProcThreadAttribute</a>.
 
 
 ### -field ReservedFlags
@@ -91,39 +92,3 @@ Reserved.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

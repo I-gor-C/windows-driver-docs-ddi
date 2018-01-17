@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisInterlockedAddUlong
+UID: NF:ndis.NdisInterlockedAddUlong
 title: NdisInterlockedAddUlong macro
 author: windows-driver-content
 description: The NdisInterlockedAddUlong function adds an unsigned long value to a given unsigned integer as an atomic operation, using a caller-supplied spin lock to synchronize access to the integer variable.
 old-location: netvista\ndisinterlockedaddulong.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d2e31f3c-7152-4df9-8206-a15dee9b641f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisInterlockedAddUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisInterlockedAddUlong macro
@@ -78,7 +79,7 @@ A pointer to a caller-initialized spin lock.
 The caller of 
     <b>NdisInterlockedAddUlong</b> must provide resident storage for the spin lock, which must be initialized
     with the 
-    <a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a> function before
+    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> function before
     the initial call to 
     <b>NdisInterlockedAddUlong</b>.
 
@@ -94,88 +95,27 @@ The
     <b>NdisInterlockedAddUlong</b> cannot be pageable code.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/e863c5a8-2559-4315-9f94-a51a61a79755">NdisInterlockedAddUlong (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisInterlockedAddUlong (NDIS
-   5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisacquirespinlock">NdisAcquireSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisreleasespinlock">NdisReleaseSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisretrieveulong">NdisRetrieveUlong</a>
+<a href="..\ndis\nf-ndis-ndisretrieveulong.md">NdisRetrieveUlong</a>
 </dt>
 <dt>
-<a href="netvista.ndisstoreulong">NdisStoreUlong</a>
+<a href="..\ndis\nf-ndis-ndisstoreulong.md">NdisStoreUlong</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisInterlockedAddUlong macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedAddUlong macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

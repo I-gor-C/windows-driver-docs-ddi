@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortAcquireSpinLock
+UID: NF:video.VideoPortAcquireSpinLock
 title: VideoPortAcquireSpinLock function
 author: windows-driver-content
 description: The VideoPortAcquireSpinLock function obtains the specified spin lock.
@@ -7,7 +7,7 @@ old-location: display\videoportacquirespinlock.htm
 old-project: display
 ms.assetid: 2e61ffb7-1720-47b2-b943-54ffa596cb08
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortAcquireSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: <=DISPATCH_LEVEL
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -78,7 +79,7 @@ None
 ## -remarks
 The current IRQL is saved in <i>OldIrql</i>. Then, the current IRQL is reset to DISPATCH_LEVEL, and the specified spin lock is acquired.
 
-The <i>OldIrql</i> value must be specified when the spin lock is released with <a href="display.videoportreleasespinlock">VideoPortReleaseSpinLock</a>.
+The <i>OldIrql</i> value must be specified when the spin lock is released with <a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>.
 
 Spin locks can cause serious problems if not used judiciously. In particular, no deadlock protection is performed and dispatching is disabled while the spin lock is held. Therefore: 
 
@@ -89,86 +90,18 @@ The code within a critical region guarded by a spin lock can neither call any ex
 The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as quickly as possible. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows XP and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.videoportreleasespinlock">VideoPortReleaseSpinLock</a>
+<a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="display.videoportacquirespinlockatdpclevel">VideoPortAcquireSpinLockAtDpcLevel</a>
+<a href="..\video\nf-video-videoportacquirespinlockatdpclevel.md">VideoPortAcquireSpinLockAtDpcLevel</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortAcquireSpinLock function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortAcquireSpinLock function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

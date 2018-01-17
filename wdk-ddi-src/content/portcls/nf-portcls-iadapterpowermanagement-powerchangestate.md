@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IAdapterPowerManagement.PowerChangeState
+UID: NF:portcls.IAdapterPowerManagement.PowerChangeState
 title: IAdapterPowerManagement::PowerChangeState method
 author: windows-driver-content
 description: The PowerChangeState method requests that the device change to a new power state.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IAdapterPowerManagement::PowerChangeState method
@@ -123,32 +124,6 @@ While powered down, a miniport driver is never asked to create a miniport driver
 
 The code for this method must reside in paged memory.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

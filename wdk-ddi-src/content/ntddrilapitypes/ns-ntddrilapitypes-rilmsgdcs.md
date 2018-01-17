@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMSGDCS
+UID: NS:ntddrilapitypes.RILMSGDCS
 title: RILMSGDCS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgdcs.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b9d37683-fd3d-42fd-9ec2-128b76325868
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMSGDCS, LPRILMSGDCS, *LPRILMSGDCS, RILMSGDCS
+ms.date: 1/11/2018
+ms.keywords: RILMSGDCS, RILMSGDCS, *LPRILMSGDCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGDCS, *LPRILMSGDCS
 ---
 
 # RILMSGDCS structure
@@ -85,19 +86,3 @@ typedef struct _RILMSGDCS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisAllocateFromNPagedLookasideList
+UID: NF:ndis.NdisAllocateFromNPagedLookasideList
 title: NdisAllocateFromNPagedLookasideList macro
 author: windows-driver-content
 description: The NdisAllocateFromNPagedLookasideList function removes the first entry from the given lookaside list head. If the lookaside list currently is empty, an entry is allocated from nonpaged pool.
 old-location: netvista\ndisallocatefromnpagedlookasidelist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: df690a05-359d-44f0-b063-4fc21d6c4d76
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisAllocateFromNPagedLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisAllocateFromNPagedLookasideList macro
@@ -59,7 +60,7 @@ PVOID NdisAllocateFromNPagedLookasideList(
 
 A pointer to the head of the lookaside list from which the entry will be allocated. The caller
      already initialized the list head with the 
-     <a href="netvista.ndisinitializenpagedlookasidelist">
+     <a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
      NdisInitializeNPagedLookasideList</a> function.
 
 
@@ -70,7 +71,7 @@ If the lookaside list is not empty,
     <b>NdisAllocateFromNPagedLookasideList</b> either calls the 
     <i>Allocate</i> function, specified in the 
     <i>Allocate</i> parameter of the 
-    <a href="netvista.ndisinitializenpagedlookasidelist">
+    <a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
     NdisInitializeNPagedLookasideList</a> function, that the caller specified at list initialization, if
     any, or it allocates an entry on behalf of the caller. 
     <b>NdisAllocateFromNPagedLookasideList</b> returns <b>NULL</b> if the caller-supplied 
@@ -83,82 +84,22 @@ All entries that are allocated from a nonpaged lookaside list are of a fixed siz
     demand. For example, any connection-oriented NDIS driver might allocate the VC context areas that it
     needs from a lookaside list as VCs are created and release each such entry back to the lookaside list
     with the 
-    <a href="netvista.ndisfreetonpagedlookasidelist">
+    <a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
     NdisFreeToNPagedLookasideList</a> function as each VC is torn down.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/598e4893-ab4e-4ae2-9a92-ce3c5cce651e">
-   NdisAllocateFromNPagedLookasideList (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers
-   (see 
-   <b>
-   NdisAllocateFromNPagedLookasideList (NDIS 5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisdeletenpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisdeletenpagedlookasidelist.md">
    NdisDeleteNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreetonpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
    NdisFreeToNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndisinitializenpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
    NdisInitializeNPagedLookasideList</a>
 </dt>
 </dl>
@@ -166,5 +107,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisAllocateFromNPagedLookasideList macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateFromNPagedLookasideList macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

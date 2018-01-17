@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_RESOURCE_BARRIER_FLAGS
+UID: NE:d3d12umddi.D3D12DDI_RESOURCE_BARRIER_FLAGS
 title: D3D12DDI_RESOURCE_BARRIER_FLAGS
 author: windows-driver-content
 description: Contains resource barrier flags.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_barrier_flags.htm
 old-project: display
 ms.assetid: 876ABC9C-F9BE-480F-8641-AE132840F8D5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_RESOURCE_BARRIER_FLAGS, D3D12DDI_RESOURCE_BARRIER_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_RESOURCE_BARRIER_FLAGS
 ---
 
 # D3D12DDI_RESOURCE_BARRIER_FLAGS enumeration
@@ -85,20 +86,4 @@ Indicates that an aliasing barrier has been converted to a ranged barrier.
 ## -remarks
 The absence of both <b>D3D12DDI_RESOURCE_BARRIER_FLAG_BEGIN_ONLY</b> and <b>D3D12DDI_RESOURCE_BARRIER_FLAG_END_ONLY</b> denotes both an acquire and release.
 
-During an acquire, GPU caches may need to be explicitly invalidated. During a release, GPU caches may need to be explicitly flushed. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+During an acquire, GPU caches may need to be explicitly invalidated. During a release, GPU caches may need to be explicitly flushed. </p>

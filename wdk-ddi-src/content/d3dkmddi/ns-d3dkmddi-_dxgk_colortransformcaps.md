@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_COLORTRANSFORMCAPS
+UID: NS:d3dkmddi._DXGK_COLORTRANSFORMCAPS
 title: _DXGK_COLORTRANSFORMCAPS
 author: windows-driver-content
 description: This structure replaces the DXGK_GAMMARAMPCAPS structure in the DXGK_DRIVERCAPS structure to describe both the gamma and color transform capabilities of the display pipelines.
@@ -7,7 +7,7 @@ old-location: display\dxgk_colortransformcaps_.htm
 old-project: display
 ms.assetid: 83113D6C-44A1-4022-8101-061DEA9868E1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_COLORTRANSFORMCAPS, DXGK_COLORTRANSFORMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_COLORTRANSFORMCAPS
 ---
 
 # _DXGK_COLORTRANSFORMCAPS structure
@@ -101,19 +102,3 @@ The combined UINT value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

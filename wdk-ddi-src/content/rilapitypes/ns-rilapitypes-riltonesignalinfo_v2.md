@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILTONESIGNALINFO_V2
+UID: NS:rilapitypes.RILTONESIGNALINFO_V2
 title: RILTONESIGNALINFO_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riltonesignalinfo_v2_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 44508316-ff5c-48b0-9cdf-2d1aefa382c5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILTONESIGNALINFO_V2, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, RILTONESIGNALINFO, *LPRILTONESIGNALINFO_V2
+ms.date: 1/11/2018
+ms.keywords: RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO_V2, RILTONESIGNALINFO, *LPRILTONESIGNALINFO, RILTONESIGNALINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILTONESIGNALINFO_V2, RILTONESIGNALINFO, *LPRILTONESIGNALINFO, RILTONESIGNALINFO_V2
 req.product: Windows 10 or later.
 ---
 
@@ -78,19 +79,3 @@ typedef struct _RILTONESIGNALINFO_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

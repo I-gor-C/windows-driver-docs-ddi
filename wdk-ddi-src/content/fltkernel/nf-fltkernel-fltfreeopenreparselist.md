@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltFreeOpenReparseList
+UID: NF:fltkernel.FltFreeOpenReparseList
 title: FltFreeOpenReparseList function
 author: windows-driver-content
 description: This routine deallocates any information copied into a create operation by a previous call to FltCopyOpenReparseList.
@@ -7,7 +7,7 @@ old-location: ifsk\fltfreeopenreparselist.htm
 old-project: ifsk
 ms.assetid: 78FA1585-F834-48E4-BB15-78BA5563F9D0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltFreeOpenReparseList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _IRQL_requires_max_(APC_LEVEL)
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltFreeOpenReparseList function
@@ -39,7 +40,7 @@ req.irql: _IRQL_requires_max_(APC_LEVEL)
 
 ## -description
 This routine deallocates any information copied into a create operation by
-    a previous call to <a href="ifsk.fltcopyopenreparselist">FltCopyOpenReparseList</a>.  
+    a previous call to <a href="..\fltkernel\nf-fltkernel-fltcopyopenreparselist.md">FltCopyOpenReparseList</a>.  
 
 
 
@@ -71,49 +72,3 @@ This routine does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltKernel.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_IRQL_requires_max_(APC_LEVEL)
-
-</td>
-</tr>
-</table>

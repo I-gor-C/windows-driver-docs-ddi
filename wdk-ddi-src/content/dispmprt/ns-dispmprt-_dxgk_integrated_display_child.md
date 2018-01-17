@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._DXGK_INTEGRATED_DISPLAY_CHILD
+UID: NS:dispmprt._DXGK_INTEGRATED_DISPLAY_CHILD
 title: _DXGK_INTEGRATED_DISPLAY_CHILD
 author: windows-driver-content
 description: Gives information about the connected integrated display.
@@ -7,8 +7,8 @@ old-location: display\dxgk_integrated_display_child.htm
 old-project: display
 ms.assetid: A3E28664-B286-4E4A-85DD-4EAAC7D257F0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD, PDXGK_INTEGRATED_DISPLAY_CHILD
+ms.date: 12/29/2017
+ms.keywords: _DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD
 ---
 
 # _DXGK_INTEGRATED_DISPLAY_CHILD structure
@@ -81,19 +82,3 @@ The size in bytes of the descriptor which will be in the Descriptor field of the
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>

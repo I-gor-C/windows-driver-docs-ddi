@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIOP._SCSIINQUIRY_IN
+UID: NS:iscsiop._ScsiInquiry_IN
 title: _ScsiInquiry_IN
 author: windows-driver-content
 description: The ScsiInquiry_IN structure holds the input data for the ScsiInquiry method, which is used to send a SCSI inquiry command.
@@ -7,8 +7,8 @@ old-location: storage\scsiinquiry_in.htm
 old-project: storage
 ms.assetid: b1a73ef7-c13a-4627-8eb0-b9285567caec
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ScsiInquiry_IN, PScsiInquiry_IN, ScsiInquiry_IN, *PScsiInquiry_IN
+ms.date: 1/10/2018
+ms.keywords: _ScsiInquiry_IN, ScsiInquiry_IN, *PScsiInquiry_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ScsiInquiry_IN, *PScsiInquiry_IN
 ---
 
 # _ScsiInquiry_IN structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The ScsiInquiry_IN structure holds the input data for the <a href="storage.scsiinquiry">ScsiInquiry</a> method, which is used to send a SCSI inquiry command.
+The ScsiInquiry_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a> method, which is used to send a SCSI inquiry command.
 
 
 
@@ -58,7 +59,7 @@ typedef struct _ScsiInquiry_IN {
 
 ### -field UniqueSessionId
 
-A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
 
 
 ### -field Lun
@@ -80,39 +81,24 @@ The page code field in the SCSI inquiry command.
 You must implement this method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.addconnectiontosession">AddConnectionToSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="storage.logintotarget">LoginToTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 </dt>
 <dt>
-<a href="storage.scsiinquiry">ScsiInquiry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
 </dt>
 <dt>
-<a href="storage.scsiinquiry_out">ScsiInquiry_OUT</a>
+<a href="..\iscsiop\ns-iscsiop-_scsiinquiry_out.md">ScsiInquiry_OUT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiInquiry_IN structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiInquiry_IN structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

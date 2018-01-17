@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILPROVISIONSTATUSPROVISIONSTATUS
+UID: NE:ntddrilapitypes.RILPROVISIONSTATUSPROVISIONSTATUS
 title: RILPROVISIONSTATUSPROVISIONSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilprovisionstatusprovisionstatus.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ed7fc20a-b5d5-4dc6-ab95-5ee9258dbdae
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILPROVISIONSTATUSPROVISIONSTATUS, RILPROVISIONSTATUSPROVISIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPROVISIONSTATUSPROVISIONSTATUS
 ---
 
 # RILPROVISIONSTATUSPROVISIONSTATUS enumeration
@@ -81,19 +82,3 @@ typedef enum _RILPROVISIONSTATUSPROVISIONSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

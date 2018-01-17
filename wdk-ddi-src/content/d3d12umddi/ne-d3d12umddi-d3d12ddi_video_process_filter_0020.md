@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_VIDEO_PROCESS_FILTER_0020
+UID: NE:d3d12umddi.D3D12DDI_VIDEO_PROCESS_FILTER_0020
 title: D3D12DDI_VIDEO_PROCESS_FILTER_0020
 author: windows-driver-content
 description: Contains video process filters.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_video_process_filter_0020.htm
 old-project: display
 ms.assetid: A69E2A06-EA08-465C-A1E9-2D7FAB4E2F81
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIDEO_PROCESS_FILTER_0020, D3D12DDI_VIDEO_PROCESS_FILTER_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIDEO_PROCESS_FILTER_0020
 ---
 
 # D3D12DDI_VIDEO_PROCESS_FILTER_0020 enumeration
@@ -101,19 +102,3 @@ For stereo 3D video, the video processor can adjust the offset between the left 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
-title: EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
+UID: NC:sercx.EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
+title: EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION function
 author: windows-driver-content
 description: The EvtSerCx2PioTransmitEnableReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the transmit FIFO in the serial controller is ready to accept more data.
 old-location: serports\evtsercx2piotransmitenablereadynotification.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: 05E5F48B-4E82-4BC3-B6D1-7E9E3435BDB3
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION callback
+# EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCx2PioTransmitEnableReadyNotification</i> event callback function i
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION EvtSerCx2PioTransmitEnableReadyNotification;
@@ -59,7 +60,7 @@ VOID EvtSerCx2PioTransmitEnableReadyNotification(
 
 ### -param PioTransmit [in]
 
-A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
+A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.
 
 
 ## -returns
@@ -67,9 +68,9 @@ None.
 
 
 ## -remarks
-Your serial controller driver must implement this function. The driver registers the function in the <a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.
+Your serial controller driver must implement this function. The driver registers the function in the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.
 
-If the ready notification for PIO-transmit transactions is enabled, the serial controller driver must call the <a href="serports.sercx2piotransmitready">SerCx2PioTransmitReady</a> method to notify SerCx2 when the driver detects that the transmit FIFO in the serial controller hardware is ready to accept more data. If the transmit FIFO is ready to accept data when the ready notification is enabled, the driver immediately calls this method to notify SerCx2.
+If the ready notification for PIO-transmit transactions is enabled, the serial controller driver must call the <a href="..\sercx\nf-sercx-sercx2piotransmitready.md">SerCx2PioTransmitReady</a> method to notify SerCx2 when the driver detects that the transmit FIFO in the serial controller hardware is ready to accept more data. If the transmit FIFO is ready to accept data when the ready notification is enabled, the driver immediately calls this method to notify SerCx2.
 
 The ready notification for a PIO-transmit transaction is a one-shot notification. After sending a ready notification to SerCx2, the serial controller driver sends no further notifications until SerCx2 calls the <i>EvtSerCx2PioTransmitEnableReadyNotification</i> function to enable another notification.
 
@@ -94,52 +95,6 @@ Then, implement your callback function as follows:
 The <b>EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL.
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -152,10 +107,10 @@ Called at IRQL &lt;= DISPATCH_LEVEL.
 <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmitready">SerCx2PioTransmitReady</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitready.md">SerCx2PioTransmitReady</a>
 </dt>
 </dl>
  

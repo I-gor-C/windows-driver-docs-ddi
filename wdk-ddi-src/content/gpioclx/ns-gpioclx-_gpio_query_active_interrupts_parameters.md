@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 title: _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to query for their enabled and active states.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: A3111B9C-319F-4560-B5A9-5CA6523AD935
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+ms.keywords: _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure
@@ -73,31 +74,6 @@ A ULONG64 variable to which the GPIO controller driver writes a 64-bit mask to i
 ## -remarks
 The <i>QueryActiveParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439395">CLIENT_QueryActiveInterrupts</a> event callback function is a pointer to a caller-allocated <b>GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS</b> structure. This function queries only GPIO pins that are configured as interrupt inputs. All other GPIO pins in the specified bank are represented as zeros in the <b>EnabledMask</b> and <b>ActiveMask</b> members of the structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

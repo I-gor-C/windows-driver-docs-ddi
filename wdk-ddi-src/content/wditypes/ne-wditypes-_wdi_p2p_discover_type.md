@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_P2P_DISCOVER_TYPE
+UID: NE:wditypes._WDI_P2P_DISCOVER_TYPE
 title: _WDI_P2P_DISCOVER_TYPE
 author: windows-driver-content
 description: The WDI_P2P_DISCOVER_TYPE enumeration defines the Wi-Fi Direct discovery types.
 old-location: netvista\wdi_p2p_discover_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: AE9910F7-A3B8-4C13-A5DC-7B9600C8C873
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_P2P_DISCOVER_TYPE, WDI_P2P_DISCOVER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_P2P_DISCOVER_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -78,39 +79,3 @@ Port must perform device discovery by scanning only Wi-Fi Direct social channels
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

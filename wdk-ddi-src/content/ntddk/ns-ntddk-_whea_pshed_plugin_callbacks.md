@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PSHED_PLUGIN_CALLBACKS
+UID: NS:ntddk._WHEA_PSHED_PLUGIN_CALLBACKS
 title: _WHEA_PSHED_PLUGIN_CALLBACKS
 author: windows-driver-content
 description: The WHEA_PSHED_PLUGIN_CALLBACKS structure describes the callback functions for a PSHED plug-in.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 3b99f2bf-0ebc-40b2-a586-acc89200132b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PSHED_PLUGIN_CALLBACKS, PWHEA_PSHED_PLUGIN_CALLBACKS, WHEA_PSHED_PLUGIN_CALLBACKS, *PWHEA_PSHED_PLUGIN_CALLBACKS
+ms.keywords: _WHEA_PSHED_PLUGIN_CALLBACKS, *PWHEA_PSHED_PLUGIN_CALLBACKS, WHEA_PSHED_PLUGIN_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_PSHED_PLUGIN_CALLBACKS, WHEA_PSHED_PLUGIN_CALLBACKS
 ---
 
 # _WHEA_PSHED_PLUGIN_CALLBACKS structure
@@ -143,34 +144,8 @@ A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_inject_erro
 
 
 ## -remarks
-A WHEA_PSHED_PLUGIN_CALLBACKS structure is contained within the <a href="whea.whea_pshed_plugin_registration_packet">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure.
+A WHEA_PSHED_PLUGIN_CALLBACKS structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -217,7 +192,7 @@ Header
 <a href="..\ntddk\nc-ntddk-pshed_pi_write_error_record.md">WriteErrorRecord</a>
 </dt>
 <dt>
-<a href="whea.whea_pshed_plugin_registration_packet">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
+<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
 </dt>
 </dl>
  

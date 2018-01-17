@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1DDI_VIDEO_FRAME_FORMAT
+UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_FRAME_FORMAT
 title: D3D11_1DDI_VIDEO_FRAME_FORMAT
 author: windows-driver-content
 description: Describes how a video stream is interlaced.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_frame_format.htm
 old-project: display
 ms.assetid: 36af5af2-dfb1-4827-8898-93e52f4c8312
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_FRAME_FORMAT, D3D11_1DDI_VIDEO_FRAME_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_FRAME_FORMAT
 ---
 
 # D3D11_1DDI_VIDEO_FRAME_FORMAT enumeration
@@ -71,39 +72,3 @@ Frame are interlaced. The bottom field of each frame is displayed first.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

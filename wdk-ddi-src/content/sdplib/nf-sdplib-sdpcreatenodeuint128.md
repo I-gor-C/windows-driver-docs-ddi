@@ -1,5 +1,5 @@
 ---
-UID: NF.sdplib.SdpCreateNodeUInt128
+UID: NF:sdplib.SdpCreateNodeUInt128
 title: SdpCreateNodeUInt128 function
 author: windows-driver-content
 description: The Bluetooth SdpCreateNodeUInt128 function is used to allocate and initialize an SDP_NODE structure to an unsigned 128-bit integer type.
@@ -7,7 +7,7 @@ old-location: bltooth\sdpcreatenodeuint128.htm
 old-project: bltooth
 ms.assetid: 92ddc186-7b4c-410e-a82b-7309559364c1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: SdpCreateNodeUInt128
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 The Bluetooth 
   <b>SdpCreateNodeUInt128</b> function is used to allocate and initialize an 
-  <a href="bltooth.sdp_node">SDP_NODE</a> structure to an unsigned 128-bit integer
+  <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure to an unsigned 128-bit integer
   type.
 
 
@@ -76,18 +77,18 @@ If successful, this function returns a pointer to the newly allocated SDP_NODE s
 ## -remarks
 After the 
     <b>SdpCreateNodeUInt128</b> function allocates an 
-    <a href="bltooth.sdp_node">SDP_NODE</a> structure, it initializes the structure in
+    <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure, it initializes the structure in
     the following ways.
 
 It ensures that the SDP_NODE structure's data type and data size fields are set appropriately.
 
 It ensures that the pointer members of the associated 
-      <a href="bltooth.sdp_node_header">SDP_NODE_HEADER</a> structure are initialized
+      <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a> structure are initialized
       to point to the node itself. This creates a valid list with only one element.
 
 It ensures that the 
       <i>value</i> parameter passed to the function is copied to the appropriate element of the 
-      <a href="bltooth.sdp_node_data">SDP_NODE_DATA</a> union that is associated with
+      <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a> union that is associated with
       the SDP_NODE structure.
 
 The data associated with the 
@@ -95,74 +96,28 @@ The data associated with the
     time.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="bltooth.bthddi_sdp_node_interface">
+    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">
     BTHDDI_SDP_NODE_INTERFACE</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sdplib.h (include BthSdpddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.sdp_node">SDP_NODE</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 </dt>
 <dt>
-<a href="bltooth.sdp_node_header">SDP_NODE_HEADER</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
 </dt>
 <dt>
-<a href="bltooth.sdp_node_data">SDP_NODE_DATA</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
 </dt>
 <dt>
-<a href="bltooth.bthddi_sdp_node_interface">BTHDDI_SDP_NODE_INTERFACE</a>
+<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpCreateNodeUInt128 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpCreateNodeUInt128 function%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,6 +1,6 @@
 ---
-UID: NC.hwnclx.HWN_CLIENT_GET_STATE
-title: HWN_CLIENT_GET_STATE
+UID: NC:hwnclx.HWN_CLIENT_GET_STATE
+title: HWN_CLIENT_GET_STATE function
 author: windows-driver-content
 description: Implemented by the client driver to get hardware notification component state. It is invoked when a user requests status information.
 old-location: gpiobtn\hwn_client_get_state.htm
@@ -8,10 +8,10 @@ old-project: gpiobtn
 ms.assetid: c472b4bf-4c7f-4c30-ad03-2017d26d52b4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE, PHPMI_QUERY_CAPABILITIES_RESPONSE
+ms.keywords: HWN_CLIENT_GET_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: hwnclx.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
-# HWN_CLIENT_GET_STATE callback
+# HWN_CLIENT_GET_STATE function
 
 
 
@@ -43,7 +44,7 @@ Implemented by the client driver to get hardware notification component state. I
 
 
 
-## -prototype
+## -syntax
 
 ````
 HWN_CLIENT_GET_STATE HwnClientGetState;
@@ -104,7 +105,7 @@ Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriat
 
 
 ## -remarks
-Register your implementation of this callback function by setting the appropriate member of <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGISTRATION_PACKET</a> and then calling <a href="gpiobtn.hwnregisterclient">HwNRegisterClient</a>.
+Register your implementation of this callback function by setting the appropriate member of <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGISTRATION_PACKET</a> and then calling <a href="..\hwnclx\nf-hwnclx-hwnregisterclient.md">HwNRegisterClient</a>.
 
 If <i>InputBuffer</i> is NULL, the output buffer will be used to store a <a href="gpiobtn.hwn_header">HWN_HEADER</a> structure that contains all of the settings for the hardware notifications implemented by the driver. 
 
@@ -115,56 +116,11 @@ If <i>InputBuffer</i> is not null and is correctly formatted, it will contain a 
 If <i>OutputBuffer</i> is not large enough to contain all of the settings requested, this function should not write anything to <i>OutputBuffer</i>. Additionally, it should set <i>BytesRead</i> to 0 and return an error.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hwnclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
 <dt>
-<a href="gpiobtn.hardware_notifications_reference">Hardware notifications reference</a>
+<a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 </dt>
 </dl>
  

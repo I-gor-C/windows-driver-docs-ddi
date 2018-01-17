@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILGETDRIVERVERSIONPARAMS
+UID: NS:ntddrilapitypes.RILGETDRIVERVERSIONPARAMS
 title: RILGETDRIVERVERSIONPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetdriverversionparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 42167f2f-0bd5-452c-9b41-d18efac28a33
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGETDRIVERVERSIONPARAMS, LPRILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS
 ---
 
 # RILGETDRIVERVERSIONPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILGETDRIVERVERSIONPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

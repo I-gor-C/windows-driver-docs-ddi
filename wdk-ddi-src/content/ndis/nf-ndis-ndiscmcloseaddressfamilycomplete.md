@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCmCloseAddressFamilyComplete
+UID: NF:ndis.NdisCmCloseAddressFamilyComplete
 title: NdisCmCloseAddressFamilyComplete function
 author: windows-driver-content
 description: NdisCmCloseAddressFamilyComplete returns the final status of a client's request, for which the CM's ProtocolCmCloseAf function returned NDIS_STATUS_PENDING, to close the AF.
 old-location: netvista\ndiscmcloseaddressfamilycomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1aeb2ca5-8c56-4a78-8cd5-a178efa9b014
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisCmCloseAddressFamilyComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCmCloseAddressFamilyComplete function
@@ -78,7 +79,7 @@ A stand-alone call manager must call
     <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a> function previously
     returned NDIS_STATUS_PENDING for the given 
     <i>NdisAfHandle</i> . The client, which initiated the pended close-AF operation with a call to 
-    <a href="netvista.ndisclcloseaddressfamily">NdisClCloseAddressFamily</a>, cannot
+    <a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>, cannot
     release the resources it allocated to track communications on the AF until the CM's call to 
     <b>NdisCmCloseAddressFamilyComplete</b> causes a call to that client's 
     <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">
@@ -94,83 +95,13 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
     <b>NdisMCmCloseAddressFamilyComplete</b> instead.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/1231b255-9d4c-44da-8341-f5024e2eadd5">
-   NdisCmCloseAddressFamilyComplete (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>
-   NdisCmCloseAddressFamilyComplete (NDIS 5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclcloseaddressfamily">NdisClCloseAddressFamily</a>
+<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmcloseaddressfamilycomplete">
+<a href="..\ndis\nf-ndis-ndismcmcloseaddressfamilycomplete.md">
    NdisMCmCloseAddressFamilyComplete</a>
 </dt>
 <dt>
@@ -187,5 +118,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCmCloseAddressFamilyComplete function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmCloseAddressFamilyComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

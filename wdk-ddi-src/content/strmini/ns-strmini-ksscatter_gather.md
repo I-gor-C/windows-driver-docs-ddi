@@ -1,5 +1,5 @@
 ---
-UID: NS.STRMINI.KSSCATTER_GATHER
+UID: NS:strmini.KSSCATTER_GATHER
 title: KSSCATTER_GATHER
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\ksscatter_gather.htm
 old-project: stream
 ms.assetid: 10AFDC4B-75E5-4E88-A614-60043848C570
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSSCATTER_GATHER, KSSCATTER_GATHER, PKSSCATTER_GATHER, *PKSSCATTER_GATHER
+ms.date: 1/9/2018
+ms.keywords: KSSCATTER_GATHER, KSSCATTER_GATHER, *PKSSCATTER_GATHER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSSCATTER_GATHER, *PKSSCATTER_GATHER
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h</dt>
-</dl>
-</td>
-</tr>
-</table>

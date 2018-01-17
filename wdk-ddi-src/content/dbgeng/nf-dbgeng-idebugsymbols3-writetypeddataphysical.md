@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.WriteTypedDataPhysical
+UID: NF:dbgeng.IDebugSymbols3.WriteTypedDataPhysical
 title: IDebugSymbols3::WriteTypedDataPhysical method
 author: windows-driver-content
 description: The WriteTypedDataPhysical method writes the value of a variable in the target computer's physical memory.
 old-location: debugger\writetypeddataphysical.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5f29249f-bb62-45d1-aa0e-108db1d7f906
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::WriteTypedDataPhysical, WriteTypedDataPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::WriteTypedDataPhysical method
@@ -105,33 +106,6 @@ This method is only available in kernel mode debugging.
 
 The number of bytes this method attempts to write is the smaller of the size of the buffer and the size of the variable.
 
-This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="debugger.writephysical">WritePhysical</a>.
+This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="..\wdbgexts\nf-wdbgexts-writephysical.md">WritePhysical</a>.
 
-For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>

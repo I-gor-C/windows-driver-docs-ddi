@@ -1,5 +1,5 @@
 ---
-UID: NF.kcom.KoRelease
+UID: NF:kcom.KoRelease
 title: KoRelease function
 author: windows-driver-content
 description: The KoRelease function decrements the reference count for the calling interface on an object.
@@ -7,7 +7,7 @@ old-location: stream\korelease.htm
 old-project: stream
 ms.assetid: 59be582c-0f56-45d8-b407-e588ee0f7f8b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KoRelease
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: *PCONNECT_DATA, CONNECT_DATA
 ---
 
 # KoRelease function
@@ -65,41 +66,3 @@ None
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kcom.h (include Kcom.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ks.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

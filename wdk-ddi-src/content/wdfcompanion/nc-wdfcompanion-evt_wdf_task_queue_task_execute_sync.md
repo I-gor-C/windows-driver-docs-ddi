@@ -1,17 +1,17 @@
 ---
-UID: NC.wdfcompanion.EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC
-title: EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC
+UID: NC:wdfcompanion.EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC
+title: EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC function
 author: windows-driver-content
 description: For internal use only.
 old-location: wdf\evt_wdf_task_queue_task_execute_sync.htm
 old-project: wdf
 ms.assetid: c45d1873-fb29-49ee-b99b-09861478ac89
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, PWDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG
+ms.date: 1/11/2018
+ms.keywords: EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: wdfcompanion.h
 req.include-header: 
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC callback
+# EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC function
 
 
 
@@ -44,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC;
@@ -86,39 +87,3 @@ NTSTATUS EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.23
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfcompanion.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>

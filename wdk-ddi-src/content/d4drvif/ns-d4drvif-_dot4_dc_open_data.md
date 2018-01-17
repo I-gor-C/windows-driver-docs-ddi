@@ -1,5 +1,5 @@
 ---
-UID: NS.D4DRVIF._DOT4_DC_OPEN_DATA
+UID: NS:d4drvif._DOT4_DC_OPEN_DATA
 title: _DOT4_DC_OPEN_DATA
 author: windows-driver-content
 description: This topic describes the DOT4_DC_OPEN_DATA structure.
@@ -7,8 +7,8 @@ old-location: print\dot4_dc_open_data.htm
 old-project: print
 ms.assetid: 72AE7A78-C02D-4C14-B017-9CEECF34FEDF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA, PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
+ms.date: 1/8/2018
+ms.keywords: _DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
 ---
 
 # _DOT4_DC_OPEN_DATA structure
@@ -71,19 +72,3 @@ Specifies the handle to the channel returned.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D4drvif.h</dt>
-</dl>
-</td>
-</tr>
-</table>

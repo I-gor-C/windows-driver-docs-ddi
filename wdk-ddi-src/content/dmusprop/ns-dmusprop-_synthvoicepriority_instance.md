@@ -1,5 +1,5 @@
 ---
-UID: NS.DMUSPROP._SYNTHVOICEPRIORITY_INSTANCE
+UID: NS:dmusprop._SYNTHVOICEPRIORITY_INSTANCE
 title: _SYNTHVOICEPRIORITY_INSTANCE
 author: windows-driver-content
 description: The SYNTHVOICEPRIORITY_INSTANCE structure identifies a voice in a MIDI synthesizer by specifying the voice's channel group (set of 16 MIDI channels) and its channel number within that group.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: dc9acd16-c515-4e47-9a0b-9dec46e30f74
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTHVOICEPRIORITY_INSTANCE, PSYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE
+ms.keywords: _SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ---
 
 # _SYNTHVOICEPRIORITY_INSTANCE structure
@@ -67,21 +68,6 @@ Specifies the channel that the voice is on. This member contains a channel numbe
 ## -remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537407">KSPROPERTY_SYNTH_VOICEPRIORITY</a> property request uses the SYNTHVOICEPRIORITY_INSTANCE structure for its property descriptor. The structure specifies which voice gets priority when the miniport driver needs to bump voices from the cache.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusprop.h (include Dmusprop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

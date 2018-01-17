@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CIP_FRAME
+UID: NS:61883._CIP_FRAME
 title: _CIP_FRAME
 author: windows-driver-content
 description: The CIP_FRAME structure describes a frame to be attached to an input or output plug.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CIP_FRAME, *PCIP_FRAME
 ---
 
 # _CIP_FRAME structure
@@ -221,21 +222,6 @@ Points to the beginning of a caller-allocated data buffer to be transmitted or r
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

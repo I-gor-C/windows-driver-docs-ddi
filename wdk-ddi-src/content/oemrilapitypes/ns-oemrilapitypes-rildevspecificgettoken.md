@@ -1,14 +1,14 @@
 ---
-UID: NS.OEMRILAPITYPES.RILDEVSPECIFICGETTOKEN
+UID: NS:oemrilapitypes.RILDEVSPECIFICGETTOKEN
 title: RILDEVSPECIFICGETTOKEN
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildevspecificgettoken.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b0a534e0-1527-4ef3-a53f-c18cacbb5445
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILDEVSPECIFICGETTOKEN, RILDEVSPECIFICGETTOKEN, LPRILDEVSPECIFICGETTOKEN, *LPRILDEVSPECIFICGETTOKEN
+ms.date: 1/11/2018
+ms.keywords: RILDEVSPECIFICGETTOKEN, *LPRILDEVSPECIFICGETTOKEN, RILDEVSPECIFICGETTOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *LPRILDEVSPECIFICGETTOKEN, RILDEVSPECIFICGETTOKEN
 ---
 
 # RILDEVSPECIFICGETTOKEN structure
@@ -77,19 +78,3 @@ typedef struct _RILDEVSPECIFICGETTOKEN {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Oemrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

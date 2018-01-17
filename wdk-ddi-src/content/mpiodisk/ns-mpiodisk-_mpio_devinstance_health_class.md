@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIODISK._MPIO_DEVINSTANCE_HEALTH_CLASS
+UID: NS:mpiodisk._MPIO_DEVINSTANCE_HEALTH_CLASS
 title: _MPIO_DEVINSTANCE_HEALTH_CLASS
 author: windows-driver-content
 description: The MPIO_DEVINSTANCE_HEALTH_CLASS structure holds the health information for a instance of a device exposed through the specified path identifiers.
@@ -7,8 +7,8 @@ old-location: storage\mpio_devinstance_health_class.htm
 old-project: storage
 ms.assetid: 6d0afab5-4aba-4ebc-a864-85c83cf464d0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_DEVINSTANCE_HEALTH_CLASS, PMPIO_DEVINSTANCE_HEALTH_CLASS, MPIO_DEVINSTANCE_HEALTH_CLASS, *PMPIO_DEVINSTANCE_HEALTH_CLASS
+ms.date: 1/10/2018
+ms.keywords: _MPIO_DEVINSTANCE_HEALTH_CLASS, MPIO_DEVINSTANCE_HEALTH_CLASS, *PMPIO_DEVINSTANCE_HEALTH_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MPIO_DEVINSTANCE_HEALTH_CLASS, *PMPIO_DEVINSTANCE_HEALTH_CLASS
 ---
 
 # _MPIO_DEVINSTANCE_HEALTH_CLASS structure
@@ -143,19 +144,3 @@ Should be zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

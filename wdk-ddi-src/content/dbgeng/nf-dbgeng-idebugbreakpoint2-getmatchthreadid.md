@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.GetMatchThreadId
+UID: NF:dbgeng.IDebugBreakpoint2.GetMatchThreadId
 title: IDebugBreakpoint2::GetMatchThreadId method
 author: windows-driver-content
 description: The GetMatchThreadId method returns the engine thread ID of the thread that can trigger a breakpoint.
 old-location: debugger\getmatchthreadid.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0f0f7248-de85-4757-8006-48444af8edac
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::GetMatchThreadId, GetMatchThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::GetMatchThreadId method
@@ -74,33 +75,6 @@ This method can also return other error values.  For more information, see <a hr
 ## -remarks
 If you have set a thread for the breakpoint, the breakpoint can be triggered only if that thread hits the breakpoint.  If you have not set a thread , any thread can trigger the breakpoint and <i>Id</i> receives <b>NULL</b>.
 
-The <a href="debugger.getparameters">GetParameters</a> method also returns the engine thread ID of the thread that can trigger the breakpoint.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the engine thread ID of the thread that can trigger the breakpoint.
 
-For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>

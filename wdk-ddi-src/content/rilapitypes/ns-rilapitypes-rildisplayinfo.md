@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILDISPLAYINFO
+UID: NS:rilapitypes.RILDISPLAYINFO
 title: RILDISPLAYINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildisplayinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f24d8122-ea07-477f-9cf9-4767cc0fbf86
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILDISPLAYINFO, *LPRILDISPLAYINFO, RILDISPLAYINFO
+ms.date: 1/11/2018
+ms.keywords: RILDISPLAYINFO, RILDISPLAYINFO, *LPRILDISPLAYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDISPLAYINFO, *LPRILDISPLAYINFO
 req.product: Windows 10 or later.
 ---
 
@@ -82,19 +83,3 @@ typedef struct _RILDISPLAYINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

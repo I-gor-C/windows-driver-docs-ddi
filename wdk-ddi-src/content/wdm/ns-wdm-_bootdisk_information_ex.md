@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._BOOTDISK_INFORMATION_EX
+UID: NS:wdm._BOOTDISK_INFORMATION_EX
 title: _BOOTDISK_INFORMATION_EX
 author: windows-driver-content
 description: The BOOTDISK_INFORMATION_EX structure contains extended information describing the boot and system disks.
@@ -7,8 +7,8 @@ old-location: kernel\bootdisk_information_ex.htm
 old-project: kernel
 ms.assetid: c358220c-1e29-4889-b214-f2892c9ac47d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX, PBOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX
+ms.date: 1/4/2018
+ms.keywords: _BOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX
 req.product: Windows 10 or later.
 ---
 
@@ -102,36 +103,21 @@ If the <b>SystemDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID f
 
 
 ## -remarks
-On Windows XP and later, <a href="kernel.iogetbootdiskinformation">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
+On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iogetbootdiskinformation">IoGetBootDiskInformation</a>
+<a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a>
 </dt>
 <dt>
-<a href="kernel.bootdisk_information">BOOTDISK_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_bootdisk_information.md">BOOTDISK_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BOOTDISK_INFORMATION_EX structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BOOTDISK_INFORMATION_EX structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

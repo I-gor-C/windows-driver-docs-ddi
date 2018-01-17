@@ -1,14 +1,14 @@
 ---
-UID: NE.wwan._WWAN_USSD_REQUEST_TYPE
+UID: NE:wwan._WWAN_USSD_REQUEST_TYPE
 title: _WWAN_USSD_REQUEST_TYPE
 author: windows-driver-content
 description: The WWAN_USSD_REQUEST_TYPE enumeration lists the different types of Unstructured Supplementary Service Data (USSD) session requests.
 old-location: netvista\wwan_ussd_request_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 773490EE-ECFC-4089-869D-19683A76E4FA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_USSD_REQUEST_TYPE, PWWAN_USSD_REQUEST_TYPE, WWAN_USSD_REQUEST_TYPE, *PWWAN_USSD_REQUEST_TYPE
+ms.date: 1/11/2018
+ms.keywords: _WWAN_USSD_REQUEST_TYPE, *PWWAN_USSD_REQUEST_TYPE, WWAN_USSD_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_USSD_REQUEST_TYPE, WWAN_USSD_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -74,30 +75,4 @@ Indicates a request to terminate the existing USSD session.
 ## -remarks
 The USSD protocol only allows a single USSD session at any time. If the miniport driver receives a <i>WwanUssdRequestInitiate</i> request to create a new USSD session when one already exists, the miniport driver must fail the request and specify <i>WwanUssdEventOtherLocalClient</i> as the reason.
 
-When responding to a <i>WwanUssdRequestCancel</i> request, miniport drivers must return <i>WwanUssdEventTerminated</i> as the reason even if no session existed (which may happen during a concurrent release of the session from the network and the local client). The content of the accompanying USSD string must be ignored for WwanUssdRequestCancel requests and the string length should be set to zero to indicate that there is no accompanying USSD string.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+When responding to a <i>WwanUssdRequestCancel</i> request, miniport drivers must return <i>WwanUssdEventTerminated</i> as the reason even if no session existed (which may happen during a concurrent release of the session from the network and the local client). The content of the accompanying USSD string must be ignored for WwanUssdRequestCancel requests and the string length should be set to zero to indicate that there is no accompanying USSD string.</p>

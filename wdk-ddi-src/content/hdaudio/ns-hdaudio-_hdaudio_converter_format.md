@@ -1,5 +1,5 @@
 ---
-UID: NS.HDAUDIO._HDAUDIO_CONVERTER_FORMAT
+UID: NS:hdaudio._HDAUDIO_CONVERTER_FORMAT
 title: _HDAUDIO_CONVERTER_FORMAT
 author: windows-driver-content
 description: The HDAUDIO_CONVERTER_FORMAT structure specifies the 16-bit encoded stream format for an input or output converter, as defined in the Intel High Definition Audio Specification (see the Intel HD Audio website).
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 623f58f6-db82-4a4a-bac3-cc821babfe99
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_CONVERTER_FORMAT, *PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT, PHDAUDIO_CONVERTER_FORMAT
+ms.keywords: _HDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT, *PHDAUDIO_CONVERTER_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: HDAUDIO_CONVERTER_FORMAT, *PHDAUDIO_CONVERTER_FORMAT
 ---
 
 # _HDAUDIO_CONVERTER_FORMAT structure
@@ -99,25 +100,10 @@ For information about the encoding of the individual bitfields in the structure 
 
 The HD Audio bus driver sets the unnamed bitfield in the structure definition to zero.
 
-The <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>, <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>, and <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routines take as an input parameter an <a href="audio.hdaudio_stream_format">HDAUDIO_STREAM_FORMAT</a> structure and output the corresponding HDAUDIO_CONVERTER_FORMAT structure. The caller can use the output value to program the input or output converters.
+The <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>, <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>, and <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routines take as an input parameter an <a href="..\hdaudio\ns-hdaudio-_hdaudio_stream_format.md">HDAUDIO_STREAM_FORMAT</a> structure and output the corresponding HDAUDIO_CONVERTER_FORMAT structure. The caller can use the output value to program the input or output converters.
 
 Each valid HDAUDIO_CONVERTER_FORMAT encoding has a one-to-one correspondence to an HDAUDIO_STREAM_FORMAT structure that contains a valid set of parameters.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -131,7 +117,7 @@ Header
 <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_stream_format">HDAUDIO_STREAM_FORMAT</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_stream_format.md">HDAUDIO_STREAM_FORMAT</a>
 </dt>
 </dl>
  

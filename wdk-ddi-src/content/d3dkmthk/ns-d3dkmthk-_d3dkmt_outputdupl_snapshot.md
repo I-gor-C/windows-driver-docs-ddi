@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_OUTPUTDUPL_SNAPSHOT
+UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPL_SNAPSHOT
 title: _D3DKMT_OUTPUTDUPL_SNAPSHOT
 author: windows-driver-content
 description: Provides information on the current processes in which output duplication is occurring.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputdupl_snapshot.htm
 old-project: display
 ms.assetid: bec6a398-34e8-4c03-ac15-c3f00645eac7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_OUTPUTDUPL_SNAPSHOT, D3DKMT_OUTPUTDUPL_SNAPSHOT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_OUTPUTDUPL_SNAPSHOT
 ---
 
 # _D3DKMT_OUTPUTDUPL_SNAPSHOT structure
@@ -89,39 +90,3 @@ Reserved for system use. Set to zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CO_CREATE_VC
-title: PROTOCOL_CO_CREATE_VC
+UID: NC:ndis.PROTOCOL_CO_CREATE_VC
+title: PROTOCOL_CO_CREATE_VC function
 author: windows-driver-content
 description: The ProtocolCoCreateVc function is a required function that allocates resources necessary for a call manager or client to activate and maintain a virtual connection (VC).Note  You must declare the function by using the PROTOCOL_CO_CREATE_VC type.
 old-location: netvista\protocolcocreatevc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b086dd24-74f5-474a-8684-09bf92ac731b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CO_CREATE_VC
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CO_CREATE_VC callback
+# PROTOCOL_CO_CREATE_VC function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CO_CREATE_VC ProtocolCoCreateVc;
@@ -66,7 +67,7 @@ Specifies the handle to a protocol-allocated context area in which the call mana
      maintains its per-open state. The call manager supplied this handle from its 
      <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function. The client
      supplied this handle when it called 
-     <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a> from
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a> from
      its 
      <i>ProtocolCoAfRegisterNotify</i> function.
 
@@ -108,13 +109,13 @@ Specifies the handle to a protocol-supplied context area in which the call manag
 The 
     <i>ProtocolCoCreateVc</i> function of a call manager or client is called whenever the corresponding client
     or call manager, respectively, calls 
-    <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>. Clients initiate the
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>. Clients initiate the
     creation of VCs in the process of setting up their outgoing calls before they call 
-    <a href="netvista.ndisclmakecall">NdisClMakeCall</a>. A call manager initiates
+    <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>. A call manager initiates
     the creation of a VC in the process of notifying its client that the CM received an incoming call offer
     from a remote node that is directed to a SAP already registered with the CM by that client before the CM
     calls 
-    <a href="netvista.ndiscmdispatchincomingcall">
+    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
     NdisCmDispatchIncomingCall</a>.
 
 <i>ProtocolCoCreateVc</i> performs any necessary allocations of dynamic resources and structures that the
@@ -176,55 +177,16 @@ The <b>PROTOCOL_CO_CREATE_VC</b> function type is defined in the Ndis.h header f
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/e1e78636-3a0a-41aa-81af-099747e9bc22">ProtocolCoCreateVc (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolCoCreateVc (NDIS
-   5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingcall">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
@@ -243,5 +205,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CO_CREATE_VC callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CO_CREATE_VC callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

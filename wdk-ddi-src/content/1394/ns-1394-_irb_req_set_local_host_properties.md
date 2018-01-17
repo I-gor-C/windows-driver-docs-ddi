@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_SET_LOCAL_HOST_PROPERTIES
+UID: NS:1394._IRB_REQ_SET_LOCAL_HOST_PROPERTIES
 title: _IRB_REQ_SET_LOCAL_HOST_PROPERTIES
 author: windows-driver-content
 description: This structure contains the fields required to carry out a SetLocalHostProperties request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_SET_LOCAL_HOST_PROPERTIES
 ---
 
 # _IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure
@@ -121,19 +122,3 @@ SET_LOCAL_HOST_PROPS3
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

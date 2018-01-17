@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISWWAN._NDIS_WWAN_GET_SLOT_INFO
+UID: NS:ndiswwan._NDIS_WWAN_GET_SLOT_INFO
 title: _NDIS_WWAN_GET_SLOT_INFO
 author: windows-driver-content
 description: The NDIS_WWAN_GET_SLOT_INFO structure represents the status of a slot in the modem of the MB device.
 old-location: netvista\ndis_wwan_get_slot_info_status.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 214AFAD3-B211-4D66-8CFC-58F8EB407B83
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_GET_SLOT_INFO, PNDIS_WWAN_GET_SLOT_INFO, *PNDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO
+ms.date: 1/11/2018
+ms.keywords: _NDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO, *PNDIS_WWAN_GET_SLOT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_WWAN_GET_SLOT_INFO, *PNDIS_WWAN_GET_SLOT_INFO
 ---
 
 # _NDIS_WWAN_GET_SLOT_INFO structure
@@ -102,54 +103,29 @@ sizeof(NDIS_WWAN_GET_SLOT_INFO)
  
 
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field SlotInfoStatus
 
-A formatted <a href="netvista.wwan_get_slot_info_status">WWAN_GET_SLOT_INFO</a> structure which contains the slot index to specify which slot's status the query request is for.
+A formatted <a href="..\wwan\ns-wwan-_wwan_get_slot_info.md">WWAN_GET_SLOT_INFO</a> structure which contains the slot index to specify which slot's status the query request is for.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 10, version 1703
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndiswwan.h (include Ndiswwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.wwan_get_slot_info_status">WWAN_GET_SLOT_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_get_slot_info.md">WWAN_GET_SLOT_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_WWAN_GET_SLOT_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_GET_SLOT_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

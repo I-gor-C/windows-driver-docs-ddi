@@ -1,5 +1,5 @@
 ---
-UID: NS.HDAUDIO._HDAUDIO_CODEC_COMMAND
+UID: NS:hdaudio._HDAUDIO_CODEC_COMMAND
 title: _HDAUDIO_CODEC_COMMAND
 author: windows-driver-content
 description: The HDAUDIO_CODEC_COMMAND structure specifies a codec command.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 803e3506-fb63-4d64-b562-1956e99f9d9b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_CODEC_COMMAND, *PHDAUDIO_CODEC_COMMAND, PHDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND
+ms.keywords: _HDAUDIO_CODEC_COMMAND, *PHDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PHDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND
 ---
 
 # _HDAUDIO_CODEC_COMMAND structure
@@ -131,25 +132,10 @@ Specifies a 32-bit codec command that contains payload data, a verb identifier, 
 
 
 ## -remarks
-Clients call the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine to pass commands to codecs. The commands are in the <a href="audio.hdaudio_codec_transfer">HDAUDIO_CODEC_TRANSFER</a> structures that clients pass to this routine as call parameters. Before calling <b>TransferCodecVerbs</b>, function drivers can use the HDAUDIO_CODEC_COMMAND structure to encode the codec commands.
+Clients call the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine to pass commands to codecs. The commands are in the <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a> structures that clients pass to this routine as call parameters. Before calling <b>TransferCodecVerbs</b>, function drivers can use the HDAUDIO_CODEC_COMMAND structure to encode the codec commands.
 
 The validity of individual members depends on the type of command sent.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -157,7 +143,7 @@ Header
 <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_codec_transfer">HDAUDIO_CODEC_TRANSFER</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a>
 </dt>
 </dl>
  

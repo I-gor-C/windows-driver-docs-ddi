@@ -1,5 +1,5 @@
 ---
-UID: NF.pepfx.PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE
+UID: NF:pepfx.PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE
 title: PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function
 author: windows-driver-content
 description: The PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_INTERRUPT_RESOURCE structure.
@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_initialize_interrupt_resource.htm
 old-project: kernel
 ms.assetid: A89AB86B-4DC9-43ED-9EE6-1D4B693DAB91
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 # PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="kernel.pep_acpi_interrupt_resource">PEP_ACPI_INTERRUPT_RESOURCE</a> structure.
+The <b>PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="..\pepfx\ns-pepfx-_pep_acpi_interrupt_resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a> structure.
 
 
 
@@ -67,12 +68,12 @@ Indicates if this device is in use.
 
 ### -param EdgeLevel [in]
 
-A <a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
+A <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
 
 
 ### -param InterruptLevel [in]
 
-A <a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
+A <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
 
 
 ### -param ShareType [in]
@@ -97,7 +98,7 @@ The number of pins described by the <i>PinTable</i> parameter.
 
 ### -param Resource [out]
 
-A pointer to the resource. The structure behind the pointer is of type <a href="kernel.pep_acpi_interrupt_resource">PEP_ACPI_INTERRUPT_RESOURCE</a>.
+A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx-_pep_acpi_interrupt_resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a>.
 
 
 ## -returns
@@ -107,40 +108,15 @@ This function does not return a value.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.pep_acpi_interrupt_resource">PEP_ACPI_INTERRUPT_RESOURCE</a>
+<a href="..\pepfx\ns-pepfx-_pep_acpi_interrupt_resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

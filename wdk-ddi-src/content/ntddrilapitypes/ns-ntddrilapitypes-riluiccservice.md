@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCSERVICE
+UID: NS:ntddrilapitypes.RILUICCSERVICE
 title: RILUICCSERVICE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccservice.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 67c8abef-c920-4bc4-8216-8b6026a1962d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCSERVICE, *LPRILUICCSERVICE, RILUICCSERVICE, LPRILUICCSERVICE
+ms.date: 1/11/2018
+ms.keywords: RILUICCSERVICE, RILUICCSERVICE, *LPRILUICCSERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCSERVICE, *LPRILUICCSERVICE
 ---
 
 # RILUICCSERVICE structure
@@ -61,19 +62,3 @@ typedef struct _RILUICCSERVICE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

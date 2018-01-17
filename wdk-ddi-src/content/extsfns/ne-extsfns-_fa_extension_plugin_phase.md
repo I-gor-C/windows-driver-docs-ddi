@@ -1,13 +1,13 @@
 ---
-UID: NE.extsfns._FA_EXTENSION_PLUGIN_PHASE
+UID: NE:extsfns._FA_EXTENSION_PLUGIN_PHASE
 title: _FA_EXTENSION_PLUGIN_PHASE
 author: windows-driver-content
 description: A value in the FA_EXTENSION_PLUGIN_PHASE enumeration is passed to the _EFN_Analyze function to specify which phase of the analysis is currently in progress.
 old-location: debugger\fa_extension_plugin_phase.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 67BDC6F7-4099-4AE9-931A-302FDBE1B05C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _FA_EXTENSION_PLUGIN_PHASE, FA_EXTENSION_PLUGIN_PHASE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 # _FA_EXTENSION_PLUGIN_PHASE enumeration
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-A value in the <b>FA_EXTENSION_PLUGIN_PHASE</b> enumeration is passed to the <a href="debugger._efn_analyze">_EFN_Analyze</a> function to specify which phase of the analysis is currently in progress.
+A value in the <b>FA_EXTENSION_PLUGIN_PHASE</b> enumeration is passed to the <a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a> function to specify which phase of the analysis is currently in progress.
 
 
 
@@ -83,21 +84,6 @@ The analysis is in the post bucketing phase. This is just after the analysis eng
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Extsfns.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -107,12 +93,12 @@ Header
 <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 </dt>
 <dt>
-<a href="debugger._efn_analyze">_EFN_Analyze</a>
+<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20FA_EXTENSION_PLUGIN_PHASE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FA_EXTENSION_PLUGIN_PHASE enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_SEND_NET_BUFFER_LISTS
-title: MINIPORT_SEND_NET_BUFFER_LISTS
+UID: NC:ndis.MINIPORT_SEND_NET_BUFFER_LISTS
+title: MINIPORT_SEND_NET_BUFFER_LISTS function
 author: windows-driver-content
 description: NDIS calls the MiniportSendNetBufferLists function to transmit network data that is contained in a linked list of NET_BUFFER_LIST structures.
 old-location: netvista\miniportsendnetbufferlists.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0bd5966d-66a6-4548-8c84-7cedced2cf40
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_SEND_NET_BUFFER_LISTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,20 +31,21 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_SEND_NET_BUFFER_LISTS callback
+# MINIPORT_SEND_NET_BUFFER_LISTS function
 
 
 
 ## -description
 NDIS calls the 
    <i>MiniportSendNetBufferLists</i> function to transmit network data that is contained in a linked list of 
-   <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures.
+   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_SEND_NET_BUFFER_LISTS MiniportSendNetBufferLists;
@@ -71,9 +72,9 @@ A handle to a context area that the miniport driver allocated in its
 ### -param NetBufferList [in]
 
 A pointer to the first 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure in a linked list
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure in a linked list
      of NET_BUFFER_LIST structures. Each NET_BUFFER_LIST structure in the list describes a list of 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structures. Each NET_BUFFER structure
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures. Each NET_BUFFER structure
      in the list maps to a chain of MDLs. The MDLs contain the network data.
 
 
@@ -81,7 +82,7 @@ A pointer to the first
 
 A port number that identifies a miniport adapter port. To assign a miniport adapter port number,
      call the 
-     <a href="netvista.ndismallocateport">NdisMAllocatePort</a> function. A zero
+     <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function. A zero
      value identifies the default port of a miniport adapter.
 
 
@@ -97,7 +98,7 @@ Flags that define attributes for the send operation. The flags can be combined w
 ### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
 
 Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.
+       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
 
 
 ### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
@@ -119,29 +120,29 @@ None
 ## -remarks
 <i>MiniportSendNetBufferLists</i> is a required function for miniport drivers. When an overlying driver
     calls the 
-    <a href="netvista.ndissendnetbufferlists">NdisSendNetBufferLists</a> function,
+    <a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a> function,
     NDIS calls the 
     <i>MiniportSendNetBufferLists</i> function of the bound miniport driver.
 
 When transmitting the network data that NDIS passes in the <i>NetBufferLists</i> parameter, the miniport driver must use the following guidelines:<ol>
 <li>
-The order of the <a href="netvista.net_buffer">NET_BUFFER</a> structures in each <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure must be preserved.
+The order of the <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures in each <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure must be preserved.
 
 </li>
 <li>
-The order of the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures should be preserved if they are to be transmitted on the same connection.
+The order of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures should be preserved if they are to be transmitted on the same connection.
 
 </li>
 <li>
-If the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures are to be transmitted on different connections, they can be split into multiple transmit queues if  the following features are in use. In this case, the order of the <b>NET_BUFFER_LIST</b> structures for each connection should be preserved.
+If the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures are to be transmitted on different connections, they can be split into multiple transmit queues if  the following features are in use. In this case, the order of the <b>NET_BUFFER_LIST</b> structures for each connection should be preserved.
 
 <ul>
 <li>
-Receive side scaling (RSS) (The RSS hash value in the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure can be used as an index into the RSS indirection table.)
+Receive side scaling (RSS) (The RSS hash value in the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure can be used as an index into the RSS indirection table.)
 
 </li>
 <li>
-Virtual Machine Queue (VMQ) (The queue identifier of the outgoing queue is set in the <b>NetBufferListFilteringInfo</b> OOB information. For more information, see <a href="netvista.vmq_transmit_path">VMQ Transmit Path</a>.)
+Virtual Machine Queue (VMQ) (The queue identifier of the outgoing queue is set in the <b>NetBufferListFilteringInfo</b> OOB information. For more information, see <a href="https://msdn.microsoft.com/a34f0708-e477-4acc-b854-f00f752be423">VMQ Transmit Path</a>.)
 
 </li>
 <li>
@@ -157,15 +158,15 @@ IEEE 802.1p (You can key off 802.1p tags without DCB.)
 </ol>
 
 
-The order of the <a href="netvista.net_buffer">NET_BUFFER</a> structures in each <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure must be preserved.
+The order of the <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures in each <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure must be preserved.
 
-The order of the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures should be preserved if they are to be transmitted on the same connection.
+The order of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures should be preserved if they are to be transmitted on the same connection.
 
-If the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures are to be transmitted on different connections, they can be split into multiple transmit queues if  the following features are in use. In this case, the order of the <b>NET_BUFFER_LIST</b> structures for each connection should be preserved.
+If the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures are to be transmitted on different connections, they can be split into multiple transmit queues if  the following features are in use. In this case, the order of the <b>NET_BUFFER_LIST</b> structures for each connection should be preserved.
 
-Receive side scaling (RSS) (The RSS hash value in the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure can be used as an index into the RSS indirection table.)
+Receive side scaling (RSS) (The RSS hash value in the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure can be used as an index into the RSS indirection table.)
 
-Virtual Machine Queue (VMQ) (The queue identifier of the outgoing queue is set in the <b>NetBufferListFilteringInfo</b> OOB information. For more information, see <a href="netvista.vmq_transmit_path">VMQ Transmit Path</a>.)
+Virtual Machine Queue (VMQ) (The queue identifier of the outgoing queue is set in the <b>NetBufferListFilteringInfo</b> OOB information. For more information, see <a href="https://msdn.microsoft.com/a34f0708-e477-4acc-b854-f00f752be423">VMQ Transmit Path</a>.)
 
 IEEE 802.1 Data Center Bridging (DCB) (You can key off the Traffic Class (TC).)
 
@@ -178,7 +179,7 @@ Miniport drivers accept all send requests that NDIS makes by calling the
     protocol-allocated resources associated with the NET_BUFFER_LIST structures.
 
 The miniport driver must call the 
-    <a href="netvista.ndismsendnetbufferlistscomplete">
+    <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
     NdisMSendNetBufferListsComplete</a> function to complete the send requests for all NET_BUFFER_LIST
     structures. To improve system performance, the driver can create a linked list that contains the
     NET_BUFFER_LIST structures from multiple send requests. The driver can then pass such a linked list in a
@@ -218,70 +219,26 @@ The <b>MINIPORT_SEND_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_ndistimeddatahang">NdisTimedDataHang</a>, <a href="devtest.ndis_ndistimeddatasend">NdisTimedDataSend</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocateport">NdisMAllocatePort</a>
+<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
 </dt>
 <dt>
-<a href="netvista.ndismsendnetbufferlistscomplete">
+<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
    NdisMSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndissendnetbufferlists">NdisSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569597">OID_GEN_MAC_OPTIONS</a>
@@ -291,5 +248,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

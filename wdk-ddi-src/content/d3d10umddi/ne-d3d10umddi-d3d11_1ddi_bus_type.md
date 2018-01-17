@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1DDI_BUS_TYPE
+UID: NE:d3d10umddi.D3D11_1DDI_BUS_TYPE
 title: D3D11_1DDI_BUS_TYPE
 author: windows-driver-content
 description: Specifies the type of I/O bus that is used by the graphics adapter.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_bus_type.htm
 old-project: display
 ms.assetid: 07cf1893-1ced-4bfa-a6f7-ec71345b9f18
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_BUS_TYPE, D3D11_1DDI_BUS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_BUS_TYPE
 ---
 
 # D3D11_1DDI_BUS_TYPE enumeration
@@ -119,39 +120,3 @@ One of the D3D11_1DDI_BUS_IMPL_MODIFIER_Xxx flags is set.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCurrentGroupAndProcessor
+UID: NF:ndis.NdisCurrentGroupAndProcessor
 title: NdisCurrentGroupAndProcessor function
 author: windows-driver-content
 description: The NdisCurrentGroupAndProcessor function returns the group-relative processor number and group number of the current processor.
 old-location: netvista\ndiscurrentgroupandprocessor.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 056f7f4b-152b-426a-b59e-0f6663b386a8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisCurrentGroupAndProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: >= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCurrentGroupAndProcessor function
@@ -73,62 +74,4 @@ NDIS drivers call the
 The PROCESSOR_NUMBER structure contains a 
     <b>Group</b> member of type USHORT and a 
     <b>Number</b> member of type UCHAR for group and processor numbers, respectively. The group and processor
-    numbers are zero-based values.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.20 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&gt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+    numbers are zero-based values.</p>

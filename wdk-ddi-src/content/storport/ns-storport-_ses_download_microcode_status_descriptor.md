@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
+UID: NS:storport._SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
 title: _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
 author: windows-driver-content
 description: The SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure specifies the status and additional status of a download microcode.
@@ -7,8 +7,8 @@ old-location: storage\ses_download_microcode_status_descriptor.htm
 old-project: storage
 ms.assetid: af686e7a-9426-4151-8ac4-d95ae1689b4c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, *PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, *PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -189,7 +190,7 @@ next power on.
 </td>
 <td width="60%">
 Download microcode operation complete with no error. The enclosure services process
-(e.g., an attached enclosure services process) begins using the new microcode after either processing a <a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a> specifying the activate deferred microcode mode, hard reset, or power on.
+(e.g., an attached enclosure services process) begins using the new microcode after either processing a <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a> specifying the activate deferred microcode mode, hard reset, or power on.
 
 </td>
 </tr>
@@ -280,7 +281,7 @@ Internal error in the download microcode operation. Hard reset and power on safe
 
 </td>
 <td width="60%">
-Processed a <a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a> with the <i>Mode</i> field set to 0x0F (i.e., activate deferred microcode), if there is no deferred microcode.
+Processed a <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a> with the <i>Mode</i> field set to 0x0F (i.e., activate deferred microcode), if there is no deferred microcode.
 
 </td>
 </tr>
@@ -320,7 +321,7 @@ values of <i>Status</i> .
 
 Indicates the maximum size in bytes of the
 microcode image that the enclosure services process accepts. The image may be delivered using one or
-more <a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
+more <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
 
 
 ### -field Reserved2
@@ -331,52 +332,27 @@ Reserved for future use.
 ### -field ExpectedBufferId
 
 Indicates the next value that the
-enclosure services process expects in the <i>BufferId</i> field in <a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
+enclosure services process expects in the <i>BufferId</i> field in <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
 
 
 ### -field ExpectedBufferOffset
 
 Indicates the next value that the
-enclosure services process expects in the <i>BufferOffset</i> field in <a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>. If the enclosure services process accepts arbitrary <i>BufferOffset</i> values, then it shall set <i>ExpectedBufferOffset</i> to 0xFFFFFFFF.
+enclosure services process expects in the <i>BufferOffset</i> field in <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>. If the enclosure services process accepts arbitrary <i>BufferOffset</i> values, then it shall set <i>ExpectedBufferOffset</i> to 0xFFFFFFFF.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1709 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsi.h (include Minitape.h or Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage._ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>
+<a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

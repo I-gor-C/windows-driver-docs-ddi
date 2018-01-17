@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._SET_CMP_ADDRESS_TYPE
+UID: NS:61883._SET_CMP_ADDRESS_TYPE
 title: _SET_CMP_ADDRESS_TYPE
 author: windows-driver-content
 description: The SET_CMP_ADDRESS_TYPE structure is used in conjunction with the Av61883_SetUnitInfo request to set the parameters that the IEC-61883 protocol driver should use when capturing and transmitting isochronous packets.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: b08588a2-d786-44c1-a265-0f7fef9ecd6a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SET_CMP_ADDRESS_TYPE, SET_CMP_ADDRESS_TYPE, PSET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE
+ms.keywords: _SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE, SET_CMP_ADDRESS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSET_CMP_ADDRESS_TYPE, SET_CMP_ADDRESS_TYPE
 ---
 
 # _SET_CMP_ADDRESS_TYPE structure
@@ -74,21 +75,6 @@ This flag must be set before any plugs are created or removed within the driver.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
 title: _GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to clear.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS structure
@@ -73,31 +74,6 @@ A 64-bit mask that identifies the GPIO pins that could not be cleared. If the GP
 ## -remarks
 The <i>ClearParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439341">CLIENT_ClearActiveInterrupts</a> event callback function is a pointer to a caller-allocated <b>GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS</b> structure. This function affects only GPIO pins that are configured as interrupt inputs and that are part of the specified bank of GPIO pins.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

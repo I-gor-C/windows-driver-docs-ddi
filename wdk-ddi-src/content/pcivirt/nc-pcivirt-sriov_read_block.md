@@ -1,17 +1,17 @@
 ---
-UID: NC.pcivirt.SRIOV_READ_BLOCK
-title: SRIOV_READ_BLOCK
+UID: NC:pcivirt.SRIOV_READ_BLOCK
+title: SRIOV_READ_BLOCK function
 author: windows-driver-content
 description: Reads data from the specified configuration block of a PCI Express SR-IOV Virtual Function (VF).
 old-location: pci\sriov_read_block.htm
 old-project: PCI
 ms.assetid: af0d3465-2854-47d9-a6a4-06f510229a59
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/29/2017
+ms.keywords: SRIOV_READ_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: pcivirt.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
-# SRIOV_READ_BLOCK callback
+# SRIOV_READ_BLOCK function
 
 
 
@@ -42,7 +43,7 @@ Reads data from the specified configuration block of a PCI Express SR-IOV Virtua
 
 
 
-## -prototype
+## -syntax
 
 ````
 SRIOV_READ_BLOCK SriovReadBlock;
@@ -97,50 +98,4 @@ Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriat
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to read a configuration block for one of its VFs.
 
-The PF driver registers its implementation by setting the <b>ReadVfConfigBlock</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The PF driver registers its implementation by setting the <b>ReadVfConfigBlock</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.</p>

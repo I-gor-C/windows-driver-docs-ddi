@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_NET_PNP_EVENT
-title: PROTOCOL_NET_PNP_EVENT
+UID: NC:ndis.PROTOCOL_NET_PNP_EVENT
+title: PROTOCOL_NET_PNP_EVENT function
 author: windows-driver-content
 description: NDIS calls the ProtocolNetPnPEvent function to indicate a network Plug and Play event, an NDIS PnP event, or a power management event to a protocol driver.Note  You must declare the function by using the PROTOCOL_NET_PNP_EVENT type.
 old-location: netvista\protocolnetpnpevent.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3f50bcba-c7d2-4d81-bd8b-6080e08fbe74
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_NET_PNP_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_NET_PNP_EVENT callback
+# PROTOCOL_NET_PNP_EVENT function
 
 
 
@@ -44,7 +45,7 @@ NDIS calls the
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_NET_PNP_EVENT ProtocolNetPnPEvent;
@@ -63,7 +64,7 @@ NDIS_STATUS ProtocolNetPnPEvent(
 
 The handle to a protocol-driver-allocated context area in which this driver maintains per-binding
      run-time state information. The protocol driver supplied this handle when it called the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function. A 
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. A 
      <b>NetEvent</b><i>Xxx</i> event that is indicated with a <b>NULL</b><i>ProtocolBindingContext</i> applies to all bindings. 
      <b>NetEventBindList</b> and 
      <b>NetEventBindsComplete</b> are always indicated with a <b>NULL</b><i>ProtocolBindingContext</i>. 
@@ -74,7 +75,7 @@ The handle to a protocol-driver-allocated context area in which this driver main
 ### -param NetPnPEvent [in]
 
 A pointer to a 
-     <a href="netvista.net_pnp_event_notification">
+     <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
      NET_PNP_EVENT_NOTIFICATION</a> structure which describes the Plug and Play event or Power Management
      event that NDIS is indicating to the protocol driver.
 
@@ -86,7 +87,7 @@ A pointer to a
 </dl>The protocol driver successfully handled the indicated network Plug and Play event, NDIS PnP
        event, or power management event. The meaning of this status code depends on the 
        <b>NetEvent</b> code in the buffered 
-       <a href="netvista.net_pnp_event_notification">
+       <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
        NET_PNP_EVENT_NOTIFICATION</a> structure at 
        <i>NetPnPEvent</i>:
        
@@ -143,7 +144,7 @@ The specified protocol binding has entered the
          <i>Pausing</i> state. The binding will enter the 
          <i>Paused</i> state after NDIS has completed all of the outstanding send requests
          for the binding. For more information about pause operations, see 
-         <a href="netvista.pausing_a_binding">Pausing a Binding</a>.
+         <a href="https://msdn.microsoft.com/7f693904-d995-4fcb-8b88-9343a567602e">Pausing a Binding</a>.
 
 </dd>
 <dt><a id="NetEventRestart"></a><a id="neteventrestart"></a><a id="NETEVENTRESTART"></a><b>NetEventRestart</b></dt>
@@ -158,7 +159,7 @@ The specified protocol binding has entered the
 <dd>
 The protocol driver has acknowledged the activation of a port that is associated with the
          specified binding. For more information about port activation, see 
-         <a href="netvista.activating_an_ndis_port">Activating an NDIS Port</a>.
+         <a href="https://msdn.microsoft.com/0f3bfda2-8faa-4a92-a76b-0c0c361bd667">Activating an NDIS Port</a>.
 
 </dd>
 <dt><a id="NetEventPortDeactivation"></a><a id="neteventportdeactivation"></a><a id="NETEVENTPORTDEACTIVATION"></a><b>NetEventPortDeactivation</b></dt>
@@ -191,7 +192,7 @@ The specified protocol binding has entered the
          <i>Pausing</i> state. The binding will enter the 
          <i>Paused</i> state after NDIS has completed all of the outstanding send requests
          for the binding. For more information about pause operations, see 
-         <a href="netvista.pausing_a_binding">Pausing a Binding</a>.
+         <a href="https://msdn.microsoft.com/7f693904-d995-4fcb-8b88-9343a567602e">Pausing a Binding</a>.
 
 The specified protocol binding has entered the 
          <i>Restarting</i> state. After the protocol driver is ready to resume send and
@@ -200,7 +201,7 @@ The specified protocol binding has entered the
 
 The protocol driver has acknowledged the activation of a port that is associated with the
          specified binding. For more information about port activation, see 
-         <a href="netvista.activating_an_ndis_port">Activating an NDIS Port</a>.
+         <a href="https://msdn.microsoft.com/0f3bfda2-8faa-4a92-a76b-0c0c361bd667">Activating an NDIS Port</a>.
 
 The protocol driver has acknowledged the activation of a port that is associated with the
          specified binding.
@@ -208,7 +209,7 @@ The protocol driver has acknowledged the activation of a port that is associated
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>The protocol driver will return its response to the indicated event asynchronously with a call
        to the 
-       <a href="netvista.ndiscompletenetpnpevent">
+       <a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">
        NdisCompleteNetPnPEvent</a> function.
 <dl>
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
@@ -254,7 +255,7 @@ The
     event, an NDIS PnP event, or Power Management event has occurred.
 
 The 
-    <a href="netvista.net_pnp_event_notification">
+    <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
     NET_PNP_EVENT_NOTIFICATION</a> structure that is passed to 
     <i>ProtocolNetPnPEvent</i> describes the event. 
     <i>ProtocolNetPnPEvent</i> interprets two basic pieces of information in the
@@ -271,18 +272,18 @@ Event-specific information. For example, with a
 
 The protocol driver should save the 
     <i>NetPnPEvent</i> pointer. This pointer is a required input parameter to the 
-    <a href="netvista.ndiscompletenetpnpevent">NdisCompleteNetPnPEvent</a> function,
+    <a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a> function,
     which the protocol driver must subsequently call if 
     <i>ProtocolNetPnPEvent</i> returns NDIS_STATUS_PENDING.
 
 A protocol driver should always succeed a 
     <b>NetEventQueryPower</b> event. After establishing an active connection, a
     protocol driver can call the 
-    <a href="kernel.poregistersystemstate">PoRegisterSystemState</a> function to
+    <a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a> function to
     register a continuously busy state. As long as the state registration is in effect, the power manager
     does not attempt to put the system to sleep. After the connection becomes inactive, the protocol driver
     cancels the state registration by calling the 
-    <a href="kernel.pounregistersystemstate">PoUnregisterSystemState</a> function. A
+    <a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a> function. A
     protocol driver should never try to prevent the system from transitioning to the sleeping state by
     failing a 
     <b>NetEventQueryPower</b> event. Note that a 
@@ -308,7 +309,7 @@ When handling a
     <b>NetEventReconfigure</b> or a 
     <b>NetEventBindList</b>, a protocol driver should validate the data associated
     with the event. For more information about such data, see 
-    <a href="netvista.net_pnp_event_notification">NET_PNP_EVENT_NOTIFICATION</a>.
+    <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>.
 
 NDIS calls 
     <i>ProtocolNetPnPEvent</i> at IRQL = PASSIVE_LEVEL.
@@ -324,62 +325,27 @@ The <b>PROTOCOL_NET_PNP_EVENT</b> function type is defined in the Ndis.h header 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_pnp_event_notification">NET_PNP_EVENT_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="netvista.ndiscompletenetpnpevent">NdisCompleteNetPnPEvent</a>
+<a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="kernel.poregistersystemstate">PoRegisterSystemState</a>
+<a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>
 </dt>
 <dt>
-<a href="kernel.pounregistersystemstate">PoUnregisterSystemState</a>
+<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_NET_PNP_EVENT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_NET_PNP_EVENT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

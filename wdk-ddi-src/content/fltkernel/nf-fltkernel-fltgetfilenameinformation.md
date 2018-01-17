@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltGetFileNameInformation
+UID: NF:fltkernel.FltGetFileNameInformation
 title: FltGetFileNameInformation function
 author: windows-driver-content
 description: The FltGetFileNameInformation routine returns name information for a file or directory.
@@ -7,7 +7,7 @@ old-location: ifsk\fltgetfilenameinformation.htm
 old-project: ifsk
 ms.assetid: 707e7e83-31d8-46cf-a2ef-e53a20edaeff
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltGetFileNameInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltGetFileNameInformation function
@@ -57,15 +58,15 @@ NTSTATUS FltGetFileNameInformation(
 
 ### -param CallbackData [in]
 
-A pointer to the callback data structure for the I/O operation (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. 
+A pointer to the callback data structure for the I/O operation (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. 
 
 
 ### -param NameOptions [in]
 
 
-<a href="ifsk.flt_file_name_options">FLT_FILE_NAME_OPTIONS</a> value containing flags that specify the format of the name information to be returned, as well as the query method that the Filter Manager is to use. (Additional flags can be used by name provider minifilter drivers to specify name query options. For more information, see <b>FLT_FILE_NAME_OPTIONS</b>.) This parameter is required and cannot be <b>NULL</b>. 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a> value containing flags that specify the format of the name information to be returned, as well as the query method that the Filter Manager is to use. (Additional flags can be used by name provider minifilter drivers to specify name query options. For more information, see <b>FLT_FILE_NAME_OPTIONS</b>.) This parameter is required and cannot be <b>NULL</b>. 
 
-Following are the name format flag values. Only one of the following flags can be specified. (For an explanation of these formats, see <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a>.) 
+Following are the name format flag values. Only one of the following flags can be specified. (For an explanation of these formats, see <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>.) 
 
 <table>
 <tr>
@@ -202,7 +203,7 @@ This flag is available on Microsoft Windows Server 2003 SP1 and later. This flag
 
 ### -param FileNameInformation [out]
 
-A pointer to a caller-allocated variable that receives the address of a system-allocated <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>. 
+A pointer to a caller-allocated variable that receives the address of a system-allocated <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>. 
 
 
 ## -returns
@@ -211,7 +212,7 @@ If the name information is successfully returned, <b>FltGetFileNameInformation</
 <dt><b>STATUS_FLT_INVALID_NAME_REQUEST</b></dt>
 </dl>One of the following: 
 
-<b>FltGetFileNameInformation</b> cannot get file name information if the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information about this issue, see <a href="ifsk.iogettoplevelirp">IoGetTopLevelIrp</a>.) 
+<b>FltGetFileNameInformation</b> cannot get file name information if the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information about this issue, see <a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>.) 
 
 <b>FltGetFileNameInformation</b> cannot get file name information in the paging I/O path. 
 
@@ -259,21 +260,21 @@ The file is a system file with all access denied.
 
 For a pre-create operation, if the <b>CallbackData</b> -&gt;<b>Iopb</b> -&gt;<b>OperationFlags</b> member contains the SL_OPEN_TARGET_DIRECTORY bitwise flag, <b>FltGetFileNameInformation</b> returns the name of the containing (parent) directory for the given file. This name is the actual path that the create operation opens.
 
-To parse the contents of the FLT_FILE_NAME_INFORMATION structure returned by <b>FltGetFileNameInformation</b>, call <a href="ifsk.fltparsefilenameinformation">FltParseFileNameInformation</a>. (For more information about file name formats, see <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a>.) 
+To parse the contents of the FLT_FILE_NAME_INFORMATION structure returned by <b>FltGetFileNameInformation</b>, call <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. (For more information about file name formats, see <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>.) 
 
-After a successful call to <b>FltGetFileNameInformation</b>, the caller is responsible for releasing the pointer returned in the <i>FileNameInformation</i> parameter when the pointer is no longer needed. The caller does this by calling <a href="ifsk.fltreleasefilenameinformation">FltReleaseFileNameInformation</a>. 
+After a successful call to <b>FltGetFileNameInformation</b>, the caller is responsible for releasing the pointer returned in the <i>FileNameInformation</i> parameter when the pointer is no longer needed. The caller does this by calling <a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a>. 
 
 The caller must not modify the contents of the structure returned in the <i>FileNameInformation</i> parameter because this structure is cached by the Filter Manager so that all minifilter drivers can use it. 
 
 If <b>FltGetFileNameInformation</b> is called in the preoperation callback routine for a create operation to retrieve the opened name, <b>FltGetFileNameInformation</b> succeeds even if the path to the file being opened does not exist on the volume. If <b>FltGetFileNameInformation</b> is called in the preoperation callback routine for a create operation to retrieve the normalized name, <b>FltGetFileNameInformation</b> succeeds even if the final component of the path to the file being opened does not exist on the volume.
 
-In create, hard-link, and rename operations, file name tunneling can cause the final component in normalized file name information that a minifilter driver retrieves in a preoperation callback routine to be invalidated. If a minifilter driver retrieves normalized file name information in a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine by calling a routine such as <b>FltGetFileNameInformation</b>, it must call <a href="ifsk.fltgettunneledname">FltGetTunneledName</a> from its postoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine to retrieve the correct file name information for the file. 
+In create, hard-link, and rename operations, file name tunneling can cause the final component in normalized file name information that a minifilter driver retrieves in a preoperation callback routine to be invalidated. If a minifilter driver retrieves normalized file name information in a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine by calling a routine such as <b>FltGetFileNameInformation</b>, it must call <a href="..\fltkernel\nf-fltkernel-fltgettunneledname.md">FltGetTunneledName</a> from its postoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine to retrieve the correct file name information for the file. 
 
-For Windows 8.1 and earlier, <b>FltGetFileNameInformation</b> can include a <a href="fs.file_streams">stream type</a> <i>only</i> when called from a filter’s pre-create callback.  To distinguish between a file’s default stream and metadata streams, this call should be made in the pre-create operation. The resulting stream type will remain valid across the lifetime of the file.
+For Windows 8.1 and earlier, <b>FltGetFileNameInformation</b> can include a <a href="https://msdn.microsoft.com/41dda6f1-a6d1-4e76-94f3-a72f9e491bee">stream type</a> <i>only</i> when called from a filter’s pre-create callback.  To distinguish between a file’s default stream and metadata streams, this call should be made in the pre-create operation. The resulting stream type will remain valid across the lifetime of the file.
 
  Prior to Windows 8, Filter Manager obtained the normalized name for a file or directory by collecting the name information for each component of  the file path. This required multiple queries to the file system to compile the complete path. Starting with Windows 8, local file systems support the  <b>FileNormalizedNameInformation</b> file information class and only a single query is necessary to obtain the normalized name. Remote file systems may not support the <b>FileNormalizedNameInformation</b> file information class. When this is the case, a query for each component of the file path is still required to assemble the normalized name. Under certain network conditions, a full name query can require a significant amount of time to complete.
 
-For more information about normalized file name information, see <a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a>. 
+For more information about normalized file name information, see <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>. 
 
 The following paired operations can cause the file name <i>name</i> to be tunneled: 
 
@@ -288,95 +289,37 @@ rename(<i>name</i>, <i>newname</i>)/rename(<i>source</i>, <i>name</i>)
 For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltmgr.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="ifsk.flt_file_name_information">FLT_FILE_NAME_INFORMATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.flt_file_name_options">FLT_FILE_NAME_OPTIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetfilenameinformationunsafe">FltGetFileNameInformationUnsafe</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
 </dt>
 <dt>
-<a href="ifsk.fltgettunneledname">FltGetTunneledName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgettunneledname.md">FltGetTunneledName</a>
 </dt>
 <dt>
-<a href="ifsk.fltparsefilenameinformation">FltParseFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltreferencefilenameinformation">FltReferenceFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltreferencefilenameinformation.md">FltReferenceFileNameInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltreleasefilenameinformation">FltReleaseFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a>
 </dt>
 <dt>
-<a href="ifsk.iogettoplevelirp">IoGetTopLevelIrp</a>
+<a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
@@ -389,5 +332,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetFileNameInformation routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetFileNameInformation routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

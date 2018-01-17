@@ -1,17 +1,17 @@
 ---
-UID: NC.ucxendpoint.EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS
-title: EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS
+UID: NC:ucxendpoint.EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS
+title: EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS function
 author: windows-driver-content
 description: The client driver's implementation that UCX calls to notify the controller driver that it can complete cancelled transfers on the endpoint.
 old-location: buses\evt_ucx_endpoint_ok_to_cancel_transfers.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 3cb30b74-d50d-49dd-ab5d-de1cf71facd4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
+ms.date: 1/4/2018
+ms.keywords: EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ucxendpoint.h
 req.include-header: Ucxclass.h, Ucxendpoint.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
 req.product: Windows 10 or later.
 ---
 
-# EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS callback
+# EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS function
 
 
 
@@ -44,7 +45,7 @@ The client driver's implementation that UCX calls to notify the controller drive
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS EvtUcxEndpointOkToCancelTransfers;
@@ -70,54 +71,8 @@ This callback function does not return a value.
 
 
 ## -remarks
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.
 
-Before completing the URB associated with the transfer, the client driver calls <a href="buses._ucxendpointneedtocanceltransfers">UcxEndpointNeedToCancelTransfers</a>
-and then waits for UCX to call this function. Then the client driver can complete the URB with <b>STATUS_CANCELLED</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxendpoint.h (include Ucxclass.h or Ucxendpoint.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+Before completing the URB associated with the transfer, the client driver calls <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointneedtocanceltransfers.md">UcxEndpointNeedToCancelTransfers</a>
+and then waits for UCX to call this function. Then the client driver can complete the URB with <b>STATUS_CANCELLED</b>.</p>

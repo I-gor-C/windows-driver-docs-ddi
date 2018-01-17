@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_ADD_DEVICE
-title: MINIPORT_ADD_DEVICE
+UID: NC:ndis.MINIPORT_ADD_DEVICE
+title: MINIPORT_ADD_DEVICE function
 author: windows-driver-content
 description: The MiniportAddDevice function enables a miniport driver to establish a context area for an added device.
 old-location: netvista\miniportadddevice.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 50e04b5a-e430-484c-aabb-cc7b9ecb53b0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_ADD_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_ADD_DEVICE callback
+# MINIPORT_ADD_DEVICE function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_ADD_DEVICE MiniportAddDevice;
@@ -71,7 +72,7 @@ An NDIS handle that identifies the miniport adapter that the Plug and Play (PnP)
 
 A handle to a driver-allocated context area where the driver maintains state and configuration
      information. The miniport driver passed this context area to the 
-     <a href="netvista.ndismregisterminiportdriver">
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function.
 
 
@@ -101,7 +102,7 @@ If
 The 
     <i>MiniportAddDevice</i> function is an optional function. Miniport drivers that
     support MSI-X should specify an entry point for this function in the 
-    <a href="netvista.ndis_miniport_pnp_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
     NDIS_MINIPORT_PNP_CHARACTERISTICS</a> structure.
 
 <i>MiniportAddDevice</i> can allocate a context area for handling 
@@ -110,9 +111,9 @@ The
     <a href="netvista.miniportfilterresourcerequirements">
     MiniportFilterResourceRequirements</a> function handles. Miniport drivers specify the context area by
     initializing an 
-    <a href="netvista.ndis_miniport_add_device_registration_attributes">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_add_device_registration_attributes.md">
     NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure and then calling the 
-    <a href="netvista.ndismsetminiportattributes">
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
     NdisMSetMiniportAttributes</a> function. NDIS later provides this context handle to the 
     <a href="..\ndis\nc-ndis-miniport_remove_device.md">MiniportRemoveDevice</a>, 
     <i>
@@ -122,7 +123,7 @@ The
     For 
     <i>MiniportInitializeEx</i>, the context handle is passed in the 
     <b>MiniportAddDeviceContext</b> member of the 
-    <a href="netvista.ndis_miniport_init_parameters">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">
     NDIS_MINIPORT_INIT_PARAMETERS</a> structure that the 
     <i>MiniportInitParameters</i> parameter points to.
 
@@ -132,9 +133,9 @@ If the miniport driver fails the
     <i>MiniportAddDevice</i>.
 
 Miniport drivers should use a different context area for the 
-    <b>MiniportAddDeviceContext</b> member of the <a href="netvista.ndis_miniport_add_device_registration_attributes">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure
+    <b>MiniportAddDeviceContext</b> member of the <a href="..\ndis\ns-ndis-_ndis_miniport_add_device_registration_attributes.md">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure
     and the 
-    <b>MiniportAdapterContext</b> member of the <a href="netvista.ndis_miniport_init_parameters">NDIS_MINIPORT_INIT_PARAMETERS</a> structure. Separate context
+    <b>MiniportAdapterContext</b> member of the <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a> structure. Separate context
     areas will ensure that information in the context area is not reinitialized, which might occur in the 
     <i>MiniportInitializeEx</i> function if the miniport adapter is halted and
     reinitialized.
@@ -158,41 +159,6 @@ The <b>MINIPORT_ADD_DEVICE</b> function type is defined in the Ndis.h header fil
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -213,26 +179,26 @@ PASSIVE_LEVEL
 <a href="..\ndis\nc-ndis-miniport_pnp_irp.md">MiniportStartDevice</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_add_device_registration_attributes">
+<a href="..\ndis\ns-ndis-_ndis_miniport_add_device_registration_attributes.md">
    NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_init_parameters">NDIS_MINIPORT_INIT_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_pnp_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
    NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_ADD_DEVICE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_ADD_DEVICE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

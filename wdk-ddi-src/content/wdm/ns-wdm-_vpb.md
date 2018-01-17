@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._VPB
+UID: NS:wdm._VPB
 title: _VPB
 author: windows-driver-content
 description: The volume parameter block (VPB) structure is used to map a device object that represents a mounted file system volume to a device object that represents a physical or virtual disk device.
@@ -7,8 +7,8 @@ old-location: ifsk\vpb.htm
 old-project: ifsk
 ms.assetid: aba1638f-1ab0-4953-afe9-1f539e5bd967
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _VPB, PVPB, *PVPB, VPB
+ms.date: 1/9/2018
+ms.keywords: _VPB, VPB, *PVPB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: VPB, *PVPB
 req.product: Windows 10 or later.
 ---
 
@@ -178,7 +179,7 @@ A read/write member, set by the file system driver, that specifies the label of 
 ## -remarks
 A volume parameter block (VPB) object is used to create an association between a physical disk device object and a logical volume device object. That is, a VPB maps a file system's volume device object to the device or partition upon which the volume is mounted. A VPB object exists only for device objects that represent physical media, virtual media, or logical media that can be mounted.
 
-The I/O manager allocates and deallocates memory for the VPB structure from nonpaged pool. This allocation (or deallocation) occurs when a device object (as described previously) is created by calling either the <a href="kernel.iocreatedevice">IoCreateDevice</a> or <a href="ifsk.ioverifyvolume">IoVerifyVolume</a> functions. That is, the device object that is created must be one of the following types:<ul>
+The I/O manager allocates and deallocates memory for the VPB structure from nonpaged pool. This allocation (or deallocation) occurs when a device object (as described previously) is created by calling either the <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> or <a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a> functions. That is, the device object that is created must be one of the following types:<ul>
 <li>FILE_DEVICE_DISK</li>
 <li>FILE_DEVICE_CD_ROM</li>
 <li>FILE_DEVICE_TAPE</li>
@@ -188,39 +189,24 @@ The I/O manager allocates and deallocates memory for the VPB structure from nonp
 
 For more information about device object types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.
 
-Drivers must call <a href="ifsk.ioacquirevpbspinlock">IoAcquireVpbSpinLock</a> before they access any applicable members of the VPB object.
+Drivers must call <a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a> before they access any applicable members of the VPB object.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, or FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="ifsk.file_objectid_information">FILE_OBJECT</a>
+<a href="..\ntifs\ns-ntifs-_file_objectid_information.md">FILE_OBJECT</a>
 </dt>
 <dt>
-<a href="ifsk.how_the_volume_is_mounted">How the Volume Is Mounted</a>
+<a href="https://msdn.microsoft.com/e8f39b06-9904-40e8-af52-eae310d11fa7">How the Volume Is Mounted</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20VPB structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20VPB structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

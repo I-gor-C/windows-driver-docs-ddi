@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_DDI_SHADER_MIN_PRECISION
+UID: NE:d3d10umddi.D3D11_DDI_SHADER_MIN_PRECISION
 title: D3D11_DDI_SHADER_MIN_PRECISION
 author: windows-driver-content
 description: Specifies minimum precision levels that the user-mode driver supports in shaders.
@@ -7,7 +7,7 @@ old-location: display\d3d11_ddi_shader_min_precision.htm
 old-project: display
 ms.assetid: cf77d6c7-8f42-470a-9e3a-85d95398470b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_DDI_SHADER_MIN_PRECISION, D3D11_DDI_SHADER_MIN_PRECISION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_DDI_SHADER_MIN_PRECISION
 ---
 
 # D3D11_DDI_SHADER_MIN_PRECISION enumeration
@@ -65,39 +66,3 @@ The minimum precision level is 16-bit.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

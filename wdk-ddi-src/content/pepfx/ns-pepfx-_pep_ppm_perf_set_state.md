@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_PPM_PERF_SET_STATE
+UID: NS:pepfx._PEP_PPM_PERF_SET_STATE
 title: _PEP_PPM_PERF_SET_STATE
 author: windows-driver-content
 description: Used in the PEP_NOTIFY_PPM_PERF_SET notification at runtime to set the current operating performance of the processor.  .
@@ -7,8 +7,8 @@ old-location: kernel\pep_ppm_perf_set_state.htm
 old-project: kernel
 ms.assetid: 0d822370-f08b-404d-ad0f-60ea091661d9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_PPM_PERF_SET_STATE, PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE
+ms.date: 1/4/2018
+ms.keywords: _PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE
 ---
 
 # _PEP_PPM_PERF_SET_STATE structure
@@ -82,50 +83,15 @@ On input, the new requested desired performance state. This state is defined as 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.processor_power_management__ppm__notifications">Processor power management (PPM) notifications</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186881">Processor power management (PPM) notifications</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_PERF_SET_STATE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_PERF_SET_STATE structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

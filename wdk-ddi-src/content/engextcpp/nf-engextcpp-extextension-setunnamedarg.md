@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtExtension.SetUnnamedArg
+UID: NF:engextcpp.ExtExtension.SetUnnamedArg
 title: ExtExtension::SetUnnamedArg method
 author: windows-driver-content
 description: The SetUnnamedArg method sets an unnamed argument for the current extension command.
 old-location: debugger\setunnamedarg.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: cf518a6b-275f-4f9c-9aa8-e2e96c468ff9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtExtension, ExtExtension::SetUnnamedArg, SetUnnamedArg
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # ExtExtension::SetUnnamedArg method
@@ -58,7 +59,7 @@ bool SetUnnamedArg(
 
 ### -param Index [in]
 
-Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments, as specified in the command-line description used in <a href="debugger.ext_command">EXT_COMMAND</a>, minus one (unnamed arguments - 1).
+Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments, as specified in the command-line description used in <a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a>, minus one (unnamed arguments - 1).
 
 
 ### -param StrArg [in, optional]
@@ -92,44 +93,18 @@ For an overview of argument parsing in the EngExtCpp extensions framework, see <
 This method should only be called during the execution of an extension command provided by this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Engextcpp.hpp (include Engextcpp.hpp)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="debugger.extextension">ExtExtension</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543981">ExtExtension</a>
 </dt>
 <dt>
-<a href="debugger.ext_command">EXT_COMMAND</a>
+<a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20ExtExtension.SetUnnamedArg method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20ExtExtension.SetUnnamedArg method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

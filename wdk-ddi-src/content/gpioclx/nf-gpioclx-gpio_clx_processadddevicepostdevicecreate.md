@@ -1,5 +1,5 @@
 ---
-UID: NF.gpioclx.GPIO_CLX_ProcessAddDevicePostDeviceCreate
+UID: NF:gpioclx.GPIO_CLX_ProcessAddDevicePostDeviceCreate
 title: GPIO_CLX_ProcessAddDevicePostDeviceCreate function
 author: windows-driver-content
 description: The GPIO_CLX_ProcessAddDevicePostDeviceCreate method passes a framework device object to the GPIO framework extension (GpioClx).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Msgpioclxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE
 ---
 
 # GPIO_CLX_ProcessAddDevicePostDeviceCreate function
@@ -61,7 +62,7 @@ A WDFDRIVER handle to the framework driver object for the GPIO controller driver
 
 ### -param Device [in]
 
-A WDFDEVICE handle to the framework device object that represents the GPIO controller. The caller obtained this handle from the <a href="kmdf.wdfdevicecreate">WdfDeviceCreate</a> call that created the device object.
+A WDFDEVICE handle to the framework device object that represents the GPIO controller. The caller obtained this handle from the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call that created the device object.
 
 
 ## -returns
@@ -80,67 +81,10 @@ A WDFDEVICE handle to the framework device object that represents the GPIO contr
 
 
 ## -remarks
-Your GPIO controller driver must call this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function, after the call to the <a href="kmdf.wdfdevicecreate">WdfDeviceCreate</a> method that creates the device object (FDO) that represents the GPIO controller. Otherwise, GpioClx cannot handle I/O requests or process interrupts for the new device object.
+Your GPIO controller driver must call this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function, after the call to the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> method that creates the device object (FDO) that represents the GPIO controller. Otherwise, GpioClx cannot handle I/O requests or process interrupts for the new device object.
 
 For a code example that contains a call to <b>GPIO_CLX_ProcessAddDevicePostDeviceCreate</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439487">GPIO_CLX_ProcessAddDevicePreDeviceCreate</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Msgpioclxstub.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -151,7 +95,7 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439487">GPIO_CLX_ProcessAddDevicePreDeviceCreate</a>
 </dt>
 <dt>
-<a href="kmdf.wdfdevicecreate">WdfDeviceCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._KDPC_WATCHDOG_INFORMATION
+UID: NS:wdm._KDPC_WATCHDOG_INFORMATION
 title: _KDPC_WATCHDOG_INFORMATION
 author: windows-driver-content
 description: The KDPC_WATCHDOG_INFORMATION structure holds time-out information about the current deferred procedure call (DPC).
@@ -7,8 +7,8 @@ old-location: kernel\dpc_watchdog_information.htm
 old-project: kernel
 ms.assetid: 8b0d3fd8-0952-4cfa-81e1-255145fd27dd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _KDPC_WATCHDOG_INFORMATION, PKDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _KDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -87,40 +88,15 @@ Reserved for system use.
 Time figures stored in each member are dimensionless.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kequerydpcwatchdoginformation">KeQueryDpcWatchdogInformation</a>
+<a href="..\wdm\nf-wdm-kequerydpcwatchdoginformation.md">KeQueryDpcWatchdogInformation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KDPC_WATCHDOG_INFORMATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KDPC_WATCHDOG_INFORMATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

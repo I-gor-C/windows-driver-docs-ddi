@@ -1,5 +1,5 @@
 ---
-UID: NF.kcom.KoDriverInitialize
+UID: NF:kcom.KoDriverInitialize
 title: KoDriverInitialize function
 author: windows-driver-content
 description: The KoDriverInitialize function initializes a driver object to handle the kernel streaming interface.
@@ -7,7 +7,7 @@ old-location: stream\kodriverinitialize.htm
 old-project: stream
 ms.assetid: ed61d135-967d-4e7c-b437-09c9e0e6f3c2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KoDriverInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: *PCONNECT_DATA, CONNECT_DATA
 ---
 
 # KoDriverInitialize function
@@ -77,41 +78,3 @@ Returns STATUS_SUCCESS if successful. Otherwise, it returns a memory allocation 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kcom.h (include Kcom.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ks.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

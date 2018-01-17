@@ -1,5 +1,5 @@
 ---
-UID: NS.UFS.UFS_GEOMETRY_DESCRIPTOR
+UID: NS:ufs.UFS_GEOMETRY_DESCRIPTOR
 title: UFS_GEOMETRY_DESCRIPTOR
 author: windows-driver-content
 description: UFS_GEOMETRY_DESCRIPTOR describes a device's geometric parameters.
@@ -7,8 +7,8 @@ old-location: storage\ufs_geometry_descriptor.htm
 old-project: storage
 ms.assetid: DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -410,40 +411,4 @@ Specifies the optimal logical block size.
 ## -remarks
 If the size of the data transferred exceeds the number of frames <b>bRPMB_ReadWriteSize</b>, it will be done in multiple Security commands.
 
-The Capacity Adjustment Factor value for a normal memory type is equal to 1.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The Capacity Adjustment Factor value for a normal memory type is equal to 1.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NI.bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
+UID: NI:bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
 title: IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
 author: windows-driver-content
 description: The IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2 IOCTL Gets descriptive information about the paired Handsfree profile (HFP) device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2 IOCTL
@@ -56,7 +57,7 @@ None
 
 
 ### -output-buffer
-A buffer containing a <a href="audio.bthhfp_descriptor2">BTHHFP_DESCRIPTOR2</a> structure followed by any other data that is referenced by the structure. This is true,  if the output buffer size is sufficient and the request succeeds. In particular, the buffer includes storage for the string that is referenced by the <i>FriendlyName</i> field of the <b>BTHHFP_DESCRIPTOR2</b> structure.
+A buffer containing a <a href="..\bthhfpddi\ns-bthhfpddi-_bthhfp_descriptor2.md">BTHHFP_DESCRIPTOR2</a> structure followed by any other data that is referenced by the structure. This is true,  if the output buffer size is sufficient and the request succeeds. In particular, the buffer includes storage for the string that is referenced by the <i>FriendlyName</i> field of the <b>BTHHFP_DESCRIPTOR2</b> structure.
 
 
 ### -output-buffer-length
@@ -84,48 +85,13 @@ The audio driver sends this request to obtain information about an enabled GUID_
 The audio driver sends this request once with an output buffer size of zero (0) in order to determine the required output buffer size. In this case, the request will complete with Status STATUS_BUFFER_TOO_SMALL and the <i>Information</i> parameter will  contain the required buffer size. The audio driver then allocates the necessary storage and sends the request again. Typically an audio driver will keep a pointer to this storage location in its device context for reference during later activity.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthhfpddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
 </dt>
 <dt>
-<a href="audio.bthhfp_descriptor2">BTHHFP_DESCRIPTOR2</a>
+<a href="..\bthhfpddi\ns-bthhfpddi-_bthhfp_descriptor2.md">BTHHFP_DESCRIPTOR2</a>
 </dt>
 <dt>
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>

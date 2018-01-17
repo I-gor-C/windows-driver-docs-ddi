@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_DEVICE_PNP_EVENT_NOTIFY
-title: MINIPORT_DEVICE_PNP_EVENT_NOTIFY
+UID: NC:ndis.MINIPORT_DEVICE_PNP_EVENT_NOTIFY
+title: MINIPORT_DEVICE_PNP_EVENT_NOTIFY function
 author: windows-driver-content
 description: NDIS calls a miniport driver's MiniportDevicePnPEventNotify function to notify the driver of Plug and Play (PnP) events.
 old-location: netvista\miniportdevicepnpeventnotify.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e41240c0-17be-42ef-a72c-c5311115cf64
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_DEVICE_PNP_EVENT_NOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_DEVICE_PNP_EVENT_NOTIFY callback
+# MINIPORT_DEVICE_PNP_EVENT_NOTIFY function
 
 
 
@@ -44,7 +45,7 @@ NDIS calls a miniport driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_DEVICE_PNP_EVENT_NOTIFY MiniportDevicePnPEventNotify;
@@ -69,7 +70,7 @@ A handle to a context area that the miniport driver allocated in its
 ### -param NetDevicePnPEvent [in]
 
 A pointer to a 
-     <a href="netvista.net_device_pnp_event">NET_DEVICE_PNP_EVENT</a> structure that
+     <a href="..\ndis\ns-ndis-_net_device_pnp_event.md">NET_DEVICE_PNP_EVENT</a> structure that
      describes a device Plug and Play event.
 
 
@@ -80,7 +81,7 @@ None
 ## -remarks
 A driver specifies the 
     <i>MiniportDevicePnPEventNotify</i> entry point when it calls the 
-    <a href="netvista.ndismregisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
     NdisMRegisterMiniportDriver</a> function.
 
 NDIS calls the driver's 
@@ -133,50 +134,6 @@ The <b>MINIPORT_DEVICE_PNP_EVENT_NOTIFY</b> function type is defined in the Ndis
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_ndisoidcomplete">NdisOidComplete</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -186,10 +143,10 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="netvista.net_device_pnp_event">NET_DEVICE_PNP_EVENT</a>
+<a href="..\ndis\ns-ndis-_net_device_pnp_event.md">NET_DEVICE_PNP_EVENT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569780">OID_PNP_SET_POWER</a>
@@ -199,5 +156,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_DEVICE_PNP_EVENT_NOTIFY callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_DEVICE_PNP_EVENT_NOTIFY callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

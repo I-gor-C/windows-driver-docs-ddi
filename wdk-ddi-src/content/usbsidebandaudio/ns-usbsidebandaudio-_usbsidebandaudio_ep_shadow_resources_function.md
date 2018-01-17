@@ -1,5 +1,5 @@
 ---
-UID: NS.USBSIDEBANDAUDIO._USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
 title: _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
 author: windows-driver-content
 description: TBD.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 554C5829-D9C0-4F5F-B88A-285A31415CD3
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
+ms.keywords: _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
 req.product: Windows 10 or later.
 ---
 
@@ -86,19 +87,3 @@ TBD
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbsidebandaudio.h (include Usbsidebandaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

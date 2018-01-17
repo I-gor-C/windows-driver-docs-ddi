@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._CLS_INFORMATION
+UID: NS:wdm._CLS_INFORMATION
 title: _CLS_INFORMATION
 author: windows-driver-content
 description: The CLFS_INFORMATION structure holds metadata and state information for a Common Log File System (CLFS) stream and/or its underlying physical log.
@@ -7,8 +7,8 @@ old-location: kernel\clfs_information.htm
 old-project: kernel
 ms.assetid: 7fe392d1-75e4-43b1-a09b-6f47981bef7e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CLS_INFORMATION, CLS_INFORMATION, *PPCLS_INFORMATION, PCLS_INFORMATION, *PCLS_INFORMATION, PPCLS_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _CLS_INFORMATION, *PCLS_INFORMATION, *PPCLS_INFORMATION, CLS_INFORMATION, *PCLFS_INFORMATION, CLFS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PCLS_INFORMATION, *PPCLS_INFORMATION, CLS_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -112,7 +113,7 @@ The number of streams that share the log.
 
 ### -field Attributes
 
-A set of flags that specify stream (or physical log) attributes. See the <i>fFlagsAndAttributes</i> parameter of the <a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a> function.
+A set of flags that specify stream (or physical log) attributes. See the <i>fFlagsAndAttributes</i> parameter of the <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> function.
 
 
 ### -field FlushThreshold
@@ -156,7 +157,7 @@ A GUID that serves as a unique identifier for the log.
 
 
 ## -remarks
-The <a href="kernel.clfsquerylogfileinformation">ClfsQueryLogFileInformation</a> function returns information about a CLFS stream and/or its underlying physical log. The type of information returned depends on the <i>eInformationClass</i> parameter. 
+The <a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a> function returns information about a CLFS stream and/or its underlying physical log. The type of information returned depends on the <i>eInformationClass</i> parameter. 
 
 If the <i>eInformationClass</i> parameter is equal to <b>ClfsLogBasicInformationPhysical</b>, <b>ClfsQueryLogFileInformation</b> returns information in a <b>CLFS_INFORMATION</b> structure, and every structure member holds a piece of information about a physical CLFS log. Even if the log is multiplexed (that is, it has several streams), all structure members hold information about the underlying physical log rather than information about one of the streams.
 
@@ -173,36 +174,21 @@ If <i>eInformationClass</i> parameter is equal to <b>ClfsLogBasicInformation</b>
 <b>RestartLsn</b>
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a>
+<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
 </dt>
 <dt>
-<a href="kernel.clfssetlogfileinformation">ClfsSetLogFileInformation</a>
+<a href="..\wdm\nf-wdm-clfssetlogfileinformation.md">ClfsSetLogFileInformation</a>
 </dt>
 <dt>
-<a href="kernel.clfsquerylogfileinformation">ClfsQueryLogFileInformation</a>
+<a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_INFORMATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_INFORMATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

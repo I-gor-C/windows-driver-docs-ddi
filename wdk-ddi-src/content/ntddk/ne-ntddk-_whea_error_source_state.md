@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddk._WHEA_ERROR_SOURCE_STATE
+UID: NE:ntddk._WHEA_ERROR_SOURCE_STATE
 title: _WHEA_ERROR_SOURCE_STATE
 author: windows-driver-content
 description: The WHEA_ERROR_SOURCE_STATE enumeration defines the different runtime states for an error source.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 7be90712-9f6f-4998-a8ca-148ff900c82c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_SOURCE_STATE, PWHEA_ERROR_SOURCE_STATE, *PWHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE
+ms.keywords: _WHEA_ERROR_SOURCE_STATE, *PWHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE
 ---
 
 # _WHEA_ERROR_SOURCE_STATE enumeration
@@ -65,39 +66,13 @@ The error source is started.
 
 
 ## -remarks
-The <a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_STATE that indicates the runtime state of the error source.
+The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_STATE that indicates the runtime state of the error source.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPreFetchOffset.SetPreFetchOffset
+UID: NF:portcls.IPreFetchOffset.SetPreFetchOffset
 title: IPreFetchOffset::SetPreFetchOffset method
 author: windows-driver-content
 description: The SetPreFetchOffset method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPreFetchOffset::SetPreFetchOffset method
@@ -71,46 +72,10 @@ The write cursor specifies the buffer position into which a DirectSound applicat
 
 The play cursor specifies the buffer position of the sound sample that is currently being played by the audio device.
 
-For more information about write cursors and play cursors, see <a href="..\ksmedia\ns-ksmedia-ksaudio_position.md">KSAUDIO_POSITION</a>.
+For more information about write cursors and play cursors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537091">KSAUDIO_POSITION</a>.
 
 For information about using <code>SetPreFetchOffset</code> to control a DirectSound stream's prefetch offset, see <a href="https://msdn.microsoft.com/92a0163f-29b1-4e15-88ab-67e1097d015e">Prefetch Offsets</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -121,13 +86,13 @@ Any level
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
 </dt>
 <dt>
-<a href="..\ksmedia\ns-ksmedia-ksaudio_position.md">KSAUDIO_POSITION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537091">KSAUDIO_POSITION</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepcistream_getposition">IMiniportWavePciStream::GetPosition</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536727">IMiniportWavePciStream::GetPosition</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_MEASUREMENT_CONFIGURATION
+UID: NS:pmi._PMI_MEASUREMENT_CONFIGURATION
 title: _PMI_MEASUREMENT_CONFIGURATION
 author: windows-driver-content
 description: The PMI_MEASUREMENT_CONFIGURATION structure contains information about the current power measurement configuration of a power meter.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: dbabdd69-a97b-4de6-b35b-f3d8d2351c72
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_MEASUREMENT_CONFIGURATION, PPMI_MEASUREMENT_CONFIGURATION, PMI_MEASUREMENT_CONFIGURATION, *PPMI_MEASUREMENT_CONFIGURATION
+ms.keywords: _PMI_MEASUREMENT_CONFIGURATION, PMI_MEASUREMENT_CONFIGURATION, *PPMI_MEASUREMENT_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PMI_MEASUREMENT_CONFIGURATION, *PPMI_MEASUREMENT_CONFIGURATION
 ---
 
 # _PMI_MEASUREMENT_CONFIGURATION structure
@@ -62,41 +63,16 @@ A value, in units of milliseconds (mS), that specifies the interval during which
 The PMI_MEASUREMENT_CONFIGURATION structure specifies the current measurement parameters that the power meter uses when it monitors the power that is consumed by the system from a power supply. The <b>AverageInterval</b> member specifies the time interval over which the power meter averages the power measurement data it collects from a power supply.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pmi.h (include Pmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 </dt>
 </dl>
  

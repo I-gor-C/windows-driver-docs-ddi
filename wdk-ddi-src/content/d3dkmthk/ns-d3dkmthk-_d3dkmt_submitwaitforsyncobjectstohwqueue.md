@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
+UID: NS:d3dkmthk._D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 title: _D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 author: windows-driver-content
 description: A structure that contains information to submit a wait on the hardware queue.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_submitwaitforsyncobjectstohwqueue_.htm
 old-project: display
 ms.assetid: 365253FC-9FC0-4FFF-9D84-503754095327
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ---
 
 # _D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE structure
@@ -81,19 +82,3 @@ Monitored fence values to be waited.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

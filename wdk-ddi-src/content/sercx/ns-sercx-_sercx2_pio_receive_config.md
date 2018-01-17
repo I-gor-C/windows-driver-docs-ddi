@@ -1,5 +1,5 @@
 ---
-UID: NS.SERCX._SERCX2_PIO_RECEIVE_CONFIG
+UID: NS:sercx._SERCX2_PIO_RECEIVE_CONFIG
 title: _SERCX2_PIO_RECEIVE_CONFIG
 author: windows-driver-content
 description: The SERCX2_PIO_RECEIVE_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new PIO-receive object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SERCX2_PIO_RECEIVE_CONFIG, *PSERCX2_PIO_RECEIVE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ typedef struct _SERCX2_PIO_RECEIVE_CONFIG {
 
 ### -field Size
 
-The size, in bytes, of this structure. The <a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
 
 ### -field EvtSerCx2PioReceiveInitializeTransaction
@@ -90,33 +91,8 @@ A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_re
 
 
 ## -remarks
-The <a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method accepts a pointer to a <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioReceiveCreate</b>, call the <a href="serports.sercx2_pio_receive_config_init">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize this structure.
+The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method accepts a pointer to a <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioReceiveCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize this structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -127,10 +103,10 @@ Header
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a>
 </dt>
 <dt>
-<a href="serports.sercx2_pio_receive_config_init">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
 </dt>
 <dt>
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_enable_ready_notification.md">EvtSerCx2PioReceiveEnableReadyNotification</a>

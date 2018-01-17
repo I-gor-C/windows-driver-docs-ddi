@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_CAN_SUSTAIN_AP_REASON
+UID: NE:wditypes._WDI_CAN_SUSTAIN_AP_REASON
 title: _WDI_CAN_SUSTAIN_AP_REASON
 author: windows-driver-content
 description: The WDI_CAN_SUSTAIN_AP_REASON enumeration defines the reasons the port is ready to receive a OID_WDI_TASK_START_AP request.
 old-location: netvista\wdi_can_sustain_ap_reason.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9AAE4B3F-7C5C-457D-9388-63E6E6AB8A2E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_CAN_SUSTAIN_AP_REASON, WDI_CAN_SUSTAIN_AP_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_CAN_SUSTAIN_AP_REASON
 req.product: Windows 10 or later.
 ---
 
@@ -66,39 +67,3 @@ The end value of possible IHV-specified reasons.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

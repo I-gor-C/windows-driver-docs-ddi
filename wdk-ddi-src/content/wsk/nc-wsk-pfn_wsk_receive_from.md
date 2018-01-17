@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_RECEIVE_FROM
+UID: NC:wsk.PFN_WSK_RECEIVE_FROM
 title: PFN_WSK_RECEIVE_FROM
 author: windows-driver-content
 description: The WskReceiveFrom function receives a datagram and any associated control information from a remote transport address.
 old-location: netvista\wskreceivefrom.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 769fea0d-e35a-4385-8027-f1518c25b637
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/11/2018
+ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -69,14 +70,14 @@ NTSTATUS WSKAPI * WskReceiveFrom(
 ### -param Socket [in]
 
 A pointer to a 
-     <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the datagram socket from which to receive the datagram.
 
 
 ### -param Buffer [in]
 
 A pointer to an initialized 
-     <a href="netvista.wsk_buf">WSK_BUF</a> structure that describes the data buffer
+     <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a> structure that describes the data buffer
      that receives the datagram from the socket.
 
 
@@ -111,7 +112,7 @@ A pointer to a ULONG-typed variable that specifies the size of the buffer that i
 A pointer to a caller-allocated buffer that receives the control information that is associated
      with the received datagram. The control information data that is associated with a datagram is made up
      of one or more control data objects, each of which begins with a 
-     <a href="netvista.cmsghdr">CMSGHDR</a> structure. If there is no control
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a> structure. If there is no control
      information present for the received datagram, the contents of the buffer are undefined. This pointer is
      optional and can be <b>NULL</b>. If the 
      <i>ControlInfoLength</i> parameter is <b>NULL</b>, the 
@@ -220,7 +221,7 @@ If a WSK application's
 
 If the 
     <b>WskReceiveFrom</b> function returns STATUS_PENDING, the MDL chain that is described in the 
-    <a href="netvista.wsk_buf">WSK_BUF</a> structure that is pointed to by the 
+    <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a> structure that is pointed to by the 
     <i>Buffer</i> parameter must remain locked in memory until the IRP is completed. In addition, the variable
     that is pointed to by the 
     <i>ControlInfoLength</i> parameter, the buffer that is pointed to by the 
@@ -232,53 +233,6 @@ If the
     variables on the stack, it cannot return from the function that calls the 
     <b>WskReceiveFrom</b> function until after the IRP is completed.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wsk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -295,28 +249,28 @@ IRQL
 <a href="..\wsk\nc-wsk-pfn_wsk_receive_from_event.md">WskReceiveFromEvent</a>
 </dt>
 <dt>
-<a href="netvista.cmsghdr">CMSGHDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570820">SIO_WSK_SET_REMOTE_ADDRESS</a>
 </dt>
 <dt>
-<a href="netvista.sockaddr">SOCKADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 </dt>
 <dt>
-<a href="netvista.wsk_buf">WSK_BUF</a>
+<a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_datagram_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_datagram_dispatch.md">
    WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_RECEIVE_FROM callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE_FROM callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._SES_CONFIGURATION_DIAGNOSTIC_PAGE
+UID: NS:storport._SES_CONFIGURATION_DIAGNOSTIC_PAGE
 title: _SES_CONFIGURATION_DIAGNOSTIC_PAGE
 author: windows-driver-content
 description: TBD.
@@ -7,8 +7,8 @@ old-location: storage\ses_configuration_diagnostic_page.htm
 old-project: storage
 ms.assetid: 0FD748D6-F598-44D1-A8D3-E63764CB90C6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
+ms.date: 1/10/2018
+ms.keywords: _SES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
 req.product: Windows 10 or later.
 ---
 
@@ -87,29 +88,3 @@ Specifies the enclosure descriptors for the primary and secondary enclosures. Th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1709 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsi.h (include Minitape.h or Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILEMERGENCYNUMBERCATEGORY
+UID: NE:ntddrilapitypes.RILEMERGENCYNUMBERCATEGORY
 title: RILEMERGENCYNUMBERCATEGORY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencynumbercategory.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f1ad9a15-70c8-4331-b350-f681aa216aaf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILEMERGENCYNUMBERCATEGORY, RILEMERGENCYNUMBERCATEGORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEMERGENCYNUMBERCATEGORY
 ---
 
 # RILEMERGENCYNUMBERCATEGORY enumeration
@@ -81,19 +82,3 @@ typedef enum _RILEMERGENCYNUMBERCATEGORY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

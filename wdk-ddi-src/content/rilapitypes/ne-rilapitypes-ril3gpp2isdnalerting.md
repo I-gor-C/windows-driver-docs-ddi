@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RIL3GPP2ISDNALERTING
+UID: NE:rilapitypes.RIL3GPP2ISDNALERTING
 title: RIL3GPP2ISDNALERTING
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril3gpp2isdnalerting_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9fff629b-ad85-4158-b8c4-f5f6abe8e3f5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RIL3GPP2ISDNALERTING, RIL3GPP2ISDNALERTING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RIL3GPP2ISDNALERTING
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef enum _RIL3GPP2ISDNALERTING {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

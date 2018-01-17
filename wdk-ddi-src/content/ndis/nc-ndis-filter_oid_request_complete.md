@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_OID_REQUEST_COMPLETE
-title: FILTER_OID_REQUEST_COMPLETE
+UID: NC:ndis.FILTER_OID_REQUEST_COMPLETE
+title: FILTER_OID_REQUEST_COMPLETE function
 author: windows-driver-content
 description: NDIS calls the FilterOidRequestComplete function to complete a filter driver request that queried or set information in an underlying driver.Note  You must declare the function by using the FILTER_OID_REQUEST_COMPLETE type.
 old-location: netvista\filteroidrequestcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2dba21d8-512b-4a1a-9cf9-0240c94a69a0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_OID_REQUEST_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_OID_REQUEST_COMPLETE callback
+# FILTER_OID_REQUEST_COMPLETE function
 
 
 
@@ -44,7 +45,7 @@ NDIS calls the
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_OID_REQUEST_COMPLETE FilterOidRequestComplete;
@@ -70,9 +71,9 @@ A handle to the context area for the filter module. The filter driver created an
 ### -param OidRequest [in]
 
 A pointer to the 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that the filter
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that the filter
      driver previously passed to the 
-     <a href="netvista.ndisfoidrequest">NdisFOidRequest</a> function.
+     <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a> function.
 
 
 ### -param Status [in]
@@ -81,7 +82,7 @@ The final status of the request set by an underlying driver or by NDIS. This par
      what 
      <i>FilterOidRequestComplete</i> does with the information at 
      <i>OidRequest</i> . For a list of the possible status values, see the return values of 
-     <a href="netvista.ndisfoidrequest">NdisFOidRequest</a>.
+     <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>.
 
 
 ## -returns
@@ -97,16 +98,16 @@ None
     <i>FilterOidRequestComplete</i> function.
 
 If the 
-    <a href="netvista.ndisfoidrequest">NdisFOidRequest</a> function returns
+    <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a> function returns
     NDIS_STATUS_PENDING, NDIS must call the 
     <i>FilterOidRequestComplete</i> function to complete the OID request.
 
 If a filter driver forwarded a request that it received in the 
     <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a> function, 
     <i>FilterOidRequestComplete</i> should pass the completion status up the driver stack by calling the 
-    <a href="netvista.ndisfoidrequestcomplete">NdisFOidRequestComplete</a> function.
+    <a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">NdisFOidRequestComplete</a> function.
     The filter driver must call 
-    <a href="netvista.ndisfreecloneoidrequest">NdisFreeCloneOidRequest</a>, to free
+    <a href="..\ndis\nf-ndis-ndisfreecloneoidrequest.md">NdisFreeCloneOidRequest</a>, to free
     the NDIS_OID_REQUEST structure, before it calls 
     <b>NdisFOidRequestComplete</b>.
 
@@ -128,41 +129,6 @@ The <b>FILTER_OID_REQUEST_COMPLETE</b> function type is defined in the Ndis.h he
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -172,21 +138,21 @@ IRQL
 <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreecloneoidrequest">NdisFreeCloneOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfreecloneoidrequest.md">NdisFreeCloneOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndisfoidrequest">NdisFOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndisfoidrequestcomplete">NdisFOidRequestComplete</a>
+<a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">NdisFOidRequestComplete</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_OID_REQUEST_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_OID_REQUEST_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

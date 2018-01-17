@@ -1,17 +1,17 @@
 ---
-UID: NC.iddcx.EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION
-title: EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION
+UID: NC:iddcx.EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION
+title: EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION function
 author: windows-driver-content
 description: EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION is called by the OS to get OPM information.
 old-location: display\evt_idd_cx_monitor_opm_get_infomation.htm
 old-project: display
 ms.assetid: b616a105-3c4b-42b7-8352-a1f35479572e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WcsTranslateColors
+ms.date: 12/29/2017
+ms.keywords: EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
 ---
 
-# EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION callback
+# EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION function
 
 
 
@@ -42,7 +43,7 @@ req.irql: _requires_same_
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION EvtIddCxMonitorOpmGetInfomation;
@@ -88,49 +89,3 @@ typedef EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION PFN_IDD_CX_MONITOR_OPM_GET_INFOMAT
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_requires_same_
-
-</td>
-</tr>
-</table>

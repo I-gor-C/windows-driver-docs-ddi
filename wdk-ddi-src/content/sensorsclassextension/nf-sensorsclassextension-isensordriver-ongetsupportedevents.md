@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnGetSupportedEvents
+UID: NF:sensorsclassextension.ISensorDriver.OnGetSupportedEvents
 title: ISensorDriver::OnGetSupportedEvents method
 author: windows-driver-content
 description: The ISensorDriver::OnGetSupportedEvents method retrieves the list of events that the specified sensor can raise.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_ongetsupportedevents">ISensorDriver::OnGetSupportedEvents</a> method retrieves the list of events that the specified sensor can raise.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545623">ISensorDriver::OnGetSupportedEvents</a> method retrieves the list of events that the specified sensor can raise.
 
 
 
@@ -78,31 +79,4 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 ## -remarks
 Event IDs are represented by <b>GUID</b>s. Platform-defined events are defined in sensors.h. 
 
-You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sensorsclassextension.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.</p>

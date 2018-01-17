@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILSENDSUPSERVICEDATAPARAMS
+UID: NS:rilapitypes.RILSENDSUPSERVICEDATAPARAMS
 title: RILSENDSUPSERVICEDATAPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendsupservicedataparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: de9c7d56-5b57-4809-b5cf-93234c934d55
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSENDSUPSERVICEDATAPARAMS, *LPRILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef struct _RILSENDSUPSERVICEDATAPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

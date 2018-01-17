@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_DESTROYPROTECTEDSESSION
-title: DXGKDDI_DESTROYPROTECTEDSESSION
+UID: NC:d3dkmddi.DXGKDDI_DESTROYPROTECTEDSESSION
+title: DXGKDDI_DESTROYPROTECTEDSESSION function
 author: windows-driver-content
 description: Used to destroy a protected session.
 old-location: display\dxgkddi_destroyprotectedsession.htm
 old-project: display
 ms.assetid: 42D4064A-1697-4772-8450-6D217C526347
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_DESTROYPROTECTEDSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: requires_(PASSIVE_LEVEL)
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_DESTROYPROTECTEDSESSION callback
+# DXGKDDI_DESTROYPROTECTEDSESSION function
 
 
 
@@ -42,7 +43,7 @@ Used to destroy a protected session.
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_DESTROYPROTECTEDSESSION(
@@ -69,29 +70,3 @@ Returns STATUS_SUCCESS when completed successfully.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-requires_(PASSIVE_LEVEL)
-
-</td>
-</tr>
-</table>

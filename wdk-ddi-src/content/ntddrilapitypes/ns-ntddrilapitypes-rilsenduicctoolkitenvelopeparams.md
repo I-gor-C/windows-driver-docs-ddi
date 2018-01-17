@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSENDUICCTOOLKITENVELOPEPARAMS
+UID: NS:ntddrilapitypes.RILSENDUICCTOOLKITENVELOPEPARAMS
 title: RILSENDUICCTOOLKITENVELOPEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsenduicctoolkitenvelopeparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: df1ce4d6-e335-4ffa-8e37-85221eb57521
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, LPRILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS
 ---
 
 # RILSENDUICCTOOLKITENVELOPEPARAMS structure
@@ -65,19 +66,3 @@ typedef struct _RILSENDUICCTOOLKITENVELOPEPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

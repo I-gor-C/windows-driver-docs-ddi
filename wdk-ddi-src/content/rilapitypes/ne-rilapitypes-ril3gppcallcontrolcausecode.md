@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RIL3GPPCALLCONTROLCAUSECODE
+UID: NE:rilapitypes.RIL3GPPCALLCONTROLCAUSECODE
 title: RIL3GPPCALLCONTROLCAUSECODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril3gppcallcontrolcausecode_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c71684cf-9ae9-4330-b547-96646575b45f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RIL3GPPCALLCONTROLCAUSECODE, RIL3GPPCALLCONTROLCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RIL3GPPCALLCONTROLCAUSECODE
 req.product: Windows 10 or later.
 ---
 
@@ -238,19 +239,3 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

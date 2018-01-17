@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIOP._MSISCSI_PERSISTENTLOGINS
+UID: NS:iscsiop._MSiSCSI_PersistentLogins
 title: _MSiSCSI_PersistentLogins
 author: windows-driver-content
 description: The MSiSCSI_PersistentLogins structure contains the list of persistent target logon sessions.
@@ -7,8 +7,8 @@ old-location: storage\msiscsi_persistentlogins.htm
 old-project: storage
 ms.assetid: c735d9c9-8e87-4a80-af1d-c97d457f78fa
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MSiSCSI_PersistentLogins, MSiSCSI_PersistentLogins, PMSiSCSI_PersistentLogins, *PMSiSCSI_PersistentLogins
+ms.date: 1/10/2018
+ms.keywords: _MSiSCSI_PersistentLogins, MSiSCSI_PersistentLogins, *PMSiSCSI_PersistentLogins
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MSiSCSI_PersistentLogins, *PMSiSCSI_PersistentLogins
 ---
 
 # _MSiSCSI_PersistentLogins structure
@@ -67,43 +68,28 @@ Reserved for Microsoft use only.
 
 ### -field PersistentLogins
 
-A variable length array of <a href="storage.iscsi_persistent_login">ISCSI_Persistent_Login</a> structures, each of which contains information that is associated with a particular persistent logon session that the initiator maintains.
+A variable length array of <a href="..\iscsiop\ns-iscsiop-_iscsi_persistent_login.md">ISCSI_Persistent_Login</a> structures, each of which contains information that is associated with a particular persistent logon session that the initiator maintains.
 
 
 ## -remarks
 Miniport drivers that manage iSCSI initiators automatically establish persistent logon sessions as soon as they are loaded into the storage driver stack. This guarantees that targets for which the initiator maintains persistent logon sessions will be available to the system as early in the startup process as possible. You must implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.iscsi_persistent_login">ISCSI_Persistent_Login</a>
+<a href="..\iscsiop\ns-iscsiop-_iscsi_persistent_login.md">ISCSI_Persistent_Login</a>
 </dt>
 <dt>
-<a href="storage.iscsi_persistent_login_wmi_class">ISCSI_Persistent_Login WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561556">ISCSI_Persistent_Login WMI Class</a>
 </dt>
 <dt>
-<a href="storage.msiscsi_persistentlogins_wmi_class">MSiSCSI_PersistentLogins WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563096">MSiSCSI_PersistentLogins WMI Class</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_PersistentLogins structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_PersistentLogins structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

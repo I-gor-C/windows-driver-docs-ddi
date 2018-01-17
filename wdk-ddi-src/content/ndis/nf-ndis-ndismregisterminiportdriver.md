@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMRegisterMiniportDriver
+UID: NF:ndis.NdisMRegisterMiniportDriver
 title: NdisMRegisterMiniportDriver function
 author: windows-driver-content
 description: A miniport driver calls the NdisMRegisterMiniportDriver function to register MiniportXxx entry points with NDIS as the first step in initialization.
 old-location: netvista\ndismregisterminiportdriver.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bed68aa8-499d-41fd-997b-a46316913cc8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisMRegisterMiniportDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMRegisterMiniportDriver function
@@ -84,7 +85,7 @@ A handle to a driver-allocated context area where the driver maintains state and
 ### -param MiniportDriverCharacteristics [in]
 
 A pointer to an 
-     <a href="netvista.ndis_miniport_driver_characteristics">
+     <a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">
      NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure that the caller initialized.
 
 
@@ -100,7 +101,7 @@ A pointer to a caller-supplied handle variable. NDIS writes a handle to this var
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
 </dl>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a> registered the miniport driver successfully.
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a> registered the miniport driver successfully.
 <dl>
 <dt><b>NDIS_STATUS_BAD_CHARACTERISTICS</b></dt>
 </dl>The 
@@ -163,79 +164,13 @@ After a driver calls
 If an error occurs in 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> after 
     <b>NdisMRegisterMiniportDriver</b> returns successfully, the driver must call the 
-    <a href="netvista.ndismderegisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismderegisterminiportdriver.md">
     NdisMDeregisterMiniportDriver</a> function before 
     <b>DriverEntry</b> returns. If 
     <b>DriverEntry</b> succeeds, the driver must call 
     <b>NdisMDeregisterMiniportDriver</b> from its 
     <a href="..\ndis\nc-ndis-miniport_unload.md">MiniportDriverUnload</a> function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -252,11 +187,11 @@ DDI compliance rules
 <a href="netvista.miniportsetoptions">MiniportSetOptions</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_driver_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">
    NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndismderegisterminiportdriver">
+<a href="..\ndis\nf-ndis-ndismderegisterminiportdriver.md">
    NdisMDeregisterMiniportDriver</a>
 </dt>
 </dl>
@@ -264,5 +199,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMRegisterMiniportDriver function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterMiniportDriver function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

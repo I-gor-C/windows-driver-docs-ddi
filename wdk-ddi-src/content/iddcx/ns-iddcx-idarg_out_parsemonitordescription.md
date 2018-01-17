@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_OUT_PARSEMONITORDESCRIPTION
+UID: NS:iddcx.IDARG_OUT_PARSEMONITORDESCRIPTION
 title: IDARG_OUT_PARSEMONITORDESCRIPTION
 author: windows-driver-content
 description: Gives information about the number of monitor modes and preferred monitor mode of a monitor.
@@ -7,7 +7,7 @@ old-location: display\idarg_out_parsemonitordescription.htm
 old-project: display
 ms.assetid: 30f4c178-5ef8-4650-b396-1e4bc9cc9125
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_OUT_PARSEMONITORDESCRIPTION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_OUT_PARSEMONITORDESCRIPTION structure
@@ -68,19 +69,3 @@ typedef struct IDARG_OUT_PARSEMONITORDESCRIPTION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

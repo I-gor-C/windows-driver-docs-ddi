@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_CONTROLINTERRUPT2
-title: DXGKDDI_CONTROLINTERRUPT2
+UID: NC:d3dkmddi.DXGKDDI_CONTROLINTERRUPT2
+title: DXGKDDI_CONTROLINTERRUPT2 function
 author: windows-driver-content
 description: The DxgkDdi_ControlInterrupt2 function enables or disables the given interrupt type on the graphics hardware.
 old-location: display\dxgkddicontrolinterrupt2.htm
 old-project: display
 ms.assetid: 0C09CAB1-3DFC-4340-8FF2-99CAF7F13156
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_CONTROLINTERRUPT2
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_CONTROLINTERRUPT2 callback
+# DXGKDDI_CONTROLINTERRUPT2 function
 
 
 
@@ -42,7 +43,7 @@ The <i>DxgkDdi_ControlInterrupt2</i> function enables or disables the given inte
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_CONTROLINTERRUPT2 DxgkDdi_ControlInterrupt2;
@@ -64,7 +65,7 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 
 ### -param InterruptControl [in]
 
-[in] A <a href="display.dxgkarg_controlinterrupt2">DXGKARG_CONTROLINTERRUPT2</a>-type value that supplies the interrupt type, as well as the VSYNC state.
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_controlinterrupt2.md">DXGKARG_CONTROLINTERRUPT2</a>-type value that supplies the interrupt type, as well as the VSYNC state.
 
 
 ## -returns
@@ -81,50 +82,3 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.PARALLEL._PARALLEL_PNP_INFORMATION
+UID: NS:parallel._PARALLEL_PNP_INFORMATION
 title: _PARALLEL_PNP_INFORMATION
 author: windows-driver-content
 description: The PARALLEL_PNP_INFORMATION structure specifies information about the capabilities of a parallel port.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: 9288fc11-e19b-46dd-95e4-6de8c7cdc61d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PARALLEL_PNP_INFORMATION, PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION, *PPARALLEL_PNP_INFORMATION
+ms.keywords: _PARALLEL_PNP_INFORMATION, *PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION
 ---
 
 # _PARALLEL_PNP_INFORMATION structure
@@ -179,21 +180,6 @@ The symbolic link name of the parallel port.
 For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a-93cc-00fcb12d41fe">Obtaining Information About a ParallelPort</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -206,10 +192,10 @@ Header
 <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
 </dt>
 <dt>
-<a href="parports.more_parallel_port_information">MORE_PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
 </dt>
 <dt>
-<a href="parports.parallel_port_information">PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_port_information.md">PARALLEL_PORT_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\parallel\nc-parallel-pparallel_clear_chip_mode.md">PPARALLEL_CLEAR_CHIP_MODE</a>

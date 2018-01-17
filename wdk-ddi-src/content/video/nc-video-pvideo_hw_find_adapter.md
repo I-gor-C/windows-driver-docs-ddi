@@ -1,5 +1,5 @@
 ---
-UID: NC.video.PVIDEO_HW_FIND_ADAPTER
+UID: NC:video.PVIDEO_HW_FIND_ADAPTER
 title: PVIDEO_HW_FIND_ADAPTER
 author: windows-driver-content
 description: HwVidFindAdapter performs initialization of data specific to the miniport driver and devices supported by the miniport driver.
@@ -7,8 +7,8 @@ old-location: display\hwvidfindadapter.htm
 old-project: display
 ms.assetid: 8c880eff-4b4c-439e-9239-f2343c1fe084
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VHF_CONFIG, *PVHF_CONFIG, PVHF_CONFIG, VHF_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -78,7 +79,7 @@ Pointer to a null-terminated ASCII string that originates with the user. This po
 
 ### -param ConfigInfo 
 
-Pointer to a <a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a> structure. The video port driver allocates memory for and initializes this structure with any known configuration information, such as the system IO bus number and values that the miniport driver set in the <a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a> structure.
+Pointer to a <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure. The video port driver allocates memory for and initializes this structure with any known configuration information, such as the system IO bus number and values that the miniport driver set in the <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure.
 
 
 ### -param Again 
@@ -106,9 +107,9 @@ Every video miniport driver must have an <i>HwVidFindAdapter</i> function.
 
 The video port driver does the following before it calls <i>HwVidFindAdapter</i>:
 
-Allocates storage for the miniport driver's per-adapter storage area according to the value of <b>HwDeviceExtensionSize</b> that the miniport driver's <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a> function specified in the <a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a> structure, and zero-initializes the allocated storage.
+Allocates storage for the miniport driver's per-adapter storage area according to the value of <b>HwDeviceExtensionSize</b> that the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function specified in the <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure, and zero-initializes the allocated storage.
 
-Allocates storage for a <a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a> structure and fills in all available information based on miniport driver-supplied information in VIDEO_HW_INITIALIZATION_DATA.
+Allocates storage for a <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure and fills in all available information based on miniport driver-supplied information in VIDEO_HW_INITIALIZATION_DATA.
 
 The video port driver then calls the miniport driver's <i>HwVidFindAdapter</i> function with pointers to the initialized per-adapter storage area and configuration information in the <i>HwDeviceExtension</i> and <i>ConfigInfo</i> parameters, respectively.
 
@@ -132,25 +133,25 @@ For a device on a reenumerable bus such as ISA, PnP still attempts to start the 
 
 <i>HwVidFindAdapter</i> should also call <b>VideoPortSetRegistryParameters</b> to store adapter-specific information in the <b>HardwareInformation</b> key. This information is used by the Display program in Control Panel. See <a href="https://msdn.microsoft.com/82f5d399-58c3-4bed-a3f2-3501f21fa3e8">Setting Hardware Information in the Registry</a> for details.
 
-Depending on the adapter and the <b>AdapterInterfaceType</b> value in <a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a>, <i>HwVidFindAdapter</i> can call some of the following <b>VideoPort</b><i>Xxx</i> functions to get the necessary bus-relative configuration data and mapped access ranges to communicate with the adapter:
+Depending on the adapter and the <b>AdapterInterfaceType</b> value in <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>, <i>HwVidFindAdapter</i> can call some of the following <b>VideoPort</b><i>Xxx</i> functions to get the necessary bus-relative configuration data and mapped access ranges to communicate with the adapter:
 
 
-<a href="display.videoportgetbusdata">VideoPortGetBusData</a> to get bus-type-specific configuration information about an adapter on a particular I/O bus.
+<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a> to get bus-type-specific configuration information about an adapter on a particular I/O bus.
 
 
-<a href="display.videoportgetdevicedata">VideoPortGetDeviceData</a> to get VIDEO_DEVICE_DATA_TYPE-specific information from the registry and call <a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a> to process this information.
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a> to get VIDEO_DEVICE_DATA_TYPE-specific information from the registry and call <a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a> to process this information.
 
 
-<a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a> to get configuration information from the registry.
+<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a> to get configuration information from the registry.
 
 
-<a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a> to get bus-relative access ranges addresses and possibly other hardware configuration values, and to claim them in the registry for use by the driver of an adapter.
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a> to get bus-relative access ranges addresses and possibly other hardware configuration values, and to claim them in the registry for use by the driver of an adapter.
 
 
-<a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a> to determine whether bus-relative video memory and/or I/O ports for the adapter can be claimed by the miniport driver; otherwise, a previously loaded driver has already claimed the resource in the registry and <i>HwVidFindAdapter</i> must try to claim other access ranges if possible or fail.
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a> to determine whether bus-relative video memory and/or I/O ports for the adapter can be claimed by the miniport driver; otherwise, a previously loaded driver has already claimed the resource in the registry and <i>HwVidFindAdapter</i> must try to claim other access ranges if possible or fail.
 
 
-<a href="display.videoportgetdevicebase">VideoPortGetDeviceBase</a> to map each successfully claimed bus-relative base address and range size, as described in a <a href="display.video_access_range">VIDEO_ACCESS_RANGE</a> structure, to <a href="wdkgloss.s#wdkgloss.system_space#wdkgloss.system_space"><i>system space</i></a> logical addresses. <i>HwVidFindAdapter</i> must successfully call <b>VideoPortVerifyAccessRanges</b> or <b>VideoPortGetAccessRanges</b> before it can call <b>VideoPortGetDeviceBase</b>.
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a> to map each successfully claimed bus-relative base address and range size, as described in a <a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a> structure, to <a href="wdkgloss.s#wdkgloss.system_space#wdkgloss.system_space"><i>system space</i></a> logical addresses. <i>HwVidFindAdapter</i> must successfully call <b>VideoPortVerifyAccessRanges</b> or <b>VideoPortGetAccessRanges</b> before it can call <b>VideoPortGetDeviceBase</b>.
 
 If the driver does not handle interrupts, <i>HwVidFindAdapter</i> should set both <b>BusInterruptLevel</b> and <b>BusInterruptVector</b> in the VIDEO_PORT_CONFIG_INFO structure to zero after its call to <b>VideoPortGetAccessRanges</b>. If both members are zero, the video port driver does not connect the interrupt for the miniport driver. Explicitly setting both <b>BusInterruptLevel</b> and <b>BusInterruptVector</b> to zero in <i>HwVidFindAdapter</i> disables the <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a> entry point, if any, that was set up by the miniport driver's <b>DriverEntry</b> routine.
 
@@ -159,39 +160,13 @@ If the driver does not handle interrupts, <i>HwVidFindAdapter</i> should set bot
 <i>HwVidFindAdapter</i> should be made pageable.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.driverentry_of_video_miniport_driver">DriverEntry of Video Miniport Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>
 </dt>
 <dt>
-<a href="display.drvassertmode">DrvAssertMode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556178">DrvAssertMode</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a>
@@ -203,36 +178,36 @@ Header
 <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 </dt>
 <dt>
-<a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a>
+<a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
 </dt>
 <dt>
-<a href="display.videoportfreedevicebase">VideoPortFreeDeviceBase</a>
+<a href="..\video\nf-video-videoportfreedevicebase.md">VideoPortFreeDeviceBase</a>
 </dt>
 <dt>
-<a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a>
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 </dt>
 <dt>
-<a href="display.videoportgetbusdata">VideoPortGetBusData</a>
+<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
 </dt>
 <dt>
-<a href="display.videoportgetdevicebase">VideoPortGetDeviceBase</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="display.videoportgetdevicedata">VideoPortGetDeviceData</a>
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
 </dt>
 <dt>
-<a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a>
+<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
 </dt>
 <dt>
-<a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a>
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_FIND_ADAPTER callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_FIND_ADAPTER callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

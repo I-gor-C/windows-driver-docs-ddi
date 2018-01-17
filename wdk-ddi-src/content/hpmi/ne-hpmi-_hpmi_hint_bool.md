@@ -1,5 +1,5 @@
 ---
-UID: NE.hpmi._HPMI_HINT_BOOL
+UID: NE:hpmi._HPMI_HINT_BOOL
 title: _HPMI_HINT_BOOL
 author: windows-driver-content
 description: Boolean type value used to track availability of HPMI hint data.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: E056400C-A0FE-4740-945D-C529C8804DF3
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HPMI_HINT_BOOL, *PHPMI_HINT_BOOL, PHPMI_HINT_BOOL, HPMI_HINT_BOOL
+ms.keywords: _HPMI_HINT_BOOL, HPMI_HINT_BOOL, *PHPMI_HINT_BOOL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HPMI_HINT_BOOL, *PHPMI_HINT_BOOL
 ---
 
 # _HPMI_HINT_BOOL enumeration
@@ -81,41 +82,16 @@ Value is not used.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hpmi.h (include Hpmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="powermeter.hpmi_battery_utilization_hint">HPMI_BATTERY_UTILIZATION_HINT</a>
+<a href="..\hpmi\ns-hpmi-_hpmi_battery_utilization_hint.md">HPMI_BATTERY_UTILIZATION_HINT</a>
 </dt>
 <dt>
 <a href="..\hpmi\ni-hpmi-ioctl_hpmi_battery_utilization_hint.md">IOCTL_HPMI_BATTERY_UTILIZATION_HINT</a>
 </dt>
 <dt>
-<a href="powermeter.hpmi_h">hpmi.h</a>
+<a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
 </dt>
 </dl>
  

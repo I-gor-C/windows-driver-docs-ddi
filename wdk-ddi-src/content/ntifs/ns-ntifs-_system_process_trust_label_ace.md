@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._SYSTEM_PROCESS_TRUST_LABEL_ACE
+UID: NS:ntifs._SYSTEM_PROCESS_TRUST_LABEL_ACE
 title: _SYSTEM_PROCESS_TRUST_LABEL_ACE
 author: windows-driver-content
 description: Reserved.
@@ -7,8 +7,8 @@ old-location: ifsk\system_process_trust_label_ace.htm
 old-project: ifsk
 ms.assetid: DF334754-8027-418D-B329-877492896B82
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE, PSYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE
+ms.date: 1/9/2018
+ms.keywords: _SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE
 ---
 
 # _SYSTEM_PROCESS_TRUST_LABEL_ACE structure
@@ -65,19 +66,3 @@ struct SYSTEM_PROCESS_TRUST_LABEL_ACE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h</dt>
-</dl>
-</td>
-</tr>
-</table>

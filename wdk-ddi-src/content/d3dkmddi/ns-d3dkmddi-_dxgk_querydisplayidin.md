@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_QUERYDISPLAYIDIN
+UID: NS:d3dkmddi._DXGK_QUERYDISPLAYIDIN
 title: _DXGK_QUERYDISPLAYIDIN
 author: windows-driver-content
 description: Used to query a display ID.
@@ -7,7 +7,7 @@ old-location: display\dxgk_querydisplayidin.htm
 old-project: display
 ms.assetid: C7A2CECA-AAE5-4804-92FF-C47984BA38AF
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_QUERYDISPLAYIDIN, DXGK_QUERYDISPLAYIDIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_QUERYDISPLAYIDIN
 ---
 
 # _DXGK_QUERYDISPLAYIDIN structure
@@ -59,19 +60,3 @@ The ID being queried.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

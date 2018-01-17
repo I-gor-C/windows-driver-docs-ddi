@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILCALLDISCONNECTDETAILSDISCONNECTGROUP
+UID: NE:rilapitypes.RILCALLDISCONNECTDETAILSDISCONNECTGROUP
 title: RILCALLDISCONNECTDETAILSDISCONNECTGROUP
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalldisconnectdetailsdisconnectgroup_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4d4c87d5-36cd-49ba-8111-cf651f67a451
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCALLDISCONNECTDETAILSDISCONNECTGROUP, RILCALLDISCONNECTDETAILSDISCONNECTGROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLDISCONNECTDETAILSDISCONNECTGROUP
 req.product: Windows 10 or later.
 ---
 
@@ -82,19 +83,3 @@ typedef enum _RILCALLDISCONNECTDETAILSDISCONNECTGROUP {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

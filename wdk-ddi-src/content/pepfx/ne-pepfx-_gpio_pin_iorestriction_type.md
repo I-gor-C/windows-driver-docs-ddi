@@ -1,5 +1,5 @@
 ---
-UID: NE.pepfx._GPIO_PIN_IORESTRICTION_TYPE
+UID: NE:pepfx._GPIO_PIN_IORESTRICTION_TYPE
 title: _GPIO_PIN_IORESTRICTION_TYPE
 author: windows-driver-content
 description: The GPIO_PIN_IORESTRICTION_TYPE enumeration describes the functions that a GPIO pin is limited to performing.
@@ -7,7 +7,7 @@ old-location: kernel\gpio_pin_iorestriction_type.htm
 old-project: kernel
 ms.assetid: 381A59EE-BA1C-4810-842B-1D3E4D964486
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: _GPIO_PIN_IORESTRICTION_TYPE, GPIO_PIN_IORESTRICTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: GPIO_PIN_IORESTRICTION_TYPE
 ---
 
 # _GPIO_PIN_IORESTRICTION_TYPE enumeration
@@ -77,29 +78,3 @@ Indicates that the GPIO pin is not restricted to either input or output and that
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

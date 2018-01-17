@@ -1,17 +1,23 @@
 ---
-UID: NA:
+UID: TP:battery
+ms.assetid: 7433fa8b-bcff-3cc7-a61e-27c29a2f632b
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Battery
 
-## -description
+
 Overview of the Battery technology.
 
 To develop Battery, you need these headers:
 
  * [charging.h](..\charging\index.md)
  * [ntpoapi.h](..\ntpoapi\index.md)
- * [poclass.h](..\poclass\index.md)
  * [upssvc.h](..\upssvc\index.md)
 
 For the programming guide, see [Battery](https://docs.microsoft.com/en-us/windows-hardware/drivers/battery).
@@ -33,9 +39,6 @@ For the programming guide, see [Battery](https://docs.microsoft.com/en-us/window
 | ---- |:---- |
 | [BATTERY_REPORTING_SCALE structure](..\ntpoapi\ns-ntpoapi-battery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
 | [_BATTERYPROVISIONINGSTATUS structure](..\charging\ns-charging-_batteryprovisioningstatus.md) | This structure is for internal use only. |
-| [_BATTERY_INFORMATION structure](..\poclass\ns-poclass-_battery_information.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
-| [_BATTERY_MANUFACTURE_DATE structure](..\poclass\ns-poclass-_battery_manufacture_date.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
-| [_BATTERY_STATUS structure](..\poclass\ns-poclass-_battery_status.md) | The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to BatteryMiniQueryStatus. |
 | [_CAD_POWER_SOURCE_INFO structure](..\charging\ns-charging-_cad_power_source_info.md) | This structure is for internal use only. |
 | [_CAD_POWER_SOURCE_INFO_USB structure](..\charging\ns-charging-_cad_power_source_info_usb.md) | This structure is for internal use only. |
 | [_CHARGINGSTATUSCOMPLETE structure](..\charging\ns-charging-_chargingstatuscomplete.md) | This structure is for internal use only. |

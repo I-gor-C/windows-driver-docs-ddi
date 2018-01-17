@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_UPDATEALLOCATIONPROPERTYCB
+UID: NC:d3dumddi.PFND3DDDI_UPDATEALLOCATIONPROPERTYCB
 title: PFND3DDDI_UPDATEALLOCATIONPROPERTYCB
 author: windows-driver-content
 description: The pfnUpdateAllocationPropertyCb functions updates the property of an allocation without creating a new allocation.
@@ -7,8 +7,8 @@ old-location: display\pfnupdateallocationpropertycb.htm
 old-project: display
 ms.assetid: 49E4189A-2183-4033-BF17-ADFAC1CF1EF2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback
@@ -89,19 +90,3 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt76
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include TBD)</dt>
-</dl>
-</td>
-</tr>
-</table>

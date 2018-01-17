@@ -1,14 +1,14 @@
 ---
-UID: NS.WDBGEXTS._FIELD_INFO
+UID: NS:wdbgexts._FIELD_INFO
 title: _FIELD_INFO
 author: windows-driver-content
 description: The FIELD_INFO structure is used by the IG_DUMP_SYMBOL_INFOIoctl operation to provide information about a member in a structure.
 old-location: debugger\field_info.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 627b14dc-9b13-464c-ba23-6e91bef2b940
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FIELD_INFO, PFIELD_INFO, FIELD_INFO, *PFIELD_INFO
+ms.date: 1/10/2018
+ms.keywords: _FIELD_INFO, FIELD_INFO, *PFIELD_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FIELD_INFO, *PFIELD_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -39,8 +40,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>FIELD_INFO</b> structure is used by the <a href="debugger.ig_dump_symbol_info">IG_DUMP_SYMBOL_INFO</a>
-<a href="debugger.ioctl">Ioctl</a> operation to provide information about a member in a structure.
+The <b>FIELD_INFO</b> structure is used by the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation to provide information about a member in a structure.
 
 
 
@@ -99,7 +100,7 @@ Specifies the flags that determine the behavior of the IG_DUMP_SYMBOL_INFO <b>Io
 
 ### -field address
 
-Receives the address in the target's memory of the member that is specified by <b>fName</b>.  If no address is supplied for the symbol type in SYM_DUMP_PARAM.<b>addr</b>, <b>address</b> receives the offset of the member relative to the beginning of an instance of the type.  For more information about SYM_DUMP_PARAM, see <a href="debugger.ig_dump_symbol_info">IG_DUMP_SYMBOL_INFO</a>.
+Receives the address in the target's memory of the member that is specified by <b>fName</b>.  If no address is supplied for the symbol type in SYM_DUMP_PARAM.<b>addr</b>, <b>address</b> receives the offset of the member relative to the beginning of an instance of the type.  For more information about SYM_DUMP_PARAM, see <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>.
 
 
 ### -field fieldCallBack
@@ -172,32 +173,17 @@ Receives a Boolean value that indicates whether the member is a constant.  <b>fC
 
 
 ## -remarks
-When calling the <a href="debugger.ig_dump_symbol_info">IG_DUMP_SYMBOL_INFO</a>
-<a href="debugger.ioctl">Ioctl</a> operation, the <b>fName</b> member of this structure should be set to the name of the symbol's member to which this structure applies and the <b>fOptions</b> member should reflect the desired functionality of the operation.  The other members are either optional, or are filled in by <b>Ioctl</b>.
+When calling the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation, the <b>fName</b> member of this structure should be set to the name of the symbol's member to which this structure applies and the <b>fOptions</b> member should reflect the desired functionality of the operation.  The other members are either optional, or are filled in by <b>Ioctl</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>WdbgExts.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="debugger.ig_dump_symbol_info">IG_DUMP_SYMBOL_INFO</a>
+<a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
 </dt>
 <dt>
-<a href="debugger.ioctl">Ioctl</a>
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540429">DBG_DUMP_FIELD_XXX</a>
@@ -210,5 +196,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20FIELD_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FIELD_INFO structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

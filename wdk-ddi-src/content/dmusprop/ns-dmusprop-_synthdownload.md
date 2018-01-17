@@ -1,5 +1,5 @@
 ---
-UID: NS.DMUSPROP._SYNTHDOWNLOAD
+UID: NS:dmusprop._SYNTHDOWNLOAD
 title: _SYNTHDOWNLOAD
 author: windows-driver-content
 description: The SYNTHDOWNLOAD structure specifies a handle for downloaded DLS data. It also specifies whether the buffer containing the DLS data can be freed.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: b6fd9c92-ac36-46ac-b996-d76afaf6b906
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTHDOWNLOAD, *PSYNTHDOWNLOAD, PSYNTHDOWNLOAD, SYNTHDOWNLOAD
+ms.keywords: _SYNTHDOWNLOAD, SYNTHDOWNLOAD, *PSYNTHDOWNLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYNTHDOWNLOAD, *PSYNTHDOWNLOAD
 ---
 
 # _SYNTHDOWNLOAD structure
@@ -69,21 +70,6 @@ When processing a <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 If the miniport driver makes its own copy of the DLS data, it sets the <i>Free</i> parameter to <b>TRUE</b> to indicate that the client can free the buffer containing the DLS data as soon as the KSPROPERTY_SYNTH_DLS_DOWNLOAD property request completes. If the miniport driver continues to use the client's copy of the DLS data, however, it sets <i>Free</i> to <b>FALSE</b> to indicate that the client should maintain its allocation of the original DLS data buffer until it unloads the data by sending a KSPROPERTY_SYNTH_DLS_UNLOAD property request.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusprop.h (include Dmusprop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

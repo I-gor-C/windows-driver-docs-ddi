@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcForwardContentToFileObject
+UID: NF:portcls.PcForwardContentToFileObject
 title: PcForwardContentToFileObject function
 author: windows-driver-content
 description: The PcForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcForwardContentToFileObject function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>PcForwardContentToFileObject</b> function is obsolete and is maintained only to support existing drivers. Note that this function call is identical in operation to the <a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a> function, and its parameter definitions and return value are also identical.
+The <b>PcForwardContentToFileObject</b> function is obsolete and is maintained only to support existing drivers. Note that this function call is identical in operation to the <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a> function, and its parameter definitions and return value are also identical.
 
 
 
@@ -53,68 +54,21 @@ PORTCLASSAPI NTSTATUS NTAPI  PcForwardContentToFileObject(void);
 
 
 ## -returns
-See return value definition in <a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>.
 
-See return value definition in <a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>.
 
-See return value definition in <a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>.
 
 
 ## -remarks
-For more information, see the comments in <a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a>.
+For more information, see the comments in <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PortCls system driver implements the <b>PcForwardContentToFileObject</b> function in Microsoft Windows XP and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
 </dt>
 </dl>
  

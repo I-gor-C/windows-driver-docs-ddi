@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.IoEnumerateDeviceObjectList
+UID: NF:ntifs.IoEnumerateDeviceObjectList
 title: IoEnumerateDeviceObjectList function
 author: windows-driver-content
 description: The IoEnumerateDeviceObjectList routine enumerates a driver's device object list.
@@ -7,7 +7,7 @@ old-location: ifsk\ioenumeratedeviceobjectlist.htm
 old-project: ifsk
 ms.assetid: ce6cec58-2122-49c3-8c5c-172df2c4dd04
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IoEnumerateDeviceObjectList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # IoEnumerateDeviceObjectList function
@@ -91,7 +92,7 @@ Actual number of device objects found in the driver object's device object list.
 ## -remarks
 A file system filter driver calls <b>IoEnumerateDeviceObjectList</b> to enumerate: 
 
-The device objects it has created. This is commonly done when the driver is preparing to unload. Note that a file system filter driver cannot safely be unloaded from a running system. For more information, see <a href="kernel.zwunloaddriver">ZwUnloadDriver</a>.
+The device objects it has created. This is commonly done when the driver is preparing to unload. Note that a file system filter driver cannot safely be unloaded from a running system. For more information, see <a href="..\wdm\nf-wdm-zwunloaddriver.md">ZwUnloadDriver</a>.
 
 The device objects created by the base file system, so the filter knows the number of volumes to which it can attach.
 
@@ -99,98 +100,30 @@ The device objects created by the base file system, so the filter knows the numb
 
 In the latter case, the filter driver typically calls <b>IoEnumerateDeviceObjectList</b> twice: once to get the number of device objects in the list, and once to get the device object list itself. In the first call, the caller should set the <i>DeviceObjectList</i> parameter to <b>NULL</b> and <i>DeviceObjectListSize</i> to zero. In the second call, <i>DeviceObjectList</i> should contain a pointer to an appropriately-sized pointer array, and <i>DeviceObjectListSize</i> should contain the size, in bytes, of that array. 
 
-<b>IoEnumerateDeviceObjectList</b> increments the reference count on every device object in the list pointed to by <i>DeviceObjectList</i>. Thus every successful call to <b>IoEnumerateDeviceObjectList</b> must be matched by a subsequent call to <a href="kernel.obdereferenceobject">ObDereferenceObject</a>for each device object in the list. Failure to do so prevents the system from freeing or deleting these device objects because of an outstanding reference count. 
+<b>IoEnumerateDeviceObjectList</b> increments the reference count on every device object in the list pointed to by <i>DeviceObjectList</i>. Thus every successful call to <b>IoEnumerateDeviceObjectList</b> must be matched by a subsequent call to <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>for each device object in the list. Failure to do so prevents the system from freeing or deleting these device objects because of an outstanding reference count. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.iogetattacheddevice">IoGetAttachedDevice</a>
+<a href="..\ntifs\nf-ntifs-iogetattacheddevice.md">IoGetAttachedDevice</a>
 </dt>
 <dt>
-<a href="kernel.iogetattacheddevicereference">IoGetAttachedDeviceReference</a>
+<a href="..\wdm\nf-wdm-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 </dt>
 <dt>
-<a href="ifsk.iogetlowerdeviceobject">IoGetLowerDeviceObject</a>
+<a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
 </dt>
 <dt>
-<a href="kernel.obdereferenceobject">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
-<a href="kernel.zwunloaddriver">ZwUnloadDriver</a>
+<a href="..\wdm\nf-wdm-zwunloaddriver.md">ZwUnloadDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateDeviceObjectList routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoEnumerateDeviceObjectList routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

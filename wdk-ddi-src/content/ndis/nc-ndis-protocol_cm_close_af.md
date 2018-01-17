@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CM_CLOSE_AF
-title: PROTOCOL_CM_CLOSE_AF
+UID: NC:ndis.PROTOCOL_CM_CLOSE_AF
+title: PROTOCOL_CM_CLOSE_AF function
 author: windows-driver-content
 description: The ProtocolCmCloseAf function is a required function that releases per-open resources for an address family that a call manager supports.Note  You must declare the function by using the PROTOCOL_CM_CLOSE_AF type.
 old-location: netvista\protocolcmcloseaf.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a7a02813-62e4-49c5-abb6-a90f4e092b9f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CM_CLOSE_AF
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CM_CLOSE_AF callback
+# PROTOCOL_CM_CLOSE_AF function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CM_CLOSE_AF ProtocolCmCloseAf;
@@ -76,7 +77,7 @@ Specifies the handle to the call manager's per-AF context area, originally suppl
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>Indicates that the request to close the open instance of the address family will be completed
        asynchronously. The call manager must call 
-       <a href="netvista.ndiscmcloseaddressfamilycomplete">
+       <a href="..\ndis\nf-ndis-ndiscmcloseaddressfamilycomplete.md">
        NdisCmCloseAddressFamilyComplete</a> when all such operations have been completed.
 
  
@@ -98,7 +99,7 @@ The call manager can fail the request with NDIS_STATUS_NOT_ACCEPTED.
 The call manager can return NDIS_STATUS_PENDING. After the client has closed all calls and
       deregistered all SAPs, the call manager can then close the address family and call 
       <b>NdisCmCloseAddressFamilyComplete</b> or 
-      <a href="netvista.ndismcmcloseaddressfamilycomplete">
+      <a href="..\ndis\nf-ndis-ndismcmcloseaddressfamilycomplete.md">
       NdisMCmCloseAddressFamilyComplete</a> to notify the client. This is the preferred response.
 
 To define a <i>ProtocolCmCloseAf</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
@@ -112,49 +113,10 @@ The <b>PROTOCOL_CM_CLOSE_AF</b> function type is defined in the Ndis.h header fi
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/library/windows/hardware/ff563183">ProtocolCmCloseAf (NDIS 5.1)</a>)
-   in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolCmCloseAf (NDIS 5.1)</i>)
-   in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndiscmcloseaddressfamilycomplete">
+<a href="..\ndis\nf-ndis-ndiscmcloseaddressfamilycomplete.md">
    NdisCmCloseAddressFamilyComplete</a>
 </dt>
 <dt>
@@ -165,5 +127,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CM_CLOSE_AF callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_CLOSE_AF callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

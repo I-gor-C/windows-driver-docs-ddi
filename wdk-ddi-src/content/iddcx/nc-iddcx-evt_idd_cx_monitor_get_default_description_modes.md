@@ -1,17 +1,17 @@
 ---
-UID: NC.iddcx.EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES
-title: EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES
+UID: NC:iddcx.EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES
+title: EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES function
 author: windows-driver-content
 description: EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES is called by the OS to request the default monitor mode list from the driver for the specified monitor when a monitor without a description is connected.
 old-location: display\evt_idd_cx_monitor_get_default_description_modes.htm
 old-project: display
 ms.assetid: 2ad45cfe-f65c-41bc-8c64-5334dbf7c755
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WcsTranslateColors
+ms.date: 12/29/2017
+ms.keywords: EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
 ---
 
-# EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES callback
+# EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES function
 
 
 
@@ -42,7 +43,7 @@ req.irql: _requires_same_
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES EvtIddCxMonitorGetDefaultDescriptionModes;
@@ -88,50 +89,4 @@ typedef EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES PFN_IDD_CX_MONITOR_GET_
 
 
 ## -remarks
-The driver must create at least one monitor mode for the monitor description.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_requires_same_
-
-</td>
-</tr>
-</table>
+The driver must create at least one monitor mode for the monitor description.</p>

@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISCHIMNEY._OFFLOAD_STATE_HEADER
+UID: NS:ndischimney._OFFLOAD_STATE_HEADER
 title: _OFFLOAD_STATE_HEADER
 author: windows-driver-content
 description: The OFFLOAD_STATE_HEADER structure serves as a header in an offload state structure.
 old-location: netvista\offload_state_header.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9becc611-ede9-4285-b2d7-c53747d098a9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER, POFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER
+ms.date: 1/11/2018
+ms.keywords: _OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER
 ---
 
 # _OFFLOAD_STATE_HEADER structure
@@ -72,57 +73,41 @@ Reserved.
 The following offload state structures include an OFFLOAD_STATE_HEADER structure:
 
 
-<a href="netvista.neighbor_offload_state_const">
+<a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_const.md">
        NEIGHBOR_OFFLOAD_STATE_CONST</a>
 
 
 
-<a href="netvista.neighbor_offload_state_cached">
+<a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_cached.md">
        NEIGHBOR_OFFLOAD_STATE_CACHED</a>
 
 
 
-<a href="netvista.neighbor_offload_state_delegated">
+<a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_delegated.md">
        NEIGHBOR_OFFLOAD_STATE_DELEGATED</a>
 
 
 
-<a href="netvista.path_offload_state_const">PATH_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_const.md">PATH_OFFLOAD_STATE_CONST</a>
 
 
 
-<a href="netvista.path_offload_state_cached">PATH_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_cached.md">PATH_OFFLOAD_STATE_CACHED</a>
 
 
 
-<a href="netvista.path_offload_state_delegated">
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_delegated.md">
        PATH_OFFLOAD_STATE_DELEGATED</a>
 
 
 
-<a href="netvista.tcp_offload_state_const">TCP_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
 
 
 
-<a href="netvista.tcp_offload_state_cached">TCP_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_cached.md">TCP_OFFLOAD_STATE_CACHED</a>
 
 
 
-<a href="netvista.tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
+</p>

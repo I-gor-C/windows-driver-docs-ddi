@@ -1,5 +1,5 @@
 ---
-UID: NE.avc._tagAvcSubunitType
+UID: NE:avc._tagAvcSubunitType
 title: _tagAvcSubunitType
 author: windows-driver-content
 description: The AvcSubunitType enumeration type is used to indicate the type of AV/C subunit.
@@ -7,7 +7,7 @@ old-location: stream\avcsubunittype.htm
 old-project: stream
 ms.assetid: c99db45c-2d99-4bf7-98f8-4d9501ac81c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: _tagAvcSubunitType, AvcSubunitType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: AvcSubunitType
 ---
 
 # _tagAvcSubunitType enumeration
@@ -143,19 +144,3 @@ Specifies a generic subunit type.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

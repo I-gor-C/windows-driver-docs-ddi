@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_NOTIFY_INFO
+UID: NS:61883._CMP_NOTIFY_INFO
 title: _CMP_NOTIFY_INFO
 author: windows-driver-content
 description: This structure is used by the PCMP_NOTIFY_ROUTINE callback.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 7451B01F-D925-4882-9E6B-EEA79F54C55B
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_NOTIFY_INFO, *PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO, PCMP_NOTIFY_INFO
+ms.keywords: _CMP_NOTIFY_INFO, *PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO
 ---
 
 # _CMP_NOTIFY_INFO structure
@@ -72,21 +73,6 @@ A context.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

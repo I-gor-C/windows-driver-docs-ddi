@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CIP_ATTACH_FRAME
+UID: NS:61883._CIP_ATTACH_FRAME
 title: _CIP_ATTACH_FRAME
 author: windows-driver-content
 description: This structure is used in an attach frame request.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: F7E283BB-B714-4CD4-AFF4-EFB62D82791D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME, PCIP_ATTACH_FRAME, CIP_ATTACH_FRAME
+ms.keywords: _CIP_ATTACH_FRAME, CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME
 ---
 
 # _CIP_ATTACH_FRAME structure
@@ -83,21 +84,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 
 If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_INSUFFICIENT_RESOURCES.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

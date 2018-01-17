@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWavePciStream.ReleaseMapping
+UID: NF:portcls.IPortWavePciStream.ReleaseMapping
 title: IPortWavePciStream::ReleaseMapping method
 author: windows-driver-content
 description: The ReleaseMapping method releases a mapping that was obtained by a previous call to IPortWavePciStream::GetMapping.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWavePciStream::ReleaseMapping method
@@ -38,7 +39,7 @@ req.irql: <=DISPATCH_LEVEL
 
 
 ## -description
-The <code>ReleaseMapping</code> method releases a mapping that was obtained by a previous call to <a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>.
+The <code>ReleaseMapping</code> method releases a mapping that was obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>.
 
 
 
@@ -63,48 +64,12 @@ Specifies a tag value identifying the mapping that is to be released. For more i
 
 
 ## -remarks
-Set the <i>Tag</i> parameter to the same tag value that you used to identify the mapping in the call to <a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a> that originally obtained the mapping.
+Set the <i>Tag</i> parameter to the same tag value that you used to identify the mapping in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a> that originally obtained the mapping.
 
 The miniport driver must keep track of the order in which it acquires its mappings from calls to <b>IPortWavePciStream::GetMapping</b>, and it must release the mappings in the same order.
 
-To avoid potential deadlocks, the miniport driver must avoid holding a spin lock during its call to <code>ReleaseMapping</code>. See the ac97 sample audio driver in the Microsoft Windows Driver Kit (WDK) for a code example that uses a spin lock to serialize accesses to shared data structures and peripherals in a multiprocessor system. The sample code calls <a href="kernel.kereleasespinlock">KeReleaseSpinLock</a> before calling <code>ReleaseMapping</code> and calls <a href="kernel.keacquirespinlock">KeAcquireSpinLock</a> after calling <code>ReleaseMapping</code>. Between the calls to release and acquire the spin lock, the driver thread must not assume that it has exclusive access to the data or peripherals that are guarded by the spin lock. The Driver Verifier tool (see the description of this tool at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8753">Driver Verifier</a> website) checks for active spin locks during calls to <code>ReleaseMapping</code>; if it detects one, it generates a 0xC4 (deadlock detection) bug check.
+To avoid potential deadlocks, the miniport driver must avoid holding a spin lock during its call to <code>ReleaseMapping</code>. See the ac97 sample audio driver in the Microsoft Windows Driver Kit (WDK) for a code example that uses a spin lock to serialize accesses to shared data structures and peripherals in a multiprocessor system. The sample code calls <a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a> before calling <code>ReleaseMapping</code> and calls <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a> after calling <code>ReleaseMapping</code>. Between the calls to release and acquire the spin lock, the driver thread must not assume that it has exclusive access to the data or peripherals that are guarded by the spin lock. The Driver Verifier tool (see the description of this tool at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8753">Driver Verifier</a> website) checks for active spin locks during calls to <code>ReleaseMapping</code>; if it detects one, it generates a 0xC4 (deadlock detection) bug check.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -112,16 +77,16 @@ IRQL
 <a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
 </dt>
 <dt>
-<a href="kernel.kereleasespinlock">KeReleaseSpinLock</a>
+<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="kernel.keacquirespinlock">KeAcquireSpinLock</a>
+<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepcistream_revokemappings">IMiniportWavePciStream::RevokeMappings</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536730">IMiniportWavePciStream::RevokeMappings</a>
 </dt>
 </dl>
  

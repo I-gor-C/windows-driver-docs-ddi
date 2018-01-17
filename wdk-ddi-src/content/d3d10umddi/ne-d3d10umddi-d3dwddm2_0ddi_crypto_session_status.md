@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
+UID: NE:d3d10umddi.D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
 title: D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
 author: windows-driver-content
 description: Provides status information for an existing CryptoSession object.
@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_crypto_session_status.htm
 old-project: display
 ms.assetid: DBAFEAE2-66B6-4F2F-801D-21B7792BCA60
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS, D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
 ---
 
 # D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS enumeration
@@ -71,39 +72,3 @@ The underlying hardware key for the specified <i>CryptoSession</i> has become lo
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

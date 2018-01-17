@@ -3,7 +3,6 @@
 ## [Audio](_audio/index.md)
 ## [Battery](_battery/index.md)
 ## [benchmark](_benchmark/index.md)
-## [Biometric](_biometric/index.md)
 ## [Bluetooth](_bltooth/index.md)
 ## [Debugger](_debugger/index.md)
 ## [Driver test tools](_devtest/index.md)

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dkmddi.DXGKCB_INDICATE_CONNECTOR_CHANGE
+UID: NC:d3dkmddi.DXGKCB_INDICATE_CONNECTOR_CHANGE
 title: DXGKCB_INDICATE_CONNECTOR_CHANGE
 author: windows-driver-content
 description: DXGKCB_INDICATE_CONNECTOR_CHANGE is called by the KMD to indicate that it has added changes to its change queue which the OS should now query.
@@ -7,8 +7,8 @@ old-location: display\dxgkcb_indicate_connector_change.htm
 old-project: display
 ms.assetid: D3C76DC0-7A6B-4E1E-8277-F6410D4B474B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
 # DXGKCB_INDICATE_CONNECTOR_CHANGE callback
@@ -63,29 +64,3 @@ If this routine succeeds, it returns STATUS_SUCCESS.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>

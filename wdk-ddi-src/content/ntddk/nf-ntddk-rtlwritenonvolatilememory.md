@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlWriteNonVolatileMemory
+UID: NF:ntddk.RtlWriteNonVolatileMemory
 title: RtlWriteNonVolatileMemory function
 author: windows-driver-content
 description: The routine RtlWriteNonVolatileMemory copies the contents of a source buffer to a non-volatile destination memory buffer.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlwritenonvolatilememory.htm
 old-project: ifsk
 ms.assetid: 49DDDEF8-F949-4674-A18B-9BB091D163C2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlWriteNonVolatileMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlWriteNonVolatileMemory function
@@ -60,7 +61,7 @@ NTSTATUS RtlWriteNonVolatileMemory(
 ### -param NvToken 
 
  A pointer to an opaque structure that has
-        information about various properties of the non-volatile memory region which <a href="ifsk.rtlgetnonvolatiletoken">RtlGetNonVolatileToken</a> had returned.
+        information about various properties of the non-volatile memory region which <a href="..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md">RtlGetNonVolatileToken</a> had returned.
 
 
 ### -param NvDestination 
@@ -96,72 +97,37 @@ The routine <b>RtlWriteNonVolatileMemory</b> returns one of the following:
 
 
 ## -remarks
- This is a <a href="kernel.rtlcopymemory">RtlCopyMemory</a> equivalent for non-volatile memory
+ This is a <a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a> equivalent for non-volatile memory
     the value add is only with verifier enabled. When the verifier is enabled,
     ranges that are modified can be tracked in <b>NvToken</b> and can be reported
-    in <a href="ifsk.rtlfreenonvolatiletoken">RtlFreeNonVolatileToken</a> if a flush is not called for a write. This routine is currently not supported for Windows Server until the next major release of Windows Server.
+    in <a href="..\ntddk\nf-ntddk-rtlfreenonvolatiletoken.md">RtlFreeNonVolatileToken</a> if a flush is not called for a write. This routine is currently not supported for Windows Server until the next major release of Windows Server.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1703
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Winnt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlcopymemory">RtlCopyMemory</a>
+<a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a>
 </dt>
 <dt>
-<a href="ifsk.RtlDrainNonVolatileFlush">RtlDrainNonVolatileFlush</a>
+<a href="https://msdn.microsoft.com/EA1C2DF3-591C-407A-ABBF-DE615466A498">RtlDrainNonVolatileFlush</a>
 </dt>
 <dt>
-<a href="ifsk.RtlFlushNonVolatileMemory">
+<a href="https://msdn.microsoft.com/759CDFAA-D939-44E7-AE03-E3ED90F8E09D">
 RtlFlushNonVolatileMemory</a>
 </dt>
 <dt>
-<a href="ifsk.RtlFlushNonVolatileMemoryRanges">RtlFlushNonVolatileMemoryRanges</a>
+<a href="https://msdn.microsoft.com/169C5F41-B372-4056-AAC5-53DD0582A563">RtlFlushNonVolatileMemoryRanges</a>
 </dt>
 <dt>
-<a href="ifsk.RtlFreeNonVolatileToken">RtlFreeNonVolatileToken</a>
+<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
 </dt>
 <dt>
-<a href="ifsk.RtlGetNonVolatileToken">RtlGetNonVolatileToken</a>
+<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlWriteNonVolatileMemory routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlWriteNonVolatileMemory routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

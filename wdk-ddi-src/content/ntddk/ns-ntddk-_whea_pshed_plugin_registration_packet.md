@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
+UID: NS:ntddk._WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
 title: _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
 author: windows-driver-content
 description: The WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure describes the data required for registering a PSHED plug-in with the PSHED.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
 ---
 
 # _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure
@@ -119,46 +120,20 @@ Reserved for system use. PSHED plug-ins should set this member to zero.
 
 ### -field Callbacks
 
-A <a href="whea.whea_pshed_plugin_callbacks">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.
+A <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.
 
 
 ## -remarks
-A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure to the <a href="whea.pshedregisterplugin">PshedRegisterPlugin</a> function when it registers itself with the PSHED.
+A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure to the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function when it registers itself with the PSHED.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="whea.pshedregisterplugin">PshedRegisterPlugin</a>
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
 </dt>
 <dt>
-<a href="whea.whea_pshed_plugin_callbacks">WHEA_PSHED_PLUGIN_CALLBACKS</a>
+<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a>
 </dt>
 </dl>
  

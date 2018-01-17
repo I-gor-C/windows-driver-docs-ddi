@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_MASK_INTERRUPT_PARAMETERS
+UID: NS:gpioclx._GPIO_MASK_INTERRUPT_PARAMETERS
 title: _GPIO_MASK_INTERRUPT_PARAMETERS
 author: windows-driver-content
 description: The GPIO_MASK_INTERRUPT_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to mask.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: E7975BAE-4255-4D07-A747-481D210D1244
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_MASK_INTERRUPT_PARAMETERS, *PGPIO_MASK_INTERRUPT_PARAMETERS, PGPIO_MASK_INTERRUPT_PARAMETERS, GPIO_MASK_INTERRUPT_PARAMETERS
+ms.keywords: _GPIO_MASK_INTERRUPT_PARAMETERS, GPIO_MASK_INTERRUPT_PARAMETERS, *PGPIO_MASK_INTERRUPT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_MASK_INTERRUPT_PARAMETERS, *PGPIO_MASK_INTERRUPT_PARAMETERS
 ---
 
 # _GPIO_MASK_INTERRUPT_PARAMETERS structure
@@ -75,31 +76,6 @@ The <i>MaskParameters</i> parameter of the <a href="https://msdn.microsoft.com/l
 
 GPIO controllers that have memory-mapped registers are expected to always succeed in setting the interrupt mask to the requested value. The <b>FailedMask</b> member is primarily intended for use by GPIO controllers that are not memory-mapped.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_GET_CONFIG_ROM
+UID: NS:1394._IRB_REQ_GET_CONFIG_ROM
 title: _IRB_REQ_GET_CONFIG_ROM
 author: windows-driver-content
 description: This structure contains the fields necessary for the bus driver to carry out a GetConfigRom request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_GET_CONFIG_ROM
 ---
 
 # _IRB_REQ_GET_CONFIG_ROM structure
@@ -89,19 +90,3 @@ Receives the index to the node's model textual leaf in the configuration ROM. Th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

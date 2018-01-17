@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_CONFIGURATION_OBJECT
+UID: NS:ndis._NDIS_CONFIGURATION_OBJECT
 title: _NDIS_CONFIGURATION_OBJECT
 author: windows-driver-content
 description: The NDIS_CONFIGURATION_OBJECT structure defines the attributes of a configuration object that an NDIS driver can pass to the NdisOpenConfigurationEx function.
 old-location: netvista\ndis_configuration_object.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8fa80414-c87a-4f05-b99c-5153f08a0862
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_CONFIGURATION_OBJECT, *PNDIS_CONFIGURATION_OBJECT, NDIS_CONFIGURATION_OBJECT, PNDIS_CONFIGURATION_OBJECT
+ms.date: 1/11/2018
+ms.keywords: _NDIS_CONFIGURATION_OBJECT, *PNDIS_CONFIGURATION_OBJECT, NDIS_CONFIGURATION_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_CONFIGURATION_OBJECT, NDIS_CONFIGURATION_OBJECT
 ---
 
 # _NDIS_CONFIGURATION_OBJECT structure
@@ -40,7 +41,7 @@ req.irql: See Remarks section
 ## -description
 The NDIS_CONFIGURATION_OBJECT structure defines the attributes of a configuration object that an NDIS
   driver can pass to the 
-  <a href="netvista.ndisopenconfigurationex">
+  <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">
   NdisOpenConfigurationEx</a> function.
 
 
@@ -61,7 +62,7 @@ typedef struct _NDIS_CONFIGURATION_OBJECT {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_CONFIGURATION_OBJECT structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_CONFIGURATION_OBJECT, the 
@@ -94,47 +95,22 @@ Set this flag if a monitoring filter driver must access the filter module config
 ## -remarks
 To configuration parameters in the registry, an NDIS driver can use the NDIS_CONFIGURATION_OBJECT
     structure to define a configuration object and then call the 
-    <a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a> function
+    <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a> function
     to get a configuration handle.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_CONFIGURATION_OBJECT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CONFIGURATION_OBJECT structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

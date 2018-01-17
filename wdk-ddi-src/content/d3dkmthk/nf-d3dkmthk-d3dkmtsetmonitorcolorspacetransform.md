@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTSetMonitorColorSpaceTransform
+UID: NF:d3dkmthk.D3DKMTSetMonitorColorSpaceTransform
 title: D3DKMTSetMonitorColorSpaceTransform function
 author: windows-driver-content
 description: Used to set the color space transform for the selected monitor.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtsetmonitorcolorspacetransform.htm
 old-project: display
 ms.assetid: cb831371-4684-4756-bc01-6c42e5af7e1b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTSetMonitorColorSpaceTransform
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTSetMonitorColorSpaceTransform function
@@ -65,49 +66,3 @@ Returns STATUS_SUCCESS if completed successfully.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-
-
-</td>
-</tr>
-</table>

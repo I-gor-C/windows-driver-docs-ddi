@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_MEMORY_TRANSFER_DIRECTION
+UID: NE:d3dkmddi._DXGK_MEMORY_TRANSFER_DIRECTION
 title: _DXGK_MEMORY_TRANSFER_DIRECTION
 author: windows-driver-content
 description: DXGK_MEMORY_TRANSFER_DIRECTION is used as part of an allocation transfer operation to specify the direction of the transfer.
@@ -7,7 +7,7 @@ old-location: display\dxgk_memory_transfer_direction.htm
 old-project: display
 ms.assetid: A45411DF-AD08-4349-A134-091343E7989E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MEMORY_TRANSFER_DIRECTION, DXGK_MEMORY_TRANSFER_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MEMORY_TRANSFER_DIRECTION
 ---
 
 # _DXGK_MEMORY_TRANSFER_DIRECTION enumeration
@@ -73,39 +74,3 @@ Transfer from local GPU memory to local GPU memory.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

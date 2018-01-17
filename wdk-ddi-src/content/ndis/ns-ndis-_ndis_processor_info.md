@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_PROCESSOR_INFO
+UID: NS:ndis._NDIS_PROCESSOR_INFO
 title: _NDIS_PROCESSOR_INFO
 author: windows-driver-content
 description: The NDIS_PROCESSOR_INFO structure specifies information about a processor in the local computer.
 old-location: netvista\ndis_processor_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 55c7044e-20db-4245-a644-93cbeb9cd512
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_PROCESSOR_INFO, NDIS_PROCESSOR_INFO, PNDIS_PROCESSOR_INFO, *PNDIS_PROCESSOR_INFO
+ms.date: 1/11/2018
+ms.keywords: _NDIS_PROCESSOR_INFO, NDIS_PROCESSOR_INFO, *PNDIS_PROCESSOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_PROCESSOR_INFO, *PNDIS_PROCESSOR_INFO
 ---
 
 # _NDIS_PROCESSOR_INFO structure
@@ -68,7 +69,7 @@ The CPU number that is assigned to the processor. The value is in the range from
 The physical package ID of the processor. The value is in the range from zero through the number
      in the 
      <b>NumPhysicalPackages</b> member of the 
-     <a href="netvista.ndis_system_processor_info">
+     <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">
      NDIS_SYSTEM_PROCESSOR_INFO</a> structure minus one.
 
 
@@ -87,47 +88,22 @@ The hyper-threading ID of the processor. The value is in the range from zero thr
 
 ## -remarks
 The NDIS_PROCESSOR_INFO structure is used in the 
-    <a href="netvista.ndis_system_processor_info">
+    <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">
     NDIS_SYSTEM_PROCESSOR_INFO</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="netvista.ndis_processor_info_ex">NDIS_PROCESSOR_INFO_EX</a>.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_processor_info_ex">NDIS_PROCESSOR_INFO_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566811">NDIS_PROCESSOR_INFO_EX</a>
 </dt>
 <dt>
-<a href="netvista.ndis_system_processor_info">NDIS_SYSTEM_PROCESSOR_INFO</a>
+<a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_PROCESSOR_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROCESSOR_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

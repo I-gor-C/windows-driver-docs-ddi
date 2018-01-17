@@ -1,5 +1,5 @@
 ---
-UID: NS.WPPRECORDER._RECORDER_LOG_CREATE_PARAMS
+UID: NS:wpprecorder._RECORDER_LOG_CREATE_PARAMS
 title: _RECORDER_LOG_CREATE_PARAMS
 author: windows-driver-content
 description: The RECORDER_LOG_CREATE_PARAMS structure is an input parameter to the WppRecorderLogCreate method.
@@ -7,8 +7,8 @@ old-location: devtest\recorder_log_create_params.htm
 old-project: devtest
 ms.assetid: 6BEB44C2-BB35-420F-B4A0-925FFAD7473C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _RECORDER_LOG_CREATE_PARAMS, PRECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS, RECORDER_LOG_CREATE_PARAMS
+ms.date: 1/10/2018
+ms.keywords: _RECORDER_LOG_CREATE_PARAMS, RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>RECORDER_LOG_CREATE_PARAMS</b> structure is an input parameter to the <a href="devtest.wpprecorderlogcreate">WppRecorderLogCreate</a> method. 
+The <b>RECORDER_LOG_CREATE_PARAMS</b> structure is an input parameter to the <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogcreate.md">WppRecorderLogCreate</a> method. 
 
 
 
@@ -104,30 +105,15 @@ Identifier to print when debug messages are merged. Lives at end of structure so
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wpprecorder.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="devtest.recorder_log_create_params_init">RECORDER_LOG_CREATE_PARAMS_INIT</a>
+<a href="..\wpprecorder\nf-wpprecorder-recorder_log_create_params_init.md">RECORDER_LOG_CREATE_PARAMS_INIT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20RECORDER_LOG_CREATE_PARAMS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20RECORDER_LOG_CREATE_PARAMS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

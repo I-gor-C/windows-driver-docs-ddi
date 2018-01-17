@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMANAGECALLPARAMSCOMMAND
+UID: NE:ntddrilapitypes.RILMANAGECALLPARAMSCOMMAND
 title: RILMANAGECALLPARAMSCOMMAND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmanagecallparamscommand.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d0344812-811e-47f6-a03b-bb753cce912a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMANAGECALLPARAMSCOMMAND, RILMANAGECALLPARAMSCOMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMANAGECALLPARAMSCOMMAND
 ---
 
 # RILMANAGECALLPARAMSCOMMAND enumeration
@@ -117,19 +118,3 @@ typedef enum _RILMANAGECALLPARAMSCOMMAND {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

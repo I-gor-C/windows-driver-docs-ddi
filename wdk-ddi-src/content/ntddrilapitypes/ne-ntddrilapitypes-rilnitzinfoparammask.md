@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILNITZINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILNITZINFOPARAMMASK
 title: RILNITZINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnitzinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bdf1505f-2a84-48a3-9534-df83237ab7bb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILNITZINFOPARAMMASK, RILNITZINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILNITZINFOPARAMMASK
 ---
 
 # RILNITZINFOPARAMMASK enumeration
@@ -73,19 +74,3 @@ typedef enum _RILNITZINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

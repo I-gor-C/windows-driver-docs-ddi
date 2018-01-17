@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_ADDTARGET_IN
+UID: NS:hbapiwmi._SM_AddTarget_IN
 title: _SM_AddTarget_IN
 author: windows-driver-content
 description: The SM_AddTarget_IN structure is used to provide input parameters to the SM_AddTarget WMI method.
@@ -7,8 +7,8 @@ old-location: storage\sm_addtarget_in.htm
 old-project: storage
 ms.assetid: 02bf5e91-bce0-4b8d-aec6-659ed1efd2b5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_AddTarget_IN, PSM_AddTarget_IN, *PSM_AddTarget_IN, SM_AddTarget_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_AddTarget_IN, *PSM_AddTarget_IN, SM_AddTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSM_AddTarget_IN, SM_AddTarget_IN
 ---
 
 # _SM_AddTarget_IN structure
@@ -77,19 +78,3 @@ The scope of the target events to report. If this member is zero, the WMI client
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

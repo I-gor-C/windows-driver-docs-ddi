@@ -1,14 +1,14 @@
 ---
-UID: NS.NETDMA._NET_DMA_PROVIDER_CHARACTERISTICS
+UID: NS:netdma._NET_DMA_PROVIDER_CHARACTERISTICS
 title: _NET_DMA_PROVIDER_CHARACTERISTICS
 author: windows-driver-content
 description: The NET_DMA_PROVIDER_CHARACTERISTICS structure specifies the characteristics for a NetDMA provider, including the entry points for the ProviderXxx functions.
 old-location: netvista\net_dma_provider_characteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7ec6d449-fdc2-44d8-976b-5a1d23c76e7b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS, PNET_DMA_PROVIDER_CHARACTERISTICS
+ms.date: 1/11/2018
+ms.keywords: _NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 # _NET_DMA_PROVIDER_CHARACTERISTICS structure
@@ -94,7 +95,7 @@ NetDMA 2.0 and later drivers can use the following flags.
 ### -field NET_DMA_PROVIDER_CHARACTERISTICS_DCA_SUPPORTED
 
 The NetDMA provider supports 
-       <a href="netvista.direct_cache_access__dca_">Direct Cache Access (DCA)</a>.
+       <a href="https://msdn.microsoft.com/d2f46f5f-e9be-4ed8-9107-39cf178ead6a">Direct Cache Access (DCA)</a>.
 
 </dd>
 </dl>
@@ -104,7 +105,7 @@ The NetDMA provider supports
 The physical device object (PDO) that is associated with the DMA provider. The Plug and Play (PnP)
      manager supplies a pointer to the PDO at the 
      <i>PhysicalDeviceObject</i> parameter to the 
-     <a href="kernel.adddevice">AddDevice</a> routine.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.
 
 
 ### -field MaxDmaChannelCount
@@ -181,49 +182,22 @@ A Unicode string that represents the user-readable description of the NetDMA pro
 
 ## -remarks
 To register a DMA provider, a DMA provider driver calls the 
-    <a href="netvista.netdmaregisterprovider">NetDmaRegisterProvider</a> function
+    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a> function
     from its 
-    <a href="kernel.adddevice">AddDevice</a> routine.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.
 
 The DMA provider driver supplies a NET_DMA_PROVIDER_CHARACTERISTICS structure at the 
     <i>ProviderCharacteristics</i> parameter of 
     <b>NetDmaRegisterProvider</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NetDMA 2.0 drivers in Windows Server 2008. (Added FriendlyName
-   member.) Supported for NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in
-   Windows Server 2008 and Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netdma.h (include Netdma.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.adddevice">AddDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 </dt>
 <dt>
-<a href="netvista.netdmaregisterprovider">NetDmaRegisterProvider</a>
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
@@ -258,5 +232,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_DMA_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

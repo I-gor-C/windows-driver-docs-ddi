@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._DXGK_I2C_INTERFACE
+UID: NS:dispmprt._DXGK_I2C_INTERFACE
 title: _DXGK_I2C_INTERFACE
 author: windows-driver-content
 description: The DXGK_I2C_INTERFACE structure contains pointers to functions in the I2C interface, which is implemented by the display miniport driver.
@@ -7,8 +7,8 @@ old-location: display\dxgk_i2c_interface.htm
 old-project: display
 ms.assetid: aba0ebc8-2c92-4d27-a35b-9ac25ac6e5ab
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
 ---
 
 # _DXGK_I2C_INTERFACE structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The DXGK_I2C_INTERFACE structure contains pointers to functions in the <a href="display.i2c_interface">I2C interface</a>, which is implemented by the display miniport driver.
+The DXGK_I2C_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567386">I2C interface</a>, which is implemented by the display miniport driver.
 
 
 
@@ -95,30 +96,4 @@ A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk
 
 
 ## -remarks
-A kernel-mode component that needs to use the I2C interface calls the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+A kernel-mode component that needs to use the I2C interface calls the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function.</p>

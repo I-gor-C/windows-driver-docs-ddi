@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmthk._D3DKMT_VIDMMESCAPETYPE
+UID: NE:d3dkmthk._D3DKMT_VIDMMESCAPETYPE
 title: _D3DKMT_VIDMMESCAPETYPE
 author: windows-driver-content
 description: The D3DKMT_VIDMMESCAPETYPE enumeration is used with the D3DKMT_VIDMM_ESCAPE structure.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_vidmmescapetype.htm
 old-project: display
 ms.assetid: 83C903F9-0E5F-454D-B6E9-FCC7C3A9B46C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_VIDMMESCAPETYPE, D3DKMT_VIDMMESCAPETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_VIDMMESCAPETYPE
 ---
 
 # _D3DKMT_VIDMMESCAPETYPE enumeration
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 <b>Do not use the D3DKMT_VIDMMESCAPETYPE enumeration; it is for testing purposes only.</b>
 
-The D3DKMT_VIDMMESCAPETYPE enumeration is used with the <a href="display.d3dkmt_vidmm_escape">D3DKMT_VIDMM_ESCAPE</a> structure.
+The D3DKMT_VIDMMESCAPETYPE enumeration is used with the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidmm_escape.md">D3DKMT_VIDMM_ESCAPE</a> structure.
 
 
 
@@ -111,19 +112,3 @@ typedef enum _D3DKMT_VIDMMESCAPETYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include TBD)</dt>
-</dl>
-</td>
-</tr>
-</table>

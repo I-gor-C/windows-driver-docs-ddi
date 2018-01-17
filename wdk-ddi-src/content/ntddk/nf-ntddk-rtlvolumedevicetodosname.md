@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlVolumeDeviceToDosName
+UID: NF:ntddk.RtlVolumeDeviceToDosName
 title: RtlVolumeDeviceToDosName function
 author: windows-driver-content
 description: The RtlVolumeDeviceToDosName routine is obsolete for Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead.RtlVolumeDeviceToDosName returns the MS-DOS path for a specified device object that represents a file system volume.
@@ -7,7 +7,7 @@ old-location: kernel\rtlvolumedevicetodosname.htm
 old-project: kernel
 ms.assetid: e25db70f-04bf-4fb1-8ff5-2beb4c825797
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlVolumeDeviceToDosName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlVolumeDeviceToDosName function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>RtlVolumeDeviceToDosName</b> routine is <u>obsolete</u> for Windows XP and later versions of Windows. Use <a href="kernel.iovolumedevicetodosname">IoVolumeDeviceToDosName</a> instead.
+The <b>RtlVolumeDeviceToDosName</b> routine is <u>obsolete</u> for Windows XP and later versions of Windows. Use <a href="..\ntddk\nf-ntddk-iovolumedevicetodosname.md">IoVolumeDeviceToDosName</a> instead.
 
 <b>RtlVolumeDeviceToDosName</b> returns the MS-DOS path for a specified device object that represents a file system volume.
 
@@ -71,65 +72,6 @@ Pointer to a Unicode string containing the MS-DOS path of the volume device obje
 
 
 ## -remarks
-The behavior of this routine is identical to that of <a href="kernel.iovolumedevicetodosname">IoVolumeDeviceToDosName</a>. For more information about how to use this routine, see <b>IoVolumeDeviceToDosName</b>.
+The behavior of this routine is identical to that of <a href="..\ntddk\nf-ntddk-iovolumedevicetodosname.md">IoVolumeDeviceToDosName</a>. For more information about how to use this routine, see <b>IoVolumeDeviceToDosName</b>.
 
-Drivers that must work on older NT-based operating systems may use this routine. Drivers written for Windows XP and later must use <b>IoVolumeDeviceToDosName</b> instead.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Obsolete for Microsoft Windows XP and later versions of Windows. Use <a href="kernel.iovolumedevicetodosname">IoVolumeDeviceToDosName</a> instead.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-</table>
+Drivers that must work on older NT-based operating systems may use this routine. Drivers written for Windows XP and later must use <b>IoVolumeDeviceToDosName</b> instead.</p>

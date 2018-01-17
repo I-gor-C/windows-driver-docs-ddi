@@ -1,5 +1,5 @@
 ---
-UID: NC.wdm.PMAP_TRANSFER_EX
+UID: NC:wdm.PMAP_TRANSFER_EX
 title: PMAP_TRANSFER_EX
 author: windows-driver-content
 description: The MapTransferEx routine sets up map registers to map the physical addresses in a scatter/gather list to the logical addresses that are required to do a DMA transfer.
@@ -7,8 +7,8 @@ old-location: kernel\maptransferex.htm
 old-project: kernel
 ms.assetid: 9F6A20F0-94B1-4DA2-9FEA-F44D6AFDD16D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/4/2018
+ms.keywords: KSYNCHRONIZE_ROUTINE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -69,7 +70,7 @@ NTSTATUS MapTransferEx(
 
 ### -param DmaAdapter [in]
 
-A pointer to a <a href="kernel.dma_adapter">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine.
+A pointer to a <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine.
 
 
 ### -param Mdl [in]
@@ -104,7 +105,7 @@ The direction of the DMA transfer. Set this parameter to <b>TRUE</b> for a write
 
 ### -param ScatterGatherBuffer [out, optional]
 
-A pointer to a caller-allocated buffer into which the routine writes the scatter/gather list for the DMA transfer. This list begins with a <a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a> structure, which is immediately followed by a <b>SCATTER_GATHER_ELEMENT</b> array. For a driver that uses a bus-master DMA device, <i>ScatterGatherBuffer</i> is a required parameter. For a driver that uses a system DMA controller, the <i>ScatterGatherBuffer</i> parameter is optional and can be <b>NULL</b>. For more information, see Remarks.
+A pointer to a caller-allocated buffer into which the routine writes the scatter/gather list for the DMA transfer. This list begins with a <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure, which is immediately followed by a <b>SCATTER_GATHER_ELEMENT</b> array. For a driver that uses a bus-master DMA device, <i>ScatterGatherBuffer</i> is a required parameter. For a driver that uses a system DMA controller, the <i>ScatterGatherBuffer</i> parameter is optional and can be <b>NULL</b>. For more information, see Remarks.
 
 
 ### -param ScatterGatherBufferLength [in]
@@ -114,7 +115,7 @@ The size, in bytes, of the buffer that the <i>ScatterGatherBuffer</i> parameter 
 
 ### -param DmaCompletionRoutine [in, optional]
 
-A pointer to a caller-supplied <a href="kernel.dmacompletionroutine">DmaCompletionRoutine</a> routine to be called when the DMA transfer completes. This routine is called if the target device uses a system DMA controller that generates a DMA-completion interrupt. The <i>DmaCompletionRoutine</i> routine is called at DISPATCH_LEVEL after the DMA transfer completes. For a system DMA adapter, this parameter is optional and can be <b>NULL</b>. For a bus-master adapter, set this parameter to <b>NULL</b>.
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a> routine to be called when the DMA transfer completes. This routine is called if the target device uses a system DMA controller that generates a DMA-completion interrupt. The <i>DmaCompletionRoutine</i> routine is called at DISPATCH_LEVEL after the DMA transfer completes. For a system DMA adapter, this parameter is optional and can be <b>NULL</b>. For a bus-master adapter, set this parameter to <b>NULL</b>.
 
 
 ### -param CompletionContext [in, optional]
@@ -141,11 +142,11 @@ The driver-determined context for the <i>DmaCompletionRoutine</i> routine. This 
 
 
 ## -remarks
-<b>MapTransferEx</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="kernel.dma_operations">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
+<b>MapTransferEx</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
 
-For a transfer that uses a system DMA controller, the caller can, as an option, supply a <a href="kernel.dmacompletionroutine">DmaCompletionRoutine</a> callback routine that is called when the transfer finishes. The operating system schedules this callback in response to the DMA completion interrupt from the system DMA controller.
+For a transfer that uses a system DMA controller, the caller can, as an option, supply a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a> callback routine that is called when the transfer finishes. The operating system schedules this callback in response to the DMA completion interrupt from the system DMA controller.
 
-The number of map registers that can be set up by <b>MapTransferEx</b> cannot exceed the maximum that the driver obtained from <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>.
+The number of map registers that can be set up by <b>MapTransferEx</b> cannot exceed the maximum that the driver obtained from <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>.
 
 The <i>Mdl</i>, <i>Offset</i>, and <i>Length</i> parameters describe the I/O data buffer for the requested DMA transfer. The number of allocated map registers might not be sufficient to map all of the memory in this buffer, or the scatter/gather buffer pointed to by <i>ScatterGatherBuffer</i> might not be large enough to describe the entire buffer. <b>MapTransferEx</b> writes an output value to *<i>Length</i> to tell the driver how much of the buffer memory for the requested DMA transfer was mapped by the routine. The routine writes a scatter/gather list to the buffer pointed to by <i>ScatterGatherBuffer</i>. This list describes the buffer fragments that were successfully mapped by the routine.
 
@@ -176,52 +177,6 @@ Each successful call to <b>MapTransferEx</b> must be followed by a corresponding
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh825928">Using the MapTransferEx Routine</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -234,13 +189,13 @@ IRQL
 <a href="..\wdm\nc-wdm-pcancel_mapped_transfer.md">CancelMappedTransfer</a>
 </dt>
 <dt>
-<a href="kernel.dma_adapter_info">DMA_ADAPTER</a>
+<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
 </dt>
 <dt>
-<a href="kernel.dmacompletionroutine">DmaCompletionRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a>
 </dt>
 <dt>
-<a href="kernel.dma_operations">DMA_OPERATIONS</a>
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pflush_adapter_buffers_ex.md">FlushAdapterBuffersEx</a>
@@ -249,15 +204,15 @@ IRQL
 <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>
 </dt>
 <dt>
-<a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a>
+<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PMAP_TRANSFER_EX callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PMAP_TRANSFER_EX callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

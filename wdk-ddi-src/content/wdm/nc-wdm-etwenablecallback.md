@@ -1,17 +1,17 @@
 ---
-UID: NC.wdm.ETWENABLECALLBACK
-title: ETWENABLECALLBACK
+UID: NC:wdm.ETWENABLECALLBACK
+title: ETWENABLECALLBACK function
 author: windows-driver-content
 description: The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications.
 old-location: devtest\etwenablecallback.htm
 old-project: devtest
 ms.assetid: 5953a3ae-b130-42fd-9dc8-974d15c6dfc5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/10/2018
+ms.keywords: ETWENABLECALLBACK
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: wdm.h
 req.include-header: Wdm.h, Ntddk.h
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
-# ETWENABLECALLBACK callback
+# ETWENABLECALLBACK function
 
 
 
@@ -43,7 +44,7 @@ The <b>EtwEnableCallback</b> function is an optional driver-supplied callback fu
 
 
 
-## -prototype
+## -syntax
 
 ````
 PETWENABLECALLBACK EtwEnableCallback;
@@ -96,12 +97,12 @@ This value is passed in the <i>MatchAllKeywords</i> parameter of the <b>EnableTr
 
 ### -param FilterData [in, optional]
 
-The provider-defined data. This parameter is optional. The provider determines the layout of the data and its purpose. For example, the provider can use this data to additionally filter the events that it writes or use it to perform some calculations before writing the events. For detailed information, see <a href="devtest.event_filter_descriptor">Event Filter Descriptor</a>.
+The provider-defined data. This parameter is optional. The provider determines the layout of the data and its purpose. For example, the provider can use this data to additionally filter the events that it writes or use it to perform some calculations before writing the events. For detailed information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545684">Event Filter Descriptor</a>.
 
 
 ### -param CallbackContext [in, out, optional]
 
-The context of the callback function that is defined when the provider called <a href="devtest.etwregister">EtwRegister</a> to register itself. This parameter is optional.
+The context of the callback function that is defined when the provider called <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> to register itself. This parameter is optional.
 
 
 ## -returns
@@ -116,65 +117,19 @@ Use the <i>FilterData</i> parameter of the callback function to supply the provi
 Callers of <b>EtwEnableCallback</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="devtest.etwregister">EtwRegister</a>
+<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
 </dt>
 <dt>
-<a href="devtest.etweventenabled">EtwEventEnabled</a>
+<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
 </dt>
 <dt>
-<a href="devtest.etwproviderenabled">EtwProviderEnabled</a>
+<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
 </dt>
 <dt>
-<a href="devtest.event_filter_descriptor">Event Filter Descriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545684">Event Filter Descriptor</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=103399">EnableTrace</a></dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=103398">EnableTraceEx</a></dt>
@@ -183,5 +138,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20PETWENABLECALLBACK callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20PETWENABLECALLBACK callback function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

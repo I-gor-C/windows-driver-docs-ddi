@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlULongLongToUShort
+UID: NF:ntintsafe.RtlULongLongToUShort
 title: RtlULongLongToUShort function
 author: windows-driver-content
 description: Converts a value of type ULONGLONG to a value of type USHORT.
@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongtoushort.htm
 old-project: kernel
 ms.assetid: 209EDB33-34DB-429F-BDEB-B84960E6F20F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlULongLongToUShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlULongLongToUShort function
@@ -67,31 +68,4 @@ A pointer to the converted value. In the case where the conversion causes a trun
 ## -remarks
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
-This function uses the following alternate name:
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This function uses the following alternate name:</p>

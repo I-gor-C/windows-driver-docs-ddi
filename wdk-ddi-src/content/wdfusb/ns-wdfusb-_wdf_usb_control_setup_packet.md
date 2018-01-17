@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFUSB._WDF_USB_CONTROL_SETUP_PACKET
+UID: NS:wdfusb._WDF_USB_CONTROL_SETUP_PACKET
 title: _WDF_USB_CONTROL_SETUP_PACKET
 author: windows-driver-content
 description: The WDF_USB_CONTROL_SETUP_PACKET structure describes a setup packet for a USB control transfer.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_usb_control_setup_packet.htm
 old-project: wdf
 ms.assetid: f50ee559-3df7-4e15-b5a6-d6b85277c461
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_USB_CONTROL_SETUP_PACKET, WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET, PWDF_USB_CONTROL_SETUP_PACKET
+ms.date: 1/11/2018
+ms.keywords: _WDF_USB_CONTROL_SETUP_PACKET, WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET
 req.product: Windows 10 or later.
 ---
 
@@ -96,7 +97,7 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 
 ### -field Recipient
 
-A bit field that is specified by a <a href="wdf.wdf_usb_bmrequest_recipient">WDF_USB_BMREQUEST_RECIPIENT</a>-typed value.
+A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>-typed value.
 
 
 ### -field Reserved
@@ -106,12 +107,12 @@ A reserved bit field. Do not use this member.
 
 ### -field Type
 
-A bit field that is specified by a <a href="wdf.wdf_usb_bmrequest_type">WDF_USB_BMREQUEST_TYPE</a>-typed value.
+A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_type.md">WDF_USB_BMREQUEST_TYPE</a>-typed value.
 
 
 ### -field Dir
 
-A bit field that is specified by a <a href="wdf.wdf_usb_bmrequest_direction">WDF_USB_BMREQUEST_DIRECTION</a>-typed value.
+A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_direction.md">WDF_USB_BMREQUEST_DIRECTION</a>-typed value.
 
 </dd>
 </dl>
@@ -196,87 +197,52 @@ An 8-byte value that represents the entire setup packet. You can use this member
 </dl>
 
 ## -remarks
-The <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure is used as input to the <a href="wdf.wdfusbtargetdevicesendcontroltransfersynchronously">WdfUsbTargetDeviceSendControlTransferSynchronously</a> and <a href="wdf.wdfusbtargetdeviceformatrequestforcontroltransfer">WdfUsbTargetDeviceFormatRequestForControlTransfer</a> methods.
+The <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a> and <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a> methods.
 
 To initialize a <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure, the driver should call one of the following functions:
 
 
-<a href="wdf.wdf_usb_control_setup_packet_init">WDF_USB_CONTROL_SETUP_PACKET_INIT</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init.md">WDF_USB_CONTROL_SETUP_PACKET_INIT</a>
 
 
 
-<a href="wdf.wdf_usb_control_setup_packet_init_class">WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_class.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS</a>
 
 
 
-<a href="wdf.wdf_usb_control_setup_packet_init_feature">WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_feature.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</a>
 
 
 
-<a href="wdf.wdf_usb_control_setup_packet_init_get_status">WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_get_status.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</a>
 
 
 
-<a href="wdf.wdf_usb_control_setup_packet_init_vendor">WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_vendor.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</a>
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfusb.h (include Wdfusb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_usb_bmrequest_direction">WDF_USB_BMREQUEST_DIRECTION</a>
+<a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_direction.md">WDF_USB_BMREQUEST_DIRECTION</a>
 </dt>
 <dt>
-<a href="wdf.wdf_usb_bmrequest_recipient">WDF_USB_BMREQUEST_RECIPIENT</a>
+<a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>
 </dt>
 <dt>
-<a href="wdf.wdf_usb_bmrequest_type">WDF_USB_BMREQUEST_TYPE</a>
+<a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_type.md">WDF_USB_BMREQUEST_TYPE</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetdeviceformatrequestforcontroltransfer">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetdevicesendcontroltransfersynchronously">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

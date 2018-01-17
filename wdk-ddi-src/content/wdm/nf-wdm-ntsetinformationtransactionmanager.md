@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.NtSetInformationTransactionManager
+UID: NF:wdm.NtSetInformationTransactionManager
 title: NtSetInformationTransactionManager function
 author: windows-driver-content
 description: Do not call this routine from kernel-mode code.
@@ -7,7 +7,7 @@ old-location: kernel\ntsetinformationtransactionmanager.htm
 old-project: kernel
 ms.assetid: a1e2f40f-5aea-4c8b-8692-95721ad4bc9d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: NtSetInformationTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -70,29 +71,3 @@ NTSTATUS NtSetInformationTransactionManager(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=APC_LEVEL
-
-</td>
-</tr>
-</table>

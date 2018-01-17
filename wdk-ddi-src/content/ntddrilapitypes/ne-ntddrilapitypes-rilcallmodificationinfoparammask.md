@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLMODIFICATIONINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILCALLMODIFICATIONINFOPARAMMASK
 title: RILCALLMODIFICATIONINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1282f158-9e41-4789-abe9-181f367ea235
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCALLMODIFICATIONINFOPARAMMASK, RILCALLMODIFICATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMODIFICATIONINFOPARAMMASK
 ---
 
 # RILCALLMODIFICATIONINFOPARAMMASK enumeration
@@ -81,19 +82,3 @@ typedef enum _RILCALLMODIFICATIONINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,17 +1,17 @@
 ---
-UID: NC.pcivirt.SRIOV_QUERY_PROBED_BARS_2
-title: SRIOV_QUERY_PROBED_BARS_2
+UID: NC:pcivirt.SRIOV_QUERY_PROBED_BARS_2
+title: SRIOV_QUERY_PROBED_BARS_2 function
 author: windows-driver-content
 description: Queries the data read from the specified PCI Express SR-IOV Virtual Function (VF) base address registers (BARs) if the value -1 were written to them first.
 old-location: pci\sriov_query_probed_bars_2.htm
 old-project: PCI
 ms.assetid: e0c079aa-8adf-42c9-a4ac-bfc623471964
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/29/2017
+ms.keywords: SRIOV_QUERY_PROBED_BARS_2
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: pcivirt.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
-# SRIOV_QUERY_PROBED_BARS_2 callback
+# SRIOV_QUERY_PROBED_BARS_2 function
 
 
 
@@ -44,7 +45,7 @@ Queries the data read from
 
 
 
-## -prototype
+## -syntax
 
 ````
 SRIOV_QUERY_PROBED_BARS_2 SriovQueryProbedBars2;
@@ -88,52 +89,6 @@ Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriat
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to read from
     the specified virtual function's (VF) base address registers. 
 
-The PF driver registers its implementation by setting the <b>QueryProbedBars_2</b> member of the <a href="buses._sriov_device_interface_standard_2">SRIOV_DEVICE_INTERFACE_STANDARD_2</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
+The PF driver registers its implementation by setting the <b>QueryProbedBars_2</b> member of the <a href="https://msdn.microsoft.com/46c9fa94-283c-481e-9fb1-2ed63df00386">SRIOV_DEVICE_INTERFACE_STANDARD_2</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
-This callback is invoked by the virtualization stack (non-privileged) when it wants to find out the VF’s base address register values after the registers are written with the value (-1).  This process is conventional when setting up a PCI device, and the result allows the PCI driver to know the amount of address space that would be decoded by the device after it is enabled.  When a non-privileged VM writes to the VF’s BARs, the privileged VM can stop functioning. Therefore, this routine requires the need for writing to the BARs.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+This callback is invoked by the virtualization stack (non-privileged) when it wants to find out the VF’s base address register values after the registers are written with the value (-1).  This process is conventional when setting up a PCI device, and the result allows the PCI driver to know the amount of address space that would be decoded by the device after it is enabled.  When a non-privileged VM writes to the VF’s BARs, the privileged VM can stop functioning. Therefore, this routine requires the need for writing to the BARs.</p>

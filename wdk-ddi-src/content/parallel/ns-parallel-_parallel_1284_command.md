@@ -1,5 +1,5 @@
 ---
-UID: NS.PARALLEL._PARALLEL_1284_COMMAND
+UID: NS:parallel._PARALLEL_1284_COMMAND
 title: _PARALLEL_1284_COMMAND
 author: windows-driver-content
 description: The PARALLEL_1284_COMMAND structure specifies information that a client uses to select and deselect an IEEE 1284.3 daisy-chain device or an IEEE 1284 end-of-chain device.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: 5b46253c-c111-4675-898e-78b81ecbddb8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND, PPARALLEL_1284_COMMAND
+ms.keywords: _PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND
 ---
 
 # _PARALLEL_1284_COMMAND structure
@@ -89,21 +90,6 @@ The system-supplied function driver for parallel ports supports the simultaneous
 
 For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71-8740-70c6fbe9a885">Selecting and Deselecting an IEEE 1284 Device Attached to a ParallelPort</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

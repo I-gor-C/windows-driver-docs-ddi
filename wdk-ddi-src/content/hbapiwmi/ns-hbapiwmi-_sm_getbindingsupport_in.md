@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_GETBINDINGSUPPORT_IN
+UID: NS:hbapiwmi._SM_GetBindingSupport_IN
 title: _SM_GetBindingSupport_IN
 author: windows-driver-content
 description: The SM_GetBindingSupport_IN structure is used to provide input parameters to the SM_GetBindingSupport method.
@@ -7,8 +7,8 @@ old-location: storage\sm_getbindingsupport_in.htm
 old-project: storage
 ms.assetid: c89d86fe-fe8c-48d2-a5c2-7971ea96b7ad
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN, PSM_GetBindingSupport_IN, SM_GetBindingSupport_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_GetBindingSupport_IN, SM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN
 ---
 
 # _SM_GetBindingSupport_IN structure
@@ -65,20 +66,4 @@ A worldwide name (WWN) that specifies the SAS domain worldwide name of the local
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_GetBindingSupport_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SMHBA_BindingEntry WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_GetBindingSupport_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SMHBA_BindingEntry WMI class.</p>

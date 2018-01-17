@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._GET_LOCAL_HOST_INFO2
+UID: NS:1394._GET_LOCAL_HOST_INFO2
 title: _GET_LOCAL_HOST_INFO2
 author: windows-driver-content
 description: The GET_LOCAL_HOST_INFO2 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel GET_HOST_CAPABILITIES.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 39cb4015-7745-4d13-bb31-76378b217cfd
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2, PGET_LOCAL_HOST_INFO2
+ms.keywords: _GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2
 ---
 
 # _GET_LOCAL_HOST_INFO2 structure
@@ -125,21 +126,6 @@ Some host controllers automatically strip the packet header off an isochronous p
 
 If a host controller supports synchronizing <a href="https://msdn.microsoft.com/library/windows/hardware/ff537655">REQUEST_ISOCH_LISTEN</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a> requests to the isochronous cycle time, the port driver returns the HOST_INFO_SUPPORTS_START_ON_CYCLE. Drivers should check this flag before attempting to issue an REQUEST_ISOCH_ALLOCATE_RESOURCES request using the RESOURCE_SYNCH_ON_TIME flag, or before attaching a buffer whose <a href="https://msdn.microsoft.com/library/windows/hardware/ff537401">ISOCH_DESCRIPTOR</a> has the DESCRIPTOR_SYNCH_ON_TIME flag set.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

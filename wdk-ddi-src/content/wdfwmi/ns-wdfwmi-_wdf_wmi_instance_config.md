@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFWMI._WDF_WMI_INSTANCE_CONFIG
+UID: NS:wdfwmi._WDF_WMI_INSTANCE_CONFIG
 title: _WDF_WMI_INSTANCE_CONFIG
 author: windows-driver-content
 description: The WDF_WMI_INSTANCE_CONFIG structure contains configuration information for an instance of a WMI data provider.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_wmi_instance_config.htm
 old-project: wdf
 ms.assetid: b2b2fd0c-c331-4132-b037-05c816626563
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG, PWDF_WMI_INSTANCE_CONFIG, WDF_WMI_INSTANCE_CONFIG
+ms.date: 1/11/2018
+ms.keywords: _WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG, WDF_WMI_INSTANCE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_WMI_INSTANCE_CONFIG, WDF_WMI_INSTANCE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -71,12 +72,12 @@ The size, in bytes, of this structure.
 
 ### -field Provider
 
-A handle to a WMI provider object that a driver obtained by calling <a href="wdf.wdfwmiprovidercreate">WdfWmiProviderCreate</a>. If this member is <b>NULL</b>, the <b>ProviderConfig</b> member must not be <b>NULL</b>.
+A handle to a WMI provider object that a driver obtained by calling <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>. If this member is <b>NULL</b>, the <b>ProviderConfig</b> member must not be <b>NULL</b>.
 
 
 ### -field ProviderConfig
 
-A pointer to a <a href="wdf.wdf_wmi_provider_config">WDF_WMI_PROVIDER_CONFIG</a> structure. If this member is <b>NULL</b>, the <b>Provider</b> member must not be <b>NULL</b>.
+A pointer to a <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a> structure. If this member is <b>NULL</b>, the <b>Provider</b> member must not be <b>NULL</b>.
 
 
 ### -field UseContextForQuery
@@ -88,7 +89,7 @@ If <b>UseContextForQuery</b> is <b>TRUE</b>, the instance data must be read-only
 
 ### -field Register
 
-A Boolean value that, if <b>TRUE</b>, indicates that the framework will register the provider instance with the system's WMI service after it creates a WMI instance object. If this member is <b>FALSE</b>, the driver must call <a href="wdf.wdfwmiinstanceregister">WdfWmiInstanceRegister</a> to register the provider instance. 
+A Boolean value that, if <b>TRUE</b>, indicates that the framework will register the provider instance with the system's WMI service after it creates a WMI instance object. If this member is <b>FALSE</b>, the driver must call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a> to register the provider instance. 
 
 
 ### -field EvtWmiInstanceQueryInstance
@@ -112,35 +113,10 @@ A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_exec
 
 
 ## -remarks
-The <b>WDF_WMI_INSTANCE_CONFIG</b> structure is used as input to the <a href="wdf.wdfwmiinstancecreate">WdfWmiInstanceCreate</a> method.
+The <b>WDF_WMI_INSTANCE_CONFIG</b> structure is used as input to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a> method.
 
-To initialize a <b>WDF_WMI_INSTANCE_CONFIG</b> structure, your driver should call <a href="wdf.wdf_wmi_instance_config_init_provider">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a> or <a href="wdf.wdf_wmi_instance_config_init_provider_config">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>.
+To initialize a <b>WDF_WMI_INSTANCE_CONFIG</b> structure, your driver should call <a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a> or <a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider_config.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfwmi.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -157,27 +133,27 @@ Header
 <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_item.md">EvtWmiInstanceSetItem</a>
 </dt>
 <dt>
-<a href="wdf.wdf_wmi_instance_config_init_provider">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a>
 </dt>
 <dt>
-<a href="wdf.wdf_wmi_instance_config_init_provider_config">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider_config.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>
 </dt>
 <dt>
-<a href="wdf.wdf_wmi_provider_config">WDF_WMI_PROVIDER_CONFIG</a>
+<a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a>
 </dt>
 <dt>
-<a href="wdf.wdfwmiinstancecreate">WdfWmiInstanceCreate</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdfwmiinstanceregister">WdfWmiInstanceRegister</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a>
 </dt>
 <dt>
-<a href="wdf.wdfwmiprovidercreate">WdfWmiProviderCreate</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_INSTANCE_CONFIG structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_WMI_INSTANCE_CONFIG structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

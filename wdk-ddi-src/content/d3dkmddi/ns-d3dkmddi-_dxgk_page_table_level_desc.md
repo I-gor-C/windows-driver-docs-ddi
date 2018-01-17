@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_PAGE_TABLE_LEVEL_DESC
+UID: NS:d3dkmddi._DXGK_PAGE_TABLE_LEVEL_DESC
 title: _DXGK_PAGE_TABLE_LEVEL_DESC
 author: windows-driver-content
 description: The DXGK_PAGE_TABLE_LEVEL_DESC structure describes capabilities that are applied at the page level.
@@ -7,7 +7,7 @@ old-location: display\dxgk_page_table_level_desc.htm
 old-project: display
 ms.assetid: 45BC190C-8985-4F8A-AC84-4ACBBCE9EB67
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_PAGE_TABLE_LEVEL_DESC
 ---
 
 # _DXGK_PAGE_TABLE_LEVEL_DESC structure
@@ -77,39 +78,3 @@ The size of a page table in bytes. The number of entries in a page table is equa
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

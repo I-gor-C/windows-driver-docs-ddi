@@ -1,5 +1,5 @@
 ---
-UID: NS.HDAUDIO._HDAUDIO_CODEC_RESPONSE
+UID: NS:hdaudio._HDAUDIO_CODEC_RESPONSE
 title: _HDAUDIO_CODEC_RESPONSE
 author: windows-driver-content
 description: The HDAUDIO_CODEC_RESPONSE structure specifies either a response to a codec command or an unsolicited response from a codec.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 56b9cdb5-2734-45b5-aeaf-ae6d606d1a5c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE
+ms.keywords: _HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE
 ---
 
 # _HDAUDIO_CODEC_RESPONSE structure
@@ -140,28 +141,13 @@ If <b>HasFifoOverrun</b>=0, the codec failed to respond.
 The unnamed 25-bitfield between the <b>UnsolicitedResponse</b> and <b>HasFifoOverrun</b> members is reserved for future expansion. The HD Audio bus controller currently writes zeros to this field.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_codec_transfer">HDAUDIO_CODEC_TRANSFER</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a>
 </dt>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a>

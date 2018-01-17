@@ -1,5 +1,5 @@
 ---
-UID: NF.pepfx.PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE
+UID: NF:pepfx.PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE
 title: PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function
 author: windows-driver-content
 description: The PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_EXTENDED_ADDRESS structure.
@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_initialize_extended_io_resource.htm
 old-project: kernel
 ms.assetid: 95464DE1-221A-4053-B124-4CFD44557CD3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 # PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="kernel.pep_acpi_extended_address">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
+The <b>PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
 
 
 
@@ -69,7 +70,7 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE(
 
 ### -param ResourceUsage [in]
 
-This parameter is copied into the <b>GeneralFlags</b> member of the initialized <a href="kernel.pep_acpi_extended_address">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
+This parameter is copied into the <b>GeneralFlags</b> member of the initialized <a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
 
 
 ### -param Decode [in]
@@ -91,7 +92,7 @@ When set, indicates that the maximum address is fixed.
 
 ### -param ISARanges [in]
 
-This parameter is copied into the <b>TypeSpecificFlags</b> member of the initialized <a href="kernel.pep_acpi_extended_address">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
+This parameter is copied into the <b>TypeSpecificFlags</b> member of the initialized <a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
 
 
 ### -param AddressGranularity [in]
@@ -142,7 +143,7 @@ When false, indicates that this is a dense translation. Otherwise, it is sparse.
 
 ### -param Resource [out]
 
-This is cast to *<a href="kernel.pep_acpi_extended_address">PEP_ACPI_EXTENDED_ADDRESS</a>.
+This is cast to *<a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a>.
 
 
 ## -returns
@@ -152,40 +153,15 @@ This function does not return a value.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.pep_acpi_extended_address">PEP_ACPI_EXTENDED_ADDRESS</a>
+<a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

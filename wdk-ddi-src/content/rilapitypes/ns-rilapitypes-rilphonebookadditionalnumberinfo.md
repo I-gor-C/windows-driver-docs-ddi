@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILPHONEBOOKADDITIONALNUMBERINFO
+UID: NS:rilapitypes.RILPHONEBOOKADDITIONALNUMBERINFO
 title: RILPHONEBOOKADDITIONALNUMBERINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookadditionalnumberinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c56dc6df-e547-42f4-9656-01de5e66909a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILPHONEBOOKADDITIONALNUMBERINFO, RILPHONEBOOKADDITIONALNUMBERINFO, *LPRILPHONEBOOKADDITIONALNUMBERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPHONEBOOKADDITIONALNUMBERINFO, *LPRILPHONEBOOKADDITIONALNUMBERINFO
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef struct _RILPHONEBOOKADDITIONALNUMBERINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

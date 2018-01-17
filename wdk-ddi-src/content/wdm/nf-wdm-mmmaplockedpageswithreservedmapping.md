@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.MmMapLockedPagesWithReservedMapping
+UID: NF:wdm.MmMapLockedPagesWithReservedMapping
 title: MmMapLockedPagesWithReservedMapping function
 author: windows-driver-content
 description: The MmMapLockedPagesWithReservedMapping routine maps all or part of an address range that was previously reserved by the MmAllocateMappingAddress routine.
@@ -7,7 +7,7 @@ old-location: kernel\mmmaplockedpageswithreservedmapping.htm
 old-project: kernel
 ms.assetid: 3fc01bc5-05eb-482f-b625-67061d26915a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: MmMapLockedPagesWithReservedMapping
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>MmMapLockedPagesWithReservedMapping</b> routine maps all or part of an address range that was previously reserved by the <a href="kernel.mmallocatemappingaddress">MmAllocateMappingAddress</a> routine. 
+The <b>MmMapLockedPagesWithReservedMapping</b> routine maps all or part of an address range that was previously reserved by the <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a> routine. 
 
 
 
@@ -59,22 +60,22 @@ PVOID MmMapLockedPagesWithReservedMapping(
 
 ### -param MappingAddress [in]
 
-Pointer to the beginning of the reserved virtual memory range. This must be an address previously returned by <a href="kernel.mmallocatemappingaddress">MmAllocateMappingAddress</a>.
+Pointer to the beginning of the reserved virtual memory range. This must be an address previously returned by <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>.
 
 
 ### -param PoolTag [in]
 
-Specifies the pool tag for the reserved memory buffer. This must be identical to the value specified in the <i>PoolTag</i> parameter of the call to <a href="kernel.mmallocatemappingaddress">MmAllocateMappingAddress</a> that reserved the buffer. 
+Specifies the pool tag for the reserved memory buffer. This must be identical to the value specified in the <i>PoolTag</i> parameter of the call to <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a> that reserved the buffer. 
 
 
 ### -param MemoryDescriptorList [in]
 
-A pointer to the MDL that is to be mapped. This MDL must describe physical pages that are locked down. A locked-down MDL can be built by the <a href="kernel.mmprobeandlockpages">MmProbeAndLockPages</a> or <a href="kernel.mmallocatepagesformdlex">MmAllocatePagesForMdlEx</a> routine. 
+A pointer to the MDL that is to be mapped. This MDL must describe physical pages that are locked down. A locked-down MDL can be built by the <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a> or <a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a> routine. 
 
 
 ### -param CacheType [in]
 
-Specifies the <a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a> value to use to create the mapping.
+Specifies the <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> value to use to create the mapping.
 
 
 ## -returns
@@ -82,128 +83,51 @@ Specifies the <a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a> value
 
 
 ## -remarks
-The caller can use <b>MmMapLockedPagesWithReservedMapping</b> to map a subrange of the virtual memory range reserved by <a href="kernel.mmallocatemappingaddress">MmAllocateMappingAddress</a> as follows: 
+The caller can use <b>MmMapLockedPagesWithReservedMapping</b> to map a subrange of the virtual memory range reserved by <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a> as follows: 
 
-Use <a href="kernel.ioallocatemdl">IoAllocateMdl</a> to allocate an MDL. The returned MDL is built using the specified starting address and size of the subrange of the virtual memory range to map. 
+Use <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a> to allocate an MDL. The returned MDL is built using the specified starting address and size of the subrange of the virtual memory range to map. 
 
-Use <a href="kernel.mmprobeandlockpages">MmProbeAndLockPages</a> to lock down the physical pages described by the MDL obtained in step 1.
+Use <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a> to lock down the physical pages described by the MDL obtained in step 1.
 
 Use <b>MmMapLockedPagesWithReservedMapping</b> to actually map the virtual memory to the physical memory that was locked down in step 2. Note that the virtual address returned by this function does include the byte offset that the MDL specifies. However, the <b>MappedSystemVa</b> field of the MDL that is set by this function does <u>not</u> include the byte offset. 
 
-Once the caller does not need to access the memory, it unmaps the memory with <a href="kernel.mmunmapreservedmapping">MmUnmapReservedMapping</a>. The caller can map and unmap the memory buffer as needed, and must unmap it prior to freeing the mapping range with <a href="kernel.mmfreemappingaddress">MmFreeMappingAddress</a>. 
+Once the caller does not need to access the memory, it unmaps the memory with <a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>. The caller can map and unmap the memory buffer as needed, and must unmap it prior to freeing the mapping range with <a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>. 
 
-Note that the <i>MappingAddress</i> parameter specifies the beginning of the range of memory previously reserved by the caller, <u>not</u> the beginning of the memory subrange to be mapped. The caller specifies the starting address and length of the buffer when it allocates the MDL with <a href="kernel.ioallocatemdl">IoAllocateMdl</a>. The buffer must fit inside the reserved memory range, but it can be a strict subset.
+Note that the <i>MappingAddress</i> parameter specifies the beginning of the range of memory previously reserved by the caller, <u>not</u> the beginning of the memory subrange to be mapped. The caller specifies the starting address and length of the buffer when it allocates the MDL with <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>. The buffer must fit inside the reserved memory range, but it can be a strict subset.
 
-The routine uses the <i>CacheType</i> parameter only if the pages that are described by the MDL do not already have a cache type associated with them. However, in nearly all cases, the pages already have an associated cache type, and this cache type is used by the new mapping. An exception to this rule is for pages that are allocated by <a href="kernel.mmallocatepagesformdl">MmAllocatePagesForMdl</a>, which do not have a specific cache type associated with them. For such pages, the <i>CacheType</i> parameter determines the cache type of the mapping. 
+The routine uses the <i>CacheType</i> parameter only if the pages that are described by the MDL do not already have a cache type associated with them. However, in nearly all cases, the pages already have an associated cache type, and this cache type is used by the new mapping. An exception to this rule is for pages that are allocated by <a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>, which do not have a specific cache type associated with them. For such pages, the <i>CacheType</i> parameter determines the cache type of the mapping. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows XP and later versions of Windows. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a>
+<a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
 </dt>
 <dt>
-<a href="kernel.ioallocatemdl">IoAllocateMdl</a>
+<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
 </dt>
 <dt>
-<a href="kernel.mmallocatemappingaddress">MmAllocateMappingAddress</a>
+<a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
 </dt>
 <dt>
-<a href="kernel.mmallocatepagesformdl">MmAllocatePagesForMdl</a>
+<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
 </dt>
 <dt>
-<a href="kernel.mmallocatepagesformdlex">MmAllocatePagesForMdlEx</a>
+<a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
 </dt>
 <dt>
-<a href="kernel.mmfreemappingaddress">MmFreeMappingAddress</a>
+<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
 </dt>
 <dt>
-<a href="kernel.mmprobeandlockpages">MmProbeAndLockPages</a>
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 </dt>
 <dt>
-<a href="kernel.mmunmapreservedmapping">MmUnmapReservedMapping</a>
+<a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmMapLockedPagesWithReservedMapping routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmMapLockedPagesWithReservedMapping routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._GETFC3MGMTINFO_OUT
+UID: NS:hbapiwmi._GetFC3MgmtInfo_OUT
 title: _GetFC3MgmtInfo_OUT
 author: windows-driver-content
 description: The GetFC3MgmtInfo_OUT structure is used to report the output parameter data of the GetFC3MgmtInfo WMI method to the WMI client.
@@ -7,8 +7,8 @@ old-location: storage\getfc3mgmtinfo_out.htm
 old-project: storage
 ms.assetid: 5cce25e7-582b-49b3-9f10-be59471e377f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _GetFC3MgmtInfo_OUT, GetFC3MgmtInfo_OUT, *PGetFC3MgmtInfo_OUT, PGetFC3MgmtInfo_OUT
+ms.date: 1/10/2018
+ms.keywords: _GetFC3MgmtInfo_OUT, *PGetFC3MgmtInfo_OUT, GetFC3MgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGetFC3MgmtInfo_OUT, GetFC3MgmtInfo_OUT
 ---
 
 # _GetFC3MgmtInfo_OUT structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The GetFC3MgmtInfo_OUT structure is used to report the output parameter data of the <a href="storage.getfc3mgmtinfo">GetFC3MgmtInfo</a> WMI method to the WMI client.
+The GetFC3MgmtInfo_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a> WMI method to the WMI client.
 
 
 
@@ -56,50 +57,35 @@ typedef struct _GetFC3MgmtInfo_OUT {
 
 ### -field HBAStatus
 
-Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation. 
+Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation. 
 
 
 ### -field MgmtInfo
 
-Contains a structure of type <a href="storage.hbafc3mgmtinfo">HBAFC3MgmtInfo</a> that reports FC3 management information. 
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafc3mgmtinfo.md">HBAFC3MgmtInfo</a> that reports FC3 management information. 
 
 
 ## -remarks
-The <a href="storage.getfc3mgmtinfo">GetFC3MgmtInfo</a> method reports fibre channel-3 management information.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a> method reports fibre channel-3 management information.
 
-The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.
+The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="storage.getfc3mgmtinfo">GetFC3MgmtInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a>
 </dt>
 <dt>
-<a href="storage.hba_status">HBA_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="storage.hbafc3mgmtinfo">HBAFC3MgmtInfo</a>
+<a href="..\hbapiwmi\ns-hbapiwmi-_hbafc3mgmtinfo.md">HBAFC3MgmtInfo</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GetFC3MgmtInfo_OUT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GetFC3MgmtInfo_OUT structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

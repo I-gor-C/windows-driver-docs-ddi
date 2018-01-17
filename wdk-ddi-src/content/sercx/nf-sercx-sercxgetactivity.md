@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxGetActivity
+UID: NF:sercx.SerCxGetActivity
 title: SerCxGetActivity function
 author: windows-driver-content
 description: The SerCxGetActivity method retrieves the status of pending work for the serial controller driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PSERCX_STATUS, SERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ A WDFDEVICE handle to the framework device object that represents the serial con
 
 ### -param Activity [in, out]
 
-A pointer to a caller-allocated <a href="serports.sercx_activity">SERCX_ACTIVITY</a> structure. The caller must have previously called the <a href="serports.sercx_activity_init">SERCX_ACTIVITY_INIT</a> function to initialize this structure before its initial use. Thereafter, each <b>SerCxGetActivity</b> call updates the contents of this structure to track the work items that are ready to be processed by the controller driver.
+A pointer to a caller-allocated <a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a> structure. The caller must have previously called the <a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a> function to initialize this structure before its initial use. Thereafter, each <b>SerCxGetActivity</b> call updates the contents of this structure to track the work items that are ready to be processed by the controller driver.
 
 
 ## -returns
@@ -79,68 +80,22 @@ To cycle through pending work items, the transmit/receive DPC routine calls <b>S
 A lock protects the <b>SERCX_ACTIVITY</b> structure that is updated by the <b>SerCxGetActivity</b> call. During the call, this lock is acquired by event handlers in SerCx to update the summary of work that is currently pending for the controller driver.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx_activity">SERCX_ACTIVITY</a>
+<a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a>
 </dt>
 <dt>
-<a href="serports.sercx_activity_init">SERCX_ACTIVITY_INIT</a>
+<a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a>
 </dt>
 <dt>
-<a href="serports.sercxcompletewait">SerCxCompleteWait</a>
+<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
 </dt>
 <dt>
-<a href="serports.sercxprogressreceive">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 </dt>
 <dt>
-<a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 </dt>
 </dl>
  

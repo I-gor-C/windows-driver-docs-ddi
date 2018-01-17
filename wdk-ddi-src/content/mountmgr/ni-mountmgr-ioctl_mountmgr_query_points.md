@@ -1,5 +1,5 @@
 ---
-UID: NI.mountmgr.IOCTL_MOUNTMGR_QUERY_POINTS
+UID: NI:mountmgr.IOCTL_MOUNTMGR_QUERY_POINTS
 title: IOCTL_MOUNTMGR_QUERY_POINTS
 author: windows-driver-content
 description: This IOCTL returns triples that consist of a persistent symbolic link name for the volume (that is, a mount point), a unique ID for the volume, and a nonpersistent device name (such as &#0034;\Device\HarddiskVolume1&#0034;) for the volume.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_mountmgr_query_points.htm
 old-project: storage
 ms.assetid: 2b7f947c-2fb1-4b59-bf73-a6f0e1478be2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID
+ms.date: 1/10/2018
+ms.keywords: _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_QUERY_POINTS IOCTL
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-This IOCTL returns triples that consist of a persistent symbolic link name for the volume (that is, a mount point), a unique ID for the volume, and a nonpersistent device name (such as "\Device\HarddiskVolume1") for the volume. The input to this IOCTL is a <a href="storage.mountmgr_mount_point">MOUNTMGR_MOUNT_POINT</a> structure that contains a single triple.
+This IOCTL returns triples that consist of a persistent symbolic link name for the volume (that is, a mount point), a unique ID for the volume, and a nonpersistent device name (such as "\Device\HarddiskVolume1") for the volume. The input to this IOCTL is a <a href="..\mountmgr\ns-mountmgr-_mountmgr_mount_point.md">MOUNTMGR_MOUNT_POINT</a> structure that contains a single triple.
 
 If the input triple contains a unique ID or a non-persistent device name, the request retrieves all associated mount points (symbolic links), including the volume GUID pathname and the drive letters. However, if the input triple has a symbolic link, but does not specify either the unique ID or the device name, the request only returns a single triple that contains the symbolic link that was provided in the input, together with the unique ID and the device name. The caller must submit another IOCTL with either the unique ID or the device name to retrieve the remaining mount points.
 
@@ -51,7 +52,7 @@ The mount manager returns triples that match as much info as is provided by the 
 ## -ioctlparameters
 
 ### -input-buffer
-The mount manager client initializes the <a href="storage.mountmgr_mount_point">MOUNTMGR_MOUNT_POINT</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. Immediately following this structure, the MM client loads the symbolic link name, the unique ID and the device name, in that order.
+The mount manager client initializes the <a href="..\mountmgr\ns-mountmgr-_mountmgr_mount_point.md">MOUNTMGR_MOUNT_POINT</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. Immediately following this structure, the MM client loads the symbolic link name, the unique ID and the device name, in that order.
 
 
 ### -input-buffer-length
@@ -59,7 +60,7 @@ The mount manager client initializes the <a href="storage.mountmgr_mount_point">
 
 
 ### -output-buffer
-The mount manager initializes a variable-length structure of type <a href="storage.mountmgr_mount_points">MOUNTMGR_MOUNT_POINTS</a>, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The mount manager inserts the mount points, associated with the indicated volume, at the address pointed to by the <i>MountPoints[]</i> member of this structure. Each mount point is represented by a MOUNTMGR_MOUNT_POINT structure as defined in the <b>Input</b> section for this IOCTL.
+The mount manager initializes a variable-length structure of type <a href="..\mountmgr\ns-mountmgr-_mountmgr_mount_points.md">MOUNTMGR_MOUNT_POINTS</a>, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The mount manager inserts the mount points, associated with the indicated volume, at the address pointed to by the <i>MountPoints[]</i> member of this structure. Each mount point is represented by a MOUNTMGR_MOUNT_POINT structure as defined in the <b>Input</b> section for this IOCTL.
 
 
 ### -output-buffer-length
@@ -94,30 +95,15 @@ If any of the three strings contained within any of the triples is aligned on an
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountmgr.h (include Mountmgr.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.mountmgr_mount_points">MOUNTMGR_MOUNT_POINTS</a>
+<a href="..\mountmgr\ns-mountmgr-_mountmgr_mount_points.md">MOUNTMGR_MOUNT_POINTS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_MOUNTMGR_QUERY_POINTS control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_MOUNTMGR_QUERY_POINTS control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

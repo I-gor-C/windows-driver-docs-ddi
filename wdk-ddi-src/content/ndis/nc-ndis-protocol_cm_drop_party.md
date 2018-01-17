@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CM_DROP_PARTY
-title: PROTOCOL_CM_DROP_PARTY
+UID: NC:ndis.PROTOCOL_CM_DROP_PARTY
+title: PROTOCOL_CM_DROP_PARTY function
 author: windows-driver-content
 description: The ProtocolCmDropParty function is required.
 old-location: netvista\protocolcmdropparty.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: be0fce3e-7308-42fa-b63a-4d5cfec7ea6c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CM_DROP_PARTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CM_DROP_PARTY callback
+# PROTOCOL_CM_DROP_PARTY function
 
 
 
@@ -45,7 +46,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CM_DROP_PARTY ProtocolCmDropParty;
@@ -92,7 +93,7 @@ Specifies the length, in bytes, of the buffer at
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>Indicates that the call manager will complete the request to drop the party asynchronously. The
        call manager must call 
-       <a href="netvista.ndiscmdroppartycomplete">NdisCmDropPartyComplete</a> when
+       <a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a> when
        all processing has been finished to notify NDIS and the requesting actor that the party has been
        dropped.
 <dl>
@@ -134,49 +135,10 @@ The <b>PROTOCOL_CM_DROP_PARTY</b> function type is defined in the Ndis.h header 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/aac7f3a1-df48-4a3a-9bf9-8959bcccbbe1">ProtocolCmDropParty (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolCmDropParty (NDIS
-   5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndiscmdroppartycomplete">NdisCmDropPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
@@ -186,5 +148,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CM_DROP_PARTY callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_DROP_PARTY callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

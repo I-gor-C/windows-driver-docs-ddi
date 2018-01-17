@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSETSLOTPOWERPARAMS
+UID: NS:ntddrilapitypes.RILSETSLOTPOWERPARAMS
 title: RILSETSLOTPOWERPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetslotpowerparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3e3bd3f1-08a2-4b20-b427-85b1236325b9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETSLOTPOWERPARAMS, LPRILSETSLOTPOWERPARAMS, RILSETSLOTPOWERPARAMS, *LPRILSETSLOTPOWERPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETSLOTPOWERPARAMS, RILSETSLOTPOWERPARAMS, *LPRILSETSLOTPOWERPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSETSLOTPOWERPARAMS, *LPRILSETSLOTPOWERPARAMS
 ---
 
 # RILSETSLOTPOWERPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILSETSLOTPOWERPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

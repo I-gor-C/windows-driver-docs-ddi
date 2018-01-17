@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_WAITFORVERTICALBLANKEVENT2
+UID: NS:d3dkmthk._D3DKMT_WAITFORVERTICALBLANKEVENT2
 title: _D3DKMT_WAITFORVERTICALBLANKEVENT2
 author: windows-driver-content
 description: Describes parameters for multiple wait objects, including a vertical blank event. Supported starting with Windows 8.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_waitforverticalblankevent2.htm
 old-project: display
 ms.assetid: b83e1d1c-e940-4e7b-8a74-82aee2c54391
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_WAITFORVERTICALBLANKEVENT2, D3DKMT_WAITFORVERTICALBLANKEVENT2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_WAITFORVERTICALBLANKEVENT2
 ---
 
 # _D3DKMT_WAITFORVERTICALBLANKEVENT2 structure
@@ -83,39 +84,3 @@ The number of wait objects to wait on, which equals the size of the array specif
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

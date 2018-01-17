@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_POWER_CONTROL_REQUEST
+UID: NS:pepfx._PEP_POWER_CONTROL_REQUEST
 title: _PEP_POWER_CONTROL_REQUEST
 author: windows-driver-content
 description: The PEP_POWER_CONTROL_REQUEST structure contains a request from a driver for a power control operation.
@@ -7,8 +7,8 @@ old-location: kernel\pep_power_control_request.htm
 old-project: kernel
 ms.assetid: E6665E96-5C58-4533-906A-D9525BA6824C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_POWER_CONTROL_REQUEST, PEP_POWER_CONTROL_REQUEST, *PPEP_POWER_CONTROL_REQUEST, PPEP_POWER_CONTROL_REQUEST
+ms.date: 1/4/2018
+ms.keywords: _PEP_POWER_CONTROL_REQUEST, *PPEP_POWER_CONTROL_REQUEST, PEP_POWER_CONTROL_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPEP_POWER_CONTROL_REQUEST, PEP_POWER_CONTROL_REQUEST
 ---
 
 # _PEP_POWER_CONTROL_REQUEST structure
@@ -67,7 +68,7 @@ typedef struct _PEP_POWER_CONTROL_REQUEST {
 
 ### -field PowerControlCode
 
-[in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation to perform. This is the same value that the requesting driver supplied as the <i>PowerControlCode</i> parameter to the <a href="kernel.pofxpowercontrol">PoFxPowerControl</a> routine.
+[in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation to perform. This is the same value that the requesting driver supplied as the <i>PowerControlCode</i> parameter to the <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a> routine.
 
 
 ### -field InBuffer
@@ -105,33 +106,8 @@ This structure is used by the <a href="kernel.pep_dpm_power_control_request">PEP
 
 If the output buffer is too small to receive all of the result data from the operation, the PEP sets the <b>Status</b> member of the structure to STATUS_INSUFFICIENT_RESOURCES, sets  the <b>BytesReturned</b> member to the required size of the output buffer, and (typically) writes no data to the output buffer.
 
-The driver for a device can call the <a href="kernel.pofxpowercontrol">PoFxPowerControl</a> routine to request a power control operation on the device. During this call, PoFx delegates the handling of this request to the PEP that owns the device. The <b>PowerControlCode</b> member of the <b>PEP_POWER_CONTROL_REQUEST</b> structure contains a custom control code whose meaning is understood by both the driver and the PEP for the device.
+The driver for a device can call the <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a> routine to request a power control operation on the device. During this call, PoFx delegates the handling of this request to the PEP that owns the device. The <b>PowerControlCode</b> member of the <b>PEP_POWER_CONTROL_REQUEST</b> structure contains a custom control code whose meaning is understood by both the driver and the PEP for the device.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -142,12 +118,12 @@ Header
 <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a>
 </dt>
 <dt>
-<a href="kernel.pofxpowercontrol">PoFxPowerControl</a>
+<a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_POWER_CONTROL_REQUEST structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_POWER_CONTROL_REQUEST structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

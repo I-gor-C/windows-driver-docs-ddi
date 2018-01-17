@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILGETMSGINUICCSTATUSPARAMS
+UID: NS:rilapitypes.RILGETMSGINUICCSTATUSPARAMS
 title: RILGETMSGINUICCSTATUSPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetmsginuiccstatusparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9e51f87a-42ae-4ee7-ae34-b49b40109e8b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILGETMSGINUICCSTATUSPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

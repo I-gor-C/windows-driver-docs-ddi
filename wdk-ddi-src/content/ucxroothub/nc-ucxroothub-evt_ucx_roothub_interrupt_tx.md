@@ -1,17 +1,17 @@
 ---
-UID: NC.ucxroothub.EVT_UCX_ROOTHUB_INTERRUPT_TX
-title: EVT_UCX_ROOTHUB_INTERRUPT_TX
+UID: NC:ucxroothub.EVT_UCX_ROOTHUB_INTERRUPT_TX
+title: EVT_UCX_ROOTHUB_INTERRUPT_TX function
 author: windows-driver-content
 description: The client driver's implementation that UCX calls when it receives a request for information about changed ports.
 old-location: buses\evt_ucx_roothub_interrupt_tx.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: e2371b90-2274-459b-9e4a-5c9936d21b9c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
+ms.date: 1/4/2018
+ms.keywords: EVT_UCX_ROOTHUB_INTERRUPT_TX
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ucxroothub.h
 req.include-header: Ucxclass.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
 req.product: Windows 10 or later.
 ---
 
-# EVT_UCX_ROOTHUB_INTERRUPT_TX callback
+# EVT_UCX_ROOTHUB_INTERRUPT_TX function
 
 
 
@@ -43,7 +44,7 @@ The client driver's implementation that UCX calls when it receives a request for
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_UCX_ROOTHUB_INTERRUPT_TX EvtUcxInterruptTransferTx;
@@ -67,7 +68,7 @@ A handle to a UCX object that represents the root hub.
 
 ### -param Request [in]
 
-Contains the <a href="buses.urb">URB</a> for the root hub interrupt transfer request.
+Contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> for the root hub interrupt transfer request.
 
 
 ## -returns
@@ -75,7 +76,7 @@ This callback function does not return a value.
 
 
 ## -remarks
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxroothubcreate">UcxRootHubCreate</a>
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>
  method.
 
  The <i>Request</i> parameter contains a buffer in which each bit corresponds to a root
@@ -84,50 +85,4 @@ The UCX client driver registers this callback function with the USB host control
 
 The client driver returns completion status in <i>Request</i>.
 
-This snippet shows how the callback extracts the root hub interrupt transfer request.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+This snippet shows how the callback extracts the root hub interrupt transfer request.</p>

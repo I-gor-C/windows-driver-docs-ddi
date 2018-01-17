@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_GDIROP_COLORFILL
+UID: NE:d3dkmddi._DXGK_GDIROP_COLORFILL
 title: _DXGK_GDIROP_COLORFILL
 author: windows-driver-content
 description: The DXGK_GDIROP_COLORFILL enumeration indicates the type of GDI raster operation (ROP) to implement in a GDI hardware-accelerated color fill operation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_gdirop_colorfill.htm
 old-project: display
 ms.assetid: 1ef99bb0-855a-46d1-9702-5fc3eba5e68e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_GDIROP_COLORFILL, DXGK_GDIROP_COLORFILL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_GDIROP_COLORFILL
 ---
 
 # _DXGK_GDIROP_COLORFILL enumeration
@@ -101,29 +102,3 @@ Indicates that a ternary GDI raster operation (ROP3) will be applied.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

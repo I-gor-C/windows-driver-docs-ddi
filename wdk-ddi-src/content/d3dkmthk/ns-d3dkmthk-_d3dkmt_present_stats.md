@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_PRESENT_STATS
+UID: NS:d3dkmthk._D3DKMT_PRESENT_STATS
 title: _D3DKMT_PRESENT_STATS
 author: windows-driver-content
 description: The D3DKMT_PRESENT_STATS structure describes present status for a rendering device.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_present_stats.htm
 old-project: display
 ms.assetid: fd292f3c-2cf7-4f17-999b-a82b2a3a8e0e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_PRESENT_STATS, D3DKMT_PRESENT_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_PRESENT_STATS
 ---
 
 # _D3DKMT_PRESENT_STATS structure
@@ -59,7 +60,7 @@ typedef struct _D3DKMT_PRESENT_STATS {
 
 ### -field PresentCount
 
-[out] A UINT value that indicates the number of times that the OpenGL installable client driver (ICD) called the <a href="display.d3dkmtpresent">D3DKMTPresent</a> function on a rendering device or swap chain. After the maximum value is reached, <b>PresentCount</b> starts over at zero. When a new rendering device is created, <b>PresentCount</b> is initialized to zero. The operating system maintains a present counter for each swap chain that is created.
+[out] A UINT value that indicates the number of times that the OpenGL installable client driver (ICD) called the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a> function on a rendering device or swap chain. After the maximum value is reached, <b>PresentCount</b> starts over at zero. When a new rendering device is created, <b>PresentCount</b> is initialized to zero. The operating system maintains a present counter for each swap chain that is created.
 
 
 ### -field PresentRefreshCount
@@ -90,43 +91,18 @@ The operating system maintains timing information within a rendering device and 
 Present statistics cannot work for windowed-mode devices. For windowed mode, each structure member is set to zero.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_devicepresent_state">D3DKMT_DEVICEPRESENT_STATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicepresent_state.md">D3DKMT_DEVICEPRESENT_STATE</a>
 </dt>
 <dt>
-<a href="display.d3dkmtpresent">D3DKMTPresent</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_PRESENT_STATS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_PRESENT_STATS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

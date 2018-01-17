@@ -1,10 +1,17 @@
 ---
-UID: NA:
+UID: TP:powermeter
+ms.assetid: 87d19931-d859-3aff-b7ce-1b0060d965a5
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Power metering
 
-## -description
+
 Overview of the Power metering technology.
 
 To develop Power metering, you need these headers:

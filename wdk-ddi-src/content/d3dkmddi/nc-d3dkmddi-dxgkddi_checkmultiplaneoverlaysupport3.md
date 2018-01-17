@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3
-title: DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3
+UID: NC:d3dkmddi.DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3
+title: DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3 function
 author: windows-driver-content
 description: The following new function is called to determine whether a specific multi-plane overlay configuration is supported.
 old-location: display\dxgkddi_checkmultiplaneoverlaysupport3.htm
 old-project: display
 ms.assetid: 2EA7E8C4-51E0-4BDE-B69B-1A40FEB82952
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3 callback
+# DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3 function
 
 
 
@@ -42,7 +43,7 @@ The following new function is called to determine whether a specific multi-plane
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3(
@@ -77,20 +78,4 @@ DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT3 returns the following values:
 The kernel mode driver reports whether the specified configuration is supported.  The kernel mode driver should not raise or lower the available bandwidth in anticipation to this configuration getting set.
 
 This function is always called at PASSIVE level.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

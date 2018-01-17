@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_PATCH
-title: DXGKDDI_PATCH
+UID: NC:d3dkmddi.DXGKDDI_PATCH
+title: DXGKDDI_PATCH function
 author: windows-driver-content
 description: The DxgkDdiPatch function assigns physical addresses to the given direct memory access (DMA) buffer before the DMA buffer is submitted to the graphics hardware.
 old-location: display\dxgkddipatch.htm
 old-project: display
 ms.assetid: 363be784-0e3b-4f9a-a643-80857478bbae
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_PATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_PATCH callback
+# DXGKDDI_PATCH function
 
 
 
@@ -42,7 +43,7 @@ The <i>DxgkDdiPatch</i> function assigns physical addresses to the given direct 
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_PATCH DxgkDdiPatch;
@@ -64,7 +65,7 @@ NTSTATUS APIENTRY DxgkDdiPatch(
 
 ### -param pPatch [in]
 
-[in] A pointer to a <a href="display.dxgkarg_patch">DXGKARG_PATCH</a> structure that describes the DMA buffer to be patched with physical addresses.
+[in] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a> structure that describes the DMA buffer to be patched with physical addresses.
 
 
 ## -returns
@@ -75,7 +76,7 @@ NTSTATUS APIENTRY DxgkDdiPatch(
 ## -remarks
 The <i>DxgkDdiPatch</i> function must assign physical addresses to the DMA buffer in place. Therefore, when the display miniport driver generates the DMA buffer, the driver must ensure that space is available in the DMA buffer to insert instructions that are required to handle physical addresses. Note that physical addresses might correspond to video memory, AGP/PCI Express memory, or system memory. 
 
-The driver must examine the supplied patch-location list in the <b>pPatchLocationList</b> member of the <a href="display.dxgkarg_patch">DXGKARG_PATCH</a> structure that is pointed to by the <i>pPatch</i> parameter to identify places in the DMA buffer that must be patched with physical addresses. The supplied allocation list (which is specified by the <b>pAllocationList</b> member of DXGKARG_PATCH) also contains the physical addresses that the video memory manager generates. The call to the driver's <i>DxgkDdiPatch</i> function is the last chance for the driver to modify the content of the DMA buffer before the DMA buffer is submitted to the graphics processing unit (GPU). Note that the driver can patch a DMA buffer multiple times in scenarios where the DMA buffer is preempted.
+The driver must examine the supplied patch-location list in the <b>pPatchLocationList</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a> structure that is pointed to by the <i>pPatch</i> parameter to identify places in the DMA buffer that must be patched with physical addresses. The supplied allocation list (which is specified by the <b>pAllocationList</b> member of DXGKARG_PATCH) also contains the physical addresses that the video memory manager generates. The call to the driver's <i>DxgkDdiPatch</i> function is the last chance for the driver to modify the content of the DMA buffer before the DMA buffer is submitted to the graphics processing unit (GPU). Note that the driver can patch a DMA buffer multiple times in scenarios where the DMA buffer is preempted.
 
 The driver can patch the value that is supplied in the <b>SubmissionFenceId</b> member of DXGKARG_PATCH into the fence command at the end of the DMA buffer. For more information about this member, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.
 
@@ -84,56 +85,10 @@ If the driver returns an error code, the Microsoft DirectX graphics kernel subsy
 <i>DxgkDdiPatch</i> should be made pageable.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgkarg_patch">DXGKARG_PATCH</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
@@ -143,5 +98,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_PATCH callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_PATCH callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CIP_DATA_FORMAT_VER2
+UID: NS:61883._CIP_DATA_FORMAT_VER2
 title: _CIP_DATA_FORMAT_VER2
 author: windows-driver-content
 description: This structure is a CIP data format which is used by CMP_CONNECT_VER2.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: C78543F5-82CC-43CF-8769-1E721C17FF9C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT_VER2, PCIP_DATA_FORMAT_VER2
+ms.keywords: _CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT, *PCIP_DATA_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT_VER2
 ---
 
 # _CIP_DATA_FORMAT_VER2 structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-This structure is a CIP data format which is used by <a href="ieee.cmp_connect_ver2">CMP_CONNECT_VER2</a>.
+This structure is a CIP data format which is used by <a href="..\61883\ns-61883-_cmp_connect_ver2.md">CMP_CONNECT_VER2</a>.
 
 
 
@@ -66,21 +67,6 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5370
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILSUBADDRESSPARAMMASK
+UID: NE:rilapitypes.RILSUBADDRESSPARAMMASK
 title: RILSUBADDRESSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsubaddressparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ef802d35-2ca6-4fe2-9f3b-e2d1e91b8500
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSUBADDRESSPARAMMASK, RILSUBADDRESSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSUBADDRESSPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef enum _RILSUBADDRESSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

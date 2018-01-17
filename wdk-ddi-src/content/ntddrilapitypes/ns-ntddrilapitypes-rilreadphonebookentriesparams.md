@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILREADPHONEBOOKENTRIESPARAMS
+UID: NS:ntddrilapitypes.RILREADPHONEBOOKENTRIESPARAMS
 title: RILREADPHONEBOOKENTRIESPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilreadphonebookentriesparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: af74f94a-497a-4771-aee4-d1ba8d2f3ad9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILREADPHONEBOOKENTRIESPARAMS, RILREADPHONEBOOKENTRIESPARAMS, LPRILREADPHONEBOOKENTRIESPARAMS, *LPRILREADPHONEBOOKENTRIESPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILREADPHONEBOOKENTRIESPARAMS, RILREADPHONEBOOKENTRIESPARAMS, *LPRILREADPHONEBOOKENTRIESPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILREADPHONEBOOKENTRIESPARAMS, *LPRILREADPHONEBOOKENTRIESPARAMS
 ---
 
 # RILREADPHONEBOOKENTRIESPARAMS structure
@@ -69,19 +70,3 @@ typedef struct _RILREADPHONEBOOKENTRIESPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

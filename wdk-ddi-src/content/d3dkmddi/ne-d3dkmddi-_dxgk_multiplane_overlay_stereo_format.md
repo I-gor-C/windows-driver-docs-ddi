@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT
+UID: NE:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT
 title: _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT
 author: windows-driver-content
 description: Identifies the overlay plane's stereo presentation format. Only the DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO value is supported.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_stereo_format.htm
 old-project: display
 ms.assetid: ce9ad02d-645a-4333-9208-27f0805508a5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT, DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT enumeration
@@ -101,39 +102,3 @@ Reserved for system use. Do not use in your driver.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NC.ntddk.SILO_MONITOR_CREATE_CALLBACK
+UID: NC:ntddk.SILO_MONITOR_CREATE_CALLBACK
 title: SILO_MONITOR_CREATE_CALLBACK
 author: windows-driver-content
 description: This is callback is invoked when a new silo is created.
@@ -7,8 +7,8 @@ old-location: kernel\silo_monitor_create_callback.htm
 old-project: kernel
 ms.assetid: C26C5162-4BB0-401E-9AF5-AF1D2D8715F9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.date: 1/4/2018
+ms.keywords: RTL_RUN_ONCE_INIT_FN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ---
 
 # SILO_MONITOR_CREATE_CALLBACK callback
@@ -66,39 +67,3 @@ The NT code returned by the operation.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

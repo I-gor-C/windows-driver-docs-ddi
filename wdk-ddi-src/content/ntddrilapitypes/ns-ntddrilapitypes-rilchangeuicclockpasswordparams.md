@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCHANGEUICCLOCKPASSWORDPARAMS
+UID: NS:ntddrilapitypes.RILCHANGEUICCLOCKPASSWORDPARAMS
 title: RILCHANGEUICCLOCKPASSWORDPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilchangeuicclockpasswordparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 00e2fe6f-fd8b-45d1-9fd2-d90c515c3571
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS, LPRILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS
 ---
 
 # RILCHANGEUICCLOCKPASSWORDPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILCHANGEUICCLOCKPASSWORDPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

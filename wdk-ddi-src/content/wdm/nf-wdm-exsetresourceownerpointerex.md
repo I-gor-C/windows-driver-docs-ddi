@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExSetResourceOwnerPointerEx
+UID: NF:wdm.ExSetResourceOwnerPointerEx
 title: ExSetResourceOwnerPointerEx function
 author: windows-driver-content
 description: The ExSetResourceOwnerPointerEx routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner.
@@ -7,7 +7,7 @@ old-location: kernel\exsetresourceownerpointerex.htm
 old-project: kernel
 ms.assetid: 96293fbc-0c3c-4685-8708-dd84fcc2223e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExSetResourceOwnerPointerEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ VOID ExSetResourceOwnerPointerEx(
 
 ### -param Resource [in, out]
 
-A pointer to an executive resource (an opaque <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a> structure) that is owned by the calling thread. The caller previously allocated this structure and initialized it by calling the <a href="kernel.exinitializeresourcelite">ExInitializeResourceLite</a> routine. For more information, see the following Remarks section. 
+A pointer to an executive resource (an opaque <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a> structure) that is owned by the calling thread. The caller previously allocated this structure and initialized it by calling the <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a> routine. For more information, see the following Remarks section. 
 
 
 ### -param OwnerPointer [in]
@@ -88,99 +89,22 @@ This routine is available in Windows 7 and later versions of the Windows operati
 
 <b>ExSetResourceOwnerPointerEx</b> enables a thread, which acts as a resource manager, to transfer ownership of an executive resource, which the thread has already acquired, to another thread, which then uses the resource. The executive resource is represented by an <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a> structure.
 
-The caller must set the two least significant bits of the <i>OwnerPointer</i> parameter value to ones. The operating system uses these bits internally to distinguish an owner pointer that has been set by an <b>ExSetResourceOwnerPointerEx</b> call from a thread that has acquired a resource by calling the <a href="kernel.exacquireresourceexclusivelite">ExAcquireResourceExclusiveLite</a> or <a href="kernel.exacquireresourcesharedlite">ExAcquireResourceSharedLite</a> routine.
+The caller must set the two least significant bits of the <i>OwnerPointer</i> parameter value to ones. The operating system uses these bits internally to distinguish an owner pointer that has been set by an <b>ExSetResourceOwnerPointerEx</b> call from a thread that has acquired a resource by calling the <a href="..\wdm\nf-wdm-exacquireresourceexclusivelite.md">ExAcquireResourceExclusiveLite</a> or <a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a> routine.
 
 The thread that calls <b>ExSetResourceOwnerPointerEx</b> to transfer ownership of a resource must be the same thread that previously called the <b>ExAcquireResource<i>Xxx</i>Lite</b> routine to acquire the resource.
 
 If the resource-manager thread acquired the resource for exclusive access (by calling <b>ExAcquireResourceExclusiveLite</b>), the <b>ExSetResourceOwnerPointerEx</b> call transfers exclusive-access ownership to the resource-user thread. If the resource-manager thread acquired the resource for shared access (by calling <b>ExAcquireResourceSharedLite</b>), the <b>ExSetResourceOwnerPointerEx</b> call transfers shared-access ownership to the resource-user thread.
 
-When the resource-user thread no longer needs the resource, the resource should be released. Typically, the resource-user thread releases the resource. To do so, it must call the <a href="kernel.exreleaseresourceforthreadlite">ExReleaseResourceForThreadLite</a> routine. In this call, the <i>ThreadId</i> parameter value must match the value of the <i>OwnerPointer</i> parameter (including the two least significant bits) in the previous <b>ExSetResourceOwnerPointerEx</b> call that transferred ownership of the resource.
+When the resource-user thread no longer needs the resource, the resource should be released. Typically, the resource-user thread releases the resource. To do so, it must call the <a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a> routine. In this call, the <i>ThreadId</i> parameter value must match the value of the <i>OwnerPointer</i> parameter (including the two least significant bits) in the previous <b>ExSetResourceOwnerPointerEx</b> call that transferred ownership of the resource.
 
-After a <b>ExSetResourceOwnerPointerEx</b> call transfers ownership of a resource, the only other <a href="https://msdn.microsoft.com/5c7759db-aeb5-47f3-8adc-ddedb74b5cb4">ERESOURCE routine</a> that a driver can call for the specified resource is <b>ExReleaseResourceForThreadLite</b>. An attempt to call another <b>ERESOURCE</b> routine, such as <a href="kernel.exreleaseresourcelite">ExReleaseResourceLite</a>, for this resource is an error.
+After a <b>ExSetResourceOwnerPointerEx</b> call transfers ownership of a resource, the only other <a href="https://msdn.microsoft.com/5c7759db-aeb5-47f3-8adc-ddedb74b5cb4">ERESOURCE routine</a> that a driver can call for the specified resource is <b>ExReleaseResourceForThreadLite</b>. An attempt to call another <b>ERESOURCE</b> routine, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a>, for this resource is an error.
 
-<b>ExSetResourceOwnerPointerEx</b> can operate in two significantly different modes. The mode is specified by the <i>Flags</i> parameter. To select the more versatile of the two modes, set <i>Flags</i> = FLAG_OWNER_POINTER_IS_THREAD. This <i>Flags</i> value informs the operating system that the <i>OwnerPointer</i> parameter is a pointer to the thread object of the resource-manager thread. The operating system can, if necessary, use this information to temporarily boost the priority of this thread to avoid priority inversion. To obtain the thread object pointer to use for the <i>OwnerPointer</i> value, a driver can call the <a href="kernel.exgetcurrentresourcethread">ExGetCurrentResourceThread</a> routine. Remember to set the two least significant bits of the <i>OwnerPointer</i> value to ones.
+<b>ExSetResourceOwnerPointerEx</b> can operate in two significantly different modes. The mode is specified by the <i>Flags</i> parameter. To select the more versatile of the two modes, set <i>Flags</i> = FLAG_OWNER_POINTER_IS_THREAD. This <i>Flags</i> value informs the operating system that the <i>OwnerPointer</i> parameter is a pointer to the thread object of the resource-manager thread. The operating system can, if necessary, use this information to temporarily boost the priority of this thread to avoid priority inversion. To obtain the thread object pointer to use for the <i>OwnerPointer</i> value, a driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544614">ExGetCurrentResourceThread</a> routine. Remember to set the two least significant bits of the <i>OwnerPointer</i> value to ones.
 
-If <i>Flags</i> is zero, the behavior of <b>ExSetResourceOwnerPointerEx</b> is the same as that of the legacy <a href="kernel.exsetresourceownerpointer">ExSetResourceOwnerPointer</a> routine, which is available in Windows 2000 and later versions of the Windows operating system. That is, the <i>OwnerPointer</i> parameter points to a storage object that the resource-manager thread allocates in system memory before it calls <b>ExSetResourceOwnerPointerEx</b>. In this case, the object type and value are not relevant because <b>ExSetResourceOwnerPointerEx</b> does not attempt to access the object itself. Instead, the routine simply uses the memory address of the object to identify the resource owner. The storage for the object must begin at an even four-byte boundary in memory. To prevent two drivers from inadvertently using the same owner pointer at the same time, the resource-manager thread must not release the storage for the object until the resource is released.
+If <i>Flags</i> is zero, the behavior of <b>ExSetResourceOwnerPointerEx</b> is the same as that of the legacy <a href="..\wdm\nf-wdm-exsetresourceownerpointer.md">ExSetResourceOwnerPointer</a> routine, which is available in Windows 2000 and later versions of the Windows operating system. That is, the <i>OwnerPointer</i> parameter points to a storage object that the resource-manager thread allocates in system memory before it calls <b>ExSetResourceOwnerPointerEx</b>. In this case, the object type and value are not relevant because <b>ExSetResourceOwnerPointerEx</b> does not attempt to access the object itself. Instead, the routine simply uses the memory address of the object to identify the resource owner. The storage for the object must begin at an even four-byte boundary in memory. To prevent two drivers from inadvertently using the same owner pointer at the same time, the resource-manager thread must not release the storage for the object until the resource is released.
 
 For more information about managing executive resources, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548046">Introduction to ERESOURCE Routines</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -188,30 +112,30 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a>
 </dt>
 <dt>
-<a href="kernel.exacquireresourceexclusivelite">ExAcquireResourceExclusiveLite</a>
+<a href="..\wdm\nf-wdm-exacquireresourceexclusivelite.md">ExAcquireResourceExclusiveLite</a>
 </dt>
 <dt>
-<a href="kernel.exacquireresourcesharedlite">ExAcquireResourceSharedLite</a>
+<a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a>
 </dt>
 <dt>
-<a href="kernel.exgetcurrentresourcethread">ExGetCurrentResourceThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544614">ExGetCurrentResourceThread</a>
 </dt>
 <dt>
-<a href="kernel.exinitializeresourcelite">ExInitializeResourceLite</a>
+<a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a>
 </dt>
 <dt>
-<a href="kernel.exreleaseresourceforthreadlite">ExReleaseResourceForThreadLite</a>
+<a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>
 </dt>
 <dt>
-<a href="kernel.exreleaseresourcelite">ExReleaseResourceLite</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a>
 </dt>
 <dt>
-<a href="kernel.exsetresourceownerpointer">ExSetResourceOwnerPointer</a>
+<a href="..\wdm\nf-wdm-exsetresourceownerpointer.md">ExSetResourceOwnerPointer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetResourceOwnerPointerEx routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetResourceOwnerPointerEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

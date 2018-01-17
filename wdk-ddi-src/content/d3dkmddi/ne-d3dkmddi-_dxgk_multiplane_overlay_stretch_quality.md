@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY
+UID: NE:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 title: _DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 author: windows-driver-content
 description: Identifies filtering processes that the hardware should perform when it stretches or shrinks multiplane overlay data.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_stretch_quality.htm
 old-project: display
 ms.assetid: 5C995970-59E4-46AD-84CD-0B5675949308
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration
@@ -65,39 +66,3 @@ When the hardware stretches or shrinks the data, it should perform the highest q
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

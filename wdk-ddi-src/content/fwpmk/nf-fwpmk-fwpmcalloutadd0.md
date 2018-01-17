@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpmk.FwpmCalloutAdd0
+UID: NF:fwpmk.FwpmCalloutAdd0
 title: FwpmCalloutAdd0 function
 author: windows-driver-content
 description: The FwpmCalloutAdd0 function adds a callout to the filter engine.Note  FwpmCalloutAdd0 is a specific version of FwpmCalloutAdd.
 old-location: netvista\fwpmcalloutadd0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f88a31c4-f42c-487d-b6d8-f8f609f2faff
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FwpmCalloutAdd0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
 ---
 
 # FwpmCalloutAdd0 function
@@ -60,20 +61,20 @@ NTSTATUS NTAPI FwpmCalloutAdd0(
 ### -param engineHandle [in]
 
 A handle for an open session to the filter engine. A callout driver calls the 
-     <a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a> function to open a
+     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a> function to open a
      session to the filter engine.
 
 
 ### -param callout [in]
 
 A pointer to a constant 
-     <a href="netvista.fwpm_callout0">FWPM_CALLOUT0</a> structure that contains the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550076">FWPM_CALLOUT0</a> structure that contains the
      data that is required to add the callout to the filter engine.
 
 
 ### -param sd [in, optional]
 
-A pointer to a constant <a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor for
+A pointer to a constant <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor for
      the callout that is being added to the filter engine. This parameter is optional and can be <b>NULL</b>.
 
 
@@ -83,7 +84,7 @@ A pointer to a UINT32-typed variable that receives a run-time identifier that id
      callout in the filter engine. This is the same identifier that is returned when a callout driver
      registers the callout driver's callout functions with the filter engine. The callout driver passes this
      identifier to the 
-     <a href="netvista.fwpmcalloutdeletebyid0">FwpmCalloutDeleteById0</a> function
+     <a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a> function
      when removing the callout from the filter engine. This parameter is optional and can be <b>NULL</b>.
 
 
@@ -98,7 +99,7 @@ The
 </dl>The callout could not be added to the filter engine. A callout already exists in the filter
        engine with an identifier identical to the GUID specified in the 
        <b>calloutKey</b> member of the 
-       <a href="netvista.fwpm_callout0">FWPM_CALLOUT0</a> structure pointed to by the 
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff550076">FWPM_CALLOUT0</a> structure pointed to by the 
        <i>callout</i> parameter.
 <dl>
 <dt><b>Other status codes</b></dt>
@@ -121,84 +122,27 @@ A callout and filters that specify the callout for the filter's action can be ad
     callout is registered with the filter engine.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpmk.h (include Fwpmk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpkclnt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpm_callout0">FWPM_CALLOUT0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550076">FWPM_CALLOUT0</a>
 </dt>
 <dt>
-<a href="netvista.fwpmcalloutdeletebyid0">FwpmCalloutDeleteById0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>
 </dt>
 <dt>
-<a href="netvista.fwpmcalloutdeletebykey0">FwpmCalloutDeleteByKey0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
 </dt>
 <dt>
-<a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
 </dt>
 <dt>
-<a href="netvista.types_of_callouts">Types of Callouts</a>
+<a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpmCalloutAdd0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmCalloutAdd0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

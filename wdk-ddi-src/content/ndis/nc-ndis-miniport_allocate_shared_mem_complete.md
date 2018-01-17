@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
-title: MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
+UID: NC:ndis.MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
+title: MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE function
 author: windows-driver-content
 description: NDIS calls a miniport driver's MiniportSharedMemoryAllocateComplete function to complete a shared memory allocation request that the miniport driver started by calling the NdisMAllocateSharedMemoryAsyncEx function.
 old-location: netvista\miniportsharedmemoryallocatecomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d102a001-960c-4fe6-af2d-d740bba744b1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE callback
+# MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE function
 
 
 
@@ -41,12 +42,12 @@ req.irql: PASSIVE_LEVEL
 NDIS calls a miniport driver's 
    <i>MiniportSharedMemoryAllocateComplete</i> function to complete a shared memory allocation request that
    the miniport driver started by calling the 
-   <a href="netvista.ndismallocatesharedmemoryasyncex">
+   <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
    NdisMAllocateSharedMemoryAsyncEx</a> function.
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE MiniportSharedMemoryAllocateComplete;
@@ -106,11 +107,11 @@ None
     driver registers a 
     <i>MiniportAllocateSharedMemoryComplete</i> function in the NDIS_SG_DMA_DESCRIPTION structure that the
     driver passed to the 
-    <a href="netvista.ndismregisterscattergatherdma">
+    <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
     NdisMRegisterScatterGatherDma</a> function.
 
 Miniport drivers call 
-    <a href="netvista.ndismallocatesharedmemoryasyncex">
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
     NdisMAllocateSharedMemoryAsyncEx</a> to allocate shared memory. If 
     <b>NdisMAllocateSharedMemoryAsyncEx</b> returns NDIS_STATUS_PENDING, NDIS calls 
     <i>MiniportAllocateSharedMemoryComplete</i> to pass the memory to the miniport driver.
@@ -129,52 +130,17 @@ The <b>MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE</b> function type is defined in the
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocatesharedmemoryasyncex">
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
    NdisMAllocateSharedMemoryAsyncEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterscattergatherdma">
+<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
 </dt>
 </dl>
@@ -182,5 +148,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_UPDATEPAGETABLEFLAGS
+UID: NS:d3dkmddi._DXGK_UPDATEPAGETABLEFLAGS
 title: _DXGK_UPDATEPAGETABLEFLAGS
 author: windows-driver-content
 description: DXGK_UPDATEPAGETABLEFLAGS is used as part of a page table update operation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_updatepagetableflags.htm
 old-project: display
 ms.assetid: E0E1CDE7-F1BF-44C8-A320-9BD90788679F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_UPDATEPAGETABLEFLAGS, DXGK_UPDATEPAGETABLEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_UPDATEPAGETABLEFLAGS
 ---
 
 # _DXGK_UPDATEPAGETABLEFLAGS structure
@@ -83,39 +84,3 @@ This member is reserved and should be set to zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

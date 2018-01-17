@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_PARCLASS_CONNECT
+UID: NI:parallel.IOCTL_INTERNAL_PARCLASS_CONNECT
 title: IOCTL_INTERNAL_PARCLASS_CONNECT
 author: windows-driver-content
 description: The IOCTL_INTERNAL_PARCLASS_CONNECT request returns information about a parallel port and the callback routines that the system-supplied bus driver for parallel ports provides to operate the parallel port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARCLASS_CONNECT IOCTL
@@ -47,19 +48,19 @@ For more information, see <a href="https://msdn.microsoft.com/c05a1a1e-308a-4b9f
 ## -ioctlparameters
 
 ### -input-buffer
-A <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure. 
+A <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a> structure. 
 
 
 ### -input-buffer-length
-The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure. 
+The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a> structure. 
 
 
 ### -output-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure that the client allocates to output information.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a> structure that the client allocates to output information.
 
 
 ### -output-buffer-length
-The size of a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure.
+The size of a <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a> structure.
 
 
 ### -in-out-buffer
@@ -84,28 +85,13 @@ The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_parclass_disconnect.md">IOCTL_INTERNAL_PARCLASS_DISCONNECT</a>
 </dt>
 <dt>
-<a href="parports.parclass_information">PARCLASS_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a>
 </dt>
 </dl>
  

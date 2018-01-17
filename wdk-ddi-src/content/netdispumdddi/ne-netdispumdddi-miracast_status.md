@@ -1,5 +1,5 @@
 ---
-UID: NE.netdispumdddi.MIRACAST_STATUS
+UID: NE:netdispumdddi.MIRACAST_STATUS
 title: MIRACAST_STATUS
 author: windows-driver-content
 description: Specifies status types that the user-mode display driver uses to report Miracast connection status.
@@ -7,7 +7,7 @@ old-location: display\miracast_status.htm
 old-project: display
 ms.assetid: 26949ef9-ddcd-496d-b7e2-7c971bfaf3fb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: MIRACAST_STATUS, MIRACAST_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MIRACAST_STATUS
 ---
 
 # MIRACAST_STATUS enumeration
@@ -89,39 +90,3 @@ Forces this enumeration to compile to 32 bits in size. Without this value, some 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netdispumdddi.h (include Netdispumdddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

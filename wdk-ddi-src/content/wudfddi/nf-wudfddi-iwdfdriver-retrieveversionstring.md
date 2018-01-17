@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFDriver.RetrieveVersionString
+UID: NF:wudfddi.IWDFDriver.RetrieveVersionString
 title: IWDFDriver::RetrieveVersionString method
 author: windows-driver-content
 description: The RetrieveVersionString method retrieves the version of the framework.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfdriver_retrieveversionstring.htm
 old-project: wdf
 ms.assetid: 2fa320df-bafd-42f4-a0a1-14151c39d68a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFDriver, IWDFDriver::RetrieveVersionString, RetrieveVersionString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -100,61 +101,3 @@ The buffer at <i>pVersion</i> was <b>NULL</b>, the driver preset the variable at
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.5
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>

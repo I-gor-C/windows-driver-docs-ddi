@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddsysenv.IOCTL_SYSENV_ENUM_VARIABLES
+UID: NI:ntddsysenv.IOCTL_SYSENV_ENUM_VARIABLES
 title: IOCTL_SYSENV_ENUM_VARIABLES
 author: windows-driver-content
 description: Returns information about system environment variables using SysEnv device.
@@ -7,8 +7,8 @@ old-location: kernel\ioctl_ioctl_sysenv_enum_variables.htm
 old-project: kernel
 ms.assetid: 605CA19C-048A-4FBA-8568-7B1867C99210
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_GROUP, PSTORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP
+ms.date: 1/4/2018
+ms.keywords: SdBusSubmitRequestAsync
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SYSENV_ENUM_VARIABLES IOCTL
@@ -62,9 +63,9 @@ Size of BOOLEAN.
 
 
 ### -output-buffer
-A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="kernel.xvariable_name_and_value">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="kernel.xvariable_name">XVARIABLE_NAME</a>  structures. 
+A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="..\ntddsysenv\ns-ntddsysenv-_xvariable_name_and_value.md">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="..\ntddsysenv\ns-ntddsysenv-_xvariable_name.md">XVARIABLE_NAME</a>  structures. 
 
-The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="kernel.xvariable_name_and_value">XVARIABLE_NAME_AND_VALUE</a> and <a href="kernel.xvariable_name">XVARIABLE_NAME</a>.
+The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="..\ntddsysenv\ns-ntddsysenv-_xvariable_name_and_value.md">XVARIABLE_NAME_AND_VALUE</a> and <a href="..\ntddsysenv\ns-ntddsysenv-_xvariable_name.md">XVARIABLE_NAME</a>.
 
 
 ### -output-buffer-length
@@ -92,39 +93,24 @@ I/O Status block
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddsysenv.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlotherssynchronously">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlsynchronously">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendioctlsynchronously">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_ENUM_VARIABLES control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_ENUM_VARIABLES control code%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

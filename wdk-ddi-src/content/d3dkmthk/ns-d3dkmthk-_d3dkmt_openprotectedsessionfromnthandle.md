@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
+UID: NS:d3dkmthk._D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
 title: _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
 author: windows-driver-content
 description: Used to open a protected session from the NT handle.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-openprotectedsessionfromnthandle.htm
 old-project: display
 ms.assetid: 15937864-c6ef-4c86-b957-87c7afe1cd94
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE, D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
 ---
 
 # _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE structure
@@ -65,19 +66,3 @@ The protected kernel session handle.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_RESET
-title: MINIPORT_RESET
+UID: NC:ndis.MINIPORT_RESET
+title: MINIPORT_RESET function
 author: windows-driver-content
 description: NDIS calls an NDIS miniport driver's MiniportResetEx function to initiate a reset of a network interface card (NIC). For more information, see Miniport Adapter Check-for-Hang and Reset Operations and Miniport Driver Hardware Reset.
 old-location: netvista\miniportresetex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 15f82163-a1b5-4cef-a53e-8a97adb2cd92
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_RESET
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,19 +31,20 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_RESET callback
+# MINIPORT_RESET function
 
 
 
 ## -description
 NDIS calls an NDIS miniport driver's 
-   <i>MiniportResetEx</i> function to initiate a reset of a network interface card (NIC). For more information, see <a href="netvista.miniport_adapter_check_for_hang_and_reset_operations">Miniport Adapter Check-for-Hang and Reset Operations</a> and <a href="https://msdn.microsoft.com/92a469de-396a-4f13-b73d-dc30dd08be7f">Miniport Driver Hardware Reset</a>.
+   <i>MiniportResetEx</i> function to initiate a reset of a network interface card (NIC). For more information, see <a href="https://msdn.microsoft.com/53ffc5a9-bcba-4189-8845-73adfcf6816d">Miniport Adapter Check-for-Hang and Reset Operations</a> and <a href="https://msdn.microsoft.com/92a469de-396a-4f13-b73d-dc30dd08be7f">Miniport Driver Hardware Reset</a>.
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_RESET MiniportResetEx;
@@ -82,7 +83,7 @@ A pointer to a Boolean variable. The miniport driver sets this variable to <b>TR
 <dl>
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>The driver will complete the reset operation asynchronously by calling the 
-       <a href="netvista.ndismresetcomplete">NdisMResetComplete</a> function when the
+       <a href="..\ndis\nf-ndis-ndismresetcomplete.md">NdisMResetComplete</a> function when the
        operation is done.
 <dl>
 <dt><b>NDIS_STATUS_RESET_IN_PROGRESS</b></dt>
@@ -94,7 +95,7 @@ A pointer to a Boolean variable. The miniport driver sets this variable to <b>TR
 </dl><i>MiniportResetEx</i> successfully reset the miniport adapter but a recoverable error occurred during
        the operation. 
        <i>MiniportResetEx</i> should have called the 
-       <a href="netvista.ndiswriteerrorlogentry">NdisWriteErrorLogEntry</a> function
+       <a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a> function
        with more information about the error.
 <dl>
 <dt><b>NDIS_STATUS_HARD_ERRORS</b></dt>
@@ -109,7 +110,7 @@ A pointer to a Boolean variable. The miniport driver sets this variable to <b>TR
 ## -remarks
 A driver specifies the 
     <i>MiniportResetEx</i> entry point when it calls the 
-    <a href="netvista.ndismregisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
     NdisMRegisterMiniportDriver</a> function.
 
 <i>MiniportResetEx</i> is not required for intermediate drivers.
@@ -133,20 +134,20 @@ NDIS will not abort any pending OID requests or send requests. If the driver can
     pending OID or send requests after a reset, the driver can hold pending OID or send requests until after
     the reset operation is complete. Otherwise, the driver should complete the pending OID or send requests
     by calling the 
-    <a href="netvista.ndismoidrequestcomplete">NdisMOidRequestComplete</a> or 
-    <a href="netvista.ndismsendnetbufferlistscomplete">
+    <a href="..\ndis\nf-ndis-ndismoidrequestcomplete.md">NdisMOidRequestComplete</a> or 
+    <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
     NdisMSendNetBufferListsComplete</a> functions respectively before 
     <i>MiniportResetEx</i> returns.
 
 A miniport driver should not call the 
-    <a href="netvista.ndismindicatestatusex">NdisMIndicateStatusEx</a> function to
+    <a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a> function to
     signal the start and finish of each reset operation. NDIS notifies bound protocol drivers when a reset
     begins and ends.
 
 If 
     <i>MiniportResetEx</i> must wait for state changes in the miniport adapter during reset operations, it can
     call the 
-    <a href="netvista.ndisstallexecution">NdisStallExecution</a> function. However, a
+    <a href="..\ndis\nf-ndis-ndisstallexecution.md">NdisStallExecution</a> function. However, a
     
     <i>MiniportResetEx</i> function must not call 
     <b>NdisStallExecution</b> with a time interval larger than 50 microseconds. If the driver must wait longer
@@ -155,7 +156,7 @@ If
 
 If 
     <i>MiniportResetEx</i> returns NDIS_STATUS_PENDING, the driver must complete the reset by calling the 
-    <a href="netvista.ndismresetcomplete">NdisMResetComplete</a> function.
+    <a href="..\ndis\nf-ndis-ndismresetcomplete.md">NdisMResetComplete</a> function.
 
 If a miniport adapter is in the 
     <b>MediaConnectStateConnected</b> state and its state changes because of a reset, including a change to
@@ -173,13 +174,13 @@ NDIS calls the
     <i>MiniportResetEx</i>. The default time-out for calling 
     <i>MiniportCheckForHangEx</i> is 2 seconds. If this default is too short, a miniport driver can set a larger <b>CheckForHangTimeInSeconds</b> value when calling the
     
-    <a href="netvista.ndismsetminiportattributes">
-    NdisMSetMiniportAttributes</a> function during initialization. For more information, see <a href="netvista.miniport_adapter_check_for_hang_and_reset_operations">Miniport Adapter Check-for-Hang and Reset Operations</a>.
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+    NdisMSetMiniportAttributes</a> function during initialization. For more information, see <a href="https://msdn.microsoft.com/53ffc5a9-bcba-4189-8845-73adfcf6816d">Miniport Adapter Check-for-Hang and Reset Operations</a>.
 
 NDIS cannot determine whether a NIC has stopped responding for receive operations. To handle this kind
     of failure, the 
     <i>MiniportCheckForHangEx</i> function can monitor receive operations and, if necessary, return <b>TRUE</b> to
-    force a reset. A miniport can also request a reset by calling <a href="netvista.ndismresetminiport">NdisMResetMiniport</a>.
+    force a reset. A miniport can also request a reset by calling <a href="..\ndis\nf-ndis-ndismresetminiport.md">NdisMResetMiniport</a>.
 
 NDIS calls 
     <i>MiniportResetEx</i> at IRQL &lt;= DISPATCH_LEVEL.
@@ -194,41 +195,6 @@ The <b>MINIPORT_RESET</b> function type is defined in the Ndis.h header file. To
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -245,35 +211,35 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567391">NDIS_STATUS_LINK_STATE</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatestatusex">NdisMIndicateStatusEx</a>
+<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndismoidrequestcomplete">NdisMOidRequestComplete</a>
+<a href="..\ndis\nf-ndis-ndismoidrequestcomplete.md">NdisMOidRequestComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismresetcomplete">NdisMResetComplete</a>
+<a href="..\ndis\nf-ndis-ndismresetcomplete.md">NdisMResetComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismresetminiport">NdisMResetMiniport</a>
+<a href="..\ndis\nf-ndis-ndismresetminiport.md">NdisMResetMiniport</a>
 </dt>
 <dt>
-<a href="netvista.ndismsendnetbufferlistscomplete">
+<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
    NdisMSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="netvista.ndisstallexecution">NdisStallExecution</a>
+<a href="..\ndis\nf-ndis-ndisstallexecution.md">NdisStallExecution</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteerrorlogentry">NdisWriteErrorLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
 </dt>
 <dt>
-<a href="netvista.miniport_adapter_check_for_hang_and_reset_operations">Miniport Adapter Check-for-Hang and Reset Operations</a>
+<a href="https://msdn.microsoft.com/53ffc5a9-bcba-4189-8845-73adfcf6816d">Miniport Adapter Check-for-Hang and Reset Operations</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/92a469de-396a-4f13-b73d-dc30dd08be7f">Miniport Driver Hardware Reset</a>
@@ -283,5 +249,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_RESET callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_RESET callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

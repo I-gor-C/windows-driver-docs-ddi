@@ -1,5 +1,5 @@
 ---
-UID: NI.bthxddi.IOCTL_BTHX_QUERY_CAPABILITIES
+UID: NI:bthxddi.IOCTL_BTHX_QUERY_CAPABILITIES
 title: IOCTL_BTHX_QUERY_CAPABILITIES
 author: windows-driver-content
 description: IOCTL_BTHX_QUERY_CAPABILITIES is used to query the capabilities of the transport driver.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bthx_query_capabilities.htm
 old-project: bltooth
 ms.assetid: 199C93EC-AB91-47F1-914A-F44BFF1796A6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BTHX_SCO_SUPPORT, PBTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.date: 12/21/2017
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ---
 
 # IOCTL_BTHX_QUERY_CAPABILITIES IOCTL
@@ -58,7 +59,7 @@ None.
 
 
 ### -output-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="bltooth.bthx_capabilities">BTHX_CAPABILITIES</a> structure. 
+The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="..\bthxddi\ns-bthxddi-_bthx_capabilities.md">BTHX_CAPABILITIES</a> structure. 
 
 
 ### -output-buffer-length
@@ -95,40 +96,4 @@ This is a synchrononous call and failure of this IOCTL prevents Windows from loa
 
 The output buffer of this IOCTL is defined by the BTHX_CAPABILITIES structure.
 
-The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member must be set to <b>ScoSupportHCIBypass</b>. Failure to do so prevents the stack from being loaded.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>BthXDDI.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member must be set to <b>ScoSupportHCIBypass</b>. Failure to do so prevents the stack from being loaded.</p>

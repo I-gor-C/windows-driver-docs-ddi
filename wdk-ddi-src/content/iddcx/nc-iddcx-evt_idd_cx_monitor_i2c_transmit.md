@@ -1,17 +1,17 @@
 ---
-UID: NC.iddcx.EVT_IDD_CX_MONITOR_I2C_TRANSMIT
-title: EVT_IDD_CX_MONITOR_I2C_TRANSMIT
+UID: NC:iddcx.EVT_IDD_CX_MONITOR_I2C_TRANSMIT
+title: EVT_IDD_CX_MONITOR_I2C_TRANSMIT function
 author: windows-driver-content
 description: EVT_IDD_CX_MONITOR_I2C_TRANSMIT is called by the OS to return data received to an I2C device in a monitor.
 old-location: display\evt_idd_cx_monitor_i2c_transmit.htm
 old-project: display
 ms.assetid: d36d45f5-fae1-430a-a01e-adb70e09573c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WcsTranslateColors
+ms.date: 12/29/2017
+ms.keywords: EVT_IDD_CX_MONITOR_I2C_TRANSMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
 ---
 
-# EVT_IDD_CX_MONITOR_I2C_TRANSMIT callback
+# EVT_IDD_CX_MONITOR_I2C_TRANSMIT function
 
 
 
@@ -42,7 +43,7 @@ req.irql: _requires_same_
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_IDD_CX_MONITOR_I2C_TRANSMIT EvtIddCxMonitorI2cTransmit;
@@ -91,50 +92,4 @@ communication.
 <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> has a 5 second timeout and must complete in that time limit.
 
 If the display adapter supports HDCP, <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> must refuse to send data to an I2C device if the device has an I2C address that is used by HDCP.
-<b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> must never transmit data to an I2C device on the display adapter. That is, this function can transmit data to an I2C device in a monitor that is connected to the display adapter, but not to an I2C device that is on the display adapter itself.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_requires_same_
-
-</td>
-</tr>
-</table>
+<b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> must never transmit data to an I2C device on the display adapter. That is, this function can transmit data to an I2C device in a monitor that is connected to the display adapter, but not to an I2C device that is on the display adapter itself.</p>

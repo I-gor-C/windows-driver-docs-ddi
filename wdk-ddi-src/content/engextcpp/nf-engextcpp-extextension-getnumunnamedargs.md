@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtExtension.GetNumUnnamedArgs
+UID: NF:engextcpp.ExtExtension.GetNumUnnamedArgs
 title: ExtExtension::GetNumUnnamedArgs method
 author: windows-driver-content
 description: The GetNumUnnamedArgs method returns the number of unnamed arguments in the command line used to invoke the current extension command.
 old-location: debugger\getnumunnamedargs.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: dc3ea1ba-136b-4257-9aa2-ca9649555869
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtExtension, ExtExtension::GetNumUnnamedArgs, GetNumUnnamedArgs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # ExtExtension::GetNumUnnamedArgs method
@@ -65,31 +66,4 @@ The indices of the unnamed arguments returned by <b>GetNumUnnamedArgs</b> range 
 
 For an overview of argument parsing in the EngExtCpp extensions framework, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553340">Parsing Extension Arguments</a>.
 
-This method should only be called during the execution of an extension command provided by this class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Engextcpp.hpp (include Engextcpp.hpp)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This method should only be called during the execution of an extension command provided by this class.</p>

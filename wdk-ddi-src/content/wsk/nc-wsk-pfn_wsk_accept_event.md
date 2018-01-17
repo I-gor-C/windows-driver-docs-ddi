@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_ACCEPT_EVENT
+UID: NC:wsk.PFN_WSK_ACCEPT_EVENT
 title: PFN_WSK_ACCEPT_EVENT
 author: windows-driver-content
 description: The WskAcceptEvent event callback function notifies a WSK application that an incoming connection on a listening socket has been accepted.
 old-location: netvista\wskacceptevent.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 672440f0-810a-4e68-82a5-d038770898c5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/11/2018
+ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -108,7 +109,7 @@ A pointer to a buffer that contains the remote transport address from which the 
 ### -param AcceptSocket [in, optional]
 
 A pointer to a 
-     <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that is the socket object
+     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that is the socket object
      for the accepted socket. If this pointer is <b>NULL</b>, the listening socket is no longer functional and the
      WSK application must call the 
      <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
@@ -128,7 +129,7 @@ A pointer to a variable that receives a pointer to a WSK application-supplied co
 ### -param AcceptSocketDispatch [out]
 
 A pointer to a variable that receives a pointer to a constant 
-     <a href="netvista.wsk_client_connection_dispatch">
+     <a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
      WSK_CLIENT_CONNECTION_DISPATCH</a> structure. This structure is a dispatch table that contains
      pointers to the event callback functions for the accepted socket. If the WSK application will not be
      enabling all of the event callback functions for the accepted socket, the application should set the
@@ -189,7 +190,7 @@ When the WSK subsystem calls a WSK application's
     Disabling Event Callback Functions</a>.
 
 The 
-    <a href="netvista.sockaddr">SOCKADDR</a> structures that are pointed to by the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structures that are pointed to by the 
     <i>LocalAddress</i> and 
     <i>RemoteAddress</i> parameters are valid only for the duration of the call to the 
     <i>WskAcceptEvent</i> event callback function. If a WSK application needs these transport addresses at a
@@ -201,7 +202,7 @@ The
     accepted socket.
 
 The WSK subsystem allocates the memory for the socket object structure (
-    <a href="netvista.wsk_socket">WSK_SOCKET</a>) for the accepted connection on
+    <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>) for the accepted connection on
     behalf of the WSK application. The WSK subsystem deallocates this memory when the socket is closed.
 
 The WSK subsystem calls a WSK application's 
@@ -209,42 +210,6 @@ The WSK subsystem calls a WSK application's
 
 A WSK application's <i>WskAcceptEvent</i> event callback function must not wait for completion of other WSK requests in the context of WSK completion or event callback functions. The callback can initiate other WSK requests (assuming that it doesn't spend too much time at DISPATCH_LEVEL), but it must not wait for their completion even when the callback is called at IRQL = PASSIVE_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wsk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -267,22 +232,22 @@ IRQL
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
 </dt>
 <dt>
-<a href="netvista.sockaddr">SOCKADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
    WSK_CLIENT_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_listen_dispatch">WSK_CLIENT_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_ACCEPT_EVENT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_ACCEPT_EVENT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

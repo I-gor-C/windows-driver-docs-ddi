@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._BUS_RESET_DATA
+UID: NS:1394._BUS_RESET_DATA
 title: _BUS_RESET_DATA
 author: windows-driver-content
 description: The BUS_RESET_DATA structure specifies the context for the extended bus reset notification routine.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 82A01880-AC8D-4285-A780-EE195F186B71
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BUS_RESET_DATA, BUS_RESET_DATA, *PBUS_RESET_DATA, PBUS_RESET_DATA
+ms.keywords: _BUS_RESET_DATA, BUS_RESET_DATA, *PBUS_RESET_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BUS_RESET_DATA, *PBUS_RESET_DATA
 ---
 
 # _BUS_RESET_DATA structure
@@ -108,31 +109,6 @@ The negotiated speed to the device. The possible values are as follows:
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

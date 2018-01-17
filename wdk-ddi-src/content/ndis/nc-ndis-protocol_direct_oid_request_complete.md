@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_DIRECT_OID_REQUEST_COMPLETE
-title: PROTOCOL_DIRECT_OID_REQUEST_COMPLETE
+UID: NC:ndis.PROTOCOL_DIRECT_OID_REQUEST_COMPLETE
+title: PROTOCOL_DIRECT_OID_REQUEST_COMPLETE function
 author: windows-driver-content
 description: The ProtocolDirectOidRequestComplete function completes the processing of a protocol driver-initiated direct OID request for which the NdisDirectOidRequest function returned NDIS_STATUS_PENDING.Note  You must declare the function by using the PROTOCOL_DIRECT_OID_REQUEST_COMPLETE type. For more information, see the following Examples section.
 old-location: netvista\protocoldirectoidrequestcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6b23bbba-1b18-4da7-a45c-68df7c960aad
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_DIRECT_OID_REQUEST_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_DIRECT_OID_REQUEST_COMPLETE callback
+# PROTOCOL_DIRECT_OID_REQUEST_COMPLETE function
 
 
 
@@ -41,12 +42,12 @@ req.irql: <= DISPATCH_LEVEL
 The 
   <i>ProtocolDirectOidRequestComplete</i> function completes the processing of a protocol
   driver-initiated direct OID request for which the 
-  <a href="netvista.ndisdirectoidrequest">NdisDirectOidRequest</a> function returned
+  <a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a> function returned
   NDIS_STATUS_PENDING.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_DIRECT_OID_REQUEST_COMPLETE ProtocolDirectOidRequestComplete;
@@ -66,13 +67,13 @@ VOID ProtocolDirectOidRequestComplete(
 
 A handle to a protocol driver-allocated context area in which the protocol driver maintains
      per-binding run-time state. The driver supplied this handle when it called the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 ### -param OidRequest [in]
 
 A pointer to the protocol driver-supplied 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that was
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that was
      previously passed to the 
      <b>NdisDirectOidRequest</b> function.
 
@@ -92,7 +93,7 @@ None
 ## -remarks
 <i>ProtocolDirectOidRequestComplete</i> is an optional function. If a protocol driver
     does not use direct OID requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="netvista.ndisregisterprotocoldriver">
+    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
     NdisRegisterProtocolDriver</a> function.
 
 <i>ProtocolDirectOidRequestComplete</i> uses the input value of the 
@@ -102,7 +103,7 @@ If
       <i>Status</i> is NDIS_STATUS_SUCCESS, the 
       <b>BytesRead</b> or 
       <b>BytesWritten</b> member of the 
-      <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure has been set
+      <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure has been set
       by NDIS or the underlying driver. These values specify how much protocol driver-supplied information
       was transferred from the buffer at 
       <b>InformationBuffer</b> to the NIC in a set operation or how much information
@@ -121,7 +122,7 @@ For example, if the protocol driver originally initiated an
       <i>ProtocolDirectOidRequestComplete</i> might set up state variables in the 
       <i>ProtocolBindingContext</i> area to throttle the number of outstanding sends that
       the driver will set up for subsequent calls to the 
-      <a href="netvista.ndissendnetbufferlists">
+      <a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">
       NdisSendNetBufferLists</a> function.
 
 If 
@@ -135,12 +136,12 @@ In these circumstances,
       request, set up another NDIS_OID_REQUEST structure with the required 
       <b>InformationBufferLength</b> value and same 
       <b>Oid</b> value, and retry the call to the 
-      <a href="netvista.ndisdirectoidrequest">NdisDirectOidRequest</a> function.
+      <a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a> function.
 
 <i>ProtocolDirectOidRequestComplete</i> can retry requests for certain other
       NDIS_STATUS_
       <i>Xxx</i> arguments, as well, as described in 
-      <a href="netvista.ndisdirectoidrequest">NdisDirectOidRequest</a>.
+      <a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a>.
 
 If 
       <i>Status</i> is an NDIS_STATUS_
@@ -168,58 +169,23 @@ The <b>PROTOCOL_DIRECT_OID_REQUEST_COMPLETE</b> function type is defined in the 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.1 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.ndisdirectoidrequest">NdisDirectOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndismdirectoidrequestcomplete">
+<a href="..\ndis\nf-ndis-ndismdirectoidrequestcomplete.md">
    NdisMDirectOidRequestComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569600">OID_GEN_MAXIMUM_SEND_PACKETS</a>
@@ -229,5 +195,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_DIRECT_OID_REQUEST_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_DIRECT_OID_REQUEST_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

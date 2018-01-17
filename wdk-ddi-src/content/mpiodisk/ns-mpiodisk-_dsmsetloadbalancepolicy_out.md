@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIODISK._DSMSETLOADBALANCEPOLICY_OUT
+UID: NS:mpiodisk._DsmSetLoadBalancePolicy_OUT
 title: _DsmSetLoadBalancePolicy_OUT
 author: windows-driver-content
 description: The DsmSetLoadBalancePolicy_OUT structure reports the output parameter of the DsmSetLoadBalancePolicy method.
@@ -7,8 +7,8 @@ old-location: storage\dsmsetloadbalancepolicy_out.htm
 old-project: storage
 ms.assetid: d3479656-310f-4e2d-a671-296bc3e2f1ab
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DsmSetLoadBalancePolicy_OUT, *PDsmSetLoadBalancePolicy_OUT, DsmSetLoadBalancePolicy_OUT, PDsmSetLoadBalancePolicy_OUT
+ms.date: 1/10/2018
+ms.keywords: _DsmSetLoadBalancePolicy_OUT, DsmSetLoadBalancePolicy_OUT, *PDsmSetLoadBalancePolicy_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DsmSetLoadBalancePolicy_OUT, *PDsmSetLoadBalancePolicy_OUT
 ---
 
 # _DsmSetLoadBalancePolicy_OUT structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>DsmSetLoadBalancePolicy_OUT</b> structure reports the output parameter of the <a href="storage.dsmsetloadbalancepolicy">DsmSetLoadBalancePolicy</a> method.
+The <b>DsmSetLoadBalancePolicy_OUT</b> structure reports the output parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552670">DsmSetLoadBalancePolicy</a> method.
 
 
 
@@ -55,23 +56,7 @@ typedef struct _DsmSetLoadBalancePolicy_OUT {
 
 ### -field Status
 
-The status of the <a href="storage.dsmsetloadbalancepolicy">DsmSetLoadBalancePolicy</a> operation.
+The status of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552670">DsmSetLoadBalancePolicy</a> operation.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

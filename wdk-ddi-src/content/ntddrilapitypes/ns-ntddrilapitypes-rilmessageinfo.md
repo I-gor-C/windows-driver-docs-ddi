@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMESSAGEINFO
+UID: NS:ntddrilapitypes.RILMESSAGEINFO
 title: RILMESSAGEINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessageinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 689b4abc-13ee-4d4a-8b2e-bb0be7cc6672
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMESSAGEINFO, RILMESSAGEINFO, *LPRILMESSAGEINFO, LPRILMESSAGEINFO
+ms.date: 1/11/2018
+ms.keywords: RILMESSAGEINFO, *LPRILMESSAGEINFO, RILMESSAGEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILMESSAGEINFO, RILMESSAGEINFO
 ---
 
 # RILMESSAGEINFO structure
@@ -77,19 +78,3 @@ typedef struct _RILMESSAGEINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

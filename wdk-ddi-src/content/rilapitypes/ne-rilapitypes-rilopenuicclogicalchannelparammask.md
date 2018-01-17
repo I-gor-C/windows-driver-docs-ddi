@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILOPENUICCLOGICALCHANNELPARAMMASK
+UID: NE:rilapitypes.RILOPENUICCLOGICALCHANNELPARAMMASK
 title: RILOPENUICCLOGICALCHANNELPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilopenuicclogicalchannelparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: abce79d2-1eca-4d62-af4f-434596bfb718
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILOPENUICCLOGICALCHANNELPARAMMASK, RILOPENUICCLOGICALCHANNELPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILOPENUICCLOGICALCHANNELPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef enum _RILOPENUICCLOGICALCHANNELPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

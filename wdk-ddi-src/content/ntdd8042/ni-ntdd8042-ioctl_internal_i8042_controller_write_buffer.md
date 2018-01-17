@@ -1,5 +1,5 @@
 ---
-UID: NI.ntdd8042.IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER
+UID: NI:ntdd8042.IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER
 title: IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER
 author: windows-driver-content
 description: The IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER request is not supported.
@@ -7,8 +7,8 @@ old-location: hid\ioctl_internal_i8042_controller_write_buffer.htm
 old-project: hid
 ms.assetid: c4970f78-fa4f-4ce9-a538-332f00e0df28
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MOUSE_STATE, MOUSE_STATE, PMOUSE_STATE, *PMOUSE_STATE
+ms.date: 12/21/2017
+ms.keywords: _MOUSE_STATE, *PMOUSE_STATE, MOUSE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMOUSE_STATE, MOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER IOCTL
@@ -79,19 +80,3 @@ The <b>Status</b> member is set to STATUS_NOT_SUPPORTED.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdd8042.h (include Ntdd8042.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

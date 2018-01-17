@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILGEOSCOPE
+UID: NE:ntddrilapitypes.RILGEOSCOPE
 title: RILGEOSCOPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgeoscope.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5dc49d01-54d2-48d3-8649-96262b890fc5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILGEOSCOPE, RILGEOSCOPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGEOSCOPE
 ---
 
 # RILGEOSCOPE enumeration
@@ -73,19 +74,3 @@ typedef enum _RILGEOSCOPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NC.storport.HW_BUILDIO
+UID: NC:storport.HW_BUILDIO
 title: HW_BUILDIO
 author: windows-driver-content
 description: The HwStorBuildIo routine processes the SRB with unsynchronized access to shared system data structures before passing it to HwStorStartIo.
@@ -7,8 +7,8 @@ old-location: storage\hwstorbuildio.htm
 old-project: storage
 ms.assetid: ebbb8289-5996-4d99-98b6-e95fd9dc7ec9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL (See Remarks section.)
+req.typenames: STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>HwStorBuildIo</b> routine processes the SRB with unsynchronized access to shared system data structures before passing it to <a href="storage.hwstorstartio">HwStorStartIo</a>.
+The <b>HwStorBuildIo</b> routine processes the SRB with unsynchronized access to shared system data structures before passing it to <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>.
 
 
 
@@ -69,15 +70,15 @@ A pointer to the SCSI request block (SRB) to be processed.
 
 
 ## -returns
-<b>HwStorBuildIo</b> returns <b>TRUE</b> to inform the caller that StorPort should call the <a href="storage.hwstorstartio">HwStorStartIo</a> routine if StorPort considers the LUN ready to receive I/O. <b>HwStorBuildIo</b> returns <b>FALSE</b> to inform the caller that the SRB should not be passed to <b>HwStorStartIo</b>. In such cases, the miniport driver must complete the SRB by calling <a href="storage.storportnotification">StorPortNotification</a> with a notification type of <b>RequestComplete</b>. This can be done in <b>HwStorBuildIo</b> or elsewhere in the miniport driver, as long as the SRB is completed before the timeout that is specified in the <b>TimeOutValue</b> field of the SRB structure.
+<b>HwStorBuildIo</b> returns <b>TRUE</b> to inform the caller that StorPort should call the <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine if StorPort considers the LUN ready to receive I/O. <b>HwStorBuildIo</b> returns <b>FALSE</b> to inform the caller that the SRB should not be passed to <b>HwStorStartIo</b>. In such cases, the miniport driver must complete the SRB by calling <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> with a notification type of <b>RequestComplete</b>. This can be done in <b>HwStorBuildIo</b> or elsewhere in the miniport driver, as long as the SRB is completed before the timeout that is specified in the <b>TimeOutValue</b> field of the SRB structure.
 
 
 ## -remarks
-The name <b>HwStorBuildIo</b> is just a placeholder for the miniport function that is pointed to by the <b>HwBuildIo</b> member in the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure. The actual prototype of this routine is defined in Storport.h as follows:
+The name <b>HwStorBuildIo</b> is just a placeholder for the miniport function that is pointed to by the <b>HwBuildIo</b> member in the <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure. The actual prototype of this routine is defined in Storport.h as follows:
 
-The port driver calls the <b>HwStorBuildIo</b> routine at DISPATCH IRQL without holding any spin locks. Because of this, memory allocation using <a href="storage.storportallocatepool">StorPortAllocatePool</a> and mutual exclusion via <a href="storage.storportacquirespinlock">StorPortAcquireSpinLock</a> are allowed in <b>HwStorBuildIo</b>. In a multiprocessor environment, more than one <b>HwStorBuildIo</b> can be active at a time, so the miniport driver is required to synchronize access to system resources, which may be in contention if more than one instance of  <b>HwStorBuildIo</b> is active at any given time.
+The port driver calls the <b>HwStorBuildIo</b> routine at DISPATCH IRQL without holding any spin locks. Because of this, memory allocation using <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> and mutual exclusion via <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a> are allowed in <b>HwStorBuildIo</b>. In a multiprocessor environment, more than one <b>HwStorBuildIo</b> can be active at a time, so the miniport driver is required to synchronize access to system resources, which may be in contention if more than one instance of  <b>HwStorBuildIo</b> is active at any given time.
 
-By completed time-consuming I/O setup activities in <b>HwStorBuildIo</b> instead of in <a href="storage.hwstorstartio">HwStorStartIo</a>, the miniport driver enables greater I/O concurrency and therefore improves I/O throughput. For highest performance, miniport drivers are expected to do as much preprocessing as possible in <b>HwStorBuildIo</b> so that it can send requests to the HBA via <b>HwStorStartIo</b> in as short amount of time as possible. Preprocessed data and state can be stored in either the <i>DeviceExtension</i> or <i>SrbExtension</i> structures. Only modifications to unique portions of the <i>DeviceExtension</i> must occur since no locks are held. <b>HwStorBuildIo</b> and <b>HwStorStartIo</b> receive the following Srb function types:
+By completed time-consuming I/O setup activities in <b>HwStorBuildIo</b> instead of in <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>, the miniport driver enables greater I/O concurrency and therefore improves I/O throughput. For highest performance, miniport drivers are expected to do as much preprocessing as possible in <b>HwStorBuildIo</b> so that it can send requests to the HBA via <b>HwStorStartIo</b> in as short amount of time as possible. Preprocessed data and state can be stored in either the <i>DeviceExtension</i> or <i>SrbExtension</i> structures. Only modifications to unique portions of the <i>DeviceExtension</i> must occur since no locks are held. <b>HwStorBuildIo</b> and <b>HwStorStartIo</b> receive the following Srb function types:
 
 SRB_FUNCTION_EXECUTE_SCSI 
 
@@ -85,11 +86,11 @@ Sends a CDB to the specified bus/target/lun.
 
 Srb-&gt;DataTransferLength is valid for all Cdbs. 
 
-Srb-&gt;DataBuffer is <b>NULL</b> for read and write requests . To access the associated data, either use <a href="storage.storportgetscattergatherlist">StorPortGetScatterGatherList</a> (for Dma transfers) or <a href="storage.storportgetsystemaddress">StorPortGetSystemAddress</a> (for program controlled I/O ) to get the Scatter Gather list or the virtual address of the buffer.
+Srb-&gt;DataBuffer is <b>NULL</b> for read and write requests . To access the associated data, either use <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a> (for Dma transfers) or <a href="..\storport\nf-storport-storportgetsystemaddress.md">StorPortGetSystemAddress</a> (for program controlled I/O ) to get the Scatter Gather list or the virtual address of the buffer.
 
 For other requests, Srb-&gt;Databuffer points to the data that is associated with the Srb.
 
-Srb-&gt;PathId is valid and represents the pathid given to Storport in <a href="storage.storportnotification">StorPortNotification</a> (BusChange). Writers of miniport drivers need to use pathid as an index into a table of busses within the miniport. 
+Srb-&gt;PathId is valid and represents the pathid given to Storport in <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> (BusChange). Writers of miniport drivers need to use pathid as an index into a table of busses within the miniport. 
 
  Srb-&gt;TargetId and Srb-&gt;Lun are valid.
 
@@ -123,11 +124,11 @@ Only Srb-&gt;PathId is valid.
 
 SRB_FUNCTION_FLUSH 
 
-Only performed by the miniport driver if it sets <b>CachesData</b> == <b>TRUE</b> in the <a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a>. Instructs the miniport driver to flush all cached data.
+Only performed by the miniport driver if it sets <b>CachesData</b> == <b>TRUE</b> in the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>. Instructs the miniport driver to flush all cached data.
 
 SRB_FUNCTION_SHUTDOWN
 
-Only performed by the miniport driver if it sets <b>CachesData</b> == <b>TRUE</b> in the <a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a>. Instructs the miniport driver to flush all cached data preparatory to shut down.
+Only performed by the miniport driver if it sets <b>CachesData</b> == <b>TRUE</b> in the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>. Instructs the miniport driver to flush all cached data preparatory to shut down.
 
 SRB_FUNCTION_DUMP_POINTERS
 
@@ -139,9 +140,9 @@ SRB_FUNCTION_FREE_DUMP_POINTERS
 
 Starting with Windows 8, this request is sent to the miniport to free and resources allocated during the SRB_FUNCTION_DUMP_POINTERS request.
 
-Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="storage.scsi_request_block">SCSI_REQUEST_BLOCK</a> or <a href="storage.storage_request_block">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
+Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> or <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
 
-For more information about what you can and cannot do safely in this miniport driver routine, see <a href="storage.unsynchronized_hwstorbuildio_routine">Unsynchronized HwStorBuildIo Routine</a>. 
+For more information about what you can and cannot do safely in this miniport driver routine, see <a href="https://msdn.microsoft.com/6b18e3ff-30dd-414b-99b5-4bb914660a67">Unsynchronized HwStorBuildIo Routine</a>. 
 
 To define an <b>HwStorBuildIo</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
 
@@ -152,69 +153,33 @@ Then, implement your callback routine as follows:
 The <b>HW_BUILDIO</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_BUILDIO</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL (See Remarks section.)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwstorstartio">HwStorStartIo</a>
+<a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 <dt>
-<a href="storage.scsi_request_block">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="storage.storage_request_block">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="storage.storportnotification">StorPortNotification</a>
+<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 </dt>
 <dt>
-<a href="storage.storportallocatepool">StorPortAllocatePool</a>
+<a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>
 </dt>
 <dt>
-<a href="storage.storportacquirespinlock">StorPortAcquireSpinLock</a>
+<a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HwStorBuildIo routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HW_BUILDIO routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

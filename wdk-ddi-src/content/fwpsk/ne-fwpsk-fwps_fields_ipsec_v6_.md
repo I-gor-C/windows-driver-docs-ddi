@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_IPSEC_V6_
+UID: NE:fwpsk.FWPS_FIELDS_IPSEC_V6_
 title: FWPS_FIELDS_IPSEC_V6_
 author: windows-driver-content
 description: The FWPS_FIELDS_IPSEC_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_IPSEC_V6 run-time filtering layer.
 old-location: netvista\fwps_fields_ipsec_v6.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e3141736-6e85-43ad-b7f5-28845a57a75c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_IPSEC_V6_, FWPS_FIELDS_IPSEC_V6
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_IPSEC_V6
 ---
 
 # FWPS_FIELDS_IPSEC_V6_ enumeration
@@ -91,7 +92,7 @@ The remote transport protocol port number.
 
 ### -field FWPS_FIELD_IPSEC_V6_IP_LOCAL_INTERFACE
 
-The locally unique identifier (<a href="netvista.luid">LUID</a>) for the network interface associated with the local IP address.
+The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the local IP address.
 
 
 ### -field FWPS_FIELD_IPSEC_V6_PROFILE_ID
@@ -110,29 +111,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Unless otherwise noted, supported starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

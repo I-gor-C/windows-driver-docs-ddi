@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
+UID: NE:d3d12umddi.D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
 title: D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
 author: windows-driver-content
 description: The write buffer immediate mode.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-writebufferimmediate-mode-0032.htm
 old-project: display
 ms.assetid: 4d968e4c-fb5b-47d6-b4ca-5f9d1d9c4739
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
 ---
 
 # D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032 enumeration
@@ -71,19 +72,3 @@ The write buffer immediate  mode is marker out, and the value is 0x2.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

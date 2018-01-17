@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDDCX_MONITOR_MODE
+UID: NS:iddcx.IDDCX_MONITOR_MODE
 title: IDDCX_MONITOR_MODE
 author: windows-driver-content
 description: Gives information about the current monitor mode.
@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_mode.htm
 old-project: display
 ms.assetid: 95e1778a-4f65-40ee-8ad2-f797ce9e95b0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_MONITOR_MODE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_MONITOR_MODE structure
@@ -75,23 +76,7 @@ typedef struct IDDCX_MONITOR_MODE {
 
                      This is the details of the Monitor mode.
 
-<div class="alert"><b>Note</b>  The<a href="display.displayconfig_video_signal_info">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a><b>AdditionalSignalInfo</b> value vSyncFreqDivider has to have a zero value.</div>
+<div class="alert"><b>Note</b>  The<a href="https://msdn.microsoft.com/library/windows/hardware/ff554007">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a><b>AdditionalSignalInfo</b> value vSyncFreqDivider has to have a zero value.</div>
 <div> </div>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

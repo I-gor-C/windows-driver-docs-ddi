@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_CO_ACTIVATE_VC
-title: MINIPORT_CO_ACTIVATE_VC
+UID: NC:ndis.MINIPORT_CO_ACTIVATE_VC
+title: MINIPORT_CO_ACTIVATE_VC function
 author: windows-driver-content
 description: The MiniportCoActivateVc function is required for connection-oriented miniports.
 old-location: netvista\miniportcoactivatevc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 243a1236-4b8a-4f00-9f14-3142fa81c362
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_CO_ACTIVATE_VC
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_CO_ACTIVATE_VC callback
+# MINIPORT_CO_ACTIVATE_VC function
 
 
 
@@ -45,7 +46,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_CO_ACTIVATE_VC MiniportCoActivateVc;
@@ -82,7 +83,7 @@ Specifies the call parameters, as specified by the call manager, to be establish
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>Indicates that the miniport driver will complete the request to activate a VC asynchronously.
        When the miniport driver has finished with its operations, it must call 
-       <a href="netvista.ndismcoactivatevccomplete">
+       <a href="..\ndis\nf-ndis-ndismcoactivatevccomplete.md">
        NdisMCoActivateVcComplete</a>.
 <dl>
 <dt><b>NDIS_STATUS_INVALID_DATA</b></dt>
@@ -135,45 +136,6 @@ The <b>MINIPORT_CO_ACTIVATE_VC</b> function type is defined in the Ndis.h header
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/d7a61d90-3e53-4cc3-b89f-84e3e3a59fed">MiniportCoActivateVc (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>MiniportCoActivateVc (NDIS
-   5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -183,12 +145,12 @@ IRQL
 <a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcoactivatevccomplete">NdisMCoActivateVcComplete</a>
+<a href="..\ndis\nf-ndis-ndismcoactivatevccomplete.md">NdisMCoActivateVcComplete</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_CO_ACTIVATE_VC callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_ACTIVATE_VC callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE
-title: EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE
+UID: NC:sercx.EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE
+title: EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE function
 author: windows-driver-content
 description: The EvtSerCx2SelectNextReceiveTransactionType event callback function is called by version 2 of the serial framework extension (SerCx2) to determine which data-transfer mechanism to use for the next read operation.
 old-location: serports\evtsercx2selectnextreceivetransactiontype.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: CB4551F4-8B22-4595-8091-CB84671DC60C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE callback
+# EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCx2SelectNextReceiveTransactionType</i> event callback function is 
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE EvtSerCx2SelectNextReceiveTransactionType;
@@ -64,12 +65,12 @@ SERCX2_TRANSACTION_TYPE EvtSerCx2SelectNextReceiveTransactionType(
 
 ### -param Device [in]
 
-A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a>.
+A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>.
 
 
 ### -param Mdl [in]
 
-A pointer to an <a href="kernel.mdl">MDL</a> that describes the memory pages that are spanned by the read buffer for the next receive transaction. The scatter/gather list for the DMA transfer will use the region of this memory that is specified by the <i>Offset</i> and <i>Length</i> parameters.
+A pointer to an <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> that describes the memory pages that are spanned by the read buffer for the next receive transaction. The scatter/gather list for the DMA transfer will use the region of this memory that is specified by the <i>Offset</i> and <i>Length</i> parameters.
 
 
 ### -param Offset [in]
@@ -84,7 +85,7 @@ The total number of bytes of data that remain to be transferred in the current r
 
 ### -param CustomReceive [out]
 
-A pointer to a location to which the function writes the <a href="serports.sercx2customreceive">SERCX2CUSTOMRECEIVE</a> handle to the custom-receive object. If the function returns <b>SerCx2TransactionTypeCustom</b>, the function must supply the object handle that the serial controller driver created in a previous call to the <a href="serports.sercx2customreceivecreate">SerCx2CustomReceiveCreate</a> method. If the return value is not <b>SerCx2TransactionTypeCustom</b>, this output value is ignored by SerCx2.
+A pointer to a location to which the function writes the <a href="serports.sercx2customreceive">SERCX2CUSTOMRECEIVE</a> handle to the custom-receive object. If the function returns <b>SerCx2TransactionTypeCustom</b>, the function must supply the object handle that the serial controller driver created in a previous call to the <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a> method. If the return value is not <b>SerCx2TransactionTypeCustom</b>, this output value is ignored by SerCx2.
 
 
 ### -param NextTransactionLength [out]
@@ -93,13 +94,13 @@ A pointer to a location to which the function writes the number of bytes to tran
 
 
 ## -returns
-The <i>EvtSerCx2SelectNextReceiveTransactionType</i> function returns a <a href="serports.sercx2_transaction_type">SERCX2_TRANSACTION_TYPE</a> enumeration constant to indicate whether to use a driver-selected transaction type (programmed I/O (PIO), system DMA, or custom data transfer), or to let SerCx2 choose which transaction type to use for the next receive transaction.
+The <i>EvtSerCx2SelectNextReceiveTransactionType</i> function returns a <a href="..\sercx\ne-sercx-_sercx2_transaction_type.md">SERCX2_TRANSACTION_TYPE</a> enumeration constant to indicate whether to use a driver-selected transaction type (programmed I/O (PIO), system DMA, or custom data transfer), or to let SerCx2 choose which transaction type to use for the next receive transaction.
 
 
 ## -remarks
-Your serial controller driver can, as an option, implement this function. If implemented, the driver registers this function in the call to the <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a> method that finishes the initialization of the framework device object for the serial controller.
+Your serial controller driver can, as an option, implement this function. If implemented, the driver registers this function in the call to the <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method that finishes the initialization of the framework device object for the serial controller.
 
-If your serial controller driver does not implement an <i>EvtSerCx2SelectNextReceiveTransactionType</i> function, then SerCx2 always decides what type of data-transfer mechanism (PIO, system DMA, or custom) to use for the next receive transaction. SerCx2 bases its decisions on the I/O configuration information supplied by the serial controller driver. A driver that supports system-DMA-receive transactions supplies a <a href="serports.sercx2_system_dma_receive_config">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a> structure that contains this information. A driver that supports custom-receive transactions supplies a <a href="serports.sercx2_custom_receive_config">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure that contains this information.
+If your serial controller driver does not implement an <i>EvtSerCx2SelectNextReceiveTransactionType</i> function, then SerCx2 always decides what type of data-transfer mechanism (PIO, system DMA, or custom) to use for the next receive transaction. SerCx2 bases its decisions on the I/O configuration information supplied by the serial controller driver. A driver that supports system-DMA-receive transactions supplies a <a href="..\sercx\ns-sercx-_sercx2_system_dma_receive_config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a> structure that contains this information. A driver that supports custom-receive transactions supplies a <a href="..\sercx\ns-sercx-_sercx2_custom_receive_config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure that contains this information.
 
 If your serial controller driver implements an <i>EvtSerCx2SelectNextReceiveTransactionType</i> function, SerCx2 calls this function to determine what type of data-transfer mechanism (PIO, system DMA, or custom) to use for the next receive transaction. You might want to implement this function if the serial controller has special hardware capabilities that cannot adequately be described by the I/O configuration information in the <b>SERCX2_<i>XXX</i>_RECEIVE_CONFIG</b> structures.
 
@@ -114,52 +115,6 @@ Then, implement your callback function as follows:
 The <b>EVT_SERCX2_CUSTOM_RECEIVE_SELECT_NEXT_TRANSACTION_TYPE</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_CUSTOM_RECEIVE_SELECT_NEXT_TRANSACTION_TYPE</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL.
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -169,25 +124,25 @@ Called at IRQL &lt;= DISPATCH_LEVEL.
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 </dt>
 <dt>
-<a href="kernel.mdl">MDL</a>
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 </dt>
 <dt>
 <a href="serports.sercx2customreceive">SERCX2CUSTOMRECEIVE</a>
 </dt>
 <dt>
-<a href="serports.sercx2_custom_receive_config">SERCX2_CUSTOM_RECEIVE_CONFIG</a>
+<a href="..\sercx\ns-sercx-_sercx2_custom_receive_config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a>
 </dt>
 <dt>
-<a href="serports.sercx2customreceivecreate">SerCx2CustomReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a>
 </dt>
 <dt>
-<a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a>
+<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
 </dt>
 <dt>
-<a href="serports.sercx2_system_dma_receive_config">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>
+<a href="..\sercx\ns-sercx-_sercx2_system_dma_receive_config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>
 </dt>
 <dt>
-<a href="serports.sercx2_transaction_type">SERCX2_TRANSACTION_TYPE</a>
+<a href="..\sercx\ne-sercx-_sercx2_transaction_type.md">SERCX2_TRANSACTION_TYPE</a>
 </dt>
 </dl>
  

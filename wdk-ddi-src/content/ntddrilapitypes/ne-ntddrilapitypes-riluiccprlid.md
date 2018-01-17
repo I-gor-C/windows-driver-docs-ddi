@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILUICCPRLID
+UID: NE:ntddrilapitypes.RILUICCPRLID
 title: RILUICCPRLID
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccprlid.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fab3455a-c09f-4a08-a76d-4d80468accd2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILUICCPRLID, RILUICCPRLID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCPRLID
 ---
 
 # RILUICCPRLID enumeration
@@ -54,19 +55,3 @@ typedef enum _RILUICCPRLID {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

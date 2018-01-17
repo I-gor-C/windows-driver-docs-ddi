@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030
+UID: NS:d3d12umddi.D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030
 title: D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030
 author: windows-driver-content
 description: Video decode input stream arguments.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-input-stream-arguments-0030.htm
 old-project: display
 ms.assetid: 186115c0-14ed-4ca0-9f47-fdcf8f0b586c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030, D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030
 ---
 
 # D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030 structure
@@ -83,19 +84,3 @@ Decryption parameters.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

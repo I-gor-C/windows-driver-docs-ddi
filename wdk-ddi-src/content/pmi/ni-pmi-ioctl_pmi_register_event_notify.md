@@ -1,5 +1,5 @@
 ---
-UID: NI.pmi.IOCTL_PMI_REGISTER_EVENT_NOTIFY
+UID: NI:pmi.IOCTL_PMI_REGISTER_EVENT_NOTIFY
 title: IOCTL_PMI_REGISTER_EVENT_NOTIFY
 author: windows-driver-content
 description: The IOCTL_PMI_REGISTER_EVENT_NOTIFY request registers the IOCTL initiator to be notified about a power meter event. When the event occurs, the Power Meter Interface (PMI) completes the IOCTL request and returns information about the event.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PMI_MEASUREMENT_UNIT
 ---
 
 # IOCTL_PMI_REGISTER_EVENT_NOTIFY IOCTL
@@ -45,11 +46,11 @@ The <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request registers the IOCTL initiator
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member of the I/O request packet (IRP) points to an initiator-allocated input buffer that contains a <a href="powermeter.pmi_event">PMI_EVENT</a> structure.
+The <b>AssociatedIrp.SystemBuffer</b> member of the I/O request packet (IRP) points to an initiator-allocated input buffer that contains a <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure.
 
 
 ### -input-buffer-length
-The <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IRP's current I/O stack location (<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>) is set to the size in bytes of the input buffer that is pointed to by the <b>AssociatedIrp.SystemBuffer</b> member. This size must be greater than or equal to <b>sizeof</b>(<b>PMI_EVENT</b>) or the request will fail with an error status of STATUS_BUFFER_TOO_SMALL.
+The <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IRP's current I/O stack location (<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>) is set to the size in bytes of the input buffer that is pointed to by the <b>AssociatedIrp.SystemBuffer</b> member. This size must be greater than or equal to <b>sizeof</b>(<b>PMI_EVENT</b>) or the request will fail with an error status of STATUS_BUFFER_TOO_SMALL.
 
 
 ### -output-buffer
@@ -70,7 +71,7 @@ None.
 
 ### -status-block
 I/O Status block
-The <b>Information</b> member is set to the size, in bytes, of a <a href="powermeter.pmi_event">PMI_EVENT</a> structure.
+The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure.
 
 The <b>Status</b> member is set to one of the following values:
 
@@ -80,11 +81,11 @@ The WDM driver that supports the PMI interface has completed the IOCTL request s
 
 The WDM driver that supports the PMI interface has put the IOCTL request in a queue and will complete it after a PMI event occurs. 
 
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="kernel.irp">IRP</a> is less than the size, in bytes, of a <a href="powermeter.pmi_event">PMI_EVENT</a> structure. 
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure. 
 
 
 ## -remarks
-PMI creates an event notification queue for each initiator that opens the device instance for a power meter by using the <a href="fs.createfile">CreateFile</a> function. A separate queue is created for each caller's connection to a device instance. The following points apply to the event notification queue:
+PMI creates an event notification queue for each initiator that opens the device instance for a power meter by using the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> function. A separate queue is created for each caller's connection to a device instance. The following points apply to the event notification queue:
 
 When PMI creates the event notification queue, the queue is empty. After the queue is created, PMI sends events to the caller after the caller has registered for event notification by using the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. 
 
@@ -92,35 +93,10 @@ If the event notification queue is empty when the caller registers, the <b>IOCTL
 
 After the event notification queue is created, the queue will contain unsent events for the caller. This prevents callers from missing events during the interval between when the driver processes one event and the caller registers for another. If there are events in the caller's queue, they are sent immediately after the caller registers by using an <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request.
 
-When PMI sends a power meter event to the caller, it completes the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. The data that describes the event is contained within the <a href="powermeter.pmi_event">PMI_EVENT</a> structure in the output buffer that is referenced by the <b>MdlAddress</b> member of the <a href="kernel.irp">IRP</a>. The <b>EventType </b>member of this structure contains information about the power meter event's type. For example, if <b>EventType</b> is set to <b>PmiConfigurationChangedEvent</b>, the power meter's configuration has changed. In this case, the caller can query the power meter's new configuration by using an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> request.
+When PMI sends a power meter event to the caller, it completes the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. The data that describes the event is contained within the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure in the output buffer that is referenced by the <b>MdlAddress</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The <b>EventType </b>member of this structure contains information about the power meter event's type. For example, if <b>EventType</b> is set to <b>PmiConfigurationChangedEvent</b>, the power meter's configuration has changed. In this case, the caller can query the power meter's new configuration by using an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> request.
 
-For more information about the <a href="fs.createfile">CreateFile</a> and <b>CloseFile</b> functions, refer to the Windows SDK documentation.
+For more information about the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> and <b>CloseFile</b> functions, refer to the Windows SDK documentation.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pmi.h (include Pmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -128,13 +104,13 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_event">PMI_EVENT</a>
+<a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a>
 </dt>
 </dl>
  

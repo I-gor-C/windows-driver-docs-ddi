@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAAPI.HBA_EVENTINFO
+UID: NS:hbaapi.HBA_EventInfo
 title: HBA_EventInfo
 author: windows-driver-content
 description: The HBA_EventInfo structure contains information about an event of the indicated type.
@@ -7,8 +7,8 @@ old-location: storage\hba_eventinfo.htm
 old-project: storage
 ms.assetid: fc6b73ac-f86c-4978-9d71-9bd8398c116b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: HBA_EventInfo, *PHBA_EVENTINFO, PHBA_EVENTINFO, HBA_EVENTINFO
+ms.date: 1/10/2018
+ms.keywords: HBA_EventInfo, HBA_EVENTINFO, *PHBA_EVENTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HBA_EVENTINFO, *PHBA_EVENTINFO
 ---
 
 # HBA_EventInfo structure
@@ -154,21 +155,6 @@ Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -185,5 +171,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_EventInfo structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_EventInfo structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

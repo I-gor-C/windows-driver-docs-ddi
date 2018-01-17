@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
-title: EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
+UID: NC:sercx.EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
+title: EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO function
 author: windows-driver-content
 description: The EvtSerCx2PioTransmitDrainFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to drain the transmit FIFO in the serial controller hardware.
 old-location: serports\evtsercx2piotransmitdrainfifo.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: A21E14DA-0B76-4DA2-B628-C3A4DE843FA9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO callback
+# EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCx2PioTransmitDrainFifo</i> event callback function is called by ve
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO EvtSerCx2PioTransmitDrainFifo;
@@ -59,7 +60,7 @@ VOID EvtSerCx2PioTransmitDrainFifo(
 
 ### -param PioTransmit [in]
 
-A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
+A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.
 
 
 ## -returns
@@ -67,9 +68,9 @@ None.
 
 
 ## -remarks
-Your serial controller driver can, as an option, implement this function. If your driver implements this function, it must also implement the <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_cancel_drain_fifo.md">EvtSerCx2PioTransmitCancelDrainFifo</a> and <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_purge_fifo.md">EvtSerCx2PioTransmitPurgeFifo</a> event callback functions. A driver that implements these functions registers them in the <a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.
+Your serial controller driver can, as an option, implement this function. If your driver implements this function, it must also implement the <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_cancel_drain_fifo.md">EvtSerCx2PioTransmitCancelDrainFifo</a> and <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_purge_fifo.md">EvtSerCx2PioTransmitPurgeFifo</a> event callback functions. A driver that implements these functions registers them in the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.
 
-SerCx2 calls the <i>EvtSerCx2PioTransmitDrainFifo</i> function, if it is implemented, to drain the transmit FIFO in the serial controller hardware at the end of a PIO-transmit transaction. This function makes sure that any data bytes that remain in the transmit FIFO are transmitted to the serially connected peripheral device. After the last byte is transmitted from the FIFO, the <i>EvtSerCx2PioTransmitDrainFifo</i> function calls the <a href="serports.sercx2piotransmitdrainfifocomplete">SerCx2PioTransmitDrainFifoComplete</a> method to notify SerCx2.
+SerCx2 calls the <i>EvtSerCx2PioTransmitDrainFifo</i> function, if it is implemented, to drain the transmit FIFO in the serial controller hardware at the end of a PIO-transmit transaction. This function makes sure that any data bytes that remain in the transmit FIFO are transmitted to the serially connected peripheral device. After the last byte is transmitted from the FIFO, the <i>EvtSerCx2PioTransmitDrainFifo</i> function calls the <a href="..\sercx\nf-sercx-sercx2piotransmitdrainfifocomplete.md">SerCx2PioTransmitDrainFifoComplete</a> method to notify SerCx2.
 
 If the serial controller driver implements an <i>EvtSerCx2PioTransmitDrainFifo</i> function, SerCx2 does not complete a pending write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request until the driver calls <b>SerCx2PioTransmitDrainFifoComplete</b>.
 
@@ -90,52 +91,6 @@ Then, implement your callback function as follows:
 The <b>EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL.
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -151,10 +106,10 @@ Called at IRQL &lt;= DISPATCH_LEVEL.
 <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmitdrainfifocomplete">SerCx2PioTransmitDrainFifoComplete</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitdrainfifocomplete.md">SerCx2PioTransmitDrainFifoComplete</a>
 </dt>
 </dl>
  

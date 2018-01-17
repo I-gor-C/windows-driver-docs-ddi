@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSENDRESTRICTEDUICCCMDPARAMS
+UID: NS:ntddrilapitypes.RILSENDRESTRICTEDUICCCMDPARAMS
 title: RILSENDRESTRICTEDUICCCMDPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendrestricteduicccmdparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 22c7ae24-c2dc-46d6-b3c2-b908ad6d181c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDRESTRICTEDUICCCMDPARAMS, LPRILSENDRESTRICTEDUICCCMDPARAMS, *LPRILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDRESTRICTEDUICCCMDPARAMS, *LPRILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS
 ---
 
 # RILSENDRESTRICTEDUICCCMDPARAMS structure
@@ -81,19 +82,3 @@ typedef struct _RILSENDRESTRICTEDUICCCMDPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

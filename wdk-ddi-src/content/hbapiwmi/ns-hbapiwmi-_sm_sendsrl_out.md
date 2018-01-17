@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_SENDSRL_OUT
+UID: NS:hbapiwmi._SM_SendSRL_OUT
 title: _SM_SendSRL_OUT
 author: windows-driver-content
 description: The SM_SendSRL_OUT structure is used to receive output parameters from the SM_SendSRL method.
@@ -7,8 +7,8 @@ old-location: storage\sm_sendsrl_out.htm
 old-project: storage
 ms.assetid: 1e6d1a97-b175-4f76-8f4d-15ec089538e8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_SendSRL_OUT, SM_SendSRL_OUT, PSM_SendSRL_OUT, *PSM_SendSRL_OUT
+ms.date: 1/10/2018
+ms.keywords: _SM_SendSRL_OUT, SM_SendSRL_OUT, *PSM_SendSRL_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_SendSRL_OUT, *PSM_SendSRL_OUT
 ---
 
 # _SM_SendSRL_OUT structure
@@ -58,7 +59,7 @@ typedef struct _SM_SendSRL_OUT {
 
 ### -field HBAStatus
 
-The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
 
 ### -field TotalRespBufferSize
@@ -77,20 +78,4 @@ The results of the common transport command.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_SendSRL_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_SendSRL_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._GET_LOCAL_HOST_INFO8
+UID: NS:1394._GET_LOCAL_HOST_INFO8
 title: _GET_LOCAL_HOST_INFO8
 author: windows-driver-content
 description: The GET_LOCAL_HOST_INFO8 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request with u.GetLocalHostInformation.nLevel set to GET_HOST_DDI_VERSION.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: DA30F8BA-B920-458E-B7C7-8D7B7081507A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8, *PGET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8
+ms.keywords: _GET_LOCAL_HOST_INFO8, *PGET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8
 ---
 
 # _GET_LOCAL_HOST_INFO8 structure
@@ -78,30 +79,4 @@ driver or the legacy 1394 bus driver,
 If the driver stack contains the new 1394 bus
 driver, the request returns a status value of STATUS_SUCCESS. Otherwise, the
 legacy 1394 bus driver returns a status value of
-STATUS_INVALID_PARAMETER.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+STATUS_INVALID_PARAMETER.</p>

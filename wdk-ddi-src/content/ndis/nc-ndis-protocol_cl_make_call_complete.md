@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_MAKE_CALL_COMPLETE
-title: PROTOCOL_CL_MAKE_CALL_COMPLETE
+UID: NC:ndis.PROTOCOL_CL_MAKE_CALL_COMPLETE
+title: PROTOCOL_CL_MAKE_CALL_COMPLETE function
 author: windows-driver-content
 description: The ProtocolClMakeCallComplete function is used by connection-oriented NDIS clients that make outgoing calls.
 old-location: netvista\protocolclmakecallcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6bb69f78-8dab-46a7-84fb-7bc17e894535
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_MAKE_CALL_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_MAKE_CALL_COMPLETE callback
+# PROTOCOL_CL_MAKE_CALL_COMPLETE function
 
 
 
@@ -42,13 +43,13 @@ The
   <i>ProtocolClMakeCallComplete</i> function is used by connection-oriented NDIS clients that make outgoing
   calls. Such clients must have 
   <i>ProtocolClMakeCallComplete</i> functions to complete the asynchronous operations that they initiate with 
-  <a href="netvista.ndisclmakecall">NdisClMakeCall</a>. Otherwise, such a protocol
+  <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>. Otherwise, such a protocol
   driver's registered 
   <i>ProtocolClMakeCallComplete</i> function can simply return control.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_MAKE_CALL_COMPLETE ProtocolClMakeCallComplete;
@@ -79,7 +80,7 @@ Specifies the final status of the client's original call to
 The client's attempt to set up a virtual connection succeded. Consequently, the client can
        proceed to make transfers on the active VC using the 
        <i>NdisVcHandle</i> returned by 
-       <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>, which the client has
+       <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>, which the client has
        stored in its per-VC context area at 
        <i>ProtocolVcContext</i> .
 
@@ -110,15 +111,15 @@ Specifies the handle to the client's per-VC context area, which the client origi
 If 
      <i>Status</i> is NDIS_STATUS_SUCCESS and the client created a multipoint VC by passing an explicit 
      <i>ProtocolPartyContext</i> handle to 
-     <a href="netvista.ndisclmakecall">NdisClMakeCall</a>, this is a valid 
+     <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>, this is a valid 
      <i>NdisPartyHandle</i> . Otherwise, this parameter is <b>NULL</b>.
      
 
 <i>ProtocolClMakeCallComplete</i> must save any valid input 
      <i>NdisPartyHandle</i>, usually in the client's per-party context area. The client must use this handle
      if (or when) it makes a subsequent call to 
-     <a href="netvista.ndiscldropparty">NdisClDropParty</a> or 
-     <a href="netvista.ndisclclosecall">NdisClCloseCall</a> that refers to this
+     <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a> or 
+     <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a> that refers to this
      party.
 
 
@@ -149,7 +150,7 @@ Release or prepare for reuse the
       <i>CallParameters</i> that the client allocated.
 
 Tear down the client-created VC with a call to 
-      <a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a> and release or prepare for
+      <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a> and release or prepare for
       reuse the client-allocated 
       <i>ProtocolVcContext</i> area.
 
@@ -172,12 +173,12 @@ If not, the signaling protocol determines whether the client can attempt to rene
       acceptable call parameters with the call manager.
 
 For example, a particular call manager might allow its clients to call 
-      <a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a> one or more
+      <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a> one or more
       times in these circumstances.
 
 If the CM-modified call parameters are unacceptable and further renegotiation is impossible, 
       <i>ProtocolClMakeCallComplete</i> must tear down the call with 
-      <a href="netvista.ndisclclosecall">NdisClCloseCall</a>.
+      <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.
 
 In this case, 
       <i>ProtocolClMakeCallComplete</i> should 
@@ -197,77 +198,38 @@ The <b>PROTOCOL_CL_MAKE_CALL_COMPLETE</b> function type is defined in the Ndis.h
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/97036de6-8b12-4ff1-aae8-f489c4fcde4a">ProtocolClMakeCallComplete
-   (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolClMakeCallComplete
-   (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscldropparty">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmmakecallcomplete">NdisCmMakeCallComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreememory">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreetonpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
    NdisFreeToNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmmakecallcomplete">NdisMCmMakeCallComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">NdisMCmMakeCallComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
@@ -280,5 +242,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_MAKE_CALL_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_MAKE_CALL_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

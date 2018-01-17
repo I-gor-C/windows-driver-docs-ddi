@@ -1,5 +1,5 @@
 ---
-UID: NS.NETDISPUMDDDI.MIRACAST_DATARATE_STATS
+UID: NS:netdispumdddi.MIRACAST_DATARATE_STATS
 title: MIRACAST_DATARATE_STATS
 author: windows-driver-content
 description: Contains info used in the wireless display (Miracast) pfnDataRateNotify function about the audio/video encoder bit rate and failed or retried Wi-Fi frames.
@@ -7,7 +7,7 @@ old-location: display\miracast_datarate_stats.htm
 old-project: display
 ms.assetid: d4249b81-0ee7-49dd-9886-cdc5842f02d8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: MIRACAST_DATARATE_STATS, MIRACAST_DATARATE_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MIRACAST_DATARATE_STATS
 ---
 
 # MIRACAST_DATARATE_STATS structure
@@ -89,39 +90,3 @@ The total number of Wi-Fi frames that succeeded after more than one retry since 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netdispumdddi.h (include Netdispumdddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

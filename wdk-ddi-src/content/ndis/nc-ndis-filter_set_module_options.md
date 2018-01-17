@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_SET_MODULE_OPTIONS
-title: FILTER_SET_MODULE_OPTIONS
+UID: NC:ndis.FILTER_SET_MODULE_OPTIONS
+title: FILTER_SET_MODULE_OPTIONS function
 author: windows-driver-content
 description: The FilterSetModuleOptions function changes the set of optional services that are associated with a specified filter module.Note  You must declare the function by using the FILTER_SET_MODULE_OPTIONS type.
 old-location: netvista\filtersetmoduleoptions.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 04b7ac32-8996-4648-8c88-aa9f630b1bc4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_SET_MODULE_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_SET_MODULE_OPTIONS callback
+# FILTER_SET_MODULE_OPTIONS function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_SET_MODULE_OPTIONS FilterSetModuleOptions;
@@ -97,18 +98,18 @@ If
 
 A filter driver specifies the default values for the changeable filter module options in the
     NDIS_FILTER_DRIVER_CHARACTERISTICS structure that it passes to the 
-    <a href="netvista.ndisfregisterfilterdriver">
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
     NdisFRegisterFilterDriver</a> function during driver initialization.
 
 To change options for a specific filter module at run time, the filter driver must also specify an
     entry point for 
     <i>FilterSetModuleOptions</i> in the 
-    <a href="netvista.ndis_filter_driver_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_filter_driver_characteristics.md">
     NDIS_FILTER_DRIVER_CHARACTERISTICS</a> structure.
 
 To specify the options that should be changed, 
     <i>FilterSetModuleOptions</i> defines a characteristics structure and calls the 
-    <a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a> function.
+    <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function.
     Filter drivers must not call 
     <b>NdisSetOptionalHandlers</b> from a different thread.
 
@@ -116,27 +117,27 @@ The possible characteristics structures that can be specified from
     <i>FilterSetModuleOptions</i> are:
 
 
-<a href="netvista.ndis_filter_partial_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_filter_partial_characteristics.md">
        NDIS_FILTER_PARTIAL_CHARACTERISTICS</a>
 
 
 
-<a href="netvista.ndis_client_chimney_offload_generic_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_client_chimney_offload_generic_characteristics.md">
        NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS</a>
 
 
 
-<a href="netvista.ndis_client_chimney_offload_tcp_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_client_chimney_offload_tcp_characteristics.md">
        NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS</a>
 
 
 
-<a href="netvista.ndis_provider_chimney_offload_generic_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_provider_chimney_offload_generic_characteristics.md">
        NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS</a>
 
 
 
-<a href="netvista.ndis_provider_chimney_offload_tcp_characteristics">
+<a href="..\ndischimney\ns-ndischimney-_ndis_provider_chimney_offload_tcp_characteristics.md">
        NDIS_PROVIDER_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS</a>
 
 
@@ -166,64 +167,29 @@ The <b>FILTER_SET_MODULE_OPTIONS</b> function type is defined in the Ndis.h head
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_driver_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_filter_driver_characteristics.md">
    NDIS_FILTER_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_partial_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_filter_partial_characteristics.md">
    NDIS_FILTER_PARTIAL_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_SET_MODULE_OPTIONS callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_SET_MODULE_OPTIONS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

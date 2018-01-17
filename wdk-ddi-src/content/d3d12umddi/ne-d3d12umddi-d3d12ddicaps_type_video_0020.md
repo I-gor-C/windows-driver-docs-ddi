@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDICAPS_TYPE_VIDEO_0020
+UID: NE:d3d12umddi.D3D12DDICAPS_TYPE_VIDEO_0020
 title: D3D12DDICAPS_TYPE_VIDEO_0020
 author: windows-driver-content
 description: Contains capability types for video.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddicaps_type_video_0020.htm
 old-project: display
 ms.assetid: 3B95996D-EB7C-4DCF-B00C-BA5AFEFD4110
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDICAPS_TYPE_VIDEO_0020, D3D12DDICAPS_TYPE_VIDEO_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDICAPS_TYPE_VIDEO_0020
 ---
 
 # D3D12DDICAPS_TYPE_VIDEO_0020 enumeration
@@ -101,19 +102,3 @@ Retrieves the number of past and future frames required for a given deinterlace 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

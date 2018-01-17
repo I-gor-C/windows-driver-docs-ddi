@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_EVENT
+UID: NS:pmi._PMI_EVENT
 title: _PMI_EVENT
 author: windows-driver-content
 description: The PMI_EVENT structure contains information about a power metering and budgeting event that is signaled through the Power Meter Interface (PMI).
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 51ae6247-c482-4f13-8699-df871ae346c0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_EVENT, PPMI_EVENT, *PPMI_EVENT, PMI_EVENT
+ms.keywords: _PMI_EVENT, *PPMI_EVENT, PMI_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPMI_EVENT, PMI_EVENT
 ---
 
 # _PMI_EVENT structure
@@ -108,31 +109,6 @@ The <b>AssociatedIrp.SystemBuffer</b> member is set to the address of an initiat
 The <b>AssociatedIrp.SystemBuffer</b> member is set to the address of an initiator-allocated buffer that contains the <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a> enumeration value or <b>PmiMeasurementConfiguration</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pmi.h (include Pmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -145,7 +121,7 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\pmi\ne-pmi-pmi_event_type.md">PMI_EVENT_TYPE</a>

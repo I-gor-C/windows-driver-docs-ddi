@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTypedList.GetTypedNode
+UID: NF:engextcpp.ExtRemoteTypedList.GetTypedNode
 title: ExtRemoteTypedList::GetTypedNode method
 author: windows-driver-content
 description: The GetTypedNode method returns the current list item.
 old-location: debugger\extremotetypedlist_gettypednode.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f74090c9-4e15-4d6c-bb62-b8d5c56d5a1c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTypedList, ExtRemoteTypedList::GetTypedNode, GetTypedNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # ExtRemoteTypedList::GetTypedNode method
@@ -61,30 +62,3 @@ ExtRemoteTyped GetTypedNode();
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Engextcpp.hpp (include Engextcpp.hpp)</dt>
-</dl>
-</td>
-</tr>
-</table>

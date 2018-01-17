@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisGetNetBufferListProtocolId
+UID: NF:ndis.NdisGetNetBufferListProtocolId
 title: NdisGetNetBufferListProtocolId function
 author: windows-driver-content
 description: The NdisGetNetBufferListProtocolId function retrieves the protocol identifier from the NetBufferListInfo member of a NET_BUFFER_LIST structure.
 old-location: netvista\ndisgetnetbufferlistprotocolid.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a90b1318-ce21-4483-b253-767674fe0a2f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisGetNetBufferListProtocolId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisGetNetBufferListProtocolId function
@@ -41,7 +42,7 @@ req.irql: Any level
 The 
   <b>NdisGetNetBufferListProtocolId</b> function retrieves the protocol identifier from the 
   <b>NetBufferListInfo</b> member of a 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 
@@ -59,7 +60,7 @@ UCHAR NdisGetNetBufferListProtocolId(
 ### -param NetBufferList [in]
 
 A pointer to a 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 ## -returns
@@ -84,81 +85,24 @@ A pointer to a
 ## -remarks
 NDIS drivers can call the 
     <b>NdisGetNetBufferListProtocolId</b> function to determine the type of protocol driver that created a 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. For example,
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. For example,
     miniport drivers that support TCP chimney offload can verify that a NET_BUFFER_LIST structure comes from
     a TCP protocol.
 
 Protocol drivers that create NET_BUFFER_LIST structures should set the protocol identifier by calling
     the 
-    <a href="netvista.ndissetnetbufferlistprotocolid">
+    <a href="https://msdn.microsoft.com/e143c914-cfb0-4c06-9da7-a2f5ef09afe2">
     NdisSetNetBufferListProtocolId</a> macro or by associating an identifier with a NET_BUFFER_LIST
     pool.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndissetnetbufferlistprotocolid">
+<a href="https://msdn.microsoft.com/e143c914-cfb0-4c06-9da7-a2f5ef09afe2">
    NdisSetNetBufferListProtocolId</a>
 </dt>
 </dl>
@@ -166,5 +110,5 @@ Any level
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisGetNetBufferListProtocolId function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetNetBufferListProtocolId function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

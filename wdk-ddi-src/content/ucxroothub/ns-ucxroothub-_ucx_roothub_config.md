@@ -1,14 +1,14 @@
 ---
-UID: NS.UCXROOTHUB._UCX_ROOTHUB_CONFIG
+UID: NS:ucxroothub._UCX_ROOTHUB_CONFIG
 title: _UCX_ROOTHUB_CONFIG
 author: windows-driver-content
 description: Contains pointers to event callback functions for creating the root hub by calling UcxRootHubCreate. Initialize this structure by calling UCX_ROOTHUB_CONFIG_INIT initialization function (see Ucxclass.h).
 old-location: buses\_ucx_roothub_config.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 27E54F0D-2163-4D7C-B204-336EE0227488
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCX_ROOTHUB_CONFIG, PUCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
+ms.date: 1/4/2018
+ms.keywords: _UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Contains pointers to event callback functions for creating the root hub by calling <a href="buses._ucxroothubcreate">UcxRootHubCreate</a>. Initialize this structure by calling <b>UCX_ROOTHUB_CONFIG_INIT</b> initialization function (see Ucxclass.h).
+Contains pointers to event callback functions for creating the root hub by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>. Initialize this structure by calling <b>UCX_ROOTHUB_CONFIG_INIT</b> initialization function (see Ucxclass.h).
 
 
 
@@ -140,23 +141,7 @@ A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port
 
 ### -field WdfRequestAttributes
 
-A pointer to a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies initialization parameters.
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies initialization parameters.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

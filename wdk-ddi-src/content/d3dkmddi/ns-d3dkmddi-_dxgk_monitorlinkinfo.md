@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_MONITORLINKINFO
+UID: NS:d3dkmddi._DXGK_MONITORLINKINFO
 title: _DXGK_MONITORLINKINFO
 author: windows-driver-content
 description: This structure was defined in WDDM 2.1, however the usage hints and capabilities structure definitions were nested within DXGK_MONITORLINKINFO.
@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorlinkinfo.htm
 old-project: display
 ms.assetid: 4A22CC69-F529-4D0B-BF00-877468E29429
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MONITORLINKINFO, DXGK_MONITORLINKINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MONITORLINKINFO
 ---
 
 # _DXGK_MONITORLINKINFO structure
@@ -65,19 +66,3 @@ Flags which describe the capabilities for driving the monitor.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

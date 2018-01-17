@@ -1,5 +1,5 @@
 ---
-UID: NE.sensorsclassextension.MagnetometerAccuracy
+UID: NE:sensorsclassextension.MagnetometerAccuracy
 title: MagnetometerAccuracy
 author: windows-driver-content
 description: Specifies the accuracy of the magnetometer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: MagnetometerAccuracy
 req.product: Windows 10 or later.
 ---
 
@@ -82,51 +83,6 @@ Device drivers that support magnetometer accuracy should only report the <b>Unre
 
 Apps that need calibration may periodically ask the user to calibrate the device. We suggest doing this once every 10 minutes.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

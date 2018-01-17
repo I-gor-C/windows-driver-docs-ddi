@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDDCX_CURSOR_SHAPE_INFO
+UID: NS:iddcx.IDDCX_CURSOR_SHAPE_INFO
 title: IDDCX_CURSOR_SHAPE_INFO
 author: windows-driver-content
 description: Gives information about the shape of the cursor.
@@ -7,7 +7,7 @@ old-location: display\iddcx_cursor_shape_info.htm
 old-project: display
 ms.assetid: 58ed8f04-616f-4eea-b6e1-07f322c37dbb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_CURSOR_SHAPE_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_CURSOR_SHAPE_INFO structure
@@ -117,19 +118,3 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

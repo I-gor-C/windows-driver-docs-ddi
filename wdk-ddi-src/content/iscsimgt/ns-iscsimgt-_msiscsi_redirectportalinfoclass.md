@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIMGT._MSISCSI_REDIRECTPORTALINFOCLASS
+UID: NS:iscsimgt._MSiSCSI_RedirectPortalInfoClass
 title: _MSiSCSI_RedirectPortalInfoClass
 author: windows-driver-content
 description: The MSiSCSI_RedirectPortalInfoClass structure contains information about a collection of sessions for an adapter ID. It also contains the portal redirection information for each of the sessions.
@@ -7,8 +7,8 @@ old-location: storage\msiscsi_redirectportalinfoclass.htm
 old-project: storage
 ms.assetid: fcddf029-748b-4300-9f87-a103d961918a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MSiSCSI_RedirectPortalInfoClass, *PMSiSCSI_RedirectPortalInfoClass, PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass
+ms.date: 1/10/2018
+ms.keywords: _MSiSCSI_RedirectPortalInfoClass, *PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass
 ---
 
 # _MSiSCSI_RedirectPortalInfoClass structure
@@ -71,20 +72,4 @@ An array of structures that contains as many ISCSI_RedirectSessionInfo structure
 
 
 ## -remarks
-You must implement this class if the adapter supports target portal hopping. Otherwise, it is optional.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+You must implement this class if the adapter supports target portal hopping. Otherwise, it is optional.</p>

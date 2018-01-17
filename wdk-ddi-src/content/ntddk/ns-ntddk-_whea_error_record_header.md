@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_ERROR_RECORD_HEADER
+UID: NS:ntddk._WHEA_ERROR_RECORD_HEADER
 title: _WHEA_ERROR_RECORD_HEADER
 author: windows-driver-content
 description: The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 2e6476c7-d096-4756-bebb-56fe559dce6d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER, PWHEA_ERROR_RECORD_HEADER
+ms.keywords: _WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER
 ---
 
 # _WHEA_ERROR_RECORD_HEADER structure
@@ -75,7 +76,7 @@ The signature of the error record. This member contains the value 'REPC'.
 
 ### -field Revision
 
-A <a href="whea.whea_revision">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_HEADER structure.
+A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_HEADER structure.
 
 
 ### -field SignatureEnd
@@ -90,12 +91,12 @@ The number of sections of error information that are contained in the error reco
 
 ### -field Severity
 
-A <a href="whea.whea_error_severity">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition described by the error record.
+A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition described by the error record.
 
 
 ### -field ValidBits
 
-A <a href="whea.whea_error_record_header_validbits">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a> union that specifies which members of the WHEA_ERROR_RECORD_HEADER structure contain valid data.
+A <a href="..\ntddk\ns-ntddk-_whea_error_record_header_validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a> union that specifies which members of the WHEA_ERROR_RECORD_HEADER structure contain valid data.
 
 
 ### -field Length
@@ -105,7 +106,7 @@ The length, in bytes, of the error record.
 
 ### -field Timestamp
 
-A <a href="whea.whea_timestamp">WHEA_TIMESTAMP</a> union that indicates the time that the error was reported to the operating system. This member contains valid data only if the <b>ValidBits.Timestamp</b> bit is set.
+A <a href="..\ntddk\ns-ntddk-_whea_timestamp.md">WHEA_TIMESTAMP</a> union that indicates the time that the error was reported to the operating system. This member contains valid data only if the <b>ValidBits.Timestamp</b> bit is set.
 
 
 ### -field PlatformId
@@ -228,7 +229,7 @@ A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_FLAGS uni
 
 ### -field PersistenceInfo
 
-A <a href="whea.whea_persistence_info">WHEA_PERSISTENCE_INFO</a> union that is used by the error record persistence interface.
+A <a href="..\ntddk\ns-ntddk-_whea_persistence_info.md">WHEA_PERSISTENCE_INFO</a> union that is used by the error record persistence interface.
 
 
 ### -field Reserved
@@ -237,54 +238,28 @@ Reserved for system use.
 
 
 ## -remarks
-A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="whea.whea_error_record">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.
+A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_record">WHEA_ERROR_RECORD</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record_header_validbits">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_header_validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a>
 </dt>
 <dt>
-<a href="whea.whea_error_severity">WHEA_ERROR_SEVERITY</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
 </dt>
 <dt>
-<a href="whea.whea_persistence_info">WHEA_PERSISTENCE_INFO</a>
+<a href="..\ntddk\ns-ntddk-_whea_persistence_info.md">WHEA_PERSISTENCE_INFO</a>
 </dt>
 <dt>
-<a href="whea.whea_revision">WHEA_REVISION</a>
+<a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a>
 </dt>
 <dt>
-<a href="whea.whea_timestamp">WHEA_TIMESTAMP</a>
+<a href="..\ntddk\ns-ntddk-_whea_timestamp.md">WHEA_TIMESTAMP</a>
 </dt>
 </dl>
  

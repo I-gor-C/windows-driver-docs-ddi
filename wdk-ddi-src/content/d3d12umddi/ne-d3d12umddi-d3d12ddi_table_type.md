@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_TABLE_TYPE
+UID: NE:d3d12umddi.D3D12DDI_TABLE_TYPE
 title: D3D12DDI_TABLE_TYPE
 author: windows-driver-content
 description: Command list and queue types to allow drivers to point to different implementations for video.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_table_type.htm
 old-project: display
 ms.assetid: 93562C36-7ADE-4CC6-B33D-D6E955E3D42C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_TABLE_TYPE, D3D12DDI_TABLE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_TABLE_TYPE
 ---
 
 # D3D12DDI_TABLE_TYPE enumeration
@@ -149,19 +150,3 @@ Device content protection streaming.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._CLFS_MGMT_POLICY
+UID: NS:wdm._CLFS_MGMT_POLICY
 title: _CLFS_MGMT_POLICY
 author: windows-driver-content
 description: The CLFS_MGMT_POLICY structure holds a description of a policy for managing a CLFS log.
@@ -7,8 +7,8 @@ old-location: kernel\clfs_mgmt_policy.htm
 old-project: kernel
 ms.assetid: 6765ced9-e21f-4bd9-bb2b-45df1d6dba75
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CLFS_MGMT_POLICY, CLFS_MGMT_POLICY, PCLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY
+ms.date: 1/4/2018
+ms.keywords: _CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY, CLFS_MGMT_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PCLFS_MGMT_POLICY, CLFS_MGMT_POLICY
 req.product: Windows 10 or later.
 ---
 
@@ -110,7 +111,7 @@ The flags that apply to this instance of the <b>CLFS_MGMT_POLICY</b> structure. 
 
 ### -field PolicyType
 
-A value of the <a href="kernel.clfs_mgmt_policy_type">CLFS_MGMT_POLICY_TYPE</a> enumeration that supplies the type of this instance of the <b>CLFS_MGMT_POLICY</b> structure.
+A value of the <a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a> enumeration that supplies the type of this instance of the <b>CLFS_MGMT_POLICY</b> structure.
 
 
 ### -field PolicyParameters
@@ -270,39 +271,24 @@ When you create a <b>CLFS_MGMT_POLICY</b> structure whose <b>PolicyType</b> is <
 You can only install a policy whose policy type specified in the <b>PolicyType</b> value is <b>ClfsMgmtPolicyNewContainerSize</b> before there are any containers in the log. You can change other policies after the log exists.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfs_mgmt_policy_type">CLFS_MGMT_POLICY_TYPE</a>
+<a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a>
 </dt>
 <dt>
-<a href="kernel.clfsmgmtinstallpolicy">ClfsMgmtInstallPolicy</a>
+<a href="..\wdm\nf-wdm-clfsmgmtinstallpolicy.md">ClfsMgmtInstallPolicy</a>
 </dt>
 <dt>
-<a href="kernel.clfsmgmtquerypolicy">ClfsMgmtQueryPolicy</a>
+<a href="..\wdm\nf-wdm-clfsmgmtquerypolicy.md">ClfsMgmtQueryPolicy</a>
 </dt>
 <dt>
-<a href="kernel.clfsmgmtremovepolicy">ClfsMgmtRemovePolicy</a>
+<a href="..\wdm\nf-wdm-clfsmgmtremovepolicy.md">ClfsMgmtRemovePolicy</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLFS_MGMT_POLICY structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLFS_MGMT_POLICY structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

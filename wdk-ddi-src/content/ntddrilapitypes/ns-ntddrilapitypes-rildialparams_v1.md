@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILDIALPARAMS_V1
+UID: NS:ntddrilapitypes.RILDIALPARAMS_V1
 title: RILDIALPARAMS_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialparams_v1.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e424808a-8389-43ff-9cd4-cf2668f8d2a3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILDIALPARAMS_V1, *LPRILDIALPARAMS_V1, RILDIALPARAMS_V1, LPRILDIALPARAMS_V1
+ms.date: 1/11/2018
+ms.keywords: RILDIALPARAMS_V1, *LPRILDIALPARAMS_V1, RILDIALPARAMS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILDIALPARAMS_V1, RILDIALPARAMS_V1
 ---
 
 # RILDIALPARAMS_V1 structure
@@ -65,19 +66,3 @@ typedef struct _RILDIALPARAMS_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

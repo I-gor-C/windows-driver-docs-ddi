@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_GLITCH_EFFECT
+UID: NE:d3dkmddi._DXGK_GLITCH_EFFECT
 title: _DXGK_GLITCH_EFFECT
 author: windows-driver-content
 description: Enumeration which describes the user visible effect of a glitch during a SetTimingsFromVidPn call.
@@ -7,7 +7,7 @@ old-location: display\dxgk_glitch_effect.htm
 old-project: display
 ms.assetid: EACD5B8D-B579-4EB0-93C7-0B356A67CA8F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_GLITCH_EFFECT, DXGK_GLITCH_EFFECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_GLITCH_EFFECT
 ---
 
 # _DXGK_GLITCH_EFFECT enumeration
@@ -91,19 +92,3 @@ Indicates that there was no user visible glitch.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

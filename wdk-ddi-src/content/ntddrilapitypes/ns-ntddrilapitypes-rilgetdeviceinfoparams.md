@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILGETDEVICEINFOPARAMS
+UID: NS:ntddrilapitypes.RILGETDEVICEINFOPARAMS
 title: RILGETDEVICEINFOPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetdeviceinfoparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4cb3be01-7e74-4c98-9c4b-2e1c78d96001
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS, LPRILGETDEVICEINFOPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS
 ---
 
 # RILGETDEVICEINFOPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILGETDEVICEINFOPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

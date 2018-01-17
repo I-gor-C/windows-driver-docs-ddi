@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMRegisterInterruptEx
+UID: NF:ndis.NdisMRegisterInterruptEx
 title: NdisMRegisterInterruptEx function
 author: windows-driver-content
 description: NDIS miniport drivers call the NdisMRegisterInterruptEx function to register an interrupt.
 old-location: netvista\ndismregisterinterruptex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisMRegisterInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMRegisterInterruptEx function
@@ -74,7 +75,7 @@ A pointer to a block of context information. The miniport driver allocates this 
 ### -param MiniportInterruptCharacteristics [in]
 
 A pointer to an 
-     <a href="netvista.ndis_miniport_interrupt_characteristics">
+     <a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
      NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a> structure that the miniport driver created. The driver
      initializes this structure with handler entry points and configuration parameters that define the
      interrupt characteristics.
@@ -112,7 +113,7 @@ A miniport driver must call
     it manages a NIC that generates interrupts.
 
 <i>MiniportInitializeEx</i> must call the 
-    <a href="netvista.ndismsetminiportattributes">
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
     NdisMSetMiniportAttributes</a> function before calling 
     <b>NdisMRegisterInterruptEx</b>.
 
@@ -161,7 +162,7 @@ If a driver specifies entry points for MSI, it must also specify entry points fo
     interrupt service functions. Also, if 
     <b>NdisMRegisterInterruptEx</b> returns NDIS_STATUS_SUCCESS, the driver must examine the value of the 
     <b>InterruptType</b> member of the 
-    <a href="netvista.ndis_miniport_interrupt_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
     NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a> structure to determine the type of interrupts NDIS granted.
     If NDIS cannot grant MSI support, it will grant support for line based interrupts.
 
@@ -173,76 +174,10 @@ When interrupts are enabled on the NIC, a driver's
     <b>NdisMRegisterInterruptEx</b> until it is ready to handle an interrupt.
 
 Drivers call the 
-    <a href="netvista.ndismderegisterinterruptex">
+    <a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">
     NdisMDeregisterInterruptEx</a> function to release resources that were previously allocated with 
     <b>NdisMRegisterInterruptEx</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_init_deregisterinterrupt">Init_DeRegisterInterrupt</a>, <a href="devtest.ndis_init_registerinterrupt">Init_RegisterInterrupt</a>, <a href="devtest.ndis_irql_interrupt_function">Irql_Interrupt_Function</a>, <a href="devtest.ndis_ndismderegisterinterruptex">NdisMDeregisterInterruptEx</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -276,19 +211,19 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">MiniportMessageInterruptDPC</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_interrupt_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
    NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndismderegisterinterruptex">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMRegisterInterruptEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterInterruptEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

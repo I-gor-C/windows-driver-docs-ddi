@@ -1,5 +1,5 @@
 ---
-UID: NF.minitape.TapeDebugPrint
+UID: NF:minitape.TapeDebugPrint
 title: TapeDebugPrint function
 author: windows-driver-content
 description: The TapeDebugPrint routine prints the indicated string.
@@ -7,7 +7,7 @@ old-location: storage\tapedebugprint.htm
 old-project: storage
 ms.assetid: d06e4308-f1a9-4acd-bc25-b3fd53129064
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: TapeDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Tape.lib
 req.dll: 
 req.irql: 
+req.typenames: *PTAPE_STATUS, TAPE_STATUS
 ---
 
 # TapeDebugPrint function
@@ -69,41 +70,3 @@ None
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Minitape.h (include Minitape.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Tape.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

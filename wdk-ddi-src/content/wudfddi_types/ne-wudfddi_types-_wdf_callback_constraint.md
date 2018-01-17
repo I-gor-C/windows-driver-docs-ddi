@@ -1,5 +1,5 @@
 ---
-UID: NE.wudfddi_types._WDF_CALLBACK_CONSTRAINT
+UID: NE:wudfddi_types._WDF_CALLBACK_CONSTRAINT
 title: _WDF_CALLBACK_CONSTRAINT
 author: windows-driver-content
 description: WDF_CALLBACK_CONSTRAINT enumeration
@@ -7,7 +7,7 @@ old-location: wdf\wdf_callback_constraint.htm
 old-project: wdf
 ms.assetid: 118a9dcc-8dd4-454a-bab2-1558821781a7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: _WDF_CALLBACK_CONSTRAINT, WDF_CALLBACK_CONSTRAINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_CALLBACK_CONSTRAINT
 req.product: Windows 10 or later.
 ---
 
@@ -69,30 +70,4 @@ Reserved.
 
 
 ## -remarks
-Note that the above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.9
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi_types.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Note that the above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications. </p>

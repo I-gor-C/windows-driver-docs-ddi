@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MSFC_FCADAPTERHBAATTRIBUTES
+UID: NS:hbapiwmi._MSFC_FCAdapterHBAAttributes
 title: _MSFC_FCAdapterHBAAttributes
 author: windows-driver-content
 description: The MSFC_FCAdapterHBAAttributes structure is used by a WMI provider to expose attribute information associated with a fibre channel adapter.
@@ -7,8 +7,8 @@ old-location: storage\msfc_fcadapterhbaattributes.htm
 old-project: storage
 ms.assetid: 5efe0ede-b55f-499e-9f95-66652cd8a872
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes, PMSFC_FCAdapterHBAAttributes
+ms.date: 1/10/2018
+ms.keywords: _MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes
 ---
 
 # _MSFC_FCAdapterHBAAttributes structure
@@ -75,7 +76,7 @@ Indicates the unique adapter ID.
 
 ### -field HBAStatus
 
-Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. 
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>. 
 
 
 ### -field NodeWWN
@@ -151,33 +152,18 @@ Contains the name of the HBA manufacturer.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hba_status">HBA_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="storage.msfc_fcadapterhbaattributes_wmi_class">MSFC_FCAdapterHBAAttributes WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562497">MSFC_FCAdapterHBAAttributes WMI Class</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSFC_FCAdapterHBAAttributes structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSFC_FCAdapterHBAAttributes structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

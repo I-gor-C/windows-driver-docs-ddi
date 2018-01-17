@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILPHONEBOOKREADYSTATE
+UID: NS:ntddrilapitypes.RILPHONEBOOKREADYSTATE
 title: RILPHONEBOOKREADYSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookreadystate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: cd71234b-4b46-4b7b-953b-32e6f014af03
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE, LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE
+ms.date: 1/11/2018
+ms.keywords: RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE
 ---
 
 # RILPHONEBOOKREADYSTATE structure
@@ -65,19 +66,3 @@ typedef struct _RILPHONEBOOKREADYSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

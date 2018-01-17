@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsvSwitchEventsUnsubscribe0
+UID: NF:fwpsk.FwpsvSwitchEventsUnsubscribe0
 title: FwpsvSwitchEventsUnsubscribe0 function
 author: windows-driver-content
 description: The FwpsvSwitchEventsUnsubscribe0 function releases resources that are associated with virtual switch notification subscriptions.Note  FwpsvSwitchEventsUnsubscribe0 is a specific version of FwpsvSwitchEventsUnsubscribe.
 old-location: netvista\fwpsvswitcheventsunsubscribe0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f83c6834-0438-42b8-ad9f-a1d82fcf361c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FwpsvSwitchEventsUnsubscribe0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsvSwitchEventsUnsubscribe0 function
@@ -38,7 +39,7 @@ req.irql: <= PASSIVE_LEVEL
 
 
 ## -description
-The <b>FwpsvSwitchEventsUnsubscribe0</b> function releases resources that are associated with virtual switch notification subscriptions.<div class="alert"><b>Note</b>  <b>FwpsvSwitchEventsUnsubscribe0</b> is a specific version of <b>FwpsvSwitchEventsUnsubscribe</b>. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
+The <b>FwpsvSwitchEventsUnsubscribe0</b> function releases resources that are associated with virtual switch notification subscriptions.<div class="alert"><b>Note</b>  <b>FwpsvSwitchEventsUnsubscribe0</b> is a specific version of <b>FwpsvSwitchEventsUnsubscribe</b>. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
 <div> </div>
 
 
@@ -59,7 +60,7 @@ void NTAPI FwpsvSwitchEventsUnsubscribe0(
 
 ### -param subscriptionId 
 
-A unique event subscription identifier that the callout driver obtained by calling  the  <a href="netvista.fwpsvswitcheventssubscribe0">FwpsvSwitchEventsSubscribe0</a> function.
+A unique event subscription identifier that the callout driver obtained by calling  the  <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a> function.
 
 
 
@@ -80,78 +81,21 @@ None.
 
 ## -remarks
 
-    A callout driver calls the <b>FwpsvSwitchEventsUnsubscribe0</b> function to unsubscribe to virtual switch notifications that the callout driver previously subscribed to  by calling the <a href="netvista.fwpsvswitcheventssubscribe0">FwpsvSwitchEventsSubscribe0</a> function. 
+    A callout driver calls the <b>FwpsvSwitchEventsUnsubscribe0</b> function to unsubscribe to virtual switch notifications that the callout driver previously subscribed to  by calling the <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a> function. 
 
 
    
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpkclnt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpsvswitcheventssubscribe0">FwpsvSwitchEventsSubscribe0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsvSwitchEventsUnsubscribe0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsUnsubscribe0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS
+UID: NS:gpioclx._GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS
 title: _GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS
 author: windows-driver-content
 description: The GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS structure describes a bank of general-purpose I/O (GPIO) pins whose hardware state is to be saved or restored.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 7A93C53C-8E60-4C57-BDEC-6868AB5E400D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS, *PGPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS, GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS
+ms.keywords: _GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS, GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS, *PGPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS, *PGPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS
 ---
 
 # _GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS structure
@@ -73,31 +74,6 @@ A set of flags to control bank hardware save and restore operations. If the <b>C
 ## -remarks
 The <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439419">CLIENT_SaveBankHardwareContext</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh439414">CLIENT_RestoreBankHardwareContext</a> event callback functions is a pointer to a caller-allocated <b>GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

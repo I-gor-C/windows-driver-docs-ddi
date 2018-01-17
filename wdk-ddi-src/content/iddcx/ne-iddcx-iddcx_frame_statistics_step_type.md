@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_FRAME_STATISTICS_STEP_TYPE
+UID: NE:iddcx.IDDCX_FRAME_STATISTICS_STEP_TYPE
 title: IDDCX_FRAME_STATISTICS_STEP_TYPE
 author: windows-driver-content
 description: Defines the type of frame processing step.
@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_statistics_step_type.htm
 old-project: display
 ms.assetid: 1c58841b-fff9-4419-b001-bce150b0f7a0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_FRAME_STATISTICS_STEP_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: 
 ---
 
 # IDDCX_FRAME_STATISTICS_STEP_TYPE enumeration
@@ -206,19 +207,3 @@ Driver defined processing step
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

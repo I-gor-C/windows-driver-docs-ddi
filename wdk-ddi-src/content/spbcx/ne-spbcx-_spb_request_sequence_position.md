@@ -1,5 +1,5 @@
 ---
-UID: NE.spbcx._SPB_REQUEST_SEQUENCE_POSITION
+UID: NE:spbcx._SPB_REQUEST_SEQUENCE_POSITION
 title: _SPB_REQUEST_SEQUENCE_POSITION
 author: windows-driver-content
 description: The SPB_REQUEST_SEQUENCE_POSITION enumeration indicates the position of an I/O request in the list of transfers for an I/O transfer sequence.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: B2D1BC45-E932-4EBC-9B7E-C45E7439E551
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SPB_REQUEST_SEQUENCE_POSITION, SPB_REQUEST_SEQUENCE_POSITION, PSPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
+ms.keywords: _SPB_REQUEST_SEQUENCE_POSITION, SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
+req.typenames: SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
 req.product: Windows 10 or later.
 ---
 
@@ -122,31 +123,6 @@ For a position value of <b>SpbRequestSequencePositionLast</b>, the <b>Length</b>
 
 For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbRequestSequencePositionLast</b>, the transfer direction might have changed from the previous transfer and the SPB controller driver might need to indicate this possible direction change on the bus (for example, an I²C controller issues a new START condition). For more information about transfer directions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h (include Spb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

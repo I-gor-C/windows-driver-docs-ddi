@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLHANDOVERSTATEPARAMMASK
+UID: NE:ntddrilapitypes.RILCALLHANDOVERSTATEPARAMMASK
 title: RILCALLHANDOVERSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallhandoverstateparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2534a05b-9e7f-4081-af61-721cd1fa82fc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCALLHANDOVERSTATEPARAMMASK, RILCALLHANDOVERSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLHANDOVERSTATEPARAMMASK
 ---
 
 # RILCALLHANDOVERSTATEPARAMMASK enumeration
@@ -69,19 +70,3 @@ typedef enum _RILCALLHANDOVERSTATEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

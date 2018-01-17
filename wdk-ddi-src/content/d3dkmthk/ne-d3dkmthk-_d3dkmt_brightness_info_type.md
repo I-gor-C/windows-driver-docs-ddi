@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmthk._D3DKMT_BRIGHTNESS_INFO_TYPE
+UID: NE:d3dkmthk._D3DKMT_BRIGHTNESS_INFO_TYPE
 title: _D3DKMT_BRIGHTNESS_INFO_TYPE
 author: windows-driver-content
 description: Indicates the type of information to retrieve or set for the brightness of an integrated display panel.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_brightness_info_type.htm
 old-project: display
 ms.assetid: 0f37ac57-9f3b-4bbc-a927-ea85aa44f910
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_BRIGHTNESS_INFO_TYPE, D3DKMT_BRIGHTNESS_INFO_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_BRIGHTNESS_INFO_TYPE
 ---
 
 # _D3DKMT_BRIGHTNESS_INFO_TYPE enumeration
@@ -113,39 +114,3 @@ Enable or disable Event Tracing for Windows (ETW) logging of brightness informat
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.PCIVIRT._SRIOV_DEVICE_INTERFACE_STANDARD_2
+UID: NS:pcivirt._SRIOV_DEVICE_INTERFACE_STANDARD_2
 title: _SRIOV_DEVICE_INTERFACE_STANDARD_2
 author: windows-driver-content
 description: Stores function pointers to callback functions implemented by the physical function (PF) driver in the device stack for the of the SR-IOV device. This is an extended version of SRIOV_DEVICE_INTERFACE_STANDARD.
@@ -7,8 +7,8 @@ old-location: pci\sriov_device_interface_standard_2.htm
 old-project: PCI
 ms.assetid: 46c9fa94-283c-481e-9fb1-2ed63df00386
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2, PSRIOV_DEVICE_INTERFACE_STANDARD_2
+ms.date: 12/29/2017
+ms.keywords: _SRIOV_DEVICE_INTERFACE_STANDARD_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2
 ---
 
 # _SRIOV_DEVICE_INTERFACE_STANDARD_2 structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-Stores function pointers to callback functions implemented by the physical function (PF) driver  in the device stack for the of the SR-IOV device. This is an extended version of <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>. 
+Stores function pointers to callback functions implemented by the physical function (PF) driver  in the device stack for the of the SR-IOV device. This is an extended version of <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>. 
 
 
 
@@ -88,12 +89,12 @@ Driver-defined context passed by the driver.
 
 ### -field InterfaceReference
 
-Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. 
+Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>. 
 
 
 ### -field InterfaceDereference
 
-Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. 
+Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>. 
 
 
 ### -field ReadVfConfig
@@ -167,19 +168,3 @@ Pointer to the driver's implementation of the <a href="https://msdn.microsoft.co
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-</table>

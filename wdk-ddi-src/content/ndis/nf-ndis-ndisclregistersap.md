@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisClRegisterSap
+UID: NF:ndis.NdisClRegisterSap
 title: NdisClRegisterSap function
 author: windows-driver-content
 description: NdisClRegisterSap registers a SAP on which the client can receive incoming calls from a remote node.
 old-location: netvista\ndisclregistersap.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 33ed0839-d1e3-4872-baa8-ead7e97f8c53
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisClRegisterSap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisClRegisterSap function
@@ -60,7 +61,7 @@ NDIS_STATUS NdisClRegisterSap(
 ### -param NdisAfHandle [in]
 
 Specifies the handle returned by 
-     <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>,
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>,
      which implicitly identifies the call manager with which to register the SAP.
 
 
@@ -111,7 +112,7 @@ SAP format is medium-dependent and specific to the address family supported by t
 If its call to 
     <b>NdisClRegisterSap</b> succeeds, the client must save the handle returned at 
     <i>NdisSapHandle</i> because it is a required parameter to 
-    <a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>. Callers of 
+    <a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>. Callers of 
     <b>NdisClRegisterSap</b> usually pass a pointer to a variable in the client-allocated state area at 
     <i>ProtocolSapContext</i> so that NDIS can set it to the 
     <i>NdisSapHandle</i> if this call succeeds. NDIS passes the given 
@@ -121,12 +122,12 @@ If its call to
 Usually, a client calls 
     <b>NdisClRegisterSap</b> from its 
     <i>ProtocolAfRegisterNotify</i> function following its successful call to 
-    <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>.
+    <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>.
     Registering one or more SAPs allows the client to receive its incoming call(s) as soon as the call
     manager receives them over the network.
 
 By contrast with client-initiated outgoing calls, a client does not call 
-    <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> before it calls 
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> before it calls 
     <b>NdisClRegisterSap</b>. For incoming calls, the call manager initiates the creation of the VC, as
     follows:
 
@@ -135,81 +136,11 @@ On receipt of an incoming call on a registered SAP, the call manager first calls
       <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
 When the VC has been set up and activated, the call manager calls 
-      <a href="netvista.ndiscmdispatchincomingcall">NdisCmDispatchIncomingCall</a>,
+      <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>,
       causing NDIS to call the client's 
       <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">
       ProtocolClIncomingCall</a> function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/library/windows/hardware/ff550916">NdisClRegisterSap (NDIS 5.1)</a>) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisClRegisterSap (NDIS 5.1)</b>) in
-   Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -217,16 +148,16 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545392">CO_SAP</a>
 </dt>
 <dt>
-<a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingcall">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
@@ -249,5 +180,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisClRegisterSap function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClRegisterSap function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

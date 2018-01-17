@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT
+UID: NS:1394._IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT
 title: _IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a Get1394AddressFromDeviceObject request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT
 ---
 
 # _IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT structure
@@ -65,19 +66,3 @@ Contains the NODE_ADDRESS structure describing the device's node address. In the
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

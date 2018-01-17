@@ -1,5 +1,5 @@
 ---
-UID: NF.hbaapi.HBA_SendRPL
+UID: NF:hbaapi.HBA_SendRPL
 title: HBA_SendRPL function
 author: windows-driver-content
 description: The HBA_SendRPL routine sends a read port list (RPL) request to the indicated port or domain controller.
@@ -7,7 +7,7 @@ old-location: storage\hba_sendrpl.htm
 old-project: storage
 ms.assetid: 2c8cb6bb-eb6b-4a2f-8d00-efb309273536
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: HBA_SendRPL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hbaapi.lib
 req.dll: Hbaapi.dll
 req.irql: 
+req.typenames: HBA_WWNTYPE
 ---
 
 # HBA_SendRPL function
@@ -61,7 +62,7 @@ HBA_STATUS HBA_API HBA_SendRPL(
 
 ### -param Handle [in]
 
-Contains a value returned by the routine <a href="storage.hba_openadapter">HBA_OpenAdapter</a> that identifies the local HBA through which the request is sent. 
+Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a> that identifies the local HBA through which the request is sent. 
 
 
 ### -param HbaPortWWN [in]
@@ -95,7 +96,7 @@ On input, indicates the size, in bytes, of the buffer pointed to by <i>pRspBuffe
 
 
 ## -returns
-The <b>HBA_SendRPL</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendRPL</b> returns one of the following values.
+The <b>HBA_SendRPL</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendRPL</b> returns one of the following values.
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl>Returned if the complete payload of a reply to the RPL request was successfully retrieved. 
@@ -115,66 +116,18 @@ The <b>HBA_SendRPL</b> routine returns a value of type <a href="storage.hba_stat
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hba_openadapter">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="storage.hba_status">HBA_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_SendRPL routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_SendRPL routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

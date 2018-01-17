@@ -1,14 +1,14 @@
 ---
-UID: NS.WSK._WSK_CLIENT_DISPATCH
+UID: NS:wsk._WSK_CLIENT_DISPATCH
 title: _WSK_CLIENT_DISPATCH
 author: windows-driver-content
 description: The WSK_CLIENT_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for events that are not specific to a particular socket.
 old-location: netvista\wsk_client_dispatch.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6a6116b0-2070-4b46-8359-3c84529cd1c5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WSK_CLIENT_DISPATCH, *PWSK_CLIENT_DISPATCH, PWSK_CLIENT_DISPATCH, WSK_CLIENT_DISPATCH
+ms.date: 1/11/2018
+ms.keywords: _WSK_CLIENT_DISPATCH, WSK_CLIENT_DISPATCH, *PWSK_CLIENT_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WSK_CLIENT_DISPATCH, *PWSK_CLIENT_DISPATCH
 req.product: Windows 10 or later.
 ---
 
@@ -79,10 +80,10 @@ A pointer to the WSK application's
 
 ## -remarks
 When a WSK application calls the 
-    <a href="netvista.wskregister">WskRegister</a> function, it provides a pointer to
+    <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> function, it provides a pointer to
     an initialized WSK_CLIENT_DISPATCH structure by means of the 
     <b>Dispatch</b> member of the 
-    <a href="netvista.wsk_client_npi">WSK_CLIENT_NPI</a> structure pointed to by the 
+    <a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a> structure pointed to by the 
     <i>WskClientNpi</i> parameter.
 
 The major and minor version numbers that are contained within the 
@@ -96,53 +97,27 @@ For more information about attaching a WSK application to the WSK subsystem, see
     Application</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wsk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_client_event.md">WskClientEvent</a>
 </dt>
 <dt>
-<a href="netvista.wskregister">WskRegister</a>
+<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_npi">WSK_CLIENT_NPI</a>
+<a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_dispatch">WSK_PROVIDER_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_npi">WSK_PROVIDER_NPI</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_npi.md">WSK_PROVIDER_NPI</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WSK_CLIENT_DISPATCH structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_DISPATCH structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

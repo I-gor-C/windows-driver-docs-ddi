@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._CLS_IO_STATISTICS_HEADER
+UID: NS:wdm._CLS_IO_STATISTICS_HEADER
 title: _CLS_IO_STATISTICS_HEADER
 author: windows-driver-content
 description: The CLFS_IO_STATISTICS_HEADER structure holds the header portion of a CLFS_IO_STATISTICS structure.
@@ -7,8 +7,8 @@ old-location: kernel\clfs_io_statistics_header.htm
 old-project: kernel
 ms.assetid: ac0da755-ea2f-4b68-947c-c314d114f273
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CLS_IO_STATISTICS_HEADER, *PCLS_IO_STATISTICS_HEADER, PPCLS_IO_STATISTICS_HEADER, PCLS_IO_STATISTICS_HEADER, CLS_IO_STATISTICS_HEADER
+ms.date: 1/4/2018
+ms.keywords: _CLS_IO_STATISTICS_HEADER, *PCLS_IO_STATISTICS_HEADER, PPCLS_IO_STATISTICS_HEADER, CLS_IO_STATISTICS_HEADER, *PCLFS_IO_STATISTICS_HEADER, CLFS_IO_STATISTICS_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PCLS_IO_STATISTICS_HEADER, PPCLS_IO_STATISTICS_HEADER, CLS_IO_STATISTICS_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>CLFS_IO_STATISTICS_HEADER</b> structure holds the header portion of a <a href="kernel.clfs_io_statistics">CLFS_IO_STATISTICS</a> structure.
+The <b>CLFS_IO_STATISTICS_HEADER</b> structure holds the header portion of a <a href="..\wdm\ns-wdm-_cls_io_statistics.md">CLFS_IO_STATISTICS</a> structure.
 
 
 
@@ -60,7 +61,7 @@ typedef struct _CLS_IO_STATISTICS_HEADER {
 
 ### -field ubMajorVersion
 
-The major version of the <a href="kernel.clfs_io_statistics">CLFS_IO_STATISTICS</a> structure.
+The major version of the <a href="..\wdm\ns-wdm-_cls_io_statistics.md">CLFS_IO_STATISTICS</a> structure.
 
 
 ### -field ubMinorVersion
@@ -86,33 +87,18 @@ The offset, in bytes, from the beginning of the <b>CLFS_IO_STATISTICS</b> struct
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfsgetiostatistics">ClfsGetIoStatistics</a>
+<a href="..\wdm\nf-wdm-clfsgetiostatistics.md">ClfsGetIoStatistics</a>
 </dt>
 <dt>
-<a href="kernel.clfs_io_statistics">CLFS_IO_STATISTICS</a>
+<a href="..\wdm\ns-wdm-_cls_io_statistics.md">CLFS_IO_STATISTICS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_IO_STATISTICS_HEADER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_IO_STATISTICS_HEADER structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

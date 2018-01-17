@@ -1,14 +1,14 @@
 ---
-UID: NS.WDBGEXTS._WDBGEXTS_THREAD_OS_INFO
+UID: NS:wdbgexts._WDBGEXTS_THREAD_OS_INFO
 title: _WDBGEXTS_THREAD_OS_INFO
 author: windows-driver-content
 description: The IG_GET_THREAD_OS_INFO Ioctl operation returns information about an operating system thread in the target. When calling Ioctl with IoctlType set to IG_GET_THREAD_OS_INFO, IpvData should contain an instance of the WDBGEXTS_THREAD_OS_INFO structure.
 old-location: debugger\ig_get_thread_os_info.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5cd1ba71-af2f-4662-b37d-88f4e4aa7624
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDBGEXTS_THREAD_OS_INFO, PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO
+ms.date: 1/10/2018
+ms.keywords: _WDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The IG_GET_THREAD_OS_INFO <a href="debugger.ioctl">Ioctl</a> operation returns information about an operating system thread in the target.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_GET_THREAD_OS_INFO, <i>IpvData</i> should contain an instance of the WDBGEXTS_THREAD_OS_INFO structure.
+The IG_GET_THREAD_OS_INFO <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation returns information about an operating system thread in the target.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_GET_THREAD_OS_INFO, <i>IpvData</i> should contain an instance of the WDBGEXTS_THREAD_OS_INFO structure.
 
 
 
@@ -114,33 +115,18 @@ Receives the thread affinity mask for the thread in a symmetric multiprocessor (
 
 
 ## -remarks
-The parameters for the IG_GET_THREAD_OS_INFO <a href="debugger.ioctl">Ioctl</a> operation are the members of the WDBGEXTS_THREAD_OS_INFO structure.
+The parameters for the IG_GET_THREAD_OS_INFO <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the WDBGEXTS_THREAD_OS_INFO structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="debugger.ioctl">Ioctl</a>
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20WDBGEXTS_THREAD_OS_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WDBGEXTS_THREAD_OS_INFO structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

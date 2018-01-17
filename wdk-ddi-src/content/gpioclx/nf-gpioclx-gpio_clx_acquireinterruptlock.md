@@ -1,5 +1,5 @@
 ---
-UID: NF.gpioclx.GPIO_CLX_AcquireInterruptLock
+UID: NF:gpioclx.GPIO_CLX_AcquireInterruptLock
 title: GPIO_CLX_AcquireInterruptLock function
 author: windows-driver-content
 description: The GPIO_CLX_AcquireInterruptLock method acquires an interrupt lock on a bank of pins in the general-purpose I/O (GPIO) controller.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Msgpioclxstub.lib
 req.dll: 
 req.irql: DIRQL or at PASSIVE_LEVEL. See Remarks.
+req.typenames: GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE
 ---
 
 # GPIO_CLX_AcquireInterruptLock function
@@ -81,63 +82,6 @@ The GPIO controller driver can independently acquire and release interrupt locks
 
 If the <i>Context</i> parameter is NULL or points to an invalid GPIO device context, this method causes a bug check in debug builds of GpioClx.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Msgpioclxstub.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DIRQL or at PASSIVE_LEVEL. See Remarks.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

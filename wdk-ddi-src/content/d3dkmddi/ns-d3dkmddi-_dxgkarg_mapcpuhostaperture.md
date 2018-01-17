@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_MAPCPUHOSTAPERTURE
+UID: NS:d3dkmddi._DXGKARG_MAPCPUHOSTAPERTURE
 title: _DXGKARG_MAPCPUHOSTAPERTURE
 author: windows-driver-content
 description: The DXGKARG_MAPCPUHOSTAPERTURE structure is used to map an allocation, resident in a local memory segment, into the CPU host aperture in order to make it visible to the CPU.
@@ -7,7 +7,7 @@ old-location: display\dxgkarg_mapcpuhostaperture.htm
 old-project: display
 ms.assetid: ACC0C800-B6E3-4EF2-846C-63BF4564D0FD
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKARG_MAPCPUHOSTAPERTURE, DXGKARG_MAPCPUHOSTAPERTURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_MAPCPUHOSTAPERTURE
 ---
 
 # _DXGKARG_MAPCPUHOSTAPERTURE structure
@@ -71,7 +72,7 @@ Specifies the segment identifier of the segment being accessed.
 ### -field PhysicalAdapterIndex
 
 A zero-based physical adapter index in a linked display adapter link.
-The page size is equal to the segment page size, reported in <a href="display.dxgk_segmentflags">DXGK_SEGMENTFLAGS</a>.
+The page size is equal to the segment page size, reported in <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a>.
 
 
 <div class="alert"><b>Note</b>  The allocation itself might be aligned on 4KB page boundary. When the segment page size is 64 KB, CPU host aperture in this case will map more than the allocation size.
@@ -94,39 +95,3 @@ MDL-style array of page indices to the allocation pages that need to be mapped i
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

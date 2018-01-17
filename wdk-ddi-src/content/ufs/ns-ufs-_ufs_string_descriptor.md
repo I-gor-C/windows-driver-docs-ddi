@@ -1,5 +1,5 @@
 ---
-UID: NS.UFS._UFS_STRING_DESCRIPTOR
+UID: NS:ufs._UFS_STRING_DESCRIPTOR
 title: _UFS_STRING_DESCRIPTOR
 author: windows-driver-content
 description: The UFS_STRING_DESCRIPTOR structure describes either the Manufacturer Name, Product Name, OEM ID, or Serial Number as a string.
@@ -7,8 +7,8 @@ old-location: storage\ufs_string_descriptor.htm
 old-project: storage
 ms.assetid: 1F32DA95-6801-4C48-B3C4-A47C3E1C678B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _UFS_STRING_DESCRIPTOR, UFS_STRING_DESCRIPTOR, PUFS_STRING_DESCRIPTOR, *PUFS_STRING_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _UFS_STRING_DESCRIPTOR, UFS_STRING_DESCRIPTOR, *PUFS_STRING_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UFS_STRING_DESCRIPTOR, *PUFS_STRING_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -72,39 +73,3 @@ Contains either the Manufacturer Name, Product Name, OEM ID, or Serial Number as
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufs.h</dt>
-</dl>
-</td>
-</tr>
-</table>

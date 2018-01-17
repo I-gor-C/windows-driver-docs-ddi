@@ -1,5 +1,5 @@
 ---
-UID: NE.sensorsclassextension.__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002
+UID: NE:sensorsclassextension.__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002
 title: __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002
 author: windows-driver-content
 description: The SensorConnectionType enumeration type defines values for the SENSOR_CONNECTION_TYPE property.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>SensorConnectionType</b> enumeration type defines values for the <a href="https://msdn.microsoft.com/a9f88dad-a81d-45dc-b607-e7b4c5036774">SENSOR_CONNECTION_TYPE</a> property.
+The <b>SensorConnectionType</b> enumeration type defines values for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_CONNECTION_TYPE</a> property.
 
 
 
@@ -75,55 +76,10 @@ Indicates that the sensor is connected by external means, such as through a netw
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 7
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="sensors.isensordriver_ongetproperties">ISensorDriver::OnGetProperties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>

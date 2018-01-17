@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILUICCSERVICEINFO
+UID: NS:rilapitypes.RILUICCSERVICEINFO
 title: RILUICCSERVICEINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccserviceinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e96bc5b5-655f-49e3-8489-af79d427bc74
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILUICCSERVICEINFO, *LPRILUICCSERVICEINFO, RILUICCSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCSERVICEINFO, RILUICCSERVICEINFO
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef struct _RILUICCSERVICEINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfcompanion.WDF_TASK_QUEUE_CONFIG_INIT
+UID: NF:wdfcompanion.WDF_TASK_QUEUE_CONFIG_INIT
 title: WDF_TASK_QUEUE_CONFIG_INIT function
 author: windows-driver-content
 description: For internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_queue_config_init.htm
 old-project: wdf
 ms.assetid: 51c43509-074c-4118-afe5-2e568d733751
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_TASK_QUEUE_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_TASK_QUEUE_DISPATCH_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -71,29 +72,3 @@ This method does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.23
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfcompanion.h</dt>
-</dl>
-</td>
-</tr>
-</table>

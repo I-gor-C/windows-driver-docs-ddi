@@ -1,19 +1,19 @@
 ---
-UID: NE.rilapitypes.RILUICCLOCKSTATELOCKSTATE
+UID: NE:rilapitypes.RILUICCLOCKSTATELOCKSTATE
 title: RILUICCLOCKSTATELOCKSTATE
 author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\riluicclockstatelockstate_2.htm
-old-project: NetVista
-ms.assetid: e97ef5bc-e3da-46ca-b593-59dc93e9cb8e
+description: This enumeration describes the RILUICCLOCKSTATELOCKSTATE.
+old-location: netvista\riluicclockstatelockstate.htm
+old-project: netvista
+ms.assetid: 95f73081-b809-407d-b73b-975b97301449
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILUICCLOCKSTATELOCKSTATE, RILUICCLOCKSTATELOCKSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
 req.header: rilapitypes.h
-req.include-header: 
+req.include-header: Rilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCLOCKSTATELOCKSTATE
 req.product: Windows 10 or later.
 ---
 
@@ -39,50 +40,54 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
 
 ## -syntax
 
 ````
-typedef enum _RILUICCLOCKSTATELOCKSTATE { 
-  RIL_UICCLOCKSTATE_VERIFIED,
-  RIL_UICCLOCKSTATE_ENABLED,
-  RIL_UICCLOCKSTATE_BLOCKED,
-  RIL_UICCLOCKSTATE_ALL
-} RILUICCLOCKSTATELOCKSTATE;
+enum RILUICCLOCKSTATELOCKSTATE {
+  RIL_PARAM_UICCLOCKSTATE_LOCKSTATE  = 0x0000000, 
+  RIL_UICCLOCKSTATE_VERIFIED         = 0x0000001, 
+  RIL_UICCLOCKSTATE_ENABLED          = 0x0000002, 
+  RIL_UICCLOCKSTATE_BLOCKED          = 0x0000003 
+
+};
 ````
 
 
 ## -enum-fields
 
+### -field RIL_PARAM_UICCLOCKSTATE_LOCKSTATE
+
+None of the other state bits are set.
+
+
 ### -field RIL_UICCLOCKSTATE_VERIFIED
+
+Lock is verified.
 
 
 ### -field RIL_UICCLOCKSTATE_ENABLED
 
+Lock is enabled.
+
 
 ### -field RIL_UICCLOCKSTATE_BLOCKED
 
-
-### -field RIL_UICCLOCKSTATE_ALL
+Lock is blocked.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
+## -see-also
 <dl>
-<dt>Rilapitypes.h</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+</dt>
 </dl>
-</td>
-</tr>
-</table>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILUICCLOCKSTATELOCKSTATE enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

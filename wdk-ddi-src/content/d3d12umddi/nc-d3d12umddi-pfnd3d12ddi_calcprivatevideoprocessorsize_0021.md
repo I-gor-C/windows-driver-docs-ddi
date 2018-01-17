@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE_0021
+UID: NC:d3d12umddi.PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE_0021
 title: PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE_0021
 author: windows-driver-content
 description: The pfnCalcPrivateVideoProcessorSize callback function calculates the size of the private video processor.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_calcprivatevideoprocessorsize.htm
 old-project: display
 ms.assetid: F1ED5176-4F50-44DA-96B3-5E133A236461
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE_0021 callback
@@ -68,20 +69,4 @@ The arguments used to create a video processor.
 
 
 ## -remarks
-The  runtime allocates memory for storing the driver CPU object that represents the video processor.  This method is used to calculate the driver object size.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The  runtime allocates memory for storing the driver CPU object that represents the video processor.  This method is used to calculate the driver object size.</p>

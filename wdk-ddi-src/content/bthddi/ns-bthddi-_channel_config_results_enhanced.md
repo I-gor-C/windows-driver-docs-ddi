@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._CHANNEL_CONFIG_RESULTS_ENHANCED
+UID: NS:bthddi._CHANNEL_CONFIG_RESULTS_ENHANCED
 title: _CHANNEL_CONFIG_RESULTS_ENHANCED
 author: windows-driver-content
 description: The CHANNEL_CONFIG_RESULTS_ENHANCED structure describes configuration parameters and the buffer size of any extra option for the inbound and outbound directions of an L2CAP channel.
@@ -7,8 +7,8 @@ old-location: bltooth\channel_config_results_enhanced.htm
 old-project: bltooth
 ms.assetid: E7A2FC77-86B0-4990-93DC-2A04E33A426C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _CHANNEL_CONFIG_RESULTS_ENHANCED, CHANNEL_CONFIG_RESULTS_ENHANCED, *PCHANNEL_CONFIG_RESULTS_ENHANCED, PCHANNEL_CONFIG_RESULTS_ENHANCED
+ms.date: 12/21/2017
+ms.keywords: _CHANNEL_CONFIG_RESULTS_ENHANCED, *PCHANNEL_CONFIG_RESULTS_ENHANCED, CHANNEL_CONFIG_RESULTS_ENHANCED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: *PCHANNEL_CONFIG_RESULTS_ENHANCED, CHANNEL_CONFIG_RESULTS_ENHANCED
 ---
 
 # _CHANNEL_CONFIG_RESULTS_ENHANCED structure
@@ -65,29 +66,3 @@ Amount of buffer required to retrieve the current extra options for the given di
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows 8 and later versions of Windows
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

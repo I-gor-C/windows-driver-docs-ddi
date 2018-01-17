@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_ENUMVIDPNCOFUNCMODALITY
-title: DXGKDDI_ENUMVIDPNCOFUNCMODALITY
+UID: NC:d3dkmddi.DXGKDDI_ENUMVIDPNCOFUNCMODALITY
+title: DXGKDDI_ENUMVIDPNCOFUNCMODALITY function
 author: windows-driver-content
 description: The DxgkDdiEnumVidPnCofuncModality function makes the source and target modes sets of a VidPN cofunctional with the VidPN's topology and the modes that have already been pinned.
 old-location: display\dxgkddienumvidpncofuncmodality.htm
 old-project: display
 ms.assetid: 6dda82bd-1a43-4ffe-b398-a9f8cee6d1c1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_ENUMVIDPNCOFUNCMODALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_ENUMVIDPNCOFUNCMODALITY callback
+# DXGKDDI_ENUMVIDPNCOFUNCMODALITY function
 
 
 
@@ -42,7 +43,7 @@ The <i>DxgkDdiEnumVidPnCofuncModality</i> function makes the source and target m
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_ENUMVIDPNCOFUNCMODALITY DxgkDdiEnumVidPnCofuncModality;
@@ -64,7 +65,7 @@ A handle to a context block associated with a display adapter. The display minip
 
 ### -param pEnumCofuncModalityArg [in]
 
-A pointer to a <a href="display.dxgkarg_enumvidpncofuncmodality">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure that contains function arguments.
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_enumvidpncofuncmodality.md">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure that contains function arguments.
 
 
 ## -returns
@@ -82,51 +83,4 @@ Update each mode set that is not the pivot and does not already have a pinned mo
 
 Note that if a source or target is identified as the pivot of the enumeration, the mode set for that source or target must not change. For more information about how to update source and target mode sets, see <a href="https://msdn.microsoft.com/f1aa6277-7af6-4ba0-8ff1-d562f7029540">Enumerating Cofunctional VidPN Source and Target Modes</a>. 
 
-The <i>DxgkDdiEnumVidPnCofuncModality</i> function should be made pageable.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The <i>DxgkDdiEnumVidPnCofuncModality</i> function should be made pageable.</p>

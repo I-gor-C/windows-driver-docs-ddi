@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCTOOLKITPROFILE
+UID: NS:ntddrilapitypes.RILUICCTOOLKITPROFILE
 title: RILUICCTOOLKITPROFILE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicctoolkitprofile.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ff1f5839-78be-48ab-9c26-f8fee6788d51
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE, LPRILUICCTOOLKITPROFILE
+ms.date: 1/11/2018
+ms.keywords: RILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE
 ---
 
 # RILUICCTOOLKITPROFILE structure
@@ -65,19 +66,3 @@ typedef struct _RILUICCTOOLKITPROFILE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

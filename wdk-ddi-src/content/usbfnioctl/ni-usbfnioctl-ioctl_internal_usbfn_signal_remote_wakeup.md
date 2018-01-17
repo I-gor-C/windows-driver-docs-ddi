@@ -1,14 +1,14 @@
 ---
-UID: NI.usbfnioctl.IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP
 title: IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP
 author: windows-driver-content
 description: The class driver sends this request to get remote wake-up notifications from endpoints.
 old-location: buses\ioctl_usbfn_internal_signal_remote_wakeup.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 052D16D1-E7E9-4237-B9F5-1D52D28444F0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
+ms.date: 1/4/2018
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -77,20 +78,4 @@ If the request is successful, the USB function class extension (UFX) returns STA
 ## -remarks
 This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.
 
-The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.</p>

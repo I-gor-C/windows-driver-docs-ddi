@@ -1,5 +1,5 @@
 ---
-UID: NS.D4DRVIF._DOT4_DC_CREATE_DATA
+UID: NS:d4drvif._DOT4_DC_CREATE_DATA
 title: _DOT4_DC_CREATE_DATA
 author: windows-driver-content
 description: Defines the DOT4_DC_CREATE_DATA construct.
@@ -7,8 +7,8 @@ old-location: print\dot4_dc_create_data.htm
 old-project: print
 ms.assetid: 9C21732B-0AB1-4F3E-8F3D-F0B12007920A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT4_DC_CREATE_DATA, *PDOT4_DC_CREATE_DATA, DOT4_DC_CREATE_DATA, PDOT4_DC_CREATE_DATA
+ms.date: 1/8/2018
+ms.keywords: _DOT4_DC_CREATE_DATA, DOT4_DC_CREATE_DATA, *PDOT4_DC_CREATE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_DC_CREATE_DATA, *PDOT4_DC_CREATE_DATA
 ---
 
 # _DOT4_DC_CREATE_DATA structure
@@ -95,19 +96,3 @@ Specifies the host socket ID returned.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D4drvif.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisDirectOidRequest
+UID: NF:ndis.NdisDirectOidRequest
 title: NdisDirectOidRequest function
 author: windows-driver-content
 description: The NdisDirectOidRequest function forwards a direct OID request to the underlying drivers to query the capabilities or status of an adapter or set the state of an adapter.
 old-location: netvista\ndisdirectoidrequest.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 771e5761-beea-4a31-9ebe-d65e9157f1f4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisDirectOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisDirectOidRequest function
@@ -59,14 +60,14 @@ NDIS_STATUS NdisDirectOidRequest(
 ### -param NdisBindingHandle [in]
 
 The handle that the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function returns that
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function returns that
      identifies the target miniport adapter on the binding.
 
 
 ### -param OidRequest [in]
 
 A pointer to an 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>Xxx</i> code to either query the status of an adapter or to set the state of an adapter.
 
 
@@ -85,7 +86,7 @@ The underlying driver determines which NDIS_STATUS_<i>XXX</i> code
 <dt><b>NDIS_STATUS_INVALID_OID</b></dt>
 </dl>The OID_<i>Xxx</i> code that was specified in the 
        <b>Oid</b> member of the 
-       <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>-structured buffer at 
+       <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>-structured buffer at 
        <i>OidRequest</i> was invalid or unsupported by the underlying driver.
 <dl>
 <dt><b>NDIS_STATUS_INVALID_LENGTH or NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
@@ -140,7 +141,7 @@ The underlying driver determines which NDIS_STATUS_<i>XXX</i> code
 The 
     <b>NdisDirectOidRequest</b> function cannot be used for general OID requests. For general OID requests,
     use the 
-    <a href="netvista.ndisoidrequest">NdisOidRequest</a> function instead. 
+    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function instead. 
     <b>NdisDirectOidRequest</b> can be used only for OIDs that NDIS supports for use with the direct OID
     interface. For example, the following OIDs can be used:
 
@@ -177,70 +178,13 @@ A driver that calls
 
 The direct OID request interface is similar to the general OID request interface. For more information
     about issuing general requests, see 
-    <a href="netvista.ndisoidrequest">NdisOidRequest</a>.
+    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.1 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
@@ -255,10 +199,10 @@ IRQL
    OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
 </dt>
 <dt>
-<a href="netvista.ndisoidrequest">NdisOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
@@ -272,5 +216,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisDirectOidRequest function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDirectOidRequest function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

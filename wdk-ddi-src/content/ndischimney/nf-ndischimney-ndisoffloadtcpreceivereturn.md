@@ -1,13 +1,13 @@
 ---
-UID: NF.ndischimney.NdisOffloadTcpReceiveReturn
+UID: NF:ndischimney.NdisOffloadTcpReceiveReturn
 title: NdisOffloadTcpReceiveReturn function
 author: windows-driver-content
 description: A protocol driver or intermediate driver calls the NdisOffloadTcpReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an underlying offload target.
 old-location: netvista\ndisoffloadtcpreceivereturn.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 39f541be-c514-4cd4-bf7d-03b7a318b663
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisOffloadTcpReceiveReturn
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: 
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # NdisOffloadTcpReceiveReturn function
@@ -62,7 +63,7 @@ VOID NdisOffloadTcpReceiveReturn(
 
 The handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function. This handle
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. This handle
      identifies the binding between the caller and the underlying intermediate driver or offload
      target.
 
@@ -70,7 +71,7 @@ The handle that NDIS provided at the
 ### -param NetBufferList [in]
 
 A pointer to a 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
      can be a stand-alone structure or the first structure in a linked list of NET_BUFFER_LIST structures.
      The linked list can contain NET_BUFFER_LIST structures from one or more calls to the 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">
@@ -89,7 +90,7 @@ In response to a call to its
     MiniportTcpOffloadReceiveReturn</a> function, an intermediate driver calls the 
     <b>NdisOffloadTcpReceiveReturn</b> function to propagate the receive return operation to the underlying
     intermediate driver or offload target. For more information, see 
-    <a href="netvista.propagating_i_o_operations">Propagating I/O Operations</a>.
+    <a href="https://msdn.microsoft.com/009159ad-81c0-4555-8e6b-a4fec2c7f1d5">Propagating I/O Operations</a>.
 
 To the 
     <b>NdisOffloadTcpReceiveReturn</b> function, the intermediate driver passes the following:
@@ -104,43 +105,6 @@ The same PNET_BUFFER_LIST pointer that NDIS passed to the intermediate driver's
       <i>MiniportTcpOffloadReceiveReturn</i> function.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -148,18 +112,18 @@ Library
    MiniportTcpOffloadReceiveReturn</a>
 </dt>
 <dt>
-<a href="netvista.ndis_offload_handle">NDIS_OFFLOAD_HANDLE</a>
+<a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">NdisTcpOffloadReceiveHandler</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisOffloadTcpReceiveReturn function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpReceiveReturn function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

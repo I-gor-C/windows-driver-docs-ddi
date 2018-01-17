@@ -1,5 +1,5 @@
 ---
-UID: NS.CHARGING._CAD_POWER_SOURCE_INFO_USB
+UID: NS:charging._CAD_POWER_SOURCE_INFO_USB
 title: _CAD_POWER_SOURCE_INFO_USB
 author: windows-driver-content
 description: This structure is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 578D33E5-685A-48E9-BFE2-CE4C3FD18056
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CAD_POWER_SOURCE_INFO_USB, CAD_POWER_SOURCE_INFO_USB, PCAD_POWER_SOURCE_INFO_USB, *PCAD_POWER_SOURCE_INFO_USB
+ms.keywords: _CAD_POWER_SOURCE_INFO_USB, *PCAD_POWER_SOURCE_INFO_USB, CAD_POWER_SOURCE_INFO_USB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PCAD_POWER_SOURCE_INFO_USB, CAD_POWER_SOURCE_INFO_USB
 ---
 
 # _CAD_POWER_SOURCE_INFO_USB structure
@@ -46,19 +47,3 @@ This structure is for internal use only.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h (include Charging.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

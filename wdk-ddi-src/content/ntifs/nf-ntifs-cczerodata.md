@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcZeroData
+UID: NF:ntifs.CcZeroData
 title: CcZeroData function
 author: windows-driver-content
 description: The CcZeroData routine zeros the specified range of bytes in a cached or noncached file.
@@ -7,7 +7,7 @@ old-location: ifsk\cczerodata.htm
 old-project: ifsk
 ms.assetid: 97a0f314-5813-4ff8-8a94-c675874cdc3b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcZeroData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <=APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # CcZeroData function
@@ -58,7 +59,7 @@ BOOLEAN CcZeroData(
 
 ### -param FileObject [in]
 
-A pointer to a file object (<a href="kernel.file_object">FILE_OBJECT</a>) for the file in which a range of bytes is to be zeroed.
+A pointer to a file object (<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>) for the file in which a range of bytes is to be zeroed.
 
 
 ### -param StartOffset [in]
@@ -81,7 +82,7 @@ Set to <b>TRUE</b> if the caller should be put into a wait state until the entir
 
 
 ## -remarks
-The file to be zeroed can be cached or noncached. However, if the file is noncached, the values of <i>StartOffset</i> and <i>EndOffset</i> must both be multiples of the volume's sector size. (For information about how to determine sector size, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553208">Kernel-Mode Driver Architecture Design Guide</a> and <a href="kernel.kernel_mode_driver_reference">Kernel-Mode Driver Architecture Reference</a>.)
+The file to be zeroed can be cached or noncached. However, if the file is noncached, the values of <i>StartOffset</i> and <i>EndOffset</i> must both be multiples of the volume's sector size. (For information about how to determine sector size, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553208">Kernel-Mode Driver Architecture Design Guide</a> and <a href="https://msdn.microsoft.com/9ca2dfee-abb3-40cb-aa04-b9e1bc0b1fa5">Kernel-Mode Driver Architecture Reference</a>.)
 
 If a pool allocation failure occurs and <i>Wait</i> was specified as <b>TRUE</b>, <b>CcZeroData</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. If a pool allocation failure occurs and <i>Wait</i> was specified as <b>FALSE</b>, <b>CcZeroData</b> returns <b>FALSE</b>, but does not raise an exception.
 
@@ -100,89 +101,21 @@ If the stream is cached and write_through, <i>StartOffset</i> does not have to b
 If <i>EndOffset</i> is not aligned, it will be rounded up to the next sector size.  
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows 2000 and later Windows operating systems.  See Remarks for changes for Vista and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Fltkernel.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=APC_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539143">CcIsFileCached</a>
 </dt>
 <dt>
-<a href="kernel.file_object">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcZeroData routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcZeroData routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

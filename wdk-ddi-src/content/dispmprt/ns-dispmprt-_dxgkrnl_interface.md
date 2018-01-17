@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._DXGKRNL_INTERFACE
+UID: NS:dispmprt._DXGKRNL_INTERFACE
 title: _DXGKRNL_INTERFACE
 author: windows-driver-content
 description: The DXGKRNL_INTERFACE structure contains a handle to a display adapter and a set of function pointers.
@@ -7,8 +7,8 @@ old-location: display\dxgkrnl_interface2.htm
 old-project: display
 ms.assetid: d97d3ec6-aaa5-4f4a-a39f-42c09473b18e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKRNL_INTERFACE, *PDXGKRNL_INTERFACE, DXGKRNL_INTERFACE, PDXGKRNL_INTERFACE
+ms.date: 12/29/2017
+ms.keywords: _DXGKRNL_INTERFACE, *PDXGKRNL_INTERFACE, DXGKRNL_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PDXGKRNL_INTERFACE, DXGKRNL_INTERFACE
 ---
 
 # _DXGKRNL_INTERFACE structure
@@ -293,7 +294,7 @@ Supported starting with Windows 8.
 
 ### -field DxgkCbAcquirePostDisplayOwnership
 
-A pointer to the display port driver's <a href="display.DxgkCbAcquirePostDisplayOwnership">DxgkCbAcquirePostDisplayOwnership</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a> function.
 
 Supported starting with Windows 8.
 
@@ -336,46 +337,21 @@ Supported starting with Windows 8.1.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available beginning with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgkrnl_interface">Dxgkrnl Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560940">Dxgkrnl Interface</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
 </dt>
 <dt>
-<a href="display.driverentry_of_display_miniport_driver">DriverEntry of Display Miniport Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556157">DriverEntry of Display Miniport Driver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKRNL_INTERFACE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKRNL_INTERFACE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMANAGECALLSPARAMS_V4
+UID: NS:ntddrilapitypes.RILMANAGECALLSPARAMS_V4
 title: RILMANAGECALLSPARAMS_V4
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmanagecallsparams_v4.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8e38c6d5-bd61-455e-a628-b4e6ef9c936c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMANAGECALLSPARAMS_V4, *LPRILMANAGECALLSPARAMS, LPRILMANAGECALLSPARAMS, LPRILMANAGECALLSPARAMS_V4, *LPRILMANAGECALLSPARAMS_V4, RILMANAGECALLSPARAMS, RILMANAGECALLSPARAMS_V4
+ms.date: 1/11/2018
+ms.keywords: RILMANAGECALLSPARAMS_V4, RILMANAGECALLSPARAMS, *LPRILMANAGECALLSPARAMS_V4, RILMANAGECALLSPARAMS_V4, *LPRILMANAGECALLSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMANAGECALLSPARAMS, *LPRILMANAGECALLSPARAMS_V4, RILMANAGECALLSPARAMS_V4, *LPRILMANAGECALLSPARAMS
 ---
 
 # RILMANAGECALLSPARAMS_V4 structure
@@ -81,19 +82,3 @@ typedef struct _RILMANAGECALLSPARAMS_V4 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.SDPNODE._SDP_NODE
+UID: NS:sdpnode._SDP_NODE
 title: _SDP_NODE
 author: windows-driver-content
 description: The SDP_NODE structure holds information about an element in a tree-based representation of an SDP record.
@@ -7,8 +7,8 @@ old-location: bltooth\sdp_node.htm
 old-project: bltooth
 ms.assetid: 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SDP_NODE, PSDP_NODE, SDP_NODE, *PSDP_NODE
+ms.date: 12/21/2017
+ms.keywords: _SDP_NODE, SDP_NODE, *PSDP_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: SDP_NODE, *PSDP_NODE
 req.product: Windows 10 or later.
 ---
 
@@ -61,14 +62,14 @@ typedef struct _SDP_NODE {
 ### -field hdr
 
 An 
-     <a href="bltooth.sdp_node_header">SDP_NODE_HEADER</a> structure that contains
+     <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a> structure that contains
      links to peer SDP_NODE structures and the data type of the current node.
 
 
 ### -field DataSize
 
 The size, in bytes, of the 
-     <a href="bltooth.sdp_node_data">SDP_NODE_DATA</a> union held in the 
+     <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a> union held in the 
      <b>u</b> member.
 
 
@@ -88,7 +89,7 @@ Each SDP_NODE structure in the tree representation of an SDP record contains a S
 
 The header specifies the type of data. Driver developers can access links to peer SDP_NODE structures
     by calling the 
-    <a href="kernel.list_entry">LIST_ENTRY</a> structure of the header. By evaluating 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a> structure of the header. By evaluating 
     <code>Node.hdr.Link.Flink</code>and 
     <code>Node.hdr.Link.Blink</code>, drivers can obtain the addresses of peer
     nodes in the tree. Keep in mind that 
@@ -98,46 +99,21 @@ The header specifies the type of data. Driver developers can access links to pee
     extract the address of the containing node record.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sdpnode.h (include Sdpnode.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.sdp_node_header">SDP_NODE_HEADER</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
 </dt>
 <dt>
-<a href="bltooth.sdp_node_data">SDP_NODE_DATA</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
 </dt>
 <dt>
-<a href="kernel.list_entry">LIST_ENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

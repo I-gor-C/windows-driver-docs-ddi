@@ -1,5 +1,5 @@
 ---
-UID: NS.DRMK.TAGDRMRIGHTS
+UID: NS:drmk.tagDRMRIGHTS
 title: tagDRMRIGHTS
 author: windows-driver-content
 description: The DRMRIGHTS structure specifies the DRM content rights assigned to a KS audio pin or to a port-class driver's stream object.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 890f996c-9216-4148-b198-538963101c2a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: tagDRMRIGHTS, *PDRMRIGHTS, PDRMRIGHTS, DRMRIGHTS
+ms.keywords: tagDRMRIGHTS, *PDRMRIGHTS, DRMRIGHTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # tagDRMRIGHTS structure
@@ -159,37 +160,22 @@ The <b>DEFINE_DRMRIGHTS_DEFAULT</b> macro defines a constant <b>DRMRIGHTS</b> st
 Parameters
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h (include Drmk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="audio.drmcreatecontentmixed">DrmCreateContentMixed</a>
+<a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
 </dt>
 <dt>
-<a href="audio.drmdestroycontent">DrmDestroyContent</a>
+<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
 </dt>
 <dt>
-<a href="audio.drmgetcontentrights">DrmGetContentRights</a>
+<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=158256">IEC 60958</a></dt>
 </dl>

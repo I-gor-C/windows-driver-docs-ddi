@@ -1,17 +1,17 @@
 ---
-UID: NC.dispmprt.DXGKDDI_SYSTEM_DISPLAY_ENABLE
-title: DXGKDDI_SYSTEM_DISPLAY_ENABLE
+UID: NC:dispmprt.DXGKDDI_SYSTEM_DISPLAY_ENABLE
+title: DXGKDDI_SYSTEM_DISPLAY_ENABLE function
 author: windows-driver-content
 description: Called by the operating system to request the display miniport driver to reset the current display device to a specified state.
 old-location: display\dxgkddisystemdisplayenable.htm
 old-project: display
 ms.assetid: D938F7F4-E1FA-4C63-A31D-5ED160276565
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_SYSTEM_DISPLAY_ENABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
-# DXGKDDI_SYSTEM_DISPLAY_ENABLE callback
+# DXGKDDI_SYSTEM_DISPLAY_ENABLE function
 
 
 
@@ -44,7 +45,7 @@ Starting with Windows 8, the operating system calls this function during a bugc
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_SYSTEM_DISPLAY_ENABLE DxgkDdiSystemDisplayEnable;
@@ -94,7 +95,7 @@ A UINT value that specifies the height of the display mode  of the specified dev
 
 ### -param ColorFormat [out]
 
-A pointer to a <a href="display.d3dddiformat">D3DDDIFORMAT</a> value that specifies the color format of the display device.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> value that specifies the color format of the display device.
 
 
 ## -returns
@@ -106,7 +107,7 @@ The display miniport driver must follow these steps when its <i>DxgkDdiSystemDis
 
 If the driver cannot maintain the current display mode, or if the target is not part of the active topology, the driver should attempt to set a frame buffer on another target that is capable of a display resolution of at least 640 x 480 pixels in a format of 24 bits per pixel. If that is not possible, the driver can fail this function call, which will result in a system bugcheck and the display of a black screen.
 
-It is not required that the driver use a linear frame buffer mode. However, the driver should support write operations to this frame buffer from sources that have the  <b>D3DDDIFMT_A8R8G8B8</b> format of the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration.
+It is not required that the driver use a linear frame buffer mode. However, the driver should support write operations to this frame buffer from sources that have the  <b>D3DDDIFMT_A8R8G8B8</b> format of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration.
 
 After the driver gives the operating system control over display  functionality, the operating system can call the <a href="..\dispmprt\nc-dispmprt-dxgkddi_system_display_write.md">DxgkDdiSystemDisplayWrite</a> function to update the screen image and to write a block of images from specified sources to the screen that was reset by the <i>DxgkDdiSystemDisplayEnable</i> function.
 
@@ -122,69 +123,13 @@ Windows kernel-mode functions might not be available while this function is bein
 <i>DxgkDdiSystemDisplayEnable</i> can be called at any IRQL, so it must be in nonpageable memory. <i>DxgkDdiSystemDisplayEnable</i> must not call any code that is in pageable memory and must not manipulate any data that is in pageable memory.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level (see Remarks section)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.DxgkCbAcquirePostDisplayOwnership">DxgkCbAcquirePostDisplayOwnership</a>
+<a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
@@ -203,5 +148,5 @@ Any level (see Remarks section)
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_SYSTEM_DISPLAY_ENABLE callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_SYSTEM_DISPLAY_ENABLE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

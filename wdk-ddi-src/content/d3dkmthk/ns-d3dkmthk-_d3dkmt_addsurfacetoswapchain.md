@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_ADDSURFACETOSWAPCHAIN
+UID: NS:d3dkmthk._D3DKMT_ADDSURFACETOSWAPCHAIN
 title: _D3DKMT_ADDSURFACETOSWAPCHAIN
 author: windows-driver-content
 description: Used to add a surface to the swapchain.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-addsurfacetoswapchain.htm
 old-project: display
 ms.assetid: f1a2390c-0154-4bd7-954f-ca8725710d61
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_ADDSURFACETOSWAPCHAIN, D3DKMT_ADDSURFACETOSWAPCHAIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_ADDSURFACETOSWAPCHAIN
 ---
 
 # _D3DKMT_ADDSURFACETOSWAPCHAIN structure
@@ -77,19 +78,3 @@ Index of were the texture was placed on the surface table.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

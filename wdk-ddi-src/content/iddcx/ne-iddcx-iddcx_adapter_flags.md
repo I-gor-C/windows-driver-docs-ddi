@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_ADAPTER_FLAGS
+UID: NE:iddcx.IDDCX_ADAPTER_FLAGS
 title: IDDCX_ADAPTER_FLAGS
 author: windows-driver-content
 description: Specifies boolean flags for an indirect display adapter.
@@ -7,7 +7,7 @@ old-location: display\iddcx_adapter_flags.htm
 old-project: display
 ms.assetid: 832ca4fe-1040-4f07-8c84-f576e5ce6423
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_ADAPTER_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: 
 ---
 
 # IDDCX_ADAPTER_FLAGS enumeration
@@ -80,20 +81,4 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
 
 
 ## -remarks
-Indirect display automatically supports OS virtual modes.  Mode changes can be performed seamlessly by the OS using DWM scaling on a per frame basis without any display mode change. The disadvantage of this is that when a smaller desktop mode is used by the user, the desktop image provided to the driver will be bigger than the desktop size. 		This wastes encode and transmit bandwidth. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Indirect display automatically supports OS virtual modes.  Mode changes can be performed seamlessly by the OS using DWM scaling on a per frame basis without any display mode change. The disadvantage of this is that when a smaller desktop mode is used by the user, the desktop image provided to the driver will be bigger than the desktop size. 		This wastes encode and transmit bandwidth. </p>

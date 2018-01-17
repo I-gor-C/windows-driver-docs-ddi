@@ -1,17 +1,17 @@
 ---
-UID: NC.vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_PROCESS_PACKET
-title: EVT_VMB_CHANNEL_PROCESS_PACKET
+UID: NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_PROCESS_PACKET
+title: EVT_VMB_CHANNEL_PROCESS_PACKET function
 author: windows-driver-content
 description: The EvtVmbChannelProcessPacket callback function is invoked when a packet arrives in the incoming ring buffer.
 old-location: netvista\evt_vmb_channel_process_packet.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 46020122-0B0E-4C05-8B13-68100B227E93
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _VIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES, PVIDEO_PORT_AGP_SERVICES
+ms.date: 1/11/2018
+ms.keywords: EVT_VMB_CHANNEL_PROCESS_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: vmbuskernelmodeclientlibapi.h
 req.include-header: VmbusKernelModeClientLibApi.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
-# EVT_VMB_CHANNEL_PROCESS_PACKET callback
+# EVT_VMB_CHANNEL_PROCESS_PACKET function
 
 
 
@@ -46,7 +47,7 @@ The <i>EvtVmbChannelProcessPacket</i> callback function is invoked when a packet
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_VMB_CHANNEL_PROCESS_PACKET EvtVmbChannelProcessPacket;
@@ -106,7 +107,7 @@ Flags. Possible values include the following:
 <td width="60%">
 The packet references
 external data. This data can be retrieved by using
-the <a href="netvista.vmbchannelpacketgetexternaldata">VmbChannelPacketGetExternalData</a> function.
+the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpacketgetexternaldata.md">VmbChannelPacketGetExternalData</a> function.
 
 </td>
 </tr>
@@ -119,55 +120,30 @@ This callback function does not return a value.
 
 
 ## -remarks
-The client driver registers its implementation of this callback function by using the <a href="netvista.vmbchannelinitsetprocesspacketcallbacks">VmbChannelInitSetProcessPacketCallbacks</a> function. 
+The client driver registers its implementation of this callback function by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelinitsetprocesspacketcallbacks.md">VmbChannelInitSetProcessPacketCallbacks</a> function. 
 
 Every time you invoke this function, you must eventually call
-the <a href="netvista.vmbchannelpacketcomplete">VmbChannelPacketComplete</a> function.
+the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpacketcomplete.md">VmbChannelPacketComplete</a> function.
 
 This callback function can be invoked at DISPATCH_LEVEL or lower, unless the channel
 has been configured to defer packet processing to a worker thread.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>VmbusKernelModeClientLibApi.h (include VmbusKernelModeClientLibApi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.vmbchannelinitsetprocesspacketcallbacks">VmbChannelInitSetProcessPacketCallbacks</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelinitsetprocesspacketcallbacks.md">VmbChannelInitSetProcessPacketCallbacks</a>
 </dt>
 <dt>
-<a href="netvista.vmbchannelpacketcomplete">VmbChannelPacketComplete</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpacketcomplete.md">VmbChannelPacketComplete</a>
 </dt>
 <dt>
-<a href="netvista.vmbchannelpacketgetexternaldata">VmbChannelPacketGetExternalData</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpacketgetexternaldata.md">VmbChannelPacketGetExternalData</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20EVT_VMB_CHANNEL_PROCESS_PACKET callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_PROCESS_PACKET callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

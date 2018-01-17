@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3D12DDICB_RECLAIMALLOCATIONS2
+UID: NS:d3dumddi._D3D12DDICB_RECLAIMALLOCATIONS2
 title: _D3D12DDICB_RECLAIMALLOCATIONS2
 author: windows-driver-content
 description: Describes video memory resources that are to be reclaimed and that the driver previously offered for reuse.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddicb_reclaimallocations2.htm
 old-project: display
 ms.assetid: B5ADCD5D-301C-4B02-A4B2-90A81A5FBBC9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D12DDICB_RECLAIMALLOCATIONS2, D3D12DDICB_RECLAIMALLOCATIONS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDICB_RECLAIMALLOCATIONS2
 ---
 
 # _D3D12DDICB_RECLAIMALLOCATIONS2 structure
@@ -84,39 +85,3 @@ typedef struct _D3D12DDICB_RECLAIMALLOCATIONS2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

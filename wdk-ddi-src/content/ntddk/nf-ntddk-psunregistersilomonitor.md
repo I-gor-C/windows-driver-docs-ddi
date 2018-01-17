@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsUnregisterSiloMonitor
+UID: NF:ntddk.PsUnregisterSiloMonitor
 title: PsUnregisterSiloMonitor function
 author: windows-driver-content
 description: This routine unregisters a server silo monitor.
@@ -7,7 +7,7 @@ old-location: kernel\psunregistersilomonitor.htm
 old-project: kernel
 ms.assetid: B1B85AD5-F626-4177-8218-428B617A97F6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsUnregisterSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsUnregisterSiloMonitor function
@@ -65,40 +66,4 @@ This routine does not return a value.
 ## -remarks
 The monitor will not receive further notifications after this routine completes.
     
-If the monitor allocated a silo context slot, this routine will not complete until all silo contexts have been removed from slot.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+If the monitor allocated a silo context slot, this routine will not complete until all silo contexts have been removed from slot.</p>

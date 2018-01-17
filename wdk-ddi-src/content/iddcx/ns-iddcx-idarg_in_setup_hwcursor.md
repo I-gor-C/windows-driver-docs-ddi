@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_IN_SETUP_HWCURSOR
+UID: NS:iddcx.IDARG_IN_SETUP_HWCURSOR
 title: IDARG_IN_SETUP_HWCURSOR
 author: windows-driver-content
 description: Gives information about new cursors associated with a monitor.
@@ -7,7 +7,7 @@ old-location: display\idarg_in_setup_hwcursor.htm
 old-project: display
 ms.assetid: 1e2c959c-0ebd-4464-ad47-96f432cb5c6b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_IN_SETUP_HWCURSOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_IN_SETUP_HWCURSOR structure
@@ -70,19 +71,3 @@ typedef struct IDARG_IN_SETUP_HWCURSOR {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

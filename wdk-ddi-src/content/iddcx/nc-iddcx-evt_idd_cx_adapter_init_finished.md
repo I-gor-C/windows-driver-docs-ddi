@@ -1,17 +1,17 @@
 ---
-UID: NC.iddcx.EVT_IDD_CX_ADAPTER_INIT_FINISHED
-title: EVT_IDD_CX_ADAPTER_INIT_FINISHED
+UID: NC:iddcx.EVT_IDD_CX_ADAPTER_INIT_FINISHED
+title: EVT_IDD_CX_ADAPTER_INIT_FINISHED function
 author: windows-driver-content
 description: EVT_IDD_CX_ADAPTER_INIT_FINISHED is called by the OS to inform the driver that the adapter initialization has completed.
 old-location: display\evt_idd_cx_adapter_init_finished.htm
 old-project: display
 ms.assetid: cbce9e1b-2f84-4653-8d3d-e5243a1f0eee
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WcsTranslateColors
+ms.date: 12/29/2017
+ms.keywords: EVT_IDD_CX_ADAPTER_INIT_FINISHED
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
 ---
 
-# EVT_IDD_CX_ADAPTER_INIT_FINISHED callback
+# EVT_IDD_CX_ADAPTER_INIT_FINISHED function
 
 
 
@@ -42,7 +43,7 @@ req.irql: _requires_same_
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_IDD_CX_ADAPTER_INIT_FINISHED EvtIddCxAdapterInitFinished;
@@ -80,49 +81,3 @@ typedef EVT_IDD_CX_ADAPTER_INIT_FINISHED PFN_IDD_CX_ADAPTER_INIT_FINISHED;
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_requires_same_
-
-</td>
-</tr>
-</table>

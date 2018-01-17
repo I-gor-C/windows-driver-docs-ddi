@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILRFSTATE
+UID: NS:ntddrilapitypes.RILRFSTATE
 title: RILRFSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrfstate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7eb78864-d20c-4993-8b33-63096bf971fa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRFSTATE, LPRILRFSTATE, RILRFSTATE, *LPRILRFSTATE
+ms.date: 1/11/2018
+ms.keywords: RILRFSTATE, *LPRILRFSTATE, RILRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILRFSTATE, RILRFSTATE
 ---
 
 # RILRFSTATE structure
@@ -73,19 +74,3 @@ typedef struct _RILRFSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

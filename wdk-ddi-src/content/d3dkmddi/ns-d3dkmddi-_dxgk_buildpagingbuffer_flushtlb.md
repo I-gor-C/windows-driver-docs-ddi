@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_BUILDPAGINGBUFFER_FLUSHTLB
+UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_FLUSHTLB
 title: _DXGK_BUILDPAGINGBUFFER_FLUSHTLB
 author: windows-driver-content
 description: DXGK_BUILDPAGINGBUFFER_FLUSHTLB is used as part of a flush translation look-aside buffer (TLB) operation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_buildpagingbuffer_flushtlb.htm
 old-project: display
 ms.assetid: 9FDE47A4-1784-41EB-9F60-76368D6DFEED
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_BUILDPAGINGBUFFER_FLUSHTLB, DXGK_BUILDPAGINGBUFFER_FLUSHTLB
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_BUILDPAGINGBUFFER_FLUSHTLB
 ---
 
 # _DXGK_BUILDPAGINGBUFFER_FLUSHTLB structure
@@ -77,39 +78,3 @@ The end of the affected GPU virtual address range. When both <b>StartVirtualAddr
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

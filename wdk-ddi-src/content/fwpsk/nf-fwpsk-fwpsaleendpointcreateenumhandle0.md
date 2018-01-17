@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsAleEndpointCreateEnumHandle0
+UID: NF:fwpsk.FwpsAleEndpointCreateEnumHandle0
 title: FwpsAleEndpointCreateEnumHandle0 function
 author: windows-driver-content
 description: The FwpsAleEndpointCreateEnumHandle0 function creates a handle that can be used with other application layer enforcement (ALE) endpoint functions to enumerate endpoint data.Note  FwpsAleEndpointCreateEnumHandle0 is a specific version of FwpsAleEndpointCreateEnumHandle. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwpsaleendpointcreateenumhandle0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5daa3dd4-e499-4a72-b784-8a0e1ef3e92b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FwpsAleEndpointCreateEnumHandle0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsAleEndpointCreateEnumHandle0 function
@@ -61,13 +62,13 @@ NTSTATUS NTAPI FwpsAleEndpointCreateEnumHandle0(
 
 Handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
-     <a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a>.
+     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.
 
 
 ### -param enumTemplate [in, optional]
 
 A pointer to an 
-     <a href="netvista.fwps_ale_endpoint_enum_template0">
+     <a href="https://msdn.microsoft.com/7875bf42-4510-4af1-8f24-4b9f1d945100">
      FWPS_ALE_ENDPOINT_ENUM_TEMPLATE0</a> structure that contains parameters to narrow the endpoint
      enumeration results.
 
@@ -94,80 +95,23 @@ The
 After using the handle acquired by calling 
     <b>FwpsAleEndpointCreateEnumHandle0</b>, the callout driver must release the system resources associated
     with the handle by calling 
-    <a href="netvista.fwpsaleendpointdestroyenumhandle0">
+    <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointdestroyenumhandle0.md">
     FwpsAleEndpointDestroyEnumHandle0</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpkclnt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpsaleendpointdestroyenumhandle0">
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointdestroyenumhandle0.md">
    FwpsAleEndpointDestroyEnumHandle0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsaleendpointenum0">FwpsAleEndpointEnum0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsAleEndpointCreateEnumHandle0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointCreateEnumHandle0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

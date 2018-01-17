@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.GetKdContext
+UID: NF:wdbgexts.GetKdContext
 title: GetKdContext macro
 author: windows-driver-content
 description: The GetKdContext function returns the total number of processors and the number of the current processor in the structure ppi points to.
 old-location: debugger\getkdcontext.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: cf795629-cf62-45fa-ad5e-e2eef576bcfd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: GetKdContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -64,30 +65,3 @@ Points to the following structure:
 } PROCESSORINFO, *PPROCESSORINFO;</code></pre>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

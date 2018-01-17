@@ -1,5 +1,5 @@
 ---
-UID: NS.IRB._IDE_CHANNEL_CONFIGURATION
+UID: NS:irb._IDE_CHANNEL_CONFIGURATION
 title: _IDE_CHANNEL_CONFIGURATION
 author: windows-driver-content
 description: The IDE_CHANNEL_CONFIGURATION structure contains configuration information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,8 +7,8 @@ old-location: storage\ide_channel_configuration.htm
 old-project: storage
 ms.assetid: 1ca9a198-ac6b-4837-9503-68eb7ca36527
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IDE_CHANNEL_CONFIGURATION, PIDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION, *PIDE_CHANNEL_CONFIGURATION
+ms.date: 1/10/2018
+ms.keywords: _IDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION, *PIDE_CHANNEL_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IDE_CHANNEL_CONFIGURATION, *PIDE_CHANNEL_CONFIGURATION
 ---
 
 # _IDE_CHANNEL_CONFIGURATION structure
@@ -151,19 +152,3 @@ Indicates support for WMI. The miniport driver must set this member to <b>TRUE</
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

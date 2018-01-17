@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_INCOMING_DROP_PARTY
-title: PROTOCOL_CL_INCOMING_DROP_PARTY
+UID: NC:ndis.PROTOCOL_CL_INCOMING_DROP_PARTY
+title: PROTOCOL_CL_INCOMING_DROP_PARTY function
 author: windows-driver-content
 description: The ProtocolClIncomingDropParty function is used by connection-oriented NDIS clients that set up multipoint connections.
 old-location: netvista\protocolclincomingdropparty.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3815ca4b-f4bc-4de9-a28a-5d3ee20bcdd8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_INCOMING_DROP_PARTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_INCOMING_DROP_PARTY callback
+# PROTOCOL_CL_INCOMING_DROP_PARTY function
 
 
 
@@ -46,7 +47,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_INCOMING_DROP_PARTY ProtocolClIncomingDropParty;
@@ -75,8 +76,8 @@ Indicates the reason for the party to be dropped. Usually, this is NDIS_STATUS_S
 
 Specifies the handle to the client's per-party context area for the party to be dropped. The
      client originally supplied this handle to NDIS when it called 
-     <a href="netvista.ndiscladdparty">NdisClAddParty</a> or 
-     <a href="netvista.ndisclmakecall">NdisClMakeCall</a>.
+     <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a> or 
+     <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.
 
 
 ### -param CloseData [in]
@@ -119,14 +120,14 @@ In either case,
     <i>ProtocolClIncomingDropParty</i> should carry out any protocol-determined operations for dropping the
     party from the client's multipoint VC. 
     <i>ProtocolClIncomingDropParty</i> must call 
-    <a href="netvista.ndiscldropparty">NdisClDropParty</a> or, if this is the last
+    <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a> or, if this is the last
     remaining party on the client's multipoint VC, 
-    <a href="netvista.ndisclclosecall">NdisClCloseCall</a>.
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.
 
 <i>ProtocolClIncomingDropParty</i> should consider the 
     <i>NdisPartyHandle</i> that the client obtained from 
-    <a href="netvista.ndiscladdparty">NdisClAddParty</a> or 
-    <a href="netvista.ndisclmakecall">NdisClMakeCall</a> invalid. 
+    <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a> or 
+    <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a> invalid. 
     <i>ProtocolClIncomingDropParty</i> can either release the client's per-party context area or prepare it
     for reuse in a subsequent call to 
     <b>NdisClAddParty</b>.
@@ -142,72 +143,33 @@ The <b>PROTOCOL_CL_INCOMING_DROP_PARTY</b> function type is defined in the Ndis.
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/bc4179ae-a25f-4ec3-bde6-c5fe63f6e482">
-   ProtocolClIncomingDropParty (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>
-   ProtocolClIncomingDropParty (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndiscladdparty">NdisClAddParty</a>
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscldropparty">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingdropparty">
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingdropparty.md">
    NdisCmDispatchIncomingDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreememory">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreetonpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
    NdisFreeToNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingdropparty">
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingdropparty.md">
    NdisMCmDispatchIncomingDropParty</a>
 </dt>
 </dl>
@@ -215,5 +177,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_INCOMING_DROP_PARTY callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_INCOMING_DROP_PARTY callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

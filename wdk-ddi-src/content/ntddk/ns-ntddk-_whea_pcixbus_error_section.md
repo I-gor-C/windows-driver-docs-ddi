@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PCIXBUS_ERROR_SECTION
+UID: NS:ntddk._WHEA_PCIXBUS_ERROR_SECTION
 title: _WHEA_PCIXBUS_ERROR_SECTION
 author: windows-driver-content
 description: The WHEA_PCIXBUS_ERROR_SECTION structure describes PCI or PCI-X bus error data.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: f79071e3-7146-49c4-a730-ee13fde4f0d4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION, PWHEA_PCIXBUS_ERROR_SECTION
+ms.keywords: _WHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR, *PWHEA_PCIXBUS_ERROR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION
 ---
 
 # _WHEA_PCIXBUS_ERROR_SECTION structure
@@ -65,12 +66,12 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 
 ### -field ValidBits
 
-A <a href="whea.whea_pcixbus_error_section_validbits">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
+A <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section_validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
 
 
 ### -field ErrorStatus
 
-A <a href="whea.whea_error_status">WHEA_ERROR_STATUS</a> structure that contains PCI or PCI-X bus error status data.
+A <a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a> structure that contains PCI or PCI-X bus error status data.
 
 This member contains valid data only if the <b>ValidBits.ErrorStatus</b> bit is set.
 
@@ -257,34 +258,8 @@ This member contains valid data only if the <b>ValidBits.TargetId</b> bit is set
 
 
 ## -remarks
-The WHEA_PCIXBUS_ERROR_SECTION structure describes the error data that is contained in a PCI/PCI-X bus error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCI/PCI-X bus error section only if the <b>SectionType </b>member of one of the <a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIXBUS_ERROR_SECTION_GUID.
+The WHEA_PCIXBUS_ERROR_SECTION structure describes the error data that is contained in a PCI/PCI-X bus error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCI/PCI-X bus error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIXBUS_ERROR_SECTION_GUID.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -292,13 +267,13 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_error_status">WHEA_ERROR_STATUS</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a>
 </dt>
 <dt>
-<a href="whea.whea_pcixbus_error_section_validbits">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section_validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a>
 </dt>
 </dl>
  

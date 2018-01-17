@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILGETOPERATORLISTPARAMS
+UID: NS:ntddrilapitypes.RILGETOPERATORLISTPARAMS
 title: RILGETOPERATORLISTPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetoperatorlistparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 75c8b3b3-4f33-465a-a35c-9d3056a2eb75
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGETOPERATORLISTPARAMS, LPRILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS
 ---
 
 # RILGETOPERATORLISTPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILGETOPERATORLISTPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

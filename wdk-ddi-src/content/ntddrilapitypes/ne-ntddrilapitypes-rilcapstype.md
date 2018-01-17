@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCAPSTYPE
+UID: NE:ntddrilapitypes.RILCAPSTYPE
 title: RILCAPSTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcapstype.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 78f372fc-75b2-47e8-ac3f-818b384c6d97
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCAPSTYPE, RILCAPSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCAPSTYPE
 ---
 
 # RILCAPSTYPE enumeration
@@ -97,19 +98,3 @@ typedef enum _RILCAPSTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

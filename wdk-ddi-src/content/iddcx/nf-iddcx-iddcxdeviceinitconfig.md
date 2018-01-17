@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IddCxDeviceInitConfig
+UID: NF:iddcx.IddCxDeviceInitConfig
 title: IddCxDeviceInitConfig function
 author: windows-driver-content
 description: Creates a WDFDEVICE initialization structure to allow indirect displays to be used.
@@ -7,7 +7,7 @@ old-location: display\iddcxdeviceinitconfig.htm
 old-project: display
 ms.assetid: 4789e848-bb95-43e1-9768-8f94a475f9c8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IddCxDeviceInitConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _Must_inspect_result_
+req.typenames: 
 ---
 
 # IddCxDeviceInitConfig function
@@ -73,49 +74,3 @@ The information required about the configuration of the client.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_Must_inspect_result_
-
-</td>
-</tr>
-</table>

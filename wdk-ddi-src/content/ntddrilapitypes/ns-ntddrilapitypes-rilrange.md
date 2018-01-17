@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILRANGE
+UID: NS:ntddrilapitypes.RILRANGE
 title: RILRANGE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrange.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2f704899-eb5e-4632-a76d-eb474f3273f9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRANGE, LPRILRANGE, *LPRILRANGE, RILRANGE
+ms.date: 1/11/2018
+ms.keywords: RILRANGE, *LPRILRANGE, RILRANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILRANGE, RILRANGE
 ---
 
 # RILRANGE structure
@@ -61,19 +62,3 @@ typedef struct _RILRANGE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,17 +1,17 @@
 ---
-UID: NC.iddcx.EVT_IDD_CX_MONITOR_I2C_RECEIVE
-title: EVT_IDD_CX_MONITOR_I2C_RECEIVE
+UID: NC:iddcx.EVT_IDD_CX_MONITOR_I2C_RECEIVE
+title: EVT_IDD_CX_MONITOR_I2C_RECEIVE function
 author: windows-driver-content
 description: EVT_IDD_CX_MONITOR_I2C_RECEIVE is called by the OS to return data received from an I2C device in a monitor.
 old-location: display\evt_idd_cx_monitor_i2c_receive.htm
 old-project: display
 ms.assetid: f4d55fb9-57da-4f75-a0ab-89cc9516ac49
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WcsTranslateColors
+ms.date: 12/29/2017
+ms.keywords: EVT_IDD_CX_MONITOR_I2C_RECEIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
 ---
 
-# EVT_IDD_CX_MONITOR_I2C_RECEIVE callback
+# EVT_IDD_CX_MONITOR_I2C_RECEIVE function
 
 
 
@@ -42,7 +43,7 @@ req.irql: _requires_same_
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_IDD_CX_MONITOR_I2C_RECEIVE EvtIddCxMonitorI2cReceive;
@@ -98,50 +99,4 @@ The <b>EVT_IDD_CX_MONITOR_I2C_RECEIVE</b> function is responsible for signaling 
 If the display adapter supports HDCP, <b>EVT_IDD_CX_MONITOR_I2C_RECIEVE</b> must refuse to receive data from an I2C device if the
  device has an I2C address that is used by HDCP.
  This function  can receive data from an I2C device in a monitor that is connected to the display adapter, but must never receive data from an I2C
- device that is on the display adapter itself.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_requires_same_
-
-</td>
-</tr>
-</table>
+ device that is on the display adapter itself.</p>

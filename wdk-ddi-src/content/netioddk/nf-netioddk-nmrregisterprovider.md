@@ -1,13 +1,13 @@
 ---
-UID: NF.netioddk.NmrRegisterProvider
+UID: NF:netioddk.NmrRegisterProvider
 title: NmrRegisterProvider function
 author: windows-driver-content
 description: The NmrRegisterProvider function registers a provider module with the NMR.
 old-location: netvista\nmrregisterprovider.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: aac9382c-5177-4216-bf3d-7970b18662eb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NmrRegisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Netio.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 # NmrRegisterProvider function
@@ -59,7 +60,7 @@ NTSTATUS NmrRegisterProvider(
 ### -param ProviderCharacteristics [in]
 
 A pointer to an 
-     <a href="netvista.npi_provider_characteristics">
+     <a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">
      NPI_PROVIDER_CHARACTERISTICS</a> structure that describes the characteristics of the provider module.
      The provider module must make sure that this structure remains valid and resident in memory as long as
      the provider module is registered with the NMR.
@@ -80,7 +81,7 @@ A pointer to a caller-supplied context for the registration. The provider module
 
 A pointer to a variable that receives a handle used by the NMR to represent the registration of
      the provider module. The provider module must save this handle and pass it as a parameter to the 
-     <a href="netvista.nmrderegisterprovider">NmrDeregisterProvider</a> function when
+     <a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a> function when
      it deregisters from the NMR.
 
 
@@ -117,79 +118,21 @@ A provider module typically calls the
     has registered as a provider.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netioddk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netio.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.nmrderegisterprovider">NmrDeregisterProvider</a>
+<a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="netvista.npi_provider_characteristics">NPI_PROVIDER_CHARACTERISTICS</a>
+<a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NmrRegisterProvider function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrRegisterProvider function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_SETTARGETGAMMA
-title: DXGKDDI_SETTARGETGAMMA
+UID: NC:d3dkmddi.DXGKDDI_SETTARGETGAMMA
+title: DXGKDDI_SETTARGETGAMMA function
 author: windows-driver-content
 description: Allows the gamma LUT to be set on a path which is identified by the target id.Note  This is functionally equivalent to the DxgkDdi_UpdateActiveVidPnPresentPath in previous WDDM versions if only the D3DKMDT_GAMMA_RAMP field is changed. .
 old-location: display\dxgkddi_settargetgamma.htm
 old-project: display
 ms.assetid: 658EA0AA-80FC-4A45-B2EF-DFE928917E7B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_SETTARGETGAMMA
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_SETTARGETGAMMA callback
+# DXGKDDI_SETTARGETGAMMA function
 
 
 
@@ -44,7 +45,7 @@ Allows the gamma LUT to be set on a path which is identified by the target id.<d
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS NTSTATUS DXGKDDI_SETTARGETGAMMA(
@@ -63,7 +64,7 @@ A handle that identifies the adapter.
 
 ### -param pSetTargetGammaArg [in]
 
-A pointer to a <a href="display.dxgkarg_settargetgamma">DXGKARG_SETTARGETGAMMA</a> structure that provides the target id to be modified and provides the gamma ramp to be set.
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_settargetgamma.md">DXGKARG_SETTARGETGAMMA</a> structure that provides the target id to be modified and provides the gamma ramp to be set.
 
 
 ## -returns
@@ -71,20 +72,4 @@ If this routine succeeds, it returns STATUS_SUCCESS.
 
 
 ## -remarks
-This function is always called at PASSIVE level so the supporting code should be made pageable.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This function is always called at PASSIVE level so the supporting code should be made pageable.</p>

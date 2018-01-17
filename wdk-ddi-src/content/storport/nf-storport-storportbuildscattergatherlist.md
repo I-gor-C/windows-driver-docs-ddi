@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortBuildScatterGatherList
+UID: NF:storport.StorPortBuildScatterGatherList
 title: StorPortBuildScatterGatherList function
 author: windows-driver-content
 description: The StorPortBuildScatterGatherList routine creates a scatter/gather list for the specified data buffer.
@@ -7,7 +7,7 @@ old-location: storage\storportbuildscattergatherlist.htm
 old-project: storage
 ms.assetid: cdea67aa-14fa-45c1-8af0-8db48042b1b2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortBuildScatterGatherList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -119,7 +120,7 @@ Miniport drivers should ignore this parameter.
 
 ### -param ScatterGather
 
-A pointer to a <a href="storage.stor_scatter_gather_list">STOR_SCATTER_GATHER_LIST</a> structure that contains the scatter/gather list for the specified data buffer.
+A pointer to a <a href="..\storport\ns-storport-_stor_scatter_gather_list.md">STOR_SCATTER_GATHER_LIST</a> structure that contains the scatter/gather list for the specified data buffer.
 
 
 ### -param Context
@@ -143,7 +144,7 @@ A value that indicates the direction of the DMA transfer. A value of <b>TRUE</b>
 
 ### -param ScatterGatherBuffer [in, out]
 
-A pointer to a miniport-supplied buffer that receives the scatter/gather list. A miniport driver can allocate memory for this buffer by calling the <a href="storage.storportallocatepool">StorPortAllocatePool</a> routine.
+A pointer to a miniport-supplied buffer that receives the scatter/gather list. A miniport driver can allocate memory for this buffer by calling the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine.
 
 
 ### -param ScatterGatherBufferLength [in]
@@ -176,62 +177,26 @@ The size, in bytes, of the buffer pointed to by the <i>ScatterGatherBuffer</i> p
 
 
 ## -remarks
-The miniport driver calls <a href="storage.storportputscattergatherlist">StorPortPutScatterGatherList</a> to release the resources that <b>StorPortBuildScatterGatherList</b> allocated while constructing the scatter/gather list. 
+The miniport driver calls <a href="..\storport\nf-storport-storportputscattergatherlist.md">StorPortPutScatterGatherList</a> to release the resources that <b>StorPortBuildScatterGatherList</b> allocated while constructing the scatter/gather list. 
 
-The miniport driver must call <a href="storage.storportputscattergatherlist">StorPortPutScatterGatherList</a> before freeing or reusing the memory it allocated for the scatter/gather list.
+The miniport driver must call <a href="..\storport\nf-storport-storportputscattergatherlist.md">StorPortPutScatterGatherList</a> before freeing or reusing the memory it allocated for the scatter/gather list.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storportallocatepool">StorPortAllocatePool</a>
+<a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>
 </dt>
 <dt>
-<a href="storage.storportputscattergatherlist">StorPortPutScatterGatherList</a>
+<a href="..\storport\nf-storport-storportputscattergatherlist.md">StorPortPutScatterGatherList</a>
 </dt>
 <dt>
-<a href="storage.stor_scatter_gather_list">STOR_SCATTER_GATHER_LIST</a>
+<a href="..\storport\ns-storport-_stor_scatter_gather_list.md">STOR_SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortBuildScatterGatherList routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortBuildScatterGatherList routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_OPEN_PARAMETERS
+UID: NS:ndis._NDIS_OPEN_PARAMETERS
 title: _NDIS_OPEN_PARAMETERS
 author: windows-driver-content
 description: The NDIS_OPEN_PARAMETERS structure defines the open parameters when a protocol driver calls the NdisOpenAdapterEx function.
 old-location: netvista\ndis_open_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bb61026c-311b-41d1-9fcb-3ac44df2025e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_OPEN_PARAMETERS, NDIS_OPEN_PARAMETERS, *PNDIS_OPEN_PARAMETERS, PNDIS_OPEN_PARAMETERS
+ms.date: 1/11/2018
+ms.keywords: _NDIS_OPEN_PARAMETERS, *PNDIS_OPEN_PARAMETERS, NDIS_OPEN_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_OPEN_PARAMETERS, NDIS_OPEN_PARAMETERS
 ---
 
 # _NDIS_OPEN_PARAMETERS structure
@@ -39,7 +40,7 @@ req.irql: See Remarks section
 
 ## -description
 The NDIS_OPEN_PARAMETERS structure defines the open parameters when a protocol driver calls the 
-  <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+  <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 
@@ -63,7 +64,7 @@ typedef struct _NDIS_OPEN_PARAMETERS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_OPEN_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_OPEN_PARAMETERS, the 
@@ -84,7 +85,7 @@ A Unicode string that contains the name of the miniport adapter that NDIS passed
 
 A pointer to an array of 
      <b>NdisMedium<i>Xxx</i></b> values that lists the types of media the caller can support. This list is a subset of the 
-     <a href="netvista.ndis_medium">NDIS_MEDIUM</a> types.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a> types.
 
 
 ### -field MediumArraySize
@@ -134,45 +135,20 @@ The number of elements in the
 
 ## -remarks
 A protocol driver passes an NDIS_OPEN_PARAMETERS structure when it calls the 
-    <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function to open a
+    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function to open a
     miniport adapter.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_medium">NDIS_MEDIUM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
@@ -182,5 +158,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_OPEN_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPEN_PARAMETERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

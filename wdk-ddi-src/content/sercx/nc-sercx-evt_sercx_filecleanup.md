@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX_FILECLEANUP
-title: EVT_SERCX_FILECLEANUP
+UID: NC:sercx.EVT_SERCX_FILECLEANUP
+title: EVT_SERCX_FILECLEANUP function
 author: windows-driver-content
 description: The EvtSerCxFileCleanup event callback function notifies the serial controller driver that a client has closed the last handle to the file object that represents the serial controller device.
 old-location: serports\evtsercxfilecleanup.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: D9E19BD1-2C44-4F86-9AEB-F50443FAE8DC
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX_FILECLEANUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX_FILECLEANUP callback
+# EVT_SERCX_FILECLEANUP function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCxFileCleanup</i> event callback function notifies the serial contr
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX_FILECLEANUP EvtSerCxFileCleanup;
@@ -79,9 +80,9 @@ SerCx calls a driver's <i>EvtSerCxFileClose</i> function after it calls the driv
 
 The <i>EvtSerCxFileCleanup</i> function is optional. If a serial controller driver does not implement this function, the driver's <i>EvtSerCxFileClose</i> function must handle all clean-up tasks that are required after the last file handle is closed.
 
-To register an <i>EvtSerCxFileCleanup</i> callback function, the driver must call the <a href="serports.sercxinitialize">SerCxInitialize</a> method.
+To register an <i>EvtSerCxFileCleanup</i> callback function, the driver must call the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method.
 
-For more information, see <a href="kmdf.framework_file_objects">Framework File Objects</a>.
+For more information, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
 
 The function type for this callback is declared in Sercx.h, as follows.
 
@@ -92,59 +93,13 @@ Then, implement your callback function as follows.
 For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\sercx\nc-sercx-evt_sercx_fileclose.md">EvtSerCxFileClose</a>
 </dt>
 <dt>
-<a href="serports.sercxinitialize">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 </dl>
  

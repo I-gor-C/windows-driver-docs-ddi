@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILCARDAPPADDEDPARAMMASK
+UID: NE:rilapitypes.RILCARDAPPADDEDPARAMMASK
 title: RILCARDAPPADDEDPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcardappaddedparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 47726715-306c-4167-8080-65085d1e7f8f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCARDAPPADDEDPARAMMASK, RILCARDAPPADDEDPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCARDAPPADDEDPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef enum _RILCARDAPPADDEDPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

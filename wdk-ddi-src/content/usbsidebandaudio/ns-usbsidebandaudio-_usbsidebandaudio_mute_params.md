@@ -1,5 +1,5 @@
 ---
-UID: NS.USBSIDEBANDAUDIO._USBSIDEBANDAUDIO_MUTE_PARAMS
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_MUTE_PARAMS
 title: _USBSIDEBANDAUDIO_MUTE_PARAMS
 author: windows-driver-content
 description: TBD.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 11FA1378-335A-402A-867C-F509D61153CA
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSIDEBANDAUDIO_MUTE_PARAMS, PUSBSIDEBANDAUDIO_MUTE_PARAMS, *PUSBSIDEBANDAUDIO_MUTE_PARAMS, USBSIDEBANDAUDIO_MUTE_PARAMS
+ms.keywords: _USBSIDEBANDAUDIO_MUTE_PARAMS, USBSIDEBANDAUDIO_MUTE_PARAMS, *PUSBSIDEBANDAUDIO_MUTE_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USBSIDEBANDAUDIO_MUTE_PARAMS, *PUSBSIDEBANDAUDIO_MUTE_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ TBD
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbsidebandaudio.h (include Usbsidebandaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

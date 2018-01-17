@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._IPSEC_OFFLOAD_V2_ADD_SA_EX
+UID: NS:ndis._IPSEC_OFFLOAD_V2_ADD_SA_EX
 title: _IPSEC_OFFLOAD_V2_ADD_SA_EX
 author: windows-driver-content
 description: The IPSEC_OFFLOAD_V2_ADD_SA_EX structure defines information about a security association (SA) that a miniport driver should add to a NIC.
 old-location: netvista\ipsec_offload_v2_add_sa_ex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ecb2ae2e-d57d-4192-965b-2ac9b16debf3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IPSEC_OFFLOAD_V2_ADD_SA_EX, IPSEC_OFFLOAD_V2_ADD_SA_EX, *PIPSEC_OFFLOAD_V2_ADD_SA_EX
+ms.date: 1/11/2018
+ms.keywords: _IPSEC_OFFLOAD_V2_ADD_SA_EX, *PIPSEC_OFFLOAD_V2_ADD_SA_EX, IPSEC_OFFLOAD_V2_ADD_SA_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PIPSEC_OFFLOAD_V2_ADD_SA_EX, IPSEC_OFFLOAD_V2_ADD_SA_EX
 ---
 
 # _IPSEC_OFFLOAD_V2_ADD_SA_EX structure
@@ -78,7 +79,7 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA_EX {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      IPSEC_OFFLOAD_V2_ADD_SA_EX structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -226,9 +227,9 @@ The handle to the newly created SA. The miniport driver supplies this handle bef
      
      <a href="https://msdn.microsoft.com/library/windows/hardware/hh451937">OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX</a> request. The TCP/IP transport must specify this handle in the
      
-     <a href="netvista.ndis_ipsec_offload_v2_net_buffer_list_info">
+     <a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">
      NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a> or 
-     <a href="netvista.ndis_ipsec_offload_v2_tunnel_net_buffer_list_info">
+     <a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_tunnel_net_buffer_list_info.md">
      NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</a> structure before passing a send packet to the
      miniport driver. The TCP/IP transport must also specify this handle when deleting the SA with an 
      <a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
@@ -278,7 +279,7 @@ The tunnel-mode portion of a packet is not UDP-encapsulated. The transport-mode 
 An array with two elements that contain the information about the IPsec operations (AH, ESP, or
      both) for the SA. The number of provided elements is specified in the 
      <b>NumExtHdrs</b> member. The information for each IPsec operations is formatted as an 
-     <a href="netvista.ipsec_offload_v2_security_association">
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
      IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, which is described below.
      
 
@@ -303,11 +304,11 @@ The offset, in bytes, from the beginning of the IPSEC_OFFLOAD_V2_ADD_SA_EX struc
      <b>SecAssoc</b>. If both an encryption algorithm and an authentication algorithm are specified by the 
      <b>EncryptionAlgorithm</b> and 
      <b>AuthenticationAlgorithm</b> members of an 
-     <a href="netvista.ipsec_offload_v2_security_association">
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
      IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, the buffer at 
      <b>KeyOffset</b> contains key information for one followed by the other. The beginning and the length of
      the key are specified by the 
-     <a href="netvista.ipsec_offload_v2_algorithm_info">
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
    IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a> structure's <b>KeyOffsetBytes</b> and 
      <b>KeyLength</b> members, respectively.
 
@@ -340,57 +341,32 @@ If a member is set to zero, that parameter is not used to filter packets for the
     sending any type of packet to any destination host.
 
 This structure is nearly identical to the previous version, 
-    <a href="netvista.ipsec_offload_v2_add_sa">IPSEC_OFFLOAD_V2_ADD_SA</a>. The <b>Next</b> and <b>KeyData</b> members have been removed. The <b>KeyOffset</b>, <b>SourceSwitchPortId</b> and <b>VlanId</b> members have been added.
+    <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>. The <b>Next</b> and <b>KeyData</b> members have been removed. The <b>KeyOffset</b>, <b>SourceSwitchPortId</b> and <b>VlanId</b> members have been added.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.30 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ipsec_offload_v2_algorithm_info">
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
    IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ipsec_offload_v2_security_association">
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
 </dt>
 <dt>
-<a href="netvista.ipsec_offload_v2_add_sa">IPSEC_OFFLOAD_V2_ADD_SA</a>
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>
 </dt>
 <dt>
-<a href="netvista.ndis_ipsec_offload_v2_net_buffer_list_info">
+<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">
    NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndis_ipsec_offload_v2_tunnel_net_buffer_list_info">
+<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_tunnel_net_buffer_list_info.md">
    NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
@@ -405,5 +381,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA_EX structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA_EX structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

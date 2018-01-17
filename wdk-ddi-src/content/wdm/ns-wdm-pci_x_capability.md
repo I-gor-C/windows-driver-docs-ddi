@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM.PCI_X_CAPABILITY
+UID: NS:wdm.PCI_X_CAPABILITY
 title: PCI_X_CAPABILITY
 author: windows-driver-content
 description: The PCI_X_CAPABILITY structure reports the contents of the command and status registers of a device that is compliant with the PCI-X Addendum to the PCI Local Bus Specification.
@@ -7,8 +7,8 @@ old-location: pci\pci_x_capability.htm
 old-project: PCI
 ms.assetid: b30ccf86-ae6d-484a-a3f2-8b38df26e995
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PCI_X_CAPABILITY, PCI_X_CAPABILITY, *PPCI_X_CAPABILITY, PPCI_X_CAPABILITY
+ms.date: 12/29/2017
+ms.keywords: PCI_X_CAPABILITY, *PPCI_X_CAPABILITY, PCI_X_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PPCI_X_CAPABILITY, PCI_X_CAPABILITY
 req.product: Windows 10 or later.
 ---
 
@@ -206,21 +207,6 @@ Reports the data in the device's status register in the form of a unsigned long 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -231,5 +217,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_X_CAPABILITY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_X_CAPABILITY structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

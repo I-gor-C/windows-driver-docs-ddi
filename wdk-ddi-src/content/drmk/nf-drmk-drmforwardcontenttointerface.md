@@ -1,5 +1,5 @@
 ---
-UID: NF.drmk.DrmForwardContentToInterface
+UID: NF:drmk.DrmForwardContentToInterface
 title: DrmForwardContentToInterface function
 author: windows-driver-content
 description: The DrmForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Drmk.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # DrmForwardContentToInterface function
@@ -82,7 +83,7 @@ Specifies the total number of methods in the COM interface that <i>pUnknown</i> 
 ## -remarks
 Before allowing protected content to flow through a data path, the system verifies that the data path is secure. To do so, the system authenticates each module in the data path beginning at the upstream end of the data path and moving downstream. As each module is authenticated, that module gives the system information about the next module in the data path so that it can also be authenticated. To be successfully authenticated, a module's binary file must be signed as DRM-compliant.
 
-If two adjacent modules in the data path communicate with each other through the downstream module's COM interface, the upstream module calls the <code>DrmForwardContentToInterface</code> function to provide the system with a pointer to the COM interface. (If the two modules communicate through the <a href="kernel.iocalldriver">IoCallDriver</a> function or the downstream module's content handlers, the upstream module calls <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a> or <a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a> instead.)
+If two adjacent modules in the data path communicate with each other through the downstream module's COM interface, the upstream module calls the <code>DrmForwardContentToInterface</code> function to provide the system with a pointer to the COM interface. (If the two modules communicate through the <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> function or the downstream module's content handlers, the upstream module calls <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a> or <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a> instead.)
 
 <code>DrmForwardContentToInterface</code> authenticates the module that implements the methods in the COM interface pointed to by <i>pUnknown</i>. (If the methods are distributed among several modules, the function authenticates all these modules.) This vendor-defined interface must be understood by both the module that calls the interface and the module that implements the interface. <code>DrmForwardContentToInterface</code> makes no assumptions regarding this interface other than that it is derived from <b>IUnknown</b>.
 
@@ -90,82 +91,35 @@ If <code>DrmForwardContentToInterface</code> succeeds in authenticating the driv
 
 Queries the <i>pUnknown</i> interface for its <a href="..\drmk\nn-drmk-idrmaudiostream.md">IDrmAudioStream</a> interface. Note that although the <code>DrmForwardContentToInterface</code> authenticates all the methods in the <i>pUnknown</i> interface, it does not call any methods in the <i>pUnknown</i> interface other than the base <b>IUnknown</b> methods.
 
-Calls <a href="audio.idrmaudiostream_setcontentid">IDrmAudioStream::SetContentId</a> to set the DRM content ID and DRM content rights on the audio stream. Before returning, <code>DrmForwardContentToInterface</code> releases the <b>IDrmAudioStream</b> interface.
+Calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff536570">IDrmAudioStream::SetContentId</a> to set the DRM content ID and DRM content rights on the audio stream. Before returning, <code>DrmForwardContentToInterface</code> releases the <b>IDrmAudioStream</b> interface.
 
 The <i>pUnknown</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
-<code>DrmForwardContentToInterface</code> performs the same function as <a href="audio.pcforwardcontenttointerface">PcForwardContentToInterface</a> and <a href="audio.idrmport_forwardcontenttointerface">IDrmPort::ForwardContentToInterface</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
+<code>DrmForwardContentToInterface</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttointerface.md">PcForwardContentToInterface</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536586">IDrmPort::ForwardContentToInterface</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h (include Drmk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iocalldriver">IoCallDriver</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
 </dt>
 <dt>
-<a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a>
+<a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
 </dt>
 <dt>
 <a href="..\drmk\nn-drmk-idrmaudiostream.md">IDrmAudioStream</a>
 </dt>
 <dt>
-<a href="audio.idrmaudiostream_setcontentid">IDrmAudioStream::SetContentId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536570">IDrmAudioStream::SetContentId</a>
 </dt>
 <dt>
-<a href="audio.pcforwardcontenttointerface">PcForwardContentToInterface</a>
+<a href="..\portcls\nf-portcls-pcforwardcontenttointerface.md">PcForwardContentToInterface</a>
 </dt>
 <dt>
-<a href="audio.idrmport_forwardcontenttointerface">IDrmPort::ForwardContentToInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536586">IDrmPort::ForwardContentToInterface</a>
 </dt>
 </dl>
  

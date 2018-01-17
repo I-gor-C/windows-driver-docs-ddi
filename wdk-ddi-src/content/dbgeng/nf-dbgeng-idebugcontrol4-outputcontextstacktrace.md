@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl4.OutputContextStackTrace
+UID: NF:dbgeng.IDebugControl4.OutputContextStackTrace
 title: IDebugControl4::OutputContextStackTrace method
 author: windows-driver-content
 description: The OutputContextStackTrace method prints the call stack specified by an array of stack frames and corresponding register contexts.
 old-location: debugger\outputcontextstacktrace.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: da3d19ab-258d-4214-8674-b35fec06534b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl4, IDebugControl4::OutputContextStackTrace, OutputContextStackTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugControl4::OutputContextStackTrace method
@@ -222,34 +223,8 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-The array of stack frames can be obtained using <a href="debugger.getcontextstacktrace">GetContextStackTrace</a>.
+The array of stack frames can be obtained using <a href="https://msdn.microsoft.com/library/windows/hardware/ff545748">GetContextStackTrace</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -257,18 +232,18 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="debugger.getcontextstacktrace">GetContextStackTrace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545748">GetContextStackTrace</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/1061015f-cb0c-490b-b256-e0dedb659f22">k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)</a>
 </dt>
 <dt>
-<a href="debugger.outputstacktrace">OutputStackTrace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553252">OutputStackTrace</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl4::OutputContextStackTrace method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputContextStackTrace method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

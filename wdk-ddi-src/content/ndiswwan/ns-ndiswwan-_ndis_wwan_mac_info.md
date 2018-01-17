@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISWWAN._NDIS_WWAN_MAC_INFO
+UID: NS:ndiswwan._NDIS_WWAN_MAC_INFO
 title: _NDIS_WWAN_MAC_INFO
 author: windows-driver-content
 description: The NDIS_WWAN_MAC_INFO structure represents NDIS port information for a PDP context.
 old-location: netvista\ndis_wwan_mac_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: C55DC50B-5A1B-496E-BBB8-8EB94A9CFD2F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_MAC_INFO, PNDIS_WWAN_MAC_INFO, *PNDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO
+ms.date: 1/11/2018
+ms.keywords: _NDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO, *PNDIS_WWAN_MAC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_WWAN_MAC_INFO, *PNDIS_WWAN_MAC_INFO
 ---
 
 # _NDIS_WWAN_MAC_INFO structure
@@ -71,29 +72,3 @@ The NDIS port of the PDP context.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8.1 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndiswwan.h (include Ndiswwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

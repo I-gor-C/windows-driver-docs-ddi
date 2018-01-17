@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDIARG_RESOURCE_BARRIER_0022
+UID: NS:d3d12umddi.D3D12DDIARG_RESOURCE_BARRIER_0022
 title: D3D12DDIARG_RESOURCE_BARRIER_0022
 author: windows-driver-content
 description: Describes a resource barrier.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg_resource_barrier_0022.htm
 old-project: display
 ms.assetid: ED597BB0-F9ED-4311-9E2F-06AEA2755B37
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDIARG_RESOURCE_BARRIER_0022, D3D12DDIARG_RESOURCE_BARRIER_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDIARG_RESOURCE_BARRIER_0022
 ---
 
 # D3D12DDIARG_RESOURCE_BARRIER_0022 structure
@@ -79,19 +80,3 @@ A resource barrier.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

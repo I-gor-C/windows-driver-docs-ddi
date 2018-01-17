@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_CANCEL_DIRECT_OID_REQUEST
-title: MINIPORT_CANCEL_DIRECT_OID_REQUEST
+UID: NC:ndis.MINIPORT_CANCEL_DIRECT_OID_REQUEST
+title: MINIPORT_CANCEL_DIRECT_OID_REQUEST function
 author: windows-driver-content
 description: NDIS calls a miniport driver's MiniportCancelDirectOidRequest function to cancel a direct OID request.
 old-location: netvista\miniportcanceldirectoidrequest.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 88639bb4-89f3-4e7f-9cce-ea541224572d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_CANCEL_DIRECT_OID_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_CANCEL_DIRECT_OID_REQUEST callback
+# MINIPORT_CANCEL_DIRECT_OID_REQUEST function
 
 
 
@@ -43,7 +44,7 @@ NDIS calls a miniport driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_CANCEL_DIRECT_OID_REQUEST MiniportCancelDirectOidRequest;
@@ -70,7 +71,7 @@ A handle to a context area that the miniport driver allocated in its
 A cancellation identifier for the request. This identifier specifies the direct OID requests that
      match this value in the 
      <b>RequestId</b> member of the 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure.
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure.
 
 
 ## -returns
@@ -81,7 +82,7 @@ None
 <i>MiniportCancelDirectOidRequest</i> is an optional function. A miniport driver registers this function
     if it handles direct OID requests. A driver specifies the 
     <i>MiniportCancelDirectOidRequest</i> entry point when it calls the 
-    <a href="netvista.ndismregisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
     NdisMRegisterMiniportDriver</a> function. A miniport driver that registers the 
     <a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">
     MiniportDirectOidRequest</a> function must also register 
@@ -89,7 +90,7 @@ None
 
 When NDIS calls 
     <i>MiniportCancelDirectOidRequest</i>, the miniport driver should attempt to call 
-    <a href="netvista.ndismdirectoidrequestcomplete">
+    <a href="..\ndis\nf-ndis-ndismdirectoidrequestcomplete.md">
     NdisMDirectOidRequestComplete</a> function as soon as possible.
 
 NDIS calls 
@@ -97,14 +98,14 @@ NDIS calls
     OID requests, NDIS does not call 
     <i>MiniportCancelDirectOidRequest</i> if the time-out expires. (The time-out is specified at the 
     <b>Timeout</b> member of each 
-    <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure.)
+    <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure.)
 
 If the request processing is still not complete in a miniport driver, the driver calls the 
     <b>NdisMDirectOidRequestComplete</b> function with the status set to NDIS_STATUS_REQUEST_ABORTED.
 
 If the request processing is still not complete in an intermediate driver and the request was
     propagated to an underlying driver, the intermediate driver calls the 
-    <a href="netvista.ndiscanceldirectoidrequest">
+    <a href="..\ndis\nf-ndis-ndiscanceldirectoidrequest.md">
     NdisCancelDirectOidRequest</a> function with the 
     <i>OidRequest</i> parameter set to the value that it sent to the underlying driver.
 
@@ -122,41 +123,6 @@ The <b>MINIPORT_CANCEL_DIRECT_OID_REQUEST</b> function type is defined in the Nd
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.1 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -166,22 +132,22 @@ IRQL
 <a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">MiniportDirectOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.ndiscanceldirectoidrequest">NdisCancelDirectOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscanceldirectoidrequest.md">NdisCancelDirectOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndismdirectoidrequestcomplete">
+<a href="..\ndis\nf-ndis-ndismdirectoidrequestcomplete.md">
    NdisMDirectOidRequestComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_CANCEL_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CANCEL_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

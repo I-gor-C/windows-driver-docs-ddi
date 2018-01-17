@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_DEVICE_CAPS
+UID: NS:wwan._WWAN_DEVICE_CAPS
 title: _WWAN_DEVICE_CAPS
 author: windows-driver-content
 description: The WWAN_DEVICE_CAPS structure represents the capabilities of the MB device.
 old-location: netvista\wwan_device_caps.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a8f9bea7-dafe-41be-a6c7-521b78a274ee
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_DEVICE_CAPS, *PWWAN_DEVICE_CAPS, WWAN_DEVICE_CAPS, PWWAN_DEVICE_CAPS
+ms.date: 1/11/2018
+ms.keywords: _WWAN_DEVICE_CAPS, *PWWAN_DEVICE_CAPS, WWAN_DEVICE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_DEVICE_CAPS, WWAN_DEVICE_CAPS
 req.product: Windows 10 or later.
 ---
 
@@ -947,14 +948,14 @@ The MB device supports the AKA' (AKA Prime) authentication method.
 </table>
  
 
-<div class="alert"><b>Note</b>  This member is valid only in Windows 8 and later, when NDIS_WWAN_DEVICE_CAPS_REVISION_2 is specified in the <b>Header.Revision</b> sub-member of the <a href="netvista.ndis_wwan_device_caps">NDIS_WWAN_DEVICE_CAPS</a> structure.</div>
+<div class="alert"><b>Note</b>  This member is valid only in Windows 8 and later, when NDIS_WWAN_DEVICE_CAPS_REVISION_2 is specified in the <b>Header.Revision</b> sub-member of the <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps.md">NDIS_WWAN_DEVICE_CAPS</a> structure.</div>
 <div> </div>
 
 ### -field CellularClassListHeader
 
 A formatted WWAN_LIST_HEADER object that represents a list of cellular classes that a multi-mode capable device supports. The <b>ElementType</b> member in WWAN_LIST_HEADER should always be set to <b>WwanStructCellularClass</b>. The <b>ElementCount</b> member in WWAN_LIST_HEADER is set to the number of cellular classes that follow the WWAN_LIST_HEADER structure. MB devices that are not multi-mode capable should set <b>ElementCount</b> to 0.
 
-<div class="alert"><b>Note</b>  This member is valid only in Windows 8 and later, when NDIS_WWAN_DEVICE_CAPS_REVISION_2 is specified in the <b>Header.Revision</b> sub-member of the <a href="netvista.ndis_wwan_device_caps">NDIS_WWAN_DEVICE_CAPS</a> structure.</div>
+<div class="alert"><b>Note</b>  This member is valid only in Windows 8 and later, when NDIS_WWAN_DEVICE_CAPS_REVISION_2 is specified in the <b>Header.Revision</b> sub-member of the <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps.md">NDIS_WWAN_DEVICE_CAPS</a> structure.</div>
 <div> </div>
 
 ## -remarks
@@ -975,52 +976,27 @@ For CDMA-based devices, only CDMA-related data services must be specified. For e
     defined for completeness.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_device_type">WWAN_DEVICE_TYPE</a>
+<a href="..\wwan\ne-wwan-_wwan_device_type.md">WWAN_DEVICE_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.wwan_cellular_class">WWAN_CELLULAR_CLASS</a>
+<a href="..\wwan\ne-wwan-_wwan_cellular_class.md">WWAN_CELLULAR_CLASS</a>
 </dt>
 <dt>
-<a href="netvista.wwan_voice_class">WWAN_VOICE_CLASS</a>
+<a href="..\wwan\ne-wwan-_wwan_voice_class.md">WWAN_VOICE_CLASS</a>
 </dt>
 <dt>
-<a href="netvista.wwan_sim_class">WWAN_SIM_CLASS</a>
+<a href="..\wwan\ne-wwan-_wwan_sim_class.md">WWAN_SIM_CLASS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_wwan_device_caps">NDIS_WWAN_DEVICE_CAPS</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps.md">NDIS_WWAN_DEVICE_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_DEVICE_CAPS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_CAPS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

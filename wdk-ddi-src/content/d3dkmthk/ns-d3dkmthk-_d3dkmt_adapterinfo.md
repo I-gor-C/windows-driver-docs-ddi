@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_ADAPTERINFO
+UID: NS:d3dkmthk._D3DKMT_ADAPTERINFO
 title: _D3DKMT_ADAPTERINFO
 author: windows-driver-content
 description: Supplies configuration information about a graphics adapter.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_adapterinfo.htm
 old-project: display
 ms.assetid: 4b780fb7-f6d4-4248-882c-d0cc96106724
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_ADAPTERINFO, D3DKMT_ADAPTERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_ADAPTERINFO
 ---
 
 # _D3DKMT_ADAPTERINFO structure
@@ -77,39 +78,3 @@ If <b>TRUE</b>, the adapter prefers move regions.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

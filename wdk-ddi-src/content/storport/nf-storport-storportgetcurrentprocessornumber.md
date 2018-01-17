@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetCurrentProcessorNumber
+UID: NF:storport.StorPortGetCurrentProcessorNumber
 title: StorPortGetCurrentProcessorNumber function
 author: windows-driver-content
 description: The StorPortGetCurrentProcessorNumber routine retrieves the current processor number from the kernel.
@@ -7,7 +7,7 @@ old-location: storage\storportgetcurrentprocessornumber.htm
 old-project: storage
 ms.assetid: 10d77823-fcaa-43c3-b55e-74f2da97ecf0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetCurrentProcessorNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -81,59 +82,3 @@ The <b>StorPortGetCurrentProcessorNumber</b> routine returns one of the followin
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
-</td>
-</tr>
-</table>

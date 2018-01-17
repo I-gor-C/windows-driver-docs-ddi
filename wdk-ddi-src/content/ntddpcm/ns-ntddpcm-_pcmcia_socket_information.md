@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDPCM._PCMCIA_SOCKET_INFORMATION
+UID: NS:ntddpcm._PCMCIA_SOCKET_INFORMATION
 title: _PCMCIA_SOCKET_INFORMATION
 author: windows-driver-content
 description: The PCMCIA_SOCKET_INFORMATION structure is used in conjunction with the IOCTL_SOCKET_INFORMATION request to retrieve socket configuration and state data.
@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: 53881aca-e49c-43e9-b68e-b91a1868e3f5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMCIA_SOCKET_INFORMATION, *PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION, PPCMCIA_SOCKET_INFORMATION
+ms.keywords: _PCMCIA_SOCKET_INFORMATION, *PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION
 ---
 
 # _PCMCIA_SOCKET_INFORMATION structure
@@ -69,7 +70,7 @@ Indicates the socket number.
 
 ### -field TupleCrc
 
-Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="devinst.identifiers_for_pcmcia_devices">Identifiers for PCMCIA Devices</a>. 
+Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="https://msdn.microsoft.com/7eaf6372-a9cc-4714-8955-52653ec57141">Identifiers for PCMCIA Devices</a>. 
 
 
 ### -field Manufacturer
@@ -252,21 +253,6 @@ Indicates the controller type. Some common controller types are defined in the <
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddpcm.h (include Ntddpcm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

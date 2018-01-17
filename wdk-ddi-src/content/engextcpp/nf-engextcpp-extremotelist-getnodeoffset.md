@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteList.GetNodeOffset
+UID: NF:engextcpp.ExtRemoteList.GetNodeOffset
 title: ExtRemoteList::GetNodeOffset method
 author: windows-driver-content
 description: The GetNodeOffset method returns the address of the current list item.
 old-location: debugger\extremotelist_getnodeoffset.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 20c4ec7e-6dc1-4a4f-99d1-bb53213771a5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteList, ExtRemoteList::GetNodeOffset, GetNodeOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # ExtRemoteList::GetNodeOffset method
@@ -61,30 +62,3 @@ ULONG64 GetNodeOffset();
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Engextcpp.hpp (include Engextcpp.hpp)</dt>
-</dl>
-</td>
-</tr>
-</table>

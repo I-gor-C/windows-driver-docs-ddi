@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDIARG_CREATEDEVICE_0003
+UID: NS:d3d12umddi.D3D12DDIARG_CREATEDEVICE_0003
 title: D3D12DDIARG_CREATEDEVICE_0003
 author: windows-driver-content
 description: The D3D10DDIARG_CREATEDEVICE_0003 structure describes the display device to create.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg_createdevice_0003.htm
 old-project: display
 ms.assetid: F139A61B-E074-4185-A934-17F6FDBA3F62
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDIARG_CREATEDEVICE_0003, D3D12DDIARG_CREATEDEVICE_0003
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDIARG_CREATEDEVICE_0003
 ---
 
 # D3D12DDIARG_CREATEDEVICE_0003 structure
@@ -79,7 +80,7 @@ typedef struct _D3D12DDIARG_CREATEDEVICE_0003 {
 
 ### -field pKTCallbacks
 
-A pointer to a <a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use to access kernel services.
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use to access kernel services.
 
 
 ### -field hDrvDevice
@@ -103,19 +104,3 @@ Flag values that identify how to create the display device.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NE.minitape._SES_DOWNLOAD_MICROCODE_STATE
+UID: NE:minitape._SES_DOWNLOAD_MICROCODE_STATE
 title: _SES_DOWNLOAD_MICROCODE_STATE
 author: windows-driver-content
 description: TBD.
@@ -7,8 +7,8 @@ old-location: storage\ses_download_microcode_state.htm
 old-project: storage
 ms.assetid: 5edff312-8373-4d36-b93c-c35fe8c2996a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE, PSES_DOWNLOAD_MICROCODE_STATE
+ms.date: 1/10/2018
+ms.keywords: _SES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE
 ---
 
 # _SES_DOWNLOAD_MICROCODE_STATE enumeration
@@ -83,29 +84,3 @@ Specifies a microcode download operations completed and is waiting for activatio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1709 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsi.h (include Minitape.h or Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

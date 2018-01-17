@@ -1,5 +1,5 @@
 ---
-UID: NF.swenum.KsGetBusEnumIdentifier
+UID: NF:swenum.KsGetBusEnumIdentifier
 title: KsGetBusEnumIdentifier function
 author: windows-driver-content
 description: The KsGetBusEnumIdentifier function retrieves the software bus enumerator identifier for the bus device associated with the given IRP.
@@ -7,7 +7,7 @@ old-location: stream\ksgetbusenumidentifier.htm
 old-project: stream
 ms.assetid: 50e14e01-5879-4a84-a8c2-f03c953dbeec
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGetBusEnumIdentifier
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 req.product: Windows 10 or later.
 ---
 
@@ -77,41 +78,3 @@ Returns STATUS_SUCCESS if the bus enumerator identifier was retrieved successful
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Swenum.h (include Swenum.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ks.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

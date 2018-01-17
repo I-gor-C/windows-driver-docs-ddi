@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.IF_QUERY_OBJECT
-title: IF_QUERY_OBJECT
+UID: NC:ndis.IF_QUERY_OBJECT
+title: IF_QUERY_OBJECT function
 author: windows-driver-content
 description: The ProviderQueryObject function retrieves information about a network interface.
 old-location: netvista\providerqueryobject.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: dea90ff0-7620-4364-90dc-2dc5d2e34ce1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: IF_QUERY_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# IF_QUERY_OBJECT callback
+# IF_QUERY_OBJECT function
 
 
 
@@ -43,7 +44,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 IF_QUERY_OBJECT ProviderQueryObject;
@@ -66,7 +67,7 @@ typedef IF_QUERY_OBJECT *IFP_QUERY_OBJECT;
 
 A handle that identifies the interface provider's context area for the interface. The interface
      provider passed this handle to NDIS in a call to the 
-     <a href="netvista.ndisifregisterinterface">
+     <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">
      NdisIfRegisterInterface</a> function.
 
 
@@ -119,50 +120,15 @@ NDIS calls
     <i>ProviderQueryObject</i> at IRQL = PASSIVE_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisifregisterinterface">NdisIfRegisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20IF_QUERY_OBJECT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IF_QUERY_OBJECT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

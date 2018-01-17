@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CM_MAKE_CALL
-title: PROTOCOL_CM_MAKE_CALL
+UID: NC:ndis.PROTOCOL_CM_MAKE_CALL
+title: PROTOCOL_CM_MAKE_CALL function
 author: windows-driver-content
 description: The ProtocolCmMakeCall function is a required function that sets up media specific parameters for a virtual connection (VC) and activates the virtual connection.Note  You must declare the function by using the PROTOCOL_CM_MAKE_CALL type.
 old-location: netvista\protocolcmmakecall.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ede0a18a-cd3b-4fbb-a16b-e7493940d633
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CM_MAKE_CALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CM_MAKE_CALL callback
+# PROTOCOL_CM_MAKE_CALL function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CM_MAKE_CALL ProtocolCmMakeCall;
@@ -99,7 +100,7 @@ On return, specifies a handle to a call manager-supplied context area in which t
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>Indicates that the call manager will complete the request to make a call asynchronously. When
        the call manager has completed all operations for making a call, it must call 
-       <a href="netvista.ndiscmmakecallcomplete">NdisCmMakeCallComplete</a> to signal
+       <a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a> to signal
        NDIS that this call has been completed.
 <dl>
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
@@ -134,13 +135,13 @@ If a call manager is required to communication with networking hardware (such as
     it should use a virtual connection to the network control device that it established in its 
     <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function.
     Call managers communicate with their network hardware through the miniport driver by calling 
-    <a href="netvista.ndiscosendnetbufferlists">NdisCoSendNetBufferLists</a>.
+    <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>.
     Miniport drivers with integrated call-management support will not call 
     <b>NdisCoSendNetBufferLists</b>, but rather will transmit the data themselves.
 
 After a call manager has done all necessary communication with its networking hardware as required by
     its medium, call managers must call 
-    <a href="netvista.ndiscmactivatevc">NdisCmActivateVc</a>.
+    <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>.
 
 If this call was a multipoint call, after the call manager has communicated with the networking
     hardware, verified call parameters, and allocated and initialized its per-party state data, the address
@@ -174,55 +175,16 @@ The <b>PROTOCOL_CM_MAKE_CALL</b> function type is defined in the Ndis.h header f
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/c3f4b0d1-0ad6-46d9-87f7-0395b8c81421">ProtocolCmMakeCall (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolCmMakeCall (NDIS
-   5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmactivatevc">NdisCmActivateVc</a>
+<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmmakecallcomplete">NdisCmMakeCallComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
@@ -232,5 +194,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CM_MAKE_CALL callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_MAKE_CALL callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE
+UID: NS:d3dkmthk._D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE
 title: _D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE
 author: windows-driver-content
 description: Used to query information on the protected session.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-queryprotectedsessioninfofromnthandle.htm
 old-project: display
 ms.assetid: e08d27e7-e9b7-45e7-9bbd-dcb9aa8f85ed
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE, D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE
 ---
 
 # _D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE structure
@@ -83,19 +84,3 @@ The size of the private runtime data.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

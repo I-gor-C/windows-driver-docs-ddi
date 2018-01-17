@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._SMARTCARD_REPLY
+UID: NS:smclib._SMARTCARD_REPLY
 title: _SMARTCARD_REPLY
 author: windows-driver-content
 description: Describes the reply buffer received from the smart card.
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: DB41648B-8812-4358-BECE-8029016E5631
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SMARTCARD_REPLY, SMARTCARD_REPLY, PSMARTCARD_REPLY, *PSMARTCARD_REPLY
+ms.keywords: _SMARTCARD_REPLY, *PSMARTCARD_REPLY, SMARTCARD_REPLY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSMARTCARD_REPLY, SMARTCARD_REPLY
 req.product: Windows 10 or later.
 ---
 
@@ -74,21 +75,6 @@ Number of bytes received from the card.
 ## -remarks
 The client driver must receive data in this buffer and   adjust <i>BufferLength</i> to the number of received bytes. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

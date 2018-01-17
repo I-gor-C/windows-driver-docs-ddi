@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO
+UID: NI:parallel.IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO
 title: IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO
 author: windows-driver-content
 description: The IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO request returns information about a parallel port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO IOCTL
@@ -47,11 +48,11 @@ For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a
 ## -ioctlparameters
 
 ### -input-buffer
-A <a href="parports.more_parallel_port_information">MORE_PARALLEL_PORT_INFORMATION</a> structure.
+A <a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a> structure.
 
 
 ### -input-buffer-length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.more_parallel_port_information">MORE_PARALLEL_PORT_INFORMATION</a> structure.
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a> structure.
 
 
 ### -output-buffer
@@ -84,21 +85,6 @@ The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -108,7 +94,7 @@ Header
 <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
 </dt>
 <dt>
-<a href="parports.more_parallel_port_information">MORE_PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
 </dt>
 </dl>
  

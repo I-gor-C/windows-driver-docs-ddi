@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCNT._OS_DEP_DATA
+UID: NS:smcnt._OS_DEP_DATA
 title: _OS_DEP_DATA
 author: windows-driver-content
 description: The OS_DEP_DATA structure defines the data that is stored in the OsData member of the SMARTCARD_EXTENSION structure, which holds smart card information that is specific to the operating system.
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: 76f6f0d1-cb2f-4cda-aeb0-7421e18e3c27
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _OS_DEP_DATA, POS_DEP_DATA, *POS_DEP_DATA, OS_DEP_DATA
+ms.keywords: _OS_DEP_DATA, *POS_DEP_DATA, OS_DEP_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POS_DEP_DATA, OS_DEP_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The OS_DEP_DATA structure defines the data that is stored in the <b>OsData</b> member of the <a href="smartcrd.smartcard_extension">SMARTCARD_EXTENSION</a> structure, which holds smart card information that is specific to the operating system. 
+The OS_DEP_DATA structure defines the data that is stored in the <b>OsData</b> member of the <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a> structure, which holds smart card information that is specific to the operating system. 
 
 
 
@@ -74,7 +75,7 @@ A pointer to the smart card reader device object. (Must be set by the driver.)
 
 ### -field CurrentIrp
 
-A pointer to the current IRP to process. Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="smartcrd.smartcard_extension">SMARTCARD_EXTENSION</a>. 
+A pointer to the current IRP to process. Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a>. 
 
 
 ### -field NotificationIrp
@@ -89,7 +90,7 @@ Contains a mutex that applications use to synchronize access to the reader drive
 
 ### -field SpinLock
 
-Contains a mutex that drivers use to synchronize access to protected members of the OS_DEP_DATA structure. For more information, see <a href="smartcrd.scard_card_capabilities">SCARD_CARD_CAPABILITIES</a>.
+Contains a mutex that drivers use to synchronize access to protected members of the OS_DEP_DATA structure. For more information, see <a href="..\smclib\ns-smclib-_scard_card_capabilities.md">SCARD_CARD_CAPABILITIES</a>.
 
 
 ### -field RemoveLock
@@ -125,20 +126,4 @@ Unused.
 
 
 ## -remarks
-To allocate this structure, drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548944">SmartcardInitialize (WDM)</a>. After this call, drivers should copy the pointer of the smart card device object to <b>DeviceObject</b>. Otherwise, the smart card driver library will not work. Do not use this structure to store driver-dependent information. However, when the smart card driver library calls one of your driver's callback functions, it sets <b>CurrentIrp</b> to the requesting IRP, unless the request is a smart card tracking request. For smart card tracking requests, the driver library sets <b>NotificationIrp</b> to the requesting IRP. For more information about smart card tracking, see <a href="smartcrd.rdf_card_tracking">RDF_CARD_TRACKING</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smcnt.h (include Smcnt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+To allocate this structure, drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548944">SmartcardInitialize (WDM)</a>. After this call, drivers should copy the pointer of the smart card device object to <b>DeviceObject</b>. Otherwise, the smart card driver library will not work. Do not use this structure to store driver-dependent information. However, when the smart card driver library calls one of your driver's callback functions, it sets <b>CurrentIrp</b> to the requesting IRP, unless the request is a smart card tracking request. For smart card tracking requests, the driver library sets <b>NotificationIrp</b> to the requesting IRP. For more information about smart card tracking, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548920">RDF_CARD_TRACKING</a>.</p>

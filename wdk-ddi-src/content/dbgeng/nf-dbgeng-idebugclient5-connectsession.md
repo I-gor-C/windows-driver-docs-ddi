@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugClient5.ConnectSession
+UID: NF:dbgeng.IDebugClient5.ConnectSession
 title: IDebugClient5::ConnectSession method
 author: windows-driver-content
 description: The ConnectSession method joins the client to an existing debugger session.
 old-location: debugger\connectsession.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 4531bf2f-ef3b-4d4f-b922-3a01a9468ac9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugClient5, IDebugClient5::ConnectSession, ConnectSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugClient5::ConnectSession method
@@ -109,32 +110,6 @@ The client becomes a primary client and will appear among the list of clients in
 For more information about debugging clients, see Debugging Server and Debugging Client.  For more information about debugger sessions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -153,18 +128,18 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 </dt>
 <dt>
-<a href="debugger.debugconnect">DebugConnect</a>
+<a href="..\dbgeng\nf-dbgeng-debugconnect.md">DebugConnect</a>
 </dt>
 <dt>
-<a href="debugger.startserver">StartServer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558813">StartServer</a>
 </dt>
 <dt>
-<a href="debugger.outputservers">OutputServers</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553247">OutputServers</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugClient::ConnectSession method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::ConnectSession method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

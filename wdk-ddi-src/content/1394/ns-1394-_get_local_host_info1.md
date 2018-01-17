@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._GET_LOCAL_HOST_INFO1
+UID: NS:1394._GET_LOCAL_HOST_INFO1
 title: _GET_LOCAL_HOST_INFO1
 author: windows-driver-content
 description: The GET_LOCAL_HOST_INFO1 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel GET_HOST_UNIQUE_ID.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 49ec5322-2caa-4e95-85d0-74b9137d9bcd
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO1, GET_LOCAL_HOST_INFO1, PGET_LOCAL_HOST_INFO1, *PGET_LOCAL_HOST_INFO1
+ms.keywords: _GET_LOCAL_HOST_INFO1, GET_LOCAL_HOST_INFO1, *PGET_LOCAL_HOST_INFO1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GET_LOCAL_HOST_INFO1, *PGET_LOCAL_HOST_INFO1
 ---
 
 # _GET_LOCAL_HOST_INFO1 structure
@@ -60,21 +61,6 @@ The bus driver fills in this member with the IEEE 1394 globally unique device ID
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

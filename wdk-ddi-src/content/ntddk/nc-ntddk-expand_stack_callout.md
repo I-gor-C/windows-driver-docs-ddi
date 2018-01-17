@@ -1,17 +1,17 @@
 ---
-UID: NC.ntddk.EXPAND_STACK_CALLOUT
-title: EXPAND_STACK_CALLOUT
+UID: NC:ntddk.EXPAND_STACK_CALLOUT
+title: EXPAND_STACK_CALLOUT function
 author: windows-driver-content
 description: The ExpandedStackCall routine executes with a guaranteed stack size.
 old-location: kernel\expandedstackcall.htm
 old-project: kernel
 ms.assetid: ca9af049-f183-458c-b43f-891678a7be5e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.date: 1/4/2018
+ms.keywords: EXPAND_STACK_CALLOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ntddk.h
 req.include-header: Ntddk.h, Ntifs.h
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ---
 
-# EXPAND_STACK_CALLOUT callback
+# EXPAND_STACK_CALLOUT function
 
 
 
@@ -42,7 +43,7 @@ The <i>ExpandedStackCall</i> routine executes with a guaranteed stack size.
 
 
 
-## -prototype
+## -syntax
 
 ````
 EXPAND_STACK_CALLOUT ExpandedStackCall;
@@ -58,7 +59,7 @@ VOID ExpandedStackCall(
 
 ### -param Parameter [in, optional]
 
-The value passed to the <a href="kernel.keexpandkernelstackandcallout">KeExpandKernelStackAndCallout</a> routine that executed <i>ExpandedStackCall</i>.
+The value passed to the <a href="..\ntddk\nf-ntddk-keexpandkernelstackandcallout.md">KeExpandKernelStackAndCallout</a> routine that executed <i>ExpandedStackCall</i>.
 
 
 ## -returns
@@ -79,51 +80,15 @@ Then, implement your callback routine as follows:
 The EXPAND_STACK_CALLOUT function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EXPAND_STACK_CALLOUT function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Drivers can implement <i>ExpandedStackCall</i> routines on Windows Server 2003 for an x64-based processor, and on Windows Vista and later versions of Windows for all processors.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.keexpandkernelstackandcallout">KeExpandKernelStackAndCallout</a>
+<a href="..\ntddk\nf-ntddk-keexpandkernelstackandcallout.md">KeExpandKernelStackAndCallout</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExpandedStackCall routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExpandedStackCall routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

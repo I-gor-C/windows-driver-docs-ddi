@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.DbgPrompt
+UID: NF:ntddk.DbgPrompt
 title: DbgPrompt function
 author: windows-driver-content
 description: The DbgPrompt routine displays a caller-specified user prompt string on the kernel debugger's display device and obtains a user response string.
@@ -7,7 +7,7 @@ old-location: devtest\dbgprompt.htm
 old-project: devtest
 ms.assetid: 4bb44aab-7032-4cc7-89e3-6ac3bee233d3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: DbgPrompt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DIRQL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # DbgPrompt function
@@ -79,65 +80,4 @@ The <b>DbgPrompt</b> routine displays the specified prompt string on the kernel 
 
 After <b>DbgPrompt</b> returns, the <i>Response</i> buffer contains the user's response, including the terminating newline character. The user response string is not NULL-terminated.
 
-The following code example asks if the user wants to continue and accepts the letter "y" for yes and the letter "n" for no.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtDll.lib (user mode); </dt>
-<dt>NtosKrnl.lib (kernel mode)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtDll.dll (user mode); </dt>
-<dt>NtosKrnl.exe (kernel mode)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DIRQL
-
-</td>
-</tr>
-</table>
+The following code example asks if the user wants to continue and accepts the letter "y" for yes and the letter "n" for no.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_RENDERGDI
+UID: NS:d3dkmddi._DXGKARG_RENDERGDI
 title: _DXGKARG_RENDERGDI
 author: windows-driver-content
 description: The DXGKARG_RENDERGDI structure is used when submitting Windows Graphics Device Interface (GDI) commands for contexts that support virtual addressing.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_rendergdi.htm
 old-project: display
 ms.assetid: E1DC536B-581E-43F8-99B2-776DC30EEBB7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI, *INOUT_PDXGKARG_RENDERGDI
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_RENDERGDI
 ---
 
 # _DXGKARG_RENDERGDI structure
@@ -99,7 +100,7 @@ The number of bytes that remain in the private data structure that <b>pDmaBuffer
 
 ### -field pAllocationList
 
-An array of <a href="display.dxgk_allocationlist">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.
+An array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.
 
 
 ### -field AllocationListSize
@@ -113,39 +114,3 @@ A value that specifies the progress of the rendering operation.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

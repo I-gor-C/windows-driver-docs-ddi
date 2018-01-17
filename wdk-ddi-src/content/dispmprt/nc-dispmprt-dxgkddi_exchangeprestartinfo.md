@@ -1,17 +1,17 @@
 ---
-UID: NC.dispmprt.DXGKDDI_EXCHANGEPRESTARTINFO
-title: DXGKDDI_EXCHANGEPRESTARTINFO
+UID: NC:dispmprt.DXGKDDI_EXCHANGEPRESTARTINFO
+title: DXGKDDI_EXCHANGEPRESTARTINFO function
 author: windows-driver-content
 description: Allows very simple data to be exchanged between the OS and driver which may be required prior to DxgkDdiStartDevice device being called and therefore cannot be queried through normal caps or adapter info DDIs.
 old-location: display\dxgkddi_exchangeprestartinfo.htm
 old-project: display
 ms.assetid: B23EDC08-18E4-4826-AC51-163C706D4F43
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_EXCHANGEPRESTARTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
-# DXGKDDI_EXCHANGEPRESTARTINFO callback
+# DXGKDDI_EXCHANGEPRESTARTINFO function
 
 
 
@@ -42,7 +43,7 @@ Allows very simple data to be exchanged between the OS and driver which may be r
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_EXCHANGEPRESTARTINFO(
@@ -78,20 +79,4 @@ This DDI will be called after DxgkDdiAddDevice and before DxgkDdiStartDevice so 
  
 
 This function is always called at PASSIVE level so the supporting code should be made pageable where possible.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

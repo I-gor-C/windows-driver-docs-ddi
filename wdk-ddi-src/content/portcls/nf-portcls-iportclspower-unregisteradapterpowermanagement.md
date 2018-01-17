@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsPower.UnregisterAdapterPowerManagement
+UID: NF:portcls.IPortClsPower.UnregisterAdapterPowerManagement
 title: IPortClsPower::UnregisterAdapterPowerManagement method
 author: windows-driver-content
 description: The UnregisterAdapterPowerManagement method unregisters the adapter's power management interface with PortCls.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsPower::UnregisterAdapterPowerManagement method
@@ -55,7 +56,7 @@ NTSTATUS UnregisterAdapterPowerManagement(
 
 ### -param DeviceObject [in]
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
+Specifies a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## -returns
@@ -63,54 +64,8 @@ The <code>UnregisterAdapterPowerManagement</code> method returns STATUS_SUCCESS 
 
 
 ## -remarks
-The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter's power management interface that was registered by the <a href="audio.iportclspower_registeradapterpowermanagement">IPortClsPower::RegisterAdapterPowerManagement</a> method.
+The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter's power management interface that was registered by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536874">IPortClsPower::RegisterAdapterPowerManagement</a> method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windwows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -118,10 +73,10 @@ PASSIVE_LEVEL.
 <a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="audio.iportclspower_registeradapterpowermanagement">IPortClsPower::RegisterAdapterPowerManagement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536874">IPortClsPower::RegisterAdapterPowerManagement</a>
 </dt>
 </dl>
  

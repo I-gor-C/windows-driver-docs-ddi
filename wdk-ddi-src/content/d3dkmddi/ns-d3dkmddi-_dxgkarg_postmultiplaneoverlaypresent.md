@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+UID: NS:d3dkmddi._DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 title: _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 author: windows-driver-content
 description: Contains arguments for the DxgkDdiPostMultiPlaneOverlayPresent function.
@@ -7,7 +7,7 @@ old-location: display\dxgkarg_postmultiplaneoverlaypresent.htm
 old-project: display
 ms.assetid: E257606A-66EE-4F53-B661-F5FFC63E1F54
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 ---
 
 # _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT structure
@@ -77,19 +78,3 @@ typedef struct _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.strmini.StreamClassGetNextEvent
+UID: NF:strmini.StreamClassGetNextEvent
 title: StreamClassGetNextEvent function
 author: windows-driver-content
 description: Minidrivers can use the StreamClassGetNextEvent routine to search the event queue of a device or of a particular stream.
@@ -7,7 +7,7 @@ old-location: stream\streamclassgetnextevent.htm
 old-project: stream
 ms.assetid: a2f83163-4529-4627-8959-2b4cd6b88828
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: StreamClassGetNextEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Stream.lib
 req.dll: 
 req.irql: 
+req.typenames: *PSTREAM_PRIORITY, STREAM_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -60,12 +61,12 @@ PKSEVENT_ENTRY StreamClassGetNextEvent(
 
 ### -param HwDeviceExtension [in, optional]
 
-Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
+Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
 
 ### -param HwStreamObject [in, optional]
 
-Pointer to a <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>. Set to <b>NULL</b> to search the event queue of the device itself. To search the event queue of a particular stream, set to the stream's stream object.
+Pointer to a <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>. Set to <b>NULL</b> to search the event queue of the device itself. To search the event queue of a particular stream, set to the stream's stream object.
 
 
 ### -param EventGuid [in, optional]
@@ -90,42 +91,4 @@ If <i>CurrentEvent</i> is not <b>NULL</b>, <b>StreamClassGetNextEvent</b> return
 ## -remarks
 The minidriver can call <b>StreamClassGetNextEvent</b> successively to loop through the event queue, examining one event at a time.
 
-The caller may specify additional search criteria to match events on the event queue.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Stream.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+The caller may specify additional search criteria to match events on the event queue.</p>

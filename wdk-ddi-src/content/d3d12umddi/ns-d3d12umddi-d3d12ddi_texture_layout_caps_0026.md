@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_TEXTURE_LAYOUT_CAPS_0026
+UID: NS:d3d12umddi.D3D12DDI_TEXTURE_LAYOUT_CAPS_0026
 title: D3D12DDI_TEXTURE_LAYOUT_CAPS_0026
 author: windows-driver-content
 description: Specifies texture layout capabilities.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_texture_layout_caps_0026.htm
 old-project: display
 ms.assetid: A64D2A22-5702-4931-AF2F-58BB919D764E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_TEXTURE_LAYOUT_CAPS_0026, D3D12DDI_TEXTURE_LAYOUT_CAPS_0026
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_TEXTURE_LAYOUT_CAPS_0026
 ---
 
 # D3D12DDI_TEXTURE_LAYOUT_CAPS_0026 structure
@@ -83,19 +84,3 @@ Whether the texture layout can choose any swizzle pattern for a subresource.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

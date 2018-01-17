@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_NOTIFY_CLOSE_AF
-title: PROTOCOL_CL_NOTIFY_CLOSE_AF
+UID: NC:ndis.PROTOCOL_CL_NOTIFY_CLOSE_AF
+title: PROTOCOL_CL_NOTIFY_CLOSE_AF function
 author: windows-driver-content
 description: The ProtocolClNotifyCloseAf function notifies a CoNDIS client that the client should close the associated address family (AF).Note  You must declare the function by using the PROTOCOL_CL_NOTIFY_CLOSE_AF type.
 old-location: netvista\protocolclnotifycloseaf.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0f595daa-9822-4ca6-8f25-e6f82030d4ea
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_NOTIFY_CLOSE_AF
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_NOTIFY_CLOSE_AF callback
+# PROTOCOL_CL_NOTIFY_CLOSE_AF function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_NOTIFY_CLOSE_AF ProtocolClNotifyCloseAf;
@@ -62,7 +63,7 @@ NDIS_STATUS ProtocolClNotifyCloseAf(
 
 A client-supplied handle to its context area for the associated AF. The client allocated this
      context area and passed this handle to NDIS in its call to the 
-     <a href="netvista.ndisclopenaddressfamilyex">
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
      NdisClOpenAddressFamilyEx</a> function.
 
 
@@ -75,7 +76,7 @@ A client-supplied handle to its context area for the associated AF. The client a
 <dl>
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>The client is handling this request asynchronously, and it will call the 
-       <a href="netvista.ndisclnotifycloseaddressfamilycomplete">
+       <a href="..\ndis\nf-ndis-ndisclnotifycloseaddressfamilycomplete.md">
        NdisClNotifyCloseAddressFamilyComplete</a> function when the close operation is complete.
 <dl>
 <dt><b>NDIS_STATUS_<i>XXX</i></b></dt>
@@ -94,26 +95,26 @@ The
     should:
 
 Call the 
-      <a href="netvista.ndiscldropparty">NdisClDropParty</a> function as many times
+      <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a> function as many times
       as necessary until only a single party remains active on each multipoint virtual connection (VC), if
       the client has any active multipoint connections.
 
 Call the 
-      <a href="netvista.ndisclclosecall">NdisClCloseCall</a> function as many times
+      <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a> function as many times
       as necessary to close all of the calls that are still open and are associated with the AF.
 
 Call the 
-      <a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a> function as many
+      <a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a> function as many
       times as necessary to deregister all service access points (SAPs) that the client has registered with
       the call manager.
 
 Call the 
-      <a href="netvista.ndisclcloseaddressfamily">
+      <a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">
       NdisClCloseAddressFamily</a> function to close the AF.
 
 The client can complete these actions asynchronously by returning NDIS_STATUS_PENDING. If the client
     completes the call asynchronously, it must subsequently call the 
-    <a href="netvista.ndisclnotifycloseaddressfamilycomplete">
+    <a href="..\ndis\nf-ndis-ndisclnotifycloseaddressfamilycomplete.md">
     NdisClNotifyCloseAddressFamilyComplete</a> function when the close operation is complete. If the client
     does not return NDIS_STATUS_PENDING, the close operation is complete when 
     <i>
@@ -129,7 +130,7 @@ The client may use the
     ProtocolClNotifyCloseAf</i> operation is pending. If the 
     <i>
     ProtocolClNotifyCloseAf</i> function returns NDIS_STATUS_PENDING, use the handle in the 
-    <a href="netvista.ndisclnotifycloseaddressfamilycomplete">
+    <a href="..\ndis\nf-ndis-ndisclnotifycloseaddressfamilycomplete.md">
     NdisClNotifyCloseAddressFamilyComplete</a> call after the close operation completes.
 
 To define a <i>ProtocolClNotifyCloseAf</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
@@ -143,66 +144,31 @@ The <b>PROTOCOL_CL_NOTIFY_CLOSE_AF</b> function type is defined in the Ndis.h he
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclcloseaddressfamily">NdisClCloseAddressFamily</a>
+<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
 </dt>
 <dt>
-<a href="netvista.ndisclnotifycloseaddressfamilycomplete">
+<a href="..\ndis\nf-ndis-ndisclnotifycloseaddressfamilycomplete.md">
    NdisClNotifyCloseAddressFamilyComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndiscldropparty">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_NOTIFY_CLOSE_AF callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_NOTIFY_CLOSE_AF callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

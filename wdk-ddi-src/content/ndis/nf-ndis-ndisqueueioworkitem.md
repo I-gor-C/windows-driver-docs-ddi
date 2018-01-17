@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisQueueIoWorkItem
+UID: NF:ndis.NdisQueueIoWorkItem
 title: NdisQueueIoWorkItem function
 author: windows-driver-content
 description: NDIS drivers call the NdisQueueIoWorkItem function to queue a work item.
 old-location: netvista\ndisqueueioworkitem.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f5065217-a74e-41b6-bc23-59b39948a450
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisQueueIoWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisQueueIoWorkItem function
@@ -59,7 +60,7 @@ VOID NdisQueueIoWorkItem(
 ### -param NdisIoWorkItemHandle [in]
 
 A handle to a private <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a> structure that was returned by a previous call to the 
-     <a href="netvista.ndisallocateioworkitem">
+     <a href="..\ndis\nf-ndis-ndisallocateioworkitem.md">
      NdisAllocateIoWorkItem</a> function.
 
 
@@ -86,7 +87,7 @@ A pointer to the context area that the driver passed to the
 ### -param NdisIoWorkItemHandle
 
 A handle to a private <b>NDIS_IO_WORKITEM</b> structure that was returned by a previous call to the 
-       <a href="netvista.ndisallocateioworkitem">
+       <a href="..\ndis\nf-ndis-ndisallocateioworkitem.md">
      NdisAllocateIoWorkItem</a> function.
 
 </dd>
@@ -105,7 +106,7 @@ None
 
 ## -remarks
 <b>NdisQueueIoWorkItem</b> calls 
-    <a href="kernel.ioqueueworkitem">IoQueueWorkItem</a> to queue a work item. NDIS
+    <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a> to queue a work item. NDIS
     work items use the 
     <b>CriticalWorkQueue</b> queue type.
 
@@ -113,7 +114,7 @@ The caller-supplied callback routine (NDIS_IO_WORKITEM_ROUTINE) runs in a system
     IRQL = PASSIVE_LEVEL.
 
 This caller-supplied routine can call the 
-    <a href="netvista.ndisfreeioworkitem">NdisFreeIoWorkItem</a> function to reclaim
+    <a href="..\ndis\nf-ndis-ndisfreeioworkitem.md">NdisFreeIoWorkItem</a> function to reclaim
     the storage allocated for the work item.
 
 To define a <i>Routine</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
@@ -127,93 +128,27 @@ The <b>NDIS_IO_WORKITEM_FUNCTION</b> function type is defined in the Ndis.h head
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ioqueueworkitem">IoQueueWorkItem</a>
+<a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocateioworkitem">NdisAllocateIoWorkItem</a>
+<a href="..\ndis\nf-ndis-ndisallocateioworkitem.md">NdisAllocateIoWorkItem</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreeioworkitem">NdisFreeIoWorkItem</a>
+<a href="..\ndis\nf-ndis-ndisfreeioworkitem.md">NdisFreeIoWorkItem</a>
 </dt>
 <dt>
-<a href="netvista.ndis_i_o_work_items">NDIS I/O Work Items</a>
+<a href="https://msdn.microsoft.com/4f966ff3-2092-495f-863f-50f079085fa6">NDIS I/O Work Items</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisQueueIoWorkItem function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueueIoWorkItem function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

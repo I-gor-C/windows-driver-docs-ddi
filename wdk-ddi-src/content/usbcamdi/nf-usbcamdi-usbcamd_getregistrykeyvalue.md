@@ -1,5 +1,5 @@
 ---
-UID: NF.usbcamdi.USBCAMD_GetRegistryKeyValue
+UID: NF:usbcamdi.USBCAMD_GetRegistryKeyValue
 title: USBCAMD_GetRegistryKeyValue function
 author: windows-driver-content
 description: The USBCAMD_GetRegistryKeyValue function retrieves the device-instance-specific registry key value.
@@ -7,7 +7,7 @@ old-location: stream\usbcamd_getregistrykeyvalue.htm
 old-project: stream
 ms.assetid: c3512a79-884f-4f38-9942-63a4a464585c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: USBCAMD_GetRegistryKeyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Usbcamd2.lib
 req.dll: 
 req.irql: 
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -93,41 +94,3 @@ Specifies the length, in bytes, of the value or structure at <i>Data.</i>
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamd2.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

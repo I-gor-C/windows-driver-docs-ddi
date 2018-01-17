@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 title: _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure describes the general-purpose I/O (GPIO) interrupt pin to reconfigure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure
@@ -75,7 +76,7 @@ Indicates whether to configure the GPIO interrupt pin to be level-sensitive or e
 <li><b>LevelSensitive</b></li>
 <li><b>Latched</b></li>
 </ul>
-For more information, see <a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>.
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>.
 
 
 ### -field Polarity
@@ -89,7 +90,7 @@ Indicates the polarity of the reconfigured GPIO interrupt pin. For a level-sensi
 <li><b>InterruptFallingEdge</b></li>
 <li><b>InterruptActiveBoth</b></li>
 </ul>
-For more information, see <a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a>.
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>.
 
 
 ### -field Flags
@@ -100,31 +101,6 @@ A set of flags to control the interrupt-reconfiguration operation. No flags are 
 ## -remarks
 The <i>ReconfigureParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a> event callback function is a pointer to a caller-allocated <b>GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -138,10 +114,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
 </dt>
 <dt>
-<a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>
+<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
 </dt>
 <dt>
-<a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a>
+<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
 </dt>
 </dl>
  

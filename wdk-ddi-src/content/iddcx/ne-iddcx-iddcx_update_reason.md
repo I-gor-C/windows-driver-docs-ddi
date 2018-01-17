@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_UPDATE_REASON
+UID: NE:iddcx.IDDCX_UPDATE_REASON
 title: IDDCX_UPDATE_REASON
 author: windows-driver-content
 description: Describes why the driver is calling to update the mode list.
@@ -7,7 +7,7 @@ old-location: display\iddcx_update_reason.htm
 old-project: display
 ms.assetid: e451e4e3-0b8a-4a17-8e4e-2da99d336a39
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_UPDATE_REASON,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: 
 ---
 
 # IDDCX_UPDATE_REASON enumeration
@@ -103,19 +104,3 @@ typedef enum _IDDCX_UPDATE_REASON {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

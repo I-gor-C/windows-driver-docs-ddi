@@ -1,6 +1,6 @@
 ---
-UID: NC.ntddpcm.PCMCIA_MODIFY_MEMORY_WINDOW
-title: PCMCIA_MODIFY_MEMORY_WINDOW
+UID: NC:ntddpcm.PCMCIA_MODIFY_MEMORY_WINDOW
+title: PCMCIA_MODIFY_MEMORY_WINDOW function
 author: windows-driver-content
 description: The PCMCIA_MODIFY_MEMORY_WINDOW interface routine sets the attributes of a memory window for a PCMCIA memory card. The memory window is mapped by the PCMCIA bus driver.
 old-location: pcmcia\pcmcia_modify_memory_window.htm
@@ -8,10 +8,10 @@ old-project: PCMCIA
 ms.assetid: 01469cd7-a023-42b0-9306-fc390bf990e6
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PAR_SET_INFORMATION, *PPAR_SET_INFORMATION, PPAR_SET_INFORMATION, PAR_SET_INFORMATION
+ms.keywords: PCMCIA_MODIFY_MEMORY_WINDOW
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ntddpcm.h
 req.include-header: Ntddpcm.h
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL (See Remarks section.)
+req.typenames: *PWHEA_XPF_TLB_CHECK, WHEA_XPF_TLB_CHECK
 ---
 
-# PCMCIA_MODIFY_MEMORY_WINDOW callback
+# PCMCIA_MODIFY_MEMORY_WINDOW function
 
 
 
@@ -42,7 +43,7 @@ The <b>PCMCIA_MODIFY_MEMORY_WINDOW</b> interface routine sets the attributes of 
 
 
 
-## -prototype
+## -syntax
 
 ````
 PCMCIA_MODIFY_MEMORY_WINDOW ModifyMemoryWindow;
@@ -120,42 +121,6 @@ A caller must set the <i>Context</i> parameter to the context that is specified 
 
 Callers of this routine must be running at IRQL &lt;= DISPATCH_LEVEL. To maintain overall system performance, it is recommended that drivers call this routine at IRQL &lt; DISPATCH_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddpcm.h (include Ntddpcm.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL (See Remarks section.)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

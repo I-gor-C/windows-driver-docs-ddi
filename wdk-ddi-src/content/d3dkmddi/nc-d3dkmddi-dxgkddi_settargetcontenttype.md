@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_SETTARGETCONTENTTYPE
-title: DXGKDDI_SETTARGETCONTENTTYPE
+UID: NC:d3dkmddi.DXGKDDI_SETTARGETCONTENTTYPE
+title: DXGKDDI_SETTARGETCONTENTTYPE function
 author: windows-driver-content
 description: Passes the content type for which the driver should optimize on the specified target.
 old-location: display\dxgkddi_settargetcontenttype.htm
 old-project: display
 ms.assetid: 7639BF7B-6219-4490-953F-80E76CDFBAAA
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_SETTARGETCONTENTTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_SETTARGETCONTENTTYPE callback
+# DXGKDDI_SETTARGETCONTENTTYPE function
 
 
 
@@ -44,7 +45,7 @@ Passes the content type for which the driver should optimize on the specified ta
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_SETTARGETCONTENTTYPE(
@@ -63,7 +64,7 @@ A handle that identifies the adapter.
 
 ### -param pSetTargetContentTypeArg [in]
 
-A pointer to a <a href="display.dxgkarg_settargetcontenttype">DXGKARG_SETTARGETCONTENTTYPE</a> structure that provides the target to be modified and the new type of content being displayed on it.
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_settargetcontenttype.md">DXGKARG_SETTARGETCONTENTTYPE</a> structure that provides the target to be modified and the new type of content being displayed on it.
 
 
 ## -returns
@@ -73,20 +74,4 @@ If this routine succeeds, it returns STATUS_SUCCESS.
 ## -remarks
 This is an optional DDI, so the function pointer in DRIVER_INITIALIZATION_DATA should be set to null if the DDI is not implemented for every adapter supported by the driver.
 This function is always called at PASSIVE level so the supporting code should be made pageable.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

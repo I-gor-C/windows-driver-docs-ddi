@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_IHV_TASK_PRIORITY
+UID: NE:wditypes._WDI_IHV_TASK_PRIORITY
 title: _WDI_IHV_TASK_PRIORITY
 author: windows-driver-content
 description: The WDI_IHV_TASK_PRIORITY enumeration defines IHV task priorities.
 old-location: netvista\wdi_ihv_task_priority.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 606CF45C-5398-4157-92A7-382B6162D806
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_IHV_TASK_PRIORITY, WDI_IHV_TASK_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_IHV_TASK_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -72,39 +73,3 @@ Low priority.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

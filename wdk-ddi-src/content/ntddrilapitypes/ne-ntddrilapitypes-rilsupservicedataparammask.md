@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILSUPSERVICEDATAPARAMMASK
+UID: NE:ntddrilapitypes.RILSUPSERVICEDATAPARAMMASK
 title: RILSUPSERVICEDATAPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsupservicedataparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2b0ff5a7-02b3-4a22-98da-d13825bc2f45
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSUPSERVICEDATAPARAMMASK, RILSUPSERVICEDATAPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSUPSERVICEDATAPARAMMASK
 ---
 
 # RILSUPSERVICEDATAPARAMMASK enumeration
@@ -81,19 +82,3 @@ typedef enum _RILSUPSERVICEDATAPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

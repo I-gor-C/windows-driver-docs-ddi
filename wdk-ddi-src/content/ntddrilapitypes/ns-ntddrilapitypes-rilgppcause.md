@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILGPPCAUSE
+UID: NS:ntddrilapitypes.RILGPPCAUSE
 title: RILGPPCAUSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgppcause.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4072183a-36b5-4a77-a1a5-95b97950b01a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGPPCAUSE, RILGPPCAUSE, *LPRILGPPCAUSE, LPRILGPPCAUSE
+ms.date: 1/11/2018
+ms.keywords: RILGPPCAUSE, RILGPPCAUSE, *LPRILGPPCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGPPCAUSE, *LPRILGPPCAUSE
 ---
 
 # RILGPPCAUSE structure
@@ -61,19 +62,3 @@ typedef struct _RILGPPCAUSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi._D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS
+UID: NE:d3dumddi._D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS
 title: _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS
 author: windows-driver-content
 description: Identifies overlay capabilities.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_feature_caps.htm
 old-project: display
 ms.assetid: 51e44c1c-ca56-4fe3-a27b-d0957df203cf
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS, D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS
 ---
 
 # _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS enumeration
@@ -101,39 +102,3 @@ The overlay plane supports stretching and shrinking using filtering that is bett
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

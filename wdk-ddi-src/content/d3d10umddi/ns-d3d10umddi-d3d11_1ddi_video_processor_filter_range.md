@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 title: D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 author: windows-driver-content
 description: Defines the range of supported values for an image filter.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_filter_range.htm
 old-project: display
 ms.assetid: 9dc93d92-ccdc-488b-a5dd-a2efe783cbb3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE structure
@@ -88,40 +89,4 @@ For example, a hue filter might have an actual range of [â€“180.0 … +180.
 
 In this case, a filter value of 2 would be interpreted by the device as 0.50 (or 2 Ã— 0.25).
 
-The device should use a multiplier that can be represented exactly as a base-2 fraction.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The device should use a multiplier that can be represented exactly as a base-2 fraction.</p>

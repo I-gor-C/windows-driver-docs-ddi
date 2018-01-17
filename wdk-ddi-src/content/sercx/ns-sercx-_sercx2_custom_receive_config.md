@@ -1,5 +1,5 @@
 ---
-UID: NS.SERCX._SERCX2_CUSTOM_RECEIVE_CONFIG
+UID: NS:sercx._SERCX2_CUSTOM_RECEIVE_CONFIG
 title: _SERCX2_CUSTOM_RECEIVE_CONFIG
 author: windows-driver-content
 description: The SERCX2_CUSTOM_RECEIVE_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new custom-receive object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: *PSERCX2_CUSTOM_RECEIVE_CONFIG, SERCX2_CUSTOM_RECEIVE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ typedef struct _SERCX2_CUSTOM_RECEIVE_CONFIG {
 
 ### -field Size
 
-The size, in bytes, of this structure. The <a href="serports.sercx2customreceivecreate">SerCx2CustomReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
 
 ### -field Alignment
@@ -81,7 +82,7 @@ The maximum length, in bytes, of a data transfer in a custom-receive transaction
 
 ### -field MinimumTransferUnit
 
-The minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. To indicate that the default minimum transfer unit should be used, set this member to zero. For more information about the default minimum transfer unit, see <a href="kernel.dma_adapter_info_v1">DMA_ADAPTER_INFO_V1</a>.
+The minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. To indicate that the default minimum transfer unit should be used, set this member to zero. For more information about the default minimum transfer unit, see <a href="..\wdm\ns-wdm-_dma_adapter_info_v1.md">DMA_ADAPTER_INFO_V1</a>.
 
 
 ### -field Exclusive
@@ -96,47 +97,22 @@ Regardless of the value of this member, PIO-receive transactions are used to sav
 
 
 ## -remarks
-The <a href="serports.sercx2customreceivecreate">SerCx2CustomReceiveCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomReceiveCreate</b>, call the <a href="serports.sercx2_custom_receive_config_init">SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</a> function to initialize this structure.
+The <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomReceiveCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2_custom_receive_config_init.md">SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</a> function to initialize this structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.dma_adapter_info_v1">DMA_ADAPTER_INFO_V1</a>
+<a href="..\wdm\ns-wdm-_dma_adapter_info_v1.md">DMA_ADAPTER_INFO_V1</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 </dt>
 <dt>
-<a href="serports.sercx2_custom_receive_config_init">SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2_custom_receive_config_init.md">SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2customreceivecreate">SerCx2CustomReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a>
 </dt>
 </dl>
  

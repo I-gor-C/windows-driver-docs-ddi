@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_DISPLAYPANELORIENTATION
+UID: NE:d3dkmddi._DXGK_DISPLAYPANELORIENTATION
 title: _DXGK_DISPLAYPANELORIENTATION
 author: windows-driver-content
 description: Enum used to express the orientation of an integrated panel.
@@ -7,7 +7,7 @@ old-location: display\dxgk_displaypanelorientation.htm
 old-project: display
 ms.assetid: 49758A57-EFCE-4E9C-9BF6-74F6EFD356D9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_DISPLAYPANELORIENTATION, DXGK_DISPLAYPANELORIENTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_DISPLAYPANELORIENTATION
 ---
 
 # _DXGK_DISPLAYPANELORIENTATION enumeration
@@ -77,19 +78,3 @@ Indicates a 270 degree rotation.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_D3D12_OPTIONS_DATA_0031
+UID: NS:d3d12umddi.D3D12DDI_D3D12_OPTIONS_DATA_0031
 title: D3D12DDI_D3D12_OPTIONS_DATA_0031
 author: windows-driver-content
 description: Display options data.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-d3d12-options-data-0031.htm
 old-project: display
 ms.assetid: 3e60f42a-ea95-4876-b370-5c2f0585dc97
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_D3D12_OPTIONS_DATA_0031, D3D12DDI_D3D12_OPTIONS_DATA_0031
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_D3D12_OPTIONS_DATA_0031
 ---
 
 # D3D12DDI_D3D12_OPTIONS_DATA_0031 structure
@@ -115,19 +116,3 @@ Copy queue timestamp queries supported.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

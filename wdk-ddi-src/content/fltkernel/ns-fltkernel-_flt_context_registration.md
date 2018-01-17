@@ -1,5 +1,5 @@
 ---
-UID: NS.FLTKERNEL._FLT_CONTEXT_REGISTRATION
+UID: NS:fltkernel._FLT_CONTEXT_REGISTRATION
 title: _FLT_CONTEXT_REGISTRATION
 author: windows-driver-content
 description: The FLT_CONTEXT_REGISTRATION structure is used to register context types.
@@ -7,8 +7,8 @@ old-location: ifsk\flt_context_registration.htm
 old-project: ifsk
 ms.assetid: 6316acfa-c19c-4705-becb-b89c3feed6a3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION, PFLT_CONTEXT_REGISTRATION, *PFLT_CONTEXT_REGISTRATION
+ms.date: 1/9/2018
+ms.keywords: _FLT_CONTEXT_REGISTRATION, *PFLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PFLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION
 ---
 
 # _FLT_CONTEXT_REGISTRATION structure
@@ -149,9 +150,9 @@ Reserved for system use. Minifilters must set this member to <b>NULL</b>.
 
 
 ## -remarks
-When a minifilter calls <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. 
+When a minifilter calls <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. 
 
-To register these context types, the minifilter creates a variable-length array of FLT_CONTEXT_REGISTRATION structures and stores a pointer to the array in the <b>ContextRegistration</b> member of the <a href="ifsk.flt_registration">FLT_REGISTRATION</a> structure that the minifilter passes as the <i>Registration</i> parameter of <a href="ifsk.fltregisterfilter">FltRegisterFilter</a>. The last element of this array must be {FLT_CONTEXT_END}. 
+To register these context types, the minifilter creates a variable-length array of FLT_CONTEXT_REGISTRATION structures and stores a pointer to the array in the <b>ContextRegistration</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> structure that the minifilter passes as the <i>Registration</i> parameter of <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. The last element of this array must be {FLT_CONTEXT_END}. 
 
 For each context type that the minifilter uses, the minifilter must supply at least one FLT_CONTEXT_REGISTRATION structure, according to the following rules: 
 
@@ -164,28 +165,13 @@ Only one FLT_CONTEXT_REGISTRATION structure with a <b>Size</b> member of FLT_VAR
 No more than three FLT_CONTEXT_REGISTRATION structures with a <b>Size</b> member other than FLT_VARIABLE_SIZED_CONTEXTS can be supplied for each context type. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_registration">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltregisterfilter">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_context_allocate_callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>
@@ -201,5 +187,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CONTEXT_REGISTRATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CONTEXT_REGISTRATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

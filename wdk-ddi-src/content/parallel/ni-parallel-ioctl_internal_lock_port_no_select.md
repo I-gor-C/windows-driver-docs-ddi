@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
+UID: NI:parallel.IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
 title: IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
 author: windows-driver-content
 description: The IOCTL_INTERNAL_LOCK_PORT_NO_SELECT request allocates the parallel device's parent parallel port, but does not select the parallel device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_LOCK_PORT_NO_SELECT IOCTL
@@ -81,21 +82,6 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

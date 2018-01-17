@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcRegisterIoTimeout
+UID: NF:portcls.PcRegisterIoTimeout
 title: PcRegisterIoTimeout function
 author: windows-driver-content
 description: The PcRegisterIoTimeout function registers a driver-supplied I/O-timer callback routine for a specified device object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcRegisterIoTimeout function
@@ -59,7 +60,7 @@ NTSTATUS PcRegisterIoTimeout(
 
 ### -param pDeviceObject [in]
 
-Pointer to a device object representing a device on which I/O operations can time out. This parameter must point to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>. When calling the I/O-timer callback routine, the port class driver passes this pointer as the first of two call parameters. For more information, see the following Remarks section.
+Pointer to a device object representing a device on which I/O operations can time out. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>. When calling the I/O-timer callback routine, the port class driver passes this pointer as the first of two call parameters. For more information, see the following Remarks section.
 
 
 ### -param pTimerRoutine [in]
@@ -89,7 +90,7 @@ An adapter driver calls the <b>PcRegisterIoTimeout</b> function to enable a low-
 
 After the driver calls <b>PcRegisterIoTimeout</b>, the port-class driver calls the driver's I/O-timer callback routine approximately once per second for as long as the device remains active. (The device is activated by an IRP_MN_START_DEVICE request and deactivated by an IRP_MN_STOP_DEVICE request.)
 
-The driver can disable the timer by calling <a href="audio.pcunregisteriotimeout">PcUnregisterIoTimeout</a>.
+The driver can disable the timer by calling <a href="..\portcls\nf-portcls-pcunregisteriotimeout.md">PcUnregisterIoTimeout</a>.
 
 Only one timer callback with a particular combination of device object, I/O-timer callback routine, and context can be registered at a time.
 
@@ -100,70 +101,13 @@ The <i>pTimerRoutine </i>parameter is of type PIO_TIMER_ROUTINE, which is define
 The <i>DeviceObject</i> and <i>Context</i> parameters are the same values that the adapter driver previously passed as call parameters to <b>PcRegisterIoTimeout</b>. The port-class driver calls the timer routine at IRQL DISPATCH_LEVEL. The timer routine must not contain pageable code.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcunregisteriotimeout">PcUnregisterIoTimeout</a>
+<a href="..\portcls\nf-portcls-pcunregisteriotimeout.md">PcUnregisterIoTimeout</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 </dl>
  

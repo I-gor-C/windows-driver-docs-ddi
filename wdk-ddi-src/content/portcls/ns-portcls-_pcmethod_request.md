@@ -1,5 +1,5 @@
 ---
-UID: NS.PORTCLS._PCMETHOD_REQUEST
+UID: NS:portcls._PCMETHOD_REQUEST
 title: _PCMETHOD_REQUEST
 author: windows-driver-content
 description: The PCMETHOD_REQUEST structure specifies a method request.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: aa48330b-93f0-4fb2-bb36-4e9050f19be5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMETHOD_REQUEST, PCMETHOD_REQUEST, *PPCMETHOD_REQUEST
+ms.keywords: _PCMETHOD_REQUEST, *PPCMETHOD_REQUEST, PCMETHOD_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPCMETHOD_REQUEST, PCMETHOD_REQUEST
 ---
 
 # _PCMETHOD_REQUEST structure
@@ -59,12 +60,12 @@ typedef struct _PCMETHOD_REQUEST {
 
 ### -field MajorTarget
 
-Pointer to the <a href="com.iunknown">IUnknown</a> interface of a miniport object that supports the method set and method specified by <b>MethodItem</b>.
+Pointer to the <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface of a miniport object that supports the method set and method specified by <b>MethodItem</b>.
 
 
 ### -field MinorTarget
 
-Pointer to an <a href="com.iunknown">IUnknown</a> interface of a stream object associated with <b>MajorTarget</b>. If the request does not specify a minor target, set this member to <b>NULL</b>.
+Pointer to an <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface of a stream object associated with <b>MajorTarget</b>. If the request does not specify a minor target, set this member to <b>NULL</b>.
 
 
 ### -field Node
@@ -74,7 +75,7 @@ Specifies the node ID of the target node for the request. If the target is not a
 
 ### -field MethodItem
 
-Pointer to a <a href="audio.pcmethod_item">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.
+Pointer to a <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_4.md">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.
 
 
 ### -field Verb
@@ -121,25 +122,10 @@ Returns information about support for the method set specified by <b>MethodItem<
 
 
 ## -remarks
-This is the structure that the port driver passes to the miniport driver's method-handler routine. The <a href="audio.pcmethod_item">PCMETHOD_ITEM</a> structure contains a pointer to a method handler that takes a PCMETHOD_REQUEST pointer as its single call parameter.
+This is the structure that the port driver passes to the miniport driver's method-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_4.md">PCMETHOD_ITEM</a> structure contains a pointer to a method handler that takes a PCMETHOD_REQUEST pointer as its single call parameter.
 
 The WDM audio subsystem does not currently support method requests.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -147,7 +133,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
 </dt>
 <dt>
-<a href="audio.pcmethod_item">PCMETHOD_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_4.md">PCMETHOD_ITEM</a>
 </dt>
 </dl>
  

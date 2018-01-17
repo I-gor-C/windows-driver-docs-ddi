@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDDCX_MONITOR_DESCRIPTION
+UID: NS:iddcx.IDDCX_MONITOR_DESCRIPTION
 title: IDDCX_MONITOR_DESCRIPTION
 author: windows-driver-content
 description: Gives information about the current monitor description.
@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_description.htm
 old-project: display
 ms.assetid: 3ef7ffca-9192-4578-8397-c7fbb2ea2239
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_MONITOR_DESCRIPTION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_MONITOR_DESCRIPTION structure
@@ -85,19 +86,3 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

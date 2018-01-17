@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_QUERYENGINESTATUS
-title: DXGKDDI_QUERYENGINESTATUS
+UID: NC:d3dkmddi.DXGKDDI_QUERYENGINESTATUS
+title: DXGKDDI_QUERYENGINESTATUS function
 author: windows-driver-content
 description: The display port driver's GPU scheduler calls this function to determine the progress of a node within an active physical display adapter (engine).
 old-location: display\dxgkddiqueryenginestatus.htm
 old-project: display
 ms.assetid: 87c99fcb-d25a-41b1-a1f3-9cf9ab7b141e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_QUERYENGINESTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_QUERYENGINESTATUS callback
+# DXGKDDI_QUERYENGINESTATUS function
 
 
 
@@ -42,7 +43,7 @@ The display port driver's GPU scheduler calls this function to determine the pro
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_QUERYENGINESTATUS DxgkDdiQueryEngineStatus;
@@ -64,7 +65,7 @@ A handle to a context block that is associated with a display adapter. The displ
 
 ### -param pQueryEngineStatus [in, out]
 
-A pointer to a   <a href="display.dxgkarg_queryenginestatus">DXGKARG_QUERYENGINESTATUS</a> structure that specifies a node and physical adapter that are to be queried for progress, and that supplies a value for the progress.
+A pointer to a   <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryenginestatus.md">DXGKARG_QUERYENGINESTATUS</a> structure that specifies a node and physical adapter that are to be queried for progress, and that supplies a value for the progress.
 
 
 ## -returns
@@ -79,66 +80,10 @@ The operating system guarantees that this function follows the first level synch
 For more information, see <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E2-8BBF-B455BB864A29">TDR changes in Windows 8</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgkarg_queryenginestatus">DXGKARG_QUERYENGINESTATUS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryenginestatus.md">DXGKARG_QUERYENGINESTATUS</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
@@ -148,5 +93,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_QUERYENGINESTATUS callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_QUERYENGINESTATUS callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

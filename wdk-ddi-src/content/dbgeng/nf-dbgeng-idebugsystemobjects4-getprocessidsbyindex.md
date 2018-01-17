@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetProcessIdsByIndex
+UID: NF:dbgeng.IDebugSystemObjects4.GetProcessIdsByIndex
 title: IDebugSystemObjects4::GetProcessIdsByIndex method
 author: windows-driver-content
 description: The GetProcessIdsByIndex method returns the engine process ID and system process ID for the specified processes in the current target.
 old-location: debugger\getprocessidsbyindex.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 2ae042c5-9c2a-4de4-817c-c9b97f979684
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetProcessIdsByIndex, GetProcessIdsByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetProcessIdsByIndex method
@@ -86,33 +87,6 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-The index of the first process is zero.  The index of the last process is the number of processes returned by <a href="debugger.getnumberprocesses">GetNumberProcesses</a> minus one.
+The index of the first process is zero.  The index of the last process is the number of processes returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547946">GetNumberProcesses</a> minus one.
 
-For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>

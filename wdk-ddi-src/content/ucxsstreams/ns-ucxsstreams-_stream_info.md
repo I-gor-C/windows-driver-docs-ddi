@@ -1,14 +1,14 @@
 ---
-UID: NS.UCXSSTREAMS._STREAM_INFO
+UID: NS:ucxsstreams._STREAM_INFO
 title: _STREAM_INFO
 author: windows-driver-content
 description: This structure stores information about a stream associated with a bulk endpoint.
 old-location: buses\_stream_info.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: B8AE8866-AC13-4E7B-8815-70846DEECA12
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO, PSTREAM_INFO
+ms.date: 1/4/2018
+ms.keywords: _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STREAM_INFO, *PSTREAM_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -72,19 +73,3 @@ The stream identifier. The open-static streams request obtains stream identifier
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxsstreams.h (include Ucxclass.h or Ucxstreams.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

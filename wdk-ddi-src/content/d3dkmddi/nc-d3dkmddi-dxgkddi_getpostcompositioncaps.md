@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_GETPOSTCOMPOSITIONCAPS
-title: DXGKDDI_GETPOSTCOMPOSITIONCAPS
+UID: NC:d3dkmddi.DXGKDDI_GETPOSTCOMPOSITIONCAPS
+title: DXGKDDI_GETPOSTCOMPOSITIONCAPS function
 author: windows-driver-content
 description: Called to retrieve post composition capabilities. Support for this DDI is required for any WDDM 2.2 driver that wants to support post composition scaling.
 old-location: display\dxgkddi_getpostcompositioncaps.htm
 old-project: display
 ms.assetid: B79959EC-A064-4B35-98EF-5B032AF5D4B4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_GETPOSTCOMPOSITIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_GETPOSTCOMPOSITIONCAPS callback
+# DXGKDDI_GETPOSTCOMPOSITIONCAPS function
 
 
 
@@ -42,7 +43,7 @@ Called to retrieve post composition capabilities. Support for this DDI is requir
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_GETPOSTCOMPOSITIONCAPS(
@@ -77,20 +78,4 @@ DXGKDDI_GETPOSTCOMPOSITIONCAPS returns the following values:
 This function is called at PASSIVE_LEVEL.
 
 The multiplane overlay capabilities are allowed to change due to display configuration changes.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

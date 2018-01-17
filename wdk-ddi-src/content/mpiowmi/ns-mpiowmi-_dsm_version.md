@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._DSM_VERSION
+UID: NS:mpiowmi._DSM_VERSION
 title: _DSM_VERSION
 author: windows-driver-content
 description: The DSM_VERSION structure represents version information that is associated with a DSM binary or package.
@@ -7,8 +7,8 @@ old-location: storage\dsm_version.htm
 old-project: storage
 ms.assetid: 1aa264fa-b552-41a0-bd43-a62f8f2b533b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DSM_VERSION, PDSM_VERSION, DSM_VERSION, *PDSM_VERSION
+ms.date: 1/10/2018
+ms.keywords: _DSM_VERSION, DSM_VERSION, *PDSM_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DSM_VERSION, *PDSM_VERSION
 ---
 
 # _DSM_VERSION structure
@@ -77,19 +78,3 @@ An unsigned 32-bitfield that represents the QFE number portion of the version.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

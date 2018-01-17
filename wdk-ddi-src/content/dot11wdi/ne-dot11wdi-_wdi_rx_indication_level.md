@@ -1,13 +1,13 @@
 ---
-UID: NE.dot11wdi._WDI_RX_INDICATION_LEVEL
+UID: NE:dot11wdi._WDI_RX_INDICATION_LEVEL
 title: _WDI_RX_INDICATION_LEVEL
 author: windows-driver-content
 description: The WDI_RX_INDICATION_LEVEL enumeration defines the RX indication levels.
 old-location: netvista\wdi_rx_indication_level.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 73ad8d04-c245-4a3c-92ff-4729737ede92
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_RX_INDICATION_LEVEL, WDI_RX_INDICATION_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_RX_INDICATION_LEVEL
 ---
 
 # _WDI_RX_INDICATION_LEVEL enumeration
@@ -107,39 +108,3 @@ Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_P
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

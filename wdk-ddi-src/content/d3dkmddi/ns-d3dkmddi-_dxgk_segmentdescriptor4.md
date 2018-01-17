@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_SEGMENTDESCRIPTOR4
+UID: NS:d3dkmddi._DXGK_SEGMENTDESCRIPTOR4
 title: _DXGK_SEGMENTDESCRIPTOR4
 author: windows-driver-content
 description: The DXGK_SEGMENTDESCRIPTOR4 structure describes a programmable CPU host aperture.
@@ -7,7 +7,7 @@ old-location: display\dxgk_segmentdescriptor4.htm
 old-project: display
 ms.assetid: 0958443F-1554-47B0-83B9-283D98D927CE
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_SEGMENTDESCRIPTOR4, DXGK_SEGMENTDESCRIPTOR4
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_SEGMENTDESCRIPTOR4
 ---
 
 # _DXGK_SEGMENTDESCRIPTOR4 structure
@@ -105,39 +106,3 @@ The number of invalid memory ranges in the segment. If this value is not zero, t
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

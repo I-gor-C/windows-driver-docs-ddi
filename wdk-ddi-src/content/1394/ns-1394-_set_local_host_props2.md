@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._SET_LOCAL_HOST_PROPS2
+UID: NS:1394._SET_LOCAL_HOST_PROPS2
 title: _SET_LOCAL_HOST_PROPS2
 author: windows-driver-content
 description: SET_LOCAL_HOST_PROPS2 sets a lower bound on the value the bus will use for its gap count.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: ec4b8630-500d-494a-9a86-2f9cf9f9227b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2, PSET_LOCAL_HOST_PROPS2
+ms.keywords: _SET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2
 ---
 
 # _SET_LOCAL_HOST_PROPS2 structure
@@ -61,21 +62,6 @@ Specifies lower bound of the gap count.
 ## -remarks
 See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for a description of the gap count. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

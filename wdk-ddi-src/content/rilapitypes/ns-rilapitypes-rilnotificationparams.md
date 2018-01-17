@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILNOTIFICATIONPARAMS
+UID: NS:rilapitypes.RILNOTIFICATIONPARAMS
 title: RILNOTIFICATIONPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnotificationparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 25a67292-b6fd-448a-a7bd-2867b3f46f13
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILNOTIFICATIONPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

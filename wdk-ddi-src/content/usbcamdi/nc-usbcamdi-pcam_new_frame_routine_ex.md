@@ -1,5 +1,5 @@
 ---
-UID: NC.usbcamdi.PCAM_NEW_FRAME_ROUTINE_EX
+UID: NC:usbcamdi.PCAM_NEW_FRAME_ROUTINE_EX
 title: PCAM_NEW_FRAME_ROUTINE_EX
 author: windows-driver-content
 description: A camera minidriver's CamNewVideoFrameEx callback function initializes a new video frame context structure.
@@ -7,8 +7,8 @@ old-location: stream\camnewvideoframeex.htm
 old-project: stream
 ms.assetid: 739e434e-9621-4927-bf1d-2e7c3b2828d7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
+ms.date: 1/9/2018
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL (See Remarks section)
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -89,41 +90,4 @@ USBCAMD calls the camera minidriver's <b>CamNewVideoFrameEx</b> callback functio
 
 The original USBCAMD does not call <b>CamNewVideoFrameEx</b>.
 
-This function is optional.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL (See Remarks section)
-
-</td>
-</tr>
-</table>
+This function is optional.</p>

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMESSAGESTATUS
+UID: NE:rilapitypes.RILMESSAGESTATUS
 title: RILMESSAGESTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessagestatus_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 30ae1eff-447c-4f6f-8f6c-cd8bc657d32d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMESSAGESTATUS, RILMESSAGESTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGESTATUS
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef enum _RILMESSAGESTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

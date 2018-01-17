@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortGetAssociatedDeviceExtension
+UID: NF:video.VideoPortGetAssociatedDeviceExtension
 title: VideoPortGetAssociatedDeviceExtension function
 author: windows-driver-content
 description: The VideoPortGetAssociatedDeviceExtension function returns the device extension for the parent of the specified device object.
@@ -7,7 +7,7 @@ old-location: display\videoportgetassociateddeviceextension.htm
 old-project: display
 ms.assetid: 825e2b61-6b51-4553-88e1-0aff2e9e3cce
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortGetAssociatedDeviceExtension
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -64,73 +65,4 @@ Is the device object of a child device.
 
 
 ## -remarks
-The miniport driver of a child device can call this function to obtain a description of its parent through the parent's device extension.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The miniport driver of a child device can call this function to obtain a description of its parent through the parent's device extension.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTOutputStream.GetOutputStreamPresentationPosition
+UID: NF:portcls.IMiniportWaveRTOutputStream.GetOutputStreamPresentationPosition
 title: IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition method
 author: windows-driver-content
 description: Returns stream presentation information.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition method
@@ -55,7 +56,7 @@ NTSTATUS GetOutputStreamPresentationPosition(
 
 ### -param pPresentationPosition [out]
 
- pPresentationPosition returns a <a href="..\ksmedia\ns-ksmedia-ksaudio_presentation_position.md">KSAUDIO_PRESENTATION_POSITION</a> structure that represents a recent presentation position in the audio data stream. For more information, see <a href="audio.iminiportstreamaudioenginenode_getstreampresentationposition">IMiniportStreamAudioEngineNode::GetStreamPresentationPosition</a>.
+ pPresentationPosition returns a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450865">KSAUDIO_PRESENTATION_POSITION</a> structure that represents a recent presentation position in the audio data stream. For more information, see <a href="https://msdn.microsoft.com/872A4445-8E0B-4804-ADDC-8CD9608E3EBF">IMiniportStreamAudioEngineNode::GetStreamPresentationPosition</a>.
 
 
 ## -returns
@@ -72,41 +73,6 @@ The value returned in the u64PositionInBlocks member of KSAUDIO_PRESENTATION_POS
 This does not mean that GetPacketCount and GetOutputStreamPresentationPosition, if called simultaneously, would return values that refer to the same sample. GetPacketCount returns information about the samples transferred from the WaveRT buffer to the hardware, while GetOutputStreamPresentationPosition returns information about samples presented at the output of the system. These are two different pieces of information. 
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
- Passive level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

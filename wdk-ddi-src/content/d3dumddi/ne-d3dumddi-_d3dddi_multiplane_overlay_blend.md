@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi._D3DDDI_MULTIPLANE_OVERLAY_BLEND
+UID: NE:d3dumddi._D3DDDI_MULTIPLANE_OVERLAY_BLEND
 title: _D3DDDI_MULTIPLANE_OVERLAY_BLEND
 author: windows-driver-content
 description: Identifies a blend operation to be performed on an overlay plane.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_blend.htm
 old-project: display
 ms.assetid: 1ee411f2-1779-41bd-808c-40639bb22662
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_MULTIPLANE_OVERLAY_BLEND, D3DDDI_MULTIPLANE_OVERLAY_BLEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_MULTIPLANE_OVERLAY_BLEND
 ---
 
 # _D3DDDI_MULTIPLANE_OVERLAY_BLEND enumeration
@@ -65,39 +66,3 @@ The overlay plane should use the pre-multiplied alpha channel in this plane to b
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

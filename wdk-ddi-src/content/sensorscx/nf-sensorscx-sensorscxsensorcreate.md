@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorscx.SensorsCxSensorCreate
+UID: NF:sensorscx.SensorsCxSensorCreate
 title: SensorsCxSensorCreate function
 author: windows-driver-content
 description: This function creates an instance of a sensor in the class extension.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -92,32 +93,6 @@ The sensors class extension writes a set of properties for each sensor when Sens
 
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsCx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

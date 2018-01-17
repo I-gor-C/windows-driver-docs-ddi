@@ -1,5 +1,5 @@
 ---
-UID: NS.IRB._IDE_CONTROLLER_CONFIGURATION
+UID: NS:irb._IDE_CONTROLLER_CONFIGURATION
 title: _IDE_CONTROLLER_CONFIGURATION
 author: windows-driver-content
 description: The IDE_CONTROLLER_CONFIGURATION structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,8 +7,8 @@ old-location: storage\ide_controller_configuration.htm
 old-project: storage
 ms.assetid: 89b7f66e-3a3a-4723-a409-3b3030c1a45b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION, PIDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION
+ms.date: 1/10/2018
+ms.keywords: _IDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PIDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION
 ---
 
 # _IDE_CONTROLLER_CONFIGURATION structure
@@ -148,19 +149,3 @@ Provides the hardware resources for the ATA controller.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

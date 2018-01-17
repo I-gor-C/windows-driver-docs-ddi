@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_MONITOR_TIMING_TYPE
+UID: NE:d3dkmdt._D3DKMDT_MONITOR_TIMING_TYPE
 title: _D3DKMDT_MONITOR_TIMING_TYPE
 author: windows-driver-content
 description: The D3DKMDT_MONITOR_TIMING_TYPE enumeration is reserved for system use. Do not use it in your driver.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_timing_type.htm
 old-project: display
 ms.assetid: fb8a2c29-f41b-4701-bbc2-f0a8e6dadc11
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_MONITOR_TIMING_TYPE, D3DKMDT_MONITOR_TIMING_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_MONITOR_TIMING_TYPE
 ---
 
 # _D3DKMDT_MONITOR_TIMING_TYPE enumeration
@@ -95,29 +96,3 @@ Reserved for system use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

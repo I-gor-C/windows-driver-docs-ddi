@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IObjectCleanup.OnCleanup
+UID: NF:wudfddi.IObjectCleanup.OnCleanup
 title: IObjectCleanup::OnCleanup method
 author: windows-driver-content
 description: The OnCleanup method releases any references to a WDF object to prevent interface leakage.
@@ -7,7 +7,7 @@ old-location: wdf\iobjectcleanup_oncleanup.htm
 old-project: wdf
 ms.assetid: 6b66c496-d1cc-4b7a-ae50-f18fffa7275a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IObjectCleanup, IObjectCleanup::OnCleanup, OnCleanup
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -71,48 +72,33 @@ The framework calls <b>OnCleanup</b> as part of a WDF object destruction sequenc
 A driver can register the <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a> interface when the driver calls any of the following methods that creates a WDF object or that assigns a context to the WDF object: 
 
 
-<a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
 
 
 
-<a href="wdf.iwdfdevice_createrequest">IWDFDevice::CreateRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557021">IWDFDevice::CreateRequest</a>
 
 
 
-<a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
 
 
-<a href="wdf.iwdfdriver_createpreallocatedwdfmemory">IWDFDriver::CreatePreallocatedWdfMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558902">IWDFDriver::CreatePreallocatedWdfMemory</a>
 
 
 
-<a href="wdf.iwdfdriver_createwdfmemory">IWDFDriver::CreateWdfMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558905">IWDFDriver::CreateWdfMemory</a>
 
 
 
-<a href="wdf.iwdfdriver_createwdfobject">IWDFDriver::CreateWdfObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558906">IWDFDriver::CreateWdfObject</a>
 
 
 
-<a href="wdf.iwdfobject_assigncontext">IWDFObject::AssignContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a>
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -120,33 +106,33 @@ Header
 <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdevice_createrequest">IWDFDevice::CreateRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557021">IWDFDevice::CreateRequest</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdriver_createpreallocatedwdfmemory">IWDFDriver::CreatePreallocatedWdfMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558902">IWDFDriver::CreatePreallocatedWdfMemory</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdriver_createwdfmemory">IWDFDriver::CreateWdfMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558905">IWDFDriver::CreateWdfMemory</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdriver_createwdfobject">IWDFDriver::CreateWdfObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558906">IWDFDriver::CreateWdfObject</a>
 </dt>
 <dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 </dt>
 <dt>
-<a href="wdf.iwdfobject_assigncontext">IWDFObject::AssignContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IObjectCleanup::OnCleanup method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IObjectCleanup::OnCleanup method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

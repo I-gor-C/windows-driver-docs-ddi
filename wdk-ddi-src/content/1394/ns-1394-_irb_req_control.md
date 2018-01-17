@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_CONTROL
+UID: NS:1394._IRB_REQ_CONTROL
 title: _IRB_REQ_CONTROL
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 bus driver to carry out a control request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_CONTROL
 ---
 
 # _IRB_REQ_CONTROL structure
@@ -89,19 +90,3 @@ Specifies the number of bytes returned.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

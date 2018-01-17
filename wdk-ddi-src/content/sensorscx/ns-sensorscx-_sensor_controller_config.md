@@ -1,5 +1,5 @@
 ---
-UID: NS.SENSORSCX._SENSOR_CONTROLLER_CONFIG
+UID: NS:sensorscx._SENSOR_CONTROLLER_CONFIG
 title: _SENSOR_CONTROLLER_CONFIG
 author: windows-driver-content
 description: This structure contains pointers to callback functions that must be implemented by the driver, and passed on to the class extension to call.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG
+ms.keywords: _SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -428,7 +429,7 @@ The batch latency, expressed in milliseconds.
 </dl>
 
 ## -remarks
-This structure is given to the class extension using the <a href="sensors.sensorscxdeviceinitialize">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:
+This structure is given to the class extension using the <a href="..\sensorscx\nf-sensorscx-sensorscxdeviceinitialize.md">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:
 
 Each function returns STATUS_SUCCESS when completed successfully.
 
@@ -436,40 +437,4 @@ Each function returns STATUS_SUCCESS when completed successfully.
 
 </div>
 <div> </div>
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsCx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

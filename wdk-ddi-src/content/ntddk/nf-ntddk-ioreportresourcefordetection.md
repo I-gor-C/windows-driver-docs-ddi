@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoReportResourceForDetection
+UID: NF:ntddk.IoReportResourceForDetection
 title: IoReportResourceForDetection function
 author: windows-driver-content
 description: The IoReportResourceForDetection routine claims hardware resources in the configuration registry for a legacy device.
@@ -7,7 +7,7 @@ old-location: kernel\ioreportresourcefordetection.htm
 old-project: kernel
 ms.assetid: 83b8e0b0-112c-4263-91f8-0c2e20dd76a4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoReportResourceForDetection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoReportResourceForDetection function
@@ -113,11 +114,11 @@ If a driver supports only PnP hardware, it does no detection and therefore does 
 
 If a PnP driver supports legacy hardware, however, it must call <b>IoReportResourceForDetection</b> to claim hardware resources before it attempts to detect the device.
 
-Callers of this routine specify a <a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a> in either a <i>DeviceList</i> or a <i>DriverList</i> that is allocated from paged memory and that consists of raw, untranslated resources. The caller is responsible for freeing the memory. 
+Callers of this routine specify a <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> in either a <i>DeviceList</i> or a <i>DriverList</i> that is allocated from paged memory and that consists of raw, untranslated resources. The caller is responsible for freeing the memory. 
 
 A driver that can control more than one legacy card at the same time should claim the resources for each device against the device object for the respective device (using the <i>DeviceObject</i>, <i>DeviceList</i>, and <i>DeviceListSize</i> parameters). Such a driver must not claim these resources against their driver object.
 
-A <b>CM_RESOURCE_LIST</b> contains two variable-sized arrays. Each array has a default size of one. If either array has more than one element, the caller must allocate memory dynamically to contain the additional elements. Only one <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> can be part of each <a href="kernel.cm_full_resource_descriptor">CM_FULL_RESOURCE_DESCRIPTOR</a> in the list, except for the last full resource descriptor in the <b>CM_RESOURCE_LIST</b>, which can have additional partial resource descriptors in its array.
+A <b>CM_RESOURCE_LIST</b> contains two variable-sized arrays. Each array has a default size of one. If either array has more than one element, the caller must allocate memory dynamically to contain the additional elements. Only one <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> can be part of each <a href="..\wdm\ns-wdm-_cm_full_resource_descriptor.md">CM_FULL_RESOURCE_DESCRIPTOR</a> in the list, except for the last full resource descriptor in the <b>CM_RESOURCE_LIST</b>, which can have additional partial resource descriptors in its array.
 
 <b>IoReportResourceForDetection</b>, with the help of the PnP manager, determines whether the resources being requested conflict with resources that have already been claimed.
 
@@ -125,7 +126,7 @@ If a conflict is detected, this routine sets the BOOLEAN at <i>ConflictDetected<
 
 If no conflict is detected, this routine claims the resources, sets the BOOLEAN at <i>ConflictDetected</i> to <b>FALSE</b>, and returns STATUS_SUCCESS.
 
-If this routine succeeds and the driver detects a legacy device, the driver reports the device to the PnP manager by calling <a href="kernel.ioreportdetecteddevice">IoReportDetectedDevice</a>. In that call, the driver sets <i>ResourceAssigned</i> to <b>TRUE</b> so the PnP manager does not attempt to claim the resources again.
+If this routine succeeds and the driver detects a legacy device, the driver reports the device to the PnP manager by calling <a href="..\ntddk\nf-ntddk-ioreportdetecteddevice.md">IoReportDetectedDevice</a>. In that call, the driver sets <i>ResourceAssigned</i> to <b>TRUE</b> so the PnP manager does not attempt to claim the resources again.
 
 When a driver no longer requires the resources claimed by a call to this routine, the driver calls this routine again with a <i>DriverList</i> or <i>DeviceList</i> with a <b>Count</b> of zero.
 
@@ -136,86 +137,18 @@ A driver can call this routine more than once for a given device. If one set of 
 Callers of <b>IoReportResourceForDetection</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL (see Remarks section)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="kernel.ioreportdetecteddevice">IoReportDetectedDevice</a>
+<a href="..\ntddk\nf-ntddk-ioreportdetecteddevice.md">IoReportDetectedDevice</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportResourceForDetection routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportResourceForDetection routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

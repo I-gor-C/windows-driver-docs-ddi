@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_HDR_METADATA
+UID: NS:d3dkmddi._DXGK_HDR_METADATA
 title: _DXGK_HDR_METADATA
 author: windows-driver-content
 description: Contains information about the HDR metadata.
@@ -7,7 +7,7 @@ old-location: display\dxgk_hdr_metadata.htm
 old-project: display
 ms.assetid: 15AE3B05-1FD4-4ADB-B92F-9098225A920B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_HDR_METADATA, DXGK_HDR_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_HDR_METADATA
 ---
 
 # _DXGK_HDR_METADATA structure
@@ -71,19 +72,3 @@ Pointer to the HDR metadata.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

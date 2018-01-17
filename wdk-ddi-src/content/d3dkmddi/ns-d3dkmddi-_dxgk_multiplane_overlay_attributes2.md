@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
 title: _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
 author: windows-driver-content
 description: DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 is used by the display miniport driver to specify overlay plane attributes.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_attributes2.htm
 old-project: display
 ms.assetid: 48C481EF-F3A1-48BF-B251-86D06AC125CC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 structure
@@ -69,7 +70,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 {
 
 ### -field Flags
 
-Specifies a combination of flip operations by performing a bitwise OR operation on the values in the <a href="display.dxgk_multiplane_overlay_flags">DXGK_MULTIPLANE_OVERLAY_FLAGS</a> enumeration.
+Specifies a combination of flip operations by performing a bitwise OR operation on the values in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_flags.md">DXGK_MULTIPLANE_OVERLAY_FLAGS</a> enumeration.
 
 
 ### -field SrcRect
@@ -93,27 +94,27 @@ The driver and hardware can use the <b>ClipRect</b> member to apply a common str
 
 ### -field Rotation
 
-Specifies the clockwise rotation of the overlay plane, given as a value from the <a href="display.d3dddi_rotation">D3DDDI_ROTATION</a> enumeration.
+Specifies the clockwise rotation of the overlay plane, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544646">D3DDDI_ROTATION</a> enumeration.
 
 
 ### -field Blend
 
-Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the <a href="display.dxgk_multiplane_overlay_blend">DXGK_MULTIPLANE_OVERLAY_BLEND</a> enumeration.
+Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_blend.md">DXGK_MULTIPLANE_OVERLAY_BLEND</a> enumeration.
 
 
 ### -field VideoFrameFormat
 
-Specifies the overlay plane's video frame format, given as a value from the <a href="display.dxgk_multiplane_overlay_video_frame_format">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a> enumeration.
+Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_video_frame_format.md">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a> enumeration.
 
 
 ### -field ColorSpaceType
 
-Specifies the colorspace configuration, given as a value from the <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_color_space_type.md">D3DDDI_COLOR_SPACE_TYPE</a> enumeration.
+Specifies the colorspace configuration, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn906320">D3DDDI_COLOR_SPACE_TYPE</a> enumeration.
 
 
 ### -field StereoFormat
 
-Specifies the overlay plane's video frame format, given as a value from the <a href="display.dxgk_multiplane_overlay_stereo_format">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a> enumeration.
+Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stereo_format.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a> enumeration.
 
 
 ### -field StereoLeftViewFrame0
@@ -128,12 +129,12 @@ Reserved for system use. Must always be <b>FALSE</b>.
 
 ### -field StereoFlipMode
 
-Specifies the overlay plane's stereo flip mode, given as a value from the <a href="display.dxgk_multiplane_overlay_stereo_flip_mode">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a> enumeration.
+Specifies the overlay plane's stereo flip mode, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stereo_flip_mode.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a> enumeration.
 
 
 ### -field StretchQuality
 
-Specifies the overlay plane's stretch quality, given as a value from the <a href="display.dxgk_multiplane_overlay_stretch_quality">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a> enumeration.
+Specifies the overlay plane's stretch quality, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stretch_quality.md">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a> enumeration.
 
 
 ### -field ColorKey
@@ -144,71 +145,36 @@ Specifies the color key value used when color key blending is enabled for legacy
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_multiplane_overlay_flags">DXGK_MULTIPLANE_OVERLAY_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_flags.md">DXGK_MULTIPLANE_OVERLAY_FLAGS</a>
 </dt>
 <dt>
-<a href="display.d3dddi_rotation">D3DDDI_ROTATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544646">D3DDDI_ROTATION</a>
 </dt>
 <dt>
-<a href="display.dxgk_multiplane_overlay_blend">DXGK_MULTIPLANE_OVERLAY_BLEND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_blend.md">DXGK_MULTIPLANE_OVERLAY_BLEND</a>
 </dt>
 <dt>
-<a href="display.dxgk_multiplane_overlay_video_frame_format">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_video_frame_format.md">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
 </dt>
 <dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_color_space_type.md">D3DDDI_COLOR_SPACE_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906320">D3DDDI_COLOR_SPACE_TYPE</a>
 </dt>
 <dt>
-<a href="display.dxgk_multiplane_overlay_stereo_format">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stereo_format.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
 </dt>
 <dt>
-<a href="display.dxgk_multiplane_overlay_stereo_flip_mode">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stereo_flip_mode.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a>
 </dt>
 <dt>
-<a href="display.dxgk_multiplane_overlay_stretch_quality">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stretch_quality.md">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._MPIO_DISK_HEALTH_INFO
+UID: NS:mpiowmi._MPIO_DISK_HEALTH_INFO
 title: _MPIO_DISK_HEALTH_INFO
 author: windows-driver-content
 description: The MPIO_DISK_HEALTH_INFO structure is used to query the available health information for every multi-path disk in the system.
@@ -7,8 +7,8 @@ old-location: storage\mpio_disk_health_info.htm
 old-project: storage
 ms.assetid: 20813e29-907f-42b0-9229-a9ef78f46e1d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_DISK_HEALTH_INFO, PMPIO_DISK_HEALTH_INFO, *PMPIO_DISK_HEALTH_INFO, MPIO_DISK_HEALTH_INFO
+ms.date: 1/10/2018
+ms.keywords: _MPIO_DISK_HEALTH_INFO, MPIO_DISK_HEALTH_INFO, *PMPIO_DISK_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MPIO_DISK_HEALTH_INFO, *PMPIO_DISK_HEALTH_INFO
 ---
 
 # _MPIO_DISK_HEALTH_INFO structure
@@ -71,19 +72,3 @@ An array of health information packets for all the available multi-path disks un
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

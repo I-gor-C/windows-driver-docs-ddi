@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
+UID: NS:ndis._NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 title: _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 author: windows-driver-content
 description: The NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure specifies information used in offloading checksum tasks from the TCP/IP transport to a NIC.
 old-location: netvista\ndis_tcp_ip_checksum_net_buffer_list_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 989ecf50-18c4-4977-b845-b3fea0cade47
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
+ms.date: 1/11/2018
+ms.keywords: _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 ---
 
 # _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure
@@ -41,7 +42,7 @@ req.irql: See Remarks section
 The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure specifies information used in offloading
   checksum tasks from the TCP/IP transport to a NIC. The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure
   is part of the 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> information (out-of-band data)
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information (out-of-band data)
   that is associated with a <b>NET_BUFFER_LIST</b> structure.
 
 
@@ -185,7 +186,7 @@ NDIS uses this bit. The miniport driver must not examine or set this bit; the mi
 
 ### -field TcpChecksumValueInvalid
 
-A miniport driver that supports <a href="netvista.receive_segment_coalescing__rsc_">Receive Segment Coalescing (RSC)</a> sets this flag to indicate that the TCP header checksum was validated by the NIC but the TCP header checksum value in the packet is not valid. For more information, see <a href="netvista.indicating_coalesced_segments">Indicating Coalesced Segments</a>.
+A miniport driver that supports <a href="https://msdn.microsoft.com/9CB2AB1C-924C-4A19-B1E7-70C8C5C05B46">Receive Segment Coalescing (RSC)</a> sets this flag to indicate that the TCP header checksum was validated by the NIC but the TCP header checksum value in the packet is not valid. For more information, see <a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>.
 
 Miniport drivers that do  not support RSC should set this flag to zero.
 
@@ -194,7 +195,7 @@ Miniport drivers that do  not support RSC should set this flag to zero.
 
 ### -field IpChecksumValueInvalid
 
-A miniport driver that supports RSC sets this flag to indicate that for an IPv4 packet, the IP header checksum was validated by the NIC but the IP header checksum value in the packet is not valid. For a packet consisting of both a tunnel and a transport IP header, this bit is applicable only to the tunnel IP header. For more information, see <a href="netvista.indicating_coalesced_segments">Indicating Coalesced Segments</a>.
+A miniport driver that supports RSC sets this flag to indicate that for an IPv4 packet, the IP header checksum was validated by the NIC but the IP header checksum value in the packet is not valid. For a packet consisting of both a tunnel and a transport IP header, this bit is applicable only to the tunnel IP header. For more information, see <a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>.
 
 Miniport drivers that do  not support RSC should set this flag to zero.
 
@@ -213,12 +214,12 @@ A <b>PVOID</b> version of the checksum information. Miniport drivers can use thi
 The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure specifies information that is used in
     offloading checksum tasks from the TCP/IP transport to a NIC. The
     <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure is part of the 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> information (out-of-band
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information (out-of-band
     data) that is associated with a <b>NET_BUFFER_LIST</b> structure.
 
 Before the TCP/IP transport passes to the miniport driver a TCP/IP packet on which the miniport driver
     will perform checksum tasks, the TCP/IP transport updates the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b>
-    structure that is associated with the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. Specifically, the TCP/IP transport sets
+    structure that is associated with the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. Specifically, the TCP/IP transport sets
     the 
     <b>IsIPv4</b> or 
     <b>IsIPv6</b> flag to indicate that the send packet is an IPv4 or IPv6 packet. If the TCP/IP transport
@@ -243,46 +244,21 @@ To obtain the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure, a driv
     <b>TcpIpChecksumNetBufferListInfo</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 </dt>
 <dt>
-<a href="netvista.indicating_coalesced_segments">Indicating Coalesced Segments</a>
+<a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

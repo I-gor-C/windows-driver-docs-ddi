@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILHIDECONNECTEDIDSETTINGSPARAMMASK
+UID: NE:ntddrilapitypes.RILHIDECONNECTEDIDSETTINGSPARAMMASK
 title: RILHIDECONNECTEDIDSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilhideconnectedidsettingsparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 24d14690-4c74-46d2-ad57-3e21edb00509
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILHIDECONNECTEDIDSETTINGSPARAMMASK, RILHIDECONNECTEDIDSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILHIDECONNECTEDIDSETTINGSPARAMMASK
 ---
 
 # RILHIDECONNECTEDIDSETTINGSPARAMMASK enumeration
@@ -65,19 +66,3 @@ typedef enum _RILHIDECONNECTEDIDSETTINGSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

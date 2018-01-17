@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILRESETMODEMPARAMS
+UID: NS:ntddrilapitypes.RILRESETMODEMPARAMS
 title: RILRESETMODEMPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilresetmodemparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6fde91f1-375e-4eaa-af48-67099b3e3227
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRESETMODEMPARAMS, LPRILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS, RILRESETMODEMPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILRESETMODEMPARAMS, RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS
 ---
 
 # RILRESETMODEMPARAMS structure
@@ -65,19 +66,3 @@ typedef struct _RILRESETMODEMPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

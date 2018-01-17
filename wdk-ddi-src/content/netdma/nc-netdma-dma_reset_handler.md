@@ -1,14 +1,14 @@
 ---
-UID: NC.netdma.DMA_RESET_HANDLER
+UID: NC:netdma.DMA_RESET_HANDLER
 title: DMA_RESET_HANDLER
 author: windows-driver-content
 description: The ProviderResetChannel function resets a DMA channel to the initial state that existed after the DMA channel was allocated.
 old-location: netvista\providerresetchannel.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ee882897-fbc6-4017-8c30-2a54f6c49491
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE, PMIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+ms.date: 1/11/2018
+ms.keywords: _MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
 ---
 
 # DMA_RESET_HANDLER callback
@@ -86,7 +87,7 @@ In
     <b>NetDmaTransferStatusHalted</b> status in the address that is specified in the 
     <b>CompletionVirtualAddress</b> and 
     <b>CompletionPhysicalAddress</b> members in the 
-    <a href="netvista.net_dma_channel_parameters">
+    <a href="..\netdma\ns-netdma-_net_dma_channel_parameters.md">
     NET_DMA_CHANNEL_PARAMETERS</a> structure.
 
 After the reset operation is complete, the DMA channel must be in the initial state that existed after
@@ -99,45 +100,10 @@ NetDMA calls
     <i>ProviderResetChannel</i> at IRQL &lt;= DISPATCH_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NetDMA 1.0 drivers in Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netdma.h (include Netdma.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_dma_channel_parameters">NET_DMA_CHANNEL_PARAMETERS</a>
+<a href="..\netdma\ns-netdma-_net_dma_channel_parameters.md">NET_DMA_CHANNEL_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
@@ -150,5 +116,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DMA_RESET_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_RESET_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

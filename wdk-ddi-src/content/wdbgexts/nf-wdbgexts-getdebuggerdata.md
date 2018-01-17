@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.GetDebuggerData
+UID: NF:wdbgexts.GetDebuggerData
 title: GetDebuggerData macro
 author: windows-driver-content
 description: The GetDebuggerData function retrieves information stored in a data block.
 old-location: debugger\getdebuggerdata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: a07afa2e-1f7d-4685-9ede-8b7805dd6583
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: GetDebuggerData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -72,30 +73,3 @@ Specifies the size of the data block, including the header.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

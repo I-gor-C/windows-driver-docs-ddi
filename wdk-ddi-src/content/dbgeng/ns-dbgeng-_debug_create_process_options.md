@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_CREATE_PROCESS_OPTIONS
+UID: NS:dbgeng._DEBUG_CREATE_PROCESS_OPTIONS
 title: _DEBUG_CREATE_PROCESS_OPTIONS
 author: windows-driver-content
 description: The DEBUG_CREATE_PROCESS_OPTIONS structure specifies the process creation options to use when creating a new process.
 old-location: debugger\debug_create_process_options.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_CREATE_PROCESS_OPTIONS, PDEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
 ---
 
 # _DEBUG_CREATE_PROCESS_OPTIONS structure
@@ -145,19 +146,3 @@ Set to zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

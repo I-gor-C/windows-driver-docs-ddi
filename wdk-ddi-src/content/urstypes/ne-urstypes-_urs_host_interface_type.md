@@ -1,13 +1,13 @@
 ---
-UID: NE.urstypes._URS_HOST_INTERFACE_TYPE
+UID: NE:urstypes._URS_HOST_INTERFACE_TYPE
 title: _URS_HOST_INTERFACE_TYPE
 author: windows-driver-content
 description: Defines values for the various types of USB host controllers.
 old-location: buses\urs_host_interface_type.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: E019CCED-3511-4B7B-B6C9-09FF31B0547A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: _URS_HOST_INTERFACE_TYPE, URS_HOST_INTERFACE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: URS_HOST_INTERFACE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -72,49 +73,3 @@ Indicates a generic host controller.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Urstypes.h (include Urscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

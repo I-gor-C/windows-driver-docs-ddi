@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_CURSOR_SHAPE_TYPE
+UID: NE:iddcx.IDDCX_CURSOR_SHAPE_TYPE
 title: IDDCX_CURSOR_SHAPE_TYPE
 author: windows-driver-content
 description: Describes the type of cursor.
@@ -7,7 +7,7 @@ old-location: display\iddcx_cursor_shape_type.htm
 old-project: display
 ms.assetid: 8aced7c9-e1be-4ec0-8b59-77cee011a71e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_CURSOR_SHAPE_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: 
 ---
 
 # IDDCX_CURSOR_SHAPE_TYPE enumeration
@@ -79,19 +80,3 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_SETTARGETANALOGCOPYPROTECTION
-title: DXGKDDI_SETTARGETANALOGCOPYPROTECTION
+UID: NC:d3dkmddi.DXGKDDI_SETTARGETANALOGCOPYPROTECTION
+title: DXGKDDI_SETTARGETANALOGCOPYPROTECTION function
 author: windows-driver-content
 description: Sets the analog copy protection on the specified target id. This is functionally equivalent to the DxgkDdiUpdateActiveVidPnPresentPath in previous WDDM versions if only the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION is changed.
 old-location: display\dxgkddi_settargetanalogcopyprotection.htm
 old-project: display
 ms.assetid: D41A1867-C654-4747-B804-CAE047025458
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_SETTARGETANALOGCOPYPROTECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_SETTARGETANALOGCOPYPROTECTION callback
+# DXGKDDI_SETTARGETANALOGCOPYPROTECTION function
 
 
 
@@ -42,7 +43,7 @@ Sets the analog copy protection on the specified target id.  This is functionall
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_SETTARGETANALOGCOPYPROTECTION(
@@ -76,20 +77,4 @@ The OEMCopyProtection byte array which is part of the D3DKMDT_VIDPN_PRESENT_PATH
 
 
 
-This function is always called at PASSIVE level so the supporting code should be made pageable.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This function is always called at PASSIVE level so the supporting code should be made pageable.</p>

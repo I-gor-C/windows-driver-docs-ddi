@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortPoFxIdleComponent
+UID: NF:storport.StorPortPoFxIdleComponent
 title: StorPortPoFxIdleComponent function
 author: windows-driver-content
 description: The StorPortPoFxIdleComponent routine decrements the activation reference count of a specified component of a storage device.
@@ -7,7 +7,7 @@ old-location: storage\storportpofxidlecomponent.htm
 old-project: storage
 ms.assetid: DF329B68-3995-4B38-8208-4C779B0626A6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortPoFxIdleComponent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -75,7 +76,7 @@ The SRB triggering the component deactivation. This parameter is <b>NULL</b> if 
 
 ### -param Component [in]
 
-The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
+The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 
 ### -param Flags [in]
@@ -117,7 +118,7 @@ The <i>Flags</i> parameter is nonzero.
 
 -or-
 
-<b>StorPortPoFxIdleComponent</b> was called with an inactive <i>Component</i> and an <i>Srb</i> for which a previous call to   <a href="storage.storportpofxactivatecomponent">StorPortPoFxActivateComponent</a> was not performed.
+<b>StorPortPoFxIdleComponent</b> was called with an inactive <i>Component</i> and an <i>Srb</i> for which a previous call to   <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a> was not performed.
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
 </dl>The current IRQL &gt; DISPATCH_LEVEL.
@@ -131,70 +132,24 @@ The <i>Flags</i> parameter is nonzero.
 ## -remarks
 Currently, both adapter devices and unit devices have maximum component count of 1. The index in <i>Component</i> must always be set to 0.
 
-Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous call to <a href="storage.storportpofxactivatecomponent">StorPortPoFxActivateComponent</a>.
+Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous call to <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a>
+<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
 </dt>
 <dt>
-<a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a>
+<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
 </dt>
 <dt>
-<a href="storage.storportpofxactivatecomponent">StorPortPoFxActivateComponent</a>
+<a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortPoFxIdleComponent routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortPoFxIdleComponent routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

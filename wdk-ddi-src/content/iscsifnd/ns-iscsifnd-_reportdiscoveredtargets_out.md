@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIFND._REPORTDISCOVEREDTARGETS_OUT
+UID: NS:iscsifnd._ReportDiscoveredTargets_OUT
 title: _ReportDiscoveredTargets_OUT
 author: windows-driver-content
 description: The ReportDiscoveredTargets_OUT structure holds the output data for the ReportDiscoveredTargets method.
@@ -7,8 +7,8 @@ old-location: storage\reportdiscoveredtargets_out.htm
 old-project: storage
 ms.assetid: cecef33a-a192-41f4-8006-b5d8b8c73e8d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT, PReportDiscoveredTargets_OUT, *PReportDiscoveredTargets_OUT
+ms.date: 1/10/2018
+ms.keywords: _ReportDiscoveredTargets_OUT, *PReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT
 ---
 
 # _ReportDiscoveredTargets_OUT structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The ReportDiscoveredTargets_OUT structure holds the output data for the <a href="storage.reportdiscoveredtargets">ReportDiscoveredTargets</a> method.
+The ReportDiscoveredTargets_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564046">ReportDiscoveredTargets</a> method.
 
 
 
@@ -57,7 +58,7 @@ typedef struct _ReportDiscoveredTargets_OUT {
 
 ### -field Status
 
-On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. 
+On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>. 
 
 
 ### -field TargetCount
@@ -67,46 +68,31 @@ On output, the number of targets that are discovered.
 
 ### -field Targets
 
-On output, an array of <a href="storage.iscsi_discoveredtarget">ISCSI_DiscoveredTarget</a> structures, which provide information that is related to discovered targets. 
+On output, an array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a> structures, which provide information that is related to discovered targets. 
 
 
 ## -remarks
 You must implement this method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsifnd.h (include Iscsifnd.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.iscsi_discoveredtarget">ISCSI_DiscoveredTarget</a>
+<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a>
 </dt>
 <dt>
-<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="storage.reportdiscoveredtargets">ReportDiscoveredTargets</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564046">ReportDiscoveredTargets</a>
 </dt>
 <dt>
-<a href="storage.reportdiscoveredtargets2_out">ReportDiscoveredTargets2_OUT</a>
+<a href="..\iscsifnd\ns-iscsifnd-_reportdiscoveredtargets2_out.md">ReportDiscoveredTargets2_OUT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ReportDiscoveredTargets_OUT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ReportDiscoveredTargets_OUT structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

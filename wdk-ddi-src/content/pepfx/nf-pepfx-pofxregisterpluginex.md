@@ -1,5 +1,5 @@
 ---
-UID: NF.pepfx.PoFxRegisterPluginEx
+UID: NF:pepfx.PoFxRegisterPluginEx
 title: PoFxRegisterPluginEx function
 author: windows-driver-content
 description: The PoFxRegisterPluginEx routine registers a platform extension plug-in (PEP) with the Windows power management framework (PoFx).
@@ -7,7 +7,7 @@ old-location: kernel\pofxregisterpluginex.htm
 old-project: kernel
 ms.assetid: 68753690-A6DC-46BE-9981-F395B98C3245
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PoFxRegisterPluginEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 # PoFxRegisterPluginEx function
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>PoFxRegisterPluginEx</b> routine registers a platform extension plug-in (PEP) with the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx).
+The <b>PoFxRegisterPluginEx</b> routine registers a platform extension plug-in (PEP) with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx).
 
 
 
@@ -57,7 +58,7 @@ NTSTATUS PoFxRegisterPluginEx(
 
 ### -param PepInformation [in]
 
-A pointer to a <a href="kernel.pep_information">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.
+A pointer to a <a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.
 
 
 ### -param Flags [in]
@@ -79,7 +80,7 @@ A set of flag bits for configuring the PEP interface. Set this member to zero or
 
 ### -param KernelInformation [in, out]
 
-A pointer to a <a href="kernel.pep_kernel_information">PEP_KERNEL_INFORMATION</a> structure.
+A pointer to a <a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">PEP_KERNEL_INFORMATION</a> structure.
 
 
 ## -returns
@@ -102,72 +103,26 @@ A PEP calls this routine to register itself with PoFx.
 
 A PEP cannot unregister, and cannot register twice. If the PEP must be serviced, the operating system must restart.
 
-The <a href="kernel.pofxregisterplugin">PoFxRegisterPlugin</a> routine is similar to <b>PoFxRegisterPluginEx</b>, except that it does not take a <i>Flags</i> parameter.
+The <a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a> routine is similar to <b>PoFxRegisterPluginEx</b>, except that it does not take a <i>Flags</i> parameter.
 
 The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntoskrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.pep_information">PEP_INFORMATION</a>
+<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.pep_kernel_information">PEP_KERNEL_INFORMATION</a>
+<a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">PEP_KERNEL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.pofxregisterplugin">PoFxRegisterPlugin</a>
+<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterPluginEx routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterPluginEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

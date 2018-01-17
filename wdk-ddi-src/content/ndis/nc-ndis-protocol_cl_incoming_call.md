@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_INCOMING_CALL
-title: PROTOCOL_CL_INCOMING_CALL
+UID: NC:ndis.PROTOCOL_CL_INCOMING_CALL
+title: PROTOCOL_CL_INCOMING_CALL function
 author: windows-driver-content
 description: The ProtocolClIncomingCall function is used by connection-oriented clients that accept incoming calls.
 old-location: netvista\protocolclincomingcall.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8a5922ac-b22b-444e-9ea0-3bb56e71ef33
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_INCOMING_CALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_INCOMING_CALL callback
+# PROTOCOL_CL_INCOMING_CALL function
 
 
 
@@ -46,7 +47,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_INCOMING_CALL ProtocolClIncomingCall;
@@ -89,7 +90,7 @@ Pointer to a buffer, formatted as a
 <dl>
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>The client is handling this request asynchronously, and it will call the 
-       <a href="netvista.ndisclincomingcallcomplete">
+       <a href="..\ndis\nf-ndis-ndisclincomingcallcomplete.md">
        NdisClIncomingCallComplete</a> function when the close operation is complete.
 <dl>
 <dt><b>NDIS_STATUS_<i>XXX</i></b></dt>
@@ -133,61 +134,22 @@ The <b>PROTOCOL_CL_INCOMING_CALL</b> function type is defined in the Ndis.h head
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/79115b66-8eb9-4a1e-944f-1bb81a08a3ad">ProtocolClIncomingCall (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolClIncomingCall (NDIS
-   5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndisclincomingcallcomplete">NdisClIncomingCallComplete</a>
+<a href="..\ndis\nf-ndis-ndisclincomingcallcomplete.md">NdisClIncomingCallComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisclregistersap">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingcall">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingcall">NdisMCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_call_connected.md">ProtocolClCallConnected</a>
@@ -206,5 +168,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_INCOMING_CALL callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_INCOMING_CALL callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

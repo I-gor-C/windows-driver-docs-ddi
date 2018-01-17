@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4_
+UID: NE:fwpsk.FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4_
 title: FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4_
 author: windows-driver-content
 description: The FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_CONNECT_REDIRECT_V4 run-time filtering layer.
 old-location: netvista\fwps_fields_ale_connect_redirect_v4.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: df9b014f-2c47-4eed-af81-9cbe0f7a652d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4_, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4
 ---
 
 # FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4_ enumeration
@@ -87,7 +88,7 @@ The local IP address.
 ### -field FWPS_FIELD_ALE_CONNECT_REDIRECT_V4_IP_LOCAL_ADDRESS_TYPE
 
 The local IP address type. The possible values are defined by the 
-     <a href="netvista.nl_address_type">NL_ADDRESS_TYPE</a> enumeration.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.
 
 
 ### -field FWPS_FIELD_ALE_CONNECT_REDIRECT_V4_IP_LOCAL_PORT
@@ -108,7 +109,7 @@ The remote IP address.
 ### -field FWPS_FIELD_ALE_CONNECT_REDIRECT_V4_IP_DESTINATION_ADDRESS_TYPE
 
 The destination IP address type. The possible values are defined by the 
-     <a href="netvista.nl_address_type">NL_ADDRESS_TYPE</a> enumeration.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.
 
 
 ### -field FWPS_FIELD_ALE_CONNECT_REDIRECT_V4_IP_REMOTE_PORT
@@ -157,40 +158,15 @@ The ICMP type field, as specified in RFC 792.
 The ICMP code field, as specified in RFC 792.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Unless otherwise noted, supported starting with Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.nl_address_type">NL_ADDRESS_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4 enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4 enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

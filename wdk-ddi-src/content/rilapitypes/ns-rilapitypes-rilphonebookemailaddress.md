@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILPHONEBOOKEMAILADDRESS
+UID: NS:rilapitypes.RILPHONEBOOKEMAILADDRESS
 title: RILPHONEBOOKEMAILADDRESS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookemailaddress_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 322939c8-c7c9-405b-9f78-08ae9c642b42
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS
+ms.date: 1/11/2018
+ms.keywords: RILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef struct _RILPHONEBOOKEMAILADDRESS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_DEVICE_PNP_EVENT_NOTIFY
-title: FILTER_DEVICE_PNP_EVENT_NOTIFY
+UID: NC:ndis.FILTER_DEVICE_PNP_EVENT_NOTIFY
+title: FILTER_DEVICE_PNP_EVENT_NOTIFY function
 author: windows-driver-content
 description: NDIS calls a filter driver's FilterDevicePnPEventNotify function to notify the driver of device Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_DEVICE_PNP_EVENT_NOTIFY type.
 old-location: netvista\filterdevicepnpeventnotify.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: dea4ab30-ba1d-4c9c-9f00-e48cc3cc0b46
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_DEVICE_PNP_EVENT_NOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_DEVICE_PNP_EVENT_NOTIFY callback
+# FILTER_DEVICE_PNP_EVENT_NOTIFY function
 
 
 
@@ -44,7 +45,7 @@ NDIS calls a filter driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_DEVICE_PNP_EVENT_NOTIFY FilterDevicePnPEventNotify;
@@ -69,7 +70,7 @@ A handle to the context area for the filter module. The filter driver created an
 ### -param NetDevicePnPEvent [in]
 
 A pointer to a 
-     <a href="netvista.net_device_pnp_event">NET_DEVICE_PNP_EVENT</a> structure that
+     <a href="..\ndis\ns-ndis-_net_device_pnp_event.md">NET_DEVICE_PNP_EVENT</a> structure that
      describes a device Plug and Play event.
 
 
@@ -80,14 +81,14 @@ None
 ## -remarks
 <i>FilterDevicePnPEventNotify</i> is an optional function. If a filter driver does not use device PnP
     requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="netvista.ndisfregisterfilterdriver">
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
     NdisFRegisterFilterDriver</a> function.
 
 <i>FilterDevicePnPEventNotify</i> is similar to a miniport driver's 
     <a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
     MiniportDevicePnPEventNotify</a> function. Filter drivers can forward these notifications to underlying
     drivers. To forward a request, call the 
-    <a href="netvista.ndisfdevicepnpeventnotify">
+    <a href="..\ndis\nf-ndis-ndisfdevicepnpeventnotify.md">
     NdisFDevicePnPEventNotify</a> function.
 
 NDIS calls 
@@ -104,41 +105,6 @@ The <b>FILTER_DEVICE_PNP_EVENT_NOTIFY</b> function type is defined in the Ndis.h
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -149,21 +115,21 @@ PASSIVE_LEVEL
    MiniportDevicePnPEventNotify</a>
 </dt>
 <dt>
-<a href="netvista.ndisfdevicepnpeventnotify">NdisFDevicePnPEventNotify</a>
+<a href="..\ndis\nf-ndis-ndisfdevicepnpeventnotify.md">NdisFDevicePnPEventNotify</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
 </dt>
 <dt>
-<a href="netvista.net_device_pnp_event">NET_DEVICE_PNP_EVENT</a>
+<a href="..\ndis\ns-ndis-_net_device_pnp_event.md">NET_DEVICE_PNP_EVENT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_DEVICE_PNP_EVENT_NOTIFY callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_DEVICE_PNP_EVENT_NOTIFY callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

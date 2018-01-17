@@ -1,5 +1,5 @@
 ---
-UID: NF.keyworddetectoroemadapter.IKeywordDetectorOemAdapter.VerifyUserKeyword
+UID: NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.VerifyUserKeyword
 title: IKeywordDetectorOemAdapter::VerifyUserKeyword method
 author: windows-driver-content
 description: The VerifyUserKeyword method is used by the training user experience to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDID
 ---
 
 # IKeywordDetectorOemAdapter::VerifyUserKeyword method
@@ -64,7 +65,7 @@ A pointer to an <b>IStream</b> object bound to model data for a given stored mod
 
 ### -param KeywordId [in]
 
-The <a href="audio.keywordid">KEYWORDID</a> in the  <i>UserRecording</i> parameter.
+The <a href="..\keyworddetectoroemadapter\ne-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0002.md">KEYWORDID</a> in the  <i>UserRecording</i> parameter.
 
 
 ### -param LangId [in]
@@ -79,7 +80,7 @@ Indicates the end of the keyword in the UserRecording.
 
 ### -param UserRecording [in]
 
-A pointer to the buffer containing the raw data in the appropriate <a href="mf.imfmediatype">IMFMediaType</a> format.
+A pointer to the buffer containing the raw data in the appropriate <a href="https://msdn.microsoft.com/f1d60bec-71e4-4fcc-a020-92754b6f3c02">IMFMediaType</a> format.
 
 The user recording must have the following attributes:
 
@@ -114,62 +115,16 @@ Note that audio is processed in a unique way for voice activation training. The 
 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>KeywordDetectorOemAdapter.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IDL
-
-</th>
-<td width="70%">
-<dl>
-<dt>KeywordDetectorOemAdapter.idl</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
 </dt>
 <dt>
-<a href="audio.keywordid">KEYWORDID</a>
+<a href="..\keyworddetectoroemadapter\ne-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0002.md">KEYWORDID</a>
 </dt>
 <dt>
-<a href="mf.imfmediatype">IMFMediaType</a>
+<a href="https://msdn.microsoft.com/f1d60bec-71e4-4fcc-a020-92754b6f3c02">IMFMediaType</a>
 </dt>
 </dl>
  

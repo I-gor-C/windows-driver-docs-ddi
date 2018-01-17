@@ -1,5 +1,5 @@
 ---
-UID: NS.AVC._AVC_COMMAND_IRB
+UID: NS:avc._AVC_COMMAND_IRB
 title: _AVC_COMMAND_IRB
 author: windows-driver-content
 description: The AVC_COMMAND_IRB structure defines a structure that contains an AV/C command and response pair.
@@ -7,8 +7,8 @@ old-location: stream\avc_command_irb.htm
 old-project: stream
 ms.assetid: 0aefbce4-a838-40c4-b31f-ff8dd13621f7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _AVC_COMMAND_IRB, PAVC_COMMAND_IRB, AVC_COMMAND_IRB, *PAVC_COMMAND_IRB
+ms.date: 1/9/2018
+ms.keywords: _AVC_COMMAND_IRB, *PAVC_COMMAND_IRB, AVC_COMMAND_IRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PAVC_COMMAND_IRB, AVC_COMMAND_IRB
 ---
 
 # _AVC_COMMAND_IRB structure
@@ -154,21 +155,6 @@ Reserved. This member must be zero.
 This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554150">AVC_FUNCTION_COMMAND</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554163">AVC_FUNCTION_GET_REQUEST</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554170">AVC_FUNCTION_SEND_RESPONSE</a> function codes.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -181,12 +167,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554170">AVC_FUNCTION_SEND_RESPONSE</a>
 </dt>
 <dt>
-<a href="stream.avc_function">AVC_FUNCTION</a>
+<a href="..\avc\ne-avc-_tagavc_function.md">AVC_FUNCTION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_COMMAND_IRB structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_COMMAND_IRB structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

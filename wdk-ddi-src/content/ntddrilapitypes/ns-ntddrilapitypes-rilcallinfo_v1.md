@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLINFO_V1
+UID: NS:ntddrilapitypes.RILCALLINFO_V1
 title: RILCALLINFO_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallinfo_v1.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: eae7108f-94d5-4147-b554-189c1a356641
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLINFO_V1, RILCALLINFO_V1, LPRILCALLINFO_V1, *LPRILCALLINFO_V1
+ms.date: 1/11/2018
+ms.keywords: RILCALLINFO_V1, RILCALLINFO_V1, *LPRILCALLINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLINFO_V1, *LPRILCALLINFO_V1
 ---
 
 # RILCALLINFO_V1 structure
@@ -121,19 +122,3 @@ typedef struct _RILCALLINFO_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

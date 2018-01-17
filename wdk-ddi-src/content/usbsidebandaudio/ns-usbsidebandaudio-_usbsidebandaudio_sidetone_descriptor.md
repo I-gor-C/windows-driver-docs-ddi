@@ -1,5 +1,5 @@
 ---
-UID: NS.USBSIDEBANDAUDIO._USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 title: _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 author: windows-driver-content
 description: TBD.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: BC337822-C36C-4673-BFA1-3F4C05529C05
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+ms.keywords: _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -68,19 +69,3 @@ TBD
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbsidebandaudio.h (include Usbsidebandaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

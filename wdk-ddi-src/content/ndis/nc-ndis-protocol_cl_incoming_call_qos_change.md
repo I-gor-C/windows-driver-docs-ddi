@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
-title: PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
+UID: NC:ndis.PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
+title: PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE function
 author: windows-driver-content
 description: The ProtocolClIncomingCallQoSChange function is used by connection-oriented clients on networks that support dynamic quality-of-service.
 old-location: netvista\protocolclincomingcallqoschange.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ca9953f4-35db-4acb-b0ea-887156b4f6ee
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE callback
+# PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE function
 
 
 
@@ -46,7 +47,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE ProtocolClIncomingCallQoSChange;
@@ -85,7 +86,7 @@ A call to
     <i>CallParameters</i> . The client can accept the requested change by simply returning control. Otherwise,
     
     <i>ProtocolClIncomingCallQoSChange</i> should tear down the call with 
-    <a href="netvista.ndisclclosecall">NdisClCloseCall</a>.
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.
 
 To define a <i>ProtocolClIncomingCallQoSChange</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
 
@@ -98,52 +99,13 @@ The <b>PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE</b> function type is defined in the 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/4a69199e-15a0-42ac-8dee-f77e73fffa95">
-   ProtocolClIncomingCallQoSChange (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>
-   ProtocolClIncomingCallQoSChange (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
@@ -153,5 +115,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

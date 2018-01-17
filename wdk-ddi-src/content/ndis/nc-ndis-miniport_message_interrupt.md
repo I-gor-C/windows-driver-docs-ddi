@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_MESSAGE_INTERRUPT
-title: MINIPORT_MESSAGE_INTERRUPT
+UID: NC:ndis.MINIPORT_MESSAGE_INTERRUPT
+title: MINIPORT_MESSAGE_INTERRUPT function
 author: windows-driver-content
 description: NDIS calls the MiniportMessageInterrupt function when a NIC generates a message-based interrupt.
 old-location: netvista\miniportmessageinterrupt.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ec2e6f49-dc40-48e8-96dc-c9440a6662a3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_MESSAGE_INTERRUPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_MESSAGE_INTERRUPT callback
+# MINIPORT_MESSAGE_INTERRUPT function
 
 
 
@@ -43,7 +44,7 @@ NDIS calls the
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_MESSAGE_INTERRUPT MiniportMessageInterrupt;
@@ -65,7 +66,7 @@ BOOLEAN MiniportMessageInterrupt(
 A handle to a block of interrupt context information. The miniport driver supplied this handle in
      the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
-     <a href="netvista.ndismregisterinterruptex">
+     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
      NdisMRegisterInterruptEx</a> function.
 
 
@@ -73,13 +74,13 @@ A handle to a block of interrupt context information. The miniport driver suppli
 
 A message-signaled interrupt (MSI) message identifier. 
      <i>MessageId</i> is an index to an 
-     <a href="kernel.io_interrupt_message_info_entry">
+     <a href="..\wdm\ns-wdm-_io_interrupt_message_info_entry.md">
      IO_INTERRUPT_MESSAGE_INFO_ENTRY</a> structure inside a 
-     <a href="kernel.io_interrupt_message_info">
+     <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">
      IO_INTERRUPT_MESSAGE_INFO</a> structure. NDIS passes a pointer to the associated
      <b>IO_INTERRUPT_MESSAGE_INFO</b> structure at the 
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
-     <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a> function.
+     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function.
 
 
 ### -param QueueDefaultInterruptDpc [out]
@@ -99,7 +100,7 @@ A bitmask that indicates the target processors for which NDIS should schedule a 
 
 <div class="alert"><b>Note</b>  NDIS
      6.20 and later drivers should not use this parameter to schedule DPCs. Instead, they should set this parameter to zero and use the 
-     <a href="netvista.ndismqueuedpcex">NdisMQueueDpcEx</a> function to schedule DPCs.</div>
+     <a href="..\ndis\nf-ndis-ndismqueuedpcex.md">NdisMQueueDpcEx</a> function to schedule DPCs.</div>
 <div> </div>
 
 ## -returns
@@ -109,7 +110,7 @@ A bitmask that indicates the target processors for which NDIS should schedule a 
 
 ## -remarks
 Miniport drivers that register for message-signaled interrupts (MSI) support with the 
-    <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a> function
+    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
     must provide a 
     <i>MiniportMessageInterrupt</i> function.
 
@@ -161,17 +162,17 @@ If
     variables, with another 
     <i>MiniportXxx</i> function that runs at a lower IRQL, that 
     <i>MiniportXxx</i> function must call the 
-    <a href="netvista.ndismsynchronizewithinterruptex">
+    <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
     NdisMSynchronizeWithInterruptEx</a> function. This ensures that the driver's 
     <a href="netvista.miniportsynchronizemessageinterrupt">MiniportSynchronizeMessageInterrupt</a> function accesses the shared resources in a synchronized and
     multiprocessor-safe manner.
 
 A miniport driver can call the 
-    <a href="netvista.ndismderegisterinterruptex">
+    <a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">
     NdisMDeregisterInterruptEx</a> function from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> or 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function to release resources that it allocated with 
-    <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a>. After 
+    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>. After 
     <b>NdisMDeregisterInterruptEx</b> returns, NDIS does not call a miniport driver's 
     <i>MiniportMessageInterrupt</i> or 
     <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">MiniportMessageInterruptDPC</a> function.
@@ -179,7 +180,7 @@ A miniport driver can call the
 NDIS calls 
     <i>MiniportMessageInterrupt</i> at the DIRQL of the MSI that the miniport driver registered in a previous
     call to 
-    <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a>. Therefore, 
+    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>. Therefore, 
     <i>MiniportMessageInterrupt</i> must call the subset of the NDIS functions, such as the 
     <b>NdisRaw<i>Xxx</i></b> or 
     <b>NdisRead/WriteRegister<i>Xxx</i></b> functions, that are safe to call at any IRQL.
@@ -195,48 +196,13 @@ The <b>MINIPORT_MESSAGE_INTERRUPT</b> function type is defined in the Ndis.h hea
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_interrupt_message_info">IO_INTERRUPT_MESSAGE_INFO</a>
+<a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
 </dt>
 <dt>
-<a href="kernel.io_interrupt_message_info_entry">
+<a href="..\wdm\ns-wdm-_io_interrupt_message_info_entry.md">
    IO_INTERRUPT_MESSAGE_INFO_ENTRY</a>
 </dt>
 <dt>
@@ -252,20 +218,20 @@ See Remarks section
 <a href="netvista.miniportsynchronizemessageinterrupt">MiniportSynchronizeMessageInterrupt</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_interrupt_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
    NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndismderegisterinterruptex">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismqueuedpcex">NdisMQueueDpcEx</a>
+<a href="..\ndis\nf-ndis-ndismqueuedpcex.md">NdisMQueueDpcEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismsynchronizewithinterruptex">
+<a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
    NdisMSynchronizeWithInterruptEx</a>
 </dt>
 <dt>
@@ -284,5 +250,5 @@ See Remarks section
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_MESSAGE_INTERRUPT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_MESSAGE_INTERRUPT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

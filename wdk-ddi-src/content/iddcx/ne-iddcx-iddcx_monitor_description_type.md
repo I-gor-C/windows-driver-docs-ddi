@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_MONITOR_DESCRIPTION_TYPE
+UID: NE:iddcx.IDDCX_MONITOR_DESCRIPTION_TYPE
 title: IDDCX_MONITOR_DESCRIPTION_TYPE
 author: windows-driver-content
 description: Used to describe the monitor description.
@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_description_type.htm
 old-project: display
 ms.assetid: ca50256b-2b37-4d39-ad4c-e2eaaa0adbb1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_MONITOR_DESCRIPTION_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: 
 ---
 
 # IDDCX_MONITOR_DESCRIPTION_TYPE enumeration
@@ -79,19 +80,3 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

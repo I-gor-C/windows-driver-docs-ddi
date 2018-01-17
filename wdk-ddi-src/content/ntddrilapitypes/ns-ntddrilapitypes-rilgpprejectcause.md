@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILGPPREJECTCAUSE
+UID: NS:ntddrilapitypes.RILGPPREJECTCAUSE
 title: RILGPPREJECTCAUSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgpprejectcause.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3008a69e-25d8-4e54-afb3-317a8ca82d34
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE, LPRILGPPREJECTCAUSE
+ms.date: 1/11/2018
+ms.keywords: RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE
 ---
 
 # RILGPPREJECTCAUSE structure
@@ -57,19 +58,3 @@ typedef struct _RILGPPREJECTCAUSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

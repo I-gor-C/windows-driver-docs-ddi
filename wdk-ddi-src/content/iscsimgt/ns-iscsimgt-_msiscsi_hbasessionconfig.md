@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIMGT._MSISCSI_HBASESSIONCONFIG
+UID: NS:iscsimgt._MSiSCSI_HBASessionConfig
 title: _MSiSCSI_HBASessionConfig
 author: windows-driver-content
 description: The MSiSCSI_HBASessionConfig structure contains the default logon characteristics that a particular instance of a storage miniport driver uses to create a logon session with a target device.
@@ -7,8 +7,8 @@ old-location: storage\msiscsi_hbasessionconfig.htm
 old-project: storage
 ms.assetid: a97f39b7-9356-45f1-b0a2-bd18eb4c7467
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MSiSCSI_HBASessionConfig, MSiSCSI_HBASessionConfig, PMSiSCSI_HBASessionConfig, *PMSiSCSI_HBASessionConfig
+ms.date: 1/10/2018
+ms.keywords: _MSiSCSI_HBASessionConfig, MSiSCSI_HBASessionConfig, *PMSiSCSI_HBASessionConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MSiSCSI_HBASessionConfig, *PMSiSCSI_HBASessionConfig
 ---
 
 # _MSiSCSI_HBASessionConfig structure
@@ -98,30 +99,15 @@ The maximum number of outstanding R2T requests for each task, excluding the firs
 It is optional that you implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.msiscsi_hbasessionconfig_wmi_class">MSiSCSI_HBASessionConfig WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563022">MSiSCSI_HBASessionConfig WMI Class</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_HBASessionConfig structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_HBASessionConfig structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

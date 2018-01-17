@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_ATTACH
-title: FILTER_ATTACH
+UID: NC:ndis.FILTER_ATTACH
+title: FILTER_ATTACH function
 author: windows-driver-content
 description: NDIS calls a filter driver's FilterAttach function to allocate and initialize a filter module's data structures.Note  You must declare the function by using the FILTER_ATTACH type.
 old-location: netvista\filterattach.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0a15a8c9-74af-4d93-bd12-a3c81c177684
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_ATTACH callback
+# FILTER_ATTACH function
 
 
 
@@ -43,7 +44,7 @@ NDIS calls a filter driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_ATTACH FilterAttach;
@@ -69,14 +70,14 @@ An NDIS handle that identifies a filter module. The filter driver must save this
 ### -param FilterDriverContext [in]
 
 The handle that the driver passed to the 
-     <a href="netvista.ndisfregisterfilterdriver">
+     <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
      NdisFRegisterFilterDriver</a> function that identifies the driver context area.
 
 
 ### -param AttachParameters [in]
 
 A pointer to an 
-     <a href="netvista.ndis_filter_attach_parameters">
+     <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
      NDIS_FILTER_ATTACH_PARAMETERS</a> structure that defines the initialization parameters for the filter
      module.
 
@@ -94,7 +95,7 @@ A pointer to an
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
 </dl><i>FilterAttach</i> returns NDIS_STATUS_FAILURE if none of the preceding values applies. The filter
        driver should call the 
-       <a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a> function
+       <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a> function
        together with parameters that specify the reason for the failure.
 
  
@@ -112,7 +113,7 @@ At the start of execution in
     <i>Attaching</i> state.
 
 Filter drivers should avoid issuing unnecessary OID queries. Instead, use the information in 
-    <a href="netvista.ndis_filter_attach_parameters">
+    <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
     NDIS_FILTER_ATTACH_PARAMETERS</a>, when available, to obtain information about underlying drivers.
 
 A filter driver performs the following operations when NDIS calls 
@@ -121,7 +122,7 @@ A filter driver performs the following operations when NDIS calls
 Creates a context area for the filter module and allocates buffer pools and any other resources.
 
 Calls the 
-      <a href="netvista.ndisfsetattributes">NdisFSetAttributes</a> function together
+      <a href="..\ndis\nf-ndis-ndisfsetattributes.md">NdisFSetAttributes</a> function together
       with the 
       <i>NdisFilterHandle</i> that NDIS passed to 
       <i>FilterAttach</i>. The 
@@ -165,41 +166,6 @@ The <b>FILTER_ATTACH</b> function type is defined in the Ndis.h header file. To 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -209,21 +175,21 @@ PASSIVE_LEVEL
 <a href="netvista.filtersetoptions">FilterSetOptions</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_attach_parameters">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndisfsetattributes">NdisFSetAttributes</a>
+<a href="..\ndis\nf-ndis-ndisfsetattributes.md">NdisFSetAttributes</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_ATTACH callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_ATTACH callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

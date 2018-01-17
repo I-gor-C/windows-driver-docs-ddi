@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_OUT_QUERY_HWCURSOR
+UID: NS:iddcx.IDARG_OUT_QUERY_HWCURSOR
 title: IDARG_OUT_QUERY_HWCURSOR
 author: windows-driver-content
 description: Gives information about the coordinates and shape of the current cursor.
@@ -7,7 +7,7 @@ old-location: display\idarg_out_query_hwcursor.htm
 old-project: display
 ms.assetid: 813d6aa6-0442-4f30-9fd6-b3aec2e0e11d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_OUT_QUERY_HWCURSOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_OUT_QUERY_HWCURSOR structure
@@ -96,19 +97,3 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.ACPIIOCT._ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2
+UID: NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2
 title: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2
 author: windows-driver-content
 description: This topic describes the ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2 structure.
@@ -7,8 +7,8 @@ old-location: acpi\acpi_eval_input_buffer_simple_integer_v2.htm
 old-project: acpi
 ms.assetid: 47771F52-5927-40DC-907E-0FC9C3FD451A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2, PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2
+ms.date: 12/31/2017
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2 structure
@@ -74,29 +75,3 @@ Defines the <b>ULONG</b> member <b>IntegerArgument</b>.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 10, version 1709 and later versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Acpiioct.h (include Acpiioct.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

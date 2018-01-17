@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_COLORIMETRY
+UID: NS:d3dkmddi._DXGK_COLORIMETRY
 title: _DXGK_COLORIMETRY
 author: windows-driver-content
 description: Describes colorimetry and closely related fields used to describe overrides from the descriptor retrieved from the display device.
@@ -7,8 +7,8 @@ old-location: display\dxgk_colorimetry.htm
 old-project: display
 ms.assetid: F3F9B6EC-B978-4C87-8AE0-8F6BC73099D2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_COLORIMETRY, DXGK_COLORIMETRY, PDXGK_COLORIMETRY, *PDXGK_COLORIMETRY
+ms.date: 12/29/2017
+ms.keywords: _DXGK_COLORIMETRY, DXGK_COLORIMETRY, *PDXGK_COLORIMETRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_COLORIMETRY, *PDXGK_COLORIMETRY
 ---
 
 # _DXGK_COLORIMETRY structure
@@ -125,20 +126,4 @@ The color points are further validated beyond a simple sanity check (each value 
 
 
 When the OS calls DxgkDdiSetTargetAdjustedColorimetry, the FormatBitDepths and StandardColorimetryFlags are zeroed as these are capability fields so only valid in queries.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

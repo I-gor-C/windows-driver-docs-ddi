@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILSIGNALQUALITYPARAMMASK
+UID: NE:rilapitypes.RILSIGNALQUALITYPARAMMASK
 title: RILSIGNALQUALITYPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsignalqualityparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: be6c46bb-9c14-4daf-b76a-679d71269965
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSIGNALQUALITYPARAMMASK, RILSIGNALQUALITYPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSIGNALQUALITYPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef enum _RILSIGNALQUALITYPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

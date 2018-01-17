@@ -1,13 +1,13 @@
 ---
-UID: NC.fwpsk.FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0
+UID: NC:fwpsk.FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0
 title: FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0
 author: windows-driver-content
 description: The filter engine calls a callout's flowDeleteFn callout function to notify the callout that a data flow that is being processed by the callout is being terminated.
 old-location: netvista\flowdeletefn.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 65449a23-da5d-4884-b98e-030461eb019a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
 ---
 
 # FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback
@@ -72,15 +73,15 @@ The run-time identifier for the filtering layer at which the data flow is being 
 
 The run-time identifier for the callout in the filter engine. This is the same identifier that was
      returned when the callout driver called either the 
-     <a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a> or 
-     <a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a> functions to
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a> or 
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
 
 ### -param flowContext [in]
 
 The most recent context that has been associated with the data flow by a call to the 
-     <a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function.
+     <a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a> function.
 
 
 ## -returns
@@ -89,14 +90,14 @@ None.
 
 ## -remarks
 A callout driver registers a callout's callout functions with the filter engine by calling either the 
-    <a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a> or 
-    <a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a> functions.
+    <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a> or 
+    <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions.
 
 The filter engine calls a callout's 
     <i>flowDeleteFn</i> callout function when it terminates a data flow so that the callout can clean up the
     context associated with the data flow. For example, this callout function will be called after an abrupt
     halt from RST, without 
-    <a href="netvista.classifyfn">classifyFn</a> being called first. The filter
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> being called first. The filter
     engine calls this callout function only if the callout driver associated a context with the data flow.
     The context will be automatically removed from the data flow by the filter engine when the data flow
     terminates.
@@ -109,7 +110,7 @@ The filter engine calls a callout's
     <i>flowDeleteFn</i> callout function for the callout. In this situation, the callout driver should set the
     
     <i>flowDeleteFn</i> member of the 
-    <a href="netvista.fwps_callout0">FWPS_CALLOUT0</a> structure to <b>NULL</b> when it
+    <a href="..\fwpsk\ns-fwpsk-fwps_callout0_.md">FWPS_CALLOUT0</a> structure to <b>NULL</b> when it
     registers the callout with the filter engine.
 
 The FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 type is defined as a pointer to the 
@@ -119,62 +120,27 @@ The filter engine calls a callout's
     <i>flowDeleteFn</i> callout function at IRQL &lt;= DISPATCH_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwps_callout0">FWPS_CALLOUT0</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_callout0_.md">FWPS_CALLOUT0</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a>
 </dt>
 <dt>
-<a href="netvista.callout_driver_callout_functions">Callout Driver Callout Functions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

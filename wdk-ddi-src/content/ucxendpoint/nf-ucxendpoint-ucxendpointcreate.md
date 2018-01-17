@@ -1,13 +1,13 @@
 ---
-UID: NF.ucxendpoint.UcxEndpointCreate
+UID: NF:ucxendpoint.UcxEndpointCreate
 title: UcxEndpointCreate function
 author: windows-driver-content
 description: Creates an endpoint on the specified USB device object.
 old-location: buses\_ucxendpointcreate.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 2BB3B2CE-FD15-4D28-BBDA-29C3BB523874
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UcxEndpointCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UCX_ENDPOINT_CHARACTERISTIC_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ NTSTATUS UcxEndpointCreate(
 
 ### -param UsbDevice [in]
 
-A handle to the USB device object that contains the endpoint. The client driver retrieved the handle in a previous call to <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>.
+A handle to the USB device object that contains the endpoint. The client driver retrieved the handle in a previous call to <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>.
 
 
 ### -param EndpointInit [out]
@@ -71,7 +72,7 @@ A pointer to a <b>UCXENDPOINT_INIT</b> structure that describes various configur
 
 ### -param Attributes [in, optional]
 
-A pointer to a caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the endpoint object. 
+A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the endpoint object. 
 
 
 ### -param Endpoint [out]
@@ -84,64 +85,8 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 
 ## -remarks
-The client driver for the host controller must call this method after the <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a> call. The parent of the new endpoint object is the USB device object. 
+The client driver for the host controller must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. The parent of the new endpoint object is the USB device object. 
 
 The method initializes the endpoint object with information such as the type of endpoint, pipe, transfer, and maximum transfers size.
 
-For a code example, see <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxendpoint.h (include Ucxclass.h or Ucxendpoint.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+For a code example, see <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a>.</p>

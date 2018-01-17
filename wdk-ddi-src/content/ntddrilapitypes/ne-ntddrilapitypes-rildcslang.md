@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILDCSLANG
+UID: NE:ntddrilapitypes.RILDCSLANG
 title: RILDCSLANG
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildcslang.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bc39cb1a-d08a-40d7-a7c6-0342a90654dc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILDCSLANG, RILDCSLANG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDCSLANG
 ---
 
 # RILDCSLANG enumeration
@@ -141,19 +142,3 @@ typedef enum _RILDCSLANG {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

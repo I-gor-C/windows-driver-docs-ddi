@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortCheckForDeviceExistence
+UID: NF:video.VideoPortCheckForDeviceExistence
 title: VideoPortCheckForDeviceExistence function
 author: windows-driver-content
 description: The VideoPortCheckForDeviceExistence function determines whether the specified PCI device exists in the system.
@@ -7,7 +7,7 @@ old-location: display\videoportcheckfordeviceexistence.htm
 old-project: display
 ms.assetid: 2e0480a5-39d3-4977-9c0f-508bcf6c29a8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortCheckForDeviceExistence
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -128,73 +129,4 @@ Use the value in the <i>SubSystemID</i> parameter in checking for the new device
 
 
 ## -remarks
-For more information about PCI identifiers, see <a href="devinst.identifiers_for_pci_devices">Identifiers for PCI Devices</a>. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows XP and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+For more information about PCI identifiers, see <a href="https://msdn.microsoft.com/58d52af8-9afd-441f-9ed9-92f9e2775226">Identifiers for PCI Devices</a>. </p>

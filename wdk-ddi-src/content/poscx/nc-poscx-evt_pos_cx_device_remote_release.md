@@ -1,17 +1,17 @@
 ---
-UID: NC.poscx.EVT_POS_CX_DEVICE_REMOTE_RELEASE
-title: EVT_POS_CX_DEVICE_REMOTE_RELEASE
+UID: NC:poscx.EVT_POS_CX_DEVICE_REMOTE_RELEASE
+title: EVT_POS_CX_DEVICE_REMOTE_RELEASE function
 author: windows-driver-content
 description: The EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left with no owner and allows the driver to do additional work.
 old-location: pos\evt_pos_cx_device_remote_release.htm
 old-project: pos
 ms.assetid: F6D60B8C-488A-4A3F-85AE-40A10BF2DC9F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: EVT_POS_CX_DEVICE_REMOTE_RELEASE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: poscx.h
 req.include-header: Poscx.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
-# EVT_POS_CX_DEVICE_REMOTE_RELEASE callback
+# EVT_POS_CX_DEVICE_REMOTE_RELEASE function
 
 
 
@@ -49,7 +50,7 @@ semantics.
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_POS_CX_DEVICE_REMOTE_RELEASE EvtPosCxDeviceRemoteRelease;
@@ -93,31 +94,6 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -128,5 +104,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20EVT_POS_CX_DEVICE_REMOTE_RELEASE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20EVT_POS_CX_DEVICE_REMOTE_RELEASE callback function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
+UID: NS:d3dkmthk._D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
 title: _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
 author: windows-driver-content
 description: Describes information that is required to map an NT process handle to a graphics processing unit (GPU) synchronization object.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_opensyncobjectfromnthandle.htm
 old-project: display
 ms.assetid: 163ce4ed-e81b-4b69-b1a7-4ea2b9e8f437
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE, D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
 ---
 
 # _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE structure
@@ -65,39 +66,3 @@ typedef struct _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

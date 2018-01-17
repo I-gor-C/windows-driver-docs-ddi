@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTCreateHwQueue
+UID: NF:d3dkmthk.D3DKMTCreateHwQueue
 title: D3DKMTCreateHwQueue function
 author: windows-driver-content
 description: Used to create a new hardware queue.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreatehwqueue.htm
 old-project: display
 ms.assetid: FD4E892F-DDC6-449A-B77F-6C7F8240E467
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTCreateHwQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTCreateHwQueue function
@@ -63,19 +64,3 @@ Returns STATUS_SUCCESS if called successfully.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

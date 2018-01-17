@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_CONNECTION_STATUS
+UID: NE:d3dkmddi._DXGK_CONNECTION_STATUS
 title: _DXGK_CONNECTION_STATUS
 author: windows-driver-content
 description: Enumeration indicating the connection status values which can be reported.
@@ -7,8 +7,8 @@ old-location: display\dxgk_connection_status.htm
 old-project: display
 ms.assetid: D78A845E-1F5D-42F7-9391-8F3F6555B7E5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_CONNECTION_STATUS, DXGK_CONNECTION_STATUS, PDXGK_CONNECTION_STATUS, *PDXGK_CONNECTION_STATUS
+ms.date: 12/29/2017
+ms.keywords: _DXGK_CONNECTION_STATUS, DXGK_CONNECTION_STATUS, *PDXGK_CONNECTION_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_CONNECTION_STATUS, *PDXGK_CONNECTION_STATUS
 ---
 
 # _DXGK_CONNECTION_STATUS enumeration
@@ -120,20 +121,4 @@ If the target was previously enabled, then scan-out of pixels has resumed.  The 
 
 
 ## -remarks
-Other than the uninitialized state, the values fall into three categories: target changes, monitor changes and link configuration changes.  Target changes represent the addition and removal of targets; monitor changes report the connection status of monitors which are attached to targets and link configuration changes report the status of the link to a monitor.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Other than the uninitialized state, the values fall into three categories: target changes, monitor changes and link configuration changes.  Target changes represent the addition and removal of targets; monitor changes report the connection status of monitors which are attached to targets and link configuration changes report the status of the link to a monitor.</p>

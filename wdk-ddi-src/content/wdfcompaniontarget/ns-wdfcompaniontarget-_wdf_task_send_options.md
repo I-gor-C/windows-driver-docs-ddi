@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFCOMPANIONTARGET._WDF_TASK_SEND_OPTIONS
+UID: NS:wdfcompaniontarget._WDF_TASK_SEND_OPTIONS
 title: _WDF_TASK_SEND_OPTIONS
 author: windows-driver-content
 description: For internal use only.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_task_send_options.htm
 old-project: wdf
 ms.assetid: cb2fd11c-c6a5-4499-a340-f96ffcfbbe0f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_TASK_SEND_OPTIONS, WDF_TASK_SEND_OPTIONS, PWDF_TASK_SEND_OPTIONS, *PWDF_TASK_SEND_OPTIONS
+ms.date: 1/11/2018
+ms.keywords: _WDF_TASK_SEND_OPTIONS, WDF_TASK_SEND_OPTIONS, *PWDF_TASK_SEND_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_TASK_SEND_OPTIONS, *PWDF_TASK_SEND_OPTIONS
 req.product: Windows 10 or later.
 ---
 
@@ -66,29 +67,3 @@ typedef struct _WDF_TASK_SEND_OPTIONS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.23
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfcompaniontarget.h</dt>
-</dl>
-</td>
-</tr>
-</table>

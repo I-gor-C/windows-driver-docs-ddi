@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._REFS_SMR_VOLUME_INFO_OUTPUT
+UID: NS:ntifs._REFS_SMR_VOLUME_INFO_OUTPUT
 title: _REFS_SMR_VOLUME_INFO_OUTPUT
 author: windows-driver-content
 description: The REFS_SMR_VOLUME_INFO_OUTPUT structure describes a Shingled Magnetic Recording (SMR) volume's current state on space and garbage collection activities.
@@ -7,8 +7,8 @@ old-location: ifsk\refs_smr_volume_info_output.htm
 old-project: ifsk
 ms.assetid: 0DCBAF5F-AEBC-4C4B-9DBD-F7A6FD6C7712
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT, PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT
+ms.date: 1/9/2018
+ms.keywords: _REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT
 ---
 
 # _REFS_SMR_VOLUME_INFO_OUTPUT structure
@@ -104,7 +105,7 @@ Specifies the current state of the garbage collector.
 
 ### -field VolumeGcLastStatus
 
-Specifies the status of the last garbage collection using the specified method in <a href="ifsk.refs_smr_volume_gc_method">REFS_SMR_VOLUME_GC_METHOD</a>.
+Specifies the status of the last garbage collection using the specified method in <a href="..\ntifs\ne-ntifs-_refs_smr_volume_gc_method.md">REFS_SMR_VOLUME_GC_METHOD</a>.
 
 
 ### -field Unused
@@ -113,29 +114,3 @@ Reserved for future use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10, version 1709.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

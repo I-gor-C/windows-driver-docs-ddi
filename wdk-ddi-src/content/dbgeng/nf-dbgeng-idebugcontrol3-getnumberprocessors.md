@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.GetNumberProcessors
+UID: NF:dbgeng.IDebugControl3.GetNumberProcessors
 title: IDebugControl3::GetNumberProcessors method
 author: windows-driver-content
 description: The GetNumberProcessors method returns the number of processors on the computer running the current target.
 old-location: debugger\getnumberprocessors.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b3f4af4e-dbba-4f14-8935-f894865cbe7d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::GetNumberProcessors, GetNumberProcessors
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugControl3::GetNumberProcessors method
@@ -68,31 +69,4 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558860">Target Information</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558860">Target Information</a>.</p>

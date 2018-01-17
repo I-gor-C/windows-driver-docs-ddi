@@ -1,5 +1,5 @@
 ---
-UID: NE.storduid._DUID_MATCH_STATUS
+UID: NE:storduid._DUID_MATCH_STATUS
 title: _DUID_MATCH_STATUS
 author: windows-driver-content
 description: The DUID_MATCH_STATUS enumeration lists the status values that the CompareStorageDuids routine returns.
@@ -7,7 +7,7 @@ old-location: storage\duid_match_status.htm
 old-project: storage
 ms.assetid: 61a60e77-387c-42d6-b56b-694ce0c86570
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _DUID_MATCH_STATUS, DUID_MATCH_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: Any IRQL
+req.typenames: DUID_MATCH_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The DUID_MATCH_STATUS enumeration lists the status values that the <a href="storage.comparestorageduids">CompareStorageDuids</a> routine returns.
+The DUID_MATCH_STATUS enumeration lists the status values that the <a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a> routine returns.
 
 
 
@@ -102,12 +103,12 @@ At least one of the two DUIDs to compare is invalid.
 
 ### -field DuidErrorInvalidDeviceIdDescSize
 
-At least one of the two DUIDs to compare contains an invalid device ID descriptor (<a href="storage.storage_device_id_descriptor">STORAGE_DEVICE_ID_DESCRIPTOR</a>). This descriptor reports VPD data.
+At least one of the two DUIDs to compare contains an invalid device ID descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>). This descriptor reports VPD data.
 
 
 ### -field DuidErrorInvalidDeviceDescSize
 
-At least one of the two DUIDs to compare contains an invalid device descriptor (<a href="storage.storage_device_descriptor">STORAGE_DEVICE_DESCRIPTOR</a>). This descriptor reports non-VPD inquiry data..
+At least one of the two DUIDs to compare contains an invalid device descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>). This descriptor reports non-VPD inquiry data..
 
 
 ### -field DuidErrorInvalidLayoutSigSize
@@ -122,42 +123,27 @@ At least one of the two DUIDs to compare contains an invalid drive layout signat
 
 ### -field DuidErrorMaximum
 
-This value delimits the upper limit of the enumeration values in this enumeration. This value allows a DUID consumer to create a loop that tests for all valid error values that the <a href="storage.comparestorageduids">CompareStorageDuids</a> routine returns. As new identifier data is added to future versions of the DUID, new error values will specify which parts of the DUID are not well-formed.
+This value delimits the upper limit of the enumeration values in this enumeration. This value allows a DUID consumer to create a loop that tests for all valid error values that the <a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a> routine returns. As new identifier data is added to future versions of the DUID, new error values will specify which parts of the DUID are not well-formed.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storduid.h (include Storduid.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.comparestorageduids">CompareStorageDuids</a>
+<a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a>
 </dt>
 <dt>
-<a href="storage.storage_device_descriptor">STORAGE_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="storage.storage_device_id_descriptor">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DUID_MATCH_STATUS enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DUID_MATCH_STATUS enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

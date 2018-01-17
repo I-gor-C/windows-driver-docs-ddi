@@ -1,5 +1,5 @@
 ---
-UID: NS.ATA._REPORT_ZONES_EXT_DATA
+UID: NS:ata._REPORT_ZONES_EXT_DATA
 title: _REPORT_ZONES_EXT_DATA
 author: windows-driver-content
 description: Note  This structure is for internal use only and should not be called from your code. .
@@ -7,8 +7,8 @@ old-location: storage\report_zones_ext_data.htm
 old-project: storage
 ms.assetid: 0c6b4b7c-548d-42c0-af9b-cf0d65bf2e45
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _REPORT_ZONES_EXT_DATA, REPORT_ZONES_EXT_DATA, PREPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
+ms.date: 1/10/2018
+ms.keywords: _REPORT_ZONES_EXT_DATA, REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ---
 
 # _REPORT_ZONES_EXT_DATA structure
@@ -98,19 +99,3 @@ Reserved for future use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ata.h</dt>
-</dl>
-</td>
-</tr>
-</table>

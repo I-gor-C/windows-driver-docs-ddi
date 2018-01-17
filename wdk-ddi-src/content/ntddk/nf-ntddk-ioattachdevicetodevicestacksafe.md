@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoAttachDeviceToDeviceStackSafe
+UID: NF:ntddk.IoAttachDeviceToDeviceStackSafe
 title: IoAttachDeviceToDeviceStackSafe function
 author: windows-driver-content
 description: The IoAttachDeviceToDeviceStackSafe routine attaches the caller's device object to the topmost device object in a driver stack.
@@ -7,7 +7,7 @@ old-location: ifsk\ioattachdevicetodevicestacksafe.htm
 old-project: ifsk
 ms.assetid: bc403fc7-7862-4c4c-8a82-bd5c740b270e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IoAttachDeviceToDeviceStackSafe
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoAttachDeviceToDeviceStackSafe function
@@ -75,9 +76,9 @@ On input, this parameter specifies the address of <i>SourceDevice-&gt;DeviceExte
 
 
 ## -remarks
-Like <a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>, <b>IoAttachDeviceToDeviceStackSafe</b> establishes layering between drivers so that the same IRPs are sent to each driver in the stack. However, unlike <b>IoAttachDeviceToDeviceStack</b>, <b>IoAttachDeviceToDeviceStackSafe</b> has an additional parameter, <i>AttachedToDeviceObject</i>, which the filter driver uses to pass the address of the <i>SourceDevice</i> object's AttachedToDeviceObject field. <b>IoAttachDeviceToDeviceStackSafe</b> updates this field while holding the I/O system database lock. Because it holds this lock, <b>IoAttachDeviceToDeviceStackSafe</b> avoids a race condition that could otherwise occur if the <i>SourceDevice</i> object received an IRP before its AttachedToDeviceObject field was updated. 
+Like <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>, <b>IoAttachDeviceToDeviceStackSafe</b> establishes layering between drivers so that the same IRPs are sent to each driver in the stack. However, unlike <b>IoAttachDeviceToDeviceStack</b>, <b>IoAttachDeviceToDeviceStackSafe</b> has an additional parameter, <i>AttachedToDeviceObject</i>, which the filter driver uses to pass the address of the <i>SourceDevice</i> object's AttachedToDeviceObject field. <b>IoAttachDeviceToDeviceStackSafe</b> updates this field while holding the I/O system database lock. Because it holds this lock, <b>IoAttachDeviceToDeviceStackSafe</b> avoids a race condition that could otherwise occur if the <i>SourceDevice</i> object received an IRP before its AttachedToDeviceObject field was updated. 
 
-A file system filter driver calls <b>IoAttachDeviceToDeviceStackSafe</b> to attach its own filter device object (<i>SourceDevice</i>) above a device object (<i>TargetDevice</i>) belonging to a file system or another filter driver. Subsequent I/O requests sent to <i>AttachedToDeviceObject</i> are received first by the filter driver, which processes them and forwards them down to the next driver in the stack by calling <a href="kernel.iocalldriver">IoCallDriver</a>. 
+A file system filter driver calls <b>IoAttachDeviceToDeviceStackSafe</b> to attach its own filter device object (<i>SourceDevice</i>) above a device object (<i>TargetDevice</i>) belonging to a file system or another filter driver. Subsequent I/O requests sent to <i>AttachedToDeviceObject</i> are received first by the filter driver, which processes them and forwards them down to the next driver in the stack by calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>. 
 
 If the device object specified by <i>TargetDevice</i> is currently at the top of the driver stack, the <i>SourceDevice</i> is attached directly to the <i>TargetDevice</i>. In this case, <i>TargetDevice</i> and the returned <i>AttachedToDeviceObject</i> pointer are equal. 
 
@@ -88,86 +89,18 @@ At the moment immediately after it is attached to the top of the stack, the <i>S
 <b>IoAttachDeviceToDeviceStackSafe</b> sets the <b>AlignmentRequirement</b> member of the device object pointed to by <i>SourceDevice</i> to the value of the corresponding in the next-lower device object and sets the <b>StackSize</b> in <i>SourceDevice</i> to the value in the next-lower-object plus one. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
 </dt>
 <dt>
-<a href="kernel.iocalldriver">IoCallDriver</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoAttachDeviceToDeviceStackSafe routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoAttachDeviceToDeviceStackSafe routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

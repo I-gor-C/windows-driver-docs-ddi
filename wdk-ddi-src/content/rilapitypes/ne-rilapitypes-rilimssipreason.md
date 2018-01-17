@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILIMSSIPREASON
+UID: NE:rilapitypes.RILIMSSIPREASON
 title: RILIMSSIPREASON
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimssipreason_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 45cee356-e05e-4f3a-bccf-4d95a64587d4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILIMSSIPREASON, RILIMSSIPREASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILIMSSIPREASON
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef enum _RILIMSSIPREASON {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

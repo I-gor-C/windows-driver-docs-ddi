@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_POWER_RUNTIME_STATE
+UID: NS:d3dkmddi._DXGK_POWER_RUNTIME_STATE
 title: _DXGK_POWER_RUNTIME_STATE
 author: windows-driver-content
 description: Describes the characteristics of an idle state (an F-state).
@@ -7,7 +7,7 @@ old-location: display\dxgk_power_runtime_state.htm
 old-project: display
 ms.assetid: f2bfb07c-1493-4a29-9d42-e284af29a376
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_POWER_RUNTIME_STATE, DXGK_POWER_RUNTIME_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_POWER_RUNTIME_STATE
 ---
 
 # _DXGK_POWER_RUNTIME_STATE structure
@@ -73,40 +74,4 @@ The power draw, in microwatt units, of the component in this F-state. This  valu
 
 
 ## -remarks
-F-states in hardware must be defined such that a deeper F-state (higher F-value) will use less power and take longer to return to the latent F0 state.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+F-states in hardware must be defined such that a deeper F-state (higher F-value) will use less power and take longer to return to the latent F0 state.</p>

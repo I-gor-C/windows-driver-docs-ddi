@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_GDIROP_BITBLT
+UID: NE:d3dkmddi._DXGK_GDIROP_BITBLT
 title: _DXGK_GDIROP_BITBLT
 author: windows-driver-content
 description: The DXGK_GDIROP_COLORFILL enumeration indicates the type of GDI raster operation (ROP) to implement in a GDI hardware-accelerated bit-block transfer (bitblt) operation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_gdirop_bitblt.htm
 old-project: display
 ms.assetid: f5f337dd-ab7a-4a9f-af3c-2d29dbdffe7b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_GDIROP_BITBLT, DXGK_GDIROP_BITBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_GDIROP_BITBLT
 ---
 
 # _DXGK_GDIROP_BITBLT enumeration
@@ -89,29 +90,3 @@ Indicates that a ternary GDI raster operation (ROP3) will be applied.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

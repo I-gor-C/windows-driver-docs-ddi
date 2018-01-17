@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsGetPermanentSiloContext
+UID: NF:ntddk.PsGetPermanentSiloContext
 title: PsGetPermanentSiloContext function
 author: windows-driver-content
 description: This routine retrieves an object that was inserted in the Silo without incrementing the reference count.
@@ -7,7 +7,7 @@ old-location: kernel\psgetpermanentsilocontext.htm
 old-project: kernel
 ms.assetid: C1AEFC8F-6488-4582-9835-DAD07D4ACB17
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsGetPermanentSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsGetPermanentSiloContext function
@@ -62,7 +63,7 @@ The silo in which the object was inserted. This parameter is required and it can
 
 ### -param ContextSlot [in]
 
-The read-only slot that was previously allocated by<a href="kernel.psallocsilocontextslot">PsAllocSiloContextSlot</a> and made read-only by <a href="kernel.psmakesilocontextpermanent">PsMakeSiloContextPermanent</a>.
+The read-only slot that was previously allocated by<a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> and made read-only by <a href="..\ntddk\nf-ntddk-psmakesilocontextpermanent.md">PsMakeSiloContextPermanent</a>.
 
 
 ### -param ReturnedSiloContext 
@@ -86,40 +87,4 @@ The following NT status codes are returned.
 
 
 ## -remarks
-A successful call to <b>PsGetPermanentSiloContext</b> does not increment the reference count on the object that the <i>ReturnedSiloContext</i> parameter points to. The returned object pointer is valid as long as there is a valid reference on the silo object.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+A successful call to <b>PsGetPermanentSiloContext</b> does not increment the reference count on the object that the <i>ReturnedSiloContext</i> parameter points to. The returned object pointer is valid as long as there is a valid reference on the silo object.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IMasterClock.GetTime
+UID: NF:dmusicks.IMasterClock.GetTime
 title: IMasterClock::GetTime method
 author: windows-driver-content
 description: The GetTime method retrieves the current reference time read from the master clock.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IMasterClock::GetTime method
@@ -65,49 +66,13 @@ Output pointer for the reference time. This parameter points to a caller-allocat
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
 </dt>
 <dt>
-<a href="audio.iminiportdmus_newstream">IMiniportDMus::NewStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536701">IMiniportDMus::NewStream</a>
 </dt>
 </dl>
  

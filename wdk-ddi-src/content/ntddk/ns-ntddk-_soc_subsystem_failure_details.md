@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._SOC_SUBSYSTEM_FAILURE_DETAILS
+UID: NS:ntddk._SOC_SUBSYSTEM_FAILURE_DETAILS
 title: _SOC_SUBSYSTEM_FAILURE_DETAILS
 author: windows-driver-content
 description: The SOC_SUBSYSTEM_FAILURE_DETAILS structure holds information related to a System on a Chip (SoC) bug code.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 416F9A0C-0A86-4FAA-9052-5D37D29C464D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SOC_SUBSYSTEM_FAILURE_DETAILS, *PSOC_SUBSYSTEM_FAILURE_DETAILS, SOC_SUBSYSTEM_FAILURE_DETAILS, PSOC_SUBSYSTEM_FAILURE_DETAILS
+ms.keywords: _SOC_SUBSYSTEM_FAILURE_DETAILS, *PSOC_SUBSYSTEM_FAILURE_DETAILS, SOC_SUBSYSTEM_FAILURE_DETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSOC_SUBSYSTEM_FAILURE_DETAILS, SOC_SUBSYSTEM_FAILURE_DETAILS
 ---
 
 # _SOC_SUBSYSTEM_FAILURE_DETAILS structure
@@ -62,7 +63,7 @@ typedef struct _SOC_SUBSYSTEM_FAILURE_DETAILS {
 
 ### -field SubsysType
 
-A value in the <a href="whea.soc_sybsystem_type">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors. 
+A value in the <a href="..\ntddk\ne-ntddk-_soc_subsystem_type.md">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors. 
 
 
 ### -field FirmwareVersion
@@ -86,39 +87,3 @@ A null-terminated string, defined by the vendor, that  contains classification d
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER
+UID: NC:ndischimney.TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER
 title: TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER
 author: windows-driver-content
 description: NDIS calls a protocol driver's or intermediate driver's ProtocolTcpOffloadReceiveIndicate function to deliver received data that is being indicated by an underlying driver or offload target.
 old-location: netvista\protocoltcpoffloadreceiveindicate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8a400515-3619-4fe9-8e08-638859442ea3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER callback
@@ -67,10 +68,10 @@ NDIS_STATUS ProtocolTcpOffloadReceiveIndicate(
 ### -param OffloadContext [in]
 
 A pointer to the protocol or intermediate driver's 
-     <a href="netvista.ndis_offload_handle">NDIS_OFFLOAD_HANDLE</a> structure for the
+     <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a> structure for the
      TCP connection on which the indication is being made. The protocol or intermediate driver supplied this
      pointer as an input parameter to the 
-     <a href="netvista.ndisinitiateoffload">NdisInitiateOffload</a> function when
+     <a href="..\ndischimney\nf-ndischimney-ndisinitiateoffload.md">NdisInitiateOffload</a> function when
      offloading the connection.
 
 
@@ -80,10 +81,10 @@ A pointer to a
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. Each 
       <b>NET_BUFFER_LIST</b> structure
       describes a list of 
-      <a href="netvista.net_buffer">NET_BUFFER</a> structures. Each 
+      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures. Each 
       <b>NET_BUFFER</b> structure in the list maps to a
       chain of 
-      <a href="kernel.mdl">memory descriptor lists (MDLs)</a>. The MDLs contain the
+      <a href="..\wdm\ns-wdm-_mdl.md">memory descriptor lists (MDLs)</a>. The MDLs contain the
       received data. The MDLs are locked so that they remain resident, but they are not mapped into system
       memory.
 
@@ -94,7 +95,7 @@ The
       structure in a linked list of 
       <b>NET_BUFFER_LIST</b> structures.
       Offload targets can work around this limitation by chaining as many MDLs as necessary to the same 
-      <a href="netvista.net_buffer">NET_BUFFER</a> in an offload receive
+      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> in an offload receive
       indication.
 
 
@@ -152,48 +153,33 @@ The
       <i>ProtocolTcpOffloadReceiveIndicate</i> function.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.mdl">MDL</a>
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 </dt>
 <dt>
-<a href="netvista.ndisinitiateoffload">NdisInitiateOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisinitiateoffload.md">NdisInitiateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_offload_handle">NDIS_OFFLOAD_HANDLE</a>
+<a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a>
 </dt>
 <dt>
-<a href="netvista.ndisoffloadtcpreceivereturn">NdisOffloadTcpReceiveReturn</a>
+<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpreceivereturn.md">NdisOffloadTcpReceiveReturn</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">NdisTcpOffloadReceiveHandler</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NET_BUFFER_LIST</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

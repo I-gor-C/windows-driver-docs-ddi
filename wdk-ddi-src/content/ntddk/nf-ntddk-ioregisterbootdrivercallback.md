@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoRegisterBootDriverCallback
+UID: NF:ntddk.IoRegisterBootDriverCallback
 title: IoRegisterBootDriverCallback function
 author: windows-driver-content
 description: The IoRegisterBootDriverCallback routine registers a BOOT_DRIVER_CALLBACK_FUNCTION routine to be called during the initialization of a boot-start driver and its dependent DLLs.
@@ -7,7 +7,7 @@ old-location: kernel\ioregisterbootdrivercallback.htm
 old-project: kernel
 ms.assetid: 28BA4B54-F493-4D79-89DF-D890EBCF1E9C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoRegisterBootDriverCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoRegisterBootDriverCallback function
@@ -65,11 +66,11 @@ A driver-defined context to be passed to the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b
 
 
 ## -returns
-A handle that represents the registration. This handle must be supplied as an input parameter in the call to the  <a href="kernel.iounregisterbootdrivercallback">IoUnRegisterBootDriverCallback</a> routine that unregisters the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine.
+A handle that represents the registration. This handle must be supplied as an input parameter in the call to the  <a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a> routine that unregisters the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine.
 
 
 ## -remarks
-Boot-start drivers must call <a href="kernel.iounregisterbootdrivercallback">IoUnRegisterBootDriverCallback</a> and pass the returned handle to unregister the boot-start driver callback before Windows unloads them.
+Boot-start drivers must call <a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a> and pass the returned handle to unregister the boot-start driver callback before Windows unloads them.
 
 A boot-start driver's <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine can monitor boot-start driver initialization events and return data to the kernel to enable the kernel to decide whether to initialize each boot-start driver. The function prototype to register a boot-start driver callback routine is as follows.
 
@@ -79,7 +80,7 @@ The boot-start callback parameters are as follows:
 
 The value that the driver passed as the <i>CallbackContext</i> parameter to <b>IoRegisterBootDriverCallback</b> when it registered this <b>BOOT_DRIVER_CALLBACK_FUNCTION</b>  routine.
 
-A <a href="kernel.bdcb_callback_type">BDCB_CALLBACK_TYPE</a> enumeration value that either identifies the status of boot-start driver initialization or indicates that a boot-start driver is about to be initialized.
+A <a href="..\ntddk\ne-ntddk-_bdcb_callback_type.md">BDCB_CALLBACK_TYPE</a> enumeration value that either identifies the status of boot-start driver initialization or indicates that a boot-start driver is about to be initialized.
 
 A pointer to a structure that contains information that is specific to the type of callback. The structure type depends on the value passed for <i>CallbackType</i>, as shown in the following table.
 
@@ -104,89 +105,21 @@ If an initialize image callback returns an error,  the driver's image is treated
 To be notified of boot-start driver initialization operations, an <i>early launch anti-malware</i> (ELAM) driver can call <b>IoRegisterBootDriverCallback</b> to register a <b>BOOT_DRIVER_CALLBACK_FUNCTION</b>  routine.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iounregisterbootdrivercallback">IoUnRegisterBootDriverCallback</a>
+<a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a>
 </dt>
 <dt>
-<a href="kernel.bdcb_callback_type">BDCB_CALLBACK_TYPE</a>
+<a href="..\ntddk\ne-ntddk-_bdcb_callback_type.md">BDCB_CALLBACK_TYPE</a>
 </dt>
 <dt>
-<a href="kernel.bdcb_image_information">BDCB_IMAGE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverCallback routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverCallback routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

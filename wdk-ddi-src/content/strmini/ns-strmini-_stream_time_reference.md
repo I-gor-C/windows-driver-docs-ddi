@@ -1,5 +1,5 @@
 ---
-UID: NS.STRMINI._STREAM_TIME_REFERENCE
+UID: NS:strmini._STREAM_TIME_REFERENCE
 title: _STREAM_TIME_REFERENCE
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\stream_time_reference.htm
 old-project: stream
 ms.assetid: BC3839C0-AED6-470D-9C2B-B1529B2B3D1A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE, PSTREAM_TIME_REFERENCE, STREAM_TIME_REFERENCE
+ms.date: 1/9/2018
+ms.keywords: _STREAM_TIME_REFERENCE, STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 req.product: Windows 10 or later.
 ---
 
@@ -78,19 +79,3 @@ Reserved for future use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h</dt>
-</dl>
-</td>
-</tr>
-</table>

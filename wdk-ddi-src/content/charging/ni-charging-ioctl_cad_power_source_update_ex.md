@@ -1,5 +1,5 @@
 ---
-UID: NI.charging.IOCTL_CAD_POWER_SOURCE_UPDATE_EX
+UID: NI:charging.IOCTL_CAD_POWER_SOURCE_UPDATE_EX
 title: IOCTL_CAD_POWER_SOURCE_UPDATE_EX
 author: windows-driver-content
 description: This IOCTL is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 8D582EF9-B9D1-498B-AE20-337F3A33250C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPOWERSOURCEID, POWERSOURCEID
 ---
 
 # IOCTL_CAD_POWER_SOURCE_UPDATE_EX IOCTL
@@ -75,19 +76,3 @@ Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h</dt>
-</dl>
-</td>
-</tr>
-</table>

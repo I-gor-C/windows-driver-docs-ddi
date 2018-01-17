@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_VIDEO_COLOR_YCBCRA
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_COLOR_YCbCrA
 title: D3D11_1DDI_VIDEO_COLOR_YCbCrA
 author: windows-driver-content
 description: Specifies a YCbCr color value.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_color_ycbcra.htm
 old-project: display
 ms.assetid: d6d8147e-8cc8-4c35-8031-bce2fa3ccd67
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_COLOR_YCbCrA, D3D11_1DDI_VIDEO_COLOR_YCbCrA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_COLOR_YCbCrA
 ---
 
 # D3D11_1DDI_VIDEO_COLOR_YCbCrA structure
@@ -81,40 +82,4 @@ Values have a nominal range of [0...1]. Given a format with  <i>n</i> bits per c
 
 <code>val = f * ((1 &lt;&lt; n)-1)</code>
 
-For example, for 8-bit YUV formats, <code>val = BYTE(f * 255.0)</code>.  Reference black is (0.0625, 0.5, 0.5), which corresponds to (16, 128, 128) in an 8-bit representation.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For example, for 8-bit YUV formats, <code>val = BYTE(f * 255.0)</code>.  Reference black is (0.0625, 0.5, 0.5), which corresponds to (16, 128, 128) in an 8-bit representation.</p>

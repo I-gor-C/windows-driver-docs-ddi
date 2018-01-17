@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_IN_MONITORCREATE
+UID: NS:iddcx.IDARG_IN_MONITORCREATE
 title: IDARG_IN_MONITORCREATE
 author: windows-driver-content
 description: Gives information about the monitor object that will be created.
@@ -7,7 +7,7 @@ old-location: display\idarg_in_monitorcreate.htm
 old-project: display
 ms.assetid: 0de9686f-69e6-4aac-8f58-9e61bcfe3827
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_IN_MONITORCREATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_IN_MONITORCREATE structure
@@ -69,19 +70,3 @@ typedef struct IDARG_IN_MONITORCREATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

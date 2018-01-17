@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._UNIT_DDI_VERSION
+UID: NS:61883._UNIT_DDI_VERSION
 title: _UNIT_DDI_VERSION
 author: windows-driver-content
 description: The UNIT_DDI_VERSION structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve the current 61883 DDI version.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 421ed5b2-389d-4099-b241-d952fb7e842d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _UNIT_DDI_VERSION, PUNIT_DDI_VERSION, UNIT_DDI_VERSION, *PUNIT_DDI_VERSION
+ms.keywords: _UNIT_DDI_VERSION, UNIT_DDI_VERSION, *PUNIT_DDI_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UNIT_DDI_VERSION, *PUNIT_DDI_VERSION
 ---
 
 # _UNIT_DDI_VERSION structure
@@ -60,21 +61,6 @@ The current 61883 DDI version.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

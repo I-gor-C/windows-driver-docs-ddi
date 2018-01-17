@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_FREE_BANDWIDTH
+UID: NS:1394._IRB_REQ_ISOCH_FREE_BANDWIDTH
 title: _IRB_REQ_ISOCH_FREE_BANDWIDTH
 author: windows-driver-content
 description: This structure contains the fields necessary in order for the Bus driver to carry out an IsochFreeBandwidth request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_FREE_BANDWIDTH
 ---
 
 # _IRB_REQ_ISOCH_FREE_BANDWIDTH structure
@@ -63,20 +64,4 @@ If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCC
 
 A status of STATUS_INVALID_GENERATION also indicates success. 
 
-Do not resend the REQUEST_ISOCH_FREE_BANDWIDTH request in order to release isochronous bandwidth if the request failed with the STATUS_INVALID_GENERATION error code. In that case, it is safe to assume that isochronous bandwidth was released as a result of 1394 bus generation changes.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Do not resend the REQUEST_ISOCH_FREE_BANDWIDTH request in order to release isochronous bandwidth if the request failed with the STATUS_INVALID_GENERATION error code. In that case, it is safe to assume that isochronous bandwidth was released as a result of 1394 bus generation changes.</p>

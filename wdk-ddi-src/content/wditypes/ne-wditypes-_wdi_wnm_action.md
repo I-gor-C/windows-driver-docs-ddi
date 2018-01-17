@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_WNM_ACTION
+UID: NE:wditypes._WDI_WNM_ACTION
 title: _WDI_WNM_ACTION
 author: windows-driver-content
 description: The WDI_WNM_ACTION enumeration defines the message type for 802.11v BSS Transition Management action frames.
 old-location: netvista\wdi_wnm_action.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 350D3182-3BEE-4AB7-A9F0-5C5D7D60A617
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_WNM_ACTION, WDI_WNM_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_WNM_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -72,39 +73,3 @@ The message is a BSS Transition Management response frame. This is a response to
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

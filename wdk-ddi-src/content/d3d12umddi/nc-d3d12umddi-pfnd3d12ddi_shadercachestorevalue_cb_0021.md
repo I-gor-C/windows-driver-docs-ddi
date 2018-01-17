@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_SHADERCACHESTOREVALUE_CB_0021
+UID: NC:d3d12umddi.PFND3D12DDI_SHADERCACHESTOREVALUE_CB_0021
 title: PFND3D12DDI_SHADERCACHESTOREVALUE_CB_0021
 author: windows-driver-content
 description: The pfnShaderCacheStoreValueCb callback function stores a shader cache value.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_shadercachestorevalue_cb_0021.htm
 old-project: display
 ms.assetid: F47C4E6E-4B09-4461-85F6-2E850CE2A2F6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_SHADERCACHESTOREVALUE_CB_0021 callback
@@ -102,20 +103,4 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 
 ## -remarks
-Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.</p>

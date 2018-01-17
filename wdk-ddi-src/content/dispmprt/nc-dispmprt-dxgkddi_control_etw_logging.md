@@ -1,17 +1,17 @@
 ---
-UID: NC.dispmprt.DXGKDDI_CONTROL_ETW_LOGGING
-title: DXGKDDI_CONTROL_ETW_LOGGING
+UID: NC:dispmprt.DXGKDDI_CONTROL_ETW_LOGGING
+title: DXGKDDI_CONTROL_ETW_LOGGING function
 author: windows-driver-content
 description: The DxgkDdiControlEtwLogging function enables or disables Event Tracing for Windows (ETW) event logging.
 old-location: display\dxgkddicontroletwlogging.htm
 old-project: display
 ms.assetid: c94a43bb-19d0-4894-80b0-885562fefea5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_CONTROL_ETW_LOGGING
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
-# DXGKDDI_CONTROL_ETW_LOGGING callback
+# DXGKDDI_CONTROL_ETW_LOGGING function
 
 
 
@@ -42,7 +43,7 @@ The <i>DxgkDdiControlEtwLogging </i>function enables or disables Event Tracing f
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_CONTROL_ETW_LOGGING DxgkDdiControlEtwLogging;
@@ -78,50 +79,3 @@ This callback function does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>

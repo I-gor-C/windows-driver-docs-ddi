@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsPnp.RegisterAdapterPnpManagement
+UID: NF:portcls.IPortClsPnp.RegisterAdapterPnpManagement
 title: IPortClsPnp::RegisterAdapterPnpManagement method
 author: windows-driver-content
 description: The RegisterAdapterPowerManagement method registers the PnP management interface of the adapter with PortCls.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsPnp::RegisterAdapterPnpManagement method
@@ -61,7 +62,7 @@ Specifies a pointer to <b>IUnknown</b> of <a href="..\portcls\nn-portcls-iadapte
 
 ### -param DeviceObject [in]
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
+Specifies a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## -returns
@@ -74,59 +75,13 @@ When the <code>RegisterAdapterPowerManagement</code> method registers the PnP ma
 For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1511 and later versions of Windows. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
 </dt>
 <dt>
-<a href="audio.iportclspower_unregisteradapterpowermanagement">IPortClsPower::UnregisterAdapterPowerManagement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536876">IPortClsPower::UnregisterAdapterPowerManagement</a>
 </dt>
 </dl>
  

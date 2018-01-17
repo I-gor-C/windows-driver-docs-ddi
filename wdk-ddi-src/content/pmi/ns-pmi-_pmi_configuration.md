@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_CONFIGURATION
+UID: NS:pmi._PMI_CONFIGURATION
 title: _PMI_CONFIGURATION
 author: windows-driver-content
 description: The PMI_CONFIGURATION structure contains information about the current power metering and budgeting configuration of a power meter.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 976b812e-deb2-445f-b69d-e00d10c6e5d8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_CONFIGURATION, PMI_CONFIGURATION, *PPMI_CONFIGURATION, PPMI_CONFIGURATION
+ms.keywords: _PMI_CONFIGURATION, *PPMI_CONFIGURATION, PMI_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPMI_CONFIGURATION, PMI_CONFIGURATION
 ---
 
 # _PMI_CONFIGURATION structure
@@ -82,21 +83,21 @@ A union of the supported Power Meter Interface (PMI) configuration structures. B
 
 ### -field MeasurementConfiguration
 
-A <a href="powermeter.pmi_budgeting_configuration">PMI_BUDGETING_CONFIGURATION</a> structure that contains information about the budgeting configuration of the power meter.
+A <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure that contains information about the budgeting configuration of the power meter.
 
 The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiBudgetingConfiguration</b>.
 
 
 ### -field BudgetingConfiguration
 
-A <a href="powermeter.pmi_measurement_configuration">PMI_MEASUREMENT_CONFIGURATION</a> structure that contains information about the measurement configuration of the power meter.
+A <a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a> structure that contains information about the measurement configuration of the power meter.
 
 The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiMeasurementConfiguration</b>.
 
 
 ### -field ThresholdConfiguration
 
-A <a href="powermeter.pmi_threshold_configuration">PMI_THRESHOLD_CONFIGURATION</a> structure that contains information about the threshold configuration of the power meter.
+A <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a> structure that contains information about the threshold configuration of the power meter.
 
 The <b>Configuration</b> member contains this structure if the <b>ConfigurationType</b> member is set to <b>PmiThresoldConfiguration</b>.
 
@@ -114,33 +115,8 @@ For example, if an IOCTL query request of <a href="..\pmi\ni-pmi-ioctl_pmi_get_c
 
 The <b>ConfigurationType</b> member is set to <b>PmiBudgetingConfiguration</b>.
 
-The <b>Configuration</b> member contains data that is  formatted as a <a href="powermeter.pmi_budgeting_configuration">PMI_BUDGETING_CONFIGURATION</a> structure.
+The <b>Configuration</b> member contains data that is  formatted as a <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pmi.h (include Pmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -148,16 +124,16 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_budgeting_configuration">PMI_BUDGETING_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
 </dt>
 <dt>
 <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_measurement_configuration">PMI_MEASUREMENT_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_threshold_configuration">PMI_THRESHOLD_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
 </dt>
 </dl>
  

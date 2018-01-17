@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCFILEPATH
+UID: NS:ntddrilapitypes.RILUICCFILEPATH
 title: RILUICCFILEPATH
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccfilepath.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 65c46391-f0ef-4618-ac26-86f41e04e688
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCFILEPATH, LPRILUICCFILEPATH, RILUICCFILEPATH, *LPRILUICCFILEPATH
+ms.date: 1/11/2018
+ms.keywords: RILUICCFILEPATH, RILUICCFILEPATH, *LPRILUICCFILEPATH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCFILEPATH, *LPRILUICCFILEPATH
 ---
 
 # RILUICCFILEPATH structure
@@ -65,19 +66,3 @@ typedef struct _RILUICCFILEPATH {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

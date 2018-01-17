@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_SET_TIMING_FLAGS
+UID: NS:d3dkmddi._DXGK_SET_TIMING_FLAGS
 title: _DXGK_SET_TIMING_FLAGS
 author: windows-driver-content
 description: Structure to hold flags used to modify SetTiming behavior. Currently no flags are defined.
@@ -7,7 +7,7 @@ old-location: display\dxgk_set_timing_flags.htm
 old-project: display
 ms.assetid: BB10EBD3-2CB6-4854-994D-B10929CB27FC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_SET_TIMING_FLAGS, DXGK_SET_TIMING_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_SET_TIMING_FLAGS
 ---
 
 # _DXGK_SET_TIMING_FLAGS structure
@@ -69,19 +70,3 @@ UINT used to operate on the combined bit-fields.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

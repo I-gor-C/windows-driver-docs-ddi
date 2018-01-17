@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3DWDDM1_3DDI_TILE_RANGE_FLAG
+UID: NE:d3d10umddi.D3DWDDM1_3DDI_TILE_RANGE_FLAG
 title: D3DWDDM1_3DDI_TILE_RANGE_FLAG
 author: windows-driver-content
 description: Specifies a range of tile mappings to use with the UpdateTileMappings function.
@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_tile_range_flag.htm
 old-project: display
 ms.assetid: 7D8B55F1-00BD-414B-9E78-DABCEBEF949F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DWDDM1_3DDI_TILE_RANGE_FLAG, D3DWDDM1_3DDI_TILE_RANGE_FLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DWDDM1_3DDI_TILE_RANGE_FLAG
 ---
 
 # D3DWDDM1_3DDI_TILE_RANGE_FLAG enumeration
@@ -79,49 +80,3 @@ If this flag is set in the UpdateTileMappings function's <i>pRangeFlags</i> para
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-WDDM 1.3
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

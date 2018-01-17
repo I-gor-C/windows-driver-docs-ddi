@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDIARG_CREATEQUERY
+UID: NS:d3dumddi._D3DDDIARG_CREATEQUERY
 title: _D3DDDIARG_CREATEQUERY
 author: windows-driver-content
 description: The D3DDDIARG_CREATEQUERY structure identifies a query to create.
@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_createquery.htm
 old-project: display
 ms.assetid: f80224c6-9046-4471-b6c6-eb14f02fc51f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIARG_CREATEQUERY, D3DDDIARG_CREATEQUERY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIARG_CREATEQUERY
 ---
 
 # _D3DDDIARG_CREATEQUERY structure
@@ -69,7 +70,7 @@ D3DDDIQUERYTYPE_VCACHE
 
 </td>
 <td>
-Query at issue end for driver hints about data layout for vertex caching. This query is processed through a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a> function in which the <b>End</b> bit-field flag is set in the <b>Flags</b> member of the <a href="display.d3dddiarg_issuequery">D3DDDIARG_ISSUEQUERY</a> structure.
+Query at issue end for driver hints about data layout for vertex caching. This query is processed through a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a> function in which the <b>End</b> bit-field flag is set in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_issuequery.md">D3DDDIARG_ISSUEQUERY</a> structure.
 
 </td>
 </tr>
@@ -91,7 +92,7 @@ D3DDDIQUERYTYPE_OCCLUSION
 <td>
 Query for the number of pixels that pass z-testing. These pixels are for primitives that are drawn between an issue begin and an issue end. 
 
-This query is processed between calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a> function in which first the <b>Begin</b> bit-field flag is set in the <b>Flags</b> member of the <a href="display.d3dddiarg_issuequery">D3DDDIARG_ISSUEQUERY</a> structure and next the <b>End</b> bit-field flag is set.
+This query is processed between calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a> function in which first the <b>Begin</b> bit-field flag is set in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_issuequery.md">D3DDDIARG_ISSUEQUERY</a> structure and next the <b>End</b> bit-field flag is set.
 
 This query enables an application to check the occlusion result against 0. A value of 0 is "fully occluded," which means the pixels are not visible from the current camera position.
 
@@ -220,31 +221,6 @@ The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getquerydata.md">GetQueryData</a>
 The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyquery.md">DestroyQuery</a> function to destroy the handle.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -264,5 +240,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEQUERY structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEQUERY structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

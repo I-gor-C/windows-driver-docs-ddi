@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._MPIO_PATH_HEALTH_INFO
+UID: NS:mpiowmi._MPIO_PATH_HEALTH_INFO
 title: _MPIO_PATH_HEALTH_INFO
 author: windows-driver-content
 description: The MPIO_PATH_HEALTH_INFO structure is used to query the available health information for every path that is exposed to the system.
@@ -7,8 +7,8 @@ old-location: storage\mpio_path_health_info.htm
 old-project: storage
 ms.assetid: efb49852-3c0a-4dab-9d50-c103ba4a136b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO, PMPIO_PATH_HEALTH_INFO
+ms.date: 1/10/2018
+ms.keywords: _MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO
 ---
 
 # _MPIO_PATH_HEALTH_INFO structure
@@ -71,19 +72,3 @@ A field that contains an array with health information about all the available p
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

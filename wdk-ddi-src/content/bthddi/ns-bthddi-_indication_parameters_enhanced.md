@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._INDICATION_PARAMETERS_ENHANCED
+UID: NS:bthddi._INDICATION_PARAMETERS_ENHANCED
 title: _INDICATION_PARAMETERS_ENHANCED
 author: windows-driver-content
 description: The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's enhanced L2CAP Callback Function.
@@ -7,7 +7,7 @@ old-location: bltooth\indication_parameters_enhanced.htm
 old-project: bltooth
 ms.assetid: D0FBA555-B61F-4D6F-B93F-C77D395F2BCD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: _INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: *PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED
 ---
 
 # _INDICATION_PARAMETERS_ENHANCED structure
@@ -135,7 +136,7 @@ The structure that contains parameters for the
 ### -field CurrentParams
 
 A 
-       <a href="bltooth.channel_config_parameters_enhanced">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
+       <a href="..\bthddi\ns-bthddi-_channel_config_parameters_enhanced.md">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
        value is only valid if the channel was previously open and is now in the process of being configured.
        This member is used when the callback function specifies the 
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.
@@ -232,7 +233,7 @@ The structure that contains parameters for the
 ### -field CurrentParams
 
 A 
-       <a href="bltooth.channel_config_parameters_enhanced">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
+       <a href="..\bthddi\ns-bthddi-_channel_config_parameters_enhanced.md">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
        value is only valid if the channel was previously open and is now in the process of being configured.
        This member is used when the callback function specifies the 
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.
@@ -365,7 +366,7 @@ The structure that contains the parameters for the
 ### -field Reason
 
 An 
-       <a href="bltooth.l2cap_disconnect_reason">L2CAP_DISCONNECT_REASON</a> value that
+       <a href="..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md">L2CAP_DISCONNECT_REASON</a> value that
        indicates why the L2CAP connection to the remote device was terminated.
 
 
@@ -405,29 +406,3 @@ Reserved member. Do not use.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows 8 and later versions of Windows
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

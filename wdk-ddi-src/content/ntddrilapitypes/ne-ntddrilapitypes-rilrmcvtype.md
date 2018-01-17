@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILRMCVTYPE
+UID: NE:ntddrilapitypes.RILRMCVTYPE
 title: RILRMCVTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrmcvtype.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 007c6b45-0bec-4fcf-984a-675aa5336993
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILRMCVTYPE, RILRMCVTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRMCVTYPE
 ---
 
 # RILRMCVTYPE enumeration
@@ -65,19 +66,3 @@ typedef enum _RILRMCVTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

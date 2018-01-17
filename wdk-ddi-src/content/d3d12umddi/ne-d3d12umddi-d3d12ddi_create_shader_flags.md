@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_CREATE_SHADER_FLAGS
+UID: NE:d3d12umddi.D3D12DDI_CREATE_SHADER_FLAGS
 title: D3D12DDI_CREATE_SHADER_FLAGS
 author: windows-driver-content
 description: Defines flags for shader creation.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_create_shader_flags.htm
 old-project: display
 ms.assetid: 93F27775-3E74-4310-8E09-DCB079436706
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_CREATE_SHADER_FLAGS, D3D12DDI_CREATE_SHADER_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_CREATE_SHADER_FLAGS
 ---
 
 # D3D12DDI_CREATE_SHADER_FLAGS enumeration
@@ -71,19 +72,3 @@ The shader is compiled quickly and less optimally.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoRegisterPlugPlayNotification
+UID: NF:wdm.IoRegisterPlugPlayNotification
 title: IoRegisterPlugPlayNotification function
 author: windows-driver-content
 description: The IoRegisterPlugPlayNotification routine registers a Plug and Play (PnP) notification callback routine to be called when a PnP event of the specified category occurs.
@@ -7,7 +7,7 @@ old-location: kernel\ioregisterplugplaynotification.htm
 old-project: kernel
 ms.assetid: 06fd10ab-3478-4b01-b678-24944f17fa9d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoRegisterPlugPlayNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -158,7 +159,7 @@ The callback routine's <i>NotificationStructure</i> is specific to the <i>EventC
 </td>
 <td>
 
-<a href="kernel.device_interface_change_notification">DEVICE_INTERFACE_CHANGE_NOTIFICATION</a>
+<a href="..\wdm\ns-wdm-_device_interface_change_notification.md">DEVICE_INTERFACE_CHANGE_NOTIFICATION</a>
 
 
 </td>
@@ -170,7 +171,7 @@ The callback routine's <i>NotificationStructure</i> is specific to the <i>EventC
 </td>
 <td>
 
-<a href="kernel.hwprofile_change_notification">HWPROFILE_CHANGE_NOTIFICATION</a>
+<a href="..\wdm\ns-wdm-_hwprofile_change_notification.md">HWPROFILE_CHANGE_NOTIFICATION</a>
 
 
 </td>
@@ -182,7 +183,7 @@ The callback routine's <i>NotificationStructure</i> is specific to the <i>EventC
 </td>
 <td>
 
-<a href="kernel.target_device_removal_notification">TARGET_DEVICE_REMOVAL_NOTIFICATION</a>
+<a href="..\wdm\ns-wdm-_target_device_removal_notification.md">TARGET_DEVICE_REMOVAL_NOTIFICATION</a>
 
 
 </td>
@@ -204,7 +205,7 @@ A pointer to a caller-allocated buffer containing context that the PnP manager p
 
 ### -param NotificationEntry [out]
 
-A pointer to an opaque value returned by this call that identifies the registration. Pass this value to the <a href="kernel.iounregisterplugplaynotificationex">IoUnregisterPlugPlayNotificationEx</a> routine to remove the registration. (In versions of Windows before Windows 7, call the <a href="kernel.iounregisterplugplaynotification">IoUnregisterPlugPlayNotification</a> routine instead of <b>IoUnregisterPlugPlayNotificationEx</b>.)
+A pointer to an opaque value returned by this call that identifies the registration. Pass this value to the <a href="..\wdm\nf-wdm-iounregisterplugplaynotificationex.md">IoUnregisterPlugPlayNotificationEx</a> routine to remove the registration. (In versions of Windows before Windows 7, call the <a href="..\wdm\nf-wdm-iounregisterplugplaynotification.md">IoUnregisterPlugPlayNotification</a> routine instead of <b>IoUnregisterPlugPlayNotificationEx</b>.)
 
 
 ## -returns
@@ -214,7 +215,7 @@ A pointer to an opaque value returned by this call that identifies the registrat
 ## -remarks
 A driver registers for an event category. Each category includes one or more types of PnP events.
 
-A driver can register different callback routines for different event categories or can register a single callback routine. A single callback routine can cast the <i>NotificationStructure</i> to a <a href="kernel.plugplay_notification_header">PLUGPLAY_NOTIFICATION_HEADER</a> and use the <b>Event</b> field to determine the exact type of the notification structure.
+A driver can register different callback routines for different event categories or can register a single callback routine. A single callback routine can cast the <i>NotificationStructure</i> to a <a href="..\wdm\ns-wdm-_plugplay_notification_header.md">PLUGPLAY_NOTIFICATION_HEADER</a> and use the <b>Event</b> field to determine the exact type of the notification structure.
 
 PnP notification callback routines should complete their tasks as quickly as possible and return control to the PnP manager, to prevent delays in notifying other drivers and applications that have registered for the event.
 
@@ -233,87 +234,10 @@ Then, implement your callback routine as follows:
 The DRIVER_NOTIFICATION_CALLBACK_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the DRIVER_NOTIFICATION_CALLBACK_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.wdm_markpower">MarkPower</a>, <a href="devtest.wdm_markpowerdown">MarkPowerDown</a>, <a href="devtest.wdm_markqueryrelations">MarkQueryRelations</a>, <a href="devtest.wdm_markstartdevice">MarkStartDevice</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_interface_change_notification">DEVICE_INTERFACE_CHANGE_NOTIFICATION</a>
+<a href="..\wdm\ns-wdm-_device_interface_change_notification.md">DEVICE_INTERFACE_CHANGE_NOTIFICATION</a>
 </dt>
 <dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_cleanup.md">EvtDeviceSelfManagedIoCleanup</a>
@@ -325,27 +249,27 @@ DDI compliance rules
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="kernel.hwprofile_change_notification">HWPROFILE_CHANGE_NOTIFICATION</a>
+<a href="..\wdm\ns-wdm-_hwprofile_change_notification.md">HWPROFILE_CHANGE_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="kernel.iounregisterplugplaynotification">IoUnregisterPlugPlayNotification</a>
+<a href="..\wdm\nf-wdm-iounregisterplugplaynotification.md">IoUnregisterPlugPlayNotification</a>
 </dt>
 <dt>
-<a href="kernel.iounregisterplugplaynotificationex">IoUnregisterPlugPlayNotificationEx</a>
+<a href="..\wdm\nf-wdm-iounregisterplugplaynotificationex.md">IoUnregisterPlugPlayNotificationEx</a>
 </dt>
 <dt>
-<a href="kernel.plugplay_notification_header">PLUGPLAY_NOTIFICATION_HEADER</a>
+<a href="..\wdm\ns-wdm-_plugplay_notification_header.md">PLUGPLAY_NOTIFICATION_HEADER</a>
 </dt>
 <dt>
-<a href="kernel.target_device_custom_notification">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
+<a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="kernel.target_device_removal_notification">TARGET_DEVICE_REMOVAL_NOTIFICATION</a>
+<a href="..\wdm\ns-wdm-_target_device_removal_notification.md">TARGET_DEVICE_REMOVAL_NOTIFICATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterPlugPlayNotification routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterPlugPlayNotification routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

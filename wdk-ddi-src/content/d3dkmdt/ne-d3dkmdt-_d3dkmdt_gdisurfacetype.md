@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_GDISURFACETYPE
+UID: NE:d3dkmdt._D3DKMDT_GDISURFACETYPE
 title: _D3DKMDT_GDISURFACETYPE
 author: windows-driver-content
 description: The D3DKMDT_GDISURFACETYPE enumeration indicates the type of lockable surface that is used by the Desktop Window Manager (DWM) for redirection.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_gdisurfacetype.htm
 old-project: display
 ms.assetid: b1c8fc0a-b877-4321-85b9-0c5c174ffc45
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_GDISURFACETYPE, D3DKMDT_GDISURFACETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_GDISURFACETYPE
 ---
 
 # _D3DKMDT_GDISURFACETYPE enumeration
@@ -117,7 +118,7 @@ Its pitch must be returned by the display miniport driver.
 
 </li>
 <li>
-Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="display.dxgk_presentationcaps">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="display.dxgk_drivercaps">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).
+Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).
 
 </li>
 </ul>
@@ -151,15 +152,15 @@ It is not visible to the CPU.
 
 </li>
 <li>
-It is used only during processing of commands that are specified by the <b>ClearTypeBlend</b> and <b>OpCode</b>.DXGK_GDIOP_BITBLT (copy-only) members of the <a href="display.dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a> structure.
+It is used only during processing of commands that are specified by the <b>ClearTypeBlend</b> and <b>OpCode</b>.DXGK_GDIOP_BITBLT (copy-only) members of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a> structure.
 
 </li>
 <li>
-The format is defined by the D3DDDIFMT_A8 value of the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration.
+The format is defined by the D3DDDIFMT_A8 value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration.
 
 </li>
 <li>
-The gamma lookup allocation is created one time and never changes after it is initialized. The allocation is initialized in D3DDDIFMT_A8 format by issuing a <a href="display.dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a>-&gt;Opcode.DXGK_GDIOP_BITBLT command from a D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE surface.
+The gamma lookup allocation is created one time and never changes after it is initialized. The allocation is initialized in D3DDDIFMT_A8 format by issuing a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a>-&gt;Opcode.DXGK_GDIOP_BITBLT command from a D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE surface.
 
 </li>
 </ul>
@@ -174,7 +175,7 @@ It is visible to the CPU. The allocation must be a linear format and in a cache-
 
 </li>
 <li>
-Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="display.dxgk_presentationcaps">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="display.dxgk_drivercaps">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).
+Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).
 
 </li>
 <li>
@@ -204,7 +205,7 @@ It is not visible to the CPU, and the video memory manager will create it as a s
 
 </li>
 <li>
-Its pitch must be returned by the display miniport driver in the <b>Pitch</b> member of the <a href="display.d3dkmdt_gdisurfacedata">D3DKMDT_GDISURFACEDATA</a> structure.
+Its pitch must be returned by the display miniport driver in the <b>Pitch</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a> structure.
 
 </li>
 <li>
@@ -225,52 +226,27 @@ Supported starting with Windows 8.1.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_gdisurfacedata">D3DKMDT_GDISURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a>
 </dt>
 <dt>
-<a href="display.dxgk_drivercaps">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_presentationcaps">DXGK_PRESENTATIONCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 </dt>
 <dt>
-<a href="display.dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_GDISURFACETYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_GDISURFACETYPE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

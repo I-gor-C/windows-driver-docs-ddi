@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILPERSODEACTIVATIONSTATEPARAMMASK
+UID: NE:ntddrilapitypes.RILPERSODEACTIVATIONSTATEPARAMMASK
 title: RILPERSODEACTIVATIONSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpersodeactivationstateparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 11c4388b-5c0d-4133-9c68-059d1af5c2ca
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILPERSODEACTIVATIONSTATEPARAMMASK, RILPERSODEACTIVATIONSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPERSODEACTIVATIONSTATEPARAMMASK
 ---
 
 # RILPERSODEACTIVATIONSTATEPARAMMASK enumeration
@@ -65,19 +66,3 @@ typedef enum _RILPERSODEACTIVATIONSTATEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

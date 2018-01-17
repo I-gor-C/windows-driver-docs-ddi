@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILGETPREFERREDOPERATORLISTPARAMS
+UID: NS:rilapitypes.RILGETPREFERREDOPERATORLISTPARAMS
 title: RILGETPREFERREDOPERATORLISTPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetpreferredoperatorlistparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bca0f1a1-2951-40c3-85b4-6009176ea574
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGETPREFERREDOPERATORLISTPARAMS, *LPRILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS, *LPRILGETPREFERREDOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGETPREFERREDOPERATORLISTPARAMS, *LPRILGETPREFERREDOPERATORLISTPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILGETPREFERREDOPERATORLISTPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

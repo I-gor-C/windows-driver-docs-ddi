@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.KeSetImportanceDpc
+UID: NF:ntddk.KeSetImportanceDpc
 title: KeSetImportanceDpc function
 author: windows-driver-content
 description: The KeSetImportanceDpc routine specifies how soon the DPC routine is run.
@@ -7,7 +7,7 @@ old-location: kernel\kesetimportancedpc.htm
 old-project: kernel
 ms.assetid: 0feb053b-6b58-4b26-8549-a6cf3996a3e6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeSetImportanceDpc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # KeSetImportanceDpc function
@@ -56,12 +57,12 @@ VOID KeSetImportanceDpc(
 
 ### -param Dpc [in, out]
 
-Pointer to the caller's DPC object, which <a href="kernel.keinitializedpc">KeInitializeDpc</a> already initialized. 
+Pointer to the caller's DPC object, which <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a> already initialized. 
 
 
 ### -param Importance [in]
 
-Specifies one of the following system-defined values to determine the behavior of <a href="kernel.keinsertqueuedpc">KeInsertQueueDpc</a> and <a href="kernel.iorequestdpc">IoRequestDpc</a> when either routine is used to queue the DPC.
+Specifies one of the following system-defined values to determine the behavior of <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a> and <a href="..\wdm\nf-wdm-iorequestdpc.md">IoRequestDpc</a> when either routine is used to queue the DPC.
 
 
 
@@ -99,7 +100,7 @@ The location of the DPC within the DPC queue. Typically, the <b>KeInsertQueueDpc
 
 When the system begins processing the DPC queue. Typically, <b>KeInsertQueueDpc</b> and <b>IoRequestDpc</b> immediately begin processing the DPC queue for the current processor. Drivers can specify different values for <i>Importance</i> to change this behavior.
 
-By default, DPCs are assigned to the DPC queue for the current processor, so specifying <b>MediumImportance</b> or <b>MediumHighImportance</b> for <i>Importance</i> has the same effect. However, drivers can use <a href="kernel.kesettargetprocessordpc">KeSetTargetProcessorDpc</a> to change the processor that the DPC will be assigned to.
+By default, DPCs are assigned to the DPC queue for the current processor, so specifying <b>MediumImportance</b> or <b>MediumHighImportance</b> for <i>Importance</i> has the same effect. However, drivers can use <a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a> to change the processor that the DPC will be assigned to.
 
 For Windows Vista and later versions of the Windows operating system, you can use <b>KeSetImportanceDpc</b> for threaded DPCs. If the caller sets <i>Importance</i> to <b>HighImportance</b>, the DPC is placed at the beginning of the queue; otherwise, it is placed at the end. The routine does not affect when the threaded DPC queue is processed. Threaded DPCs are always processed by a dedicated thread at IRQL = PASSIVE_LEVEL. For more information about threaded DPCs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564621">Threaded DPCs</a>.
 
@@ -108,95 +109,27 @@ Note that a driver must call <b>KeSetImportanceDpc</b> before it calls <b>KeInse
 For more information about how the system processes the DPC queue, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558754">Organization of DPC Queues</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iorequestdpc">IoRequestDpc</a>
+<a href="..\wdm\nf-wdm-iorequestdpc.md">IoRequestDpc</a>
 </dt>
 <dt>
-<a href="kernel.keinitializedpc">KeInitializeDpc</a>
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
 </dt>
 <dt>
-<a href="kernel.keinsertqueuedpc">KeInsertQueueDpc</a>
+<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
 </dt>
 <dt>
-<a href="kernel.kesettargetprocessordpc">KeSetTargetProcessorDpc</a>
+<a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
 </dt>
 <dt>
-<a href="kernel.kesynchronizeexecution">KeSynchronizeExecution</a>
+<a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetImportanceDpc routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetImportanceDpc routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

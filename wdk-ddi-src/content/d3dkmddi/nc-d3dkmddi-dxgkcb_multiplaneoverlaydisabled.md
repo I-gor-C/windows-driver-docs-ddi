@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dkmddi.DXGKCB_MULTIPLANEOVERLAYDISABLED
+UID: NC:d3dkmddi.DXGKCB_MULTIPLANEOVERLAYDISABLED
 title: DXGKCB_MULTIPLANEOVERLAYDISABLED
 author: windows-driver-content
 description: This callback allows the kernel mode driver to indicate that the current multiplane overlay configuration is no longer supported on the specified VidPnSourceId.
@@ -7,8 +7,8 @@ old-location: display\dxgkcb_multiplaneoverlaydisabled.htm
 old-project: display
 ms.assetid: EA9FAB26-1EAF-4E67-B240-094BC2B03DEF
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: requires_max_(PASSIVE_LEVEL)
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
 # DXGKCB_MULTIPLANEOVERLAYDISABLED callback
@@ -81,30 +82,4 @@ This callback can only be called at passive level.
 
 This callback can be used in the following scenarios:
 
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-requires_max_(PASSIVE_LEVEL)
-
-</td>
-</tr>
-</table>
+</p>

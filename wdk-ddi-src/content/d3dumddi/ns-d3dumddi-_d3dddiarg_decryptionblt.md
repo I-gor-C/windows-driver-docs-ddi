@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDIARG_DECRYPTIONBLT
+UID: NS:d3dumddi._D3DDDIARG_DECRYPTIONBLT
 title: _D3DDDIARG_DECRYPTIONBLT
 author: windows-driver-content
 description: The D3DDDIARG_DECRYPTIONBLT structure describes the parameters of an decrypted bit-block transfer (bitblt) in a call to the DecryptionBlt function.
@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_decryptionblt.htm
 old-project: display
 ms.assetid: cc11e153-6be6-4fbc-9535-98bab7ed2b90
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIARG_DECRYPTIONBLT, D3DDDIARG_DECRYPTIONBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIARG_DECRYPTIONBLT
 ---
 
 # _D3DDDIARG_DECRYPTIONBLT structure
@@ -93,7 +94,7 @@ typedef struct _D3DDDIARG_DECRYPTIONBLT {
 
 ### -field pEncryptedBlockInfo
 
-[in] A pointer to a <a href="display.d3dddiencrypted_block_info">D3DDDIENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. 
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiencrypted_block_info.md">D3DDDIENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. 
 
 
 ### -field pContentKey
@@ -110,35 +111,10 @@ typedef struct _D3DDDIARG_DECRYPTIONBLT {
 A pointer to a populated D3DDDIARG_DECRYPTIONBLT structure is passed to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a> function to write data to a protected surface. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3DDDIARG_DECRYPTIONBLT is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiencrypted_block_info">D3DDDIENCRYPTED_BLOCK_INFO</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiencrypted_block_info.md">D3DDDIENCRYPTED_BLOCK_INFO</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a>
@@ -148,5 +124,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_DECRYPTIONBLT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_DECRYPTIONBLT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

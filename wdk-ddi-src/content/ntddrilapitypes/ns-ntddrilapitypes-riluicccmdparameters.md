@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCCMDPARAMETERS
+UID: NS:ntddrilapitypes.RILUICCCMDPARAMETERS
 title: RILUICCCMDPARAMETERS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicccmdparameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 02c37c3d-fa5b-4d26-a092-09f6f3dbd46c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCCMDPARAMETERS, LPRILUICCCMDPARAMETERS, RILUICCCMDPARAMETERS, *LPRILUICCCMDPARAMETERS
+ms.date: 1/11/2018
+ms.keywords: RILUICCCMDPARAMETERS, *LPRILUICCCMDPARAMETERS, RILUICCCMDPARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCCMDPARAMETERS, RILUICCCMDPARAMETERS
 ---
 
 # RILUICCCMDPARAMETERS structure
@@ -77,19 +78,3 @@ typedef struct _RILUICCCMDPARAMETERS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

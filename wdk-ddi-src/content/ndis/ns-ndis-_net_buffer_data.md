@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NET_BUFFER_DATA
+UID: NS:ndis._NET_BUFFER_DATA
 title: _NET_BUFFER_DATA
 author: windows-driver-content
 description: The NET_BUFFER_DATA structure contains information for managing the data buffers that are attached to a NET_BUFFER structure, and it identifies the next NET_BUFFER structure in a list of NET_BUFFER structures.
 old-location: netvista\net_buffer_data.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d1b5e1c7-5ade-4f54-a5f1-200420964f0e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NET_BUFFER_DATA, *PNET_BUFFER_DATA, NET_BUFFER_DATA, PNET_BUFFER_DATA
+ms.date: 1/11/2018
+ms.keywords: _NET_BUFFER_DATA, NET_BUFFER_DATA, *PNET_BUFFER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NET_BUFFER_DATA, *PNET_BUFFER_DATA
 ---
 
 # _NET_BUFFER_DATA structure
@@ -40,7 +41,7 @@ req.irql: See Remarks section
 ## -description
 The NET_BUFFER_DATA structure contains information for managing the data buffers that are attached to
   a NET_BUFFER structure, and it identifies the next 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structure in a list of NET_BUFFER
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure in a list of NET_BUFFER
   structures.
 
 
@@ -101,13 +102,13 @@ The offset, in bytes, from the beginning of the MDL chain to the beginning of th
 
 ## -remarks
 The 
-    <a href="netvista.net_buffer_header">NET_BUFFER_HEADER</a> structure contains a
+    <a href="..\ndis\ns-ndis-_net_buffer_header.md">NET_BUFFER_HEADER</a> structure contains a
     NET_BUFFER_DATA structure that defines data for the 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure. To access the members of
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. To access the members of
     NET_BUFFER_DATA, use the 
-    <a href="netvista.ndisretreatnetbufferdatastart">
+    <a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
     NdisRetreatNetBufferDataStart</a> and 
-    <a href="netvista.ndisadvancenetbufferdatastart">
+    <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
     NdisAdvanceNetBufferDataStart</a> functions, and the following macros:
 
 
@@ -136,43 +137,18 @@ The
 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisadvancenetbufferdatastart">
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
    NdisAdvanceNetBufferDataStart</a>
 </dt>
 <dt>
-<a href="netvista.ndisretreatnetbufferdatastart">
+<a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
    NdisRetreatNetBufferDataStart</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568379">NET_BUFFER_CURRENT_MDL</a>
@@ -190,7 +166,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568386">NET_BUFFER_FIRST_MDL</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_header">NET_BUFFER_HEADER</a>
+<a href="..\ndis\ns-ndis-_net_buffer_header.md">NET_BUFFER_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568416">NET_BUFFER_NEXT_NB</a>
@@ -200,5 +176,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_BUFFER_DATA structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_DATA structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

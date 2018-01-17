@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._DXVAHDDDI_STREAM_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_DATA
 title: _DXVAHDDDI_STREAM_DATA
 author: windows-driver-content
 description: The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed.
@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_stream_data.htm
 old-project: display
 ms.assetid: 3b8fc849-8794-4dab-af28-a1c0dfd859d3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVAHDDDI_STREAM_DATA, DXVAHDDDI_STREAM_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVAHDDDI_STREAM_DATA
 ---
 
 # _DXVAHDDDI_STREAM_DATA structure
@@ -62,7 +63,7 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 
 ### -field Enable
 
-[in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="display.dxvahdddi_vpdevcaps">DXVAHDDDI_VPDEVCAPS</a> structure.  
+[in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.  
 
 
 ### -field OutputIndex
@@ -77,31 +78,31 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 
 ### -field PastFrames
 
-[in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="display.dxvahdddi_vpcaps">DXVAHDDDI_VPCAPS</a> structure.  
+[in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  
 
 
 ### -field FutureFrames
 
-[in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="display.dxvahdddi_vpcaps">DXVAHDDDI_VPCAPS</a> structure.  
+[in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  
 
 
 ### -field pPastSurfaces
 
-[in] An array of <a href="display.dxvahdddi_surface">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces. 
+[in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces. 
 
 
 ### -field InputSurface
 
-[in] A <a href="display.dxvahdddi_surface">DXVAHDDDI_SURFACE</a> structure that describes the input surface. 
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structure that describes the input surface. 
 
 
 ### -field pFutureSurfaces
 
-[in] An array of <a href="display.dxvahdddi_surface">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces. 
+[in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces. 
 
 
 ## -remarks
-The driver must allocate the surfaces that the <b>pPastSurfaces</b>, <b>InputSurface</b>, and <b>pFutureSurfaces</b> members specify in the pool type, which the driver sets in the <b>InputPool</b> member of the <a href="display.dxvahdddi_vpdevcaps">DXVAHDDDI_VPDEVCAPS</a> structure, and with one of the following surface types; otherwise, the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_videoprocessblthd.md">VideoProcessBltHD</a> function returns an error.
+The driver must allocate the surfaces that the <b>pPastSurfaces</b>, <b>InputSurface</b>, and <b>pFutureSurfaces</b> members specify in the pool type, which the driver sets in the <b>InputPool</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure, and with one of the following surface types; otherwise, the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_videoprocessblthd.md">VideoProcessBltHD</a> function returns an error.
 
 A video surface that is created with the DXVAHD_SURFACE_TYPE_VIDEO_INPUT or DXVAHD_SURFACE_TYPE_VIDEO_INPUT_PRIVATE type. 
 
@@ -149,9 +150,9 @@ Interlaced format at 4/15 custom rate (8:7 inverse telecine, OutputFrames=2 and 
 
 InputFrameOrField = 0, 0, 15, 15, 30, 30,...
 
-The application should cause both the <b>OutputIndex</b> and <b>InputFrameOrField</b> members to reset when either the frame format or the output rate is changed so that the driver can reset its internal processing state. For more information about changing frame format or output rate, see <a href="display.dxvahdddi_stream_state_frame_format_data">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a> and <a href="display.dxvahdddi_stream_state_output_rate_data">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>.
+The application should cause both the <b>OutputIndex</b> and <b>InputFrameOrField</b> members to reset when either the frame format or the output rate is changed so that the driver can reset its internal processing state. For more information about changing frame format or output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_frame_format_data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a> and <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>.
 
-However, if the driver switches between normal and half rate (values from the <a href="display.dxvahdddi_output_rate">DXVAHDDDI_OUTPUT_RATE</a> enumeration), the driver should not require the reset. 
+However, if the driver switches between normal and half rate (values from the <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_output_rate.md">DXVAHDDDI_OUTPUT_RATE</a> enumeration), the driver should not require the reset. 
 
 If both the <b>OutputIndex</b> and <b>InputFrameOrField</b> members remain unchanged at the next process time, the driver determines that the frame is unchanged (for example, paused) in the stream processing. Therefore, the driver can optimize the frame by using cached data.
 
@@ -202,50 +203,25 @@ InputSurface = T, T, T+7, T+7, T+15, T+15,...  (note that T+7 frame contains 15t
 The following pseudo-code example shows the interaction between the application (APP) and the driver (DRV) while performing Inverse Telecine (IVTC) on 3:2 pull-down, 30 frames (60 fields) per second interlaced content:
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-DXVAHDDDI_STREAM_DATA is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxvahdddi_output_rate">DXVAHDDDI_OUTPUT_RATE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_output_rate.md">DXVAHDDDI_OUTPUT_RATE</a>
 </dt>
 <dt>
-<a href="display.dxvahdddi_stream_state_frame_format_data">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_frame_format_data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
 </dt>
 <dt>
-<a href="display.dxvahdddi_stream_state_output_rate_data">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>
 </dt>
 <dt>
-<a href="display.dxvahdddi_surface">DXVAHDDDI_SURFACE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a>
 </dt>
 <dt>
-<a href="display.dxvahdddi_vpcaps">DXVAHDDDI_VPCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a>
 </dt>
 <dt>
-<a href="display.dxvahdddi_vpdevcaps">DXVAHDDDI_VPDEVCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_videoprocessblthd.md">VideoProcessBltHD</a>
@@ -255,5 +231,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_DATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CO_AF_REGISTER_NOTIFY
-title: PROTOCOL_CO_AF_REGISTER_NOTIFY
+UID: NC:ndis.PROTOCOL_CO_AF_REGISTER_NOTIFY
+title: PROTOCOL_CO_AF_REGISTER_NOTIFY function
 author: windows-driver-content
 description: The ProtocolCoAfRegisterNotify function is used by connection-oriented NDIS clients.
 old-location: netvista\protocolcoafregisternotify.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 272d99da-ef08-4ebd-90e7-74e99410b3f5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CO_AF_REGISTER_NOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CO_AF_REGISTER_NOTIFY callback
+# PROTOCOL_CO_AF_REGISTER_NOTIFY function
 
 
 
@@ -46,7 +47,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CO_AF_REGISTER_NOTIFY ProtocolCoAfRegisterNotify;
@@ -67,16 +68,16 @@ Specifies the handle to the client-allocated context area in which the client pr
      per-binding run-time state. The client's 
      <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function
      supplied this handle when it called 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>.
 
 
 ### -param AddressFamily [in]
 
 Pointer to a buffer describing the signaling-protocol support provided by a call manager that just
      registered these services with NDIS by calling 
-     <a href="netvista.ndiscmregisteraddressfamilyex">
+     <a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
      NdisCmRegisterAddressFamilyEx</a> or 
-     <a href="netvista.ndismcmregisteraddressfamilyex">
+     <a href="..\ndis\nf-ndis-ndismcmregisteraddressfamilyex.md">
      NdisMCmRegisterAddressFamilyEx</a>.
 
 
@@ -100,7 +101,7 @@ If the client finds the offered call-management services unacceptable,
     <i>ProtocolBindingContext</i> handle and an AF specification supplied by this or another call manager also
     bound to the same underlying miniport driver. Otherwise, 
     <i>ProtocolAfRegisterNotify</i> allocates a per-AF context area for the client and calls 
-    <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a> with
+    <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a> with
     the 
     <i>AddressFamily</i> pointer. If this call succeeds, the client has registered its 
     <i>ProtocolClXxx</i> functions with NDIS for subsequent connection-oriented operations using this call manager's
@@ -109,7 +110,7 @@ If the client finds the offered call-management services unacceptable,
 For example, 
     <i>ProtocolCoAfRegisterNotify</i> or 
     <i>ProtocolClOpenAfCompleteEx</i> might call 
-    <a href="netvista.ndisinitializenpagedlookasidelist">
+    <a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
     NdisInitializeNPagedLookasideList</a> one or more times in preparation for dynamic allocations and
     releases of per-SAP, per-VC, and/or per-party context areas that the client will need subsequently.
 
@@ -118,12 +119,12 @@ If it accepts incoming calls, a client's
     <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">
     ProtocolClOpenAfCompleteEx</a> function usually registers one or more SAPs with the call manager. After
     opening that call manager's AF, the client might proceed to allocate a per-SAP state area and call 
-    <a href="netvista.ndisclregistersap">NdisClRegisterSap</a> one or more times with
+    <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a> one or more times with
     the 
     <i>NdisAfHandle</i> it obtained from 
     <b>NdisClOpenAddressFamilyEx</b>. If it makes outgoing calls, the client might proceed to allocated a
     per-VC state area and create a VC with 
-    <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> in anticipation of an
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> in anticipation of an
     incoming request from one of its own clients to make an outgoing call to a remote node.
 
 To define a <i>ProtocolCoAfRegisterNotify</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
@@ -137,73 +138,34 @@ The <b>PROTOCOL_CO_AF_REGISTER_NOTIFY</b> function type is defined in the Ndis.h
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/456c8179-b91b-4385-a22b-d0dd0b310f29">ProtocolCoAfRegisterNotify
-   (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolCoAfRegisterNotify
-   (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545368">CO_ADDRESS_FAMILY</a>
 </dt>
 <dt>
-<a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisclregistersap">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmregisteraddressfamilyex">
+<a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
    NdisCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndisinitializenpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
    NdisInitializeNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmregisteraddressfamilyex">
+<a href="..\ndis\nf-ndis-ndismcmregisteraddressfamilyex.md">
    NdisMCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
@@ -216,5 +178,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CO_AF_REGISTER_NOTIFY callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CO_AF_REGISTER_NOTIFY callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

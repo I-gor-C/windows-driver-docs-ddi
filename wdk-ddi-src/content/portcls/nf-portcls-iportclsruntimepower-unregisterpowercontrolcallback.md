@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsRuntimePower.UnregisterPowerControlCallback
+UID: NF:portcls.IPortClsRuntimePower.UnregisterPowerControlCallback
 title: IPortClsRuntimePower::UnregisterPowerControlCallback method
 author: windows-driver-content
 description: The port class driver (PortCls) uses the UnregisterPowerControlCallback method to unregister a power control callback.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsRuntimePower::UnregisterPowerControlCallback method
@@ -64,52 +65,6 @@ The <code>UnregisterPowerControlCallback</code> method returns STATUS_SUCCESS, i
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 7
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2003
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

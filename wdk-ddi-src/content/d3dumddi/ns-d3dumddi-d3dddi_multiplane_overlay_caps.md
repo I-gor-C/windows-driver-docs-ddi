@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI.D3DDDI_MULTIPLANE_OVERLAY_CAPS
+UID: NS:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_CAPS
 title: D3DDDI_MULTIPLANE_OVERLAY_CAPS
 author: windows-driver-content
 description: Used by the user-mode display driver to specify overlay plane capabilities.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_caps.htm
 old-project: display
 ms.assetid: 66365126-d7c3-4886-b14f-a94dc12c1626
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_CAPS, D3DDDI_MULTIPLANE_OVERLAY_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_MULTIPLANE_OVERLAY_CAPS
 ---
 
 # D3DDDI_MULTIPLANE_OVERLAY_CAPS structure
@@ -73,39 +74,3 @@ Here are 2 examples:
 </ul>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._OSVERSIONINFOEXW
+UID: NS:wdm._OSVERSIONINFOEXW
 title: _OSVERSIONINFOEXW
 author: windows-driver-content
 description: The RTL_OSVERSIONINFOEXW structure contains operating system version information.
@@ -7,8 +7,8 @@ old-location: kernel\rtl_osversioninfoexw.htm
 old-project: kernel
 ms.assetid: 88471e00-4913-44fd-b9f4-960ec46fb75a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _OSVERSIONINFOEXW, *POSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, POSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *LPOSVERSIONINFOEXW, OSVERSIONINFOEXW, LPOSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW
+ms.date: 1/4/2018
+ms.keywords: _OSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *LPOSVERSIONINFOEXW, OSVERSIONINFOEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *LPOSVERSIONINFOEXW
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ typedef struct _OSVERSIONINFOEXW {
 
 ### -field dwOSVersionInfoSize
 
-The size, in bytes, of an <b>RTL_OSVERSIONINFOEXW</b> structure. This member must be set before the structure is used with <a href="kernel.rtlgetversion">RtlGetVersion</a>.
+The size, in bytes, of an <b>RTL_OSVERSIONINFOEXW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.
 
 
 ### -field dwMajorVersion
@@ -300,7 +301,7 @@ Reserved for future use.
 
 
 ## -remarks
-The information in this structure includes the major and minor version numbers, the build number, the platform identifier, the installed product suites, and the latest service pack that is installed on the system. This structure is used with the <a href="kernel.rtlgetversion">RtlGetVersion</a> and <a href="kernel.rtlverifyversioninfo">RtlVerifyVersionInfo</a> routines.
+The information in this structure includes the major and minor version numbers, the build number, the platform identifier, the installed product suites, and the latest service pack that is installed on the system. This structure is used with the <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a> and <a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a> routines.
 
 Relying on version information is not always the best way to test whether a feature is available. For guidance, refer to the documentation for the feature you are interested in.
 
@@ -369,36 +370,21 @@ Windows 2000
 5.0
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtl_osversioninfow">RTL_OSVERSIONINFOW</a>
+<a href="..\wdm\ns-wdm-_osversioninfow.md">RTL_OSVERSIONINFOW</a>
 </dt>
 <dt>
-<a href="kernel.rtlgetversion">RtlGetVersion</a>
+<a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
 </dt>
 <dt>
-<a href="kernel.rtlverifyversioninfo">RtlVerifyVersionInfo</a>
+<a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RTL_OSVERSIONINFOEXW structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RTL_OSVERSIONINFOEXW structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

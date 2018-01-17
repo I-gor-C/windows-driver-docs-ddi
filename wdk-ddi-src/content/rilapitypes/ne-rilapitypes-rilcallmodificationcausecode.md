@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILCALLMODIFICATIONCAUSECODE
+UID: NE:rilapitypes.RILCALLMODIFICATIONCAUSECODE
 title: RILCALLMODIFICATIONCAUSECODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationcausecode_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 44309e4e-a0a0-4aed-b942-2d15b8ab07dc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE
 req.product: Windows 10 or later.
 ---
 
@@ -86,19 +87,3 @@ typedef enum _RILCALLMODIFICATIONCAUSECODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

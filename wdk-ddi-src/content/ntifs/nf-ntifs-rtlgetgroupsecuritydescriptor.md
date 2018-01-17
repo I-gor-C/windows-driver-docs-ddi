@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlGetGroupSecurityDescriptor
+UID: NF:ntifs.RtlGetGroupSecurityDescriptor
 title: RtlGetGroupSecurityDescriptor function
 author: windows-driver-content
 description: The RtlGetGroupSecurityDescriptor routine returns the primary group information for a given security descriptor.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlgetgroupsecuritydescriptor.htm
 old-project: ifsk
 ms.assetid: a2fbb125-42cf-4c33-83bb-3fc875712be3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlGetGroupSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlGetGroupSecurityDescriptor function
@@ -62,7 +63,7 @@ Pointer to the security descriptor whose primary group information is to be retu
 
 ### -param Group [out]
 
-Pointer to a variable that receives a pointer to the security identifier (<a href="ifsk.sid">SID</a>) for the primary group. If the security descriptor does not contain a primary group, <i>*Group</i> receives <b>NULL</b>.
+Pointer to a variable that receives a pointer to the security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>) for the primary group. If the security descriptor does not contain a primary group, <i>*Group</i> receives <b>NULL</b>.
 
 
 ### -param GroupDefaulted [out]
@@ -84,99 +85,31 @@ If the security descriptor pointed to by <i>SecurityDescriptor</i> contains a pr
 
 If the security descriptor pointed to by <i>SecurityDescriptor</i> does not contain a primary group, <b>RtlGetGroupSecurityDescriptor</b> sets the pointer pointed to by <i>Group</i> to <b>NULL</b> and ignores the remaining output parameter, <i>GroupDefaulted</i>. 
 
-To set the primary group information for a security descriptor, use <a href="ifsk.rtlsetgroupsecuritydescriptor">RtlSetGroupSecurityDescriptor</a>. 
+To set the primary group information for a security descriptor, use <a href="..\ntifs\nf-ntifs-rtlsetgroupsecuritydescriptor.md">RtlSetGroupSecurityDescriptor</a>. 
 
-To retrieve the owner information for a security descriptor, use <a href="ifsk.rtlgetownersecuritydescriptor">RtlGetOwnerSecurityDescriptor</a>. 
+To retrieve the owner information for a security descriptor, use <a href="..\ntifs\nf-ntifs-rtlgetownersecuritydescriptor.md">RtlGetOwnerSecurityDescriptor</a>. 
 
 For more information about security and access control, see the Microsoft Windows SDK documentation.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This routine is available on Microsoft Windows Server 2003 SP1 and later. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rtlgetownersecuritydescriptor">RtlGetOwnerSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlgetownersecuritydescriptor.md">RtlGetOwnerSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlsetgroupsecuritydescriptor">RtlSetGroupSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlsetgroupsecuritydescriptor.md">RtlSetGroupSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="ifsk.sid">SID</a>
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetGroupSecurityDescriptor routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetGroupSecurityDescriptor routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

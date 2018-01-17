@@ -1,6 +1,6 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_STOP_CONTROLLER
-title: GPIO_CLIENT_STOP_CONTROLLER
+UID: NC:gpioclx.GPIO_CLIENT_STOP_CONTROLLER
+title: GPIO_CLIENT_STOP_CONTROLLER function
 author: windows-driver-content
 description: The CLIENT_StopController event callback function performs operations that are needed to prepare the general-purpose I/O (GPIO) controller device to exit the D0 power state.
 old-location: gpio\client_stopcontroller.htm
@@ -8,10 +8,10 @@ old-project: GPIO
 ms.assetid: 4B1A33AC-E341-478E-8C1E-94F4473A191C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GPIO_CLIENT_STOP_CONTROLLER
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: gpioclx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
+req.typenames: FWPS_CONNECT_REQUEST0
 ---
 
-# GPIO_CLIENT_STOP_CONTROLLER callback
+# GPIO_CLIENT_STOP_CONTROLLER function
 
 
 
@@ -42,7 +43,7 @@ The <i>CLIENT_StopController</i> event callback function performs operations tha
 
 
 
-## -prototype
+## -syntax
 
 ````
 GPIO_CLIENT_STOP_CONTROLLER CLIENT_StopController;
@@ -70,7 +71,7 @@ Whether the client driver should save the current hardware context of the GPIO c
 
 ### -param TargetState [in]
 
-The target device power state. This parameter is a <a href="kmdf.wdf_power_device_state">WDF_POWER_DEVICE_STATE</a> enumeration value that specifies the low-power state that the device is to enter when it exits the D0 power state. The GPIO controller driver can use this information to determine how to configure the controller device before it leaves D0.
+The target device power state. This parameter is a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_device_state.md">WDF_POWER_DEVICE_STATE</a> enumeration value that specifies the low-power state that the device is to enter when it exits the D0 power state. The GPIO controller driver can use this information to determine how to configure the controller device before it leaves D0.
 
 
 ## -returns
@@ -94,52 +95,6 @@ Then, implement your callback function as follows:
 
 The GPIO_CLIENT_STOP_CONTROLLER function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_STOP_CONTROLLER function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at PASSIVE_LEVEL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

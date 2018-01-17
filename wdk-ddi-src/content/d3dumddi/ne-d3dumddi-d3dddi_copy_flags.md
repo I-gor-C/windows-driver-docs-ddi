@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi.D3DDDI_COPY_FLAGS
+UID: NE:d3dumddi.D3DDDI_COPY_FLAGS
 title: D3DDDI_COPY_FLAGS
 author: windows-driver-content
 description: Specifies how to handle the existing contents of a resource during a copy or update operation of a region within that resource.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_copy_flags.htm
 old-project: display
 ms.assetid: 6186dac4-4797-48f2-bb32-40a0d501bac7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDI_COPY_FLAGS, D3DDDI_COPY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_COPY_FLAGS
 ---
 
 # D3DDDI_COPY_FLAGS enumeration
@@ -65,39 +66,3 @@ The user-mode display driver can discard previous contents of the entire resourc
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

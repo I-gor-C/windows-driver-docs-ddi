@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_MONITOR_MODE_ORIGIN
+UID: NE:iddcx.IDDCX_MONITOR_MODE_ORIGIN
 title: IDDCX_MONITOR_MODE_ORIGIN
 author: windows-driver-content
 description: Used to describe a mode the monitor supports based on the monitor description.
@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_mode_origin.htm
 old-project: display
 ms.assetid: 96aac09b-c6fc-43a7-a6d8-36f642e0f5d7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_MONITOR_MODE_ORIGIN,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _requires_same_
+req.typenames: 
 ---
 
 # IDDCX_MONITOR_MODE_ORIGIN enumeration
@@ -79,19 +80,3 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

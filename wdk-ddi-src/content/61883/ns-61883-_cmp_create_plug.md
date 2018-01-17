@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_CREATE_PLUG
+UID: NS:61883._CMP_CREATE_PLUG
 title: _CMP_CREATE_PLUG
 author: windows-driver-content
 description: This structure is used to create a plug.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 4FE3FE9E-9F00-431D-99F0-002B1368CE34
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_CREATE_PLUG, CMP_CREATE_PLUG, *PCMP_CREATE_PLUG, PCMP_CREATE_PLUG
+ms.keywords: _CMP_CREATE_PLUG, CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
 ---
 
 # _CMP_CREATE_PLUG structure
@@ -119,21 +120,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 
 If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INSUFFICIENT_RESOURCES.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

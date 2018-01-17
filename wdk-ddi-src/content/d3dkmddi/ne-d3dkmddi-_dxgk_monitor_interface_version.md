@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_MONITOR_INTERFACE_VERSION
+UID: NE:d3dkmddi._DXGK_MONITOR_INTERFACE_VERSION
 title: _DXGK_MONITOR_INTERFACE_VERSION
 author: windows-driver-content
 description: Indicates a particular version of the Monitor interface.
@@ -7,7 +7,7 @@ old-location: display\dxgk_monitor_interface_version.htm
 old-project: display
 ms.assetid: 76af0d70-f9bb-4768-9bfd-f2aaeb212db0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MONITOR_INTERFACE_VERSION, DXGK_MONITOR_INTERFACE_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MONITOR_INTERFACE_VERSION
 ---
 
 # _DXGK_MONITOR_INTERFACE_VERSION enumeration
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration indicates a particular version of the <a href="display.monitor_interface">Monitor interface</a>.
+The <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration indicates a particular version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor interface</a>.
 
 
 
@@ -73,30 +74,4 @@ Indicates version 1, available in Windows Vista and later versions of the Window
 
 
 ## -remarks
-The <b>Version</b> member of the <a href="display.dxgk_monitor_interface">DXGK_MONITOR_INTERFACE</a> structure is a value from the <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The <b>Version</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitor_interface.md">DXGK_MONITOR_INTERFACE</a> structure is a value from the <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration.</p>

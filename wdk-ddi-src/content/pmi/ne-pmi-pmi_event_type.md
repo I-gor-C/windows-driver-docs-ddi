@@ -1,5 +1,5 @@
 ---
-UID: NE.pmi.PMI_EVENT_TYPE
+UID: NE:pmi.PMI_EVENT_TYPE
 title: PMI_EVENT_TYPE
 author: windows-driver-content
 description: The PMI_EVENT_TYPE enumeration defines the type of PMI power meter event that is returned through the successful completion of an IOCTL_PMI_REGISTER_EVENT_NOTIFY request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PMI_EVENT_TYPE
 ---
 
 # PMI_EVENT_TYPE enumeration
@@ -89,33 +90,8 @@ The maximum number of PMI event types.
 
 
 ## -remarks
-The <b>EventType</b> member of the <a href="powermeter.pmi_event">PMI_EVENT</a> structure contains information about the type of PMI event data that is referenced by the <b>Event</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> request.
+The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure contains information about the type of PMI event data that is referenced by the <b>Event</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> request.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pmi.h (include Pmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -123,7 +99,7 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_event">PMI_EVENT</a>
+<a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a>
 </dt>
 </dl>
  

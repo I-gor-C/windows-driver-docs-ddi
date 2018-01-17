@@ -1,17 +1,17 @@
 ---
-UID: NC.ucxendpoint.EVT_UCX_ENDPOINT_RESET
-title: EVT_UCX_ENDPOINT_RESET
+UID: NC:ucxendpoint.EVT_UCX_ENDPOINT_RESET
+title: EVT_UCX_ENDPOINT_RESET function
 author: windows-driver-content
 description: The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint.
 old-location: buses\evt_ucx_endpoint_reset.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 927fdd48-416e-4e8f-a29c-c2799952197e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
+ms.date: 1/4/2018
+ms.keywords: EVT_UCX_ENDPOINT_RESET
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ucxendpoint.h
 req.include-header: Ucxclass.h, Ucxendpoint.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
 req.product: Windows 10 or later.
 ---
 
-# EVT_UCX_ENDPOINT_RESET callback
+# EVT_UCX_ENDPOINT_RESET function
 
 
 
@@ -43,7 +44,7 @@ The client driver's implementation that UCX calls to reset the controller’s pr
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_UCX_ENDPOINT_RESET EvtUcxEndpointReset;
@@ -63,7 +64,7 @@ typedef EVT_UCX_ENDPOINT_RESET PEVT_UCX_ENDPOINT_RESET;
 
 ### -param UcxController [in]
 
- A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.
+ A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.
 
 
 ### -param Endpoint [in]
@@ -81,54 +82,8 @@ This callback function does not return a value.
 
 
 ## -remarks
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.
 
 The client driver returns completion status in the WDFREQUEST, which it might complete
-    asynchronously.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxendpoint.h (include Ucxclass.h or Ucxendpoint.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+    asynchronously.</p>

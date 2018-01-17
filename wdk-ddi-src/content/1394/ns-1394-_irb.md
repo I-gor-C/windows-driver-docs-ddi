@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB
+UID: NS:1394._IRB
 title: _IRB
 author: windows-driver-content
 description: Drivers use this structure to pass most requests to IEEE 1394 bus driver.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 456712c9-720c-436c-b1db-a6d53c358e22
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _IRB, *PIRB, PIRB, IRB
+ms.keywords: _IRB, IRB, *PIRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB, *PIRB
 ---
 
 # _IRB structure
@@ -219,21 +220,6 @@ Specifies a union of structures, one for each value of <b>FunctionNumber</b>. Th
 ## -remarks
 The <b>Parameters-&gt;Others.Arguments1</b> member of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537232">IOCTL_1394_CLASS</a> IRP points to an IRB structure. The bus driver uses the IRB to determine the type of request made by the device driver, and also to return the results of the operation. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537211">IEEE 1394 Bus I/O Requests</a> for a description of the behavior of each request.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

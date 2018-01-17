@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisClAddParty
+UID: NF:ndis.NdisClAddParty
 title: NdisClAddParty function
 author: windows-driver-content
 description: NdisClAddParty adds a party on the client's multipoint VC.
 old-location: netvista\ndiscladdparty.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e48357b2-52dc-48af-aeb1-8d84ea107579
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisClAddParty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisClAddParty function
@@ -59,7 +60,7 @@ NDIS_STATUS NdisClAddParty(
 ### -param NdisVcHandle [in]
 
 Pointer to the VC handle returned by 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>.
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>.
 
 
 ### -param ProtocolPartyContext [in]
@@ -92,7 +93,7 @@ When
 ## -remarks
 Before it calls 
     <b>NdisClAddParty</b>, a client must set up a multipoint connection on its VC with 
-    <a href="netvista.ndisclmakecall">NdisClMakeCall</a>, as well as allocating and
+    <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>, as well as allocating and
     initializing its context area for the party to be added. Clients commonly pass a pointer to such a
     context area as the 
     <i>ProtocolPartyContext</i> and a pointer to a variable within that context area as the 
@@ -107,8 +108,8 @@ A call to
     NDIS_STATUS_PENDING if it attempts to satisfy this request. If its attempt is rejected on the remote
     endpoint or by the underlying miniport driver, the call manager returns a final error status, such as
     NDIS_STATUS_FAILURE, when it calls 
-    <a href="netvista.ndiscmaddpartycomplete">NdisCmAddPartyComplete</a> or 
-    <a href="netvista.ndismcmaddpartycomplete">NdisMCmAddPartyComplete</a>. The
+    <a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a> or 
+    <a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>. The
     client's 
     <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
     ProtocolClAddPartyComplete</a> function should check the input 
@@ -152,108 +153,38 @@ Whether a multipoint call permits transfers in both directions and/or per-party 
     <i>NdisVcHandle</i> instead.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/library/windows/hardware/ff550843">NdisClAddParty (NDIS 5.1)</a>) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisClAddParty (NDIS 5.1)</b>) in
-   Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatefromnpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscldropparty">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmaddpartycomplete">NdisCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscooidrequest">NdisCoOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndiscooidrequestcomplete">NdisCoOidRequestComplete</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequestcomplete.md">NdisCoOidRequestComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmaddpartycomplete">NdisMCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
@@ -266,5 +197,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisClAddParty function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClAddParty function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
+UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
 title: D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
 author: windows-driver-content
 description: Describes output stream properties for the video processor.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_video_process_output_stream_desc_0032.htm
 old-project: display
 ms.assetid: 5A995E97-4522-44CD-89C3-521724142D7F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032, D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
 ---
 
 # D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 structure
@@ -124,19 +125,3 @@ If TRUE, stereo output is enabled. Otherwise, the video processor produces mono 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILPHONEBOOKENTRY
+UID: NS:ntddrilapitypes.RILPHONEBOOKENTRY
 title: RILPHONEBOOKENTRY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookentry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2741d992-624a-4fd1-a1b5-57fb39c42f84
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILPHONEBOOKENTRY, LPRILPHONEBOOKENTRY, *LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY
+ms.date: 1/11/2018
+ms.keywords: RILPHONEBOOKENTRY, *LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY
 ---
 
 # RILPHONEBOOKENTRY structure
@@ -109,19 +110,3 @@ typedef struct _RILPHONEBOOKENTRY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

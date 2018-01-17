@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_AUTH_CHALLENGE
+UID: NS:wwan._WWAN_AUTH_CHALLENGE
 title: _WWAN_AUTH_CHALLENGE
 author: windows-driver-content
 description: The WWAN_AUTH_CHALLENGE structure represents an authentication challenge for a specific method.
 old-location: netvista\wwan_auth_challenge.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: A31B9E91-B5F9-4EF3-AD9E-A5E26CBD4B35
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_AUTH_CHALLENGE, *PWWAN_AUTH_CHALLENGE, WWAN_AUTH_CHALLENGE, PWWAN_AUTH_CHALLENGE
+ms.date: 1/11/2018
+ms.keywords: _WWAN_AUTH_CHALLENGE, *PWWAN_AUTH_CHALLENGE, WWAN_AUTH_CHALLENGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_AUTH_CHALLENGE, WWAN_AUTH_CHALLENGE
 req.product: Windows 10 or later.
 ---
 
@@ -89,49 +90,24 @@ The challenge that uses the AKA' authentication method. If <b>AuthMethod</b> is 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_auth_method">WWAN_AUTH_METHOD</a>
+<a href="..\wwan\ne-wwan-_wwan_auth_method.md">WWAN_AUTH_METHOD</a>
 </dt>
 <dt>
-<a href="netvista.wwan_auth_sim_challenge">WWAN_AUTH_SIM_CHALLENGE</a>
+<a href="..\wwan\ns-wwan-_wwan_auth_sim_challenge.md">WWAN_AUTH_SIM_CHALLENGE</a>
 </dt>
 <dt>
-<a href="netvista.wwan_auth_aka_challenge">WWAN_AUTH_AKA_CHALLENGE</a>
+<a href="..\wwan\ns-wwan-_wwan_auth_aka_challenge.md">WWAN_AUTH_AKA_CHALLENGE</a>
 </dt>
 <dt>
-<a href="netvista.wwan_auth_akap_challenge">WWAN_AUTH_AKAP_CHALLENGE</a>
+<a href="..\wwan\ns-wwan-_wwan_auth_akap_challenge.md">WWAN_AUTH_AKAP_CHALLENGE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_AUTH_CHALLENGE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_CHALLENGE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

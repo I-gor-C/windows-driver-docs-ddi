@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1_DDI_COPY_FLAGS
+UID: NE:d3d10umddi.D3D11_1_DDI_COPY_FLAGS
 title: D3D11_1_DDI_COPY_FLAGS
 author: windows-driver-content
 description: Specifies how to handle the existing contents of a resource during a copy or update operation of a region within that resource. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1_ddi_copy_flags.htm
 old-project: display
 ms.assetid: 044dc1cd-426e-4f6c-b14d-8c366834b5ac
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1_DDI_COPY_FLAGS, D3D11_1_DDI_COPY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1_DDI_COPY_FLAGS
 ---
 
 # D3D11_1_DDI_COPY_FLAGS enumeration
@@ -71,39 +72,3 @@ For tile-based deferred rendering, a copy operation can operate on only the curr
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

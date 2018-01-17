@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSETNOTIFICATIONFILTERSTATEPARAMS
+UID: NS:rilapitypes.RILSETNOTIFICATIONFILTERSTATEPARAMS
 title: RILSETNOTIFICATIONFILTERSTATEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetnotificationfilterstateparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 87dc2ef3-047c-4255-832c-508b378ca412
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILSETNOTIFICATIONFILTERSTATEPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

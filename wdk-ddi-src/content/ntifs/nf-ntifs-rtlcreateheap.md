@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlCreateHeap
+UID: NF:ntifs.RtlCreateHeap
 title: RtlCreateHeap function
 author: windows-driver-content
 description: The RtlCreateHeap routine creates a heap object that can be used by the calling process. This routine reserves space in the virtual address space of the process and allocates physical storage for a specified initial portion of this block.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlcreateheap.htm
 old-project: ifsk
 ms.assetid: 77ba5ba3-11d3-4c28-86e6-91f3189b5403
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlCreateHeap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlCreateHeap function
@@ -60,7 +61,7 @@ PVOID RtlCreateHeap(
 
 ### -param Flags [in]
 
-Flags specifying optional attributes of the heap. These options affect subsequent access to the new heap through calls to the heap functions (<a href="ifsk.rtlallocateheap">RtlAllocateHeap</a> and <a href="ifsk.rtlfreeheap">RtlFreeHeap</a>). 
+Flags specifying optional attributes of the heap. These options affect subsequent access to the new heap through calls to the heap functions (<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a> and <a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>). 
 
 Callers should set this parameter to zero if no optional attributes are requested. 
 
@@ -159,7 +160,7 @@ This parameter is optional and can be zero.
 
 ### -param Lock [in, optional]
 
-Pointer to an opaque ERESOURCE structure to be used as a resource lock. This parameter is optional and can be <b>NULL</b>. When provided by the caller, the structure must be allocated from nonpaged pool and initialized by calling <a href="kernel.exinitializeresourcelite">ExInitializeResourceLite</a> or <a href="kernel.exreinitializeresourcelite">ExReinitializeResourceLite</a>. If the HEAP_NO_SERIALIZE flag is set, this parameter must be <b>NULL</b>.
+Pointer to an opaque ERESOURCE structure to be used as a resource lock. This parameter is optional and can be <b>NULL</b>. When provided by the caller, the structure must be allocated from nonpaged pool and initialized by calling <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a> or <a href="..\wdm\nf-wdm-exreinitializeresourcelite.md">ExReinitializeResourceLite</a>. If the HEAP_NO_SERIALIZE flag is set, this parameter must be <b>NULL</b>.
 
 
 ### -param Parameters [in, optional]
@@ -373,99 +374,30 @@ Pointer to a variable that will receive the actual size, in bytes, of the alloca
 
 
 ## -remarks
-<b>RtlCreateHeap</b> creates a private heap object from which the calling process can allocate memory blocks by calling <a href="ifsk.rtlallocateheap">RtlAllocateHeap</a>. The initial commit size determines the number of pages that are initially allocated for the heap. The initial reserve size determines the number of pages that are initially reserved for the heap. Pages that are reserved but uncommitted create a block in the process's virtual address space into which the heap can expand. 
+<b>RtlCreateHeap</b> creates a private heap object from which the calling process can allocate memory blocks by calling <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. The initial commit size determines the number of pages that are initially allocated for the heap. The initial reserve size determines the number of pages that are initially reserved for the heap. Pages that are reserved but uncommitted create a block in the process's virtual address space into which the heap can expand. 
 
-If allocation requests made by <a href="ifsk.rtlallocateheap">RtlAllocateHeap</a> exceed the heap's initial commit size, the system commits additional pages of physical storage for the heap, up to the heap's maximum size. If the heap is nongrowable, its maximum size is limited to its initial reserve size. 
+If allocation requests made by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a> exceed the heap's initial commit size, the system commits additional pages of physical storage for the heap, up to the heap's maximum size. If the heap is nongrowable, its maximum size is limited to its initial reserve size. 
 
-If the heap is growable, its size is limited only by available memory. If requests by <a href="ifsk.rtlallocateheap">RtlAllocateHeap</a> exceed the current size of committed pages, the system calls <a href="kernel.zwallocatevirtualmemory">ZwAllocateVirtualMemory</a> to obtain the memory needed, assuming that the physical storage is available. 
+If the heap is growable, its size is limited only by available memory. If requests by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a> exceed the current size of committed pages, the system calls <a href="..\ntifs\nf-ntifs-zwallocatevirtualmemory.md">ZwAllocateVirtualMemory</a> to obtain the memory needed, assuming that the physical storage is available. 
 
 In addition, if the heap is nongrowable, an absolute limitation arises: the maximum size of a memory block in the heap is 0x7F000 bytes. The virtual memory threshold of the heap is equal to the maximum heap block size or the value of the <b>VirtualMemoryThreshold</b> member of the <i>Parameters</i> structure, whichever is less. The heap also may need to pad the request size for metadata and alignment purposes so requests to allocate blocks within 4096 Bytes (1 Page) of the <b>VirtualMemoryThreshold</b> may fail even if the maximum size of the heap is large enough to contain the block. (For more information about <b>VirtualMemoryThreshold</b>, see the members of the <i>Parameters</i> parameter to <b>RtlCreateHeap</b>.)  
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This routine is available on Microsoft Windows XP and later. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntoskrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe (kernel mode); </dt>
-<dt>Ntdll.dll (user mode)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt; DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rtlallocateheap">RtlAllocateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
 </dt>
 <dt>
-<a href="ifsk.rtldestroyheap">RtlDestroyHeap</a>
+<a href="..\ntifs\nf-ntifs-rtldestroyheap.md">RtlDestroyHeap</a>
 </dt>
 <dt>
-<a href="ifsk.rtlfreeheap">RtlFreeHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCreateHeap routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCreateHeap routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

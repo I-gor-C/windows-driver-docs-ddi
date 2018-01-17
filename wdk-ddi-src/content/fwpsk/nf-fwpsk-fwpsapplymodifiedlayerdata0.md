@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsApplyModifiedLayerData0
+UID: NF:fwpsk.FwpsApplyModifiedLayerData0
 title: FwpsApplyModifiedLayerData0 function
 author: windows-driver-content
 description: The FwpsApplyModifiedLayerData0 function applies changes to layer-specific data made after a call to FwpsAcquireWritableLayerDataPointer0.Note  FwpsApplyModifiedLayerData0 is a specific version of FwpsApplyModifiedLayerData.
 old-location: netvista\fwpsapplymodifiedlayerdata0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d32c19b6-462e-48e3-b22b-02542dca9cc4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FwpsApplyModifiedLayerData0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsApplyModifiedLayerData0 function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The 
   <b>FwpsApplyModifiedLayerData0</b> function applies changes to layer-specific data made after a call to 
-  <a href="netvista.fwpsacquirewritablelayerdatapointer0">FwpsAcquireWritableLayerDataPointer0</a>.
+  <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">FwpsAcquireWritableLayerDataPointer0</a>.
 
 
 
@@ -61,14 +62,14 @@ void NTAPI FwpsApplyModifiedLayerData0(
 
 The classification handle that identifies the callout driver's processing at the current layer.
      This handle is obtained by calling 
-     <a href="netvista.fwpsacquireclassifyhandle0">
+     <a href="..\fwpsk\nf-fwpsk-fwpsacquireclassifyhandle0.md">
      FwpsAcquireClassifyHandle0</a>.
 
 
 ### -param modifiedLayerData [in]
 
 The data buffer obtained by calling 
-     <a href="netvista.fwpsacquirewritablelayerdatapointer0">FwpsAcquireWritableLayerDataPointer0</a> with members modified by the callout driver. Supported data
+     <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">FwpsAcquireWritableLayerDataPointer0</a> with members modified by the callout driver. Supported data
      types are defined as structures.
 
 
@@ -103,65 +104,8 @@ None.
 
 ## -remarks
 <b>FwpsApplyModifiedLayerData0</b> should be called once for every call made to 
-    <a href="netvista.fwpsacquirewritablelayerdatapointer0">FwpsAcquireWritableLayerDataPointer0</a>, even if the callout driver didn't modify any data.
+    <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">FwpsAcquireWritableLayerDataPointer0</a>, even if the callout driver didn't modify any data.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpkclnt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -169,28 +113,28 @@ IRQL
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="netvista.fwps_bind_request0">FWPS_BIND_REQUEST0</a>
+<a href="..\fwpsk\ns-fwpsk-_fwps_bind_request0.md">FWPS_BIND_REQUEST0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_connect_request0">FWPS_CONNECT_REQUEST0</a>
+<a href="..\fwpsk\ns-fwpsk-_fwps_connect_request0.md">FWPS_CONNECT_REQUEST0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_filter1">FWPS_FILTER1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
 </dt>
 <dt>
-<a href="netvista.fwpsacquireclassifyhandle0">FwpsAcquireClassifyHandle0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsacquireclassifyhandle0.md">FwpsAcquireClassifyHandle0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsacquirewritablelayerdatapointer0">
+<a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
    FwpsAcquireWritableLayerDataPointer0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsreleaseclassifyhandle0">FwpsReleaseClassifyHandle0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsreleaseclassifyhandle0.md">FwpsReleaseClassifyHandle0</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsApplyModifiedLayerData0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsApplyModifiedLayerData0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

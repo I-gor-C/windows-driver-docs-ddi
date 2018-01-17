@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsPendOperation0
+UID: NF:fwpsk.FwpsPendOperation0
 title: FwpsPendOperation0 function
 author: windows-driver-content
 description: The FwpsPendOperation0 function is called by a callout to suspend packet processing pending completion of another operation.Note  FwpsPendOperation0 is a specific version of FwpsPendOperation.
 old-location: netvista\fwpspendoperation0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 03423785-83c5-4908-8c06-3be1b226c29e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FwpsPendOperation0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsPendOperation0 function
@@ -61,7 +62,7 @@ NTSTATUS NTAPI FwpsPendOperation0(
 A completion handle that is required to pend the current filtering operation. This parameter is
      obtained from the 
      <b>completionHandle</b> member of the 
-     <a href="netvista.fwps_incoming_metadata_values0">FWPS_INCOMING_METADATA_VALUES0</a> structure passed into the callout driver's 
+     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">FWPS_INCOMING_METADATA_VALUES0</a> structure passed into the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function.
 
 
@@ -69,7 +70,7 @@ A completion handle that is required to pend the current filtering operation. Th
 
 The handle to the completion context of this pend operation. When the callout is ready to resume
      packet processing, it calls the 
-     <a href="netvista.fwpscompleteoperation0">FwpsCompleteOperation0</a> function
+     <a href="..\fwpsk\nf-fwpsk-fwpscompleteoperation0.md">FwpsCompleteOperation0</a> function
      with the value of this parameter as the input 
      <i>completionContext</i> parameter.
 
@@ -101,7 +102,7 @@ The
 The callout should retain the 
     <i>completionContext</i> parameter value until it resumes packet processing. When the operation that
     prompted the call to this function has completed, the callout should call the 
-    <a href="netvista.fwpscompleteoperation0">FwpsCompleteOperation0</a> function,
+    <a href="..\fwpsk\nf-fwpsk-fwpscompleteoperation0.md">FwpsCompleteOperation0</a> function,
     passing it the 
     <i>completionContext</i> parameter value.
 
@@ -122,7 +123,7 @@ To complete a connection that was previously pended at the FWPS_LAYER_ALE_AUTH_R
 To be able to pend packet processing, the callout driver's 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function should set the 
     <b>actionType</b> member of the 
-    <a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure to
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure to
     FWP_ACTION_BLOCK and the 
     <b>Flags</b> member to FWPS_CLASSIFY_OUT_FLAG_ABSORB.
 
@@ -145,82 +146,25 @@ Only an initial Application Layer Enforcement (ALE) flow authorization can be po
     returned. For more information, see ALE Reauthorization in the Windows SDK.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpkclnt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_incoming_metadata_values0">
+<a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
    FWPS_INCOMING_METADATA_VALUES0</a>
 </dt>
 <dt>
-<a href="netvista.fwpscompleteoperation0">FwpsCompleteOperation0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscompleteoperation0.md">FwpsCompleteOperation0</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsPendOperation0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsPendOperation0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

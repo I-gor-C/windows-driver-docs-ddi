@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortAllocatePool
+UID: NF:storport.StorPortAllocatePool
 title: StorPortAllocatePool function
 author: windows-driver-content
 description: The StorPortAllocatePool routine allocates a block of non-contiguous, non-paged pool memory.
@@ -7,7 +7,7 @@ old-location: storage\storportallocatepool.htm
 old-project: storage
 ms.assetid: e6823b9c-9717-49ab-8e67-c1d522774826
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortAllocatePool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -99,50 +100,4 @@ StorPortAllocatePool returns one of the following status codes:
 
 
 ## -remarks
-A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="storage.storportfreepool">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.storport_storportallocatepool2">StorPortAllocatePool2</a>, <a href="devtest.storport_storportirql">StorPortIrql</a>
-</td>
-</tr>
-</table>
+A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.</p>

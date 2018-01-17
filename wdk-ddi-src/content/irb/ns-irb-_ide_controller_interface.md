@@ -1,5 +1,5 @@
 ---
-UID: NS.IRB._IDE_CONTROLLER_INTERFACE
+UID: NS:irb._IDE_CONTROLLER_INTERFACE
 title: _IDE_CONTROLLER_INTERFACE
 author: windows-driver-content
 description: The IDE_CONTROLLER_INTERFACE structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,8 +7,8 @@ old-location: storage\ide_controller_interface.htm
 old-project: storage
 ms.assetid: cb18f7d9-f9e8-436d-8d61-3641730bd8a2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE, *PIDE_CONTROLLER_INTERFACE, PIDE_CONTROLLER_INTERFACE
+ms.date: 1/10/2018
+ms.keywords: _IDE_CONTROLLER_INTERFACE, *PIDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PIDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE
 ---
 
 # _IDE_CONTROLLER_INTERFACE structure
@@ -107,19 +108,3 @@ Pointer to the miniport's <b>AtaControllerAdapterControl</b> routine. This is a 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

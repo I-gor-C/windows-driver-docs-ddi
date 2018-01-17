@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMSGMWIDETAILLISTPARAMMASK
+UID: NE:ntddrilapitypes.RILMSGMWIDETAILLISTPARAMMASK
 title: RILMSGMWIDETAILLISTPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwidetaillistparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: cc13eebd-810c-44b0-8909-4a4c3fc5b320
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMSGMWIDETAILLISTPARAMMASK, RILMSGMWIDETAILLISTPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGMWIDETAILLISTPARAMMASK
 ---
 
 # RILMSGMWIDETAILLISTPARAMMASK enumeration
@@ -69,19 +70,3 @@ typedef enum _RILMSGMWIDETAILLISTPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

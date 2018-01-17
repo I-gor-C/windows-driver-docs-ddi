@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortStartDma
+UID: NF:video.VideoPortStartDma
 title: VideoPortStartDma function
 author: windows-driver-content
 description: The VideoPortStartDma function prepares the system for a DMA operation.
@@ -7,7 +7,7 @@ old-location: display\videoportstartdma.htm
 old-project: display
 ms.assetid: cb78e871-6177-4141-b713-25a39c928701
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortStartDma
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: <=DISPATCH_LEVEL
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -68,12 +69,12 @@ Pointer to the miniport driver's device extension.
 
 ### -param VpDmaAdapter [in]
 
-Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure is returned from a call to <a href="display.videoportgetdmaadapter">VideoPortGetDmaAdapter</a>.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure is returned from a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.
 
 
 ### -param Mdl [in]
 
-Pointer to the <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a> that describes the buffer. This pointer is returned from a call to the video port driver's <a href="display.videoportlockbuffer">VideoPortLockBuffer</a> function.
+Pointer to the <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a> that describes the buffer. This pointer is returned from a call to the video port driver's <a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a> function.
 
 
 ### -param Offset [in]
@@ -122,84 +123,16 @@ Builds a scatter/gather list.
 
 Calls the video miniport driver's <a href="..\video\nc-video-pexecute_dma.md">HwVidExecuteDma</a> callback.
 
-It is possible that not all of the requested data has been transferred, since the actual amount of memory transferred is limited by the number of map registers available to the driver. Callers of this function should inspect the actual transfer size returned at <i>pLength</i> to determine whether additional data remains to be transferred. If so, the miniport driver should call <b>VideoPortStartDma</b> (and subsequently, <a href="display.videoportcompletedma">VideoPortCompleteDma</a>) as many times as necessary to fulfill the entire transfer request. 
+It is possible that not all of the requested data has been transferred, since the actual amount of memory transferred is limited by the number of map registers available to the driver. Callers of this function should inspect the actual transfer size returned at <i>pLength</i> to determine whether additional data remains to be transferred. If so, the miniport driver should call <b>VideoPortStartDma</b> (and subsequently, <a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>) as many times as necessary to fulfill the entire transfer request. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows XP and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoprt.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="display.videoportgetdmaadapter">VideoPortGetDmaAdapter</a>
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="display.videoportcompletedma">VideoPortCompleteDma</a>
+<a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pexecute_dma.md">HwVidExecuteDma</a>
@@ -212,5 +145,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortStartDma function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortStartDma function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

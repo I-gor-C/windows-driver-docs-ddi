@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDPCM._PCMCIA_INTERFACE_STANDARD
+UID: NS:ntddpcm._PCMCIA_INTERFACE_STANDARD
 title: _PCMCIA_INTERFACE_STANDARD
 author: windows-driver-content
 description: The PCMCIA bus driver makes the PCMCIA_INTERFACE_STANDARD interface available to PCMCIA memory card drivers in order to allow them to make direct calls to the bus driver without allocating IRPs.
@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: 3c98fe7b-e60a-4494-b1f0-847a7cbe9d3a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMCIA_INTERFACE_STANDARD, PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD
+ms.keywords: _PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD
 ---
 
 # _PCMCIA_INTERFACE_STANDARD structure
@@ -72,12 +73,12 @@ Indicates the version of the returned interface.
 
 ### -field InterfaceReference
 
-Pointer to the <a href="kernel.interfacereference">InterfaceReference</a> implementation. 
+Pointer to the <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a> implementation. 
 
 
 ### -field InterfaceDereference
 
-Pointer to the <a href="kernel.interfacedereference">InterfaceDereference</a> implementation. 
+Pointer to the <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a> implementation. 
 
 
 ### -field Context
@@ -102,21 +103,6 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff53
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddpcm.h (include Ntddpcm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

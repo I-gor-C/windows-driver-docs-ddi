@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
-title: FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
+UID: NC:ndis.FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
+title: FILTER_SEND_NET_BUFFER_LISTS_COMPLETE function
 author: windows-driver-content
 description: NDIS calls the FilterSendNetBufferListsComplete function to complete a send request that a filter driver started by calling the NdisFSendNetBufferLists function.Note  You must declare the function by using the FILTER_SEND_NET_BUFFER_LISTS_COMPLETE type.
 old-location: netvista\filtersendnetbufferlistscomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1a3a1e80-29f1-4f19-b3c7-9a8b189f18c4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_SEND_NET_BUFFER_LISTS_COMPLETE callback
+# FILTER_SEND_NET_BUFFER_LISTS_COMPLETE function
 
 
 
@@ -41,12 +42,12 @@ req.irql: <= DISPATCH_LEVEL
 NDIS calls the 
   <i>FilterSendNetBufferListsComplete</i> function to complete a send request that a filter driver started by
   calling the 
-  <a href="netvista.ndisfsendnetbufferlists">
+  <a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">
   NdisFSendNetBufferLists</a> function.
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_SEND_NET_BUFFER_LISTS_COMPLETE FilterSendNetBufferListsComplete;
@@ -72,9 +73,9 @@ A handle to the context area for the filter module. The filter driver created an
 ### -param NetBufferLists [in]
 
 A pointer to a linked list of 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that the filter
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that the filter
      driver passed to 
-     <a href="netvista.ndisfsendnetbufferlists">
+     <a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">
   NdisFSendNetBufferLists</a>.
 
 
@@ -88,16 +89,16 @@ NDIS flags that can be combined with an OR operation. To clear all the flags, se
 ### -param NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL
 
 Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-        <a href="netvista.dispatch_irql_tracking">Dispatch IRQL Tracking</a>.
+        <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
 
 
 ### -param NDIS_SEND_COMPLETE_FLAGS_SWITCH_SINGLE_SOURCE
 
-If this flag is set, all packets in a linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.
+If this flag is set, all packets in a linked list of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.
 
-For more information, see <a href="netvista.hyper_v_extensible_switch_send_and_receive_flags">Hyper-V Extensible Switch Send and Receive Flags</a>.
+For more information, see <a href="https://msdn.microsoft.com/FBA506EC-4E9F-4964-9C9C-FF4910DDA908">Hyper-V Extensible Switch Send and Receive Flags</a>.
 
-<div class="alert"><b>Note</b>  If each packet in the linked list of <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_SEND_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>SendFlags</i> parameter of <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">SendNetBufferLists</a> when it sends the request.</div>
+<div class="alert"><b>Note</b>  If each packet in the linked list of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_SEND_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>SendFlags</i> parameter of <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">SendNetBufferLists</a> when it sends the request.</div>
 <div> </div>
 <div class="alert"><b>Note</b>  This flag is available in NDIS 6.30 and later.</div>
 <div> </div>
@@ -111,11 +112,11 @@ None
 ## -remarks
 <i>FilterSendNetBufferListsComplete</i> is an optional function. If a filter driver does not filter send
     requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="netvista.ndisfregisterfilterdriver">
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
     NdisFRegisterFilterDriver</a> function.
 
 The filter driver can call the 
-    <a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a> function,
+    <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function,
     from the 
     <a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a> function,
     to specify a 
@@ -123,16 +124,16 @@ The filter driver can call the
 
 When NDIS calls 
     <i>FilterSendNetBufferListsComplete</i>, the filter driver regains ownership of the 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures and associated
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures and associated
     data.
 
 If an overlying driver initiated the send request, the filter driver should call the 
-    <a href="netvista.ndisfsendnetbufferlistscomplete">NdisFSendNetBufferListsComplete</a> function to complete the send request.
+    <a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">NdisFSendNetBufferListsComplete</a> function to complete the send request.
 
 If the filter driver originated the send request, 
-    <i>FilterSendNetBufferListsComplete</i> can either release the <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures and associated
+    <i>FilterSendNetBufferListsComplete</i> can either release the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures and associated
     data or prepare them for reuse in a subsequent call to 
-    <a href="netvista.ndisfsendnetbufferlists">NdisFSendNetBufferLists</a>.
+    <a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a>.
 
 NDIS calls 
     <i>FilterSendNetBufferListsComplete</i> at IRQL &lt;= DISPATCH_LEVEL.
@@ -148,41 +149,6 @@ The <b>FILTER_SEND_NET_BUFFER_LISTS_COMPLETE</b> function type is defined in the
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -192,28 +158,28 @@ IRQL
 <a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndisfsendnetbufferlists">NdisFSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndisfsendnetbufferlistscomplete">
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
    NdisFSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_SEND_NET_BUFFER_LISTS_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_SEND_NET_BUFFER_LISTS_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

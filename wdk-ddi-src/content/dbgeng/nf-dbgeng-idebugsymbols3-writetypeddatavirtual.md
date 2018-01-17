@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.WriteTypedDataVirtual
+UID: NF:dbgeng.IDebugSymbols3.WriteTypedDataVirtual
 title: IDebugSymbols3::WriteTypedDataVirtual method
 author: windows-driver-content
 description: The WriteTypedDataVirtual method writes data to the target's virtual address space. The number of bytes written is the size of the specified type.
 old-location: debugger\writetypeddatavirtual.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c7a3854b-2405-4e20-8c6c-4e0c0d43987e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::WriteTypedDataVirtual, WriteTypedDataVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::WriteTypedDataVirtual method
@@ -101,33 +102,6 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="debugger.writevirtual">WriteVirtual</a>.
+This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>.
 
-For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>

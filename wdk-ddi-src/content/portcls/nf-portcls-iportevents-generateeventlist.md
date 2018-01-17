@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortEvents.GenerateEventList
+UID: NF:portcls.IPortEvents.GenerateEventList
 title: IPortEvents::GenerateEventList method
 author: windows-driver-content
 description: The GenerateEventList method notifies clients through the port driver's list of event entries that a particular event has occurred.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level. (See Remarks section.)
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortEvents::GenerateEventList method
@@ -98,49 +99,13 @@ This method is used by miniport drivers to signal event entries in the port driv
 Although callers of <code>GenerateEventList</code> can be running at any IRQL, they are subject to some limitations when calling at IRQL &gt; DISPATCH_LEVEL. Specifically, if the current implementation of <code>GenerateEventList</code> is called at IRQL &gt; DISPATCH_LEVEL, the method queues a DPC to process the event list. That DPC contains the parameter context for a single call. As a result, signaling events might occasionally be missed if multiple calls are made at IRQL &gt; DISPATCH_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level. (See Remarks section.)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
 </dt>
 <dt>
-<a href="audio.iportevents_addeventtoeventlist">IPortEvents::AddEventToEventList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a>
 </dt>
 <dt>
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>

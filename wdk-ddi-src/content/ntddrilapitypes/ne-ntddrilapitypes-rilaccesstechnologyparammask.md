@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILACCESSTECHNOLOGYPARAMMASK
+UID: NE:ntddrilapitypes.RILACCESSTECHNOLOGYPARAMMASK
 title: RILACCESSTECHNOLOGYPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilaccesstechnologyparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 58589d8c-f58c-4cb4-8f8e-0021f423efdf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILACCESSTECHNOLOGYPARAMMASK, RILACCESSTECHNOLOGYPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILACCESSTECHNOLOGYPARAMMASK
 ---
 
 # RILACCESSTECHNOLOGYPARAMMASK enumeration
@@ -61,19 +62,3 @@ typedef enum _RILACCESSTECHNOLOGYPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

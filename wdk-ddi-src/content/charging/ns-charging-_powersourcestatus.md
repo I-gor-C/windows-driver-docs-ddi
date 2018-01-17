@@ -1,5 +1,5 @@
 ---
-UID: NS.CHARGING._POWERSOURCESTATUS
+UID: NS:charging._POWERSOURCESTATUS
 title: _POWERSOURCESTATUS
 author: windows-driver-content
 description: This struct is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 9386DBEC-A47D-44A5-8AF8-D5B406143070
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _POWERSOURCESTATUS, *PPOWERSOURCESTATUS, POWERSOURCESTATUS, PPOWERSOURCESTATUS
+ms.keywords: _POWERSOURCESTATUS, *PPOWERSOURCESTATUS, POWERSOURCESTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PPOWERSOURCESTATUS, POWERSOURCESTATUS
 ---
 
 # _POWERSOURCESTATUS structure
@@ -46,19 +47,3 @@ This struct is for internal use only.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h (include Charging.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

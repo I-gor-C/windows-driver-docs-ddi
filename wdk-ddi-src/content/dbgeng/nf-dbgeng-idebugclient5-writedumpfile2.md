@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugClient5.WriteDumpFile2
+UID: NF:dbgeng.IDebugClient5.WriteDumpFile2
 title: IDebugClient5::WriteDumpFile2 method
 author: windows-driver-content
 description: The WriteDumpFile2 method creates a user-mode or kernel-modecrash dump file.
 old-location: debugger\writedumpfile2.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: a6cdefc2-8670-485d-979a-8a270dad1c0b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugClient5, IDebugClient5::WriteDumpFile2, WriteDumpFile2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugClient5::WriteDumpFile2 method
@@ -86,7 +87,7 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-The DEBUG_FORMAT_<i>XXX</i> bit-flags are used by <b>WriteDumpFile2</b> and <a href="debugger.writedumpfilewide">WriteDumpFileWide</a> to determine the format of a crash dump file and, for user-mode Minidumps, what information to include in the file.
+The DEBUG_FORMAT_<i>XXX</i> bit-flags are used by <b>WriteDumpFile2</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a> to determine the format of a crash dump file and, for user-mode Minidumps, what information to include in the file.
 
 The following bit-flags apply to all crash dump files.
 
@@ -159,7 +160,7 @@ DEBUG_FORMAT_USER_SMALL_NO_OPTIONAL_DATA
 
 DEBUG_FORMAT_USER_SMALL_FULL_MEMORY_INFO
 
-Add all basic memory information.  This is the information returned by the <a href="debugger.queryvirtual">QueryVirtual</a> method.  The information for all memory is included, not just valid memory, which allows the debugger to reconstruct the complete virtual memory layout from the Minidump.
+Add all basic memory information.  This is the information returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553502">QueryVirtual</a> method.  The information for all memory is included, not just valid memory, which allows the debugger to reconstruct the complete virtual memory layout from the Minidump.
 
 DEBUG_FORMAT_USER_SMALL_THREAD_INFO
 
@@ -171,32 +172,6 @@ Add all code segments with the executable images.
 
 For more information about crash dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542783">Dump-File Targets</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -213,7 +188,7 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 </dt>
 <dt>
-<a href="debugger.writedumpfilewide">WriteDumpFileWide</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562428">.dump (Create Dump File)</a>
@@ -223,5 +198,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugClient2::WriteDumpFile2 method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient2::WriteDumpFile2 method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

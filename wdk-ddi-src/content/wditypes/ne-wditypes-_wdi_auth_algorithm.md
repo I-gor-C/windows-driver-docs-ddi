@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_AUTH_ALGORITHM
+UID: NE:wditypes._WDI_AUTH_ALGORITHM
 title: _WDI_AUTH_ALGORITHM
 author: windows-driver-content
 description: The WDI_AUTH_ALGORITHM enumeration defines the authentication algorithm values.
 old-location: netvista\wdi_auth_algorithm.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: B908A174-F977-484E-A086-6C8C9A914D6C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_AUTH_ALGORITHM, WDI_AUTH_ALGORITHM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_AUTH_ALGORITHM
 req.product: Windows 10 or later.
 ---
 
@@ -116,39 +117,3 @@ Specifies the end of the range that specifies proprietary authentication algorit
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

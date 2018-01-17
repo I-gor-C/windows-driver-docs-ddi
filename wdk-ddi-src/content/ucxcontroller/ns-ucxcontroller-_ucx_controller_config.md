@@ -1,14 +1,14 @@
 ---
-UID: NS.UCXCONTROLLER._UCX_CONTROLLER_CONFIG
+UID: NS:ucxcontroller._UCX_CONTROLLER_CONFIG
 title: _UCX_CONTROLLER_CONFIG
 author: windows-driver-content
 description: This structure configuration data for a USB controller.
 old-location: buses\_ucx_controller_config.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 9A4249B6-BFC2-42B4-BBA6-094BD78C98DE
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCX_CONTROLLER_CONFIG, PUCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG
+ms.date: 1/4/2018
+ms.keywords: _UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -186,19 +187,3 @@ Do not use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxcontroller.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

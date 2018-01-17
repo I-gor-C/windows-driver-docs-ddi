@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILNITZINFO_V1
+UID: NS:rilapitypes.RILNITZINFO_V1
 title: RILNITZINFO_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnitzinfo_v1_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ded74c48-b9a8-4ee4-8df9-3dc99892d41d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILNITZINFO_V1, RILNITZINFO_V1, *LPRILNITZINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILNITZINFO_V1, *LPRILNITZINFO_V1
 req.product: Windows 10 or later.
 ---
 
@@ -78,19 +79,3 @@ typedef struct _RILNITZINFO_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

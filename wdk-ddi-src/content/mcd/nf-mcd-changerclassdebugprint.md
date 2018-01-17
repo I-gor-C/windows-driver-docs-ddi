@@ -1,5 +1,5 @@
 ---
-UID: NF.mcd.ChangerClassDebugPrint
+UID: NF:mcd.ChangerClassDebugPrint
 title: ChangerClassDebugPrint function
 author: windows-driver-content
 description: The ChangerClassDebugPrint function prints debugging information.
@@ -7,7 +7,7 @@ old-location: storage\changerclassdebugprint.htm
 old-project: storage
 ms.assetid: 452377f1-a926-4f43-8168-bea11622902e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ChangerClassDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Mcd.lib
 req.dll: 
 req.irql: 
+req.typenames: KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ---
 
 # ChangerClassDebugPrint function
@@ -69,41 +70,3 @@ None
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mcd.h (include Mcd.h or Ntddchgr.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mcd.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

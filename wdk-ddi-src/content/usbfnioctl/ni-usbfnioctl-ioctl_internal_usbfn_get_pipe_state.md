@@ -1,14 +1,14 @@
 ---
-UID: NI.usbfnioctl.IOCTL_INTERNAL_USBFN_GET_PIPE_STATE
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_GET_PIPE_STATE
 title: IOCTL_INTERNAL_USBFN_GET_PIPE_STATE
 author: windows-driver-content
 description: The class driver sends this request to get the stall state of the specified pipe.
 old-location: buses\ioctl_internal_usbfn_get_pipe_state.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: CFBFC5E4-852C-4287-A85E-2EF3C89FE474
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
+ms.date: 1/4/2018
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -80,20 +81,4 @@ This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl
 
 When stalled, the pipe sends STALL transaction packets to the host. See the Universal Serial Bus (USB) specification for more information.
 
-UFX forwards this IOCTL request to the transfer queue created for the endpoint by <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+UFX forwards this IOCTL request to the transfer queue created for the endpoint by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.</p>

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisAllocateSpinLock
+UID: NF:ndis.NdisAllocateSpinLock
 title: NdisAllocateSpinLock function
 author: windows-driver-content
 description: The NdisAllocateSpinLock function initializes a variable of type NDIS_SPIN_LOCK, used to synchronize access to resources shared among non-ISR driver functions.
 old-location: netvista\ndisallocatespinlock.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e6199eab-a1e8-428f-8a3c-4828d3899cec
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisAllocateSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisAllocateSpinLock function
@@ -66,8 +67,8 @@ None
 
 ## -remarks
 Before a driver calls 
-    <a href="netvista.ndisacquirespinlock">NdisAcquireSpinLock</a>, 
-    <a href="netvista.ndisdpracquirespinlock">NdisDprAcquireSpinLock</a>, or any of
+    <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>, 
+    <a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>, or any of
     the 
     <b>NdisInterlocked<i>Xxx</i></b> functions, it must call 
     <b>NdisAllocateSpinLock</b> to initialize the spin lock passed as a required parameter to these 
@@ -78,7 +79,7 @@ After calling
     <b>NdisAllocateSpinLock</b>, the driver can call 
     <b>NdisAcquireSpinLock</b> to obtain exclusive use of the resource(s) the spin lock protects. When
     resource access is complete, the driver calls 
-    <a href="netvista.ndisreleasespinlock">NdisReleaseSpinLock</a> so that other
+    <a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a> so that other
     driver functions can access the resource(s) protected by that spin lock.
 
 As a general rule, to improve performance a driver should use different locks to protect different
@@ -120,19 +121,19 @@ A miniport driver cannot use a spin lock to protect resources that its non-ISR f
     MiniportDisableInterruptEx</a> function. To access resources shared with a 
     <i>MiniportInterrupt</i> or 
     <i>MiniportDisableInterruptEx</i> function, a miniport driver must call 
-    <a href="netvista.ndismsynchronizewithinterruptex">
+    <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
     NdisMSynchronizeWithInterruptEx</a> to have its 
     <a href="..\ndis\nc-ndis-miniport_synchronize_interrupt.md">
     MiniportSynchronizeInterrupt</a> function access those resources at DIRQL.
 
 When a driver no longer requires resource protection, for example, when a NIC is being removed and the
     driver is releasing the resources it allocated for that NIC, the driver calls 
-    <a href="netvista.ndisfreespinlock">NdisFreeSpinLock</a>.
+    <a href="..\ndis\nf-ndis-ndisfreespinlock.md">NdisFreeSpinLock</a>.
 
 Freeing a spin lock and releasing a spin lock are potentially confusing. 
     <b>NdisFreeSpinLock</b> clears the memory at 
     <i>SpinLock</i> so it no longer represents a spin lock. Releasing an acquired spin lock with 
-    <a href="netvista.ndisreleasespinlock">NdisReleaseSpinLock</a> simply allows
+    <a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a> simply allows
     another thread of execution to acquire that spin lock.
 
 For more information about acquiring and releasing NDIS spin locks, see 
@@ -143,76 +144,6 @@ Callers of
     <b>NdisAllocateSpinLock</b> can run at any IRQL. Usually a caller is running at IRQL = PASSIVE_LEVEL
     during initialization.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/d2860f74-401e-4b96-b08e-9f8dc2f4f1f4">NdisAllocateSpinLock (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisAllocateSpinLock (NDIS
-   5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level (see Remarks section)
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_spinlockdpr">SpinLockDpr</a>, <a href="devtest.ndis_spinlockdprrelease">SpinLockDprRelease</a>, <a href="devtest.ndis_spinlockrelease">SpinlockRelease</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -236,43 +167,43 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
 </dt>
 <dt>
-<a href="netvista.ndisacquirespinlock">NdisAcquireSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisdpracquirespinlock">NdisDprAcquireSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisdprreleasespinlock">NdisDprReleaseSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisdprreleasespinlock.md">NdisDprReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreespinlock">NdisFreeSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisfreespinlock.md">NdisFreeSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedaddulong">NdisInterlockedAddUlong</a>
+<a href="..\ndis\nf-ndis-ndisinterlockedaddulong.md">NdisInterlockedAddUlong</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedinsertheadlist">
+<a href="..\ndis\nf-ndis-ndisinterlockedinsertheadlist.md">
    NdisInterlockedInsertHeadList</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedinserttaillist">
+<a href="..\ndis\nf-ndis-ndisinterlockedinserttaillist.md">
    NdisInterlockedInsertTailList</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedremoveheadlist">
+<a href="..\ndis\nf-ndis-ndisinterlockedremoveheadlist.md">
    NdisInterlockedRemoveHeadList</a>
 </dt>
 <dt>
-<a href="netvista.ndismsynchronizewithinterruptex">
+<a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
    NdisMSynchronizeWithInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisreleasespinlock">NdisReleaseSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisAllocateSpinLock function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateSpinLock function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

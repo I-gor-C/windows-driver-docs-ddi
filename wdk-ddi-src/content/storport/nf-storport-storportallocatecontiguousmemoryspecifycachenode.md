@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortAllocateContiguousMemorySpecifyCacheNode
+UID: NF:storport.StorPortAllocateContiguousMemorySpecifyCacheNode
 title: StorPortAllocateContiguousMemorySpecifyCacheNode function
 author: windows-driver-content
 description: The StorPortAllocateContiguousMemorySpecifyCacheNode routine allocates a range of physically contiguous noncached, nonpaged memory.
@@ -7,7 +7,7 @@ old-location: storage\storportallocatecontiguousmemoryspecifycachenode.htm
 old-project: storage
 ms.assetid: b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortAllocateContiguousMemorySpecifyCacheNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -117,60 +118,4 @@ The <b>StorPortAllocateContiguousMemorySpecifyCacheNode</b> routine returns one 
 
 
 ## -remarks
-If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
-</td>
-</tr>
-</table>
+If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.</p>

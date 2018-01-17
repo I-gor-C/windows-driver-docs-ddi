@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY
+UID: NE:d3dkmdt._DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY
 title: _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY
 author: windows-driver-content
 description: The DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY enumeration indicates the display device's sync polarity (whether the sync signal is positive or negative).
@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_sync_polarity.htm
 old-project: display
 ms.assetid: 6563d4f7-3750-49c1-80f5-14a839e70cb7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY enumeration
@@ -66,29 +67,3 @@ Indicates that the sync polarity is negative.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

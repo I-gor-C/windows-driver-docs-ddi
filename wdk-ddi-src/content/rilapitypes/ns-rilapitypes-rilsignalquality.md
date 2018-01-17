@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSIGNALQUALITY
+UID: NS:rilapitypes.RILSIGNALQUALITY
 title: RILSIGNALQUALITY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsignalquality_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: cc5bf370-3996-46de-b27d-8a390a6f407e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSIGNALQUALITY, RILSIGNALQUALITY, *LPRILSIGNALQUALITY
+ms.date: 1/11/2018
+ms.keywords: RILSIGNALQUALITY, *LPRILSIGNALQUALITY, RILSIGNALQUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSIGNALQUALITY, RILSIGNALQUALITY
 req.product: Windows 10 or later.
 ---
 
@@ -82,19 +83,3 @@ typedef struct _RILSIGNALQUALITY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

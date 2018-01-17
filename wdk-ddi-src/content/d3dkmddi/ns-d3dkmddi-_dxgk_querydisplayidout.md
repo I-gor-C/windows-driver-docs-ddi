@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_QUERYDISPLAYIDOUT
+UID: NS:d3dkmddi._DXGK_QUERYDISPLAYIDOUT
 title: _DXGK_QUERYDISPLAYIDOUT
 author: windows-driver-content
 description: Used to query a display ID.
@@ -7,7 +7,7 @@ old-location: display\dxgk_querydisplayidout.htm
 old-project: display
 ms.assetid: BF528089-0194-4A3F-B8BA-85F80974C4C2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_QUERYDISPLAYIDOUT, DXGK_QUERYDISPLAYIDOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_QUERYDISPLAYIDOUT
 ---
 
 # _DXGK_QUERYDISPLAYIDOUT structure
@@ -65,19 +66,3 @@ A pointer to the descriptor of the ID.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

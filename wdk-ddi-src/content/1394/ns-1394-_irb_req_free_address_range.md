@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_FREE_ADDRESS_RANGE
+UID: NS:1394._IRB_REQ_FREE_ADDRESS_RANGE
 title: _IRB_REQ_FREE_ADDRESS_RANGE
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_FREE_ADDRESS_RANGE
 ---
 
 # _IRB_REQ_FREE_ADDRESS_RANGE structure
@@ -77,19 +78,3 @@ Points to the device extension associated with the device object. Not setting th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

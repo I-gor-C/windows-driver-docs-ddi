@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisInitializeListHead
+UID: NF:ndis.NdisInitializeListHead
 title: NdisInitializeListHead macro
 author: windows-driver-content
 description: The NdisInitializeListHead function initializes a doubly linked, driver-maintained queue.
 old-location: netvista\ndisinitializelisthead.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: da3f5f28-2794-491b-a359-be8508b050bf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisInitializeListHead
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisInitializeListHead macro
@@ -76,62 +77,12 @@ Any NDIS driver that maintains an internal queue is responsible for synchronizin
 
 For an interlocked queue, the driver also must provide nonpaged storage for a spin lock. It must
     initialize the spin lock with the 
-    <a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a> function before
+    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> function before
     passing a pointer to that spin lock to any of the 
     <b>NdisInterlocked<i>Xxx</i>List</b> functions.
 
 Callers of <b>NdisInitializeListHead</b> can be running at any IRQL. If <b>NdisInitializeListHead</b> is called at IRQL &gt;= DISPATCH_LEVEL the storage for <i>ListHead</i> must be resident.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/de32c7bd-a9a5-4ef0-b924-01810cde18c0">NdisInitializeListHead (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisInitializeListHead (NDIS
-   5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level (see Remarks section)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -143,18 +94,18 @@ Any level (see Remarks section)
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedinsertheadlist">
+<a href="..\ndis\nf-ndis-ndisinterlockedinsertheadlist.md">
    NdisInterlockedInsertHeadList</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedinserttaillist">
+<a href="..\ndis\nf-ndis-ndisinterlockedinserttaillist.md">
    NdisInterlockedInsertTailList</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedremoveheadlist">
+<a href="..\ndis\nf-ndis-ndisinterlockedremoveheadlist.md">
    NdisInterlockedRemoveHeadList</a>
 </dt>
 </dl>
@@ -162,5 +113,5 @@ Any level (see Remarks section)
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisInitializeListHead macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitializeListHead macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_GET_PLUG_STATE
+UID: NS:61883._CMP_GET_PLUG_STATE
 title: _CMP_GET_PLUG_STATE
 author: windows-driver-content
 description: This structure is used in getting the state of a plug.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 76BC179A-7484-433C-8467-B13BA7008B90
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_GET_PLUG_STATE, CMP_GET_PLUG_STATE, *PCMP_GET_PLUG_STATE, PCMP_GET_PLUG_STATE
+ms.keywords: _CMP_GET_PLUG_STATE, CMP_GET_PLUG_STATE, *PCMP_GET_PLUG_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CMP_GET_PLUG_STATE, *PCMP_GET_PLUG_STATE
 ---
 
 # _CMP_GET_PLUG_STATE structure
@@ -107,21 +108,6 @@ If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

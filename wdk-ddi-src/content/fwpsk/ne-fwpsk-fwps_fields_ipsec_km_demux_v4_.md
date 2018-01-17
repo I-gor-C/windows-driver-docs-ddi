@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_IPSEC_KM_DEMUX_V4_
+UID: NE:fwpsk.FWPS_FIELDS_IPSEC_KM_DEMUX_V4_
 title: FWPS_FIELDS_IPSEC_KM_DEMUX_V4_
 author: windows-driver-content
 description: The FWPS_FIELDS_IPSEC_KM_DEMUX_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_IPSEC_KM_DEMUX_V4 run-time filtering layer.
 old-location: netvista\fwps_fields_ipsec_km_demux_v4.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b8b95aad-7c55-475a-85d9-6a64434d8a5f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_IPSEC_KM_DEMUX_V4_, FWPS_FIELDS_IPSEC_KM_DEMUX_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_IPSEC_KM_DEMUX_V4
 ---
 
 # FWPS_FIELDS_IPSEC_KM_DEMUX_V4_ enumeration
@@ -104,29 +105,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Unless otherwise noted, supported starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

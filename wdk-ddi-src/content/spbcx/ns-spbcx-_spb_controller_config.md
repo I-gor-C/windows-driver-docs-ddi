@@ -1,5 +1,5 @@
 ---
-UID: NS.SPBCX._SPB_CONTROLLER_CONFIG
+UID: NS:spbcx._SPB_CONTROLLER_CONFIG
 title: _SPB_CONTROLLER_CONFIG
 author: windows-driver-content
 description: The SPB_CONTROLLER_CONFIG structure contains the configuration settings for an SPB controller driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -70,16 +71,16 @@ The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/l
 
 ### -field ControllerDispatchType
 
-The dispatch type of the I/O queue for the controller driver. Set this member to either <b>WdfIoQueueDispatchSequential</b> or <b>WdfIoQueueDispatchParallel</b>, but not to <b>WdfIoQueueDispatchManual</b>. The <b>SPB_CONTROLLER_CONFIG_INIT</b> function initializes this member to its default value, <b>WdfIoQueueDispatchSequential</b>. For more information about these dispatch types, see <a href="kmdf.example_uses_of_i_o_queues">Example Uses of I/O Queues</a>.
+The dispatch type of the I/O queue for the controller driver. Set this member to either <b>WdfIoQueueDispatchSequential</b> or <b>WdfIoQueueDispatchParallel</b>, but not to <b>WdfIoQueueDispatchManual</b>. The <b>SPB_CONTROLLER_CONFIG_INIT</b> function initializes this member to its default value, <b>WdfIoQueueDispatchSequential</b>. For more information about these dispatch types, see <a href="https://msdn.microsoft.com/13b09254-ce0a-4c7d-bdb1-d28ec094a266">Example Uses of I/O Queues</a>.
 
 A controller driver that operates in subordinate mode should set this member to <b>WdfIoQueueDispatchParallel</b>. For example, an I²C controller might be attached as a peripheral device to an SPI bus. This device acts as a master on the I²C bus, but is a subordinate on the SPI bus.
 
 
 ### -field PowerManaged
 
-Whether the I/O queue for the controller driver should be power-managed. Set this member to <b>WdfTrue</b> to indicate that the queue should be power-managed.  Set this member to <b>WdfFalse</b> to indicate that the queue should not be power-managed.  If this member is set to <b>WdfDefault</b>, the queue will be power-managed unless the driver calls the <a href="kmdf.wdffdoinitsetfilter">WdfFdoInitSetFilter</a> method, which identifies the caller as an upper-level or lower-level filter driver. The <b>SPB_CONTROLLER_CONFIG_INIT</b> function initializes this member to <b>WdfDefault</b>.
+Whether the I/O queue for the controller driver should be power-managed. Set this member to <b>WdfTrue</b> to indicate that the queue should be power-managed.  Set this member to <b>WdfFalse</b> to indicate that the queue should not be power-managed.  If this member is set to <b>WdfDefault</b>, the queue will be power-managed unless the driver calls the <a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a> method, which identifies the caller as an upper-level or lower-level filter driver. The <b>SPB_CONTROLLER_CONFIG_INIT</b> function initializes this member to <b>WdfDefault</b>.
 
-When I/O requests are available in a power-managed queue, the framework delivers the requests to the driver only if the device is in its working (D0) state. For more information, see <a href="kmdf.power_management_for_i_o_queues">Power Management for I/O Queues</a>.
+When I/O requests are available in a power-managed queue, the framework delivers the requests to the driver only if the device is in its working (D0) state. For more information, see <a href="https://msdn.microsoft.com/2e1bf9d2-615b-49b0-b677-f41b23c42eda">Power Management for I/O Queues</a>.
 
 
 ### -field EvtSpbTargetConnect
@@ -120,31 +121,6 @@ A pointer to the <a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-788
 ## -remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a> method uses the information in this structure to complete the initialization of the SPB controller.  Before passing this structure to <b>SpbDeviceInitialize</b>, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406207">SPB_CONTROLLER_CONFIG_INIT</a> function to initialize the members of this structure to their default values, and, as needed, overwrite these default values with information that is specific to your SPB controller driver.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -194,7 +170,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
 </dt>
 <dt>
-<a href="kmdf.wdffdoinitsetfilter">WdfFdoInitSetFilter</a>
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a>
 </dt>
 </dl>
  

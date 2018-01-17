@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._BRB_L2CA_OPEN_ENHANCED_CHANNEL
+UID: NS:bthddi._BRB_L2CA_OPEN_ENHANCED_CHANNEL
 title: _BRB_L2CA_OPEN_ENHANCED_CHANNEL
 author: windows-driver-content
 description: The _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure is used to open an enhanced L2CAP channel to a remote device, or send a response for accepting/rejecting an incoming enhanced L2CAP connection request that was initiated by a remote device.
@@ -7,7 +7,7 @@ old-location: bltooth\_brb_l2ca_open_enhanced_channel.htm
 old-project: bltooth
 ms.assetid: 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: _BRB_L2CA_OPEN_ENHANCED_CHANNEL,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: 
 ---
 
 # _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure
@@ -99,7 +100,7 @@ typedef struct _BRB_L2CA_OPEN_ENHANCED_CHANNEL {
 ### -field Hdr
 
 A 
-     <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 
@@ -111,9 +112,9 @@ A
 
 ### -field For a BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE request, the profile driver (acting as a server) provides
      this member's value prior to sending the BRB down the driver stack. This member's value should be set to
-     <a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a> structure's 
+     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure's 
      <b>ConnectionHandle</b> member value if the 
-     <a href="bltooth.indication_code">INDICATION_CODE</a> enumeration's 
+     <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> enumeration's 
      <b>IndicationRemoteConnect</b> value is specified. These values are passed as the 
      <i>Parameters</i> and 
      <i>Indication</i> arguments of the profile driver's 
@@ -128,7 +129,7 @@ A
 ### -field ( unnamed struct )
 
 A 
-      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
+      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
       about the current BRB.
 
 
@@ -703,15 +704,15 @@ The context to pass to the callback function specified in the
 ### -field ReferenceObject
 
 A pointer to an object to pass to 
-     <a href="kernel.obreferenceobject">ObReferenceObject</a> and 
-     <a href="kernel.obdereferenceobject">ObDereferenceObject</a> for which to
+     <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a> and 
+     <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> for which to
      maintain a reference count of.
 
 
 ### -field OutResults
 
 A 
-     <a href="bltooth.channel_config_results_enhanced">CHANNEL_CONFIG_RESULTS_ENHANCED</a> structure that
+     <a href="..\bthddi\ns-bthddi-_channel_config_results_enhanced.md">CHANNEL_CONFIG_RESULTS_ENHANCED</a> structure that
      contains configuration parameters negotiated for the outbound request.
 
 
@@ -733,30 +734,4 @@ Reserved member. Do not use.
 
 ## -remarks
 Profile drivers can use CM_BASIC | CM_RETRANSMISSION_AND_FLOW, or CM_BASIC | CM_STREAMING modes for the <b>Flags</b> member. This indicates to open an enhanced retransmission mode, or streaming mode channel if possible, and if not fall back to basic mode channel. 
-A value of CM_RETRANSMISSION_AND_FLOW | CM_STREAMING is not supported.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows 8 and later versions of Windows
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+A value of CM_RETRANSMISSION_AND_FLOW | CM_STREAMING is not supported.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NS.MSVIDDRV.TAG_VIDEO_OPEN_PARMS
+UID: NS:msviddrv.tag_video_open_parms
 title: tag_video_open_parms
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\video_open_parms.htm
 old-project: stream
 ms.assetid: BD11B67F-9229-4584-A20D-7D7C70B42977
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tag_video_open_parms, *LPVIDEO_OPEN_PARMS, LPVIDEO_OPEN_PARMS, VIDEO_OPEN_PARMS
+ms.date: 1/9/2018
+ms.keywords: tag_video_open_parms, *LPVIDEO_OPEN_PARMS, VIDEO_OPEN_PARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *LPVIDEO_OPEN_PARMS, VIDEO_OPEN_PARMS
 ---
 
 # tag_video_open_parms structure
@@ -107,19 +108,3 @@ Specifies the devnode for PnP devices.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Msviddrv.h</dt>
-</dl>
-</td>
-</tr>
-</table>

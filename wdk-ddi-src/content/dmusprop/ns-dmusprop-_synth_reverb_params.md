@@ -1,5 +1,5 @@
 ---
-UID: NS.DMUSPROP._SYNTH_REVERB_PARAMS
+UID: NS:dmusprop._SYNTH_REVERB_PARAMS
 title: _SYNTH_REVERB_PARAMS
 author: windows-driver-content
 description: The SYNTH_REVERB_PARAMS structure contains configuration parameters.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 9537D56C-920E-478E-9061-C4909240D7A0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTH_REVERB_PARAMS, *PSYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS
+ms.keywords: _SYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS, *PSYNTH_REVERB_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYNTH_REVERB_PARAMS, *PSYNTH_REVERB_PARAMS
 ---
 
 # _SYNTH_REVERB_PARAMS structure
@@ -77,19 +78,3 @@ Specifies the ratio of the high frequencies to the global reverb time. Unless ve
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusprop.h</dt>
-</dl>
-</td>
-</tr>
-</table>

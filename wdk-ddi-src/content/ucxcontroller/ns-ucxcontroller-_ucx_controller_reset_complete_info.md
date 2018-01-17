@@ -1,14 +1,14 @@
 ---
-UID: NS.UCXCONTROLLER._UCX_CONTROLLER_RESET_COMPLETE_INFO
+UID: NS:ucxcontroller._UCX_CONTROLLER_RESET_COMPLETE_INFO
 title: _UCX_CONTROLLER_RESET_COMPLETE_INFO
 author: windows-driver-content
 description: Contains information about the operation to reset the controller. This is used by the client driver in its EVT_UCX_CONTROLLER_RESET callback function.
 old-location: buses\_ucx_controller_reset_complete_info.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 72935645-0567-4FC9-962C-3E823C08D001
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, PUCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
+ms.date: 1/4/2018
+ms.keywords: _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -72,20 +73,4 @@ Indicates if the reset was coordinated with UCX (TRUE) or not (FALSE).
 
 
 ## -remarks
-This structure is populated by a call to <a href="buses._ucxcontrollerresetcomplete">UcxControllerResetComplete</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxcontroller.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure is populated by a call to <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>.</p>

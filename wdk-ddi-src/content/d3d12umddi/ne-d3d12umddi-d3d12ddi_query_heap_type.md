@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_QUERY_HEAP_TYPE
+UID: NE:d3d12umddi.D3D12DDI_QUERY_HEAP_TYPE
 title: D3D12DDI_QUERY_HEAP_TYPE
 author: windows-driver-content
 description: Type of a query heap, which is an array of query results.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_query_heap_type.htm
 old-project: display
 ms.assetid: 8A1A42B5-D978-4019-825B-94DB81C44FEA
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_QUERY_HEAP_TYPE, D3D12DDI_QUERY_HEAP_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_QUERY_HEAP_TYPE
 ---
 
 # D3D12DDI_QUERY_HEAP_TYPE enumeration
@@ -89,19 +90,3 @@ Copy queue timestamp.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

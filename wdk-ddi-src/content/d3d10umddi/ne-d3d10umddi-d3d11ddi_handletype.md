@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11DDI_HANDLETYPE
+UID: NE:d3d10umddi.D3D11DDI_HANDLETYPE
 title: D3D11DDI_HANDLETYPE
 author: windows-driver-content
 description: Contains values that identify handle types.
@@ -7,7 +7,7 @@ old-location: display\d3d11ddi_handletype.htm
 old-project: display
 ms.assetid: 9ac032fe-b870-49aa-8602-3c7aa997ef9a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11DDI_HANDLETYPE, D3D11DDI_HANDLETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11DDI_HANDLETYPE
 ---
 
 # D3D11DDI_HANDLETYPE enumeration
@@ -233,29 +234,3 @@ Supported starting with Windows 10.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3D11DDI_HANDLETYPE is supported beginning with the Windows 7 operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

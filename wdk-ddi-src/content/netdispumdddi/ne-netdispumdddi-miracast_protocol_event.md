@@ -1,5 +1,5 @@
 ---
-UID: NE.netdispumdddi.MIRACAST_PROTOCOL_EVENT
+UID: NE:netdispumdddi.MIRACAST_PROTOCOL_EVENT
 title: MIRACAST_PROTOCOL_EVENT
 author: windows-driver-content
 description: Specifies the types of wireless display (Miracast) protocol event that the user-mode display driver should report.
@@ -7,7 +7,7 @@ old-location: display\miracast_protocol_event.htm
 old-project: display
 ms.assetid: 7a47acf7-93a9-4bb2-a120-17c32c852ea9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: MIRACAST_PROTOCOL_EVENT, MIRACAST_PROTOCOL_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MIRACAST_PROTOCOL_EVENT
 ---
 
 # MIRACAST_PROTOCOL_EVENT enumeration
@@ -83,39 +84,3 @@ Forces this enumeration to compile to 32 bits in size. Without this value, some 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netdispumdddi.h (include Netdispumdddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

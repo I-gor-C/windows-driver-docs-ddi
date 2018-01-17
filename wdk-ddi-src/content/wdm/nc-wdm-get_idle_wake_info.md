@@ -1,17 +1,17 @@
 ---
-UID: NC.wdm.GET_IDLE_WAKE_INFO
-title: GET_IDLE_WAKE_INFO
+UID: NC:wdm.GET_IDLE_WAKE_INFO
+title: GET_IDLE_WAKE_INFO function
 author: windows-driver-content
 description: The GetIdleWakeInfo routine enables the driver for a device to discover the device power states from which the device can signal a wake event.
 old-location: kernel\getidlewakeinfo.htm
 old-project: kernel
 ms.assetid: 51DE471E-5409-4ED9-BC50-29D18E8F5A16
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/4/2018
+ms.keywords: GET_IDLE_WAKE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: wdm.h
 req.include-header: Wdm.h
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
-# GET_IDLE_WAKE_INFO callback
+# GET_IDLE_WAKE_INFO function
 
 
 
@@ -43,7 +44,7 @@ The <i>GetIdleWakeInfo</i> routine enables the driver for a device to discover t
 
 
 
-## -prototype
+## -syntax
 
 ````
 GET_IDLE_WAKE_INFO GetIdleWakeInfo;
@@ -61,12 +62,12 @@ NTSTATUS GetIdleWakeInfo(
 
 ### -param Context [in, optional]
 
-A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="kernel.d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
+A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
 
 ### -param SystemPowerState [in]
 
-System power state. Set this parameter to one of the following <a href="kernel.system_power_state">SYSTEM_POWER_STATE</a> enumeration values:
+System power state. Set this parameter to one of the following <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a> enumeration values:
 
 <ul>
 <li><b>PowerSystemWorking</b></li>
@@ -80,7 +81,7 @@ These values represent system power states S0 (system working state) through S4.
 
 ### -param DeepestWakeableDstate [out]
 
-Deepest wakeable Dx state. This parameter is a pointer to a <a href="kernel.device_wake_depth">DEVICE_WAKE_DEPTH</a> variable. If the call is successful, the routine writes one of the following enumeration values to this variable:
+Deepest wakeable Dx state. This parameter is a pointer to a <a href="..\wdm\ne-wdm-_device_wake_depth.md">DEVICE_WAKE_DEPTH</a> variable. If the call is successful, the routine writes one of the following enumeration values to this variable:
 
 <ul>
 <li><b>DeviceWakeDepthNotWakeable</b></li>
@@ -117,81 +118,35 @@ The drivers for most devices can treat an output value of <b>DeviceWakeDepthD0</
 The <i>GetIdleWakeInfo</i> routine queries the underlying bus driver and ACPI system firmware to determine the lowest device power state from which the device can signal a wake event. If the bus driver and firmware cannot supply this information, the routine fails and returns an error status code.
 
 
-The <a href="kernel.device_capabilities">DEVICE_CAPABILITIES</a> structure includes a <b>DeviceWake</b> member that provides information similar to that available from the <i>GetIdleWakeInfo</i> routine. However, the information in the <b>DeviceWake</b> member applies only to the system low-power states S1 to S4. For some devices, the information in the <b>DeviceWake</b> member might also apply to the S0 system power state, but drivers should not rely on such behavior. Only the <i>GetIdleWakeInfo</i> routine reliably reports the ability of a device to signal a wake event if the computer is in S0.
+The <a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a> structure includes a <b>DeviceWake</b> member that provides information similar to that available from the <i>GetIdleWakeInfo</i> routine. However, the information in the <b>DeviceWake</b> member applies only to the system low-power states S1 to S4. For some devices, the information in the <b>DeviceWake</b> member might also apply to the S0 system power state, but drivers should not rely on such behavior. Only the <i>GetIdleWakeInfo</i> routine reliably reports the ability of a device to signal a wake event if the computer is in S0.
 
-An inline helper function, <b>MapWakeDepthToDstate</b>, is provided to convert the <a href="kernel.device_wake_depth">DEVICE_WAKE_DEPTH</a> output value from the <i>GetIdleWakeInfo</i> routine to a <a href="kernel.device_power_state">DEVICE_POWER_STATE</a> value that can be used as an input parameter by the <a href="kernel.porequestpowerirp">PoRequestPowerIrp</a> routine.
+An inline helper function, <b>MapWakeDepthToDstate</b>, is provided to convert the <a href="..\wdm\ne-wdm-_device_wake_depth.md">DEVICE_WAKE_DEPTH</a> output value from the <i>GetIdleWakeInfo</i> routine to a <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> value that can be used as an input parameter by the <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a>
+<a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
 </dt>
 <dt>
-<a href="kernel.device_capabilities">DEVICE_CAPABILITIES</a>
+<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="kernel.device_power_state">DEVICE_POWER_STATE</a>
+<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
 </dt>
 <dt>
-<a href="kernel.device_wake_depth">DEVICE_WAKE_DEPTH</a>
+<a href="..\wdm\ne-wdm-_device_wake_depth.md">DEVICE_WAKE_DEPTH</a>
 </dt>
 <dt>
-<a href="kernel.porequestpowerirp">PoRequestPowerIrp</a>
+<a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>
 </dt>
 <dt>
-<a href="kernel.system_power_state">SYSTEM_POWER_STATE</a>
+<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_IDLE_WAKE_INFO routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_IDLE_WAKE_INFO routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

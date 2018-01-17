@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_SUBMITSIGNALSYNCOBJECTSTOHWQUEUECB
+UID: NC:d3dumddi.PFND3DDDI_SUBMITSIGNALSYNCOBJECTSTOHWQUEUECB
 title: PFND3DDDI_SUBMITSIGNALSYNCOBJECTSTOHWQUEUECB
 author: windows-driver-content
 description: A callback to submit a signal command to the hardware queue.
@@ -7,8 +7,8 @@ old-location: display\pfnd3dddi_submitsignalsyncobjectstohwqueuecb.htm
 old-project: display
 ms.assetid: D952A432-7B2C-43AC-9BC4-4335D2F37301
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_SUBMITSIGNALSYNCOBJECTSTOHWQUEUECB callback
@@ -75,19 +76,3 @@ This function might also return other HRESULT values.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_SET_CONTEXT
+UID: NS:wwan._WWAN_SET_CONTEXT
 title: _WWAN_SET_CONTEXT
 author: windows-driver-content
 description: The WWAN_SET_CONTEXT structure represents a provisioned context with a network provider identification that is supported by the MB device.
 old-location: netvista\wwan_set_context.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 00772a37-ef1b-446b-b7bd-1a6aa27d1dad
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT, PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT
+ms.date: 1/11/2018
+ms.keywords: _WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -125,29 +126,3 @@ A NULL-terminated string that represents the network provider identification for
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

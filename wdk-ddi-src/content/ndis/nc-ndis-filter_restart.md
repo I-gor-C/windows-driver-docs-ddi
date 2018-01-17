@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_RESTART
-title: FILTER_RESTART
+UID: NC:ndis.FILTER_RESTART
+title: FILTER_RESTART function
 author: windows-driver-content
 description: The FilterRestart function initiates a restart operation for the specified filter module.Note  You must declare the function by using the FILTER_RESTART type.
 old-location: netvista\filterrestart.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4a917824-eef1-4945-b45e-1c940bc8a50d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_RESTART
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_RESTART callback
+# FILTER_RESTART function
 
 
 
@@ -43,7 +44,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_RESTART FilterRestart;
@@ -68,7 +69,7 @@ A handle to the context area for the filter module that the filter driver should
 ### -param FilterRestartParameters [in]
 
 A pointer to an 
-     <a href="netvista.ndis_filter_restart_parameters">
+     <a href="..\ndis\ns-ndis-_ndis_filter_restart_parameters.md">
      NDIS_FILTER_RESTART_PARAMETERS</a> structure that defines the restart parameters for the filter
      module.
 
@@ -81,7 +82,7 @@ A pointer to an
 <dl>
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>The filter driver will complete the request asynchronously with a call to the 
-       <a href="netvista.ndisfrestartcomplete">NdisFRestartComplete</a> function
+       <a href="..\ndis\nf-ndis-ndisfrestartcomplete.md">NdisFRestartComplete</a> function
        after it completes the restart operation.
 <dl>
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
@@ -89,7 +90,7 @@ A pointer to an
 <dl>
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
 </dl>None of the preceding status values applies. The filter driver should call the 
-       <a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a> function
+       <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a> function
        together with parameters that specify the reason for the failure.
 
  
@@ -113,12 +114,12 @@ Optionally reallocates buffer pools.
 
 Optionally modifies the restart attributes that are specified in the 
       <b>RestartAttributes</b> member of the 
-      <a href="netvista.ndis_filter_restart_parameters">
+      <a href="..\ndis\ns-ndis-_ndis_filter_restart_parameters.md">
       NDIS_FILTER_RESTART_PARAMETERS</a> structure. If the pointer in 
       <b>RestartAttributes</b> is <b>NULL</b>, the filter driver should not modify or add to the restart attributes
       list. If the pointer in 
       <b>RestartAttributes</b> is non-<b>NULL</b>, it points to the first 
-      <a href="netvista.ndis_restart_attributes">NDIS_RESTART_ATTRIBUTES</a> structure
+      <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a> structure
       in the list of restart attributes. If a filter driver does not restart, it should not modify any
       attributes.
 
@@ -132,21 +133,21 @@ If a filter driver modifies the list of restart attributes, the filter driver:
 
 Should not modify any media-specific attributes if it does not recognize the OID in the 
       <b>Oid</b> member of the 
-      <a href="netvista.ndis_restart_attributes">
+      <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">
       NDIS_RESTART_ATTRIBUTES</a> structure.
 
 Can add new media-specific attributes to the list of restart attributes. In this situation, the
       filter driver must allocate a new NDIS_RESTART_ATTRIBUTES structure--for example, with the 
-      <a href="netvista.ndisallocatememorywithtagpriority">
+      <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
       NdisAllocateMemoryWithTagPriority</a> function--and provide memory space for the new attributes.
       After propagating the restart attributes to overlying drivers, NDIS frees the attributes memory for
       filter drivers.
 
 Can modify the media-specific attributes in the list of restart attributes. If the filter driver
       requires more memory space, it can free the 
-      <a href="netvista.ndis_restart_attributes">NDIS_RESTART_ATTRIBUTES</a> structure
+      <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a> structure
       with the 
-      <a href="netvista.ndisfreememory">NdisFreeMemory</a> function and allocate a
+      <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a> function and allocate a
       new structure to contain the modified information. After propagating the restart attributes to
       overlying drivers, NDIS frees the attributes memory for filter drivers.
 
@@ -154,12 +155,12 @@ Should, if the
       <b>Oid</b> member in the NDIS_RESTART_ATTRIBUTES structure is 
       <a href="netvista.oid_gen_miniport_restart_attributes">
       OID_GEN_MINIPORT_RESTART_ATTRIBUTES</a>, make sure that the 
-      <a href="netvista.ndis_restart_general_attributes">
+      <a href="..\ndis\ns-ndis-_ndis_restart_general_attributes.md">
       NDIS_RESTART_GENERAL_ATTRIBUTES</a> structure contains the information that the filter driver
       requires. To make sure that the NDIS_RESTART_GENERAL_ATTRIBUTES structure contains the required
       information, you should check the 
       <b>Revision</b> member in the 
-      <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure that is
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure that is
       specified in the 
       <b>Header</b> member of the NDIS_RESTART_GENERAL_ATTRIBUTES structure.
 
@@ -169,7 +170,7 @@ Must, if the filter driver changes restart attributes, provide a
       attributes is consistent with the information that they receive in response to OID requests.
 
 After the filter driver returns its status or calls the 
-    <a href="netvista.ndisfrestartcomplete">NdisFRestartComplete</a> function, the
+    <a href="..\ndis\nf-ndis-ndisfrestartcomplete.md">NdisFRestartComplete</a> function, the
     restart operation is complete. If the operation completed successfully, the filter module is in the 
     <i>Running</i> state and normal send and receive processing is resumed. If the restart operation failed,
     the filter module returns to the 
@@ -189,41 +190,6 @@ The <b>FILTER_RESTART</b> function type is defined in the Ndis.h header file. To
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -236,37 +202,37 @@ PASSIVE_LEVEL
 <a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_restart_parameters">
+<a href="..\ndis\ns-ndis-_ndis_filter_restart_parameters.md">
    NDIS_FILTER_RESTART_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_restart_attributes">NDIS_RESTART_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_restart_general_attributes">
+<a href="..\ndis\ns-ndis-_ndis_restart_general_attributes.md">
    NDIS_RESTART_GENERAL_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567391">NDIS_STATUS_LINK_STATE</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatememorywithtagpriority">
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
    NdisAllocateMemoryWithTagPriority</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreememory">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndisfrestartcomplete">NdisFRestartComplete</a>
+<a href="..\ndis\nf-ndis-ndisfrestartcomplete.md">NdisFRestartComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569595">OID_GEN_LINK_STATE</a>
@@ -280,5 +246,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_RESTART callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_RESTART callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

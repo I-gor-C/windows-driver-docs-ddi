@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._GET_UNIT_IDS
+UID: NS:61883._GET_UNIT_IDS
 title: _GET_UNIT_IDS
 author: windows-driver-content
 description: The GET_UNIT_CAPABILITIES structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve device identifiers.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 8ffa85ee-cad6-476e-91ab-1897a6b43ca1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_UNIT_IDS, PGET_UNIT_IDS, GET_UNIT_IDS, *PGET_UNIT_IDS
+ms.keywords: _GET_UNIT_IDS, GET_UNIT_IDS, *PGET_UNIT_IDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GET_UNIT_IDS, *PGET_UNIT_IDS
 ---
 
 # _GET_UNIT_IDS structure
@@ -114,21 +115,6 @@ Points to a buffer that receives the "friendly name" for the model represented a
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

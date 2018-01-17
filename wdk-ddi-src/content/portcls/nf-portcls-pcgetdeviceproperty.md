@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcGetDeviceProperty
+UID: NF:portcls.PcGetDeviceProperty
 title: PcGetDeviceProperty function
 author: windows-driver-content
 description: The PcGetDeviceProperty function returns the requested device property from the registry.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcGetDeviceProperty function
@@ -59,7 +60,7 @@ NTSTATUS PcGetDeviceProperty(
 
 ### -param DeviceObject [in]
 
-Pointer to the device object for the device. This parameter points to a <a href="kernel.device_object">DEVICE_OBJECT</a> system structure but is cast to type PVOID.
+Pointer to the device object for the device. This parameter points to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> system structure but is cast to type PVOID.
 
 
 ### -param DeviceProperty [in]
@@ -129,75 +130,18 @@ Set the <b>DeviceProperty</b> parameter to one of the following DEVICE_REGISTRY_
 
 <b>DevicePropertyUINumber</b>
 
-For a description of the preceding DeviceProperty<i>Xxx</i> values, see <a href="kernel.iogetdeviceproperty">IoGetDeviceProperty</a>.
+For a description of the preceding DeviceProperty<i>Xxx</i> values, see <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>.
 
 Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the required <i>BufferLength</i>. In the first call, <i>BufferLength</i> can either be zero or a best-guess estimate of the required buffer size. If the return status is STATUS_BUFFER_TOO_SMALL, this means that the caller should allocate a buffer of the size that was output through <i>ResultLength</i> and call <b>PcGetDeviceProperty</b> again. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PortCls system driver implements the PcGetDeviceProperty function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.iogetdeviceproperty">IoGetDeviceProperty</a>
+<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 </dt>
 </dl>
  

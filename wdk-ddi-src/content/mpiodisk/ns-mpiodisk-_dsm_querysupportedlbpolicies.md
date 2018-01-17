@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIODISK._DSM_QUERYSUPPORTEDLBPOLICIES
+UID: NS:mpiodisk._DSM_QuerySupportedLBPolicies
 title: _DSM_QuerySupportedLBPolicies
 author: windows-driver-content
 description: The DSM_QuerySupportedLBPolicies structure is used to query the list of load balance policies that are supported on the LUN.
@@ -7,8 +7,8 @@ old-location: storage\dsm_querysupportedlbpolicies.htm
 old-project: storage
 ms.assetid: c9c04601-783a-454d-a80e-be8aa5df519a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies, PDSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
+ms.date: 1/10/2018
+ms.keywords: _DSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
 ---
 
 # _DSM_QuerySupportedLBPolicies structure
@@ -71,19 +72,3 @@ An array of DSM_Load_Balance_Policy structures, one for each of the supported lo
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

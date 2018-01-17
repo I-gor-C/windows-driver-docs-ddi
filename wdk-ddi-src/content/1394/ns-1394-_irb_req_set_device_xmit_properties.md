@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
+UID: NS:1394._IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 title: _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a SetDeviceXmitProperties request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 ---
 
 # _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES structure
@@ -107,20 +108,4 @@ Specifies the priority.
 
 
 ## -remarks
-By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.</p>

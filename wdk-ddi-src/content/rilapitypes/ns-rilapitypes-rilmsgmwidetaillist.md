@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILMSGMWIDETAILLIST
+UID: NS:rilapitypes.RILMSGMWIDETAILLIST
 title: RILMSGMWIDETAILLIST
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwidetaillist_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: dbaae4cd-3d0e-4130-af03-9f30a7cd6139
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST, RILMSGMWIDETAILLIST
+ms.date: 1/11/2018
+ms.keywords: RILMSGMWIDETAILLIST, RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST
 req.product: Windows 10 or later.
 ---
 
@@ -78,19 +79,3 @@ typedef struct _RILMSGMWIDETAILLIST {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

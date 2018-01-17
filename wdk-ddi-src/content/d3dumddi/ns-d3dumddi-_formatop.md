@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._FORMATOP
+UID: NS:d3dumddi._FORMATOP
 title: _FORMATOP
 author: windows-driver-content
 description: The FORMATOP structure describes a surface format and operations that can be performed with such a surface.
@@ -7,7 +7,7 @@ old-location: display\formatop.htm
 old-project: display
 ms.assetid: e846a41a-9d9c-4ccb-a478-260f333333f1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _FORMATOP, FORMATOP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FORMATOP
 ---
 
 # _FORMATOP structure
@@ -59,7 +60,7 @@ typedef struct _FORMATOP {
 
 ### -field Format
 
-[in] The <a href="display.d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface.
+[in] The <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface.
 
 
 ### -field Operations
@@ -210,7 +211,7 @@ A vertex texture sampler can use surfaces of this format. That is, only surfaces
 ### -field FORMATOP_NOTEXCOORDWRAPNORMIP (0x01000000L)
 
 <dd>
-Surfaces of this format can only be conditionally used for texture mapping of 2-D textures with dimensions that are not powers of 2. For more information, see the definitions for D3DPTEXTURECAPS_POW2 and D3DPTEXTURECAPS_NONPOW2CONDITIONAL in the <a href="display.d3dprimcaps">D3DPRIMCAPS</a> reference page.
+Surfaces of this format can only be conditionally used for texture mapping of 2-D textures with dimensions that are not powers of 2. For more information, see the definitions for D3DPTEXTURECAPS_POW2 and D3DPTEXTURECAPS_NONPOW2CONDITIONAL in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549034">D3DPRIMCAPS</a> reference page.
 
 
 ### -field FORMATOP_PLANAR (0x02000000L)
@@ -228,7 +229,7 @@ Surfaces of this format are used for overlay operations.
 ### -field FORMATOP_CAPTURE (0x08000000L)
 
 <dd>
-If the <b>VideoEncoder</b> member of the <a href="display.d3dddi_resourceflags2">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as capture buffers.
+If the <b>VideoEncoder</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as capture buffers.
 
 Supported starting with Windows 8.
 
@@ -236,7 +237,7 @@ Supported starting with Windows 8.
 ### -field FORMATOP_VIDEO_ENCODER (0x10000000L)
 
 <dd>
-If the <b>VideoEncoder</b> member of the <a href="display.d3dddi_resourceflags2">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as video encoder input resources.
+If the <b>VideoEncoder</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as video encoder input resources.
 
 Supported starting with Windows 8.
 
@@ -263,50 +264,25 @@ Supported starting with Windows 8.
 
 ### -field PrivateFormatBitCount
 
-[out] The bits per pixel of a pixel format that is private to the driver (that is, not one of the standard pixel formats that are defined by the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration type). 
+[out] The bits per pixel of a pixel format that is private to the driver (that is, not one of the standard pixel formats that are defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration type). 
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_resourceflags2">D3DDDI_RESOURCEFLAGS2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_getcaps">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="display.d3dddicaps_type">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
@@ -316,5 +292,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20FORMATOP structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20FORMATOP structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

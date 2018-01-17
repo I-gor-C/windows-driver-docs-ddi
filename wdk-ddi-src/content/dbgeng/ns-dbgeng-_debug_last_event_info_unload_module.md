@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
+UID: NS:dbgeng._DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
 title: _DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
 author: windows-driver-content
 description: Describes the unload module of the last event.
 old-location: debugger\debug_last_event_info_unload_module.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: D569C1DD-0ACB-41AA-8589-BD4332006CA2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, PDEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, *PDEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDEBUG_LAST_EVENT_INFO_UNLOAD_MODULE, DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE
 ---
 
 # _DEBUG_LAST_EVENT_INFO_UNLOAD_MODULE structure
@@ -59,19 +60,3 @@ The base of the unload module.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

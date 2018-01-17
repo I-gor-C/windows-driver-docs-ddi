@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._CYCLE_TIME
+UID: NS:1394._CYCLE_TIME
 title: _CYCLE_TIME
 author: windows-driver-content
 description: The CYCLE_TIME structure contains the IEEE 1394 isochronous cycle time.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: dcb19338-3848-4f90-876c-357f92fb2637
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CYCLE_TIME, *PCYCLE_TIME, CYCLE_TIME, PCYCLE_TIME
+ms.keywords: _CYCLE_TIME, *PCYCLE_TIME, CYCLE_TIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCYCLE_TIME, CYCLE_TIME
 ---
 
 # _CYCLE_TIME structure
@@ -73,21 +74,6 @@ Specifies the number of seconds. This count wraps to zero every 128 seconds.
 ## -remarks
 The layout of this structure matches that of the CYCLE_TIME register in the <i>IEEE 1394-1995 specification</i>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

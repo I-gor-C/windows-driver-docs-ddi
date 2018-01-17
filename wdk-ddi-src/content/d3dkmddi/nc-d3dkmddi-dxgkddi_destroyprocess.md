@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_DESTROYPROCESS
-title: DXGKDDI_DESTROYPROCESS
+UID: NC:d3dkmddi.DXGKDDI_DESTROYPROCESS
+title: DXGKDDI_DESTROYPROCESS function
 author: windows-driver-content
 description: DxgkDdiDestroyProcess destroys a kernel mode driver process object.
 old-location: display\dxgkddidestroyprocess.htm
 old-project: display
 ms.assetid: C5117F9B-876D-4F74-B528-47698666B44B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_DESTROYPROCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_DESTROYPROCESS callback
+# DXGKDDI_DESTROYPROCESS function
 
 
 
@@ -42,7 +43,7 @@ req.irql:
 
 
 
-## -prototype
+## -syntax
 
 ````
 DXGKDDI_DESTROYPROCESS DxgkDdiDestroyProcess;
@@ -73,51 +74,3 @@ A handle to the kernel mode driver process.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h; </dt>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

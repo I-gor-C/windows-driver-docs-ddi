@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.SetMatchThreadId
+UID: NF:dbgeng.IDebugBreakpoint2.SetMatchThreadId
 title: IDebugBreakpoint2::SetMatchThreadId method
 author: windows-driver-content
 description: The SetMatchThreadId method sets the engine thread ID of the thread that can trigger a breakpoint.
 old-location: debugger\setmatchthreadid.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 66170e28-24db-4125-bd4e-ef07e8e82e79
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::SetMatchThreadId, SetMatchThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetMatchThreadId method
@@ -79,31 +80,4 @@ If you have set a thread for the breakpoint, the breakpoint can be triggered onl
 
 If you have set a thread, you can remove the setting by setting <i>Id</i> to DEBUG_ANY_ID.
 
-For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>

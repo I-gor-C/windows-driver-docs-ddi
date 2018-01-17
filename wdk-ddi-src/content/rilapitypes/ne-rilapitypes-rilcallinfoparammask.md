@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILCALLINFOPARAMMASK
+UID: NE:rilapitypes.RILCALLINFOPARAMMASK
 title: RILCALLINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallinfoparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8e5935d9-382f-409d-a9ed-9381613b5d9c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCALLINFOPARAMMASK, RILCALLINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLINFOPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -138,19 +139,3 @@ typedef enum _RILCALLINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILEMERGENCYNUMBERSLIST
+UID: NS:rilapitypes.RILEMERGENCYNUMBERSLIST
 title: RILEMERGENCYNUMBERSLIST
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencynumberslist_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 06816431-a6fc-4c24-a31d-c486a4ba667f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
+ms.date: 1/11/2018
+ms.keywords: RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef struct _RILEMERGENCYNUMBERSLIST {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

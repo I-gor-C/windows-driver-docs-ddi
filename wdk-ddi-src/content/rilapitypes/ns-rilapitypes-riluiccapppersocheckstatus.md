@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILUICCAPPPERSOCHECKSTATUS
+UID: NS:rilapitypes.RILUICCAPPPERSOCHECKSTATUS
 title: RILUICCAPPPERSOCHECKSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccapppersocheckstatus_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8e51ae9a-4670-4de1-bfca-bef8cb0c9cc9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS
+ms.date: 1/11/2018
+ms.keywords: RILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS
 req.product: Windows 10 or later.
 ---
 
@@ -74,19 +75,3 @@ typedef struct _RILUICCAPPPERSOCHECKSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

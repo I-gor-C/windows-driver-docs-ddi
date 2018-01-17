@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILSUPSVCACTION
+UID: NE:ntddrilapitypes.RILSUPSVCACTION
 title: RILSUPSVCACTION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsupsvcaction.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 14c9b97d-7f3f-45ef-9be2-c36495c69081
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSUPSVCACTION, RILSUPSVCACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSUPSVCACTION
 ---
 
 # RILSUPSVCACTION enumeration
@@ -81,19 +82,3 @@ typedef enum _RILSUPSVCACTION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

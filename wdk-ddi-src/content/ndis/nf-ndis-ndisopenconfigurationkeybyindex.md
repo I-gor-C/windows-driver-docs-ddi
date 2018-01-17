@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisOpenConfigurationKeyByIndex
+UID: NF:ndis.NdisOpenConfigurationKeyByIndex
 title: NdisOpenConfigurationKeyByIndex function
 author: windows-driver-content
 description: The NdisOpenConfigurationKeyByIndex function opens a subkey of a given open registry key that is designated by a caller-supplied handle.
 old-location: netvista\ndisopenconfigurationkeybyindex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e405853a-cf25-4214-82a9-bc3d76334413
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisOpenConfigurationKeyByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: < DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisOpenConfigurationKeyByIndex function
@@ -86,7 +87,7 @@ The key could not be opened.
 
 The handle to a registry key for which a subkey is to be opened. Typically, 
      <i>ConfigurationHandle</i> is returned by the 
-     <a href="netvista.ndisopenconfigurationex">
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">
      NdisOpenConfigurationEx</a> function.
 
 
@@ -103,7 +104,7 @@ A pointer to an NDIS_STRING type containing a caller-supplied buffer in which th
      returns a counted string in the system-default character set. This string specifies the name of the
      opened subkey if the call succeeds. For Microsoft Windows 2000 and later drivers, this string contains
      Unicode characters. That is, for Windows 2000 and later, NDIS defines the NDIS_STRING type as a 
-     <a href="kernel.unicode_string">UNICODE_STRING</a> type.
+     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> type.
 
 
 ### -param KeyHandle [out]
@@ -136,123 +137,53 @@ Since
 
 After a driver has consumed and, possibly, modified the configuration information stored in the
     registry, it must call the 
-    <a href="netvista.ndiscloseconfiguration">NdisCloseConfiguration</a> function to
+    <a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a> function to
     release the handle that is obtained from 
     <b>NdisOpenConfigurationKeyByIndex</b>. 
     <b>NdisCloseConfiguration</b> also frees any temporary storage that NDIS allocated for the driver's calls
     to the 
-    <a href="netvista.ndisreadconfiguration">NdisReadConfiguration</a>, 
-    <a href="netvista.ndisreadnetworkaddress">NdisReadNetworkAddress</a>, or 
-    <a href="netvista.ndiswriteconfiguration">NdisWriteConfiguration</a> functions
+    <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>, 
+    <a href="..\ndis\nf-ndis-ndisreadnetworkaddress.md">NdisReadNetworkAddress</a>, or 
+    <a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a> functions
     with the 
     <i>SubKeyHandle</i> that 
     <b>NdisOpenConfigurationKeyByIndex</b> returned.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/27f55a47-44e5-460b-b6b5-6c5862516cd6">
-   NdisOpenConfigurationKeyByIndex (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>
-   NdisOpenConfigurationKeyByIndex (NDIS 5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt; DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ansi_string">ANSI_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndiscloseconfiguration">NdisCloseConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationkeybyname">
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
    NdisOpenConfigurationKeyByName</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadconfiguration">NdisReadConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteconfiguration">NdisWriteConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisOpenConfigurationKeyByIndex function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenConfigurationKeyByIndex function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

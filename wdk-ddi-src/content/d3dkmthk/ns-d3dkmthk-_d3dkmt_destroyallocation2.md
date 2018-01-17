@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_DESTROYALLOCATION2
+UID: NS:d3dkmthk._D3DKMT_DESTROYALLOCATION2
 title: _D3DKMT_DESTROYALLOCATION2
 author: windows-driver-content
 description: The D3DKMT_DESTROYALLOCATION2 structure describes parameters for releasing allocations with D3DKMTDestroyAllocation2.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_destroyallocation2.htm
 old-project: display
 ms.assetid: A51C5F98-5979-436A-9E7E-EA54A1469940
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_DESTROYALLOCATION2, D3DKMT_DESTROYALLOCATION2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DESTROYALLOCATION2
 ---
 
 # _D3DKMT_DESTROYALLOCATION2 structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>D3DKMT_DESTROYALLOCATION2</b> structure describes parameters for releasing allocations with <a href="display.d3dkmtdestroyallocation2">D3DKMTDestroyAllocation2</a>.
+The <b>D3DKMT_DESTROYALLOCATION2</b> structure describes parameters for releasing allocations with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation2.md">D3DKMTDestroyAllocation2</a>.
 
 
 
@@ -79,59 +80,24 @@ typedef struct _D3DKMT_DESTROYALLOCATION2 {
 
 ### -field Flags
 
-[in] A <a href="display.d3dddicb_destroyallocation2flags">D3DDDICB_DESTROYALLOCATION2FLAGS</a> structure that contains additional details about the operation.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn906318">D3DDDICB_DESTROYALLOCATION2FLAGS</a> structure that contains additional details about the operation.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmtdestroyallocation2">D3DKMTDestroyAllocation2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation2.md">D3DKMTDestroyAllocation2</a>
 </dt>
 <dt>
-<a href="display.d3dddicb_destroyallocation2flags">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906318">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_DESTROYALLOCATION2 structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_DESTROYALLOCATION2 structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

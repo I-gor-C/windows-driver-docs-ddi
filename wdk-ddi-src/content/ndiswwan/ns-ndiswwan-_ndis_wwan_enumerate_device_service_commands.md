@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISWWAN._NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
+UID: NS:ndiswwan._NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 title: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 author: windows-driver-content
 description: The NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure represents the commands supported by a device service.
 old-location: netvista\ndis_wwan_enumerate_device_service_commands.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9D30F8BE-C376-48FD-A76C-6069F332BC11
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
+ms.date: 1/11/2018
+ms.keywords: _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
 ---
 
 # _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS)
  
 
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field DeviceServiceGuid
@@ -111,29 +112,3 @@ The GUID of the device service for which commands should be enumerated.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndiswwan.h (include Ndiswwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

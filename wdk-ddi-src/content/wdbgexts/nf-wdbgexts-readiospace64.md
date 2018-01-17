@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.ReadIoSpace64
+UID: NF:wdbgexts.ReadIoSpace64
 title: ReadIoSpace64 function
 author: windows-driver-content
 description: The ReadIoSpace64 function reads from the system I/O locations.
 old-location: debugger\readiospace64.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 7578df0d-67ea-4a8c-a89c-6a9d95bff33a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ReadIoSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -76,34 +77,7 @@ None
 
 
 ## -remarks
-If you are writing 32-bit code, you should use <a href="debugger.readiospace">ReadIoSpace</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
+If you are writing 32-bit code, you should use <a href="..\wdbgexts\nf-wdbgexts-readiospace.md">ReadIoSpace</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

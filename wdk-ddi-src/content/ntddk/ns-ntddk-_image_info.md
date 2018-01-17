@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._IMAGE_INFO
+UID: NS:ntddk._IMAGE_INFO
 title: _IMAGE_INFO
 author: windows-driver-content
 description: Used by driver's load-image routine (PLOAD_IMAGE_NOTIFY_ROUTINE) to specify image information.
@@ -7,8 +7,8 @@ old-location: kernel\image_info.htm
 old-project: kernel
 ms.assetid: D2CD2457-8DDF-4449-9DC1-F1E7472C87CA
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IMAGE_INFO, IMAGE_INFO, *PIMAGE_INFO, PIMAGE_INFO
+ms.date: 1/4/2018
+ms.keywords: _IMAGE_INFO, *PIMAGE_INFO, IMAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PIMAGE_INFO, IMAGE_INFO
 ---
 
 # _IMAGE_INFO structure
@@ -90,7 +91,7 @@ Always set to zero.
 
 ### -field ExtendedInfoPresent
 
-If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure (see <a href="kernel.image_info_ex">IMAGE_INFO_EX</a>). Added in Windows Vista. For more information, see "Extended version of the image information structure" later in this Remarks section.
+If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure (see <a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>). Added in Windows Vista. For more information, see "Extended version of the image information structure" later in this Remarks section.
 
 
 ### -field MachineTypeMismatch
@@ -139,23 +140,8 @@ Always set to zero.
 
 
 ## -remarks
-If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure, <a href="kernel.image_info_ex">IMAGE_INFO_EX</a>.
+If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure, <a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -163,15 +149,15 @@ Header
 <a href="..\ntddk\nc-ntddk-pload_image_notify_routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a>
 </dt>
 <dt>
-<a href="kernel.pssetloadimagenotifyroutine">PsSetLoadImageNotifyRoutine</a>
+<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
 </dt>
 <dt>
-<a href="kernel.image_info_ex">IMAGE_INFO_EX</a>
+<a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IMAGE_INFO structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IMAGE_INFO structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._IPSEC_OFFLOAD_V2_ALGORITHM_INFO
+UID: NS:ndis._IPSEC_OFFLOAD_V2_ALGORITHM_INFO
 title: _IPSEC_OFFLOAD_V2_ALGORITHM_INFO
 author: windows-driver-content
 description: The IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure specifies an algorithm that is used for a security association (SA).
 old-location: netvista\ipsec_offload_v2_algorithm_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 787e5a98-ba77-42d4-8624-abcc02fccf53
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IPSEC_OFFLOAD_V2_ALGORITHM_INFO, *PIPSEC_OFFLOAD_V2_ALGORITHM_INFO, IPSEC_OFFLOAD_V2_ALGORITHM_INFO, PIPSEC_OFFLOAD_V2_ALGORITHM_INFO
+ms.date: 1/11/2018
+ms.keywords: _IPSEC_OFFLOAD_V2_ALGORITHM_INFO, IPSEC_OFFLOAD_V2_ALGORITHM_INFO, *PIPSEC_OFFLOAD_V2_ALGORITHM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: IPSEC_OFFLOAD_V2_ALGORITHM_INFO, *PIPSEC_OFFLOAD_V2_ALGORITHM_INFO
 ---
 
 # _IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure
@@ -171,7 +172,7 @@ Specifies the AES- GMAC 256 algorithm for computing or validating a cryptographi
 
 The length, in bytes, of the key for the algorithm. The key is contained in the array at the 
      <b>KeyData</b> member in the 
-     <a href="netvista.ipsec_offload_v2_add_sa">IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
      
 
 <b>KeyLength</b> indicates the length of the cryptographic algorithm, starting at the offset that is
@@ -189,7 +190,7 @@ If both algorithms (
 
 The offset, in bytes, into in the array at the 
      <b>KeyData</b> member in the 
-     <a href="netvista.ipsec_offload_v2_add_sa">
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">
      IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
 
 
@@ -204,42 +205,17 @@ Additional information that should be interpreted differently based on the algor
 The IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure specifies algorithm information in the 
     <b>EncryptionAlgorithm</b> and 
     <b>AuthenticationAlgorithm</b> members of the 
-    <a href="netvista.ipsec_offload_v2_security_association">
+    <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.1 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ipsec_offload_v2_add_sa">IPSEC_OFFLOAD_V2_ADD_SA</a>
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>
 </dt>
 <dt>
-<a href="netvista.ipsec_offload_v2_security_association">
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
 </dt>
 </dl>
@@ -247,5 +223,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

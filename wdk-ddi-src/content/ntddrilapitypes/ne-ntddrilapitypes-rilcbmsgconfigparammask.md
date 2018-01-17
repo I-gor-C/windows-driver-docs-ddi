@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCBMSGCONFIGPARAMMASK
+UID: NE:ntddrilapitypes.RILCBMSGCONFIGPARAMMASK
 title: RILCBMSGCONFIGPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcbmsgconfigparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 86bbc3ef-c76c-4abd-bfcb-56c804c12b1f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILCBMSGCONFIGPARAMMASK, RILCBMSGCONFIGPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCBMSGCONFIGPARAMMASK
 ---
 
 # RILCBMSGCONFIGPARAMMASK enumeration
@@ -69,19 +70,3 @@ typedef enum _RILCBMSGCONFIGPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

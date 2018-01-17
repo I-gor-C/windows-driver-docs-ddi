@@ -1,17 +1,17 @@
 ---
-UID: NC.poscx.EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
-title: EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
+UID: NC:poscx.EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
+title: EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE function
 author: windows-driver-content
 description: The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine.
 old-location: pos\evt_pos_cx_device_ownership_change.htm
 old-project: pos
 ms.assetid: 9587928C-6C40-4550-820A-B77968E3E16A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: poscx.h
 req.include-header: Poscx.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
-# EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback
+# EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE EvtPosCxDeviceOwnershipChange;
@@ -90,29 +91,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

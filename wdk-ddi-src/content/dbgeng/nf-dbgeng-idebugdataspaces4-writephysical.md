@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.WritePhysical
+UID: NF:dbgeng.IDebugDataSpaces4.WritePhysical
 title: IDebugDataSpaces4::WritePhysical method
 author: windows-driver-content
 description: The WritePhysical method writes data to the specified physical address in the target's memory.
 old-location: debugger\writephysical3.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: ec691a7c-a569-49dd-af13-bfbf403be297
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WritePhysical, WritePhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::WritePhysical method
@@ -87,31 +88,4 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-This method is only available in kernel-mode debugging.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This method is only available in kernel-mode debugging.</p>

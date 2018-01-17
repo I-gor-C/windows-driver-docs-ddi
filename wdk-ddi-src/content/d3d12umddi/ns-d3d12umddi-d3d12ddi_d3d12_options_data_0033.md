@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_D3D12_OPTIONS_DATA_0033
+UID: NS:d3d12umddi.D3D12DDI_D3D12_OPTIONS_DATA_0033
 title: D3D12DDI_D3D12_OPTIONS_DATA_0033
 author: windows-driver-content
 description: Display options data.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-d3d12-options-data-0033.htm
 old-project: display
 ms.assetid: d2b90ec1-cc4c-4a2b-8f7e-d46cd39d553b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_D3D12_OPTIONS_DATA_0033, D3D12DDI_D3D12_OPTIONS_DATA_0033
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_D3D12_OPTIONS_DATA_0033
 ---
 
 # D3D12DDI_D3D12_OPTIONS_DATA_0033 structure
@@ -131,19 +132,3 @@ Barycentrics supported.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

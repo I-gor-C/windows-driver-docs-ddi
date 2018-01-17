@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.ReadHandleData
+UID: NF:dbgeng.IDebugDataSpaces4.ReadHandleData
 title: IDebugDataSpaces4::ReadHandleData method
 author: windows-driver-content
 description: The ReadHandleData method retrieves information about a system object specified by a system handle.
 old-location: debugger\readhandledata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 9ad8e8c1-6aee-4eac-93e6-5997212c63d0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::ReadHandleData, ReadHandleData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadHandleData method
@@ -79,7 +80,7 @@ DEBUG_HANDLE_DATA_TYPE_BASIC
 <td>
 Returns basic information about the system object.
 
-In this case, the argument <i>Buffer</i> can be considered to have type <a href="debugger.debug_handle_data_basic">PDEBUG_HANDLE_DATA_BASIC</a>.
+In this case, the argument <i>Buffer</i> can be considered to have type <a href="..\dbgeng\ns-dbgeng-_debug_handle_data_basic.md">PDEBUG_HANDLE_DATA_BASIC</a>.
 
 </td>
 </tr>
@@ -113,7 +114,7 @@ DEBUG_HANDLE_DATA_TYPE_HANDLE_COUNT
 
 </td>
 <td>
-Returns the number of handles held by the object.  This is similar to the field <a href="debugger.debug_handle_data_basic">DEBUG_HANDLE_DATA_BASIC</a>.<b>HandleCount</b>.
+Returns the number of handles held by the object.  This is similar to the field <a href="..\dbgeng\ns-dbgeng-_debug_handle_data_basic.md">DEBUG_HANDLE_DATA_BASIC</a>.<b>HandleCount</b>.
 
 In this case, the argument <i>Buffer</i> can be considered to have type PULONG.
 
@@ -178,32 +179,6 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 This method is only available in user-mode debugging.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -221,5 +196,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugDataSpaces2::ReadHandleData method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces2::ReadHandleData method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

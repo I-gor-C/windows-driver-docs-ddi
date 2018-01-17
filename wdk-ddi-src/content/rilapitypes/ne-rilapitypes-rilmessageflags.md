@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMESSAGEFLAGS
+UID: NE:rilapitypes.RILMESSAGEFLAGS
 title: RILMESSAGEFLAGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessageflags_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 49f8bd1b-5c8a-47d3-a5d5-817216562559
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMESSAGEFLAGS, RILMESSAGEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGEFLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -86,19 +87,3 @@ typedef enum _RILMESSAGEFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.wpprecorder.WppRecorderDumpLiveDriverData
+UID: NF:wpprecorder.WppRecorderDumpLiveDriverData
 title: WppRecorderDumpLiveDriverData macro
 author: windows-driver-content
 description: The WppRecorderDumpLiveDriverData method gets the buffer associated with the specified Inflight Trace Recorder log.
@@ -7,7 +7,7 @@ old-location: devtest\wpprecorderdumplivedriverdata.htm
 old-project: devtest
 ms.assetid: FE3DE2A8-8EE5-4F34-BEE6-731987E5F5BD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: WppRecorderDumpLiveDriverData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WMILIB_CONTEXT, *PWMILIB_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="devtest.wpprecorderdumplivedriverdata">WppRecorderDumpLiveDriverData</a> method gets the buffer associated with the specified Inflight Trace Recorder log.
+The <a href="..\wpprecorder\nf-wpprecorder-wpprecorderdumplivedriverdata.md">WppRecorderDumpLiveDriverData</a> method gets the buffer associated with the specified Inflight Trace Recorder log.
 
 
 
@@ -72,19 +73,3 @@ Pointer to the WPP controller GUID that identifies the driver data.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wpprecorder.h</dt>
-</dl>
-</td>
-</tr>
-</table>

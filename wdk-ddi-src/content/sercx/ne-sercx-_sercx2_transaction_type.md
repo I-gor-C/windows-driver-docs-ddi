@@ -1,5 +1,5 @@
 ---
-UID: NE.sercx._SERCX2_TRANSACTION_TYPE
+UID: NE:sercx._SERCX2_TRANSACTION_TYPE
 title: _SERCX2_TRANSACTION_TYPE
 author: windows-driver-content
 description: The SERCX2_TRANSACTION_TYPE enumeration defines constants that indicate the type of data-transfer mechanism to use to perform an I/O transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
+req.typenames: SERCX2_TRANSACTION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -80,21 +81,6 @@ Use the custom data-transfer mechanism to perform the I/O transaction.
 ## -remarks
 The <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a> and <a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback functions return <b>SERCX2_TRANSACTION_TYPE</b> enumeration values.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILSUPSERVICEDATASTATUS
+UID: NE:rilapitypes.RILSUPSERVICEDATASTATUS
 title: RILSUPSERVICEDATASTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsupservicedatastatus_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9879db5b-25c1-451c-bb50-37e85cf1f5e5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSUPSERVICEDATASTATUS, RILSUPSERVICEDATASTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSUPSERVICEDATASTATUS
 req.product: Windows 10 or later.
 ---
 
@@ -70,19 +71,3 @@ typedef enum _RILSUPSERVICEDATASTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

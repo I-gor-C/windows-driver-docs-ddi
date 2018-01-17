@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.TCP_OFFLOAD_RECV_COMPLETE_HANDLER
+UID: NC:ndischimney.TCP_OFFLOAD_RECV_COMPLETE_HANDLER
 title: TCP_OFFLOAD_RECV_COMPLETE_HANDLER
 author: windows-driver-content
 description: NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadReceiveComplete function to complete a receive operation that the driver previously initiated by calling the NdisOffloadTcpReceive function.
 old-location: netvista\protocoltcpoffloadreceivecomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 78201512-6b70-4b4b-9016-0f42fed41ac6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # TCP_OFFLOAD_RECV_COMPLETE_HANDLER callback
@@ -43,7 +44,7 @@ req.irql:
 NDIS calls a protocol or intermediate driver's 
   <i>ProtocolTcpOffloadReceiveComplete</i> function to complete a receive operation that the driver previously
   initiated by calling the 
-  <a href="netvista.ndisoffloadtcpreceive">NdisOffloadTcpReceive</a> function.
+  <a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpreceive.md">NdisOffloadTcpReceive</a> function.
 
 
 
@@ -67,16 +68,16 @@ VOID ProtocolTcpOffloadReceiveComplete(
 A handle to a context area allocated by the protocol driver. The driver maintains the per binding
      context information in this context area. The driver supplied this handle to NDIS when the driver called
      the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 ### -param NetBufferList [in]
 
 A pointer to a 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
      can be stand-alone or the first structure in a linked list of NET_BUFFER_LIST structures. The driver
      supplied this pointer as an input parameter in a previous call to the 
-     <a href="netvista.ndisoffloadtcpreceive">
+     <a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpreceive.md">
      NdisOffloadTcpReceive</a> function.
 
 
@@ -108,43 +109,28 @@ In response, NDIS calls the overlying driver's
     <b>NdisOffloadTcpReceiveComplete</b> function.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">MiniportTcpOffloadReceive</a>
 </dt>
 <dt>
-<a href="netvista.ndisoffloadtcpreceive">NdisOffloadTcpReceive</a>
+<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpreceive.md">NdisOffloadTcpReceive</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_complete.md">
    NdisOffloadTcpReceiveComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20TCP_OFFLOAD_RECV_COMPLETE_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_RECV_COMPLETE_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

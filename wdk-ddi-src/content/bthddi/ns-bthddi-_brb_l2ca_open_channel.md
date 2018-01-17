@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._BRB_L2CA_OPEN_CHANNEL
+UID: NS:bthddi._BRB_L2CA_OPEN_CHANNEL
 title: _BRB_L2CA_OPEN_CHANNEL
 author: windows-driver-content
 description: The _BRB_L2CA_OPEN_CHANNEL structure describes a L2CAP channel to open to a remote device, or a response from the profile driver accepting or rejecting an incoming L2CAP connection request that was initiated by a remote device.
@@ -7,7 +7,7 @@ old-location: bltooth\_brb_l2ca_open_channel.htm
 old-project: bltooth
 ms.assetid: 16f79360-c8fd-4be9-9c94-7fa2a1d8c6b5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: _BRB_L2CA_OPEN_CHANNEL,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: 
 ---
 
 # _BRB_L2CA_OPEN_CHANNEL structure
@@ -93,7 +94,7 @@ struct _BRB_L2CA_OPEN_CHANNEL {
 ### -field Hdr
 
 A 
-     <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 
@@ -105,9 +106,9 @@ A
 
 ### -field For a BRB_L2CA_OPEN_CHANNEL_RESPONSE request, the profile driver (acting as a server) provides
      this member's value prior to sending the BRB down the driver stack. This member's value should be set to
-     <a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a> structure's 
+     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure's 
      <b>ConnectionHandle</b> member value if the 
-     <a href="bltooth.indication_code">INDICATION_CODE</a> enumeration's 
+     <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> enumeration's 
      <b>IndicationRemoteConnect</b> value is specified. These values are passed as the 
      <i>Parameters</i> and 
      <i>Indication</i> arguments of the profile driver's 
@@ -122,7 +123,7 @@ A
 ### -field ( unnamed struct )
 
 A 
-      <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
+      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
       about the current BRB.
 
 
@@ -599,15 +600,15 @@ The context to pass to the callback function specified in the
 ### -field ReferenceObject
 
 A pointer to an object to pass to 
-     <a href="kernel.obreferenceobject">ObReferenceObject</a> and 
-     <a href="kernel.obdereferenceobject">ObDereferenceObject</a> for which to
+     <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a> and 
+     <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> for which to
      maintain a reference count of.
 
 
 ### -field OutResults
 
 A 
-     <a href="bltooth.channel_config_results">CHANNEL_CONFIG_RESULTS</a> structure that
+     <a href="..\bthddi\ns-bthddi-_channel_config_results.md">CHANNEL_CONFIG_RESULTS</a> structure that
      contains configuration parameters for the outbound request.
 
 
@@ -647,7 +648,7 @@ Profile drivers must allocate the memory to store the array that is stored in th
     <b>ExtraOptions</b> member and should not free this memory until the callback function defined in the 
     <b>Callback</b> member returns with an 
     <b>IndicationFreeExtraOptions</b> notification 
-    <a href="bltooth.indication_code">INDICATION_CODE</a> value passed in its 
+    <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> value passed in its 
     <i>Indication</i> parameter.
 
 The 
@@ -693,41 +694,16 @@ Profile drivers must allocate the memory to store the array that is stored in th
     <i>Indication</i> parameter.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.brb_header">BRB_HEADER</a>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 </dt>
 <dt>
-<a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
 </dt>
 <dt>
-<a href="bltooth.indication_code">INDICATION_CODE</a>
+<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
 </dt>
 <dt>
 <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
@@ -736,16 +712,16 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536618">BRB_L2CA_REGISTER_SERVER</a>
 </dt>
 <dt>
-<a href="bltooth.l2cap_config_option">L2CAP_CONFIG_OPTION</a>
+<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
 </dt>
 <dt>
-<a href="kernel.obreferenceobject">ObReferenceObject</a>
+<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
 </dt>
 <dt>
-<a href="kernel.obdereferenceobject">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
-<a href="bltooth.channel_config_results">CHANNEL_CONFIG_RESULTS</a>
+<a href="..\bthddi\ns-bthddi-_channel_config_results.md">CHANNEL_CONFIG_RESULTS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
@@ -759,5 +735,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_OPEN_CHANNEL structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_OPEN_CHANNEL structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

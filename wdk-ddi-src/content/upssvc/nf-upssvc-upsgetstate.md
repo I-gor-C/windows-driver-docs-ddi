@@ -1,5 +1,5 @@
 ---
-UID: NF.upssvc.UPSGetState
+UID: NF:upssvc.UPSGetState
 title: UPSGetState function
 author: windows-driver-content
 description: The UPSGetState function returns the operational state of the UPS.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 
@@ -78,31 +79,4 @@ The <b>UPSGetState</b> function returns one of the following DWORD values:
 
 
 ## -remarks
-This is a nonblocking call. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Upssvc.h (include Upssvc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This is a nonblocking call. </p>

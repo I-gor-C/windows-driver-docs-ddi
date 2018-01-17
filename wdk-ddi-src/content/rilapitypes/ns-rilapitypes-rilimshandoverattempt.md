@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILIMSHANDOVERATTEMPT
+UID: NS:rilapitypes.RILIMSHANDOVERATTEMPT
 title: RILIMSHANDOVERATTEMPT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimshandoverattempt_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: de56a241-10a3-4f9c-970c-433ab997612d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
 req.product: Windows 10 or later.
 ---
 
@@ -70,19 +71,3 @@ typedef struct _RILIMSHANDOVERATTEMPT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

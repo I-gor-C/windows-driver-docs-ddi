@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISCHIMNEY._TCP_OFFLOAD_STATS
+UID: NS:ndischimney._TCP_OFFLOAD_STATS
 title: _TCP_OFFLOAD_STATS
 author: windows-driver-content
 description: The TCP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a query of OID_TCP4_OFFLOAD_STATS or OID_TCP6_OFFLOAD_STATS.
 old-location: netvista\tcp_offload_stats.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 959bc46a-c574-4130-a83d-22a695d0d891
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS, PTCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS
+ms.date: 1/11/2018
+ms.keywords: _TCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ---
 
 # _TCP_OFFLOAD_STATS structure
@@ -129,7 +130,7 @@ If an offload target's TCP chimney capabilities are enabled (see
     received packet that has a corrupted TCP header (but a valid IP header) in one of two ways:
 
 The offload target can indicate the packet through the non-offload interface by calling the 
-      <a href="netvista.ndismindicatereceivenetbufferlists">
+      <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
       NdisMIndicateReceiveNetBufferLists</a> function. In this case, the offload target must not increment
       the 
       <b>InErrors</b> counter. This is the recommended approach.
@@ -156,21 +157,6 @@ All of the counters that supply the values for the TCP_OFFLOAD_STATS structure w
     zero) when incremented beyond their maximum counts.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -184,5 +170,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20TCP_OFFLOAD_STATS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

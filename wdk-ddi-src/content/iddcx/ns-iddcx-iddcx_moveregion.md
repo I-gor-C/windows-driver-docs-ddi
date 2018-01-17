@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDDCX_MOVEREGION
+UID: NS:iddcx.IDDCX_MOVEREGION
 title: IDDCX_MOVEREGION
 author: windows-driver-content
 description: Gives information about the current move region.
@@ -7,7 +7,7 @@ old-location: display\iddcx_moveregion.htm
 old-project: display
 ms.assetid: 28974c00-9225-4458-a198-beb4538e3a45
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_MOVEREGION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_MOVEREGION structure
@@ -79,19 +80,3 @@ typedef struct IDDCX_MOVEREGION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.SetDataParameters
+UID: NF:dbgeng.IDebugBreakpoint2.SetDataParameters
 title: IDebugBreakpoint2::SetDataParameters method
 author: windows-driver-content
 description: The SetDataParameters method sets the parameters for a processor breakpoint.
 old-location: debugger\setdataparameters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 66878652-be29-479f-8e00-a9d8ab1b0db7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::SetDataParameters, SetDataParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetDataParameters method
@@ -70,7 +71,7 @@ The type of access that triggers the breakpoint. For a list of possible value, s
 </dl>The method was successful.
 <dl>
 <dt><b>E_NOINTERFACE</b></dt>
-</dl>The breakpoint is not a processor breakpoint.  For more information about the breakpoint type, see <a href="debugger.gettype">GetType</a>.
+</dl>The breakpoint is not a processor breakpoint.  For more information about the breakpoint type, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a>.
 
  
 
@@ -78,31 +79,4 @@ This method can also return other error values.  For more information, see <a hr
 
 
 ## -remarks
-For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>

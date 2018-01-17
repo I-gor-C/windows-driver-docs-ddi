@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IddCxSwapChainSetDevice
+UID: NF:iddcx.IddCxSwapChainSetDevice
 title: IddCxSwapChainSetDevice function
 author: windows-driver-content
 description: An OS callback function the driver calls within its SetSwapChain routine to setup the swap-chain with a particular DXGI device.
@@ -7,7 +7,7 @@ old-location: display\iddcxswapchainsetdevice.htm
 old-project: display
 ms.assetid: f1e96d8a-910e-4808-b9a3-e8c530158872
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IddCxSwapChainSetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _Must_inspect_result_
+req.typenames: 
 ---
 
 # IddCxSwapChainSetDevice function
@@ -73,49 +74,3 @@ Input arguments to the function
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_Must_inspect_result_
-
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SERCX_ACTIVITY_INIT
+UID: NF:sercx.SERCX_ACTIVITY_INIT
 title: SERCX_ACTIVITY_INIT function
 author: windows-driver-content
 description: The SERCX_ACTIVITY_INIT function initializes a SERCX_ACTIVITY structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: *PSERCX_STATUS, SERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>SERCX_ACTIVITY_INIT</b> function initializes a <a href="serports.sercx_activity">SERCX_ACTIVITY</a> structure.
+The <b>SERCX_ACTIVITY_INIT</b> function initializes a <a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a> structure.
 
 
 
@@ -66,56 +67,10 @@ None.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any IRQL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx_activity">SERCX_ACTIVITY</a>
+<a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a>
 </dt>
 </dl>
  

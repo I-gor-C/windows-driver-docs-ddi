@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_QUERYPROTECTEDSESSIONSTATUS
+UID: NS:d3dkmthk._D3DKMT_QUERYPROTECTEDSESSIONSTATUS
 title: _D3DKMT_QUERYPROTECTEDSESSIONSTATUS
 author: windows-driver-content
 description: Used to query the status of the protected session.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-queryprotectedsessionstatus.htm
 old-project: display
 ms.assetid: c49b1c12-8757-4d15-807d-fdb963746810
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_QUERYPROTECTEDSESSIONSTATUS, D3DKMT_QUERYPROTECTEDSESSIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_QUERYPROTECTEDSESSIONSTATUS
 ---
 
 # _D3DKMT_QUERYPROTECTEDSESSIONSTATUS structure
@@ -65,19 +66,3 @@ The status of the protected session.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

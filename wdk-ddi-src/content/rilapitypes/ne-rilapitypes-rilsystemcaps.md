@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILSYSTEMCAPS
+UID: NE:rilapitypes.RILSYSTEMCAPS
 title: RILSYSTEMCAPS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemcaps_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d8148f94-d3f0-4578-83a3-024e64c9258b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILSYSTEMCAPS, RILSYSTEMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMCAPS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef enum _RILSYSTEMCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

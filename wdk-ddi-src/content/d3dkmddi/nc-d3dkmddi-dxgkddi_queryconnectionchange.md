@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_QUERYCONNECTIONCHANGE
-title: DXGKDDI_QUERYCONNECTIONCHANGE
+UID: NC:d3dkmddi.DXGKDDI_QUERYCONNECTIONCHANGE
+title: DXGKDDI_QUERYCONNECTIONCHANGE function
 author: windows-driver-content
 description: The OS calls this in response to a status change reported through DxgkCbIndicateConnectorChange or when the OutputFlags.ConnectorStatusChanges field indicates that a call to SetTimingsFromVidPn has detected connector status changes.
 old-location: display\dxgkddi_queryconnectionchange.htm
 old-project: display
 ms.assetid: 8C09B692-3439-4ACD-942D-F7A107E2B4DA
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_QUERYCONNECTIONCHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_QUERYCONNECTIONCHANGE callback
+# DXGKDDI_QUERYCONNECTIONCHANGE function
 
 
 
@@ -42,7 +43,7 @@ The OS calls this in response to a status change reported through DxgkCbIndicate
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_QUERYCONNECTIONCHANGE(
@@ -61,7 +62,7 @@ A handle that identifies the adapter.
 
 ### -param pQueryConnectionChange [in]
 
-A pointer to a <a href="display.dxgkarg_queryconnectionchange">DXGKARG_QUERYCONNECTIONCHANGE</a> structure that provides the OS allocated buffer into which the oldest change should be copied by the driver. The oldest change is judged by lowest ConnectionChangeId.
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryconnectionchange.md">DXGKARG_QUERYCONNECTIONCHANGE</a> structure that provides the OS allocated buffer into which the oldest change should be copied by the driver. The oldest change is judged by lowest ConnectionChangeId.
 
 
 ## -returns
@@ -76,20 +77,4 @@ A pointer to a <a href="display.dxgkarg_queryconnectionchange">DXGKARG_QUERYCONN
 
 
 ## -remarks
-This function is always called at PASSIVE level so the supporting code should be made pageable.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This function is always called at PASSIVE level so the supporting code should be made pageable.</p>

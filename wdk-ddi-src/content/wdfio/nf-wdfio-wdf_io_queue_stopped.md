@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfio.WDF_IO_QUEUE_STOPPED
+UID: NF:wdfio.WDF_IO_QUEUE_STOPPED
 title: WDF_IO_QUEUE_STOPPED function
 author: windows-driver-content
 description: The WDF_IO_QUEUE_STOPPED function returns TRUE if an I/O queue's state indicates that the queue is stopped.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_stopped.htm
 old-project: wdf
 ms.assetid: 8257c636-824d-4909-b0cb-76d72ac980fa
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_IO_QUEUE_STOPPED
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: None
 req.dll: 
 req.irql: Any IRQL.
+req.typenames: WDF_IO_QUEUE_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ BOOLEAN WDF_IO_QUEUE_STOPPED(
 
 ### -param State [in]
 
-A <a href="wdf.wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>-typed value that <a href="wdf.wdfioqueuegetstate">WdfIoQueueGetState</a> returns.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value that <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> returns.
 
 
 ## -returns
@@ -68,88 +69,31 @@ A <a href="wdf.wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>-typed value that <a hr
 ## -remarks
 An I/O queue is stopped if it can accept new I/O requests but the framework is not delivering them to the driver. 
 
-Your driver can call <b>WDF_IO_QUEUE_STOPPED</b> after it has called <a href="wdf.wdfioqueuegetstate">WdfIoQueueGetState</a>.
+Your driver can call <b>WDF_IO_QUEUE_STOPPED</b> after it has called <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a>.
 
-For more information about I/O queue states, see <a href="wdf.wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>.
+For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
 
 The following code example is a routine that returns <b>TRUE</b> if a specified I/O queue is stopped.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfio.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>None</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any IRQL.
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_io_queue_drained">WDF_IO_QUEUE_DRAINED</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_drained.md">WDF_IO_QUEUE_DRAINED</a>
 </dt>
 <dt>
-<a href="wdf.wdf_io_queue_idle">WDF_IO_QUEUE_IDLE</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
 </dt>
 <dt>
-<a href="wdf.wdf_io_queue_purged">WDF_IO_QUEUE_PURGED</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>
 </dt>
 <dt>
-<a href="wdf.wdf_io_queue_ready">WDF_IO_QUEUE_READY</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_STOPPED function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_STOPPED function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

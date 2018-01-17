@@ -1,5 +1,5 @@
 ---
-UID: NS.SPBCX.SPB_TRANSFER_DESCRIPTOR
+UID: NS:spbcx.SPB_TRANSFER_DESCRIPTOR
 title: SPB_TRANSFER_DESCRIPTOR
 author: windows-driver-content
 description: The SPB_TRANSFER_DESCRIPTOR structure describes a single transfer in an I/O transfer sequence.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 3D370646-3879-4415-8D80-04D0B23839B0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR
+ms.keywords: SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: *PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -86,31 +87,6 @@ This structure is used by the <a href="https://msdn.microsoft.com/library/window
 
 The <b>DelayInUs</b> member specifies a delay before the start of the transfer. In certain cases, a peripheral driver might need to insert a delay between two consecutive transfers in a sequence. For example, if a write to a target device specifies the type of information that is being requested, this device might need time to process the request before the information can be read. In addition, a peripheral driver might need to specify a delay before the first transfer in a sequence. In this case, the controller must apply the address or assert the device-select  line to the target device for the specified delay interval before the start of the first transfer.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

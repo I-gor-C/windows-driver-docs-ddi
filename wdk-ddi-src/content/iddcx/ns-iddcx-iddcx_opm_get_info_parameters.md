@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDDCX_OPM_GET_INFO_PARAMETERS
+UID: NS:iddcx.IDDCX_OPM_GET_INFO_PARAMETERS
 title: IDDCX_OPM_GET_INFO_PARAMETERS
 author: windows-driver-content
 description: Gives the parameters for the information request.
@@ -7,7 +7,7 @@ old-location: display\iddcx_opm_get_info_parameters.htm
 old-project: display
 ms.assetid: d36a0545-22cf-4980-aa1a-d3b9dd7f9871
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_OPM_GET_INFO_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_OPM_GET_INFO_PARAMETERS structure
@@ -70,19 +71,3 @@ typedef struct IDDCX_OPM_GET_INFO_PARAMETERS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

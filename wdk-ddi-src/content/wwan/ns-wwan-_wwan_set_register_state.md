@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_SET_REGISTER_STATE
+UID: NS:wwan._WWAN_SET_REGISTER_STATE
 title: _WWAN_SET_REGISTER_STATE
 author: windows-driver-content
 description: The WWAN_SET_REGISTER_STATE structure represents the command to set the MB device's registration mode and the network provider it should register with.
 old-location: netvista\wwan_set_register_state.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 617e80c2-2823-4393-81eb-b2cbd2b21be8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_SET_REGISTER_STATE, WWAN_SET_REGISTER_STATE, PWWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE
+ms.date: 1/11/2018
+ms.keywords: _WWAN_SET_REGISTER_STATE, WWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -87,7 +88,7 @@ The registration action that the miniport driver is requested to perform. If thi
 A bitmap that represents the data access technologies that are preferred for a connection. For a
      detailed list of values, see the 
      <b>WwanDataClass</b> member of 
-     <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
+     <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
      
 
 When multiple data-classes are set as preferred, miniport drivers are expected register to the
@@ -99,43 +100,18 @@ When multiple data-classes are set as preferred, miniport drivers are expected r
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_register_action">WWAN_REGISTER_ACTION</a>
+<a href="..\wwan\ne-wwan-_wwan_register_action.md">WWAN_REGISTER_ACTION</a>
 </dt>
 <dt>
-<a href="netvista.ndis_wwan_set_register_state">NDIS_WWAN_SET_REGISTER_STATE</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_register_state.md">NDIS_WWAN_SET_REGISTER_STATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_SET_REGISTER_STATE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SET_REGISTER_STATE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

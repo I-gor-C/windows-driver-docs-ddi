@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._MPIO_TIMERS_COUNTERS
+UID: NS:mpiowmi._MPIO_TIMERS_COUNTERS
 title: _MPIO_TIMERS_COUNTERS
 author: windows-driver-content
 description: The MPIO_TIMERS_COUNTERS structure controls the timer counters that affect all devices whose controlling DSMs do not implement independent timer counter settings.
@@ -7,8 +7,8 @@ old-location: storage\mpio_timers_counters.htm
 old-project: storage
 ms.assetid: edbca8b0-53c1-4538-ac96-52238d75168d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_TIMERS_COUNTERS, PMPIO_TIMERS_COUNTERS, *PMPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS
+ms.date: 1/10/2018
+ms.keywords: _MPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS, *PMPIO_TIMERS_COUNTERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MPIO_TIMERS_COUNTERS, *PMPIO_TIMERS_COUNTERS
 ---
 
 # _MPIO_TIMERS_COUNTERS structure
@@ -83,19 +84,3 @@ An unsigned 32-bitfield that specifies the interval of time (in seconds) after w
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

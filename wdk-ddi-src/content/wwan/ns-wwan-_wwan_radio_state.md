@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_RADIO_STATE
+UID: NS:wwan._WWAN_RADIO_STATE
 title: _WWAN_RADIO_STATE
 author: windows-driver-content
 description: The WWAN_RADIO_STATE structure represents the hardware-based and software-based radio power states of the MB device.
 old-location: netvista\wwan_radio_state.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 15c02819-bae8-48f5-8782-97823b6907bd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_RADIO_STATE, WWAN_RADIO_STATE, PWWAN_RADIO_STATE, *PWWAN_RADIO_STATE
+ms.date: 1/11/2018
+ms.keywords: _WWAN_RADIO_STATE, *PWWAN_RADIO_STATE, WWAN_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_RADIO_STATE, WWAN_RADIO_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -148,43 +149,18 @@ The miniport driver should send all applicable status indications such as
     <b>WwanRadioOn</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_radio">WWAN_RADIO</a>
+<a href="..\wwan\ne-wwan-_wwan_radio.md">WWAN_RADIO</a>
 </dt>
 <dt>
-<a href="netvista.ndis_wwan_radio_state">NDIS_WWAN_RADIO_STATE</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_radio_state.md">NDIS_WWAN_RADIO_STATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_RADIO_STATE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_RADIO_STATE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

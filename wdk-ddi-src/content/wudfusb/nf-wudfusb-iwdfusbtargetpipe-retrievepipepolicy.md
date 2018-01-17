@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfusb.IWDFUsbTargetPipe.RetrievePipePolicy
+UID: NF:wudfusb.IWDFUsbTargetPipe.RetrievePipePolicy
 title: IWDFUsbTargetPipe::RetrievePipePolicy method
 author: windows-driver-content
 description: The RetrievePipePolicy method retrieves a WinUsb pipe policy.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetpipe_retrievepipepolicy.htm
 old-project: wdf
 ms.assetid: 578f7633-307e-4cda-b8fe-ae73a095976f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFUsbTargetPipe, IWDFUsbTargetPipe::RetrievePipePolicy, RetrievePipePolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -78,11 +79,11 @@ A pointer that receives the buffer that contains the WinUsb pipe policy.
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
-<a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">RetrievePipePolicy</a> successfully retrieved the WinUsb pipe policy. 
+<a href="https://msdn.microsoft.com/578f7633-307e-4cda-b8fe-ae73a095976f">RetrievePipePolicy</a> successfully retrieved the WinUsb pipe policy. 
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
-<a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">RetrievePipePolicy</a> encountered an allocation failure.
+<a href="https://msdn.microsoft.com/578f7633-307e-4cda-b8fe-ae73a095976f">RetrievePipePolicy</a> encountered an allocation failure.
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
 </dl>This value corresponds to the error code that the WinUsb API returned.
@@ -93,69 +94,12 @@ A pointer that receives the buffer that contains the WinUsb pipe policy.
 ## -remarks
 Pipe policy controls the behavior of the USB pipe (for example, time-outs, handling short packets, and so on).
 
-For more information about valid policy types that a UMDF driver can pass for the <i>PolicyType</i> parameter and values that the framework returns, see the <a href="buses.winusb_getpipepolicy">WinUsb_GetPipePolicy</a> function.
+For more information about valid policy types that a UMDF driver can pass for the <i>PolicyType</i> parameter and values that the framework returns, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540266">WinUsb_GetPipePolicy</a> function.
 
-For information about the behavior of the pipe policies, see <a href="buses.winusb_functions_for_pipe_policy_modification">WinUSB Functions for Pipe Policy Modification</a>.
+For information about the behavior of the pipe policies, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff728833">WinUSB Functions for Pipe Policy Modification</a>.
 
 The <b>RetrievePipePolicy</b> method generates a UMDF request and synchronously sends the request to the I/O target.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.5
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfusb.h (include Wudfusb.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -163,15 +107,15 @@ DLL
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 </dt>
 <dt>
-<a href="buses.winusb_getpipepolicy">WinUsb_GetPipePolicy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540266">WinUsb_GetPipePolicy</a>
 </dt>
 <dt>
-<a href="wdf.iwdfusbtargetpipe_setpipepolicy">IWDFUsbTargetPipe::SetPipePolicy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560421">IWDFUsbTargetPipe::SetPipePolicy</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::RetrievePipePolicy method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::RetrievePipePolicy method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

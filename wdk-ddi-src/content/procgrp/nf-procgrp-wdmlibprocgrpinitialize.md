@@ -1,5 +1,5 @@
 ---
-UID: NF.procgrp.WdmlibProcgrpInitialize
+UID: NF:procgrp.WdmlibProcgrpInitialize
 title: WdmlibProcgrpInitialize function
 author: windows-driver-content
 description: The WdmlibProcgrpInitialize function initializes the Processor Group (ProcGrp) compatibility library.
@@ -7,7 +7,7 @@ old-location: kernel\wdmlibprocgrpinitialize.htm
 old-project: kernel
 ms.assetid: 760f7bd8-0957-4dd0-b201-64173961cbb2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WdmlibProcgrpInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Procgrp.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: POS_CX_ATTRIBUTES
 req.product: Windows 10 or later.
 ---
 
@@ -65,117 +66,59 @@ None
 This function initializes the ProcGrp library. Call this function before calling any of the other functions in the ProcGrp library. The library implements wrapper functions that have the same names as the following processor-group <b>Ke<i>Xxx</i></b> routines in Windows 7:
 
 
-<a href="kernel.kegetcurrentprocessornumberex">KeGetCurrentProcessorNumberEx</a>
+<a href="..\wdm\nf-wdm-kegetcurrentprocessornumberex.md">KeGetCurrentProcessorNumberEx</a>
 
 
 
-<a href="kernel.kegetprocessorindexfromnumber">KeGetProcessorIndexFromNumber</a>
+<a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
 
 
 
-<a href="kernel.kegetprocessornumberfromindex">KeGetProcessorNumberFromIndex</a>
+<a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
 
 
 
-<a href="kernel.kequeryactivegroupcount">KeQueryActiveGroupCount</a>
+<a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
 
 
 
-<a href="kernel.kequeryactiveprocessorcountex">KeQueryActiveProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
 
 
 
-<a href="kernel.kequerygroupaffinity">KeQueryGroupAffinity</a>
+<a href="..\wdm\nf-wdm-kequerygroupaffinity.md">KeQueryGroupAffinity</a>
 
 
 
-<a href="kernel.kequerymaximumprocessorcount">KeQueryMaximumProcessorCount</a>
+<a href="..\wdm\nf-wdm-kequerymaximumprocessorcount.md">KeQueryMaximumProcessorCount</a>
 
 
 
-<a href="kernel.kequerymaximumprocessorcountex">KeQueryMaximumProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a>
 
 
 
-<a href="kernel.kequerymaximumgroupcount">KeQueryMaximumGroupCount</a>
+<a href="..\wdm\nf-wdm-kequerymaximumgroupcount.md">KeQueryMaximumGroupCount</a>
 
 
 
-<a href="kernel.kesetsystemaffinitythreadex">KeSetSystemAffinityThreadEx</a>
+<a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>
 
 
 
-<a href="kernel.kesetsystemgroupaffinitythread">KeSetSystemGroupAffinityThread</a>
+<a href="..\wdm\nf-wdm-kesetsystemgroupaffinitythread.md">KeSetSystemGroupAffinityThread</a>
 
 
 
-<a href="kernel.kereverttouseraffinitythreadex">KeRevertToUserAffinityThreadEx</a>
+<a href="..\wdm\nf-wdm-kereverttouseraffinitythreadex.md">KeRevertToUserAffinityThreadEx</a>
 
 
 
-<a href="kernel.kereverttousergroupaffinitythread">KeRevertToUserGroupAffinityThread</a>
+<a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a>
 
 
 
-<a href="kernel.kesettargetprocessordpcex">KeSetTargetProcessorDpcEx</a>
+<a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a>
 
 
-For more information about the ProcGrp library, see <a href="kernel.processor_group_compatibility_library">Processor Group Compatibility Library</a>. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Compatible with Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista, Windows Server 2003, Windows XP, and Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Procgrp.h (include Procgrp.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Procgrp.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+For more information about the ProcGrp library, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559909">Processor Group Compatibility Library</a>. </p>

@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILMSGIS637INSTATUS
+UID: NS:rilapitypes.RILMSGIS637INSTATUS
 title: RILMSGIS637INSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgis637instatus_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 70215db8-52c0-48c5-8e59-c60a61fbd07e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMSGIS637INSTATUS, RILMSGIS637INSTATUS, *LPRILMSGIS637INSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGIS637INSTATUS, *LPRILMSGIS637INSTATUS
 req.product: Windows 10 or later.
 ---
 
@@ -102,19 +103,3 @@ typedef struct _RILMSGIS637INSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

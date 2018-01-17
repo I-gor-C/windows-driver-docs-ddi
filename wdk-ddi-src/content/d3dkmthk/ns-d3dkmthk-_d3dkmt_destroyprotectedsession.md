@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_DESTROYPROTECTEDSESSION
+UID: NS:d3dkmthk._D3DKMT_DESTROYPROTECTEDSESSION
 title: _D3DKMT_DESTROYPROTECTEDSESSION
 author: windows-driver-content
 description: Holds information to destroy a protected session.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-destroyprotectedsession.htm
 old-project: display
 ms.assetid: 371e0353-3e4d-4688-95cf-d5f24b2ed7b3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_DESTROYPROTECTEDSESSION, D3DKMT_DESTROYPROTECTEDSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DESTROYPROTECTEDSESSION
 ---
 
 # _D3DKMT_DESTROYPROTECTEDSESSION structure
@@ -59,19 +60,3 @@ The protected session handle.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

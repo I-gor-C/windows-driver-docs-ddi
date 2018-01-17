@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ZwCreateKey
+UID: NF:wdm.ZwCreateKey
 title: ZwCreateKey function
 author: windows-driver-content
 description: The ZwCreateKey routine creates a new registry key or opens an existing one.
@@ -7,7 +7,7 @@ old-location: kernel\zwcreatekey.htm
 old-project: kernel
 ms.assetid: 333f54e8-738e-4d1f-8fd7-93f282d9b9d8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwCreateKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -130,7 +131,7 @@ KEY_NOTIFY
 
 </td>
 <td>
-Ask to receive notification when the name, value, or attributes of the key change. For more information, see <a href="kernel.zwnotifychangekey">ZwNotifyChangeKey</a>.
+Ask to receive notification when the name, value, or attributes of the key change. For more information, see <a href="..\ntifs\nf-ntifs-zwnotifychangekey.md">ZwNotifyChangeKey</a>.
 
 </td>
 </tr>
@@ -190,7 +191,7 @@ STANDARD_RIGHTS_ALL, KEY_QUERY_VALUE, KEY_SET_VALUE, KEY_CREATE_SUB_KEY, KEY_ENU
 
 ### -param ObjectAttributes [in]
 
-Pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. 
+Pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. 
 
 
 ### -param TitleIndex 
@@ -296,7 +297,7 @@ An existing key was opened.
 ## -remarks
 <b>ZwCreateKey</b> supplies a handle that the caller can use to manipulate a registry key. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565537">Using the Registry in a Driver</a>.
 
-Once the handle pointed to by <i>KeyHandle</i> is no longer in use, the driver must call <a href="kernel.zwclose">ZwClose</a> to close it.
+Once the handle pointed to by <i>KeyHandle</i> is no longer in use, the driver must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close it.
 
 There are two alternate ways to specify the name of the file to be created or opened with <b>ZwCreateKey</b>:
 
@@ -308,7 +309,7 @@ If the key specified by <i>ObjectAttributes</i> does not exist, the routine atte
 
 If the specified key already exists, it is opened and its value is not affected in any way.
 
-The security attributes specified by <i>ObjectAttributes</i> when a key is created determine whether the specified <i>DesiredAccess</i> is granted on subsequent calls to <b>ZwCreateKey</b> and <a href="kernel.zwopenkey">ZwOpenKey</a>.
+The security attributes specified by <i>ObjectAttributes</i> when a key is created determine whether the specified <i>DesiredAccess</i> is granted on subsequent calls to <b>ZwCreateKey</b> and <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>.
 
 If the caller is not running in a system thread context, it must ensure that any handles it creates are private handles. Otherwise, the handle can be accessed by the process in whose context the driver is running. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557758">Object Handles</a>.
 
@@ -319,125 +320,48 @@ The <b>NtCreateKey</b> routine in the Windows kernel is not directly accessible 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.wdm_irqlzwpassive">IrqlZwPassive</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.wdm_zwregistrycreate">ZwRegistryCreate</a>, <a href="devtest.wdm_zwregistryopen">ZwRegistryOpen</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_zwregistrycreate">ZwRegistryCreate(storport)</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="kernel.zwdeletekey">ZwDeleteKey</a>
+<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
 </dt>
 <dt>
-<a href="kernel.zwenumeratekey">ZwEnumerateKey</a>
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
 </dt>
 <dt>
-<a href="kernel.zwenumeratevaluekey">ZwEnumerateValueKey</a>
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
 </dt>
 <dt>
-<a href="kernel.zwflushkey">ZwFlushKey</a>
+<a href="..\wdm\nf-wdm-zwflushkey.md">ZwFlushKey</a>
 </dt>
 <dt>
-<a href="kernel.zwnotifychangekey">ZwNotifyChangeKey</a>
+<a href="..\ntifs\nf-ntifs-zwnotifychangekey.md">ZwNotifyChangeKey</a>
 </dt>
 <dt>
-<a href="kernel.zwopenkey">ZwOpenKey</a>
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryvaluekey">ZwQueryValueKey</a>
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 </dt>
 <dt>
-<a href="kernel.zwsetvaluekey">ZwSetValueKey</a>
+<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateKey routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateKey routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.oemrilapitypes.RILGETTOKENPARAMMASK
+UID: NE:oemrilapitypes.RILGETTOKENPARAMMASK
 title: RILGETTOKENPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgettokenparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d791b497-3ef3-42f1-a6e6-980992c97f45
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILGETTOKENPARAMMASK, RILDEVSPECIFICPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntstrsafe.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: RILDEVSPECIFICPARAMMASK
 ---
 
 # RILGETTOKENPARAMMASK enumeration
@@ -69,19 +70,3 @@ typedef enum _RILDEVSPECIFICPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Oemrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

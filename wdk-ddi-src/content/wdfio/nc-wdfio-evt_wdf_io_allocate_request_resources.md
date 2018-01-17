@@ -1,17 +1,17 @@
 ---
-UID: NC.wdfio.EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
-title: EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
+UID: NC:wdfio.EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
+title: EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES function
 author: windows-driver-content
 description: A driver's EvtIoAllocateRequestResources callback function allocates request-specific resources that the driver requires to process the specified request.
 old-location: wdf\evtioallocaterequestresources.htm
 old-project: wdf
 ms.assetid: 6a60c563-582a-4919-bf0f-919deb3055d3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
+ms.date: 1/11/2018
+ms.keywords: EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: wdfio.h
 req.include-header: Wdf.h
 req.target-type: Universal
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL (see Remarks section)
+req.typenames: *PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
 req.product: Windows 10 or later.
 ---
 
-# EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES callback
+# EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES function
 
 
 
@@ -45,7 +46,7 @@ A driver's <i>EvtIoAllocateRequestResources</i> callback function allocates requ
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES EvtIoAllocateRequestResources;
@@ -75,7 +76,7 @@ The <i>EvtIoAllocateRequestResources</i> callback function must return STATUS_SU
 
 
 ## -remarks
-A driver can register an <i>EvtIoAllocateRequestResources</i> callback function when it calls <a href="wdf.wdfioqueueassignforwardprogresspolicy">WdfIoQueueAssignForwardProgressPolicy</a>.
+A driver can register an <i>EvtIoAllocateRequestResources</i> callback function when it calls <a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>.
 
 If your driver registers an <i>EvtIoAllocateRequestResources</i> callback function, the framework calls the function immediately after it creates a request object for an I/O request packet (IRP) that the I/O manager has sent to your driver. 
 
@@ -83,9 +84,9 @@ The callback function can allocate resources that your driver will require to pr
 
 If the callback function successfully allocates resources and returns STATUS_SUCCESS, the framework will eventually deliver the request object to the driver.
 
-If a resource allocation error occurs, such as a low memory situation, the callback function must return an error status value. In this case, the framework follows the driver's forward progress policy, which the driver previously specified with a <a href="wdf.wdf_io_forward_progress_reserved_policy">WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</a> value when it called <a href="wdf.wdfioqueueassignforwardprogresspolicy">WdfIoQueueAssignForwardProgressPolicy</a>.
+If a resource allocation error occurs, such as a low memory situation, the callback function must return an error status value. In this case, the framework follows the driver's forward progress policy, which the driver previously specified with a <a href="..\wdfio\ne-wdfio-_wdf_io_forward_progress_reserved_policy.md">WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</a> value when it called <a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>.
 
-For more information about the <i>EvtIoAllocateRequestResources</i> callback function, see <a href="wdf.guaranteeing_forward_progress_of_i_o_operations">Guaranteeing Forward Progress of I/O Operations</a>.
+For more information about the <i>EvtIoAllocateRequestResources</i> callback function, see <a href="https://msdn.microsoft.com/e230eb3b-54ac-43b1-ac2b-8fa137cee43e">Guaranteeing Forward Progress of I/O Operations</a>.
 
 This callback function can be called at IRQL &lt;= DISPATCH_LEVEL. If the IRQL is PASSIVE_LEVEL, the framework calls the callback function within a <a href="https://msdn.microsoft.com/3781498a-45e9-4f24-8fd2-830eed61298c">critical region</a>.
 
@@ -98,64 +99,18 @@ Then, implement your callback function as follows:
 The <b>EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES</b> function type is defined in the Wdfio.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.9
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfio.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL (see Remarks section)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_allocate_resources_for_reserved_request.md">EvtIoAllocateResourcesForReservedRequest</a>
 </dt>
 <dt>
-<a href="wdf.wdfioqueueassignforwardprogresspolicy">WdfIoQueueAssignForwardProgressPolicy</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

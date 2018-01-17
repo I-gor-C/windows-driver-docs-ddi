@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_DISPLAYMODELIST
+UID: NS:d3dkmthk._D3DKMT_DISPLAYMODELIST
 title: _D3DKMT_DISPLAYMODELIST
 author: windows-driver-content
 description: Describes a list of display modes.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_displaymodelist.htm
 old-project: display
 ms.assetid: 2eb99f42-3639-4327-a880-47e18d1da71d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_DISPLAYMODELIST, D3DKMT_DISPLAYMODELIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DISPLAYMODELIST
 ---
 
 # _D3DKMT_DISPLAYMODELIST structure
@@ -67,43 +68,7 @@ typedef struct _D3DKMT_DISPLAYMODELIST {
 
 ### -field pModeList
 
-[out] An array of <a href="display.d3dkmt_displaymode">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.
+[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_displaymode.md">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

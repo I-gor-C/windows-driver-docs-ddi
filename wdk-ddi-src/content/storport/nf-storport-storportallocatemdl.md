@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortAllocateMdl
+UID: NF:storport.StorPortAllocateMdl
 title: StorPortAllocateMdl function
 author: windows-driver-content
 description: The StorPortAllocateMdl routine allocates an MDL to describe the given non-paged pool memory.
@@ -7,7 +7,7 @@ old-location: storage\storportallocatemdl.htm
 old-project: storage
 ms.assetid: 45450486-3264-4fc8-8051-f7c48997e3dd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortAllocateMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -101,50 +102,4 @@ The pointer to the buffer is <b>NULL</b>.
 
 
 ## -remarks
-A miniport driver calls the <b>StorPortAllocateMdl</b> routine to allocate an MDL to describe a block of memory from the non-paged pool. To free the MDL, the miniport driver calls the <a href="storage.storportfreepool">StorPortFreeMdl</a> routine.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
-</td>
-</tr>
-</table>
+A miniport driver calls the <b>StorPortAllocateMdl</b> routine to allocate an MDL to describe a block of memory from the non-paged pool. To free the MDL, the miniport driver calls the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreeMdl</a> routine.</p>

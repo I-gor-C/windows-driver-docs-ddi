@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILGEOLOCATIONTYPEMASK
+UID: NE:rilapitypes.RILGEOLOCATIONTYPEMASK
 title: RILGEOLOCATIONTYPEMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgeolocationtypemask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ffbd2c6d-537a-44f7-a071-21c073d96264
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILGEOLOCATIONTYPEMASK, RILGEOLOCATIONTYPEMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGEOLOCATIONTYPEMASK
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

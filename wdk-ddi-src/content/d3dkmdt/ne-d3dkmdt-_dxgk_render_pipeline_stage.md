@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._DXGK_RENDER_PIPELINE_STAGE
+UID: NE:d3dkmdt._DXGK_RENDER_PIPELINE_STAGE
 title: _DXGK_RENDER_PIPELINE_STAGE
 author: windows-driver-content
 description: The DXGK_RENDER_PIPELINE_STAGE enumeration describes the render pipeline stage during which the GPU error has occurred.
@@ -7,7 +7,7 @@ old-location: display\dxgk_render_pipeline_stage.htm
 old-project: display
 ms.assetid: A6E6439A-8151-4953-B78A-3141A9EA59F2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_RENDER_PIPELINE_STAGE, DXGK_RENDER_PIPELINE_STAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_RENDER_PIPELINE_STAGE
 ---
 
 # _DXGK_RENDER_PIPELINE_STAGE enumeration
@@ -101,39 +102,3 @@ Indicates that the error occurred at the output merger stage.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

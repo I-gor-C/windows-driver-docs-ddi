@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIODISK._DSM_QUERYUNIQUEID
+UID: NS:mpiodisk._DSM_QueryUniqueId
 title: _DSM_QueryUniqueId
 author: windows-driver-content
 description: The DSM_QueryUniqueId structure is used to query the DSM for a unique identifier.
@@ -7,8 +7,8 @@ old-location: storage\dsm_queryuniqueid.htm
 old-project: storage
 ms.assetid: 023390a1-e878-4f1f-a5c2-1545a6786aaa
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DSM_QueryUniqueId, DSM_QueryUniqueId, PDSM_QueryUniqueId, *PDSM_QueryUniqueId
+ms.date: 1/10/2018
+ms.keywords: _DSM_QueryUniqueId, *PDSM_QueryUniqueId, DSM_QueryUniqueId
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDSM_QueryUniqueId, DSM_QueryUniqueId
 ---
 
 # _DSM_QueryUniqueId structure
@@ -59,19 +60,3 @@ An unsigned 64-bitfield that represents an identifier that must be set by DSMs t
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

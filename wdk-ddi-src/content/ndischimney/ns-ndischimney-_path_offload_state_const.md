@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISCHIMNEY._PATH_OFFLOAD_STATE_CONST
+UID: NS:ndischimney._PATH_OFFLOAD_STATE_CONST
 title: _PATH_OFFLOAD_STATE_CONST
 author: windows-driver-content
 description: The PATH_OFFLOAD_STATE_CONST structure contains the constant variables of a path state object.
 old-location: netvista\path_offload_state_const.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a71f70f6-7731-457b-bd6d-b4a649f76f8b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST, *PPATH_OFFLOAD_STATE_CONST, PPATH_OFFLOAD_STATE_CONST
+ms.date: 1/11/2018
+ms.keywords: _PATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST, *PPATH_OFFLOAD_STATE_CONST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PATH_OFFLOAD_STATE_CONST, *PPATH_OFFLOAD_STATE_CONST
 ---
 
 # _PATH_OFFLOAD_STATE_CONST structure
@@ -60,7 +61,7 @@ typedef struct _PATH_OFFLOAD_STATE_CONST {
 ### -field Header
 
 An 
-     <a href="netvista.offload_state_header">OFFLOAD_STATE_HEADER</a> structure. NDIS
+     <a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a> structure. NDIS
      sets the 
      <b>Length</b> member of 
      <b>Header</b> to the size, in bytes, of the PATH_OFFLOAD_STATE_CONST structure. The 
@@ -91,27 +92,12 @@ The value of each path constant variable does not change during the life of a TC
     path constant variables to the host stack.
 
 When passed to an offload target, a PATH_OFFLOAD_STATE_CONST structure is associated with an 
-    <a href="netvista.ndis_miniport_offload_block_list">
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
-    <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the PATH_OFFLOAD_STATE_CONST structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -119,21 +105,21 @@ Header
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.offload_state_header">OFFLOAD_STATE_HEADER</a>
+<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.path_offload_state_cached">PATH_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_cached.md">PATH_OFFLOAD_STATE_CACHED</a>
 </dt>
 <dt>
-<a href="netvista.path_offload_state_delegated">PATH_OFFLOAD_STATE_DELEGATED</a>
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_delegated.md">PATH_OFFLOAD_STATE_DELEGATED</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PATH_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PATH_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

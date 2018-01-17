@@ -1,6 +1,6 @@
 ---
-UID: NC.spbcx.EVT_SPB_CONTROLLER_WRITE
-title: EVT_SPB_CONTROLLER_WRITE
+UID: NC:spbcx.EVT_SPB_CONTROLLER_WRITE
+title: EVT_SPB_CONTROLLER_WRITE function
 author: windows-driver-content
 description: An SPB controller driver's EvtSpbControllerIoWrite event callback function writes data to the specified target device from the buffers that are supplied with the write request.
 old-location: spb\evtspbcontrolleriowrite.htm
@@ -8,10 +8,10 @@ old-project: SPB
 ms.assetid: D97C3A17-309E-4364-8DFB-9073901D332E
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
+ms.keywords: EVT_SPB_CONTROLLER_WRITE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: spbcx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
+req.typenames: *POS_DEP_DATA, OS_DEP_DATA
 req.product: Windows 10 or later.
 ---
 
-# EVT_SPB_CONTROLLER_WRITE callback
+# EVT_SPB_CONTROLLER_WRITE function
 
 
 
@@ -43,7 +44,7 @@ An SPB controller driver's <i>EvtSpbControllerIoWrite</i> event callback functio
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SPB_CONTROLLER_WRITE EvtSpbControllerIoWrite;
@@ -62,7 +63,7 @@ VOID EvtSpbControllerIoWrite(
 
 ### -param Controller [in]
 
-A WDFDEVICE handle to the <a href="kmdf.creating_a_framework_device_object">framework device object</a> that represents the SPB controller.
+A WDFDEVICE handle to the <a href="https://msdn.microsoft.com/6be47eac-d6e4-43d1-bf2d-d49dcb2273c0">framework device object</a> that represents the SPB controller.
 
 
 ### -param Target [in]
@@ -105,52 +106,6 @@ Then, implement your callback function as follows:
 
 The EVT_SPB_CONTROLLER_WRITE function type is defined in the Spbcx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EVT_SPB_CONTROLLER_WRITE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

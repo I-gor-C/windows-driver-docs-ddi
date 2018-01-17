@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcCompleteIrp
+UID: NF:portcls.PcCompleteIrp
 title: PcCompleteIrp function
 author: windows-driver-content
 description: The PcCompleteIrp function completes an IRP that was previously marked as pending.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcCompleteIrp function
@@ -57,12 +58,12 @@ NTSTATUS PcCompleteIrp(
 
 ### -param DeviceObject [in]
 
-Pointer to the device object for the device. This parameter must point to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device object for the device. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
 
 
 ### -param Irp [in]
 
-Pointer to the <a href="kernel.irp">IRP</a> that is to be completed
+Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> that is to be completed
 
 
 ### -param Status [in]
@@ -77,79 +78,22 @@ Specifies the status of the completed IRP. See the list of NTSTATUS values defin
 ## -remarks
 <b>PcCompleteIrp</b> is used when an IRP handler returns STATUS_PENDING and the IRP must later be completed. When the adapter driver finishes all processing of the IRP, it calls <b>PcCompleteIrp</b> to complete the IRP.
 
-The IRP handler should not call this function. An adapter driver's IRP handler instead calls <a href="audio.pcdispatchirp">PcDispatchIrp</a> to pass the IRP to the PortCls system driver's IRP handler to perform all remaining processing of the IRP.
+The IRP handler should not call this function. An adapter driver's IRP handler instead calls <a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a> to pass the IRP to the PortCls system driver's IRP handler to perform all remaining processing of the IRP.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PortCls system driver implements the PcCompleteIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcdispatchirp">PcDispatchIrp</a>
+<a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a>
 </dt>
 <dt>
-<a href="kernel.iocompleterequest">IoCompleteRequest</a>
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 </dl>
  

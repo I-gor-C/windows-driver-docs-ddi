@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PSETUP_DMA_ENGINE_WITH_BDL
+UID: NC:hdaudio.PSETUP_DMA_ENGINE_WITH_BDL
 title: PSETUP_DMA_ENGINE_WITH_BDL
 author: windows-driver-content
 description: The SetupDmaEngineWithBdl routine sets up a DMA engine to use a caller-allocated DMA buffer.The function pointer type for a SetupDmaEngineWithBdl routine is defined as:
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 2760579b-9922-4709-a049-a73f3abd5043
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
 ---
 
 # PSETUP_DMA_ENGINE_WITH_BDL callback
@@ -67,7 +68,7 @@ NTSTATUS SetupDmaEngineWithBdl(
 
 ### -param context [in]
 
-Specifies the context value from the <b>Context</b> member of the <a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
+Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
 
 ### -param handle [in]
@@ -139,7 +140,7 @@ Before calling <i>SetupDmaEngineWithBdl</i> to configure a DMA engine, the clien
 
 The caller is responsible for programming the codec to manage the data transfers and to recognize the stream identifier.
 
-A WDM audio driver calls this routine at pin-creation time during execution of its <b>NewStream</b> method (for example, see <a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a>).
+A WDM audio driver calls this routine at pin-creation time during execution of its <b>NewStream</b> method (for example, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536735">IMiniportWavePci::NewStream</a>).
 
 Following the call to <i>SetupDmaEngineWithBdl</i>, the DMA engine is in the Reset state. To start the DMA engine, call <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a>.
 
@@ -177,49 +178,13 @@ The FIFO size is the maximum number of bytes that the DMA engine can hold in its
 The caller must allocate the buffer memory and BDL from the nonpaged pool.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_buffer_descriptor">HDAUDIO_BUFFER_DESCRIPTOR</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_buffer_descriptor.md">HDAUDIO_BUFFER_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a>

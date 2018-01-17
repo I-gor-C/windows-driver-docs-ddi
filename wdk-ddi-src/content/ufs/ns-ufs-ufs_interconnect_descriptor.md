@@ -1,5 +1,5 @@
 ---
-UID: NS.UFS.UFS_INTERCONNECT_DESCRIPTOR
+UID: NS:ufs.UFS_INTERCONNECT_DESCRIPTOR
 title: UFS_INTERCONNECT_DESCRIPTOR
 author: windows-driver-content
 description: UFS_INTERCONNECT_DESCRIPTOR contains the MIPI M-PHY® specification version number and the MIPI 6338 UniPro℠ specification version number.
@@ -7,8 +7,8 @@ old-location: storage\ufs_interconnect_descriptor.htm
 old-project: storage
 ms.assetid: 6C6EAA96-40E9-467F-903B-AE44CE5B77CF
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: UFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR, PUFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: UFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -79,39 +80,3 @@ Specifies the MIPI M-PHY® version number in BCD format.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufs.h</dt>
-</dl>
-</td>
-</tr>
-</table>

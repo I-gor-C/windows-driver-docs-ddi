@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILCALLINFO_V5
+UID: NS:rilapitypes.RILCALLINFO_V5
 title: RILCALLINFO_V5
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallinfo_v5_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a2cadee5-40e4-4044-b631-1824099e2fd7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLINFO_V5, RILCALLINFO_V5, RILCALLINFO, *LPRILCALLINFO_V5, *LPRILCALLINFO
+ms.date: 1/11/2018
+ms.keywords: RILCALLINFO_V5, *LPRILCALLINFO_V5, *LPRILCALLINFO, RILCALLINFO_V5, RILCALLINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCALLINFO_V5, *LPRILCALLINFO, RILCALLINFO_V5, RILCALLINFO
 req.product: Windows 10 or later.
 ---
 
@@ -138,19 +139,3 @@ typedef struct _RILCALLINFO_V5 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

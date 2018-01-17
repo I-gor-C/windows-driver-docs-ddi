@@ -1,5 +1,5 @@
 ---
-UID: NS.HPMI._HPMI_QUERY_CAPABILITIES_RESPONSE
+UID: NS:hpmi._HPMI_QUERY_CAPABILITIES_RESPONSE
 title: _HPMI_QUERY_CAPABILITIES_RESPONSE
 author: windows-driver-content
 description: HPMI_QUERY_CAPABILITIES_RESPONSE is a structure used to return information about software defined batteries (SDB).
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 2D7B6278-6D7A-41C4-B21A-D531CD8DCD91
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE, PHPMI_QUERY_CAPABILITIES_RESPONSE
+ms.keywords: _HPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
 # _HPMI_QUERY_CAPABILITIES_RESPONSE structure
@@ -78,38 +79,13 @@ Specifies Software Defined Battery (SDB) features supported by the system.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hpmi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="powermeter.hpmi_h">hpmi.h</a>
+<a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
 </dt>
 <dt>
-<a href="powermeter.hpmi_query_capabilities">HPMI_QUERY_CAPABILITIES</a>
+<a href="..\hpmi\ns-hpmi-_hpmi_query_capabilities.md">HPMI_QUERY_CAPABILITIES</a>
 </dt>
 <dt>
 <a href="..\hpmi\ni-hpmi-ioctl_hpmi_query_capabilities.md">IOCTL_HPMI_QUERY_CAPABILITIES</a>

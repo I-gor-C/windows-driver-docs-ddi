@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_DATA_RATE_FLAGS
+UID: NE:wditypes._WDI_DATA_RATE_FLAGS
 title: _WDI_DATA_RATE_FLAGS
 author: windows-driver-content
 description: The WDI_DATA_RATE_FLAGS enumeration defines the data rate flags.
 old-location: netvista\wdi_data_rate_flags.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 937D1C48-AC5A-4D55-8722-BDC1192613A9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_DATA_RATE_FLAGS, WDI_DATA_RATE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_DATA_RATE_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -72,39 +73,3 @@ The data rate can be used for TX.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

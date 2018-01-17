@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisSystemProcessorCount
+UID: NF:ndis.NdisSystemProcessorCount
 title: NdisSystemProcessorCount function
 author: windows-driver-content
 description: The NdisSystemProcessorCount function determines whether the caller is running on a uniprocessor or multiprocessor computer.
 old-location: netvista\ndissystemprocessorcount.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 17c7b02d-3d32-4056-9baa-2fef74765da3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisSystemProcessorCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisSystemProcessorCount function
@@ -66,11 +67,11 @@ CCHAR NdisSystemProcessorCount(void);
 An NDIS driver can call the 
     <b>NdisSystemProcessorCount</b> function to retrieve the maximum number of processors in the local
     computer. To retrieve the number of currently active processors, the driver must call the 
-    <a href="netvista.ndissystemactiveprocessorcount">
+    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
     NdisSystemActiveProcessorCount</a> function.
 
 <b>NdisSystemProcessorCount</b> is similar to the 
-    <a href="kernel.kequerymaximumprocessorcount">
+    <a href="..\wdm\nf-wdm-kequerymaximumprocessorcount.md">
     KeQueryMaximumProcessorCount</a> function.
 
 The value that 
@@ -79,82 +80,16 @@ The value that
 If your code uses an array of buffers, one buffer for each processor, you must decide whether to have
     a statically sized array based on 
     <b>NdisSystemProcessorCount</b> or a dynamically sized array based on 
-    <a href="netvista.ndissystemactiveprocessorcount">NdisSystemActiveProcessorCount</a>.
+    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">NdisSystemActiveProcessorCount</a>.
 
 To optimize your code based on the number of processors, you must use a resizable structure. In this
     case, use 
-    <a href="netvista.ndissystemactiveprocessorcount">NdisSystemActiveProcessorCount</a>.
+    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">NdisSystemActiveProcessorCount</a>.
 
 If you are not optimizing and if the data structures that result from using the maximum processor
     count are relatively small, a resizable structure is not necessary. In this case, use 
     <b>NdisSystemProcessorCount</b> to determine the size for a static array.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="netvista.ndisgroupmaxprocessorcount">NdisGroupMaxProcessorCount</a>.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -163,13 +98,13 @@ DDI compliance rules
    Drivers</a>
 </dt>
 <dt>
-<a href="kernel.kequerymaximumprocessorcount">KeQueryMaximumProcessorCount</a>
+<a href="..\wdm\nf-wdm-kequerymaximumprocessorcount.md">KeQueryMaximumProcessorCount</a>
 </dt>
 <dt>
-<a href="netvista.ndisgroupmaxprocessorcount">NdisGroupMaxProcessorCount</a>
+<a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">NdisGroupMaxProcessorCount</a>
 </dt>
 <dt>
-<a href="netvista.ndissystemactiveprocessorcount">
+<a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
    NdisSystemActiveProcessorCount</a>
 </dt>
 </dl>
@@ -177,5 +112,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisSystemProcessorCount function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSystemProcessorCount function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

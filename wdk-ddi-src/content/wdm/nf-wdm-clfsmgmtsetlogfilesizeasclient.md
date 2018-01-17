@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsMgmtSetLogFileSizeAsClient
+UID: NF:wdm.ClfsMgmtSetLogFileSizeAsClient
 title: ClfsMgmtSetLogFileSizeAsClient function
 author: windows-driver-content
 description: The ClfsMgmtSetLogFileSizeAsClient routine sets the log file size by adding containers to a client log or deleting containers from a client log.
@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmtsetlogfilesizeasclient_.htm
 old-project: kernel
 ms.assetid: C049A6BE-6E2B-46F2-B7CF-316E4CDB35E4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsMgmtSetLogFileSizeAsClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: Clfs.sys
 req.irql: 
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -61,12 +62,12 @@ NTSTATUS ClfsMgmtSetLogFileSizeAsClient (
 
 ### -param LogFile [in]
 
-A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the Common Log File System (CLFS) log, or a stream within the log, to which containers are being added or deleted. The value of this parameter is obtained through a call to the <a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a> routine.
+A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents the Common Log File System (CLFS) log, or a stream within the log, to which containers are being added or deleted. The value of this parameter is obtained through a call to the <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> routine.
 
 
 ### -param ClientCookie [in, optional]
 
-A pointer to a client-supplied cookie. The value of this parameter should be the <b>CLFS_MGMT_CLIENT</b> structure that is obtained through a call to the <a href="kernel.clfsmgmtregistermanagedclient">ClfsMgmtRegisterManagedClient</a> routine.
+A pointer to a client-supplied cookie. The value of this parameter should be the <b>CLFS_MGMT_CLIENT</b> structure that is obtained through a call to the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine.
 
 
 ### -param NewSizeInContainers [in]
@@ -102,7 +103,7 @@ The <b>ClfsMgmtSetLogFileSizeAsClient</b> routine returns an NTSTATUS value.
 </dl>The value of the <i>NewSizeInContainers</i> parameter is <b>NULL</b>.
 <dl>
 <dt><b>STATUS_LOG_POLICY_INVALID</b></dt>
-</dl>The installed set of policies on the log is invalid. This might be due to an invalid <a href="fs.clfsmgmtpolicyautoshrink">ClfsMgmtPolicyAutoShrink</a> policy or <a href="fs.clfsmgmtpolicymaximumsize">ClfsMgmtPolicyMaximumSize</a> policy.
+</dl>The installed set of policies on the log is invalid. This might be due to an invalid <a href="https://msdn.microsoft.com/d33bfe46-8820-4b68-9359-cb32c7110b66">ClfsMgmtPolicyAutoShrink</a> policy or <a href="https://msdn.microsoft.com/a04657ff-4498-4330-8ca5-03db0b175539">ClfsMgmtPolicyMaximumSize</a> policy.
 <dl>
 <dt><b>STATUS_COULD_NOT_RESIZE_LOG</b></dt>
 </dl>CLFS management could not delete enough containers to reach the value in <i>NewSizeInContainers</i>.
@@ -118,62 +119,15 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Clfs.sys</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfs_management_library_routines">CLFS Management Library Routines</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541830">CLFS Management Library Routines</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtSetLogFileSizeAsClient  routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtSetLogFileSizeAsClient  routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

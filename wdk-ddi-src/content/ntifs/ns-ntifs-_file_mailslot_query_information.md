@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FILE_MAILSLOT_QUERY_INFORMATION
+UID: NS:ntifs._FILE_MAILSLOT_QUERY_INFORMATION
 title: _FILE_MAILSLOT_QUERY_INFORMATION
 author: windows-driver-content
 description: The FILE_MAILSLOT_QUERY_INFORMATION structure contains information about a mailslot.
@@ -7,8 +7,8 @@ old-location: ifsk\file_mailslot_query_information.htm
 old-project: ifsk
 ms.assetid: 8e3b782a-fe8c-42e1-9786-5f89831b4c10
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_MAILSLOT_QUERY_INFORMATION, *PFILE_MAILSLOT_QUERY_INFORMATION, PFILE_MAILSLOT_QUERY_INFORMATION, FILE_MAILSLOT_QUERY_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _FILE_MAILSLOT_QUERY_INFORMATION, *PFILE_MAILSLOT_QUERY_INFORMATION, FILE_MAILSLOT_QUERY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFILE_MAILSLOT_QUERY_INFORMATION, FILE_MAILSLOT_QUERY_INFORMATION
 ---
 
 # _FILE_MAILSLOT_QUERY_INFORMATION structure
@@ -93,30 +94,4 @@ The time, in milliseconds, that a read operation can wait for a message to be wr
 
 
 ## -remarks
-For more information, see <a href="base.mailslots">Mailslots</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include FltKernel.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information, see <a href="https://msdn.microsoft.com/e23894ca-edc7-49e6-bcc4-c82f357ecedf">Mailslots</a>.</p>

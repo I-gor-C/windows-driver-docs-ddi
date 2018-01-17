@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoStop
+UID: NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoStop
 title: IPnpCallbackSelfManagedIo::OnSelfManagedIoStop method
 author: windows-driver-content
 description: The OnSelfManagedIoStop method is not used in the current version of the UMDF.
@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagediostop.htm
 old-project: wdf
 ms.assetid: 490c95f5-ea93-4521-8fa5-4ca1f83ff19d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoStop, OnSelfManagedIoStop
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -64,19 +65,3 @@ This method is not currently used.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

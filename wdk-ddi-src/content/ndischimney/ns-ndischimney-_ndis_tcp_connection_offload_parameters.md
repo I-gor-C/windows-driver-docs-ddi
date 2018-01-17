@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISCHIMNEY._NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+UID: NS:ndischimney._NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
 title: _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
 author: windows-driver-content
 description: The NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure provides TCP chimney offload information in the OID_TCP_CONNECTION_OFFLOAD_PARAMETERS OIDs:
 old-location: netvista\ndis_tcp_connection_offload_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f8d3f971-2abc-425d-9929-518f093262a7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+ms.date: 1/11/2018
+ms.keywords: _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
 ---
 
 # _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure
@@ -73,7 +74,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to 
@@ -87,7 +88,7 @@ The
 ### -field Encapsulation
 
 An 
-     <a href="netvista.ndis_offload_encapsulation">
+     <a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">
      NDIS_OFFLOAD_ENCAPSULATION</a> structure that contains encapsulation settings for TCP chimney
      offload.
 
@@ -131,7 +132,7 @@ A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of
 A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
      offload target should retransmit a segment before the target indicates to the TCP/IP driver stack that
      the reachability of a neighbor is in doubt. For more information about this indication, see 
-     <a href="netvista.ndismoffloadeventindicate">NdisMOffloadEventIndicate</a>. An
+     <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>. An
      offload target should support this member.
 
 
@@ -194,34 +195,19 @@ The
     documentation</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.full_tcp_offload">Full TCP Offload</a>
+<a href="https://msdn.microsoft.com/a940617a-b848-430d-8da1-acd946feba1b">Full TCP Offload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_offload_encapsulation">NDIS_OFFLOAD_ENCAPSULATION</a>
+<a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">NDIS_OFFLOAD_ENCAPSULATION</a>
 </dt>
 <dt>
-<a href="netvista.ndismoffloadeventindicate">NdisMOffloadEventIndicate</a>
+<a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
@@ -235,5 +221,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltAttachVolumeAtAltitude
+UID: NF:fltkernel.FltAttachVolumeAtAltitude
 title: FltAttachVolumeAtAltitude function
 author: windows-driver-content
 description: FltAttachVolumeAtAltitude is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file.
@@ -7,7 +7,7 @@ old-location: ifsk\fltattachvolumeataltitude.htm
 old-project: ifsk
 ms.assetid: d6e6f66a-77ed-4c1c-92d5-97a806cfbd68
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltAttachVolumeAtAltitude
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltAttachVolumeAtAltitude function
@@ -69,12 +70,12 @@ Opaque volume pointer for the volume that the minifilter driver instance is to b
 
 ### -param Altitude [in]
 
-Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
 
 
 ### -param InstanceName [in, optional]
 
-Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters. 
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters. 
 
 
 ### -param RetInstance [out, optional]
@@ -89,7 +90,7 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 </dl>The specified <i>Filter</i> or <i>Volume</i> is being torn down. This is an error code. 
 <dl>
 <dt><b>STATUS_FLT_FILTER_NOT_READY</b></dt>
-</dl>The minifilter driver has not started filtering. For more information, see <a href="ifsk.fltstartfiltering">FltStartFiltering</a>. This is an error code. 
+</dl>The minifilter driver has not started filtering. For more information, see <a href="..\fltkernel\nf-fltkernel-fltstartfiltering.md">FltStartFiltering</a>. This is an error code. 
 <dl>
 <dt><b>STATUS_FLT_INSTANCE_ALTITUDE_COLLISION</b></dt>
 </dl>An instance already exists at this altitude on the volume specified. This is an error code. 
@@ -109,7 +110,7 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 ## -remarks
 A minifilter driver should only use <b>FltAttachVolumeAtAltitude</b> for debugging. It should not call this routine in a retail version of the minifilter driver. 
 
-<b>FltAttachVolumeAtAltitude</b> is the kernel equivalent of the Win32 <a href="ifsk.filterattachataltitude">FilterAttachAtAltitude</a> function. 
+<b>FltAttachVolumeAtAltitude</b> is the kernel equivalent of the Win32 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a> function. 
 
 The term "altitude" refers to the position that an instance occupies (or should occupy) in the minifilter driver instance stack for a volume. The higher the altitude, the farther the instance is from the base file system in the stack. Only one instance can be attached at a given altitude on a given volume. 
 
@@ -121,90 +122,43 @@ The instance name specified in the <i>InstanceName</i> parameter is required to 
 
 <b>FltAttachVolumeAtAltitude</b> returns an opaque instance pointer for the new instance in <i>*RetInstance</i>. This pointer value uniquely identifies the minifilter driver instance and remains constant as long as the instance is attached to the volume. 
 
-<b>FltAttachVolumeAtAltitude</b> adds a rundown reference to the opaque instance pointer returned in <i>*RetInstance</i>. When this pointer is no longer needed, the caller must release it by calling <a href="ifsk.fltobjectdereference">FltObjectDereference</a>. Thus every successful call to <b>FltAttachVolumeAtAltitude</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. 
+<b>FltAttachVolumeAtAltitude</b> adds a rundown reference to the opaque instance pointer returned in <i>*RetInstance</i>. When this pointer is no longer needed, the caller must release it by calling <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>. Thus every successful call to <b>FltAttachVolumeAtAltitude</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. 
 
-To compare the altitudes of two minifilter driver instances attached to the same volume, call <a href="ifsk.fltcompareinstancealtitudes">FltCompareInstanceAltitudes</a>. 
+To compare the altitudes of two minifilter driver instances attached to the same volume, call <a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>. 
 
-To detach a minifilter driver instance from a volume, call <a href="ifsk.fltdetachvolume">FltDetachVolume</a>. 
+To detach a minifilter driver instance from a volume, call <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.filterattachataltitude">FilterAttachAtAltitude</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a>
 </dt>
 <dt>
-<a href="ifsk.fltattachvolume">FltAttachVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
 </dt>
 <dt>
-<a href="ifsk.fltcompareinstancealtitudes">FltCompareInstanceAltitudes</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
 </dt>
 <dt>
-<a href="ifsk.fltdetachvolume">FltDetachVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetvolumeinstancefromname">FltGetVolumeInstanceFromName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
 </dt>
 <dt>
-<a href="ifsk.fltobjectdereference">FltObjectDereference</a>
+<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
 </dt>
 <dt>
-<a href="ifsk.fltstartfiltering">FltStartFiltering</a>
+<a href="..\fltkernel\nf-fltkernel-fltstartfiltering.md">FltStartFiltering</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolumeAtAltitude routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolumeAtAltitude routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

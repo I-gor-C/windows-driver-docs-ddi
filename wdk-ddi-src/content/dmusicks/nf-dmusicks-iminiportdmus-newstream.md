@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IMiniportDMus.NewStream
+UID: NF:dmusicks.IMiniportDMus.NewStream
 title: IMiniportDMus::NewStream method
 author: windows-driver-content
 description: The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IMiniportDMus::NewStream method
@@ -64,7 +65,7 @@ NTSTATUS NewStream(
 
 ### -param ppMXF [out]
 
-Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="..\dmusicks\nn-dmusicks-imxf~r1.md">IMXF</a> interface.
+Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="..\dmusicks\nn-dmusicks-imxf.md">IMXF</a> interface.
 
 
 ### -param pOuterUnknown [in, optional]
@@ -74,12 +75,12 @@ Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate th
 
 ### -param PoolType [in]
 
-Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="kernel.pool_type">POOL_TYPE</a> enumeration values.
+Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> enumeration values.
 
 
 ### -param uPinId [in]
 
-Specifies the pin ID. This parameter identifies the pin that is to be opened. If the DMus miniport driver's <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid pin IDs are in the range 0 to <i>n</i>-1.
+Specifies the pin ID. This parameter identifies the pin that is to be opened. If the DMus miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid pin IDs are in the range 0 to <i>n</i>-1.
 
 
 ### -param StreamType [in]
@@ -110,7 +111,7 @@ For more information, see the following Remarks section.
 
 ### -param pDataFormat  [in]
 
-Pointer to a kernel streaming <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure specifying the data format to use for this instance
+Pointer to a kernel streaming <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> structure specifying the data format to use for this instance
 
 
 ### -param ppServiceGroup  [out]
@@ -120,7 +121,7 @@ Output pointer for service group. This parameter points to a caller-allocated po
 
 ### -param pAllocatorMXF [in]
 
-Pointer to an <a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a> object. This is the port driver's memory allocator, which is needed to recycle <a href="audio.dmus_kernel_event">DMUS_KERNEL_EVENT</a> structures.
+Pointer to an <a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a> object. This is the port driver's memory allocator, which is needed to recycle <a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a> structures.
 
 
 ### -param pMasterClock [in]
@@ -140,7 +141,7 @@ Output pointer for the schedule-prefetch time. This parameter is a pointer to a 
 ## -remarks
 Note that the port driver creates the <b>IAllocatorMXF</b> object that the <code>NewStream</code> method inputs through the <i>pAllocatorMXF</i> parameter, but the miniport driver creates the <b>IMXF</b> object that the method outputs through the <i>ppMXF</i> parameter. For more information about <b>IMXF</b> and <b>IAllocatorMXF</b>, see <a href="https://msdn.microsoft.com/ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13">MIDI Transport</a>.
 
-The meaning of the <code>IMiniportDMus::NewStream</code> method's <i>StreamType</i> parameter is similar to that of the <a href="audio.iminiportmidi_newstream">IMiniportMidi::NewStream</a> method's <i>Capture</i> parameter:
+The meaning of the <code>IMiniportDMus::NewStream</code> method's <i>StreamType</i> parameter is similar to that of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a> method's <i>Capture</i> parameter:
 
 When creating a stream on a MIDI pin, the <b>IMiniportMidi::NewStream</b> method's <i>Capture</i> parameter indicates whether the pin is to serve as the sink for a MIDI render stream (<i>Capture</i> = <b>FALSE</b>) or as the source of a MIDI capture stream (<i>Capture</i> = <b>TRUE</b>).
 
@@ -151,73 +152,37 @@ However, a pin on a DirectMusic filter can support a third option that is not av
 The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF</i>, and <i>pMasterClock</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
 </dt>
 <dt>
-<a href="..\dmusicks\nn-dmusicks-imxf~r1.md">IMXF</a>
+<a href="..\dmusicks\nn-dmusicks-imxf.md">IMXF</a>
 </dt>
 <dt>
-<a href="kernel.pool_type">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 </dt>
 <dt>
-<a href="audio.iminiport_getdescription">IMiniport::GetDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 </dt>
 <dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a>
+<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
 </dt>
 <dt>
-<a href="audio.dmus_kernel_event">DMUS_KERNEL_EVENT</a>
+<a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
 </dt>
 <dt>
 <a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
 </dt>
 <dt>
-<a href="audio.iminiportmidi_newstream">IMiniportMidi::NewStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a>
 </dt>
 <dt>
 <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a>

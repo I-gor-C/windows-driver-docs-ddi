@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS
+UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS
 title: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS
 author: windows-driver-content
 description: Defines capabilities related to input formats for a Microsoft Direct3D 11 video processor.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_format_caps.htm
 old-project: display
 ms.assetid: b0f36d4c-cf95-4d85-a2c8-267df618e0aa
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS enumeration
@@ -81,40 +82,4 @@ These flags define video processing capabilities that usually are not needed, an
 
 The first three flags relate to RGB support for functions that are normally applied to YCbCr video: deinterlacing, color adjustment, and luma keying. A device that supports these functions for YCbCr is not required to support them for RGB input. Supporting RGB input for these functions is an additional capability, reflected by these constants. Note that the driver might convert the input to another color space, perform the indicated function, and then convert the result back to RGB
 
-Similarly, a device that supports deinterlacing is not required to support deinterlacing of palettized formats. This capability is indicated by the <b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED</b>  enumeration value.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Similarly, a device that supports deinterlacing is not required to support deinterlacing of palettized formats. This capability is indicated by the <b>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED</b>  enumeration value.</p>

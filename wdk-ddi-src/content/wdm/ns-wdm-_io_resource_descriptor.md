@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._IO_RESOURCE_DESCRIPTOR
+UID: NS:wdm._IO_RESOURCE_DESCRIPTOR
 title: _IO_RESOURCE_DESCRIPTOR
 author: windows-driver-content
 description: The IO_RESOURCE_DESCRIPTOR structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of IO_RESOURCE_DESCRIPTOR structures is contained within each IO_RESOURCE_LIST structure.
@@ -7,8 +7,8 @@ old-location: kernel\io_resource_descriptor.htm
 old-project: kernel
 ms.assetid: 03e3a656-c691-4aff-bcc8-4e0bc8390fd7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IO_RESOURCE_DESCRIPTOR, PIO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR
+ms.date: 1/4/2018
+ms.keywords: _IO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>IO_RESOURCE_DESCRIPTOR</b> structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of <b>IO_RESOURCE_DESCRIPTOR</b> structures is contained within each <a href="kernel.io_resource_list">IO_RESOURCE_LIST</a> structure.
+The <b>IO_RESOURCE_DESCRIPTOR</b> structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of <b>IO_RESOURCE_DESCRIPTOR</b> structures is contained within each <a href="..\wdm\ns-wdm-_io_resource_list.md">IO_RESOURCE_LIST</a> structure.
 
 
 
@@ -196,12 +197,12 @@ Not used.
 
 ### -field Type
 
-Identifies the resource type. For a list of valid values, see the <b>Type</b> member of the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure. 
+Identifies the resource type. For a list of valid values, see the <b>Type</b> member of the <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure. 
 
 
 ### -field ShareDisposition
 
-Indicates whether the described resource can be shared. For a list of valid values, see the <b>ShareDisposition</b> member of the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure. 
+Indicates whether the described resource can be shared. For a list of valid values, see the <b>ShareDisposition</b> member of the <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure. 
 
 
 ### -field Spare1
@@ -279,7 +280,7 @@ The interrupt is capable of waking the operating system from a low-power idle st
 </table>
  
 
-For a list of valid flags for other resource types, see the description of the <b>Flags</b> member of the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
+For a list of valid flags for other resource types, see the description of the <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
 
 
 ### -field Spare2
@@ -292,7 +293,7 @@ For a list of valid flags for other resource types, see the description of the <
 
 Specifies a range of I/O port addresses, using the following members.
 
-Drivers for Windows Vista and later versions of the Windows operating system must use <a href="kernel.rtliodecodememioresource">RtlIoDecodeMemIoResource</a> and <a href="kernel.rtlioencodememioresource">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Length
@@ -321,7 +322,7 @@ The maximum bus-relative I/O port address that can be assigned to the device.
 
 Specifies a range of memory addresses, using the following members:
 
-Drivers for Windows Vista and later versions of the Windows operating system must use <a href="kernel.rtliodecodememioresource">RtlIoDecodeMemIoResource</a> and <a href="kernel.rtlioencodememioresource">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Length
@@ -368,7 +369,7 @@ The system supplies the following additional members on Windows Vista and later 
 
 ### -field AffinityPolicy
 
-Specifies an <a href="kernel.irq_device_policy">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.
+Specifies an <a href="..\wdm\ne-wdm-_irq_device_policy.md">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.
 
 
 ### -field Group
@@ -378,12 +379,12 @@ Specifies a processor group number. <b>Group</b> is a valid (but optional) membe
 
 ### -field AffinityPolicy
 
-Specifies an <a href="kernel.irq_device_policy">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.
+Specifies an <a href="..\wdm\ne-wdm-_irq_device_policy.md">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.
 
 
 ### -field PriorityPolicy
 
-Specifies an <a href="kernel.irq_priority">IRQ_PRIORITY</a> value that indicates the priority with which the system should dispatch the device's interrupts.
+Specifies an <a href="..\wdm\ne-wdm-_irq_priority.md">IRQ_PRIORITY</a> value that indicates the priority with which the system should dispatch the device's interrupts.
 
 
 ### -field TargetedProcessors
@@ -412,7 +413,7 @@ The maximum bus-relative DMA channel that can be assigned to the device.
 
 ### -field DmaV3
 
-Specifies the DMA settings for a driver that uses version 3 of the <a href="kernel.dma_operations">DMA_OPERATIONS</a> structure.
+Specifies the DMA settings for a driver that uses version 3 of the <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a> structure.
 
 The <b>u.DmaV3</b> member is available starting with Windows 8.
 
@@ -485,7 +486,7 @@ Reserved for system use.
 
 Specifies a range of memory addresses, using the following members.
 
-The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="kernel.rtliodecodememioresource">RtlIoDecodeMemIoResource</a> and <a href="kernel.rtlioencodememioresource">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Length40
@@ -514,7 +515,7 @@ The maximum bus-relative memory address that can be assigned to the device.
 
 Specifies a range of memory addresses, using the following members.
 
-The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="kernel.rtliodecodememioresource">RtlIoDecodeMemIoResource</a> and <a href="kernel.rtlioencodememioresource">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Length48
@@ -543,7 +544,7 @@ The maximum bus-relative memory address that can be assigned to the device.
 
 Specifies a range of memory addresses, using the following members.
 
-The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for Windows Vista and later versions of the Windows operating system must use <a href="kernel.rtliodecodememioresource">RtlIoDecodeMemIoResource</a> and <a href="kernel.rtlioencodememioresource">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Length64
@@ -702,39 +703,24 @@ The upper 32 bits of the 64-bit connection ID.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="kernel.io_resource_requirements_list">IO_RESOURCE_REQUIREMENTS_LIST</a>
+<a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
 </dt>
 <dt>
-<a href="kernel.io_resource_list">IO_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm-_io_resource_list.md">IO_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="kernel.ioconnectinterrupt">IoConnectInterrupt</a>
+<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_DESCRIPTOR structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_DESCRIPTOR structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

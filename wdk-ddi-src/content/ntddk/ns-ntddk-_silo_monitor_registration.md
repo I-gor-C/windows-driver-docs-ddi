@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._SILO_MONITOR_REGISTRATION
+UID: NS:ntddk._SILO_MONITOR_REGISTRATION
 title: _SILO_MONITOR_REGISTRATION
 author: windows-driver-content
 description: This structure specifies a server silo monitor that can receive notifications about server silo events.
@@ -7,8 +7,8 @@ old-location: kernel\silo_monitor_registration.htm
 old-project: kernel
 ms.assetid: F99F6346-3FEE-4889-A058-C7540A4CBFC8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION, PSILO_MONITOR_REGISTRATION
+ms.date: 1/4/2018
+ms.keywords: _SILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION
 ---
 
 # _SILO_MONITOR_REGISTRATION structure
@@ -110,39 +111,3 @@ A pointer to a callback that is invoked whenever a server silo is terminated (ab
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

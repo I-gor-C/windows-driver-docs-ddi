@@ -1,5 +1,5 @@
 ---
-UID: NF.poscx.PosCxClaimDevice
+UID: NF:poscx.PosCxClaimDevice
 title: PosCxClaimDevice function
 author: windows-driver-content
 description: PosCxClaimDevice is called to claim a device for exclusive use. The caller should call PosCxReleaseDevice when the device is no longer needed.
@@ -7,7 +7,7 @@ old-location: pos\poscxclaimdevice.htm
 old-project: pos
 ms.assetid: 16EB583C-FB61-4811-A691-3FBD159F8FD0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: PosCxClaimDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 PosCxClaimDevice is called to claim a device for exclusive use. 
 
-The caller should call <a href="pos.poscxreleasedevice">PosCxReleaseDevice</a> when the device is no longer needed. 
+The caller should call <a href="..\poscx\nf-poscx-poscxreleasedevice.md">PosCxReleaseDevice</a> when the device is no longer needed. 
 
       
 
@@ -78,29 +79,3 @@ Possible return values are:
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

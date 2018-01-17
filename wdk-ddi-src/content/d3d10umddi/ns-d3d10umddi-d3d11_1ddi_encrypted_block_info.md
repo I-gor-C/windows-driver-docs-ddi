@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_ENCRYPTED_BLOCK_INFO
+UID: NS:d3d10umddi.D3D11_1DDI_ENCRYPTED_BLOCK_INFO
 title: D3D11_1DDI_ENCRYPTED_BLOCK_INFO
 author: windows-driver-content
 description: Specifies which bytes in a video surface are encrypted.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_encrypted_block_info.htm
 old-project: display
 ms.assetid: 36d7fab0-e343-4236-9d13-93cc0e41721e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_ENCRYPTED_BLOCK_INFO, D3D11_1DDI_ENCRYPTED_BLOCK_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_ENCRYPTED_BLOCK_INFO
 ---
 
 # D3D11_1DDI_ENCRYPTED_BLOCK_INFO structure
@@ -75,40 +76,4 @@ The skip and encrypt pattern is then repeated until the buffer ends. For more in
 ## -remarks
 Because the buffer's encrypted portion is specified in bytes, an application must ensure that the encrypted blocks match the GPU's crypto-block alignment.
 
-The following examples show how the runtime can partition a buffer's encryption.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The following examples show how the runtime can partition a buffer's encryption.</p>

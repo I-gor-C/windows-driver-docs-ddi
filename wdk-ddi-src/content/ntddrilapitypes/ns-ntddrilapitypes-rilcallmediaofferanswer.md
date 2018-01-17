@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLMEDIAOFFERANSWER
+UID: NS:ntddrilapitypes.RILCALLMEDIAOFFERANSWER
 title: RILCALLMEDIAOFFERANSWER
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediaofferanswer.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6d8ad287-a4bf-4db8-9fff-a4cb1df42dda
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER, LPRILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER
+ms.date: 1/11/2018
+ms.keywords: RILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER
 ---
 
 # RILCALLMEDIAOFFERANSWER structure
@@ -81,19 +82,3 @@ typedef struct _RILCALLMEDIAOFFERANSWER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

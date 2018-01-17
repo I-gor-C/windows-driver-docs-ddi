@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IddCxSwapChainFinishedProcessingFrame
+UID: NF:iddcx.IddCxSwapChainFinishedProcessingFrame
 title: IddCxSwapChainFinishedProcessingFrame function
 author: windows-driver-content
 description: An OS callback function the driver calls report all GPU command for processing this frame have been queue.
@@ -7,7 +7,7 @@ old-location: display\iddcxswapchainfinishedprocessingframe.htm
 old-project: display
 ms.assetid: 46c4a592-b3d4-479d-b5db-06202b5be290
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IddCxSwapChainFinishedProcessingFrame
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _Must_inspect_result_
+req.typenames: 
 ---
 
 # IddCxSwapChainFinishedProcessingFrame function
@@ -67,50 +68,4 @@ The swap-chain object whose current frame is being queried.
 
 
 ## -remarks
-If the driver copies the buffer to a staging surface so it can lock and copy the pixel data to the CPU, then the driver should call this callback once the copy from surface to staging surface has been submitted. If the driver does not call this callback the desktop will not update. It is invalid to call <a href="display.iddcxswapchainreleaseandacquirebuffer">IddCxSwapChainReleaseAndAcquireBuffer</a> before calling <b>IddCxSwapChainFinishedProcessingFrame</b>
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-_Must_inspect_result_
-
-</td>
-</tr>
-</table>
+If the driver copies the buffer to a staging surface so it can lock and copy the pixel data to the CPU, then the driver should call this callback once the copy from surface to staging surface has been submitted. If the driver does not call this callback the desktop will not update. It is invalid to call <a href="..\iddcx\nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md">IddCxSwapChainReleaseAndAcquireBuffer</a> before calling <b>IddCxSwapChainFinishedProcessingFrame</b></p>

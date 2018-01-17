@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAAPI.HBA_FCPBINDINGENTRY2
+UID: NS:hbaapi.HBA_FCPBindingEntry2
 title: HBA_FCPBindingEntry2
 author: windows-driver-content
 description: The HBA_FCPBindingEntry2 structure defines a binding between the information that uniquely identifies a logical unit for the operating system and the fibre channel protocol (FCP) identifier for the logical unit.
@@ -7,8 +7,8 @@ old-location: storage\hba_fcpbindingentry2.htm
 old-project: storage
 ms.assetid: e2e7353d-2c83-4704-bec4-9485ab3c7706
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: HBA_FCPBindingEntry2, HBA_FCPBINDINGENTRY2, PHBA_FCPBINDINGENTRY2, *PHBA_FCPBINDINGENTRY2
+ms.date: 1/10/2018
+ms.keywords: HBA_FCPBindingEntry2, HBA_FCPBINDINGENTRY2, *PHBA_FCPBINDINGENTRY2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HBA_FCPBINDINGENTRY2, *PHBA_FCPBINDINGENTRY2
 ---
 
 # HBA_FCPBindingEntry2 structure
@@ -119,7 +120,7 @@ Indicates that the system should automatically generate target mappings from log
 </table>
  
 
-For a comparable set of values that define how an HBA specifies targets and logical units in the persistent bindings that it maintains, see the WMI property qualifier <a href="storage.hba_bind_type">HBA_BIND_TYPE</a>. 
+For a comparable set of values that define how an HBA specifies targets and logical units in the persistent bindings that it maintains, see the WMI property qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a>. 
 
 For a more detailed description of the values that this member can have, see the T11 committee's <i>Fibre Channel HBA API</i> specification. 
 
@@ -141,32 +142,17 @@ Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_luid.md">HBA_LUID<
 
 ### -field Status
 
-Contains, on return, a status value that indicates the condition of the HBA. The status values that can be returned in this member correspond to the values associated with the <a href="storage.hba_status">HBA_STATUS</a> WMI property qualifier. 
+Contains, on return, a status value that indicates the condition of the HBA. The status values that can be returned in this member correspond to the values associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> WMI property qualifier. 
 
 
 ## -remarks
-This structure is very similar to the <a href="storage.hbafcpbindingentry2">HBAFCPBindingEntry2</a> structure. The only difference is that HBA_FCPBindingEntry2 returns HBA status. 
+This structure is very similar to the <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> structure. The only difference is that HBA_FCPBindingEntry2 returns HBA status. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hba_bind_type">HBA_BIND_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a>
 </dt>
 <dt>
 <a href="..\hbaapi\ns-hbaapi-hba_fcpbindingentry.md">HBA_FCPBindingEntry</a>
@@ -181,15 +167,15 @@ Header
 <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a>
 </dt>
 <dt>
-<a href="storage.hbafcpbindingentry">HBAFCPBindingEntry</a>
+<a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>
 </dt>
 <dt>
-<a href="storage.hbafcpbindingentry2">HBAFCPBindingEntry2</a>
+<a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry2.md">HBAFCPBindingEntry2</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_FCPBindingEntry2 structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_FCPBindingEntry2 structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

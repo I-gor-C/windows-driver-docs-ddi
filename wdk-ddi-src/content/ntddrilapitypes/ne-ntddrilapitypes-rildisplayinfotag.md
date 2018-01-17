@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILDISPLAYINFOTAG
+UID: NE:ntddrilapitypes.RILDISPLAYINFOTAG
 title: RILDISPLAYINFOTAG
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildisplayinfotag.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ba47d9e3-4e95-479b-9e6a-10eb723e7d59
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILDISPLAYINFOTAG, RILDISPLAYINFOTAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDISPLAYINFOTAG
 ---
 
 # RILDISPLAYINFOTAG enumeration
@@ -165,19 +166,3 @@ typedef enum _RILDISPLAYINFOTAG {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

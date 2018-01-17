@@ -1,14 +1,14 @@
 ---
-UID: NS.WDITYPES._WDI_CHANNEL_MAPPING_ENTRY
+UID: NS:wditypes._WDI_CHANNEL_MAPPING_ENTRY
 title: _WDI_CHANNEL_MAPPING_ENTRY
 author: windows-driver-content
 description: The WDI_CHANNEL_MAPPING_ENTRY structure defines a channel mapping entry.
 old-location: netvista\wdi_channel_mapping_entry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: F05DAD5F-C0A4-46E0-8069-7CEF5B6C5707
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_CHANNEL_MAPPING_ENTRY, *PWDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY
+ms.date: 1/11/2018
+ms.keywords: _WDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY, *PWDI_CHANNEL_MAPPING_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_CHANNEL_MAPPING_ENTRY, *PWDI_CHANNEL_MAPPING_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -67,39 +68,3 @@ Specifies the center frequency for the channel in MHz.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

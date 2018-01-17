@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CIP_VALIDATE_INFO
+UID: NS:61883._CIP_VALIDATE_INFO
 title: _CIP_VALIDATE_INFO
 author: windows-driver-content
 description: The CIP_VALIDATE_INFO structure contains information about the frame.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 98993973-91a4-456a-9343-c744408055ed
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CIP_VALIDATE_INFO, CIP_VALIDATE_INFO, PCIP_VALIDATE_INFO, *PCIP_VALIDATE_INFO
+ms.keywords: _CIP_VALIDATE_INFO, CIP_VALIDATE_INFO, *PCIP_VALIDATE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CIP_VALIDATE_INFO, *PCIP_VALIDATE_INFO
 ---
 
 # _CIP_VALIDATE_INFO structure
@@ -79,21 +80,6 @@ The packet offset for the current source packet.
 ## -remarks
 The IEC-61883 protocol driver allocates and initializes this structure from the input CIP_FRAME structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

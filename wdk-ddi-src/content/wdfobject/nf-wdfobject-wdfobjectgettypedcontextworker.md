@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfobject.WdfObjectGetTypedContextWorker
+UID: NF:wdfobject.WdfObjectGetTypedContextWorker
 title: WdfObjectGetTypedContextWorker function
 author: windows-driver-content
 description: The WdfObjectGetTypedContextWorker method is reserved for internal use only. Use the WdfObjectGetTypedContext macro instead.
@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectgettypedcontextworker.htm
 old-project: wdf
 ms.assetid: 1d95084b-16c4-468e-84af-47650292c5a1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: WdfObjectGetTypedContextWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_SYNCHRONIZATION_SCOPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,28 +65,3 @@ PVOID WdfObjectGetTypedContextWorker(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfobject.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
-</td>
-</tr>
-</table>

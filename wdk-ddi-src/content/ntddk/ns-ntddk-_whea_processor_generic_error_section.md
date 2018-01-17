@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PROCESSOR_GENERIC_ERROR_SECTION
+UID: NS:ntddk._WHEA_PROCESSOR_GENERIC_ERROR_SECTION
 title: _WHEA_PROCESSOR_GENERIC_ERROR_SECTION
 author: windows-driver-content
 description: Describes processor error data that is not specific to a particular processor architecture.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: d1ac2ca0-ad08-4149-b489-53807f308fc0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PROCESSOR_GENERIC_ERROR_SECTION, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, WHEA_PROCESSOR_GENERIC_ERROR_SECTION, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION
+ms.keywords: _WHEA_PROCESSOR_GENERIC_ERROR_SECTION, WHEA_PROCESSOR_GENERIC_ERROR_SECTION, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, WHEA_GENERIC_PROCESSOR_ERROR, *PWHEA_GENERIC_PROCESSOR_ERROR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_PROCESSOR_GENERIC_ERROR_SECTION, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION
 ---
 
 # _WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure
@@ -72,7 +73,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 ### -field ValidBits
 
 A 
-      <a href="whea.whea_processor_generic_error_section_validbits">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a> 
+      <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section_validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a> 
       union that specifies which members of this structure contain valid data.
 
 
@@ -357,7 +358,7 @@ The CPU version, which includes the family, model, and stepping information.
 
 <ul>
 <li>For x86 and x64 processors, this member contains a 
-        <a href="whea.whea_processor_family_info">WHEA_PROCESSOR_FAMILY_INFO</a> union.</li>
+        <a href="..\ntddk\ns-ntddk-_whea_processor_family_info.md">WHEA_PROCESSOR_FAMILY_INFO</a> union.</li>
 <li>For Itanium processors, this member contains the data provided in CPUID Register 3.</li>
 </ul>
 This member contains valid data only if the <b>CPUVersion</b> bit of the 
@@ -431,35 +432,10 @@ The
      structure describes the error data that is contained in a generic processor error section of an 
      <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a generic processor 
      error section only if the <b>SectionType</b> member of one of the 
-     <a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> 
+     <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> 
      structures that describe the error record sections for that error record contains 
      <b>PROCESSOR_GENERIC_ERROR_SECTION_GUID</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -467,13 +443,13 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_processor_generic_error_section_validbits">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section_validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a>
 </dt>
 <dt>
-<a href="whea.whea_processor_family_info">WHEA_PROCESSOR_FAMILY_INFO</a>
+<a href="..\ntddk\ns-ntddk-_whea_processor_family_info.md">WHEA_PROCESSOR_FAMILY_INFO</a>
 </dt>
 </dl>
  

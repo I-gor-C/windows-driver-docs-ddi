@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlUpperOplockFsctrl~r4
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlUpperOplockFsctrl~r4
 title: FsRtlUpperOplockFsctrl function
 author: windows-driver-content
 description: The FsRtlUpperOplockFsctrl routine processes opportunistic lock (oplock) requests and acknowledgments for secondary, or layered, file systems.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlupperoplockfsctrl.htm
 old-project: ifsk
 ms.assetid: 1E3C48A0-A161-481C-BF69-69D3FA7B941F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlUpperOplockFsctrl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: IRQL <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlUpperOplockFsctrl function
@@ -59,7 +60,7 @@ NTSTATUS FsRtlUpperOplockFsctrl(
 
 ### -param Oplock [in]
 
-An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="ifsk.fsrtlinitializeoplock">FsRtlInitializeOplock</a>.
+An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md">FsRtlInitializeOplock</a>.
 
 
 ### -param Irp [in]
@@ -133,19 +134,19 @@ Specifies that the file system verified that all oplock keys on any currently op
 <b>FsRtlUpperOplockFsctrl</b> returns one of the following NTSTATUS values: 
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>For an IRP_MJ_CREATE request, STATUS_SUCCESS indicates that the requested filter opportunistic lock (oplock) was granted. For a FSCTL operation, the meaning of STATUS_SUCCESS depends on the FSCTL code. For more information, see the Remarks section in <a href="ifsk.fsrtloplockfsctrlex">FsRtlOplockFsctrlEx</a>. 
+</dl>For an IRP_MJ_CREATE request, STATUS_SUCCESS indicates that the requested filter opportunistic lock (oplock) was granted. For a FSCTL operation, the meaning of STATUS_SUCCESS depends on the FSCTL code. For more information, see the Remarks section in <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex~r3.md">FsRtlOplockFsctrlEx</a>. 
 <dl>
 <dt><b>STATUS_CANCELLED</b></dt>
 </dl>The I/O operation was canceled. STATUS_CANCELLED is an error code. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The FSCTL code for the I/O operation was not a valid values oplock request. Valid request types are  listed in the Remarks section of <a href="ifsk.fsrtloplockfsctrlex">FsRtlOplockFsctrlEx</a>. STATUS_INVALID_PARAMETER is an error code. 
+</dl>The FSCTL code for the I/O operation was not a valid values oplock request. Valid request types are  listed in the Remarks section of <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex~r3.md">FsRtlOplockFsctrlEx</a>. STATUS_INVALID_PARAMETER is an error code. 
 <dl>
 <dt><b>STATUS_OPLOCK_NOT_GRANTED</b></dt>
 </dl>The oplock could not be granted. The level of the requested upper file system oplock is not valid for the oplock granted for the lower file system. STATUS_OPLOCK_NOT_GRANTED is an error code. 
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>Used only for FSCTL operations. The meaning of STATUS_PENDING depends on the FSCTL code. For more information, see the Remarks section in <a href="ifsk.fsrtloplockfsctrlex">FsRtlOplockFsctrlEx</a>. STATUS_PENDING is a success code. 
+</dl>Used only for FSCTL operations. The meaning of STATUS_PENDING depends on the FSCTL code. For more information, see the Remarks section in <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex~r3.md">FsRtlOplockFsctrlEx</a>. STATUS_PENDING is a success code. 
 <dl>
 <dt><b>STATUS_CANNOT_GRANT_REQUESTED_OPLOCK</b></dt>
 </dl>An oplock acknowledgement
@@ -157,86 +158,18 @@ Specifies that the file system verified that all oplock keys on any currently op
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-IRQL &lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlcheckupperoplock">FsRtlCheckUpperOplock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcheckupperoplock~r5.md">FsRtlCheckUpperOplock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtloplockfsctrlex">FsRtlOplockFsctrlEx</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex~r3.md">FsRtlOplockFsctrlEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlUpperOplockFsctrl routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlUpperOplockFsctrl routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

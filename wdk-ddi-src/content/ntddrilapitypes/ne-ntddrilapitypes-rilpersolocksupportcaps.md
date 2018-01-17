@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILPERSOLOCKSUPPORTCAPS
+UID: NE:ntddrilapitypes.RILPERSOLOCKSUPPORTCAPS
 title: RILPERSOLOCKSUPPORTCAPS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpersolocksupportcaps.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1aeb5eef-c334-4e27-8ce9-1c8efc85e82c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILPERSOLOCKSUPPORTCAPS, RILPERSOLOCKSUPPORTCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPERSOLOCKSUPPORTCAPS
 ---
 
 # RILPERSOLOCKSUPPORTCAPS enumeration
@@ -97,19 +98,3 @@ typedef enum _RILPERSOLOCKSUPPORTCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

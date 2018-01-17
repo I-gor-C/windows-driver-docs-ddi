@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortMidi.RegisterServiceGroup
+UID: NF:portcls.IPortMidi.RegisterServiceGroup
 title: IPortMidi::RegisterServiceGroup method
 author: windows-driver-content
 description: The RegisterServiceGroup method registers the service group to be used for the IPortMidi::Notify method.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortMidi::RegisterServiceGroup method
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <code>RegisterServiceGroup</code> method registers the service group to be used for the <a href="audio.iportmidi_notify">IPortMidi::Notify</a> method.
+The <code>RegisterServiceGroup</code> method registers the service group to be used for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a> method.
 
 
 
@@ -66,49 +67,13 @@ Pointer to the miniport driver's <a href="..\portcls\nn-portcls-iservicegroup.md
 The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 </dt>
 <dt>
-<a href="audio.iportmidi_notify">IPortMidi::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>

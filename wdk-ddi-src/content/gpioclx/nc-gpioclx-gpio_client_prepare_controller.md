@@ -1,6 +1,6 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_PREPARE_CONTROLLER
-title: GPIO_CLIENT_PREPARE_CONTROLLER
+UID: NC:gpioclx.GPIO_CLIENT_PREPARE_CONTROLLER
+title: GPIO_CLIENT_PREPARE_CONTROLLER function
 author: windows-driver-content
 description: The CLIENT_PrepareController event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver.
 old-location: gpio\client_preparecontroller.htm
@@ -8,10 +8,10 @@ old-project: GPIO
 ms.assetid: FAB86862-C0A1-4FC1-A80F-44F235B9B37D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GPIO_CLIENT_PREPARE_CONTROLLER
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: gpioclx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
+req.typenames: FWPS_CONNECT_REQUEST0
 ---
 
-# GPIO_CLIENT_PREPARE_CONTROLLER callback
+# GPIO_CLIENT_PREPARE_CONTROLLER function
 
 
 
@@ -42,7 +43,7 @@ The <i>CLIENT_PrepareController</i> event callback function performs any operati
 
 
 
-## -prototype
+## -syntax
 
 ````
 GPIO_CLIENT_PREPARE_CONTROLLER CLIENT_PrepareController;
@@ -86,7 +87,7 @@ The <i>CLIENT_PrepareController</i> function returns STATUS_SUCCESS if the call 
 ## -remarks
 This callback function is implemented by the GPIO controller driver. The GPIO framework extension (GpioClx) calls this function to initialize the hardware resources that the GPIO controller driver needs so that it can access the GPIO controller device.
 
-The <i>ResourcesRaw</i> and <i>ResourcesTranslated</i> parameters are handles to lists of raw and translated resources. These lists describe hardware resources that the PnP manager has assigned to the GPIO controller device that is specified by the <i>Device</i> parameter. For more information, see <a href="kmdf.raw_and_translated_resources">Raw and Translated Resources</a>.
+The <i>ResourcesRaw</i> and <i>ResourcesTranslated</i> parameters are handles to lists of raw and translated resources. These lists describe hardware resources that the PnP manager has assigned to the GPIO controller device that is specified by the <i>Device</i> parameter. For more information, see <a href="https://msdn.microsoft.com/dfc1376d-7a1a-421c-82ae-e183cac77ec8">Raw and Translated Resources</a>.
 
 During the <i>CLIENT_PrepareController</i> callback, the GPIO controller driver can acquire the hardware resources that it requires from the <i>ResourcesRaw</i> or <i>ResourcesTranslated</i> list. If the GPIO controller device is memory-mapped, the driver should map the bus-relative memory address range or ranges that are assigned to the device's hardware registers to system virtual addresses. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554399">Mapping Bus-Relative Addresses to Virtual Addresses</a>.
 
@@ -108,52 +109,6 @@ Then, implement your callback function as follows:
 
 The GPIO_CLIENT_PREPARE_CONTROLLER function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_PREPARE_CONTROLLER function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at PASSIVE_LEVEL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

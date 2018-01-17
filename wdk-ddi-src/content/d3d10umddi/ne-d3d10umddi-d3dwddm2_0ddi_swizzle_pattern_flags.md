@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS
+UID: NE:d3d10umddi.D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS
 title: D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS
 author: windows-driver-content
 description: Contains swizzle pattern flag values.
@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_swizzle_pattern_flags.htm
 old-project: display
 ms.assetid: 4C3E818B-E265-4AB8-BAAF-D3155578E558
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS, D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS
 ---
 
 # D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS enumeration
@@ -71,19 +72,3 @@ Conditional post-amble Xors.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

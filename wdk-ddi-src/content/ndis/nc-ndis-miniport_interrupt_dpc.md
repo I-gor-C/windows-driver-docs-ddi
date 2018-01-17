@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_INTERRUPT_DPC
-title: MINIPORT_INTERRUPT_DPC
+UID: NC:ndis.MINIPORT_INTERRUPT_DPC
+title: MINIPORT_INTERRUPT_DPC function
 author: windows-driver-content
 description: A miniport driver must provide a MiniportInterruptDPC function if the driver calls the NdisMRegisterInterruptEx function to register an interrupt.
 old-location: netvista\miniportinterruptdpc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 345715fb-878c-44d8-bf78-f3add10dd02b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_INTERRUPT_DPC
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,21 +31,22 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_INTERRUPT_DPC callback
+# MINIPORT_INTERRUPT_DPC function
 
 
 
 ## -description
 A miniport driver must provide a
    <i>MiniportInterruptDPC</i> function if the driver calls the 
-   <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a> function
+   <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
    to register an interrupt.
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_INTERRUPT_DPC MiniportInterruptDPC;
@@ -67,15 +68,15 @@ VOID MiniportInterruptDPC(
 A handle to a block of interrupt context information. The miniport driver supplied this handle in
      the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
-     <a href="netvista.ndismregisterinterruptex">
+     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
      NdisMRegisterInterruptEx</a> function.
 
 
 ### -param MiniportDpcContext [in]
 
 A pointer to a context area that the miniport driver supplied when it called the 
-     <a href="netvista.ndismqueuedpcex">NdisMQueueDpcEx</a> or 
-     <a href="netvista.ndismqueuedpc">NdisMQueueDpc</a> function. If NDIS called 
+     <a href="..\ndis\nf-ndis-ndismqueuedpcex.md">NdisMQueueDpcEx</a> or 
+     <a href="..\ndis\nf-ndis-ndismqueuedpc.md">NdisMQueueDpc</a> function. If NDIS called 
      <i>MiniportInterruptDPC</i> because the miniport driver returned a bitmask in the 
      <i>TargetProcessors</i> parameter of the 
      <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function, 
@@ -85,9 +86,9 @@ A pointer to a context area that the miniport driver supplied when it called the
 ### -param ReceiveThrottleParameters [in]
 
 A pointer to an 
-     <a href="netvista.ndis_receive_throttle_parameters">
+     <a href="..\ndis\ns-ndis-_ndis_receive_throttle_parameters.md">
      NDIS_RECEIVE_THROTTLE_PARAMETERS</a> structure. This structure specifies the maximum number of 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that a miniport
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that a miniport
      driver should indicate in a DPC.
 
 
@@ -102,15 +103,15 @@ None
 
 ## -remarks
 Miniport drivers that register an interrupt with the 
-    <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a> function
+    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
     must provide a 
     <i>MiniportInterruptDPC</i> function.
 
 NDIS calls 
     <i>MiniportInterruptDPC</i> to complete the deferred processing of an interrupt. The
     miniport driver can call the 
-    <a href="netvista.ndismqueuedpcex">NdisMQueueDpcEx</a> or 
-    <a href="netvista.ndismqueuedpc">NdisMQueueDpc</a> function to request additional
+    <a href="..\ndis\nf-ndis-ndismqueuedpcex.md">NdisMQueueDpcEx</a> or 
+    <a href="..\ndis\nf-ndis-ndismqueuedpc.md">NdisMQueueDpc</a> function to request additional
     deferred procedure calls (DPCs) for other processors.
 
 Miniport drivers determine the source of each interrupt and take appropriate action. For example, if
@@ -127,7 +128,7 @@ A miniport driver that supports <a href="netvista.ndis_receive_side_scaling2">re
     <i>MiniportInterruptDPC</i>.
 
 <i>MiniportInterruptDPC</i> calls the 
-    <a href="netvista.ndismindicatereceivenetbufferlists">
+    <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
     NdisMIndicateReceiveNetBufferLists</a> function to indicate packets on the current processor. 
     <i>MiniportInterruptDPC</i> can identify processing that is required for other CPUs
     and request NDIS to schedule DPCs on CPUs where a DPC is not outstanding.
@@ -154,12 +155,12 @@ Miniport drivers should limit the number of the receive buffers that they indica
     reenabled.
 
 A miniport driver can call the 
-    <a href="netvista.ndismderegisterinterruptex">
+    <a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">
     NdisMDeregisterInterruptEx</a> function from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> or 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function to release
     resources that it allocated with 
-    <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a>. After 
+    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>. After 
     <b>NdisMDeregisterInterruptEx</b> returns, NDIS does not call a miniport driver's 
     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> or 
     <i>MiniportInterruptDPC</i> function.
@@ -178,41 +179,6 @@ The <b>MINIPORT_INTERRUPT_DPC</b> function type is defined in the Ndis.h header 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -225,31 +191,31 @@ DISPATCH_LEVEL
 <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_interrupt_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
    NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_throttle_parameters">
+<a href="..\ndis\ns-ndis-_ndis_receive_throttle_parameters.md">
    NDIS_RECEIVE_THROTTLE_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndismderegisterinterruptex">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismqueuedpc">NdisMQueueDpc</a>
+<a href="..\ndis\nf-ndis-ndismqueuedpc.md">NdisMQueueDpc</a>
 </dt>
 <dt>
-<a href="netvista.ndismqueuedpcex">NdisMQueueDpcEx</a>
+<a href="..\ndis\nf-ndis-ndismqueuedpcex.md">NdisMQueueDpcEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatereceivenetbufferlists">
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="netvista.ndis_receive_side_scaling2">Receive Side Scaling (RSS)</a>
@@ -259,5 +225,5 @@ DISPATCH_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_INTERRUPT_DPC callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_INTERRUPT_DPC callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

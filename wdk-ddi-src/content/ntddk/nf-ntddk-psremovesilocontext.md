@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsRemoveSiloContext
+UID: NF:ntddk.PsRemoveSiloContext
 title: PsRemoveSiloContext function
 author: windows-driver-content
 description: This routine removes an object that was inserted in the Silo.
@@ -7,7 +7,7 @@ old-location: kernel\psremovesilocontext.htm
 old-project: kernel
 ms.assetid: 3323EF1B-9EB3-4D56-A9A5-0A8397F8A235
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsRemoveSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsRemoveSiloContext function
@@ -62,7 +63,7 @@ The silo from which the object is to be removed. This parameter is required and 
 
 ### -param ContextSlot [in]
 
-A slot allocated by the <a href="kernel.psallocsilocontextslot">PsAllocSiloContextSlot</a> routine.
+A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.
 
 
 ### -param ReturnedSiloContext 
@@ -86,40 +87,4 @@ The following NT status codes are returned.
 
 
 ## -remarks
-In a successful call to <b>PsRemoveSiloContext</b> where the <i>RemovedSiloContext</i> parameter is not <b>NULL</b> and does not point to <b>NULL</b>, the caller must decrement the object that the <i>RemovedSiloContext</i> parameter points to, by calling <a href="kernel.psdereferencesilocontext">PsDereferenceSiloContext</a> when it is no longer needed. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+In a successful call to <b>PsRemoveSiloContext</b> where the <i>RemovedSiloContext</i> parameter is not <b>NULL</b> and does not point to <b>NULL</b>, the caller must decrement the object that the <i>RemovedSiloContext</i> parameter points to, by calling <a href="..\ntddk\nf-ntddk-psdereferencesilocontext.md">PsDereferenceSiloContext</a> when it is no longer needed. </p>

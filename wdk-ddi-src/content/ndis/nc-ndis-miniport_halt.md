@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_HALT
-title: MINIPORT_HALT
+UID: NC:ndis.MINIPORT_HALT
+title: MINIPORT_HALT function
 author: windows-driver-content
 description: NDIS calls a miniport driver's MiniportHaltEx function to free resources when a miniport adapter is removed, and to stop the hardware.
 old-location: netvista\miniporthaltex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b8d452b4-bef3-4991-87cf-fac15bedfde4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_HALT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,20 +31,21 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_HALT callback
+# MINIPORT_HALT function
 
 
 
 ## -description
 NDIS calls a miniport driver's 
    <i>MiniportHaltEx</i> function to free resources when a miniport adapter is
-   removed, and to stop the hardware. This function puts the miniport into the Halted state, where no other callback can occur (including <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a>). For more information about miniport driver states, see <a href="netvista.miniport_adapter_states_and_operations">Miniport Adapter States and Operations</a>.
+   removed, and to stop the hardware. This function puts the miniport into the Halted state, where no other callback can occur (including <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a>). For more information about miniport driver states, see <a href="https://msdn.microsoft.com/b47e2cbe-9da3-4600-9afe-b082e60b87fb">Miniport Adapter States and Operations</a>.
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_HALT MiniportHaltEx;
@@ -82,7 +83,7 @@ NDIS is halting the miniport adapter in response to a Plug and Play (PnP) remove
 ### -param NdisHaltDeviceInstanceDeInitialized
 
 NDIS is halting the miniport adapter in response to an intermediate driver calling the 
-       <a href="netvista.ndisimdeinitializedeviceinstance">
+       <a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
        NdisIMDeInitializeDeviceInstance</a> function.
 
 
@@ -100,7 +101,7 @@ The miniport adapter has been surprise removed and the hardware is not present.
 
 The miniport adapter is being removed because of a hardware failure. Either the miniport driver
        called the 
-       <a href="netvista.ndismremoveminiport">NdisMRemoveMiniport</a> function or a
+       <a href="..\ndis\nf-ndis-ndismremoveminiport.md">NdisMRemoveMiniport</a> function or a
        bus driver did not power up the NIC on resume.
 
 
@@ -124,7 +125,7 @@ None
 ## -remarks
 A driver specifies the 
     <i>MiniportHaltEx</i> entry point when it calls the 
-    <a href="netvista.ndismregisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
     NdisMRegisterMiniportDriver</a> function.
 
 NDIS can call 
@@ -132,7 +133,7 @@ NDIS can call
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
     returns successfully. If the driver controls a physical NIC, 
     <i>MiniportHaltEx</i> should stop the NIC. If an NDIS intermediate driver calls the 
-    <a href="netvista.ndisimdeinitializedeviceinstance">
+    <a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
     NdisIMDeInitializeDeviceInstance</a> function, NDIS calls the 
     <i>MiniportHaltEx</i> function for the driver's virtual device.
 
@@ -150,7 +151,7 @@ If a NIC generates interrupts, a miniport driver's
     <i>MiniportHaltEx</i> function can be preempted by the driver's 
     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function until the 
     <i>MiniportHaltEx</i> call to the 
-    <a href="netvista.ndismderegisterinterruptex">
+    <a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">
     NdisMDeregisterInterruptEx</a> function returns. Such a driver's 
     <i>MiniportHaltEx</i> function should disable interrupts, and call 
     <b>
@@ -168,7 +169,7 @@ If the driver has a
     <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a> function that is
     associated with a timer object that could be in the system timer queue, 
     <i>MiniportHaltEx</i> should call the 
-    <a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a> function. If 
+    <a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a> function. If 
     <b>NdisCancelTimerObject</b> fails, the timer could have already fired. In this case, the driver should
     wait for the timer function to complete before the driver returns from 
     <i>MiniportHaltEx</i>.
@@ -180,8 +181,8 @@ NDIS does not call
 
 If the driver must wait for any operation to complete, 
     <i>MiniportHaltEx</i> can use the 
-    <a href="netvista.ndiswaitevent">NdisWaitEvent</a> function or the 
-    <a href="netvista.ndismsleep">NdisMSleep</a> function.
+    <a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a> function or the 
+    <a href="..\ndis\nf-ndis-ndismsleep.md">NdisMSleep</a> function.
 
 NDIS calls
     <i>MiniportHaltEx</i> at IRQL = PASSIVE_LEVEL.
@@ -196,50 +197,6 @@ The <b>MINIPORT_HALT</b> function type is defined in the Ndis.h header file. To 
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_wlanassociation">WlanAssociation</a>, <a href="devtest.ndis_wlanconnectionroaming">WlanConnectionRoaming</a>, <a href="devtest.ndis_wlandisassociation">WlanDisassociation</a>, <a href="devtest.ndis_wlantimedassociation">WlanTimedAssociation</a>, <a href="devtest.ndis_wlantimedconnectionroaming">WlanTimedConnectionRoaming</a>, <a href="devtest.ndis_wlantimedconnectrequest">WlanTimedConnectRequest</a>, <a href="devtest.ndis_wlantimedlinkquality">WlanTimedLinkQuality</a>, <a href="devtest.ndis_wlantimedscan">WlanTimedScan</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -257,38 +214,38 @@ DDI compliance rules
    MiniportReturnNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a>
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.ndisimdeinitializedeviceinstance">
+<a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
    NdisIMDeInitializeDeviceInstance</a>
 </dt>
 <dt>
-<a href="netvista.ndismderegisterinterruptex">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndismremoveminiport">NdisMRemoveMiniport</a>
+<a href="..\ndis\nf-ndis-ndismremoveminiport.md">NdisMRemoveMiniport</a>
 </dt>
 <dt>
-<a href="netvista.ndismsleep">NdisMSleep</a>
+<a href="..\ndis\nf-ndis-ndismsleep.md">NdisMSleep</a>
 </dt>
 <dt>
-<a href="netvista.ndiswaitevent">NdisWaitEvent</a>
+<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
 </dt>
 <dt>
-<a href="netvista.adapter_states_of_a_miniport_driver">Adapter States of a Miniport Driver</a>
+<a href="https://msdn.microsoft.com/3ca03511-a912-4ee3-bd9f-1bd8e6996c48">Adapter States of a Miniport Driver</a>
 </dt>
 <dt>
-<a href="netvista.halting_a_miniport_adapter">Halting a Miniport Adapter</a>
+<a href="https://msdn.microsoft.com/fd57a2b1-593d-412b-96b5-eabd3ea392e0">Halting a Miniport Adapter</a>
 </dt>
 <dt>
-<a href="netvista.miniport_adapter_states_and_operations">Miniport Adapter States and Operations</a>
+<a href="https://msdn.microsoft.com/b47e2cbe-9da3-4600-9afe-b082e60b87fb">Miniport Adapter States and Operations</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/20047ee2-ba37-47c2-858f-36e31ae19154">Miniport Driver Reset and Halt Functions</a>
@@ -298,5 +255,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_HALT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_HALT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

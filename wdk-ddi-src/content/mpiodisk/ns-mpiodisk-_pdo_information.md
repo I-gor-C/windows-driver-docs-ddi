@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIODISK._PDO_INFORMATION
+UID: NS:mpiodisk._PDO_INFORMATION
 title: _PDO_INFORMATION
 author: windows-driver-content
 description: The PDO_INFORMATION structure represents a device-path pairing, which is an instance of a LUN through a particular path.
@@ -7,8 +7,8 @@ old-location: storage\pdo_information.htm
 old-project: storage
 ms.assetid: 26ce460f-b12d-4e5e-994a-047a1853325d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PDO_INFORMATION, *PPDO_INFORMATION, PDO_INFORMATION, PPDO_INFORMATION
+ms.date: 1/10/2018
+ms.keywords: _PDO_INFORMATION, *PPDO_INFORMATION, PDO_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPDO_INFORMATION, PDO_INFORMATION
 ---
 
 # _PDO_INFORMATION structure
@@ -95,19 +96,3 @@ Should be zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

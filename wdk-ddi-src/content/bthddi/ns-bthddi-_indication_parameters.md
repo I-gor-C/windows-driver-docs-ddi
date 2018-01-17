@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._INDICATION_PARAMETERS
+UID: NS:bthddi._INDICATION_PARAMETERS
 title: _INDICATION_PARAMETERS
 author: windows-driver-content
 description: The INDICATION_PARAMETERS structure is passed as the Parameters parameter to a profile driver's L2CAP Callback Function.
@@ -7,7 +7,7 @@ old-location: bltooth\indication_parameters.htm
 old-project: bltooth
 ms.assetid: fc93ab8a-01d2-4827-8d89-06f09bf10456
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: _INDICATION_PARAMETERS, INDICATION_PARAMETERS, *PINDICATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: INDICATION_PARAMETERS, *PINDICATION_PARAMETERS
 ---
 
 # _INDICATION_PARAMETERS structure
@@ -135,7 +136,7 @@ The structure that contains parameters for the
 ### -field CurrentParams
 
 A 
-       <a href="bltooth.channel_config_parameters">
+       <a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">
        CHANNEL_CONFIG_PARAMETERS</a> structure that contains the parameters for the current channel. This
        value is only valid if the channel was previously open and is now in the process of being configured.
        This member is used when the callback function specifies the 
@@ -233,7 +234,7 @@ The structure that contains parameters for the
 ### -field CurrentParams
 
 A 
-       <a href="bltooth.channel_config_parameters">
+       <a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">
        CHANNEL_CONFIG_PARAMETERS</a> structure that contains the parameters for the current channel. This
        value is only valid if the channel was previously open and is now in the process of being configured.
        This member is used when the callback function specifies the 
@@ -368,7 +369,7 @@ The structure that contains the parameters for the
 ### -field Reason
 
 An 
-       <a href="bltooth.l2cap_disconnect_reason">L2CAP_DISCONNECT_REASON</a> value that
+       <a href="..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md">L2CAP_DISCONNECT_REASON</a> value that
        indicates why the L2CAP connection to the remote device was terminated.
 
 
@@ -415,52 +416,27 @@ When the Bluetooth driver stack passes
     <b>Parameters</b> union.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
 </dt>
 <dt>
-<a href="bltooth.channel_config_parameters">CHANNEL_CONFIG_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
 </dt>
 <dt>
-<a href="bltooth.l2cap_config_option">L2CAP_CONFIG_OPTION</a>
+<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
 </dt>
 <dt>
-<a href="bltooth.l2cap_disconnect_reason">L2CAP_DISCONNECT_REASON</a>
+<a href="..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md">L2CAP_DISCONNECT_REASON</a>
 </dt>
 <dt>
-<a href="bltooth.indication_code">INDICATION_CODE</a>
+<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20INDICATION_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20INDICATION_PARAMETERS structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

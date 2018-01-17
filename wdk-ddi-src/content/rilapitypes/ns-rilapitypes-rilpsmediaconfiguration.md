@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILPSMEDIACONFIGURATION
+UID: NS:rilapitypes.RILPSMEDIACONFIGURATION
 title: RILPSMEDIACONFIGURATION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpsmediaconfiguration_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: eb4500cb-de96-4fbe-971c-d7badc6993af
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILPSMEDIACONFIGURATION, *LPRILPSMEDIACONFIGURATION, RILPSMEDIACONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILPSMEDIACONFIGURATION, RILPSMEDIACONFIGURATION
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILPSMEDIACONFIGURATION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

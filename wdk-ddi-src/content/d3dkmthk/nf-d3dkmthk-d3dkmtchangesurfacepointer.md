@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTChangeSurfacePointer
+UID: NF:d3dkmthk.D3DKMTChangeSurfacePointer
 title: D3DKMTChangeSurfacePointer function
 author: windows-driver-content
 description: The D3DKMTChangeSurfacePointer function is for system use only.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtchangesurfacepointer.htm
 old-project: display
 ms.assetid: 3db4e04b-2707-4eb1-a249-2714304246a8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTChangeSurfacePointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTChangeSurfacePointer function
@@ -63,41 +64,4 @@ An opaque NTSTATUS value.
 
 
 ## -remarks
-This function is for system use only.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This function is for system use only.</p>

@@ -1,13 +1,13 @@
 ---
-UID: NE.ucmtcpciportcontrollerrequests._UCMTCPCI_PORT_CONTROLLER_IOCTL
+UID: NE:ucmtcpciportcontrollerrequests._UCMTCPCI_PORT_CONTROLLER_IOCTL
 title: _UCMTCPCI_PORT_CONTROLLER_IOCTL
 author: windows-driver-content
 description: Defines the various device I/O control requests that are sent to the client driver for the port controller. This indicates the type of IOCTL in WPP.
 old-location: buses\ucmtcpci_port_controller_ioctl.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 61dcd4d9-cfd9-4878-96f5-c95465e0949e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: _UCMTCPCI_PORT_CONTROLLER_IOCTL, UCMTCPCI_PORT_CONTROLLER_IOCTL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UCMTCPCI_PORT_CONTROLLER_IOCTL
 req.product: Windows 10 or later.
 ---
 
@@ -151,19 +152,3 @@ The  <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequest
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>UcmTcpciPortControllerRequests.h</dt>
-</dl>
-</td>
-</tr>
-</table>

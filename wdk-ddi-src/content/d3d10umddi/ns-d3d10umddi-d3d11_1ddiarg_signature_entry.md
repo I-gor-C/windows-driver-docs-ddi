@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDIARG_SIGNATURE_ENTRY
+UID: NS:d3d10umddi.D3D11_1DDIARG_SIGNATURE_ENTRY
 title: D3D11_1DDIARG_SIGNATURE_ENTRY
 author: windows-driver-content
 description: Describes an entry for a signature.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddiarg_signature_entry.htm
 old-project: display
 ms.assetid: 571ed880-a4c6-4eb1-a254-c1faf2a589d2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDIARG_SIGNATURE_ENTRY, D3D11_1DDIARG_SIGNATURE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDIARG_SIGNATURE_ENTRY
 ---
 
 # D3D11_1DDIARG_SIGNATURE_ENTRY structure
@@ -195,39 +196,3 @@ The <b>D3D11_SB_OPERAND_MIN_PRECISION</b> enumeration is defined in the D3d10tok
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

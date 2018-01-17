@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_CREATECONTEXTVIRTUALCB
+UID: NC:d3dumddi.PFND3DDDI_CREATECONTEXTVIRTUALCB
 title: PFND3DDDI_CREATECONTEXTVIRTUALCB
 author: windows-driver-content
 description: pfnCreateContextVirtualCb should be used with contexts that support virtual addressing.
@@ -7,8 +7,8 @@ old-location: display\pfncreatecontextvirtualcb.htm
 old-project: display
 ms.assetid: 7787FEDF-E18C-4120-A073-A13933856F57
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_CREATECONTEXTVIRTUALCB callback
@@ -64,7 +65,7 @@ A handle to the display device.
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dddicb_createcontextvirtual">D3DDDICB_CREATECONTEXTVIRTUAL</a> structure that describes the context to create.
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createcontextvirtual.md">D3DDDICB_CREATECONTEXTVIRTUAL</a> structure that describes the context to create.
 
 
 ## -returns
@@ -85,50 +86,3 @@ This function might also return other <b>HRESULT</b> values.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

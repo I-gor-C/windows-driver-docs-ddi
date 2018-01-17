@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMSGCDMATELESERVICE
+UID: NE:rilapitypes.RILMSGCDMATELESERVICE
 title: RILMSGCDMATELESERVICE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmateleservice_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 35d3e419-ad21-403d-8590-f49cf6fd3b25
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMATELESERVICE, RILMSGCDMATELESERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGCDMATELESERVICE
 req.product: Windows 10 or later.
 ---
 
@@ -114,19 +115,3 @@ typedef enum _RILMSGCDMATELESERVICE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

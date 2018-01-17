@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlInt8Add
+UID: NF:ntintsafe.RtlInt8Add
 title: RtlInt8Add function
 author: windows-driver-content
 description: Adds two values of type INT8.
@@ -7,7 +7,7 @@ old-location: kernel\rtlint8add.htm
 old-project: kernel
 ms.assetid: E97C3EA9-2244-458E-BE5E-6312023118A3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlInt8Add
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlInt8Add function
@@ -71,31 +72,4 @@ A pointer to the sum. If the operation results in a value that overflows or unde
 
 
 ## -remarks
-This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>

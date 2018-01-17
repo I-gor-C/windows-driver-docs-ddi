@@ -1,14 +1,14 @@
 ---
-UID: NE.ufxbase._USBFN_ACTION
+UID: NE:ufxbase._USBFN_ACTION
 title: _USBFN_ACTION
 author: windows-driver-content
 description: Defines special actions UFX should take when the client driver calls the UfxDevicePortDetectCompleteEx function.
 old-location: buses\usbfn_action.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 9E9AB3E0-EBDC-4EC3-BFBF-C78EE56BD699
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_ACTION, PUSBFN_ACTION, *PUSBFN_ACTION, USBFN_ACTION
+ms.date: 1/4/2018
+ms.keywords: _USBFN_ACTION, *PUSBFN_ACTION, USBFN_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUSBFN_ACTION, USBFN_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Defines special actions UFX should take when the client driver calls the <a href="buses.ufxdeviceportdetectcompleteex">UfxDevicePortDetectCompleteEx</a> function.
+Defines special actions UFX should take when the client driver calls the <a href="..\ufxclient\nf-ufxclient-ufxdeviceportdetectcompleteex.md">UfxDevicePortDetectCompleteEx</a> function.
 
 
 
@@ -72,19 +73,3 @@ UFX should initiate proprietary charger detection by calling the client driver�
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxbase.h</dt>
-</dl>
-</td>
-</tr>
-</table>

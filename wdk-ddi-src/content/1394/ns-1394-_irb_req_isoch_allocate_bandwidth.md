@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
+UID: NS:1394._IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
 title: _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
 author: windows-driver-content
 description: This structure contains the fields necessary in order for the Bus driver to carry out an IsochAllocateBandwidth request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
 ---
 
 # _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH structure
@@ -131,19 +132,3 @@ This is a pre-calculated value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

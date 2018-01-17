@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILPSMEDIACONFIGURATIONSET
+UID: NS:ntddrilapitypes.RILPSMEDIACONFIGURATIONSET
 title: RILPSMEDIACONFIGURATIONSET
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpsmediaconfigurationset.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b41f6539-293f-47ed-b720-5053574a1841
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, LPRILPSMEDIACONFIGURATIONSET
+ms.date: 1/11/2018
+ms.keywords: RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
 ---
 
 # RILPSMEDIACONFIGURATIONSET structure
@@ -69,19 +70,3 @@ typedef struct _RILPSMEDIACONFIGURATIONSET {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

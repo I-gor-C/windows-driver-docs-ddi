@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
+UID: NI:parallel.IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
 title: IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
 author: windows-driver-content
 description: The IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO request returns STATUS_SUCCESS.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO IOCTL
@@ -77,21 +78,6 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

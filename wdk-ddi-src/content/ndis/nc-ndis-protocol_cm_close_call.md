@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CM_CLOSE_CALL
-title: PROTOCOL_CM_CLOSE_CALL
+UID: NC:ndis.PROTOCOL_CM_CLOSE_CALL
+title: PROTOCOL_CM_CLOSE_CALL function
 author: windows-driver-content
 description: The ProtocolCmCloseCall function is a required function that terminates an existing call and releases any resources that the call manager allocated for the call.Note  You must declare the function by using the PROTOCOL_CM_CLOSE_CALL type.
 old-location: netvista\protocolcmclosecall.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b5307e1b-3905-4e43-a0b0-0068ba18ef0d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CM_CLOSE_CALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CM_CLOSE_CALL callback
+# PROTOCOL_CM_CLOSE_CALL function
 
 
 
@@ -44,7 +45,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CM_CLOSE_CALL ProtocolCmCloseCall;
@@ -99,7 +100,7 @@ Specifies the length, in bytes, of the buffer at
 </dl>Indicates that the call manager will complete the request to terminate the call asynchronously.
        When the call manager has completed all operations required to terminate the connection, it must then
        call 
-       <a href="netvista.ndiscmclosecallcomplete">NdisCmCloseCallComplete</a> to
+       <a href="..\ndis\nf-ndis-ndiscmclosecallcomplete.md">NdisCmCloseCallComplete</a> to
        signal NDIS that the call has been closed.
 <dl>
 <dt><b>NDIS_STATUS_INVALID_DATA</b></dt>
@@ -121,7 +122,7 @@ Specifies the length, in bytes, of the buffer at
     should use a virtual connection to the network control device that it established in its 
     <i>ProtocolBindAdapterEx</i> function. Stand-alone call managers communicate to such network devices by
     calling 
-    <a href="netvista.ndiscosendnetbufferlists">NdisCoSendNetBufferLists</a>.
+    <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>.
     Miniport drivers with integrated call-management support never call 
     <b>NdisCoSendNetBufferLists</b>. Instead, they transmit the data directly across the network.
 
@@ -146,7 +147,7 @@ If
 After the call has been terminated with the network, any close data has been sent, and any resources
     at 
     <i>CallMgrPartyContext</i> have been freed, the call manager must call 
-    <a href="netvista.ndiscmdeactivatevc">NdisCmDeactivateVc</a>. This notifies NDIS
+    <a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>. This notifies NDIS
     and the underlying miniport driver, if any, to expect no further transfers on the given VC.
 
 To define a <i>ProtocolCmCloseCall</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
@@ -160,55 +161,16 @@ The <b>PROTOCOL_CM_CLOSE_CALL</b> function type is defined in the Ndis.h header 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/07eeeab8-456c-4d7c-97d1-f772b89937ed">ProtocolCmCloseCall (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolCmCloseCall (NDIS
-   5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdeactivatevc">NdisCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscosendnetbufferlists">NdisCoSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
@@ -218,5 +180,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CM_CLOSE_CALL callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_CLOSE_CALL callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

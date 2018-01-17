@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWavePciStream.RevokeMappings
+UID: NF:portcls.IMiniportWavePciStream.RevokeMappings
 title: IMiniportWavePciStream::RevokeMappings method
 author: windows-driver-content
 description: The RevokeMappings method revokes mappings that were previously obtained through IPortWavePciStream::GetMapping.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWavePciStream::RevokeMappings method
@@ -38,7 +39,7 @@ req.irql: DISPATCH_LEVEL
 
 
 ## -description
-The <code>RevokeMappings</code> method revokes mappings that were previously obtained through <a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>.
+The <code>RevokeMappings</code> method revokes mappings that were previously obtained through <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>.
 
 
 
@@ -79,52 +80,16 @@ The port driver calls <code>RevokeMappings</code> to revoke the stream's mapping
 
 An I/O request (IRP) is canceled and the previously mapped memory might no longer be available.
 
-The stream state changes to KSSTATE_STOP (see <a href="stream.ksstate">KSSTATE</a>) and the device no longer has need for the mappings.
+The stream state changes to KSSTATE_STOP (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a>) and the device no longer has need for the mappings.
 
-The miniport driver keeps track of the order in which it acquires its mappings from calls to <a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>. The <code>RevokeMapping</code> method revokes all mappings in the sequence that begins with the mapping identified by <i>FirstTag</i> and ends with the mapping identified by <i>LastTag</i>. This includes the mappings identified by <i>FirstTag</i> and <i>LastTag</i> and all mappings in between. The miniport driver revokes each mapping by removing it from the list of available mappings.
+The miniport driver keeps track of the order in which it acquires its mappings from calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>. The <code>RevokeMapping</code> method revokes all mappings in the sequence that begins with the mapping identified by <i>FirstTag</i> and ends with the mapping identified by <i>LastTag</i>. This includes the mappings identified by <i>FirstTag</i> and <i>LastTag</i> and all mappings in between. The miniport driver revokes each mapping by removing it from the list of available mappings.
 
 The <code>RevokeMapping</code> method can be used to remove a single mapping by setting <i>FirstTag</i> and <i>LastTag</i> to the same value.
 
-The port driver can call <code>RevokeMappings</code> asynchronously with respect to the miniport driver's maintenance operations on the DMA controller's scatter/gather transfer queue. Access to this queue needs to be protected by a synchronization primitive. For example, in the ac97 sample audio driver in the Microsoft Windows Driver Kit (WDK), this is done by surrounding critical code sections with <a href="kernel.keacquirespinlock">KeAcquireSpinLock</a> and <a href="kernel.kereleasespinlock">KeReleaseSpinLock</a> calls. Because the miniport driver can release mappings asynchronously with respect to the port driver's calls to <code>RevokeMappings</code>, the miniport driver might have previously released (see <a href="audio.iportwavepcistream_releasemapping">IPortWavePciStream::ReleaseMapping</a>) one or more of the mappings specified in the <code>RevokeMappings</code> call.
+The port driver can call <code>RevokeMappings</code> asynchronously with respect to the miniport driver's maintenance operations on the DMA controller's scatter/gather transfer queue. Access to this queue needs to be protected by a synchronization primitive. For example, in the ac97 sample audio driver in the Microsoft Windows Driver Kit (WDK), this is done by surrounding critical code sections with <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a> and <a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a> calls. Because the miniport driver can release mappings asynchronously with respect to the port driver's calls to <code>RevokeMappings</code>, the miniport driver might have previously released (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a>) one or more of the mappings specified in the <code>RevokeMappings</code> call.
 
 For more information about mappings, see <a href="https://msdn.microsoft.com/6d83c015-cf8f-40b4-bf28-de865a5bfe2d">WavePci Latency</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -132,19 +97,19 @@ DISPATCH_LEVEL
 <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
 </dt>
 <dt>
-<a href="stream.ksstate">KSSTATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_releasemapping">IPortWavePciStream::ReleaseMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a>
 </dt>
 <dt>
-<a href="kernel.kereleasespinlock">KeReleaseSpinLock</a>
+<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="kernel.keacquirespinlock">KeAcquireSpinLock</a>
+<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
 </dt>
 </dl>
  

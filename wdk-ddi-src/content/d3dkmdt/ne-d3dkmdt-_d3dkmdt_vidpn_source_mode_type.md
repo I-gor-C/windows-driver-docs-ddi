@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_VIDPN_SOURCE_MODE_TYPE
+UID: NE:d3dkmdt._D3DKMDT_VIDPN_SOURCE_MODE_TYPE
 title: _D3DKMDT_VIDPN_SOURCE_MODE_TYPE
 author: windows-driver-content
 description: The D3DKMDT_VIDPN_SOURCE_MODE_TYPE enumeration is used to indicate whether a video present network (VidPN) source mode is a graphics mode, a text mode, or a stereo mode.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_source_mode_type.htm
 old-project: display
 ms.assetid: c2a48cf2-f595-4f78-b779-416d324e90d7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_VIDPN_SOURCE_MODE_TYPE, D3DKMDT_VIDPN_SOURCE_MODE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_VIDPN_SOURCE_MODE_TYPE
 ---
 
 # _D3DKMDT_VIDPN_SOURCE_MODE_TYPE enumeration
@@ -89,30 +90,4 @@ If mono content needs to be displayed in a stereo mode, the operating system can
 
 
 ## -remarks
-The <b>Type</b> member of the <a href="display.d3dkmdt_vidpn_source_mode">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_VIDPN_SOURCE_MODE_TYPE value.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The <b>Type</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_VIDPN_SOURCE_MODE_TYPE value.</p>

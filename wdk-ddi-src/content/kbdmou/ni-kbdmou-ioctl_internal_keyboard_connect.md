@@ -1,5 +1,5 @@
 ---
-UID: NI.kbdmou.IOCTL_INTERNAL_KEYBOARD_CONNECT
+UID: NI:kbdmou.IOCTL_INTERNAL_KEYBOARD_CONNECT
 title: IOCTL_INTERNAL_KEYBOARD_CONNECT
 author: windows-driver-content
 description: The IOCTL_INTERNAL_KEYBOARD_CONNECT request connects the Kbdclass service to the keyboard device.
@@ -7,8 +7,8 @@ old-location: hid\ioctl_internal_keyboard_connect.htm
 old-project: hid
 ms.assetid: 90014194-e790-4b23-9f3d-f5879dd94063
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics, PMSiSCSI_SessionStatistics
+ms.date: 12/21/2017
+ms.keywords: _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
 # IOCTL_INTERNAL_KEYBOARD_CONNECT IOCTL
@@ -45,7 +46,7 @@ After Kbfiltr received the keyboard connect request, Kbfiltr filters the connect
 
 <ul>
 <li>
-Saves a copy of Kbdclass's <a href="hid.connect_data__kbdclass_">CONNECT_DATA (Kbdclass)</a> structure that is passed to the filter driver by Kbdclass
+Saves a copy of Kbdclass's <a href="..\kbdmou\ns-kbdmou-_connect_data.md">CONNECT_DATA (Kbdclass)</a> structure that is passed to the filter driver by Kbdclass
 
 </li>
 <li>
@@ -83,7 +84,7 @@ The IOCTL_INTERNAL_KEYBOARD_CONNECT request connects the Kbdclass service to the
 
 After Kbfiltr received the keyboard connect request, Kbfiltr filters the connect request in the following way:
 
-Saves a copy of Kbdclass's <a href="hid.connect_data__kbdclass_">CONNECT_DATA (Kbdclass)</a> structure that is passed to the filter driver by Kbdclass
+Saves a copy of Kbdclass's <a href="..\kbdmou\ns-kbdmou-_connect_data.md">CONNECT_DATA (Kbdclass)</a> structure that is passed to the filter driver by Kbdclass
 
 Substitutes its own connect information for the class driver connect information
 
@@ -154,25 +155,10 @@ Kbfiltr is already connected (the filter driver supports only one connect reques
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kbdmou.h (include Kbdmou.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="hid.connect_data__kbdclass_">CONNECT_DATA (Kbdclass)</a>
+<a href="..\kbdmou\ns-kbdmou-_connect_data.md">CONNECT_DATA (Kbdclass)</a>
 </dt>
 <dt>
 <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_hook_keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
@@ -185,5 +171,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20IOCTL_INTERNAL_KEYBOARD_CONNECT control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20IOCTL_INTERNAL_KEYBOARD_CONNECT control code%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

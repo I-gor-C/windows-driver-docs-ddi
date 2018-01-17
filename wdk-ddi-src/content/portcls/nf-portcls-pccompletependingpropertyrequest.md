@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcCompletePendingPropertyRequest
+UID: NF:portcls.PcCompletePendingPropertyRequest
 title: PcCompletePendingPropertyRequest function
 author: windows-driver-content
 description: The PcCompletePendingPropertyRequest function is called to complete a pending property request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcCompletePendingPropertyRequest function
@@ -56,7 +57,7 @@ NTSTATUS PcCompletePendingPropertyRequest(
 
 ### -param PropertyRequest [in]
 
-Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="audio.pcproperty_request">PCPROPERTY_REQUEST</a>.
+Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>.
 
 
 ### -param NtStatus [in]
@@ -74,70 +75,13 @@ If a miniport driver returns STATUS_PENDING from a property handler, it is oblig
 The driver should call <b>PcCompletePendingPropertyRequest</b> only when the request is no longer pending. Never call this function with an <i>NtStatus</i> value of STATUS_PENDING. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PortCls system driver implements the PcCompletePendingPropertyRequest function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcproperty_request">PCPROPERTY_REQUEST</a>
+<a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>
 </dt>
 <dt>
-<a href="kernel.iocompleterequest">IoCompleteRequest</a>
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NI.mountmgr.IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
+UID: NI:mountmgr.IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
 title: IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
 author: windows-driver-content
 description: This IOCTL checks to see if the given volume has a drive letter.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_mountmgr_next_drive_letter.htm
 old-project: storage
 ms.assetid: 7e3c5718-180c-435d-89ea-30a5cac325b2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID
+ms.date: 1/10/2018
+ms.keywords: _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER IOCTL
@@ -45,7 +46,7 @@ This IOCTL checks to see if the given volume has a drive letter. If it already h
 ## -ioctlparameters
 
 ### -input-buffer
-The mount manager client initializes the <a href="storage.mountmgr_drive_letter_target">MOUNTMGR_DRIVE_LETTER_TARGET</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The client must insert the name of the target volume at the address pointed to by the <i>DeviceName[]</i> member of this structure. The target volume name is the name of the nonpersistent device object associated with the volume (for example, "\Device\HarddiskVolume1"). 
+The mount manager client initializes the <a href="..\mountmgr\ns-mountmgr-_mountmgr_drive_letter_target.md">MOUNTMGR_DRIVE_LETTER_TARGET</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The client must insert the name of the target volume at the address pointed to by the <i>DeviceName[]</i> member of this structure. The target volume name is the name of the nonpersistent device object associated with the volume (for example, "\Device\HarddiskVolume1"). 
 
 
 ### -input-buffer-length
@@ -53,7 +54,7 @@ The mount manager client initializes the <a href="storage.mountmgr_drive_letter_
 
 
 ### -output-buffer
-The mount manager inserts either the current drive letter or the newly assigned drive letter (see previous discussion) in the <a href="storage.mountmgr_drive_letter_information">MOUNTMGR_DRIVE_LETTER_INFORMATION</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+The mount manager inserts either the current drive letter or the newly assigned drive letter (see previous discussion) in the <a href="..\mountmgr\ns-mountmgr-_mountmgr_drive_letter_information.md">MOUNTMGR_DRIVE_LETTER_INFORMATION</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
 
 
 ### -output-buffer-length
@@ -78,30 +79,15 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_DRIVE_LETTER_TAR
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountmgr.h (include Mountmgr.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.mountmgr_drive_letter_target">MOUNTMGR_DRIVE_LETTER_TARGET</a>
+<a href="..\mountmgr\ns-mountmgr-_mountmgr_drive_letter_target.md">MOUNTMGR_DRIVE_LETTER_TARGET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.MINIPORT_UNLOAD
-title: MINIPORT_UNLOAD
+UID: NC:ndis.MINIPORT_UNLOAD
+title: MINIPORT_UNLOAD function
 author: windows-driver-content
 description: NDIS calls a miniport driver's MiniportDriverUnload function to request the driver to release resources before the system completes a driver unload operation.
 old-location: netvista\miniportdriverunload.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 25c803cf-f8a6-4e41-a731-c3ae7f1db211
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: MINIPORT_UNLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# MINIPORT_UNLOAD callback
+# MINIPORT_UNLOAD function
 
 
 
@@ -44,7 +45,7 @@ NDIS calls a miniport driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 MINIPORT_UNLOAD MiniportDriverUnload;
@@ -61,7 +62,7 @@ VOID MiniportDriverUnload(
 ### -param DriverObject [in]
 
 A pointer to a 
-     <a href="kernel.driver_object">DRIVER_OBJECT</a> structure that is the driver's
+     <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a> structure that is the driver's
      driver object.
 
 
@@ -72,11 +73,11 @@ None
 ## -remarks
 A driver specifies the 
     <i>MiniportDriverUnload</i> entry point when it calls the 
-    <a href="netvista.ndismregisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
     NdisMRegisterMiniportDriver</a> function.
 
 The driver object that is associated with an NDIS miniport driver specifies an 
-    <a href="kernel.unload">Unload</a> routine. The operating system calls the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine. The operating system calls the 
     <b>Unload</b> routine when all the devices the miniport driver services have been removed. NDIS provides
     the 
     <b>Unload</b> routine for NDIS drivers. NDIS calls a miniport driver's 
@@ -89,13 +90,13 @@ The functionality of the
     <b>DriverEntry</b> routine.
 
 A miniport driver calls the 
-    <a href="netvista.ndismderegisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismderegisterminiportdriver.md">
     NdisMDeregisterMiniportDriver</a> function from 
     <i>MiniportDriverUnload</i>.
 
 In addition to 
     <b>NdisMDeregisterMiniportDriver</b>, an intermediate driver also calls the 
-    <a href="netvista.ndisderegisterprotocoldriver">
+    <a href="..\ndis\nf-ndis-ndisderegisterprotocoldriver.md">
     NdisDeregisterProtocolDriver</a> function to deregister the protocol interface of the driver. 
     <i>MiniportDriverUnload</i> should also perform any necessary cleanup operations, such as deallocating any
     protocol driver interface resources.
@@ -120,66 +121,31 @@ The <b>MINIPORT_UNLOAD</b> function type is defined in the Ndis.h header file. T
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.driver_object">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisderegisterprotocoldriver">NdisDeregisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisderegisterprotocoldriver.md">NdisDeregisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndismderegisterminiportdriver">
+<a href="..\ndis\nf-ndis-ndismderegisterminiportdriver.md">
    NdisMDeregisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="kernel.unload">Unload</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_UNLOAD callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_UNLOAD callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

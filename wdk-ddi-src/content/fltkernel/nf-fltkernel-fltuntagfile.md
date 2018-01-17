@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltUntagFile
+UID: NF:fltkernel.FltUntagFile
 title: FltUntagFile function
 author: windows-driver-content
 description: FltUntagFile removes a reparse point from a file or directory.
@@ -7,7 +7,7 @@ old-location: ifsk\fltuntagfile.htm
 old-project: ifsk
 ms.assetid: 728a9879-681b-4244-b931-7945a05e3d40
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltUntagFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltUntagFile function
@@ -89,98 +90,40 @@ Globally unique identifier (GUID) that uniquely identifies the type of reparse p
 
 
 ## -remarks
-Minifilter drivers should use <b>FltUntagFile</b> instead of <a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a> to delete a reparse point. 
+Minifilter drivers should use <b>FltUntagFile</b> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a> to delete a reparse point. 
 
-A minifilter driver can set a reparse tag on a file or directory by calling <a href="ifsk.flttagfile">FltTagFile</a>. 
+A minifilter driver can set a reparse tag on a file or directory by calling <a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>. 
 
 For more information about reparse points, see the Microsoft Windows SDK documentation. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltmgr.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_tag_data_buffer">FLT_TAG_DATA_BUFFER</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_tag_data_buffer.md">FLT_TAG_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="ifsk.flttagfile">FltTagFile</a>
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_get_reparse_point">FSCTL_GET_REPARSE_POINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="ifsk.isreparsetagmicrosoft">IsReparseTagMicrosoft</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagmicrosoft.md">IsReparseTagMicrosoft</a>
 </dt>
 <dt>
-<a href="ifsk.isreparsetagnamesurrogate">IsReparseTagNameSurrogate</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagnamesurrogate.md">IsReparseTagNameSurrogate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltUntagFile function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltUntagFile function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

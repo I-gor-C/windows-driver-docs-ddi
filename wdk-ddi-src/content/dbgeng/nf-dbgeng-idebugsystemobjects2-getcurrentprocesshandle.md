@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects2.GetCurrentProcessHandle
+UID: NF:dbgeng.IDebugSystemObjects2.GetCurrentProcessHandle
 title: IDebugSystemObjects2::GetCurrentProcessHandle method
 author: windows-driver-content
 description: The GetCurrentProcessHandle function returns the system handle for the current process.
 old-location: debugger\getcurrentprocesshandle.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b6780f1c-e093-4d91-8909-dabb1ecaefaa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects2, IDebugSystemObjects2::GetCurrentProcessHandle, GetCurrentProcessHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects2::GetCurrentProcessHandle method
@@ -63,31 +64,4 @@ None
 
 
 ## -remarks
-In kernel-mode debugging, the only process in the target is the virtual process created for the kernel. In this case, an artificial handle is created. The artificial handle can only be used with the debugger.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+In kernel-mode debugging, the only process in the target is the virtual process created for the kernel. In this case, an artificial handle is created. The artificial handle can only be used with the debugger.</p>

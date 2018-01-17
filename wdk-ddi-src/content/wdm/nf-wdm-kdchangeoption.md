@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KdChangeOption
+UID: NF:wdm.KdChangeOption
 title: KdChangeOption function
 author: windows-driver-content
 description: The KdChangeOption routine accesses and changes state in the kernel that is related to kernel debugging.
@@ -7,7 +7,7 @@ old-location: devtest\kdchangeoption.htm
 old-project: devtest
 ms.assetid: 6f93b62b-6dc2-417b-9e1c-44be628c489c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: KdChangeOption
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -104,73 +105,4 @@ STATUS_DEBUGGER_INACTIVE
 ## -remarks
 If the operating system was booted with no debug controls, <b>KdChangeOption</b> returns STATUS_DEBUGGER_INACTIVE.
 
-Currently, the only valid value for the <i>Option</i> parameter is KD_OPTION_SET_BLOCK_ENABLE. If <i>Option</i> is set to any other value, <b>KdChangeOption</b> returns STATUS_INVALID_INFO_CLASS. When <i>Option</i> is KD_OPTION_SET_BLOCK_ENABLE, the caller must set the <i>InBufferBytes</i> parameter to <b>sizeof</b>(BOOLEAN), the <i>OutBufferBytes</i> parameter to zero, and the <i>OutBuffer</i> parameter to <b>NULL</b>; otherwise, <b>KdChangeOption</b> returns STATUS_INVALID_PARAMETER. If the high bit (0x80) in the <b>KdBlockEnable</b> system variable is set to one, the debugger can never be re-enabled, and <b>KdChangeOption</b> returns STATUS_ACCESS_DENIED. Otherwise, <b>KdChangeOption</b> sets the <b>KdBlockEnable</b> system variable to the BOOLEAN value that <i>InBuffer</i> points to.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows and Windows Server.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
+Currently, the only valid value for the <i>Option</i> parameter is KD_OPTION_SET_BLOCK_ENABLE. If <i>Option</i> is set to any other value, <b>KdChangeOption</b> returns STATUS_INVALID_INFO_CLASS. When <i>Option</i> is KD_OPTION_SET_BLOCK_ENABLE, the caller must set the <i>InBufferBytes</i> parameter to <b>sizeof</b>(BOOLEAN), the <i>OutBufferBytes</i> parameter to zero, and the <i>OutBuffer</i> parameter to <b>NULL</b>; otherwise, <b>KdChangeOption</b> returns STATUS_INVALID_PARAMETER. If the high bit (0x80) in the <b>KdBlockEnable</b> system variable is set to one, the debugger can never be re-enabled, and <b>KdChangeOption</b> returns STATUS_ACCESS_DENIED. Otherwise, <b>KdChangeOption</b> sets the <b>KdBlockEnable</b> system variable to the BOOLEAN value that <i>InBuffer</i> points to.</p>

@@ -1,13 +1,13 @@
 ---
-UID: NF.usbdlib.USBD_CreateHandle
+UID: NF:usbdlib.USBD_CreateHandle
 title: USBD_CreateHandle function
 author: windows-driver-content
 description: The USBD_CreateHandle routine is called by a WDM USB client driver to obtain a USBD handle. The routine registers the client driver with the underlying USB driver stack.
 old-location: buses\usbd_register.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 97757CBA-8291-40A3-B247-D41E7FEB1D7C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: USBD_CreateHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Usbdex.lib; Ntstrsafe.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 The  <b>USBD_CreateHandle</b> routine is called by a WDM USB client driver to obtain a USBD handle. The routine registers the client driver with the underlying USB driver stack.
 
-<b>Note for Windows Driver Framework (WDF) Drivers:  </b>If your client driver is a WDF-based driver, then you do not need the USBD handle. The client driver is registered in its call to the the <a href="kmdf.wdfusbtargetdevicecreatewithconfig">WdfUsbTargetDeviceCreateWithParameters</a> method.
+<b>Note for Windows Driver Framework (WDF) Drivers:  </b>If your client driver is a WDF-based driver, then you do not need the USBD handle. The client driver is registered in its call to the the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a> method.
 
 
 
@@ -67,7 +68,7 @@ Pointer to the device object for the client driver.
 
 ### -param TargetDeviceObject [in]
 
-Pointer to the next lower device object in the device stack. The client driver receives a pointer to that device object in a previous call to <a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>.
+Pointer to the next lower device object in the device stack. The client driver receives a pointer to that device object in a previous call to <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>.
 
 
 ### -param USBDClientContractVersion [in]
@@ -106,94 +107,36 @@ Before your client driver can use any of those USB capabilities, you must regist
 
 The client driver must call <b>USBD_CreateHandle</b> regardless of whether the device is attached to a USB 3.0, 2.0, or 1.1 host controller. If the device is attached to a USB 3.0 host controller, Windows loads the USB 3.0 driver stack. Otherwise, USB 2.0 driver stack is loaded.   In either case, the client driver is <i>not</i> required to know the version supported by the underlying USB driver stack. <b>USBD_CreateHandle</b> assesses the driver stack version and allocates resources appropriately. 
 
-The client driver must specify  USBD_CLIENT_CONTRACT_VERSION_602 in the <i>USBDClientContractVersion</i> parameter and follow the set of rules described in <a href="buses.usb_client_driver_contract_in_windows_8">Best Practices: Using URBs</a>. 
+The client driver must specify  USBD_CLIENT_CONTRACT_VERSION_602 in the <i>USBDClientContractVersion</i> parameter and follow the set of rules described in <a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>. 
 
 The <b>USBD_CreateHandle</b> routine must be called by a Windows Driver Model (WDM) client driver before the driver  send any other requests, through URBs or IOCTLs, to the USB driver stack. Typically, the client driver obtains the USBD handle in its  AddDevice routine.   
 
-A Windows Driver Frameworks (WDF) client driver is not required to call <b>USBD_CreateHandle</b> because the framework calls this routine on behalf of the client driver during the device initialization phase. Instead, the client driver can specify its client contract version in the <a href="kmdf.wdf_usbtarget_device_config">WDF_USB_DEVICE_CREATE_CONFIG</a> structure and pass it in the call to <a href="kmdf.wdfusbtargetdevicecreatewithconfig">WdfUsbTargetDeviceCreateWithParameters</a>.
+A Windows Driver Frameworks (WDF) client driver is not required to call <b>USBD_CreateHandle</b> because the framework calls this routine on behalf of the client driver during the device initialization phase. Instead, the client driver can specify its client contract version in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_create_config.md">WDF_USB_DEVICE_CREATE_CONFIG</a> structure and pass it in the call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 If the  <b>USBD_CreateHandle</b> call succeeds,  a valid <i>USBD handle</i> is obtained in the <i>USBDHandle</i> parameter. The client driver must use the USBD handle in the client driver's future requests to the USB driver stack. 
 
 If the <b>USBD_CreateHandle</b> call fails,  the client driver can fail the AddDevice routine.
 
-After the client driver is finished using the USBD handle, the driver must close the handle  by calling the <a href="buses.usbd_unregister">USBD_CloseHandle</a> routine.
+After the client driver is finished using the USBD handle, the driver must close the handle  by calling the <a href="..\usbdlib\nf-usbdlib-usbd_closehandle.md">USBD_CloseHandle</a> routine.
 
 The following example code shows how to register a client driver by calling <b>USBD_CreateHandle</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdex.lib; </dt>
-<dt>Ntstrsafe.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbd_unregister">USBD_CloseHandle</a>
+<a href="..\usbdlib\nf-usbdlib-usbd_closehandle.md">USBD_CloseHandle</a>
 </dt>
 <dt>
-<a href="buses.usb_client_driver_contract_in_windows_8">Best Practices: Using URBs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>
 </dt>
 <dt>
-<a href="buses.how_to_add_xrb_support_for_client_drivers">Allocating and Building URBs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USBD_CreateHandle routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_CreateHandle routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

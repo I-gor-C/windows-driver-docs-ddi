@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_GETTARGETMAPPING_OUT
+UID: NS:hbapiwmi._SM_GetTargetMapping_OUT
 title: _SM_GetTargetMapping_OUT
 author: windows-driver-content
 description: The SM_GetTargetMapping structure_OUT structure is used to receive output parameters from the SM_GetTargetMapping method.
@@ -7,8 +7,8 @@ old-location: storage\sm_gettargetmapping_out.htm
 old-project: storage
 ms.assetid: 164379fa-15fb-4ab7-9cf8-8403f92d7a42
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_GetTargetMapping_OUT, SM_GetTargetMapping_OUT, *PSM_GetTargetMapping_OUT, PSM_GetTargetMapping_OUT
+ms.date: 1/10/2018
+ms.keywords: _SM_GetTargetMapping_OUT, SM_GetTargetMapping_OUT, *PSM_GetTargetMapping_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_GetTargetMapping_OUT, *PSM_GetTargetMapping_OUT
 ---
 
 # _SM_GetTargetMapping_OUT structure
@@ -58,7 +59,7 @@ typedef struct _SM_GetTargetMapping_OUT {
 
 ### -field HBAStatus
 
-The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
 
 ### -field TotalEntryCount
@@ -77,20 +78,4 @@ An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings 
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_GetTargetMapping_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_GetTargetMapping_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>

@@ -1,6 +1,6 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION
-title: GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION
+UID: NC:gpioclx.GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION
+title: GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION function
 author: windows-driver-content
 description: The CLIENT_QuerySetControllerInformation event callback function queries the general-purpose I/O (GPIO) controller driver for the specified set of attributes of the GPIO controller.
 old-location: gpio\client_querysetcontrollerinformation.htm
@@ -8,10 +8,10 @@ old-project: GPIO
 ms.assetid: 898AE09B-2C92-4229-9A86-901CDA98CFAA
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: gpioclx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
+req.typenames: FWPS_CONNECT_REQUEST0
 ---
 
-# GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION callback
+# GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION function
 
 
 
@@ -42,7 +43,7 @@ The <i>CLIENT_QuerySetControllerInformation</i> event callback function queries 
 
 
 
-## -prototype
+## -syntax
 
 ````
 GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION CLIENT_QuerySetControllerInformation;
@@ -95,52 +96,6 @@ Then, implement your callback function as follows:
 
 The GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at PASSIVE_LEVEL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

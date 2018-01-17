@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIOP._SETPRESHAREDKEYFORID_IN
+UID: NS:iscsiop._SetPresharedKeyForId_IN
 title: _SetPresharedKeyForId_IN
 author: windows-driver-content
 description: The SetPresharedKeyForId_IN structure holds the input data for the SetPresharedKeyForId method.
@@ -7,8 +7,8 @@ old-location: storage\setpresharedkeyforid_in.htm
 old-project: storage
 ms.assetid: f941bc28-f906-4399-be54-09e2bc12e443
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN, PSetPresharedKeyForId_IN
+ms.date: 1/10/2018
+ms.keywords: _SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN
 ---
 
 # _SetPresharedKeyForId_IN structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The SetPresharedKeyForId_IN structure holds the input data for the <a href="storage.setpresharedkeyforid">SetPresharedKeyForId</a> method.
+The SetPresharedKeyForId_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a> method.
 
 
 
@@ -65,7 +66,7 @@ The number of the port that the initiator uses the preshared key with. A value o
 
 ### -field SecurityFlags
 
-A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.
+A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.
 
 
 ### -field IdType
@@ -140,36 +141,21 @@ The ID to associate with the key. The initiator uses this ID to identify itself 
 You must implement this method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="storage.setpresharedkeyforid">SetPresharedKeyForId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a>
 </dt>
 <dt>
-<a href="storage.setpresharedkeyforid_out">SetPresharedKeyForId_OUT</a>
+<a href="..\iscsiop\ns-iscsiop-_setpresharedkeyforid_out.md">SetPresharedKeyForId_OUT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SetPresharedKeyForId_IN structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SetPresharedKeyForId_IN structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

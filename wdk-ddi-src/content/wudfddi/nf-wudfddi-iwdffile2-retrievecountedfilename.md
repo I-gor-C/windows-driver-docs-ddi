@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFFile2.RetrieveCountedFileName
+UID: NF:wudfddi.IWDFFile2.RetrieveCountedFileName
 title: IWDFFile2::RetrieveCountedFileName method
 author: windows-driver-content
 description: The RetrieveCountedFileName method retrieves the full counted file name for a file that is associated with a device.
@@ -7,7 +7,7 @@ old-location: wdf\iwdffile2_retrievecountedfilename.htm
 old-project: wdf
 ms.assetid: 0b3aa8d9-1947-4e5e-91d1-6f73ddb3908a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFFile2, IWDFFile2::RetrieveCountedFileName, RetrieveCountedFileName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -85,7 +86,7 @@ This method might return one of the other values that Winerror.h contains.
 
 
 ## -remarks
-A counted file name is a string that can include embedded <b>NULL</b> ('\0') characters in addition to a terminating <b>NULL</b>. To obtain a name string without embedded <b>NULL</b> characters, drivers can call <a href="wdf.iwdffile_retrievefilename">IWDFFile::RetrieveFileName</a>.
+A counted file name is a string that can include embedded <b>NULL</b> ('\0') characters in addition to a terminating <b>NULL</b>. To obtain a name string without embedded <b>NULL</b> characters, drivers can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff558939">IWDFFile::RetrieveFileName</a>.
 
 Typically, a driver calls <b>RetrieveCountedFileName</b> twice, using the following steps:
 
@@ -95,65 +96,8 @@ The driver allocates a buffer of the required size.
 
 The driver calls <b>RetrieveCountedFileName</b> again to obtain the file name string.
 
-The following code example obtains the <a href="..\wudfddi\nn-wudfddi-iwdffile2.md">IWDFFile2</a> interface from the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that a driver's <a href="wdf.iqueuecallbackcreate_oncreatefile">IQueueCallbackCreate::OnCreateFile</a> callback function receives. The example calls <b>RetrieveCountedFileName</b> twice--once to obtain the file name's length and once to retrieve the file name string.
+The following code example obtains the <a href="..\wudfddi\nn-wudfddi-iwdffile2.md">IWDFFile2</a> interface from the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a> callback function receives. The example calls <b>RetrieveCountedFileName</b> twice--once to obtain the file name's length and once to retrieve the file name string.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.9
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -161,12 +105,12 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdffile2.md">IWDFFile2</a>
 </dt>
 <dt>
-<a href="wdf.iwdffile_retrievefilename">IWDFFile::RetrieveFileName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558939">IWDFFile::RetrieveFileName</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFFile2::RetrieveCountedFileName method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFFile2::RetrieveCountedFileName method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NE.rilapitypes.RILREMOTEPARTYINFOVALUEPARAM
+UID: NE:rilapitypes.RILREMOTEPARTYINFOVALUEPARAM
 title: RILREMOTEPARTYINFOVALUEPARAM
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilremotepartyinfovalueparam_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: eeea39eb-898a-47fe-befe-39c95dd1fc90
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOPARAM
+ms.date: 1/11/2018
+ms.keywords: RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOPARAM, RILREMOTEPARTYINFOVALUEPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILREMOTEPARTYINFOPARAM, RILREMOTEPARTYINFOVALUEPARAM
 req.product: Windows 10 or later.
 ---
 
@@ -82,19 +83,3 @@ typedef enum _RILREMOTEPARTYINFOVALUEPARAM {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

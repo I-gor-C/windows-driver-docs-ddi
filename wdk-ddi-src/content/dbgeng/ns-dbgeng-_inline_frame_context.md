@@ -1,13 +1,13 @@
 ---
-UID: NS.DBGENG._INLINE_FRAME_CONTEXT
+UID: NS:dbgeng._INLINE_FRAME_CONTEXT
 title: _INLINE_FRAME_CONTEXT
 author: windows-driver-content
 description: Describes inline frame context.
 old-location: debugger\inline_frame_context.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6EB52227-8685-4096-882F-64550A84DE4F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _INLINE_FRAME_CONTEXT, INLINE_FRAME_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: INLINE_FRAME_CONTEXT
 ---
 
 # _INLINE_FRAME_CONTEXT structure
@@ -73,19 +74,3 @@ A structure that contains frame context information.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

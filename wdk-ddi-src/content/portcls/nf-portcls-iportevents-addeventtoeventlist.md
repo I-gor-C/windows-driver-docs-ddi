@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortEvents.AddEventToEventList
+UID: NF:portcls.IPortEvents.AddEventToEventList
 title: IPortEvents::AddEventToEventList method
 author: windows-driver-content
 description: The AddEventToEventList method adds an event to the port driver's event list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortEvents::AddEventToEventList method
@@ -55,7 +56,7 @@ void AddEventToEventList(
 
 ### -param EventEntry [in]
 
-Pointer to the event entry that describes the event. This is an opaque system structure of type <a href="stream.ksevent_entry">KSEVENT_ENTRY</a>.
+Pointer to the event entry that describes the event. This is an opaque system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a>.
 
 
 ## -returns
@@ -66,52 +67,16 @@ None
 This method is used by a miniport driver's to add events to the event list that is maintained by the associated port object. The miniport driver's event handler typically calls this method in response to a PCEVENT_VERB_ADD request after the handler has validated support for the event being requested.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a>
 </dt>
 <dt>
-<a href="audio.iportevents_generateeventlist">IPortEvents::GenerateEventList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
 </dt>
 <dt>
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>

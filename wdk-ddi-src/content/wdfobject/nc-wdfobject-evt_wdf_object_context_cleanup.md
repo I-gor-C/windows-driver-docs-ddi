@@ -1,17 +1,17 @@
 ---
-UID: NC.wdfobject.EVT_WDF_OBJECT_CONTEXT_CLEANUP
-title: EVT_WDF_OBJECT_CONTEXT_CLEANUP
+UID: NC:wdfobject.EVT_WDF_OBJECT_CONTEXT_CLEANUP
+title: EVT_WDF_OBJECT_CONTEXT_CLEANUP function
 author: windows-driver-content
 description: A driver's EvtCleanupCallback event callback function removes the driver's references on an object so that the object can be deleted.
 old-location: wdf\evtcleanupcallback.htm
 old-project: wdf
 ms.assetid: aba2efca-7d1f-4594-af65-13356f0e3f8b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WdfDriverMiniportUnload
+ms.date: 1/11/2018
+ms.keywords: EVT_WDF_OBJECT_CONTEXT_CLEANUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: wdfobject.h
 req.include-header: Wdf.h
 req.target-type: Universal
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: *PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
-# EVT_WDF_OBJECT_CONTEXT_CLEANUP callback
+# EVT_WDF_OBJECT_CONTEXT_CLEANUP function
 
 
 
@@ -45,7 +46,7 @@ A driver's <i>EvtCleanupCallback</i> event callback function removes the driver'
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_WDF_OBJECT_CONTEXT_CLEANUP EvtCleanupCallback;
@@ -69,7 +70,7 @@ None
 
 
 ## -remarks
-The driver can specify an <i>EvtCleanupCallback</i> callback function in a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure. This structure is used as input to all of the framework methods that create framework objects, such as <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>. 
+The driver can specify an <i>EvtCleanupCallback</i> callback function in a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure. This structure is used as input to all of the framework methods that create framework objects, such as <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. 
 
 The framework calls the callback function when either the framework or a driver attempts to delete the object. 
 
@@ -89,23 +90,23 @@ The exception to this guaranteed ordering applies to I/O requests that the drive
 
 If the driver attempts to delete such an object (or the parent of such an object) while it is running at DISPATCH_LEVEL, the framework queues the <i>EvtCleanupCallback</i> to a work item for later processing at PASSIVE_LEVEL and then calls the cleanup callback for the parent object without determining whether the callbacks for the children have run.
 
-To avoid any problems that might result from this behavior, drivers should not set the request object as the parent for any object that requires cleanup at PASSIVE_LEVEL. By default, the parent for most objects is WDFDEVICE, so drivers should just accept the default. Generally, if the WDFDEVICE object is passed as a parameter (either directly or as part of a structure) to the method that creates the object, the WDFDEVICE is the default parent. For a complete list of default parents, see <a href="wdf.summary_of_framework_objects">Summary of Framework Objects</a>.
+To avoid any problems that might result from this behavior, drivers should not set the request object as the parent for any object that requires cleanup at PASSIVE_LEVEL. By default, the parent for most objects is WDFDEVICE, so drivers should just accept the default. Generally, if the WDFDEVICE object is passed as a parameter (either directly or as part of a structure) to the method that creates the object, the WDFDEVICE is the default parent. For a complete list of default parents, see <a href="https://msdn.microsoft.com/799284a5-91c0-47b0-8f20-75a5f8e2284d">Summary of Framework Objects</a>.
 
 
 
  If the above exception does not apply, the framework calls the child object's <i>EvtCleanupCallback</i> callback functions before calling the parent object's <i>EvtCleanupCallback</i> callback function. Next, if the child's reference count is zero, the framework calls the child object's <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a> callback function. Finally, if the parent's reference count is zero, the framework calls the parent object's <i>EvtDestroyCallback</i> callback function.
 
-For more information about deleting framework objects, see <a href="wdf.framework_object_life_cycle">Framework Object Life Cycle</a>.
+For more information about deleting framework objects, see <a href="https://msdn.microsoft.com/33efc3a8-ac46-4626-ba0f-beb1eaa9ee47">Framework Object Life Cycle</a>.
 
 Typically, the framework calls the <i>EvtCleanupCallback</i> callback function at IRQL &lt;= DISPATCH_LEVEL. However, the framework calls the callback function at IRQL = PASSIVE_LEVEL in the following situations:
 
 The object's handle type is WDFDEVICE, WDFDRIVER, WDFDPC, WDFINTERRUPT, WDFIOTARGET, WDFQUEUE, WDFSTRING, WDFTIMER, or WDFWORKITEM.
 
-The object's handle type is WDFMEMORY or WDFLOOKASIDE, and the driver has specified <b>PagedPool</b> for the <i>PoolType</i> parameter to <a href="wdf.wdfmemorycreate">WdfMemoryCreate</a> or <a href="wdf.wdflookasidelistcreate">WdfLookasideListCreate</a>.
+The object's handle type is WDFMEMORY or WDFLOOKASIDE, and the driver has specified <b>PagedPool</b> for the <i>PoolType</i> parameter to <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a> or <a href="..\wdfmemory\nf-wdfmemory-wdflookasidelistcreate.md">WdfLookasideListCreate</a>.
 
-When a work-item object is deleted, either explicitly or because the work item's parent object is being deleted, then before calling the work item's <i>EvtCleanupCallback</i> callback function, the framework waits until all instances of the work item's <a href="wdf.evtworkitem">EvtWorkItem</a> callback function have returned. For more information, see <a href="wdf.wdfworkitemenqueue">WdfWorkItemEnqueue</a>.
+When a work-item object is deleted, either explicitly or because the work item's parent object is being deleted, then before calling the work item's <i>EvtCleanupCallback</i> callback function, the framework waits until all instances of the work item's <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function have returned. For more information, see <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemenqueue.md">WdfWorkItemEnqueue</a>.
 
-Similarly, when a timer object is deleted, either explicitly or because the timer's parent object is being deleted, then before calling the timer's <i>EvtCleanupCallback</i> callback function, the framework waits until all instances of the timer's <a href="wdf.evttimerfunc">EvtTimerFunc</a> event callback function have returned.
+Similarly, when a timer object is deleted, either explicitly or because the timer's parent object is being deleted, then before calling the timer's <i>EvtCleanupCallback</i> callback function, the framework waits until all instances of the timer's <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a> event callback function have returned.
 
 Beginning with version 1.9 of the framework, the <i>wdfroletypes.h</i> header file contains some alternative, object type-specific, function types for the <i>EvtCleanupCallback</i> callback function. These alternative types help verification tools to determine whether the driver is properly using the callback function. Use the following table to determine which function type to use.
 
@@ -134,62 +135,6 @@ Then, implement your callback function as follows:
 The <b>EVT_WDF_OBJECT_CONTEXT_CLEANUP</b> function type is defined in the Wdfobject.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_OBJECT_CONTEXT_CLEANUP</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfobject.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section.
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -199,18 +144,18 @@ See Remarks section.
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548758">WdfObjectReference</a>
 </dt>
 <dt>
-<a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a>
 </dt>
 <dt>
-<a href="wdf.wdfworkitemflush">WdfWorkItemFlush</a>
+<a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemflush.md">WdfWorkItemFlush</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_OBJECT_CONTEXT_CLEANUP callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_OBJECT_CONTEXT_CLEANUP callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

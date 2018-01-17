@@ -1,5 +1,5 @@
 ---
-UID: NS.ATA._IDENTIFY_DEVICE_DATA
+UID: NS:ata._IDENTIFY_DEVICE_DATA
 title: _IDENTIFY_DEVICE_DATA
 author: windows-driver-content
 description: The IDENTIFY_DEVICE_DATA structure contains the data retrieved by an ATA identify device data command (0xEC).Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,8 +7,8 @@ old-location: storage\identify_device_data.htm
 old-project: storage
 ms.assetid: 7f2edd6f-16bf-47a6-8546-7871435a56ac
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IDENTIFY_DEVICE_DATA, PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA
+ms.date: 1/10/2018
+ms.keywords: _IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA
 ---
 
 # _IDENTIFY_DEVICE_DATA structure
@@ -1079,19 +1080,3 @@ Indicates the checksum.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ata.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

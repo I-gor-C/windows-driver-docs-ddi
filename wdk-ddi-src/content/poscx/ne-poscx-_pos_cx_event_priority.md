@@ -1,5 +1,5 @@
 ---
-UID: NE.poscx._POS_CX_EVENT_PRIORITY
+UID: NE:poscx._POS_CX_EVENT_PRIORITY
 title: _POS_CX_EVENT_PRIORITY
 author: windows-driver-content
 description: The POS_CX_EVENT_PRIORITY defines the importance of the event and the order it will be delivered to the client application.
@@ -7,7 +7,7 @@ old-location: pos\pos_cx_event_priority.htm
 old-project: pos
 ms.assetid: 835DC1E4-2D49-4D43-A545-5D4288412EC6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _POS_CX_EVENT_PRIORITY, POS_CX_EVENT_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -72,29 +73,3 @@ Control level priority delivered in FIFO.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

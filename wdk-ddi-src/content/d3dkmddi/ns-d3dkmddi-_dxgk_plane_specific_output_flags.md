@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS
+UID: NS:d3dkmddi._DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS
 title: _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS
 author: windows-driver-content
 description: A structure containing the flags that apply to a plane set by the driver.
@@ -7,7 +7,7 @@ old-location: display\dxgk_plane_specific_output_flags.htm
 old-project: display
 ms.assetid: 95D9C564-92F3-4165-8063-49D928F30475
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS
 ---
 
 # _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS structure
@@ -85,19 +86,3 @@ This member is reserved and should be set to zero. Setting this member to zero i
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

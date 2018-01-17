@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILUICCCOMMAND
+UID: NE:ntddrilapitypes.RILUICCCOMMAND
 title: RILUICCCOMMAND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicccommand.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1c2ded31-9d2d-46e4-a23f-a48528fd448f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILUICCCOMMAND, RILUICCCOMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCCOMMAND
 ---
 
 # RILUICCCOMMAND enumeration
@@ -69,19 +70,3 @@ typedef enum _RILUICCCOMMAND {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,6 +1,6 @@
 ---
-UID: NC.sercx.EVT_SERCX_TRANSMIT
-title: EVT_SERCX_TRANSMIT
+UID: NC:sercx.EVT_SERCX_TRANSMIT
+title: EVT_SERCX_TRANSMIT function
 author: windows-driver-content
 description: The EvtSerCxTransmit event callback function prepares the serial controller device (UART) to do a write (transmit) operation.
 old-location: serports\evtsercxtransmit.htm
@@ -8,10 +8,10 @@ old-project: serports
 ms.assetid: B32335E4-3BDF-4161-9BE2-CF3557D76988
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: EVT_SERCX_TRANSMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: sercx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
-# EVT_SERCX_TRANSMIT callback
+# EVT_SERCX_TRANSMIT function
 
 
 
@@ -43,7 +44,7 @@ The <i>EvtSerCxTransmit</i> event callback function prepares the serial controll
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_SERCX_TRANSMIT EvtSerCxTransmit;
@@ -79,7 +80,7 @@ The <i>EvtSerCxTransmit</i> function does not necessarily write the output data 
 
 If the transmit FIFO in the serial controller is full or nearly full, but the FIFO's low-water-mark interrupt is enabled, the <i>EvtSerCxTransmit</i> function can simply return. Later, the controller driver's ISR can schedule the transmit/receive DPC function to run, and this function can transfer more output data to the transmit FIFO.
 
-To register an <i>EvtSerCxTransmit</i> callback function, the controller driver calls the <a href="serports.sercxinitialize">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback.
+To register an <i>EvtSerCxTransmit</i> callback function, the controller driver calls the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback.
 
 The function type for this callback is declared in Sercx.h, as follows.
 
@@ -90,62 +91,16 @@ Then, implement your callback function as follows.
 For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at IRQL &lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="serports.sercxinitialize">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 <dt>
-<a href="kmdf.wdfdpcenqueue">WdfDpcEnqueue</a>
+<a href="..\wdfdpc\nf-wdfdpc-wdfdpcenqueue.md">WdfDpcEnqueue</a>
 </dt>
 </dl>
  

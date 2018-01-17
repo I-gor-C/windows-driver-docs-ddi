@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._DXVAHDDDI_RATIONAL
+UID: NS:d3dumddi._DXVAHDDDI_RATIONAL
 title: _DXVAHDDDI_RATIONAL
 author: windows-driver-content
 description: The DXVAHDDDI_RATIONAL structure describes a fractional value that represents the vertical and horizontal frequencies of a video mode (that is, vertical sync and horizontal sync).
@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_rational.htm
 old-project: display
 ms.assetid: 4560fb48-24c3-4beb-acc3-b8d2ed3a81d3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVAHDDDI_RATIONAL, DXVAHDDDI_RATIONAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVAHDDDI_RATIONAL
 ---
 
 # _DXVAHDDDI_RATIONAL structure
@@ -67,30 +68,4 @@ typedef struct _DXVAHDDDI_RATIONAL {
 ## -remarks
 An output rate of 0/0 is valid. The driver interprets 0/0 as 0/1. The driver interprets 0/any value as zero. 
 
-The NTSC frame rate is 30000/1001, and the PAL frame rate is 25/1. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-DXVAHDDDI_RATIONAL is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The NTSC frame rate is 30000/1001, and the PAL frame rate is 25/1. </p>

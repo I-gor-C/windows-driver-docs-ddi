@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcNewResourceList
+UID: NF:portcls.PcNewResourceList
 title: PcNewResourceList function
 author: windows-driver-content
 description: The PcNewResourceList function creates and initializes a resource list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcNewResourceList function
@@ -64,22 +65,22 @@ Output pointer for the resource-list object created by this function. This param
 
 ### -param OuterUnknown [in, optional]
 
-Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the resource-list object. Unless aggregation is required, set this parameter to <b>NULL</b>.
+Pointer to the <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface of an object that needs to aggregate the resource-list object. Unless aggregation is required, set this parameter to <b>NULL</b>.
 
 
 ### -param PoolType [in]
 
-Specifies the type of pool from which the object is to be allocated. This is a <a href="kernel.pool_type">POOL_TYPE</a> enumeration value.
+Specifies the type of pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> enumeration value.
 
 
 ### -param TranslatedResources [in]
 
-Pointer to a WDM-supplied resource list for translated resources. The list is a system structure of type <a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a>.
+Pointer to a WDM-supplied resource list for translated resources. The list is a system structure of type <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>.
 
 
 ### -param UntranslatedResources [in]
 
-Pointer to a WDM-supplied resource list for untranslated resources. The list is a system structure of type <a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a>.
+Pointer to a WDM-supplied resource list for untranslated resources. The list is a system structure of type <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>.
 
 
 ## -returns
@@ -92,73 +93,16 @@ For a discussion of translated and untranslated (or "raw") resource lists, see <
 The <i>OutResourceList</i> and <i>OuterUnknown</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PortCls system driver implements the PcNewResourceList function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="kernel.pool_type">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 </dt>
 <dt>
-<a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
 </dt>
 </dl>
  

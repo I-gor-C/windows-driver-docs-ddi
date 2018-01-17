@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._SCARD_CARD_CAPABILITIES
+UID: NS:smclib._SCARD_CARD_CAPABILITIES
 title: _SCARD_CARD_CAPABILITIES
 author: windows-driver-content
 description: The SCARD_CARD_CAPABILITIES structure declaration defines the data that is stored in the CardCapabilites member of the SMARTCARD_EXTENSION structure and holds all information that is specific to the particular smart card that is currently used.
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: 8cc223be-a692-4141-81f6-4cca9e2fccf1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES
+ms.keywords: _SCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -280,20 +281,4 @@ Reserved.
 
 
 ## -remarks
-The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="..\winsmcrd\ni-winsmcrd-ioctl_smartcard_set_protocol.md">IOCTL_SMARTCARD_SET_PROTOCOL</a> request. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548909">IOCTL_SMARTCARD_SET_PROTOCOL</a> request. </p>

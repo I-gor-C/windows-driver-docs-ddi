@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfusb.IWDFUsbTargetDevice.RetrieveDescriptor
+UID: NF:wudfusb.IWDFUsbTargetDevice.RetrieveDescriptor
 title: IWDFUsbTargetDevice::RetrieveDescriptor method
 author: windows-driver-content
 description: The RetrieveDescriptor method retrieves a USB descriptor, which can describe a device, configuration, or string.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetdevice_retrievedescriptor.htm
 old-project: wdf
 ms.assetid: c97b399e-fb25-475a-a2a0-0cf4fb24433c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFUsbTargetDevice, IWDFUsbTargetDevice::RetrieveDescriptor, RetrieveDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ HRESULT RetrieveDescriptor(
 
 A value that specifies the type of descriptor to return. This parameter corresponds to the <b>bDescriptorType</b> field of a standard device descriptor, whose values are described in the <i>Universal Serial Bus</i> specification. (This resource may not be available in some languages 
 
-and countries.) Some of these values are listed in the description of the DescriptorType member of the <a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a> structure.
+and countries.) Some of these values are listed in the description of the DescriptorType member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> structure.
 
 
 
@@ -95,11 +96,11 @@ A pointer to a caller-supplied buffer that receives the USB descriptor. The type
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
-<a href="wdf.iwdfusbtargetdevice_retrievedescriptor">RetrieveDescriptor</a> successfully retrieved the USB descriptor. 
+<a href="https://msdn.microsoft.com/c97b399e-fb25-475a-a2a0-0cf4fb24433c">RetrieveDescriptor</a> successfully retrieved the USB descriptor. 
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
-<a href="wdf.iwdfusbtargetdevice_retrievedescriptor">RetrieveDescriptor</a> encountered an allocation failure.
+<a href="https://msdn.microsoft.com/c97b399e-fb25-475a-a2a0-0cf4fb24433c">RetrieveDescriptor</a> encountered an allocation failure.
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
 </dl>This value corresponds to the error code that the WinUsb API returned.
@@ -108,69 +109,12 @@ A pointer to a caller-supplied buffer that receives the USB descriptor. The type
 
 
 ## -remarks
-For information about valid descriptor types that a UMDF driver can pass for the <i>DescriptorType</i> parameter, see the <a href="buses.winusb_getdescriptor">WinUsb_GetDescriptor</a> function.
+For information about valid descriptor types that a UMDF driver can pass for the <i>DescriptorType</i> parameter, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540257">WinUsb_GetDescriptor</a> function.
 
 The <b>RetrieveDescriptor</b> method generates a UMDF request and synchronously sends the request to the I/O target.
 
 The following code example retrieves a USB configuration descriptor.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.5
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfusb.h (include Wudfusb.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -178,12 +122,12 @@ DLL
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
 </dt>
 <dt>
-<a href="buses.winusb_getdescriptor">WinUsb_GetDescriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540257">WinUsb_GetDescriptor</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrieveDescriptor method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrieveDescriptor method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

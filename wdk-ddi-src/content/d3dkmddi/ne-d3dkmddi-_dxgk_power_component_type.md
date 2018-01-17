@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_POWER_COMPONENT_TYPE
+UID: NE:d3dkmddi._DXGK_POWER_COMPONENT_TYPE
 title: _DXGK_POWER_COMPONENT_TYPE
 author: windows-driver-content
 description: Indicates the power component type that is reported by the display miniport driver to the Microsoft DirectX graphics kernel subsystem.
@@ -7,7 +7,7 @@ old-location: display\dxgk_power_component_type.htm
 old-project: display
 ms.assetid: fe732082-5aa1-4265-a76a-bd2e5b733557
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_POWER_COMPONENT_TYPE, DXGK_POWER_COMPONENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_POWER_COMPONENT_TYPE
 ---
 
 # _DXGK_POWER_COMPONENT_TYPE enumeration
@@ -87,39 +88,3 @@ A maximum value that is used for testing purposes.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

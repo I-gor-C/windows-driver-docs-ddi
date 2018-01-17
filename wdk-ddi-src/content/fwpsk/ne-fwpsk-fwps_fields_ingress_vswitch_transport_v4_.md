@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_
+UID: NE:fwpsk.FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_
 title: FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_
 author: windows-driver-content
 description: The FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_INGRESS_VSWITCH_TRANSPORT_V4 run-time filtering layer.
 old-location: netvista\fwps_fields_ingress_vswitch_transport_v4.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a95f0c9d-66be-4f00-b536-d912d9b52278
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_, FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4
 ---
 
 # FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_ enumeration
@@ -139,29 +140,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

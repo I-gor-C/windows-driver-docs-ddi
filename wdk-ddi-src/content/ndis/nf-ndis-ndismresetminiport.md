@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMResetMiniport
+UID: NF:ndis.NdisMResetMiniport
 title: NdisMResetMiniport function
 author: windows-driver-content
 description: A miniport driver calls the NdisMResetMiniport function to trigger a later reset operation from NDIS.
 old-location: netvista\ndismresetminiport.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 614C6E21-00D0-4F57-9E09-D1BAB166BA42
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisMResetMiniport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMResetMiniport function
@@ -67,62 +68,4 @@ A miniport driver calls <b>NdisMResetMiniport</b> when it determines that the de
 
 As a result, NDIS schedules a work item for calling the miniport driver's <a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a> function asynchronously.
 
-<b>NdisMResetMiniport</b> must be called at IRQL &lt;= DISPATCH_LEVEL.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.30 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+<b>NdisMResetMiniport</b> must be called at IRQL &lt;= DISPATCH_LEVEL.</p>

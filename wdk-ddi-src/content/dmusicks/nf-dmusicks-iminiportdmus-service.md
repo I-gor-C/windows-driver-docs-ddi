@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IMiniportDMus.Service
+UID: NF:dmusicks.IMiniportDMus.Service
 title: IMiniportDMus::Service method
 author: windows-driver-content
 description: This method does not currently need to be implemented in the miniport driver. The Service method is currently unused.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IMiniportDMus::Service method
@@ -62,34 +63,8 @@ None
 
 
 ## -remarks
-<code>Service</code> was intended to be called during a deferred procedure call (DPC) and was to be executed as the result of a call of the <a href="audio.iportdmus_notify">IPortDMus::Notify</a> method. Instead, the DMus port driver sends notification to the miniport driver's input stream by calling <a href="audio.imxf_putmessage">IMXF::PutMessage</a> with a <b>NULL</b> parameter value. Hence, <code>Service</code> is currently unused.
+<code>Service</code> was intended to be called during a deferred procedure call (DPC) and was to be executed as the result of a call of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a> method. Instead, the DMus port driver sends notification to the miniport driver's input stream by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a> with a <b>NULL</b> parameter value. Hence, <code>Service</code> is currently unused.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -97,10 +72,10 @@ Header
 <a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
 </dt>
 <dt>
-<a href="audio.iportdmus_notify">IPortDMus::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>
 </dt>
 <dt>
-<a href="audio.imxf_putmessage">IMXF::PutMessage</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
 </dt>
 </dl>
  

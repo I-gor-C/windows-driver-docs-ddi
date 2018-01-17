@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_CONTEXT_INFO
+UID: NS:ntddk._WHEA_XPF_CONTEXT_INFO
 title: _WHEA_XPF_CONTEXT_INFO
 author: windows-driver-content
 description: The WHEA_XPF_CONTEXT_INFO structure describes processor context information for an x86 or x64 processor.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 044af92b-b77c-415c-9ca5-4436bfe497e5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_CONTEXT_INFO, PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
+ms.keywords: _WHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
 ---
 
 # _WHEA_XPF_CONTEXT_INFO structure
@@ -181,39 +182,13 @@ The buffer contains an array of 64-bit memory mapped registers. The number of re
 The <b>VariableInfo</b> member of the <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains zero or more WHEA_XPF_CONTEXT_INFO structures, each of which describes specific context information associated with the processor error that occurred. If the size of a particular WHEA_XPF_CONTEXT_INFO structure is not an even multiple of 16 bytes, the space that is allocated for the structure in the buffer will be padded with additional bytes that are set to zero to round the allocated space up to an even multiple of 16 bytes.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_x64_register_state">WHEA_X64_REGISTER_STATE</a>
+<a href="..\ntddk\ns-ntddk-_whea_x64_register_state.md">WHEA_X64_REGISTER_STATE</a>
 </dt>
 <dt>
-<a href="whea.whea_x86_register_state">WHEA_X86_REGISTER_STATE</a>
+<a href="..\ntddk\ns-ntddk-_whea_x86_register_state.md">WHEA_X86_REGISTER_STATE</a>
 </dt>
 <dt>
 <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>

@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_ATTACH_BUFFERS
+UID: NS:1394._IRB_REQ_ISOCH_ATTACH_BUFFERS
 title: _IRB_REQ_ISOCH_ATTACH_BUFFERS
 author: windows-driver-content
 description: This structure contains the fields required for the 1394 bus driver to carry out a IsochAttachBuffers request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_ATTACH_BUFFERS
 ---
 
 # _IRB_REQ_ISOCH_ATTACH_BUFFERS structure
@@ -71,19 +72,3 @@ Points to an array of ISOCH_DESCRIPTOR structures that describe the buffers to b
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

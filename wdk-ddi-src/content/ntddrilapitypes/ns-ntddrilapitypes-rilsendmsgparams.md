@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSENDMSGPARAMS
+UID: NS:ntddrilapitypes.RILSENDMSGPARAMS
 title: RILSENDMSGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendmsgparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: de1049a8-e089-4d15-baca-2c760f895894
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDMSGPARAMS, RILSENDMSGPARAMS, LPRILSENDMSGPARAMS, *LPRILSENDMSGPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDMSGPARAMS, *LPRILSENDMSGPARAMS, RILSENDMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSENDMSGPARAMS, RILSENDMSGPARAMS
 ---
 
 # RILSENDMSGPARAMS structure
@@ -69,19 +70,3 @@ typedef struct _RILSENDMSGPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

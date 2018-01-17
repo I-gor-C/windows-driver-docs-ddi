@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILPHONEBOOKENTRYPARAMMASK
+UID: NE:ntddrilapitypes.RILPHONEBOOKENTRYPARAMMASK
 title: RILPHONEBOOKENTRYPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookentryparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6c3f8053-1cb7-44e8-be17-47678b224fa9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILPHONEBOOKENTRYPARAMMASK, RILPHONEBOOKENTRYPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPHONEBOOKENTRYPARAMMASK
 ---
 
 # RILPHONEBOOKENTRYPARAMMASK enumeration
@@ -101,19 +102,3 @@ typedef enum _RILPHONEBOOKENTRYPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

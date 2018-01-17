@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSUPSERVICEDATA
+UID: NS:ntddrilapitypes.RILSUPSERVICEDATA
 title: RILSUPSERVICEDATA
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsupservicedata.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1cb4afae-75ad-4c9b-8b21-f9aade2c5fd8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA, LPRILSUPSERVICEDATA, RILSUPSERVICEDATA
+ms.date: 1/11/2018
+ms.keywords: RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA, RILSUPSERVICEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSUPSERVICEDATA, RILSUPSERVICEDATA
 ---
 
 # RILSUPSERVICEDATA structure
@@ -89,19 +90,3 @@ typedef struct _RILSUPSERVICEDATA {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

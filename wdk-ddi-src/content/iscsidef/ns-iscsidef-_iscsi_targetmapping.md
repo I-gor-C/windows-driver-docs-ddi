@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIDEF._ISCSI_TARGETMAPPING
+UID: NS:iscsidef._ISCSI_TargetMapping
 title: _ISCSI_TargetMapping
 author: windows-driver-content
 description: The ISCSI_TargetMapping structure maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI logical unit numbers.
@@ -7,8 +7,8 @@ old-location: storage\iscsi_targetmapping.htm
 old-project: storage
 ms.assetid: 9b8c5024-5d37-4f85-be00-1a60dd9ab323
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ISCSI_TargetMapping, ISCSI_TargetMapping, *PISCSI_TargetMapping, PISCSI_TargetMapping
+ms.date: 1/10/2018
+ms.keywords: _ISCSI_TargetMapping, ISCSI_TargetMapping, *PISCSI_TargetMapping
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ISCSI_TargetMapping, *PISCSI_TargetMapping
 ---
 
 # _ISCSI_TargetMapping structure
@@ -72,7 +73,7 @@ The SCSI target number (which is valid in the local operating system) that the r
 
 ### -field UniqueSessionId
 
-A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.
+A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.
 
 
 ### -field LUNCount
@@ -97,7 +98,7 @@ Reserved for Microsoft use only.
 
 ### -field LUNList
 
-A <a href="storage.iscsi_lunlist">ISCSI_LUNList</a> structure that holds a list of LUNs that are associated with the target device.
+A <a href="..\iscsidef\ns-iscsidef-_iscsi_lunlist.md">ISCSI_LUNList</a> structure that holds a list of LUNs that are associated with the target device.
 
 
 ## -remarks
@@ -106,39 +107,24 @@ A 64-bit iSCSI LUN by itself does not uniquely identify the logical unit that it
 Management applications can use the ISCSI_TargetMapping structure to specify a local LUN number that can be assigned to the target LUN that the operating system finds during device enumerations.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsidef.h (include Iscsidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.addconnectiontosession">AddConnectionToSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="storage.iscsi_lunlist">ISCSI_LUNList</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_lunlist.md">ISCSI_LUNList</a>
 </dt>
 <dt>
-<a href="storage.iscsi_targetmapping_wmi_class">ISCSI_TargetMapping WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561573">ISCSI_TargetMapping WMI Class</a>
 </dt>
 <dt>
-<a href="storage.logintotarget">LoginToTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_TargetMapping structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_TargetMapping structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

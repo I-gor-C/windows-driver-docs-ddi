@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILRILREGSTATUSINFOREJECTREASON
+UID: NE:ntddrilapitypes.RILRILREGSTATUSINFOREJECTREASON
 title: RILRILREGSTATUSINFOREJECTREASON
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrilregstatusinforejectreason.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 17aad504-4223-4764-8a24-536a81807650
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILRILREGSTATUSINFOREJECTREASON, RILRILREGSTATUSINFOREJECTREASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRILREGSTATUSINFOREJECTREASON
 ---
 
 # RILRILREGSTATUSINFOREJECTREASON enumeration
@@ -125,19 +126,3 @@ typedef enum _RILRILREGSTATUSINFOREJECTREASON {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

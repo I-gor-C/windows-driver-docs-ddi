@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMAllocateSharedMemoryAsyncEx
+UID: NF:ndis.NdisMAllocateSharedMemoryAsyncEx
 title: NdisMAllocateSharedMemoryAsyncEx function
 author: windows-driver-content
 description: Miniport drivers call the NdisMAllocateSharedMemoryAsyncEx function to allocate additional memory shared between the driver and its bus-master DMA NIC, usually when the miniport driver is running low on available NIC receive buffers.
 old-location: netvista\ndismallocatesharedmemoryasyncex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ccbe98ca-7da9-4159-ac1a-c25ec6745ff4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisMAllocateSharedMemoryAsyncEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMAllocateSharedMemoryAsyncEx function
@@ -63,7 +64,7 @@ NDIS_STATUS NdisMAllocateSharedMemoryAsyncEx(
 
 A handle to a context area that NDIS uses to manage a DMA resource. The caller obtained this
      handle by calling the 
-     <a href="netvista.ndismregisterscattergatherdma">
+     <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
      NdisMRegisterScatterGatherDma</a> function.
 
 
@@ -94,7 +95,7 @@ A pointer to driver-determined context to be passed to the
 <dl>
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
 </dl>The requested memory could not be allocated at this time. If 
-       <a href="netvista.ndismallocatesharedmemoryasyncex">NdisMAllocateSharedMemoryAsyncEx</a> returns this status, a subsequent call with the same parameters
+       <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">NdisMAllocateSharedMemoryAsyncEx</a> returns this status, a subsequent call with the same parameters
        might succeed, depending on whether system resources have become available.
 
  
@@ -112,13 +113,13 @@ Such a miniport driver usually maintains one or more state variables to track th
     driver-determined low, the miniport driver calls 
     <b>NdisMAllocateSharedMemoryAsyncEx</b> to allocate more buffer space in shared memory. When the number of
     available buffers climbs to a driver-determined high, the miniport driver calls 
-    <a href="netvista.ndismfreesharedmemory">NdisMFreeSharedMemory</a> one or more
+    <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a> one or more
     times to release its preceding dynamic allocations.
 
 Usually, such a miniport driver retains the block of shared memory that its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
     allocated with 
-    <a href="netvista.ndismallocatesharedmemory">NdisMAllocateSharedMemory</a> until
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> until
     a NIC is removed. When the NIC is removed, NDIS calls the miniport driver's 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function. This allocation
     is sufficient to handle an average demand for transfers through the NIC.
@@ -130,64 +131,9 @@ A miniport driver should set a limit on how much shared memory it can allocate. 
 
 Any miniport driver that calls 
     <b>NdisMAllocateSharedMemoryAsyncEx</b> or 
-    <a href="netvista.ndismallocatesharedmemory">NdisMAllocateSharedMemory</a> must release all outstanding allocations with one or more calls to 
-    <a href="netvista.ndismfreesharedmemory">NdisMFreeSharedMemory</a> when its NIC is removed.
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> must release all outstanding allocations with one or more calls to 
+    <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a> when its NIC is removed.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -202,16 +148,16 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocatesharedmemory">NdisMAllocateSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndismfreesharedmemory">NdisMFreeSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterdmachannel">NdisMRegisterDmaChannel</a>
+<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterscattergatherdma">
+<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
 </dt>
 </dl>
@@ -219,5 +165,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMAllocateSharedMemoryAsyncEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemoryAsyncEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

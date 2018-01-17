@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.FILTER_PAUSE
-title: FILTER_PAUSE
+UID: NC:ndis.FILTER_PAUSE
+title: FILTER_PAUSE function
 author: windows-driver-content
 description: NDIS calls a filter driver's FilterPause function to initiate a pause operation for the specified filter module.Note  You must declare the function by using the FILTER_PAUSE type.
 old-location: netvista\filterpause.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a239889e-ec39-48fc-9e82-c8bc3d7ca51a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: FILTER_PAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# FILTER_PAUSE callback
+# FILTER_PAUSE function
 
 
 
@@ -43,7 +44,7 @@ NDIS calls a filter driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 FILTER_PAUSE FilterPause;
@@ -68,14 +69,14 @@ A handle to the context area for the filter module that the filter driver should
 ### -param FilterPauseParameters [in]
 
 A pointer to an 
-     <a href="netvista.ndis_filter_pause_parameters">
+     <a href="..\ndis\ns-ndis-_ndis_filter_pause_parameters.md">
      NDIS_FILTER_PAUSE_PARAMETERS</a> structure that defines the pause parameters for the filter
      module.
 
 
 ## -returns
 NDIS drivers cannot fail a pause request. The filter driver should call the 
-     <a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a> function
+     <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a> function
      together with parameters that specify the reason for any errors that occur.
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -83,7 +84,7 @@ NDIS drivers cannot fail a pause request. The filter driver should call the
 <dl>
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>The filter driver will complete the request asynchronously with a call to the 
-       <a href="netvista.ndisfpausecomplete">NdisFPauseComplete</a> function.
+       <a href="..\ndis\nf-ndis-ndisfpausecomplete.md">NdisFPauseComplete</a> function.
 
  
 
@@ -99,12 +100,12 @@ A filter driver performs the following operations when NDIS calls
     <i>FilterPause</i>:
 
 Must call the 
-      <a href="netvista.ndisfsendnetbufferlistscomplete">
+      <a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
       NdisFSendNetBufferListsComplete</a> function for any queued send buffers that an overlying driver
       created.
 
 Must call the 
-      <a href="netvista.ndisfreturnnetbufferlists">
+      <a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">
       NdisFReturnNetBufferLists</a> function for any queued receive buffers that an underlying driver
       created.
 
@@ -118,7 +119,7 @@ Must wait for NDIS to return all outstanding receive indications that the driver
 
 After the filter driver returns NDIS_STATUS_SUCCESS from 
     <i>FilterPause</i> or calls the 
-    <a href="netvista.ndisfpausecomplete">NdisFPauseComplete</a> function, the pause
+    <a href="..\ndis\nf-ndis-ndisfpausecomplete.md">NdisFPauseComplete</a> function, the pause
     operation is complete. The filter module is in the 
     <i>Paused</i> state.
 
@@ -154,41 +155,6 @@ The <b>FILTER_PAUSE</b> function type is defined in the Ndis.h header file. To m
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -211,28 +177,28 @@ PASSIVE_LEVEL
    FilterSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_pause_parameters">NDIS_FILTER_PAUSE_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_filter_pause_parameters.md">NDIS_FILTER_PAUSE_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndisfpausecomplete">NdisFPauseComplete</a>
+<a href="..\ndis\nf-ndis-ndisfpausecomplete.md">NdisFPauseComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreturnnetbufferlists">NdisFReturnNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">NdisFReturnNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndisfsendnetbufferlistscomplete">
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
    NdisFSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteeventlogentry">NdisWriteEventLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FILTER_PAUSE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_PAUSE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

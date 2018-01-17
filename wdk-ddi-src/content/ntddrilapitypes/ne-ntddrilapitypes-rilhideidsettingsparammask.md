@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILHIDEIDSETTINGSPARAMMASK
+UID: NE:ntddrilapitypes.RILHIDEIDSETTINGSPARAMMASK
 title: RILHIDEIDSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilhideidsettingsparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3ac34302-f56f-424d-b627-f977c4aabfba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILHIDEIDSETTINGSPARAMMASK, RILHIDEIDSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILHIDEIDSETTINGSPARAMMASK
 ---
 
 # RILHIDEIDSETTINGSPARAMMASK enumeration
@@ -65,19 +66,3 @@ typedef enum _RILHIDEIDSETTINGSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

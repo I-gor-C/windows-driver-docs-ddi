@@ -1,5 +1,5 @@
 ---
-UID: NF.kcom.KoCreateInstance
+UID: NF:kcom.KoCreateInstance
 title: KoCreateInstance function
 author: windows-driver-content
 description: The KoCreateInstance function creates an object of the class with the specified CLSID.
@@ -7,7 +7,7 @@ old-location: stream\kocreateinstance.htm
 old-project: stream
 ms.assetid: ee719cbe-0933-4adc-b5c7-62b66f2bf4e1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KoCreateInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: *PCONNECT_DATA, CONNECT_DATA
 ---
 
 # KoCreateInstance function
@@ -89,41 +90,3 @@ Returns STATUS_SUCCESS if the instance was successfully created. Otherwise, it r
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kcom.h (include Kcom.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ks.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

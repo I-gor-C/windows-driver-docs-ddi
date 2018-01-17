@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdpc.WDF_DPC_CONFIG_INIT
+UID: NF:wdfdpc.WDF_DPC_CONFIG_INIT
 title: WDF_DPC_CONFIG_INIT function
 author: windows-driver-content
 description: The WDF_DPC_CONFIG_INIT function initializes a driver's WDF_DPC_CONFIG structure.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_dpc_config_init.htm
 old-project: wdf
 ms.assetid: 12b34b79-0154-4b25-83e7-b15642154b05
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_DPC_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_DPC_CONFIG_INIT</b> function initializes a driver's <a href="wdf.wdf_dpc_config">WDF_DPC_CONFIG</a> structure.
+The <b>WDF_DPC_CONFIG_INIT</b> function initializes a driver's <a href="..\wdfdpc\ns-wdfdpc-_wdf_dpc_config.md">WDF_DPC_CONFIG</a> structure.
 
 
 
@@ -59,12 +60,12 @@ VOID WDF_DPC_CONFIG_INIT(
 
 ### -param Config [out]
 
-A pointer to a driver-allocated <a href="wdf.wdf_dpc_config">WDF_DPC_CONFIG</a> structure.
+A pointer to a driver-allocated <a href="..\wdfdpc\ns-wdfdpc-_wdf_dpc_config.md">WDF_DPC_CONFIG</a> structure.
 
 
 ### -param EvtDpcFunc [in]
 
-A pointer to a driver-supplied <a href="wdf.evtdpcfunc">EvtDpcFunc</a> callback function.
+A pointer to a driver-supplied <a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a> callback function.
 
 
 ## -returns
@@ -72,69 +73,23 @@ None
 
 
 ## -remarks
-The <b>WDF_DPC_CONFIG_INIT</b> function stores the specified <a href="wdf.evtdpcfunc">EvtDpcFunc</a> pointer and sets the <b>AutomaticSerialization</b> member of the WDF_DPC_CONFIG structure to <b>TRUE</b>.
+The <b>WDF_DPC_CONFIG_INIT</b> function stores the specified <a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a> pointer and sets the <b>AutomaticSerialization</b> member of the WDF_DPC_CONFIG structure to <b>TRUE</b>.
 
-For a code example that uses the <b>WDF_DPC_CONFIG_INIT</b> function, see <a href="wdf.wdfdpccreate">WdfDpcCreate</a>.
+For a code example that uses the <b>WDF_DPC_CONFIG_INIT</b> function, see <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdpc.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_dpc_config">WDF_DPC_CONFIG</a>
+<a href="..\wdfdpc\ns-wdfdpc-_wdf_dpc_config.md">WDF_DPC_CONFIG</a>
 </dt>
 <dt>
-<a href="wdf.evtdpcfunc">EvtDpcFunc</a>
+<a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DPC_CONFIG_INIT function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DPC_CONFIG_INIT function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

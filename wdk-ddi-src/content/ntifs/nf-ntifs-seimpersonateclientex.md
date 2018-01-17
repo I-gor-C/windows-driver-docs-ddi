@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.SeImpersonateClientEx
+UID: NF:ntifs.SeImpersonateClientEx
 title: SeImpersonateClientEx function
 author: windows-driver-content
 description: The SeImpersonateClientEx routine causes a thread to impersonate a user.
@@ -7,7 +7,7 @@ old-location: ifsk\seimpersonateclientex.htm
 old-project: ifsk
 ms.assetid: 7a5043b9-2517-454a-a8d3-1ea09143c81a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: SeImpersonateClientEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # SeImpersonateClientEx function
@@ -86,99 +87,31 @@ It is extremely unsafe to raise the privilege state of an untrusted user thread 
 
 In cases where a higher privilege state is required, the task should be dispatched to a work queue where the task can be safely handled by system worker thread. This way no impersonation is necessary.
 
-To end the impersonation of the user, call the <a href="ifsk.sestopimpersonatingclient">SeStopImpersonatingClient</a> routine.
+To end the impersonation of the user, call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556717">SeStopImpersonatingClient</a> routine.
 
-The <a href="ifsk.psimpersonateclient">PsImpersonateClient</a> routine can be used to cause a server thread to impersonate a client.
+The <a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a> routine can be used to cause a server thread to impersonate a client.
 
 For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of the Windows operating systems. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.psimpersonateclient">PsImpersonateClient</a>
+<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
 </dt>
 <dt>
-<a href="ifsk.secreateclientsecurity">SeCreateClientSecurity</a>
+<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
 </dt>
 <dt>
-<a href="ifsk.secreateclientsecurityfromsubjectcontext">SeCreateClientSecurityFromSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-secreateclientsecurityfromsubjectcontext.md">SeCreateClientSecurityFromSubjectContext</a>
 </dt>
 <dt>
-<a href="ifsk.sestopimpersonatingclient">SeStopImpersonatingClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556717">SeStopImpersonatingClient</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeImpersonateClientEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeImpersonateClientEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

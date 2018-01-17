@@ -1,5 +1,5 @@
 ---
-UID: NE.netdispumdddi.MIRACAST_CHUNK_TYPE
+UID: NE:netdispumdddi.MIRACAST_CHUNK_TYPE
 title: MIRACAST_CHUNK_TYPE
 author: windows-driver-content
 description: Specifies the types of wireless display (Miracast) chunk info that is to be processed.
@@ -7,7 +7,7 @@ old-location: display\miracast_chunk_type.htm
 old-project: display
 ms.assetid: 39911172-f916-4ca2-8d98-9d53fbc30807
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: MIRACAST_CHUNK_TYPE, MIRACAST_CHUNK_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MIRACAST_CHUNK_TYPE
 ---
 
 # MIRACAST_CHUNK_TYPE enumeration
@@ -101,39 +102,3 @@ Forces this enumeration to compile to 32 bits in size. Without this value, some 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Netdispumdddi.h (include Netdispumdddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

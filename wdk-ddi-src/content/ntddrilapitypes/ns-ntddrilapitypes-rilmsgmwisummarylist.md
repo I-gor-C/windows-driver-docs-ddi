@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMSGMWISUMMARYLIST
+UID: NS:ntddrilapitypes.RILMSGMWISUMMARYLIST
 title: RILMSGMWISUMMARYLIST
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwisummarylist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b698f9df-5a67-4ddf-9956-21fbd4f6f385
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMSGMWISUMMARYLIST, LPRILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
+ms.date: 1/11/2018
+ms.keywords: RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
 ---
 
 # RILMSGMWISUMMARYLIST structure
@@ -85,19 +86,3 @@ typedef struct _RILMSGMWISUMMARYLIST {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IServiceGroup.RequestDelayedService
+UID: NF:portcls.IServiceGroup.RequestDelayedService
 title: IServiceGroup::RequestDelayedService method
 author: windows-driver-content
 description: The RequestDelayedService method requests service after the specified delay.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IServiceGroup::RequestDelayedService method
@@ -63,44 +64,8 @@ None
 
 
 ## -remarks
-Before calling <code>RequestDelayedService</code> to request a timer delay, initialize the timer by calling <a href="audio.iservicegroup_supportdelayedservice">IServiceGroup::SupportDelayedService</a>.
+Before calling <code>RequestDelayedService</code> to request a timer delay, initialize the timer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff537004">IServiceGroup::SupportDelayedService</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -108,7 +73,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iservicegroup_supportdelayedservice">IServiceGroup::SupportDelayedService</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537004">IServiceGroup::SupportDelayedService</a>
 </dt>
 </dl>
  

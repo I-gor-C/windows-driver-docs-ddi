@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.ReadMsr
+UID: NF:wdbgexts.ReadMsr
 title: ReadMsr function
 author: windows-driver-content
 description: The ReadMsr function reads the contents of a Model-Specific Register (MSR).
 old-location: debugger\readmsr.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 1cb51f88-a943-43e6-af18-0e9e301d8382
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ReadMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -71,31 +72,4 @@ None
 
 ## -remarks
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
+UID: NS:d3d10umddi.D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 title: D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 author: windows-driver-content
 description: The D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure describes a portion of the stream output for a geometry shader.
@@ -7,7 +7,7 @@ old-location: display\d3d11ddiarg_stream_output_declaration_entry.htm
 old-project: display
 ms.assetid: 336bfc9d-325b-4ff1-8d6b-ec2ef4158cb9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 ---
 
 # D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure
@@ -77,29 +78,3 @@ typedef struct D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY is supported beginning with the Windows 7 operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

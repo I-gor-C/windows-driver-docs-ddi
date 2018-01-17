@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
+UID: NS:ntddk._PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 title: _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 author: windows-driver-content
 description: Stores information about process mitigation policy.
@@ -7,8 +7,8 @@ old-location: kernel\process_mitigation_payload_restriction_policy.htm
 old-project: kernel
 ms.assetid: f55a47b2-c95c-4b6c-aeff-aed99dd9e43b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
+ms.date: 1/4/2018
+ms.keywords: _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 ---
 
 # _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY structure
@@ -151,39 +152,3 @@ Reserved.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

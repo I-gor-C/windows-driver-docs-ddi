@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILREGSTATUSINFO
+UID: NS:rilapitypes.RILREGSTATUSINFO
 title: RILREGSTATUSINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilregstatusinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6f5a96c2-03c3-4a44-b351-188aa39e9817
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILREGSTATUSINFO, RILREGSTATUSINFO, *LPRILREGSTATUSINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILREGSTATUSINFO, *LPRILREGSTATUSINFO
 req.product: Windows 10 or later.
 ---
 
@@ -98,19 +99,3 @@ typedef struct _RILREGSTATUSINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

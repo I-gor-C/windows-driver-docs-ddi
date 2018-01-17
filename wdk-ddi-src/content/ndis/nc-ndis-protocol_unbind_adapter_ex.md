@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_UNBIND_ADAPTER_EX
-title: PROTOCOL_UNBIND_ADAPTER_EX
+UID: NC:ndis.PROTOCOL_UNBIND_ADAPTER_EX
+title: PROTOCOL_UNBIND_ADAPTER_EX function
 author: windows-driver-content
 description: NDIS calls a protocol driver's ProtocolUnbindAdapterEx function to request the driver to unbind from an underlying miniport adapter.Note  You must declare the function by using the PROTOCOL_UNBIND_ADAPTER_EX type.
 old-location: netvista\protocolunbindadapterex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 19fa7be2-acb9-42f6-bd9f-5be3e3c8b5fa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_UNBIND_ADAPTER_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_UNBIND_ADAPTER_EX callback
+# PROTOCOL_UNBIND_ADAPTER_EX function
 
 
 
@@ -44,7 +45,7 @@ NDIS calls a protocol driver's
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_UNBIND_ADAPTER_EX ProtocolUnbindAdapterEx;
@@ -69,7 +70,7 @@ The handle that identifies the NDIS context area for this unbind operation.
 A handle to a context area allocated by the protocol driver. The protocol driver maintains the
      per-binding context information in this context area. The driver supplied this handle to NDIS when the
      driver called the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 ## -returns
@@ -81,7 +82,7 @@ A handle to a context area allocated by the protocol driver. The protocol driver
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl><i>ProtocolUnbindAdapterEx</i> did not complete the unbind operation and the operation will be
        completed asynchronously. The protocol driver must call the 
-       <a href="netvista.ndiscompleteunbindadapterex">
+       <a href="..\ndis\nf-ndis-ndiscompleteunbindadapterex.md">
        NdisCompleteUnbindAdapterEx</a> function after the unbind operation is complete.
 
  
@@ -101,7 +102,7 @@ Before calling
     <b>NetEventPause</b> event.
 
 <i>ProtocolUnbindAdapterEx</i> must call the 
-    <a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a> function to close
+    <a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a> function to close
     the binding to the underlying miniport adapter. If 
     <b>NdisCloseAdapterEx</b> returns NDIS_STATUS_SUCCESS, the close operation is complete. If 
     <b>NdisCloseAdapterEx</b> returns NDIS_STATUS_PENDING, NDIS calls the protocol driver's 
@@ -132,9 +133,9 @@ If the protocol driver has completed the unbind operation,
 <i>ProtocolUnbindAdapterEx</i> can return NDIS_STATUS_PENDING to defer the completion of the unbind
     operation to a later time. If 
     <i>ProtocolUnbindAdapterEx</i> returns NDIS_STATUS_PENDING, the driver must eventually call the 
-    <a href="netvista.ndiscompleteunbindadapterex">
+    <a href="..\ndis\nf-ndis-ndiscompleteunbindadapterex.md">
     NdisCompleteUnbindAdapterEx</a> function to complete the unbind operation. If the 
-    <a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a> function returned
+    <a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a> function returned
     NDIS_STATUS_PENDING, the driver can complete the unbind operation in 
     <i>ProtocolCloseAdapterCompleteEx</i>. 
     <i>ProtocolUnbindAdapterEx</i> can store the handle at 
@@ -148,7 +149,7 @@ If the protocol driver has completed the unbind operation,
 As soon as 
     <i>ProtocolUnbindAdapterEx</i> calls 
     <b>NdisCloseAdapterEx</b>, the handle obtained from the 
-    <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function at the 
+    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function at the 
     <i>NdisBindingHandle</i> parameter becomes invalid. 
     <i>ProtocolUnbindAdapterEx</i> cannot make any subsequent calls to 
     <b>Ndis<i>Xxx</i></b> functions with this handle. The driver can get receive and status indications from the
@@ -187,51 +188,16 @@ The <b>PROTOCOL_UNBIND_ADAPTER_EX</b> function type is defined in the Ndis.h hea
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndiscompleteunbindadapterex">NdisCompleteUnbindAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscompleteunbindadapterex.md">NdisCompleteUnbindAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569073">OID_802_3_MULTICAST_LIST</a>
@@ -261,5 +227,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_UNBIND_ADAPTER_EX callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_UNBIND_ADAPTER_EX callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

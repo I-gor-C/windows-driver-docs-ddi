@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CM_ADD_PARTY
-title: PROTOCOL_CM_ADD_PARTY
+UID: NC:ndis.PROTOCOL_CM_ADD_PARTY
+title: PROTOCOL_CM_ADD_PARTY function
 author: windows-driver-content
 description: The ProtocolCmAddParty function is a required function.
 old-location: netvista\protocolcmaddparty.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 06aa5ff6-974c-43dd-8395-bc1a1a8421d5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CM_ADD_PARTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CM_ADD_PARTY callback
+# PROTOCOL_CM_ADD_PARTY function
 
 
 
@@ -45,7 +46,7 @@ The
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CM_ADD_PARTY ProtocolCmAddParty;
@@ -100,7 +101,7 @@ Specifies, on return, a handle to a call manager-supplied context area in which 
 <dt><b>NDIS_STATUS_PENDING</b></dt>
 </dl>Indicates that the call manager will complete the request to add a party asynchronously. When
        the call manager has completed all operations for adding the party, it must call 
-       <a href="netvista.ndiscmaddpartycomplete">NdisCmAddPartyComplete</a> to signal
+       <a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a> to signal
        NDIS that this operation has been completed.
 <dl>
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
@@ -145,49 +146,10 @@ The <b>PROTOCOL_CM_ADD_PARTY</b> function type is defined in the Ndis.h header f
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/272fb985-3377-449a-9cb2-12891d4a91ba">ProtocolCmAddParty (NDIS
-   5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>ProtocolCmAddParty (NDIS
-   5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndiscladdparty">NdisClAddParty</a>
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
@@ -197,5 +159,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CM_ADD_PARTY callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_ADD_PARTY callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

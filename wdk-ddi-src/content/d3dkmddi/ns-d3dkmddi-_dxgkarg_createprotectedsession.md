@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_CREATEPROTECTEDSESSION
+UID: NS:d3dkmddi._DXGKARG_CREATEPROTECTEDSESSION
 title: _DXGKARG_CREATEPROTECTEDSESSION
 author: windows-driver-content
 description: Used to create a protected session.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_createprotectedsession.htm
 old-project: display
 ms.assetid: 37A9A957-344F-48F6-93DE-D81DE5C20076
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_CREATEPROTECTEDSESSION, DXGKARG_CREATEPROTECTEDSESSION
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_CREATEPROTECTEDSESSION, DXGKARG_CREATEPROTECTEDSESSION, *INOUT_PDXGKARG_CREATEPROTECTEDSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_CREATEPROTECTEDSESSION
 ---
 
 # _DXGKARG_CREATEPROTECTEDSESSION structure
@@ -72,19 +73,3 @@ The size of the data.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

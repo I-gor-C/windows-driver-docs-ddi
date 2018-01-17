@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorClassExtension.Uninitialize
+UID: NF:sensorsclassextension.ISensorClassExtension.Uninitialize
 title: ISensorClassExtension::Uninitialize method
 author: windows-driver-content
 description: The ISensorClassExtension::Uninitialize method uninitializes the sensor class extension object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensorclassextension_uninitialize">ISensorClassExtension::Uninitialize</a> method uninitializes the sensor class extension object.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545547">ISensorClassExtension::Uninitialize</a> method uninitializes the sensor class extension object.
 
 
 
@@ -86,33 +87,6 @@ This method returns an HRESULT. Possible values include, but are not limited to,
 
 
 ## -remarks
-Typically, you will uninitialize  the sensor class extension when the driver is unloading. We recommend that you perform uninitialization steps when called by UMDF in <a href="umdf.ipnpcallbackhardware_onreleasehardware">IPnpCallbackHardware::OnReleaseHardware</a>.
+Typically, you will uninitialize  the sensor class extension when the driver is unloading. We recommend that you perform uninitialization steps when called by UMDF in <a href="https://msdn.microsoft.com/library/windows/hardware/ff556768">IPnpCallbackHardware::OnReleaseHardware</a>.
 
-If you must, for some reason, otherwise release and uninitialize the sensor class extension, you must call <a href="umdf.iwdfioqueue_drainsynchronously">IWDFIoQueue::DrainSynchronously</a> before calling <a href="sensors.isensorclassextension_uninitialize">ISensorClassExtension::Uninitialize</a>. You can retrieve the queue interface by calling <a href="umdf.iwdfdevice_getdefaultioqueue">IWDFDevice::GetDefaultIoQueue</a> on the WDF device object. Then, call <b>IWDFIoQueue::DrainSynchronously</b> to process all the queued requests. Calling <b>IWDFIoQueue::DrainSynchronously</b> blocks the queuing of new requests, so you must call <a href="umdf.iwdfioqueue_start">IWDFIoQueue::Start</a> after you reinitialize the class extension.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sensorsclassextension.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+If you must, for some reason, otherwise release and uninitialize the sensor class extension, you must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff558954">IWDFIoQueue::DrainSynchronously</a> before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545547">ISensorClassExtension::Uninitialize</a>. You can retrieve the queue interface by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff558830">IWDFDevice::GetDefaultIoQueue</a> on the WDF device object. Then, call <b>IWDFIoQueue::DrainSynchronously</b> to process all the queued requests. Calling <b>IWDFIoQueue::DrainSynchronously</b> blocks the queuing of new requests, so you must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff558977">IWDFIoQueue::Start</a> after you reinitialize the class extension.</p>

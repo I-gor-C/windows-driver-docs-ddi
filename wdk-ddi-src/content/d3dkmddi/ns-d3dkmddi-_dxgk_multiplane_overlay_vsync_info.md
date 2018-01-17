@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
 title: _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
 author: windows-driver-content
 description: Specifies an overlay plane to display during a VSync interval.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_vsync_info.htm
 old-project: display
 ms.assetid: b3e93b4d-7d0a-4862-a405-2bf7f78244ef
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO, DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO structure
@@ -73,43 +74,7 @@ Indicates if the overlay plane specified by <b>LayerIndex</b> is enabled for dis
 
 ### -field PlaneAttributes
 
-A structure of type <a href="display.dxgk_multiplane_overlay_attributes">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.
+A structure of type <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_attributes.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

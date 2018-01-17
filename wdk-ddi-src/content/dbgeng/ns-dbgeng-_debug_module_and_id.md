@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_MODULE_AND_ID
+UID: NS:dbgeng._DEBUG_MODULE_AND_ID
 title: _DEBUG_MODULE_AND_ID
 author: windows-driver-content
 description: The DEBUG_MODULE_AND_ID structure describes a symbol within a module.
 old-location: debugger\debug_module_and_id.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: d65ad0fa-1dd8-42b4-866b-cb2522080cde
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID, PDEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
 ---
 
 # _DEBUG_MODULE_AND_ID structure
@@ -65,19 +66,3 @@ The symbol ID of the symbol within the module.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILUICCAPPPERSOCHECKSTATUSSTATE
+UID: NE:ntddrilapitypes.RILUICCAPPPERSOCHECKSTATUSSTATE
 title: RILUICCAPPPERSOCHECKSTATUSSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccapppersocheckstatusstate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d41d5559-b9ec-4ae5-b658-8f75e8af13e4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILUICCAPPPERSOCHECKSTATUSSTATE, RILUICCAPPPERSOCHECKSTATUSSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCAPPPERSOCHECKSTATUSSTATE
 ---
 
 # RILUICCAPPPERSOCHECKSTATUSSTATE enumeration
@@ -65,19 +66,3 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

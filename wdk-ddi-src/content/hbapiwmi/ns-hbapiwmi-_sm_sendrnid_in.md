@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_SENDRNID_IN
+UID: NS:hbapiwmi._SM_SendRNID_IN
 title: _SM_SendRNID_IN
 author: windows-driver-content
 description: The SM_SendRNID_IN structure is used to provide input parameters to the SM_SendRNID method.
@@ -7,8 +7,8 @@ old-location: storage\sm_sendrnid_in.htm
 old-project: storage
 ms.assetid: 7d94fc94-bfc6-4666-a321-71a0643f3140
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_SendRNID_IN, *PSM_SendRNID_IN, SM_SendRNID_IN, PSM_SendRNID_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_SendRNID_IN, *PSM_SendRNID_IN, SM_SendRNID_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSM_SendRNID_IN, SM_SendRNID_IN
 ---
 
 # _SM_SendRNID_IN structure
@@ -83,20 +84,4 @@ The maximum response buffer size.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_SendRNID_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_SendRNID_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.</p>

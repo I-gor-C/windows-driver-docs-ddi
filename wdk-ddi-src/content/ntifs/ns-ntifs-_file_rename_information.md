@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FILE_RENAME_INFORMATION
+UID: NS:ntifs._FILE_RENAME_INFORMATION
 title: _FILE_RENAME_INFORMATION
 author: windows-driver-content
 description: The FILE_RENAME_INFORMATION structure is used to rename a file.
@@ -7,8 +7,8 @@ old-location: ifsk\file_rename_information.htm
 old-project: ifsk
 ms.assetid: 25a195ab-faf1-488d-a9b2-65ae88b57ebd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_RENAME_INFORMATION, PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _FILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION
 ---
 
 # _FILE_RENAME_INFORMATION structure
@@ -79,11 +80,11 @@ The first character of a wide-character string containing the new name for the f
 ## -remarks
 The <b>FILE_RENAME_INFORMATION</b> structure is used to rename a file. This operation can be performed in either of the following ways: 
 
-Call <a href="ifsk.fltsetinformationfile">FltSetInformationFile</a> or <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>, passing <b>FileRenameInformation</b> as the value of <i>FileInformationClass</i> and passing a caller-allocated buffer formatted as a <b>FILE_RENAME_INFORMATION</b> structure for the value of <i>FileInformation</i>. The <i>FileHandle</i> parameter specifies the file to be renamed. 
+Call <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a> or <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>, passing <b>FileRenameInformation</b> as the value of <i>FileInformationClass</i> and passing a caller-allocated buffer formatted as a <b>FILE_RENAME_INFORMATION</b> structure for the value of <i>FileInformation</i>. The <i>FileHandle</i> parameter specifies the file to be renamed. 
 
 Create an IRP with major function code IRP_MJ_SET_INFORMATION. 
 
-File system minifilters must use <a href="ifsk.fltsetinformationfile">FltSetInformationFile</a>, not <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>, to rename a file. 
+File system minifilters must use <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>, not <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>, to rename a file. 
 
 Renaming a file requires DELETE access to the file so that the directory entry may be removed from the current parent directory, as well as the appropriate access to create the new entry in the new parent directory file. 
 
@@ -131,39 +132,24 @@ If <b>ReplaceIfExists</b> is set to <b>TRUE</b>, the rename operation will succe
 
 "Renaming" the default data stream is allowed, but this is not a true rename, because it leaves behind a zero-length default data stream. 
 
-The size of the <i>FileInformation</i> buffer passed to <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a> or <a href="ifsk.fltsetinformationfile">FltSetInformationFile</a> must be &gt;= <b>sizeof</b>(FILE_RENAME_INFORMATION) plus the size in bytes of the <b>FileName</b> string. 
+The size of the <i>FileInformation</i> buffer passed to <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a> or <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a> must be &gt;= <b>sizeof</b>(FILE_RENAME_INFORMATION) plus the size in bytes of the <b>FileName</b> string. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltsetinformationfile">FltSetInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_information">IRP_MJ_SET_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>
+<a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_RENAME_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_RENAME_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

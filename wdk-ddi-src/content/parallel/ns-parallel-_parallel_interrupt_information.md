@@ -1,5 +1,5 @@
 ---
-UID: NS.PARALLEL._PARALLEL_INTERRUPT_INFORMATION
+UID: NS:parallel._PARALLEL_INTERRUPT_INFORMATION
 title: _PARALLEL_INTERRUPT_INFORMATION
 author: windows-driver-content
 description: The PARALLEL_INTERRUPT_INFORMATION structure specifies information that a kernel-mode driver can use in the context of an ISR that the driver connects to a parallel port.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: aa4baa12-c349-4961-9694-b8fb3cd8dc50
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PARALLEL_INTERRUPT_INFORMATION, PPARALLEL_INTERRUPT_INFORMATION, *PPARALLEL_INTERRUPT_INFORMATION, PARALLEL_INTERRUPT_INFORMATION
+ms.keywords: _PARALLEL_INTERRUPT_INFORMATION, *PPARALLEL_INTERRUPT_INFORMATION, PARALLEL_INTERRUPT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPARALLEL_INTERRUPT_INFORMATION, PARALLEL_INTERRUPT_INFORMATION
 ---
 
 # _PARALLEL_INTERRUPT_INFORMATION structure
@@ -80,21 +81,6 @@ Pointer to the device extension of a functional device object that represents th
 A kernel-mode driver can use the parallel interrupt information in the context of an interrupt service routine (ISR). A driver connects an ISR using an <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -104,7 +90,7 @@ Header
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_disconnect_interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="parports.parallel_interrupt_service_routine">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
+<a href="..\parallel\ns-parallel-_parallel_interrupt_service_routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
 </dt>
 <dt>
 <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE (ISR)</a>

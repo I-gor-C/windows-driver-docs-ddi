@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.GetFieldData
+UID: NF:wdbgexts.GetFieldData
 title: GetFieldData function
 author: windows-driver-content
 description: The GetFieldData function returns the value of a member in a structure.
 old-location: debugger\getfielddata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: e60c2288-fe25-4da5-9b17-6e95a30e7c1c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: GetFieldData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -93,30 +94,3 @@ If the function succeeds, the return value is zero. Otherwise, the return value 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

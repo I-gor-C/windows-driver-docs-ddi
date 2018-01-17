@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_DEVICE_CAPS_EX
+UID: NS:wwan._WWAN_DEVICE_CAPS_EX
 title: _WWAN_DEVICE_CAPS_EX
 author: windows-driver-content
 description: The WWAN_DEVICE_CAPS_EX structure represents the capabilities of the mobile broadband device.
 old-location: netvista\wwan_device_caps_ex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 91F62BFF-C26A-422A-B138-1E8D9A5146B3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX, PWWAN_DEVICE_CAPS_EX, *PWWAN_DEVICE_CAPS_EX
+ms.date: 1/11/2018
+ms.keywords: _WWAN_DEVICE_CAPS_EX, *PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>WWAN_DEVICE_CAPS_EX</b> structure represents the capabilities of the mobile broadband device. <b>WWAN_DEVICE_CAPS_EX</b> extends the existing <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a> structure by adding an <b>Executor Index</b> member, for tracking specific executors, and a <b>WwanOptionalServiceCaps</b> member, for Microsoft service extensions.
+The <b>WWAN_DEVICE_CAPS_EX</b> structure represents the capabilities of the mobile broadband device. <b>WWAN_DEVICE_CAPS_EX</b> extends the existing <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a> structure by adding an <b>Executor Index</b> member, for tracking specific executors, and a <b>WwanOptionalServiceCaps</b> member, for Microsoft service extensions.
 
 
 
@@ -1028,13 +1029,13 @@ The device and driver support multi-SIM/multi-executors and the following OIDs:
 
 <ul>
 <li>
-<a href="netvista.oid_wwan_sys_caps">OID_WWAN_SYS_CAPS_INFO</a>
+<a href="https://msdn.microsoft.com/D158432A-A715-4ABB-969C-F8F80D2DB845">OID_WWAN_SYS_CAPS_INFO</a>
 </li>
 <li>
-<a href="netvista.oid_wwan_device_slot_mappings">OID_WWAN_DEVICE_SLOT_MAPPING_INFO</a>
+<a href="https://msdn.microsoft.com/54AF3447-7918-49CE-945A-DC8DC1E78CBF">OID_WWAN_DEVICE_SLOT_MAPPING_INFO</a>
 </li>
 <li>
-<a href="netvista.oid_wwan_slot_info_status">OID_WWAN_SLOT_INFO</a>
+<a href="https://msdn.microsoft.com/6267D480-5055-4A7A-B2A0-F4DF9154DCD7">OID_WWAN_SLOT_INFO</a>
 </li>
 </ul>
 </td>
@@ -1101,46 +1102,21 @@ For CDMA-based devices, only CDMA-related data services must be specified. For e
     defined for completeness.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 10, version 1703
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_wwan_device_caps_ex">NDIS_WWAN_DEVICE_CAPS_EX</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps_ex.md">NDIS_WWAN_DEVICE_CAPS_EX</a>
 </dt>
 <dt>
-<a href="netvista.oid_wwan_device_caps_ex">OID_WWAN_DEVICE_CAPS_EX</a>
+<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
 </dt>
 <dt>
-<a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>
+<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

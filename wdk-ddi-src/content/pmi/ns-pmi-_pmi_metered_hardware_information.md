@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_METERED_HARDWARE_INFORMATION
+UID: NS:pmi._PMI_METERED_HARDWARE_INFORMATION
 title: _PMI_METERED_HARDWARE_INFORMATION
 author: windows-driver-content
 description: The PMI_METERED_HARDWARE_INFORMATION structure contains information about one or more power supplies that are monitored by the power meter.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 44dcfd41-7f0e-487e-8b08-5f301f17e7c1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION, PMI_METERED_HARDWARE_INFORMATION, PPMI_METERED_HARDWARE_INFORMATION
+ms.keywords: _PMI_METERED_HARDWARE_INFORMATION, PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION
 ---
 
 # _PMI_METERED_HARDWARE_INFORMATION structure
@@ -69,33 +70,8 @@ A Unicode string that specifies the name of each device that is powered by the c
 ## -remarks
 The PMI_METERED_HARDWARE_INFORMATION structure is returned through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) query request. The input data for this query request is set to the <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> enumerator value of <b>PmiMeteredHardware</b>.
 
-If the query request completes successfully, the request returns a <a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_METERED_HARDWARE_INFORMATION structure.
+If the query request completes successfully, the request returns a <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_METERED_HARDWARE_INFORMATION structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pmi.h (include Pmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -103,7 +79,7 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
 </dt>
 </dl>
  

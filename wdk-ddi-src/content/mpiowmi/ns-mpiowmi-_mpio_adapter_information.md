@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._MPIO_ADAPTER_INFORMATION
+UID: NS:mpiowmi._MPIO_ADAPTER_INFORMATION
 title: _MPIO_ADAPTER_INFORMATION
 author: windows-driver-content
 description: The MPIO_ADAPTER_INFORMATION structure contains information that pertains to MPIO's view of a path.
@@ -7,8 +7,8 @@ old-location: storage\mpio_adapter_information.htm
 old-project: storage
 ms.assetid: bcf159a7-75a5-46aa-897a-2c5eb00f51d8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION, PMPIO_ADAPTER_INFORMATION
+ms.date: 1/10/2018
+ms.keywords: _MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION
 ---
 
 # _MPIO_ADAPTER_INFORMATION structure
@@ -89,19 +90,3 @@ A string field that returns the friendly name of the host bus adapter through wh
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

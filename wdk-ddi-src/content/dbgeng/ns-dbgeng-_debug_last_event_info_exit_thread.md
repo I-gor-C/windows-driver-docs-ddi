@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_LAST_EVENT_INFO_EXIT_THREAD
+UID: NS:dbgeng._DEBUG_LAST_EVENT_INFO_EXIT_THREAD
 title: _DEBUG_LAST_EVENT_INFO_EXIT_THREAD
 author: windows-driver-content
 description: Describes the exit thread of the last event.
 old-location: debugger\debug_last_event_info_exit_thread.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 1C7E79F2-120A-424B-B4E3-EF202FA90C2A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_THREAD, *PDEBUG_LAST_EVENT_INFO_EXIT_THREAD, PDEBUG_LAST_EVENT_INFO_EXIT_THREAD, DEBUG_LAST_EVENT_INFO_EXIT_THREAD
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_THREAD, DEBUG_LAST_EVENT_INFO_EXIT_THREAD, *PDEBUG_LAST_EVENT_INFO_EXIT_THREAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_LAST_EVENT_INFO_EXIT_THREAD, *PDEBUG_LAST_EVENT_INFO_EXIT_THREAD
 ---
 
 # _DEBUG_LAST_EVENT_INFO_EXIT_THREAD structure
@@ -59,19 +60,3 @@ The exit code of the thread.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

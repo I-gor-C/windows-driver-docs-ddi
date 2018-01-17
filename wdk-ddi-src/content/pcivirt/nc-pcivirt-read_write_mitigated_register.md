@@ -1,17 +1,17 @@
 ---
-UID: NC.pcivirt.READ_WRITE_MITIGATED_REGISTER
-title: READ_WRITE_MITIGATED_REGISTER
+UID: NC:pcivirt.READ_WRITE_MITIGATED_REGISTER
+title: READ_WRITE_MITIGATED_REGISTER function
 author: windows-driver-content
 description: Reads or writes to mitigated address spaces.
 old-location: pci\read_write_mitigated_registers.htm
 old-project: PCI
 ms.assetid: 7cd45484-0fee-4b8e-aa35-4142883c146e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/29/2017
+ms.keywords: READ_WRITE_MITIGATED_REGISTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: pcivirt.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
-# READ_WRITE_MITIGATED_REGISTER callback
+# READ_WRITE_MITIGATED_REGISTER function
 
 
 
@@ -42,7 +43,7 @@ Reads or writes to mitigated address spaces.
 
 
 
-## -prototype
+## -syntax
 
 ````
 READ_WRITE_MITIGATED_REGISTER ReadWriteMitigatedRegister;
@@ -113,50 +114,4 @@ Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriat
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to read or write from a mitigable register. 
 
-The PF driver registers its implementation by setting the <b>ReadWriteMitigatedRegister</b> member of the <a href="buses._mitigable_device_interface">MITIGABLE_DEVICE_INTERFACE</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The PF driver registers its implementation by setting the <b>ReadWriteMitigatedRegister</b> member of the <a href="https://msdn.microsoft.com/1fac7c03-2a48-4b29-951d-c777fbec7dd3">MITIGABLE_DEVICE_INTERFACE</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.</p>

@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_IN_ADAPTER_INIT
+UID: NS:iddcx.IDARG_IN_ADAPTER_INIT
 title: IDARG_IN_ADAPTER_INIT
 author: windows-driver-content
 description: Initializes an adapter that will be hosted on a WDF device.
@@ -7,7 +7,7 @@ old-location: display\idarg_in_adapter_init.htm
 old-project: display
 ms.assetid: 2db324c8-69b1-4497-b6a7-76047baeca19
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_IN_ADAPTER_INIT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_IN_ADAPTER_INIT structure
@@ -79,19 +80,3 @@ typedef struct IDARG_IN_ADAPTER_INIT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

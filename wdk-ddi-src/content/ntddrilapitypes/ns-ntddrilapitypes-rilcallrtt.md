@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLRTT
+UID: NS:ntddrilapitypes.RILCALLRTT
 title: RILCALLRTT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallrtt.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: aa69cc11-66c7-4d23-b596-c37472af484a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLRTT, RILCALLRTT, *LPRILCALLRTT, LPRILCALLRTT
+ms.date: 1/11/2018
+ms.keywords: RILCALLRTT, *LPRILCALLRTT, RILCALLRTT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCALLRTT, RILCALLRTT
 ---
 
 # RILCALLRTT structure
@@ -65,19 +66,3 @@ typedef struct _RILCALLRTT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

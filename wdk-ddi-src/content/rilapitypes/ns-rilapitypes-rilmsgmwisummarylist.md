@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILMSGMWISUMMARYLIST
+UID: NS:rilapitypes.RILMSGMWISUMMARYLIST
 title: RILMSGMWISUMMARYLIST
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwisummarylist_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 85f07ef4-6306-4995-9c95-9bbae775af1c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
 req.product: Windows 10 or later.
 ---
 
@@ -86,19 +87,3 @@ typedef struct _RILMSGMWISUMMARYLIST {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

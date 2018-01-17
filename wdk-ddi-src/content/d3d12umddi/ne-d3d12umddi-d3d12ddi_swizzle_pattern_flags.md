@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_SWIZZLE_PATTERN_FLAGS
+UID: NE:d3d12umddi.D3D12DDI_SWIZZLE_PATTERN_FLAGS
 title: D3D12DDI_SWIZZLE_PATTERN_FLAGS
 author: windows-driver-content
 description: Specifies swizzle pattern flags.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_swizzle_pattern_flags.htm
 old-project: display
 ms.assetid: 613FE631-8381-4EDD-85C9-7B91F9F8B92F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_SWIZZLE_PATTERN_FLAGS, D3D12DDI_SWIZZLE_PATTERN_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_SWIZZLE_PATTERN_FLAGS
 ---
 
 # D3D12DDI_SWIZZLE_PATTERN_FLAGS enumeration
@@ -65,19 +66,3 @@ Depth slices are treated as being stacked vertically prior to swizzling.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

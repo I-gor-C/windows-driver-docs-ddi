@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSETEXECUTORRFSTATEPARAMS
+UID: NS:rilapitypes.RILSETEXECUTORRFSTATEPARAMS
 title: RILSETEXECUTORRFSTATEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetexecutorrfstateparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c1638b6e-7270-4511-a0bb-3766dbd6c6f5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -62,19 +63,3 @@ typedef struct _RILSETEXECUTORRFSTATEPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

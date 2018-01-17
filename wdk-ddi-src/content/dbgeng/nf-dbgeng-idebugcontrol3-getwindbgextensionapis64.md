@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.GetWindbgExtensionApis64
+UID: NF:dbgeng.IDebugControl3.GetWindbgExtensionApis64
 title: IDebugControl3::GetWindbgExtensionApis64 method
 author: windows-driver-content
 description: The GetWindbgExtensionApis64 method returns a structure that facilitates using the WdbgExts API.
 old-location: debugger\getwindbgextensionapis64.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 01b34b26-2835-4a58-abf3-190da63d25eb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::GetWindbgExtensionApis64, GetWindbgExtensionApis64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugControl3::GetWindbgExtensionApis64 method
@@ -71,37 +72,10 @@ This method may also return other error values.  See <a href="https://msdn.micro
 
 
 ## -remarks
-If you are including Wdbgexts.h in your extension code, you should call this method during the initialization of the extension DLL (see <a href="debugger.debugextensioninitialize">DebugExtensionInitialize</a>).
+If you are including Wdbgexts.h in your extension code, you should call this method during the initialization of the extension DLL (see <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>).
 
 Many WdbgExts functions are really macros.  To ensure that these macros work correctly, the structure received by the <i>Api</i> parameter should be stored in a global variable named <b>ExtensionApis</b>.  
 
-The WINDBG_EXTENSION_APIS64 structure returned by this method serves the same purpose as the one provided to the callback function <a href="debugger.windbgextensiondllinit">WinDbgExtensionDllInit</a> (used by WdbgExts extensions).
+The WINDBG_EXTENSION_APIS64 structure returned by this method serves the same purpose as the one provided to the callback function <a href="..\wdbgexts\nc-wdbgexts-pwindbg_extension_dll_init.md">WinDbgExtensionDllInit</a> (used by WdbgExts extensions).
 
-For a list of the functions provided by the WdbgExts API, see <a href="debugger.wdbgexts_functions">WdbgExts Functions</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Wdbgexts.h, Dbgeng.h, or Wdbgexts.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For a list of the functions provided by the WdbgExts API, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561258">WdbgExts Functions</a>.</p>

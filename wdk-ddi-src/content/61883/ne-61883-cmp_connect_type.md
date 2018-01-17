@@ -1,5 +1,5 @@
 ---
-UID: NE.61883.CMP_CONNECT_TYPE
+UID: NE:61883.CMP_CONNECT_TYPE
 title: CMP_CONNECT_TYPE
 author: windows-driver-content
 description: This enumeration specifies a connection type.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CMP_CONNECT_TYPE
 ---
 
 # CMP_CONNECT_TYPE enumeration
@@ -66,21 +67,6 @@ Indicates that this is a point-to-point connection.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_UNLOCK2CB
+UID: NC:d3dumddi.PFND3DDDI_UNLOCK2CB
 title: PFND3DDDI_UNLOCK2CB
 author: windows-driver-content
 description: The pfnUnlock2Cb function unlocks an allocation that was locked by a call to the pfnLock2Cb function.
@@ -7,8 +7,8 @@ old-location: display\pfnunlock2cb.htm
 old-project: display
 ms.assetid: 642C6A05-DA8C-453A-B1AA-030C59F32DA5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_UNLOCK2CB callback
@@ -64,7 +65,7 @@ A handle to the display device (graphics context).
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dddicb_unlock2">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_unlock2.md">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.
 
 
 ## -returns
@@ -72,50 +73,3 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKCB_NOTIFY_MPO_VSYNC_FLAGS
+UID: NS:d3dkmddi._DXGKCB_NOTIFY_MPO_VSYNC_FLAGS
 title: _DXGKCB_NOTIFY_MPO_VSYNC_FLAGS
 author: windows-driver-content
 description: A structure containing the flags set by the driver to process a flip entry.
@@ -7,7 +7,7 @@ old-location: display\dxgkcb_notify_mpo_vsync_flags.htm
 old-project: display
 ms.assetid: 5583297C-D927-4D9A-8F77-D9871B2CA736
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKCB_NOTIFY_MPO_VSYNC_FLAGS, DXGKCB_NOTIFY_MPO_VSYNC_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKCB_NOTIFY_MPO_VSYNC_FLAGS
 ---
 
 # _DXGKCB_NOTIFY_MPO_VSYNC_FLAGS structure
@@ -73,19 +74,3 @@ This member is reserved and should be set to zero. Setting this member to zero i
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

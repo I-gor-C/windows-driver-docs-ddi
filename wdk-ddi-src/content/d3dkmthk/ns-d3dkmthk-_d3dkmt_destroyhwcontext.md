@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_DESTROYHWCONTEXT
+UID: NS:d3dkmthk._D3DKMT_DESTROYHWCONTEXT
 title: _D3DKMT_DESTROYHWCONTEXT
 author: windows-driver-content
 description: A structure holding information to destroy a hardware context.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_destroyhwcontext.htm
 old-project: display
 ms.assetid: DFFFE90A-C505-466A-B415-AA6C6352421B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_DESTROYHWCONTEXT, D3DKMT_DESTROYHWCONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DESTROYHWCONTEXT
 ---
 
 # _D3DKMT_DESTROYHWCONTEXT structure
@@ -60,19 +61,3 @@ A handle that identifies the context being destroyed.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

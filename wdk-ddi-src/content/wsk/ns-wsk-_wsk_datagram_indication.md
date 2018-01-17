@@ -1,14 +1,14 @@
 ---
-UID: NS.WSK._WSK_DATAGRAM_INDICATION
+UID: NS:wsk._WSK_DATAGRAM_INDICATION
 title: _WSK_DATAGRAM_INDICATION
 author: windows-driver-content
 description: The WSK_DATAGRAM_INDICATION structure describes a datagram that has been received on a datagram socket.
 old-location: netvista\wsk_datagram_indication.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 061db3ca-80ed-419e-8cca-f49d1498b780
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WSK_DATAGRAM_INDICATION, *PWSK_DATAGRAM_INDICATION, WSK_DATAGRAM_INDICATION, PWSK_DATAGRAM_INDICATION
+ms.date: 1/11/2018
+ms.keywords: _WSK_DATAGRAM_INDICATION, *PWSK_DATAGRAM_INDICATION, WSK_DATAGRAM_INDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWSK_DATAGRAM_INDICATION, WSK_DATAGRAM_INDICATION
 req.product: Windows 10 or later.
 ---
 
@@ -76,7 +77,7 @@ A WSK_BUF structure that describes a datagram that has been received on the sock
 The control information that is associated with the received datagram. The control information
      data that is associated with a datagram is made up of one or more control data objects, each of which
      begins with a 
-     <a href="netvista.cmsghdr">CMSGHDR</a> structure. If there is no control
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a> structure. If there is no control
      information present for the received datagram, this member is <b>NULL</b>.
 
 
@@ -100,32 +101,6 @@ The WSK subsystem passes a pointer to a WSK_DATAGRAM_INDICATION structure as the
     function.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wsk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -135,18 +110,18 @@ Header
 <a href="..\wsk\nc-wsk-pfn_wsk_receive_from_event.md">WskReceiveFromEvent</a>
 </dt>
 <dt>
-<a href="netvista.cmsghdr">CMSGHDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 </dt>
 <dt>
-<a href="netvista.sockaddr">SOCKADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 </dt>
 <dt>
-<a href="netvista.wsk_buf">WSK_BUF</a>
+<a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WSK_DATAGRAM_INDICATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_DATAGRAM_INDICATION structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

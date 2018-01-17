@@ -1,5 +1,5 @@
 ---
-UID: NC.irb.IDE_TRANSFER_MODE_SELECT
+UID: NC:irb.IDE_TRANSFER_MODE_SELECT
 title: IDE_TRANSFER_MODE_SELECT
 author: windows-driver-content
 description: The AtaControllerTransferModeSelect miniport driver routine selects the transfer mode for all devices on the indicated ATA channel and programs the controller for the selected transfer mode.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
@@ -7,7 +7,7 @@ old-location: storage\atacontrollertransfermodeselect.htm
 old-project: storage
 ms.assetid: 3ee46b54-791f-4eac-84d7-5a0093b6984a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: WdmlibIoGetAffinityInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LUID
 ---
 
 # IDE_TRANSFER_MODE_SELECT callback
@@ -64,7 +65,7 @@ A pointer to the controller extension.
 
 ### -param TransferModeParams [in, out]
 
-A pointer to a structure of type <a href="storage.ide_transfer_mode_parameters">IDE_TRANSFER_MODE_PARAMETERS</a> that indicates to the miniport driver the channel on which to set the transfer modes and which transfer modes are available. 
+A pointer to a structure of type <a href="..\irb\ns-irb-_ide_transfer_mode_parameters.md">IDE_TRANSFER_MODE_PARAMETERS</a> that indicates to the miniport driver the channel on which to set the transfer modes and which transfer modes are available. 
 
 
 ## -returns
@@ -77,41 +78,15 @@ The <b><i>AtaControllerTransferModeSelect</i></b> miniport driver routine must s
 <b><i>AtaControllerTransferModeSelect</i></b> is an optional routine. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="storage.ide_transfer_mode_parameters">IDE_TRANSFER_MODE_PARAMETERS</a>
+<a href="..\irb\ns-irb-_ide_transfer_mode_parameters.md">IDE_TRANSFER_MODE_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaControllerTransferModeSelect routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaControllerTransferModeSelect routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

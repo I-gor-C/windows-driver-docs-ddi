@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.W_TCP_OFFLOAD_DISCONNECT_HANDLER
+UID: NC:ndischimney.W_TCP_OFFLOAD_DISCONNECT_HANDLER
 title: W_TCP_OFFLOAD_DISCONNECT_HANDLER
 author: windows-driver-content
 description: The MiniportTcpOffloadDisconnect function closes the send half of an offloaded TCP connection.
 old-location: netvista\miniporttcpoffloaddisconnect.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f8be12a9-c2c0-4a22-8a57-58c8b27ef69e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # W_TCP_OFFLOAD_DISCONNECT_HANDLER callback
@@ -70,7 +71,7 @@ NDIS_STATUS MiniportTcpOffloadDisconnect(
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The offload target provided this handle to NDIS when it
      called 
-     <a href="netvista.ndismsetminiportattributes">
+     <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
      NdisMSetMiniportAttributes</a> from its 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
@@ -86,8 +87,8 @@ A pointer to a memory location that contains a PVOID value. This PVOID value ref
 ### -param NetBufferList [in]
 
 A pointer to a single 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. Only one 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structure is associated with this
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. Only one 
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure is associated with this
      NET_BUFFER_LIST structure.
 
 
@@ -154,7 +155,7 @@ When
     <b>TCP_DISCONNECT_ABORTIVE_CLOSE</b>, the NET_BUFFER structure associated with the NET_BUFFER_LIST structure referenced by the 
     <i>NetBufferList</i> pointer contains no data. That is, the 
     <b>DataLength</b> member of the 
-    <a href="netvista.net_buffer_data">NET_BUFFER_DATA</a> structure in the 
+    <a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a> structure in the 
     <b>NetBufferHeader</b> of the NET_BUFFER structure is zero.
 
 <b>Graceful Disconnect</b>
@@ -206,31 +207,6 @@ The offload target must not free resources for the connection on which it has is
     abortive or graceful disconnect until the host stack terminates the offload of the connection.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -240,11 +216,11 @@ Any level
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndisadvancenetbufferdatastart">
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
    NdisAdvanceNetBufferDataStart</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
@@ -254,13 +230,13 @@ Any level
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_data">NET_BUFFER_DATA</a>
+<a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -270,5 +246,5 @@ Any level
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

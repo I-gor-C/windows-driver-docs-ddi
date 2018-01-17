@@ -1,17 +1,17 @@
 ---
-UID: NC.dispmprt.DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
-title: DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
+UID: NC:dispmprt.DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
+title: DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY function
 author: windows-driver-content
 description: Reports the colorimetry values selected by the OS for a target.
 old-location: display\dxgkddi_settargetadjustedcolorimetry.htm
 old-project: display
 ms.assetid: C37E0DE1-E849-440F-A11A-BB0E3F50BDFA
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
-# DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback
+# DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY function
 
 
 
@@ -42,7 +43,7 @@ Reports the colorimetry values selected by the OS for a target.
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY(
@@ -90,20 +91,4 @@ The FormatBitDepths and StandardColorimetryFlags in the DXGK_COLORIMETRY are zer
 
 
 This function is always called at PASSIVE level so the supporting code should be made pageable where possible.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

@@ -1,13 +1,13 @@
 ---
-UID: NS.NDIS._NDIS_PD_RECEIVE_QUEUE_COUNTER
+UID: NS:ndis._NDIS_PD_RECEIVE_QUEUE_COUNTER
 title: _NDIS_PD_RECEIVE_QUEUE_COUNTER
 author: windows-driver-content
 description: This structure is used to hold counter information for a receive queue.
 old-location: netvista\ndis_pd_receive_queue_counter.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: E42705A4-D018-435E-BA98-3EE5BA5EDE66
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _NDIS_PD_RECEIVE_QUEUE_COUNTER, NDIS_PD_RECEIVE_QUEUE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_PD_RECEIVE_QUEUE_COUNTER
 ---
 
 # _NDIS_PD_RECEIVE_QUEUE_COUNTER structure
@@ -71,39 +72,3 @@ The amount of packets dropped.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h</dt>
-</dl>
-</td>
-</tr>
-</table>

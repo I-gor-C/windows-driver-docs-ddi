@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILDIALEDIDSETTINGSPARAMMASK
+UID: NE:rilapitypes.RILDIALEDIDSETTINGSPARAMMASK
 title: RILDIALEDIDSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialedidsettingsparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c69d03b7-ef07-41b3-9659-79ab05ecd4e9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILDIALEDIDSETTINGSPARAMMASK, RILDIALEDIDSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDIALEDIDSETTINGSPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -66,19 +67,3 @@ typedef enum _RILDIALEDIDSETTINGSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

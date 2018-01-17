@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlRegisterUncProviderEx~r3
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlRegisterUncProviderEx~r3
 title: FsRtlRegisterUncProviderEx function
 author: windows-driver-content
 description: The FsRtlRegisterUncProviderEx routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP).
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlregisteruncproviderex.htm
 old-project: ifsk
 ms.assetid: 5b7302c1-2f31-4b9f-bddb-7b35bbee4a2c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlRegisterUncProviderEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlRegisterUncProviderEx function
@@ -58,7 +59,7 @@ NTSTATUS FsRtlRegisterUncProviderEx(
 
 ### -param MupHandle [out]
 
-A pointer to a location in which to return a MUP handle to be used when calling <a href="ifsk.fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a> to deregister the network redirector. The returned handle is valid only if <b>FsRtlRegisterUncProviderEx</b> returns STATUS_SUCCESS.
+A pointer to a location in which to return a MUP handle to be used when calling <a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a> to deregister the network redirector. The returned handle is valid only if <b>FsRtlRegisterUncProviderEx</b> returns STATUS_SUCCESS.
 
 
 ### -param RedirDevName [in]
@@ -128,124 +129,56 @@ For network redirectors that conform to the Windows Vista redirector model, MUP 
 
 The device name specified in the <i>RedirDevName</i> parameter in the call to <b>FsRtlRegisterUncProviderEx</b> becomes a symbolic link to \device\Mup in the object manager namespace. Also, an open request of the device name, <i>RedirDevName</i>, will route itself to the actual network redirector device object pointed to by the <i>DeviceObject</i> parameter. 
 
-Network redirectors that call <b>FsRtlRegisterUncProviderEx</b> must not register themselves as a file system (network redirectors must not call <a href="ifsk.ioregisterfilesystem">IoRegisterFileSystem</a>). Network mini-redirectors that use the Windows Vista RDBSS (dynamic or static linking) will not be registered as a file system.
+Network redirectors that call <b>FsRtlRegisterUncProviderEx</b> must not register themselves as a file system (network redirectors must not call <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>). Network mini-redirectors that use the Windows Vista RDBSS (dynamic or static linking) will not be registered as a file system.
 
-File objects on the remote file system stack owned by a network redirector that conforms to the Windows Vista redirector model resolve to MUP. So <a href="ifsk.iogetdeviceattachmentbaseref">IoGetDeviceAttachmentBaseRef</a> returns the device object for MUP, not the network redirector that owns the file object. However, the content of the file object is still owned by the network redirector. 
+File objects on the remote file system stack owned by a network redirector that conforms to the Windows Vista redirector model resolve to MUP. So <a href="..\ntifs\nf-ntifs-iogetdeviceattachmentbaseref.md">IoGetDeviceAttachmentBaseRef</a> returns the device object for MUP, not the network redirector that owns the file object. However, the content of the file object is still owned by the network redirector. 
 
 The ProviderOrder registry value determines the order in which MUP issues prefix resolution requests to individual network redirectors. This order can be changed dynamically without a reboot. This registry value is located under the following registry key: 
 
 Only one network provider on a system can support mailslots. So the FSRTL_UNC_PROVIDER_FLAGS_MAILSLOTS_SUPPORTED option in the <i>Flags</i> parameter is normally only set for the Microsoft SMB redirector.
 
-To deregister a UNC provider, use <a href="ifsk.fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a> and pass the <i>MupHandle</i> parameter.
+To deregister a UNC provider, use <a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a> and pass the <i>MupHandle</i> parameter.
 
-If a driver registers as a local disk file system (by calling <a href="kernel.iocreatedevice">IoCreateDevice</a> with the <i>DeviceType</i> parameter set to FILE_DEVICE_DISK_FILE_SYSTEM), the driver must not call <b>FsRtlRegisterUncProviderEx</b> to register as a UNC provider with MUP.
+If a driver registers as a local disk file system (by calling <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> with the <i>DeviceType</i> parameter set to FILE_DEVICE_DISK_FILE_SYSTEM), the driver must not call <b>FsRtlRegisterUncProviderEx</b> to register as a UNC provider with MUP.
 
 For more information, see the following sections in the Design Guide:
 
 
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
+<a href="https://msdn.microsoft.com/07c4a498-10c7-41b2-aaeb-73cab946f392">Support for UNC Naming and MUP</a>
 
 
 
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
+<a href="https://msdn.microsoft.com/8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec">MUP Changes in Microsoft Windows Vista</a>
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This routine is available on Windows Vista and later versions. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlcancellablewaitforsingleobject">FsRtlCancellableWaitForSingleObject</a>
+<a href="..\ntifs\nf-ntifs-fsrtlcancellablewaitforsingleobject.md">FsRtlCancellableWaitForSingleObject</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a>
+<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlregisteruncprovider">FsRtlRegisterUncProvider</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
 </dt>
 <dt>
-<a href="kernel.iocreatedevice">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
 <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path_ex.md">IOCTL_REDIR_QUERY_PATH_EX</a>
 </dt>
 <dt>
-<a href="ifsk.iogetdeviceattachmentbaseref">IoGetDeviceAttachmentBaseRef</a>
+<a href="..\ntifs\nf-ntifs-iogetdeviceattachmentbaseref.md">IoGetDeviceAttachmentBaseRef</a>
 </dt>
 <dt>
-<a href="ifsk.ioregisterfilesystem">IoRegisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlRegisterUncProviderEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlRegisterUncProviderEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

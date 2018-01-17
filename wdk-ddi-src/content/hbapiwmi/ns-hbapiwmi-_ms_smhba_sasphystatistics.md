@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MS_SMHBA_SASPHYSTATISTICS
+UID: NS:hbapiwmi._MS_SMHBA_SASPHYSTATISTICS
 title: _MS_SMHBA_SASPHYSTATISTICS
 author: windows-driver-content
 description: The MS_SMHBA_SASPHYSTATISTICS structure reports the traffic statistics for a SAS physical link.
@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_sasphystatistics.htm
 old-project: storage
 ms.assetid: bb2ab242-9002-4760-86b2-1aaf203ff710
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MS_SMHBA_SASPHYSTATISTICS, *PMS_SMHBA_SASPHYSTATISTICS, MS_SMHBA_SASPHYSTATISTICS, PMS_SMHBA_SASPHYSTATISTICS
+ms.date: 1/10/2018
+ms.keywords: _MS_SMHBA_SASPHYSTATISTICS, MS_SMHBA_SASPHYSTATISTICS, *PMS_SMHBA_SASPHYSTATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MS_SMHBA_SASPHYSTATISTICS, *PMS_SMHBA_SASPHYSTATISTICS
 ---
 
 # _MS_SMHBA_SASPHYSTATISTICS structure
@@ -107,19 +108,3 @@ A count of the number of physical link reset problems.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

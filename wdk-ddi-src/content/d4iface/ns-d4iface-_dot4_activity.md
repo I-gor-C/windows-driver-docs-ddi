@@ -1,5 +1,5 @@
 ---
-UID: NS.D4IFACE._DOT4_ACTIVITY
+UID: NS:d4iface._DOT4_ACTIVITY
 title: _DOT4_ACTIVITY
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: print\dot4_activity.htm
 old-project: print
 ms.assetid: CD3DBBA5-AE5C-4DC1-BE52-696138494701
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT4_ACTIVITY, *PDOT4_ACTIVITY, PDOT4_ACTIVITY, DOT4_ACTIVITY
+ms.date: 1/8/2018
+ms.keywords: _DOT4_ACTIVITY, DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # _DOT4_ACTIVITY structure
@@ -65,19 +66,3 @@ typedef struct _DOT4_ACTIVITY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D4iface.h</dt>
-</dl>
-</td>
-</tr>
-</table>

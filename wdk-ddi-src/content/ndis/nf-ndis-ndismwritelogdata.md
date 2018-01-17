@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMWriteLogData
+UID: NF:ndis.NdisMWriteLogData
 title: NdisMWriteLogData function
 author: windows-driver-content
 description: NdisMWriteLogData transfers driver-supplied information into the log file for consumption and display by a driver-dedicated Win32 application.
 old-location: netvista\ndismwritelogdata.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 38923308-0268-49b3-9f9d-0fa2b62f7533
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisMWriteLogData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMWriteLogData function
@@ -59,7 +60,7 @@ NDIS_STATUS NdisMWriteLogData(
 ### -param LogHandle [in]
 
 Specifies the handle returned by 
-     <a href="netvista.ndismcreatelog">NdisMCreateLog</a>.
+     <a href="..\ndis\nf-ndis-ndismcreatelog.md">NdisMCreateLog</a>.
 
 
 ### -param LogBuffer [in]
@@ -100,7 +101,7 @@ The driver must release any spin lock it is holding before calling
     <b>NdisMWriteLogData</b>.
 
 <b>NdisMWriteLogData</b> does not recognize boundaries between log records, nor does the Win32 function, 
-    <a href="base.deviceiocontrol">DeviceIoControl</a>, which applications can call with IOCTL_NDIS_GET_LOG_DATA to retrieve data written
+    <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, which applications can call with IOCTL_NDIS_GET_LOG_DATA to retrieve data written
     to an NDIS log file by an NDIS miniport driver. 
     <b>NdisMWriteLogData</b> writes all miniport driver-supplied data at 
     <i>LogBuffer</i> into the log file as a byte stream. 
@@ -112,102 +113,32 @@ Consequently, an application reading an NDIS log must collect retrieved data int
     search for these markers to determine the start of each record.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/library/windows/hardware/ff553671">NdisMWriteLogData (NDIS 5.1)</a>) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisMWriteLogData (NDIS 5.1)</b>) in
-   Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisallocatememorywithtagpriority">
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
    NdisAllocateMemoryWithTagPriority</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatefromnpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndismcloselog">NdisMCloseLog</a>
+<a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
 </dt>
 <dt>
-<a href="netvista.ndismcreatelog">NdisMCreateLog</a>
+<a href="..\ndis\nf-ndis-ndismcreatelog.md">NdisMCreateLog</a>
 </dt>
 <dt>
-<a href="netvista.ndismflushlog">NdisMFlushLog</a>
+<a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
 </dt>
 <dt>
-<a href="netvista.ndisreleasespinlock">NdisReleaseSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMWriteLogData function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMWriteLogData function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

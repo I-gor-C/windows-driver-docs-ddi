@@ -1,5 +1,5 @@
 ---
-UID: NS.SWENUM._BUS_INTERFACE_SWENUM
+UID: NS:swenum._BUS_INTERFACE_SWENUM
 title: _BUS_INTERFACE_SWENUM
 author: windows-driver-content
 description: The BUS_INTERFACE_SWENUM structure describes the demand-load bus enumerator object's interface.
@@ -7,8 +7,8 @@ old-location: stream\bus_interface_swenum.htm
 old-project: stream
 ms.assetid: 7e667dd9-8ed1-49ef-a6ef-0d079d41db86
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BUS_INTERFACE_SWENUM, PBUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM
+ms.date: 1/9/2018
+ms.keywords: _BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM
 req.product: Windows 10 or later.
 ---
 
@@ -59,22 +60,22 @@ typedef struct _BUS_INTERFACE_SWENUM {
 
 ### -field Interface
 
-Specifies the exported <a href="kernel.interface">INTERFACE</a>.
+Specifies the exported <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
 
 ### -field ReferenceDeviceObject
 
-Pointer to a driver-supplied <a href="stream.ksreferencesoftwarebusobject">KsReferenceSoftwareBusObject</a> routine.
+Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksreferencesoftwarebusobject.md">KsReferenceSoftwareBusObject</a> routine.
 
 
 ### -field DereferenceDeviceObject
 
-Pointer to a driver-supplied <a href="stream.ksdereferencesoftwarebusobject">KsDereferenceSoftwareBusObject</a> routine.
+Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksdereferencesoftwarebusobject.md">KsDereferenceSoftwareBusObject</a> routine.
 
 
 ### -field QueryReferenceString
 
-Pointer to a driver-supplied <a href="stream.ksquerysoftwarebusinterface">KsQuerySoftwareBusInterface</a> routine.
+Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksquerysoftwarebusinterface.md">KsQuerySoftwareBusInterface</a> routine.
 
 
 ## -remarks
@@ -88,20 +89,4 @@ In the new stack location, provide a pointer to the new BUS_INTERFACE_SWENUM str
 
 Set a completion routine and send the request down the driver stack.
 
-If your request is successful, the system fills in the BUS_INTERFACE_SWENUM structure pointed to by <b>Parameters.QueryInterface.Interface</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Swenum.h (include Swenum.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+If your request is successful, the system fills in the BUS_INTERFACE_SWENUM structure pointed to by <b>Parameters.QueryInterface.Interface</b>.</p>

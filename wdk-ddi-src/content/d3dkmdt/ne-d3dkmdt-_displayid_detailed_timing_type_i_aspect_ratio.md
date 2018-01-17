@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO
+UID: NE:d3dkmdt._DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO
 title: _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO
 author: windows-driver-content
 description: The DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO enumeration indicates the display device's aspect ratio, defined as width by height (width x height).
@@ -7,7 +7,7 @@ old-location: display\displayid_detailed_timing_type_i_aspect_ratio.htm
 old-project: display
 ms.assetid: 2641a446-1890-4b7d-ac28-c72338207f87
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO enumeration
@@ -90,29 +91,3 @@ Indicates a 16 x 10 aspect ratio.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

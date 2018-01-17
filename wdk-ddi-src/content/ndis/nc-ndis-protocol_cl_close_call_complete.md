@@ -1,17 +1,17 @@
 ---
-UID: NC.ndis.PROTOCOL_CL_CLOSE_CALL_COMPLETE
-title: PROTOCOL_CL_CLOSE_CALL_COMPLETE
+UID: NC:ndis.PROTOCOL_CL_CLOSE_CALL_COMPLETE
+title: PROTOCOL_CL_CLOSE_CALL_COMPLETE function
 author: windows-driver-content
 description: The ProtocolClCloseCallComplete function is used by connection-oriented NDIS clients.
 old-location: netvista\protocolclclosecallcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a7ba1ab2-04c9-45b5-a184-e1ad1448561a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RxNameCacheInitialize
+ms.date: 1/11/2018
+ms.keywords: PROTOCOL_CL_CLOSE_CALL_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
-# PROTOCOL_CL_CLOSE_CALL_COMPLETE callback
+# PROTOCOL_CL_CLOSE_CALL_COMPLETE function
 
 
 
@@ -43,11 +44,11 @@ The
   connection-oriented NDIS clients must have 
   <i>ProtocolClCloseCallComplete</i> functions to complete the asynchronous operations that they initiate with
   
-  <a href="netvista.ndisclclosecall">NdisClCloseCall</a>.
+  <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.
 
 
 
-## -prototype
+## -syntax
 
 ````
 PROTOCOL_CL_CLOSE_CALL_COMPLETE ProtocolClCloseCallComplete;
@@ -92,7 +93,7 @@ The call manager failed the request to close the call for some CM-determined rea
 
 Specifies the handle to the client's per-VC context area This is the handle that the client
      originally passed to NDIS with 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> or returned to NDIS from
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> or returned to NDIS from
      its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
@@ -112,11 +113,11 @@ If the given VC was created by the client and
     <i>Status</i> is NDIS_STATUS_SUCCESS, the client can now do either of the following:
 
 Tear down its VC with 
-      <a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a> and release or prepare for
+      <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a> and release or prepare for
       reuse the context area(s) it allocated.
 
 Reinitialize its per-VC context area and reuse its VC to make another connection with 
-      <a href="netvista.ndisclmakecall">NdisClMakeCall</a>.
+      <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.
 
 If the VC was created by the call manager, the client should consider the 
     <i>NdisVcHandle</i> invalid when 
@@ -142,61 +143,22 @@ The <b>PROTOCOL_CL_CLOSE_CALL_COMPLETE</b> function type is defined in the Ndis.
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/296a8840-45bd-4e56-9342-f0879e516813">
-   ProtocolClCloseCallComplete (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <i>
-   ProtocolClCloseCallComplete (NDIS 5.1)</i>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmclosecallcomplete">NdisCmCloseCallComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmclosecallcomplete.md">NdisCmCloseCallComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmclosecallcomplete">NdisMCmCloseCallComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmclosecallcomplete.md">NdisMCmCloseCallComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
@@ -212,5 +174,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PROTOCOL_CL_CLOSE_CALL_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_CLOSE_CALL_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.ucxroothub._TRISTATE
+UID: NE:ucxroothub._TRISTATE
 title: _TRISTATE
 author: windows-driver-content
 description: The TRISTATE enumeration indicates generic state values for true or false.
 old-location: buses\tristate.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 16D8981B-53D3-4886-A85F-B487701ED172
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: _TRISTATE, TRISTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: TRISTATE
 req.product: Windows 10 or later.
 ---
 
@@ -72,19 +73,3 @@ State is a true boolean value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

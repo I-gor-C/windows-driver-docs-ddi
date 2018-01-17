@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_PATH_UPDATE
+UID: NE:d3dkmddi._DXGK_PATH_UPDATE
 title: _DXGK_PATH_UPDATE
 author: windows-driver-content
 description: Enum which indicates how this path has been modified since the previous successful call to SetTimingsFromVidPn.
@@ -7,7 +7,7 @@ old-location: display\dxgk_path_update.htm
 old-project: display
 ms.assetid: DCBBFBF7-73B2-4298-BB87-83E1C6D76BD0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PATH_UPDATE, DXGK_PATH_UPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_PATH_UPDATE
 ---
 
 # _DXGK_PATH_UPDATE enumeration
@@ -79,19 +80,3 @@ Indicates that this path was present in the previous VidPn but has been removed.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

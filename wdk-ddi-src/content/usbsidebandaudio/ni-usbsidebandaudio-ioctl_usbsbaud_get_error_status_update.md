@@ -1,5 +1,5 @@
 ---
-UID: NI.usbsidebandaudio.IOCTL_USBSBAUD_GET_ERROR_STATUS_UPDATE
+UID: NI:usbsidebandaudio.IOCTL_USBSBAUD_GET_ERROR_STATUS_UPDATE
 title: IOCTL_USBSBAUD_GET_ERROR_STATUS_UPDATE
 author: windows-driver-content
 description: TBD
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 201BE980-7E85-4758-A30E-ECB4B2FCE0DE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT, *PUSBSCAN_TIMEOUT
+ms.keywords: _USBFN_POWER_FILTER_STATE, USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -84,34 +85,19 @@ I/O Status block
 TBD
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>USBSidebandAudio.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlotherssynchronously">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlsynchronously">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendioctlsynchronously">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._MPIOMOVEDEVICE_IN
+UID: NS:mpiowmi._MPIOMoveDevice_IN
 title: _MPIOMoveDevice_IN
 author: windows-driver-content
 description: The MPIOMoveDevice_IN structure is used to set the active path on the device.
@@ -7,8 +7,8 @@ old-location: storage\mpiomovedevice_in.htm
 old-project: storage
 ms.assetid: 2652874f-70d0-4eff-a46d-778a68d55cab
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIOMoveDevice_IN, PMPIOMoveDevice_IN, MPIOMoveDevice_IN, *PMPIOMoveDevice_IN
+ms.date: 1/10/2018
+ms.keywords: _MPIOMoveDevice_IN, *PMPIOMoveDevice_IN, MPIOMoveDevice_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMPIOMoveDevice_IN, MPIOMoveDevice_IN
 ---
 
 # _MPIOMoveDevice_IN structure
@@ -71,19 +72,3 @@ A 64-bitfield that specifies the path that is associated with the device.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

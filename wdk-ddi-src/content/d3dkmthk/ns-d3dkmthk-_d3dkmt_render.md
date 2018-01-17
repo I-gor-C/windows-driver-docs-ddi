@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_RENDER
+UID: NS:d3dkmthk._D3DKMT_RENDER
 title: _D3DKMT_RENDER
 author: windows-driver-content
 description: The D3DKMT_RENDER structure describes the current command buffer to be rendered.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_render.htm
 old-project: display
 ms.assetid: 8e45c4cb-3635-403b-8a91-71af6605c3be
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_RENDER, D3DKMT_RENDER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_RENDER
 ---
 
 # _D3DKMT_RENDER structure
@@ -76,7 +77,7 @@ typedef struct _D3DKMT_RENDER {
 
 ### -field hDevice
 
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the command buffer is rendered to. A device handle is supplied to the <a href="display.d3dkmtrender">D3DKMTRender</a> function in the union that D3DKMT_RENDER contains for compatibility with Microsoft Direct3D version 10.
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the command buffer is rendered to. A device handle is supplied to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function in the union that D3DKMT_RENDER contains for compatibility with Microsoft Direct3D version 10.
 
 
 ### -field hContext
@@ -106,7 +107,7 @@ typedef struct _D3DKMT_RENDER {
 
 ### -field pNewCommandBuffer
 
-[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="display.d3dkmtrender">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
 
 Supported in Windows 7 and later versions:
 
@@ -122,7 +123,7 @@ Depending on current memory conditions the output size might not match the input
 
 ### -field pNewAllocationList
 
-[out] An array of <a href="display.d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the allocation list in its next call to the <a href="display.d3dkmtrender">D3DKMTRender</a> function. The driver must always update its pointer to the allocation list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the allocation list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the allocation list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
 
 Supported in Windows 7 and later versions:
 
@@ -138,7 +139,7 @@ Depending on current memory conditions the output size might not match the input
 
 ### -field pNewPatchLocationList
 
-[out] An array of <a href="display.d3dddi_patchlocationlist">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the patch-location list in its next call to the <a href="display.d3dkmtrender">D3DKMTRender</a> function. The driver must always update its pointer to the patch-location list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the patch-location list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the patch-location list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
 
 
 ### -field NewPatchLocationListSize
@@ -150,7 +151,7 @@ Depending on current memory conditions the output size might not match the input
 
 ### -field Flags
 
-[in] A <a href="display.d3dkmt_renderflags">D3DKMT_RENDERFLAGS</a> structure that indicates the type of command buffer, in bit-field flags, to be rendered.
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_renderflags.md">D3DKMT_RENDERFLAGS</a> structure that indicates the type of command buffer, in bit-field flags, to be rendered.
 
 
 ### -field PresentHistoryToken
@@ -179,7 +180,7 @@ The original context that the <b>hContext</b> member specifies and that owns the
 
 ### -field NewCommandBuffer
 
-[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="display.d3dkmtrender">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
 
 Supported in Windows 7 and later versions:
 
@@ -203,38 +204,13 @@ This member is available beginning with Windows 7.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_renderflags">D3DKMT_RENDERFLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_renderflags.md">D3DKMT_RENDERFLAGS</a>
 </dt>
 <dt>
-<a href="display.d3dkmtrender">D3DKMTRender</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
@@ -244,5 +220,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_RENDER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_RENDER structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddk._WHEA_ERROR_TYPE
+UID: NE:ntddk._WHEA_ERROR_TYPE
 title: _WHEA_ERROR_TYPE
 author: windows-driver-content
 description: The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: b10dbb47-394c-42f0-9471-6e5deb73a7b9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_TYPE, WHEA_ERROR_TYPE, *PWHEA_ERROR_TYPE, PWHEA_ERROR_TYPE
+ms.keywords: _WHEA_ERROR_TYPE, WHEA_ERROR_TYPE, *PWHEA_ERROR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WHEA_ERROR_TYPE, *PWHEA_ERROR_TYPE
 ---
 
 # _WHEA_ERROR_TYPE enumeration
@@ -97,32 +98,6 @@ A hardware component that does not conform to any of the other WHEA_ERROR_TYPE e
 ## -remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure contains a member of type WHEA_ERROR_TYPE that specifies the type of hardware component that reported the hardware error.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

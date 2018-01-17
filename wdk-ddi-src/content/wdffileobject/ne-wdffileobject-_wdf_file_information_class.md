@@ -1,5 +1,5 @@
 ---
-UID: NE.wdffileobject._WDF_FILE_INFORMATION_CLASS
+UID: NE:wdffileobject._WDF_FILE_INFORMATION_CLASS
 title: _WDF_FILE_INFORMATION_CLASS
 author: windows-driver-content
 description: The WDF_FILE_INFORMATION_CLASS enumeration identifies the types of file information that a driver can obtain or set.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_file_information_class.htm
 old-project: wdf
 ms.assetid: d9d6ce1b-8bc1-4ba7-8ee5-3172a780d52c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS, PWDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+ms.date: 1/11/2018
+ms.keywords: _WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,9 +28,10 @@ req.max-support: Unavailable in UMDF 2.0 and later.
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: 
+req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 
@@ -268,61 +269,25 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
 
 
 ## -remarks
-The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration is used as an input value to <a href="wdf.iwdfiorequest2_getqueryinformationparameters">IWDFIoRequest2::GetQueryInformationParameters</a> and as an output value from <a href="wdf.iwdfiorequest2_getsetinformationparameters">IWDFIoRequest2::GetSetInformationParameters</a>.
+The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration is used as an input value to <a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a> and as an output value from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>.
 
 For most values that the <b>WDF_FILE_INFORMATION_CLASS</b> enumeration defines, the wdm.h or ntifs.h header file defines a FILE_XXXX_INFORMATION-named structure that the driver can use when obtaining or setting the file information.
 
-For more information about the enumeration value and associated structures, see the description of the <i>FileInformationClass</i> parameter of <a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a> and <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>.
+For more information about the enumeration value and associated structures, see the description of the <i>FileInformationClass</i> parameter of <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> and <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.9
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi_types.h (include Wudfddi.h); </dt>
-<dt>Wdffileobject.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.iwdfiorequest2_getqueryinformationparameters">IWDFIoRequest2::GetQueryInformationParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest2_getsetinformationparameters">IWDFIoRequest2::GetSetInformationParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILE_INFORMATION_CLASS enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILE_INFORMATION_CLASS enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.strmini._STREAM_PRIORITY
+UID: NE:strmini._STREAM_PRIORITY
 title: _STREAM_PRIORITY
 author: windows-driver-content
 description: TD.
@@ -7,8 +7,8 @@ old-location: stream\stream_priority.htm
 old-project: stream
 ms.assetid: 790A00A5-1107-4686-B690-80D07B69AF62
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STREAM_PRIORITY, STREAM_PRIORITY, PSTREAM_PRIORITY, *PSTREAM_PRIORITY
+ms.date: 1/9/2018
+ms.keywords: _STREAM_PRIORITY, *PSTREAM_PRIORITY, STREAM_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTREAM_PRIORITY, STREAM_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -79,19 +80,3 @@ Go from low priority to high priority.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h</dt>
-</dl>
-</td>
-</tr>
-</table>

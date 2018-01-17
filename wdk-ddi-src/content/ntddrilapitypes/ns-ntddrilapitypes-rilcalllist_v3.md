@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLLIST_V3
+UID: NS:ntddrilapitypes.RILCALLLIST_V3
 title: RILCALLLIST_V3
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalllist_v3.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d602f68a-8fe9-45f4-a54a-abc652578e9c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLLIST_V3, RILCALLLIST_V3, RILCALLLIST, LPRILCALLLIST, *LPRILCALLLIST, *LPRILCALLLIST_V3, LPRILCALLLIST_V3
+ms.date: 1/11/2018
+ms.keywords: RILCALLLIST_V3, RILCALLLIST_V3, *LPRILCALLLIST_V3, RILCALLLIST, *LPRILCALLLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLLIST_V3, *LPRILCALLLIST_V3, RILCALLLIST, *LPRILCALLLIST
 ---
 
 # RILCALLLIST_V3 structure
@@ -61,19 +62,3 @@ typedef struct _RILCALLLIST_V3 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

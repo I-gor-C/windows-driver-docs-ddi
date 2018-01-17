@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._SELF_ID
+UID: NS:1394._SELF_ID
 title: _SELF_ID
 author: windows-driver-content
 description: The SELF_ID structure contains a raw packet zero self-ID packet. See the IEEE 1394 Trade Association specification website for details.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: c168ca19-e4a7-484d-8aed-0b7e7033b760
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SELF_ID, SELF_ID, PSELF_ID, *PSELF_ID
+ms.keywords: _SELF_ID, *PSELF_ID, SELF_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSELF_ID, SELF_ID
 ---
 
 # _SELF_ID structure
@@ -243,21 +244,6 @@ Member <b>SID_Port1</b> contains bits 2-3 of byte 3 of the self-ID packet. Membe
 ## -remarks
 This structure corresponds to self ID packet 0, as described in the <i>P1394a</i> specification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

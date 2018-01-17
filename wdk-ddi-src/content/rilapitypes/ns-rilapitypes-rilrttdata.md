@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILRTTDATA
+UID: NS:rilapitypes.RILRTTDATA
 title: RILRTTDATA
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrttdata_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f481a7e7-ef54-4219-a819-5bb102aecaf6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: RILRTTDATA, RILRTTDATA, *LPRILRTTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRTTDATA, *LPRILRTTDATA
 req.product: Windows 10 or later.
 ---
 
@@ -70,19 +71,3 @@ typedef struct _RILRTTDATA {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

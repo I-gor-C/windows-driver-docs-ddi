@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._STOR_POFX_DEVICE
+UID: NS:storport._STOR_POFX_DEVICE
 title: _STOR_POFX_DEVICE
 author: windows-driver-content
 description: The STOR_POFX_DEVICE structure describes the power attributes of a storage device to the power management framework (PoFx).
@@ -7,8 +7,8 @@ old-location: storage\stor_pofx_device.htm
 old-project: storage
 ms.assetid: 5453CF25-D753-4FED-85E3-D990FAB46626
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STOR_POFX_DEVICE, PSTOR_POFX_DEVICE, *PSTOR_POFX_DEVICE, STOR_POFX_DEVICE
+ms.date: 1/10/2018
+ms.keywords: _STOR_POFX_DEVICE, STOR_POFX_DEVICE, *PSTOR_POFX_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_POFX_DEVICE, *PSTOR_POFX_DEVICE
 req.product: Windows 10 or later.
 ---
 
@@ -145,60 +146,35 @@ This flag indicates whether a device is available for dump when it is idle.
 
 ### -field Components
 
-This member is the first element in an array of one or more <a href="kernel.po_fx_component">STOR_POFX_COMPONENT</a> elements. If the array contains more than one element, the additional elements immediately follow the <b>STOR_POFX_DEVICE</b> structure. The array contains one element for each component in the device.  Currently, storage devices have only  one component so additional component structures are unnecessary.
+This member is the first element in an array of one or more <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">STOR_POFX_COMPONENT</a> elements. If the array contains more than one element, the additional elements immediately follow the <b>STOR_POFX_DEVICE</b> structure. The array contains one element for each component in the device.  Currently, storage devices have only  one component so additional component structures are unnecessary.
 
 
 ## -remarks
-To register a storage adapter for Storport PoFx support, the miniport driver calls <a href="storage.storportenablepassiveinitialization">StorPortEnablePassiveInitialization</a> in its <a href="storage.hwstorinitialize">HwStorInitialize</a> routine and implements a <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a>. The miniport calls <a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a> within it's <b>HwStorPassiveInitializeRoutine</b> to provide information about the adapter component.
+To register a storage adapter for Storport PoFx support, the miniport driver calls <a href="..\storport\nf-storport-storportenablepassiveinitialization.md">StorPortEnablePassiveInitialization</a> in its <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine and implements a <a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>. The miniport calls <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a> within it's <b>HwStorPassiveInitializeRoutine</b> to provide information about the adapter component.
 
-To register a storage unit for Storport PoFx support, the miniport driver implements the <a href="storage.hwstorunitcontrol">HwStorUnitControl</a> callback routine and provides handling of the <b>ScsiUnitPoFxPowerInfo</b> unit control code. When the handling the <b>ScsiUnitPoFxPowerInfo</b> control code, the miniport calls <a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a> if idle power management for the unit component is enabled.
+To register a storage unit for Storport PoFx support, the miniport driver implements the <a href="..\storport\nc-storport-hw_unit_control.md">HwStorUnitControl</a> callback routine and provides handling of the <b>ScsiUnitPoFxPowerInfo</b> unit control code. When the handling the <b>ScsiUnitPoFxPowerInfo</b> control code, the miniport calls <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a> if idle power management for the unit component is enabled.
 
-The component for the storage device identified by its <b>Components</b> array index. Storage devices have only one component so the index of 0 is used.  Routines such as  <a href="storage.storportpofxactivatecomponent">StorPortPoFxActivateComponent</a> and <a href="storage.storportpofxidlecomponent">StorPortPoFxIdleComponent</a> use the array index of a component to identify the component.
+The component for the storage device identified by its <b>Components</b> array index. Storage devices have only one component so the index of 0 is used.  Routines such as  <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a> and <a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a> use the array index of a component to identify the component.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.po_fx_component">STOR_POFX_COMPONENT</a>
+<a href="..\wdm\ns-wdm-_po_fx_component_v2.md">STOR_POFX_COMPONENT</a>
 </dt>
 <dt>
-<a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a>
+<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
 </dt>
 <dt>
-<a href="storage.storportpofxactivatecomponent">StorPortPoFxActivateComponent</a>
+<a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
 </dt>
 <dt>
-<a href="storage.storportpofxidlecomponent">StorPortPoFxIdleComponent</a>
+<a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POFX_DEVICE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POFX_DEVICE structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

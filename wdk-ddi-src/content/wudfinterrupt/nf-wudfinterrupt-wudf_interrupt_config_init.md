@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfinterrupt.WUDF_INTERRUPT_CONFIG_INIT
+UID: NF:wudfinterrupt.WUDF_INTERRUPT_CONFIG_INIT
 title: WUDF_INTERRUPT_CONFIG_INIT function
 author: windows-driver-content
 description: The WUDF_INTERRUPT_CONFIG_INIT function initializes a WUDF_INTERRUPT_CONFIG structure.
@@ -7,7 +7,7 @@ old-location: wdf\wudf_interrupt_config_init.htm
 old-project: wdf
 ms.assetid: 71011FDF-547E-4FF0-9015-E8E09FDF950E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/11/2018
 ms.keywords: WUDF_INTERRUPT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-The <b>WUDF_INTERRUPT_CONFIG_INIT</b> function initializes a <a href="wdf.wudf_interrupt_config">WUDF_INTERRUPT_CONFIG</a> structure.
+The <b>WUDF_INTERRUPT_CONFIG_INIT</b> function initializes a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a> structure.
 
 
 
@@ -62,7 +63,7 @@ void WUDF_INTERRUPT_CONFIG_INIT(
 
 ### -param Configuration [out]
 
-A pointer to a <a href="wdf.wudf_interrupt_config">WUDF_INTERRUPT_CONFIG</a> structure.
+A pointer to a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a> structure.
 
 
 ### -param OnInterruptIsr [in]
@@ -80,55 +81,8 @@ This function does not return a value.
 
 
 ## -remarks
-The <b>WUDF_INTERRUPT_CONFIG_INIT</b> function zeros the specified <a href="wdf.wudf_interrupt_config">WUDF_INTERRUPT_CONFIG</a> structure and sets its <b>Size</b> member to the structure's size. It also stores the specified callback function pointer(s).
+The <b>WUDF_INTERRUPT_CONFIG_INIT</b> function zeros the specified <a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a> structure and sets its <b>Size</b> member to the structure's size. It also stores the specified callback function pointer(s).
 
 <b>WUDF_INTERRUPT_CONFIG_INIT</b> initializes the configuration structure's <b>ShareVector</b> member to <b>WdfUseDefault</b> and the <b>AutomaticSerialization</b> member to FALSE.
 
-For a code example that uses <b>WUDF_INTERRUPT_CONFIG_INIT</b>, see <a href="wdf.iwdfdevice3_createinterrupt">IWDFDevice3::CreateInterrupt</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.11
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfinterrupt.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+For a code example that uses <b>WUDF_INTERRUPT_CONFIG_INIT</b>, see <a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice3::CreateInterrupt</a>.</p>

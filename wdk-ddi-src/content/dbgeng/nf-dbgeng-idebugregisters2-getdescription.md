@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugRegisters2.GetDescription
+UID: NF:dbgeng.IDebugRegisters2.GetDescription
 title: IDebugRegisters2::GetDescription method
 author: windows-driver-content
 description: The GetDescription method returns the description of a register.
 old-location: debugger\getdescription.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 895d18e7-673e-41bb-a3be-eb5b4a778880
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugRegisters2, IDebugRegisters2::GetDescription, GetDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugRegisters2::GetDescription method
@@ -79,7 +80,7 @@ Receives the size, in characters, of the register's name in <i>NameBuffer</i> bu
 
 ### -param Desc [out, optional]
 
-Receives the description of the register.  See <a href="debugger.debug_register_description">DEBUG_REGISTER_DESCRIPTION</a> for more details.
+Receives the description of the register.  See <a href="..\dbgeng\ns-dbgeng-_debug_register_description.md">DEBUG_REGISTER_DESCRIPTION</a> for more details.
 
 
 ## -returns
@@ -101,31 +102,4 @@ This list does not contain all the errors that might occur.  For a list of possi
 
 
 ## -remarks
-For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a> interface and other register-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a> interface and other register-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.</p>

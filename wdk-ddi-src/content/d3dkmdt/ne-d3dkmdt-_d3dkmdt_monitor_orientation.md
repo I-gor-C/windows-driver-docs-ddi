@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_MONITOR_ORIENTATION
+UID: NE:d3dkmdt._D3DKMDT_MONITOR_ORIENTATION
 title: _D3DKMDT_MONITOR_ORIENTATION
 author: windows-driver-content
 description: The D3DKMDT_MONITOR_ORIENTATION enumeration is used to describe the orientation (rotation angle) of a connected external display device.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_orientation.htm
 old-project: display
 ms.assetid: 16e7d91c-04de-4a8c-97c2-c500d0d3697d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_MONITOR_ORIENTATION, D3DKMDT_MONITOR_ORIENTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_MONITOR_ORIENTATION
 ---
 
 # _D3DKMDT_MONITOR_ORIENTATION enumeration
@@ -83,29 +84,3 @@ Indicates that the display device has been rotated 270 degrees clockwise from it
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

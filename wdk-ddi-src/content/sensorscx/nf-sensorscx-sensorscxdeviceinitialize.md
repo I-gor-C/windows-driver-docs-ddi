@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorscx.SensorsCxDeviceInitialize
+UID: NF:sensorscx.SensorsCxDeviceInitialize
 title: SensorsCxDeviceInitialize function
 author: windows-driver-content
 description: This function initializes the sensor in the class extension.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ A WDFDEVICE handle to the framework device object that represents the sensor.
 
 ### -param pSensorConfig [in]
 
-A list of functions that the driver implements. For more information, see <a href="sensors.sensor_controller_config">SENSOR_CONTROLLER_CONFIG</a>.
+A list of functions that the driver implements. For more information, see <a href="..\sensorscx\ns-sensorscx-_sensor_controller_config.md">SENSOR_CONTROLLER_CONFIG</a>.
 
 
 ## -returns
@@ -72,36 +73,10 @@ This function returns STATUS_SUCCESS when completed successfully. When an invali
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsCx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="sensors.sensor_controller_config">SENSOR_CONTROLLER_CONFIG</a>
+<a href="..\sensorscx\ns-sensorscx-_sensor_controller_config.md">SENSOR_CONTROLLER_CONFIG</a>
 </dt>
 </dl>
  

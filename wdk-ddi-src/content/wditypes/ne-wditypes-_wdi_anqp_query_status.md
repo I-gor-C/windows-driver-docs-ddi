@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_ANQP_QUERY_STATUS
+UID: NE:wditypes._WDI_ANQP_QUERY_STATUS
 title: _WDI_ANQP_QUERY_STATUS
 author: windows-driver-content
 description: The WDI_ANQP_QUERY_STATUS enumeration defines the Access Network Query Protocol (ANQP) query status values.
 old-location: netvista\wdi_anqp_query_status.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5EC1B41D-2A6F-43B7-9E22-8A65CF4E11CA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_ANQP_QUERY_STATUS, WDI_ANQP_QUERY_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_ANQP_QUERY_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -117,39 +118,3 @@ Mapped for any of the following errors.
 </ul>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

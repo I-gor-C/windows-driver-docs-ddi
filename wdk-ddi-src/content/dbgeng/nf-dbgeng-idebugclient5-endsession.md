@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugClient5.EndSession
+UID: NF:dbgeng.IDebugClient5.EndSession
 title: IDebugClient5::EndSession method
 author: windows-driver-content
 description: The EndSession method ends the current debugger session.
 old-location: debugger\endsession.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugClient5, IDebugClient5::EndSession, EndSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugClient5::EndSession method
@@ -132,31 +133,4 @@ This method may be called at any time with <i>Flags</i> set to DEBUG_END_REENTRA
 
 Using DEBUG_END_REENTRANT may leave the engine in an indeterminate state. If this flag is used, no subsequent calls should be made to the engine.
 
-For more information about debugger sessions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about debugger sessions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.</p>

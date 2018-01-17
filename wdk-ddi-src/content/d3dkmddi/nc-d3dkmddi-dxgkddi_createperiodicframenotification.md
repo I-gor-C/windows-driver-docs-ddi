@@ -1,17 +1,17 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_CREATEPERIODICFRAMENOTIFICATION
-title: DXGKDDI_CREATEPERIODICFRAMENOTIFICATION
+UID: NC:d3dkmddi.DXGKDDI_CREATEPERIODICFRAMENOTIFICATION
+title: DXGKDDI_CREATEPERIODICFRAMENOTIFICATION function
 author: windows-driver-content
 description: Used to create a periodic frame notification.
 old-location: display\dxgkddi_createperiodicframenotification.htm
 old-project: display
 ms.assetid: EE11227A-E576-49C6-AEF1-CBE0AD788275
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.date: 12/29/2017
+ms.keywords: DXGKDDI_CREATEPERIODICFRAMENOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: requires_max_(PASSIVE_LEVEL)
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
-# DXGKDDI_CREATEPERIODICFRAMENOTIFICATION callback
+# DXGKDDI_CREATEPERIODICFRAMENOTIFICATION function
 
 
 
@@ -42,7 +43,7 @@ Used to create a periodic frame notification.
 
 
 
-## -prototype
+## -syntax
 
 ````
 NTSTATUS APIENTRY DXGKDDI_CREATEPERIODICFRAMENOTIFICATION(
@@ -77,29 +78,3 @@ DXGKDDI_CREATEPERIODICFRAMENOTIFICATION returns one of the following values:
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-requires_max_(PASSIVE_LEVEL)
-
-</td>
-</tr>
-</table>

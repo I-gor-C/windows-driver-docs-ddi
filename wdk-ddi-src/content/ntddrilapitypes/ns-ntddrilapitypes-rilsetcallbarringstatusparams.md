@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSETCALLBARRINGSTATUSPARAMS
+UID: NS:ntddrilapitypes.RILSETCALLBARRINGSTATUSPARAMS
 title: RILSETCALLBARRINGSTATUSPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetcallbarringstatusparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1e524d3d-d9dc-4d95-ad13-258cd51bc532
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETCALLBARRINGSTATUSPARAMS, LPRILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS, *LPRILSETCALLBARRINGSTATUSPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETCALLBARRINGSTATUSPARAMS, *LPRILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS
 ---
 
 # RILSETCALLBARRINGSTATUSPARAMS structure
@@ -81,19 +82,3 @@ typedef struct _RILSETCALLBARRINGSTATUSPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

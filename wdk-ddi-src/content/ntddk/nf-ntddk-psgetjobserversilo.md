@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsGetJobServerSilo
+UID: NF:ntddk.PsGetJobServerSilo
 title: PsGetJobServerSilo function
 author: windows-driver-content
 description: This routine returns the effective ServerSilo for the job. The returned pointer is valid as long as the supplied Job object remains referenced.
@@ -7,7 +7,7 @@ old-location: kernel\psgetjobserversilo.htm
 old-project: kernel
 ms.assetid: 8EBCBC06-8373-43EA-91F5-6C8A439C0EAD
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsGetJobServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsGetJobServerSilo function
@@ -41,7 +42,7 @@ req.irql:
 This routine returns the effective <i>ServerSilo</i> for the job. The returned pointer is valid as long as the supplied <i>Job</i> object remains referenced.
 
 
-<div class="alert"><b>Note</b>  This returns a <i>ServerSilo</i> or a value indicating the host silo. Unlike <a href="kernel.psgetjobsilo">PsGetJobSilo</a>, it will not return an app silo, even if one is present.</div>
+<div class="alert"><b>Note</b>  This returns a <i>ServerSilo</i> or a value indicating the host silo. Unlike <a href="..\ntddk\nf-ntddk-psgetjobsilo.md">PsGetJobSilo</a>, it will not return an app silo, even if one is present.</div>
 <div> </div>
 
 
@@ -82,40 +83,4 @@ The following NT status codes are returned.
 
 
 ## -remarks
-<b>STATUS_SUCCESS</b> is returned even if a server silo is not in effect for the job. In that case, it will return the default host silo.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+<b>STATUS_SUCCESS</b> is returned even if a server silo is not in effect for the job. In that case, it will return the default host silo.</p>

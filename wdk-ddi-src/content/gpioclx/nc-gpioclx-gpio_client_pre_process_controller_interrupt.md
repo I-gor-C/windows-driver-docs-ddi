@@ -1,6 +1,6 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT
-title: GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT
+UID: NC:gpioclx.GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT
+title: GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function
 author: windows-driver-content
 description: The CLIENT_PreProcessControllerInterrupt event callback function performs any pre-processing of a general-purpose I/O (GPIO) interrupt that must be done immediately if the ISR is scheduled to run at a later time.
 old-location: gpio\client_preprocesscontrollerinterrupt.htm
@@ -8,10 +8,10 @@ old-project: GPIO
 ms.assetid: BC97E260-D77C-4ACD-B431-0CE6D745B37B
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: gpioclx.h
 req.include-header: 
 req.target-type: Desktop
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at DIRQL.
+req.typenames: FWPS_CONNECT_REQUEST0
 ---
 
-# GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT callback
+# GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function
 
 
 
@@ -42,7 +43,7 @@ The <i>CLIENT_PreProcessControllerInterrupt</i> event callback function performs
 
 
 
-## -prototype
+## -syntax
 
 ````
 GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT CLIENT_PreProcessControllerInterrupt;
@@ -88,52 +89,6 @@ Then, implement your callback function as follows:
 
 The GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at DIRQL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

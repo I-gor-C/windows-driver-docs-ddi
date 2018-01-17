@@ -1,13 +1,13 @@
 ---
-UID: NE.dot11wdi._WDI_OPERATION_MODE
+UID: NE:dot11wdi._WDI_OPERATION_MODE
 title: _WDI_OPERATION_MODE
 author: windows-driver-content
 description: The WDI_OPERATION_MODE enumeration defines operation modes.
 old-location: netvista\wdi_operation_mode.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9838eeb9-6bd6-46a5-9361-6af3aa2d3014
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: _WDI_OPERATION_MODE, WDI_OPERATION_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_OPERATION_MODE
 ---
 
 # _WDI_OPERATION_MODE enumeration
@@ -77,39 +78,3 @@ Wi-Fi Direct Group Owner.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

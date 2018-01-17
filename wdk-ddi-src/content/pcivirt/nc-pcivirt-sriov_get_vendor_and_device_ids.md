@@ -1,17 +1,17 @@
 ---
-UID: NC.pcivirt.SRIOV_GET_VENDOR_AND_DEVICE_IDS
-title: SRIOV_GET_VENDOR_AND_DEVICE_IDS
+UID: NC:pcivirt.SRIOV_GET_VENDOR_AND_DEVICE_IDS
+title: SRIOV_GET_VENDOR_AND_DEVICE_IDS function
 author: windows-driver-content
 description: Supplies the Vendor and Device ID for a PCI Express SR-IOV Virtual Function (VF) to be used for generating a more generic Plug and Play ID for the VF. These IDs cannot be read directly from the VF’s configuration space.
 old-location: pci\sriov_get_vendor_and_device_ids.htm
 old-project: PCI
 ms.assetid: d08bbaea-6f2b-49ef-bb8b-c1fe357e1c90
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PARCLASS_INFORMATION, PARCLASS_INFORMATION, PPARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.date: 12/29/2017
+ms.keywords: SRIOV_GET_VENDOR_AND_DEVICE_IDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: pcivirt.h
 req.include-header: 
 req.target-type: Windows
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
-# SRIOV_GET_VENDOR_AND_DEVICE_IDS callback
+# SRIOV_GET_VENDOR_AND_DEVICE_IDS function
 
 
 
@@ -42,7 +43,7 @@ Supplies the Vendor and Device ID for a PCI Express SR-IOV Virtual Function (VF)
 
 
 
-## -prototype
+## -syntax
 
 ````
 SRIOV_GET_VENDOR_AND_DEVICE_IDS SriovGetVendorAndDeviceIds;
@@ -97,52 +98,6 @@ This callback function is implemented by the physical function (PF) driver. It i
 
 The PCI Express SR-IOV Specification requires that all VFs have the same Vendor and Device IDs.  This is a requirement of compliant hardware.  However, it’s possible to provision VFs such that their capabilities differ from each other, and it’s often useful to load different drivers on different hardware.  So Windows allows the  PF driver to supply separate Device and Vendor IDs (with different class codes, through the configuration space interfaces) such that each VF may appear with the Plug and Play IDs that are most appropriate for its use.
 
-The PF driver registers its implementation by setting the <b>GetVendorAndDevice</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
+The PF driver registers its implementation by setting the <b>GetVendorAndDevice</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
-Here is an example implementation of this callback function. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+Here is an example implementation of this callback function. </p>

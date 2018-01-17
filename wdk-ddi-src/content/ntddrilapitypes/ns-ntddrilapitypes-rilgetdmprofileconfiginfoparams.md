@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILGETDMPROFILECONFIGINFOPARAMS
+UID: NS:ntddrilapitypes.RILGETDMPROFILECONFIGINFOPARAMS
 title: RILGETDMPROFILECONFIGINFOPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetdmprofileconfiginfoparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: df62bc19-81c7-4d80-88ed-5e8a8438d269
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGETDMPROFILECONFIGINFOPARAMS, LPRILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS
 ---
 
 # RILGETDMPROFILECONFIGINFOPARAMS structure
@@ -61,19 +62,3 @@ typedef struct _RILGETDMPROFILECONFIGINFOPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

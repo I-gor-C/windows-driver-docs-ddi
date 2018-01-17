@@ -1,17 +1,17 @@
 ---
-UID: NC.poscx.EVT_POS_CX_DEVICE_REMOTE_RETAIN
-title: EVT_POS_CX_DEVICE_REMOTE_RETAIN
+UID: NC:poscx.EVT_POS_CX_DEVICE_REMOTE_RETAIN
+title: EVT_POS_CX_DEVICE_REMOTE_RETAIN function
 author: windows-driver-content
 description: The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work.
 old-location: pos\evt_pos_cx_device_remote_retain.htm
 old-project: pos
 ms.assetid: 9B23DB23-D995-4737-9302-872F2144823D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: EVT_POS_CX_DEVICE_REMOTE_RETAIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: callback
+ms.topic: function
 req.header: poscx.h
 req.include-header: Poscx.h
 req.target-type: Windows
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
-# EVT_POS_CX_DEVICE_REMOTE_RETAIN callback
+# EVT_POS_CX_DEVICE_REMOTE_RETAIN function
 
 
 
@@ -45,7 +46,7 @@ on a network device and allows the driver to do additional work. This callback i
 
 
 
-## -prototype
+## -syntax
 
 ````
 EVT_POS_CX_DEVICE_REMOTE_RETAIN EvtPosCxDeviceRemoteRetain;
@@ -87,29 +88,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_GENERIC_ERROR_BLOCKSTATUS
+UID: NS:ntddk._WHEA_GENERIC_ERROR_BLOCKSTATUS
 title: _WHEA_GENERIC_ERROR_BLOCKSTATUS
 author: windows-driver-content
 description: The WHEA_GENERIC_ERROR_BLOCKSTATUS union indicates what kind of error data is reported in a generic error status block.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 38c8422d-7307-4acd-81f0-931d2e128cb9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_GENERIC_ERROR_BLOCKSTATUS, PWHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS
+ms.keywords: _WHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS
 ---
 
 # _WHEA_GENERIC_ERROR_BLOCKSTATUS structure
@@ -83,7 +84,7 @@ The generic error status block is reporting multiple correctable errors.
 
 ### -field ErrorDataEntryCount
 
-The number of <a href="whea.whea_generic_error_data_entry">WHEA_GENERIC_ERROR_DATA_ENTRY</a> structures that are contained in the generic error status block.
+The number of <a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a> structures that are contained in the generic error status block.
 
 
 ### -field Reserved
@@ -97,42 +98,16 @@ A ULONG representation of the contents of the WHEA_GENERIC_ERROR_BLOCKSTATUS uni
 
 
 ## -remarks
-A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a> structure.
+A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
 </dt>
 <dt>
-<a href="whea.whea_generic_error_data_entry">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
 </dt>
 </dl>
  

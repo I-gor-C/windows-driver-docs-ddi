@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisSetCoalescableTimerObject
+UID: NF:ndis.NdisSetCoalescableTimerObject
 title: NdisSetCoalescableTimerObject function
 author: windows-driver-content
 description: The NdisSetCoalescableTimerObject function sets a timer object that the operating system coordinates with other timers, typically to reduce power consumption, when the exact expiration of the timer is not important to driver operation.
 old-location: netvista\ndissetcoalescabletimerobject.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f6f50bba-cda5-41ed-9e0b-1aea5113a22b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/11/2018
 ms.keywords: NdisSetCoalescableTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisSetCoalescableTimerObject function
@@ -63,7 +64,7 @@ BOOLEAN NdisSetCoalescableTimerObject(
 ### -param TimerObject [in]
 
 A handle to a timer object that NDIS provides when a driver calls the 
-     <a href="netvista.ndisallocatetimerobject">
+     <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">
      NdisAllocateTimerObject</a> function.
 
 
@@ -90,7 +91,7 @@ The optional periodic time interval, in milliseconds, that elapses between every
 A pointer to a caller-supplied context area that NDIS passes to the associated 
      <i>NetTimerCallback</i> function when a timer fires. If this parameter is <b>NULL</b>, NDIS uses the default
      value that is specified in the 
-     <a href="netvista.ndis_timer_characteristics">
+     <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">
      NDIS_TIMER_CHARACTERISTICS</a> structure.
 
 
@@ -117,7 +118,7 @@ The tolerance, in milliseconds, between the timer period specified by
 
 ## -remarks
 A timer object set by this function operates the same as a timer set by 
-    <a href="netvista.ndissettimerobject">NdisSetTimerObject</a>, with an additional
+    <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>, with an additional
     tolerance value added to the expiration parameter 
     <i>DueTime</i> . The operating system uses this additional tolerance value to adjust the expiration time
     of the timer to coincide with the expiration of other software timers. By doing this, the operating
@@ -168,85 +169,28 @@ Typically, a timer with a large
     <i>Tolerance</i> = 1 second.
 
 For more information about timer behavior, see 
-    <a href="kernel.kesettimerex">KeSetTimerEx</a>.
+    <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>.
 
 To cancel a timer, call the 
-    <a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a> function.
+    <a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a> function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.20 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kesettimerex">KeSetTimerEx</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_timer_characteristics">NDIS_TIMER_CHARACTERISTICS</a>
+<a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a>
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatetimerobject">NdisAllocateTimerObject</a>
+<a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.ndissettimerobject">NdisSetTimerObject</a>
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
@@ -256,5 +200,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisSetCoalescableTimerObject function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetCoalescableTimerObject function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 
