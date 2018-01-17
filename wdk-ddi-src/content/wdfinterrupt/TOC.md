@@ -1,5 +1,5 @@
-# [Wdfinterrupt.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfinterrupt.h](index.md)
 ### [EVT_WDF_INTERRUPT_DISABLE function](../wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_disable.md)
 ### [EVT_WDF_INTERRUPT_DPC function](../wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc.md)
 ### [EVT_WDF_INTERRUPT_ENABLE function](../wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_enable.md)

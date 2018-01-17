@@ -1,5 +1,5 @@
-# [Ntintsafe.h](index.md)
-## [Windows kernel](../_kernel/index.md)
+# [Windows kernel](../_kernel/index.md)
+## [Ntintsafe.h](index.md)
 ### [RtlByteToChar function](../ntintsafe/nf-ntintsafe-rtlbytetochar.md)
 ### [RtlByteToInt8 function](../ntintsafe/nf-ntintsafe-rtlbytetoint8.md)
 ### [RtlDWordPtrAdd function](../ntintsafe/nf-ntintsafe-rtldwordptradd.md)

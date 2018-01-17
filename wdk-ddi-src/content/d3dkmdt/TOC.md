@@ -1,5 +1,5 @@
-# [D3Dkmdt.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [D3Dkmdt.h](index.md)
 ### [DXGK_BACKLIGHT_OPTIMIZATION_LEVEL enumeration](../d3dkmdt/ne-d3dkmdt-dxgk_backlight_optimization_level.md)
 ### [DXGK_ENGINE_TYPE enumeration](../d3dkmdt/ne-d3dkmdt-dxgk_engine_type.md)
 ### [_D3DKMDT_COLOR_BASIS enumeration](../d3dkmdt/ne-d3dkmdt-_d3dkmdt_color_basis.md)

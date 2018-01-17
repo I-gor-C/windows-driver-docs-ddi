@@ -1,5 +1,5 @@
-# [Namcache.h](index.md)
-## [Installable file system](../_ifsk/index.md)
+# [Installable file system](../_ifsk/index.md)
+## [Namcache.h](index.md)
 ### [RxNameCacheActivateEntry function](../namcache/nf-namcache-rxnamecacheactivateentry.md)
 ### [RxNameCacheCheckEntry function](../namcache/nf-namcache-rxnamecachecheckentry.md)
 ### [RxNameCacheCreateEntry function](../namcache/nf-namcache-rxnamecachecreateentry.md)

@@ -1,5 +1,5 @@
-# [Ndis.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Ndis.h](index.md)
 ### [ALLOCATE_SHARED_MEMORY_HANDLER callback](../ndis/nc-ndis-allocate_shared_memory_handler.md)
 ### [FILTER_ATTACH function](../ndis/nc-ndis-filter_attach.md)
 ### [FILTER_CANCEL_DIRECT_OID_REQUEST function](../ndis/nc-ndis-filter_cancel_direct_oid_request.md)

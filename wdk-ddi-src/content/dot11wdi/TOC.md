@@ -1,5 +1,5 @@
-# [Dot11Wdi.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Dot11Wdi.h](index.md)
 ### [MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE callback](../dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose.md)
 ### [MINIPORT_WDI_ALLOCATE_ADAPTER callback](../dot11wdi/nc-dot11wdi-miniport_wdi_allocate_adapter.md)
 ### [MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION callback](../dot11wdi/nc-dot11wdi-miniport_wdi_cancel_idle_notification.md)

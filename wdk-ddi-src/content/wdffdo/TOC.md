@@ -1,5 +1,5 @@
-# [Wdffdo.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdffdo.h](index.md)
 ### [EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES function](../wdffdo/nc-wdffdo-evt_wdf_device_remove_added_resources.md)
 ### [PFN_WDFFDOADDSTATICCHILD function](../wdffdo/nc-wdffdo-pfn_wdffdoaddstaticchild.md)
 ### [PFN_WDFFDOGETDEFAULTCHILDLIST function](../wdffdo/nc-wdffdo-pfn_wdffdogetdefaultchildlist.md)

@@ -1,5 +1,5 @@
-# [Wdfresource.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfresource.h](index.md)
 ### [PFN_WDFCMRESOURCELISTAPPENDDESCRIPTOR function](../wdfresource/nc-wdfresource-pfn_wdfcmresourcelistappenddescriptor.md)
 ### [PFN_WDFCMRESOURCELISTGETCOUNT function](../wdfresource/nc-wdfresource-pfn_wdfcmresourcelistgetcount.md)
 ### [PFN_WDFCMRESOURCELISTGETDESCRIPTOR function](../wdfresource/nc-wdfresource-pfn_wdfcmresourcelistgetdescriptor.md)

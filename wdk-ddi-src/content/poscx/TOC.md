@@ -1,5 +1,5 @@
-# [Poscx.h](index.md)
-## [Point of Service (POS)](../_pos/index.md)
+# [Point of Service (POS)](../_pos/index.md)
+## [Poscx.h](index.md)
 ### [EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE function](../poscx/nc-poscx-evt_pos_cx_device_ownership_change.md)
 ### [EVT_POS_CX_DEVICE_REMOTE_CLAIM function](../poscx/nc-poscx-evt_pos_cx_device_remote_claim.md)
 ### [EVT_POS_CX_DEVICE_REMOTE_RELEASE function](../poscx/nc-poscx-evt_pos_cx_device_remote_release.md)

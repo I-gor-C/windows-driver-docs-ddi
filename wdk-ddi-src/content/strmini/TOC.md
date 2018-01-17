@@ -1,5 +1,5 @@
-# [Strmini.h](index.md)
-## [Streaming media devices](../_stream/index.md)
+# [Streaming media devices](../_stream/index.md)
+## [Strmini.h](index.md)
 ### [PHW_CANCEL_SRB callback](../strmini/nc-strmini-phw_cancel_srb.md)
 ### [PHW_EVENT_ROUTINE callback](../strmini/nc-strmini-phw_event_routine.md)
 ### [PHW_INTERRUPT callback](../strmini/nc-strmini-phw_interrupt.md)

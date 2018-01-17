@@ -1,5 +1,5 @@
-# [Bthddi.h](index.md)
-## [Bluetooth](../_bltooth/index.md)
+# [Bluetooth](../_bltooth/index.md)
+## [Bthddi.h](index.md)
 ### [PFNBTHPORT_INDICATION_CALLBACK callback](../bthddi/nc-bthddi-pfnbthport_indication_callback.md)
 ### [PFNBTHPORT_INDICATION_CALLBACK_ENHANCED callback](../bthddi/nc-bthddi-pfnbthport_indication_callback_enhanced.md)
 ### [PFNBTH_ALLOCATE_BRB callback](../bthddi/nc-bthddi-pfnbth_allocate_brb.md)

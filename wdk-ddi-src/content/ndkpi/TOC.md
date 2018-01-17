@@ -1,5 +1,5 @@
-# [Ndkpi.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Ndkpi.h](index.md)
 ### [NDK_FN_ACCEPT callback](../ndkpi/nc-ndkpi-ndk_fn_accept.md)
 ### [NDK_FN_ARM_CQ callback](../ndkpi/nc-ndkpi-ndk_fn_arm_cq.md)
 ### [NDK_FN_BIND callback](../ndkpi/nc-ndkpi-ndk_fn_bind.md)

@@ -1,5 +1,5 @@
-# [Hidport.h](index.md)
-## [Human Interface Devices (HID)](../_hid/index.md)
+# [Human Interface Devices (HID)](../_hid/index.md)
+## [Hidport.h](index.md)
 ### [HidRegisterMinidriver function](../hidport/nf-hidport-hidregisterminidriver.md)
 ### [IOCTL_HID_ACTIVATE_DEVICE IOCTL](../hidport/ni-hidport-ioctl_hid_activate_device.md)
 ### [IOCTL_HID_DEACTIVATE_DEVICE IOCTL](../hidport/ni-hidport-ioctl_hid_deactivate_device.md)

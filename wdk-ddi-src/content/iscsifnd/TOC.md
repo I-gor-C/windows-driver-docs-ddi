@@ -1,5 +1,5 @@
-# [Iscsifnd.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Iscsifnd.h](index.md)
 ### [_ISCSI_DiscoveredTarget structure](../iscsifnd/ns-iscsifnd-_iscsi_discoveredtarget.md)
 ### [_ISCSI_DiscoveredTarget2 structure](../iscsifnd/ns-iscsifnd-_iscsi_discoveredtarget2.md)
 ### [_ISCSI_DiscoveredTargetPortal structure](../iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportal.md)

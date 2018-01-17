@@ -1,5 +1,5 @@
-# [Wdfcollection.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfcollection.h](index.md)
 ### [PFN_WDFCOLLECTIONADD function](../wdfcollection/nc-wdfcollection-pfn_wdfcollectionadd.md)
 ### [PFN_WDFCOLLECTIONCREATE function](../wdfcollection/nc-wdfcollection-pfn_wdfcollectioncreate.md)
 ### [PFN_WDFCOLLECTIONGETCOUNT function](../wdfcollection/nc-wdfcollection-pfn_wdfcollectiongetcount.md)

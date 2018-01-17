@@ -1,5 +1,5 @@
-# [Pointofservicedriverinterface.h](index.md)
-## [Point of Service (POS)](../_pos/index.md)
+# [Point of Service (POS)](../_pos/index.md)
+## [Pointofservicedriverinterface.h](index.md)
 ### [_MsrCardType enumeration](../pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrcardtype.md)
 ### [_MsrDataEncryption enumeration](../pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrdataencryption.md)
 ### [_MsrErrorReportingType enumeration](../pointofservicedriverinterface/ne-pointofservicedriverinterface-_msrerrorreportingtype.md)

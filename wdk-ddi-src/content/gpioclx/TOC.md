@@ -1,5 +1,5 @@
-# [Gpioclx.h](index.md)
-## [General-purpose I/O (GPIO) controllers](../_gpio/index.md)
+# [General-purpose I/O (GPIO) controllers](../_gpio/index.md)
+## [Gpioclx.h](index.md)
 ### [GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS callback](../gpioclx/nc-gpioclx-gpio_client_clear_active_interrupts.md)
 ### [GPIO_CLIENT_CONNECT_IO_PINS function](../gpioclx/nc-gpioclx-gpio_client_connect_io_pins.md)
 ### [GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION callback](../gpioclx/nc-gpioclx-gpio_client_controller_specific_function.md)

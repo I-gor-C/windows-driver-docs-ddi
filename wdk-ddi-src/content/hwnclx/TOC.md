@@ -1,5 +1,5 @@
-# [Hwnclx.h](index.md)
-## [Hardware Notifications](../_gpiobtn/index.md)
+# [Hardware Notifications](../_gpiobtn/index.md)
+## [Hwnclx.h](index.md)
 ### [HWN_CLIENT_GET_STATE function](../hwnclx/nc-hwnclx-hwn_client_get_state.md)
 ### [HWN_CLIENT_INITIALIZE_DEVICE function](../hwnclx/nc-hwnclx-hwn_client_initialize_device.md)
 ### [HWN_CLIENT_QUERY_DEVICE_INFORMATION function](../hwnclx/nc-hwnclx-hwn_client_query_device_information.md)

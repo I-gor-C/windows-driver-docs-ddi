@@ -1,5 +1,5 @@
-# [Wdfiotarget.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfiotarget.h](index.md)
 ### [EVT_WDF_IO_TARGET_QUERY_REMOVE function](../wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_query_remove.md)
 ### [EVT_WDF_IO_TARGET_REMOVE_CANCELED function](../wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md)
 ### [EVT_WDF_IO_TARGET_REMOVE_COMPLETE function](../wdfiotarget/nc-wdfiotarget-evt_wdf_io_target_remove_complete.md)

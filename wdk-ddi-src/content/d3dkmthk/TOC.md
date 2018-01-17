@@ -1,5 +1,5 @@
-# [D3Dkmthk.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [D3Dkmthk.h](index.md)
 ### [PDXGK_GRAPHICSPOWER_UNREGISTER callback](../d3dkmthk/nc-d3dkmthk-pdxgk_graphicspower_unregister.md)
 ### [PDXGK_POWER_NOTIFICATION callback](../d3dkmthk/nc-d3dkmthk-pdxgk_power_notification.md)
 ### [PDXGK_REMOVAL_NOTIFICATION callback](../d3dkmthk/nc-d3dkmthk-pdxgk_removal_notification.md)

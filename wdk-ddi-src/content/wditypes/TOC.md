@@ -1,5 +1,5 @@
-# [Wditypes.hpp](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Wditypes.hpp](index.md)
 ### [_WDI_ACTION_FRAME_CATEGORY enumeration](../wditypes/ne-wditypes-_wdi_action_frame_category.md)
 ### [_WDI_ANQP_QUERY_STATUS enumeration](../wditypes/ne-wditypes-_wdi_anqp_query_status.md)
 ### [_WDI_ASSOC_STATUS enumeration](../wditypes/ne-wditypes-_wdi_assoc_status.md)

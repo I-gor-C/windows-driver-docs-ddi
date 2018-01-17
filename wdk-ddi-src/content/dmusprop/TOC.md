@@ -1,5 +1,5 @@
-# [Dmusprop.h](index.md)
-## [Audio](../_audio/index.md)
+# [Audio](../_audio/index.md)
+## [Dmusprop.h](index.md)
 ### [_SYNTHCAPS structure](../dmusprop/ns-dmusprop-_synthcaps.md)
 ### [_SYNTHDOWNLOAD structure](../dmusprop/ns-dmusprop-_synthdownload.md)
 ### [_SYNTHVOICEPRIORITY_INSTANCE structure](../dmusprop/ns-dmusprop-_synthvoicepriority_instance.md)

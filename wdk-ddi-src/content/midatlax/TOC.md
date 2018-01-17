@@ -1,5 +1,5 @@
-# [Midatlax.h](index.md)
-## [Installable file system](../_ifsk/index.md)
+# [Installable file system](../_ifsk/index.md)
+## [Midatlax.h](index.md)
 ### [RxAssociateContextWithMid function](../midatlax/nf-midatlax-rxassociatecontextwithmid.md)
 ### [RxCreateMidAtlas function](../midatlax/nf-midatlax-rxcreatemidatlas.md)
 ### [RxDestroyMidAtlas function](../midatlax/nf-midatlax-rxdestroymidatlas.md)

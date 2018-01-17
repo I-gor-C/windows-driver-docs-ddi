@@ -1,5 +1,5 @@
-# [Netdispumdddi.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [Netdispumdddi.h](index.md)
 ### [PFN_CREATE_MIRACAST_CONTEXT callback](../netdispumdddi/nc-netdispumdddi-pfn_create_miracast_context.md)
 ### [PFN_DATARATE_NOTIFICATION callback](../netdispumdddi/nc-netdispumdddi-pfn_datarate_notification.md)
 ### [PFN_DESTROY_MIRACAST_CONTEXT callback](../netdispumdddi/nc-netdispumdddi-pfn_destroy_miracast_context.md)

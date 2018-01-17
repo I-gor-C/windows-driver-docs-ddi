@@ -1,5 +1,5 @@
-# [D3Dumddi.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [D3Dumddi.h](index.md)
 ### [PFND3DDDICB_LOGSTRINGTABLEENTRY callback](../d3dumddi/nc-d3dumddi-pfnd3dddicb_logstringtableentry.md)
 ### [PFND3DDDI_ALLOCATECB callback](../d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb.md)
 ### [PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE callback](../d3dumddi/nc-d3dumddi-pfnd3dddi_authenticatedchannelkeyexchange.md)

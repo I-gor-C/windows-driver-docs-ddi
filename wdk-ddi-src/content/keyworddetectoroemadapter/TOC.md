@@ -1,5 +1,5 @@
-# [Keyworddetectoroemadapter.h](index.md)
-## [Audio](../_audio/index.md)
+# [Audio](../_audio/index.md)
+## [Keyworddetectoroemadapter.h](index.md)
 ### [__MIDL_IKeywordDetectorOemAdapter_0002 enumeration](../keyworddetectoroemadapter/ne-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0002.md)
 ### [IKeywordDetectorOemAdapter::BuildArmingPatternData method](../keyworddetectoroemadapter/nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-buildarmingpatterndata.md)
 ### [IKeywordDetectorOemAdapter::ComputeAndAddUserModelData method](../keyworddetectoroemadapter/nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-computeandaddusermodeldata.md)

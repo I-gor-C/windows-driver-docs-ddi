@@ -1,5 +1,5 @@
-# [Wdfdmaenabler.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfdmaenabler.h](index.md)
 ### [EVT_WDF_DMA_ENABLER_DISABLE function](../wdfdmaenabler/nc-wdfdmaenabler-evt_wdf_dma_enabler_disable.md)
 ### [EVT_WDF_DMA_ENABLER_ENABLE function](../wdfdmaenabler/nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md)
 ### [EVT_WDF_DMA_ENABLER_FILL function](../wdfdmaenabler/nc-wdfdmaenabler-evt_wdf_dma_enabler_fill.md)

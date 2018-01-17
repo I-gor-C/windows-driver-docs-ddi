@@ -1,5 +1,5 @@
-# [Spbcx.h](index.md)
-## [Simple Peripheral Bus (SPB)](../_spb/index.md)
+# [Simple Peripheral Bus (SPB)](../_spb/index.md)
+## [Spbcx.h](index.md)
 ### [EVT_SPB_CONTROLLER_LOCK function](../spbcx/nc-spbcx-evt_spb_controller_lock.md)
 ### [EVT_SPB_CONTROLLER_OTHER function](../spbcx/nc-spbcx-evt_spb_controller_other.md)
 ### [EVT_SPB_CONTROLLER_READ function](../spbcx/nc-spbcx-evt_spb_controller_read.md)

@@ -1,5 +1,5 @@
-# [Iscsiprf.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Iscsiprf.h](index.md)
 ### [_MSiSCSI_ConnectionStatistics structure](../iscsiprf/ns-iscsiprf-_msiscsi_connectionstatistics.md)
 ### [_MSiSCSI_InitiatorInstanceStatistics structure](../iscsiprf/ns-iscsiprf-_msiscsi_initiatorinstancestatistics.md)
 ### [_MSiSCSI_InitiatorLoginStatistics structure](../iscsiprf/ns-iscsiprf-_msiscsi_initiatorloginstatistics.md)

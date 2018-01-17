@@ -1,5 +1,5 @@
-# [Nfccx.h](index.md)
-## [Near field communications (NFC)](../_nfpdrivers/index.md)
+# [Near field communications (NFC)](../_nfpdrivers/index.md)
+## [Nfccx.h](index.md)
 ### [EVT_NFC_CX_DEVICE_IO_CONTROL function](../nfccx/nc-nfccx-evt_nfc_cx_device_io_control.md)
 ### [EVT_NFC_CX_SEQUENCE_HANDLER function](../nfccx/nc-nfccx-evt_nfc_cx_sequence_handler.md)
 ### [EVT_NFC_CX_WRITE_NCI_PACKET function](../nfccx/nc-nfccx-evt_nfc_cx_write_nci_packet.md)

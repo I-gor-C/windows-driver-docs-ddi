@@ -1,5 +1,5 @@
-# [Parallel.h](index.md)
-## [Parallel Ports](../_parports/index.md)
+# [Parallel Ports](../_parports/index.md)
+## [Parallel.h](index.md)
 ### [PDETERMINE_IEEE_MODES callback](../parallel/nc-parallel-pdetermine_ieee_modes.md)
 ### [PNEGOTIATE_IEEE_MODE callback](../parallel/nc-parallel-pnegotiate_ieee_mode.md)
 ### [PPARALLEL_CLEAR_CHIP_MODE callback](../parallel/nc-parallel-pparallel_clear_chip_mode.md)

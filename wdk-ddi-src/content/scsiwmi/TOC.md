@@ -1,5 +1,5 @@
-# [Scsiwmi.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Scsiwmi.h](index.md)
 ### [PSCSIWMI_EXECUTE_METHOD callback](../scsiwmi/nc-scsiwmi-pscsiwmi_execute_method.md)
 ### [PSCSIWMI_FUNCTION_CONTROL callback](../scsiwmi/nc-scsiwmi-pscsiwmi_function_control.md)
 ### [PSCSIWMI_QUERY_DATABLOCK callback](../scsiwmi/nc-scsiwmi-pscsiwmi_query_datablock.md)

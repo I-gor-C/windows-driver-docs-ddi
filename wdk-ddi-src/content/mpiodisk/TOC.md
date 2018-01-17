@@ -1,5 +1,5 @@
-# [Mpiodisk.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Mpiodisk.h](index.md)
 ### [_DsmSetLoadBalancePolicyALUA_IN structure](../mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicyalua_in.md)
 ### [_DsmSetLoadBalancePolicyALUA_OUT structure](../mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicyalua_out.md)
 ### [_DsmSetLoadBalancePolicy_IN structure](../mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicy_in.md)

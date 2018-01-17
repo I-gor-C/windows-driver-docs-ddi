@@ -1,5 +1,5 @@
-# [Drmk.h](index.md)
-## [Audio](../_audio/index.md)
+# [Audio](../_audio/index.md)
+## [Drmk.h](index.md)
 ### [PFNDRMADDCONTENTHANDLERS callback](../drmk/nc-drmk-pfndrmaddcontenthandlers.md)
 ### [PFNDRMCREATECONTENTMIXED callback](../drmk/nc-drmk-pfndrmcreatecontentmixed.md)
 ### [PFNDRMDESTROYCONTENT callback](../drmk/nc-drmk-pfndrmdestroycontent.md)

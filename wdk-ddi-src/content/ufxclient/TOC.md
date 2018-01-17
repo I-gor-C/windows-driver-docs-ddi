@@ -1,5 +1,5 @@
-# [Ufxclient.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Ufxclient.h](index.md)
 ### [EVT_UFX_DEVICE_ADDRESSED function](../ufxclient/nc-ufxclient-evt_ufx_device_addressed.md)
 ### [EVT_UFX_DEVICE_CONTROLLER_RESET function](../ufxclient/nc-ufxclient-evt_ufx_device_controller_reset.md)
 ### [EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD function](../ufxclient/nc-ufxclient-evt_ufx_device_default_endpoint_add.md)

@@ -1,5 +1,5 @@
-# [Usbbusif.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Usbbusif.h](index.md)
 ### [USBC_START_DEVICE_CALLBACK callback](../usbbusif/nc-usbbusif-usbc_start_device_callback.md)
 ### [_USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure](../usbbusif/ns-usbbusif-_usbc_device_configuration_interface_v1.md)
 ### [_USBC_FUNCTION_DESCRIPTOR structure](../usbbusif/ns-usbbusif-_usbc_function_descriptor.md)

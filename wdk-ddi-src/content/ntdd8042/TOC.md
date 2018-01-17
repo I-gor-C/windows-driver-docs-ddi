@@ -1,5 +1,5 @@
-# [Ntdd8042.h](index.md)
-## [Human Interface Devices (HID)](../_hid/index.md)
+# [Human Interface Devices (HID)](../_hid/index.md)
+## [Ntdd8042.h](index.md)
 ### [PI8042_ISR_WRITE_PORT callback](../ntdd8042/nc-ntdd8042-pi8042_isr_write_port.md)
 ### [PI8042_KEYBOARD_INITIALIZATION_ROUTINE callback](../ntdd8042/nc-ntdd8042-pi8042_keyboard_initialization_routine.md)
 ### [PI8042_KEYBOARD_ISR callback](../ntdd8042/nc-ntdd8042-pi8042_keyboard_isr.md)

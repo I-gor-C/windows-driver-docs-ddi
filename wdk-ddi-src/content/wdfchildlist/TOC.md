@@ -1,5 +1,5 @@
-# [Wdfchildlist.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfchildlist.h](index.md)
 ### [EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP function](../wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_address_description_cleanup.md)
 ### [EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY function](../wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_address_description_copy.md)
 ### [EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE function](../wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_address_description_duplicate.md)

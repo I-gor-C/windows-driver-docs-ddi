@@ -1,5 +1,5 @@
-# [Wdfregistry.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfregistry.h](index.md)
 ### [PFN_WDFREGISTRYASSIGNMEMORY function](../wdfregistry/nc-wdfregistry-pfn_wdfregistryassignmemory.md)
 ### [PFN_WDFREGISTRYASSIGNMULTISTRING function](../wdfregistry/nc-wdfregistry-pfn_wdfregistryassignmultistring.md)
 ### [PFN_WDFREGISTRYASSIGNSTRING function](../wdfregistry/nc-wdfregistry-pfn_wdfregistryassignstring.md)

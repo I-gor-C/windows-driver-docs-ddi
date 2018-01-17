@@ -1,5 +1,5 @@
-# [Wdfdmatransaction.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfdmatransaction.h](index.md)
 ### [EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL function](../wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_dma_transaction_configure_dma_channel.md)
 ### [EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE function](../wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_dma_transaction_dma_transfer_complete.md)
 ### [EVT_WDF_RESERVE_DMA function](../wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_reserve_dma.md)

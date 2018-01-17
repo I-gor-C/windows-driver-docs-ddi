@@ -1,5 +1,5 @@
-# [Wdfcompanion.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfcompanion.h](index.md)
 ### [EVT_WDF_COMPANION_POST_D0_EXIT function](../wdfcompanion/nc-wdfcompanion-evt_wdf_companion_post_d0_exit.md)
 ### [EVT_WDF_COMPANION_POST_RELEASE_HARDWARE function](../wdfcompanion/nc-wdfcompanion-evt_wdf_companion_post_release_hardware.md)
 ### [EVT_WDF_COMPANION_PRE_D0_ENTRY function](../wdfcompanion/nc-wdfcompanion-evt_wdf_companion_pre_d0_entry.md)

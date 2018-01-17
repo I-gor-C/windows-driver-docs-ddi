@@ -1,5 +1,5 @@
-# [Ntddsd.h](index.md)
-## [Secure Digital (SD) card](../_sd/index.md)
+# [Secure Digital (SD) card](../_sd/index.md)
+## [Ntddsd.h](index.md)
 ### [PSDBUS_ACKNOWLEDGE_INT_ROUTINE callback](../ntddsd/nc-ntddsd-psdbus_acknowledge_int_routine.md)
 ### [PSDBUS_INITIALIZE_INTERFACE_ROUTINE callback](../ntddsd/nc-ntddsd-psdbus_initialize_interface_routine.md)
 ### [SDBUS_CALLBACK_ROUTINE callback](../ntddsd/nc-ntddsd-sdbus_callback_routine.md)

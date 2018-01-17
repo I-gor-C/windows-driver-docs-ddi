@@ -1,5 +1,5 @@
-# [Bdasup.h](index.md)
-## [Streaming media devices](../_stream/index.md)
+# [Streaming media devices](../_stream/index.md)
+## [Bdasup.h](index.md)
 ### [BdaCheckChanges function](../bdasup/nf-bdasup-bdacheckchanges.md)
 ### [BdaCommitChanges function](../bdasup/nf-bdasup-bdacommitchanges.md)
 ### [BdaCreateFilterFactory function](../bdasup/nf-bdasup-bdacreatefilterfactory.md)

@@ -1,5 +1,5 @@
-# [Iscsidef.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Iscsidef.h](index.md)
 ### [*PISCSIIPADDRESSTYPE enumeration](../iscsidef/ne-iscsidef-piscsiipaddresstype.md)
 ### [*PISCSI_AUTH_TYPES enumeration](../iscsidef/ne-iscsidef-piscsi_auth_types.md)
 ### [*PISCSI_DIGEST_TYPES enumeration](../iscsidef/ne-iscsidef-piscsi_digest_types.md)

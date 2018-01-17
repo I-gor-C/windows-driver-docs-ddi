@@ -1,5 +1,5 @@
-# [Pointofservicecommontypes.h](index.md)
-## [Point of Service (POS)](../_pos/index.md)
+# [Point of Service (POS)](../_pos/index.md)
+## [Pointofservicecommontypes.h](index.md)
 ### [DriverMagneticStripeReaderAuthenticationLevel enumeration](../pointofservicecommontypes/ne-pointofservicecommontypes-drivermagneticstripereaderauthenticationlevel.md)
 ### [DriverUnifiedPosErrorReason enumeration](../pointofservicecommontypes/ne-pointofservicecommontypes-driverunifiedposerrorreason.md)
 ### [DriverUnifiedPosErrorSeverity enumeration](../pointofservicecommontypes/ne-pointofservicecommontypes-driverunifiedposerrorseverity.md)

@@ -1,5 +1,5 @@
-# [Usbfnioctl.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Usbfnioctl.h](index.md)
 ### [IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS IOCTL](../usbfnioctl/ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md)
 ### [IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION IOCTL](../usbfnioctl/ni-usbfnioctl-ioctl_internal_usbfn_bus_event_notification.md)
 ### [IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN IOCTL](../usbfnioctl/ni-usbfnioctl-ioctl_internal_usbfn_control_status_handshake_in.md)

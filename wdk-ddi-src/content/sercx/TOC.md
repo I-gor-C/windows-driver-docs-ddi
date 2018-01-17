@@ -1,5 +1,5 @@
-# [Sercx.h](index.md)
-## [Serial port](../_serports/index.md)
+# [Serial port](../_serports/index.md)
+## [Sercx.h](index.md)
 ### [EVT_SERCX2_APPLY_CONFIG function](../sercx/nc-sercx-evt_sercx2_apply_config.md)
 ### [EVT_SERCX2_CONTROL function](../sercx/nc-sercx-evt_sercx2_control.md)
 ### [EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP function](../sercx/nc-sercx-evt_sercx2_custom_receive_transaction_cleanup.md)

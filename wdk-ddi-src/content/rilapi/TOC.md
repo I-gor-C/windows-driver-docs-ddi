@@ -1,5 +1,5 @@
-# [Rilapi.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Rilapi.h](index.md)
 ### [RIL_AddCallForwarding function](../rilapi/nf-rilapi-ril_addcallforwarding.md)
 ### [RIL_AvoidCDMASystem function](../rilapi/nf-rilapi-ril_avoidcdmasystem.md)
 ### [RIL_CancelGetOperatorList function](../rilapi/nf-rilapi-ril_cancelgetoperatorlist.md)

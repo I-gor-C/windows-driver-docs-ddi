@@ -1,5 +1,5 @@
-# [Dmusicks.h](index.md)
-## [Audio](../_audio/index.md)
+# [Audio](../_audio/index.md)
+## [Dmusicks.h](index.md)
 ### [DMUS_STREAM_TYPE enumeration](../dmusicks/ne-dmusicks-dmus_stream_type.md)
 ### [IAllocatorMXF::GetBuffer method](../dmusicks/nf-dmusicks-iallocatormxf-getbuffer.md)
 ### [IAllocatorMXF::GetBufferSize method](../dmusicks/nf-dmusicks-iallocatormxf-getbuffersize.md)

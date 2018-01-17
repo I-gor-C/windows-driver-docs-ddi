@@ -1,5 +1,5 @@
-# [Swenum.h](index.md)
-## [Streaming media devices](../_stream/index.md)
+# [Streaming media devices](../_stream/index.md)
+## [Swenum.h](index.md)
 ### [KsCreateBusEnumObject function](../swenum/nf-swenum-kscreatebusenumobject.md)
 ### [KsDereferenceSoftwareBusObject function](../swenum/nf-swenum-ksdereferencesoftwarebusobject.md)
 ### [KsGetBusEnumIdentifier function](../swenum/nf-swenum-ksgetbusenumidentifier.md)

@@ -1,5 +1,5 @@
-# [Ursdevice.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Ursdevice.h](index.md)
 ### [EVT_URS_SET_ROLE function](../ursdevice/nc-ursdevice-evt_urs_set_role.md)
 ### [UrsDeviceInitialize function](../ursdevice/nf-ursdevice-ursdeviceinitialize.md)
 ### [UrsDeviceInitInitialize function](../ursdevice/nf-ursdevice-ursdeviceinitinitialize.md)

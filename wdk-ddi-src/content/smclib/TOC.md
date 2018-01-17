@@ -1,5 +1,5 @@
-# [Smclib.h](index.md)
-## [Smart Card Reader Devices](../_smartcrd/index.md)
+# [Smart Card Reader Devices](../_smartcrd/index.md)
+## [Smclib.h](index.md)
 ### [_CLOCK_RATE_CONVERSION structure](../smclib/ns-smclib-_clock_rate_conversion.md)
 ### [_PTS_DATA structure](../smclib/ns-smclib-_pts_data.md)
 ### [_SCARD_CARD_CAPABILITIES structure](../smclib/ns-smclib-_scard_card_capabilities.md)

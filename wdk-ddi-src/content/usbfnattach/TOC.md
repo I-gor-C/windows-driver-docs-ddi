@@ -1,5 +1,5 @@
-# [Usbfnattach.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Usbfnattach.h](index.md)
 ### [USBFN_GET_ATTACH_ACTION function](../usbfnattach/nc-usbfnattach-usbfn_get_attach_action.md)
 ### [USBFN_GET_ATTACH_ACTION_ABORT function](../usbfnattach/nc-usbfnattach-usbfn_get_attach_action_abort.md)
 ### [USBFN_SET_DEVICE_STATE function](../usbfnattach/nc-usbfnattach-usbfn_set_device_state.md)

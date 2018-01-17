@@ -1,5 +1,5 @@
-# [Ntddrilapitypes.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Ntddrilapitypes.h](index.md)
 ### [RIL3GPP2ISDNALERTING enumeration](../ntddrilapitypes/ne-ntddrilapitypes-ril3gpp2isdnalerting.md)
 ### [RIL3GPP2TONE enumeration](../ntddrilapitypes/ne-ntddrilapitypes-ril3gpp2tone.md)
 ### [RIL3GPPCALLCONTROLCAUSECODE enumeration](../ntddrilapitypes/ne-ntddrilapitypes-ril3gppcallcontrolcausecode.md)

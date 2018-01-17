@@ -1,5 +1,5 @@
-# [Mountmgr.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Mountmgr.h](index.md)
 ### [IOCTL_MOUNTDEV_QUERY_DEVICE_NAME IOCTL](../mountmgr/ni-mountmgr-ioctl_mountdev_query_device_name.md)
 ### [IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS IOCTL](../mountmgr/ni-mountmgr-ioctl_mountmgr_auto_dl_assignments.md)
 ### [IOCTL_MOUNTMGR_CHANGE_NOTIFY IOCTL](../mountmgr/ni-mountmgr-ioctl_mountmgr_change_notify.md)

@@ -1,5 +1,5 @@
-# [Wdfcontrol.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfcontrol.h](index.md)
 ### [PFN_WDFCONTROLDEVICEINITALLOCATE function](../wdfcontrol/nc-wdfcontrol-pfn_wdfcontroldeviceinitallocate.md)
 ### [PFN_WDFCONTROLDEVICEINITSETSHUTDOWNNOTIFICATION function](../wdfcontrol/nc-wdfcontrol-pfn_wdfcontroldeviceinitsetshutdownnotification.md)
 ### [PFN_WDFCONTROLFINISHINITIALIZING function](../wdfcontrol/nc-wdfcontrol-pfn_wdfcontrolfinishinitializing.md)

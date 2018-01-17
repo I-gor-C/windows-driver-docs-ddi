@@ -1,5 +1,5 @@
-# [Storport.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Storport.h](index.md)
 ### [HW_ADAPTER_CONTROL callback](../storport/nc-storport-hw_adapter_control.md)
 ### [HW_BUILDIO callback](../storport/nc-storport-hw_buildio.md)
 ### [HW_CLEANUP_TRACING callback](../storport/nc-storport-hw_cleanup_tracing.md)

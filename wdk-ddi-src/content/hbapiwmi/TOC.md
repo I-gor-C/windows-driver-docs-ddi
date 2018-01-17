@@ -1,5 +1,5 @@
-# [Hbapiwmi.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Hbapiwmi.h](index.md)
 ### [_AddLink_OUT structure](../hbapiwmi/ns-hbapiwmi-_addlink_out.md)
 ### [_AddPort_IN structure](../hbapiwmi/ns-hbapiwmi-_addport_in.md)
 ### [_AddPort_OUT structure](../hbapiwmi/ns-hbapiwmi-_addport_out.md)

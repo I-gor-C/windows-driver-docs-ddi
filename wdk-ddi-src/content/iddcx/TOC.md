@@ -1,5 +1,5 @@
-# [Iddcx.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [Iddcx.h](index.md)
 ### [EVT_IDD_CX_ADAPTER_COMMIT_MODES function](../iddcx/nc-iddcx-evt_idd_cx_adapter_commit_modes.md)
 ### [EVT_IDD_CX_ADAPTER_INIT_FINISHED function](../iddcx/nc-iddcx-evt_idd_cx_adapter_init_finished.md)
 ### [EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN function](../iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain.md)

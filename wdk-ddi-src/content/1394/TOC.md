@@ -1,5 +1,5 @@
-# [1394.h](index.md)
-## [IEEE 1394 bus](../_ieee/index.md)
+# [IEEE 1394 bus](../_ieee/index.md)
+## [1394.h](index.md)
 ### [IOCTL_1394_CLASS IOCTL](../1394/ni-1394-ioctl_1394_class.md)
 ### [_ADDRESS_FIFO structure](../1394/ns-1394-_address_fifo.md)
 ### [_ADDRESS_OFFSET structure](../1394/ns-1394-_address_offset.md)

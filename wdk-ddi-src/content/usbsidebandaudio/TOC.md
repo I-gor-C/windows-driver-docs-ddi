@@ -1,5 +1,5 @@
-# [Usbsidebandaudio.h](index.md)
-## [Audio](../_audio/index.md)
+# [Audio](../_audio/index.md)
+## [Usbsidebandaudio.h](index.md)
 ### [IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR IOCTL](../usbsidebandaudio/ni-usbsidebandaudio-ioctl_usbsbaud_get_device_descriptor.md)
 ### [IOCTL_USBSBAUD_GET_ENDPOINT_DESCRIPTOR IOCTL](../usbsidebandaudio/ni-usbsidebandaudio-ioctl_usbsbaud_get_endpoint_descriptor.md)
 ### [IOCTL_USBSBAUD_GET_ERROR_STATUS_UPDATE IOCTL](../usbsidebandaudio/ni-usbsidebandaudio-ioctl_usbsbaud_get_error_status_update.md)

@@ -1,5 +1,5 @@
-# [Sensorsclassextension.h](index.md)
-## [Sensors](../_sensors/index.md)
+# [Sensors](../_sensors/index.md)
+## [Sensorsclassextension.h](index.md)
 ### [LOCATION_DESIRED_ACCURACY enumeration](../sensorsclassextension/ne-sensorsclassextension-location_desired_accuracy.md)
 ### [MagnetometerAccuracy enumeration](../sensorsclassextension/ne-sensorsclassextension-magnetometeraccuracy.md)
 ### [__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001 enumeration](../sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001.md)

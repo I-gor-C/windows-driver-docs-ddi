@@ -1,5 +1,5 @@
-# [Ucxusbdevice.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Ucxusbdevice.h](index.md)
 ### [EVT_UCX_USBDEVICE_ADDRESS function](../ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_address.md)
 ### [EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD function](../ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add.md)
 ### [EVT_UCX_USBDEVICE_DISABLE function](../ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_disable.md)

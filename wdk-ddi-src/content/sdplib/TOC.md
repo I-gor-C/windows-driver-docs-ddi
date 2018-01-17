@@ -1,5 +1,5 @@
-# [Sdplib.h](index.md)
-## [Bluetooth](../_bltooth/index.md)
+# [Bluetooth](../_bltooth/index.md)
+## [Sdplib.h](index.md)
 ### [SdpAddAttributeToTree function](../sdplib/nf-sdplib-sdpaddattributetotree.md)
 ### [SdpAppendNodeToContainerNode function](../sdplib/nf-sdplib-sdpappendnodetocontainernode.md)
 ### [SdpCreateNodeAlternative function](../sdplib/nf-sdplib-sdpcreatenodealternative.md)

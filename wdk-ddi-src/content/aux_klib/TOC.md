@@ -1,5 +1,5 @@
-# [Aux_Klib.h](index.md)
-## [Windows kernel](../_kernel/index.md)
+# [Windows kernel](../_kernel/index.md)
+## [Aux_Klib.h](index.md)
 ### [AuxKlibEnumerateSystemFirmwareTables function](../aux_klib/nf-aux_klib-auxklibenumeratesystemfirmwaretables.md)
 ### [AuxKlibGetBugCheckData function](../aux_klib/nf-aux_klib-auxklibgetbugcheckdata.md)
 ### [AuxKlibGetImageExportDirectory function](../aux_klib/nf-aux_klib-auxklibgetimageexportdirectory.md)

@@ -1,5 +1,5 @@
-# [Udecxwdfdevice.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Udecxwdfdevice.h](index.md)
 ### [EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY function](../udecxwdfdevice/nc-udecxwdfdevice-evt_udecx_wdf_device_query_usb_capability.md)
 ### [EVT_UDECX_WDF_DEVICE_RESET function](../udecxwdfdevice/nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md)
 ### [_UDECX_WDF_DEVICE_RESET_ACTION enumeration](../udecxwdfdevice/ne-udecxwdfdevice-_udecx_wdf_device_reset_action.md)

@@ -1,5 +1,5 @@
-# [Wdfinstaller.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfinstaller.h](index.md)
 ### [WdfPostDeviceInstall function](../wdfinstaller/nf-wdfinstaller-wdfpostdeviceinstall.md)
 ### [WdfPostDeviceRemove function](../wdfinstaller/nf-wdfinstaller-wdfpostdeviceremove.md)
 ### [WdfPreDeviceInstall function](../wdfinstaller/nf-wdfinstaller-wdfpredeviceinstall.md)

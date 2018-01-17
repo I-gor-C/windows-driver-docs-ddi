@@ -1,5 +1,5 @@
-# [Ndischimney.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Ndischimney.h](index.md)
 ### [INDICATE_OFFLOAD_EVENT_HANDLER callback](../ndischimney/nc-ndischimney-indicate_offload_event_handler.md)
 ### [INITIATE_OFFLOAD_COMPLETE_HANDLER callback](../ndischimney/nc-ndischimney-initiate_offload_complete_handler.md)
 ### [INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback](../ndischimney/nc-ndischimney-invalidate_offload_complete_handler.md)

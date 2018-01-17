@@ -1,5 +1,5 @@
-# [Wdfsync.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfsync.h](index.md)
 ### [PFN_WDFOBJECTACQUIRELOCK function](../wdfsync/nc-wdfsync-pfn_wdfobjectacquirelock.md)
 ### [PFN_WDFOBJECTRELEASELOCK function](../wdfsync/nc-wdfsync-pfn_wdfobjectreleaselock.md)
 ### [PFN_WDFSPINLOCKCREATE function](../wdfsync/nc-wdfsync-pfn_wdfspinlockcreate.md)

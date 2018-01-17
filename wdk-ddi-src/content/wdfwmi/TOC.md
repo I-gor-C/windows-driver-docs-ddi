@@ -1,5 +1,5 @@
-# [Wdfwmi.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfwmi.h](index.md)
 ### [EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD function](../wdfwmi/nc-wdfwmi-evt_wdf_wmi_instance_execute_method.md)
 ### [EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE function](../wdfwmi/nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md)
 ### [EVT_WDF_WMI_INSTANCE_SET_INSTANCE function](../wdfwmi/nc-wdfwmi-evt_wdf_wmi_instance_set_instance.md)

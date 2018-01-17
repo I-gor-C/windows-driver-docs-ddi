@@ -1,5 +1,5 @@
-# [Hbaapi.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Hbaapi.h](index.md)
 ### [HBA_wwntype enumeration](../hbaapi/ne-hbaapi-hba_wwntype.md)
 ### [HBA_CloseAdapter function](../hbaapi/nf-hbaapi-hba_closeadapter.md)
 ### [HBA_FreeLibrary function](../hbaapi/nf-hbaapi-hba_freelibrary.md)

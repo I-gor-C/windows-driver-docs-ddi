@@ -1,5 +1,5 @@
-# [Ntstrsafe.h](index.md)
-## [Windows kernel](../_kernel/index.md)
+# [Windows kernel](../_kernel/index.md)
+## [Ntstrsafe.h](index.md)
 ### [RtlStringCbCatA function](../ntstrsafe/nf-ntstrsafe-rtlstringcbcata.md)
 ### [RtlStringCbCatExA function](../ntstrsafe/nf-ntstrsafe-rtlstringcbcatexa.md)
 ### [RtlStringCbCatExW function](../ntstrsafe/nf-ntstrsafe-rtlstringcbcatexw.md)

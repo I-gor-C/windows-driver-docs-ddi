@@ -1,5 +1,5 @@
-# [Dbgeng.h](index.md)
-## [Debugger](../_debugger/index.md)
+# [Debugger](../_debugger/index.md)
+## [Dbgeng.h](index.md)
 ### [PDEBUG_EXTENSION_CALL callback](../dbgeng/nc-dbgeng-pdebug_extension_call.md)
 ### [PDEBUG_EXTENSION_CANUNLOAD callback](../dbgeng/nc-dbgeng-pdebug_extension_canunload.md)
 ### [PDEBUG_EXTENSION_INITIALIZE callback](../dbgeng/nc-dbgeng-pdebug_extension_initialize.md)

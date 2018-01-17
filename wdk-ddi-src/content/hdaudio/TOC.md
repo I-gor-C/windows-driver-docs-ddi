@@ -1,5 +1,5 @@
-# [Hdaudio.h](index.md)
-## [Audio](../_audio/index.md)
+# [Audio](../_audio/index.md)
+## [Hdaudio.h](index.md)
 ### [PALLOCATE_CAPTURE_DMA_ENGINE callback](../hdaudio/nc-hdaudio-pallocate_capture_dma_engine.md)
 ### [PALLOCATE_CONTIGUOUS_DMA_BUFFER callback](../hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer.md)
 ### [PALLOCATE_DMA_BUFFER callback](../hdaudio/nc-hdaudio-pallocate_dma_buffer.md)

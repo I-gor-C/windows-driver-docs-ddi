@@ -1,5 +1,5 @@
-# [Sffdisk.h](index.md)
-## [Secure Digital (SD) card](../_sd/index.md)
+# [Secure Digital (SD) card](../_sd/index.md)
+## [Sffdisk.h](index.md)
 ### [SFFDISK_DCMD enumeration](../sffdisk/ne-sffdisk-sffdisk_dcmd.md)
 ### [SFFDISK_DPCMD enumeration](../sffdisk/ne-sffdisk-sffdisk_dpcmd.md)
 ### [IOCTL_SFFDISK_DEVICE_COMMAND IOCTL](../sffdisk/ni-sffdisk-ioctl_sffdisk_device_command.md)

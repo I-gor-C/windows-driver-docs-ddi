@@ -1,5 +1,5 @@
-# [Minitape.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Minitape.h](index.md)
 ### [TAPE_ERROR_ROUTINE callback](../minitape/nc-minitape-tape_error_routine.md)
 ### [TAPE_EXTENSION_INIT_ROUTINE callback](../minitape/nc-minitape-tape_extension_init_routine.md)
 ### [TAPE_PROCESS_COMMAND_ROUTINE callback](../minitape/nc-minitape-tape_process_command_routine.md)

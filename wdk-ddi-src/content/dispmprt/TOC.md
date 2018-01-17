@@ -1,5 +1,5 @@
-# [Dispmprt.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [Dispmprt.h](index.md)
 ### [DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP callback](../dispmprt/nc-dispmprt-dxgkcb_acquire_post_display_ownership.md)
 ### [DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2 callback](../dispmprt/nc-dispmprt-dxgkcb_acquire_post_display_ownership2.md)
 ### [DXGKCB_AGP_ALLOCATE_POOL callback](../dispmprt/nc-dispmprt-dxgkcb_agp_allocate_pool.md)

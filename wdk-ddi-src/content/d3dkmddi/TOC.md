@@ -1,5 +1,5 @@
-# [D3Dkmddi.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [D3Dkmddi.h](index.md)
 ### [DXGKCB_COMPLETEFSTATETRANSITION callback](../d3dkmddi/nc-d3dkmddi-dxgkcb_completefstatetransition.md)
 ### [DXGKCB_CREATECONTEXTALLOCATION callback](../d3dkmddi/nc-d3dkmddi-dxgkcb_createcontextallocation.md)
 ### [DXGKCB_DESTROYCONTEXTALLOCATION callback](../d3dkmddi/nc-d3dkmddi-dxgkcb_destroycontextallocation.md)

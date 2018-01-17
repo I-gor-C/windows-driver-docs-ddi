@@ -1,5 +1,5 @@
-# [D4Drvif.h](index.md)
-## [Print devices](../_print/index.md)
+# [Print devices](../_print/index.md)
+## [D4Drvif.h](index.md)
 ### [IOCTL_DOT4_ADD_ACTIVITY_BROADCAST IOCTL](../d4drvif/ni-d4drvif-ioctl_dot4_add_activity_broadcast.md)
 ### [IOCTL_DOT4_CLOSE_CHANNEL IOCTL](../d4drvif/ni-d4drvif-ioctl_dot4_close_channel.md)
 ### [IOCTL_DOT4_CREATE_SOCKET IOCTL](../d4drvif/ni-d4drvif-ioctl_dot4_create_socket.md)

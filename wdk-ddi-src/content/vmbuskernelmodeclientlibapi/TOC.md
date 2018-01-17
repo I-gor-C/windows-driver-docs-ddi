@@ -1,5 +1,5 @@
-# [Vmbuskernelmodeclientlibapi.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Vmbuskernelmodeclientlibapi.h](index.md)
 ### [EVT_VMB_CHANNEL_CLOSED function](../vmbuskernelmodeclientlibapi/nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_closed.md)
 ### [EVT_VMB_CHANNEL_OPENED function](../vmbuskernelmodeclientlibapi/nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_opened.md)
 ### [EVT_VMB_CHANNEL_PNP_FAILURE function](../vmbuskernelmodeclientlibapi/nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_pnp_failure.md)

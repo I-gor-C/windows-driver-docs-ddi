@@ -1,5 +1,5 @@
-# [Iscsimgt.h](index.md)
-## [Storage](../_storage/index.md)
+# [Storage](../_storage/index.md)
+## [Iscsimgt.h](index.md)
 ### [_ISCSI_ConnectionStaticInfo structure](../iscsimgt/ns-iscsimgt-_iscsi_connectionstaticinfo.md)
 ### [_ISCSI_Path structure](../iscsimgt/ns-iscsimgt-_iscsi_path.md)
 ### [_ISCSI_PortalInfo structure](../iscsimgt/ns-iscsimgt-_iscsi_portalinfo.md)

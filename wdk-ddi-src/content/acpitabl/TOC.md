@@ -1,5 +1,5 @@
-# [Acpitabl.h](index.md)
-## [ACPI](../_acpi/index.md)
+# [ACPI](../_acpi/index.md)
+## [Acpitabl.h](index.md)
 ### [_BBRT_TABLE structure](../acpitabl/ns-acpitabl-_bbrt_table.md)
 ### [_GIC_ITS structure](../acpitabl/ns-acpitabl-_gic_its.md)
 ### [_LPIT structure](../acpitabl/ns-acpitabl-_lpit.md)

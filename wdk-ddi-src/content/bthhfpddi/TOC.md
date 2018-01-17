@@ -1,5 +1,5 @@
-# [Bthhfpddi.h](index.md)
-## [Audio](../_audio/index.md)
+# [Audio](../_audio/index.md)
+## [Bthhfpddi.h](index.md)
 ### [_HFP_BYPASS_CODEC_ID_VERSION enumeration](../bthhfpddi/ne-bthhfpddi-_hfp_bypass_codec_id_version.md)
 ### [BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT function](../bthhfpddi/nf-bthhfpddi-bthhfp_audio_device_capabilties_init.md)
 ### [IOCTL_BTHHFP_DEVICE_GET_CODEC_ID IOCTL](../bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_codec_id.md)

@@ -1,5 +1,5 @@
-# [Hidpddi.h](index.md)
-## [Human Interface Devices (HID)](../_hid/index.md)
+# [Human Interface Devices (HID)](../_hid/index.md)
+## [Hidpddi.h](index.md)
 ### [HidP_GetCollectionDescription function](../hidpddi/nf-hidpddi-hidp_getcollectiondescription.md)
 ### [_HIDP_COLLECTION_DESC structure](../hidpddi/ns-hidpddi-_hidp_collection_desc.md)
 ### [_HIDP_DEVICE_DESC structure](../hidpddi/ns-hidpddi-_hidp_device_desc.md)

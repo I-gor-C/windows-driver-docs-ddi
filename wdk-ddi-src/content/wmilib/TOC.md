@@ -1,5 +1,5 @@
-# [Wmilib.h](index.md)
-## [Windows kernel](../_kernel/index.md)
+# [Windows kernel](../_kernel/index.md)
+## [Wmilib.h](index.md)
 ### [WMI_EXECUTE_METHOD_CALLBACK callback](../wmilib/nc-wmilib-wmi_execute_method_callback.md)
 ### [WMI_FUNCTION_CONTROL_CALLBACK callback](../wmilib/nc-wmilib-wmi_function_control_callback.md)
 ### [WMI_QUERY_DATABLOCK_CALLBACK callback](../wmilib/nc-wmilib-wmi_query_datablock_callback.md)

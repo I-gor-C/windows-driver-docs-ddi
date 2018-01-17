@@ -1,5 +1,5 @@
-# [Sdpnode.h](index.md)
-## [Bluetooth](../_bltooth/index.md)
+# [Bluetooth](../_bltooth/index.md)
+## [Sdpnode.h](index.md)
 ### [_SDP_NODE structure](../sdpnode/ns-sdpnode-_sdp_node.md)
 ### [_SDP_NODE_DATA structure](../sdpnode/ns-sdpnode-_sdp_node_data.md)
 ### [_SDP_NODE_HEADER structure](../sdpnode/ns-sdpnode-_sdp_node_header.md)

@@ -1,5 +1,5 @@
-# [Acpiioct.h](index.md)
-## [ACPI](../_acpi/index.md)
+# [ACPI](../_acpi/index.md)
+## [Acpiioct.h](index.md)
 ### [IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK IOCTL](../acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock.md)
 ### [IOCTL_ACPI_ASYNC_EVAL_METHOD IOCTL](../acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method.md)
 ### [IOCTL_ACPI_ASYNC_EVAL_METHOD_EX IOCTL](../acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method_ex.md)

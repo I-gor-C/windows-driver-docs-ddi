@@ -1,5 +1,5 @@
-# [Bthxddi.h](index.md)
-## [Bluetooth](../_bltooth/index.md)
+# [Bluetooth](../_bltooth/index.md)
+## [Bthxddi.h](index.md)
 ### [_BTHX_HCI_PACKET_TYPE enumeration](../bthxddi/ne-bthxddi-_bthx_hci_packet_type.md)
 ### [_BTHX_SCO_SUPPORT enumeration](../bthxddi/ne-bthxddi-_bthx_sco_support.md)
 ### [IOCTL_BTHX_GET_VERSION IOCTL](../bthxddi/ni-bthxddi-ioctl_bthx_get_version.md)

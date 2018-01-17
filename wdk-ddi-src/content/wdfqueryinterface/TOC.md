@@ -1,5 +1,5 @@
-# [Wdfqueryinterface.h](index.md)
-## [Windows Driver Framework](../_wdf/index.md)
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfqueryinterface.h](index.md)
 ### [PFN_WDFDEVICEADDQUERYINTERFACE function](../wdfqueryinterface/nc-wdfqueryinterface-pfn_wdfdeviceaddqueryinterface.md)
 ### [WdfDeviceAddQueryInterface function](../wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md)
 ### [WdfDeviceInterfaceDereferenceNoOp function](../wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceinterfacedereferencenoop.md)

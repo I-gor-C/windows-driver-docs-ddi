@@ -1,5 +1,5 @@
-# [Pepfx.h](index.md)
-## [Windows kernel](../_kernel/index.md)
+# [Windows kernel](../_kernel/index.md)
+## [Pepfx.h](index.md)
 ### [PEPCALLBACKNOTIFYACPI function](../pepfx/nc-pepfx-pepcallbacknotifyacpi.md)
 ### [PEPCALLBACKNOTIFYDPM function](../pepfx/nc-pepfx-pepcallbacknotifydpm.md)
 ### [PEPCALLBACKNOTIFYPPM function](../pepfx/nc-pepfx-pepcallbacknotifyppm.md)

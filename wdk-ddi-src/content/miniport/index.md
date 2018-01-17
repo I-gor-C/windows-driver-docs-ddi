@@ -13,9 +13,9 @@ ms.topic: portal
 
 
 
-This header is used by Windows kernel, Display. For more information, see
-- [Windows kernel](../_kernel/index.md)
+This header is used by Display, Windows kernel. For more information, see
 - [Display](../_display/index.md)
+- [Windows kernel](../_kernel/index.md)
 
 Miniport.h contain these programming interfaces:
 

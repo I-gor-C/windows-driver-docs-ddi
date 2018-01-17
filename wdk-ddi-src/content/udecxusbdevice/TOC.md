@@ -1,5 +1,5 @@
-# [Udecxusbdevice.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Udecxusbdevice.h](index.md)
 ### [EVT_UDECX_USB_DEVICE_D0_ENTRY function](../udecxusbdevice/nc-udecxusbdevice-evt_udecx_usb_device_d0_entry.md)
 ### [EVT_UDECX_USB_DEVICE_D0_EXIT function](../udecxusbdevice/nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md)
 ### [EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD function](../udecxusbdevice/nc-udecxusbdevice-evt_udecx_usb_device_default_endpoint_add.md)

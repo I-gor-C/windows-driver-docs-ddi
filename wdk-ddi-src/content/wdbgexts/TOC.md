@@ -1,5 +1,5 @@
-# [Wdbgexts.h](index.md)
-## [Debugger](../_debugger/index.md)
+# [Debugger](../_debugger/index.md)
+## [Wdbgexts.h](index.md)
 ### [PSYM_DUMP_FIELD_CALLBACK callback](../wdbgexts/nc-wdbgexts-psym_dump_field_callback.md)
 ### [PWINDBG_CHECK_VERSION callback](../wdbgexts/nc-wdbgexts-pwindbg_check_version.md)
 ### [PWINDBG_EXTENSION_API_VERSION callback](../wdbgexts/nc-wdbgexts-pwindbg_extension_api_version.md)

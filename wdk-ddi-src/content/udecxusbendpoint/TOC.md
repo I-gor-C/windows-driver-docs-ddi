@@ -1,5 +1,5 @@
-# [Udecxusbendpoint.h](index.md)
-## [Universal Serial Bus (USB)](../_usbref/index.md)
+# [Universal Serial Bus (USB)](../_usbref/index.md)
+## [Udecxusbendpoint.h](index.md)
 ### [EVT_UDECX_USB_ENDPOINT_PURGE function](../udecxusbendpoint/nc-udecxusbendpoint-evt_udecx_usb_endpoint_purge.md)
 ### [EVT_UDECX_USB_ENDPOINT_RESET function](../udecxusbendpoint/nc-udecxusbendpoint-evt_udecx_usb_endpoint_reset.md)
 ### [EVT_UDECX_USB_ENDPOINT_START function](../udecxusbendpoint/nc-udecxusbendpoint-evt_udecx_usb_endpoint_start.md)

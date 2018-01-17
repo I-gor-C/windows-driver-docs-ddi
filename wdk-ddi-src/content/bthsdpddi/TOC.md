@@ -1,5 +1,5 @@
-# [Bthsdpddi.h](index.md)
-## [Bluetooth](../_bltooth/index.md)
+# [Bluetooth](../_bltooth/index.md)
+## [Bthsdpddi.h](index.md)
 ### [PBYTESWAPUINT128 callback](../bthsdpddi/nc-bthsdpddi-pbyteswapuint128.md)
 ### [PBYTESWAPUINT64 callback](../bthsdpddi/nc-bthsdpddi-pbyteswapuint64.md)
 ### [PBYTESWAPUUID128 callback](../bthsdpddi/nc-bthsdpddi-pbyteswapuuid128.md)

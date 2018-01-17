@@ -1,5 +1,5 @@
-# [Ntddsysenv.h](index.md)
-## [Windows kernel](../_kernel/index.md)
+# [Windows kernel](../_kernel/index.md)
+## [Ntddsysenv.h](index.md)
 ### [IOCTL_SYSENV_ENUM_VARIABLES IOCTL](../ntddsysenv/ni-ntddsysenv-ioctl_sysenv_enum_variables.md)
 ### [IOCTL_SYSENV_GET_VARIABLE IOCTL](../ntddsysenv/ni-ntddsysenv-ioctl_sysenv_get_variable.md)
 ### [IOCTL_SYSENV_QUERY_VARIABLE_INFO IOCTL](../ntddsysenv/ni-ntddsysenv-ioctl_sysenv_query_variable_info.md)

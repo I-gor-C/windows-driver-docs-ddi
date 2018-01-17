@@ -1,5 +1,5 @@
-# [Netioddk.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Netioddk.h](index.md)
 ### [NPI_CLIENT_ATTACH_PROVIDER_FN callback](../netioddk/nc-netioddk-npi_client_attach_provider_fn.md)
 ### [NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN callback](../netioddk/nc-netioddk-npi_client_cleanup_binding_context_fn.md)
 ### [NPI_CLIENT_DETACH_PROVIDER_FN callback](../netioddk/nc-netioddk-npi_client_detach_provider_fn.md)

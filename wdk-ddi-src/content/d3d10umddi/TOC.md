@@ -1,5 +1,5 @@
-# [D3D10Umddi.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [D3D10Umddi.h](index.md)
 ### [PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE callback](../d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateblendstatesize.md)
 ### [PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE callback](../d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivatedepthstencilstatesize.md)
 ### [PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE callback](../d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivatedepthstencilviewsize.md)

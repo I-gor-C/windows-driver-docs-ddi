@@ -1,5 +1,5 @@
-# [Msviddrv.h](index.md)
-## [Streaming media devices](../_stream/index.md)
+# [Streaming media devices](../_stream/index.md)
+## [Msviddrv.h](index.md)
 ### [tag_video_configure_parms structure](../msviddrv/ns-msviddrv-tag_video_configure_parms.md)
 ### [tag_video_geterrortext_parms structure](../msviddrv/ns-msviddrv-tag_video_geterrortext_parms.md)
 ### [tag_video_open_parms structure](../msviddrv/ns-msviddrv-tag_video_open_parms.md)

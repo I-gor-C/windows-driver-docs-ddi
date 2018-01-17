@@ -1,5 +1,5 @@
-# [Pmi.h](index.md)
-## [Power metering](../_powermeter/index.md)
+# [Power metering](../_powermeter/index.md)
+## [Pmi.h](index.md)
 ### [PMI_CAPABILITIES_TYPE enumeration](../pmi/ne-pmi-pmi_capabilities_type.md)
 ### [PMI_CONFIGURATION_TYPE enumeration](../pmi/ne-pmi-pmi_configuration_type.md)
 ### [PMI_EVENT_TYPE enumeration](../pmi/ne-pmi-pmi_event_type.md)

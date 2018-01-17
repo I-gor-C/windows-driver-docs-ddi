@@ -1,5 +1,5 @@
-# [Pcivirt.h](index.md)
-## [PCI bus drivers](../_pci/index.md)
+# [PCI bus drivers](../_pci/index.md)
+## [Pcivirt.h](index.md)
 ### [READ_WRITE_MITIGATED_REGISTER function](../pcivirt/nc-pcivirt-read_write_mitigated_register.md)
 ### [SRIOV_GET_DEVICE_LOCATION function](../pcivirt/nc-pcivirt-sriov_get_device_location.md)
 ### [SRIOV_GET_RESOURCE_FOR_BAR function](../pcivirt/nc-pcivirt-sriov_get_resource_for_bar.md)

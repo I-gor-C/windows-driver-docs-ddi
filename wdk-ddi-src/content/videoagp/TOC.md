@@ -1,5 +1,5 @@
-# [Videoagp.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [Videoagp.h](index.md)
 ### [PAGP_COMMIT_PHYSICAL callback](../videoagp/nc-videoagp-pagp_commit_physical.md)
 ### [PAGP_COMMIT_VIRTUAL callback](../videoagp/nc-videoagp-pagp_commit_virtual.md)
 ### [PAGP_FREE_PHYSICAL callback](../videoagp/nc-videoagp-pagp_free_physical.md)

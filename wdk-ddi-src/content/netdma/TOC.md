@@ -1,5 +1,5 @@
-# [Netdma.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Netdma.h](index.md)
 ### [DMA_ABORT_HANDLER callback](../netdma/nc-netdma-dma_abort_handler.md)
 ### [DMA_APPEND_HANDLER callback](../netdma/nc-netdma-dma_append_handler.md)
 ### [DMA_CHANNELS_CPU_AFFINITY_HANDLER callback](../netdma/nc-netdma-dma_channels_cpu_affinity_handler.md)

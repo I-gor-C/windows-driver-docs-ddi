@@ -1,5 +1,5 @@
-# [Charging.h](index.md)
-## [Battery](../_battery/index.md)
+# [Battery](../_battery/index.md)
+## [Charging.h](index.md)
 ### [_POWERSOURCEID enumeration](../charging/ne-charging-_powersourceid.md)
 ### [IOCTL_CAD_DISABLE_CHARGING IOCTL](../charging/ni-charging-ioctl_cad_disable_charging.md)
 ### [IOCTL_CAD_GET_BATTERY_PROVISIONING_STATUS IOCTL](../charging/ni-charging-ioctl_cad_get_battery_provisioning_status.md)

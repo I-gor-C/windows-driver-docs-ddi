@@ -1,5 +1,5 @@
-# [Sensorscx.h](index.md)
-## [Sensors](../_sensors/index.md)
+# [Sensors](../_sensors/index.md)
+## [Sensorscx.h](index.md)
 ### [EVT_SENSOR_DRIVER_DISABLE_WAKE function](../sensorscx/nc-sensorscx-evt_sensor_driver_disable_wake.md)
 ### [EVT_SENSOR_DRIVER_ENABLE_WAKE function](../sensorscx/nc-sensorscx-evt_sensor_driver_enable_wake.md)
 ### [EVT_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION function](../sensorscx/nc-sensorscx-evt_sensor_driver_start_state_change_notification.md)

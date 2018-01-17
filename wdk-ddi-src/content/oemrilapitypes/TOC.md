@@ -1,5 +1,5 @@
-# [Oemrilapitypes.h](index.md)
-## [Networking drivers for Windows Vista and later](../_netvista/index.md)
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Oemrilapitypes.h](index.md)
 ### [RILDEVSSPECIFICCLASSES enumeration](../oemrilapitypes/ne-oemrilapitypes-rildevsspecificclasses.md)
 ### [RILGBACAPABLE enumeration](../oemrilapitypes/ne-oemrilapitypes-rilgbacapable.md)
 ### [RILGETTOKENPARAMMASK enumeration](../oemrilapitypes/ne-oemrilapitypes-rilgettokenparammask.md)

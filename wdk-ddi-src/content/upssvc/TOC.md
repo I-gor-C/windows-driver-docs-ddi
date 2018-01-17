@@ -1,5 +1,5 @@
-# [Upssvc.h](index.md)
-## [Battery](../_battery/index.md)
+# [Battery](../_battery/index.md)
+## [Upssvc.h](index.md)
 ### [UPSCancelWait function](../upssvc/nf-upssvc-upscancelwait.md)
 ### [UPSGetState function](../upssvc/nf-upssvc-upsgetstate.md)
 ### [UPSInit function](../upssvc/nf-upssvc-upsinit.md)

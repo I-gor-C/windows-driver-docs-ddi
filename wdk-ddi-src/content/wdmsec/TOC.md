@@ -1,5 +1,5 @@
-# [Wdmsec.h](index.md)
-## [Windows kernel](../_kernel/index.md)
+# [Windows kernel](../_kernel/index.md)
+## [Wdmsec.h](index.md)
 ### [WdmlibIoCreateDeviceSecure function](../wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure.md)
 ### [WdmlibIoValidateDeviceIoControlAccess function](../wdmsec/nf-wdmsec-wdmlibiovalidatedeviceiocontrolaccess.md)
 ### [WdmlibRtlInitUnicodeStringEx function](../wdmsec/nf-wdmsec-wdmlibrtlinitunicodestringex.md)

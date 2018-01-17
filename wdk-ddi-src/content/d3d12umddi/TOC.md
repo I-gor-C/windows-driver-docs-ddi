@@ -1,5 +1,5 @@
-# [D3D12Umddi.h](index.md)
-## [Display](../_display/index.md)
+# [Display](../_display/index.md)
+## [D3D12Umddi.h](index.md)
 ### [PFND3D12DDI_ALLOCATE_CB_0022 callback](../d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022.md)
 ### [PFND3D12DDI_BEGIN_END_QUERY_0003 callback](../d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_begin_end_query_0003.md)
 ### [PFND3D12DDI_CALCPRIVATECOMMANDQUEUESIZE_0023 callback](../d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_calcprivatecommandqueuesize_0023.md)
