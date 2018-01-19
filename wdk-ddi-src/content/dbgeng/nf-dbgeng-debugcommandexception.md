@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.DebugCommandException
-title: DebugCommandException function
-author: windows-driver-content
-description: Specifies a debug command exception.
-old-location: debugger\debugcommandexception.htm
-old-project: debugger
-ms.assetid: 6DC67840-B985-45D0-8E81-671C3DC1EBC2
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: DebugCommandException
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DebugCommandException
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.DebugCommandException
+title : DebugCommandException function
+author : windows-driver-content
+description : Specifies a debug command exception.
+old-location : debugger\debugcommandexception.htm
+old-project : debugger
+ms.assetid : 6DC67840-B985-45D0-8E81-671C3DC1EBC2
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : DebugCommandException
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DebugCommandException
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
+
 # DebugCommandException function
-
-
-
-## -description
 Specifies a debug command exception.
 
-
-
-## -syntax
+## Syntax
 
 ````
 void WINAPI DebugCommandException(
@@ -53,26 +48,34 @@ void WINAPI DebugCommandException(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Command 
+`Command`
 
 A command.
 
-
-### -param ArgSize 
+`ArgSize`
 
 The size of the argument.
 
-
-### -param Arg 
+`Arg`
 
 A pointer to an argument.
 
 
-## -returns
+## Return Value
+
 This function does not return a value.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

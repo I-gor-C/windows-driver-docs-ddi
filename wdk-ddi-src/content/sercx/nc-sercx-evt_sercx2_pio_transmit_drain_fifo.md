@@ -1,73 +1,68 @@
 ---
-UID: NC:sercx.EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
-title: EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO function
-author: windows-driver-content
-description: The EvtSerCx2PioTransmitDrainFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to drain the transmit FIFO in the serial controller hardware.
-old-location: serports\evtsercx2piotransmitdrainfifo.htm
-old-project: serports
-ms.assetid: A21E14DA-0B76-4DA2-B628-C3A4DE843FA9
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: sercx.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 8.1.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: EvtSerCx2PioTransmitDrainFifo
-req.alt-loc: 2.0\Sercx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at IRQL <= DISPATCH_LEVEL.
-req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
+UID : NC:sercx.EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
+title : EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO
+author : windows-driver-content
+description : The EvtSerCx2PioTransmitDrainFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to drain the transmit FIFO in the serial controller hardware.
+old-location : serports\evtsercx2piotransmitdrainfifo.htm
+old-project : serports
+ms.assetid : A21E14DA-0B76-4DA2-B628-C3A4DE843FA9
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : sercx.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 8.1.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : EvtSerCx2PioTransmitDrainFifo
+req.alt-loc : 2.0\Sercx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at IRQL <= DISPATCH_LEVEL.
+req.typenames : "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO function
-
-
-
-## -description
 The <i>EvtSerCx2PioTransmitDrainFifo</i> event callback function is called by version 2 of the serial framework extension (SerCx2) to drain the transmit FIFO in the serial controller hardware.
 
+## Syntax
 
+```
+EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO EvtSercx2PioTransmitDrainFifo;
 
-## -syntax
-
-````
-EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO EvtSerCx2PioTransmitDrainFifo;
-
-VOID EvtSerCx2PioTransmitDrainFifo(
-  _In_ SERCX2PIOTRANSMIT PioTransmit
+void EvtSercx2PioTransmitDrainFifo(
+  SERCX2PIOTRANSMIT PioTransmit
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`PioTransmit`
+
+A <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.
 
 
-## -parameters
+## Return Value
 
-### -param PioTransmit [in]
-
-A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.
-
-
-## -returns
 None.
 
+## Remarks
 
-## -remarks
 Your serial controller driver can, as an option, implement this function. If your driver implements this function, it must also implement the <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_cancel_drain_fifo.md">EvtSerCx2PioTransmitCancelDrainFifo</a> and <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_purge_fifo.md">EvtSerCx2PioTransmitPurgeFifo</a> event callback functions. A driver that implements these functions registers them in the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.
 
 SerCx2 calls the <i>EvtSerCx2PioTransmitDrainFifo</i> function, if it is implemented, to drain the transmit FIFO in the serial controller hardware at the end of a PIO-transmit transaction. This function makes sure that any data bytes that remain in the transmit FIFO are transmitted to the serially connected peripheral device. After the last byte is transmitted from the FIFO, the <i>EvtSerCx2PioTransmitDrainFifo</i> function calls the <a href="..\sercx\nf-sercx-sercx2piotransmitdrainfifocomplete.md">SerCx2PioTransmitDrainFifoComplete</a> method to notify SerCx2.
@@ -90,8 +85,20 @@ Then, implement your callback function as follows:
 
 The <b>EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | sercx.h |
+| **Library** |  |
+| **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_cancel_drain_fifo.md">EvtSerCx2PioTransmitCancelDrainFifo</a>
@@ -103,7 +110,7 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO</b> function type is defined in the Se
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a>
 </dt>
 <dt>
 <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
@@ -117,4 +124,3 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO</b> function type is defined in the Se
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20EVT_SERCX2_PIO_TRANSMIT_DRAIN_FIFO callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

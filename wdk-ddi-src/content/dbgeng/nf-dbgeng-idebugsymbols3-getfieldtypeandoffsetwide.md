@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugSymbols3.GetFieldTypeAndOffsetWide
-title: IDebugSymbols3::GetFieldTypeAndOffsetWide method
-author: windows-driver-content
-description: The GetFieldTypeAndOffsetWide method returns the type of a field and its offset within a container.
-old-location: debugger\getfieldtypeandoffsetwide.htm
-old-project: debugger
-ms.assetid: b4e38b33-2f23-4439-b0bc-ab3524e5180e
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugSymbols3, IDebugSymbols3::GetFieldTypeAndOffsetWide, GetFieldTypeAndOffsetWide
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugSymbols3.GetFieldTypeAndOffsetWide
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugSymbols3.GetFieldTypeAndOffsetWide
+title : IDebugSymbols3::GetFieldTypeAndOffsetWide method
+author : windows-driver-content
+description : The GetFieldTypeAndOffsetWide method returns the type of a field and its offset within a container.
+old-location : debugger\getfieldtypeandoffsetwide.htm
+old-project : debugger
+ms.assetid : b4e38b33-2f23-4439-b0bc-ab3524e5180e
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugSymbols3, IDebugSymbols3::GetFieldTypeAndOffsetWide, GetFieldTypeAndOffsetWide
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugSymbols3.GetFieldTypeAndOffsetWide
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugSymbols3::GetFieldTypeAndOffsetWide method
 
-
-
-## -description
+# GetFieldTypeAndOffsetWide method
 The <b>GetFieldTypeAndOffsetWide</b>  method returns the type of a field and its offset within a container.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT GetFieldTypeAndOffsetWide(
@@ -55,35 +50,31 @@ HRESULT GetFieldTypeAndOffsetWide(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Module [in]
+`Module`
 
 Specifies the module containing the types of both the container and the field.
 
-
-### -param ContainerTypeId [in]
+`ContainerTypeId`
 
 Specifies the type ID for the container's type.  Examples of containers include structures, unions, and classes.
 
-
-### -param Field [in]
+`Field`
 
 Specifies the name of the field whose type and offset are requested.  Subfields may be specified by using a dot-separated path.
 
-
-### -param FieldTypeId [out, optional]
+`FieldTypeId`
 
 Receives the type ID of the field.
 
-
-### -param Offset [out, optional]
+`Offset`
 
 Receives the offset of the field <i>Field</i> from the base memory location of an instance of the container.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -92,16 +83,26 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 <dt><b>E_NOINTERFACE</b></dt>
 </dl>The field <i>Field</i> could not be found in the type specified by <i>ContainerTypeId</i>.
 
- 
+## Remarks
 
-
-## -remarks
 An example of a dot-separated path for the <i>Field</i> parameter is as follows.  Suppose the MyStruct structure contains a field <b>MyField</b> of type MySubStruct, and the MySubStruct structure contains the field <b>MySubField</b>.  Then the type of this field and its location relative to the location of MyStruct structure can be found by passing "MyField.MySubField" as the <i>Field</i> parameter to this method.
 
 For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.  For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
@@ -118,4 +119,3 @@ For more information about types, see <a href="https://msdn.microsoft.com/librar
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetFieldTypeAndOffsetWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

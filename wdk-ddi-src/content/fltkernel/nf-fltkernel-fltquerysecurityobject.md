@@ -1,50 +1,45 @@
 ---
-UID: NF:fltkernel.FltQuerySecurityObject
-title: FltQuerySecurityObject function
-author: windows-driver-content
-description: FltQuerySecurityObject retrieves a copy of an object's security descriptor.
-old-location: ifsk\fltquerysecurityobject.htm
-old-project: ifsk
-ms.assetid: 388dc11d-79cc-4e6b-bce0-b99cca556342
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltQuerySecurityObject
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltQuerySecurityObject
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: PASSIVE_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltQuerySecurityObject
+title : FltQuerySecurityObject function
+author : windows-driver-content
+description : FltQuerySecurityObject retrieves a copy of an object's security descriptor.
+old-location : ifsk\fltquerysecurityobject.htm
+old-project : ifsk
+ms.assetid : 388dc11d-79cc-4e6b-bce0-b99cca556342
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltQuerySecurityObject
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltQuerySecurityObject
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : PASSIVE_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltQuerySecurityObject function
-
-
-
-## -description
 <b>FltQuerySecurityObject</b> retrieves a copy of an object's security 
    descriptor.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltQuerySecurityObject(
@@ -57,23 +52,19 @@ NTSTATUS FltQuerySecurityObject(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Instance [in]
+`Instance`
 
 Opaque instance pointer for the caller. This parameter is required and cannot be 
       <b>NULL</b>.
 
-
-### -param FileObject [in]
+`FileObject`
 
 File object pointer for the object whose security descriptor is being queried. This parameter is required 
       and cannot be <b>NULL</b>.
 
-
-### -param SecurityInformation [in]
-
+`SecurityInformation`
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a> value. This parameter is 
        required and must be one of the following:
@@ -128,30 +119,27 @@ The system ACL (SACL) of the object is being queried. Requires
 </td>
 </tr>
 </table>
- 
 
-
-### -param SecurityDescriptor [in, out]
+`SecurityDescriptor`
 
 Pointer to a caller-supplied output buffer that receives a copy of the security descriptor for the 
       specified object. The <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> 
       structure is returned in self-relative format. This parameter is optional and can be 
       <b>NULL</b>.
 
-
-### -param Length [in]
+`Length`
 
 Size, in bytes, of the <i>SecurityDescriptor</i> buffer.
 
-
-### -param LengthNeeded [out, optional]
+`LengthNeeded`
 
 Pointer to a caller-allocated variable that receives the number of bytes required to store the copied 
       security descriptor returned in the buffer pointed to by the <i>SecurityDescriptor</i> 
       parameter. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltQuerySecurityObject</b> returns STATUS_SUCCESS or an appropriate 
       <b>NTSTATUS</b> value such as one of the following:
 <dl>
@@ -162,10 +150,8 @@ Pointer to a caller-allocated variable that receives the number of bytes require
 </dl>The buffer is too small to contain the security descriptor. None of the security information was copied 
         to the buffer. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 A security descriptor can be in absolute or self-relative form. In self-relative form, all members of the 
      structure are located contiguously in memory. In absolute form, the structure contains only pointers to its 
      members.
@@ -181,8 +167,20 @@ The object that the <i>FileObject</i> parameter points to can represent a named 
 
 For more information about security and access control, see the Microsoft Windows SDK documentation.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_stream_information.md">FILE_STREAM_INFORMATION</a>
@@ -199,4 +197,3 @@ For more information about security and access control, see the Microsoft Window
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQuerySecurityObject function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

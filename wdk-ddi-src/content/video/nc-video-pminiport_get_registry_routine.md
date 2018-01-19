@@ -1,97 +1,88 @@
 ---
-UID: NC:video.PMINIPORT_GET_REGISTRY_ROUTINE
-title: PMINIPORT_GET_REGISTRY_ROUTINE
-author: windows-driver-content
-description: HwVidQueryNamedValueCallback processes the specified data retrieved from the registry.
-old-location: display\hwvidquerynamedvaluecallback.htm
-old-project: display
-ms.assetid: 90020700-b9c8-42e6-bafa-908cbc3eb233
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwVidQueryNamedValueCallback
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-req.product: Windows 10 or later.
+UID : NC:video.PMINIPORT_GET_REGISTRY_ROUTINE
+title : PMINIPORT_GET_REGISTRY_ROUTINE
+author : windows-driver-content
+description : HwVidQueryNamedValueCallback processes the specified data retrieved from the registry.
+old-location : display\hwvidquerynamedvaluecallback.htm
+old-project : display
+ms.assetid : 90020700-b9c8-42e6-bafa-908cbc3eb233
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwVidQueryNamedValueCallback
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VHF_CONFIG, *PVHF_CONFIG
+req.product : Windows 10 or later.
 ---
 
-# PMINIPORT_GET_REGISTRY_ROUTINE callback
 
-
-
-## -description
+# PMINIPORT_GET_REGISTRY_ROUTINE callback function
 <i>HwVidQueryNamedValueCallback</i> processes the specified data retrieved from the registry.
 
+## Syntax
 
+```
+PMINIPORT_GET_REGISTRY_ROUTINE PminiportGetRegistryRoutine;
 
-## -prototype
-
-````
-PMINIPORT_GET_REGISTRY_ROUTINE HwVidQueryNamedValueCallback;
-
-VP_STATUS HwVidQueryNamedValueCallback(
-   PVOID HwDeviceExtension,
-   PVOID Context,
-   PWSTR ValueName,
-   PVOID ValueData,
-   ULONG ValueLength
+VP_STATUS PminiportGetRegistryRoutine(
+  PVOID HwDeviceExtension,
+  PVOID Context,
+  PWSTR ValueName,
+  PVOID ValueData,
+  ULONG ValueLength
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension 
+`HwDeviceExtension`
 
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
-
-### -param Context 
+`Context`
 
 Pointer to a driver-determined context specified as input to the <a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a> function.
 
-
-### -param ValueName 
+`ValueName`
 
 Pointer to a NULL-terminated Unicode string naming the entry.
 
-
-### -param ValueData 
+`ValueData`
 
 Pointer to the buffered data associated with <i>ValueName</i>, supplied by <b>VideoPortGetRegistryParameters</b>.
 
-
-### -param ValueLength 
+`ValueLength`
 
 Specifies the size in bytes of the buffer at <i>ValueData</i>.
 
 
-## -returns
+## Return Value
+
 <i>HwVidQueryNamedValueCallback</i> returns the status of the operation.
 
+## Remarks
 
-## -remarks
 <i>HwVidQueryNamedValueCallback</i> is an optional miniport driver function passed in a call to <a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>.
 
 <b>VideoPortGetRegistryParameters</b> calls <i>HwVidQueryNamedValueCallback</i> after collecting available configuration information about the given <i>ValueName</i> in the <b>adapter</b> key of the registry. 
@@ -108,8 +99,20 @@ The returned <i>ValueData</i> is on the stack, so it can be referenced locally. 
 
 <i>HwVidQueryNamedValueCallback</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
@@ -132,4 +135,3 @@ The returned <i>ValueData</i> is on the stack, so it can be referenced locally. 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_GET_REGISTRY_ROUTINE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

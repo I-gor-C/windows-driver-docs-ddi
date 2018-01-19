@@ -1,50 +1,43 @@
 ---
-UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
-title: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
-author: windows-driver-content
-description: The NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure represents the status of a device service session write operation.
-old-location: netvista\ndis_wwan_device_service_session_write_complete.htm
-old-project: netvista
-ms.assetid: 16A48882-BEA6-4F95-8E9F-572BFD102031
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndiswwan.h
-req.include-header: Ndiswwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with  Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
-req.alt-loc: ndiswwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+title : _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+author : windows-driver-content
+description : The NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure represents the status of a device service session write operation.
+old-location : netvista\ndis_wwan_device_service_session_write_complete.htm
+old-project : netvista
+ms.assetid : 16A48882-BEA6-4F95-8E9F-572BFD102031
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndiswwan.h
+req.include-header : Ndiswwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with  Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+req.alt-loc : ndiswwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE"
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure
-
-
-
-## -description
 The NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure represents the status of a device service session write operation.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE {
   NDIS_OBJECT_HEADER Header;
@@ -52,12 +45,12 @@ typedef struct _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE {
 } NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
-
-The header with type, revision, and size information about the NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+            The header with type, revision, and size information about the NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
      structure. The MB Service sets the header with the values that are shown in the following table when it
      sends the data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
@@ -103,12 +96,17 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE)
  
 
 For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+        
+            `uStatus`
+
+            The status of the completion of the write operation.
 
 
-### -field uStatus
-
-The status of the completion of the write operation.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndiswwan.h (include Ndiswwan.h) |

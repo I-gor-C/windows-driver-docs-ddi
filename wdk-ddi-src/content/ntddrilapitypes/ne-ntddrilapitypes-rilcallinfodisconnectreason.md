@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILCALLINFODISCONNECTREASON
-title: RILCALLINFODISCONNECTREASON
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallinfodisconnectreason.htm
-old-project: netvista
-ms.assetid: 2e339b56-9130-4459-8ccd-171f721ae83e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLINFODISCONNECTREASON, RILCALLINFODISCONNECTREASON
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLINFODISCONNECTREASON
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILCALLINFODISCONNECTREASON
+UID : NE:ntddrilapitypes.RILCALLINFODISCONNECTREASON
+title : RILCALLINFODISCONNECTREASON
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallinfodisconnectreason.htm
+old-project : netvista
+ms.assetid : 2e339b56-9130-4459-8ccd-171f721ae83e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLINFODISCONNECTREASON, RILCALLINFODISCONNECTREASON
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLINFODISCONNECTREASON
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILCALLINFODISCONNECTREASON
 ---
 
-# RILCALLINFODISCONNECTREASON enumeration
-
-
-
-## -description
+# RILCALLINFODISCONNECTREASON Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILCALLINFODISCONNECTREASON { 
   RIL_DISCREASON_BUSY,
@@ -60,37 +53,66 @@ typedef enum _RILCALLINFODISCONNECTREASON {
 } RILCALLINFODISCONNECTREASON;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_DISCREASON_BUSY
+<tr>
+<td>RIL_DISCREASON_BUSY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_CONGESTION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_EMERGENCYFAILOVER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_EMERGENCYONLY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_HANDOVER_MERGE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_NETWORKERROR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_NOSERVICE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_OTHEREXECUTORBUSY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCREASON_RADIOFADE</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_DISCREASON_NETWORKERROR
-
-
-### -field RIL_DISCREASON_RADIOFADE
-
-
-### -field RIL_DISCREASON_CONGESTION
-
-
-### -field RIL_DISCREASON_EMERGENCYONLY
-
-
-### -field RIL_DISCREASON_NOSERVICE
-
-
-### -field RIL_DISCREASON_OTHEREXECUTORBUSY
-
-
-### -field RIL_DISCREASON_EMERGENCYFAILOVER
-
-
-### -field RIL_DISCREASON_HANDOVER_MERGE
-
-
-### -field RIL_DISCREASON_MAX
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

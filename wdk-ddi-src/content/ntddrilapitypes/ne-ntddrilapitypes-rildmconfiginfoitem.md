@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILDMCONFIGINFOITEM
-title: RILDMCONFIGINFOITEM
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rildmconfiginfoitem.htm
-old-project: netvista
-ms.assetid: 31061811-e148-4af2-8a9b-370d1b45ae1f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILDMCONFIGINFOITEM, RILDMCONFIGINFOITEM
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILDMCONFIGINFOITEM
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILDMCONFIGINFOITEM
+UID : NE:ntddrilapitypes.RILDMCONFIGINFOITEM
+title : RILDMCONFIGINFOITEM
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rildmconfiginfoitem.htm
+old-project : netvista
+ms.assetid : 31061811-e148-4af2-8a9b-370d1b45ae1f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILDMCONFIGINFOITEM, RILDMCONFIGINFOITEM
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILDMCONFIGINFOITEM
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILDMCONFIGINFOITEM
 ---
 
-# RILDMCONFIGINFOITEM enumeration
-
-
-
-## -description
+# RILDMCONFIGINFOITEM Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILDMCONFIGINFOITEM { 
   RILDMCONFIG_SIP_TIMER_T2,
@@ -86,115 +79,196 @@ typedef enum _RILDMCONFIGINFOITEM {
 } RILDMCONFIGINFOITEM;
 ````
 
-
-## -enum-fields
-
-### -field RILDMCONFIG_SIP_TIMER_T2
-
-
-### -field RILDMCONFIG_SIP_TIMER_F
-
-
-### -field RILDMCONFIG_SMS_FORMAT_TYPE
-
-
-### -field RILDMCONFIG_DOMAIN_NAME
-
-
-### -field RILDMCONFIG_SMS_OVER_IP_NW_INDICATION
-
-
-### -field RILDMCONFIG_IMS_TEST_MODE_STATUS
-
-
-### -field RILDMCONFIG_PCSCF_ADDRESS
-
-
-### -field RILDMCONFIG_PCSCF_PORT_NUMBER
-
-
-### -field RILDMCONFIG_MD5_AUTH
-
-
-### -field RILDMCONFIG_MULTIPARTY_SERVER
-
-
-### -field RILDMCONFIG_REQUEST_CONTEXT
-
-
-### -field RILDMCONFIG_IMS_NAI
-
-
-### -field RILDMCONFIG_SIP_SESSION_TIMER
-
-
-### -field RILDMCONFIG_SIP_SESSION_TIMER_MIN
-
-
-### -field RILDMCONFIG_AMR_WB_ENABLE
-
-
-### -field RILDMCONFIG_AMR_SRC_CTL_RATE
-
-
-### -field RILDMCONFIG_AMR_WB_SRC_CTL_RATE
-
-
-### -field RILDMCONFIG_AMR_MODE_SET
-
-
-### -field RILDMCONFIG_AMR_WB_MODE_SET
-
-
-### -field RILDMCONFIG_RINGING_TIMER
-
-
-### -field RILDMCONFIG_RINGBACK_TIMER
-
-
-### -field RILDMCONFIG_RTC_INACTIVITY_TIMER
-
-
-### -field RILDMCONFIG_UDP_KEEPALIVE_TIMER
-
-
-### -field RILDMCONFIG_IMS_VOICE_ENABLED
-
-
-### -field RILDMCONFIG_IMS_VIDEO_ENABLED
-
-
-### -field RILDMCONFIG_IMS_NW_ENABLED_FLAGS
-
-
-### -field RILDMCONFIG_IMS_IRAT_REG_DELAY
-
-
-### -field RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER
-
-
-### -field RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE
-
-
-### -field RILDMCONFIG_IMS_PRESENCE_ENABLED
-
-
-### -field RILDMCONFIG_IMS_ROAMING_ENABLED
-
-
-### -field RILDMCONFIG_IMS_XCAP_ENABLED
-
-
-### -field RILDMCONFIG_EPDG_ADDRESS
-
-
-### -field RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK
-
-
-### -field RILDMCONFIG_RTT_MODE
-
-
-### -field RILDMCONFIG_MAX
-
-
-## -remarks
+## Constants
+
+<table>
+
+<tr>
+<td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_AMR_MODE_SET</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_AMR_SRC_CTL_RATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_AMR_WB_ENABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_AMR_WB_MODE_SET</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_AMR_WB_SRC_CTL_RATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_DOMAIN_NAME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_EPDG_ADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_IRAT_REG_DELAY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_NAI</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_NW_ENABLED_FLAGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_PRESENCE_ENABLED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_ROAMING_ENABLED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_TEST_MODE_STATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_VIDEO_ENABLED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_VOICE_ENABLED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_IMS_XCAP_ENABLED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_MD5_AUTH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_MULTIPARTY_SERVER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_PCSCF_ADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_PCSCF_PORT_NUMBER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_REQUEST_CONTEXT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_RINGBACK_TIMER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_RINGING_TIMER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_RTC_INACTIVITY_TIMER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_RTT_MODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_SIP_SESSION_TIMER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_SIP_SESSION_TIMER_MIN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_SIP_TIMER_F</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_SIP_TIMER_T2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_SMS_FORMAT_TYPE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_SMS_OVER_IP_NW_INDICATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_UDP_KEEPALIVE_TIMER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK</td>
+<td></td>
+</tr>
+</table>
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

@@ -1,50 +1,45 @@
 ---
-UID: NF:fwpmk.FwpmCalloutAdd0
-title: FwpmCalloutAdd0 function
-author: windows-driver-content
-description: The FwpmCalloutAdd0 function adds a callout to the filter engine.Note  FwpmCalloutAdd0 is a specific version of FwpmCalloutAdd.
-old-location: netvista\fwpmcalloutadd0.htm
-old-project: netvista
-ms.assetid: f88a31c4-f42c-487d-b6d8-f8f609f2faff
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpmCalloutAdd0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpmk.h
-req.include-header: Fwpmk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpmCalloutAdd0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
+UID : NF:fwpmk.FwpmCalloutAdd0
+title : FwpmCalloutAdd0 function
+author : windows-driver-content
+description : The FwpmCalloutAdd0 function adds a callout to the filter engine.Note  FwpmCalloutAdd0 is a specific version of FwpmCalloutAdd.
+old-location : netvista\fwpmcalloutadd0.htm
+old-project : netvista
+ms.assetid : f88a31c4-f42c-487d-b6d8-f8f609f2faff
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpmCalloutAdd0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpmk.h
+req.include-header : Fwpmk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpmCalloutAdd0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 ---
 
+
 # FwpmCalloutAdd0 function
-
-
-
-## -description
 The 
   <b>FwpmCalloutAdd0</b> function adds a callout to the filter engine.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpmCalloutAdd0(
@@ -55,30 +50,26 @@ NTSTATUS NTAPI FwpmCalloutAdd0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param engineHandle [in]
+`engineHandle`
 
 A handle for an open session to the filter engine. A callout driver calls the 
      <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a> function to open a
      session to the filter engine.
 
-
-### -param callout [in]
+`callout`
 
 A pointer to a constant 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff550076">FWPM_CALLOUT0</a> structure that contains the
      data that is required to add the callout to the filter engine.
 
-
-### -param sd [in, optional]
+`sd`
 
 A pointer to a constant <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor for
      the callout that is being added to the filter engine. This parameter is optional and can be <b>NULL</b>.
 
-
-### -param id [out, optional]
+`id`
 
 A pointer to a UINT32-typed variable that receives a run-time identifier that identifies the
      callout in the filter engine. This is the same identifier that is returned when a callout driver
@@ -88,7 +79,8 @@ A pointer to a UINT32-typed variable that receives a run-time identifier that id
      when removing the callout from the filter engine. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpmCalloutAdd0</b> function returns one of the following NTSTATUS codes:
 <dl>
@@ -105,10 +97,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpmCalloutAdd0</b> function to add a callout to the filter engine.
 
@@ -121,8 +111,20 @@ A callout and filters that specify the callout for the filter's action can be ad
     <b>FWP_ACTION_BLOCK</b> and filters with an action type of <b>FWP_ACTION_CALLOUT_INSPECTION</b> are ignored until the
     callout is registered with the filter engine.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpmk.h (include Fwpmk.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550076">FWPM_CALLOUT0</a>
@@ -145,4 +147,3 @@ A callout and filters that specify the callout for the filter's action can be ad
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmCalloutAdd0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

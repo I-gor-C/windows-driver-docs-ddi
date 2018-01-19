@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisCopyFromNetBufferToNetBuffer
-title: NdisCopyFromNetBufferToNetBuffer function
-author: windows-driver-content
-description: Call the NdisCopyFromNetBufferToNetBuffer function to copy data from a source NET_BUFFER structure to a destination NET_BUFFER structure.
-old-location: netvista\ndiscopyfromnetbuffertonetbuffer.htm
-old-project: netvista
-ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCopyFromNetBufferToNetBuffer
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCopyFromNetBufferToNetBuffer
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_NetBuffer_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCopyFromNetBufferToNetBuffer
+title : NdisCopyFromNetBufferToNetBuffer function
+author : windows-driver-content
+description : Call the NdisCopyFromNetBufferToNetBuffer function to copy data from a source NET_BUFFER structure to a destination NET_BUFFER structure.
+old-location : netvista\ndiscopyfromnetbuffertonetbuffer.htm
+old-project : netvista
+ms.assetid : b760e176-3ef7-4495-89c7-ec6b8bb3ed30
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCopyFromNetBufferToNetBuffer
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCopyFromNetBufferToNetBuffer
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_NetBuffer_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCopyFromNetBufferToNetBuffer function
-
-
-
-## -description
 Call the 
   <b>NdisCopyFromNetBufferToNetBuffer</b> function to copy data from a source 
   <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure to a destination NET_BUFFER
   structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
@@ -59,46 +54,41 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Destination [in]
+`Destination`
 
 A pointer to a previously allocated destination NET_BUFFER structure.
 
-
-### -param DestinationOffset [in]
+`DestinationOffset`
 
 The byte offset within the destination NET_BUFFER structure at which to begin writing the copied
      data. For more information about 
      <i>DestinationOffset</i>, see the following Remarks section.
 
-
-### -param BytesToCopy [in]
+`BytesToCopy`
 
 The number of bytes to copy.
 
-
-### -param Source [in]
+`Source`
 
 A pointer to a previously allocated source NET_BUFFER structure.
 
-
-### -param SourceOffset [in]
+`SourceOffset`
 
 The byte offset within the source NET_BUFFER structure at which to begin copying the data. For
      more information about 
      <i>SourceOffset</i>, see the following Remarks section.
 
-
-### -param BytesCopied [out]
+`BytesCopied`
 
 A pointer to the caller-supplied variable in which this function returns the number of bytes
      actually copied. This number can be less than the value of 
      <i>BytesToCopy</i> if the source runs out of data or the destination runs out of space.
 
 
-## -returns
+## Return Value
+
 <b>NdisCopyFromNetBufferToNetBuffer</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -107,10 +97,8 @@ A pointer to the caller-supplied variable in which this function returns the num
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
 </dl>The copy operation failed because of insufficient resources.
 
- 
+## Remarks
 
-
-## -remarks
 The caller of 
     <b>NdisCopyFromNetBufferToNetBuffer</b> allocates the destination 
     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure and possibly the source
@@ -146,8 +134,20 @@ NDIS uses the offsets in the
     <b>CurrentMdlOffset</b> in the source NET_BUFFER and the 
     <i>SourceOffset</i> value.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
@@ -158,4 +158,3 @@ NDIS uses the offsets in the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

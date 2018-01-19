@@ -1,51 +1,44 @@
 ---
-UID: NS:usbcamdi._pipe_config_descriptor
-title: _pipe_config_descriptor
-author: windows-driver-content
-description: The USBCAMD_Pipe_Config_Descriptor structure describes the association between pipes and streams.
-old-location: stream\usbcamd_pipe_config_descriptor.htm
-old-project: stream
-ms.assetid: 8554a5d1-07ea-4ad5-83a4-f0c15386b3d1
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _pipe_config_descriptor, *PUSBCAMD_Pipe_Config_Descriptor, USBCAMD_Pipe_Config_Descriptor
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: usbcamdi.h
-req.include-header: Usbcamdi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: USBCAMD_Pipe_Config_Descriptor
-req.alt-loc: usbcamdi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBCAMD_Pipe_Config_Descriptor, USBCAMD_Pipe_Config_Descriptor
-req.product: Windows 10 or later.
+UID : NS:usbcamdi._pipe_config_descriptor
+title : _pipe_config_descriptor
+author : windows-driver-content
+description : The USBCAMD_Pipe_Config_Descriptor structure describes the association between pipes and streams.
+old-location : stream\usbcamd_pipe_config_descriptor.htm
+old-project : stream
+ms.assetid : 8554a5d1-07ea-4ad5-83a4-f0c15386b3d1
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _pipe_config_descriptor, *PUSBCAMD_Pipe_Config_Descriptor, USBCAMD_Pipe_Config_Descriptor
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : usbcamdi.h
+req.include-header : Usbcamdi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : USBCAMD_Pipe_Config_Descriptor
+req.alt-loc : usbcamdi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PUSBCAMD_Pipe_Config_Descriptor, USBCAMD_Pipe_Config_Descriptor"
+req.product : Windows 10 or later.
 ---
 
 # _pipe_config_descriptor structure
-
-
-
-## -description
 The <b>USBCAMD_Pipe_Config_Descriptor</b> structure describes the association between pipes and streams.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _pipe_config_descriptor {
   CHAR  StreamAssociation;
@@ -53,55 +46,12 @@ typedef struct _pipe_config_descriptor {
 } USBCAMD_Pipe_Config_Descriptor, *PUSBCAMD_Pipe_Config_Descriptor;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `PipeConfigFlags`
 
-### -field StreamAssociation
-
-Specifies the type of stream. This should be set to one of the following values:
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-USBCAMD_VIDEO_STREAM
-
-</td>
-<td>
-Indicates that the stream contains video data.
-
-</td>
-</tr>
-<tr>
-<td>
-USBCAMD_STILL_STREAM
-
-</td>
-<td>
-Indicates that the stream contains still data.
-
-</td>
-</tr>
-<tr>
-<td>
-USBCAMD_VIDEO_STILL_STREAM
-
-</td>
-<td>
-Indicates that the stream contains both video and still data.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -field PipeConfigFlags
-
-Specifies the pipe characteristics. This should be set to one of the following values:
+            Specifies the pipe characteristics. This should be set to one of the following values:
 
 <table>
 <tr>
@@ -149,11 +99,50 @@ Indicates a pipe that is not to be used for video or still streaming.
 </td>
 </tr>
 </table>
- 
+        
+            `StreamAssociation`
 
+            Specifies the type of stream. This should be set to one of the following values:
 
-## -remarks
-The camera minidriver indicates pipe stream associations by identifying all streams associated with a particular pipe. If there is more than one stream association, USBCAMD creates a virtual still pin. The still stream pin always follows the video stream pin (that is, the video stream pin is the first stream pin). 
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+USBCAMD_VIDEO_STREAM
+
+</td>
+<td>
+Indicates that the stream contains video data.
+
+</td>
+</tr>
+<tr>
+<td>
+USBCAMD_STILL_STREAM
+
+</td>
+<td>
+Indicates that the stream contains still data.
+
+</td>
+</tr>
+<tr>
+<td>
+USBCAMD_VIDEO_STILL_STREAM
+
+</td>
+<td>
+Indicates that the stream contains both video and still data.
+
+</td>
+</tr>
+</table>
+
+    ## Remarks
+        The camera minidriver indicates pipe stream associations by identifying all streams associated with a particular pipe. If there is more than one stream association, USBCAMD creates a virtual still pin. The still stream pin always follows the video stream pin (that is, the video stream pin is the first stream pin). 
 
 The <a href="..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md">CamConfigureEx</a> routine uses the <b>USBCAMD_Pipe_Config_Descriptor</b> structure to establish a connection between pipes and streams. An array of USBCAMD_Pipe_Config_Descriptor structures is passed into <b>CamConfigureEx</b>, along with the array size, which is equal to the number of pipes found.
 
@@ -163,9 +152,17 @@ The USBCAMD library requires that the camera must have a single configuration de
 
 <b>USBCAMD_Pipe_Config_Descriptor</b> is not supported in the original USBCAMD.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | usbcamdi.h (include Usbcamdi.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md">CamConfigureEx</a>
 </dt>
@@ -175,4 +172,3 @@ The USBCAMD library requires that the camera must have a single configuration de
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_Pipe_Config_Descriptor structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

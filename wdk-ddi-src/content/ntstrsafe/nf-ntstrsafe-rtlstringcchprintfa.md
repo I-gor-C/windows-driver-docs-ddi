@@ -1,49 +1,44 @@
 ---
-UID: NF:ntstrsafe.RtlStringCchPrintfA
-title: RtlStringCchPrintfA function
-author: windows-driver-content
-description: The RtlStringCchPrintfW and RtlStringCchPrintfA functions create a character-counted text string, with formatting that is based on supplied formatting information.
-old-location: kernel\rtlstringcchprintf.htm
-old-project: kernel
-ms.assetid: e1c04e73-3055-4de8-bd8d-8d0a13541612
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: RtlStringCchPrintfA
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntstrsafe.h
-req.include-header: Ntstrsafe.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlStringCchPrintfW,RtlStringCchPrintfA,RtlStringCchPrintfW
-req.alt-loc: Ntstrsafe.lib,Ntstrsafe.dll
-req.ddi-compliance: 
-req.unicode-ansi: RtlStringCchPrintfW (Unicode) and RtlStringCchPrintfA (ANSI)
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntstrsafe.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
+UID : NF:ntstrsafe.RtlStringCchPrintfA
+title : RtlStringCchPrintfA function
+author : windows-driver-content
+description : The RtlStringCchPrintfW and RtlStringCchPrintfA functions create a character-counted text string, with formatting that is based on supplied formatting information.
+old-location : kernel\rtlstringcchprintf.htm
+old-project : kernel
+ms.assetid : e1c04e73-3055-4de8-bd8d-8d0a13541612
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : RtlStringCchPrintfA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntstrsafe.h
+req.include-header : Ntstrsafe.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlStringCchPrintfW,RtlStringCchPrintfA,RtlStringCchPrintfW
+req.alt-loc : Ntstrsafe.lib,Ntstrsafe.dll
+req.ddi-compliance : 
+req.unicode-ansi : RtlStringCchPrintfW (Unicode) and RtlStringCchPrintfA (ANSI)
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntstrsafe.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
 ---
 
+
 # RtlStringCchPrintfA function
-
-
-
-## -description
 The <b>RtlStringCchPrintfW</b> and <b>RtlStringCchPrintfA</b> functions create a character-counted text string, with formatting that is based on supplied formatting information.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RtlStringCchPrintfW(
@@ -54,30 +49,27 @@ NTSTATUS RtlStringCchPrintfW(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param pszDest [out]
+`pszDest`
 
 A pointer to a caller-supplied buffer that receives a formatted, null-terminated string. The function creates this string from both the formatting string that is supplied by <i>pszFormat</i> and the function's argument list.
 
+`cchDest`
 
-### -param cchDest [in]
+The size of the destination buffer, in characters. The buffer must be large enough to contain the formatted string plus the terminating null character. The maximum number of characters allowed is <b>NTSTRSAFE_MAX_CCH</b>.
 
-The size of the destination buffer, in characters. The buffer must be large enough to contain the formatted string plus the terminating null character. The maximum number of characters allowed is <b>NTSTRSAFE_MAX_CCH</b>. 
-
-
-### -param pszFormat [in]
+`pszFormat`
 
 A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="http://msdn.microsoft.com/en-us/library/56e442dc.aspx">formatting directives</a>.
 
-
-### -param ... 
-
-A list of arguments that are interpreted by the function, based on formatting directives contained in the <i>pszFormat</i> string.
+``
 
 
-## -returns
+
+
+## Return Value
+
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -91,10 +83,8 @@ The function returns one of the NTSTATUS values that are listed in the following
 
 The function returns the STATUS_INVALID_PARAMETER value when:
 
- 
+## Remarks
 
-
-## -remarks
 <b>RtlStringCchPrintfW</b> and <b>RtlStringCchPrintfA</b> should be used instead of the following functions:
 
 <b>sprintf</b>
@@ -131,8 +121,20 @@ The resultant string is "The answer is 1 + 2 = 3." It is contained in the buffer
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntstrsafe.h (include Ntstrsafe.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfw.md">RtlStringCbPrintf</a>
@@ -149,4 +151,3 @@ For more information about the safe string functions, see <a href="https://msdn.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchPrintfW function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

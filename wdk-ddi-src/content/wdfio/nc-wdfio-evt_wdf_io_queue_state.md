@@ -1,81 +1,75 @@
 ---
-UID: NC:wdfio.EVT_WDF_IO_QUEUE_STATE
-title: EVT_WDF_IO_QUEUE_STATE function
-author: windows-driver-content
-description: A driver's EvtIoQueueState event callback function delivers queue state information to the driver.
-old-location: wdf\evtioqueuestate.htm
-old-project: wdf
-ms.assetid: 14999036-c137-4056-b6f7-53a8476fd385
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: EVT_WDF_IO_QUEUE_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfio.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: EvtIoQueueState
-req.alt-loc: Wdfio.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL (see Remarks section)
-req.typenames: *PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
-req.product: Windows 10 or later.
+UID : NC:wdfio.EVT_WDF_IO_QUEUE_STATE
+title : EVT_WDF_IO_QUEUE_STATE
+author : windows-driver-content
+description : A driver's EvtIoQueueState event callback function delivers queue state information to the driver.
+old-location : wdf\evtioqueuestate.htm
+old-project : wdf
+ms.assetid : 14999036-c137-4056-b6f7-53a8476fd385
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdfio.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : EvtIoQueueState
+req.alt-loc : Wdfio.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL (see Remarks section)
+req.typenames : "*PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_WDF_IO_QUEUE_STATE function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtIoQueueState</i> event callback function delivers queue state information to the driver.
 
+## Syntax
 
+```
+EVT_WDF_IO_QUEUE_STATE EvtWdfIoQueueState;
 
-## -syntax
-
-````
-EVT_WDF_IO_QUEUE_STATE EvtIoQueueState;
-
-VOID EvtIoQueueState(
-  _In_ WDFQUEUE   Queue,
-  _In_ WDFCONTEXT Context
+void EvtWdfIoQueueState(
+  WDFQUEUE Queue,
+  WDFCONTEXT Context
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Queue [in]
+`Queue`
 
 A handle to an I/O queue object.
 
-
-### -param Context [in]
+`Context`
 
 Driver-defined context information that the driver specified when it registered the <i>EvtIoQueueState</i> callback function.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Drivers can register an <i>EvtIoQueueState</i> callback function by specifying its address as input to <a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>, <a href="..\wdfio\nf-wdfio-wdfioqueuedrain.md">WdfIoQueueDrain</a>, <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>, or <a href="..\wdfio\nf-wdfio-wdfioqueuereadynotify.md">WdfIoQueueReadyNotify</a>. The framework calls the <i>EvtIoQueueState</i> callback function after the specified operation completes. 
 
 The <i>EvtIoQueueState</i> callback function can be called at IRQL &lt;= DISPATCH_LEVEL, unless the <b>ExecutionLevel</b> member of the device or driver's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure is set to <b>WdfExecutionLevelPassive</b>.
@@ -90,8 +84,20 @@ Then, implement your callback function as follows:
 
 The <b>EVT_WDF_IO_QUEUE_STATE</b> function type is defined in the Wdfio.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_IO_QUEUE_STATE</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfio.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL (see Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueuedrain.md">WdfIoQueueDrain</a>
@@ -114,4 +120,3 @@ The <b>EVT_WDF_IO_QUEUE_STATE</b> function type is defined in the Wdfio.h header
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_IO_QUEUE_STATE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

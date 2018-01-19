@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_QUERY_HEAP_TYPE
-title: D3D12DDI_QUERY_HEAP_TYPE
-author: windows-driver-content
-description: Type of a query heap, which is an array of query results.
-old-location: display\d3d12ddi_query_heap_type.htm
-old-project: display
-ms.assetid: 8A1A42B5-D978-4019-825B-94DB81C44FEA
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_QUERY_HEAP_TYPE, D3D12DDI_QUERY_HEAP_TYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_QUERY_HEAP_TYPE
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_QUERY_HEAP_TYPE
+UID : NE:d3d12umddi.D3D12DDI_QUERY_HEAP_TYPE
+title : D3D12DDI_QUERY_HEAP_TYPE
+author : windows-driver-content
+description : Type of a query heap, which is an array of query results.
+old-location : display\d3d12ddi_query_heap_type.htm
+old-project : display
+ms.assetid : 8A1A42B5-D978-4019-825B-94DB81C44FEA
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_QUERY_HEAP_TYPE, D3D12DDI_QUERY_HEAP_TYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_QUERY_HEAP_TYPE
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_QUERY_HEAP_TYPE
 ---
 
-# D3D12DDI_QUERY_HEAP_TYPE enumeration
-
-
-
-## -description
+# D3D12DDI_QUERY_HEAP_TYPE Enumeration
 Type of a query heap, which is an array of query results.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDI_QUERY_HEAP_TYPE { 
   D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION                     = 0,
@@ -56,37 +49,46 @@ typedef enum D3D12DDI_QUERY_HEAP_TYPE {
 } D3D12DDI_QUERY_HEAP_TYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION
+<tr>
+<td>D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS</td>
+<td>Video decode statistics.</td>
+</tr>
 
-Occlusion.
+<tr>
+<td>D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP</td>
+<td>Copy queue timestamp.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION</td>
+<td>Occlusion.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS</td>
+<td>Pipeline statistics.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS</td>
+<td>SO statistics.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP</td>
+<td>Timestamp.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP
-
-Timestamp.
-
-
-### -field D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS
-
-Pipeline statistics.
-
-
-### -field D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS
-
-SO statistics.
-
-
-### -field D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS
-
-Video decode statistics.
-
-
-### -field D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP
-
-Copy queue timestamp.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

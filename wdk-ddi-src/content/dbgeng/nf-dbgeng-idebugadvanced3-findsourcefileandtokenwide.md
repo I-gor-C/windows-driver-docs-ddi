@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugAdvanced3.FindSourceFileAndTokenWide
-title: IDebugAdvanced3::FindSourceFileAndTokenWide method
-author: windows-driver-content
-description: The FindSourceFileAndTokenWide method returns the filename of a source file on the source path or return the value of a variable associated with a file token.
-old-location: debugger\findsourcefileandtokenwide.htm
-old-project: debugger
-ms.assetid: f406e755-dc46-4228-b70f-3520d3cb46a3
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugAdvanced3, IDebugAdvanced3::FindSourceFileAndTokenWide, FindSourceFileAndTokenWide
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugAdvanced3.FindSourceFileAndTokenWide
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugAdvanced3.FindSourceFileAndTokenWide
+title : IDebugAdvanced3::FindSourceFileAndTokenWide method
+author : windows-driver-content
+description : The FindSourceFileAndTokenWide method returns the filename of a source file on the source path or return the value of a variable associated with a file token.
+old-location : debugger\findsourcefileandtokenwide.htm
+old-project : debugger
+ms.assetid : f406e755-dc46-4228-b70f-3520d3cb46a3
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugAdvanced3, IDebugAdvanced3::FindSourceFileAndTokenWide, FindSourceFileAndTokenWide
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugAdvanced3.FindSourceFileAndTokenWide
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugAdvanced3::FindSourceFileAndTokenWide method
 
-
-
-## -description
+# FindSourceFileAndTokenWide method
 The  <b>FindSourceFileAndTokenWide</b> method returns the filename of a source file on the source path or return the value of a variable associated with a file token.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT FindSourceFileAndTokenWide(
@@ -60,10 +55,9 @@ HRESULT FindSourceFileAndTokenWide(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param StartElement [in]
+`StartElement`
 
 Specifies the index of an element within the source path to start searching from.  All elements in the source path before <i>StartElement</i> are excluded from the search.  The index of the first element is zero.  If <i>StartElement</i> is greater than or equal to the number of elements in the source path, the filing system is checked directly.
 
@@ -71,44 +65,37 @@ This parameter can be used with <i>FoundElement</i> to check for multiple matche
 
 <i>StartElement</i> is ignored if the flag DEBUG_FIND_SOURCE_TOKEN_LOOKUP is set in <i>Flags</i>.
 
-
-### -param ModAddr [in]
+`ModAddr`
 
 Specifies a location within the memory allocation of the module in the target to which the source file is related.  <i>ModAddr</i> is used for caching the search results and when querying source servers for the file.  <i>ModAddr</i> can be <b>NULL</b>.
 
 <i>ModAddr</i> is ignored if the flag DEBUG_FIND_SOURCE_TOKEN_LOOKUP is set in <i>Flags</i>.  And it is not used for querying source servers if <i>FileToken</i> is not <b>NULL</b>.
 
-
-### -param File [in]
+`File`
 
 Specifies the path and filename of the file to search for.
 
 If the flag DEBUG_FIND_SOURCE_TOKEN_LOOKUP is set, the file is already specified by the token in <i>FileToken</i>.  In this case, <i>File</i> specifies the name of a variable on the source server related to the file.  The variable must begin and end with the percent sign ( <b>%</b> ), for example, <b>%SRCSRVCMD%</b>.  The value of this variable is returned.
 
-
-### -param Flags [in]
+`Flags`
 
 Specifies the flags that control the behavior of this method.  For a description of these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541495">DEBUG_FIND_SOURCE_XXX</a>.
 
-
-### -param FileToken [in, optional]
+`FileToken`
 
 Specifies a file token representing a file on a source server.  A file token can be obtained by setting <i>Which</i> to DEBUG_SRCFILE_SYMBOL_TOKEN in the method <a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>.
 
 If the flag DEBUG_FIND_SOURCE_TOKEN_LOOKUP is set, <i>FileToken</i> must not be <b>NULL</b>.
 
-
-### -param FileTokenSize [in]
+`FileTokenSize`
 
 Specifies the size in bytes of the <i>FileToken</i> token. If <i>FileToken</i> is <b>NULL</b>, this parameter is ignored.
 
-
-### -param FoundElement [out, optional]
+`FoundElement`
 
 Receives the index of the element within the source path that contained the file.  If the file was found directly on the filing system (not using the source path), -1 is returned to <i>FoundElement</i>. If <i>FoundElement</i> is <b>NULL</b> or <i>Flags</i> contain DEBUG_SRCFILE_SYMBOL_TOKEN, this information is not returned.
 
-
-### -param Buffer [out, optional]
+`Buffer`
 
 Receives the name of the file that was found.  If the file is not on a source server, this is the name of the file in the local source cache.  If the flag DEBUG_FIND_SOURCE_FULL_PATH is set, this is the full canonical path name for the file.  Otherwise, it is the concatenation of the directory in the source path with the tail of <i>File</i> that was used to find the file.
 
@@ -116,18 +103,17 @@ If the flag DEBUG_SRCFILE_SYMBOL_TOKEN is set in <i>Flags</i>, <i>Buffer</i> rec
 
 If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param BufferSize [in]
+`BufferSize`
 
 Specifies the size in characters of the <i>Buffer</i> buffer. If <i>Buffer</i> is <b>NULL</b>, this parameter is ignored.
 
-
-### -param FoundSize [out, optional]
+`FoundSize`
 
 Specifies the size in characters of the name of the file.  If <i>foundSize</i> is <b>NULL</b>, this information is not returned.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -136,10 +122,8 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 <dt><b>S_FALSE</b></dt>
 </dl>The method was successful.  However, the <i>Buffer</i> buffer was too small to hold the file name or variable value, so the string was truncated to fit in the buffer.
 
- 
+## Remarks
 
-
-## -remarks
 When the flag DEBUG_SRCFILE_SYMBOL_TOKEN is set in <i>Flags</i>, this method does not search for a file on the source path.  Instead, it looks up a variable associated with the file token provided in <i>FileToken</i>.  These variables are documented in the topic <a href="https://msdn.microsoft.com/library/windows/hardware/ff551958">Language Specification 1</a>.  For example, to retrieve the value of the variable SRCSRVCMD--the command to extract the source file from source control (also returned by the DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE function of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>)--set <i>File</i> to <b>%SRCSRVCMD%</b>.
 
 The engine uses the following steps--in order--to search for the file:  
@@ -158,8 +142,20 @@ The file <i>File</i> is looked up directly on the filing system.
 
 For more information about source files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560141">Using Source Files</a>.  For an overview of the source path and its syntax, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556906">Source Path</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
@@ -182,4 +178,3 @@ For more information about source files, see <a href="https://msdn.microsoft.com
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced3::FindSourceFileAndTokenWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

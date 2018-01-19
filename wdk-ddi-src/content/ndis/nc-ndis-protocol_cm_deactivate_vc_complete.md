@@ -1,44 +1,41 @@
 ---
-UID: NC:ndis.PROTOCOL_CM_DEACTIVATE_VC_COMPLETE
-title: PROTOCOL_CM_DEACTIVATE_VC_COMPLETE function
-author: windows-driver-content
-description: The ProtocolCmDeactivateVcComplete function is a required function.
-old-location: netvista\protocolcmdeactivatevccomplete.htm
-old-project: netvista
-ms.assetid: 44ee0e3c-aee9-4e24-9e54-c57248b568b6
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: PROTOCOL_CM_DEACTIVATE_VC_COMPLETE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolCmDeactivateVcComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolCmDeactivateVcComplete (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolCmDeactivateVcComplete
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.PROTOCOL_CM_DEACTIVATE_VC_COMPLETE
+title : PROTOCOL_CM_DEACTIVATE_VC_COMPLETE
+author : windows-driver-content
+description : The ProtocolCmDeactivateVcComplete function is a required function.
+old-location : netvista\protocolcmdeactivatevccomplete.htm
+old-project : netvista
+ms.assetid : 44ee0e3c-aee9-4e24-9e54-c57248b568b6
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolCmDeactivateVcComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolCmDeactivateVcComplete (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolCmDeactivateVcComplete
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # PROTOCOL_CM_DEACTIVATE_VC_COMPLETE function
-
-
-
-## -description
 The 
   <i>ProtocolCmDeactivateVcComplete</i> function is a required function. 
   <i>ProtocolCmDeactivateVcComplete</i> completes the processing of a call manager-initiated request that the
@@ -46,40 +43,37 @@ The
   <a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a> previously returned
   NDIS_STATUS_PENDING.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 PROTOCOL_CM_DEACTIVATE_VC_COMPLETE ProtocolCmDeactivateVcComplete;
 
-VOID ProtocolCmDeactivateVcComplete(
-  _In_ NDIS_STATUS Status,
-  _In_ NDIS_HANDLE CallMgrVcContext
+void ProtocolCmDeactivateVcComplete(
+  NDIS_STATUS Status,
+  NDIS_HANDLE CallMgrVcContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Status [in]
+`Status`
 
 Specifies the final status of the deactivation.
 
-
-### -param CallMgrVcContext [in]
+`CallMgrVcContext`
 
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-VC state. The call manager supplied this handle to NDIS from its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 NDIS usually calls 
     <i>ProtocolCmDeactivateVcComplete</i> in the context of the call manager's closing down a call on behalf
     of a connection-oriented client. The call manager typically calls 
@@ -127,10 +121,22 @@ Then, implement your function as follows:
 
 The <b>PROTOCOL_CM_DEACTIVATE_VC_COMPLETE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CM_DEACTIVATE_VC_COMPLETE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
@@ -150,4 +156,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_DEACTIVATE_VC_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

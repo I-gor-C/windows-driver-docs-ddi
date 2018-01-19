@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.MmAllocateContiguousNodeMemory
-title: MmAllocateContiguousNodeMemory function
-author: windows-driver-content
-description: The MmAllocateContiguousNodeMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space.
-old-location: kernel\mmallocatecontiguousnodememory.htm
-old-project: kernel
-ms.assetid: 08960797-4846-46D4-8DD9-3A935EAD7D48
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: MmAllocateContiguousNodeMemory
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MmAllocateContiguousNodeMemory
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.MmAllocateContiguousNodeMemory
+title : MmAllocateContiguousNodeMemory function
+author : windows-driver-content
+description : The MmAllocateContiguousNodeMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space.
+old-location : kernel\mmallocatecontiguousnodememory.htm
+old-project : kernel
+ms.assetid : 08960797-4846-46D4-8DD9-3A935EAD7D48
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : MmAllocateContiguousNodeMemory
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MmAllocateContiguousNodeMemory
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # MmAllocateContiguousNodeMemory function
-
-
-
-## -description
 The <b>MmAllocateContiguousNodeMemory</b> routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PVOID MmAllocateContiguousNodeMemory(
@@ -57,30 +52,25 @@ PVOID MmAllocateContiguousNodeMemory(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NumberOfBytes [in]
+`NumberOfBytes`
 
 The size, in bytes, of the block of contiguous memory to allocate. For more information, see Remarks.
 
-
-### -param LowestAcceptableAddress [in]
+`LowestAcceptableAddress`
 
 The lowest valid physical address the caller can use. For example, if a device can address only locations above the first 8 megabytes of the processor's physical memory address range, the driver for this device  should set <i>LowestAcceptableAddress</i> to 0x0000000000800000.
 
-
-### -param HighestAcceptableAddress [in]
+`HighestAcceptableAddress`
 
 The highest valid physical address the caller can use. For example, if a device can address only locations in the first 16 megabytes of the processor's physical memory address range, the driver for this device should set <i>HighestAcceptableAddress</i> to 0x0000000000FFFFFF.
 
-
-### -param BoundaryAddressMultiple [in, optional]
+`BoundaryAddressMultiple`
 
 The physical address multiple that the allocated buffer must not cross. A physical address multiple must always be a power of two. This parameter is optional and can be specified as zero to indicate that the device has no special memory boundary restrictions. For more information, see Remarks.
 
-
-### -param Protect [in]
+`Protect`
 
 Flag bits that specify the protection to use for the allocated memory. The caller must set one (but not both) of the following flag bits in the <i>Protect</i> parameter.
 
@@ -120,17 +110,17 @@ In addition, the caller can set one (but not both) of the following optional fla
 
 If neither PAGE_NOCACHE nor PAGE_WRITECOMBINE is specified, the allocated memory is fully cached. In this case, the effect is similar to calling <b>MmAllocateContiguousMemorySpecifyCache</b> with <i>CacheType</i> set to <b>MmCached</b>.
 
-
-### -param PreferredNode [in]
+`PreferredNode`
 
 The preferred node number. If a multiprocessor system contains N nodes, the nodes are numbered from 0 to N-1. If the caller sets <i>PreferredNode</i> to MM_ANY_NODE_OK, the routine chooses which node to allocate memory from. Otherwise, if memory in the specified address range cannot be allocated from the preferred node, the routine returns <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>MmAllocateContiguousNodeMemory</b> returns the base virtual address for the allocated memory. If the request cannot be satisfied, the routine returns <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 A kernel-mode device driver calls this routine  to allocate a contiguous block of physical memory. The calling driver can specify whether to use no-execute (NX) memory for the allocation. In a non-uniform memory access (NUMA) multiprocessor system, the caller can specify a preferred node from which to allocate the memory. A node is a collection of processors that share fast access to a region of memory. In a non-NUMA multiprocessor or a single-processor system, <b>MmAllocateContiguousNodeMemory</b> treats all memory as belonging to a single node and allocates memory from this node.
 
 <b>MmAllocateContiguousNodeMemory</b> allocates a block of nonpaged memory that is contiguous in physical address space. The routine maps this block to a contiguous block of virtual memory in the system address space and returns the virtual address of the base of this block. The routine aligns the starting address of a contiguous memory allocation to a memory page boundary.
@@ -145,8 +135,20 @@ Memory allocated by <b>MmAllocateContiguousNodeMemory</b> must be freed when the
 
 If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter, the physical address range of the allocated memory block will not cross an address boundary that is an integer multiple of this value. A driver should set this parameter to zero unless a nonzero value is required to work around a hardware limitation. For example, if a device cannot transfer data across 16-megabyte physical boundaries, the driver should specify a value of 0x1000000 for this parameter to ensure that the addresses that the device sees do not wrap around at a 16-megabyte boundary.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
@@ -169,4 +171,3 @@ If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter,
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocateContiguousNodeMemory routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

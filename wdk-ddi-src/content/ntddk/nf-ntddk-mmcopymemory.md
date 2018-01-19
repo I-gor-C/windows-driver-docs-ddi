@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.MmCopyMemory
-title: MmCopyMemory function
-author: windows-driver-content
-description: The MmCopyMemory routine copies the specified range of virtual or physical memory into the caller-supplied buffer.
-old-location: kernel\mmcopymemory.htm
-old-project: kernel
-ms.assetid: 2B5492CD-B24D-44B5-BDAE-0B43A1AF1FCA
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: MmCopyMemory
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: 
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.1.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MmCopyMemory
-req.alt-loc: ntoskrnl.lib,ntoskrnl.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntoskrnl.lib
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.MmCopyMemory
+title : MmCopyMemory function
+author : windows-driver-content
+description : The MmCopyMemory routine copies the specified range of virtual or physical memory into the caller-supplied buffer.
+old-location : kernel\mmcopymemory.htm
+old-project : kernel
+ms.assetid : 2B5492CD-B24D-44B5-BDAE-0B43A1AF1FCA
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : MmCopyMemory
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 8.1.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MmCopyMemory
+req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntoskrnl.lib
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # MmCopyMemory function
-
-
-
-## -description
 The <b>MmCopyMemory</b> routine copies the specified range of virtual or physical memory into the caller-supplied buffer.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS MmCopyMemory(
@@ -55,25 +50,21 @@ NTSTATUS MmCopyMemory(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param TargetAddress [in]
+`TargetAddress`
 
 A pointer to a caller-supplied buffer. This buffer must be in nonpageable  memory.
 
-
-### -param SourceAddress [in]
+`SourceAddress`
 
 An <a href="..\ntddk\ns-ntddk-_mm_copy_address.md">MM_COPY_ADDRESS</a> structure, passed by value, that contains either the virtual address or the physical address of the data to be copied to the buffer pointed to by <i>TargetAddress</i>.
 
-
-### -param NumberOfBytes [in]
+`NumberOfBytes`
 
 The number of bytes to copy from <i>SourceAddress</i> to <i>TargetAddress</i>.
 
-
-### -param Flags [in]
+`Flags`
 
 Flags that indicate whether <i>SourceAddress</i> is a virtual address or a physical address. The following flag bits are defined for this parameter.
 
@@ -95,17 +86,17 @@ Flags that indicate whether <i>SourceAddress</i> is a virtual address or a physi
 
 These two flag bits are mutually exclusive. The caller must set one or the other, but not both.
 
-
-### -param NumberOfBytesTransferred [out]
+`NumberOfBytesTransferred`
 
 A pointer to a location to which the routine writes the number of bytes successfully copied from the <i>SourceAddress</i> location to the buffer at <i>TargetAddress</i>.
 
 
-## -returns
+## Return Value
+
 <b>MmCopyMemory</b> returns STATUS_SUCCESS if the entire range has been copied successfully. Otherwise, an error status is returned and the caller must inspect the output value pointed to by the <i>NumberOfBytesTransferred</i> parameter to determine how many bytes were actually copied.
 
+## Remarks
 
-## -remarks
 Kernel-mode drivers can call this routine to safely access arbitrary physical or virtual addresses.
 
 If the MM_COPY_MEMORY_PHYSICAL flag is set, <i>SourceAddress</i> should point to regular memory that is under control of the operating system. <b>MmCopyMemory</b> will return an error status code for physical addresses that refer to I/O space, which includes memory-mapped devices and firmware tables. To access physical memory in I/O space, drivers can use the <a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a> routine.
@@ -114,8 +105,20 @@ If the MM_COPY_MEMORY_VIRTUAL flag is set, <i>SourceAddress</i> can point to eit
 
 If memory at the virtual address specified by <i>SourceAddress</i> is not resident, <b>MmCopyMemory</b> will try to make it resident.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntddk\ns-ntddk-_mm_copy_address.md">MM_COPY_ADDRESS</a>
@@ -129,4 +132,3 @@ If memory at the virtual address specified by <i>SourceAddress</i> is not reside
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmCopyMemory routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

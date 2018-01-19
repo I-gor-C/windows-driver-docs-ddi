@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisMSendNetBufferListsComplete
-title: NdisMSendNetBufferListsComplete function
-author: windows-driver-content
-description: Miniport drivers call the NdisMSendNetBufferListsComplete function to return a linked list of NET_BUFFER_LIST structures to an overlying driver and to return the final status of a send request.
-old-location: netvista\ndismsendnetbufferlistscomplete.htm
-old-project: netvista
-ms.assetid: 33890582-5eba-4cc1-a0d9-ec07f18da453
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMSendNetBufferListsComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMSendNetBufferListsComplete
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_SendRcv_Function, NdisTimedDataHang, NdisTimedDataSend
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMSendNetBufferListsComplete
+title : NdisMSendNetBufferListsComplete function
+author : windows-driver-content
+description : Miniport drivers call the NdisMSendNetBufferListsComplete function to return a linked list of NET_BUFFER_LIST structures to an overlying driver and to return the final status of a send request.
+old-location : netvista\ndismsendnetbufferlistscomplete.htm
+old-project : netvista
+ms.assetid : 33890582-5eba-4cc1-a0d9-ec07f18da453
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMSendNetBufferListsComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMSendNetBufferListsComplete
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_SendRcv_Function, NdisTimedDataHang, NdisTimedDataSend
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMSendNetBufferListsComplete function
-
-
-
-## -description
 Miniport drivers call the 
   <b>NdisMSendNetBufferListsComplete</b> function to return a linked list of 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures to an overlying
   driver and to return the final status of a send request.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisMSendNetBufferListsComplete(
@@ -56,25 +51,19 @@ VOID NdisMSendNetBufferListsComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterHandle [in]
+`MiniportAdapterHandle`
 
 The miniport handle that NDIS passed to the 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
-
-### -param NetBufferLists [in]
-
-A pointer to a linked list of NET_BUFFER_LIST structures. The miniport driver received the
-     NET_BUFFER_LIST structures in previous calls to its 
-     <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
-     MiniportSendNetBufferLists</a> function.
+`NetBufferList`
 
 
-### -param SendCompleteFlags [in]
+
+`SendCompleteFlags`
 
 NDIS flags that can be combined with an OR operation. To clear all the flags, set this member to
      zero. This function supports the NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL flag which; if set, indicates
@@ -82,11 +71,12 @@ NDIS flags that can be combined with an OR operation. To clear all the flags, se
      <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A miniport driver calls 
     <b>NdisMSendNetBufferListsComplete</b> to complete send requests that NDIS made to the driver's 
     <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
@@ -142,8 +132,20 @@ A miniport driver's call to
     <b>NdisMSendNetBufferListsComplete</b> does not necessarily mean that the data for a send request has been
     transmitted over the network. The data might be queued in the NIC hardware.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_SendRcv_Function, NdisTimedDataHang, NdisTimedDataSend |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_cancel_send.md">MiniportCancelSend</a>
@@ -169,4 +171,3 @@ A miniport driver's call to
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSendNetBufferListsComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

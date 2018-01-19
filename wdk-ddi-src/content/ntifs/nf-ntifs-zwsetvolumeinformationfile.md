@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwSetVolumeInformationFile
-title: ZwSetVolumeInformationFile function
-author: windows-driver-content
-description: The ZwSetVolumeInformationFile routine modifies information about the volume associated with a given file, directory, storage device, or volume.
-old-location: kernel\zwsetvolumeinformationfile.htm
-old-project: kernel
-ms.assetid: 6afc3e8b-0be0-4728-b00f-deea5e60d27e
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwSetVolumeInformationFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwSetVolumeInformationFile,NtSetInformationFile
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwSetVolumeInformationFile
+title : ZwSetVolumeInformationFile function
+author : windows-driver-content
+description : The ZwSetVolumeInformationFile routine modifies information about the volume associated with a given file, directory, storage device, or volume.
+old-location : kernel\zwsetvolumeinformationfile.htm
+old-project : kernel
+ms.assetid : 6afc3e8b-0be0-4728-b00f-deea5e60d27e
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwSetVolumeInformationFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwSetVolumeInformationFile,NtSetInformationFile
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwSetVolumeInformationFile function
+The <b>ZwSetVolumeInformationFile</b> routine modifies information about the volume associated with a given file, directory, storage device, or volume.
 
-
-
-## -description
-The <b>ZwSetVolumeInformationFile</b> routine modifies information about the volume associated with a given file, directory, storage device, or volume. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwSetVolumeInformationFile(
@@ -55,30 +50,25 @@ NTSTATUS ZwSetVolumeInformationFile(
 );
 ````
 
+## Parameters
 
-## -parameters
+`FileHandle`
 
-### -param FileHandle [in]
+Handle to a file object for an open file, directory, storage device, or volume whose volume information is to be modified.
 
-Handle to a file object for an open file, directory, storage device, or volume whose volume information is to be modified. 
+`IoStatusBlock`
 
+Pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation.
 
-### -param IoStatusBlock [out]
+`FsInformation`
 
-Pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. 
+Pointer to a caller-allocated buffer containing the volume information to be modified. The structure of the information in this buffer depends on the value of <i>FsInformationClass</i>, as shown in the following table.
 
+`Length`
 
-### -param FsInformation [in]
+Size in bytes of the buffer pointed to by <i>FsInformation</i>. The caller should set this parameter according to the given <i>FsInformationClass</i>.
 
-Pointer to a caller-allocated buffer containing the volume information to be modified. The structure of the information in this buffer depends on the value of <i>FsInformationClass</i>, as shown in the following table. 
-
-
-### -param Length [in]
-
-Size in bytes of the buffer pointed to by <i>FsInformation</i>. The caller should set this parameter according to the given <i>FsInformationClass</i>. 
-
-
-### -param FsInformationClass [in]
+`FsInformationClass`
 
 Type of volume information to be set. One of the following: 
 
@@ -118,10 +108,10 @@ Set <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTI
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>ZwSetVolumeInformationFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
@@ -134,10 +124,8 @@ Set <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTI
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
 </dl>An invalid value was specified for <i>FsInformationClass</i>. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 To query volume information, call <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>. 
 
 To change information about a file, call <b>ZwSetVolumeInformationFile</b>. 
@@ -146,8 +134,20 @@ Minifilters should use <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
@@ -179,4 +179,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetVolumeInformationFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

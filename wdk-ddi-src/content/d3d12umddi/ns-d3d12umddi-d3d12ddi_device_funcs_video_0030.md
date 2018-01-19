@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_VIDEO_0030
-title: D3D12DDI_DEVICE_FUNCS_VIDEO_0030
-author: windows-driver-content
-description: Video device functions.
-old-location: display\d3d12ddi-device-funcs-video-0030.htm
-old-project: display
-ms.assetid: 39647e7d-d89f-43f4-916a-cbfa5ba28611
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_DEVICE_FUNCS_VIDEO_0030, D3D12DDI_DEVICE_FUNCS_VIDEO_0030
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_DEVICE_FUNCS_VIDEO_0030
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_DEVICE_FUNCS_VIDEO_0030
+UID : NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_VIDEO_0030
+title : D3D12DDI_DEVICE_FUNCS_VIDEO_0030
+author : windows-driver-content
+description : Video device functions.
+old-location : display\d3d12ddi-device-funcs-video-0030.htm
+old-project : display
+ms.assetid : 39647e7d-d89f-43f4-916a-cbfa5ba28611
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_DEVICE_FUNCS_VIDEO_0030, D3D12DDI_DEVICE_FUNCS_VIDEO_0030
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_DEVICE_FUNCS_VIDEO_0030
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_DEVICE_FUNCS_VIDEO_0030
 ---
 
 # D3D12DDI_DEVICE_FUNCS_VIDEO_0030 structure
-
-
-
-## -description
 Video device functions.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0030 {
   PFND3D12DDI_VIDEO_GETCAPS                                     pfnGetCaps;
@@ -62,67 +55,62 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0030 {
 } D3D12DDI_DEVICE_FUNCS_VIDEO_0030, D3D12DDI_DEVICE_FUNCS_VIDEO_0030;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `pfnCalcPrivateVideoDecoderSize`
 
-### -field pfnGetCaps
+            Calculate private video decoder size.
+        
+            `pfnCalcPrivateVideoProcessorSize`
 
-Get caps.
+            Calculate private video processor size.
+        
+            `pfnCreateVideoDecoder`
 
+            Create video decoder.
+        
+            `pfnCreateVideoProcessor`
 
-### -field pfnCalcPrivateVideoDecoderSize
+            Create video processor.
+        
+            `pfnDecoderTrimAllocations`
 
-Calculate private video decoder size.
+            Decoder trim allocations.
+        
+            `pfnDestroyVideoDecoder`
 
+            Destroy video decoder.
+        
+            `pfnDestroyVideoProcessor`
 
-### -field pfnCreateVideoDecoder
+            Destroy video processor.
+        
+            `pfnGetBitstreamEncryptionSchemeCount`
 
-Create video decoder.
+            Get bitstream encryption scheme count.
+        
+            `pfnGetCaps`
 
+            Get caps.
+        
+            `pfnGetDecodeFormatCount`
 
-### -field pfnDestroyVideoDecoder
+            Get decode format count.
+        
+            `pfnGetDecodeProfileCount`
 
-Destroy video decoder.
+            Get decode profile count.
+        
+            `pfnProcessorTrimAllocations`
 
-
-### -field pfnCalcPrivateVideoProcessorSize
-
-Calculate private video processor size.
-
-
-### -field pfnCreateVideoProcessor
-
-Create video processor.
-
-
-### -field pfnDestroyVideoProcessor
-
-Destroy video processor.
-
-
-### -field pfnGetDecodeProfileCount
-
-Get decode profile count.
-
-
-### -field pfnGetDecodeFormatCount
-
-Get decode format count.
-
-
-### -field pfnGetBitstreamEncryptionSchemeCount
-
-Get bitstream encryption scheme count.
-
-
-### -field pfnDecoderTrimAllocations
-
-Decoder trim allocations.
+            Processor trim allocations.
 
 
-### -field pfnProcessorTrimAllocations
-
-Processor trim allocations.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

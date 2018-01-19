@@ -1,50 +1,45 @@
 ---
-UID: NF:storport.StorPortAcquireSpinLock
-title: StorPortAcquireSpinLock function
-author: windows-driver-content
-description: The StorPortAcquireSpinLock routine acquires the specified spin lock.
-old-location: storage\storportacquirespinlock.htm
-old-project: storage
-ms.assetid: 52a877c7-b274-4bec-b948-edb0585a09e1
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: StorPortAcquireSpinLock
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: StorPortAcquireSpinLock
-req.alt-loc: storport.h
-req.ddi-compliance: StorPortSpinLock, StorPortSpinLock3, StorPortSpinLock4
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
+UID : NF:storport.StorPortAcquireSpinLock
+title : StorPortAcquireSpinLock function
+author : windows-driver-content
+description : The StorPortAcquireSpinLock routine acquires the specified spin lock.
+old-location : storage\storportacquirespinlock.htm
+old-project : storage
+ms.assetid : 52a877c7-b274-4bec-b948-edb0585a09e1
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : StorPortAcquireSpinLock
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : StorPortAcquireSpinLock
+req.alt-loc : storport.h
+req.ddi-compliance : StorPortSpinLock, StorPortSpinLock3, StorPortSpinLock4
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : STOR_SPINLOCK
+req.product : Windows 10 or later.
 ---
 
+
 # StorPortAcquireSpinLock function
+The <b>StorPortAcquireSpinLock</b> routine acquires the specified spin lock.
 
-
-
-## -description
-The <b>StorPortAcquireSpinLock</b> routine acquires the specified spin lock. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID StorPortAcquireSpinLock(
@@ -55,34 +50,31 @@ VOID StorPortAcquireSpinLock(
 );
 ````
 
+## Parameters
 
-## -parameters
+`DeviceExtension`
 
-### -param DeviceExtension [in]
+A pointer to the miniport driver per-adapter device extension.
 
-A pointer to the miniport driver per-adapter device extension. 
+`SpinLock`
 
+Contains an enumerator value of type <a href="..\storport\ne-storport-_stor_spinlock.md">STOR_SPINLOCK</a> that specifies the spin lock to acquire.
 
-### -param SpinLock [in]
+`LockContext`
 
-Contains an enumerator value of type <a href="..\storport\ne-storport-_stor_spinlock.md">STOR_SPINLOCK</a> that specifies the spin lock to acquire. 
+A pointer to the DPC object for which the lock is held if <i>SpinLock</i> indicates a type of <b>DpcLock</b>. This member should be <b>NULL</b> if <i>SpinLock </i>indicates a type of either <b>InterruptLock</b> or <b>StartIoLock</b>.
 
+`LockHandle`
 
-### -param LockContext [in]
-
-A pointer to the DPC object for which the lock is held if <i>SpinLock</i> indicates a type of <b>DpcLock</b>. This member should be <b>NULL</b> if <i>SpinLock </i>indicates a type of either <b>InterruptLock</b> or <b>StartIoLock</b>. 
-
-
-### -param LockHandle [in, out]
-
-A pointer to a buffer that, on return, will contain a lock handle. To release the lock, the caller must pass this handle to the <a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a> routine. 
+A pointer to a buffer that, on return, will contain a lock handle. To release the lock, the caller must pass this handle to the <a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a> routine.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Miniport drivers must ensure that they do not attempt to acquire a lock that is already held or acquire locks in an incorrect order. Either of these mistakes will result in system deadlock.
 
 Certain locks are held automatically by the port driver before it calls the miniport driver callback routines. For each miniport driver callback routine, the following table indicates which locks the port driver acquires automatically before calling the callback routine.
@@ -168,8 +160,20 @@ DPC, StartIo, Interrupt
 
  Interrupt (when <b>SynchronizationModel</b> member of <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> is not set to <b>StorSynchronizeHalfDuplex</b>)
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** | StorPortSpinLock, StorPortSpinLock3, StorPortSpinLock4 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\storport\ne-storport-_stor_spinlock.md">STOR_SPINLOCK</a>
@@ -183,4 +187,3 @@ DPC, StartIo, Interrupt
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortAcquireSpinLock routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

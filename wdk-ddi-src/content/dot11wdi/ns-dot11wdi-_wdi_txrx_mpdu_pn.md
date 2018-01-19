@@ -1,51 +1,44 @@
 ---
-UID: NS:dot11wdi._WDI_TXRX_MPDU_PN
-title: _WDI_TXRX_MPDU_PN
-author: windows-driver-content
-description: The WDI_TXRX_MPDU_PN union defines the parameters that are passed down to the TXRX component.
-old-location: netvista\wdi_txrx_mpdu_pn.htm
-old-project: netvista
-ms.assetid: F03F5BE6-B2F2-4A9A-8D6D-1ACC9F08C890
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDI_TXRX_MPDU_PN, WDI_TXRX_MPDU_PN
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: dot11wdi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WDI_TXRX_MPDU_PN
-req.alt-loc: dot11wdi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WDI_TXRX_MPDU_PN
+UID : NS:dot11wdi._WDI_TXRX_MPDU_PN
+title : _WDI_TXRX_MPDU_PN
+author : windows-driver-content
+description : The WDI_TXRX_MPDU_PN union defines the parameters that are passed down to the TXRX component.
+old-location : netvista\wdi_txrx_mpdu_pn.htm
+old-project : netvista
+ms.assetid : F03F5BE6-B2F2-4A9A-8D6D-1ACC9F08C890
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDI_TXRX_MPDU_PN, WDI_TXRX_MPDU_PN
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : dot11wdi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WDI_TXRX_MPDU_PN
+req.alt-loc : dot11wdi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDI_TXRX_MPDU_PN
 ---
 
 # _WDI_TXRX_MPDU_PN structure
-
-
-
-## -description
 The 
   WDI_TXRX_MPDU_PN union defines the parameters that are passed down to the TXRX component.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef union _WDI_TXRX_MPDU_PN {
   UINT32 Pn24;
@@ -54,22 +47,26 @@ typedef union _WDI_TXRX_MPDU_PN {
 } WDI_TXRX_MPDU_PN;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Pn128`
 
-### -field Pn24
+            WAPI: 128-bit PN
+        
+            `Pn24`
 
-WEP: 24-bit PN
+            WEP: 24-bit PN
+        
+            `Pn48`
 
-
-### -field Pn48
-
-TKIP or CCMP: 48-bit PN
-
-
-### -field Pn128
-
-WAPI: 128-bit PN
+            TKIP or CCMP: 48-bit PN
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dot11wdi.h |

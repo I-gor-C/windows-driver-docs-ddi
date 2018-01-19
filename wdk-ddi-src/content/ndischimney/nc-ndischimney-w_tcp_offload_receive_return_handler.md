@@ -1,44 +1,41 @@
 ---
-UID: NC:ndischimney.W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
-title: W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
-author: windows-driver-content
-description: NDIS calls the MiniportTcpOffloadReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an offload target.
-old-location: netvista\miniporttcpoffloadreceivereturn.htm
-old-project: netvista
-ms.assetid: b746f58d-d029-4fcd-a59d-baba037fc38e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportTcpOffloadReceiveReturn
-req.alt-loc: Ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
+title : W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
+author : windows-driver-content
+description : NDIS calls the MiniportTcpOffloadReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an offload target.
+old-location : netvista\miniporttcpoffloadreceivereturn.htm
+old-project : netvista
+ms.assetid : b746f58d-d029-4fcd-a59d-baba037fc38e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportTcpOffloadReceiveReturn
+req.alt-loc : Ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback
 
-
-
-## -description
+# W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 NDIS calls the 
@@ -46,24 +43,21 @@ NDIS calls the
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> and associated structures to
   an offload target.
 
+## Syntax
 
+```
+W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER WTcpOffloadReceiveReturnHandler;
 
-## -prototype
-
-````
-W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER MiniportTcpOffloadReceiveReturn;
-
-NDIS_STATUS MiniportTcpOffloadReceiveReturn(
-  _In_ NDIS_HANDLE      MiniportAdapterContext,
-  _In_ PNET_BUFFER_LIST NetBufferList
+NDIS_STATUS WTcpOffloadReceiveReturnHandler(
+  IN NDIS_HANDLE MiniportAdapterContext,
+  IN PNET_BUFFER_LIST NetBufferList
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterContext [in]
+`MiniportAdapterContext`
 
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The miniport driver provided this handle to NDIS when it
@@ -73,8 +67,7 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
@@ -84,13 +77,14 @@ A pointer to a
      NdisTcpOffloadReceiveHandler</a> function.
 
 
-## -returns
+## Return Value
+
 The 
      <i>MiniportTcpOffloadReceiveReturn</i> function should always succeed. Therefore, the 
      <i>MiniportTcpOffloadReceiveReturn</i> function should always return NDIS_STATUS_SUCCESS.
 
+## Remarks
 
-## -remarks
 NDIS calls the 
     <i>MiniportTcpOffloadReceiveReturn</i> function to return ownership of NET_BUFFER_LIST structures and
     associated structures that the offload target passed in one or more previous calls to the 
@@ -108,8 +102,20 @@ The
 Note that the offload target driver should not unload and the offload target adapter must not be
     closed until all indicated receive buffers have been returned.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -135,4 +141,3 @@ Note that the offload target driver should not unload and the offload target ada
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

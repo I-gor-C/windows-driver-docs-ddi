@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisMAllocateSharedMemory
-title: NdisMAllocateSharedMemory function
-author: windows-driver-content
-description: NdisMAllocateSharedMemory allocates and maps a host memory range so that the memory range is simultaneously accessible from both the host system and a DMA NIC.
-old-location: netvista\ndismallocatesharedmemory.htm
-old-project: netvista
-ms.assetid: 8eda6100-598f-405d-a9b3-74424c829a58
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMAllocateSharedMemory
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMAllocateSharedMemory
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMAllocateSharedMemory
+title : NdisMAllocateSharedMemory function
+author : windows-driver-content
+description : NdisMAllocateSharedMemory allocates and maps a host memory range so that the memory range is simultaneously accessible from both the host system and a DMA NIC.
+old-location : netvista\ndismallocatesharedmemory.htm
+old-project : netvista
+ms.assetid : 8eda6100-598f-405d-a9b3-74424c829a58
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMAllocateSharedMemory
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMAllocateSharedMemory
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMAllocateSharedMemory function
-
-
-
-## -description
 <b>NdisMAllocateSharedMemory</b> allocates and maps a host memory range so that the memory range is
   simultaneously accessible from both the host system and a DMA NIC.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisMAllocateSharedMemory(
@@ -56,45 +51,41 @@ VOID NdisMAllocateSharedMemory(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterHandle [in]
+`MiniportAdapterHandle`
 
 Specifies the handle input to 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
 
-
-### -param Length [in]
+`Length`
 
 Specifies the number of bytes to allocate.
 
-
-### -param Cached [in]
+`Cached`
 
 This parameter is ignored (cached memory is always used on x86 and x64 systems).
 
-
-### -param VirtualAddress [out]
+`VirtualAddress`
 
 Pointer to a caller-supplied variable in which this function returns the base virtual address of
      the allocation for use by the miniport driver. If 
      <b>NdisMAllocateSharedMemory</b> cannot satisfy its caller, it returns <b>NULL</b> to indicate that no memory
      was allocated.
 
-
-### -param PhysicalAddress [out]
+`PhysicalAddress`
 
 Pointer to a caller-supplied variable in which this function returns a physical address, suitable
      for use by the NIC, that corresponds to that returned at 
      <i>VirtualAddress</i>, or it returns <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Microsoft Windows Server 2003, Windows XP Service Pack 1, and later versions of Windows allow both
     bus-master DMA NICs and subordinate DMA NICs to call 
     <b>NdisMAllocateSharedMemory</b>. Prior releases allow only bus-master DMA NICs to call 
@@ -204,8 +195,20 @@ If a miniport driver calls
     removed, that is, when its 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function is called.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
@@ -252,4 +255,3 @@ If a miniport driver calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemory function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
-title: D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
-author: windows-driver-content
-description: Indicates the luminance range of YUV data.
-old-location: display\d3d11_1ddi_video_processor_nominal_range.htm
-old-project: display
-ms.assetid: E8D77D49-9E7C-45B3-850C-1E814B44464B
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXVAHDDDI_NOMINAL_RANGE
-req.alt-loc: D3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
+UID : NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
+title : D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
+author : windows-driver-content
+description : Indicates the luminance range of YUV data.
+old-location : display\d3d11_1ddi_video_processor_nominal_range.htm
+old-project : display
+ms.assetid : E8D77D49-9E7C-45B3-850C-1E814B44464B
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8.1
+req.target-min-winversvr : Windows Server 2012 R2
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXVAHDDDI_NOMINAL_RANGE
+req.alt-loc : D3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
 ---
 
-# D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE enumeration
-
-
-
-## -description
+# D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE Enumeration
 Indicates the luminance range of YUV data.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _DXVAHDDDI_NOMINAL_RANGE { 
   D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED  = 0,
@@ -53,23 +46,34 @@ typedef enum _DXVAHDDDI_NOMINAL_RANGE {
 } DXVAHDDDI_NOMINAL_RANGE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_0_255</td>
+<td>The <i>full luminance range</i>, or <i>extended range</i>, of 0 to 255, inclusive [0, 255].</td>
+</tr>
 
-The driver default value, which is the <i>studio luminance range</i> of 16 to 235, inclusive [16, 235].
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_16_235</td>
+<td>The <i>studio luminance range</i> of 16 to 235, inclusive [16, 235].</td>
+</tr>
 
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED</td>
+<td>The driver default value, which is the <i>studio luminance range</i> of 16 to 235, inclusive [16, 235].</td>
+</tr>
+</table>
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_16_235
+## Remarks
 
-The <i>studio luminance range</i> of 16 to 235, inclusive [16, 235].
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_0_255
-
-The <i>full luminance range</i>, or <i>extended range</i>, of 0 to 255, inclusive [0, 255].
-
-
-## -remarks
 For more information on luminance range, see <a href="https://msdn.microsoft.com/D76FFB8C-CA42-446E-826F-52982B1849E5">YUV format ranges in Windows 8.1</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |

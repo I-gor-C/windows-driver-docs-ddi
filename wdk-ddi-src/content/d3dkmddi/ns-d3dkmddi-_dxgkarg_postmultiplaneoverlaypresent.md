@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmddi._DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
-title: _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
-author: windows-driver-content
-description: Contains arguments for the DxgkDdiPostMultiPlaneOverlayPresent function.
-old-location: display\dxgkarg_postmultiplaneoverlaypresent.htm
-old-project: display
-ms.assetid: E257606A-66EE-4F53-B661-F5FFC63E1F54
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+UID : NS:d3dkmddi._DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+title : _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+author : windows-driver-content
+description : Contains arguments for the DxgkDdiPostMultiPlaneOverlayPresent function.
+old-location : display\dxgkarg_postmultiplaneoverlaypresent.htm
+old-project : display
+ms.assetid : E257606A-66EE-4F53-B661-F5FFC63E1F54
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 ---
 
 # _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT structure
-
-
-
-## -description
 Contains arguments for the DxgkDdiPostMultiPlaneOverlayPresent function.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT {
   D3DDDI_VIDEO_PRESENT_TARGET_ID VidPnTargetId;
@@ -54,27 +47,26 @@ typedef struct _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT {
 } DXGKARG_POSTMULTIPLANEOVERLAYPRESENT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `LayerIndex`
 
-### -field VidPnTargetId
+            [in] The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
+        
+            `PhysicalAdapterMask`
 
-[in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.
+            [in] The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the ValidPhysicalAdapterMask bit-field flag in the Flags member.
+        
+            `VidPnTargetId`
 
-
-### -field PhysicalAdapterMask
-
-[in] The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the ValidPhysicalAdapterMask bit-field flag in the Flags member.
-
-
-### -field LayerIndex
-
-[in] The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom. 
+            [in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.
 
 
-### -field PresentId
-
-      [in] 64 bit integer value representing each flip request for a particular MPO plane.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h |

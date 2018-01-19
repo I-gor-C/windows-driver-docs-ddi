@@ -1,50 +1,43 @@
 ---
-UID: NS:1394._IRB_REQ_ASYNC_LOCK
-title: _IRB_REQ_ASYNC_LOCK
-author: windows-driver-content
-description: This structure contains the fields necessary for the 1394 stack to carry out an asychronous lock request.
-old-location: ieee\irb_req_async_lock.htm
-old-project: IEEE
-ms.assetid: 735C613E-BEAA-4E95-AF9D-A94A4BD940DE
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IRB_REQ_ASYNC_LOCK, IRB_REQ_ASYNC_LOCK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: 1394.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IRB_REQ_ASYNC_LOCK
-req.alt-loc: 1394.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: IRB_REQ_ASYNC_LOCK
+UID : NS:1394._IRB_REQ_ASYNC_LOCK
+title : _IRB_REQ_ASYNC_LOCK
+author : windows-driver-content
+description : This structure contains the fields necessary for the 1394 stack to carry out an asychronous lock request.
+old-location : ieee\irb_req_async_lock.htm
+old-project : IEEE
+ms.assetid : 735C613E-BEAA-4E95-AF9D-A94A4BD940DE
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _IRB_REQ_ASYNC_LOCK, IRB_REQ_ASYNC_LOCK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : 1394.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IRB_REQ_ASYNC_LOCK
+req.alt-loc : 1394.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : IRB_REQ_ASYNC_LOCK
 ---
 
 # _IRB_REQ_ASYNC_LOCK structure
-
-
-
-## -description
 This structure contains the fields necessary for the 1394 stack to carry out an asychronous lock request.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _IRB_REQ_ASYNC_LOCK {
   IO_ADDRESS DestinationAddress;
@@ -63,27 +56,32 @@ typedef struct _IRB_REQ_ASYNC_LOCK {
 } IRB_REQ_ASYNC_LOCK;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Arguments`
 
-### -field DestinationAddress
+            Specifies the arguments used in this lock operation.
+        
+            `chPriority`
 
-Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>u.AsyncLock.DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
+            Reserved.
+        
+            `DataValues`
 
+            Specifies the data values used in this lock operation.
+        
+            `DestinationAddress`
 
-### -field nNumberOfArgBytes
+            Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>u.AsyncLock.DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
+        
+            `fulFlags`
 
-Specifies the number of argument bytes used in performing this lock operation. May be zero, 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
+            Not currently used. Drivers should set this to zero.
+        
+            `fulTransactionType`
 
-
-### -field nNumberOfDataBytes
-
-Specifies the number of data bytes used in performing this lock operation. May be 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
-
-
-### -field fulTransactionType
-
-Specifies which atomic transaction to execute on the 1394 node. The following function types are supported.
+            Specifies which atomic transaction to execute on the 1394 node. The following function types are supported.
 
 <table>
 <tr>
@@ -151,52 +149,40 @@ If the original value and the argument differ, add the data value to original va
 </td>
 </tr>
 </table>
- 
+        
+            `nNumberOfArgBytes`
+
+            Specifies the number of argument bytes used in performing this lock operation. May be zero, 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
+        
+            `nNumberOfDataBytes`
+
+            Specifies the number of data bytes used in performing this lock operation. May be 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
+        
+            `nSpeed`
+
+            Reserved.
+        
+            `pBuffer`
+
+            Points to a buffer that receives lock data values returned from the node. The size of the buffer must be at least equal to the <b>u.AsyncLock.nNumberOfDataBytes</b> member.
+        
+            `Reserved`
+
+            Reserved.
+        
+            `tCode`
+
+            Reserved.
+        
+            `ulGeneration`
+
+            Specifies the bus reset generation as known by the device driver who submitted this asynchronous request. If the generation count specified does not match the actual generation of the bus, then this request is returned with an error.
 
 
-### -field fulFlags
-
-Not currently used. Drivers should set this to zero.
-
-
-### -field Arguments
-
-Specifies the arguments used in this lock operation.
-
-
-### -field DataValues
-
-Specifies the data values used in this lock operation.
-
-
-### -field pBuffer
-
-Points to a buffer that receives lock data values returned from the node. The size of the buffer must be at least equal to the <b>u.AsyncLock.nNumberOfDataBytes</b> member.
-
-
-### -field ulGeneration
-
-Specifies the bus reset generation as known by the device driver who submitted this asynchronous request. If the generation count specified does not match the actual generation of the bus, then this request is returned with an error.
-
-
-### -field chPriority
-
-Reserved.
-
-
-### -field nSpeed
-
-Reserved.
-
-
-### -field tCode
-
-Reserved.
-
-
-### -field Reserved
-
-Reserved.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | 1394.h |

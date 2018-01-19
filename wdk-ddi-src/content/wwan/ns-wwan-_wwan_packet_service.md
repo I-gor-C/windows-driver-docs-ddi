@@ -1,52 +1,45 @@
 ---
-UID: NS:wwan._WWAN_PACKET_SERVICE
-title: _WWAN_PACKET_SERVICE
-author: windows-driver-content
-description: The WWAN_PACKET_SERVICE structure represents the packet service attachment state of the MB device.
-old-location: netvista\wwan_packet_service.htm
-old-project: netvista
-ms.assetid: 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wwan.h
-req.include-header: Wwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WWAN_PACKET_SERVICE
-req.alt-loc: wwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE
-req.product: Windows 10 or later.
+UID : NS:wwan._WWAN_PACKET_SERVICE
+title : _WWAN_PACKET_SERVICE
+author : windows-driver-content
+description : The WWAN_PACKET_SERVICE structure represents the packet service attachment state of the MB device.
+old-location : netvista\wwan_packet_service.htm
+old-project : netvista
+ms.assetid : 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wwan.h
+req.include-header : Wwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WWAN_PACKET_SERVICE
+req.alt-loc : wwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE"
+req.product : Windows 10 or later.
 ---
 
 # _WWAN_PACKET_SERVICE structure
-
-
-
-## -description
 The WWAN_PACKET_SERVICE structure represents the packet service attachment state of the MB
   device.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WWAN_PACKET_SERVICE {
   ULONG                     uNwError;
@@ -56,24 +49,12 @@ typedef struct _WWAN_PACKET_SERVICE {
 } WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AvailableDataClass`
 
-### -field uNwError
-
-A network specific error, in the event of a packet-attach or packet-detach failure. For more
-     information about this member, see the following 
-     "Remarks" section.
-
-
-### -field PacketServiceState
-
-The packet service state of the device.
-
-
-### -field AvailableDataClass
-
-A bitmap that represents which data-classes are available to the device in the current network.
+            A bitmap that represents which data-classes are available to the device in the current network.
      For a detailed list of values, see the 
      <b>WwanDataClass</b> member of 
      <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
@@ -82,11 +63,10 @@ A bitmap that represents which data-classes are available to the device in the c
 Miniport drivers must set this member to WWAN_DATA_CLASS_NONE when the device is not registered to a
      network, or when there is no data-class, or when the supported data-class is not available. Miniport
      drivers must set this member with a valid value when the device is registered to a network.
+        
+            `CurrentDataClass`
 
-
-### -field CurrentDataClass
-
-A single value from the 
+            A single value from the 
      <b>WwanDataClass</b> member in 
      <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a> that represents which
      data-class is currently being used by the device.
@@ -103,10 +83,19 @@ Miniport drivers should set this member to WWAN_DATA_CLASS_CUSTOM if the data-cl
      predefined values in the 
      <b>WwanDataClass</b> member of 
      <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
+        
+            `PacketServiceState`
 
+            The packet service state of the device.
+        
+            `uNwError`
 
-## -remarks
-The current packet-attach service state is typically reflected in the device's user interface.
+            A network specific error, in the event of a packet-attach or packet-detach failure. For more
+     information about this member, see the following 
+     "Remarks" section.
+
+    ## Remarks
+        The current packet-attach service state is typically reflected in the device's user interface.
 
 The MB Service combines the data-classes that are represented in 
     <b>AvailableDataClass</b> with the supported data-classes that are reported with the device's capabilities
@@ -161,9 +150,17 @@ Miniport drivers must report the cause code at the earliest possible instance. F
     device encounters one of these codes when attempting to register the device on with a network provider,
     the miniport driver should report it at that time.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wwan.h (include Wwan.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wwan\ne-wwan-_wwan_packet_service_state.md">WWAN_PACKET_SERVICE_STATE</a>
 </dt>
@@ -177,4 +174,3 @@ Miniport drivers must report the cause code at the earliest possible instance. F
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,53 +1,46 @@
 ---
-UID: NS:ndis._NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
-title: _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
-author: windows-driver-content
-description: The NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure specifies CoNDIS call manager ProtocolXxx functions for the driver that passes this structure to the NdisSetOptionalHandlers function.
-old-location: netvista\ndis_co_call_manager_optional_handlers.htm
-old-project: netvista
-ms.assetid: 12d541e1-04dd-4512-827e-d27f16260fe3
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+UID : NS:ndis._NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+title : _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+author : windows-driver-content
+description : The NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure specifies CoNDIS call manager ProtocolXxx functions for the driver that passes this structure to the NdisSetOptionalHandlers function.
+old-location : netvista\ndis_co_call_manager_optional_handlers.htm
+old-project : netvista
+ms.assetid : 12d541e1-04dd-4512-827e-d27f16260fe3
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : "*PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS"
 ---
 
 # _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure
-
-
-
-## -description
 The NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure specifies CoNDIS call manager 
   <i>ProtocolXxx</i> functions for the driver that passes this structure to the 
   <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">
   NdisSetOptionalHandlers</a> function.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
   NDIS_OBJECT_HEADER                  Header;
@@ -72,140 +65,121 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
 } NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CmActivateVcCompleteHandler`
 
-### -field Header
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
+     ProtocolCmActivateVcComplete</a> function.
+        
+            `CmAddPartyHandler`
 
-The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
+        
+            `CmCloseAfHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a> function.
+        
+            `CmCloseCallHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_close_call.md">
+     ProtocolCmCloseCall</a> function.
+        
+            `CmCreateVcHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
+        
+            `CmDeactivateVcCompleteHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
+     ProtocolCmDeactivateVcComplete</a> function.
+        
+            `CmDeleteVcHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function.
+        
+            `CmDeregisterSapHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
+     ProtocolCmDeregisterSap</a> function.
+        
+            `CmDropPartyHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">
+     ProtocolCmDropParty</a> function.
+        
+            `CmIncomingCallCompleteHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+     ProtocolCmIncomingCallComplete</a> function.
+        
+            `CmMakeCallHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a> function.
+        
+            `CmModifyCallQoSHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">
+     ProtocolCmModifyCallQoS</a> function.
+        
+            `CmNotifyCloseAfCompleteHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_notify_close_af_complete.md">
+     ProtocolCmNotifyCloseAfComplete</a> function.
+        
+            `CmOidRequestCompleteHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
+     ProtocolCoOidRequestComplete</a> function.
+        
+            `CmOidRequestHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
+     ProtocolCoOidRequest</a> function.
+        
+            `CmOpenAfHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
+        
+            `CmRegisterSapHandler`
+
+            The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
+     ProtocolCmRegisterSap</a> function.
+        
+            `Header`
+
+            The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      call manager CoNDIS characteristics structure (NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS). Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_CO_CALL_MANAGER_OPTIONAL_HANDLERS, the 
      <b>Revision</b> member to NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_CO_CALL_MANAGER_OPTIONAL_HANDLERS_REVISION_1.
+        
+            `Reserved`
 
+            Reserved for NDIS.
 
-### -field Reserved
-
-Reserved for NDIS.
-
-
-### -field CmCreateVcHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
-
-
-### -field CmDeleteVcHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function.
-
-
-### -field CmOpenAfHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
-
-
-### -field CmCloseAfHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a> function.
-
-
-### -field CmRegisterSapHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
-     ProtocolCmRegisterSap</a> function.
-
-
-### -field CmDeregisterSapHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
-     ProtocolCmDeregisterSap</a> function.
-
-
-### -field CmMakeCallHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a> function.
-
-
-### -field CmCloseCallHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_close_call.md">
-     ProtocolCmCloseCall</a> function.
-
-
-### -field CmIncomingCallCompleteHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
-     ProtocolCmIncomingCallComplete</a> function.
-
-
-### -field CmAddPartyHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
-
-
-### -field CmDropPartyHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">
-     ProtocolCmDropParty</a> function.
-
-
-### -field CmActivateVcCompleteHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
-     ProtocolCmActivateVcComplete</a> function.
-
-
-### -field CmDeactivateVcCompleteHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
-     ProtocolCmDeactivateVcComplete</a> function.
-
-
-### -field CmModifyCallQoSHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">
-     ProtocolCmModifyCallQoS</a> function.
-
-
-### -field CmOidRequestHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
-     ProtocolCoOidRequest</a> function.
-
-
-### -field CmOidRequestCompleteHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
-     ProtocolCoOidRequestComplete</a> function.
-
-
-### -field CmNotifyCloseAfCompleteHandler
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_notify_close_af_complete.md">
-     ProtocolCmNotifyCloseAfComplete</a> function.
-
-
-## -remarks
-To specify entry points as a CoNDIS call manager, a protocol driver or miniport call manager (MCM)
+    ## Remarks
+        To specify entry points as a CoNDIS call manager, a protocol driver or miniport call manager (MCM)
     initializes an NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure and passes it to the 
     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">
     NdisSetOptionalHandlers</a> function.
@@ -236,7 +210,7 @@ After a stand-alone call manager calls the
 An MCM calls the 
      <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function
      from the 
-     <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function. The
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a> function. The
      MCM must set every 
      <b>Cm</b><i>Xxx</i> member in the NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure to a MCM-supplied 
      <i>ProtocolXxx</i> function even if the MCM does not support incoming calls, outgoing calls, or
@@ -275,9 +249,17 @@ An MCM driver cannot set the
      <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
      ProtocolCoOidRequestComplete</a> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
 </dt>
@@ -288,10 +270,10 @@ An MCM driver cannot set the
 <a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.miniportsetoptions">MiniportSetOptions</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_protocol_driver_characteristics.md">
@@ -358,4 +340,3 @@ An MCM driver cannot set the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:ndiswwan._NDIS_WWAN_AUTH_RESPONSE
-title: _NDIS_WWAN_AUTH_RESPONSE
-author: windows-driver-content
-description: The NDIS_WWAN_AUTH_RESPONSE structure represents a response from one of the authentication methods.
-old-location: netvista\ndis_wwan_auth_response.htm
-old-project: netvista
-ms.assetid: 9F991E80-5155-45CE-9547-7354EE7EC4DB
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndiswwan.h
-req.include-header: Ndiswwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with  Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_WWAN_AUTH_RESPONSE
-req.alt-loc: ndiswwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE
+UID : NS:ndiswwan._NDIS_WWAN_AUTH_RESPONSE
+title : _NDIS_WWAN_AUTH_RESPONSE
+author : windows-driver-content
+description : The NDIS_WWAN_AUTH_RESPONSE structure represents a response from one of the authentication methods.
+old-location : netvista\ndis_wwan_auth_response.htm
+old-project : netvista
+ms.assetid : 9F991E80-5155-45CE-9547-7354EE7EC4DB
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndiswwan.h
+req.include-header : Ndiswwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with  Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_WWAN_AUTH_RESPONSE
+req.alt-loc : ndiswwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE"
 ---
 
 # _NDIS_WWAN_AUTH_RESPONSE structure
-
-
-
-## -description
 The NDIS_WWAN_AUTH_RESPONSE structure represents a response from one of the authentication methods.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_WWAN_AUTH_RESPONSE {
   NDIS_OBJECT_HEADER Header;
@@ -53,12 +46,16 @@ typedef struct _NDIS_WWAN_AUTH_RESPONSE {
 } NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AuthResponse`
 
-### -field Header
+            A formatted <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a> object that represents the challenge posed by one of the authentication methods. This member (within WWAN_AUTH_RESPONSE) should be set even when <b>uStatus</b> is other than WWAN_STATUS_SUCCESS.
+        
+            `Header`
 
-The header with type, revision, and size information about the NDIS_WWAN_AUTH_RESPONSE structure. The
+            The header with type, revision, and size information about the NDIS_WWAN_AUTH_RESPONSE structure. The
      MB service sets the header with the values that are shown in the following table when it sends the data
      structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
@@ -104,12 +101,11 @@ sizeof(NDIS_WWAN_AUTH_RESPONSE)
  
 
 For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+        
+            `uStatus`
 
-
-### -field uStatus
-
-The status of the response received for authentication challenge operation. The miniport driver returns one of the following WWAN_STATUS values as appropriate.
+            The status of the response received for authentication challenge operation. The miniport driver returns one of the following WWAN_STATUS values as appropriate.
 
 <table>
 <tr>
@@ -147,20 +143,21 @@ WWAN_STATUS_AUTH_AMF_NOT_SET
 </td>
 </tr>
 </table>
- 
 
+    ## Remarks
+        The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439821">NDIS_STATUS_WWAN_AUTH_RESPONSE</a> NDIS status notification uses this structure.
 
-### -field AuthResponse
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-A formatted <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a> object that represents the challenge posed by one of the authentication methods. This member (within WWAN_AUTH_RESPONSE) should be set even when <b>uStatus</b> is other than WWAN_STATUS_SUCCESS.
+    ## See Also
 
-
-## -remarks
-The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439821">NDIS_STATUS_WWAN_AUTH_RESPONSE</a> NDIS status notification uses this structure.
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a>
 </dt>
@@ -173,4 +170,3 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439821">NDIS_
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_AUTH_RESPONSE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILCALLMEDIAOFFERACTION
-title: RILCALLMEDIAOFFERACTION
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallmediaofferaction_2.htm
-old-project: netvista
-ms.assetid: 2acfaeab-c196-46a9-87a4-c44306b46ad1
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLMEDIAOFFERACTION, RILCALLMEDIAOFFERACTION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLMEDIAOFFERACTION
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILCALLMEDIAOFFERACTION
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILCALLMEDIAOFFERACTION
+title : RILCALLMEDIAOFFERACTION
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallmediaofferaction_2.htm
+old-project : netvista
+ms.assetid : 2acfaeab-c196-46a9-87a4-c44306b46ad1
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLMEDIAOFFERACTION, RILCALLMEDIAOFFERACTION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLMEDIAOFFERACTION
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILCALLMEDIAOFFERACTION
+req.product : Windows 10 or later.
 ---
 
-# RILCALLMEDIAOFFERACTION enumeration
+# RILCALLMEDIAOFFERACTION Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILCALLMEDIAOFFERACTION { 
   RIL_CALLMEDIAOFFERACTION_ERROR,
@@ -57,25 +50,46 @@ typedef enum _RILCALLMEDIAOFFERACTION {
 } RILCALLMEDIAOFFERACTION;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_CALLMEDIAOFFERACTION_ERROR
+<tr>
+<td>RIL_CALLMEDIAOFFERACTION_ACCEPT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAOFFERACTION_ASK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAOFFERACTION_CANCEL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAOFFERACTION_ERROR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAOFFERACTION_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAOFFERACTION_REJECT</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_CALLMEDIAOFFERACTION_REJECT
-
-
-### -field RIL_CALLMEDIAOFFERACTION_ASK
-
-
-### -field RIL_CALLMEDIAOFFERACTION_ACCEPT
-
-
-### -field RIL_CALLMEDIAOFFERACTION_CANCEL
-
-
-### -field RIL_CALLMEDIAOFFERACTION_MAX
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

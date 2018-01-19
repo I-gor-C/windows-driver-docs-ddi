@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.FsRtlRegisterFileSystemFilterCallbacks
-title: FsRtlRegisterFileSystemFilterCallbacks function
-author: windows-driver-content
-description: File system filter drivers and file systems call the FsRtlRegisterFileSystemFilterCallbacks routine to register notification callback routines to be invoked when the underlying file system performs certain operations.
-old-location: ifsk\fsrtlregisterfilesystemfiltercallbacks.htm
-old-project: ifsk
-ms.assetid: cd6d2ab6-ce17-47db-b5d0-4f9543e15487
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FsRtlRegisterFileSystemFilterCallbacks
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FsRtlRegisterFileSystemFilterCallbacks
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.FsRtlRegisterFileSystemFilterCallbacks
+title : FsRtlRegisterFileSystemFilterCallbacks function
+author : windows-driver-content
+description : File system filter drivers and file systems call the FsRtlRegisterFileSystemFilterCallbacks routine to register notification callback routines to be invoked when the underlying file system performs certain operations.
+old-location : ifsk\fsrtlregisterfilesystemfiltercallbacks.htm
+old-project : ifsk
+ms.assetid : cd6d2ab6-ce17-47db-b5d0-4f9543e15487
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FsRtlRegisterFileSystemFilterCallbacks
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FsRtlRegisterFileSystemFilterCallbacks
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # FsRtlRegisterFileSystemFilterCallbacks function
+File system filter drivers and file systems call the <b>FsRtlRegisterFileSystemFilterCallbacks</b> routine to register notification callback routines to be invoked when the underlying file system performs certain operations.
 
-
-
-## -description
-File system filter drivers and file systems call the <b>FsRtlRegisterFileSystemFilterCallbacks</b> routine to register notification callback routines to be invoked when the underlying file system performs certain operations. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FsRtlRegisterFileSystemFilterCallbacks(
@@ -52,15 +47,13 @@ NTSTATUS FsRtlRegisterFileSystemFilterCallbacks(
 );
 ````
 
+## Parameters
 
-## -parameters
+`FilterDriverObject`
 
-### -param FilterDriverObject [in]
+A pointer to the driver object for the filter or file system driver.
 
-A pointer to the driver object for the filter or file system driver. 
-
-
-### -param Callbacks [in]
+`Callbacks`
 
 A pointer to a structure that contains the entry points of caller-supplied notification callback routines. 
 
@@ -421,10 +414,10 @@ Reserved for future use.
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 The <b>FsRtlRegisterFileSystemFilterCallbacks</b> routine can return one of the following status values: 
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -434,12 +427,10 @@ The <b>FsRtlRegisterFileSystemFilterCallbacks</b> routine can return one of the 
 </dl><b>FsRtlRegisterFileSystemFilterCallbacks</b> encountered a pool allocation failure when allocating memory to store the callback information. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters is invalid. 
+</dl>One of the parameters is invalid.
 
- 
+## Remarks
 
-
-## -remarks
 File system and file system filter drivers should call <b>FsRtlRegisterFileSystemFilterCallbacks</b> from the driver's <b>DriverEntry</b> routine.  
 
 File systems call <b>FsRtlRegisterFileSystemFilterCallbacks</b> to set the <b>PreAcquireForSectionSynchronization</b> callback member of the FS_FILTER_CALLBACKS structure instead of using the obsolete <b>AcquireFileForNtCreateSection</b>.
@@ -544,3 +535,15 @@ ReleaseForCcFlush
 ReleaseFileForNtCreateSection
 
 ReleaseForModWrite</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |

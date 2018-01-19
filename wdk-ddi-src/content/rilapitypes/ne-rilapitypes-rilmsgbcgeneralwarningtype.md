@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILMSGBCGENERALWARNINGTYPE
-title: RILMSGBCGENERALWARNINGTYPE
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmsgbcgeneralwarningtype_2.htm
-old-project: netvista
-ms.assetid: 0e556cab-87af-4b3d-8c8c-d0815323a002
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMSGBCGENERALWARNINGTYPE, RILMSGBCGENERALWARNINGTYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMSGBCGENERALWARNINGTYPE
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILMSGBCGENERALWARNINGTYPE
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILMSGBCGENERALWARNINGTYPE
+title : RILMSGBCGENERALWARNINGTYPE
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmsgbcgeneralwarningtype_2.htm
+old-project : netvista
+ms.assetid : 0e556cab-87af-4b3d-8c8c-d0815323a002
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMSGBCGENERALWARNINGTYPE, RILMSGBCGENERALWARNINGTYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMSGBCGENERALWARNINGTYPE
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILMSGBCGENERALWARNINGTYPE
+req.product : Windows 10 or later.
 ---
 
-# RILMSGBCGENERALWARNINGTYPE enumeration
+# RILMSGBCGENERALWARNINGTYPE Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILMSGBCGENERALWARNINGTYPE { 
   RIL_WARNINGTYPE_TSUNAMI,
@@ -57,25 +50,46 @@ typedef enum _RILMSGBCGENERALWARNINGTYPE {
 } RILMSGBCGENERALWARNINGTYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_WARNINGTYPE_TSUNAMI
+<tr>
+<td>RIL_WARNINGTYPE_EARTHQUAKETSUNAMI</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_WARNINGTYPE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_WARNINGTYPE_OTHER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_WARNINGTYPE_RESERVED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_WARNINGTYPE_TEST</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_WARNINGTYPE_TSUNAMI</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_WARNINGTYPE_EARTHQUAKETSUNAMI
-
-
-### -field RIL_WARNINGTYPE_TEST
-
-
-### -field RIL_WARNINGTYPE_OTHER
-
-
-### -field RIL_WARNINGTYPE_RESERVED
-
-
-### -field RIL_WARNINGTYPE_MAX
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

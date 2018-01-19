@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.IoReportDetectedDevice
-title: IoReportDetectedDevice function
-author: windows-driver-content
-description: The IoReportDetectedDevice routine reports a non-PnP device to the PnP manager.
-old-location: kernel\ioreportdetecteddevice.htm
-old-project: kernel
-ms.assetid: b7756f69-feab-4a28-88d5-0262f86db54b
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: IoReportDetectedDevice
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoReportDetectedDevice
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.IoReportDetectedDevice
+title : IoReportDetectedDevice function
+author : windows-driver-content
+description : The IoReportDetectedDevice routine reports a non-PnP device to the PnP manager.
+old-location : kernel\ioreportdetecteddevice.htm
+old-project : kernel
+ms.assetid : b7756f69-feab-4a28-88d5-0262f86db54b
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : IoReportDetectedDevice
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoReportDetectedDevice
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # IoReportDetectedDevice function
-
-
-
-## -description
 The <b>IoReportDetectedDevice</b> routine reports a non-PnP device to the PnP manager.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS IoReportDetectedDevice(
@@ -58,64 +53,57 @@ NTSTATUS IoReportDetectedDevice(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DriverObject [in]
+`DriverObject`
 
 Pointer to the driver object of the driver that detected the device.
 
-
-### -param LegacyBusType [in]
+`LegacyBusType`
 
 Specifies the type of bus on which the device resides. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
 
 The interface types, such as <b>PCIBus</b>, are defined in Wdm.h. If a driver does not know the <i>LegacyBusType</i> for the device, the driver supplies the value <b>InterfaceTypeUndefined</b> for this parameter.
 
-
-### -param BusNumber [in]
+`BusNumber`
 
 Specifies the bus number for the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
 
-The bus number distinguishes the bus on which the device resides from other buses of the same type on the computer. The bus-numbering scheme is bus-specific. If a driver does not know the <i>BusNumber</i> for the device, the driver supplies the value -1 for this parameter. 
+The bus number distinguishes the bus on which the device resides from other buses of the same type on the computer. The bus-numbering scheme is bus-specific. If a driver does not know the <i>BusNumber</i> for the device, the driver supplies the value -1 for this parameter.
 
-
-### -param SlotNumber [in]
+`SlotNumber`
 
 Specifies the logical slot number of the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
 
 If a driver does not know the <i>SlotNumber</i> for the device, the driver supplies the value -1 for this parameter.
 
+`ResourceList`
 
-### -param ResourceList [in, optional]
+Pointer to the resource list the driver used to detect the device. Resources in this list are in raw, untranslated form.
 
-Pointer to the resource list the driver used to detect the device. Resources in this list are in raw, untranslated form. 
-
-
-### -param ResourceRequirements [in, optional]
+`ResourceRequirements`
 
 Optionally points to a resource requirements list for the detected device. <b>NULL</b> if the caller does not have this information for the device.
 
-
-### -param ResourceAssigned [in]
+`ResourceAssigned`
 
 Specifies whether the device's resources have already been reported to the PnP manager. If <i>ResourceAssigned</i> is <b>TRUE</b>, the resources have already been reported, possibly with <a href="..\ntddk\nf-ntddk-ioreportresourcefordetection.md">IoReportResourceForDetection</a>, and the PnP manager will not attempt to claim them on behalf of the device. If <b>TRUE</b>, the PnP manager will also not claim resources when the device is root-enumerated on subsequent boots.
 
-
-### -param DeviceObject [in, out]
+`DeviceObject`
 
 Optionally points to a PDO for the detected device. 
 
 <b>NULL</b> if the caller does not have a PDO for the device, which is typically the case. If <i>DeviceObject</i> is <b>NULL</b>, the PnP manager creates a PDO for the device and returns a pointer to the caller.
 
-If the caller supplies a PDO, the PnP manager does not create a new PDO. On a given call to this routine the <i>DeviceObject</i> parameter is either an IN or an OUT parameter, but not both. 
+If the caller supplies a PDO, the PnP manager does not create a new PDO. On a given call to this routine the <i>DeviceObject</i> parameter is either an IN or an OUT parameter, but not both.
 
 
-## -returns
+## Return Value
+
 <b>IoReportDetectedDevice</b> returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 
+## Remarks
 
-## -remarks
 Drivers for legacy devices use <b>IoReportDetectedDevice</b> to report their devices to the system. A driver should only call <b>IoReportDetectedDevice</b> to report a legacy, non-PnP device. PnP devices should be reported in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551670">IRP_MN_QUERY_DEVICE_RELATIONS</a> request.
 
 Drivers only need to call <b>IoReportDetectedDevice</b> the first time they are loaded because the PnP manager caches the reported information. Drivers that use this routine should store a flag in the registry to indicate whether they have already done device detection.
@@ -132,8 +120,20 @@ The system generates two compatible ID strings for the device, of the form DETEC
 
 A driver writer must provide an INF file that matches any of the specified hardware IDs or compatible IDs. The INF file should specify the original driver that called <b>IoReportDetectedDevice</b> as the driver to load for those IDs. The system uses this information to rebuild the driver stack for the device, for example on restart. Callers of <b>IoReportDetectedDevice</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntddk\nf-ntddk-ioreportresourcefordetection.md">IoReportResourceForDetection</a>
@@ -147,4 +147,3 @@ A driver writer must provide an INF file that matches any of the specified hardw
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportDetectedDevice routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

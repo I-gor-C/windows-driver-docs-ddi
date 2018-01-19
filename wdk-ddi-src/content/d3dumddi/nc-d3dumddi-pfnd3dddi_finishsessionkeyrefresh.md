@@ -1,94 +1,98 @@
 ---
-UID: NC:d3dumddi.PFND3DDDI_FINISHSESSIONKEYREFRESH
-title: PFND3DDDI_FINISHSESSIONKEYREFRESH
-author: windows-driver-content
-description: The FinishSessionKeyRefresh function indicates that all buffers from that point in time use the updated session key value.
-old-location: display\finishsessionkeyrefresh.htm
-old-project: display
-ms.assetid: e245f6f9-f4ea-429d-8421-be4fef1bf17e
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FinishSessionKeyRefresh
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
+UID : NC:d3dumddi.PFND3DDDI_FINISHSESSIONKEYREFRESH
+title : PFND3DDDI_FINISHSESSIONKEYREFRESH
+author : windows-driver-content
+description : The FinishSessionKeyRefresh function indicates that all buffers from that point in time use the updated session key value.
+old-location : display\finishsessionkeyrefresh.htm
+old-project : display
+ms.assetid : e245f6f9-f4ea-429d-8421-be4fef1bf17e
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FinishSessionKeyRefresh
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DXGK_PTE
 ---
 
-# PFND3DDDI_FINISHSESSIONKEYREFRESH callback
 
+# PFND3DDDI_FINISHSESSIONKEYREFRESH callback function
+The <i>FinishSessionKeyRefresh</i> function indicates that all buffers from that point in time use the updated session key value.
 
+## Syntax
 
-## -description
-The <i>FinishSessionKeyRefresh</i> function indicates that all buffers from that point in time use the updated session key value. 
+```
+PFND3DDDI_FINISHSESSIONKEYREFRESH Pfnd3dddiFinishsessionkeyrefresh;
 
-
-
-## -prototype
-
-````
-PFND3DDDI_FINISHSESSIONKEYREFRESH FinishSessionKeyRefresh;
-
-__checkReturn HRESULT APIENTRY FinishSessionKeyRefresh(
-  _In_       HANDLE                            hDevice,
-  _In_ const D3DDDIARG_FINISHSESSIONKEYREFRESH *pData
+HRESULT Pfnd3dddiFinishsessionkeyrefresh(
+  HANDLE hDevice,
+  CONST D3DDDIARG_FINISHSESSIONKEYREFRESH *
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`hDevice`
+
+A handle to the display device (graphics context).
+
+`*`
 
 
-## -parameters
-
-### -param hDevice [in]
-
- A handle to the display device (graphics context).
 
 
-### -param pData [in]
+## Return Value
 
- A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh.md">D3DDDIARG_FINISHSESSIONKEYREFRESH</a> structure that describes the session. 
-
-
-## -returns
 <i>FinishSessionKeyRefresh</i> returns one of the following values:
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The session is successfully updated. 
 <dl>
 <dt><b>D3DDDIERR_NOTAVAILABLE</b></dt>
-</dl>The driver does not support the <i>FinishSessionKeyRefresh</i> function. 
+</dl>The driver does not support the <i>FinishSessionKeyRefresh</i> function.
 
- 
+## Remarks
 
-
-## -remarks
 The hardware and driver can optionally support the <i>FinishSessionKeyRefresh</i> function for all crypto types.
 
 When the Direct3D runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_startsessionkeyrefresh.md">StartSessionKeyRefresh</a> function, the driver generates and saves a random number and returns the random number in the buffer that the <b>pRandomNumber</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a> structure points to. 
 
 When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> function, the driver performs an XOR operation of the random number with the session key.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh.md">D3DDDIARG_FINISHSESSIONKEYREFRESH</a>
@@ -105,4 +109,3 @@ When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_FINISHSESSIONKEYREFRESH callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

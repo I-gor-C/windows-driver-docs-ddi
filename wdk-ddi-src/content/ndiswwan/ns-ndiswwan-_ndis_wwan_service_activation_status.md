@@ -1,51 +1,44 @@
 ---
-UID: NS:ndiswwan._NDIS_WWAN_SERVICE_ACTIVATION_STATUS
-title: _NDIS_WWAN_SERVICE_ACTIVATION_STATUS
-author: windows-driver-content
-description: The NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure represents the status of service activation on the MB device.
-old-location: netvista\ndis_wwan_service_activation_status.htm
-old-project: netvista
-ms.assetid: 669ef35f-0e59-4ec3-b6cc-5cb2156b51a2
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, NDIS_WWAN_SERVICE_ACTIVATION_STATUS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndiswwan.h
-req.include-header: Ndiswwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_WWAN_SERVICE_ACTIVATION_STATUS
-req.alt-loc: ndiswwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+UID : NS:ndiswwan._NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+title : _NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+author : windows-driver-content
+description : The NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure represents the status of service activation on the MB device.
+old-location : netvista\ndis_wwan_service_activation_status.htm
+old-project : netvista
+ms.assetid : 669ef35f-0e59-4ec3-b6cc-5cb2156b51a2
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_SERVICE_ACTIVATION_STATUS, NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndiswwan.h
+req.include-header : Ndiswwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+req.alt-loc : ndiswwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
 ---
 
 # _NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure
-
-
-
-## -description
 The NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure represents the status of service activation on the
   MB device.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_WWAN_SERVICE_ACTIVATION_STATUS {
   NDIS_OBJECT_HEADER             Header;
@@ -54,12 +47,12 @@ typedef struct _NDIS_WWAN_SERVICE_ACTIVATION_STATUS {
 } NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
-
-The header with type, revision, and size information about the NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+            The header with type, revision, and size information about the NDIS_WWAN_SERVICE_ACTIVATION_STATUS
      structure. The MB Service sets the header with the values that are shown in the following table when it
      sends the data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
@@ -105,12 +98,18 @@ sizeof(NDIS_WWAN_SERVICE_ACTIVATION_STATUS)
  
 
 For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+        
+            `ServiceActivationStatus`
 
+            A formatted 
+     <a href="..\wwan\ns-wwan-_wwan_service_activation_status.md">
+     WWAN_SERVICE_ACTIVATION_STATUS</a> object that represents the status of service activation on the
+     device.
+        
+            `uStatus`
 
-### -field uStatus
-
-The status of the service activation operation. The following table shows the possible values for
+            The status of the service activation operation. The following table shows the possible values for
      this member.
      
 
@@ -222,24 +221,21 @@ The operation failed because the device is in the process of initializing. Retry
 </td>
 </tr>
 </table>
- 
 
 
-### -field ServiceActivationStatus
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-A formatted 
-     <a href="..\wwan\ns-wwan-_wwan_service_activation_status.md">
-     WWAN_SERVICE_ACTIVATION_STATUS</a> object that represents the status of service activation on the
-     device.
+    ## See Also
 
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\wwan\ns-wwan-_wwan_service_activation_status.md">
@@ -251,4 +247,3 @@ A formatted
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

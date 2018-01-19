@@ -1,53 +1,48 @@
 ---
-UID: NF:ndis.NdisCoOidRequestComplete
-title: NdisCoOidRequestComplete function
-author: windows-driver-content
-description: The NdisCoOidRequestComplete function returns the final status of an OID request that a CoNDIS client's or stand-alone call manager's ProtocolCoOidRequest function previously returned NDIS_STATUS_PENDING for.
-old-location: netvista\ndiscooidrequestcomplete.htm
-old-project: netvista
-ms.assetid: ba4a22a1-ad48-43f1-96f5-dee5d76e49cb
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCoOidRequestComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCoOidRequestComplete
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Connection_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCoOidRequestComplete
+title : NdisCoOidRequestComplete function
+author : windows-driver-content
+description : The NdisCoOidRequestComplete function returns the final status of an OID request that a CoNDIS client's or stand-alone call manager's ProtocolCoOidRequest function previously returned NDIS_STATUS_PENDING for.
+old-location : netvista\ndiscooidrequestcomplete.htm
+old-project : netvista
+ms.assetid : ba4a22a1-ad48-43f1-96f5-dee5d76e49cb
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCoOidRequestComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCoOidRequestComplete
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Connection_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCoOidRequestComplete function
-
-
-
-## -description
 The 
   <b>NdisCoOidRequestComplete</b> function returns the final status of an OID request that a CoNDIS client's
   or stand-alone call manager's 
   <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">ProtocolCoOidRequest</a> function
   previously returned NDIS_STATUS_PENDING for.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisCoOidRequestComplete(
@@ -59,17 +54,15 @@ VOID NdisCoOidRequestComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisAfHandle [in]
+`NdisAfHandle`
 
 An address family (AF) handle that NDIS passed to the client or stand-alone call manager's 
      <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
      ProtocolCoOidRequest</a> function.
 
-
-### -param NdisVcHandle [in, optional]
+`NdisVcHandle`
 
 A virtual connection (VC) handle that NDIS passed to the client or stand-alone call manager's 
      <i>ProtocolCoOidRequest</i> function. A <b>NULL</b> value for this parameter indicates that the request is not
@@ -78,8 +71,7 @@ A virtual connection (VC) handle that NDIS passed to the client or stand-alone c
      <a href="..\ndis\nf-ndis-ndismcmoidrequest.md">NdisMCmOidRequest</a> function specified a
      <b>NULL</b> VC handle.
 
-
-### -param NdisPartyHandle [in, optional]
+`NdisPartyHandle`
 
 A party handle that NDIS passed to the client or stand-alone call manager's 
      <i>ProtocolCoOidRequest</i> function. A <b>NULL</b> value for this parameter indicates that the request is not
@@ -87,8 +79,7 @@ A party handle that NDIS passed to the client or stand-alone call manager's
      <b>NdisCoOidRequest</b> or 
      <b>NdisMCmOidRequest</b> function specified a <b>NULL</b> party handle.
 
-
-### -param OidRequest [in]
+`OidRequest`
 
 A pointer to a buffer that is formatted as an 
      <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure. The caller of
@@ -96,19 +87,19 @@ A pointer to a buffer that is formatted as an
      <b>NdisCoOidRequest</b> or 
      <b>NdisMCmOidRequest</b> function supplied this buffer.
 
-
-### -param Status [in]
+`Status`
 
 The final status of the request operation, either NDIS_STATUS_SUCCESS, or any driver-determined
      NDIS_STATUS_<i>XXX</i> status value 
      except NDIS_STATUS_PENDING.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A CoNDIS protocol driver that returns NDIS_STATUS_PENDING from its 
     <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">ProtocolCoOidRequest</a> function must
     call 
@@ -132,8 +123,20 @@ Only clients and stand-alone call managers, which register themselves with NDIS 
     <a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a> function,
     respectively, handled the client's request.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Connection_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
@@ -166,4 +169,3 @@ Only clients and stand-alone call managers, which register themselves with NDIS 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoOidRequestComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

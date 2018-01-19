@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.KeRevertToUserGroupAffinityThread
-title: KeRevertToUserGroupAffinityThread function
-author: windows-driver-content
-description: The KeRevertToUserGroupAffinityThread routine restores the group affinity of the calling thread to its original value at the time that the thread was created.
-old-location: kernel\kereverttousergroupaffinitythread.htm
-old-project: kernel
-ms.assetid: 13a1a106-0c5c-4c0e-964d-27e549e1c699
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KeRevertToUserGroupAffinityThread
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Ntddk.h, Wdm.h, Ntddk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KeRevertToUserGroupAffinityThread
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL (see Remarks section).
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.KeRevertToUserGroupAffinityThread
+title : KeRevertToUserGroupAffinityThread function
+author : windows-driver-content
+description : The KeRevertToUserGroupAffinityThread routine restores the group affinity of the calling thread to its original value at the time that the thread was created.
+old-location : kernel\kereverttousergroupaffinitythread.htm
+old-project : kernel
+ms.assetid : 13a1a106-0c5c-4c0e-964d-27e549e1c699
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : KeRevertToUserGroupAffinityThread
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Ntddk.h, Wdm.h, Ntddk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KeRevertToUserGroupAffinityThread
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL (see Remarks section).
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # KeRevertToUserGroupAffinityThread function
+The <b>KeRevertToUserGroupAffinityThread</b> routine restores the group affinity of the calling thread to its original value at the time that the thread was created.
 
-
-
-## -description
-The <b>KeRevertToUserGroupAffinityThread</b> routine restores the group affinity of the calling thread to its original value at the time that the thread was created. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID KeRevertToUserGroupAffinityThread(
@@ -52,19 +47,19 @@ VOID KeRevertToUserGroupAffinityThread(
 );
 ````
 
+## Parameters
 
-## -parameters
+`PreviousAffinity`
 
-### -param PreviousAffinity [in]
-
-A pointer to the group affinity to restore. This parameter points to a <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> structure that contains a group number and an affinity mask. The affinity mask specifies the set of logical processors that the user thread can run on. 
+A pointer to the group affinity to restore. This parameter points to a <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> structure that contains a group number and an affinity mask. The affinity mask specifies the set of logical processors that the user thread can run on.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 This routine changes the group number and group-relative affinity mask of the calling thread. The group number and affinity mask identify a set of processors on which the thread can run. If successful, the routine schedules the thread to run on a processor in this set.
 
 The <i>PreviousAffinity</i> parameter points to a <b>GROUP_AFFINITY</b> structure that specifies the new group number (<b>Group</b> member) and affinity mask (<b>Mask</b> member) for the thread. If <i>PreviousAffinity</i>-&gt;<b>Mask</b> is nonzero, <b>KeRevertToUserGroupAffinityThread</b> sets the group number and affinity mask of the calling thread to the values in the structure. If <i>PreviousAffinity</i>-&gt;<b>Mask</b> is zero, the routine restores the group number and affinity mask to their original values at the time that the thread was initialized.
@@ -89,8 +84,20 @@ A related routine, <a href="..\wdm\nf-wdm-kereverttouseraffinitythreadex.md">KeR
 
 If <b>KeRevertToUserGroupAffinityThread</b> is called at IRQL &lt;= APC_LEVEL and the call is successful, the new (reverted) group affinity takes effect immediately. When the call returns, the calling thread is already running on a processor that is specified in the new group affinity. If <b>KeRevertToUserGroupAffinityThread</b> is called at IRQL = DISPATCH_LEVEL and the call is successful, the pending processor change is deferred until the caller lowers the IRQL below DISPATCH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Ntddk.h, Wdm.h, Ntddk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL (see Remarks section). |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a>
@@ -107,4 +114,3 @@ If <b>KeRevertToUserGroupAffinityThread</b> is called at IRQL &lt;= APC_LEVEL an
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeRevertToUserGroupAffinityThread routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

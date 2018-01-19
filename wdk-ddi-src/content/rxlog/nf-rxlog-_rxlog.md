@@ -1,50 +1,45 @@
 ---
-UID: NF:rxlog._RxLog
-title: _RxLog function
-author: windows-driver-content
-description: _RxLog takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled.
-old-location: ifsk\_rxlog.htm
-old-project: ifsk
-ms.assetid: 00f6c2d9-7521-46c8-b37e-2be304d8a045
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _RxLog
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: rxlog.h
-req.include-header: Rxlog.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: _RxLog
-req.alt-loc: rxlog.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: *PRX_CONTEXT, RX_CONTEXT
-req.product: Windows 10 or later.
+UID : NF:rxlog._RxLog
+title : _RxLog function
+author : windows-driver-content
+description : _RxLog takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled.
+old-location : ifsk\_rxlog.htm
+old-project : ifsk
+ms.assetid : 00f6c2d9-7521-46c8-b37e-2be304d8a045
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _RxLog
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : rxlog.h
+req.include-header : Rxlog.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : _RxLog
+req.alt-loc : rxlog.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
+req.product : Windows 10 or later.
 ---
 
+
 # _RxLog function
+<b>_RxLog</b> takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled.
 
-
-
-## -description
-<b>_RxLog</b> takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID _RxLog(
@@ -52,19 +47,23 @@ VOID _RxLog(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Format 
-
-The variable argument list that contains a format string and a variable number of parameters.
+`format`
 
 
-## -returns
+
+``
+
+
+
+
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 It is recommended that the <b>RxLog</b> macro be used instead of calling the <b>_RxLog</b> routine directly.
 
 If logging is enabled, <b>_RxLog</b> will output a string for recording as an I/O error log entry based on the format string and number of variables passed.
@@ -85,8 +84,20 @@ The <b>_RxLog</b> routine is limited to an output string of, at most, 48 lines, 
 
 It is recommended that the <b>RxLog</b> macro be used to call this routine. On checked builds, the <b>RxLog</b> macro will call the <b>_RxLog</b> routine. On retail builds, the <b>RxLog</b> macro is defined to nothing.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rxlog.h (include Rxlog.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
@@ -103,4 +114,3 @@ It is recommended that the <b>RxLog</b> macro be used to call this routine. On c
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20_RxLog function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

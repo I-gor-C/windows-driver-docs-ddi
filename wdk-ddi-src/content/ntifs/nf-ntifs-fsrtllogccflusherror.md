@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.FsRtlLogCcFlushError
-title: FsRtlLogCcFlushError function
-author: windows-driver-content
-description: The FsRtlLogCcFlushError routine logs a lost delayed-write error and displays a dialog box to the user.
-old-location: ifsk\fsrtllogccflusherror.htm
-old-project: ifsk
-ms.assetid: e516758d-d1fe-4977-93bb-f427972fdd3c
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FsRtlLogCcFlushError
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: FltKernel.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FsRtlLogCcFlushError
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.FsRtlLogCcFlushError
+title : FsRtlLogCcFlushError function
+author : windows-driver-content
+description : The FsRtlLogCcFlushError routine logs a lost delayed-write error and displays a dialog box to the user.
+old-location : ifsk\fsrtllogccflusherror.htm
+old-project : ifsk
+ms.assetid : e516758d-d1fe-4977-93bb-f427972fdd3c
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FsRtlLogCcFlushError
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : FltKernel.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FsRtlLogCcFlushError
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # FsRtlLogCcFlushError function
-
-
-
-## -description
 The <b>FsRtlLogCcFlushError</b> routine logs a lost delayed-write error and displays a dialog box to the user.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FsRtlLogCcFlushError(
@@ -55,30 +50,25 @@ NTSTATUS FsRtlLogCcFlushError(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileName [in]
+`FileName`
 
 The name of the file that could not be flushed.
 
-
-### -param DeviceObject [in]
+`DeviceObject`
 
 A pointer to the device object that this log entry should be filed against.
 
-
-### -param SectionObjectPointer [in]
+`SectionObjectPointer`
 
 A pointer to the section object for the file on which the flush failed.
 
-
-### -param FlushError [in]
+`FlushError`
 
 The error returned by the call to <a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>.
 
-
-### -param Flags [in]
+`Flags`
 
 A value of 0 or a bitwise combination of one or more of the following flags:
 
@@ -108,15 +98,15 @@ Suppresses generation of a system error log entry.
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 The <b>FsRtlLogCcFlushError</b> routine returns STATUS_SUCCESS on success or another NTSTATUS value, such as STATUS_INSUFFICIENT_RESOURCES.
 
+## Remarks
 
-## -remarks
-Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> logs the error. 
+Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> logs the error. 
 
 If the entire <i>FileName</i> cannot fit within the log buffer, the routine inserts an ellipsis into the file name.
 
@@ -124,8 +114,20 @@ If the cache still has pages that have been modified, the error is not fatal. Th
 
 If the error is fatal, the routine increments the lost delayed write counter in the processor control block (<a href="wdkgloss.p#wdkgloss.prcb#wdkgloss.prcb"><i>PRCB</i></a>). This counter can be used in troubleshooting lost delayed write errors.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
@@ -134,7 +136,7 @@ If the error is fatal, the routine increments the lost delayed write counter in 
 <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 </dl>
  
@@ -142,4 +144,3 @@ If the error is fatal, the routine increments the lost delayed write counter in 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlLogCcFlushError routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

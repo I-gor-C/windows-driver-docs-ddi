@@ -1,50 +1,43 @@
 ---
-UID: NE:dispmprt._DXGK_EVENT_TYPE
-title: _DXGK_EVENT_TYPE
-author: windows-driver-content
-description: The DXGK_EVENT_TYPE enumeration indicates the event type in a call to the display miniport driver's DxgkDdiNotifyAcpiEvent function.
-old-location: display\dxgk_event_type.htm
-old-project: display
-ms.assetid: df28ae8f-01f7-42c5-99df-2a3fc7401173
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE, DXGK_EVENT_TYPE, IN_DXGK_EVENT_TYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: dispmprt.h
-req.include-header: Dispmprt.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXGK_EVENT_TYPE
-req.alt-loc: dispmprt.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PDXGK_EVENT_TYPE, DXGK_EVENT_TYPE
+UID : NE:dispmprt._DXGK_EVENT_TYPE
+title : _DXGK_EVENT_TYPE
+author : windows-driver-content
+description : The DXGK_EVENT_TYPE enumeration indicates the event type in a call to the display miniport driver's DxgkDdiNotifyAcpiEvent function.
+old-location : display\dxgk_event_type.htm
+old-project : display
+ms.assetid : df28ae8f-01f7-42c5-99df-2a3fc7401173
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_EVENT_TYPE, DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE, IN_DXGK_EVENT_TYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : dispmprt.h
+req.include-header : Dispmprt.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXGK_EVENT_TYPE
+req.alt-loc : dispmprt.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE
 ---
 
-# _DXGK_EVENT_TYPE enumeration
-
-
-
-## -description
+# _DXGK_EVENT_TYPE Enumeration
 The DXGK_EVENT_TYPE enumeration indicates the event type in a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_notify_acpi_event.md">DxgkDdiNotifyAcpiEvent</a> function.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _DXGK_EVENT_TYPE { 
   DxgkUndefinedEvent   = 0,
@@ -54,33 +47,42 @@ typedef enum _DXGK_EVENT_TYPE {
 } DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field DxgkUndefinedEvent
+<tr>
+<td>DxgkAcpiEvent</td>
+<td>Indicates that the event is an ACPI event.</td>
+</tr>
 
-Indicates that a variable of type DXGK_EVENT_TYPE has not yet been assigned a meaningful value.
+<tr>
+<td>DxgkDockingEvent</td>
+<td>Indicates that the event is a docking event.</td>
+</tr>
+
+<tr>
+<td>DxgkPowerStateEvent</td>
+<td>Indicates that the event is a power state event.</td>
+</tr>
+
+<tr>
+<td>DxgkUndefinedEvent</td>
+<td>Indicates that a variable of type DXGK_EVENT_TYPE has not yet been assigned a meaningful value.</td>
+</tr>
+</table>
 
 
-### -field DxgkAcpiEvent
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dispmprt.h (include Dispmprt.h) |
 
-Indicates that the event is an ACPI event.
+## See Also
 
-
-### -field DxgkPowerStateEvent
-
-Indicates that the event is a power state event.
-
-
-### -field DxgkDockingEvent
-
-Indicates that the event is a docking event.
-
-
-## -remarks
-
-
-## -see-also
 <dl>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_notify_acpi_event.md">DxgkDdiNotifyAcpiEvent</a>
@@ -91,4 +93,3 @@ Indicates that the event is a docking event.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_EVENT_TYPE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

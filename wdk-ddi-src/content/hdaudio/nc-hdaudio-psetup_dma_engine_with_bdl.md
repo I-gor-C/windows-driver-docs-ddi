@@ -1,112 +1,100 @@
 ---
-UID: NC:hdaudio.PSETUP_DMA_ENGINE_WITH_BDL
-title: PSETUP_DMA_ENGINE_WITH_BDL
-author: windows-driver-content
-description: The SetupDmaEngineWithBdl routine sets up a DMA engine to use a caller-allocated DMA buffer.The function pointer type for a SetupDmaEngineWithBdl routine is defined as:
-old-location: audio\setupdmaenginewithbdl.htm
-old-project: audio
-ms.assetid: 2760579b-9922-4709-a049-a73f3abd5043
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: hdaudio.h
-req.include-header: Hdaudio.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SetupDmaEngineWithBdl
-req.alt-loc: hdaudio.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
+UID : NC:hdaudio.PSETUP_DMA_ENGINE_WITH_BDL
+title : PSETUP_DMA_ENGINE_WITH_BDL
+author : windows-driver-content
+description : The SetupDmaEngineWithBdl routine sets up a DMA engine to use a caller-allocated DMA buffer.The function pointer type for a SetupDmaEngineWithBdl routine is defined as:
+old-location : audio\setupdmaenginewithbdl.htm
+old-project : audio
+ms.assetid : 2760579b-9922-4709-a049-a73f3abd5043
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : hdaudio.h
+req.include-header : Hdaudio.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SetupDmaEngineWithBdl
+req.alt-loc : hdaudio.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
-# PSETUP_DMA_ENGINE_WITH_BDL callback
 
-
-
-## -description
+# PSETUP_DMA_ENGINE_WITH_BDL callback function
 The <i>SetupDmaEngineWithBdl</i> routine sets up a DMA engine to use a caller-allocated DMA buffer.
 
 The function pointer type for a <i>SetupDmaEngineWithBdl</i> routine is defined as:
 
+## Syntax
 
+```
+PSETUP_DMA_ENGINE_WITH_BDL PsetupDmaEngineWithBdl;
 
-## -prototype
-
-````
-PSETUP_DMA_ENGINE_WITH_BDL SetupDmaEngineWithBdl;
-
-NTSTATUS SetupDmaEngineWithBdl(
-  _In_  PVOID            context,
-  _In_  HANDLE           handle,
-  _In_  ULONG            bufferSize,
-  _In_  ULONG            lvi,
-  _In_  PHDAUDIO_BDL_ISR isr,
-  _In_  PVOID            callbackContext,
-  _Out_ PUCHAR           streamID,
-  _Out_ PULONG           fifoSize
+NTSTATUS PsetupDmaEngineWithBdl(
+  PVOID _context,
+  HANDLE Handle,
+  ULONG BufferLength,
+  ULONG Lvi,
+  PHDAUDIO_BDL_ISR Isr,
+  PVOID Context,
+  PUCHAR StreamId,
+  PULONG FifoSize
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`_context`
 
 
-## -parameters
 
-### -param context [in]
-
-Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
+`Handle`
 
 
-### -param handle [in]
 
-Handle that identifies the DMA engine. This handle value was obtained from a previous call to <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a> or <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>.
-
-
-### -param bufferSize [in]
-
-Specifies the size in bytes of the DMA buffer that the buffer descriptor list (BDL) array describes.
+`BufferLength`
 
 
-### -param lvi [in]
 
-Specifies the last valid index (LVI). This parameter contains the index for the last valid buffer descriptor in the BDL. After the DMA engine processes this descriptor, it wraps back to the first descriptor in the list and continues processing. If the BDL contains <i>n</i> descriptors, they are numbered 0 to <i>n</i>-1. The <i>lvi</i> value must be at least 1; in other words, the BDL must contain at least two valid entries before the DMA engine can begin operation.
-
-
-### -param isr [in]
-
-Function pointer to the caller's ISR. If the caller sets the interrupt-on-completion (IOC) bit in one or more of the buffer descriptors in the BDL, the HD Audio bus driver calls the ISR each time an IOC interrupt occurs on the stream. This parameter is a function pointer of type HDAUDIO_BDL_ISR, which is defined in the following Remarks section.
+`Lvi`
 
 
-### -param callbackContext [in]
 
-Specifies a context value that the HD Audio bus driver passes to the ISR.
-
-
-### -param streamID [out]
-
-Retrieves the stream identifier. This parameter points to a caller-allocated UCHAR variable into which the routine writes the stream identifier that it assigns to the stream.
+`Isr`
 
 
-### -param fifoSize [out]
 
-Retrieves the DMA engine's FIFO size in bytes. This parameter points to a caller-allocated UINT variable into which the routine writes the FIFO size.
+`Context`
 
 
-## -returns
+
+`StreamId`
+
+
+
+`FifoSize`
+
+
+
+
+## Return Value
+
 <i>SetupDmaEngineWithBdl</i> returns STATUS_SUCCESS if the call succeeds. Otherwise, the routine returns an appropriate error code. The following table shows some of the possible return status codes.
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
@@ -124,10 +112,8 @@ Retrieves the DMA engine's FIFO size in bytes. This parameter points to a caller
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>Indicates that the DMA device or DMA buffer is not allocated or the stream is not in the Reset state.
 
- 
+## Remarks
 
-
-## -remarks
 The <i>SetupDmaEngineWithBdl</i> routine is used in conjunction with the <a href="..\hdaudio\nc-hdaudio-pallocate_contiguous_dma_buffer.md">AllocateContiguousDmaBuffer</a> and <a href="..\hdaudio\nc-hdaudio-pfree_contiguous_dma_buffer.md">FreeContiguousDmaBuffer</a> routines. These three routines are available only in the HDAUDIO_BUS_INTERFACE_BDL version of the HD Audio DDI. This DDI does not include the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a> and <a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer.md">FreeDmaBuffer</a> routines, which are never used in conjunction with <b>AllocateContiguousDmaBuffer</b>, <i>SetupDmaEngineWithBdl</i>, and <b>FreeContiguousDmaBuffer</b>. Unlike <i>SetupDmaEngineWithBdl</i>, which configures the DMA engine to use a previously allocated DMA buffer, <b>AllocateDmaBuffer</b> both allocates a DMA buffer and configures the DMA engine to use the buffer.
 
 The caller must call <a href="..\hdaudio\nc-hdaudio-pallocate_contiguous_dma_buffer.md">AllocateContiguousDmaBuffer</a> to allocate storage in the system memory for both the DMA buffer and the BDL that describes the physical memory pages in the buffer. The BDL entries must reside in memory that is physically contiguous. The BDL and buffer memory must meet the alignment requirements that are described in the <i>Intel High Definition Audio Specification</i> (see the <a href="http://go.microsoft.com/fwlink/p/?linkid=42508">Intel HD Audio</a> website).
@@ -177,8 +163,20 @@ The FIFO size is the maximum number of bytes that the DMA engine can hold in its
 
 The caller must allocate the buffer memory and BDL from the nonpaged pool.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hdaudio.h (include Hdaudio.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
@@ -207,4 +205,3 @@ The caller must allocate the buffer memory and BDL from the nonpaged pool.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PSETUP_DMA_ENGINE_WITH_BDL callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

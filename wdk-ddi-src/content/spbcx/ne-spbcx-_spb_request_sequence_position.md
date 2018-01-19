@@ -1,51 +1,44 @@
 ---
-UID: NE:spbcx._SPB_REQUEST_SEQUENCE_POSITION
-title: _SPB_REQUEST_SEQUENCE_POSITION
-author: windows-driver-content
-description: The SPB_REQUEST_SEQUENCE_POSITION enumeration indicates the position of an I/O request in the list of transfers for an I/O transfer sequence.
-old-location: spb\spb_request_sequence_position.htm
-old-project: SPB
-ms.assetid: B2D1BC45-E932-4EBC-9B7E-C45E7439E551
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SPB_REQUEST_SEQUENCE_POSITION, SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: spbcx.h
-req.include-header: Spb.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SPB_REQUEST_SEQUENCE_POSITION
-req.alt-loc: spbcx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
-req.typenames: SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
-req.product: Windows 10 or later.
+UID : NE:spbcx._SPB_REQUEST_SEQUENCE_POSITION
+title : _SPB_REQUEST_SEQUENCE_POSITION
+author : windows-driver-content
+description : The SPB_REQUEST_SEQUENCE_POSITION enumeration indicates the position of an I/O request in the list of transfers for an I/O transfer sequence.
+old-location : spb\spb_request_sequence_position.htm
+old-project : SPB
+ms.assetid : B2D1BC45-E932-4EBC-9B7E-C45E7439E551
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _SPB_REQUEST_SEQUENCE_POSITION, SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : spbcx.h
+req.include-header : Spb.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SPB_REQUEST_SEQUENCE_POSITION
+req.alt-loc : spbcx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at PASSIVE_LEVEL.
+req.typenames : SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
+req.product : Windows 10 or later.
 ---
 
-# _SPB_REQUEST_SEQUENCE_POSITION enumeration
-
-
-
-## -description
+# _SPB_REQUEST_SEQUENCE_POSITION Enumeration
 The <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration indicates the position of an I/O request in the list of transfers for an <a href="https://msdn.microsoft.com/7415DB28-5E93-4F47-B169-7C652969D4C7">I/O transfer sequence</a>.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum  { 
   SpbRequestSequencePositionInvalid   = 0,
@@ -57,52 +50,55 @@ typedef enum  {
 } SPB_REQUEST_SEQUENCE_POSITION;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field SpbRequestSequencePositionInvalid
-
-For internal use only.
-
-
-### -field SpbRequestSequencePositionSingle
-
-A single-transfer I/O request. This request is either a read or write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request that is not part of a sequence, or it is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request for a sequence that consists of a single transfer.
-
-The controller should select the target before performing the transfer, and release the target after the transfer finishes.
-
-
-### -field SpbRequestSequencePositionFirst
-
-The first I/O request in a sequence. This request is the read or write request that immediately follows the lock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">IOCTL_SPB_LOCK_CONTROLLER</a>) I/O control request that signals the start of the sequence.
-
- The controller should select the target before performing this transfer, and the target should remain selected after the transfer finishes.
-
-
-### -field SpbRequestSequencePositionContinue
-
-An I/O request in the middle of a sequence. This request is a read or write request that is neither the first nor the last transfer in the sequence.
+<tr>
+<td>SpbRequestSequencePositionContinue</td>
+<td>An I/O request in the middle of a sequence. This request is a read or write request that is neither the first nor the last transfer in the sequence.
 
 In some cases, the SPB framework extension (SpbCx) cannot identify the last transfer and labels the last transfer as <b>SpbRequestSequencePositionContinue</b> instead of <b>SpbRequestSequencePositionLast</b>. For more information, see the following Remarks section.
 
-The controller should already have the target selected before it starts this transfer, and the target should remain selected after the transfer finishes.
+The controller should already have the target selected before it starts this transfer, and the target should remain selected after the transfer finishes.</td>
+</tr>
 
+<tr>
+<td>SpbRequestSequencePositionFirst</td>
+<td>The first I/O request in a sequence. This request is the read or write request that immediately follows the lock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">IOCTL_SPB_LOCK_CONTROLLER</a>) I/O control request that signals the start of the sequence.
 
-### -field SpbRequestSequencePositionLast
+ The controller should select the target before performing this transfer, and the target should remain selected after the transfer finishes.</td>
+</tr>
 
-The last I/O request in a sequence. This request is the read or write request that immediately precedes the unlock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>) I/O control request that signals the end of the sequence.
+<tr>
+<td>SpbRequestSequencePositionInvalid</td>
+<td>For internal use only.</td>
+</tr>
+
+<tr>
+<td>SpbRequestSequencePositionLast</td>
+<td>The last I/O request in a sequence. This request is the read or write request that immediately precedes the unlock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>) I/O control request that signals the end of the sequence.
 
 In some cases, SpbCx cannot identify the last transfer and labels the last transfer as <b>SpbRequestSequencePositionContinue</b> instead of <b>SpbRequestSequencePositionLast</b>. For more information, see the following Remarks section.
 
-The controller should already have the target selected before it starts this transfer, and should release the target after the transfer finishes.
+The controller should already have the target selected before it starts this transfer, and should release the target after the transfer finishes.</td>
+</tr>
 
+<tr>
+<td>SpbRequestSequencePositionMax</td>
+<td>For internal use only.</td>
+</tr>
 
-### -field SpbRequestSequencePositionMax
+<tr>
+<td>SpbRequestSequencePositionSingle</td>
+<td>A single-transfer I/O request. This request is either a read or write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request that is not part of a sequence, or it is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request for a sequence that consists of a single transfer.
 
-For internal use only.
+The controller should select the target before performing the transfer, and release the target after the transfer finishes.</td>
+</tr>
+</table>
 
+## Remarks
 
-## -remarks
 A client (peripheral driver) of the SPB controller can perform an I/O transfer sequence by sending a series of read and write requests to a target device on the bus. Each read or write request in the series occupies a position in the list of transfers for the sequence. The values in the <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration indicate the relative positions of the read and write requests in this list.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method retrieves the SPB-specific parameter values from an I/O request and writes them to an <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a> structure. Included in these parameters is an <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration value that indicates the position of the I/O request in the I/O transfer sequence that it is part of.
@@ -123,8 +119,16 @@ For a position value of <b>SpbRequestSequencePositionLast</b>, the <b>Length</b>
 
 For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbRequestSequencePositionLast</b>, the transfer direction might have changed from the previous transfer and the SPB controller driver might need to indicate this possible direction change on the bus (for example, an I²C controller issues a new START condition). For more information about transfer directions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | spbcx.h (include Spb.h) |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a>
@@ -156,4 +160,3 @@ For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbReque
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_REQUEST_SEQUENCE_POSITION enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

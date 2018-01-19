@@ -1,52 +1,45 @@
 ---
-UID: NE:fwpsk.FWPS_FIELDS_RPC_EP_ADD_
-title: FWPS_FIELDS_RPC_EP_ADD_
-author: windows-driver-content
-description: The FWPS_FIELDS_RPC_EP_ADD enumeration type specifies the data field identifiers for the FWPS_LAYER_RPC_EP_ADD run-time filtering layer.
-old-location: netvista\fwps_fields_rpc_ep_add.htm
-old-project: netvista
-ms.assetid: 9062fe5f-4384-4466-a15f-c62f2f429699
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FWPS_FIELDS_RPC_EP_ADD_, FWPS_FIELDS_RPC_EP_ADD
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FWPS_FIELDS_RPC_EP_ADD
-req.alt-loc: fwpsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_FIELDS_RPC_EP_ADD
+UID : NE:fwpsk.FWPS_FIELDS_RPC_EP_ADD_
+title : FWPS_FIELDS_RPC_EP_ADD_
+author : windows-driver-content
+description : The FWPS_FIELDS_RPC_EP_ADD enumeration type specifies the data field identifiers for the FWPS_LAYER_RPC_EP_ADD run-time filtering layer.
+old-location : netvista\fwps_fields_rpc_ep_add.htm
+old-project : netvista
+ms.assetid : 9062fe5f-4384-4466-a15f-c62f2f429699
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FWPS_FIELDS_RPC_EP_ADD_, FWPS_FIELDS_RPC_EP_ADD
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FWPS_FIELDS_RPC_EP_ADD
+req.alt-loc : fwpsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_FIELDS_RPC_EP_ADD
 ---
 
-# FWPS_FIELDS_RPC_EP_ADD_ enumeration
-
-
-
-## -description
+# FWPS_FIELDS_RPC_EP_ADD_ Enumeration
 The FWPS_FIELDS_RPC_EP_ADD enumeration type specifies the data field identifiers for the
   FWPS_LAYER_RPC_EP_ADD 
-  <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
+  <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa366492">run-time filtering layer</a>.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum FWPS_FIELDS_RPC_EP_ADD_ { 
   FWPS_FIELD_RPC_EP_ADD_PROCESS_WITH_RPC_IF_UUID,
@@ -57,43 +50,42 @@ typedef enum FWPS_FIELDS_RPC_EP_ADD_ {
 } FWPS_FIELDS_RPC_EP_ADD;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field FWPS_FIELD_RPC_EP_ADD_PROCESS_WITH_RPC_IF_UUID
+<tr>
+<td>FWPS_FIELD_RPC_EP_ADD_EP_FLAGS</td>
+<td>Reserved for internal use.</td>
+</tr>
 
-The UUID of the process with the RPC interface.
+<tr>
+<td>FWPS_FIELD_RPC_EP_ADD_EP_VALUE</td>
+<td>Reserved for internal use.</td>
+</tr>
 
+<tr>
+<td>FWPS_FIELD_RPC_EP_ADD_MAX</td>
+<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
+</tr>
 
-### -field FWPS_FIELD_RPC_EP_ADD_PROTOCOL
+<tr>
+<td>FWPS_FIELD_RPC_EP_ADD_PROCESS_WITH_RPC_IF_UUID</td>
+<td>The UUID of the process with the RPC interface.</td>
+</tr>
 
-
-### -field The RPC protocol. The possible condition values are:
-     
-
-### -field RPC_PROTSEQ_TCP
-     
-
-### -field RPC_PROTSEQ_HTTP
-     
-
-### -field RPC_PROTSEQ_NMP
-
-
-### -field FWPS_FIELD_RPC_EP_ADD_EP_VALUE
-
-Reserved for internal use.
-
-
-### -field FWPS_FIELD_RPC_EP_ADD_EP_FLAGS
-
-Reserved for internal use.
-
-
-### -field FWPS_FIELD_RPC_EP_ADD_MAX
-
-The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.
+<tr>
+<td>FWPS_FIELD_RPC_EP_ADD_PROTOCOL</td>
+<td></td>
+</tr>
+</table>
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |

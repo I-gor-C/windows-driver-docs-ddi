@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddk._IO_DRIVER_CREATE_CONTEXT
-title: _IO_DRIVER_CREATE_CONTEXT
-author: windows-driver-content
-description: The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the IoCreateFileEx and FltCreateFileEx2 routines.
-old-location: ifsk\io_driver_create_context.htm
-old-project: ifsk
-ms.assetid: c2d10f76-5587-4855-9a02-fa7656a3805e
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _IO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddk.h
-req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: This structure is available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IO_DRIVER_CREATE_CONTEXT
-req.alt-loc: ntddk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT
+UID : NS:ntddk._IO_DRIVER_CREATE_CONTEXT
+title : _IO_DRIVER_CREATE_CONTEXT
+author : windows-driver-content
+description : The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the IoCreateFileEx and FltCreateFileEx2 routines.
+old-location : ifsk\io_driver_create_context.htm
+old-project : ifsk
+ms.assetid : c2d10f76-5587-4855-9a02-fa7656a3805e
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _IO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddk.h
+req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : This structure is available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IO_DRIVER_CREATE_CONTEXT
+req.alt-loc : ntddk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT
 ---
 
 # _IO_DRIVER_CREATE_CONTEXT structure
-
-
-
-## -description
 The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routines. This structure is optional.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _IO_DRIVER_CREATE_CONTEXT {
   CSHORT               Size;
@@ -55,38 +48,33 @@ typedef struct _IO_DRIVER_CREATE_CONTEXT {
 } IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DeviceObjectHint`
 
-### -field Size
-
-A read-only member initialized by the <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine.
-
-
-### -field ExtraCreateParameter
-
-A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> structure, which contains a list of extra create parameter (ECP) entries.  See the following Remarks section for important information.
-
-
-### -field DeviceObjectHint
-
-If IO_DRIVER_CREATE_CONTEXT is being used to pass additional create parameters to the <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routine, this member must be <b>NULL</b>.
+            If IO_DRIVER_CREATE_CONTEXT is being used to pass additional create parameters to the <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routine, this member must be <b>NULL</b>.
 
 If IO_DRIVER_CREATE_CONTEXT is being used to pass additional create parameters to the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> routine, this member is a pointer to the device object to which the create request will be sent. The device object must be a legacy filter or file system device object in the file system driver stack for the volume on which the file or directory resides. In the <b>IoCreateFileEx</b> case, this parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request will be sent to the device object at the top of the driver stack.
+        
+            `ExtraCreateParameter`
 
+            A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> structure, which contains a list of extra create parameter (ECP) entries.  See the following Remarks section for important information.
+        
+            `SiloContext`
 
-### -field TxnParameters
+            The container that the file resides on. <b>This member was introduced in Windows 10, version 1607</b>.
+        
+            `Size`
 
-A pointer to a transaction that you want to associate with the create operation. The create operation will be part of the transaction if the value of this member is a valid pointer to the transaction. If the value of this member is <b>NULL</b>, the create operation will not be part of a transaction.
+            A read-only member initialized by the <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine.
+        
+            `TxnParameters`
 
+            A pointer to a transaction that you want to associate with the create operation. The create operation will be part of the transaction if the value of this member is a valid pointer to the transaction. If the value of this member is <b>NULL</b>, the create operation will not be part of a transaction.
 
-### -field SiloContext
-
-The container that the file resides on. <b>This member was introduced in Windows 10, version 1607</b>.
-
-
-## -remarks
-The IO_DRIVER_CREATE_CONTEXT structure can be allocated from paged or nonpaged pool. The <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine must initialize the IO_DRIVER_CREATE_CONTEXT structure before the structure can be used. 
+    ## Remarks
+        The IO_DRIVER_CREATE_CONTEXT structure can be allocated from paged or nonpaged pool. The <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine must initialize the IO_DRIVER_CREATE_CONTEXT structure before the structure can be used. 
 
 The members of the IO_DRIVER_CREATE_CONTEXT structure (excluding the <b>Size</b> member) function as additional parameters to the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routines.  Relative to the <b>IoCreateFileEx</b> and <b>FltCreateFileEx2</b> routine's interface, the following information may be helpful:
 
@@ -100,9 +88,17 @@ Upon return from a call to <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreat
 
  To create or open a file in the context of a transaction, set the <b>TxnParameters</b> member of the IO_DRIVER_CREATE_CONTEXT structure to the value returned by the <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine.  For more information regarding transactions, see <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">Transaction Management (TxF)</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 </dt>
@@ -157,4 +153,3 @@ Upon return from a call to <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreat
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IO_DRIVER_CREATE_CONTEXT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

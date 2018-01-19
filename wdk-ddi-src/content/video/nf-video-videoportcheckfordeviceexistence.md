@@ -1,50 +1,45 @@
 ---
-UID: NF:video.VideoPortCheckForDeviceExistence
-title: VideoPortCheckForDeviceExistence function
-author: windows-driver-content
-description: The VideoPortCheckForDeviceExistence function determines whether the specified PCI device exists in the system.
-old-location: display\videoportcheckfordeviceexistence.htm
-old-project: display
-ms.assetid: 2e0480a5-39d3-4977-9c0f-508bcf6c29a8
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: VideoPortCheckForDeviceExistence
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: VideoPortCheckForDeviceExistence
-req.alt-loc: Videoprt.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Videoprt.lib
-req.dll: Videoprt.sys
-req.irql: PASSIVE_LEVEL
-req.typenames: VIDEO_PORT_SERVICES
-req.product: Windows 10 or later.
+UID : NF:video.VideoPortCheckForDeviceExistence
+title : VideoPortCheckForDeviceExistence function
+author : windows-driver-content
+description : The VideoPortCheckForDeviceExistence function determines whether the specified PCI device exists in the system.
+old-location : display\videoportcheckfordeviceexistence.htm
+old-project : display
+ms.assetid : 2e0480a5-39d3-4977-9c0f-508bcf6c29a8
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : VideoPortCheckForDeviceExistence
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : VideoPortCheckForDeviceExistence
+req.alt-loc : Videoprt.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Videoprt.lib
+req.dll : Videoprt.sys
+req.irql : PASSIVE_LEVEL
+req.typenames : VIDEO_PORT_SERVICES
+req.product : Windows 10 or later.
 ---
 
+
 # VideoPortCheckForDeviceExistence function
-
-
-
-## -description
 The <b>VideoPortCheckForDeviceExistence</b> function determines whether the specified PCI device exists in the system.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN VideoPortCheckForDeviceExistence(
@@ -58,40 +53,33 @@ BOOLEAN VideoPortCheckForDeviceExistence(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension [in]
+`HwDeviceExtension`
 
 Pointer to the miniport driver's device extension.
 
-
-### -param VendorId [in]
+`VendorId`
 
 Specifies the vendor ID.
 
-
-### -param DeviceId [in]
+`DeviceId`
 
 Specifies the device ID.
 
-
-### -param RevisionId [in]
+`RevisionId`
 
 Specifies the revision ID.
 
-
-### -param SubVendorId [in]
+`SubVendorId`
 
 Specifies the subvendor ID.
 
-
-### -param SubSystemId [in]
+`SubSystemId`
 
 Specifies the subsystem ID.
 
-
-### -param Flags [in]
+`Flags`
 
 Is a set of flags that determine whether the <i>RevisionID</i> and <i>SubSystemID</i> parameters should be used in checking for the new device. This parameter can be the logical OR of the following values:
 
@@ -121,12 +109,24 @@ Use the value in the <i>SubSystemID</i> parameter in checking for the new device
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>VideoPortCheckForDeviceExistence</b> returns <b>TRUE</b> if the device exists in the system, and <b>FALSE</b> otherwise.
 
+## Remarks
 
-## -remarks
-For more information about PCI identifiers, see <a href="https://msdn.microsoft.com/58d52af8-9afd-441f-9ed9-92f9e2775226">Identifiers for PCI Devices</a>. </p>
+For more information about PCI identifiers, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/identifiers-for-pci-devices">Identifiers for PCI Devices</a>. </p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |

@@ -1,75 +1,68 @@
 ---
-UID: NC:ndis.MINIPORT_CO_SEND_NET_BUFFER_LISTS
-title: MINIPORT_CO_SEND_NET_BUFFER_LISTS function
-author: windows-driver-content
-description: The MiniportCoSendNetBufferLists function transmits network data that is contained in a specified linked list of NET_BUFFER_LIST structures.Note  You must declare the function by using the MINIPORT_CO_SEND_NET_BUFFER_LISTS type.
-old-location: netvista\miniportcosendnetbufferlists.htm
-old-project: netvista
-ms.assetid: 4a717842-6d71-488e-a56a-57c6e6e0c5d7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: MINIPORT_CO_SEND_NET_BUFFER_LISTS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportCoSendNetBufferLists
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.MINIPORT_CO_SEND_NET_BUFFER_LISTS
+title : MINIPORT_CO_SEND_NET_BUFFER_LISTS
+author : windows-driver-content
+description : The MiniportCoSendNetBufferLists function transmits network data that is contained in a specified linked list of NET_BUFFER_LIST structures.Note  You must declare the function by using the MINIPORT_CO_SEND_NET_BUFFER_LISTS type.
+old-location : netvista\miniportcosendnetbufferlists.htm
+old-project : netvista
+ms.assetid : 4a717842-6d71-488e-a56a-57c6e6e0c5d7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportCoSendNetBufferLists
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # MINIPORT_CO_SEND_NET_BUFFER_LISTS function
-
-
-
-## -description
 The 
   <i>MiniportCoSendNetBufferLists</i> function transmits network data that is contained in a specified linked
   list of 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 MINIPORT_CO_SEND_NET_BUFFER_LISTS MiniportCoSendNetBufferLists;
 
-VOID MiniportCoSendNetBufferLists(
-  _In_ NDIS_HANDLE      MiniportVcContext,
-  _In_ PNET_BUFFER_LIST NetBufferLists,
-  _In_ ULONG            SendFlags
+void MiniportCoSendNetBufferLists(
+  NDIS_HANDLE MiniportVcContext,
+  PNET_BUFFER_LIST NetBufferLists,
+  ULONG SendFlags
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportVcContext [in]
+`MiniportVcContext`
 
 A handle to a miniport driver-allocated context area in which the miniport driver maintains its
      per-virtual connection (VC) state. The miniport driver supplied this handle to NDIS from its 
      <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a> function.
 
-
-### -param NetBufferLists [in]
+`NetBufferLists`
 
 A pointer to the first 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure in a linked list
@@ -78,40 +71,19 @@ A pointer to the first
      in the list maps to a chain of memory descriptor lists (MDLs). The MDLs contain the network data that 
      <i>MiniportCoSendNetBufferLists</i> transmits.
 
-
-### -param SendFlags [in]
+`SendFlags`
 
 Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
      operation. To clear all of the flags, set this parameter to zero. 
      <i>MiniportCoSendNetBufferLists</i> supports the following flags:
-     
 
 
+## Return Value
 
-
-### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
-
-The caller can optionally set this flag if the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
-
-
-### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
-
-NDIS should check for loopback. By default, NDIS does not loop back data to the driver that
-       submitted the send request. An overlying driver can override this behavior by setting the
-       <b>NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK</b> flag. When this flag is set, NDIS identifies all of the <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-       structures that contain data that matches the receive criteria for the binding. NDIS indicates
-       <b>NET_BUFFER</b> structures that match the criteria to the overlying driver. This flag does not affect
-       checking for loopback, or looping back, on other bindings.
-
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 The 
     <i>MiniportCoSendNetBufferLists</i> function is required for CoNDIS miniport drivers. When an overlying
     driver calls the 
@@ -168,10 +140,22 @@ Then, implement your function as follows:
 
 The <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
@@ -195,4 +179,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

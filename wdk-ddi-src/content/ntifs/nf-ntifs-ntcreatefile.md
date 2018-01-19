@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.NtCreateFile
-title: NtCreateFile function
-author: windows-driver-content
-description: The ZwCreateFile routine creates a new file or opens an existing file.
-old-location: kernel\zwcreatefile.htm
-old-project: kernel
-ms.assetid: c40b99be-5627-44f3-9853-c3ae31a8035c
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: NtCreateFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwCreateFile,NtCreateFile
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.NtCreateFile
+title : NtCreateFile function
+author : windows-driver-content
+description : The ZwCreateFile routine creates a new file or opens an existing file.
+old-location : kernel\zwcreatefile.htm
+old-project : kernel
+ms.assetid : c40b99be-5627-44f3-9853-c3ae31a8035c
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : NtCreateFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwCreateFile,NtCreateFile
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : TOKEN_TYPE
 ---
 
+
 # NtCreateFile function
-
-
-
-## -description
 The <b>ZwCreateFile</b> routine creates a new file or opens an existing file.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwCreateFile(
@@ -61,15 +56,13 @@ NTSTATUS ZwCreateFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileHandle [out]
+`FileHandle`
 
 A pointer to a HANDLE variable that receives a handle to the file.
 
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. In addition to the access rights that are defined for all types of objects, the caller can specify any of the following access rights, which are specific to files.
 
@@ -247,13 +240,11 @@ Traverse the directory, in other words, include the directory in the path of a f
 
 For more information about access rights, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>.
 
+`ObjectAttributes`
 
-### -param ObjectAttributes [in]
+A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
-A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. 
-
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and other information about the requested operation. In particular, the <b>Information</b> member receives one of the following values:
 
@@ -284,17 +275,15 @@ FILE_DOES_NOT_EXIST
 </li>
 </ul>
 
-### -param AllocationSize [in, optional]
+`AllocationSize`
 
 A pointer to a LARGE_INTEGER that contains the initial allocation size, in bytes, for a file that is created or overwritten. If <i>AllocationSize</i> is <b>NULL</b>, no allocation size is specified. If no file is created or overwritten, <i>AllocationSize</i> is ignored.
 
-
-### -param FileAttributes [in]
+`FileAttributes`
 
 Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags, which represent the file attributes to set if you create or overwrite a file. The caller usually specifies FILE_ATTRIBUTE_NORMAL, which sets the default attributes. For a list of valid FILE_ATTRIBUTE_<i>XXX</i> flags, see the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> routine in the Microsoft Windows SDK documentation. If no file is created or overwritten, <i>FileAttributes</i> is ignored.
 
-
-### -param ShareAccess [in]
+`ShareAccess`
 
 Type of share access, which is specified as zero or any combination of the following flags.
 
@@ -338,8 +327,7 @@ Delete the file
 
 Device and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.
 
-
-### -param CreateDisposition [in]
+`CreateDisposition`
 
 Specifies the action to perform if the file does or does not exist. <i>CreateDisposition</i> can be one of the values in the following table.
 
@@ -434,10 +422,8 @@ Create the file.
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateOptions [in]
+`CreateOptions`
 
 Specifies the options to apply when the driver creates or opens the file. Use one or more of the flags in the following table.
 
@@ -654,24 +640,22 @@ The client opening the file or device is session aware and per session access is
 </td>
 </tr>
 </table>
- 
 
-
-### -param EaBuffer [in, optional]
+`EaBuffer`
 
 For device and intermediate drivers, this parameter must be a <b>NULL</b> pointer.
 
-
-### -param EaLength [in]
+`EaLength`
 
 For device and intermediate drivers, this parameter must be zero.
 
 
-## -returns
+## Return Value
+
 <b>ZwCreateFile</b> returns STATUS_SUCCESS on success or an appropriate NTSTATUS error code on failure. In the latter case, the caller can determine the cause of the failure by checking the <i>IoStatusBlock</i> parameter.
 
+## Remarks
 
-## -remarks
 <b>ZwCreateFile</b> supplies a handle that the caller can use to manipulate a file's data, or the file object's state and attributes. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565384">Using Files in a Driver</a>.
 
 Once the handle pointed to by <i>FileHandle</i> is no longer in use, the driver must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close it.
@@ -752,8 +736,20 @@ Callers of <b>ZwCreateFile</b> must be running at IRQL = PASSIVE_LEVEL and <a hr
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -794,4 +790,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

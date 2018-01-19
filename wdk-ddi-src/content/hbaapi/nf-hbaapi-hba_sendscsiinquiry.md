@@ -1,49 +1,44 @@
 ---
-UID: NF:hbaapi.HBA_SendScsiInquiry
-title: HBA_SendScsiInquiry function
-author: windows-driver-content
-description: The HBA_SendScsiInquiry routine sends a SCSI inquiry command to the indicated remote port.
-old-location: storage\hba_sendscsiinquiry.htm
-old-project: storage
-ms.assetid: 6239f9b5-99e9-4ed7-b2a8-863c1784692b
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: HBA_SendScsiInquiry
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: hbaapi.h
-req.include-header: Hbaapi.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HBA_SendScsiInquiry
-req.alt-loc: Hbaapi.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Hbaapi.lib
-req.dll: Hbaapi.dll
-req.irql: 
-req.typenames: HBA_WWNTYPE
+UID : NF:hbaapi.HBA_SendScsiInquiry
+title : HBA_SendScsiInquiry function
+author : windows-driver-content
+description : The HBA_SendScsiInquiry routine sends a SCSI inquiry command to the indicated remote port.
+old-location : storage\hba_sendscsiinquiry.htm
+old-project : storage
+ms.assetid : 6239f9b5-99e9-4ed7-b2a8-863c1784692b
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : HBA_SendScsiInquiry
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : hbaapi.h
+req.include-header : Hbaapi.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HBA_SendScsiInquiry
+req.alt-loc : Hbaapi.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Hbaapi.lib
+req.dll : Hbaapi.dll
+req.irql : 
+req.typenames : HBA_WWNTYPE
 ---
 
+
 # HBA_SendScsiInquiry function
+The <b>HBA_SendScsiInquiry</b> routine sends a SCSI inquiry command to the indicated remote port.
 
-
-
-## -description
-The <b>HBA_SendScsiInquiry</b> routine sends a SCSI inquiry command to the indicated remote port. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 HBA_STATUS HBA_API HBA_SendScsiInquiry(
@@ -59,55 +54,47 @@ HBA_STATUS HBA_API HBA_SendScsiInquiry(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param handle [in]
-
-Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the target port is located.
+`Handle`
 
 
-### -param portWWN [in]
 
-Contains a 64-bit worldwide name (WWN) that uniquely identifies the remote target port to which the SCSI inquiry command is sent. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification. 
-
-
-### -param fcLUN [in]
-
-Indicates the fibre channel logical unit number of the logical unit to which the SCSI inquiry command is sent. 
+`PortWWN`
 
 
-### -param EVPD [in]
+
+`FcLUN`
+
+
+
+`EVPD`
 
 Indicates, when 0, that the inquiry command retrieves the standard SCSI inquiry data. When this member is set to 1, it indicates the inquiry command retrieves the vital product data (VPD) specified by <i>PageCode</i>.
 
-
-### -param PageCode [in]
+`PageCode`
 
 Indicates the VPD page code to retrieve when <i>EVPD</i> is set to 1. If <i>EVPD </i>is not set to 1, <i>PageCode </i>is ignored.
 
-
-### -param pRspBuffer [out]
+`pRspBuffer`
 
 Pointer to a buffer that receives the output data of the SCSI inquiry command.
 
-
-### -param pRespBufferSize [in]
-
-Indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>.
+`RspBufferSize`
 
 
-### -param pSenseBuffer [out]
+
+`pSenseBuffer`
 
 Pointer to a buffer that receives the SCSI sense data.
 
+`SenseBufferSize`
 
-### -param SenseBufferSize [in]
-
-On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On output, this member indicates the number of bytes of sense data returned. 
+On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On output, this member indicates the number of bytes of sense data returned.
 
 
-## -returns
+## Return Value
+
 The <b>HBA_SendScsiInquiry</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendScsiInquiry</b> returns one of the following values.
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
@@ -123,15 +110,23 @@ The <b>HBA_SendScsiInquiry</b> routine returns a value of type <a href="https://
 </dl>Returned if a SCSI check condition occurred and SCSI send data is provided in the buffer at <i>pSenseBuffer</i>.
 <dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
-</dl>Returned if an unspecified error occurred that prevented the execution of the SCSI inquiry command. 
-
- 
+</dl>Returned if an unspecified error occurred that prevented the execution of the SCSI inquiry command.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hbaapi.h (include Hbaapi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
@@ -145,4 +140,3 @@ The <b>HBA_SendScsiInquiry</b> routine returns a value of type <a href="https://
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_SendScsiInquiry routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

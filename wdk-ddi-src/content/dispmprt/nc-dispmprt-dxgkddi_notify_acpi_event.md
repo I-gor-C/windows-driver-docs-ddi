@@ -1,77 +1,69 @@
 ---
-UID: NC:dispmprt.DXGKDDI_NOTIFY_ACPI_EVENT
-title: DXGKDDI_NOTIFY_ACPI_EVENT function
-author: windows-driver-content
-description: Notifies the display miniport driver about certain ACPI events.
-old-location: display\dxgkddinotifyacpievent.htm
-old-project: display
-ms.assetid: fdefde51-0e90-4324-9c14-e8259fc872b3
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_NOTIFY_ACPI_EVENT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: dispmprt.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiNotifyAcpiEvent
-req.alt-loc: dispmprt.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID : NC:dispmprt.DXGKDDI_NOTIFY_ACPI_EVENT
+title : DXGKDDI_NOTIFY_ACPI_EVENT
+author : windows-driver-content
+description : Notifies the display miniport driver about certain ACPI events.
+old-location : display\dxgkddinotifyacpievent.htm
+old-project : display
+ms.assetid : fdefde51-0e90-4324-9c14-e8259fc872b3
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : dispmprt.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiNotifyAcpiEvent
+req.alt-loc : dispmprt.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
+
 # DXGKDDI_NOTIFY_ACPI_EVENT function
-
-
-
-## -description
 Notifies the display miniport driver about certain ACPI events.
 
+## Syntax
 
+```
+DXGKDDI_NOTIFY_ACPI_EVENT DxgkddiNotifyAcpiEvent;
 
-## -syntax
-
-````
-DXGKDDI_NOTIFY_ACPI_EVENT DxgkDdiNotifyAcpiEvent;
-
-NTSTATUS DxgkDdiNotifyAcpiEvent(
-  _In_  const PVOID           MiniportDeviceContext,
-  _In_        DXGK_EVENT_TYPE EventType,
-  _In_        ULONG           Event,
-  _In_        PVOID           Argument,
-  _Out_       PULONG          AcpiFlags
+NTSTATUS DxgkddiNotifyAcpiEvent(
+  IN_CONST_PVOID MiniportDeviceContext,
+  IN_DXGK_EVENT_TYPE EventType,
+  IN_ULONG Event,
+  IN_PVOID Argument,
+  OUT_PULONG AcpiFlags
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportDeviceContext [in]
+`MiniportDeviceContext`
 
 A handle to a context block that represents a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-
-### -param EventType [in]
+`EventType`
 
 A <a href="..\dispmprt\ne-dispmprt-_dxgk_event_type.md">DXGK_EVENT_TYPE</a> enumerator that supplies the event type (<b>DpAcpiEvent</b>, <b>DpPowerStateEvent</b>, <b>DpDockingEvent</b>).
 
-
-### -param Event [in]
+`Event`
 
 The event number. The following table lists the possible event numbers for each of the event types.
 
@@ -124,10 +116,8 @@ Defined in <i>Dispmprt.h</i>.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Argument [in]
+`Argument`
 
 A pointer to an argument that depends on the event. For most events, this will be <b>NULL</b>. The following table shows the event arguments, which are ULONG values, for specified event numbers that are available.
 
@@ -161,10 +151,8 @@ PO_CB_LID_SWITCH_STATE
 </td>
 </tr>
 </table>
- 
 
-
-### -param AcpiFlags [out]
+`AcpiFlags`
 
 A pointer to a value that indicates the type of request that the display miniport driver should make to the operating system. The following table shows the values that can be specified.
 
@@ -196,20 +184,33 @@ The display miniport driver makes a request to the operating system to poll the 
 </table>
  
 
-This parameter is ignored if this function returns an error or if the display adapter loses power. 
+This parameter is ignored if this function returns an error or if the display adapter loses power.
 
 
-## -returns
+## Return Value
+
 <i>DxgkDdiNotifyAcpiEvent</i> returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in <i>Ntstatus.h</i>.
 
+## Remarks
 
-## -remarks
 <i>DxgkDdiNotifyAcpiEvent</i> is an optional display miniport driver function.
 
 <i>DxgkDdiNotifyAcpiEvent</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dispmprt.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_eval_acpi_method.md">DxgkCbEvalAcpiMethod</a>
@@ -220,4 +221,3 @@ This parameter is ignored if this function returns an error or if the display ad
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_NOTIFY_ACPI_EVENT callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

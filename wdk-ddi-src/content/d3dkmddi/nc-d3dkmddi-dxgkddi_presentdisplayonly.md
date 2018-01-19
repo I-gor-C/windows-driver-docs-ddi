@@ -1,76 +1,69 @@
 ---
-UID: NC:d3dkmddi.DXGKDDI_PRESENTDISPLAYONLY
-title: DXGKDDI_PRESENTDISPLAYONLY function
-author: windows-driver-content
-description: Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
-old-location: display\dxgkddipresentdisplayonly.htm
-old-project: display
-ms.assetid: b68839e3-ad82-4fcc-8e5a-02dea5db08d9
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_PRESENTDISPLAYONLY
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: d3dkmddi.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiPresentDisplayOnly
-req.alt-loc: D3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKDDI_PRESENTDISPLAYONLY
+title : DXGKDDI_PRESENTDISPLAYONLY
+author : windows-driver-content
+description : Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
+old-location : display\dxgkddipresentdisplayonly.htm
+old-project : display
+ms.assetid : b68839e3-ad82-4fcc-8e5a-02dea5db08d9
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiPresentDisplayOnly
+req.alt-loc : D3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
+
 # DXGKDDI_PRESENTDISPLAYONLY function
-
-
-
-## -description
 Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
 
+## Syntax
 
+```
+DXGKDDI_PRESENTDISPLAYONLY DxgkddiPresentdisplayonly;
 
-## -syntax
-
-````
-DXGKDDI_PRESENTDISPLAYONLY DxgkDdiPresentDisplayOnly;
-
-NTSTATUS APIENTRY DxgkDdiPresentDisplayOnly(
-  _In_ const HANDLE                      hAdapter,
-  _In_ const DXGKARG_PRESENT_DISPLAYONLY *pPresentDisplayOnly
+NTSTATUS DxgkddiPresentdisplayonly(
+  IN_CONST_HANDLE hAdapter,
+  IN_CONST_PDXGKARG_PRESENT_DISPLAYONLY pPresentDisplayOnly
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hAdapter [in]
+`hAdapter`
 
 A handle to the device context for the display adapter. The KMDOD's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously returned this handle in the <i>MiniportDeviceContext</i> parameter.
 
-
-### -param pPresentDisplayOnly [in]
+`pPresentDisplayOnly`
 
 A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_present_displayonly.md">DXGKARG_PRESENT_DISPLAYONLY</a> structure that contains information about the present operation.
 
 
-## -returns
+## Return Value
 
-      Returns one of the following values:
+Returns one of the following values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>
@@ -88,8 +81,8 @@ In this case, the KMDOD should use an interrupt and deferred procedure call (DPC
 
 The driver can also return any other error status code defined in Ntstatus.h to indicate issues that have occurred with the present operation.
 
+## Remarks
 
-## -remarks
 The KMDOD must complete all screen-to-screen moves before copying dirty rectangles. In addition, the KMDOD must complete each move/copy operation before beginning another move/copy operation.
 
 The operating system supports two modes of KMDOD present operations: synchronous and asynchronous. Depending on hardware and driver implementation, the KMDOD can use either mode or switch between them at any time.
@@ -106,8 +99,20 @@ The operating system guarantees that for each VidPN source there is only one pen
 
 The operating system guarantees that this function follows the  zero level  synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_present_displayonly.md">DXGKARG_PRESENT_DISPLAYONLY</a>
@@ -136,4 +141,3 @@ The operating system guarantees that this function follows the  zero level  sync
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_PRESENTDISPLAYONLY callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

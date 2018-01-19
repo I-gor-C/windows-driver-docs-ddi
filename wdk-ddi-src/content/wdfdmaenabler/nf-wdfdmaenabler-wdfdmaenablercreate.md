@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfdmaenabler.WdfDmaEnablerCreate
-title: WdfDmaEnablerCreate function
-author: windows-driver-content
-description: The WdfDmaEnablerCreate method creates a DMA enabler object.
-old-location: wdf\wdfdmaenablercreate.htm
-old-project: wdf
-ms.assetid: 750c9293-7662-41e0-9a2a-5c19e49ad20e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfDmaEnablerCreate
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdmaenabler.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WdfDmaEnablerCreate
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WDF_DMA_PROFILE
-req.product: Windows 10 or later.
+UID : NF:wdfdmaenabler.WdfDmaEnablerCreate
+title : WdfDmaEnablerCreate function
+author : windows-driver-content
+description : The WdfDmaEnablerCreate method creates a DMA enabler object.
+old-location : wdf\wdfdmaenablercreate.htm
+old-project : wdf
+ms.assetid : 750c9293-7662-41e0-9a2a-5c19e49ad20e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfDmaEnablerCreate
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfdmaenabler.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WdfDmaEnablerCreate
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDF_DMA_PROFILE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfDmaEnablerCreate function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WdfDmaEnablerCreate</b> method creates a DMA enabler object. 
+The <b>WdfDmaEnablerCreate</b> method creates a DMA enabler object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfDmaEnablerCreate(
@@ -57,30 +52,27 @@ NTSTATUS WdfDmaEnablerCreate(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Device [in]
+`Device`
 
 A handle to a framework device object.
 
-
-### -param Config [in]
+`Config`
 
 A pointer to a <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure. Drivers must initialize this structure by calling <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf_dma_enabler_config_init.md">WDF_DMA_ENABLER_CONFIG_INIT</a>.
 
+`Attributes`
 
-### -param Attributes [in, optional]
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new DMA enabler object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new DMA enabler object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. 
+`DmaEnablerHandle`
 
-
-### -param DmaEnablerHandle [out]
-
-A handle to a new DMA enabler object.  
+A handle to a new DMA enabler object.
 
 
-## -returns
+## Return Value
+
 <b>WdfDmaEnablerCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, the method might return one of the following values.
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -107,10 +99,8 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 Framework-based drivers must call <b>WdfDmaEnablerCreate</b> before creating DMA transactions for a device.
 
 Before a driver calls <b>WdfDmaEnablerCreate</b>, it must call <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>.
@@ -119,12 +109,24 @@ The framework device object that the <i>Device</i> parameter of <b>WdfDmaEnabler
 
 When called with a  <i>Config</i> parameter that requests a system-mode DMA profile, <b>WdfDmaEnablerCreate</b> creates a partially initialized DMA enabler.  The driver must subsequently call <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a> to set up the DMA settings for the underlying channels.
 
-For more information about DMA enabler objects and <b>WdfDmaEnablerCreate</b>, see <a href="https://msdn.microsoft.com/87735776-c371-425b-bc53-0c68375c9562">Enabling DMA Transactions</a>.
+For more information about DMA enabler objects and <b>WdfDmaEnablerCreate</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enabling-dma-transactions">Enabling DMA Transactions</a>.
 
-The following code example is from the <a href="wdf.sample_kmdf_drivers">PLX9x5x</a> sample driver. This example sets a device's requirement for buffer alignment, initializes a WDF_DMA_ENABLER_CONFIG structure, and calls <b>WdfDmaEnablerCreate</b>.
+The following code example is from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">PLX9x5x</a> sample driver. This example sets a device's requirement for buffer alignment, initializes a WDF_DMA_ENABLER_CONFIG structure, and calls <b>WdfDmaEnablerCreate</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdmaenabler.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
@@ -144,4 +146,3 @@ The following code example is from the <a href="wdf.sample_kmdf_drivers">PLX9x5x
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerCreate method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

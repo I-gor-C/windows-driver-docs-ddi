@@ -1,90 +1,82 @@
 ---
-UID: NC:gpioclx.GPIO_CLIENT_PREPARE_CONTROLLER
-title: GPIO_CLIENT_PREPARE_CONTROLLER function
-author: windows-driver-content
-description: The CLIENT_PrepareController event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver.
-old-location: gpio\client_preparecontroller.htm
-old-project: GPIO
-ms.assetid: FAB86862-C0A1-4FC1-A80F-44F235B9B37D
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: GPIO_CLIENT_PREPARE_CONTROLLER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: gpioclx.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Supported starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CLIENT_PrepareController
-req.alt-loc: Gpioclx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
-req.typenames: FWPS_CONNECT_REQUEST0
+UID : NC:gpioclx.GPIO_CLIENT_PREPARE_CONTROLLER
+title : GPIO_CLIENT_PREPARE_CONTROLLER
+author : windows-driver-content
+description : The CLIENT_PrepareController event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver.
+old-location : gpio\client_preparecontroller.htm
+old-project : GPIO
+ms.assetid : FAB86862-C0A1-4FC1-A80F-44F235B9B37D
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : gpioclx.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Supported starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CLIENT_PrepareController
+req.alt-loc : Gpioclx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at PASSIVE_LEVEL.
+req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
+
 # GPIO_CLIENT_PREPARE_CONTROLLER function
-
-
-
-## -description
 The <i>CLIENT_PrepareController</i> event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver.
 
+## Syntax
 
+```
+GPIO_CLIENT_PREPARE_CONTROLLER GpioClientPrepareController;
 
-## -syntax
-
-````
-GPIO_CLIENT_PREPARE_CONTROLLER CLIENT_PrepareController;
-
-NTSTATUS CLIENT_PrepareController(
-  _In_ WDFDEVICE    Device,
-  _In_ PVOID        Context,
-  _In_ WDFCMRESLIST ResourcesRaw,
-  _In_ WDFCMRESLIST ResourcesTranslated
+NTSTATUS GpioClientPrepareController(
+  WDFDEVICE Device,
+  PVOID Context,
+  WDFCMRESLIST ResourcesRaw,
+  WDFCMRESLIST ResourcesTranslated
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Device [in]
+`Device`
 
 A WDFDEVICE handle to the framework device object that represents the GPIO controller.
 
-
-### -param Context [in]
+`Context`
 
 A pointer to the GPIO controller driver's <a href="https://msdn.microsoft.com/4BE99C71-9BA6-44E3-A54F-DE8C3440A474">device context</a>.
 
-
-### -param ResourcesRaw [in]
+`ResourcesRaw`
 
 A WDFCMRESLIST handle to a collection of framework resource objects. This collection identifies the raw (bus-relative) hardware resources that the Plug and Play (PnP) manager has assigned to the GPIO controller device.
 
-
-### -param ResourcesTranslated [in]
+`ResourcesTranslated`
 
 A WDFCMRESLIST handle to a collection of framework resource objects. This collection identifies the translated (system-physical) hardware resources that the PnP manager has assigned to the GPIO controller device.
 
 
-## -returns
+## Return Value
+
 The <i>CLIENT_PrepareController</i> function returns STATUS_SUCCESS if the call is successful. Otherwise, it returns an appropriate error code.
 
+## Remarks
 
-## -remarks
 This callback function is implemented by the GPIO controller driver. The GPIO framework extension (GpioClx) calls this function to initialize the hardware resources that the GPIO controller driver needs so that it can access the GPIO controller device.
 
 The <i>ResourcesRaw</i> and <i>ResourcesTranslated</i> parameters are handles to lists of raw and translated resources. These lists describe hardware resources that the PnP manager has assigned to the GPIO controller device that is specified by the <i>Device</i> parameter. For more information, see <a href="https://msdn.microsoft.com/dfc1376d-7a1a-421c-82ae-e183cac77ec8">Raw and Translated Resources</a>.
@@ -109,8 +101,20 @@ Then, implement your callback function as follows:
 
 The GPIO_CLIENT_PREPARE_CONTROLLER function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_PREPARE_CONTROLLER function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | gpioclx.h |
+| **Library** |  |
+| **IRQL** | Called at PASSIVE_LEVEL. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439411">CLIENT_ReleaseController</a>
@@ -127,4 +131,3 @@ The GPIO_CLIENT_PREPARE_CONTROLLER function type is defined in the Gpioclx.h hea
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20CLIENT_PrepareController callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NE:pointofservicedriverinterface._MsrDataEncryption
-title: _MsrDataEncryption
-author: windows-driver-content
-description: This enumeration defines the kind of encryption algorithm supported by the magnetic stripe reader (MSR).
-old-location: pos\msrdataencryption.htm
-old-project: pos
-ms.assetid: 3e587242-2d7e-4b1f-8fcd-e0acada91524
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _MsrDataEncryption, MsrDataEncryption
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: pointofservicedriverinterface.h
-req.include-header: Pointofservicedriverinterface.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MsrDataEncryption
-req.alt-loc: pointofservicedriverinterface.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: MsrDataEncryption
+UID : NE:pointofservicedriverinterface._MsrDataEncryption
+title : _MsrDataEncryption
+author : windows-driver-content
+description : This enumeration defines the kind of encryption algorithm supported by the magnetic stripe reader (MSR).
+old-location : pos\msrdataencryption.htm
+old-project : pos
+ms.assetid : 3e587242-2d7e-4b1f-8fcd-e0acada91524
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _MsrDataEncryption, MsrDataEncryption
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : pointofservicedriverinterface.h
+req.include-header : Pointofservicedriverinterface.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MsrDataEncryption
+req.alt-loc : pointofservicedriverinterface.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at PASSIVE_LEVEL.
+req.typenames : MsrDataEncryption
 ---
 
-# _MsrDataEncryption enumeration
-
-
-
-## -description
+# _MsrDataEncryption Enumeration
 This enumeration defines the kind of encryption algorithm supported by the magnetic stripe reader (MSR).
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _MsrDataEncryption { 
   MsrDataEncryption_None,
@@ -54,27 +47,36 @@ typedef enum _MsrDataEncryption {
 } MsrDataEncryption;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field MsrDataEncryption_None
+<tr>
+<td>MsrDataEncryption_3DEA_DUKPT</td>
+<td>The Triple Data Encryption Standard (DES) Derived Unique Key Per Transaction (DUKPT) encryption algorithm.</td>
+</tr>
 
-Indicates no encryption algorithm.
+<tr>
+<td>MsrDataEncryption_AES</td>
+<td>The Advanced Encryption Standard (AES).</td>
+</tr>
+
+<tr>
+<td>MsrDataEncryption_ExtendedBase</td>
+<td>A vendor-specific encryption algorithm. Service-specific values begin at 0x01000000 and are reserved for additional encryption algorithms.</td>
+</tr>
+
+<tr>
+<td>MsrDataEncryption_None</td>
+<td>Indicates no encryption algorithm.</td>
+</tr>
+</table>
 
 
-### -field MsrDataEncryption_3DEA_DUKPT
-
-The Triple Data Encryption Standard (DES) Derived Unique Key Per Transaction (DUKPT) encryption algorithm.
-
-
-### -field MsrDataEncryption_AES
-
-The Advanced Encryption Standard (AES).
-
-
-### -field MsrDataEncryption_ExtendedBase
-
-A vendor-specific encryption algorithm. Service-specific values begin at 0x01000000 and are reserved for additional encryption algorithms.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

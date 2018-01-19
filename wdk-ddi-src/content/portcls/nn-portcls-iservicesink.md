@@ -1,44 +1,41 @@
 ---
-UID: NN:portcls.IServiceSink
-title: IServiceSink
-author: windows-driver-content
-description: The IServiceSink interface encapsulates handling of a service request.
-old-location: audio\iservicesink.htm
-old-project: audio
-ms.assetid: 329ae226-02fb-438b-b461-da51e3afd6eb
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PcUnregisterIoTimeout
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: portcls.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IServiceSink
-req.alt-loc: portcls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Portcls.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
+UID : NN:portcls.IServiceSink
+title : IServiceSink
+author : windows-driver-content
+description : The IServiceSink interface encapsulates handling of a service request.
+old-location : audio\iservicesink.htm
+old-project : audio
+ms.assetid : 329ae226-02fb-438b-b461-da51e3afd6eb
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : PcUnregisterIoTimeout
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : portcls.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IServiceSink
+req.alt-loc : portcls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Portcls.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 # IServiceSink interface
 
-
-
-## -description
 The <code>IServiceSink</code> interface encapsulates handling of a service request. The source of the service request is typically the miniport driver's interrupt service routine. PortCls supports the <code>IServiceSink</code> interface. An <code>IServiceSink</code> object is typically a member of a service group that is managed by an <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object. <code>IServiceSink</code> inherits from the <b>IUnknown</b> interface.
 
 <code>IServiceSink</code> is the base interface for <b>IServiceGroup</b>. This allows an <b>IServiceGroup</b> object to add itself (as an object with an <code>IServiceSink</code> interface) to another <b>IServiceGroup</b> object's service group.
@@ -47,37 +44,23 @@ Although the PortCls system driver provides a <a href="..\portcls\nf-portcls-pcn
 
 For more information, see <a href="https://msdn.microsoft.com/00e17e01-8889-4fae-a0ff-e110d7a9b21e">Service Sink and Service Group Objects</a>.
 
+## Methods
+
+<p>The <b>IServiceSink</b> interface has these methods.</p>
+
+| Method | Description |
+| ---- |:---- |
+| [portcls.IServiceSink.RequestService](nf-portcls-iservicesink-requestservice.md) | The RequestService method is called to forward a service request to an IServiceSink object. |
+
+## Remarks
 
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IServiceSink</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IServiceSink</b> also has these types of members:
 
-The <b>IServiceSink</b> interface has these methods.
-
-The <code>RequestService</code> method is called to forward a service request to an <b>IServiceSink</b> object.
-
- 
-
-
-## -members
-The <b>IServiceSink</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537009">IServiceSink::RequestService</a>
-</td>
-<td align="left" width="63%">
-The <code>RequestService</code> method is called to forward a service request to an <b>IServiceSink</b> object.
-
-</td>
-</tr>
-</table>The <code>RequestService</code> method is called to forward a service request to an <b>IServiceSink</b> object.
-
- 
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | portcls.h |
+| **DLL** |  |

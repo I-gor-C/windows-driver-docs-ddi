@@ -1,79 +1,73 @@
 ---
-UID: NC:wdm.KBUGCHECK_CALLBACK_ROUTINE
-title: KBUGCHECK_CALLBACK_ROUTINE function
-author: windows-driver-content
-description: The BugCheckCallback routine is executed whenever the system issues a bug check.
-old-location: kernel\bugcheckcallback.htm
-old-project: kernel
-ms.assetid: ecd777f0-bba2-4f14-9fa6-8f47ac83fe7f
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KBUGCHECK_CALLBACK_ROUTINE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: BugCheckCallback
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at HIGH_LEVEL.
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.KBUGCHECK_CALLBACK_ROUTINE
+title : KBUGCHECK_CALLBACK_ROUTINE
+author : windows-driver-content
+description : The BugCheckCallback routine is executed whenever the system issues a bug check.
+old-location : kernel\bugcheckcallback.htm
+old-project : kernel
+ms.assetid : ecd777f0-bba2-4f14-9fa6-8f47ac83fe7f
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : BugCheckCallback
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at HIGH_LEVEL.
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # KBUGCHECK_CALLBACK_ROUTINE function
-
-
-
-## -description
 The <i>BugCheckCallback</i> routine is executed whenever the system issues a bug check.
 
+## Syntax
 
+```
+KBUGCHECK_CALLBACK_ROUTINE KbugcheckCallbackRoutine;
 
-## -syntax
-
-````
-KBUGCHECK_CALLBACK_ROUTINE BugCheckCallback;
-
-VOID BugCheckCallback(
-  _In_ PVOID Buffer,
-  _In_ ULONG Length
+_IRQL_requires_same_ VOID KbugcheckCallbackRoutine(
+  IN PVOID Buffer,
+  IN ULONG Length
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Buffer [in]
+`Buffer`
 
 A pointer to the buffer that was specified when the callback was registered.
 
-
-### -param Length [in]
+`Length`
 
 Specifies the length, in bytes, of the buffer that is pointed to by the <i>Buffer</i> parameter.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Drivers can supply a <i>BugCheckCallback</i> that resets the device to a known state if the system issues a bug check.
 
 Use <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a> to register a <i>BugCheckCallback</i> routine. A driver can subsequently remove the callback by using the <a href="..\wdm\nf-wdm-kederegisterbugcheckcallback.md">KeDeregisterBugCheckCallback</a> routine. If the driver can be unloaded, it must remove any registered callbacks in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine.
@@ -92,8 +86,20 @@ Then, implement your callback routine as follows:
 
 The KBUGCHECK_CALLBACK_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the KBUGCHECK_CALLBACK_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Called at HIGH_LEVEL. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-kederegisterbugcheckcallback.md">KeDeregisterBugCheckCallback</a>
@@ -113,4 +119,3 @@ The KBUGCHECK_CALLBACK_ROUTINE function type is defined in the Wdm.h header file
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KBUGCHECK_CALLBACK_ROUTINE routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILPERSOLOCKSUPPORTCAPS
-title: RILPERSOLOCKSUPPORTCAPS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilpersolocksupportcaps_2.htm
-old-project: netvista
-ms.assetid: 630f48cc-2236-48ec-a62a-cdafa31a3afd
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILPERSOLOCKSUPPORTCAPS, RILPERSOLOCKSUPPORTCAPS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILPERSOLOCKSUPPORTCAPS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILPERSOLOCKSUPPORTCAPS
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILPERSOLOCKSUPPORTCAPS
+title : RILPERSOLOCKSUPPORTCAPS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilpersolocksupportcaps_2.htm
+old-project : netvista
+ms.assetid : 630f48cc-2236-48ec-a62a-cdafa31a3afd
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILPERSOLOCKSUPPORTCAPS, RILPERSOLOCKSUPPORTCAPS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILPERSOLOCKSUPPORTCAPS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILPERSOLOCKSUPPORTCAPS
+req.product : Windows 10 or later.
 ---
 
-# RILPERSOLOCKSUPPORTCAPS enumeration
+# RILPERSOLOCKSUPPORTCAPS Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILPERSOLOCKSUPPORTCAPS { 
   RIL_CAPS_PERSOFEATURE_3GPP_NETSUB,
@@ -62,40 +55,71 @@ typedef enum _RILPERSOLOCKSUPPORTCAPS {
 } RILPERSOLOCKSUPPORTCAPS;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_CAPS_PERSOFEATURE_3GPP_NETSUB
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP_CORP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP_NETSUB</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP_SP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP_USIM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP2_CORP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP2_HRPD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP2_NETTYPE1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP2_NETTYPE2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP2_SP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_3GPP2_UIM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PERSOFEATURE_ALL</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_CAPS_PERSOFEATURE_3GPP_SP
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP_CORP
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP_USIM
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP2_NETTYPE1
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP2_NETTYPE2
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP2_HRPD
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP2_SP
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP2_CORP
-
-
-### -field RIL_CAPS_PERSOFEATURE_3GPP2_UIM
-
-
-### -field RIL_CAPS_PERSOFEATURE_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

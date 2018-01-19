@@ -1,90 +1,98 @@
 ---
-UID: NC:parallel.PTERMINATE_IEEE_MODE
-title: PTERMINATE_IEEE_MODE
-author: windows-driver-content
-description: The PTERMINATE_IEEE_MODE-typed callback routine terminates the current IEEE operating mode and sets the mode to IEEE 1284-compatible. The system-supplied bus driver for parallel ports supplies this routine.
-old-location: parports\pterminate_ieee_mode.htm
-old-project: parports
-ms.assetid: 35c4f348-aeaa-4e6e-8cc5-62d78beaa434
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RegisterOpRegionHandler
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: parallel.h
-req.include-header: Parallel.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PTERMINATE_IEEE_MODE
-req.alt-loc: parallel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILGBATOKEN, *LPRILGBATOKEN
+UID : NC:parallel.PTERMINATE_IEEE_MODE
+title : PTERMINATE_IEEE_MODE
+author : windows-driver-content
+description : The PTERMINATE_IEEE_MODE-typed callback routine terminates the current IEEE operating mode and sets the mode to IEEE 1284-compatible. The system-supplied bus driver for parallel ports supplies this routine.
+old-location : parports\pterminate_ieee_mode.htm
+old-project : parports
+ms.assetid : 35c4f348-aeaa-4e6e-8cc5-62d78beaa434
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : RegisterOpRegionHandler
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : parallel.h
+req.include-header : Parallel.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PTERMINATE_IEEE_MODE
+req.alt-loc : parallel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
-# PTERMINATE_IEEE_MODE callback
 
-
-
-## -description
+# PTERMINATE_IEEE_MODE callback function
 The PTERMINATE_IEEE_MODE-typed callback routine terminates the current IEEE operating mode and sets the mode to IEEE 1284-compatible. The system-supplied bus driver for parallel ports supplies this routine.
 
+## Syntax
 
+```
+PTERMINATE_IEEE_MODE PterminateIeeeMode;
 
-## -prototype
+NTSTATUS PterminateIeeeMode(
+  PVOID Context
+)
+{...}
+```
 
-````
-typedef NTSTATUS ( *PTERMINATE_IEEE_MODE)(
-  _In_ PVOID Context
-);
-````
+## Parameters
 
-
-## -parameters
-
-### -param Context [in]
+`Context`
 
 Pointer to the device extension of a parallel device's physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>).
 
 
-## -returns
+## Return Value
+
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The operating mode was set to IEEE 1284-compatible mode.
 
- 
+## Remarks
 
-
-## -remarks
 To obtain a pointer to the system-supplied PTERMINATE_IEEE_MODE callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl_internal_parclass_connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a> structure. The <b>TerminateIeeeMode</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.
 
 The PTERMINATE_IEEE_MODE callback runs in the caller's thread at the IRQL of the caller.
 
 For more information, see <a href="https://msdn.microsoft.com/2ff53ed0-dbb7-4c8f-b6e4-5f7d20124a7c">Setting and Clearing a Communication Mode for a Parallel Device</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | parallel.h (include Parallel.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543975">IOCTL_IEEE1284_GET_MODE</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543978">IOCTL_IEEE1284_NEGOTIATE</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544061">IOCTL_PAR_GET_DEFAULT_MODES</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl_par_get_default_modes.md">IOCTL_PAR_GET_DEFAULT_MODES</a>
 </dt>
 <dt>
 <a href="..\parallel\nc-parallel-pdetermine_ieee_modes.md">PDETERMINE_IEEE_MODES</a>
@@ -104,4 +112,3 @@ For more information, see <a href="https://msdn.microsoft.com/2ff53ed0-dbb7-4c8f
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PTERMINATE_IEEE_MODE function pointer%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

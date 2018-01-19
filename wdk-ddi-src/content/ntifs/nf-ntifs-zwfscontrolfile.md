@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwFsControlFile
-title: ZwFsControlFile function
-author: windows-driver-content
-description: The ZwFsControlFile routine sends a control code directly to a specified file system or file system filter driver, causing the corresponding driver to perform the specified action.
-old-location: kernel\zwfscontrolfile.htm
-old-project: kernel
-ms.assetid: 2e98d111-5af5-4854-9b58-f5237ba913e7
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwFsControlFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwFsControlFile,NtFsControlFile
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwFsControlFile
+title : ZwFsControlFile function
+author : windows-driver-content
+description : The ZwFsControlFile routine sends a control code directly to a specified file system or file system filter driver, causing the corresponding driver to perform the specified action.
+old-location : kernel\zwfscontrolfile.htm
+old-project : kernel
+ms.assetid : 2e98d111-5af5-4854-9b58-f5237ba913e7
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwFsControlFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwFsControlFile,NtFsControlFile
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwFsControlFile function
-
-
-
-## -description
 The <b>ZwFsControlFile</b> routine sends a control code directly to a specified file system or file system filter driver, causing the corresponding driver to perform the specified action.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwFsControlFile(
@@ -60,62 +55,53 @@ NTSTATUS ZwFsControlFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileHandle [in]
+`FileHandle`
 
 Handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file object representing the file or directory on which the specified action is to be performed. The file object must have been opened for asynchronous I/O if the caller specifies an <i>Event</i>, <i>ApcRoutine</i>, and an APC context (in <i>ApcContext</i>), or a completion context (in <i>ApcContext</i>).
 
-
-### -param Event [in, optional]
+`Event`
 
 Handle for a caller-created event. If this parameter is supplied, the caller will be put into a wait state until the requested operation is completed and the given event is set to the Signaled state. This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if the caller will wait for the <i>FileHandle</i> to be set to the Signaled state.
 
-
-### -param ApcRoutine [in, optional]
+`ApcRoutine`
 
 Address of a caller-supplied APC routine to be called when the requested operation completes. This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if there is an I/O completion object associated with the file object.
 
-
-### -param ApcContext [in, optional]
+`ApcContext`
 
 Pointer to a caller-determined context area. This parameter value is used as the APC context if the caller supplies an APC, or is used as the completion context if an I/O completion object has been associated with the file object. When the operation completes, either the APC context is passed to the APC, if one was specified, or the completion context is included as part of the completion message that the I/O Manager posts to the associated I/O completion object.
 
 This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if <i>ApcRoutine</i> is <b>NULL</b> and there is no I/O completion object associated with the file object.
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 Pointer to an IO_STATUS_BLOCK structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>OutputBuffer</i> is returned in the <b>Information</b> member of this structure.
 
-
-### -param FsControlCode [in]
+`FsControlCode`
 
 FSCTL_<i>XXX</i> code that indicates which file system control operation is to be carried out. The value of this parameter determines the formats and required lengths of the <i>InputBuffer</i> and <i>OutputBuffer</i>, as well as which of the following parameter pairs are required. For detailed information about the system-defined FSCTL_<i>XXX</i> codes, see the "Remarks" section of the reference entry for <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> in the Microsoft Windows SDK documentation.
 
+`InputBuffer`
 
-### -param InputBuffer [in, optional]
+Pointer to a caller-allocated input buffer that contains device-specific information to be given to the target driver. If <i>FsControlCode</i> specifies an operation that does not require input data, this pointer is optional and can be <b>NULL</b>.
 
-Pointer to a caller-allocated input buffer that contains device-specific information to be given to the target driver. If <i>FsControlCode</i> specifies an operation that does not require input data, this pointer is optional and can be <b>NULL</b>. 
-
-
-### -param InputBufferLength [in]
+`InputBufferLength`
 
 Size, in bytes, of the buffer at <i>InputBuffer</i>. This value is ignored if <i>InputBuffer</i> is <b>NULL</b>.
 
-
-### -param OutputBuffer [out, optional]
+`OutputBuffer`
 
 Pointer to a caller-allocated output buffer in which information is returned from the target driver. If <i>FsControlCode</i> specifies an operation that does not produce output data, this pointer is optional and can be <b>NULL</b>.
 
-
-### -param OutputBufferLength [in]
+`OutputBufferLength`
 
 Size, in bytes, of the buffer at <i>OutputBuffer</i>. This value is ignored if <i>OutputBuffer</i> is <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>ZwFsControlFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -127,7 +113,8 @@ Size, in bytes, of the buffer at <i>OutputBuffer</i>. This value is ignored if <
 <dt><b>STATUS_REPARSE_ATTRIBUTE_CONFLICT</b></dt>
 </dl>
 
-## -remarks
+## Remarks
+
 <b>ZwFsControlFile</b> provides a consistent view of the input and output data to the system and to kernel-mode drivers, while providing applications and underlying drivers with a driver-dependent method of specifying a communications interface.
 
 If the caller opened the file for asynchronous I/O (with neither FILE_SYNCHRONOUS_<i>XXX</i> create/open option set), the specified event, if any, will be set to the signaled state when the device control operation completes. Otherwise, the file object specified by <i>FileHandle</i> will be set to the signaled state. If an <i>ApcRoutine</i> was specified, it is called with the <i>ApcContext</i> and <i>IoStatusBlock</i> pointers.
@@ -188,8 +175,20 @@ Callers of <b>ZwFsControlFile</b> must be running at IRQL = PASSIVE_LEVEL and <a
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
@@ -227,4 +226,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwFsControlFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

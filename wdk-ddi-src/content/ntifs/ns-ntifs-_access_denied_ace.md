@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._ACCESS_DENIED_ACE
-title: _ACCESS_DENIED_ACE
-author: windows-driver-content
-description: The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object.
-old-location: ifsk\access_denied_ace.htm
-old-project: ifsk
-ms.assetid: a7030210-2907-45c7-a689-5e41db7c81b0
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _ACCESS_DENIED_ACE, ACCESS_DENIED_ACE, *PACCESS_DENIED_ACE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ACCESS_DENIED_ACE
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: ACCESS_DENIED_ACE
+UID : NS:ntifs._ACCESS_DENIED_ACE
+title : _ACCESS_DENIED_ACE
+author : windows-driver-content
+description : The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object.
+old-location : ifsk\access_denied_ace.htm
+old-project : ifsk
+ms.assetid : a7030210-2907-45c7-a689-5e41db7c81b0
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _ACCESS_DENIED_ACE, ACCESS_DENIED_ACE, *PACCESS_DENIED_ACE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ACCESS_DENIED_ACE
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : ACCESS_DENIED_ACE
 ---
 
 # _ACCESS_DENIED_ACE structure
+The ACCESS_DENIED_ACE structure defines an access-control entry (<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>) for the discretionary access-control list (DACL) controlling access to an object. An access-denied ACE denies access to an object for a specific subject identified by a security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>).
 
-
-
-## -description
-The ACCESS_DENIED_ACE structure defines an access-control entry (<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>) for the discretionary access-control list (DACL) controlling access to an object. An access-denied ACE denies access to an object for a specific subject identified by a security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>). 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _ACCESS_DENIED_ACE {
   ACE_HEADER  Header;
@@ -53,30 +46,35 @@ typedef struct _ACCESS_DENIED_ACE {
 } ACCESS_DENIED_ACE, *PACCESS_DENIED_ACE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
+            Specifies an ACE_HEADER structure.
+        
+            `Mask`
 
-Specifies an ACE_HEADER structure. 
+            ACCESS_MASK structure specifying the access rights explicitly denied by this ACE.
+        
+            `SidStart`
 
+            Specifies a SID. The access rights specified by the <b>Mask</b> member are denied to any subject possessing an enabled SID matching this member.
 
-### -field Mask
+    ## Remarks
+        This structure must be aligned on a 32-bit boundary.
 
-ACCESS_MASK structure specifying the access rights explicitly denied by this ACE. 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
 
+    ## See Also
 
-### -field SidStart
-
-Specifies a SID. The access rights specified by the <b>Mask</b> member are denied to any subject possessing an enabled SID matching this member. 
-
-
-## -remarks
-This structure must be aligned on a 32-bit boundary. 
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_access_allowed_ace.md">ACCESS_ALLOWED_ACE</a>
 </dt>
@@ -107,4 +105,3 @@ This structure must be aligned on a 32-bit boundary.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACCESS_DENIED_ACE structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisAllocateNetBufferListPool
-title: NdisAllocateNetBufferListPool function
-author: windows-driver-content
-description: Call the NdisAllocateNetBufferListPool function to allocate a pool of NET_BUFFER_LIST structures.
-old-location: netvista\ndisallocatenetbufferlistpool.htm
-old-project: netvista
-ms.assetid: b117b472-0c26-41a9-b364-3d0cfbd26cc9
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAllocateNetBufferListPool
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAllocateNetBufferListPool
-req.alt-loc: ndis.sys
-req.ddi-compliance: Irql_NetBuffer_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: Ndis.sys
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAllocateNetBufferListPool
+title : NdisAllocateNetBufferListPool function
+author : windows-driver-content
+description : Call the NdisAllocateNetBufferListPool function to allocate a pool of NET_BUFFER_LIST structures.
+old-location : netvista\ndisallocatenetbufferlistpool.htm
+old-project : netvista
+ms.assetid : b117b472-0c26-41a9-b364-3d0cfbd26cc9
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAllocateNetBufferListPool
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAllocateNetBufferListPool
+req.alt-loc : ndis.sys
+req.ddi-compliance : Irql_NetBuffer_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : Ndis.sys
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAllocateNetBufferListPool function
-
-
-
-## -description
 Call the 
   <b>NdisAllocateNetBufferListPool</b> function to allocate a pool of 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_HANDLE NdisAllocateNetBufferListPool(
@@ -54,27 +49,26 @@ NDIS_HANDLE NdisAllocateNetBufferListPool(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisHandle [in, optional]
+`NdisHandle`
 
 An NDIS handle that was obtained during caller initialization.
 
-
-### -param Parameters [in]
+`Parameters`
 
 A pointer to a <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that defines the parameters for the pool.
 
 
-## -returns
+## Return Value
+
 <b>NdisAllocateNetBufferListPool</b> returns a handle to the NET_BUFFER_LIST structure pool that NDIS
      allocates. If the allocation was unsuccessful, this handle is <b>NULL</b>. This handle is a required parameter
      in subsequent calls to NDIS functions that allocate and free NET_BUFFER_LIST structures from this
      pool.
 
+## Remarks
 
-## -remarks
 In most cases, a caller that allocates a 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure will allocate and
     queue at least one 
@@ -114,8 +108,20 @@ Call the
     <a href="..\ndis\nf-ndis-ndisfreenetbufferlistpool.md">
     NdisFreeNetBufferListPool</a> function to free a NET_BUFFER_LIST structure pool.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
@@ -148,4 +154,3 @@ Call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferListPool function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

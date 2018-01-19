@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugControl5.OutputContextStackTraceEx
-title: IDebugControl5::OutputContextStackTraceEx method
-author: windows-driver-content
-description: The OutputContextStackTraceEx method prints the call stack specified by an array of stack frames and corresponding register contexts.
-old-location: debugger\idebugcontrol5_outputcontextstacktraceex.htm
-old-project: debugger
-ms.assetid: B0C1E602-83CE-4F4E-9198-B1B1CDAFF4BF
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugControl5, IDebugControl5::OutputContextStackTraceEx, OutputContextStackTraceEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugControl5.OutputContextStackTraceEx
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugControl5.OutputContextStackTraceEx
+title : IDebugControl5::OutputContextStackTraceEx method
+author : windows-driver-content
+description : The OutputContextStackTraceEx method prints the call stack specified by an array of stack frames and corresponding register contexts.
+old-location : debugger\idebugcontrol5_outputcontextstacktraceex.htm
+old-project : debugger
+ms.assetid : B0C1E602-83CE-4F4E-9198-B1B1CDAFF4BF
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugControl5, IDebugControl5::OutputContextStackTraceEx, OutputContextStackTraceEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugControl5.OutputContextStackTraceEx
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugControl5::OutputContextStackTraceEx method
 
-
-
-## -description
+# OutputContextStackTraceEx method
 The OutputContextStackTraceEx method prints the call stack specified by an array of stack frames and corresponding register contexts. The OutputContextStackTraceEx method provides inline frame support. For more information about working with inline functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406275">Debugging Optimized Code and Inline Functions</a>.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT OutputContextStackTraceEx(
@@ -57,40 +52,33 @@ HRESULT OutputContextStackTraceEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param OutputControl [in]
+`OutputControl`
 
 Specifies where to send the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.
 
-
-### -param Frames [in]
+`Frames`
 
 Specifies the array of stack frames to output.  The number of elements in this array is <i>FramesSize</i>.  If <i>Frames</i> is <b>NULL</b>, the current stack frame is used.
 
-
-### -param FramesSize [in]
+`FramesSize`
 
 Specifies the number of frames to output.
 
-
-### -param FrameContexts [in]
+`FrameContexts`
 
 Specifies the register context for each frame in the stack.  The entries in this array correspond to the entries in the <i>Frames</i> array.  The type of the thread context is the CONTEXT structure for the target's effective processor.
 
-
-### -param FrameContextsSize [in]
+`FrameContextsSize`
 
 Specifies the size, in bytes, of the memory pointed to by <i>FrameContexts</i>.  The number of stack frames must equal the number of contexts, and <i>FrameContextsSize</i> must equal <i>FramesSize</i> multiplied by <i>FrameContextsEntrySize</i>.
 
-
-### -param FrameContextsEntrySize [in]
+`FrameContextsEntrySize`
 
 Specifies the size, in bytes, of each frame context in <i>FrameContexts</i>.
 
-
-### -param Flags [in]
+`Flags`
 
 Specifies bit flags that determine what information to output for each frame.  <i>Flags</i> can be any combination of values from the following table.
 
@@ -210,22 +198,30 @@ Displays each parameter and its type and value on a new line.
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
 
- 
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -remarks
+## See Also
 
-
-## -see-also
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol5.md">IDebugControl5</a>
@@ -236,4 +232,3 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl5::OutputContextStackTraceEx method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

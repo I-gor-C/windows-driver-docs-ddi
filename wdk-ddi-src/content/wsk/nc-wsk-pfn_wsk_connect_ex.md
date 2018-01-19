@@ -1,105 +1,96 @@
 ---
-UID: NC:wsk.PFN_WSK_CONNECT_EX
-title: PFN_WSK_CONNECT_EX
-author: windows-driver-content
-description: The WskConnectEx function connects a connection-oriented or stream socket to a remote transport address.WskConnectEx is similar to WskConnect except that it can also optionally send a buffer of data during or after connection synchronization.
-old-location: netvista\wskconnectex.htm
-old-project: netvista
-ms.assetid: 1BC518E9-747C-4406-8A2A-40A3BCB0A3AA
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: wsk.h
-req.include-header: Wsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Windows 10, version 1703
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WskConnectEx
-req.alt-loc: wsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-req.product: Windows 10 or later.
+UID : NC:wsk.PFN_WSK_CONNECT_EX
+title : PFN_WSK_CONNECT_EX
+author : windows-driver-content
+description : The WskConnectEx function connects a connection-oriented or stream socket to a remote transport address.WskConnectEx is similar to WskConnect except that it can also optionally send a buffer of data during or after connection synchronization.
+old-location : netvista\wskconnectex.htm
+old-project : netvista
+ms.assetid : 1BC518E9-747C-4406-8A2A-40A3BCB0A3AA
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wsk.h
+req.include-header : Wsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Windows 10, version 1703
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WskConnectEx
+req.alt-loc : wsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : "*PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO"
+req.product : Windows 10 or later.
 ---
 
-# PFN_WSK_CONNECT_EX callback
 
-
-
-## -description
+# PFN_WSK_CONNECT_EX callback function
 The 
   <b>WskConnectEx</b> function connects a connection-oriented or stream socket to a remote transport address.
 
 <b>WskConnectEx</b> is similar to <a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
   except that it can also optionally send a buffer of data during or after connection synchronization.
 
+## Syntax
 
+```
+PFN_WSK_CONNECT_EX PfnWskConnectEx;
 
-## -prototype
-
-````
-PFN_WSK_CONNECT_EX WskConnectEx;
-
-NTSTATUS WINAPI WskConnectEx(
-  _In_       PWSK_SOCKET Socket,
-  _In_       PSOCKADDR   RemoteAddress,
-  _In_opt_   PWSK_BUF    Buffer,
-  _Reserved_ ULONG       Flags,
-  _Inout_    PIRP        Irp
+NTSTATUS PfnWskConnectEx(
+  PWSK_SOCKET Socket,
+  PSOCKADDR RemoteAddress,
+  PWSK_BUF Buffer,
+  ULONG Flags,
+  PIRP Irp
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Socket [in]
+`Socket`
 
 A pointer to a 
      <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being connected to a remote transport address.
 
-
-### -param RemoteAddress [in]
+`RemoteAddress`
 
 A pointer to a structure that specifies the remote transport address to which to connect the
      socket. This pointer must be a pointer to the specific <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structure type that corresponds to the
      address family that the WSK application specified when it created the socket.
 
-
-### -param Buffer [in, optional]
+`Buffer`
 
 A pointer to a <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a> structure, which contains the data to send during or after connection synchronization. The maximum allowed size in bytes is 65,535.
 
-
-### -param Flags 
+`Flags`
 
 This parameter is reserved for system use. A WSK application must set this parameter to
-     zero. 
+     zero.
 
-
-### -param Irp [in, out]
+`Irp`
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the connect operation
      asynchronously. For more information about using IRPs with WSK functions, see 
-     <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
      Kernel Functions</a>.
 
 
-## -returns
+## Return Value
+
 <b>WskConnectEx</b> returns one of the following NTSTATUS codes:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -127,10 +118,8 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred. The IRP will be completed with failure status.
 
- 
+## Remarks
 
-
-## -remarks
 A WSK application can create, bind, and connect a connection-oriented socket in a single function call
     by calling the 
     <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a> function rather than
@@ -152,8 +141,20 @@ If the <i>Buffer</i> parameter is used, the caller can free the MDL in its <a hr
 
 Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK application sets the <b>TCP_FASTOPEN</b> option on a WSK socket via the <a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a> function the system will optionally send some or all of the data in a SYN packet. For more information, see the <b>TCP Fastopen</b> option in <a href="https://msdn.microsoft.com/2a10498d-0a0b-4a2d-941e-9aa45a1a4428">IPPROTO_TCP Socket Options</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wsk.h (include Wsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>
@@ -196,4 +197,3 @@ Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK appli
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT_EX callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

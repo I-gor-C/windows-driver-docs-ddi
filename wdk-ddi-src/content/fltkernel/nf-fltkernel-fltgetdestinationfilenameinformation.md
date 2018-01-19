@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltGetDestinationFileNameInformation
-title: FltGetDestinationFileNameInformation function
-author: windows-driver-content
-description: The FltGetDestinationFileNameInformation routine constructs a full destination path name for a file or directory that is being renamed or for which an NTFS hard link is being created.
-old-location: ifsk\fltgetdestinationfilenameinformation.htm
-old-project: ifsk
-ms.assetid: b5438802-fc96-4445-9261-5d497d2d24cc
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltGetDestinationFileNameInformation
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltGetDestinationFileNameInformation
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltGetDestinationFileNameInformation
+title : FltGetDestinationFileNameInformation function
+author : windows-driver-content
+description : The FltGetDestinationFileNameInformation routine constructs a full destination path name for a file or directory that is being renamed or for which an NTFS hard link is being created.
+old-location : ifsk\fltgetdestinationfilenameinformation.htm
+old-project : ifsk
+ms.assetid : b5438802-fc96-4445-9261-5d497d2d24cc
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltGetDestinationFileNameInformation
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltGetDestinationFileNameInformation
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltGetDestinationFileNameInformation function
+The <b>FltGetDestinationFileNameInformation</b> routine constructs a full destination path name for a file or directory that is being renamed or for which an NTFS hard link is being created.
 
-
-
-## -description
-The <b>FltGetDestinationFileNameInformation</b> routine constructs a full destination path name for a file or directory that is being renamed or for which an NTFS hard link is being created. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltGetDestinationFileNameInformation(
@@ -57,40 +52,33 @@ NTSTATUS FltGetDestinationFileNameInformation(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Instance`
 
-### -param Instance [in]
+Opaque instance pointer for a minifilter driver instance that is attached to the volume where the file resides.
 
-Opaque instance pointer for a minifilter driver instance that is attached to the volume where the file resides. 
+`FileObject`
 
+Pointer to the file object for the file. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject [in]
-
-Pointer to the file object for the file. This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param RootDirectory [in, optional]
+`RootDirectory`
 
 <b>Link operations:</b> If the link is to be created in the same directory as the file that is being linked to, or if the <i>FileName</i> parameter contains the full pathname for the link to be created, this parameter is <b>NULL</b>. Otherwise it is a handle for the directory where the link is to be created. 
 
-<b>Rename operations:</b> If the file is not being moved to a different directory, or if the <i>FileName</i> parameter contains the full pathname, this parameter is <b>NULL</b>. Otherwise it is a handle for the directory where the file resides after it is renamed. 
+<b>Rename operations:</b> If the file is not being moved to a different directory, or if the <i>FileName</i> parameter contains the full pathname, this parameter is <b>NULL</b>. Otherwise it is a handle for the directory where the file resides after it is renamed.
 
-
-### -param FileName [in]
+`FileName`
 
 <b>Link operations:</b> Pointer to a wide-character string containing the name to be assigned to the newly created link. 
 
-<b>Rename operations:</b> Pointer to a wide-character string containing the new name for the file. 
+<b>Rename operations:</b> Pointer to a wide-character string containing the new name for the file.
 
+`FileNameLength`
 
-### -param FileNameLength [in]
+Length, in bytes, of the wide-character string that <i>FileName </i>points to.
 
-Length, in bytes, of the wide-character string that <i>FileName </i>points to. 
-
-
-### -param NameOptions [in]
-
+`NameOptions`
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a> value containing flags that specify the format of the name information to be returned, as well as the query method that the Filter Manager is to use. This parameter is required and cannot be <b>NULL</b>. 
 
@@ -174,15 +162,14 @@ FLT_FILE_NAME_QUERY_ALWAYS_ALLOW_CACHE_LOOKUP
 </td>
 </tr>
 </table>
- 
+
+`RetFileNameInformation`
+
+Pointer to a caller-allocated variable that receives the address of a system-allocated <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetDestinationFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>.
 
 
-### -param RetFileNameInformation [out]
+## Return Value
 
-Pointer to a caller-allocated variable that receives the address of a system-allocated <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetDestinationFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>. 
-
-
-## -returns
 <b>FltGetDestinationFileNameInformation</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_INVALID_NAME_REQUEST</b></dt>
@@ -199,12 +186,10 @@ FLT_FILE_NAME_SHORT was specified for the name format flag in the <i>NameOptions
 </dl>An invalid value was specified for the <i>NameOptions</i> parameter. This is an error code. 
 <dl>
 <dt><b>STATUS_MOUNT_POINT_NOT_RESOLVED</b></dt>
-</dl>The destination path name contains a mount point that resolves to a volume other than the one where the file resides. (Because a rename or hard-link-creation operation can only be performed within a volume and not across volumes, the operation fails.) This is an error code. 
+</dl>The destination path name contains a mount point that resolves to a volume other than the one where the file resides. (Because a rename or hard-link-creation operation can only be performed within a volume and not across volumes, the operation fails.) This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 <b>FltGetDestinationFileNameInformation</b> returns the file name information in either normalized or "opened file" format. For more information on these formats, see the <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a> structure. 
 
 The file object pointer that is passed for the <i>FileObject</i> parameter must be either the <b>FileObject</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a> structure for the operation or the <b>Data-&gt;Iopb-&gt;TargetFileObject</b> pointer for the operation, where <b>Data</b> is the callback data structure for the operation (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>). The file object pointer cannot be the <b>Data-&gt;Iopb-&gt;Parameters.SetFileInformation.FileObject</b> member, because this field is not used uniformly across file systems. 
@@ -231,10 +216,22 @@ rename(<i>name</i>, <i>newname</i>)/create(<i>name</i>)
 
 rename(<i>name</i>, <i>newname</i>)/rename(<i>source</i>, <i>name</i>)
 
-For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>. 
+For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_link_information.md">FILE_LINK_INFORMATION</a>
@@ -287,4 +284,3 @@ For more information about file name tunneling, see <a href="http://go.microsoft
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetDestinationFileNameInformation routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

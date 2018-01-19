@@ -1,49 +1,44 @@
 ---
-UID: NF:portcls.IPortWavePciStream.GetMapping
-title: IPortWavePciStream::GetMapping method
-author: windows-driver-content
-description: The GetMapping method obtains a mapping from the port driver and associates a tag with the mapping.
-old-location: audio\iportwavepcistream_getmapping.htm
-old-project: audio
-ms.assetid: f0d4f266-6a43-4523-bf1d-3dda1fc9a5b8
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: IPortWavePciStream, IPortWavePciStream::GetMapping, GetMapping
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: portcls.h
-req.include-header: Portcls.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IPortWavePciStream.GetMapping
-req.alt-loc: portcls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
+UID : NF:portcls.IPortWavePciStream.GetMapping
+title : IPortWavePciStream::GetMapping method
+author : windows-driver-content
+description : The GetMapping method obtains a mapping from the port driver and associates a tag with the mapping.
+old-location : audio\iportwavepcistream_getmapping.htm
+old-project : audio
+ms.assetid : f0d4f266-6a43-4523-bf1d-3dda1fc9a5b8
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : IPortWavePciStream, IPortWavePciStream::GetMapping, GetMapping
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : portcls.h
+req.include-header : Portcls.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IPortWavePciStream.GetMapping
+req.alt-loc : portcls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
-# IPortWavePciStream::GetMapping method
 
-
-
-## -description
+# GetMapping method
 The <code>GetMapping</code> method obtains a mapping from the port driver and associates a tag with the mapping.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS GetMapping(
@@ -55,44 +50,38 @@ NTSTATUS GetMapping(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Tag [in]
+`Tag`
 
 Specifies a tag value to associate with the mapping. The port driver can use this tag in a subsequent <a href="https://msdn.microsoft.com/library/windows/hardware/ff536730">IMiniportWavePciStream::RevokeMappings</a> call to identify the mapping in the list of mappings to be revoked. The miniport driver uses the tag to identify the mapping in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a> call that releases the mapping.
 
-
-### -param PhysicalAddress [out]
+`PhysicalAddress`
 
 Output pointer for the physical address. This parameter points to a caller-allocated pointer variable into which the method writes the physical address of the mapping. Specify a valid, non-NULL pointer value for this parameter.
 
-
-### -param VirtualAddress [out]
+`VirtualAddress`
 
 Output pointer for the virtual address. This parameter points to a caller-allocated pointer variable into which the method writes the virtual address of the mapping. Specify a valid, non-NULL pointer value for this parameter.
 
-
-### -param ByteCount [out]
+`ByteCount`
 
 Output pointer for the byte count. This parameter points to a caller-allocated ULONG variable into which the method writes the number of bytes in the mapping. Specify a valid, non-NULL pointer value for this parameter.
 
-
-### -param Flags [out]
+`Flags`
 
 Output pointer for the status flag. This parameter points to a caller-allocated ULONG variable into which the method writes a status flag. Specify a valid, non-NULL pointer value for this parameter. A nonzero flag value indicates that the mapping acquired in this call is the last mapping in an I/O packet. This flag can be used to signal that the hardware should interrupt the miniport driver when it is done with this mapping. In response to the interrupt, the miniport driver can obtain new mappings to deliver to the hardware. The miniport driver is not obligated to use the flag in this way.
 
 
-## -returns
+## Return Value
+
 <code>GetMapping</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code. The following table shows some of the possible return status codes.
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
 </dl>A mapping is not immediately available, but the port driver will call <a href="https://msdn.microsoft.com/library/windows/hardware/ff536728">IMiniportWavePciStream::MappingAvailable</a> when a mapping does become available.
 
- 
+## Remarks
 
-
-## -remarks
 Mappings obtained through the <code>GetMapping</code> method should be released by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a> unless they are revoked by the port driver. The port driver can revoke mappings by calling the stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536730">IMiniportWavePciStream::RevokeMappings</a> method.
 
 The buffer storage for a stream that is played back through a miniport driver's rendering pin is attached to one or more IRPs. Each IRP contains a portion of the buffer storage for the stream. Each IRP's buffer storage is contiguous in virtual memory, but the memory pages that comprise the buffer do not in general map to contiguous locations in physical memory. Although a driver can use programmed I/O to access the buffer through its mapping into virtual memory, a DMA controller requires physical mappings instead.
@@ -127,8 +116,20 @@ In Windows 98/Me, Windows 2000, Windows XP, and Windows Server 2003, the <code>G
 
 For more information about mappings, see <a href="https://msdn.microsoft.com/6d83c015-cf8f-40b4-bf28-de865a5bfe2d">WavePci Latency</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | portcls.h (include Portcls.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>
@@ -157,4 +158,3 @@ For more information about mappings, see <a href="https://msdn.microsoft.com/6d8
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPortWavePciStream::GetMapping method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

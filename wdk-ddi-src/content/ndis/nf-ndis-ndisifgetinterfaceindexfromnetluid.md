@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisIfGetInterfaceIndexFromNetLuid
-title: NdisIfGetInterfaceIndexFromNetLuid function
-author: windows-driver-content
-description: The NdisIfGetInterfaceIndexFromNetLuid function gets the network interface index that is associated with a NET_LUID value.
-old-location: netvista\ndisifgetinterfaceindexfromnetluid.htm
-old-project: netvista
-ms.assetid: 6aaa4ae9-fd3c-4cdd-ac37-0533c45143af
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisIfGetInterfaceIndexFromNetLuid
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisIfGetInterfaceIndexFromNetLuid
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Interfaces_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisIfGetInterfaceIndexFromNetLuid
+title : NdisIfGetInterfaceIndexFromNetLuid function
+author : windows-driver-content
+description : The NdisIfGetInterfaceIndexFromNetLuid function gets the network interface index that is associated with a NET_LUID value.
+old-location : netvista\ndisifgetinterfaceindexfromnetluid.htm
+old-project : netvista
+ms.assetid : 6aaa4ae9-fd3c-4cdd-ac37-0533c45143af
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisIfGetInterfaceIndexFromNetLuid
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisIfGetInterfaceIndexFromNetLuid
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Interfaces_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisIfGetInterfaceIndexFromNetLuid function
-
-
-
-## -description
 The 
   <b>NdisIfGetInterfaceIndexFromNetLuid</b> function gets the network interface index that is associated with
   a 
   <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisIfGetInterfaceIndexFromNetLuid(
@@ -55,24 +50,23 @@ NDIS_STATUS NdisIfGetInterfaceIndexFromNetLuid(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NetLuid [in]
+`NetLuid`
 
 A 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that identifies a network
      interface.
 
-
-### -param pIfIndex [out]
+`pIfIndex`
 
 A pointer to a caller-supplied interface index variable. If 
      <b>NdisIfGetInterfaceIndexFromNetLuid</b> succeeds, NDIS writes the network interface index that is
      associated with the specified NET_LUID to this variable.
 
 
-## -returns
+## Return Value
+
 <b>NdisIfGetInterfaceIndexFromNetLuid</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -82,10 +76,8 @@ A pointer to a caller-supplied interface index variable. If
 </dl><b>NdisIfGetInterfaceIndexFromNetLuid</b> failed because the specified NET_LUID was not present in the
        list of registered interfaces.
 
- 
+## Remarks
 
-
-## -remarks
 NDIS drivers can call the 
     <b>NdisIfGetInterfaceIndexFromNetLuid</b> function to get the network interface index that is associated
     with a 
@@ -121,8 +113,20 @@ NDIS provides the
     NdisIfGetNetLuidFromInterfaceIndex</a> function to get the NET_LUID value that is associated with a
     specified interface index.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Interfaces_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
@@ -152,4 +156,3 @@ NDIS provides the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfGetInterfaceIndexFromNetLuid function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

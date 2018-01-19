@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltCbdqInsertIo
-title: FltCbdqInsertIo function
-author: windows-driver-content
-description: FltCbdqInsertIo inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue.
-old-location: ifsk\fltcbdqinsertio.htm
-old-project: ifsk
-ms.assetid: d20d2626-89fb-4bc5-9309-88977b921078
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltCbdqInsertIo
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltCbdqInsertIo
-req.alt-loc: fltkernel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltCbdqInsertIo
+title : FltCbdqInsertIo function
+author : windows-driver-content
+description : FltCbdqInsertIo inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue.
+old-location : ifsk\fltcbdqinsertio.htm
+old-project : ifsk
+ms.assetid : d20d2626-89fb-4bc5-9309-88977b921078
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltCbdqInsertIo
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltCbdqInsertIo
+req.alt-loc : fltkernel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltCbdqInsertIo function
+<i>FltCbdqInsertIo</i> inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue.
 
-
-
-## -description
-<i>FltCbdqInsertIo</i> inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltCbdqInsertIo(
@@ -54,42 +49,37 @@ NTSTATUS FltCbdqInsertIo(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Cbdq`
 
-### -param Cbdq [in, out]
+Pointer to the caller's cancel-safe callback data queue. This queue must have been initialized by calling <a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a>.
 
-Pointer to the caller's cancel-safe callback data queue. This queue must have been initialized by calling <a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a>. 
+`Cbd`
 
+Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation to be queued. The operation must be an IRP-based I/O operation.
 
-### -param Cbd [in]
+`Context`
 
-Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation to be queued. The operation must be an IRP-based I/O operation. 
+Caller-supplied variable that receives an opaque context pointer for the I/O request. Minifilter drivers can use this pointer to identify a specific item in the queue so that it can be removed by calling <a href="..\fltkernel\nf-fltkernel-fltcbdqremoveio.md">FltCbdqRemoveIo</a>. If the minifilter driver is not required to remove particular I/O requests from the queue, this parameter can be <b>NULL</b>.
 
+`InsertContext`
 
-### -param Context [in, optional]
-
-Caller-supplied variable that receives an opaque context pointer for the I/O request. Minifilter drivers can use this pointer to identify a specific item in the queue so that it can be removed by calling <a href="..\fltkernel\nf-fltkernel-fltcbdqremoveio.md">FltCbdqRemoveIo</a>. If the minifilter driver is not required to remove particular I/O requests from the queue, this parameter can be <b>NULL</b>. 
-
-
-### -param InsertContext [in, optional]
-
-Context pointer to be passed to the minifilter driver's <i>CbdqInsertIo</i> callback routine. 
+Context pointer to be passed to the minifilter driver's <i>CbdqInsertIo</i> callback routine.
 
 
-## -returns
+## Return Value
+
 <i>FltCbdqInsertIo</i> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
 </dl>The callback data structure was inserted into the callback data queue. 
 <dl>
 <dt><b>STATUS_FLT_CBDQ_DISABLED</b></dt>
-</dl>The callback data structure was not inserted into the callback data queue because the queue is currently disabled. To reenable the queue, call <a href="..\fltkernel\nf-fltkernel-fltcbdqenable.md">FltCbdqEnable</a>. This is an error code. 
+</dl>The callback data structure was not inserted into the callback data queue because the queue is currently disabled. To reenable the queue, call <a href="..\fltkernel\nf-fltkernel-fltcbdqenable.md">FltCbdqEnable</a>. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 <i>FltCbdqInsertIo</i> inserts the specified callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure into a minifilter driver's callback data queue. 
 
 Minifilter drivers can use the <b>FltCbdq</b><i>Xxx</i> routines to implement a callback data queue for IRP-based I/O operations. By using these routines, minifilter drivers can make their queues cancel-safe; the system transparently handles I/O cancellation for the minifilter drivers. 
@@ -100,10 +90,22 @@ A callback data queue is initialized by calling <a href="..\fltkernel\nf-fltkern
 
 See <a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a> for details on how to create a callback data queue. Use <a href="..\fltkernel\nf-fltkernel-fltcbdqremoveio.md">FltCbdqRemoveIo</a> to remove a particular I/O request from the queue, or <a href="..\fltkernel\nf-fltkernel-fltcbdqremovenextio.md">FltCbdqRemoveNextIo</a> to remove the next available I/O request.
 
-If the queue is protected by a <a href="https://msdn.microsoft.com/0585fc2a-0d0b-434d-92b3-da07a9385444">spin lock</a> rather than a <a href="https://msdn.microsoft.com/e2142b6d-f460-4f80-be0f-e00b5d43731c">mutex object</a> or <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">resource variable</a>, the caller of <i>FltCbdqInsertIo</i> can be running at IRQL &lt;= DISPATCH_LEVEL. If a mutex or resource is used, the caller must be running at IRQL &lt;= APC_LEVEL. 
+If the queue is protected by a <a href="https://msdn.microsoft.com/0585fc2a-0d0b-434d-92b3-da07a9385444">spin lock</a> rather than a <a href="https://msdn.microsoft.com/e2142b6d-f460-4f80-be0f-e00b5d43731c">mutex object</a> or <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">resource variable</a>, the caller of <i>FltCbdqInsertIo</i> can be running at IRQL &lt;= DISPATCH_LEVEL. If a mutex or resource is used, the caller must be running at IRQL &lt;= APC_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
@@ -135,4 +137,3 @@ If the queue is protected by a <a href="https://msdn.microsoft.com/0585fc2a-0d0b
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCbdqInsertIo function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

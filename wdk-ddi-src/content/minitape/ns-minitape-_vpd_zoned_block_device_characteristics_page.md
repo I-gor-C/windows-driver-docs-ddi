@@ -1,53 +1,44 @@
 ---
-UID: NS:minitape._VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-title: _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-author: windows-driver-content
-description: Note  This structure is for internal use only and should not be called from your code. .
-old-location: storage\vpd_zoned_block_device_characteristics_page.htm
-old-project: storage
-ms.assetid: 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: minitape.h
-req.include-header: Minitape.h, Storport.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-req.alt-loc: scsi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+UID : NS:minitape._VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+title : _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+author : windows-driver-content
+description : Note  This structure is for internal use only and should not be called from your code. .
+old-location : storage\vpd_zoned_block_device_characteristics_page.htm
+old-project : storage
+ms.assetid : 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : minitape.h
+req.include-header : Minitape.h, Storport.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+req.alt-loc : scsi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
 ---
 
 # _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure
-
-
-
-## -description
-
 <div class="alert"><b>Note</b>  This  structure is for internal use only and should not be called from your code.</div>
 <div> </div>
 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE {
   UCHAR  DeviceType  :5;
@@ -64,62 +55,58 @@ typedef struct _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE {
 } VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DeviceType`
 
-### -field DeviceType
+            N/A
+        
+            `DeviceTypeQualifier`
 
-N/A
+            N/A
+        
+            `MaxNumberOfOpenSequentialWriteRequiredZone`
 
+            N/A
+        
+            `OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone`
 
-### -field DeviceTypeQualifier
+            N/A
+        
+            `OptimalNumberOfOpenSequentialWritePreferredZone`
 
-N/A
+            N/A
+        
+            `PageCode`
 
+            N/A
+        
+            `PageLength`
 
-### -field PageCode
+            N/A
+        
+            `Reserved1`
 
-N/A
+            N/A
+        
+            `Reserved2`
 
+            N/A
+        
+            `Reserved3`
 
-### -field PageLength
+            N/A
+        
+            `URSWRZ`
 
-N/A
-
-
-### -field URSWRZ
-
-N/A
-
-
-### -field Reserved1
-
-N/A
-
-
-### -field Reserved2
-
-N/A
-
-
-### -field OptimalNumberOfOpenSequentialWritePreferredZone
-
-N/A
-
-
-### -field OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone
-
-N/A
-
-
-### -field MaxNumberOfOpenSequentialWriteRequiredZone
-
-N/A
+            N/A
 
 
-### -field Reserved3
-
-N/A
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | minitape.h (include Minitape.h, Storport.h) |

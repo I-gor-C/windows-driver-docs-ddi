@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d10umddi.D3D10_2DDICAPS_TYPE
-title: D3D10_2DDICAPS_TYPE
-author: windows-driver-content
-description: The D3D10_2DDICAPS_TYPE enumeration type contains values that identify the type of capability information that is retrieved from a call to the driver's GetCaps(D3D10_2) function.
-old-location: display\d3d10_2ddicaps_type.htm
-old-project: display
-ms.assetid: 2ca906d4-6d09-4624-a985-a47794acc959
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D10_2DDICAPS_TYPE, D3D10_2DDICAPS_TYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: D3D10_2DDICAPS_TYPE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D10_2DDICAPS_TYPE
-req.alt-loc: d3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D10_2DDICAPS_TYPE
+UID : NE:d3d10umddi.D3D10_2DDICAPS_TYPE
+title : D3D10_2DDICAPS_TYPE
+author : windows-driver-content
+description : The D3D10_2DDICAPS_TYPE enumeration type contains values that identify the type of capability information that is retrieved from a call to the driver's GetCaps(D3D10_2) function.
+old-location : display\d3d10_2ddicaps_type.htm
+old-project : display
+ms.assetid : 2ca906d4-6d09-4624-a985-a47794acc959
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D10_2DDICAPS_TYPE, D3D10_2DDICAPS_TYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : D3D10_2DDICAPS_TYPE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D10_2DDICAPS_TYPE
+req.alt-loc : d3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D10_2DDICAPS_TYPE
 ---
 
-# D3D10_2DDICAPS_TYPE enumeration
+# D3D10_2DDICAPS_TYPE Enumeration
+The D3D10_2DDICAPS_TYPE enumeration type contains values that identify the type of capability information that is retrieved from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a> function.
 
-
-
-## -description
-The D3D10_2DDICAPS_TYPE enumeration type contains values that identify the type of capability information that is retrieved from a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a> function. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 enum D3D10_2DDICAPS_TYPE {
   D3D11DDICAPS_THREADING                       = 128, 
@@ -63,62 +56,73 @@ enum D3D10_2DDICAPS_TYPE {
 };
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D11DDICAPS_THREADING
+<tr>
+<td>D3D11_1DDICAPS_ARCHITECTURE_INFO</td>
+<td>The driver retrieves a pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps_architecture_info.md">D3DDDICAPS_ARCHITECTURE_INFO</a> structure that describes information about Direct3D 11.1 adapter architecture.
 
-The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a> structure that describes the threading capabilities that the driver supports. 
+Supported starting with Windows 8.</td>
+</tr>
 
+<tr>
+<td>D3D11_1DDICAPS_D3D11_OPTIONS</td>
+<td>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_d3d11_options_data.md">D3D11_1DDI_D3D11_OPTIONS_DATA</a>  structure that specifies options to provide data to the user-mode driver.
 
-### -field D3D11DDICAPS_SHADER
+Supported starting with Windows 8.</td>
+</tr>
 
-The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_shader_caps.md">D3D11DDI_SHADER_CAPS</a> structure that describes the shader capabilities that the driver supports. 
+<tr>
+<td>D3D11_1DDICAPS_SHADER_MIN_PRECISION_SUPPORT</td>
+<td>The driver retrieves a pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps_shader_min_precision_support.md">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a> structure that describes the precision support options for shaders in the user-mode display driver.
 
+Supported starting with Windows 8.</td>
+</tr>
 
-### -field D3D11DDICAPS_3DPIPELINESUPPORT
+<tr>
+<td>D3D11DDICAPS_3DPIPELINESUPPORT</td>
+<td>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_3dpipelinesupport_caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a> structure that describes the pipeline capabilities that the driver supports.</td>
+</tr>
 
-The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_3dpipelinesupport_caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a> structure that describes the pipeline capabilities that the driver supports. 
+<tr>
+<td>D3D11DDICAPS_SHADER</td>
+<td>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_shader_caps.md">D3D11DDI_SHADER_CAPS</a> structure that describes the shader capabilities that the driver supports.</td>
+</tr>
 
+<tr>
+<td>D3D11DDICAPS_THREADING</td>
+<td>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a> structure that describes the threading capabilities that the driver supports.</td>
+</tr>
 
-### -field D3D11_1DDICAPS_D3D11_OPTIONS
+<tr>
+<td>D3DWDDM1_3DDICAPS_D3D11_OPTIONS1</td>
+<td>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_d3d11_options_data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a> structure that describes the tiled resource support options in the user-mode display driver.
 
-The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_d3d11_options_data.md">D3D11_1DDI_D3D11_OPTIONS_DATA</a>  structure that specifies options to provide data to the user-mode driver.
+Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.</td>
+</tr>
 
-Supported starting with Windows 8.
+<tr>
+<td>D3DWDDM1_3DDICAPS_MARKER</td>
+<td>Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.</td>
+</tr>
+</table>
 
+## Remarks
 
-### -field D3D11_1DDICAPS_ARCHITECTURE_INFO
+To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a> enumeration.
 
-The driver retrieves a pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps_architecture_info.md">D3DDDICAPS_ARCHITECTURE_INFO</a> structure that describes information about Direct3D 11.1 adapter architecture.
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-Supported starting with Windows 8.
+## See Also
 
-
-### -field D3D11_1DDICAPS_SHADER_MIN_PRECISION_SUPPORT
-
-The driver retrieves a pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps_shader_min_precision_support.md">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a> structure that describes the precision support options for shaders in the user-mode display driver.
-
-Supported starting with Windows 8.
-
-
-### -field D3DWDDM1_3DDICAPS_D3D11_OPTIONS1
-
-The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_d3d11_options_data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a> structure that describes the tiled resource support options in the user-mode display driver.
-
-Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.
-
-
-### -field D3DWDDM1_3DDICAPS_MARKER
-
-Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.
-
-
-## -remarks
-To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a> enumeration. 
-
-
-## -see-also
 <dl>
 <dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_d3d11_options_data.md">D3D11_1DDI_D3D11_OPTIONS_DATA</a>
@@ -147,4 +151,3 @@ To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_2DDICAPS_TYPE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dumddi._D3DDDIARG_CREATEQUERY
-title: _D3DDDIARG_CREATEQUERY
-author: windows-driver-content
-description: The D3DDDIARG_CREATEQUERY structure identifies a query to create.
-old-location: display\d3dddiarg_createquery.htm
-old-project: display
-ms.assetid: f80224c6-9046-4471-b6c6-eb14f02fc51f
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _D3DDDIARG_CREATEQUERY, D3DDDIARG_CREATEQUERY
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3DDDIARG_CREATEQUERY
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3DDDIARG_CREATEQUERY
+UID : NS:d3dumddi._D3DDDIARG_CREATEQUERY
+title : _D3DDDIARG_CREATEQUERY
+author : windows-driver-content
+description : The D3DDDIARG_CREATEQUERY structure identifies a query to create.
+old-location : display\d3dddiarg_createquery.htm
+old-project : display
+ms.assetid : f80224c6-9046-4471-b6c6-eb14f02fc51f
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _D3DDDIARG_CREATEQUERY, D3DDDIARG_CREATEQUERY
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3DDDIARG_CREATEQUERY
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3DDDIARG_CREATEQUERY
 ---
 
 # _D3DDDIARG_CREATEQUERY structure
+The D3DDDIARG_CREATEQUERY structure identifies a query to create.
 
-
-
-## -description
-The D3DDDIARG_CREATEQUERY structure identifies a query to create. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3DDDIARG_CREATEQUERY {
   D3DDDIQUERYTYPE QueryType;
@@ -52,12 +45,16 @@ typedef struct _D3DDDIARG_CREATEQUERY {
 } D3DDDIARG_CREATEQUERY;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `hQuery`
 
-### -field QueryType
+            [out] A handle to the query. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a> function returns this handle to the Microsoft Direct3D runtime.
+        
+            `QueryType`
 
-[in] A D3DDDIQUERYTYPE-typed value that indicates the query type to create resources for. This member can be one of the following values.
+            [in] A D3DDDIQUERYTYPE-typed value that indicates the query type to create resources for. This member can be one of the following values.
 
 <table>
 <tr>
@@ -203,16 +200,9 @@ Query for device-dependent counters.
 </td>
 </tr>
 </table>
- 
 
-
-### -field hQuery
-
-[out] A handle to the query. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a> function returns this handle to the Microsoft Direct3D runtime. 
-
-
-## -remarks
-The Direct3D runtime uses the handle that is specified by the <b>hQuery</b> member when the runtime calls:
+    ## Remarks
+        The Direct3D runtime uses the handle that is specified by the <b>hQuery</b> member when the runtime calls:
 
 The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a> function to process a query.
 
@@ -220,9 +210,17 @@ The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getquerydata.md">GetQueryData</a>
 
 The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyquery.md">DestroyQuery</a> function to destroy the handle.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a>
 </dt>
@@ -241,4 +239,3 @@ The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyquery.md">DestroyQuery</a>
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEQUERY structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

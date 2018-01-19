@@ -1,51 +1,44 @@
 ---
-UID: NS:wwan._WWAN_SIGNAL_STATE
-title: _WWAN_SIGNAL_STATE
-author: windows-driver-content
-description: The WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
-old-location: netvista\wwan_signal_state.htm
-old-project: netvista
-ms.assetid: ba5632bb-c1d7-47b1-b6b4-88c67710149f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wwan.h
-req.include-header: Wwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WWAN_SIGNAL_STATE
-req.alt-loc: wwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PWWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE
-req.product: Windows 10 or later.
+UID : NS:wwan._WWAN_SIGNAL_STATE
+title : _WWAN_SIGNAL_STATE
+author : windows-driver-content
+description : The WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
+old-location : netvista\wwan_signal_state.htm
+old-project : netvista
+ms.assetid : ba5632bb-c1d7-47b1-b6b4-88c67710149f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wwan.h
+req.include-header : Wwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WWAN_SIGNAL_STATE
+req.alt-loc : wwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : WWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE
+req.product : Windows 10 or later.
 ---
 
 # _WWAN_SIGNAL_STATE structure
-
-
-
-## -description
 The WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WWAN_SIGNAL_STATE {
   ULONG Rssi;
@@ -55,92 +48,12 @@ typedef struct _WWAN_SIGNAL_STATE {
 } WWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `ErrorRate`
 
-### -field Rssi
-
-A value that represents the strength of the wireless signal. Miniport drivers that report their
-     WWAN_CELLULAR_CLASS to be 
-     <b>WwanCellularClassGSM</b> or 
-     <b>WwanCellularClassCDMA</b> must report Rssi in decibels above the device's sensitivity noise floor.
-     
-
-<table>
-<tr>
-<th>Signal Strength (in dBm)</th>
-<th>Coded Value (Minimum=0, Maximum=31)</th>
-</tr>
-<tr>
-<td>
--113 or less
-
-</td>
-<td>
-0
-
-</td>
-</tr>
-<tr>
-<td>
--111
-
-</td>
-<td>
-1
-
-</td>
-</tr>
-<tr>
-<td>
--109
-
-</td>
-<td>
-2
-
-</td>
-</tr>
-<tr>
-<td>
-...
-
-</td>
-<td>
-...
-
-</td>
-</tr>
-<tr>
-<td>
--51 or greater
-
-</td>
-<td>
-31
-
-</td>
-</tr>
-<tr>
-<td>
-Unknown or undetectable
-
-</td>
-<td>
-WWAN_RSSI_UNKNOWN
-
-</td>
-</tr>
-</table>
- 
-
-CDMA-based devices must report signal strength based on compensated RSSI (accounts for noise) and not
-     based on raw RSSI.
-
-
-### -field ErrorRate
-
-A coded value that represents a percentage range of error rates. For GSM-based devices, use the
+            A coded value that represents a percentage range of error rates. For GSM-based devices, use the
      values from the Channel bit error rate column in the following table. For CDMA-based devices, use the
      values from the Frame error rate column. For both cases, use WWAN_ERROR_RATE_UNKNOWN to denote an
      unknown error rate.
@@ -275,32 +188,114 @@ WWAN_ERROR_RATE_UNKNOWN
 </td>
 </tr>
 </table>
+        
+            `Rssi`
+
+            A value that represents the strength of the wireless signal. Miniport drivers that report their
+     WWAN_CELLULAR_CLASS to be 
+     <b>WwanCellularClassGSM</b> or 
+     <b>WwanCellularClassCDMA</b> must report Rssi in decibels above the device's sensitivity noise floor.
+     
+
+<table>
+<tr>
+<th>Signal Strength (in dBm)</th>
+<th>Coded Value (Minimum=0, Maximum=31)</th>
+</tr>
+<tr>
+<td>
+-113 or less
+
+</td>
+<td>
+0
+
+</td>
+</tr>
+<tr>
+<td>
+-111
+
+</td>
+<td>
+1
+
+</td>
+</tr>
+<tr>
+<td>
+-109
+
+</td>
+<td>
+2
+
+</td>
+</tr>
+<tr>
+<td>
+...
+
+</td>
+<td>
+...
+
+</td>
+</tr>
+<tr>
+<td>
+-51 or greater
+
+</td>
+<td>
+31
+
+</td>
+</tr>
+<tr>
+<td>
+Unknown or undetectable
+
+</td>
+<td>
+WWAN_RSSI_UNKNOWN
+
+</td>
+</tr>
+</table>
  
 
+CDMA-based devices must report signal strength based on compensated RSSI (accounts for noise) and not
+     based on raw RSSI.
+        
+            `RssiInterval`
 
-### -field RssiInterval
-
-The current interval, in seconds, at which the miniport driver has been set to (or the default
+            The current interval, in seconds, at which the miniport driver has been set to (or the default
      interval, if one has not been set), that the miniport driver will provide updates about the signal
      state. Specify WWAN_RSSI_DISABLE to indicate that the miniport driver does not implement interval-based
      reporting. Miniport drivers should populate this member with the interval in response to an earlier
      request from the MB Service for WWAN_RSSI_DEFAULT.
+        
+            `RssiThreshold`
 
-
-### -field RssiThreshold
-
-The current threshold, in threshold units, at which the miniport driver has been set to (or the
+            The current threshold, in threshold units, at which the miniport driver has been set to (or the
      default interval, if one has not been set), that the miniport driver will provide updates about the
      signal state. Specify WWAN_RSSI_DISABLE to indicate that the miniport driver does not implement
      threshold-based reporting. Miniport drivers should populate this member with the threshold units in
      response to an earlier request from the MB Service for WWAN_RSSI_DEFAULT.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wwan.h (include Wwan.h) |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_signal_state.md">NDIS_WWAN_SIGNAL_STATE</a>
 </dt>
@@ -310,4 +305,3 @@ The current threshold, in threshold units, at which the miniport driver has been
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SIGNAL_STATE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

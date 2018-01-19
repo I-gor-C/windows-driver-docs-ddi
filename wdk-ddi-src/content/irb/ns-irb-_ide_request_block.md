@@ -1,50 +1,43 @@
 ---
-UID: NS:irb._IDE_REQUEST_BLOCK
-title: _IDE_REQUEST_BLOCK
-author: windows-driver-content
-description: The IDE_REQUEST_BLOCK structure defines an IDE request block.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location: storage\ide_request_block.htm
-old-project: storage
-ms.assetid: 9e112984-0a7e-4bb9-a10f-b50ab67ce4f3
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: irb.h
-req.include-header: Irb.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDE_REQUEST_BLOCK
-req.alt-loc: irb.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
+UID : NS:irb._IDE_REQUEST_BLOCK
+title : _IDE_REQUEST_BLOCK
+author : windows-driver-content
+description : The IDE_REQUEST_BLOCK structure defines an IDE request block.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location : storage\ide_request_block.htm
+old-project : storage
+ms.assetid : 9e112984-0a7e-4bb9-a10f-b50ab67ce4f3
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : irb.h
+req.include-header : Irb.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDE_REQUEST_BLOCK
+req.alt-loc : irb.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
 ---
 
 # _IDE_REQUEST_BLOCK structure
-
-
-
-## -description
 The IDE_REQUEST_BLOCK structure defines an IDE request block.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _IDE_REQUEST_BLOCK {
   USHORT Function;
@@ -76,12 +69,36 @@ typedef struct _IDE_REQUEST_BLOCK {
 } IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AtaError`
 
-### -field Function
+            Indicates the error value returned by the device in its error register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
+        
+            `AtaStatus`
 
-Specifies the category that the request belongs to. The table below describes the classification of the I/O requests.
+            Indicates the status returned by the device in its status register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
+        
+            `CdbLength`
+
+            Specifies the length in bytes of the buffer pointed to by <b>Cdb</b>.
+        
+            `Channel`
+
+            Specifies the channel number.
+        
+            `DataBuffer`
+
+            Pointer to the buffer where the data resides.
+        
+            `DataTransferLength`
+
+            Contains the length in bytes of the data buffer that contains data to be transferred.
+        
+            `Function`
+
+            Specifies the category that the request belongs to. The table below describes the classification of the I/O requests.
 
 <table>
 <tr>
@@ -159,183 +176,14 @@ Indicates that the IRB is for the miniport. It is the responsibility of the mini
 </td>
 </tr>
 </table>
- 
+        
+            `IrbExtension`
 
+            Pointer to the per-request extension allocated by the port driver.
+        
+            `IrbFlags`
 
-### -field IrbStatus
-
-The miniport must set this member to indicates the status of the specified operation. The table below describes the various <b>IrbStatus</b> values and their meaning.
-
-<table>
-<tr>
-<td>
-<b>Value</b>
-
-</td>
-<td>
-<b>Meaning</b>
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_PENDING
-
-</td>
-<td>
-Indicates that the request is in progress. The port driver initializes <b>IrbStatus</b> to this value. A miniport driver should never set the <b>IrbStatus</b> member to this value.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_SUCCESS
-
-</td>
-<td>
-Indicates that the request was completed successfully.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_DATALENGTH_MISMATCH
-
-</td>
-<td>
-Indicates that a data underrun or overrun error occurred. The miniport must update the DataTransferLength field in the IRB to indicate the actual amount of data that was transferred in the case of an underrun.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_DEVICE_ERROR
-
-</td>
-<td>
-Indicates that the device returned an error. The miniport driver must update the <i>AtaStatus</i> and <i>AtaError</i> fields in the Irb to the contents of the device ATA status and error register at the completion of the command.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_INVALID_REQUEST
-
-</td>
-<td>
-Indicates that the miniport does not support the given request.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_BUS_RESET
-
-</td>
-<td>
-Indicates that a bus reset occurred while processing the given request.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_SELECTION_TIMEOUT
-
-</td>
-<td>
-Indicates that the destination device could not be selected.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_BUSY
-
-</td>
-<td>
-Indicates that the device is busy. The port driver retries any request completed with this status. A request completed with busy status is retried only once. It is the responsibility of the miniport driver to pause the request queue using <b>AtaPortDeviceBusy</b> if the device cannot handle request for a certain period of time.
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_AUTOSENSE_VALID
-
-</td>
-<td>
-IRB_STATUS_AUTOSENSE_VALID is a bitmask that indicates valid sense data in the <i>SenseInfoBuffer</i> member of the IRB. 
-
-</td>
-</tr>
-<tr>
-<td>
-IRB_STATUS_RETURN_TASKFILE_VALID
-
-</td>
-<td>
-IRB_STATUS_RETURN_TASKFILE_VALID is a bitmask that indicates a valid return task file in the <i>SenseInfoBuffer</i> member of the IRB.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -field AtaStatus
-
-Indicates the status returned by the device in its status register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
-
-
-### -field AtaError
-
-Indicates the error value returned by the device in its error register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
-
-
-### -field Channel
-
-Specifies the channel number.
-
-
-### -field TargetId
-
-Specifies the target ID of the device.
-
-
-### -field Lun
-
-Specifies the logical unit number of the device.
-
-
-### -field CdbLength
-
-Specifies the length in bytes of the buffer pointed to by <b>Cdb</b>.
-
-
-### -field SenseInfoBufferLength
-
-Specifies the length in bytes of the buffer pointed to by <b>SenseInfoBuffer</b>.
-
-
-### -field SenseInfoBufferType
-
-Specifies the type of data structure returned in <b>SenseInfoBuffer</b>. Because ATA commands don't have a need for the request sense command, ATA_PASS_THROUGH commands use <b>SenseInfoBuffer</b> to return task file information. For ATA_PASS_THROUGH commands, as identified in the <b>IrbFlags</b> member, the appropriate return <b>TaskFile</b> size should be reported as either SENSE_INFO_BUFFER_RETURN_TYPE_28BIT_TASKFILE or
-
-SENSE_INFO_BUFFER_RETURN_TYPE_48BIT_TASKFILE.
-
-
-### -field QueueTag
-
-The queue tag for this IRB. The port driver sets this field to 0.
-
-
-### -field ReservedAsUlong
-
-Reserved for future use.
-
-
-### -field IrbFlags
-
-Qualifies the request with ceratin actions that need to be performed. The table below describes them in detail.
+            Qualifies the request with ceratin actions that need to be performed. The table below describes them in detail.
 
 <table>
 <tr>
@@ -449,70 +297,180 @@ Indicates that this IRB is to be processed as soon as possible, before non-high-
 </td>
 </tr>
 </table>
- 
+        
+            `IrbStatus`
 
+            The miniport must set this member to indicates the status of the specified operation. The table below describes the various <b>IrbStatus</b> values and their meaning.
 
-### -field TimeOutValue
+<table>
+<tr>
+<td>
+<b>Value</b>
 
-Indicates the time in seconds after which the request will time out.
+</td>
+<td>
+<b>Meaning</b>
 
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_PENDING
 
-### -field DataTransferLength
+</td>
+<td>
+Indicates that the request is in progress. The port driver initializes <b>IrbStatus</b> to this value. A miniport driver should never set the <b>IrbStatus</b> member to this value.
 
-Contains the length in bytes of the data buffer that contains data to be transferred.
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_SUCCESS
 
+</td>
+<td>
+Indicates that the request was completed successfully.
 
-### -field IrbExtension
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_DATALENGTH_MISMATCH
 
-Pointer to the per-request extension allocated by the port driver.
+</td>
+<td>
+Indicates that a data underrun or overrun error occurred. The miniport must update the DataTransferLength field in the IRB to indicate the actual amount of data that was transferred in the case of an underrun.
 
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_DEVICE_ERROR
 
-### -field DataBuffer
+</td>
+<td>
+Indicates that the device returned an error. The miniport driver must update the <i>AtaStatus</i> and <i>AtaError</i> fields in the Irb to the contents of the device ATA status and error register at the completion of the command.
 
-Pointer to the buffer where the data resides.
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_INVALID_REQUEST
 
+</td>
+<td>
+Indicates that the miniport does not support the given request.
 
-### -field SenseInfoBuffer
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_BUS_RESET
 
-Pointer to the buffer which holds the sense data.
+</td>
+<td>
+Indicates that a bus reset occurred while processing the given request.
 
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_SELECTION_TIMEOUT
 
-### -field NextIrb
+</td>
+<td>
+Indicates that the destination device could not be selected.
 
-Pointer to the next IRB to be processed. The port driver sets this to <b>NULL</b>. The miniport driver can use this field to link IRBs together.
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_BUSY
 
+</td>
+<td>
+Indicates that the device is busy. The port driver retries any request completed with this status. A request completed with busy status is retried only once. It is the responsibility of the miniport driver to pause the request queue using <b>AtaPortDeviceBusy</b> if the device cannot handle request for a certain period of time.
 
-### -field Reserved
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_AUTOSENSE_VALID
 
-Reserved for future use.
+</td>
+<td>
+IRB_STATUS_AUTOSENSE_VALID is a bitmask that indicates valid sense data in the <i>SenseInfoBuffer</i> member of the IRB. 
 
+</td>
+</tr>
+<tr>
+<td>
+IRB_STATUS_RETURN_TASKFILE_VALID
 
-### -field IdeTaskFile
+</td>
+<td>
+IRB_STATUS_RETURN_TASKFILE_VALID is a bitmask that indicates a valid return task file in the <i>SenseInfoBuffer</i> member of the IRB.
 
-Contains a structure of type <a href="..\irb\ns-irb-_ide_task_file.md">IDE_TASK_FILE</a> that holds the IDE task file for the indicated controller. This member is defined whenever the result of a bitwise AND between the <b>Function</b> member and IRB_FUNCTION_ATA_COMMAND is nonzero.
+</td>
+</tr>
+</table>
+        
+            `Lun`
 
+            Specifies the logical unit number of the device.
+        
+            `NextIrb`
 
-### -field Cdb
+            Pointer to the next IRB to be processed. The port driver sets this to <b>NULL</b>. The miniport driver can use this field to link IRBs together.
+        
+            `QueueTag`
 
-Contains a command descriptor block (CDB). This member is defined whenever the result of a bitwise AND between the <b>Function</b> member and IRB_FUNCTION_ATAPI_COMMAND is nonzero.
+            The queue tag for this IRB. The port driver sets this field to 0.
+        
+            `Reserved`
 
+            Reserved for future use.
+        
+            `ReservedAsUlong`
 
-### -field PowerChange
+            Reserved for future use.
+        
+            `SenseInfoBuffer`
 
-Indicates an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a> that defines a power state transition. This member is defined whenever <b>Function</b> is equal to IRB_FUNCTION_POWER_CHANGE.
+            Pointer to the buffer which holds the sense data.
+        
+            `SenseInfoBufferLength`
 
+            Specifies the length in bytes of the buffer pointed to by <b>SenseInfoBuffer</b>.
+        
+            `SenseInfoBufferType`
 
-### -field AsUChar
+            Specifies the type of data structure returned in <b>SenseInfoBuffer</b>. Because ATA commands don't have a need for the request sense command, ATA_PASS_THROUGH commands use <b>SenseInfoBuffer</b> to return task file information. For ATA_PASS_THROUGH commands, as identified in the <b>IrbFlags</b> member, the appropriate return <b>TaskFile</b> size should be reported as either SENSE_INFO_BUFFER_RETURN_TYPE_28BIT_TASKFILE or
 
-Provides a means of accessing members <b>IdeTaskFile</b>, <b>PowerChange</b>, and <b>Cdb</b> as unsigned character data.
+SENSE_INFO_BUFFER_RETURN_TYPE_48BIT_TASKFILE.
+        
+            `TargetId`
 
+            Specifies the target ID of the device.
+        
+            `TimeOutValue`
 
-## -remarks
-The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
+            Indicates the time in seconds after which the request will time out.
 
+    ## Remarks
+        The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
 
-## -see-also
-<dl>
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | irb.h (include Irb.h) |
+
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
 </dt>
@@ -523,7 +481,7 @@ The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href=
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
  
@@ -531,4 +489,3 @@ The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href=
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_REQUEST_BLOCK structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

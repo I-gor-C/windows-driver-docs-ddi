@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILREGSTATUSINFO
-title: RILREGSTATUSINFO
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilregstatusinfo.htm
-old-project: netvista
-ms.assetid: 12471d22-4d5d-411e-bfde-4d13d7a3bcca
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILREGSTATUSINFO, RILREGSTATUSINFO, *LPRILREGSTATUSINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILREGSTATUSINFO
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILREGSTATUSINFO, *LPRILREGSTATUSINFO
+UID : NS:ntddrilapitypes.RILREGSTATUSINFO
+title : RILREGSTATUSINFO
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilregstatusinfo.htm
+old-project : netvista
+ms.assetid : 12471d22-4d5d-411e-bfde-4d13d7a3bcca
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILREGSTATUSINFO, *LPRILREGSTATUSINFO, RILREGSTATUSINFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILREGSTATUSINFO
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILREGSTATUSINFO, RILREGSTATUSINFO"
 ---
 
 # RILREGSTATUSINFO structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILREGSTATUSINFO {
   DWORD                cbSize;
@@ -61,40 +54,58 @@ typedef struct _RILREGSTATUSINFO {
 } RILREGSTATUSINFO, RILREGSTATUSINFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwExecutor`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwRegRejectReason`
+
+            
+        
+            `dwRegStatus`
+
+            
+        
+            `dwSystemCaps`
+
+            
+        
+            `dwVoiceDomain`
+
+            
+        
+            `hUiccApp`
+
+            
+        
+            `ratAccessTechnology`
+
+            
+        
+            `rncNetworkCode`
+
+            
+        
+            `ronCurrentOperator`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwExecutor
-
-
-### -field hUiccApp
-
-
-### -field dwRegStatus
-
-
-### -field ratAccessTechnology
-
-
-### -field dwSystemCaps
-
-
-### -field dwRegRejectReason
-
-
-### -field ronCurrentOperator
-
-
-### -field dwVoiceDomain
-
-
-### -field rncNetworkCode
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

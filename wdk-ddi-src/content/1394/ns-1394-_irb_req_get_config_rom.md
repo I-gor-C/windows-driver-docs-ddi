@@ -1,50 +1,43 @@
 ---
-UID: NS:1394._IRB_REQ_GET_CONFIG_ROM
-title: _IRB_REQ_GET_CONFIG_ROM
-author: windows-driver-content
-description: This structure contains the fields necessary for the bus driver to carry out a GetConfigRom request.
-old-location: ieee\irb_req_get_config_rom.htm
-old-project: IEEE
-ms.assetid: 9C4EC9CA-3B7F-4611-BB96-A86C0FEDDF25
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IRB_REQ_GET_CONFIG_ROM, IRB_REQ_GET_CONFIG_ROM
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: 1394.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IRB_REQ_GET_CONFIG_ROM
-req.alt-loc: 1394.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: IRB_REQ_GET_CONFIG_ROM
+UID : NS:1394._IRB_REQ_GET_CONFIG_ROM
+title : _IRB_REQ_GET_CONFIG_ROM
+author : windows-driver-content
+description : This structure contains the fields necessary for the bus driver to carry out a GetConfigRom request.
+old-location : ieee\irb_req_get_config_rom.htm
+old-project : IEEE
+ms.assetid : 9C4EC9CA-3B7F-4611-BB96-A86C0FEDDF25
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _IRB_REQ_GET_CONFIG_ROM, IRB_REQ_GET_CONFIG_ROM
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : 1394.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IRB_REQ_GET_CONFIG_ROM
+req.alt-loc : 1394.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : IRB_REQ_GET_CONFIG_ROM
 ---
 
 # _IRB_REQ_GET_CONFIG_ROM structure
-
-
-
-## -description
 This structure contains the fields necessary for the bus driver to carry out a GetConfigRom request.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _IRB_REQ_GET_CONFIG_ROM {
   ULONG GenerationCount;
@@ -56,37 +49,38 @@ typedef struct _IRB_REQ_GET_CONFIG_ROM {
 } IRB_REQ_GET_CONFIG_ROM;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `ConfigRom`
 
-### -field GenerationCount
+            Receives a pointer to a <b>ConfigRom</b> object.
+        
+            `GenerationCount`
 
-Receives the generation of the bus for which the contents of this configuration ROM was retrieved.
+            Receives the generation of the bus for which the contents of this configuration ROM was retrieved.
+        
+            `ModelLeafIndex`
 
+            Receives the index to the node's model textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+        
+            `UnitDependentDirectoryIndex`
 
-### -field ConfigRom
+            Receives the index to the node's unit dependent directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+        
+            `UnitDirectoryIndex`
 
-Receives a pointer to a <b>ConfigRom</b> object.
+            Receives the index to the node's unit directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+        
+            `VendorLeafIndex`
 
-
-### -field UnitDirectoryIndex
-
-Receives the index to the node's unit directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
-
-
-### -field UnitDependentDirectoryIndex
-
-Receives the index to the node's unit dependent directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
-
-
-### -field VendorLeafIndex
-
-Receives the index to the node's vendor textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
-
-
-### -field ModelLeafIndex
-
-Receives the index to the node's model textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+            Receives the index to the node's vendor textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | 1394.h |

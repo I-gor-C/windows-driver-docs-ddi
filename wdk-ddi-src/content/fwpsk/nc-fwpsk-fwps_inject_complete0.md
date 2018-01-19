@@ -1,85 +1,71 @@
 ---
-UID: NC:fwpsk.FWPS_INJECT_COMPLETE0
-title: FWPS_INJECT_COMPLETE0
-author: windows-driver-content
-description: The filter engine calls a callout's completionFn callout function whenever packet data, described by the netBufferList parameter in one of the packet injection functions, has been injected into the network stack.
-old-location: netvista\completionfn.htm
-old-project: netvista
-ms.assetid: c03656ec-f0fe-49f5-8a04-2d26ef23c50a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpmEngineOpen0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: completionFn
-req.alt-loc: Fwpsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
+UID : NC:fwpsk.FWPS_INJECT_COMPLETE0
+title : FWPS_INJECT_COMPLETE0
+author : windows-driver-content
+description : The filter engine calls a callout's completionFn callout function whenever packet data, described by the netBufferList parameter in one of the packet injection functions, has been injected into the network stack.
+old-location : netvista\completionfn.htm
+old-project : netvista
+ms.assetid : c03656ec-f0fe-49f5-8a04-2d26ef23c50a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpmEngineOpen0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : completionFn
+req.alt-loc : Fwpsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 ---
 
-# FWPS_INJECT_COMPLETE0 callback
 
-
-
-## -description
+# FWPS_INJECT_COMPLETE0 callback function
 The filter engine calls a callout's 
   <i>completionFn</i> callout function whenever packet data, described by the 
   <i>netBufferList</i> parameter in one of the 
-  <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>, has been
+  <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>, has been
   injected into the network stack.
 
+## Syntax
 
+```
+FWPS_INJECT_COMPLETE0 FwpsInjectComplete0;
 
-## -prototype
-
-````
-FWPS_INJECT_COMPLETE0 completionFn;
-
-void NTAPI completionFn(
-  _In_    VOID            *context,
-  _Inout_ NET_BUFFER_LIST *netBufferList,
-  _In_    BOOLEAN         dispatchLevel
+void FwpsInjectComplete0(
+  void *context,
+  NET_BUFFER_LIST *netBufferList,
+  BOOLEAN dispatchLevel
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`*context`
 
 
-## -parameters
 
-### -param context [in]
-
-A pointer to the 
-     <i>completionContext</i> parameter of one of the 
-     <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a> called
-     by the callout driver.
+`*netBufferList`
 
 
-### -param netBufferList [in, out]
 
-The pointer passed in the 
-     <i>netBufferList</i> parameter of one of the 
-     <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a> called
-     by the callout driver.
-
-
-### -param dispatchLevel [in]
+`dispatchLevel`
 
 A value that indicates the IRQL at which the 
      <i>completionFn</i> callout function is being called. If this parameter is <b>TRUE</b>, the 
@@ -88,11 +74,12 @@ A value that indicates the IRQL at which the
      <i>completionFn</i> callout function is being called at an IRQL &lt; DISPATCH_LEVEL.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 The FWPS_INJECT_COMPLETE0 type is defined as a pointer to the 
     <i>completionFn</i> function as follows:
 
@@ -103,7 +90,7 @@ The
 
 After packet data in a cloned or created <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure chain has successfully been
     injected into the network stack by one of the 
-    <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>, 
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>, 
     <i>completionFn</i> is called.
 
 If the 
@@ -119,8 +106,20 @@ If the
 The filter engine calls a callout's 
     <i>completionFn</i> callout function at IRQL &lt;= DISPATCH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
@@ -147,7 +146,7 @@ The filter engine calls a callout's
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">Packet Injection Functions</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">Packet Injection Functions</a>
 </dt>
 </dl>
  
@@ -155,4 +154,3 @@ The filter engine calls a callout's
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INJECT_COMPLETE0 callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:storport.StorPortConvertUlongToPhysicalAddress
-title: StorPortConvertUlongToPhysicalAddress function
-author: windows-driver-content
-description: The StorPortConvertUlongToPhysicalAddress routine converts an unsigned long address into a physical address.
-old-location: storage\storportconvertulongtophysicaladdress.htm
-old-project: storage
-ms.assetid: 772ca60b-a957-47de-b95d-486497b295ce
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: StorPortConvertUlongToPhysicalAddress
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: StorPortConvertUlongToPhysicalAddress
-req.alt-loc: Storport.lib,Storport.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Storport.lib
-req.dll: 
-req.irql: 
-req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
+UID : NF:storport.StorPortConvertUlongToPhysicalAddress
+title : StorPortConvertUlongToPhysicalAddress function
+author : windows-driver-content
+description : The StorPortConvertUlongToPhysicalAddress routine converts an unsigned long address into a physical address.
+old-location : storage\storportconvertulongtophysicaladdress.htm
+old-project : storage
+ms.assetid : 772ca60b-a957-47de-b95d-486497b295ce
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : StorPortConvertUlongToPhysicalAddress
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : StorPortConvertUlongToPhysicalAddress
+req.alt-loc : Storport.lib,Storport.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Storport.lib
+req.dll : 
+req.irql : 
+req.typenames : STOR_SPINLOCK
+req.product : Windows 10 or later.
 ---
 
+
 # StorPortConvertUlongToPhysicalAddress function
-
-
-
-## -description
 The <b>StorPortConvertUlongToPhysicalAddress</b> routine converts an unsigned long address into a physical address.
 
-
-
-## -syntax
+## Syntax
 
 ````
 STORPORT_API STOR_PHYSICAL_ADDRESS StorPortConvertUlongToPhysicalAddress(
@@ -52,15 +47,15 @@ STORPORT_API STOR_PHYSICAL_ADDRESS StorPortConvertUlongToPhysicalAddress(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param UlongAddress [in]
+`UlongAddress`
 
 Contains the address to be converted.
 
 
-## -returns
+## Return Value
+
 The <b>StorPortConvertUlongToPhysicalAddress</b> routine returns the physical address that corresponds to the unsigned long address that the caller passed in.
 
 <b>ULONG64</b>
@@ -79,8 +74,8 @@ StorPortConvertPhysicalAddressToULong64 uses <b>STOR_PHYSICAL_ADDRESS</b> to rep
 
 StorPortConvertPhysicalAddressToULong64 uses <b>STOR_PHYSICAL_ADDRESS</b> to represent physical addresses.
 
+## Remarks
 
-## -remarks
 <b>StorPortConvertUlongToPhysicalAddress</b> uses <b>STOR_PHYSICAL_ADDRESS</b> to represent physical addresses.
 
 The <b>STOR_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that Storport miniport drivers use to represent either a physical addresses or a bus-relative address. 
@@ -96,3 +91,15 @@ The StorPortConvertPhysicalAddressToULong64 macro converts a physical address to
 Specifies an address value of type STOR_PHYSICAL_ADDRESS.
 
 <a id="Return_value"></a><a id="return_value"></a><a id="RETURN_VALUE"></a>Return value</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

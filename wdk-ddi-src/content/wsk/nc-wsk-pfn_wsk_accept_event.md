@@ -1,112 +1,89 @@
 ---
-UID: NC:wsk.PFN_WSK_ACCEPT_EVENT
-title: PFN_WSK_ACCEPT_EVENT
-author: windows-driver-content
-description: The WskAcceptEvent event callback function notifies a WSK application that an incoming connection on a listening socket has been accepted.
-old-location: netvista\wskacceptevent.htm
-old-project: netvista
-ms.assetid: 672440f0-810a-4e68-82a5-d038770898c5
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: wsk.h
-req.include-header: Wsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WskAcceptEvent
-req.alt-loc: wsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-req.product: Windows 10 or later.
+UID : NC:wsk.PFN_WSK_ACCEPT_EVENT
+title : PFN_WSK_ACCEPT_EVENT
+author : windows-driver-content
+description : The WskAcceptEvent event callback function notifies a WSK application that an incoming connection on a listening socket has been accepted.
+old-location : netvista\wskacceptevent.htm
+old-project : netvista
+ms.assetid : 672440f0-810a-4e68-82a5-d038770898c5
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wsk.h
+req.include-header : Wsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WskAcceptEvent
+req.alt-loc : wsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : "*PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO"
+req.product : Windows 10 or later.
 ---
 
-# PFN_WSK_ACCEPT_EVENT callback
 
-
-
-## -description
+# PFN_WSK_ACCEPT_EVENT callback function
 The 
   <i>WskAcceptEvent</i> event callback function notifies a WSK application that an incoming connection on a
   listening socket has been accepted.
 
+## Syntax
 
+```
+PFN_WSK_ACCEPT_EVENT PfnWskAcceptEvent;
 
-## -prototype
-
-````
-PFN_WSK_ACCEPT_EVENT WskAcceptEvent;
-
-NTSTATUS APIENTRY WskAcceptEvent(
-  _In_opt_       PVOID                          SocketContext,
-  _In_           ULONG                          Flags,
-  _In_           PSOCKADDR                      LocalAddress,
-  _In_           PSOCKADDR                      RemoteAddress,
-  _In_opt_       PWSK_SOCKET                    AcceptSocket,
-  _Out_          PVOID                          *AcceptSocketContext,
-  _Out_    const WSK_CLIENT_CONNECTION_DISPATCH **AcceptSocketDispatch
+NTSTATUS PfnWskAcceptEvent(
+  PVOID SocketContext,
+  ULONG Flags,
+  PSOCKADDR LocalAddress,
+  PSOCKADDR RemoteAddress,
+  PWSK_SOCKET AcceptSocket,
+  PVOID *AcceptSocketContext,
+  CONST WSK_CLIENT_CONNECTION_DISPATCH **AcceptSocketDispatch
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param SocketContext [in, optional]
+`SocketContext`
 
 A pointer to the socket context for the listening socket on which the incoming connection was
      accepted. The WSK application provided this pointer to the WSK subsystem when it called the 
      <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a> function to create the listening
      socket.
 
-
-### -param Flags [in]
+`Flags`
 
 A ULONG value that contains the following flag, or zero:
-     
 
-
-
-
-### -param WSK_FLAG_AT_DISPATCH_LEVEL
-
-The WSK subsystem called the 
-       <i>WskAcceptEvent</i> event callback function at IRQL = DISPATCH_LEVEL. If this flag is not set, the
-       WSK subsystem might have called the 
-       <i>WskAcceptEvent</i> event callback function at any IRQL &lt;= DISPATCH_LEVEL.
-
-</dd>
-</dl>
-
-### -param LocalAddress [in]
+`LocalAddress`
 
 A pointer to a buffer that contains the local transport address on which the incoming connection
      arrived. The buffer contains the specific SOCKADDR structure type that corresponds to the address family
      that the WSK application specified when it created the listening socket.
 
-
-### -param RemoteAddress [in]
+`RemoteAddress`
 
 A pointer to a buffer that contains the remote transport address from which the incoming
      connection originated. The buffer contains the specific SOCKADDR structure type that corresponds to the
      address family that the WSK application specified when it created the listening socket.
 
-
-### -param AcceptSocket [in, optional]
+`AcceptSocket`
 
 A pointer to a 
      <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that is the socket object
@@ -115,31 +92,17 @@ A pointer to a
      <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
      listening socket as soon as possible.
 
-
-### -param AcceptSocketContext [out]
-
-A pointer to a variable that receives a pointer to a WSK application-supplied context for the
-     socket that is being accepted. The WSK subsystem passes this pointer to the accepted socket's event
-     callback functions. The context information is opaque to the WSK subsystem and must be stored in
-     non-paged memory. If the WSK application will not be enabling any event callback functions on the
-     accepted socket, the application should set the variable that is pointed to by the 
-     <i>AcceptSocketContext</i> parameter to <b>NULL</b>.
+`*AcceptSocketContext`
 
 
-### -param AcceptSocketDispatch [out]
 
-A pointer to a variable that receives a pointer to a constant 
-     <a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
-     WSK_CLIENT_CONNECTION_DISPATCH</a> structure. This structure is a dispatch table that contains
-     pointers to the event callback functions for the accepted socket. If the WSK application will not be
-     enabling all of the event callback functions for the accepted socket, the application should set the
-     pointers in the dispatch table to <b>NULL</b> for those event callback functions that it does not enable. If
-     the WSK application will not be enabling any event callback functions on the accepted socket, it should
-     set the variable that is pointed to by the 
-     <i>AcceptSocketDispatch</i> parameter to <b>NULL</b>.
+`**AcceptSocketDispatch`
 
 
-## -returns
+
+
+## Return Value
+
 A WSK application's 
      <i>WskAcceptEvent</i> event callback function can return one of the following NTSTATUS codes:
 <dl>
@@ -150,16 +113,14 @@ A WSK application's
 </dl>The WSK application rejected the incoming connection. If this value is returned, the WSK
        subsystem will close the accepted socket on behalf of the WSK application.
 
- 
+## Remarks
 
-
-## -remarks
 The WSK subsystem calls a WSK application's 
     <i>WskAcceptEvent</i> event callback function when an incoming connection is accepted on the listening
     socket only if the event callback function was previously enabled with the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570834">SO_WSK_EVENT_CALLBACK</a> socket option.
     For more information about enabling a socket's event callback functions, see 
-    <a href="netvista.enabling_and_disabling_event_callback_functions">Enabling and
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
     Disabling Event Callback Functions</a>.
 
 If a WSK application's 
@@ -186,7 +147,7 @@ When the WSK subsystem calls a WSK application's
     callback functions on a listening socket, those event callback functions will be enabled by default on
     all connection-oriented sockets that are accepted on that listening socket. For more information about
     enabling any of the accepted socket's event callback functions, see 
-    <a href="netvista.enabling_and_disabling_event_callback_functions">Enabling and
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
     Disabling Event Callback Functions</a>.
 
 The 
@@ -210,8 +171,20 @@ The WSK subsystem calls a WSK application's
 
 A WSK application's <i>WskAcceptEvent</i> event callback function must not wait for completion of other WSK requests in the context of WSK completion or event callback functions. The callback can initiate other WSK requests (assuming that it doesn't spend too much time at DISPATCH_LEVEL), but it must not wait for their completion even when the callback is called at IRQL = PASSIVE_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wsk.h (include Wsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
@@ -250,4 +223,3 @@ A WSK application's <i>WskAcceptEvent</i> event callback function must not wait 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_ACCEPT_EVENT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

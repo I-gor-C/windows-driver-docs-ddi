@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.PsGetProcessId
-title: PsGetProcessId function
-author: windows-driver-content
-description: The PsGetProcessId routine returns the process identifier (process ID) that is associated with a specified process.
-old-location: kernel\psgetprocessid.htm
-old-project: kernel
-ms.assetid: 9e1f6a57-bc48-41c6-815c-6a44e8d01699
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PsGetProcessId
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PsGetProcessId
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: Any level
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.PsGetProcessId
+title : PsGetProcessId function
+author : windows-driver-content
+description : The PsGetProcessId routine returns the process identifier (process ID) that is associated with a specified process.
+old-location : kernel\psgetprocessid.htm
+old-project : kernel
+ms.assetid : 9e1f6a57-bc48-41c6-815c-6a44e8d01699
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : PsGetProcessId
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PsGetProcessId
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : Any level
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # PsGetProcessId function
+The <b>PsGetProcessId</b> routine returns the process identifier (process ID) that is associated with a specified process.
 
-
-
-## -description
-The <b>PsGetProcessId</b> routine returns the process identifier (process ID) that is associated with a specified process. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 HANDLE PsGetProcessId(
@@ -51,23 +46,35 @@ HANDLE PsGetProcessId(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Process`
 
-### -param Process [in]
-
-A pointer to a process object structure. 
+A pointer to a process object structure.
 
 
-## -returns
+## Return Value
+
 <b>PsGetProcessId</b> returns the process ID of the process that the <i>Process</i> parameter specifies.
 
+## Remarks
 
-## -remarks
-The EPROCESS-typed process object structure is an opaque data structure that the operating system uses internally. To obtain a pointer to the EPROCESS structure for the current process, a driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>. To obtain a pointer to the EPROCESS structure for a different process, the driver can call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>. 
+The EPROCESS-typed process object structure is an opaque data structure that the operating system uses internally. To obtain a pointer to the EPROCESS structure for the current process, a driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>. To obtain a pointer to the EPROCESS structure for a different process, the driver can call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
@@ -81,4 +88,3 @@ The EPROCESS-typed process object structure is an opaque data structure that the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PsGetProcessId routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

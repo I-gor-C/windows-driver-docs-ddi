@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisFreeSharedMemory
-title: NdisFreeSharedMemory function
-author: windows-driver-content
-description: The NdisFreeSharedMemory function frees shared memory that a driver allocated from a shared memory provider.
-old-location: netvista\ndisfreesharedmemory.htm
-old-project: netvista
-ms.assetid: 5d0a1790-cec0-4c28-85dd-5f4d7d518d63
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisFreeSharedMemory
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.20 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisFreeSharedMemory
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisFreeSharedMemory
+title : NdisFreeSharedMemory function
+author : windows-driver-content
+description : The NdisFreeSharedMemory function frees shared memory that a driver allocated from a shared memory provider.
+old-location : netvista\ndisfreesharedmemory.htm
+old-project : netvista
+ms.assetid : 5d0a1790-cec0-4c28-85dd-5f4d7d518d63
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisFreeSharedMemory
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.20 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisFreeSharedMemory
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisFreeSharedMemory function
-
-
-
-## -description
 The 
   <b>NdisFreeSharedMemory</b> function frees shared memory that a driver allocated from a shared memory
   provider.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisFreeSharedMemory(
@@ -54,10 +49,9 @@ VOID NdisFreeSharedMemory(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisHandle [in]
+`NdisHandle`
 
 An NDIS driver or instance handle that was obtained during caller initialization. This should be
      the same handle that was passed to the 
@@ -65,8 +59,7 @@ An NDIS driver or instance handle that was obtained during caller initialization
      <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">
      NdisAllocateSharedMemory</a> function when the shared memory was allocated.
 
-
-### -param AllocationHandle [in]
+`AllocationHandle`
 
 A handle for a context area that identifies the shared memory block. This is the handle that NDIS
      supplied at the 
@@ -74,11 +67,12 @@ A handle for a context area that identifies the shared memory block. This is the
      <b>NdisAllocateSharedMemory</b> function.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 An NDIS driver must call the 
     <b>NdisFreeSharedMemory</b> function to free a block of shared memory that it previously allocated with
     the 
@@ -90,8 +84,20 @@ NDIS calls the
     shared memory provider from the context of the call to 
     <b>NdisFreeSharedMemory</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
@@ -105,4 +111,3 @@ NDIS calls the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeSharedMemory function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

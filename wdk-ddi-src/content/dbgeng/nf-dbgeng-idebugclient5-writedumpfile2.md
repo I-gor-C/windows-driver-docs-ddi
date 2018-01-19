@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugClient5.WriteDumpFile2
-title: IDebugClient5::WriteDumpFile2 method
-author: windows-driver-content
-description: The WriteDumpFile2 method creates a user-mode or kernel-modecrash dump file.
-old-location: debugger\writedumpfile2.htm
-old-project: debugger
-ms.assetid: a6cdefc2-8670-485d-979a-8a270dad1c0b
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugClient5, IDebugClient5::WriteDumpFile2, WriteDumpFile2
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugClient2.WriteDumpFile2,IDebugClient3.WriteDumpFile2,IDebugClient4.WriteDumpFile2,IDebugClient5.WriteDumpFile2
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugClient5.WriteDumpFile2
+title : IDebugClient5::WriteDumpFile2 method
+author : windows-driver-content
+description : The WriteDumpFile2 method creates a user-mode or kernel-modecrash dump file.
+old-location : debugger\writedumpfile2.htm
+old-project : debugger
+ms.assetid : a6cdefc2-8670-485d-979a-8a270dad1c0b
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugClient5, IDebugClient5::WriteDumpFile2, WriteDumpFile2
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugClient2.WriteDumpFile2,IDebugClient3.WriteDumpFile2,IDebugClient4.WriteDumpFile2,IDebugClient5.WriteDumpFile2
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugClient5::WriteDumpFile2 method
 
-
-
-## -description
+# WriteDumpFile2 method
 The <b>WriteDumpFile2</b> method creates a user-mode or kernel-modecrash dump file.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT WriteDumpFile2(
@@ -54,39 +49,34 @@ HRESULT WriteDumpFile2(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DumpFile [in]
+`DumpFile`
 
 Specifies the name of the dump file to create.  <i>DumpFile</i> must include the file name extension.  <i>DumpFile</i> can include a relative or absolute path; relative paths are relative to the directory in which the debugger was started.
 
-
-### -param Qualifier [in]
+`Qualifier`
 
 Specifies the type of dump file to create.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541472">DEBUG_DUMP_XXX</a>.
 
-
-### -param FormatFlags [in]
+`FormatFlags`
 
 Specifies flags that determine the format of the dump file and--for user-mode minidumps--what information to include in the file.  For details, see Remarks.
 
-
-### -param Comment [in, optional]
+`Comment`
 
 Specifies a comment string to be included in the crash dump file.  This string is displayed in the debugger console when the dump file is loaded.  Some dump file formats do not support the storing of comment strings.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
 
- 
+## Remarks
 
-
-## -remarks
 The DEBUG_FORMAT_<i>XXX</i> bit-flags are used by <b>WriteDumpFile2</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a> to determine the format of a crash dump file and, for user-mode Minidumps, what information to include in the file.
 
 The following bit-flags apply to all crash dump files.
@@ -172,8 +162,20 @@ Add all code segments with the executable images.
 
 For more information about crash dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542783">Dump-File Targets</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
@@ -199,4 +201,3 @@ For more information about crash dump files, see <a href="https://msdn.microsoft
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient2::WriteDumpFile2 method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

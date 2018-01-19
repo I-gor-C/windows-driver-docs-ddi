@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltCreateNamedPipeFile
-title: FltCreateNamedPipeFile function
-author: windows-driver-content
-description: Minifilter drivers call FltCreateNamedPipeFile to create a new pipe or open an existing pipe.
-old-location: ifsk\fltcreatenamedpipefile.htm
-old-project: ifsk
-ms.assetid: F4F3A591-B4BE-4367-A76A-820552F9B3B5
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltCreateNamedPipeFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltCreateNamedPipeFile
-req.alt-loc: Fltmgr.lib,Fltmgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fltmgr.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltCreateNamedPipeFile
+title : FltCreateNamedPipeFile function
+author : windows-driver-content
+description : Minifilter drivers call FltCreateNamedPipeFile to create a new pipe or open an existing pipe.
+old-location : ifsk\fltcreatenamedpipefile.htm
+old-project : ifsk
+ms.assetid : F4F3A591-B4BE-4367-A76A-820552F9B3B5
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltCreateNamedPipeFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltCreateNamedPipeFile
+req.alt-loc : Fltmgr.lib,Fltmgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fltmgr.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltCreateNamedPipeFile function
+Minifilter drivers call <b>FltCreateNamedPipeFile</b> to create a new pipe or open an existing pipe.
 
-
-
-## -description
-Minifilter drivers call <b>FltCreateNamedPipeFile</b> to create a new pipe or open an existing pipe.  
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltCreateNamedPipeFile(
@@ -68,30 +63,25 @@ NTSTATUS FltCreateNamedPipeFile(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Filter`
 
-### -param Filter [in]
+An opaque filter pointer for the caller.
 
-An opaque filter pointer for the caller. 
+`Instance`
 
+An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume for the named pipe file system. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance.
 
-### -param Instance [in, optional]
+`FileHandle`
 
-An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume for the named pipe file system. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance. 
+A pointer to a caller-allocated variable that receives the file handle if the call to  <b>FltCreateNamedPipeFile</b> is successful.
 
+`FileObject`
 
-### -param FileHandle [out]
+A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateNamedPipeFile</b> is successful. This parameter is optional and can be <b>NULL</b>.
 
-A pointer to a caller-allocated variable that receives the file handle if the call to  <b>FltCreateNamedPipeFile</b> is successful. 
-
-
-### -param FileObject [out, optional]
-
-A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateNamedPipeFile</b> is successful. This parameter is optional and can be <b>NULL</b>. 
-
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. 
 
@@ -231,10 +221,8 @@ STANDARD_RIGHTS_WRITE, FILE_WRITE_DATA, FILE_APPEND_DATA, and SYNCHRONIZE.
 </td>
 </tr>
 </table>
- 
 
-
-### -param ObjectAttributes [in]
+`ObjectAttributes`
 
 A pointer to an opaque <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that is already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object are listed in the following table. 
 
@@ -294,10 +282,8 @@ A set of flags that controls the file object attributes. If the caller is runnin
 </td>
 </tr>
 </table>
- 
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateNamedPipeFile</b>, the <b>Information</b> member of the variable contains one of the following values:
 
@@ -312,7 +298,7 @@ FILE_OPENED
 </dd>
 </dl>
 
-### -param ShareAccess [in]
+`ShareAccess`
 
 The type of share access to the file that the caller requires as one or a combination of the following flags. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. 
 
@@ -342,10 +328,8 @@ The file can be opened for write access by other threads' calls to <b>FltCreateN
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateDisposition [in]
+`CreateDisposition`
 
 A value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described in the following table. 
 
@@ -385,10 +369,8 @@ If the file already exists, open it. If it does not, create the file.
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateOptions [in]
+`CreateOptions`
 
 The options to be applied when creating or opening the pipe, as a compatible combination of the following flags. 
 
@@ -428,10 +410,8 @@ All operations on the pipe are performed synchronously. Waits in the system to s
 </td>
 </tr>
 </table>
- 
 
-
-### -param NamedPipeType [in]
+`NamedPipeType`
 
 The mode to read from the pipe.
 
@@ -442,29 +422,7 @@ The mode to read from the pipe.
 </tr>
 <tr>
 
-### -param FILE_PIPE_BYTE_STREAM_TYPE
-
-</td>
-<td width="60%">
-The data is written to the pipe as a stream of bytes. To use this type, <i>ReadMode</i> must not be FILE_PIPE_MESSAGE_MODE.
-
-</td>
-</tr>
-<tr>
-
-### -param FILE_PIPE_MESSAGE_TYPE
-
-</td>
-<td width="60%">
-The data is written to the pipe as a message.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -param ReadMode [in]
+`ReadMode`
 
 The mode to read from the pipe.
 
@@ -475,29 +433,7 @@ The mode to read from the pipe.
 </tr>
 <tr>
 
-### -param FILE_PIPE_BYTE_STREAM_MODE
-
-</td>
-<td width="60%">
-The pipe data is read as a stream of bytes.
-
-</td>
-</tr>
-<tr>
-
-### -param FILE_PIPE_MESSAGE_MODE
-
-</td>
-<td width="60%">
-The pipe data is read as messages. To use this mode, <i>NamedPipeType</i> must be  FILE_PIPE_MESSAGE_TYPE.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -param CompletionMode [in]
+`CompletionMode`
 
 The completion mode for pipe reads and writes.
 
@@ -508,66 +444,39 @@ The completion mode for pipe reads and writes.
 </tr>
 <tr>
 
-### -param FILE_PIPE_QUEUE_COMPLETION
-
-</td>
-<td width="60%">
-The pipe read and write requests are  queued and can block until completed.
-
-</td>
-</tr>
-<tr>
-
-### -param FILE_PIPE_COMPLETE_OPERATION
-
-</td>
-<td width="60%">
-The pipe read and write requests are completed immediately.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -param MaximumInstances [in]
+`MaximumInstances`
 
 The maximum number of instances allowed for this named pipe.
 
-
-### -param InBoundQuota [in]
-
-The number of bytes to reserve for the input buffer.
+`InboundQuota`
 
 
-### -param OutBoundQuota [in]
 
-The number of bytes to reserve for the output buffer.
+`OutboundQuota`
 
 
-### -param DefaultTimeout [in, optional]
+
+`DefaultTimeout`
 
 The default timeout in 100-nanosecond increments. This value is expressed as a negative integer. For example, 250 milliseconds is specified as –10 * 1000 * 250.
 
-
-### -param DriverContext [in, optional]
+`DriverContext`
 
 An optional pointer to an <a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a> structure already initialized by <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>.
 
 
-## -returns
+## Return Value
+
 <b>FltCreateNamedPipeFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following. 
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
 </dl>The filter or instance specified in the <i>Filter</i> or <i>Instance</i> parameters is being torn down. This status code can be received if the open request crosses a volume mount point and the <i>Instance</i> parameter is non-<b>NULL</b>. This is an error code. 
 <dl>
 <dt><b>STATUS_OBJECT_PATH_SYNTAX_BAD</b></dt>
-</dl>The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path. 
+</dl>The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path.
 
- 
+## Remarks
 
-
-## -remarks
 The <b>FltCreateNamedPipeFile</b> function allows minifilter drivers to create or open pipe instances. This is useful for creating virtual pipes or for creating pipe unions for multiplexing I/O.
 
 The <i>instance</i> parameter is either <b> NULL</b> or is previously set by attaching to the named pipe volume. A volume pointer is obtained by passing "\Device\NamedPipe" as the volume name to <a href="..\fltkernel\nf-fltkernel-fltgetvolumefromname.md">FltGetVolumeFromName</a>.
@@ -577,8 +486,20 @@ To specify an extra create parameter (ECP) as part of a create operation, initia
 
      If <i>Instance</i> is not <b>NULL</b>, the create request from <b>FltCreateNamedPipeFile</b> is sent only to the instances attached below the specified minifilter driver instance and to the named pipe file system. The specified instance and the instances attached above it do not receive the create request. If no instance is specified, the request goes to the top of the stack and is received by all instances and the named pipe file system.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include FltKernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
@@ -601,4 +522,3 @@ To specify an extra create parameter (ECP) as part of a create operation, initia
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateNamedPipeFile function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

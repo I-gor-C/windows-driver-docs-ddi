@@ -1,72 +1,67 @@
 ---
-UID: NC:ndis.PROTOCOL_CM_CLOSE_AF
-title: PROTOCOL_CM_CLOSE_AF function
-author: windows-driver-content
-description: The ProtocolCmCloseAf function is a required function that releases per-open resources for an address family that a call manager supports.Note  You must declare the function by using the PROTOCOL_CM_CLOSE_AF type.
-old-location: netvista\protocolcmcloseaf.htm
-old-project: netvista
-ms.assetid: a7a02813-62e4-49c5-abb6-a90f4e092b9f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: PROTOCOL_CM_CLOSE_AF
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolCmCloseAf
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.PROTOCOL_CM_CLOSE_AF
+title : PROTOCOL_CM_CLOSE_AF
+author : windows-driver-content
+description : The ProtocolCmCloseAf function is a required function that releases per-open resources for an address family that a call manager supports.Note  You must declare the function by using the PROTOCOL_CM_CLOSE_AF type.
+old-location : netvista\protocolcmcloseaf.htm
+old-project : netvista
+ms.assetid : a7a02813-62e4-49c5-abb6-a90f4e092b9f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolCmCloseAf
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # PROTOCOL_CM_CLOSE_AF function
-
-
-
-## -description
 The 
   <i>ProtocolCmCloseAf</i> function is a required function that releases per-open resources for an address
   family that a call manager supports.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 PROTOCOL_CM_CLOSE_AF ProtocolCmCloseAf;
 
 NDIS_STATUS ProtocolCmCloseAf(
-  _In_ NDIS_HANDLE CallMgrAfContext
+  NDIS_HANDLE CallMgrAfContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param CallMgrAfContext [in]
+`CallMgrAfContext`
 
 Specifies the handle to the call manager's per-AF context area, originally supplied to NDIS by the
      call manager's 
      <i>ProtocolCmOpenAf</i> function.
 
 
-## -returns
+## Return Value
+
 <i>ProtocolCmCloseAf</i> returns the status of its operation(s) as one of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -80,10 +75,8 @@ Specifies the handle to the call manager's per-AF context area, originally suppl
        <a href="..\ndis\nf-ndis-ndiscmcloseaddressfamilycomplete.md">
        NdisCmCloseAddressFamilyComplete</a> when all such operations have been completed.
 
- 
+## Remarks
 
-
-## -remarks
 <i>ProtocolCmCloseAf</i> releases and/or deactivates any resources that were allocated by the call manager
     in its 
     <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function. The call
@@ -110,10 +103,22 @@ Then, implement your function as follows:
 
 The <b>PROTOCOL_CM_CLOSE_AF</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CM_CLOSE_AF</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndiscmcloseaddressfamilycomplete.md">
@@ -128,4 +133,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_CLOSE_AF callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

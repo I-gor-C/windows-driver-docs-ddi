@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ExAcquireSharedWaitForExclusive
-title: ExAcquireSharedWaitForExclusive function
-author: windows-driver-content
-description: The ExAcquireSharedWaitForExclusive routine acquires the given resource for shared access if shared access can be granted and there are no exclusive waiters.
-old-location: kernel\exacquiresharedwaitforexclusive.htm
-old-project: kernel
-ms.assetid: 745b014d-7ab4-4e07-a24c-7a74949a9d7b
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ExAcquireSharedWaitForExclusive
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ExAcquireSharedWaitForExclusive
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, SpNoWait, WithinCriticalRegion(storport)
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ExAcquireSharedWaitForExclusive
+title : ExAcquireSharedWaitForExclusive function
+author : windows-driver-content
+description : The ExAcquireSharedWaitForExclusive routine acquires the given resource for shared access if shared access can be granted and there are no exclusive waiters.
+old-location : kernel\exacquiresharedwaitforexclusive.htm
+old-project : kernel
+ms.assetid : 745b014d-7ab4-4e07-a24c-7a74949a9d7b
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ExAcquireSharedWaitForExclusive
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ExAcquireSharedWaitForExclusive
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, SpNoWait, WithinCriticalRegion(storport)
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ExAcquireSharedWaitForExclusive function
+The <b>ExAcquireSharedWaitForExclusive</b> routine acquires the given resource for shared access if shared access can be granted and there are no exclusive waiters.
 
-
-
-## -description
-The <b>ExAcquireSharedWaitForExclusive</b> routine acquires the given resource for shared access if shared access can be granted and there are no exclusive waiters. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN ExAcquireSharedWaitForExclusive(
@@ -53,24 +48,23 @@ BOOLEAN ExAcquireSharedWaitForExclusive(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Resource [in, out]
+`Resource`
 
 A pointer to the resource to be acquired for shared access.
 
+`Wait`
 
-### -param Wait [in]
-
-Specifies the routine's behavior whenever the resource cannot be acquired immediately. If <b>TRUE</b>, the caller is put into a wait state until the resource can be acquired. If <b>FALSE</b>, the routine immediately returns, regardless of whether the resource can be acquired. 
-
-
-## -returns
-<b>ExAcquireSharedWaitForExclusive</b> returns <b>TRUE</b> if the requested access is granted or an exclusive owner releases the resource. This routine returns <b>FALSE</b> if the input <i>Wait</i> is <b>FALSE</b> and shared access cannot be granted immediately. 
+Specifies the routine's behavior whenever the resource cannot be acquired immediately. If <b>TRUE</b>, the caller is put into a wait state until the resource can be acquired. If <b>FALSE</b>, the routine immediately returns, regardless of whether the resource can be acquired.
 
 
-## -remarks
+## Return Value
+
+<b>ExAcquireSharedWaitForExclusive</b> returns <b>TRUE</b> if the requested access is granted or an exclusive owner releases the resource. This routine returns <b>FALSE</b> if the input <i>Wait</i> is <b>FALSE</b> and shared access cannot be granted immediately.
+
+## Remarks
+
 Most drivers should use <a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a> instead of <b>ExAcquireSharedWaitForExclusive</b>.
 
 The caller can release the resource by calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a> or <a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>.
@@ -93,10 +87,22 @@ The behavior of <b>ExAcquireSharedWaitForExclusive</b> is identical to that of <
 
 If the caller specifies <b>TRUE</b> for the <i>Wait</i> parameter, the caller blocks until another thread frees the resource on behalf of the caller, using <a href="https://msdn.microsoft.com/library/windows/hardware/ff545577">ExReleaseResourceForThread</a>. Driver writers must be careful to ensure that another thread actually releases the resource; otherwise the caller is deadlocked. <b>ExAcquireResourceSharedLite</b> does not have this property, so drivers should use that routine unless they require the particular behavior of <b>ExAcquireSharedWaitForExclusive</b>.
 
-Normal kernel APC delivery must be disabled before calling this routine. Disable normal kernel APC delivery by calling <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.
+Normal kernel APC delivery must be disabled before calling this routine. Disable normal kernel APC delivery by calling <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** | IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, SpNoWait, WithinCriticalRegion(storport) |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a>
@@ -125,4 +131,3 @@ Normal kernel APC delivery must be disabled before calling this routine. Disable
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExAcquireSharedWaitForExclusive routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

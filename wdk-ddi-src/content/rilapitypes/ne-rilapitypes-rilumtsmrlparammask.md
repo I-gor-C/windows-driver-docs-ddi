@@ -1,48 +1,44 @@
 ---
-UID: NE:rilapitypes.RILUMTSMRLPARAMMASK
-title: RILUMTSMRLPARAMMASK
-author: windows-driver-content
-description: This enumeration describes the RILUMTSMRLPARAMMASK.
-old-location: netvista\rilumtsmrlparammask.htm
-old-project: netvista
-ms.assetid: ba1f48ab-f301-4ae8-b56e-92eb6e3601f2
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILUMTSMRLPARAMMASK, RILUMTSMRLPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: Rilapitypes.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILUMTSMRLPARAMMASK
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILUMTSMRLPARAMMASK
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILUMTSMRLPARAMMASK
+title : RILUMTSMRLPARAMMASK
+author : windows-driver-content
+description : This enumeration describes the RILUMTSMRLPARAMMASK.
+old-location : netvista\rilumtsmrlparammask.htm
+old-project : netvista
+ms.assetid : ba1f48ab-f301-4ae8-b56e-92eb6e3601f2
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILUMTSMRLPARAMMASK, RILUMTSMRLPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : Rilapitypes.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILUMTSMRLPARAMMASK
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILUMTSMRLPARAMMASK
+req.product : Windows 10 or later.
 ---
 
-# RILUMTSMRLPARAMMASK enumeration
+# RILUMTSMRLPARAMMASK Enumeration
 
 
-
-## -description
-
-## -syntax
-
+## Syntax
 ````
 enum RILUMTSMRLPARAMMASK  {
   RIL_PARAM_UMTSMRL_MCC         = 0x00000001, 
@@ -59,40 +55,63 @@ enum RILUMTSMRLPARAMMASK  {
 };
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_PARAM_UMTSMRL_MCC
+<tr>
+<td>RIL_PARAM_UMTSMRL_ALL</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_UMTSMRL_CELLID</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_UMTSMRL_MNC
+<tr>
+<td>RIL_PARAM_UMTSMRL_ECNO</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_UMTSMRL_LAC</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_UMTSMRL_LAC
+<tr>
+<td>RIL_PARAM_UMTSMRL_MCC</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_UMTSMRL_MNC</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_UMTSMRL_CELLID
+<tr>
+<td>RIL_PARAM_UMTSMRL_PATHLOSS</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_UMTSMRL_PRIMARY_SC</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_UMTSMRL_UARFCN
+<tr>
+<td>RIL_PARAM_UMTSMRL_RSCP</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_UMTSMRL_UARFCN</td>
+<td></td>
+</tr>
+</table>
 
-### -field RIL_PARAM_UMTSMRL_PRIMARY_SC
+## Remarks
 
-
-### -field RIL_PARAM_UMTSMRL_RSCP
-
-
-### -field RIL_PARAM_UMTSMRL_ECNO
-
-
-### -field RIL_PARAM_UMTSMRL_PATHLOSS
-
-
-### -field RIL_PARAM_UMTSMRL_ALL
-
-
-## -remarks
 Networks will vary, but the following table summarizes which items are returned for common UMTS networks. 
 
 <b>Serving network</b>
@@ -157,8 +176,16 @@ WCDMA layer frequency
 
 –25 through −120
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
@@ -169,4 +196,3 @@ WCDMA layer frequency
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILUMTSMRLPARAMMASK enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

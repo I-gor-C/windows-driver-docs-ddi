@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltDeleteFileContext
-title: FltDeleteFileContext function
-author: windows-driver-content
-description: The FltDeleteFileContext routine retrieves and deletes a file context that a given minifilter driver has set for a given file.
-old-location: ifsk\fltdeletefilecontext.htm
-old-project: ifsk
-ms.assetid: faffa053-0382-415c-8f61-ee9121839598
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltDeleteFileContext
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltDeleteFileContext
-req.alt-loc: FltMgr.lib,FltMgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltDeleteFileContext
+title : FltDeleteFileContext function
+author : windows-driver-content
+description : The FltDeleteFileContext routine retrieves and deletes a file context that a given minifilter driver has set for a given file.
+old-location : ifsk\fltdeletefilecontext.htm
+old-project : ifsk
+ms.assetid : faffa053-0382-415c-8f61-ee9121839598
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltDeleteFileContext
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltDeleteFileContext
+req.alt-loc : FltMgr.lib,FltMgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltDeleteFileContext function
+The <b>FltDeleteFileContext</b> routine retrieves and deletes a file context that a given minifilter driver has set for a given file.
 
-
-
-## -description
-The <b>FltDeleteFileContext</b> routine retrieves and deletes a file context that a given minifilter driver has set for a given file. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltDeleteFileContext(
@@ -53,37 +48,33 @@ NTSTATUS FltDeleteFileContext(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Instance`
 
-### -param Instance [in]
+Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
+`FileObject`
 
+File object pointer for the file. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject [in]
+`OldContext`
 
-File object pointer for the file. This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param OldContext [out]
-
-Pointer to a caller-allocated variable that receives the address of the deleted context. If no matching context is found, this variable receives NULL_CONTEXT. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
+Pointer to a caller-allocated variable that receives the address of the deleted context. If no matching context is found, this variable receives NULL_CONTEXT. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.)
 
 
-## -returns
+## Return Value
+
 <b>FltDeleteFileContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
 </dl>No matching context was found. This is an error code. 
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>File contexts are not supported for this file. This is an error code. 
+</dl>File contexts are not supported for this file. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 The <b>FltDeleteFileContext</b> routine is available on Windows Vista and later. 
 
 Because contexts are reference-counted, it is not usually necessary for a minifilter driver to call a routine such as <b>FltDeleteFileContext</b> or <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a> to explicitly delete a context. 
@@ -104,10 +95,22 @@ To retrieve a file context, call <a href="..\fltkernel\nf-fltkernel-fltgetfileco
 
 To set a file context, call <a href="..\fltkernel\nf-fltkernel-fltsetfilecontext.md">FltSetFileContext</a>. 
 
-To determine whether file contexts are supported for a given file, call <a href="..\fltkernel\nf-fltkernel-fltsupportsfilecontexts.md">FltSupportsFileContexts</a> or <a href="..\fltkernel\nf-fltkernel-fltsupportsfilecontextsex.md">FltSupportsFileContextsEx</a>. 
+To determine whether file contexts are supported for a given file, call <a href="..\fltkernel\nf-fltkernel-fltsupportsfilecontexts.md">FltSupportsFileContexts</a> or <a href="..\fltkernel\nf-fltkernel-fltsupportsfilecontextsex.md">FltSupportsFileContextsEx</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
@@ -139,4 +142,3 @@ To determine whether file contexts are supported for a given file, call <a href=
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltDeleteFileContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

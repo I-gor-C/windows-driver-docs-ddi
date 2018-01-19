@@ -1,74 +1,68 @@
 ---
-UID: NC:mrx.PMRX_CREATE_SRVCALL
-title: PMRX_CREATE_SRVCALL
-author: windows-driver-content
-description: The MRxCreateSrvCall routine is called by RDBSS to request that the network mini-redirector create an SRV_CALL structure and establish connection with a server.
-old-location: ifsk\mrxcreatesrvcall.htm
-old-project: ifsk
-ms.assetid: 2f6325e1-4ede-41e5-87d3-833c6b52157a
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: mrx.h
-req.include-header: Mrx.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MRxCreateSrvCall
-req.alt-loc: mrx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
+UID : NC:mrx.PMRX_CREATE_SRVCALL
+title : PMRX_CREATE_SRVCALL
+author : windows-driver-content
+description : The MRxCreateSrvCall routine is called by RDBSS to request that the network mini-redirector create an SRV_CALL structure and establish connection with a server.
+old-location : ifsk\mrxcreatesrvcall.htm
+old-project : ifsk
+ms.assetid : 2f6325e1-4ede-41e5-87d3-833c6b52157a
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : mrx.h
+req.include-header : Mrx.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MRxCreateSrvCall
+req.alt-loc : mrx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
-# PMRX_CREATE_SRVCALL callback
 
+# PMRX_CREATE_SRVCALL callback function
+The<i> MRxCreateSrvCall</i> routine is called by <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/the-rdbss-driver-and-library">RDBSS</a> to request that the network mini-redirector create an SRV_CALL structure and establish connection with a server.
 
+## Syntax
 
-## -description
-The<i> MRxCreateSrvCall</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request that the network mini-redirector create an SRV_CALL structure and establish connection with a server.
+```
+PMRX_CREATE_SRVCALL PmrxCreateSrvcall;
 
-
-
-## -prototype
-
-````
-PMRX_CREATE_SRVCALL MRxCreateSrvCall;
-
-NTSTATUS MRxCreateSrvCall(
-  _Inout_ PMRX_SRV_CALL                 pSrvCall,
-  _Inout_ PMRX_SRVCALL_CALLBACK_CONTEXT pCallbackContext
+NTSTATUS PmrxCreateSrvcall(
+  IN OUT PMRX_SRV_CALL SrvCall,
+  IN OUT PMRX_SRVCALL_CALLBACK_CONTEXT SrvCallCallBackContext
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`SrvCall`
 
 
-## -parameters
 
-### -param pSrvCall [in, out]
-
-A pointer to the SRV_CALL structure to be created. 
+`SrvCallCallBackContext`
 
 
-### -param pCallbackContext [in, out]
-
-A pointer to the callback context used by the network mini-redirector to notify RDBSS when the <i>MRxCreateSrvCall</i> request is finally completed. The <i>pCallbackContext</i> parameter points to an MRX_SRVCALLDOWN_STRUCTURE structure that contains the RX_CONTEXT structure for this request, as well as the <b>Callback</b> routine that the mini-redirector calls when the <i>MRxCreateSrvCall</i> request is finally completed. 
 
 
-## -returns
+## Return Value
+
 RDBSS expects <i>MRxCreateSrvCall</i> to return STATUS_PENDING on success or failure. This behavior results because RDBSS expects this call to be completed asynchronously. A network mini-redirector should map STATUS_SUCCESS to STATUS_PENDING as a return value for <i>MRxCreateSrvCall</i>.
 
 The final completion status is returned in the <b>pCallbackContext-&gt;Status</b> member once the call completes and the routine in the <b>Callback</b> member in the MRX_SRVCALLDOWN_STRUCTURE structure is called by the network mini-redirector. This member initially contains STATUS_BAD_NETWORK_PATH until the network mini-redirector changes this value on completion. 
@@ -83,10 +77,8 @@ The <b>pCallbackContext-&gt;Status</b> member contains STATUS_SUCCESS on success
 <dt><b>STATUS_NETWORK_UNREACHABLE</b></dt>
 </dl>The network was unreachable.
 
- 
+## Remarks
 
-
-## -remarks
 The two important abstractions used in the interface between RDBSS and a network mini-redirector are the SRV_CALL structure and the NET_ROOT structure. An SRV_CALL structure corresponds to the context associated with a server once a connection is established. A NET_ROOT structure corresponds to a share on a server (this could also be viewed as a portion of the namespace that has been claimed by a network mini-redirector).
 
 The creation of an SRV_CALL structure typically involves at least one network round trip. This operation can take considerable time to complete because a network connection with a remote resource may need to be established. To ensure that the asynchronous operations continue, the creation of an SRV_CALL structure is modeled as a two-phase activity. Each call down to a network mini-redirector for creating an SRV_CALL structure is accompanied by a call up from the network mini-redirector to RDBSS that specifies the completion status of the request. RDBSS assumes that <i>MRxCreateSrvCall</i> will be completed asynchronously. So RDBSS expects <i>MRxCreateSrvCall</i> to return STATUS_PENDING. RDBSS will be notified using the callback routine when the call finally completes. 
@@ -107,8 +99,20 @@ When this call completes, the <i>pSrvCall</i> parameter should be modified with 
 
 A network mini-redirector that indicates support as a UNC provider will receive a prefix claim from the Multiple UNC Provider (MUP) as a call to <i>MRxCreateSrvCall</i>. For more information about UNC Naming and MUP, see <a href="https://msdn.microsoft.com/07c4a498-10c7-41b2-aaeb-73cab946f392">Support for UNC Naming and MUP</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | mrx.h (include Mrx.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
@@ -146,4 +150,3 @@ A network mini-redirector that indicates support as a UNC provider will receive 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxCreateSrvCall routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

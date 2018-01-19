@@ -1,91 +1,83 @@
 ---
-UID: NC:spbcx.EVT_SPB_CONTROLLER_WRITE
-title: EVT_SPB_CONTROLLER_WRITE function
-author: windows-driver-content
-description: An SPB controller driver's EvtSpbControllerIoWrite event callback function writes data to the specified target device from the buffers that are supplied with the write request.
-old-location: spb\evtspbcontrolleriowrite.htm
-old-project: SPB
-ms.assetid: D97C3A17-309E-4364-8DFB-9073901D332E
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: EVT_SPB_CONTROLLER_WRITE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: spbcx.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Supported starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: EvtSpbControllerIoWrite
-req.alt-loc: Spbcx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at IRQL <= DISPATCH_LEVEL.
-req.typenames: *POS_DEP_DATA, OS_DEP_DATA
-req.product: Windows 10 or later.
+UID : NC:spbcx.EVT_SPB_CONTROLLER_WRITE
+title : EVT_SPB_CONTROLLER_WRITE
+author : windows-driver-content
+description : An SPB controller driver's EvtSpbControllerIoWrite event callback function writes data to the specified target device from the buffers that are supplied with the write request.
+old-location : spb\evtspbcontrolleriowrite.htm
+old-project : SPB
+ms.assetid : D97C3A17-309E-4364-8DFB-9073901D332E
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : spbcx.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Supported starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : EvtSpbControllerIoWrite
+req.alt-loc : Spbcx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at IRQL <= DISPATCH_LEVEL.
+req.typenames : "*PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_SPB_CONTROLLER_WRITE function
-
-
-
-## -description
 An SPB controller driver's <i>EvtSpbControllerIoWrite</i> event callback function writes data to the specified target device from the buffers that are supplied with the write request.
 
+## Syntax
 
+```
+EVT_SPB_CONTROLLER_WRITE EvtSpbControllerWrite;
 
-## -syntax
-
-````
-EVT_SPB_CONTROLLER_WRITE EvtSpbControllerIoWrite;
-
-VOID EvtSpbControllerIoWrite(
-  _In_ WDFDEVICE  Controller,
-  _In_ SPBTARGET  Target,
-  _In_ SPBREQUEST Request,
-  _In_ size_t     Length
+void EvtSpbControllerWrite(
+  WDFDEVICE Controller,
+  SPBTARGET Target,
+  SPBREQUEST Request,
+  size_t Length
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Controller [in]
+`Controller`
 
 A WDFDEVICE handle to the <a href="https://msdn.microsoft.com/6be47eac-d6e4-43d1-bf2d-d49dcb2273c0">framework device object</a> that represents the SPB controller.
 
+`Target`
 
-### -param Target [in]
+An <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a> handle to the target for this I/O request. The target is a peripheral device or port that is attached to the bus. The SPB framework extension (SpbCx) previously assigned this handle to the target in the <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a> callback that opened the connection to the target.
 
-An <a href="buses.spbtarget_object_handle">SPBTARGET</a> handle to the target for this I/O request. The target is a peripheral device or port that is attached to the bus. The SPB framework extension (SpbCx) previously assigned this handle to the target in the <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a> callback that opened the connection to the target.
+`Request`
 
+An <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a> handle to the I/O request. Your SPB controller driver must complete this request either by performing the requested operation or by returning an error status. For more information, see Remarks.
 
-### -param Request [in]
-
-An <a href="buses.spbrequest_object_handle">SPBREQUEST</a> handle to the I/O request. Your SPB controller driver must complete this request either by performing the requested operation or by returning an error status. For more information, see Remarks.
-
-
-### -param Length [in]
+`Length`
 
 The number of bytes to write to the target device.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 SpbCx manages the I/O queue for the SPB controller. SpbCx calls the SPB controller driver's <i>EvtSpbControllerIoWrite</i> callback function when a client (peripheral driver) of the SPB controller sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a> request to a target device that is attached to the bus. The <i>Request</i> parameter value is a handle that encapsulates this request.
 
 An <i>EvtSpbControllerIoWrite</i> callback does not return a status value. Instead, the SPB controller driver indicates the status of the write operation in the completion status for the I/O request.
@@ -106,8 +98,20 @@ Then, implement your callback function as follows:
 
 The EVT_SPB_CONTROLLER_WRITE function type is defined in the Spbcx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EVT_SPB_CONTROLLER_WRITE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | spbcx.h |
+| **Library** |  |
+| **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43">EvtSpbControllerIoRead</a>
@@ -125,10 +129,10 @@ The EVT_SPB_CONTROLLER_WRITE function type is defined in the Spbcx.h header file
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a>
 </dt>
 <dt>
-<a href="buses.spbrequest_object_handle">SPBREQUEST</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
 </dt>
 <dt>
-<a href="buses.spbtarget_object_handle">SPBTARGET</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
 </dt>
 </dl>
  
@@ -136,4 +140,3 @@ The EVT_SPB_CONTROLLER_WRITE function type is defined in the Spbcx.h header file
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20EVT_SPB_CONTROLLER_WRITE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

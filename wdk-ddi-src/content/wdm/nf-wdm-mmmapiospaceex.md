@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.MmMapIoSpaceEx
-title: MmMapIoSpaceEx function
-author: windows-driver-content
-description: The MmMapIoSpaceEx routine maps the given physical address range to non-paged system space using the specified page protection.
-old-location: kernel\mmmapiospaceex.htm
-old-project: kernel
-ms.assetid: 0A8216B2-822D-4157-876E-AA0A1A9D6D3F
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: MmMapIoSpaceEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 10.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MmMapIoSpace
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.MmMapIoSpaceEx
+title : MmMapIoSpaceEx function
+author : windows-driver-content
+description : The MmMapIoSpaceEx routine maps the given physical address range to non-paged system space using the specified page protection.
+old-location : kernel\mmmapiospaceex.htm
+old-project : kernel
+ms.assetid : 0A8216B2-822D-4157-876E-AA0A1A9D6D3F
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : MmMapIoSpaceEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 10.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MmMapIoSpace
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <=DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # MmMapIoSpaceEx function
-
-
-
-## -description
 The <b>MmMapIoSpaceEx</b> routine maps the given physical address range to non-paged system space using the specified page protection.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PVOID MmMapIoSpace(
@@ -54,20 +49,17 @@ PVOID MmMapIoSpace(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param PhysicalAddress [in]
+`PhysicalAddress`
 
 Specifies the starting physical address of the I/O range to be mapped.
 
-
-### -param NumberOfBytes [in]
+`NumberOfBytes`
 
 Specifies a value greater than zero, indicating the number of bytes to be mapped.
 
-
-### -param Protect [in]
+`Protect`
 
 Flag bits that specify the protection to use for the mapped range. The caller must set one of the following flag bits in the <i>Protect</i> parameter.
 
@@ -115,22 +107,34 @@ In addition, the caller can set one (but not both) of the following optional fla
 <td>Specifies write-combined memory (the memory should not be cached by the processor, but writes to the memory can be combined by the processor).</td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>MmMapIoSpaceEx</b> returns the base virtual address that maps the base physical address for the range. If space for mapping the range is insufficient, it returns <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 A driver must call this routine during device start-up if it receives translated resources of type <b>CmResourceTypeMemory</b> in a <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure. <b>MmMapIoSpaceEx</b> maps the physical address returned in the resource list to a logical address through which the driver can access device registers.
 
 For example, drivers of PIO devices that allocate long-term I/O buffers can call this routine to make such buffers accessible or to make device memory accessible.
 
-For more information about using this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554399">Mapping Bus-Relative Addresses to Virtual Addresses</a>. 
+For more information about using this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554399">Mapping Bus-Relative Addresses to Virtual Addresses</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
@@ -150,4 +154,3 @@ For more information about using this routine, see <a href="https://msdn.microso
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmMapIoSpaceEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

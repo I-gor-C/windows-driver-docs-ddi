@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfiotarget.WdfIoTargetSendIoctlSynchronously
-title: WdfIoTargetSendIoctlSynchronously function
-author: windows-driver-content
-description: The WdfIoTargetSendIoctlSynchronously method builds a device control request and sends it synchronously to an I/O target.
-old-location: wdf\wdfiotargetsendioctlsynchronously.htm
-old-project: wdf
-ms.assetid: 1c43f6cd-0026-4654-b3ce-71fd51b3821d
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfIoTargetSendIoctlSynchronously
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfiotarget.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: WdfIoTargetSendIoctlSynchronously
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DeferredRequestCompleted, DriverCreate, InternalIoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, RequestCompleted, RequestCompletedLocal, SyncReqSend, WriteReqs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE
-req.product: Windows 10 or later.
+UID : NF:wdfiotarget.WdfIoTargetSendIoctlSynchronously
+title : WdfIoTargetSendIoctlSynchronously function
+author : windows-driver-content
+description : The WdfIoTargetSendIoctlSynchronously method builds a device control request and sends it synchronously to an I/O target.
+old-location : wdf\wdfiotargetsendioctlsynchronously.htm
+old-project : wdf
+ms.assetid : 1c43f6cd-0026-4654-b3ce-71fd51b3821d
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfIoTargetSendIoctlSynchronously
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfiotarget.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : WdfIoTargetSendIoctlSynchronously
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DeferredRequestCompleted, DriverCreate, InternalIoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, RequestCompleted, RequestCompletedLocal, SyncReqSend, WriteReqs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfIoTargetSendIoctlSynchronously function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfIoTargetSendIoctlSynchronously</b> method builds a device control request and sends it synchronously to an I/O target.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfIoTargetSendIoctlSynchronously(
@@ -60,45 +55,39 @@ NTSTATUS WdfIoTargetSendIoctlSynchronously(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param IoTarget [in]
+`IoTarget`
 
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.
 
-
-### -param Request [in, optional]
+`Request`
 
 A handle to a framework request object. This parameter is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
+`IoctlCode`
 
-### -param IoctlCode [in]
+An I/O control code (IOCTL) that the I/O target supports.
 
-An I/O control code (IOCTL) that the I/O target supports. 
-
-
-### -param InputBuffer [in, optional]
+`InputBuffer`
 
 A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure that describes a buffer that will be written to the I/O target. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b> if the request does not send data.
 
-
-### -param OutputBuffer [in, optional]
+`OutputBuffer`
 
 A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure that describes a buffer that will receive data from the I/O target. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b> if the request does not receive data.
 
-
-### -param RequestOptions [in, optional]
+`RequestOptions`
 
 A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a> structure that specifies options for the request. This pointer is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-
-### -param BytesReturned [out, optional]
+`BytesReturned`
 
 A pointer to a location that receives information (such as the number of bytes that were transferred) that another driver supplies when it completes the request by calling <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>. This pointer is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 If the operation succeeds, <b>WdfIoTargetSendIoctlSynchronously</b> returns after the device control request completes, and the return value is the request's completion status value. Otherwise, this method might return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -122,10 +111,8 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 Use the <b>WdfIoTargetSendIoctlSynchronously</b> method to send device control requests synchronously. To send device control requests asynchronously, use the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetformatrequestforioctl.md">WdfIoTargetFormatRequestForIoctl</a> method, followed by the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a> method.
 
 For more information about device control requests, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565406">Using I/O Control Codes</a>.
@@ -146,7 +133,7 @@ Use the received request's output buffer for the <b>WdfIoTargetSendIoctlSynchron
 
 The driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> to obtain a handle to a framework memory object that represents the request's output buffer. Then the driver must place that handle in the <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure that the driver supplies for the <i>OutputBuffer</i> parameter of <b>WdfIoTargetSendIoctlSynchronously</b>.
 
-For more information about forwarding an I/O request, see <a href="https://msdn.microsoft.com/75e007e3-1b97-44db-ac86-56aab78222a6">Forwarding I/O Requests</a>.
+For more information about forwarding an I/O request, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/forwarding-i-o-requests">Forwarding I/O Requests</a>.
 
 Drivers often divide received I/O requests into smaller requests that they send to an I/O target, so your driver might create new requests.
 
@@ -190,8 +177,20 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 The following code example defines a local buffer, initializes a <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure, and calls <b>WdfIoTargetSendIoctlSynchronously</b>. This example specifies <b>NULL</b> for the request object handle, so the framework will create a new request object for the I/O target.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfiotarget.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | DeferredRequestCompleted, DriverCreate, InternalIoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, RequestCompleted, RequestCompletedLocal, SyncReqSend, WriteReqs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
@@ -253,4 +252,3 @@ The following code example defines a local buffer, initializes a <a href="..\wdf
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetSendIoctlSynchronously method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

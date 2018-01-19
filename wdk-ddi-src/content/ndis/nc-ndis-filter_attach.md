@@ -1,80 +1,72 @@
 ---
-UID: NC:ndis.FILTER_ATTACH
-title: FILTER_ATTACH function
-author: windows-driver-content
-description: NDIS calls a filter driver's FilterAttach function to allocate and initialize a filter module's data structures.Note  You must declare the function by using the FILTER_ATTACH type.
-old-location: netvista\filterattach.htm
-old-project: netvista
-ms.assetid: 0a15a8c9-74af-4d93-bd12-a3c81c177684
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FILTER_ATTACH
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FilterAttach
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.FILTER_ATTACH
+title : FILTER_ATTACH
+author : windows-driver-content
+description : NDIS calls a filter driver's FilterAttach function to allocate and initialize a filter module's data structures.Note  You must declare the function by using the FILTER_ATTACH type.
+old-location : netvista\filterattach.htm
+old-project : netvista
+ms.assetid : 0a15a8c9-74af-4d93-bd12-a3c81c177684
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FilterAttach
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # FILTER_ATTACH function
-
-
-
-## -description
 NDIS calls a filter driver's 
   <i>FilterAttach</i> function to allocate and initialize a filter module's data structures.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 FILTER_ATTACH FilterAttach;
 
 NDIS_STATUS FilterAttach(
-  _In_ NDIS_HANDLE                    NdisFilterHandle,
-  _In_ NDIS_HANDLE                    FilterDriverContext,
-  _In_ PNDIS_FILTER_ATTACH_PARAMETERS AttachParameters
+  NDIS_HANDLE NdisFilterHandle,
+  NDIS_HANDLE FilterDriverContext,
+  PNDIS_FILTER_ATTACH_PARAMETERS AttachParameters
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param NdisFilterHandle [in]
+`NdisFilterHandle`
 
 An NDIS handle that identifies a filter module. The filter driver must save this handle. The
      handle is required in subsequent calls to 
      <b>NdisF<i>Xxx</i></b> functions.
 
-
-### -param FilterDriverContext [in]
+`FilterDriverContext`
 
 The handle that the driver passed to the 
      <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
      NdisFRegisterFilterDriver</a> function that identifies the driver context area.
 
-
-### -param AttachParameters [in]
+`AttachParameters`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
@@ -82,7 +74,8 @@ A pointer to an
      module.
 
 
-## -returns
+## Return Value
+
 <i>FilterAttach</i> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -98,15 +91,13 @@ A pointer to an
        <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a> function
        together with parameters that specify the reason for the failure.
 
- 
+## Remarks
 
-
-## -remarks
 <i>FilterAttach</i> is a required function. NDIS calls a filter driver's 
     <i>FilterAttach</i> function when the specified filter module is in the 
     <i>Detached</i> state. NDIS can call 
     <i>FilterAttach</i> at any time after the call to the 
-    <a href="netvista.filtersetoptions">FilterSetOptions</a> function returns.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">FilterSetOptions</a> function returns.
 
 At the start of execution in 
     <i>FilterAttach</i>, the filter module enters the 
@@ -163,16 +154,28 @@ Then, implement your function as follows:
 
 The <b>FILTER_ATTACH</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>FILTER_ATTACH</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_detach.md">FilterDetach</a>
 </dt>
 <dt>
-<a href="netvista.filtersetoptions">FilterSetOptions</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">FilterSetOptions</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
@@ -192,4 +195,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_ATTACH callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

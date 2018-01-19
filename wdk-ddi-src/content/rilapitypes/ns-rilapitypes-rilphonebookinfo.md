@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILPHONEBOOKINFO
-title: RILPHONEBOOKINFO
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilphonebookinfo_2.htm
-old-project: netvista
-ms.assetid: bd302343-c9e3-4d1d-b991-ac19fbdb2da3
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILPHONEBOOKINFO, RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILPHONEBOOKINFO
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILPHONEBOOKINFO
+title : RILPHONEBOOKINFO
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilphonebookinfo_2.htm
+old-project : netvista
+ms.assetid : bd302343-c9e3-4d1d-b991-ac19fbdb2da3
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILPHONEBOOKINFO, RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILPHONEBOOKINFO
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
+req.product : Windows 10 or later.
 ---
 
 # RILPHONEBOOKINFO structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILPHONEBOOKINFO {
   DWORD  cbSize;
@@ -69,61 +62,86 @@ typedef struct _RILPHONEBOOKINFO {
 } RILPHONEBOOKINFO, RILPHONEBOOKINFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwMaxAdditionalNumberLength`
+
+            
+        
+            `dwMaxAdditionalNumbers`
+
+            
+        
+            `dwMaxAdditionalNumberTextLength`
+
+            
+        
+            `dwMaxAddressLength`
+
+            
+        
+            `dwMaxEmailAddressLength`
+
+            
+        
+            `dwMaxEmails`
+
+            
+        
+            `dwMaxGroups`
+
+            
+        
+            `dwMaxGroupStringLength`
+
+            
+        
+            `dwMaxSecondNameStringLength`
+
+            
+        
+            `dwMaxTextLength`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwTotal`
+
+            
+        
+            `dwTotalAdditionalNumberStrings`
+
+            
+        
+            `dwTotalGroupStrings`
+
+            
+        
+            `dwUsed`
+
+            
+        
+            `dwUsedAdditionalNumberStrings`
+
+            
+        
+            `dwUsedGroupStrings`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwUsed
-
-
-### -field dwTotal
-
-
-### -field dwMaxAddressLength
-
-
-### -field dwMaxTextLength
-
-
-### -field dwMaxAdditionalNumbers
-
-
-### -field dwMaxAdditionalNumberLength
-
-
-### -field dwMaxAdditionalNumberTextLength
-
-
-### -field dwUsedAdditionalNumberStrings
-
-
-### -field dwTotalAdditionalNumberStrings
-
-
-### -field dwMaxEmails
-
-
-### -field dwMaxEmailAddressLength
-
-
-### -field dwMaxGroups
-
-
-### -field dwMaxGroupStringLength
-
-
-### -field dwUsedGroupStrings
-
-
-### -field dwTotalGroupStrings
-
-
-### -field dwMaxSecondNameStringLength
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

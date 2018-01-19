@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwFreeVirtualMemory
-title: ZwFreeVirtualMemory function
-author: windows-driver-content
-description: The ZwFreeVirtualMemory routine releases, decommits, or both, a region of pages within the virtual address space of a specified process.
-old-location: kernel\zwfreevirtualmemory.htm
-old-project: kernel
-ms.assetid: ca6675cf-3482-4e62-8f7c-801c1deacd37
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwFreeVirtualMemory
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h, Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwFreeVirtualMemory,NtFreeVirtualMemory
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwFreeVirtualMemory
+title : ZwFreeVirtualMemory function
+author : windows-driver-content
+description : The ZwFreeVirtualMemory routine releases, decommits, or both, a region of pages within the virtual address space of a specified process.
+old-location : kernel\zwfreevirtualmemory.htm
+old-project : kernel
+ms.assetid : ca6675cf-3482-4e62-8f7c-801c1deacd37
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwFreeVirtualMemory
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h, Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwFreeVirtualMemory,NtFreeVirtualMemory
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwFreeVirtualMemory function
-
-
-
-## -description
 The <b>ZwFreeVirtualMemory</b> routine releases, decommits, or both, a region of pages within the virtual address space of a specified process.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwFreeVirtualMemory(
@@ -54,22 +49,19 @@ NTSTATUS ZwFreeVirtualMemory(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param ProcessHandle [in]
+`ProcessHandle`
 
 A handle for the process in whose context the pages to be freed reside. Use the <b>NtCurrentProcess</b> macro, defined in Ntddk.h, to specify the current process.
 
-
-### -param BaseAddress [in, out]
+`BaseAddress`
 
 A pointer to a variable that will receive the virtual address of the freed region of pages. 
 
 If the MEM_RELEASE flag is set in the <i>FreeType</i> parameter, <i>BaseAddress</i> must be the base address returned by <a href="..\ntifs\nf-ntifs-zwallocatevirtualmemory.md">ZwAllocateVirtualMemory</a> when the region was reserved.
 
-
-### -param RegionSize [in, out]
+`RegionSize`
 
 A pointer to a variable that will receive the actual size, in bytes, of the freed region of pages. The routine rounds the initial value of this variable up to the next host page size boundary and writes the rounded value back to this variable.
 
@@ -95,7 +87,7 @@ The MEM_DECOMMIT flag is set.
 </li>
 </ul>
 
-### -param FreeType [in]
+`FreeType`
 
 A bitmask that contains flags that describe the type of free operation that <b>ZwFreeVirtualMemory</b> will perform for the specified region of pages. The possible values are listed in the following table.
 
@@ -133,10 +125,10 @@ If any pages in the region are currently committed, <b>ZwFreeVirtualMemory</b> f
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>ZwFreeVirtualMemory</b> returns either STATUS_SUCCESS or an error status code. Possible error status codes include the following.
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -148,10 +140,8 @@ If any pages in the region are currently committed, <b>ZwFreeVirtualMemory</b> f
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
 </dl>There is a mismatch between the type of object required by the requested operation and the type of object that is specified in the request.
 
- 
+## Remarks
 
-
-## -remarks
 Each page in the process's virtual address space is in one of the three states described in the following table.
 
 FREE
@@ -196,8 +186,20 @@ For more information about memory management support for kernel-mode drivers, se
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
@@ -211,4 +213,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwFreeVirtualMemory routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

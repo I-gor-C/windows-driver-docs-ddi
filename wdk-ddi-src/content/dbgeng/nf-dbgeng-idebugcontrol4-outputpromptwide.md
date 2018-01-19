@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugControl4.OutputPromptWide
-title: IDebugControl4::OutputPromptWide method
-author: windows-driver-content
-description: The OutputPromptWide method formats and sends a user prompt to the output callback objects.
-old-location: debugger\outputpromptwide.htm
-old-project: debugger
-ms.assetid: c9b2eecf-fa9d-442e-9875-d068add25289
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugControl4, IDebugControl4::OutputPromptWide, OutputPromptWide
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugControl4.OutputPromptWide
-req.alt-loc: Dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugControl4.OutputPromptWide
+title : IDebugControl4::OutputPromptWide method
+author : windows-driver-content
+description : The OutputPromptWide method formats and sends a user prompt to the output callback objects.
+old-location : debugger\outputpromptwide.htm
+old-project : debugger
+ms.assetid : c9b2eecf-fa9d-442e-9875-d068add25289
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugControl4, IDebugControl4::OutputPromptWide, OutputPromptWide
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugControl4.OutputPromptWide
+req.alt-loc : Dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugControl4::OutputPromptWide method
 
-
-
-## -description
+# OutputPromptWide method
 The <b>OutputPromptWide</b>  method formats and sends a user prompt to the <a href="debugger.using_callback_objects#output_callbacks#output_callbacks">output callback objects</a>.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT OutputPromptWide(
@@ -53,15 +48,13 @@ HRESULT OutputPromptWide(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param OutputControl [in]
+`OutputControl`
 
 Specifies an output control that determines which of the client's output callbacks will receive the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.
 
-
-### -param Format [in, optional]
+`Format`
 
 Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
@@ -241,13 +234,13 @@ String that contains the name of the specified symbol (and displacement, if any)
 
 If <i>Format</i> is <b>NULL</b>, only the standard prompt text is sent to the output callbacks.
 
-
-### -param ... 
-
-Specifies additional parameters that represent values to be inserted into the output during formatting.
+``
 
 
-## -returns
+
+
+## Return Value
+
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
@@ -256,8 +249,8 @@ Specifies additional parameters that represent values to be inserted into the ou
 
 This method can also return error values. See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
+## Remarks
 
-## -remarks
 <b>OutputPrompt</b> and <b>OutputPromptWide</b> can be used to prompt the user for input.
 
 The standard prompt will be sent to the output callbacks before the formatted text described by <i>Format</i>.  The contents of the standard prompt is returned by the method <a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>.
@@ -266,8 +259,20 @@ The prompt text is sent to the output callbacks with the <a href="https://msdn.m
 
 For more information about prompting the user, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560116">Using Input and Output</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
@@ -290,4 +295,3 @@ For more information about prompting the user, see <a href="https://msdn.microso
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputPromptWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

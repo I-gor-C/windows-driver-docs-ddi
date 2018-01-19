@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dumddi._DXVAHDDDI_STREAM_DATA
-title: _DXVAHDDDI_STREAM_DATA
-author: windows-driver-content
-description: The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed.
-old-location: display\dxvahdddi_stream_data.htm
-old-project: display
-ms.assetid: 3b8fc849-8794-4dab-af28-a1c0dfd859d3
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXVAHDDDI_STREAM_DATA, DXVAHDDDI_STREAM_DATA
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Windows
-req.target-min-winverclnt: DXVAHDDDI_STREAM_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXVAHDDDI_STREAM_DATA
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DXVAHDDDI_STREAM_DATA
+UID : NS:d3dumddi._DXVAHDDDI_STREAM_DATA
+title : _DXVAHDDDI_STREAM_DATA
+author : windows-driver-content
+description : The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed.
+old-location : display\dxvahdddi_stream_data.htm
+old-project : display
+ms.assetid : 3b8fc849-8794-4dab-af28-a1c0dfd859d3
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXVAHDDDI_STREAM_DATA, DXVAHDDDI_STREAM_DATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Windows
+req.target-min-winverclnt : DXVAHDDDI_STREAM_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXVAHDDDI_STREAM_DATA
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DXVAHDDDI_STREAM_DATA
 ---
 
 # _DXVAHDDDI_STREAM_DATA structure
+The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed.
 
-
-
-## -description
-The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DXVAHDDDI_STREAM_DATA {
   BOOL              Enable;
@@ -58,51 +51,43 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 } DXVAHDDDI_STREAM_DATA;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Enable`
 
-### -field Enable
+            [in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.
+        
+            `FutureFrames`
 
-[in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.  
+            [in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.
+        
+            `InputFrameOrField`
 
+            [in] A zero-based frame number of the input frames or fields that are processed.
+        
+            `InputSurface`
 
-### -field OutputIndex
+            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structure that describes the input surface.
+        
+            `OutputIndex`
 
-[in] A zero-based cyclic frame index number of the output frames that are composed. 
+            [in] A zero-based cyclic frame index number of the output frames that are composed.
+        
+            `PastFrames`
 
+            [in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.
+        
+            `pFutureSurfaces`
 
-### -field InputFrameOrField
+            [in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces.
+        
+            `pPastSurfaces`
 
-[in] A zero-based frame number of the input frames or fields that are processed.
+            [in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces.
 
-
-### -field PastFrames
-
-[in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  
-
-
-### -field FutureFrames
-
-[in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  
-
-
-### -field pPastSurfaces
-
-[in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces. 
-
-
-### -field InputSurface
-
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structure that describes the input surface. 
-
-
-### -field pFutureSurfaces
-
-[in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces. 
-
-
-## -remarks
-The driver must allocate the surfaces that the <b>pPastSurfaces</b>, <b>InputSurface</b>, and <b>pFutureSurfaces</b> members specify in the pool type, which the driver sets in the <b>InputPool</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure, and with one of the following surface types; otherwise, the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_videoprocessblthd.md">VideoProcessBltHD</a> function returns an error.
+    ## Remarks
+        The driver must allocate the surfaces that the <b>pPastSurfaces</b>, <b>InputSurface</b>, and <b>pFutureSurfaces</b> members specify in the pool type, which the driver sets in the <b>InputPool</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure, and with one of the following surface types; otherwise, the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_videoprocessblthd.md">VideoProcessBltHD</a> function returns an error.
 
 A video surface that is created with the DXVAHD_SURFACE_TYPE_VIDEO_INPUT or DXVAHD_SURFACE_TYPE_VIDEO_INPUT_PRIVATE type. 
 
@@ -202,9 +187,17 @@ InputSurface = T, T, T+7, T+7, T+15, T+15,...  (note that T+7 frame contains 15t
 
 The following pseudo-code example shows the interaction between the application (APP) and the driver (DRV) while performing Inverse Telecine (IVTC) on 3:2 pull-down, 30 frames (60 fields) per second interlaced content:
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_output_rate.md">DXVAHDDDI_OUTPUT_RATE</a>
 </dt>
@@ -232,4 +225,3 @@ The following pseudo-code example shows the interaction between the application 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_DATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

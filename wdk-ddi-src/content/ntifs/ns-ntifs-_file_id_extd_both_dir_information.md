@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._FILE_ID_EXTD_BOTH_DIR_INFORMATION
-title: _FILE_ID_EXTD_BOTH_DIR_INFORMATION
-author: windows-driver-content
-description: The FILE_ID_EXTD_BOTH_DIR_INFORMATION structure is used to query file reference number information for the files in a directory.
-old-location: ifsk\file_id_extd_both_dir_information.htm
-old-project: ifsk
-ms.assetid: 3673C27D-61D9-4127-ABC1-655DE83AD64E
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _FILE_ID_EXTD_BOTH_DIR_INFORMATION, FILE_ID_EXTD_BOTH_DIR_INFORMATION, *PFILE_ID_EXTD_BOTH_DIR_INFORMATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h, Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.1 Update.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FILE_ID_EXTD_BOTH_DIR_INFORMATION
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: FILE_ID_EXTD_BOTH_DIR_INFORMATION, *PFILE_ID_EXTD_BOTH_DIR_INFORMATION
+UID : NS:ntifs._FILE_ID_EXTD_BOTH_DIR_INFORMATION
+title : _FILE_ID_EXTD_BOTH_DIR_INFORMATION
+author : windows-driver-content
+description : The FILE_ID_EXTD_BOTH_DIR_INFORMATION structure is used to query file reference number information for the files in a directory.
+old-location : ifsk\file_id_extd_both_dir_information.htm
+old-project : ifsk
+ms.assetid : 3673C27D-61D9-4127-ABC1-655DE83AD64E
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _FILE_ID_EXTD_BOTH_DIR_INFORMATION, *PFILE_ID_EXTD_BOTH_DIR_INFORMATION, FILE_ID_EXTD_BOTH_DIR_INFORMATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h, Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting with Windows 8.1 Update.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FILE_ID_EXTD_BOTH_DIR_INFORMATION
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PFILE_ID_EXTD_BOTH_DIR_INFORMATION, FILE_ID_EXTD_BOTH_DIR_INFORMATION"
 ---
 
 # _FILE_ID_EXTD_BOTH_DIR_INFORMATION structure
+The <b>FILE_ID_EXTD_BOTH_DIR_INFORMATION</b> structure is used to query file reference number information for the files in a directory.
 
-
-
-## -description
-The <b>FILE_ID_EXTD_BOTH_DIR_INFORMATION</b> structure is used to query file reference number information for the files in a directory. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _FILE_ID_BOTH_DIR_INFORMATION {
   ULONG         NextEntryOffset;
@@ -66,52 +59,32 @@ typedef struct _FILE_ID_BOTH_DIR_INFORMATION {
 } FILE_ID_EXTD_BOTH_DIR_INFORMATION, *PFILE_ID_EXTD_BOTH_DIR_INFORMATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AllocationSize`
 
-### -field NextEntryOffset
+            File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
+        
+            `ChangeTime`
 
-Byte offset of the next <b>FILE_ID_EXTD_BOTH_DIR_INFORMATION</b> entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one. 
+            Last time the file was changed.
+        
+            `CreationTime`
 
+            Time when the file was created.
+        
+            `EaSize`
 
-### -field FileIndex
+            Combined length, in bytes, of the extended attributes (EA) for the file.
+        
+            `EndOfFile`
 
-Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order. 
+            Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
+        
+            `FileAttributes`
 
-
-### -field CreationTime
-
-Time when the file was created. 
-
-
-### -field LastAccessTime
-
-Last time the file was accessed. 
-
-
-### -field LastWriteTime
-
-Last time information was written to the file. 
-
-
-### -field ChangeTime
-
-Last time the file was changed. 
-
-
-### -field EndOfFile
-
-Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
-
-
-### -field AllocationSize
-
-File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device. 
-
-
-### -field FileAttributes
-
-File attributes, which can be any valid combination of the following: 
+            File attributes, which can be any valid combination of the following: 
 
 
 <dl>
@@ -124,46 +97,49 @@ File attributes, which can be any valid combination of the following:
 <dd>FILE_ATTRIBUTE_TEMPORARY</dd>
 <dd>FILE_ATTRIBUTE_COMPRESSED</dd>
 </dl>
+        
+            `FileId`
 
+            The 128-byte file reference number for the file. This number is generated and assigned to the file by the file system.
+        
+            `FileIndex`
 
+            Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
+        
+            `FileName`
 
-### -field FileNameLength
+            Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
+        
+            `FileNameLength`
 
-Specifies the length of the file name string. 
+            Specifies the length of the file name string.
+        
+            `LastAccessTime`
 
+            Last time the file was accessed.
+        
+            `LastWriteTime`
 
-### -field EaSize
+            Last time information was written to the file.
+        
+            `NextEntryOffset`
 
-Combined length, in bytes, of the extended attributes (EA) for the file. 
+            Byte offset of the next <b>FILE_ID_EXTD_BOTH_DIR_INFORMATION</b> entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+        
+            `ReparsePointTag`
 
+            Tag value for the reparse point.
+        
+            `ShortName`
 
-### -field ReparsePointTag
+            Unicode string containing the short (8.3) name for the file.
+        
+            `ShortNameLength`
 
-Tag value for the reparse point.
+            Specifies the length of the short file name string.
 
-
-### -field FileId
-
-The 128-byte file reference number for the file. This number is generated and assigned to the file by the file system.
-
-
-### -field ShortNameLength
-
-Specifies the length of the short file name string. 
-
-
-### -field ShortName
-
-Unicode string containing the short (8.3) name for the file. 
-
-
-### -field FileName
-
-Specifies the first character of the file name string. This is followed in memory by the remainder of the string. 
-
-
-## -remarks
-This information can be queried in either of the following ways: 
+    ## Remarks
+        This information can be queried in either of the following ways: 
 
 Call <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>, passing <b>FileIdExtdBothDirectoryInformation</b> as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_ID_EXTD_BOTH_DIR_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
@@ -175,11 +151,19 @@ File reference numbers, also called file IDs, are guaranteed to be unique only w
 
 All dates and times are in absolute system-time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601. 
 
-This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary. 
+This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
 </dt>
@@ -195,4 +179,3 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_ID_EXTD_BOTH_DIR_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

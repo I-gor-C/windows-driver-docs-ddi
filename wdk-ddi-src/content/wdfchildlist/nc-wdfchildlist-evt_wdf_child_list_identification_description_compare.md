@@ -1,88 +1,81 @@
 ---
-UID: NC:wdfchildlist.EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE
-title: EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE function
-author: windows-driver-content
-description: A driver's EvtChildListIdentificationDescriptionCompare event callback function compares one child identification description with another.
-old-location: wdf\evtchildlistidentificationdescriptioncompare.htm
-old-project: wdf
-ms.assetid: b807f9f8-588f-4303-be97-a9fd4cff2bbd
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfchildlist.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: EvtChildListIdentificationDescriptionCompare
-req.alt-loc: WdfChildlist.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO
-req.product: Windows 10 or later.
+UID : NC:wdfchildlist.EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE
+title : EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE
+author : windows-driver-content
+description : A driver's EvtChildListIdentificationDescriptionCompare event callback function compares one child identification description with another.
+old-location : wdf\evtchildlistidentificationdescriptioncompare.htm
+old-project : wdf
+ms.assetid : b807f9f8-588f-4303-be97-a9fd4cff2bbd
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdfchildlist.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : EvtChildListIdentificationDescriptionCompare
+req.alt-loc : WdfChildlist.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 A driver's <i>EvtChildListIdentificationDescriptionCompare</i> event callback function compares one child identification description with another.
 
+## Syntax
 
+```
+EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE EvtWdfChildListIdentificationDescriptionCompare;
 
-## -syntax
-
-````
-EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE EvtChildListIdentificationDescriptionCompare;
-
-BOOLEAN EvtChildListIdentificationDescriptionCompare(
-  _In_ WDFCHILDLIST                                 ChildList,
-  _In_ PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER FirstIdentificationDescription,
-  _In_ PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER SecondIdentificationDescription
+BOOLEAN EvtWdfChildListIdentificationDescriptionCompare(
+  WDFCHILDLIST ChildList,
+  PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER FirstIdentificationDescription,
+  PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER SecondIdentificationDescription
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ChildList [in]
+`ChildList`
 
 A handle to a framework child-list object.
 
-
-### -param FirstIdentificationDescription [in]
+`FirstIdentificationDescription`
 
 A pointer to a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies the one child identification description.
 
-
-### -param SecondIdentificationDescription [in]
+`SecondIdentificationDescription`
 
 A pointer to a WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure that identifies another child identification description.
 
 
-## -returns
+## Return Value
+
 The <i>EvtChildListIdentificationDescriptionCompare</i> callback function must return <b>TRUE</b> if the two child identification descriptions match. Otherwise, this function must return <b>FALSE</b>.
 
+## Remarks
 
-## -remarks
-If a bus driver is using <a href="https://msdn.microsoft.com/6e46b456-7d2d-4c6e-8692-7f310366387d">dynamic enumeration</a>, it can register an <i>EvtChildListIdentificationDescriptionCompare</i> callback function by calling <a href="..\wdffdo\nf-wdffdo-wdffdoinitsetdefaultchildlistconfig.md">WdfFdoInitSetDefaultChildListConfig</a> or <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistcreate.md">WdfChildListCreate</a>. The driver can also register a second, special-case <i>EvtChildListIdentificationDescriptionCompare</i> callback function when it calls <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>.
+If a bus driver is using <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">dynamic enumeration</a>, it can register an <i>EvtChildListIdentificationDescriptionCompare</i> callback function by calling <a href="..\wdffdo\nf-wdffdo-wdffdoinitsetdefaultchildlistconfig.md">WdfFdoInitSetDefaultChildListConfig</a> or <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistcreate.md">WdfChildListCreate</a>. The driver can also register a second, special-case <i>EvtChildListIdentificationDescriptionCompare</i> callback function when it calls <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>.
 
 The framework compares two identification descriptions when it must determine if both descriptions identify the same device.
 
@@ -112,7 +105,7 @@ The only <a href="https://msdn.microsoft.com/BFD91F00-5D35-4AF8-A6B6-F27DF64605D
 
 The framework acquires an internal child-list object lock before calling the <i>EvtChildListIdentificationDescriptionCompare</i><i>EvtChildListIdentificationDescriptionCompare</i> callback function. The callback function must only perform operations that are related to the compare operation, such as calling framework memory object methods and accessing object context space. It must not call methods that access other drivers.
 
-For more information about dynamic enumeration, see <a href="https://msdn.microsoft.com/5731db82-2bc8-4a8d-98f1-3977845f572c">Enumerating the Devices on a Bus</a>.
+For more information about dynamic enumeration, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus">Enumerating the Devices on a Bus</a>.
 
 To define an <i>EvtChildListIdentificationDescriptionCompare</i> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
 
@@ -122,8 +115,20 @@ Then, implement your callback function as follows:
 
 The <b>EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE</b> function type is defined in the WdfChildlist.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfchildlist.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-rtlcomparememory.md">RtlCompareMemory</a>
@@ -155,4 +160,3 @@ The <b>EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE</b> function type i
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfiotarget.WdfIoTargetStop
-title: WdfIoTargetStop function
-author: windows-driver-content
-description: The WdfIoTargetStop method stops sending queued requests to a local or remote I/O target.
-old-location: wdf\wdfiotargetstop.htm
-old-project: wdf
-ms.assetid: 3dd5aa58-e5a6-4ee3-9b88-d9cbb7eb558c
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfIoTargetStop
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfiotarget.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: WdfIoTargetStop
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DriverCreate, FailD0EntryIoTargetState, KmdfIrql, KmdfIrql2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: *PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE
-req.product: Windows 10 or later.
+UID : NF:wdfiotarget.WdfIoTargetStop
+title : WdfIoTargetStop function
+author : windows-driver-content
+description : The WdfIoTargetStop method stops sending queued requests to a local or remote I/O target.
+old-location : wdf\wdfiotargetstop.htm
+old-project : wdf
+ms.assetid : 3dd5aa58-e5a6-4ee3-9b88-d9cbb7eb558c
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfIoTargetStop
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfiotarget.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : WdfIoTargetStop
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DriverCreate, FailD0EntryIoTargetState, KmdfIrql, KmdfIrql2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfIoTargetStop function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfIoTargetStop</b> method stops sending queued requests to a local or remote I/O target.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID WdfIoTargetStop(
@@ -55,28 +50,25 @@ VOID WdfIoTargetStop(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param IoTarget [in]
+`IoTarget`
 
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.
 
-
-### -param Action [in]
+`Action`
 
 A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_sent_io_action.md">WDF_IO_TARGET_SENT_IO_ACTION</a>-typed value that specifies how the framework should handle I/O requests that the driver has sent to the I/O target, if the target has not completed the requests.
 
 
-## -returns
+## Return Value
+
 None.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 If your driver can detect recoverable device errors, you might want your driver to call <b>WdfIoTargetStop</b> to temporarily stop sending requests, then later call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a> to resume sending requests.
 
 While stopped, an I/O target continues to accept new requests but does not deliver the queued requests to the appropriate driver.
@@ -105,10 +97,22 @@ If the driver has called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcont
 
 If the driver has not called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a> and if the <i>Action</i> parameter of <b>WdfIoTargetStop</b> is <b>WdfIoTargetLeaveSentIoPending</b>, <b>WdfIoTargetStop</b> can be called at IRQL &lt;= DISPATCH_LEVEL. Otherwise, <b>WdfIoTargetStop</b> is called at IRQL = PASSIVE_LEVEL. 
 
-The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a> callback function can call <b>WdfIoTargetStop</b>, if the driver uses a continuous reader for a USB pipe. 
+The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a> callback function can call <b>WdfIoTargetStop</b>, if the driver uses a continuous reader for a USB pipe.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfiotarget.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** | DriverCreate, FailD0EntryIoTargetState, KmdfIrql, KmdfIrql2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
@@ -137,4 +141,3 @@ The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_w
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetStop method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

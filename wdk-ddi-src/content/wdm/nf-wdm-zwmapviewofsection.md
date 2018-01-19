@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ZwMapViewOfSection
-title: ZwMapViewOfSection function
-author: windows-driver-content
-description: The ZwMapViewOfSection routine maps a view of a section into the virtual address space of a subject process.
-old-location: kernel\zwmapviewofsection.htm
-old-project: kernel
-ms.assetid: 2abe7751-ef8c-4511-aaf6-755428c451fe
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwMapViewOfSection
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwMapViewOfSection,NtMapViewOfSection
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ZwMapViewOfSection
+title : ZwMapViewOfSection function
+author : windows-driver-content
+description : The ZwMapViewOfSection routine maps a view of a section into the virtual address space of a subject process.
+old-location : kernel\zwmapviewofsection.htm
+old-project : kernel
+ms.assetid : 2abe7751-ef8c-4511-aaf6-755428c451fe
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwMapViewOfSection
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwMapViewOfSection,NtMapViewOfSection
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ZwMapViewOfSection function
-
-
-
-## -description
 The <b>ZwMapViewOfSection</b> routine maps a <a href="wdkgloss.v#wdkgloss.view#wdkgloss.view"><i>view</i></a> of a section into the virtual address space of a subject process.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwMapViewOfSection(
@@ -61,78 +56,53 @@ NTSTATUS ZwMapViewOfSection(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param SectionHandle [in]
+`SectionHandle`
 
 Handle to a section object. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a> or <a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>.
 
-
-### -param ProcessHandle [in]
+`ProcessHandle`
 
 Handle to the object that represents the process that the view should be mapped into. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566431">ZwCurrentProcess</a> macro to specify the current process. The handle must have been opened with PROCESS_VM_OPERATION access (described in the Microsoft Windows SDK documentation).
 
-
-### -param BaseAddress [in, out]
+`BaseAddress`
 
 Pointer to a variable that receives the base address of the view. If the value of this parameter is not <b>NULL</b>, the view is allocated starting at the specified virtual address rounded down to the next 64-kilobyte address boundary.
 
-
-### -param ZeroBits [in]
+`ZeroBits`
 
 Specifies the number of high-order address bits that must be zero in the base address of the section view. The value of this parameter must be less than 21 and is used only if <i>BaseAddress</i> is <b>NULL</b>—in other words, when the caller allows the system to determine where to allocate the view.
 
-
-### -param CommitSize [in]
+`CommitSize`
 
 Specifies the size, in bytes, of the initially committed region of the view. <i>CommitSize</i> is meaningful only for page-file backed sections and is rounded up to the nearest multiple of PAGE_SIZE. (For sections that map files, both the data and the image are committed at section-creation time.)
 
-
-### -param SectionOffset [in, out, optional]
+`SectionOffset`
 
 A pointer to a variable that receives the offset, in bytes, from the beginning of the section to the view. If this pointer is not <b>NULL</b>, the offset is rounded down to the next allocation-granularity size boundary.
 
-
-### -param ViewSize [in, out]
+`ViewSize`
 
 A pointer to a SIZE_T variable. If the initial value of this variable is zero, <b>ZwMapViewOfSection</b> maps a view of the section that starts at <i>SectionOffset</i> and continues to the end of the section. Otherwise, the initial value specifies the view's size, in bytes. <b>ZwMapViewOfSection</b> always rounds this value up to the nearest multiple of PAGE_SIZE before mapping the view.
 
 On return, the value receives the actual size, in bytes, of the view.
 
-
-### -param InheritDisposition [in]
+`InheritDisposition`
 
 Specifies how the view is to be shared with child processes. The possible values are:
 
-
-
-
-### -param ViewShare
-
-The view will be mapped into any child processes that are created in the future.
-
-
-### -param ViewUnmap
-
-The view will not be mapped into child processes.
-
-</dd>
-</dl>
-Drivers should typically specify <b>ViewUnmap</b> for this parameter.
-
-
-### -param AllocationType [in]
+`AllocationType`
 
 Specifies a set of flags that describes the type of allocation to be performed for the specified region of pages. The valid flags are MEM_LARGE_PAGES, MEM_RESERVE, and MEM_TOP_DOWN. Although MEM_COMMIT is not allowed, it is implied unless MEM_RESERVE is specified. For more information about the MEM_<i>XXX</i> flags, see the description of the <a href="https://msdn.microsoft.com/a720dd89-c47c-4e48-bbc6-f2e02dfc4ed2">VirtualAlloc</a> routine.
 
-
-### -param Win32Protect [in]
+`Win32Protect`
 
 Specifies the type of protection for the region of initially committed pages. Device and intermediate drivers should set this value to PAGE_READWRITE.
 
 
-## -returns
+## Return Value
+
 <b>ZwMapViewOfSection</b> returns an NTSTATUS value. Possible return values include the following:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -147,10 +117,8 @@ Specifies the type of protection for the region of initially committed pages. De
 <dt><b>STATUS_SECTION_PROTECTION </b></dt>
 </dl>The value specified for the <i>AllocationType</i> parameter is incompatible with the protection type specified when the section was created.
 
- 
+## Remarks
 
-
-## -remarks
 Several different views of a section can be concurrently mapped into the virtual address space of one or more processes.
 
 If the specified section does not exist or the access requested is not allowed, <b>ZwMapViewOfSection</b> returns an error.
@@ -163,8 +131,20 @@ For more information about section objects, see <a href="https://msdn.microsoft.
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
@@ -193,4 +173,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwMapViewOfSection routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

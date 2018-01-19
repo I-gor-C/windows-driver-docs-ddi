@@ -1,73 +1,68 @@
 ---
-UID: NC:sercx.EVT_SERCX_FILECLEANUP
-title: EVT_SERCX_FILECLEANUP function
-author: windows-driver-content
-description: The EvtSerCxFileCleanup event callback function notifies the serial controller driver that a client has closed the last handle to the file object that represents the serial controller device.
-old-location: serports\evtsercxfilecleanup.htm
-old-project: serports
-ms.assetid: D9E19BD1-2C44-4F86-9AEB-F50443FAE8DC
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: EVT_SERCX_FILECLEANUP
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: sercx.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: EvtSerCxFileCleanup
-req.alt-loc: 1.0\Sercx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at IRQL <= DISPATCH_LEVEL
-req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
+UID : NC:sercx.EVT_SERCX_FILECLEANUP
+title : EVT_SERCX_FILECLEANUP
+author : windows-driver-content
+description : The EvtSerCxFileCleanup event callback function notifies the serial controller driver that a client has closed the last handle to the file object that represents the serial controller device.
+old-location : serports\evtsercxfilecleanup.htm
+old-project : serports
+ms.assetid : D9E19BD1-2C44-4F86-9AEB-F50443FAE8DC
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : sercx.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : EvtSerCxFileCleanup
+req.alt-loc : 1.0\Sercx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at IRQL <= DISPATCH_LEVEL
+req.typenames : "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_SERCX_FILECLEANUP function
-
-
-
-## -description
 The <i>EvtSerCxFileCleanup</i> event callback function notifies the serial controller driver that a client has closed the last handle to the file object that represents the serial controller device.
 
+## Syntax
 
+```
+EVT_SERCX_FILECLEANUP EvtSercxFilecleanup;
 
-## -syntax
-
-````
-EVT_SERCX_FILECLEANUP EvtSerCxFileCleanup;
-
-VOID EvtSerCxFileCleanup(
-  _In_ WDFDEVICE Device
+void EvtSercxFilecleanup(
+  WDFDEVICE Device
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Device [in]
+`Device`
 
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 This function can deallocate certain system resources that the driver previously allocated for the lifetime of the file object. In conjunction with the <a href="..\sercx\nc-sercx-evt_sercx_fileclose.md">EvtSerCxFileClose</a> function, the <i>EvtSerCxFileCleanup</i> function should remove the serial controller device from the state in which it is ready to receive and transmit data. The <i>EvtSerCxFileCleanup</i> function should focus specifically on clean-up tasks, such as deallocating memory.
 
 If the serial controller driver previously allocated memory only for the lifetime of the file object that is now closed, the driver should deallocate this memory in either the <i>EvtSerCxFileCleanup</i> or <i>EvtSerCxFileClose</i> function.
@@ -92,8 +87,20 @@ Then, implement your callback function as follows.
 
 For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | sercx.h |
+| **Library** |  |
+| **IRQL** | Called at IRQL <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\sercx\nc-sercx-evt_sercx_fileclose.md">EvtSerCxFileClose</a>
@@ -107,4 +114,3 @@ For more information about SDV requirements for function declarations, see <a hr
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20EVT_SERCX_FILECLEANUP callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

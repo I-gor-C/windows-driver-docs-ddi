@@ -1,51 +1,44 @@
 ---
-UID: NS:ptpusd._PTP_VENDOR_DATA_OUT
-title: _PTP_VENDOR_DATA_OUT
-author: windows-driver-content
-description: The PTP_VENDOR_DATA_OUT structure contains information that the device sends to an application, in response to a command the application issued to the device.
-old-location: image\ptp_vendor_data_out.htm
-old-project: image
-ms.assetid: 2585c7ce-6dba-491a-86c1-5ee69f28136f
-ms.author: windowsdriverdev
-ms.date: 1/12/2018
-ms.keywords: _PTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ptpusd.h
-req.include-header: Ptpusd.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PTP_VENDOR_DATA_OUT
-req.alt-loc: ptpusd.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: PTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT
-req.product: Windows 10 or later.
+UID : NS:ptpusd._PTP_VENDOR_DATA_OUT
+title : _PTP_VENDOR_DATA_OUT
+author : windows-driver-content
+description : The PTP_VENDOR_DATA_OUT structure contains information that the device sends to an application, in response to a command the application issued to the device.
+old-location : image\ptp_vendor_data_out.htm
+old-project : image
+ms.assetid : 2585c7ce-6dba-491a-86c1-5ee69f28136f
+ms.author : windowsdriverdev
+ms.date : 1/17/2018
+ms.keywords : _PTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ptpusd.h
+req.include-header : Ptpusd.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PTP_VENDOR_DATA_OUT
+req.alt-loc : ptpusd.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PPTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT"
+req.product : Windows 10 or later.
 ---
 
 # _PTP_VENDOR_DATA_OUT structure
-
-
-
-## -description
 The PTP_VENDOR_DATA_OUT structure contains information that the device sends to an application, in response to a command the application issued to the device.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _PTP_VENDOR_DATA_OUT {
   WORD  ResponseCode;
@@ -56,42 +49,45 @@ typedef struct _PTP_VENDOR_DATA_OUT {
 } PTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Params`
 
-### -field ResponseCode
+            Is an array consisting of PTP_MAX_PARAMS (defined in <i>Ptpusd.h</i>) elements, representing the parameters of the response.
+        
+            `ResponseCode`
 
-Specifies the response code. These codes are defined in the PIMA 15740:2000 standard.
+            Specifies the response code. These codes are defined in the PIMA 15740:2000 standard.
+        
+            `SessionId`
 
+            Specifies the session ID. This member is not currently used by the PTP driver and should be set to 0.
+        
+            `TransactionId`
 
-### -field SessionId
+            Specifies the transaction ID. This member is not currently used by the PTP driver and should be set to 0.
+        
+            `VendorReadData`
 
-Specifies the session ID. This member is not currently used by the PTP driver and should be set to 0.
+            Is an array containing an (optional) first byte to read from the device.
 
+    ## Remarks
+        See <a href="https://msdn.microsoft.com/3d360a9f-5a65-452b-a8ad-080dc7d8c8f5">Vendor-Extended Commands</a> for more information and example code that uses this structure.
 
-### -field TransactionId
+For more information about the response codes used in the <b>ResponseCode</b> member, see PIMA 15740:2000, <i>Photography </i>−<i> Electronic still picture imaging </i>−<i> Picture Transfer Protocol (PTP) for Digital Still Photography Devices</i>,<i> First Edition</i>, July 5, 2000, http://www.pima.net/standards/it10/PIMA15740/.
 
-Specifies the transaction ID. This member is not currently used by the PTP driver and should be set to 0.
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ptpusd.h (include Ptpusd.h) |
 
+    ## See Also
 
-### -field Params
-
-Is an array consisting of PTP_MAX_PARAMS (defined in <i>Ptpusd.h</i>) elements, representing the parameters of the response.
-
-
-### -field VendorReadData
-
-Is an array containing an (optional) first byte to read from the device.
-
-
-## -remarks
-See <a href="https://msdn.microsoft.com/3d360a9f-5a65-452b-a8ad-080dc7d8c8f5">Vendor-Extended Commands</a> for more information and example code that uses this structure.
-
-For more information about the response codes used in the <b>ResponseCode</b> member, see PIMA 15740:2000, <i>Photography </i>−<i> Electronic still picture imaging </i>−<i> Picture Transfer Protocol (PTP) for Digital Still Photography Devices</i>,<i> First Edition</i>, July 5, 2000, http://www.pima.net/standards/it10/PIMA15740/. 
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\ptpusd\ns-ptpusd-_ptp_vendor_data_in.md">PTP_VENDOR_DATA_IN</a>
 </dt>
@@ -100,5 +96,4 @@ For more information about the response codes used in the <b>ResponseCode</b> me
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20PTP_VENDOR_DATA_OUT structure%20 RELEASE:%20(1/12/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20PTP_VENDOR_DATA_OUT structure%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

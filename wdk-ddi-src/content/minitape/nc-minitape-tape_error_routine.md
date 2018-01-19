@@ -1,84 +1,77 @@
 ---
-UID: NC:minitape.TAPE_ERROR_ROUTINE
-title: TAPE_ERROR_ROUTINE
-author: windows-driver-content
-description: TAPE_ERROR_ROUTINE provides device-specific error handling when an SRB is completed with an error status. This routine is optional.
-old-location: storage\tapeminitapeerror.htm
-old-project: storage
-ms.assetid: a39fac12-f284-4b3a-a9ab-ae75934f810e
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _PROCESSOR_NUMBER, *PPROCESSOR_NUMBER, PROCESSOR_NUMBER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: minitape.h
-req.include-header: Minitape.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: (*TAPE_ERROR_ROUTINE)
-req.alt-loc: minitape.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PPROCESSOR_NUMBER, PROCESSOR_NUMBER
+UID : NC:minitape.TAPE_ERROR_ROUTINE
+title : TAPE_ERROR_ROUTINE
+author : windows-driver-content
+description : TAPE_ERROR_ROUTINE provides device-specific error handling when an SRB is completed with an error status. This routine is optional.
+old-location : storage\tapeminitapeerror.htm
+old-project : storage
+ms.assetid : a39fac12-f284-4b3a-a9ab-ae75934f810e
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _PROCESSOR_NUMBER, *PPROCESSOR_NUMBER, PROCESSOR_NUMBER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : minitape.h
+req.include-header : Minitape.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : (*TAPE_ERROR_ROUTINE)
+req.alt-loc : minitape.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PPROCESSOR_NUMBER, PROCESSOR_NUMBER"
 ---
 
-# TAPE_ERROR_ROUTINE callback
 
-
-
-## -description
+# TAPE_ERROR_ROUTINE callback function
 <i>TAPE_ERROR_ROUTINE</i> provides device-specific error handling when an SRB is completed with an error status. This routine is optional.
 
+## Syntax
 
+```
+TAPE_ERROR_ROUTINE TapeErrorRoutine;
 
-## -prototype
-
-````
-TAPE_ERROR_ROUTINE (*TAPE_ERROR_ROUTINE);
-
-VOID (*TAPE_ERROR_ROUTINE)(
-  _In_    PVOID               MinitapeExtension,
-  _In_    PSCSI_REQUEST_BLOCK Srb,
-  _Inout_ PTAPE_STATUS        TapeStatus
+void TapeErrorRoutine(
+  PVOID MinitapeExtension,
+  PSCSI_REQUEST_BLOCK Srb,
+  PTAPE_STATUS TapeStatus
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MinitapeExtension [in]
+`MinitapeExtension`
 
 Pointer to the driver-specific minitape extension. This is <b>NULL</b> if the miniclass driver did not request a minitape extension when it initialized.
 
-
-### -param Srb [in]
+`Srb`
 
 Pointer to the SRB for the operation that failed.
 
-
-### -param TapeStatus [in, out]
+`TapeStatus`
 
 Pointer to the <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a> set by the tape class driver. The tape miniclass driver can change the TAPE_STATUS or leave it unchanged.
 
 
-## -returns
-  None.
+## Return Value
 
+None.
 
-## -remarks
+## Remarks
+
 Most tape miniclass drivers do not provide a <i>TAPE_ERROR_ROUTINE</i> routine because the <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a> codes set by the tape class driver are appropriate.
 
 For some devices, however, a tape miniclass driver can identify a more appropriate error code than the tape class driver. For example, if the tape class driver returns TAPE_STATUS_BUS_RESET, the tape miniclass driver might be able to determine that the real problem is more accurately represented by TAPE_STATUS_NO_MEDIA for some devices.
@@ -87,14 +80,26 @@ A tape miniclass driver optionally specifies an entry point for its <i>TAPE_ERRO
 
 <i>TAPE_ERROR_ROUTINE</i> determines whether to alter the status provided by the tape class driver based on the input parameters and its knowledge of the device. If the SRB_STATUS_AUTOSENSE_VALID bit is set in <b>Srb-&gt;SrbStatus</b>, then the SRB contains SCSI sense information at <b>SenseInfoBuffer</b>. The length of the buffer is <b>SenseInfoBufferLength</b>. The <i>TAPE_ERROR_ROUTINE</i> routine should examine this information along with the <b>SrbStatus</b> and <b>ScsiStatus</b> in the SRB to determine whether to change the TAPE_STATUS returned.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | minitape.h (include Minitape.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
 <a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
@@ -111,4 +116,3 @@ A tape miniclass driver optionally specifies an entry point for its <i>TAPE_ERRO
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_ERROR_ROUTINE routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

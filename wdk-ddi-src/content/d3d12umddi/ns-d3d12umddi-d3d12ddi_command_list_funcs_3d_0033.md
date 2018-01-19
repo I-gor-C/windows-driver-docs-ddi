@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
-title: D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
-author: windows-driver-content
-description: The command list functions for 3D.
-old-location: display\d3d12ddi-command-list-funcs-3d-0033.htm
-old-project: display
-ms.assetid: 421e0623-0679-4068-b8e0-f0278abd2caf
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_COMMAND_LIST_FUNCS_3D_0033, D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
+UID : NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
+title : D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
+author : windows-driver-content
+description : The command list functions for 3D.
+old-location : display\d3d12ddi-command-list-funcs-3d-0033.htm
+old-project : display
+ms.assetid : 421e0623-0679-4068-b8e0-f0278abd2caf
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_COMMAND_LIST_FUNCS_3D_0033, D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_COMMAND_LIST_FUNCS_3D_0033
 ---
 
 # D3D12DDI_COMMAND_LIST_FUNCS_3D_0033 structure
-
-
-
-## -description
 The command list functions for 3D.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_3D_0033 {
   PFND3D12DDI_CLOSECOMMANDLIST                        pfnCloseCommandList;
@@ -108,297 +101,246 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_3D_0033 {
 } D3D12DDI_COMMAND_LIST_FUNCS_3D_0033, D3D12DDI_COMMAND_LIST_FUNCS_3D_0033;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `pfnAtomicCopyBufferRegion`
 
-### -field pfnCloseCommandList
+            Atomic copy buffer region.
+        
+            `pfnBeginQuery`
 
-Close the command list.
+            Begin query.
+        
+            `pfnBlt`
 
+            Blt.
+        
+            `pfnClearDepthStencilView`
 
-### -field pfnResetCommandList
+            Clear depth stencil view.
+        
+            `pfnClearRenderTargetView`
 
-Reset the command list.
+            Clear render target view.
+        
+            `pfnClearRootArguments`
 
+            Clear root arguments.
+        
+            `pfnClearUnorderedAccessViewFloat`
 
-### -field pfnDrawInstanced
+            Clear unordered access view float.
+        
+            `pfnClearUnorderedAccessViewUint`
 
-Draw instanced.
+            Clear unordered access view unit.
+        
+            `pfnCloseCommandList`
 
+            Close the command list.
+        
+            `pfnCopyBufferRegion`
 
-### -field pfnDrawIndexedInstanced
+            Copy buffer region.
+        
+            `pfnCopyTextureRegion`
 
-Draw indexed instanced.
+            Copy texture region.
+        
+            `pfnCopyTiles`
 
+            Copy tiles.
+        
+            `pfnDiscardResource`
 
-### -field pfnDispatch
+            Discard resource.
+        
+            `pfnDispatch`
 
-Dispatch.
+            Dispatch.
+        
+            `pfnDrawIndexedInstanced`
 
+            Draw indexed instanced.
+        
+            `pfnDrawInstanced`
 
-### -field pfnClearUnorderedAccessViewUint
+            Draw instanced.
+        
+            `pfnEndQuery`
 
-Clear unordered access view unit.
+            End query.
+        
+            `pfnExecuteBundle`
 
+            Execute bundle.
+        
+            `pfnExecuteIndirect`
 
-### -field pfnClearUnorderedAccessViewFloat
+            Execute indirect.
+        
+            `pfnIASetIndexBuffer`
 
-Clear unordered access view float.
+            Set index buffer.
+        
+            `pfnIaSetTopology`
 
+            Set topology
+        
+            `pfnIASetVertexBuffers`
 
-### -field pfnClearRenderTargetView
+            Set vertex buffers.
+        
+            `pfnOmSetBlendFactor`
 
-Clear render target view.
+            Set blend factor.
+        
+            `pfnOMSetDepthBounds`
 
+            Set depth bounds.
+        
+            `pfnOMSetRenderTargets`
 
-### -field pfnClearDepthStencilView
+            Set render targets.
+        
+            `pfnOmSetStencilRef`
 
-Clear depth stencil view.
+            Set stencil reference.
+        
+            `pfnPresent`
 
+            Present.
+        
+            `pfnResetCommandList`
 
-### -field pfnDiscardResource
+            Reset the command list.
+        
+            `pfnResolveQueryData`
 
-Discard resource.
+            Resolve query data.
+        
+            `pfnResourceBarrier`
 
+            Resource barrier.
+        
+            `pfnResourceCopy`
 
-### -field pfnCopyTextureRegion
+            Resource copy.
+        
+            `pfnResourceResolveSubresource`
 
-Copy texture region.
+            Resource resolve subresource.
+        
+            `pfnResourceResolveSubresourceRegion`
 
+            Resource resolve subresource region.
+        
+            `pfnRsSetScissorRects`
 
-### -field pfnResourceCopy
+            Set scissor rectangles.
+        
+            `pfnRsSetViewports`
 
-Resource copy.
+            Set view ports.
+        
+            `pfnSetComputeRoot32BitConstant`
 
+            Set compute root 32-bit constant.
+        
+            `pfnSetComputeRoot32BitConstants`
 
-### -field pfnCopyTiles
+            Set compute root 32-bit constants.
+        
+            `pfnSetComputeRootConstantBufferView`
 
-Copy tiles.
+            Set compute root constant buffer view.
+        
+            `pfnSetComputeRootDescriptorTable`
 
+            Set compute root descriptor table.
+        
+            `pfnSetComputeRootShaderResourceView`
 
-### -field pfnCopyBufferRegion
+            Set compute root shader resource view.
+        
+            `pfnSetComputeRootSignature`
 
-Copy buffer region.
+            Set compute root signature.
+        
+            `pfnSetComputeRootUnorderedAccessView`
 
+            Set compute root unordered access view.
+        
+            `pfnSetDescriptorHeaps`
 
-### -field pfnResourceResolveSubresource
+            Set descriptor heaps.
+        
+            `pfnSetGraphicsRoot32BitConstant`
 
-Resource resolve subresource.
+            Set graphics root 32-bit constant.
+        
+            `pfnSetGraphicsRoot32BitConstants`
 
+            Set graphics root 32-bit constants.
+        
+            `pfnSetGraphicsRootConstantBufferView`
 
-### -field pfnExecuteBundle
+            Set graphics root constant buffer view.
+        
+            `pfnSetGraphicsRootDescriptorTable`
 
-Execute bundle.
+            Set graphics root descriptor table.
+        
+            `pfnSetGraphicsRootShaderResourceView`
 
+            Set graphics root shader resource view.
+        
+            `pfnSetGraphicsRootSignature`
 
-### -field pfnExecuteIndirect
+            Set graphics root signature.
+        
+            `pfnSetGraphicsRootUnorderedAccessView`
 
-Execute indirect.
+            Set graphics root unordered access view.
+        
+            `pfnSetMarker`
 
+            Set marker.
+        
+            `pfnSetPipelineState`
 
-### -field pfnResourceBarrier
+            Set pipeline state.
+        
+            `pfnSetPredication`
 
-Resource barrier.
+            Set predication.
+        
+            `pfnSetProtectedResourceSession`
 
+            Set protected resource session.
+        
+            `pfnSetSamplePositions`
 
-### -field pfnBlt
+            Set sample positions.
+        
+            `pfnSetViewInstanceMask`
 
-Blt.
+            Set view instance mask.
+        
+            `pfnSOSetTargets`
 
+            Set targets.
+        
+            `pfnWriteBufferImmediate`
 
-### -field pfnPresent
+            Write buffer immediate.
 
-Present.
 
-
-### -field pfnBeginQuery
-
-Begin query.
-
-
-### -field pfnEndQuery
-
-End query.
-
-
-### -field pfnResolveQueryData
-
-Resolve query data.
-
-
-### -field pfnSetPredication
-
-Set predication.
-
-
-### -field pfnIaSetTopology
-
-Set topology
-
-
-### -field pfnRsSetViewports
-
-Set view ports.
-
-
-### -field pfnRsSetScissorRects
-
-Set scissor rectangles.
-
-
-### -field pfnOmSetBlendFactor
-
-Set blend factor.
-
-
-### -field pfnOmSetStencilRef
-
-Set stencil reference.
-
-
-### -field pfnSetPipelineState
-
-Set pipeline state.
-
-
-### -field pfnSetDescriptorHeaps
-
-Set descriptor heaps.
-
-
-### -field pfnSetComputeRootSignature
-
-Set compute root signature.
-
-
-### -field pfnSetGraphicsRootSignature
-
-Set graphics root signature.
-
-
-### -field pfnSetComputeRootDescriptorTable
-
-Set compute root descriptor table.
-
-
-### -field pfnSetGraphicsRootDescriptorTable
-
-Set graphics root descriptor table.
-
-
-### -field pfnSetComputeRoot32BitConstant
-
-Set compute root 32-bit constant.
-
-
-### -field pfnSetGraphicsRoot32BitConstant
-
-Set graphics root 32-bit constant.
-
-
-### -field pfnSetComputeRoot32BitConstants
-
-Set compute root 32-bit constants.
-
-
-### -field pfnSetGraphicsRoot32BitConstants
-
-Set graphics root 32-bit constants.
-
-
-### -field pfnSetComputeRootConstantBufferView
-
-Set compute root constant buffer view.
-
-
-### -field pfnSetGraphicsRootConstantBufferView
-
-Set graphics root constant buffer view.
-
-
-### -field pfnSetComputeRootShaderResourceView
-
-Set compute root shader resource view.
-
-
-### -field pfnSetGraphicsRootShaderResourceView
-
-Set graphics root shader resource view.
-
-
-### -field pfnSetComputeRootUnorderedAccessView
-
-Set compute root unordered access view.
-
-
-### -field pfnSetGraphicsRootUnorderedAccessView
-
-Set graphics root unordered access view.
-
-
-### -field pfnIASetIndexBuffer
-
-Set index buffer.
-
-
-### -field pfnIASetVertexBuffers
-
-Set vertex buffers.
-
-
-### -field pfnSOSetTargets
-
-Set targets.
-
-
-### -field pfnOMSetRenderTargets
-
-Set render targets.
-
-
-### -field pfnSetMarker
-
-Set marker.
-
-
-### -field pfnClearRootArguments
-
-Clear root arguments.
-
-
-### -field pfnAtomicCopyBufferRegion
-
-Atomic copy buffer region.
-
-
-### -field pfnOMSetDepthBounds
-
-Set depth bounds.
-
-
-### -field pfnSetSamplePositions
-
-Set sample positions.
-
-
-### -field pfnResourceResolveSubresourceRegion
-
-Resource resolve subresource region.
-
-
-### -field pfnSetProtectedResourceSession
-
-Set protected resource session.
-
-
-### -field pfnWriteBufferImmediate
-
-Write buffer immediate.
-
-
-### -field pfnSetViewInstanceMask
-
-Set view instance mask.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

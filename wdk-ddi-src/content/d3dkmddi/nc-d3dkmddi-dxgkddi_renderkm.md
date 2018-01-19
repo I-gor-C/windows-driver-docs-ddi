@@ -1,71 +1,64 @@
 ---
-UID: NC:d3dkmddi.DXGKDDI_RENDERKM
-title: DXGKDDI_RENDERKM function
-author: windows-driver-content
-description: For display adapters that support GDI hardware acceleration, the DxgkDdiRenderKm function generates a direct memory access (DMA) buffer from the command buffer that the kernel-mode Canonical Display Driver (CDD) passed.
-old-location: display\dxgkddirenderkm.htm
-old-project: display
-ms.assetid: 5841934d-7e0a-4bb8-a7f8-17d8c0af351f
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_RENDERKM
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: d3dkmddi.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiRenderKm
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKDDI_RENDERKM
+title : DXGKDDI_RENDERKM
+author : windows-driver-content
+description : For display adapters that support GDI hardware acceleration, the DxgkDdiRenderKm function generates a direct memory access (DMA) buffer from the command buffer that the kernel-mode Canonical Display Driver (CDD) passed.
+old-location : display\dxgkddirenderkm.htm
+old-project : display
+ms.assetid : 5841934d-7e0a-4bb8-a7f8-17d8c0af351f
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiRenderKm
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
+
 # DXGKDDI_RENDERKM function
-
-
-
-## -description
 For display adapters that support GDI hardware acceleration, the <i>DxgkDdiRenderKm</i> function generates a direct memory access (DMA) buffer from the command buffer that the kernel-mode Canonical Display Driver (CDD) passed.
 
+## Syntax
 
+```
+DXGKDDI_RENDERKM DxgkddiRenderkm;
 
-## -syntax
-
-````
-DXGKDDI_RENDERKM DxgkDdiRenderKm;
-
-NTSTATUS APIENTRY DxgkDdiRenderKm(
-  _In_    const HANDLE         hContext,
-  _Inout_       DXGKARG_RENDER *pRenderKmArgs
+NTSTATUS DxgkddiRenderkm(
+  IN_CONST_HANDLE hContext,
+  INOUT_PDXGKARG_RENDER pRenderKmArgs
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hContext [in]
+`hContext`
 
 [in] A handle to the device context for the DMA and command buffers. The display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function previously returned this handle in the <b>hContext</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createcontext.md">DXGKARG_CREATECONTEXT</a> structure that the <i>pCreateContext</i> parameter of <i>DxgkDdiCreateContext</i> points to.
 
 If the driver does not support context creation, the Microsoft DirectX graphics kernel subsystem replaces the handle to the context with a handle to the device. The display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function previously returned the device handle in the <b>hDevice</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createdevice.md">DXGKARG_CREATEDEVICE</a> structure that the <i>pCreateDevice</i> parameter of <i>DxgkDdiCreateDevice</i> points to.
 
-
-### -param pRenderKmArgs [in, out]
+`pRenderKmArgs`
 
 [in/out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_render.md">DXGKARG_RENDER</a> structure that contains information about the DMA buffer and a formatted command buffer.
 
@@ -74,7 +67,8 @@ If the display miniport driver supports GDI hardware acceleration, <i>pRenderKmA
 The driver must translate the input command buffer into DMA buffer commands and build the patch location list.
 
 
-## -returns
+## Return Value
+
 <i>DxgkDdiRenderKm</i> returns one of the following values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -101,12 +95,10 @@ The driver must translate the input command buffer into DMA buffer commands and 
        
 <dl>
 <dt><b>STATUS_GRAPHICS_GPU_EXCEPTION_ON_DEVICE</b></dt>
-</dl>The display miniport driver detected an error in the DMA stream. The graphics context device is placed in a lost state if the driver returns this error code. 
+</dl>The display miniport driver detected an error in the DMA stream. The graphics context device is placed in a lost state if the driver returns this error code.
 
- 
+## Remarks
 
-
-## -remarks
 The DirectX graphics kernel subsystem calls the display miniport driver's <i>DxgkDdiRenderKm</i> function to generate a DMA buffer from the command buffer that is passed by the kernel-mode Canonical Display Driver (CDD) provided by the operating system. In addition to the output DMA buffer, the display miniport driver should also generate a list of output patch locations. The video memory manager uses this list to split and patch DMA buffers appropriately.
 
 The display miniport driver is not required to use information that the CDD provides if it can re-create the information more optimally. For example, if the <i>pRender</i>-&gt;<b>pPatchLocationListIn</b> member is empty because the user-mode display driver did not provide an input patch-location list, the display miniport driver can generate the content of the <i>pRender</i>-&gt;<b>pPatchLocationListOut</b> member based on the content of the command buffer instead.
@@ -119,11 +111,23 @@ In guaranteed contract DMA mode, when the display miniport driver translates a c
 
 <i>DxgkDdiRenderKm</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
@@ -158,4 +162,3 @@ In guaranteed contract DMA mode, when the display miniport driver translates a c
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_RENDERKM callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

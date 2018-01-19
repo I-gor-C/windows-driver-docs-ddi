@@ -1,50 +1,43 @@
 ---
-UID: NS:dot11wdi._WDI_TX_COMPLETE_DATA
-title: _WDI_TX_COMPLETE_DATA
-author: windows-driver-content
-description: The WDI_TX_COMPLETE_DATA structure defines TX completion data.
-old-location: netvista\wdi_tx_complete_data.htm
-old-project: netvista
-ms.assetid: bf7951de-3368-4faf-9bae-272c6d76d1a0
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: dot11wdi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WDI_TX_COMPLETE_DATA
-req.alt-loc: dot11wdi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA
+UID : NS:dot11wdi._WDI_TX_COMPLETE_DATA
+title : _WDI_TX_COMPLETE_DATA
+author : windows-driver-content
+description : The WDI_TX_COMPLETE_DATA structure defines TX completion data.
+old-location : netvista\wdi_tx_complete_data.htm
+old-project : netvista
+ms.assetid : bf7951de-3368-4faf-9bae-272c6d76d1a0
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : dot11wdi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WDI_TX_COMPLETE_DATA
+req.alt-loc : dot11wdi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA"
 ---
 
 # _WDI_TX_COMPLETE_DATA structure
-
-
-
-## -description
 The WDI_TX_COMPLETE_DATA structure defines TX completion data.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WDI_TX_COMPLETE_DATA {
   UINT16           SeqCtl;
@@ -57,42 +50,42 @@ typedef struct _WDI_TX_COMPLETE_DATA {
 } WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `MpduPN`
 
-### -field SeqCtl
+            The MPDU PN.
+        
+            `PnLength`
 
-The value of the sequence control field from the frame transmission.
+            The MPDU PN length for the transmitted frame.
+        
+            `ReplayIHVReserved0`
 
+            Reserved for IHV use.
+        
+            `ReplayIHVReserved1`
 
-### -field PnLength
+            Reserved for IHV use.
+        
+            `RetryCount`
 
-The MPDU PN length for the transmitted frame.
+            The number of attempts to transmit the frame.
+        
+            `SeqCtl`
 
+            The value of the sequence control field from the frame transmission.
+        
+            `wPad`
 
-### -field RetryCount
-
-The number of attempts to transmit the frame.
-
-
-### -field wPad
-
-This member is reserved.
-
-
-### -field MpduPN
-
-The MPDU PN.
-
-
-### -field ReplayIHVReserved0
-
-Reserved for IHV use.
-
-
-### -field ReplayIHVReserved1
-
-Reserved for IHV use.
+            This member is reserved.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dot11wdi.h |

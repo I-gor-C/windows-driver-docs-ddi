@@ -1,50 +1,45 @@
 ---
-UID: NF:storport.StorPortInvokeAcpiMethod
-title: StorPortInvokeAcpiMethod function
-author: windows-driver-content
-description: The StorPortInvokeAcpiMethod routine executes an ACPI method for a storage device.
-old-location: storage\storportinvokeacpimethod.htm
-old-project: storage
-ms.assetid: 2A8EF694-B699-46A0-9B1D-B7D0831F3944
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: StorPortInvokeAcpiMethod
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: StorPortInvokeAcpiMethod
-req.alt-loc: storport.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
+UID : NF:storport.StorPortInvokeAcpiMethod
+title : StorPortInvokeAcpiMethod function
+author : windows-driver-content
+description : The StorPortInvokeAcpiMethod routine executes an ACPI method for a storage device.
+old-location : storage\storportinvokeacpimethod.htm
+old-project : storage
+ms.assetid : 2A8EF694-B699-46A0-9B1D-B7D0831F3944
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : StorPortInvokeAcpiMethod
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : StorPortInvokeAcpiMethod
+req.alt-loc : storport.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : STOR_SPINLOCK
+req.product : Windows 10 or later.
 ---
 
+
 # StorPortInvokeAcpiMethod function
-
-
-
-## -description
 The <b>StorPortInvokeAcpiMethod</b> routine executes an ACPI method for a storage device.
 
-
-
-## -syntax
+## Syntax
 
 ````
 ULONG StorPortInvokeAcpiMethod(
@@ -59,50 +54,43 @@ ULONG StorPortInvokeAcpiMethod(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension [in]
+`HwDeviceExtension`
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-
-### -param Address [in, optional]
+`Address`
 
 The address of the target device. This parameter is optional. If <i>Address</i> is set to <b>NULL</b>, the adapter is the target.
 
-
-### -param MethodName [in]
+`MethodName`
 
 A four-byte name for the ACPI method. For example, ((ULONG) 'DDS_') would name the _SDD, or 'Set Device Data',  ACPI method for an AHCI controller.
 
-
-### -param InputBuffer [in, optional]
+`InputBuffer`
 
 A pointer to the input data to the method.
 
-
-### -param InputBufferLength [in]
+`InputBufferLength`
 
 The length, in bytes, of the buffer in <i>InputBuffer</i>.
 
-
-### -param OutputBuffer [in, optional]
+`OutputBuffer`
 
 A pointer to the output data from the method.
 
-
-### -param OutputBufferLength [in]
+`OutputBufferLength`
 
 The length, in bytes, of the buffer in <i>OutputBuffer</i>.
 
-
-### -param BytesReturned [out, optional]
+`BytesReturned`
 
 A pointer to the length, in bytes, of the data returned in <i>OutputBuffer</i>.
 
 
-## -returns
+## Return Value
+
 The <b>StorPortInvokeAcpiMethod</b> routine returns one of these status codes:
 <dl>
 <dt><b>STOR_STATUS_INVALID_UNSUCCESSFUL</b></dt>
@@ -127,8 +115,18 @@ The <b>StorPortInvokeAcpiMethod</b> routine returns one of these status codes:
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
 </dl>The method executed successfully.
 
- 
+## Remarks
 
-
-## -remarks
 The <b>StorPortInvokeAcpiMethod</b> enables a miniport driver to invoke ACPI methods defined for storage controllers and storage LUNs. The method names are four-byte character strings that occupy a <b>ULONG</b> value in <i>MethodName</i>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |

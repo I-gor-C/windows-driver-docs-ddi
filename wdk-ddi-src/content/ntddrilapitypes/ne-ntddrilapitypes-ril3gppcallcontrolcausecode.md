@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RIL3GPPCALLCONTROLCAUSECODE
-title: RIL3GPPCALLCONTROLCAUSECODE
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\ril3gppcallcontrolcausecode.htm
-old-project: netvista
-ms.assetid: a469e292-a57d-4876-a050-266f57985a50
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RIL3GPPCALLCONTROLCAUSECODE, RIL3GPPCALLCONTROLCAUSECODE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RIL3GPPCALLCONTROLCAUSECODE
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RIL3GPPCALLCONTROLCAUSECODE
+UID : NE:ntddrilapitypes.RIL3GPPCALLCONTROLCAUSECODE
+title : RIL3GPPCALLCONTROLCAUSECODE
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\ril3gppcallcontrolcausecode.htm
+old-project : netvista
+ms.assetid : a469e292-a57d-4876-a050-266f57985a50
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RIL3GPPCALLCONTROLCAUSECODE, RIL3GPPCALLCONTROLCAUSECODE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RIL3GPPCALLCONTROLCAUSECODE
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RIL3GPPCALLCONTROLCAUSECODE
 ---
 
-# RIL3GPPCALLCONTROLCAUSECODE enumeration
-
-
-
-## -description
+# RIL3GPPCALLCONTROLCAUSECODE Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RIL3GPPCALLCONTROLCAUSECODE { 
   RIL_3GPPCCCAUSE_NO_ROUTE_TO_DESTINATION,
@@ -96,145 +89,246 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
 } RIL3GPPCALLCONTROLCAUSECODE;
 ````
 
-
-## -enum-fields
-
-### -field RIL_3GPPCCCAUSE_NO_ROUTE_TO_DESTINATION
-
-
-### -field RIL_3GPPCCCAUSE_CHANNEL_UNACCEPTABLE
-
-
-### -field RIL_3GPPCCCAUSE_OPERATOR_DETERMINED_BARRING
-
-
-### -field RIL_3GPPCCCAUSE_NORMAL_CALL_CLEARING
-
-
-### -field RIL_3GPPCCCAUSE_USER_BUSY
-
-
-### -field RIL_3GPPCCCAUSE_NO_USER_RESPONDING
-
-
-### -field RIL_3GPPCCCAUSE_USER_ALERTING_NO_ANSWER
-
-
-### -field RIL_3GPPCCCAUSE_CALL_REJECTED
-
-
-### -field RIL_3GPPCCCAUSE_NUMBER_CHANGED
-
-
-### -field RIL_3GPPCCCAUSE_PREEMPTION
-
-
-### -field RIL_3GPPCCCAUSE_DESTINATION_OUT_OF_ORDER
-
-
-### -field RIL_3GPPCCCAUSE_INVALID_NUMBER_FORMAT
-
-
-### -field RIL_3GPPCCCAUSE_FACILITY_REJECTED
-
-
-### -field RIL_3GPPCCCAUSE_RESPONSE_TO_STATUS_ENQUIRY
-
-
-### -field RIL_3GPPCCCAUSE_NORMAL_UNSPECIFIED
-
-
-### -field RIL_3GPPCCCAUSE_NO_CHANNEL_AVAILABLE
-
-
-### -field RIL_3GPPCCCAUSE_NETWORK_OUT_OF_ORDER
-
-
-### -field RIL_3GPPCCCAUSE_TEMPORARY_FAILURE
-
-
-### -field RIL_3GPPCCCAUSE_CONGESTION
-
-
-### -field RIL_3GPPCCCAUSE_ACCESS_INFORMATION_DISCARDED
-
-
-### -field RIL_3GPPCCCAUSE_REQUESTED_CHANNEL_NOT_AVAILABLE
-
-
-### -field RIL_3GPPCCCAUSE_RESOURCE_UNAVAILABLE_UNSPECIFIED
-
-
-### -field RIL_3GPPCCCAUSE_QOS_UNAVAILABLE
-
-
-### -field RIL_3GPPCCCAUSE_FACILITY_NOT_SUBSCRIBED
-
-
-### -field RIL_3GPPCCCAUSE_INCOMING_CALLS_BARRED_IN_CUG
-
-
-### -field RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AUTHORIZED
-
-
-### -field RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AVAILABLE
-
-
-### -field RIL_3GPPCCCAUSE_SVC_NOT_AVAILABLE_UNSPECIFIED
-
-
-### -field RIL_3GPPCCCAUSE_BEARER_SERVICE_NOT_IMPLEMENTED
-
-
-### -field RIL_3GPPCCCAUSE_ACM_NOT_LESS_THAN_ACMMAX
-
-
-### -field RIL_3GPPCCCAUSE_FACILITY_NOT_IMPLEMENTED
-
-
-### -field RIL_3GPPCCCAUSE_ONLY_RESTRICTED_DIGITAL_BEARER
-
-
-### -field RIL_3GPPCCCAUSE_SVC_NOT_IMPLEMENTED_UNSPECIFIED
-
-
-### -field RIL_3GPPCCCAUSE_INVALID_TRANSACTION_ID
-
-
-### -field RIL_3GPPCCCAUSE_USER_NOT_MEMBER_OF_CUG
-
-
-### -field RIL_3GPPCCCAUSE_INCOMPATIBLE_DESTINATION
-
-
-### -field RIL_3GPPCCCAUSE_SEMANTICALLY_INCORRECT_MESSAGE
-
-
-### -field RIL_3GPPCCCAUSE_INVALID_MANDATORY_FUNCTION
-
-
-### -field RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED
-
-
-### -field RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_COMPATIBLE
-
-
-### -field RIL_3GPPCCCAUSE_IE_NOT_IMPLEMENTED
-
-
-### -field RIL_3GPPCCCAUSE_CONDITIONAL_IE_ERROR
-
-
-### -field RIL_3GPPCCCAUSE_MESSAGE_NOT_COMPATIBLE
-
-
-### -field RIL_3GPPCCCAUSE_RECOVERY_ON_TIMER_EXPIRY
-
-
-### -field RIL_3GPPCCCAUSE_PROTOCOL_ERROR_UNSPECIFIED
-
-
-### -field RIL_3GPPCCCAUSE_INTERWORKING_UNSPECIFIED
-
-
-## -remarks
+## Constants
+
+<table>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_ACCESS_INFORMATION_DISCARDED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_ACM_NOT_LESS_THAN_ACMMAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AUTHORIZED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AVAILABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_BEARER_SERVICE_NOT_IMPLEMENTED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_CALL_REJECTED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_CHANNEL_UNACCEPTABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_CONDITIONAL_IE_ERROR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_CONGESTION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_DESTINATION_OUT_OF_ORDER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_FACILITY_NOT_IMPLEMENTED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_FACILITY_NOT_SUBSCRIBED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_FACILITY_REJECTED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_IE_NOT_IMPLEMENTED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_INCOMING_CALLS_BARRED_IN_CUG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_INCOMPATIBLE_DESTINATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_INTERWORKING_UNSPECIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_INVALID_MANDATORY_FUNCTION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_INVALID_NUMBER_FORMAT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_INVALID_TRANSACTION_ID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_MESSAGE_NOT_COMPATIBLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_COMPATIBLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_NETWORK_OUT_OF_ORDER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_NO_CHANNEL_AVAILABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_NO_ROUTE_TO_DESTINATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_NO_USER_RESPONDING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_NORMAL_CALL_CLEARING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_NORMAL_UNSPECIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_NUMBER_CHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_ONLY_RESTRICTED_DIGITAL_BEARER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_OPERATOR_DETERMINED_BARRING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_PREEMPTION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_PROTOCOL_ERROR_UNSPECIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_QOS_UNAVAILABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_RECOVERY_ON_TIMER_EXPIRY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_REQUESTED_CHANNEL_NOT_AVAILABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_RESOURCE_UNAVAILABLE_UNSPECIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_RESPONSE_TO_STATUS_ENQUIRY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_SEMANTICALLY_INCORRECT_MESSAGE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_SVC_NOT_AVAILABLE_UNSPECIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_SVC_NOT_IMPLEMENTED_UNSPECIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_TEMPORARY_FAILURE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_USER_ALERTING_NO_ANSWER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_USER_BUSY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPCCCAUSE_USER_NOT_MEMBER_OF_CUG</td>
+<td></td>
+</tr>
+</table>
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdbgexts.ReadControlSpace64
-title: ReadControlSpace64 function
-author: windows-driver-content
-description: The ReadControlSpace64 function reads the processor-specific control space into the array pointed to by buf.
-old-location: debugger\readcontrolspace64.htm
-old-project: debugger
-ms.assetid: 4fa3d51a-d2f5-4b5f-abc0-515bf7211b87
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: ReadControlSpace64
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ReadControlSpace64
-req.alt-loc: wdbgexts.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: EXT_TDOP
-req.product: Windows 10 or later.
+UID : NF:wdbgexts.ReadControlSpace64
+title : ReadControlSpace64 function
+author : windows-driver-content
+description : The ReadControlSpace64 function reads the processor-specific control space into the array pointed to by buf.
+old-location : debugger\readcontrolspace64.htm
+old-project : debugger
+ms.assetid : 4fa3d51a-d2f5-4b5f-abc0-515bf7211b87
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : ReadControlSpace64
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdbgexts.h
+req.include-header : Wdbgexts.h, Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ReadControlSpace64
+req.alt-loc : wdbgexts.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : EXT_TDOP
+req.product : Windows 10 or later.
 ---
 
+
 # ReadControlSpace64 function
-
-
-
-## -description
 The <b>ReadControlSpace64</b> function reads the processor-specific control space into the array pointed to by <i>buf</i>.
 
-
-
-## -syntax
+## Syntax
 
 ````
 __inline VOID ReadControlSpace64(
@@ -55,30 +50,27 @@ __inline VOID ReadControlSpace64(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param processor 
+`processor`
 
 Specifies the number of the processor whose control space is to be read.
 
-
-### -param address 
+`address`
 
 Specifies the address of the control space.
 
-
-### -param buf 
+`buf`
 
 Specifies the address of an array of bytes to hold the control space data.
 
-
-### -param size 
+`size`
 
 Specifies the number of bytes in the array pointed to by <i>buf</i>.
 
 
-## -returns
+## Return Value
+
 None
 
 This macro does not return a value.
@@ -189,8 +181,8 @@ This macro does not return a value.
 
 The parameters provided to this macro are the same as those provided to the <b>ReadControlSpace64</b> function except that instead of providing a pointer to a structure and its size, the structure can be provided directly.
 
+## Remarks
 
-## -remarks
 If you are writing 32-bit code, you should use <a href="..\wdbgexts\ns-wdbgexts-_readcontrolspace.md">ReadControlSpace</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
@@ -211,3 +203,15 @@ Specifies the address of the control space.
 Specifies the object into which the control space data is read.
 
 <b>Return value</b></p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

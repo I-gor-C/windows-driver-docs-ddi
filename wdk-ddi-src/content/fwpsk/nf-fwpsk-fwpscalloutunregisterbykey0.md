@@ -1,50 +1,45 @@
 ---
-UID: NF:fwpsk.FwpsCalloutUnregisterByKey0
-title: FwpsCalloutUnregisterByKey0 function
-author: windows-driver-content
-description: The FwpsCalloutUnregisterByKey0 function unregisters a callout from the filter engine.Note  FwpsCalloutUnregisterByKey0 is a specific version of FwpsCalloutUnregisterByKey.
-old-location: netvista\fwpscalloutunregisterbykey0.htm
-old-project: netvista
-ms.assetid: 24254e56-c7f5-4424-98b5-3b99bf210d5b
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsCalloutUnregisterByKey0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsCalloutUnregisterByKey0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsCalloutUnregisterByKey0
+title : FwpsCalloutUnregisterByKey0 function
+author : windows-driver-content
+description : The FwpsCalloutUnregisterByKey0 function unregisters a callout from the filter engine.Note  FwpsCalloutUnregisterByKey0 is a specific version of FwpsCalloutUnregisterByKey.
+old-location : netvista\fwpscalloutunregisterbykey0.htm
+old-project : netvista
+ms.assetid : 24254e56-c7f5-4424-98b5-3b99bf210d5b
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsCalloutUnregisterByKey0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsCalloutUnregisterByKey0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsCalloutUnregisterByKey0 function
-
-
-
-## -description
 The 
   <b>FwpsCalloutUnregisterByKey0</b> function unregisters a callout from the filter engine.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsCalloutUnregisterByKey0(
@@ -52,10 +47,9 @@ NTSTATUS NTAPI FwpsCalloutUnregisterByKey0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param calloutKey [in]
+`calloutKey`
 
 A pointer to a GUID that uniquely identifies the callout that is being unregistered from the
      filter engine. This must be a pointer to the same GUID that was specified when the callout driver called
@@ -65,7 +59,8 @@ A pointer to a GUID that uniquely identifies the callout that is being unregiste
      register the callout with the filter engine.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsCalloutUnregisterByKey0</b> function returns one of the following NTSTATUS codes.
 <dl>
@@ -92,10 +87,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpsCalloutUnregisterByKey0</b> function to unregister a callout from the filter engine, using the GUID
     key to identify the callout to be unregistered. This function succeeds even if there are filters in
@@ -107,8 +100,20 @@ A callout driver calls the
 A callout driver cannot be unloaded until all of the callouts that were previously registered with the
     filter engine have been successfully unregistered.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
@@ -131,4 +136,3 @@ A callout driver cannot be unloaded until all of the callouts that were previous
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutUnregisterByKey0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

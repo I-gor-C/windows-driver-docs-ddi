@@ -1,74 +1,68 @@
 ---
-UID: NC:d3dkmddi.DXGKDDI_COLLECTDBGINFO
-title: DXGKDDI_COLLECTDBGINFO function
-author: windows-driver-content
-description: The DxgkDdiCollectDbgInfo function outputs driver information for a debug report.
-old-location: display\dxgkddicollectdbginfo.htm
-old-project: display
-ms.assetid: f2f3d8f7-5a54-4830-b8f8-ac2f93096eda
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_COLLECTDBGINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: d3dkmddi.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiCollectDbgInfo
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKDDI_COLLECTDBGINFO
+title : DXGKDDI_COLLECTDBGINFO
+author : windows-driver-content
+description : The DxgkDdiCollectDbgInfo function outputs driver information for a debug report.
+old-location : display\dxgkddicollectdbginfo.htm
+old-project : display
+ms.assetid : f2f3d8f7-5a54-4830-b8f8-ac2f93096eda
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiCollectDbgInfo
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
+
 # DXGKDDI_COLLECTDBGINFO function
-
-
-
-## -description
 The <i>DxgkDdiCollectDbgInfo</i> function outputs driver information for a debug report.
 
+## Syntax
 
+```
+DXGKDDI_COLLECTDBGINFO DxgkddiCollectdbginfo;
 
-## -syntax
-
-````
-DXGKDDI_COLLECTDBGINFO DxgkDdiCollectDbgInfo;
-
-NTSTATUS APIENTRY DxgkDdiCollectDbgInfo(
-  _In_ const HANDLE                 hAdapter,
-  _In_ const DXGKARG_COLLECTDBGINFO *pCollectDbgInfo
+NTSTATUS DxgkddiCollectdbginfo(
+  IN_CONST_HANDLE hAdapter,
+  IN_CONST_PDXGKARG_COLLECTDBGINFO pCollectDbgInfo
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hAdapter [in]
+`hAdapter`
 
 [in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
-
-### -param pCollectDbgInfo [in]
+`pCollectDbgInfo`
 
 [in] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo.md">DXGKARG_COLLECTDBGINFO</a> structure that describes information for the debug report.
 
 
-## -returns
+## Return Value
+
 <i>DxgkDdiCollectDbgInfo</i> returns one of the following values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -82,10 +76,8 @@ NTSTATUS APIENTRY DxgkDdiCollectDbgInfo(
 <dt><b>STATUS_UNSUCCESSFULL</b></dt>
 </dl>Another error prevented the driver from collecting valid debug information.
 
- 
+## Remarks
 
-
-## -remarks
 The DirectX graphics kernel subsystem calls the display miniport driver's <i>DxgkDdiCollectDbgInfo</i> function whenever the operating system is about to generate a driver-related debug report. <i>DxgkDdiCollectDbgInfo</i> might be called either immediately before Timeout Detection and Recovery (TDR) work (for more information, see <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetfromtimeout.md">DxgkDdiResetFromTimeout</a>) or immediately before the operating system bug checks. 
 
 The display miniport driver should collect debug information. When <i>DxgkDdiCollectDbgInfo</i> is called, the driver receives a bug-check code in the <b>Reason</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo.md">DXGKARG_COLLECTDBGINFO</a> structure that the <i>pCollectDbgInfo</i> parameter points to that indicates the type of information required for the debug report. The driver copies the required debug information to the buffer that the <b>pBuffer</b> member of <b>DXGKARG_COLLECTDBGINFO</b> points to. The <b>BufferSize</b> member of <b>DXGKARG_COLLECTDBGINFO</b> specifies the maximum number of bytes of information that the driver can copy. 
@@ -94,8 +86,20 @@ The display miniport driver should collect debug information. When <i>DxgkDdiCol
 
 For more information, see <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E2-8BBF-B455BB864A29">TDR changes in Windows 8</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo.md">DXGKARG_COLLECTDBGINFO</a>
@@ -112,4 +116,3 @@ For more information, see <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E2
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_COLLECTDBGINFO callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

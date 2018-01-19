@@ -1,67 +1,61 @@
 ---
-UID: NC:bthddi.PFNBTHPORT_INDICATION_CALLBACK
-title: PFNBTHPORT_INDICATION_CALLBACK
-author: windows-driver-content
-description: Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and any changes to the status of a currently open L2CAP connection.
-old-location: bltooth\l2cap_callback_function.htm
-old-project: bltooth
-ms.assetid: d3ca900d-1dd6-49da-ae94-855de3fbd086
-ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: _KSM_PIN_PAIR, KSM_PIN_PAIR, *PKSM_PIN_PAIR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: bthddi.h
-req.include-header: Bthddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Versions: Supported in Windows Vista, and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: BluetoothPortIndicationCallback
-req.alt-loc: bthddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: KSM_PIN_PAIR, *PKSM_PIN_PAIR
+UID : NC:bthddi.PFNBTHPORT_INDICATION_CALLBACK
+title : PFNBTHPORT_INDICATION_CALLBACK
+author : windows-driver-content
+description : Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and any changes to the status of a currently open L2CAP connection.
+old-location : bltooth\l2cap_callback_function.htm
+old-project : bltooth
+ms.assetid : d3ca900d-1dd6-49da-ae94-855de3fbd086
+ms.author : windowsdriverdev
+ms.date : 12/21/2017
+ms.keywords : IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : bthddi.h
+req.include-header : Bthddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : BluetoothPortIndicationCallback
+req.alt-loc : bthddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
-# PFNBTHPORT_INDICATION_CALLBACK callback
 
-
-
-## -description
+# PFNBTHPORT_INDICATION_CALLBACK callback function
 Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a
   mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and
   any changes to the status of a currently open L2CAP connection.
 
+## Syntax
 
+```
+PFNBTHPORT_INDICATION_CALLBACK PfnbthportIndicationCallback;
 
-## -prototype
-
-````
-PFNBTHPORT_INDICATION_CALLBACK BluetoothPortIndicationCallback;
-
-void BluetoothPortIndicationCallback(
-  _In_ PVOID                  Context,
-  _In_ INDICATION_CODE        Indication,
-  _In_ PINDICATION_PARAMETERS Parameters
+void PfnbthportIndicationCallback(
+  IN PVOID Context,
+  IN INDICATION_CODE Indication,
+  IN PINDICATION_PARAMETERS Parameters
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Context [in]
+`Context`
 
 For incoming remote connection request indications, this is the context specified by the profile
      driver in the 
@@ -72,26 +66,25 @@ For incoming remote connection request indications, this is the context specifie
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
      <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a> BRB.
 
-
-### -param Indication [in]
+`Indication`
 
 An 
      <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> value that indicates the type
      of L2CAP event.
 
-
-### -param Parameters [in]
+`Parameters`
 
 An 
      <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure that
      contains event-specific parameters.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A profile driver registers its L2CAP callback function in the following two scenarios:
 
 When a profile driver acts as a server, it registers a L2CAP callback function using the 
@@ -105,7 +98,7 @@ When the profile driver acts as a client and attempts to connect to a remote dev
       <b>Callback</b> member of the _BRB_L2CA_OPEN_CHANNEL structure that is passed when the profile driver 
       <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">builds and sends</a> a 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a> or 
-      <a href="bltooth.brb_l2ca_open_channel_response">
+      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
       BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request.
 
 After the profile driver registers its L2CAP callback function, the callback function is only
@@ -123,8 +116,20 @@ The
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS union member that
     corresponds to the event and contains event-specific parameters.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | bthddi.h (include Bthddi.h) |
+| **Library** |  |
+| **IRQL** | Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\bthddi\ns-bthddi-_brb_l2ca_register_server.md">_BRB_L2CA_REGISTER_SERVER</a>
@@ -144,4 +149,3 @@ The
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PFNBTHPORT_INDICATION_CALLBACK callback function%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

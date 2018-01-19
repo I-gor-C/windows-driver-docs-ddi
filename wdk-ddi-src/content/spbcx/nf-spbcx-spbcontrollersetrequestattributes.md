@@ -1,50 +1,45 @@
 ---
-UID: NF:spbcx.SpbControllerSetRequestAttributes
-title: SpbControllerSetRequestAttributes function
-author: windows-driver-content
-description: The SpbControllerSetRequestAttributes method sets object attributes that will be used for all SPBREQUEST objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver.
-old-location: spb\spbcontrollersetrequestattributes.htm
-old-project: SPB
-ms.assetid: 9BE790DB-DB7A-44A3-8A89-673CBFCF4D65
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: SpbControllerSetRequestAttributes
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: spbcx.h
-req.include-header: 
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SpbControllerSetRequestAttributes
-req.alt-loc: spbcxstubs.lib,spbcxstubs.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Spbcxstubs.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product: Windows 10 or later.
+UID : NF:spbcx.SpbControllerSetRequestAttributes
+title : SpbControllerSetRequestAttributes function
+author : windows-driver-content
+description : The SpbControllerSetRequestAttributes method sets object attributes that will be used for all SPBREQUEST objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver.
+old-location : spb\spbcontrollersetrequestattributes.htm
+old-project : SPB
+ms.assetid : 9BE790DB-DB7A-44A3-8A89-673CBFCF4D65
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : SpbControllerSetRequestAttributes
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : spbcx.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SpbControllerSetRequestAttributes
+req.alt-loc : spbcxstubs.lib,spbcxstubs.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Spbcxstubs.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.product : Windows 10 or later.
 ---
 
+
 # SpbControllerSetRequestAttributes function
-
-
-
-## -description
 The <b>SpbControllerSetRequestAttributes</b> method  sets object attributes that will be used for all SPBREQUEST objects  that the SPB framework extension (SpbCx) delivers to the SPB controller driver.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID SpbControllerSetRequestAttributes(
@@ -53,24 +48,23 @@ VOID SpbControllerSetRequestAttributes(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FxDevice [in]
+`FxDevice`
 
 A WDFDEVICE handle to the device object that represents the SPB controller.
 
-
-### -param RequestAttributes [in]
+`RequestAttributes`
 
 A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the SPB controller's SPBREQUEST objects.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 During device initialization, your SPB controller driver can call this method to set the default attributes for SPBREQUEST objects.  Thereafter, SpbCx assigns these attributes to any I/O requests that it delivers (or forwards) to target devices on the bus.
 
 <i>RequestAttributes</i> points to an <b>WDF_OBJECT_ATTRIBUTES</b> structure. The caller must previously have called the <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize this structure. After this call, but before the call to <b>SpbControllerSetRequestAttributes</b>, the caller can change the values of the following members of this structure:
@@ -81,8 +75,20 @@ During device initialization, your SPB controller driver can call this method to
 
 The SPB controller driver must call <b>SpbControllerSetRequestAttributes</b> before it <i>commits</i> the device object—that is, before it returns from the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback or adds the PDO to the controller's child list. The child list represents the devices that are attached to the bus. For more information, see <a href="https://msdn.microsoft.com/5731db82-2bc8-4a8d-98f1-3977845f572c">Enumerating the Devices on a Bus</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | spbcx.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
@@ -99,4 +105,3 @@ The SPB controller driver must call <b>SpbControllerSetRequestAttributes</b> bef
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SpbControllerSetRequestAttributes method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.SecLookupAccountSid
-title: SecLookupAccountSid function
-author: windows-driver-content
-description: SecLookupAccountSid accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.
-old-location: ifsk\seclookupaccountsid.htm
-old-project: ifsk
-ms.assetid: 7237a041-46e0-4211-97c1-96d309ada602
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: SecLookupAccountSid
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: This SecLookupAccountSid function is only available on Windows XP and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SecLookupAccountSid
-req.alt-loc: Ksecdd.lib,Ksecdd.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ksecdd.lib
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.SecLookupAccountSid
+title : SecLookupAccountSid function
+author : windows-driver-content
+description : SecLookupAccountSid accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.
+old-location : ifsk\seclookupaccountsid.htm
+old-project : ifsk
+ms.assetid : 7237a041-46e0-4211-97c1-96d309ada602
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : SecLookupAccountSid
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : This SecLookupAccountSid function is only available on Windows XP and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SecLookupAccountSid
+req.alt-loc : Ksecdd.lib,Ksecdd.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ksecdd.lib
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # SecLookupAccountSid function
-
-
-
-## -description
 <b>SecLookupAccountSid</b> accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS SecLookupAccountSid(
@@ -56,44 +51,35 @@ NTSTATUS SecLookupAccountSid(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Sid`
 
-### -param Sid [in]
+A pointer to the SID to look up.
 
-A pointer to the SID to look up. 
-
-
-### -param NameSize [out]
+`NameSize`
 
 A pointer to a variable that specifies the size of the <i>NameBuffer</i>. On input, this value specifies the size in bytes of the input <i>NameBuffer</i>. If the function fails because the buffer is too small, this variable receives the required buffer size. On success, this variable contains the size of the returned <i>NameBuffer</i>.
 
+`NameBuffer`
 
-### -param NameBuffer [in, out]
+A pointer to the <i>NameBuffer</i>.
 
-A pointer to the <i>NameBuffer</i>. 
-
-
-### -param DomainSize [out]
-
-A pointer to an optional variable that specifies the size of the <i>ReferencedDomain</i> parameter. On input, this value specifies the size of the <i>ReferencedDomain</i> buffer. If the function fails because the buffer is too small, this variable receives the required buffer size. If the <i>ReferencedDomain</i> parameter is <b>NULL</b>, this parameter must be zero.
+`OPTIONAL`
 
 
-### -param DomainBuffer [out, optional]
 
-A pointer to an optional variable to the buffer that receives the name of the domain as a Unicode string where the account name is found. For computers that are not joined to a domain, this buffer receives the computer name. If this parameter is <b>NULL</b>, the function returns the required buffer size in the <i>DomainSize</i> variable. 
-
-On Windows Server 2003, the domain name returned for most accounts in the security database of the local computer is the name of the domain for which the server is a domain controller.
-
-On Windows XP, the domain name returned for most accounts in the security database of the local computer is the name of the computer as of the last start of the system (backslashes are excluded). If the name of the computer changes, the old name continues to be returned as the domain name until the system is restarted.
+`OPTIONAL`
 
 
-### -param NameUse [out]
 
-A pointer to a SID_NAME_USE enumerated type that indicates the type of the account when the function returns. 
+`NameUse`
+
+A pointer to a SID_NAME_USE enumerated type that indicates the type of the account when the function returns.
 
 
-## -returns
+## Return Value
+
 <b>SecLookupAccountSid</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
 <dl>
 <dt><b>SEC_E_INTERNAL_ERROR</b></dt>
@@ -117,10 +103,8 @@ A pointer to a SID_NAME_USE enumerated type that indicates the type of the accou
 <dt><b>STATUS_PROCESS_IS_TERMINATING</b></dt>
 </dl>This process has terminated so it is not possible to establish a local procedure call (LPC) connection.
 
- 
+## Remarks
 
-
-## -remarks
 <b>SecLookupAccountSid</b> attempts to find a name for the specified SID by first checking a list of well-known SIDs. If the supplied SID does not correspond to a well-known SID, the function checks built-in and administratively defined local accounts. Next, the function checks the primary domain. Security identifiers not recognized by the primary domain are checked against the trusted domains that correspond to their SID prefixes.
 
 If the function cannot find an account name for the SID, <b>SecLookupAccountSid</b> fails. This can occur if a network time-out prevents the function from finding the name. It also occurs for SIDs that have no corresponding account name, such as a logon SID that identifies a logon session.
@@ -129,10 +113,22 @@ In addition to looking up SIDs for local accounts, local domain accounts, and ex
 
 <b>SecLookupAccountSid</b> is equivalent to the Win32 <b>LookupAccountSid</b> function. 
 
-<b>SecLookupAccountSid</b> is exported by the ksecdd driver, which implements this function by using user-mode helper services. Accordingly, the use of this function within file systems must obey the usual rules for communication with user-mode services. <b>SecLookupAccountSid</b> cannot be used during paging file I/O. 
+<b>SecLookupAccountSid</b> is exported by the ksecdd driver, which implements this function by using user-mode helper services. Accordingly, the use of this function within file systems must obey the usual rules for communication with user-mode services. <b>SecLookupAccountSid</b> cannot be used during paging file I/O.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
@@ -152,4 +148,3 @@ In addition to looking up SIDs for local accounts, local domain accounts, and ex
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SecLookupAccountSid function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

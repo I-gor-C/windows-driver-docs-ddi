@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugClient5.AttachProcess
-title: IDebugClient5::AttachProcess method
-author: windows-driver-content
-description: The AttachProcess method connects the debugger engine to a user-modeprocess.
-old-location: debugger\attachprocess.htm
-old-project: debugger
-ms.assetid: 0787da49-23e0-43e3-bb32-1221db32a449
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugClient5, IDebugClient5::AttachProcess, AttachProcess
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugClient.AttachProcess,IDebugClient2.AttachProcess,IDebugClient3.AttachProcess,IDebugClient4.AttachProcess,IDebugClient5.AttachProcess
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugClient5.AttachProcess
+title : IDebugClient5::AttachProcess method
+author : windows-driver-content
+description : The AttachProcess method connects the debugger engine to a user-modeprocess.
+old-location : debugger\attachprocess.htm
+old-project : debugger
+ms.assetid : 0787da49-23e0-43e3-bb32-1221db32a449
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugClient5, IDebugClient5::AttachProcess, AttachProcess
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugClient.AttachProcess,IDebugClient2.AttachProcess,IDebugClient3.AttachProcess,IDebugClient4.AttachProcess,IDebugClient5.AttachProcess
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugClient5::AttachProcess method
 
-
-
-## -description
+# AttachProcess method
 The <b>AttachProcess</b> method connects the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> to a user-modeprocess.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT AttachProcess(
@@ -53,34 +48,30 @@ HRESULT AttachProcess(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Server [in]
+`Server`
 
 Specifies the process server to use to attach to the process.  If <i>Server</i> is zero, the engine will connect to a local process without using a process server.
 
-
-### -param ProcessId [in]
+`ProcessId`
 
 Specifies the process ID of the target process the debugger will attach to.
 
-
-### -param AttachFlags [in]
+`AttachFlags`
 
 Specifies the flags that control how the debugger attaches to the target process.  For details on these flags, see Remarks.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
 
- 
+## Remarks
 
-
-## -remarks
 This method is available only for live user-mode debugging.
 
 For more information about creating and attaching to live user-mode targets, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552020">Live User-Mode Targets</a>.
@@ -117,8 +108,20 @@ If this flag is set, then the flags DEBUG_ATTACH_NONINVASIVE and DEBUG_ATTACH_EX
 
 <b>DEBUG_ATTACH_INVASIVE_RESUME_PROCESS</b>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
@@ -172,4 +175,3 @@ If this flag is set, then the flags DEBUG_ATTACH_NONINVASIVE and DEBUG_ATTACH_EX
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::AttachProcess method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

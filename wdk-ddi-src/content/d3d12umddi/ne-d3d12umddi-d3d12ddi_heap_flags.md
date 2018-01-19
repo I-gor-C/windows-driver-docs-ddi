@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_HEAP_FLAGS
-title: D3D12DDI_HEAP_FLAGS
-author: windows-driver-content
-description: Contains Direct3D 12 heap flags.
-old-location: display\d3d12ddi_heap_flags.htm
-old-project: display
-ms.assetid: 8224E497-7F52-469B-98C9-ECC5F1970894
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_HEAP_FLAGS, D3D12DDI_HEAP_FLAGS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_HEAP_FLAGS
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_HEAP_FLAGS
+UID : NE:d3d12umddi.D3D12DDI_HEAP_FLAGS
+title : D3D12DDI_HEAP_FLAGS
+author : windows-driver-content
+description : Contains Direct3D 12 heap flags.
+old-location : display\d3d12ddi_heap_flags.htm
+old-project : display
+ms.assetid : 8224E497-7F52-469B-98C9-ECC5F1970894
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_HEAP_FLAGS, D3D12DDI_HEAP_FLAGS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_HEAP_FLAGS
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_HEAP_FLAGS
 ---
 
-# D3D12DDI_HEAP_FLAGS enumeration
+# D3D12DDI_HEAP_FLAGS Enumeration
+Contains Direct3D 12 heap flags.
 
-
-
-## -description
-Contains Direct3D 12 heap flags. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDI_HEAP_FLAGS { 
   D3D12DDI_HEAP_FLAG_NONE                 = 0x0,
@@ -57,42 +50,46 @@ typedef enum D3D12DDI_HEAP_FLAGS {
 } D3D12DDI_HEAP_FLAGS;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_HEAP_FLAG_NONE
+<tr>
+<td>D3D12DDI_HEAP_FLAG_BUFFERS</td>
+<td>The heap supports resources allocated for buffers.</td>
+</tr>
 
-No flags.
+<tr>
+<td>D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE</td>
+<td>The heap supports resources allocated for coherent systemwide.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_HEAP_FLAG_NON_RT_DS_TEXTURES</td>
+<td>The heap supports resources allocated for other than Render Target (RT) and Depth-Stencil (DS) textures.</td>
+</tr>
 
-### -field D3D12DDI_HEAP_FLAG_NON_RT_DS_TEXTURES
+<tr>
+<td>D3D12DDI_HEAP_FLAG_NONE</td>
+<td>No flags.</td>
+</tr>
 
-The heap supports resources allocated for other than Render Target (RT) and Depth-Stencil (DS) textures. 
+<tr>
+<td>D3D12DDI_HEAP_FLAG_PRIMARY</td>
+<td>The heap supports resources allocated for primary.</td>
+</tr>
 
-
-### -field D3D12DDI_HEAP_FLAG_BUFFERS
-
-The heap supports resources allocated for buffers.
-
-
-### -field D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE
-
-The heap supports resources allocated for coherent systemwide. 
-
-
-### -field D3D12DDI_HEAP_FLAG_PRIMARY
-
-The heap supports resources allocated for primary.
-
-
-### -field D3D12DDI_HEAP_FLAG_RT_DS_TEXTURES
-
-The heap supports resources allocated for RT and DS textures.
-
-
-### -field D3D12DDI_HEAP_FLAG_CONTENT_PROTECTION 
-
-The heap supports resources allocated for content protection.
+<tr>
+<td>D3D12DDI_HEAP_FLAG_RT_DS_TEXTURES</td>
+<td>The heap supports resources allocated for RT and DS textures.</td>
+</tr>
+</table>
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

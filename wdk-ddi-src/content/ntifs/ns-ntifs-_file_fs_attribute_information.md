@@ -1,51 +1,44 @@
 ---
-UID: NS:ntifs._FILE_FS_ATTRIBUTE_INFORMATION
-title: _FILE_FS_ATTRIBUTE_INFORMATION
-author: windows-driver-content
-description: The FILE_FS_ATTRIBUTE_INFORMATION structure is used to query attribute information for a file system.
-old-location: ifsk\file_fs_attribute_information.htm
-old-project: ifsk
-ms.assetid: 373788d8-4963-4319-82ae-3a0675c9fff4
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION, FILE_FS_ATTRIBUTE_INFORMATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h, Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FILE_FS_ATTRIBUTE_INFORMATION
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PFILE_FS_ATTRIBUTE_INFORMATION, FILE_FS_ATTRIBUTE_INFORMATION
+UID : NS:ntifs._FILE_FS_ATTRIBUTE_INFORMATION
+title : _FILE_FS_ATTRIBUTE_INFORMATION
+author : windows-driver-content
+description : The FILE_FS_ATTRIBUTE_INFORMATION structure is used to query attribute information for a file system.
+old-location : ifsk\file_fs_attribute_information.htm
+old-project : ifsk
+ms.assetid : 373788d8-4963-4319-82ae-3a0675c9fff4
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _FILE_FS_ATTRIBUTE_INFORMATION, FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h, Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FILE_FS_ATTRIBUTE_INFORMATION
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION
 ---
 
 # _FILE_FS_ATTRIBUTE_INFORMATION structure
-
-
-
-## -description
 The <b>FILE_FS_ATTRIBUTE_INFORMATION</b> 
    structure is used to query attribute information for a file system.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _FILE_FS_ATTRIBUTE_INFORMATION {
   ULONG FileSystemAttributes;
@@ -55,12 +48,12 @@ typedef struct _FILE_FS_ATTRIBUTE_INFORMATION {
 } FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `FileSystemAttributes`
 
-### -field FileSystemAttributes
-
-Bitmask of flags specifying attributes of the specified file system, as a compatible combination of the 
+            Bitmask of flags specifying attributes of the specified file system, as a compatible combination of the 
        following flags.
 
 <table>
@@ -212,27 +205,22 @@ The file system supports per-user quotas.
 </td>
 </tr>
 </table>
- 
+        
+            `FileSystemName`
 
+            File system name.
+        
+            `FileSystemNameLength`
 
-### -field MaximumComponentNameLength
+            Length, in bytes, of the file system name.
+        
+            `MaximumComponentNameLength`
 
-Maximum file name component length, in bytes, supported by the specified file system. A file name component 
+            Maximum file name component length, in bytes, supported by the specified file system. A file name component 
       is that portion of a file name between backslashes.
 
-
-### -field FileSystemNameLength
-
-Length, in bytes, of the file system name.
-
-
-### -field FileSystemName
-
-File system name.
-
-
-## -remarks
-This information can be queried in either of the following ways:
+    ## Remarks
+        This information can be queried in either of the following ways:
 
 Call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or 
        <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>, passing 
@@ -260,9 +248,17 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to
 
 This structure must be aligned on a <b>LONG</b> (4-byte) boundary.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
@@ -281,4 +277,3 @@ This structure must be aligned on a <b>LONG</b> (4-byte) boundary.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_ATTRIBUTE_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

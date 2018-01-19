@@ -1,50 +1,43 @@
 ---
-UID: NS:bdasup._BDA_PIN_PAIRING
-title: _BDA_PIN_PAIRING
-author: windows-driver-content
-description: The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins.
-old-location: stream\bda_pin_pairing.htm
-old-project: stream
-ms.assetid: 0d05455d-32ea-4f88-8752-7f5fe40b8b29
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _BDA_PIN_PAIRING, *PBDA_PIN_PAIRING, BDA_PIN_PAIRING
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: bdasup.h
-req.include-header: Bdasup.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: BDA_PIN_PAIRING
-req.alt-loc: bdasup.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PBDA_PIN_PAIRING, BDA_PIN_PAIRING
+UID : NS:bdasup._BDA_PIN_PAIRING
+title : _BDA_PIN_PAIRING
+author : windows-driver-content
+description : The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins.
+old-location : stream\bda_pin_pairing.htm
+old-project : stream
+ms.assetid : 0d05455d-32ea-4f88-8752-7f5fe40b8b29
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _BDA_PIN_PAIRING, *PBDA_PIN_PAIRING, BDA_PIN_PAIRING
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : bdasup.h
+req.include-header : Bdasup.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : BDA_PIN_PAIRING
+req.alt-loc : bdasup.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PBDA_PIN_PAIRING, BDA_PIN_PAIRING"
 ---
 
 # _BDA_PIN_PAIRING structure
+The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins.
 
-
-
-## -description
-The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _BDA_PIN_PAIRING {
   ULONG       ulInputPin;
@@ -58,65 +51,64 @@ typedef struct _BDA_PIN_PAIRING {
 } BDA_PIN_PAIRING, *PBDA_PIN_PAIRING;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `pTopologyJoints`
 
-### -field ulInputPin
+            Array of joint values. The value given to a joint corresponds to the index of an element in a array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array). A topology joint marks the point in the template topology where control of nodes switches from the input pin to the output pin. Those nodes that occur upstream of the topology joint are controlled through the input pin. Those nodes that occur downstream of the topology joint are controlled through the output pin.
+        
+            `ulcMaxInputsPerOutput`
 
-Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the input pin of the pair. 
+            Maximum number of input pins per output pin. The network provider creates duplicates of nodes that are controlled by the input pin depending on the value specified in <b>ulcMaxInputsPerOutput</b>.
+        
+            `ulcMaxOutputsPerInput`
 
+            Maximum number of output pins per input pin. The network provider creates duplicates of nodes that are controlled by the output pin depending on the value specified in <b>ulcMaxOutputsPerInput</b>.
+        
+            `ulcMinInputsPerOutput`
 
-### -field ulOutputPin
+            Minimum number of input pins per output pin. The network provider creates duplicates of nodes that are controlled by the input pin depending on the value specified in <b>ulcMinInputsPerOutput</b>.
+        
+            `ulcMinOutputsPerInput`
 
-Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the output pin of the pair.
+            Minimum number of output pins per input pin. The network provider creates duplicates of nodes that are controlled by the output pin depending on the value specified in <b>ulcMinOutputsPerInput</b>.
+        
+            `ulcTopologyJoints`
 
+            Number of joints in the <b>pTopologyJoints</b> array.
+        
+            `ulInputPin`
 
-### -field ulcMaxInputsPerOutput
+            Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the input pin of the pair.
+        
+            `ulOutputPin`
 
-Maximum number of input pins per output pin. The network provider creates duplicates of nodes that are controlled by the input pin depending on the value specified in <b>ulcMaxInputsPerOutput</b>.
-
-
-### -field ulcMinInputsPerOutput
-
-Minimum number of input pins per output pin. The network provider creates duplicates of nodes that are controlled by the input pin depending on the value specified in <b>ulcMinInputsPerOutput</b>.
-
-
-### -field ulcMaxOutputsPerInput
-
-Maximum number of output pins per input pin. The network provider creates duplicates of nodes that are controlled by the output pin depending on the value specified in <b>ulcMaxOutputsPerInput</b>.
-
-
-### -field ulcMinOutputsPerInput
-
-Minimum number of output pins per input pin. The network provider creates duplicates of nodes that are controlled by the output pin depending on the value specified in <b>ulcMinOutputsPerInput</b>.
-
-
-### -field ulcTopologyJoints
-
-Number of joints in the <b>pTopologyJoints</b> array.
+            Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX array) that indicates the output pin of the pair.
 
 
-### -field pTopologyJoints
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | bdasup.h (include Bdasup.h) |
 
-Array of joint values. The value given to a joint corresponds to the index of an element in a array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array). A topology joint marks the point in the template topology where control of nodes switches from the input pin to the output pin. Those nodes that occur upstream of the topology joint are controlled through the input pin. Those nodes that occur downstream of the topology joint are controlled through the output pin.
+    ## See Also
 
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556558">BDA_TEMPLATE_CONNECTION</a>
+<a href="..\bdatypes\ns-bdatypes-_bda_template_connection.md">BDA_TEMPLATE_CONNECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567148">KSTOPOLOGY_CONNECTION</a>
+<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
 </dt>
 </dl>
  
@@ -124,4 +116,3 @@ Array of joint values. The value given to a joint corresponds to the index of an
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_PIN_PAIRING structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisMQueueDpcEx
-title: NdisMQueueDpcEx function
-author: windows-driver-content
-description: NDIS miniport drivers call the NdisMQueueDpcEx function to schedule DPC calls on CPUs.
-old-location: netvista\ndismqueuedpcex.htm
-old-project: netvista
-ms.assetid: 22074e51-9032-4ef9-94b9-217daefcab03
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMQueueDpcEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.20 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMQueueDpcEx
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: Any level
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMQueueDpcEx
+title : NdisMQueueDpcEx function
+author : windows-driver-content
+description : NDIS miniport drivers call the NdisMQueueDpcEx function to schedule DPC calls on CPUs.
+old-location : netvista\ndismqueuedpcex.htm
+old-project : netvista
+ms.assetid : 22074e51-9032-4ef9-94b9-217daefcab03
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMQueueDpcEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.20 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMQueueDpcEx
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : Any level
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMQueueDpcEx function
-
-
-
-## -description
 NDIS miniport drivers call the 
   <b>NdisMQueueDpcEx</b> function to schedule DPC calls on CPUs.
 
-
-
-## -syntax
+## Syntax
 
 ````
 KAFFINITY NdisMQueueDpcEx(
@@ -55,17 +50,15 @@ KAFFINITY NdisMQueueDpcEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisInterruptHandle [in]
+`NdisInterruptHandle`
 
 An interrupt handle that the miniport driver obtained in a previous call to the 
      <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
      NdisMRegisterInterruptEx</a> function.
 
-
-### -param MessageId [in]
+`MessageId`
 
 An MSI message ID for the DPC. If the DPC is for a line-based interrupt, this parameter is not
      used and it should be set to zero. Otherwise, 
@@ -78,16 +71,14 @@ An MSI message ID for the DPC. If the DPC is for a line-based interrupt, this pa
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
      <b>NdisMRegisterInterruptEx</b> function.
 
-
-### -param TargetProcessors [in]
+`TargetProcessors`
 
 A bitmap that indicates target processors. NDIS should schedule a DPC for each target processor
      that is indicated in the bitmap. Each bit in 
      <i>TargetProcessors</i> identifies a CPU. If the caller sets bit 0, NDIS schedules a DPC for CPU 0. If the caller sets bit 1, NDIS
      schedules a DPC for CPU 1, and so on.
 
-
-### -param MiniportDpcContext [in]
+`MiniportDpcContext`
 
 A pointer to a caller-specified context area. NDIS passes this pointer to the 
      <i>MiniportDpcContext</i> parameter of the 
@@ -96,7 +87,8 @@ A pointer to a caller-specified context area. NDIS passes this pointer to the
      MiniportMessageInterruptDPC</a> functions.
 
 
-## -returns
+## Return Value
+
 <b>NdisMQueueDpcEx</b> returns a bitmap that indicates target processors. Each bit in the return value
       identifies a CPU.
 
@@ -107,8 +99,8 @@ NDIS successfully scheduled a DPC for each target processor that is set in the b
 If the driver requested a DPC for a CPU, and NDIS indicates that it did not schedule that DPC, the
       DPC was not scheduled because a DPC was already scheduled for that CPU.
 
+## Remarks
 
-## -remarks
 NDIS 6.20 and later miniport drivers call 
     <b>NdisMQueueDpcEx</b> to request DPC calls for other processors. NDIS calls the 
     <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a> or 
@@ -122,8 +114,20 @@ NDIS 6.20 and later miniport drivers call
     than one processor group, you can use multiple calls to 
     <b>NdisMQueueDpcEx</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
@@ -149,4 +153,3 @@ NDIS 6.20 and later miniport drivers call
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueueDpcEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

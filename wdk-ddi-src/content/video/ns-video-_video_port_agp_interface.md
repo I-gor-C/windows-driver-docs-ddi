@@ -1,51 +1,44 @@
 ---
-UID: NS:video._VIDEO_PORT_AGP_INTERFACE
-title: _VIDEO_PORT_AGP_INTERFACE
-author: windows-driver-content
-description: The VIDEO_PORT_AGP_INTERFACE structure describes the AGP service routines provided by the video port driver.
-old-location: display\video_port_agp_interface.htm
-old-project: display
-ms.assetid: a2be4958-3f11-4b9d-9c0c-c339ebbbce04
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _VIDEO_PORT_AGP_INTERFACE, VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: VIDEO_PORT_AGP_INTERFACE
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE
-req.product: Windows 10 or later.
+UID : NS:video._VIDEO_PORT_AGP_INTERFACE
+title : _VIDEO_PORT_AGP_INTERFACE
+author : windows-driver-content
+description : The VIDEO_PORT_AGP_INTERFACE structure describes the AGP service routines provided by the video port driver.
+old-location : display\video_port_agp_interface.htm
+old-project : display
+ms.assetid : a2be4958-3f11-4b9d-9c0c-c339ebbbce04
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VIDEO_PORT_AGP_INTERFACE, VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : VIDEO_PORT_AGP_INTERFACE
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE
+req.product : Windows 10 or later.
 ---
 
 # _VIDEO_PORT_AGP_INTERFACE structure
-
-
-
-## -description
 The VIDEO_PORT_AGP_INTERFACE structure describes the AGP service routines provided by the video port driver.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _VIDEO_PORT_AGP_INTERFACE {
   USHORT                 Size;
@@ -65,85 +58,79 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 } VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AgpAllocationLimit`
 
-### -field Size
+            Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.
+        
+            `AgpCommitPhysical`
 
-Specifies the size in bytes of this structure.
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a> routine.
+        
+            `AgpCommitVirtual`
 
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a> routine.
+        
+            `AgpFreePhysical`
 
-### -field Version
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a> routine.
+        
+            `AgpFreeVirtual`
 
-Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_AGP_INTERFACE_<i>N</i>.
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a> routine.
+        
+            `AgpReleasePhysical`
 
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a> routine.
+        
+            `AgpReleaseVirtual`
 
-### -field Context
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a> routine.
+        
+            `AgpReservePhysical`
 
-Pointer to a video port driver-defined context for the interface.
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> routine.
+        
+            `AgpReserveVirtual`
 
+            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a> routine.
+        
+            `Context`
 
-### -field InterfaceReference
+            Pointer to a video port driver-defined context for the interface.
+        
+            `InterfaceDereference`
 
-Pointer to the video port driver-implemented reference routine for this interface.
+            Pointer to the video port driver-implemented dereference routine for this interface.
+        
+            `InterfaceReference`
 
+            Pointer to the video port driver-implemented reference routine for this interface.
+        
+            `Size`
 
-### -field InterfaceDereference
+            Specifies the size in bytes of this structure.
+        
+            `Version`
 
-Pointer to the video port driver-implemented dereference routine for this interface.
+            Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_AGP_INTERFACE_<i>N</i>.
 
+    ## Remarks
+        PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.
 
-### -field AgpReservePhysical
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
 
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> routine.
+    ## See Also
 
-
-### -field AgpReleasePhysical
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a> routine.
-
-
-### -field AgpCommitPhysical
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a> routine.
-
-
-### -field AgpFreePhysical
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a> routine.
-
-
-### -field AgpReserveVirtual
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a> routine.
-
-
-### -field AgpReleaseVirtual
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a> routine.
-
-
-### -field AgpCommitVirtual
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a> routine.
-
-
-### -field AgpFreeVirtual
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a> routine.
-
-
-### -field AgpAllocationLimit
-
-Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.
-
-
-## -remarks
-PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 </dt>
@@ -156,4 +143,3 @@ PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_AGP_INTERFACE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

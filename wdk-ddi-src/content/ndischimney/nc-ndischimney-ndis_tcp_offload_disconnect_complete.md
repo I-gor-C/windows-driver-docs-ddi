@@ -1,44 +1,41 @@
 ---
-UID: NC:ndischimney.NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE
-title: NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE
-author: windows-driver-content
-description: An offload target calls the NdisTcpOffloadDisconnectComplete function to complete a disconnect request that was initiated by a previous call to the MiniportTcpOffloadDisconnect function of the offload target.
-old-location: netvista\ndistcpoffloaddisconnectcomplete.htm
-old-project: netvista
-ms.assetid: e862d9fe-a60c-4397-95ce-62aa1ef17eae
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisTcpOffloadDisconnectComplete
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE
+title : NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE
+author : windows-driver-content
+description : An offload target calls the NdisTcpOffloadDisconnectComplete function to complete a disconnect request that was initiated by a previous call to the MiniportTcpOffloadDisconnect function of the offload target.
+old-location : netvista\ndistcpoffloaddisconnectcomplete.htm
+old-project : netvista
+ms.assetid : e862d9fe-a60c-4397-95ce-62aa1ef17eae
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisTcpOffloadDisconnectComplete
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE callback
 
-
-
-## -description
+# NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 An offload target calls the 
@@ -47,28 +44,27 @@ An offload target calls the
   <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
   MiniportTcpOffloadDisconnect</a> function of the offload target.
 
+## Syntax
 
+```
+NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE NdisTcpOffloadDisconnectComplete;
 
-## -prototype
+void NdisTcpOffloadDisconnectComplete(
+  IN NDIS_HANDLE NdisMiniportHandle,
+  IN PNET_BUFFER_LIST NetBufferList
+)
+{...}
+```
 
-````
-VOID NdisTcpOffloadDisconnectComplete(
-  _In_ NDIS_HANDLE      NdisMiniportHandle,
-  _In_ PNET_BUFFER_LIST NetBufferList
-);
-````
+## Parameters
 
-
-## -parameters
-
-### -param NdisMiniportHandle [in]
+`NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to the 
      <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a single 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. The offload
@@ -77,11 +73,12 @@ A pointer to a single
      MiniportTcpOffloadDisconnect</a> function.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 <b>Completing an Abortive Disconnect
     </b>
 
@@ -137,8 +134,20 @@ Note that the
     <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_send_handler.md">
     MiniportTcpOffloadSend</a> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
@@ -169,4 +178,3 @@ Note that the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

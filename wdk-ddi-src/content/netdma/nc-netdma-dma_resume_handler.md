@@ -1,60 +1,57 @@
 ---
-UID: NC:netdma.DMA_RESUME_HANDLER
-title: DMA_RESUME_HANDLER
-author: windows-driver-content
-description: The ProviderResumeDma function resumes the DMA transfers that are currently suspended on a DMA channel.
-old-location: netvista\providerresumedma.htm
-old-project: netvista
-ms.assetid: 06609603-eeed-4fb0-a878-87cad2e72b46
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: netdma.h
-req.include-header: Netdma.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProviderResumeDma
-req.alt-loc: netdma.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
+UID : NC:netdma.DMA_RESUME_HANDLER
+title : DMA_RESUME_HANDLER
+author : windows-driver-content
+description : The ProviderResumeDma function resumes the DMA transfers that are currently suspended on a DMA channel.
+old-location : netvista\providerresumedma.htm
+old-project : netvista
+ms.assetid : 06609603-eeed-4fb0-a878-87cad2e72b46
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _MIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : netdma.h
+req.include-header : Netdma.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProviderResumeDma
+req.alt-loc : netdma.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
-# DMA_RESUME_HANDLER callback
+
+# DMA_RESUME_HANDLER callback function
 
 
+## Syntax
 
-## -description
+```
+DMA_RESUME_HANDLER DmaResumeHandler;
 
-## -prototype
-
-````
-DMA_RESUME_HANDLER ProviderResumeDma;
-
-NTSTATUS ProviderResumeDma(
-  _In_ PVOID ProviderChannelContext
+NTSTATUS DmaResumeHandler(
+  PVOID ProviderChannelContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ProviderChannelContext [in]
+`ProviderChannelContext`
 
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
@@ -63,7 +60,8 @@ A pointer that identifies a DMA channel's context area. The DMA provider returne
      ProviderAllocateDmaChannel</a> function.
 
 
-## -returns
+## Return Value
+
 <i>ProviderResumeDma</i> returns one of the following status values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -72,10 +70,8 @@ A pointer that identifies a DMA channel's context area. The DMA provider returne
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
 </dl>The operation failed for unspecified reasons.
 
- 
+## Remarks
 
-
-## -remarks
 The 
     <i>ProviderSuspendDma</i> function is an optional function for NetDMA providers. The NetDMA interface
     calls the 
@@ -91,8 +87,20 @@ When the DMA engine resumes transfers, the hardware should reload the DMA descri
 NetDMA calls 
     <i>ProviderResumeDma</i> at IRQL &lt;= DISPATCH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | netdma.h (include Netdma.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
@@ -106,4 +114,3 @@ NetDMA calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_RESUME_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

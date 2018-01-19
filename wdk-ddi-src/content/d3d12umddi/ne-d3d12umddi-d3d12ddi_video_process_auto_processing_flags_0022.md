@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
-title: D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
-author: windows-driver-content
-description: Contains values for automatic processing for a driver.
-old-location: display\d3d12ddi_video_process_auto_processing_flags.htm
-old-project: display
-ms.assetid: 37F982EE-8FCB-452F-B589-B14D0E593F1E
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022, D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
+UID : NE:d3d12umddi.D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
+title : D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
+author : windows-driver-content
+description : Contains values for automatic processing for a driver.
+old-location : display\d3d12ddi_video_process_auto_processing_flags.htm
+old-project : display
+ms.assetid : 37F982EE-8FCB-452F-B589-B14D0E593F1E
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022, D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022
 ---
 
-# D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 enumeration
-
-
-
-## -description
+# D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 Enumeration
 Contains values for automatic processing for a driver.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 { 
   D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_NONE                 = 0x0,
@@ -60,58 +53,69 @@ typedef enum D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 {
 } D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_NONE
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_ANAMORPHIC_SCALING</td>
+<td>Anamorphic scaling support.</td>
+</tr>
 
-No flags. The driver does not support any of the video processing capabilities. 
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_COLOR_CORRECTION</td>
+<td>Color correction support.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_CUSTOM</td>
+<td>Additional processing not represented by these constants.</td>
+</tr>
 
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_DENOISE
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_DENOISE</td>
+<td>Denoise support.</td>
+</tr>
 
-Denoise support.
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_DERINGING</td>
+<td>Deringing support.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_EDGE_ENHANCEMENT</td>
+<td>Edge enhancement support.</td>
+</tr>
 
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_DERINGING
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_FLESH_TONE_MAPPING</td>
+<td>Flesh tone mapping support.</td>
+</tr>
 
-Deringing support.
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_IMAGE_STABILIZATION</td>
+<td>Image stabilization support.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_NONE</td>
+<td>No flags. The driver does not support any of the video processing capabilities.</td>
+</tr>
 
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_EDGE_ENHANCEMENT
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_SUPER_RESOLUTION</td>
+<td>Enhanced image resolution support.</td>
+</tr>
+</table>
 
-Edge enhancement support.
+## Remarks
 
-
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_COLOR_CORRECTION
-
-Color correction support.
-
-
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_FLESH_TONE_MAPPING
-
-Flesh tone mapping support.
-
-
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_IMAGE_STABILIZATION
-
-Image stabilization support.
-
-
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_SUPER_RESOLUTION
-
-Enhanced image resolution support.
-
-
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_ANAMORPHIC_SCALING
-
-Anamorphic scaling support.
-
-
-### -field D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_CUSTOM
-
-Additional processing not represented by these constants.
-
-
-## -remarks
 These flags are only hints at the type of processing driver performs when automatic processing is enabled.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

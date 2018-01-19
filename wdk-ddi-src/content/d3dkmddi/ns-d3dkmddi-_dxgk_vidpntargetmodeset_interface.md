@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmddi._DXGK_VIDPNTARGETMODESET_INTERFACE
-title: _DXGK_VIDPNTARGETMODESET_INTERFACE
-author: windows-driver-content
-description: The DXGK_VIDPNTARGETMODESET_INTERFACE structure contains pointers to functions that belong to the VidPn Target Mode Set interface, which is implemented by the VidPN manager.
-old-location: display\dxgk_vidpntargetmodeset_interface.htm
-old-project: display
-ms.assetid: 556d3134-942b-475c-adac-3087a512f481
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_VIDPNTARGETMODESET_INTERFACE, DXGK_VIDPNTARGETMODESET_INTERFACE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXGK_VIDPNTARGETMODESET_INTERFACE
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_VIDPNTARGETMODESET_INTERFACE
+UID : NS:d3dkmddi._DXGK_VIDPNTARGETMODESET_INTERFACE
+title : _DXGK_VIDPNTARGETMODESET_INTERFACE
+author : windows-driver-content
+description : The DXGK_VIDPNTARGETMODESET_INTERFACE structure contains pointers to functions that belong to the VidPn Target Mode Set interface, which is implemented by the VidPN manager.
+old-location : display\dxgk_vidpntargetmodeset_interface.htm
+old-project : display
+ms.assetid : 556d3134-942b-475c-adac-3087a512f481
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_VIDPNTARGETMODESET_INTERFACE, DXGK_VIDPNTARGETMODESET_INTERFACE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXGK_VIDPNTARGETMODESET_INTERFACE
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DXGK_VIDPNTARGETMODESET_INTERFACE
 ---
 
 # _DXGK_VIDPNTARGETMODESET_INTERFACE structure
-
-
-
-## -description
 The DXGK_VIDPNTARGETMODESET_INTERFACE structure contains pointers to functions that belong to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570559">VidPn Target Mode Set interface</a>, which is implemented by the VidPN manager.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DXGK_VIDPNTARGETMODESET_INTERFACE {
   DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES           pfnGetNumModes;
@@ -58,55 +51,55 @@ typedef struct _DXGK_VIDPNTARGETMODESET_INTERFACE {
 } DXGK_VIDPNTARGETMODESET_INTERFACE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `pfnAcquireFirstModeInfo`
 
-### -field pfnGetNumModes
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> function.
+        
+            `pfnAcquireNextModeInfo`
 
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_getnummodes.md">pfnGetNumModes</a> function.
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a> function.
+        
+            `pfnAcquirePinnedModeInfo`
 
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_acquirepinnedmodeinfo.md">pfnAcquirePinnedModeInfo</a> function.
+        
+            `pfnAddMode`
 
-### -field pfnAcquireFirstModeInfo
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_addmode.md">pfnAddMode</a> function.
+        
+            `pfnCreateNewModeInfo`
 
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> function.
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_createnewmodeinfo.md">pfnCreateNewModeInfo</a> function.
+        
+            `pfnGetNumModes`
 
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_getnummodes.md">pfnGetNumModes</a> function.
+        
+            `pfnPinMode`
 
-### -field pfnAcquireNextModeInfo
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_pinmode.md">pfnPinMode</a> function.
+        
+            `pfnReleaseModeInfo`
 
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a> function.
+            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_releasemodeinfo.md">pfnReleaseModeInfo</a> function.
 
+    ## Remarks
+        The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiretargetmodeset.md">pfnAcquireTargetModeSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a> to obtain a handle to a VidPN target mode set object and a pointer to a DXGK_VIDPNTARGETMODESET_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN target mode set object.
 
-### -field pfnAcquirePinnedModeInfo
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_acquirepinnedmodeinfo.md">pfnAcquirePinnedModeInfo</a> function.
+    ## See Also
 
-
-### -field pfnReleaseModeInfo
-
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_releasemodeinfo.md">pfnReleaseModeInfo</a> function.
-
-
-### -field pfnCreateNewModeInfo
-
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_createnewmodeinfo.md">pfnCreateNewModeInfo</a> function.
-
-
-### -field pfnAddMode
-
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_addmode.md">pfnAddMode</a> function.
-
-
-### -field pfnPinMode
-
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_pinmode.md">pfnPinMode</a> function.
-
-
-## -remarks
-The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiretargetmodeset.md">pfnAcquireTargetModeSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a> to obtain a handle to a VidPN target mode set object and a pointer to a DXGK_VIDPNTARGETMODESET_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN target mode set object.
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiretargetmodeset.md">pfnAcquireTargetModeSet</a>
 </dt>
@@ -125,4 +118,3 @@ The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_v
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_VIDPNTARGETMODESET_INTERFACE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

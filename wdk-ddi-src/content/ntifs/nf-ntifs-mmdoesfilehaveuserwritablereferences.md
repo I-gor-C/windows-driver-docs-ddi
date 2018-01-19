@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.MmDoesFileHaveUserWritableReferences
-title: MmDoesFileHaveUserWritableReferences function
-author: windows-driver-content
-description: The MmDoesFileHaveUserWritableReferences function returns the number of writable references for a file object.
-old-location: ifsk\mmdoesfilehaveuserwritablereferences.htm
-old-project: ifsk
-ms.assetid: b88afd6e-3a0a-471e-a874-db8fc3175d61
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: MmDoesFileHaveUserWritableReferences
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Fltkernel.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MmDoesFileHaveUserWritableReferences
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.MmDoesFileHaveUserWritableReferences
+title : MmDoesFileHaveUserWritableReferences function
+author : windows-driver-content
+description : The MmDoesFileHaveUserWritableReferences function returns the number of writable references for a file object.
+old-location : ifsk\mmdoesfilehaveuserwritablereferences.htm
+old-project : ifsk
+ms.assetid : b88afd6e-3a0a-471e-a874-db8fc3175d61
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : MmDoesFileHaveUserWritableReferences
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Fltkernel.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows Vista and later versions of Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MmDoesFileHaveUserWritableReferences
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # MmDoesFileHaveUserWritableReferences function
-
-
-
-## -description
 The <b>MmDoesFileHaveUserWritableReferences </b>function returns the number of writable references for a file object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 ULONG MmDoesFileHaveUserWritableReferences(
@@ -51,19 +46,19 @@ ULONG MmDoesFileHaveUserWritableReferences(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param SectionPointer [in]
+`SectionPointer`
 
 Pointer to a <a href="..\wdm\ns-wdm-_section_object_pointers.md">SECTION_OBJECT_POINTERS</a> structure that contains the file object's section object pointers.  This parameter is required and cannot be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>MmDoesFileHaveUserWritableReferences </b>returns the number of writable references for the file object associated with the <i>SectionPointer </i>parameter.
 
+## Remarks
 
-## -remarks
 <b>MmDoesFileHaveUserWritableReferences</b> returns the number of writable references for the file object that is associated with the <i>SectionPointer </i>parameter.  This return value is the sum of the following numbers:
 
  The number of writable file handles for the associated file object.
@@ -82,8 +77,20 @@ For more information about transactions, see <a href="https://msdn.microsoft.com
 
 For more information about file objects, see <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
@@ -94,4 +101,3 @@ For more information about file objects, see <a href="..\wdm\ns-wdm-_file_object
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MmDoesFileHaveUserWritableReferences function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

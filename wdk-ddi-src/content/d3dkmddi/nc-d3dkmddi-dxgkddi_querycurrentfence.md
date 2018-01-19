@@ -1,78 +1,72 @@
 ---
-UID: NC:d3dkmddi.DXGKDDI_QUERYCURRENTFENCE
-title: DXGKDDI_QUERYCURRENTFENCE function
-author: windows-driver-content
-description: The DxgkDdiQueryCurrentFence function queries about the latest completed submission fence identifier in the hardware command execution unit.
-old-location: display\dxgkddiquerycurrentfence.htm
-old-project: display
-ms.assetid: 0ca4d42f-3036-4b81-91a4-fbce7ac891fe
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_QUERYCURRENTFENCE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiQueryCurrentFence
-req.alt-loc: D3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKDDI_QUERYCURRENTFENCE
+title : DXGKDDI_QUERYCURRENTFENCE
+author : windows-driver-content
+description : The DxgkDdiQueryCurrentFence function queries about the latest completed submission fence identifier in the hardware command execution unit.
+old-location : display\dxgkddiquerycurrentfence.htm
+old-project : display
+ms.assetid : 0ca4d42f-3036-4b81-91a4-fbce7ac891fe
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiQueryCurrentFence
+req.alt-loc : D3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
+
 # DXGKDDI_QUERYCURRENTFENCE function
-
-
-
-## -description
 The <i>DxgkDdiQueryCurrentFence</i> function queries about the latest completed submission fence identifier in the hardware command execution unit.
 
+## Syntax
 
+```
+DXGKDDI_QUERYCURRENTFENCE DxgkddiQuerycurrentfence;
 
-## -syntax
-
-````
-DXGKDDI_QUERYCURRENTFENCE DxgkDdiQueryCurrentFence;
-
-NTSTATUS  APIENTRY DxgkDdiQueryCurrentFence(
-   const HANDLE                    hAdapter,
-         DXGKARG_QUERYCURRENTFENCE *pCurrentFence
+NTSTATUS DxgkddiQuerycurrentfence(
+  IN_CONST_HANDLE hAdapter,
+  INOUT_PDXGKARG_QUERYCURRENTFENCE pCurrentFence
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hAdapter 
+`hAdapter`
 
 [in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
+`pCurrentFence`
 
-### -param pCurrentFence 
-
-[in/out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_querycurrentfence.md">DXGKARG_QUERYCURRENTFENCE</a> structure that contains information about the current fence data. 
+[in/out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_querycurrentfence.md">DXGKARG_QUERYCURRENTFENCE</a> structure that contains information about the current fence data.
 
 
-## -returns
+## Return Value
+
 <i>DxgkDdiQueryCurrentFence</i> returns STATUS_SUCCESS, or an appropriate error result if the fence data is not successfully retrieved.
 
+## Remarks
 
-## -remarks
 A <i>fence</i> is an instruction that contains 64 bits of data and an address. The display miniport driver can insert a fence in the direct memory access (DMA) stream that is sent to the graphics processing unit (GPU). When the GPU reads the fence, the GPU writes the fence data at the specified fence address. However, before the GPU can write the fence data to memory, it must ensure that all of the pixels from the primitives that precede the fence instruction are retired and properly written to memory. 
 
 Hardware that supports per-GPU-context virtual address space must support the following types of fences:
@@ -99,8 +93,20 @@ At device interrupt IRQL, calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_i
 
 <i>DxgkDdiQueryCurrentFence</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_querycurrentfence.md">DXGKARG_QUERYCURRENTFENCE</a>
@@ -123,4 +129,3 @@ At device interrupt IRQL, calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_i
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_QUERYCURRENTFENCE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

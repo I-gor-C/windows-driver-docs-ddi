@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltPurgeFileNameInformationCache
-title: FltPurgeFileNameInformationCache function
-author: windows-driver-content
-description: FltPurgeFileNameInformationCache purges from the Filter Manager's name cache all file name information structures that were generated from names provided by the given minifilter driver instance.
-old-location: ifsk\fltpurgefilenameinformationcache.htm
-old-project: ifsk
-ms.assetid: d3c4d041-0589-46f5-a514-8efb0db642c7
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltPurgeFileNameInformationCache
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltPurgeFileNameInformationCache
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltPurgeFileNameInformationCache
+title : FltPurgeFileNameInformationCache function
+author : windows-driver-content
+description : FltPurgeFileNameInformationCache purges from the Filter Manager's name cache all file name information structures that were generated from names provided by the given minifilter driver instance.
+old-location : ifsk\fltpurgefilenameinformationcache.htm
+old-project : ifsk
+ms.assetid : d3c4d041-0589-46f5-a514-8efb0db642c7
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltPurgeFileNameInformationCache
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltPurgeFileNameInformationCache
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltPurgeFileNameInformationCache function
+<b>FltPurgeFileNameInformationCache</b> purges from the Filter Manager's name cache all file name information structures that were generated from names provided by the given minifilter driver instance.
 
-
-
-## -description
-<b>FltPurgeFileNameInformationCache</b> purges from the Filter Manager's name cache all file name information structures that were generated from names provided by the given minifilter driver instance. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltPurgeFileNameInformationCache(
@@ -52,30 +47,41 @@ NTSTATUS FltPurgeFileNameInformationCache(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Instance`
 
-### -param Instance [in]
+Opaque instance (PFLT_INSTANCE) pointer for the minifilter driver instance whose names are to be purged. This parameter is required and cannot be <b>NULL</b>.
 
-Opaque instance (PFLT_INSTANCE) pointer for the minifilter driver instance whose names are to be purged. This parameter is required and cannot be <b>NULL</b>. 
+`FileObject`
 
-
-### -param FileObject [in, optional]
-
-Optional pointer to a file object for which all names are to be purged. If this parameter is <b>NULL</b>, all names for the minifilter driver instance specified by the <i>Instance</i> parameter are purged. 
+Optional pointer to a file object for which all names are to be purged. If this parameter is <b>NULL</b>, all names for the minifilter driver instance specified by the <i>Instance</i> parameter are purged.
 
 
-## -returns
-<b>FltPurgeFileNameInformationCache</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value. 
+## Return Value
 
+<b>FltPurgeFileNameInformationCache</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value.
 
-## -remarks
+## Remarks
+
 A minifilter driver that provides file names for the Filter Manager's name cache can call <b>FltPurgeFileNameInformationCache</b> to purge the names provided for a given minifilter driver instance. This is most commonly done when a name-providing filter unloads. 
 
-The file name information structures are not freed until all references are released. 
+The file name information structures are not freed until all references are released.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_name_control.md">FLT_NAME_CONTROL</a>
@@ -110,4 +116,3 @@ The file name information structures are not freed until all references are rele
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltPurgeFileNameInformationCache function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

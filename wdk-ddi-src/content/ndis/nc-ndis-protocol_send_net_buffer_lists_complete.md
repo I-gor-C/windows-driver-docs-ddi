@@ -1,84 +1,73 @@
 ---
-UID: NC:ndis.PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE
-title: PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE function
-author: windows-driver-content
-description: The ProtocolSendNetBufferListsComplete function completes a send operation that the protocol driver initiated with a call to the NdisSendNetBufferLists function.Note  You must declare the function by using the PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE type. For more information, see the following Examples section.
-old-location: netvista\protocolsendnetbufferlistscomplete.htm
-old-project: netvista
-ms.assetid: bc9197c5-ce0b-42b2-8225-fb9d83427ac8
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolSendNetBufferListsComplete
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE
+title : PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE
+author : windows-driver-content
+description : The ProtocolSendNetBufferListsComplete function completes a send operation that the protocol driver initiated with a call to the NdisSendNetBufferLists function.Note  You must declare the function by using the PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE type. For more information, see the following Examples section.
+old-location : netvista\protocolsendnetbufferlistscomplete.htm
+old-project : netvista
+ms.assetid : bc9197c5-ce0b-42b2-8225-fb9d83427ac8
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolSendNetBufferListsComplete
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE function
-
-
-
-## -description
 The 
   <i>ProtocolSendNetBufferListsComplete</i> function completes a send operation that the protocol driver
   initiated with a call to the 
   <a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">
   NdisSendNetBufferLists</a> function.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE ProtocolSendNetBufferListsComplete;
 
-VOID ProtocolSendNetBufferListsComplete(
-  _In_ NDIS_HANDLE      ProtocolBindingContext,
-  _In_ PNET_BUFFER_LIST NetBufferLists,
-  _In_ ULONG            SendCompleteFlags
+void ProtocolSendNetBufferListsComplete(
+  NDIS_HANDLE ProtocolBindingContext,
+  PNET_BUFFER_LIST NetBufferList,
+  ULONG SendCompleteFlags
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ProtocolBindingContext [in]
+`ProtocolBindingContext`
 
 A handle to a context area that the protocol driver allocated to maintain state information about
      a binding. This handle was passed to NDIS in a previous call to 
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>.
 
-
-### -param NetBufferLists [in]
-
-A pointer to a list of 
-     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that the
-     protocol driver supplied in a previous call to 
-     <a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a>.
+`NetBufferList`
 
 
-### -param SendCompleteFlags [in]
+
+`SendCompleteFlags`
 
 NDIS flags that can be combined with an OR operation. To clear all the flags, set this member to
      zero. This function supports the NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL flag which; if set, indicates
@@ -86,11 +75,12 @@ NDIS flags that can be combined with an OR operation. To clear all the flags, se
      <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 <i>ProtocolSendNetBufferListsComplete</i> is a required function for protocol drivers. 
     <i>ProtocolSendNetBufferListsComplete</i> performs whatever postprocessing is necessary to complete a send
     operation. For example, the protocol driver can notify the clients that requested the protocol to send
@@ -128,10 +118,22 @@ Then, implement your function as follows:
 
 The <b>PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
@@ -155,4 +157,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

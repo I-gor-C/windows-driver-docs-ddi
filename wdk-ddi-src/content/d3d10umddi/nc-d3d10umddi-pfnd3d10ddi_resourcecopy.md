@@ -1,86 +1,79 @@
 ---
-UID: NC:d3d10umddi.PFND3D10DDI_RESOURCECOPY
-title: PFND3D10DDI_RESOURCECOPY
-author: windows-driver-content
-description: The ResourceCopy function copies an entire source resource to a destination resource.
-old-location: display\resourcecopy.htm
-old-project: display
-ms.assetid: 9a837f42-0bea-4425-b693-dd7947ac24b1
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ResourceCopy
-req.alt-loc: d3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
+UID : NC:d3d10umddi.PFND3D10DDI_RESOURCECOPY
+title : PFND3D10DDI_RESOURCECOPY
+author : windows-driver-content
+description : The ResourceCopy function copies an entire source resource to a destination resource.
+old-location : display\resourcecopy.htm
+old-project : display
+ms.assetid : 9a837f42-0bea-4425-b693-dd7947ac24b1
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ResourceCopy
+req.alt-loc : d3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
-# PFND3D10DDI_RESOURCECOPY callback
 
-
-
-## -description
+# PFND3D10DDI_RESOURCECOPY callback function
 The <i>ResourceCopy</i> function copies an entire source resource to a destination resource.
 
+## Syntax
 
+```
+PFND3D10DDI_RESOURCECOPY Pfnd3d10ddiResourcecopy;
 
-## -prototype
-
-````
-PFND3D10DDI_RESOURCECOPY ResourceCopy;
-
-VOID APIENTRY ResourceCopy(
-  _In_ D3D10DDI_HDEVICE   hDevice,
-  _In_ D3D10DDI_HRESOURCE hDstResource,
-  _In_ D3D10DDI_HRESOURCE hSrcResource
+void Pfnd3d10ddiResourcecopy(
+   D3D10DDI_HDEVICE,
+   D3D10DDI_HRESOURCE,
+   D3D10DDI_HRESOURCE
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`D3D10DDI_HDEVICE`
 
 
-## -parameters
 
-### -param hDevice [in]
-
- A handle to the display device (graphics context).
+`D3D10DDI_HRESOURCE`
 
 
-### -param hDstResource [in]
 
- A handle to the destination resource to copy to.
-
-
-### -param hSrcResource [in]
-
- A handle to the source resource to copy from.
+`D3D10DDI_HRESOURCE`
 
 
-## -returns
+
+
+## Return Value
+
 None
 
 The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a> callback function to set an error code. For more information about setting error codes, see the Remarks section.
 
+## Remarks
 
-## -remarks
 The Microsoft Direct3D runtime calls the user-mode display driver's <i>ResourceCopy</i> function to inform the driver to copy from the specified source resource to the specified destination resource. The source and destination resources cannot be the same resource. Both source and destination resources must be the same type of resource and have the same dimensions. The format types (DXGI_FORMAT-typed values) of both resources must be castable to each other. The source and the destination resource must not be currently mapped. In addition, the resource creation flags restrict whether the resource can participate in the copy operation. 
 
 The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. Therefore, if the driver passes any error, except for D3DDDIERR_DEVICEREMOVED, in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a> function, the Direct3D runtime will determine that the error is critical. Even if the device was removed, the driver is not required to return D3DDDIERR_DEVICEREMOVED; however, if device removal interfered with the operation of <i>ResourceCopy</i> (which typically should not happen), the driver can return D3DDDIERR_DEVICEREMOVED.
@@ -115,10 +108,22 @@ The source and destination resources were created with the same resource type (b
 
 The dimensions of the source and destination resources match up for conversion. 
 
-Each source and destination resource format that is specified in the <b>Format</b> member of D3D10DDIARG_CREATERESOURCE supports the appropriate conversion operation. For mipped-block compressed resources, the dimensions are all validated to be a power of two. 
+Each source and destination resource format that is specified in the <b>Format</b> member of D3D10DDIARG_CREATERESOURCE supports the appropriate conversion operation. For mipped-block compressed resources, the dimensions are all validated to be a power of two.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
@@ -141,4 +146,3 @@ Each source and destination resource format that is specified in the <b>Format</
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D10DDI_RESOURCECOPY callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

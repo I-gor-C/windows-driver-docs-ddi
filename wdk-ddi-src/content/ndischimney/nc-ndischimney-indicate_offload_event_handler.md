@@ -1,44 +1,41 @@
 ---
-UID: NC:ndischimney.INDICATE_OFFLOAD_EVENT_HANDLER
-title: INDICATE_OFFLOAD_EVENT_HANDLER
-author: windows-driver-content
-description: NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisMOffloadEventIndicate function.
-old-location: netvista\protocolindicateoffloadevent.htm
-old-project: netvista
-ms.assetid: 608c1c7c-1eb3-4d86-9471-313fce2df00e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolIndicateOffloadEvent
-req.alt-loc: Ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.INDICATE_OFFLOAD_EVENT_HANDLER
+title : INDICATE_OFFLOAD_EVENT_HANDLER
+author : windows-driver-content
+description : NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisMOffloadEventIndicate function.
+old-location : netvista\protocolindicateoffloadevent.htm
+old-project : netvista
+ms.assetid : 608c1c7c-1eb3-4d86-9471-313fce2df00e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolIndicateOffloadEvent
+req.alt-loc : Ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# INDICATE_OFFLOAD_EVENT_HANDLER callback
 
-
-
-## -description
+# INDICATE_OFFLOAD_EVENT_HANDLER callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 NDIS calls a protocol driver's or intermediate driver's 
@@ -47,33 +44,29 @@ NDIS calls a protocol driver's or intermediate driver's
   <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">
   NdisMOffloadEventIndicate</a> function.
 
+## Syntax
 
+```
+INDICATE_OFFLOAD_EVENT_HANDLER IndicateOffloadEventHandler;
 
-## -prototype
-
-````
-INDICATE_OFFLOAD_EVENT_HANDLER ProtocolIndicateOffloadEvent;
-
-VOID ProtocolIndicateOffloadEvent(
-  _In_ NDIS_HANDLE                       ProtocolBindingContext,
-  _In_ PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST OffloadBlockList,
-  _In_ ULONG                             IndicationCode
+void IndicateOffloadEventHandler(
+  IN NDIS_HANDLE ProtocolBindingContext,
+  IN PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST OffloadBlockList,
+  IN ULONG IndicationCode
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ProtocolBindingContext [in]
+`ProtocolBindingContext`
 
 A handle to a context area that was allocated by the protocol driver. The driver maintains the per
      binding context information in this context area. The driver supplied this handle to NDIS when the
      driver called the 
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
-
-### -param OffloadBlockList [in]
+`OffloadBlockList`
 
 A pointer to an 
      <a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
@@ -94,37 +87,33 @@ The underlying offload target supplies a valid
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure referenced by the 
      <i>OffloadBlockList</i> pointer.
 
-
-### -param IndicationCode [in]
+`IndicationCode`
 
 The event being indicated as one of the following INDICATE_OFFLOAD_EVENT values:
-     
 
 
+## Return Value
 
-
-### -param NeighborReachabilityQuery
-
-Indicates that a neighbor cache entry (NCE) has become stale. For more information about NCEs,
-       see RFC 2461.
-
-
-### -param NeighborReachabilityInDoubt
-
-Reserved.
-
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 The implementation of this function for intermediate drivers is to be determined.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_cached.md">NEIGHBOR_OFFLOAD_STATE_CACHED</a>
@@ -149,4 +138,3 @@ The implementation of this function for intermediate drivers is to be determined
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20INDICATE_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

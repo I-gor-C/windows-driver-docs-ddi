@@ -1,50 +1,45 @@
 ---
-UID: NF:fwpsk.FwpsCalloutRegister1
-title: FwpsCalloutRegister1 function
-author: windows-driver-content
-description: The FwpsCalloutRegister1 function registers a callout with the filter engine.Note  FwpsCalloutRegister1 is the specific version of FwpsCalloutRegister used in Windows 7 and later.
-old-location: netvista\fwpscalloutregister1.htm
-old-project: netvista
-ms.assetid: 496e2206-56d1-47eb-a9e6-f5d4799e3dde
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsCalloutRegister1
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 7.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsCalloutRegister1
-req.alt-loc: Fwpkclnt.lib,Fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsCalloutRegister1
+title : FwpsCalloutRegister1 function
+author : windows-driver-content
+description : The FwpsCalloutRegister1 function registers a callout with the filter engine.Note  FwpsCalloutRegister1 is the specific version of FwpsCalloutRegister used in Windows 7 and later.
+old-location : netvista\fwpscalloutregister1.htm
+old-project : netvista
+ms.assetid : 496e2206-56d1-47eb-a9e6-f5d4799e3dde
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsCalloutRegister1
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 7.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsCalloutRegister1
+req.alt-loc : Fwpkclnt.lib,Fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsCalloutRegister1 function
-
-
-
-## -description
 The 
   <b>FwpsCalloutRegister1</b> function registers a callout with the filter engine.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsCalloutRegister1(
@@ -54,24 +49,21 @@ NTSTATUS NTAPI FwpsCalloutRegister1(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param deviceObject [in, out]
+`deviceObject`
 
 A pointer to a device object that was previously created by the callout driver. For more
      information about how a callout driver creates a device object, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>.
 
-
-### -param callout [in]
+`callout`
 
 A pointer to a constant 
      <a href="..\fwpsk\ns-fwpsk-fwps_callout1_.md">FWPS_CALLOUT1</a> structure that contains the
      data that is required to register the callout with the filter engine.
 
-
-### -param calloutId [out, optional]
+`calloutId`
 
 A pointer to a UINT32-typed variable that receives a run-time identifier that identifies the
      callout in the filter engine. The callout driver passes this identifier to the 
@@ -87,7 +79,8 @@ A pointer to a UINT32-typed variable that receives a run-time identifier that id
      parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsCalloutRegister1</b> function returns one of the following NTSTATUS codes.
 <dl>
@@ -104,10 +97,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpsCalloutRegister1</b> function to register a callout with the filter engine. A callout driver can
     register a callout with the filter engine at any time, even if the filter engine is not currently
@@ -126,8 +117,20 @@ A callout driver unregisters a callout from the filter engine by calling either 
     FwpsCalloutUnregisterByKey0</a> function. A callout driver cannot be unloaded until all of the callouts
     that were previously registered with the filter engine have been successfully unregistered.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\ns-fwpsk-fwps_callout1_.md">FWPS_CALLOUT1</a>
@@ -168,4 +171,3 @@ A callout driver unregisters a callout from the filter engine by calling either 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutRegister1 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwQueryInformationToken
-title: ZwQueryInformationToken function
-author: windows-driver-content
-description: The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
-old-location: kernel\zwqueryinformationtoken.htm
-old-project: kernel
-ms.assetid: 554b541b-943a-413e-9803-7dba17d0c6ce
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwQueryInformationToken
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwQueryInformationToken,NtQueryInformationToken
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwQueryInformationToken
+title : ZwQueryInformationToken function
+author : windows-driver-content
+description : The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
+old-location : kernel\zwqueryinformationtoken.htm
+old-project : kernel
+ms.assetid : 554b541b-943a-413e-9803-7dba17d0c6ce
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwQueryInformationToken
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwQueryInformationToken,NtQueryInformationToken
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwQueryInformationToken function
+The <b>ZwQueryInformationToken</b> routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
 
-
-
-## -description
-The <b>ZwQueryInformationToken</b> routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwQueryInformationToken(
@@ -55,20 +50,17 @@ NTSTATUS ZwQueryInformationToken(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param TokenHandle [in]
+`TokenHandle`
 
 Handle for an access token from which information is to be retrieved. If <i>TokenInformationClass</i> is set to <b>TokenSource</b>, the handle must have TOKEN_QUERY_SOURCE access. For all other <i>TokenInformationClass</i> values, the handle must have TOKEN_QUERY access. For more information about access rights for access-token objects, see the Security section of the Windows SDK documentation.
 
-
-### -param TokenInformationClass [in]
+`TokenInformationClass`
 
 A value from the <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a> enumerated type identifying the type of information to be retrieved. The possible values for this parameter are listed in the <i>TokenInformationClass</i> Value column of the table shown in the description of the <i>TokenInformation</i> parameter.
 
-
-### -param TokenInformation [out]
+`TokenInformation`
 
 Pointer to a caller-allocated buffer that receives the requested information about the token. The structure put into this buffer depends upon the value of <i>TokenInformationClass</i>, as shown in the following table. All structures must be aligned on a 32-bit boundary.
 
@@ -188,15 +180,12 @@ The buffer receives a <a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a> 
 </td>
 </tr>
 </table>
- 
 
+`TokenInformationLength`
 
-### -param TokenInformationLength [in]
+Length, in bytes, of the caller-allocated <i>TokenInformation</i> buffer.
 
-Length, in bytes, of the caller-allocated <i>TokenInformation</i> buffer. 
-
-
-### -param ReturnLength [out]
+`ReturnLength`
 
 Pointer to a caller-allocated variable that receives the actual length, in bytes, of the information returned in the <i>TokenInformation</i> buffer. If either of the following conditions is true, no data is returned in the <i>TokenInformation</i> buffer: 
 
@@ -211,7 +200,9 @@ The value of <i>TokenInformationClass</i> is <b>TokenDefaultDacl</b>, and there 
 </li>
 </ul>
 
-## -returns
+
+## Return Value
+
 <b>ZwQueryInformationToken</b> returns STATUS_SUCCESS or an appropriate error status. Possible error status codes include the following:
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -227,20 +218,30 @@ The value of <i>TokenInformationClass</i> is <b>TokenDefaultDacl</b>, and there 
 </dl><i>TokenInformationClass</i> was not a valid token information class. 
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl><i>TokenHandle</i> was not a token handle. 
+</dl><i>TokenHandle</i> was not a token handle.
 
- 
+## Remarks
 
-
-## -remarks
 The <b>ZwQueryInformationToken</b> routine can be used by a file system or file system filter driver to determine the <a href="..\ntifs\ns-ntifs-_sid.md">SID</a> of the caller that initiated the request during <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> processing. If <b>TokenUser</b> is specified for the <i>TokenInformationClass</i> parameter passed to <b>ZwQueryInformationToken</b>, a <a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a> structure is returned in the buffer pointed to by the <i>TokenInformation</i> parameter. This returned buffer contains an <a href="..\ntifs\ns-ntifs-_sid_and_attributes.md">SID_AND_ATTRIBUTES</a> structure with the user <b>SID</b>.
 
 For more information about security and access control, see the documentation on these topics in the Windows SDK. 
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
@@ -302,4 +303,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationToken routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

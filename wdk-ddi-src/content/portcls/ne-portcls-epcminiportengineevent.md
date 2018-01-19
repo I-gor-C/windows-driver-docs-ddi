@@ -1,52 +1,45 @@
 ---
-UID: NE:portcls.EPcMiniportEngineEvent
-title: EPcMiniportEngineEvent
-author: windows-driver-content
-description: This topic introduces the EPcMiniportEngineEvent enum, and describes the parameters that provide additional information when the miniport driver reports a glitching error.
-old-location: audio\epcminiportengineevent.htm
-old-project: audio
-ms.assetid: 6B282CA4-2EE8-48BB-99E2-1A16A92E57A5
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: EPcMiniportEngineEvent, EPcMiniportEngineEvent
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: portcls.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: EPcMiniportEngineEvent
-req.alt-loc: Portcls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: EPcMiniportEngineEvent
+UID : NE:portcls.EPcMiniportEngineEvent
+title : EPcMiniportEngineEvent
+author : windows-driver-content
+description : This topic introduces the EPcMiniportEngineEvent enum, and describes the parameters that provide additional information when the miniport driver reports a glitching error.
+old-location : audio\epcminiportengineevent.htm
+old-project : audio
+ms.assetid : 6B282CA4-2EE8-48BB-99E2-1A16A92E57A5
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : EPcMiniportEngineEvent, EPcMiniportEngineEvent
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : portcls.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : EPcMiniportEngineEvent
+req.alt-loc : Portcls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : EPcMiniportEngineEvent
 ---
 
-# EPcMiniportEngineEvent enumeration
-
-
-
-## -description
+# EPcMiniportEngineEvent Enumeration
 This topic introduces the EPcMiniportEngineEvent enum, and describes the parameters that provide additional information when the miniport driver reports a  glitching error.
 
 The event IDs in the following enum represent events that the miniport driver can report, by using callbacks via the port class driver (PortCls).
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _EPcMiniportEngineEvent { 
   eMINIPORT_IHV_DEFINED                  = 0,
@@ -64,70 +57,58 @@ typedef enum _EPcMiniportEngineEvent {
 } EPcMiniportEngineEvent;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field eMINIPORT_IHV_DEFINED
+<tr>
+<td>eMINIPORT_BUFFER_COMPLETE</td>
+<td>Specifies the ID for the buffer complete event.</td>
+</tr>
 
-Specifies the ID for an IHV-defined event.
+<tr>
+<td>eMINIPORT_FX_CLSID</td>
+<td>Specifies the class ID for the audio processing effect (FX) that was in effect when the glitch happened.</td>
+</tr>
 
+<tr>
+<td>eMINIPORT_GLITCH_REPORT</td>
+<td>Specifies the ID for a "glitch report" event.</td>
+</tr>
 
-### -field eMINIPORT_BUFFER_COMPLETE
+<tr>
+<td>eMINIPORT_IHV_DEFINED</td>
+<td>Specifies the ID for an IHV-defined event.</td>
+</tr>
 
-Specifies the ID for the buffer complete event.
+<tr>
+<td>eMINIPORT_LAST_BUFFER_RENDERED</td>
+<td>Specifies the ID for the last buffer that was rendered.</td>
+</tr>
 
+<tr>
+<td>eMINIPORT_MaxValue</td>
+<td>Specifies the ID for the highest enumerated value that was used to report the glitch.</td>
+</tr>
 
-### -field eMINIPORT_PIN_STATE
+<tr>
+<td>eMINIPORT_PIN_STATE</td>
+<td>Specifies the ID for the event related to a change in pin state.</td>
+</tr>
 
-Specifies the ID for the event related to a change in pin state.
+<tr>
+<td>eMINIPORT_PROCESSING_MODE</td>
+<td>Specifies the ID for the processing mode that was in effect when the glitch happened.</td>
+</tr>
 
+<tr>
+<td>eMINIPORT_PROGRAM_DMA</td>
+<td>Specifies the ID for a "program DMA" event.</td>
+</tr>
+</table>
 
-### -field eMINIPORT_GET_STREAM_POS
+## Remarks
 
-Specifies the ID for a "get stream position" event.
-
-
-### -field eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS
-
-Specifies the ID for a "wave  buffer write position" event.
-
-
-### -field eMINIPORT_GET_PRESENTATION_POS
-
-Specifies the ID for a "get presentation position" event.
-
-
-### -field eMINIPORT_PROGRAM_DMA
-
-Specifies the ID for a "program DMA" event.
-
-
-### -field eMINIPORT_GLITCH_REPORT
-
-Specifies the ID for a "glitch report" event.
-
-
-### -field eMINIPORT_LAST_BUFFER_RENDERED
-
-Specifies the ID for the last buffer that was rendered.
-
-
-### -field eMINIPORT_PROCESSING_MODE
-
-Specifies the ID for the processing mode that was in effect when the glitch happened.
-
-
-### -field eMINIPORT_FX_CLSID
-
-Specifies the class ID for the audio processing effect (FX) that was in effect when the glitch happened.
-
-
-### -field eMINIPORT_MaxValue
-
-Specifies the ID for the highest enumerated value that was used to report the glitch.
-
-
-## -remarks
 The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8. The table shows the events associated with the enum's members, and the meanings of their parameters.
 
 
@@ -253,12 +234,17 @@ The following table shows the members of the  EPcMiniportEngineEvent enum that w
 <td>0</td>
 </tr>
 </table>
- 
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | portcls.h |
 
+## See Also
 
-
-## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/9FF2A5D6-9382-4EE6-AA21-DCF47210F73B">Glitch Reporting for Offloaded Audio</a>
@@ -272,4 +258,3 @@ The following table shows the members of the  EPcMiniportEngineEvent enum that w
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20EPcMiniportEngineEvent enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

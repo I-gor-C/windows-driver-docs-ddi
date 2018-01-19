@@ -1,50 +1,43 @@
 ---
-UID: NE:61883.CMP_CONNECT_TYPE
-title: CMP_CONNECT_TYPE
-author: windows-driver-content
-description: This enumeration specifies a connection type.
-old-location: ieee\cmp_connect_type.htm
-old-project: IEEE
-ms.assetid: 8C206071-2616-4BFB-B7CA-E872CC8D5405
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: CMP_CONNECT_TYPE, CMP_CONNECT_TYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: 61883.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CMP_CONNECT_TYPE
-req.alt-loc: 61883.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: CMP_CONNECT_TYPE
+UID : NE:61883.CMP_CONNECT_TYPE
+title : CMP_CONNECT_TYPE
+author : windows-driver-content
+description : This enumeration specifies a connection type.
+old-location : ieee\cmp_connect_type.htm
+old-project : IEEE
+ms.assetid : 8C206071-2616-4BFB-B7CA-E872CC8D5405
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : CMP_CONNECT_TYPE, CMP_CONNECT_TYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : 61883.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CMP_CONNECT_TYPE
+req.alt-loc : 61883.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : CMP_CONNECT_TYPE
 ---
 
-# CMP_CONNECT_TYPE enumeration
+# CMP_CONNECT_TYPE Enumeration
+This enumeration specifies a connection type.
 
-
-
-## -description
-This enumeration specifies a connection type. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum  { 
   CMP_Broadcast     = 0,
@@ -52,23 +45,32 @@ typedef enum  {
 } CMP_CONNECT_TYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field CMP_Broadcast
+<tr>
+<td>CMP_Broadcast</td>
+<td>Indicates that this is a broadcast connection.</td>
+</tr>
 
-Indicates that this is a broadcast connection.
+<tr>
+<td>CMP_PointToPoint</td>
+<td>Indicates that this is a point-to-point connection.</td>
+</tr>
+</table>
 
 
-### -field CMP_PointToPoint
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | 61883.h |
 
-Indicates that this is a point-to-point connection.
+## See Also
 
-
-## -remarks
-
-
-## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
@@ -79,4 +81,3 @@ Indicates that this is a point-to-point connection.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_CONNECT_TYPE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

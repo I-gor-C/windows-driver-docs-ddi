@@ -1,51 +1,46 @@
 ---
-UID: NF:fwpsk.FwpsAcquireWritableLayerDataPointer0
-title: FwpsAcquireWritableLayerDataPointer0 function
-author: windows-driver-content
-description: The FwpsAcquireWritableLayerDataPointer0 function returns layer-specific data that can be inspected and changed.Note  FwpsAcquireWritableLayerDataPointer0 is a specific version of FwpsAcquireWritableLayerDataPointer.
-old-location: netvista\fwpsacquirewritablelayerdatapointer0.htm
-old-project: netvista
-ms.assetid: 79816d01-bf27-49d0-b6f1-083b7e87cc4e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsAcquireWritableLayerDataPointer0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 7.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsAcquireWritableLayerDataPointer0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsAcquireWritableLayerDataPointer0
+title : FwpsAcquireWritableLayerDataPointer0 function
+author : windows-driver-content
+description : The FwpsAcquireWritableLayerDataPointer0 function returns layer-specific data that can be inspected and changed.Note  FwpsAcquireWritableLayerDataPointer0 is a specific version of FwpsAcquireWritableLayerDataPointer.
+old-location : netvista\fwpsacquirewritablelayerdatapointer0.htm
+old-project : netvista
+ms.assetid : 79816d01-bf27-49d0-b6f1-083b7e87cc4e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsAcquireWritableLayerDataPointer0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 7.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsAcquireWritableLayerDataPointer0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsAcquireWritableLayerDataPointer0 function
-
-
-
-## -description
 The 
   <b>FwpsAcquireWritableLayerDataPointer0</b> function returns layer-specific data that can be inspected and
   changed.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsAcquireWritableLayerDataPointer0(
@@ -57,18 +52,16 @@ NTSTATUS NTAPI FwpsAcquireWritableLayerDataPointer0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param classifyHandle [in]
+`classifyHandle`
 
 A handle for the classify request.
      This handle is obtained by calling 
      <a href="..\fwpsk\nf-fwpsk-fwpsacquireclassifyhandle0.md">
      FwpsAcquireClassifyHandle0</a>.
 
-
-### -param filterId [in]
+`filterId`
 
 The value of the 
      <b>FilterId</b> member of the 
@@ -77,20 +70,17 @@ The value of the
      <b>FilterId</b> member, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>.
 
-
-### -param flags [in]
+`flags`
 
 Reserved for future use. Set to zero.
 
-
-### -param writableLayerData [out]
+`writableLayerData`
 
 A data buffer that contains the modifiable data for the layer. The supported data types, which are listed in the following Remarks section, are defined as
      structures. On return, the data can be accessed by casting the void pointer to the appropriate structure
      type.
 
-
-### -param classifyOut [in, out]
+`classifyOut`
 
 Set to the 
      <i>classifyOut</i> parameter of the callout driver's 
@@ -101,7 +91,8 @@ Set to the
      <b>FwpsAcquireWritableLayerDataPointer0</b>.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsAcquireWritableLayerDataPointer0</b> function returns one of the following NTSTATUS codes.
 <dl>
@@ -111,10 +102,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 <b>FwpsAcquireWritableLayerDataPointer0</b> sets the following members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure:<ul>
 <li><i>classifyOut</i>-&gt;<b>actionType</b> = <b>FWP_ACTION_BLOCK</b></li>
 <li><i>classifyOut</i>-&gt;<b>rights</b> = ~<b>FWPS_RIGHT_ACTION_WRITE</b></li>
@@ -136,9 +125,20 @@ The following structures are defined to contain modifiable layer data. The point
 
 <a href="..\fwpsk\ns-fwpsk-_fwps_connect_request0.md">FWPS_CONNECT_REQUEST0</a>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
@@ -170,4 +170,3 @@ The following structures are defined to contain modifiable layer data. The point
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireWritableLayerDataPointer0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

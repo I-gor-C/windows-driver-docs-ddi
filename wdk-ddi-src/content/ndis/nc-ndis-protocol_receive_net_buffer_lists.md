@@ -1,170 +1,97 @@
 ---
-UID: NC:ndis.PROTOCOL_RECEIVE_NET_BUFFER_LISTS
-title: PROTOCOL_RECEIVE_NET_BUFFER_LISTS function
-author: windows-driver-content
-description: The ProtocolReceiveNetBufferLists function processes receive indications from underlying drivers.Note  You must declare the function by using the PROTOCOL_RECEIVE_NET_BUFFER_LISTS type.
-old-location: netvista\protocolreceivenetbufferlists.htm
-old-project: netvista
-ms.assetid: c964b4b8-ab07-4a07-9965-5cc06c028c20
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: PROTOCOL_RECEIVE_NET_BUFFER_LISTS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolReceiveNetBufferLists
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.PROTOCOL_RECEIVE_NET_BUFFER_LISTS
+title : PROTOCOL_RECEIVE_NET_BUFFER_LISTS
+author : windows-driver-content
+description : The ProtocolReceiveNetBufferLists function processes receive indications from underlying drivers.Note  You must declare the function by using the PROTOCOL_RECEIVE_NET_BUFFER_LISTS type.
+old-location : netvista\protocolreceivenetbufferlists.htm
+old-project : netvista
+ms.assetid : c964b4b8-ab07-4a07-9965-5cc06c028c20
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolReceiveNetBufferLists
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # PROTOCOL_RECEIVE_NET_BUFFER_LISTS function
-
-
-
-## -description
 The 
   <i>ProtocolReceiveNetBufferLists</i> function processes receive indications from underlying drivers.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 PROTOCOL_RECEIVE_NET_BUFFER_LISTS ProtocolReceiveNetBufferLists;
 
-VOID ProtocolReceiveNetBufferLists(
-  _In_ NDIS_HANDLE      ProtocolBindingContext,
-  _In_ PNET_BUFFER_LIST NetBufferLists,
-  _In_ NDIS_PORT_NUMBER PortNumber,
-  _In_ ULONG            NumberOfNetBufferLists,
-  _In_ ULONG            ReceiveFlags
+void ProtocolReceiveNetBufferLists(
+  NDIS_HANDLE ProtocolBindingContext,
+  PNET_BUFFER_LIST NetBufferLists,
+  NDIS_PORT_NUMBER PortNumber,
+  ULONG NumberOfNetBufferLists,
+  ULONG ReceiveFlags
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ProtocolBindingContext [in]
+`ProtocolBindingContext`
 
 A handle to a context area that the protocol driver allocated to maintain state information for a
      binding. This handle was passed to NDIS in a previous call to the 
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
-
-### -param NetBufferLists [in]
+`NetBufferLists`
 
 A linked list of 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that the
      underlying driver allocated. Each <b>NET_BUFFER_LIST</b> structure is usually associated with one 
      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure.
 
-
-### -param PortNumber [in]
+`PortNumber`
 
 A port number that identifies a miniport adapter port. The default port number of a miniport
      adapter is zero. Protocol drivers that do not use miniport adapter ports should ignore this
      parameter.
 
-
-### -param NumberOfNetBufferLists [in]
+`NumberOfNetBufferLists`
 
 The number of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that are in the linked list of structures at 
      <i>NetBufferLists</i> .
 
-
-### -param ReceiveFlags [in]
+`ReceiveFlags`
 
 Flags that define attributes for the send operation. The flags can be combined with an OR
      operation. To clear all the flags, set this member to zero. This function supports the following flags:
-     
 
 
+## Return Value
 
-
-### -param NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL
-
-Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
-
-
-### -param NDIS_RECEIVE_FLAGS_RESOURCES
-
-Specifies that NDIS reclaims ownership of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures and any attached
-       <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures immediately after the call to 
-       <i>ProtocolReceiveNetBufferLists</i> returns.
-
-
-### -param NDIS_RECEIVE_FLAGS_SINGLE_ETHER_TYPE
-
-Specifies that all of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in the list at 
-       <i>NetBufferLists</i> have the same protocol type (EtherType).
-
-
-### -param NDIS_RECEIVE_FLAGS_SINGLE_VLAN
-
-Specifies that all of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in the list at 
-       <i>NetBufferLists</i> belong to the same VLAN.
-
-
-### -param NDIS_RECEIVE_FLAGS_PERFECT_FILTERED
-
-Specifies that all of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in the list at 
-       <i>NetBufferLists</i> include only data that matches the packet filter and multicast list that are
-       assigned to the miniport adapter.
-
-
-### -param NDIS_RECEIVE_FLAGS_SINGLE_QUEUE
-
-Specifies that all the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in the list at 
-       <i>NetBufferLists</i> belong to the same VM queue. A miniport driver must set this flag for all receive
-       indications on a queue if the <b>NDIS_RECEIVE_QUEUE_PARAMETERS_PER_QUEUE_RECEIVE_INDICATION</b> flag was set
-       in the 
-       <b>Flags</b> member of the 
-       <a href="https://msdn.microsoft.com/fba87554-766d-45e2-8257-584ee78dd873">
-       NDIS_RECEIVE_QUEUE_PARAMETERS</a> structure when that queue was allocated.
-
-
-### -param NDIS_RECEIVE_FLAGS_SHARED_MEMORY_INFO_VALID
-
-Specifies that all the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in the list at 
-       <i>NetBufferLists</i> contain shared memory information that is valid. When this flag is set on a
-       received <b>NET_BUFFER_LIST</b>, NDIS treats the shared memory information as valid. When this flag is not
-       set, NDIS and drivers ignore the shared memory information. For example, intermediate drivers that
-       modify packet data can use this flag to determine if data should be copied. Miniport drivers can use
-       the flag to determine how to free the memory that is associated with a VM queue when a queue is
-       deleted.
-
-
-### -param NDIS_RECEIVE_FLAGS_MORE_NBLS
-
-Reserved.
-
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 <i>ProtocolReceiveNetBufferLists</i> is a required function for protocol drivers. NDIS calls 
     <i>ProtocolReceiveNetBufferLists</i> after a bound miniport driver calls the 
     <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
@@ -199,17 +126,29 @@ Then, implement your function as follows:
 
 The <b>PROTOCOL_RECEIVE_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_RECEIVE_NET_BUFFER_LISTS</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
    MiniportReturnNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567211">NDIS_RECEIVE_QUEUE_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_parameters.md">NDIS_RECEIVE_QUEUE_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
@@ -233,4 +172,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_RECEIVE_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

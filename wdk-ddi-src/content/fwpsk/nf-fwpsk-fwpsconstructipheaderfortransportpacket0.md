@@ -1,51 +1,46 @@
 ---
-UID: NF:fwpsk.FwpsConstructIpHeaderForTransportPacket0
-title: FwpsConstructIpHeaderForTransportPacket0 function
-author: windows-driver-content
-description: The FwpsConstructIpHeaderForTransportPacket0 function is called by a callout to construct a new IP header or to rebuild a preexisting IP packet header for only one net buffer.Note  FwpsConstructIpHeaderForTransportPacket0 is a specific version of FwpsConstructIpHeaderForTransportPacket. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location: netvista\fwpsconstructipheaderfortransportpacket0.htm
-old-project: netvista
-ms.assetid: badb7e91-1d5f-42c3-973b-c7d756d24a01
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsConstructIpHeaderForTransportPacket0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Server 2008.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsConstructIpHeaderForTransportPacket0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsConstructIpHeaderForTransportPacket0
+title : FwpsConstructIpHeaderForTransportPacket0 function
+author : windows-driver-content
+description : The FwpsConstructIpHeaderForTransportPacket0 function is called by a callout to construct a new IP header or to rebuild a preexisting IP packet header for only one net buffer.Note  FwpsConstructIpHeaderForTransportPacket0 is a specific version of FwpsConstructIpHeaderForTransportPacket. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location : netvista\fwpsconstructipheaderfortransportpacket0.htm
+old-project : netvista
+ms.assetid : badb7e91-1d5f-42c3-973b-c7d756d24a01
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsConstructIpHeaderForTransportPacket0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Server 2008.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsConstructIpHeaderForTransportPacket0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsConstructIpHeaderForTransportPacket0 function
-
-
-
-## -description
 The 
   <b>FwpsConstructIpHeaderForTransportPacket0</b> function is called by a callout to construct a new IP header
   or to rebuild a preexisting IP packet header for only one net buffer.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
@@ -65,10 +60,9 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param netBufferList [in, out]
+`netBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
@@ -77,50 +71,21 @@ A pointer to a
      the transport header. To rebuild a preexisting IP packet header, locate the offset at the beginning of
      the IP header.
 
-
-### -param headerIncludeHeaderSize [in]
-
-If the NET_BUFFER_LIST structure pointed to by 
-     <i>NetBufferList</i> already contains an IP header, indicates the total size, in bytes, of the existing
-     IP header (if it exists). If 
-     <i>NetBufferList</i> does not contain an IP header, 
-     <i>headerIncludeHeaderSize</i> is zero. Otherwise, the value of this parameter is equal to the 
-     <b>ipHeaderSize</b> member of the 
-     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
-     FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function. Note that
-     extension headers for an existing IPv6 header will be removed when this function is called, although
-     IPv4 options will be preserved. For more information, see Remarks.
+`headerIncludeHeaderLength`
 
 
-### -param addressFamily [in]
+
+`addressFamily`
 
 One of the following address families:
-     
 
-
-
-
-### -param AF_INET
-
-The IPv4 address family.
-
-
-### -param AF_INET6
-
-The IPv6 address family.
-
-</dd>
-</dl>
-
-### -param sourceAddress [in]
+`sourceAddress`
 
 A pointer to the source IP address that will be part of the IP header to be constructed. For IPv4,
      the address is 4 bytes. For IPv6, the address is 16 bytes. The source address bytes are always in
      network byte order.
 
-
-### -param remoteAddress [in]
+`remoteAddress`
 
 A pointer to a buffer that specifies the remote IP address that will be part of the IP header to
      be constructed.
@@ -130,16 +95,14 @@ The buffer can contain an IPv4 address (4 bytes) or an IPv6 address (16 bytes), 
      be specified in network byte order. The IP version must match the 
      <i>addressFamily</i> parameter.
 
-
-### -param nextProtocol [in]
+`nextProtocol`
 
 Specifies the IPPROTO protocol type of the new IP header to be constructed. For more information
      on the IPPROTO enumeration, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a> or 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>.
 
-
-### -param endpointHandle [in, optional]
+`endpointHandle`
 
 An optional handle that indicates the stack transport endpoint in the send data path into which
      the packet is to be injected. This endpoint handle is provided to a callout through the 
@@ -148,8 +111,7 @@ An optional handle that indicates the stack transport endpoint in the send data 
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
-
-### -param controlData [in, optional]
+`controlData`
 
 An optional pointer to a buffer that contains socket control data specified by the 
      <b>WSASendMsg</b> function, which is described in the Microsoft Windows SDK documentation. For
@@ -169,29 +131,24 @@ If socket control data is not <b>NULL</b>, it must be deep-copied in the callout
      <b>controlData</b> buffer must be kept valid until the injection completion function is
      called.
 
-
-### -param controlDataLength [in]
+`controlDataLength`
 
 The length, in bytes, of the 
      <i>controlData</i> parameter.
 
-
-### -param flags [in]
+`flags`
 
 Reserved. Callout drivers must set this parameter to zero.
 
-
-### -param reserved 
+`reserved`
 
 Reserved. Callout drivers must set this parameter to <b>NULL</b>.
 
-
-### -param interfaceIndex [in, optional]
+`interfaceIndex`
 
 The index of the interface on which the original packet data was received. A callout driver should use the value of the interface index that is passed as one of the incoming data values to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function for this parameter. This parameter is optional and can be zero.
 
-
-### -param subInterfaceIndex [in, optional]
+`subInterfaceIndex`
 
 The index of the subinterface on which the original packet data was received. A callout driver
      should use the value of the subinterface index that is passed as one of the incoming data values to its 
@@ -200,7 +157,8 @@ The index of the subinterface on which the original packet data was received. A 
      indicated. This parameter is optional and can be zero.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsConstructIpHeaderForTransportPacket0</b> function returns one of the following NTSTATUS
      codes.
@@ -211,10 +169,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 From a net buffer list cloned at a WFP outbound transport layer (FWPS_LAYER_OUTBOUND_TRANSPORT_Xxx), 
     <b>FwpsConstructIpHeaderForTransportPacket0</b> constructs a new header for each net buffer that is part
     of the net buffer list chain. This function can also be used to rebuild the preexisting IP header of a
@@ -277,8 +233,20 @@ Call
     support for the resulting net buffer list. Full checksums are calculated for upper-level protocols (TCP,
     UDP, and ICMP). The IP checksum is recalculated when the IP header is reconstructed.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a>
@@ -309,4 +277,3 @@ Call
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsConstructIpHeaderForTransportPacket0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

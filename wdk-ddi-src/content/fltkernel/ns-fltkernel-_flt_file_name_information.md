@@ -1,50 +1,43 @@
 ---
-UID: NS:fltkernel._FLT_FILE_NAME_INFORMATION
-title: _FLT_FILE_NAME_INFORMATION
-author: windows-driver-content
-description: The FLT_FILE_NAME_INFORMATION structure contains file name information.
-old-location: ifsk\flt_file_name_information.htm
-old-project: ifsk
-ms.assetid: 998a028a-7dd8-429a-8195-68d4b4b1b156
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _FLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION, *PFLT_FILE_NAME_INFORMATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FLT_FILE_NAME_INFORMATION
-req.alt-loc: fltkernel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FLT_FILE_NAME_INFORMATION, *PFLT_FILE_NAME_INFORMATION
+UID : NS:fltkernel._FLT_FILE_NAME_INFORMATION
+title : _FLT_FILE_NAME_INFORMATION
+author : windows-driver-content
+description : The FLT_FILE_NAME_INFORMATION structure contains file name information.
+old-location : ifsk\flt_file_name_information.htm
+old-project : ifsk
+ms.assetid : 998a028a-7dd8-429a-8195-68d4b4b1b156
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _FLT_FILE_NAME_INFORMATION, *PFLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FLT_FILE_NAME_INFORMATION
+req.alt-loc : fltkernel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PFLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION"
 ---
 
 # _FLT_FILE_NAME_INFORMATION structure
+The FLT_FILE_NAME_INFORMATION structure contains file name information.
 
-
-
-## -description
-The FLT_FILE_NAME_INFORMATION structure contains file name information. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _FLT_FILE_NAME_INFORMATION {
   USHORT                     Size;
@@ -60,17 +53,65 @@ typedef struct _FLT_FILE_NAME_INFORMATION {
 } FLT_FILE_NAME_INFORMATION, *PFLT_FILE_NAME_INFORMATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Extension`
 
-### -field Size
+            UNICODE_STRING structure that contains the extension parsed from the <b>Name</b> string. If no extension is found, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Extension.Length</b> to zero.
+        
+            `FinalComponent`
 
-Size, in bytes, of the FLT_FILE_NAME_INFORMATION structure. 
+            UNICODE_STRING structure that contains the final name component parsed from the <b>Name</b> string. If no final component name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>FinalComponent.Length</b> to zero.
+        
+            `Format`
 
+            Format of the name information stored in the <b>Name</b> member. One of the following. (For an explanation of these formats, see the following Remarks section.) 
 
-### -field NamesParsed
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+FLT_FILE_NAME_NORMALIZED
 
-Bitmask of flags that indicate which name components have been parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. Note that, when parsing the <b>Name</b> string, <b>FltParseFileNameInformation</b> sets this flag for each component, whether the component is found to be present in the string. These values may be combined by using the OR operator. 
+</td>
+<td>
+The <b>Name</b> member contains the normalized name for the file. 
+
+</td>
+</tr>
+<tr>
+<td>
+FLT_FILE_NAME_OPENED
+
+</td>
+<td>
+The <b>Name</b> member contains the name that was used when the file was opened. This name string is not normalized. 
+
+</td>
+</tr>
+<tr>
+<td>
+FLT_FILE_NAME_SHORT
+
+</td>
+<td>
+The <b>Name</b> member contains the short (8.3) name for the file. The short name for a file does not include the volume name, directory path, or stream name. This name string is not normalized. 
+
+</td>
+</tr>
+</table>
+        
+            `Name`
+
+            <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the file name string, formatted as specified by the <b>Format</b> member.
+        
+            `NamesParsed`
+
+            Bitmask of flags that indicate which name components have been parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. Note that, when parsing the <b>Name</b> string, <b>FltParseFileNameInformation</b> sets this flag for each component, whether the component is found to be present in the string. These values may be combined by using the OR operator. 
 
 <table>
 <tr>
@@ -118,90 +159,29 @@ FLTFL_FILE_NAME_PARSED_PARENT_DIR
 </td>
 </tr>
 </table>
- 
+        
+            `ParentDir`
 
+            UNICODE_STRING structure that contains the parent directory name parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. If no parent directory name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <b>FltParseFileNameInformation</b> sets <b>ParentDir.Length</b> to zero.
+        
+            `Share`
 
-### -field Format
+            UNICODE_STRING structure that contains the network share name parsed from the <b>Name</b> string for a remote file. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Share.Length</b> is zero.
+        
+            `Size`
 
-Format of the name information stored in the <b>Name</b> member. One of the following. (For an explanation of these formats, see the following Remarks section.) 
+            Size, in bytes, of the FLT_FILE_NAME_INFORMATION structure.
+        
+            `Stream`
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-FLT_FILE_NAME_NORMALIZED
+            UNICODE_STRING structure that contains the stream name parsed from the <b>Name</b> string. If no stream name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Stream.Length</b> to zero.
+        
+            `Volume`
 
-</td>
-<td>
-The <b>Name</b> member contains the normalized name for the file. 
+            UNICODE_STRING structure that contains the volume name parsed from the <b>Name</b> string. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Volume.Length</b> is zero.
 
-</td>
-</tr>
-<tr>
-<td>
-FLT_FILE_NAME_OPENED
-
-</td>
-<td>
-The <b>Name</b> member contains the name that was used when the file was opened. This name string is not normalized. 
-
-</td>
-</tr>
-<tr>
-<td>
-FLT_FILE_NAME_SHORT
-
-</td>
-<td>
-The <b>Name</b> member contains the short (8.3) name for the file. The short name for a file does not include the volume name, directory path, or stream name. This name string is not normalized. 
-
-</td>
-</tr>
-</table>
- 
-
-
-### -field Name
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the file name string, formatted as specified by the <b>Format</b> member. 
-
-
-### -field Volume
-
-UNICODE_STRING structure that contains the volume name parsed from the <b>Name</b> string. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Volume.Length</b> is zero. 
-
-
-### -field Share
-
-UNICODE_STRING structure that contains the network share name parsed from the <b>Name</b> string for a remote file. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Share.Length</b> is zero. 
-
-
-### -field Extension
-
-UNICODE_STRING structure that contains the extension parsed from the <b>Name</b> string. If no extension is found, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Extension.Length</b> to zero. 
-
-
-### -field Stream
-
-UNICODE_STRING structure that contains the stream name parsed from the <b>Name</b> string. If no stream name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Stream.Length</b> to zero. 
-
-
-### -field FinalComponent
-
-UNICODE_STRING structure that contains the final name component parsed from the <b>Name</b> string. If no final component name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>FinalComponent.Length</b> to zero. 
-
-
-### -field ParentDir
-
-UNICODE_STRING structure that contains the parent directory name parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. If no parent directory name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <b>FltParseFileNameInformation</b> sets <b>ParentDir.Length</b> to zero. 
-
-
-## -remarks
-The <b>Name</b> member contains one of the following: 
+    ## Remarks
+        The <b>Name</b> member contains one of the following: 
 
 The normalized name for the file 
 
@@ -249,11 +229,19 @@ Although it contains numerous <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md"
 
 To parse the contents of the <b>Name</b> string, call <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. This routine sets the values of the <b>Extension</b>, <b>Stream</b>, <b>FinalComponent</b>, <b>ParentDir</b>, and <b>NamesParsed</b> members of this structure. 
 
-Minifilters are responsible for calling <a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a> to release the FLT_FILE_NAME_INFORMATION structure when it is no longer needed. 
+Minifilters are responsible for calling <a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a> to release the FLT_FILE_NAME_INFORMATION structure when it is no longer needed.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a>
 </dt>
@@ -296,4 +284,3 @@ Minifilters are responsible for calling <a href="..\fltkernel\nf-fltkernel-fltre
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILE_NAME_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:pepfx._PEP_SOC_SUBSYSTEM_METADATA
-title: _PEP_SOC_SUBSYSTEM_METADATA
-author: windows-driver-content
-description: The PEP_SOC_SUBSYSTEM_METADATA structure contains key-value pairs that contain metadata for a system on a chip (SoC) subsystem. It is used in the context of a PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA notification sent to a platform extension plug-in (PEP).
-old-location: kernel\pep_soc_subsystem_metadata.htm
-old-project: kernel
-ms.assetid: 4FAE15C7-7B2F-47A5-B429-B7FF7D3D018C
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: _PEP_SOC_SUBSYSTEM_METADATA, *PPEP_SOC_SUBSYSTEM_METADATA, PEP_SOC_SUBSYSTEM_METADATA
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: pepfx.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows 10.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PEP_SOC_SUBSYSTEM_METADATA
-req.alt-loc: pepfx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_SOC_SUBSYSTEM_METADATA, PEP_SOC_SUBSYSTEM_METADATA
+UID : NS:pepfx._PEP_SOC_SUBSYSTEM_METADATA
+title : _PEP_SOC_SUBSYSTEM_METADATA
+author : windows-driver-content
+description : The PEP_SOC_SUBSYSTEM_METADATA structure contains key-value pairs that contain metadata for a system on a chip (SoC) subsystem. It is used in the context of a PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA notification sent to a platform extension plug-in (PEP).
+old-location : kernel\pep_soc_subsystem_metadata.htm
+old-project : kernel
+ms.assetid : 4FAE15C7-7B2F-47A5-B429-B7FF7D3D018C
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _PEP_SOC_SUBSYSTEM_METADATA, *PPEP_SOC_SUBSYSTEM_METADATA, PEP_SOC_SUBSYSTEM_METADATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : pepfx.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows 10.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PEP_SOC_SUBSYSTEM_METADATA
+req.alt-loc : pepfx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PPEP_SOC_SUBSYSTEM_METADATA, PEP_SOC_SUBSYSTEM_METADATA"
 ---
 
 # _PEP_SOC_SUBSYSTEM_METADATA structure
+The <b>PEP_SOC_SUBSYSTEM_METADATA</b> structure contains key-value pairs that contain metadata for a system on a chip (SoC) subsystem. It is used in the context of a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186854">PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA</a> notification sent to a platform extension plug-in (PEP).
 
-
-
-## -description
-The <b>PEP_SOC_SUBSYSTEM_METADATA</b> structure contains key-value pairs that contain metadata for a system on a chip (SoC) subsystem. It is used in the context of a <a href="kernel.pep_dpm_query_soc_subsystem_metadata">PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA</a> notification sent to a platform extension plug-in (PEP).
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _PEP_SOC_SUBSYSTEM_METADATA {
   UNICODE_STRING Key;
@@ -52,12 +45,12 @@ typedef struct _PEP_SOC_SUBSYSTEM_METADATA {
 } PEP_SOC_SUBSYSTEM_METADATA, *PPEP_SOC_SUBSYSTEM_METADATA;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Key`
 
-### -field Key
-
-[in/out]  A buffer for the PEP to write the key portion of the metadata string-pair.  <b>Key</b> must be unique among all <b>Key</b> values reported by this subsystem.  
+            [in/out]  A buffer for the PEP to write the key portion of the metadata string-pair.  <b>Key</b> must be unique among all <b>Key</b> values reported by this subsystem.  
 
 
 
@@ -73,11 +66,10 @@ Prior to exit from the callback routine, the PEP must copy a null-terminated str
 
 The PEP must use the allocated memory that is pointed to by the address in <b>Key.Buffer</b> to provide the key. 
 Since this memory is pre-allocated, its size cannot be changed. The PEP is responsible for truncating the key string, if necessary, so that it does not exceed the length specified in <b>Key.MaximumLength</b> (including the terminating <b>UNICODE_NULL</b> character).
+        
+            `Value`
 
-
-### -field Value
-
-[in/out] A buffer for the PEP to write the value portion of the metadata string-pair.  
+            [in/out] A buffer for the PEP to write the value portion of the metadata string-pair.  
 
 Prior to entry into the notification callback routine, the kernel will:
 
@@ -93,13 +85,19 @@ The PEP must use the allocated memory that is pointed to by the address in <b>Va
 Since this memory is pre-allocated, its size cannot be changed. The PEP is responsible for truncating the value string, if necessary, so that it does not exceed the length specified in <b>Value.MaximumLength</b> (including the terminating <b>UNICODE_NULL</b> character).
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | pepfx.h |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
-<a href="kernel.pep_dpm_query_soc_subsystem_metadata">PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186854">PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA</a>
 </dt>
 <dt>
 <a href="..\pepfx\ns-pepfx-_pep_query_soc_subsystem_metadata.md">PEP_QUERY_SOC_SUBSYSTEM_METADATA</a>
@@ -110,4 +108,3 @@ Since this memory is pre-allocated, its size cannot be changed. The PEP is respo
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_SOC_SUBSYSTEM_METADATA structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

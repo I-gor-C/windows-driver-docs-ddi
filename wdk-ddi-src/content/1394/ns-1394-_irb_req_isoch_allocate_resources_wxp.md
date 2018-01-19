@@ -1,50 +1,43 @@
 ---
-UID: NS:1394._IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
-title: _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
-author: windows-driver-content
-description: This structure contains the fields necessary for the 1394 bus driver to carry out a IsochAllocateResources request.
-old-location: ieee\irb_req_isoch_allocate_resources_wxp.htm
-old-project: IEEE
-ms.assetid: 8DE03C05-48A4-4699-8513-F2B596EED37F
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP, IRB_REQ_ISOCH_ALLOCATE_RESOURCES
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: 1394.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
-req.alt-loc: 1394.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
+UID : NS:1394._IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
+title : _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
+author : windows-driver-content
+description : This structure contains the fields necessary for the 1394 bus driver to carry out a IsochAllocateResources request.
+old-location : ieee\irb_req_isoch_allocate_resources_wxp.htm
+old-project : IEEE
+ms.assetid : 8DE03C05-48A4-4699-8513-F2B596EED37F
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP, IRB_REQ_ISOCH_ALLOCATE_RESOURCES
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : 1394.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
+req.alt-loc : 1394.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP
 ---
 
 # _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP structure
-
-
-
-## -description
 This structure contains the fields necessary for the 1394 bus driver to carry out a IsochAllocateResources request.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP {
   ULONG          fulSpeed;
@@ -59,57 +52,16 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP {
 } IRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP, *PIRB_REQ_ISOCH_ALLOCATE_RESOURCES_WXP;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `ChannelMask`
 
-### -field fulSpeed
+            Specifies a set of isochronous channels, if RESOURCE_USE_MULTICHANNEL is set, that are used for all transactions involving the resource handle allocated by this request.
+        
+            `fulFlags`
 
-Specifies the connection speed to use for communication on the channel. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
-
-<table>
-<tr>
-<th>Transfer Rate</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-SPEED_FLAGS_100
-
-</td>
-<td>
-100 Mb/s
-
-</td>
-</tr>
-<tr>
-<td>
-SPEED_FLAGS_200
-
-</td>
-<td>
-200 Mb/s
-
-</td>
-</tr>
-<tr>
-<td>
-SPEED_FLAGS_400
-
-</td>
-<td>
-400 Mb/s
-
-</td>
-</tr>
-</table>
- 
-
-<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
-<div> </div>
-
-### -field fulFlags
-
-Specifies how the bus driver should use any buffers attached to the resource handle. Many of the flags specify how the bus driver should configure the IEEE host controller for DMA from or to attached buffers.
+            Specifies how the bus driver should use any buffers attached to the resource handle. Many of the flags specify how the bus driver should configure the IEEE host controller for DMA from or to attached buffers.
 
 <table>
 <tr>
@@ -187,42 +139,81 @@ The driver owning this resource transfers frames of variable size.
 </td>
 </tr>
 </table>
+        
+            `fulSpeed`
+
+            Specifies the connection speed to use for communication on the channel. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
+
+<table>
+<tr>
+<th>Transfer Rate</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+SPEED_FLAGS_100
+
+</td>
+<td>
+100 Mb/s
+
+</td>
+</tr>
+<tr>
+<td>
+SPEED_FLAGS_200
+
+</td>
+<td>
+200 Mb/s
+
+</td>
+</tr>
+<tr>
+<td>
+SPEED_FLAGS_400
+
+</td>
+<td>
+400 Mb/s
+
+</td>
+</tr>
+</table>
  
 
+<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
+<div> </div>
+        
+            `hResource`
 
-### -field nChannel
+            Specifies a handle to the resource.
+        
+            `nChannel`
 
-Specifies the isochronous channel for all transactions involving the resource handle allocated by this request.
+            Specifies the isochronous channel for all transactions involving the resource handle allocated by this request.
+        
+            `nMaxBufferSize`
 
+            Specifies the maximum size of the buffers that are attached to the resource handle.
+        
+            `nMaxBytesPerFrame`
 
-### -field nMaxBytesPerFrame
+            Specifies the expected maximum isochronous frame size while transmitting and receiving on the channel.
+        
+            `nNumberOfBuffers`
 
-Specifies the expected maximum isochronous frame size while transmitting and receiving on the channel.
+            Specifies one more than the maximum expected number of buffers that are attached to the resource handle at any given time.
+        
+            `nQuadletsToStrip`
 
-
-### -field nNumberOfBuffers
-
-Specifies one more than the maximum expected number of buffers that are attached to the resource handle at any given time. 
-
-
-### -field nMaxBufferSize
-
-Specifies the maximum size of the buffers that are attached to the resource handle.
-
-
-### -field nQuadletsToStrip
-
-Specifies the number of quadlets to strip from the beginning of every packet in an incoming isochronous stream. This parameter is ignored unless the device driver sets the  RESOURCE_STRIP_ADDITIONAL_QUADLETS flag in <b>u.IsochAllocateResources.fulFlags</b>.
-
-
-### -field hResource
-
-Specifies a handle to the resource.
+            Specifies the number of quadlets to strip from the beginning of every packet in an incoming isochronous stream. This parameter is ignored unless the device driver sets the  RESOURCE_STRIP_ADDITIONAL_QUADLETS flag in <b>u.IsochAllocateResources.fulFlags</b>.
 
 
-### -field ChannelMask
-
-Specifies a set of isochronous channels, if RESOURCE_USE_MULTICHANNEL is set, that are used for all transactions involving the resource handle allocated by this request.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | 1394.h |

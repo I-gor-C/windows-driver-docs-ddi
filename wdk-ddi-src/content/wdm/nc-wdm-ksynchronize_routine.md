@@ -1,73 +1,68 @@
 ---
-UID: NC:wdm.KSYNCHRONIZE_ROUTINE
-title: KSYNCHRONIZE_ROUTINE function
-author: windows-driver-content
-description: The SynchCritSection routine is used to access hardware resources or driver data that are shared with a driver's InterruptService routine.
-old-location: kernel\synchcritsection.htm
-old-project: kernel
-ms.assetid: 2db9b1b4-0149-4477-9f68-588c55fcbdca
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KSYNCHRONIZE_ROUTINE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SynchCritSection
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at DIRQL (see Remarks section).
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.KSYNCHRONIZE_ROUTINE
+title : KSYNCHRONIZE_ROUTINE
+author : windows-driver-content
+description : The SynchCritSection routine is used to access hardware resources or driver data that are shared with a driver's InterruptService routine.
+old-location : kernel\synchcritsection.htm
+old-project : kernel
+ms.assetid : 2db9b1b4-0149-4477-9f68-588c55fcbdca
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SynchCritSection
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at DIRQL (see Remarks section).
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # KSYNCHRONIZE_ROUTINE function
-
-
-
-## -description
 The <i>SynchCritSection</i> routine is used to access hardware resources or driver data that are shared with a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff547958">InterruptService</a> routine.
 
+## Syntax
 
+```
+KSYNCHRONIZE_ROUTINE KsynchronizeRoutine;
 
-## -syntax
-
-````
-KSYNCHRONIZE_ROUTINE SynchCritSection;
-
-BOOLEAN SynchCritSection(
-  _In_ PVOID SynchronizeContext
+_IRQL_requires_same_ BOOLEAN KsynchronizeRoutine(
+  PVOID SynchronizeContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param SynchronizeContext [in]
+`SynchronizeContext`
 
 Caller-supplied context information, specified by the driver's call to <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>.
 
 
-## -returns
+## Return Value
+
 If the routine's operation succeeds, the routine should return <b>TRUE</b>; otherwise, it should return <b>FALSE</b>. (Success and failure of this routine are driver-defined.) The specified return value becomes the return value for <b>KeSynchronizeExecution</b>.
 
+## Remarks
 
-## -remarks
 Drivers must use <i>SynchCritSection</i> routines to access hardware resources or driver data that can also be accessed by an <i>InterruptService</i> routine (ISR).
 
 The system calls a driver's <i>SynchCritSection</i> routine when the driver calls <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>. When a driver calls <b>KeSynchronizeExecution</b>, it specifies the address of a <i>SynchCritSection</i> routine, context information for the routine, and an interrupt object pointer. The <b>KeSynchronizeExecution</b> routine acquires the interrupt object's spin lock, then calls the <i>SynchCritSection</i> routine.
@@ -81,3 +76,15 @@ For example, to define a <i>SynchCritSection</i> callback routine that is named 
 Then, implement your callback routine as follows:
 
 The KSYNCHRONIZE_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the KSYNCHRONIZE_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Called at DIRQL (see Remarks section). |
+| **DDI compliance rules** |  |

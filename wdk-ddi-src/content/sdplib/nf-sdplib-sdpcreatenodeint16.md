@@ -1,52 +1,47 @@
 ---
-UID: NF:sdplib.SdpCreateNodeInt16
-title: SdpCreateNodeInt16 function
-author: windows-driver-content
-description: The Bluetooth SdpCreateNodeInt16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit integer type.
-old-location: bltooth\sdpcreatenodeint16.htm
-old-project: bltooth
-ms.assetid: d36d9ac5-1bb8-4433-b795-fe8e3391980e
-ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: SdpCreateNodeInt16
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: sdplib.h
-req.include-header: BthSdpddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Versions: Supported in Windows Vista, and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SdpCreateNodeInt16
-req.alt-loc: sdplib.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= PASSIVE_LEVEL
-req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NF:sdplib.SdpCreateNodeInt16
+title : SdpCreateNodeInt16 function
+author : windows-driver-content
+description : The Bluetooth SdpCreateNodeInt16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit integer type.
+old-location : bltooth\sdpcreatenodeint16.htm
+old-project : bltooth
+ms.assetid : d36d9ac5-1bb8-4433-b795-fe8e3391980e
+ms.author : windowsdriverdev
+ms.date : 12/21/2017
+ms.keywords : SdpCreateNodeInt16
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : sdplib.h
+req.include-header : BthSdpddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SdpCreateNodeInt16
+req.alt-loc : sdplib.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= PASSIVE_LEVEL
+req.typenames : "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
+req.product : Windows 10 or later.
 ---
 
+
 # SdpCreateNodeInt16 function
-
-
-
-## -description
 The Bluetooth 
   <b>SdpCreateNodeInt16</b> function is used to allocate and initialize an 
   <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure to a 16-bit integer type.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PSDP_NODE SdpCreateNodeInt16(
@@ -55,25 +50,24 @@ PSDP_NODE SdpCreateNodeInt16(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param sVal [in]
+`sVal`
 
 The 16-bit integer value that is used to initialize the SDP_NODE structure.
 
-
-### -param tag [in]
+`tag`
 
 A profile driver defined tag to associate with the node.
 
 
-## -returns
+## Return Value
+
 If successful, this function returns a pointer to the newly allocated SDP_NODE structure. If not
      successful, this function returns <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 After the 
     <b>SdpCreateNodeInt16</b> function allocates an 
     <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure, it initializes the structure in
@@ -97,8 +91,20 @@ The data associated with the
 Bluetooth profile drivers can obtain a pointer to this function through the 
     <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | sdplib.h (include BthSdpddi.h) |
+| **Library** |  |
+| **IRQL** | <= PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
@@ -118,4 +124,3 @@ Bluetooth profile drivers can obtain a pointer to this function through the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpCreateNodeInt16 function%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -2,7 +2,7 @@
 UID: TP:devtest
 ms.assetid: df82015f-ea9d-3150-8041-fb2c5ed17afc
 ms.author: windowsdriverdev
-ms.date: 01/16/18
+ms.date: 01/18/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,6 @@ For the programming guide, see [Driver test tools](https://docs.microsoft.com/en
 | [DbgPrint function](..\wdm\nf-wdm-dbgprint.md) | The DbgPrint routine sends a message to the kernel debugger. |
 | [DbgPrintEx function](..\wdm\nf-wdm-dbgprintex.md) | The DbgPrintEx routine sends a string to the kernel debugger if the conditions you specify are met. |
 | [DbgPrompt function](..\ntddk\nf-ntddk-dbgprompt.md) | The DbgPrompt routine displays a caller-specified user prompt string on the kernel debugger's display device and obtains a user response string. |
-| [ETWENABLECALLBACK function](..\wdm\nc-wdm-etwenablecallback.md) | The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications. |
 | [EtwActivityIdControl function](..\wdm\nf-wdm-etwactivityidcontrol.md) | The EtwActivityIdControl function creates, queries, and sets the current activity identifier. |
 | [EtwEventEnabled function](..\wdm\nf-wdm-etweventenabled.md) | The EtwEventEnabled function verifies whether an event is enabled. |
 | [EtwProviderEnabled function](..\wdm\nf-wdm-etwproviderenabled.md) | The EtwProviderEnabled function verifies that a provider is enabled for event logging at a specified level and keyword. |
@@ -61,6 +60,7 @@ For the programming guide, see [Driver test tools](https://docs.microsoft.com/en
 
 | Title   | Description   |
 | ---- |:---- |
+| [ETWENABLECALLBACK callback](..\wdm\nc-wdm-etwenablecallback.md) | The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications. |
 | [PCW_CALLBACK callback](..\wdm\nc-wdm-pcw_callback.md) | Providers can implement a PCW_CALLBACK function to receive notification when consumers perform certain actions, such as adding or removing counters from a query. |
 
 ## Structures

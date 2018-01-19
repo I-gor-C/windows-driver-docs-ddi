@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ObCloseHandle
-title: ObCloseHandle function
-author: windows-driver-content
-description: The ObCloseHandle routine closes an object handle.
-old-location: kernel\obclosehandle.htm
-old-project: kernel
-ms.assetid: 15D6A09F-2AEC-431F-91F4-D1571DB56E81
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ObCloseHandle
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: 
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ObCloseHandle
-req.alt-loc: Ntoskrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntoskrnl.lib
-req.dll: Ntoskrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ObCloseHandle
+title : ObCloseHandle function
+author : windows-driver-content
+description : The ObCloseHandle routine closes an object handle.
+old-location : kernel\obclosehandle.htm
+old-project : kernel
+ms.assetid : 15D6A09F-2AEC-431F-91F4-D1571DB56E81
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ObCloseHandle
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ObCloseHandle
+req.alt-loc : Ntoskrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntoskrnl.lib
+req.dll : Ntoskrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ObCloseHandle function
-
-
-
-## -description
 The <b>ObCloseHandle</b> routine closes an object handle.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ObCloseHandle(
@@ -53,20 +48,19 @@ NTSTATUS ObCloseHandle(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Handle [in]
+`Handle`
 
 A handle to a system-supplied object of any type.
 
-
-### -param PreviousMode [in]
+`PreviousMode`
 
 Specifies the previous processor mode of the thread that opened the handle. To close a <a href="wdkgloss.k#wdkgloss.kernel_handle#wdkgloss.kernel_handle"><i>kernel handle</i></a>, set this parameter to <b>KernelMode</b>. To close a <i>user handle</i>, set this parameter to <b>UserMode</b>. For more information about these two handle types, see Remarks.
 
 
-## -returns
+## Return Value
+
 <b>ObCloseHandle</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following NTSTATUS codes.
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
@@ -75,10 +69,8 @@ Specifies the previous processor mode of the thread that opened the handle. To c
 <dt><b>STATUS_HANDLE_NOT_CLOSABLE</b></dt>
 </dl>The calling thread does not have permission to close the handle.
 
- 
+## Remarks
 
-
-## -remarks
 A kernel-mode driver calls <b>ObCloseHandle</b> to close a handle to any type of object that is created by the Windows kernel. A driver must close every handle that it opens as soon as the handle is no longer required.
 
 After <b>ObCloseHandle</b> closes an object's handle, the caller must treat the handle as invalid and avoid using the handle to access the object. However, other handles might remain open on the same object. During an <b>ObCloseHandle</b> call, the system decrements the handle count for the object and checks whether the object can be deleted. The system does not delete the object until all of the object's handles are closed and all reference-counted pointers to the object are released.
@@ -99,8 +91,20 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 <b>ObCloseHandle</b> is not declared in a header file prior to Windows 7. To use this routine in your driver, include the following function declaration in your driver code:
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a>
@@ -120,4 +124,3 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ObCloseHandle routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

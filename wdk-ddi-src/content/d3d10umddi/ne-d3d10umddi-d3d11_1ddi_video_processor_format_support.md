@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
-title: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
-author: windows-driver-content
-description: Specifies how a video format can be used for video processing.
-old-location: display\d3d11_1ddi_video_processor_format_support.htm
-old-project: display
-ms.assetid: 3fef0cb0-6584-487d-9660-1c748509a6a9
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
-req.alt-loc: D3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
+UID : NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
+title : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
+author : windows-driver-content
+description : Specifies how a video format can be used for video processing.
+old-location : display\d3d11_1ddi_video_processor_format_support.htm
+old-project : display
+ms.assetid : 3fef0cb0-6584-487d-9660-1c748509a6a9
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
+req.alt-loc : D3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
 ---
 
-# D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT enumeration
-
-
-
-## -description
+# D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT Enumeration
 Specifies how a video format can be used for video processing.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT { 
   D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT   = 0x00000001,
@@ -52,17 +45,26 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT {
 } D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT</td>
+<td>The format can be used as the input to the video processor.</td>
+</tr>
 
-The format can be used as the input to the video processor.
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_OUTPUT</td>
+<td>The format can be used as the output from the video processor.</td>
+</tr>
+</table>
 
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_OUTPUT
-
-The format can be used as the output from the video processor.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |

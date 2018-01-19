@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisCmMakeCallComplete
-title: NdisCmMakeCallComplete function
-author: windows-driver-content
-description: NdisCmMakeCallComplete returns the final status of a client's request, for which the call manager previously returned NDIS_STATUS_PENDING, to make an outgoing call.
-old-location: netvista\ndiscmmakecallcomplete.htm
-old-project: netvista
-ms.assetid: e2c1f849-daf0-479c-9f1d-906149ac550e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCmMakeCallComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmMakeCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmMakeCallComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCmMakeCallComplete
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_CallManager_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCmMakeCallComplete
+title : NdisCmMakeCallComplete function
+author : windows-driver-content
+description : NdisCmMakeCallComplete returns the final status of a client's request, for which the call manager previously returned NDIS_STATUS_PENDING, to make an outgoing call.
+old-location : netvista\ndiscmmakecallcomplete.htm
+old-project : netvista
+ms.assetid : e2c1f849-daf0-479c-9f1d-906149ac550e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCmMakeCallComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmMakeCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmMakeCallComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCmMakeCallComplete
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_CallManager_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCmMakeCallComplete function
-
-
-
-## -description
 <b>NdisCmMakeCallComplete</b> returns the final status of a client's request, for which the call manager
   previously returned NDIS_STATUS_PENDING, to make an outgoing call.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisCmMakeCallComplete(
@@ -56,17 +51,15 @@ VOID NdisCmMakeCallComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Status [in]
+`Status`
 
 Specifies the final status of the attempt to make the connection, either NDIS_STATUS_SUCCESS or
      any CM-determined NDIS_STATUS_
      <i>XXX</i> except NDIS_STATUS_PENDING.
 
-
-### -param NdisVcHandle [in]
+`NdisVcHandle`
 
 Specifies the handle to the client-created VC, which the call manager originally obtained as an
      input parameter to its 
@@ -75,24 +68,21 @@ Specifies the handle to the client-created VC, which the call manager originally
      <i>CallMgrVcContext</i> passed in to its 
      <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a> function.
 
-
-### -param NdisPartyHandle [in, optional]
+`NdisPartyHandle`
 
 Specifies the handle to the initial party on the client-created multipoint VC, which the call
      manager obtained as an input parameter to its 
      <i>ProtocolCmMakeCall</i> function. If the given 
      <i>NdisVcHandle</i> represented a point-to-point VC, this parameter was <b>NULL</b>.
 
-
-### -param CallMgrPartyContext [in, optional]
+`CallMgrPartyContext`
 
 Specifies the CM-supplied handle to a caller-allocated resident context area, in which the CM will
      maintain per-party state information, or <b>NULL</b> if 
      <i>NdisPartyHandle</i> is <b>NULL</b>. For a multipoint VC, NDIS passes this CM-supplied 
      <i>CallManagerPartyContext</i> handle in all subsequent calls to the ProtocolCm<i>Xxx</i> functions that concern this party. Otherwise, NDIS ignores this parameter.
 
-
-### -param CallParameters [in]
+`CallParameters`
 
 Pointer to a structure of type 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a> that specifies the call
@@ -100,11 +90,12 @@ Pointer to a structure of type
      <i>Status</i> is NDIS_STATUS_SUCCESS.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A stand-alone call manager should call 
     <b>NdisMCmMakeCallComplete</b> with NDIS_STATUS_SUCCESS only if the underlying miniport driver is ready to
     make data transfers on the VC. That is, the call manager has negotiated with the network to establish
@@ -153,8 +144,20 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
     <a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">
     NdisMCmMakeCallComplete</a> instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_CallManager_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
@@ -184,4 +187,3 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmMakeCallComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILMSGBCGENERAL
-title: RILMSGBCGENERAL
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmsgbcgeneral_2.htm
-old-project: netvista
-ms.assetid: 7202683f-5e02-48dd-b8b7-cb998fd660df
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMSGBCGENERAL, RILMSGBCGENERAL, *LPRILMSGBCGENERAL
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMSGBCGENERAL
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILMSGBCGENERAL, *LPRILMSGBCGENERAL
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILMSGBCGENERAL
+title : RILMSGBCGENERAL
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmsgbcgeneral_2.htm
+old-project : netvista
+ms.assetid : 7202683f-5e02-48dd-b8b7-cb998fd660df
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMSGBCGENERAL, *LPRILMSGBCGENERAL, RILMSGBCGENERAL
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMSGBCGENERAL
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILMSGBCGENERAL, RILMSGBCGENERAL"
+req.product : Windows 10 or later.
 ---
 
 # RILMSGBCGENERAL structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILMSGBCGENERAL {
   RILGEOSCOPE                       dwGeoScope;
@@ -66,52 +59,74 @@ typedef struct _RILMSGBCGENERAL {
 } RILMSGBCGENERAL, RILMSGBCGENERAL;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `bEmergencyUserAlert`
 
-### -field dwGeoScope
+            
+        
+            `bMessagePopup`
+
+            
+        
+            `cchMsgLength`
+
+            
+        
+            `digSig`
+
+            
+        
+            `dwGeoScope`
+
+            
+        
+            `dwID`
+
+            
+        
+            `dwMsgCode`
+
+            
+        
+            `dwPageNumber`
+
+            
+        
+            `dwSerialNumber`
+
+            
+        
+            `dwTotalPages`
+
+            
+        
+            `dwUpdateNumber`
+
+            
+        
+            `dwWarningType`
+
+            
+        
+            `rgbMsg`
+
+            
+        
+            `rmdDataCoding`
+
+            
+        
+            `stSCReceiveTime`
+
+            
 
 
-### -field dwMsgCode
-
-
-### -field dwUpdateNumber
-
-
-### -field dwID
-
-
-### -field dwSerialNumber
-
-
-### -field rmdDataCoding
-
-
-### -field dwTotalPages
-
-
-### -field dwPageNumber
-
-
-### -field dwWarningType
-
-
-### -field bEmergencyUserAlert
-
-
-### -field bMessagePopup
-
-
-### -field stSCReceiveTime
-
-
-### -field digSig
-
-
-### -field cchMsgLength
-
-
-### -field rgbMsg
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

@@ -1,74 +1,68 @@
 ---
-UID: NC:d3dumddi.PFND3DDDI_SETDISPLAYMODECB
-title: PFND3DDDI_SETDISPLAYMODECB
-author: windows-driver-content
-description: The pfnSetDisplayModeCb function sets the allocation that is used to scan out to the display.
-old-location: display\pfnsetdisplaymodecb.htm
-old-project: display
-ms.assetid: a1f58757-809d-4351-8b1a-fd4420981c24
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: pfnSetDisplayModeCb
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
+UID : NC:d3dumddi.PFND3DDDI_SETDISPLAYMODECB
+title : PFND3DDDI_SETDISPLAYMODECB
+author : windows-driver-content
+description : The pfnSetDisplayModeCb function sets the allocation that is used to scan out to the display.
+old-location : display\pfnsetdisplaymodecb.htm
+old-project : display
+ms.assetid : a1f58757-809d-4351-8b1a-fd4420981c24
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : pfnSetDisplayModeCb
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DXGK_PTE
 ---
 
-# PFND3DDDI_SETDISPLAYMODECB callback
 
-
-
-## -description
+# PFND3DDDI_SETDISPLAYMODECB callback function
 The <b>pfnSetDisplayModeCb</b> function sets the allocation that is used to scan out to the display.
 
+## Syntax
 
+```
+PFND3DDDI_SETDISPLAYMODECB Pfnd3dddiSetdisplaymodecb;
 
-## -prototype
-
-````
-PFND3DDDI_SETDISPLAYMODECB pfnSetDisplayModeCb;
-
-__checkReturn HRESULT APIENTRY CALLBACK pfnSetDisplayModeCb(
-  _In_    HANDLE                  hDevice,
-  _Inout_ D3DDDICB_SETDISPLAYMODE *pData
+HRESULT Pfnd3dddiSetdisplaymodecb(
+  HANDLE hDevice,
+  D3DDDICB_SETDISPLAYMODE *
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hDevice [in]
+`hDevice`
 
 A handle to the display device (graphics context).
 
-
-### -param pData [in, out]
-
-A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplaymode.md">D3DDDICB_SETDISPLAYMODE</a> structure that describes the allocation that is used to scan out.
+`*`
 
 
-## -returns
+
+
+## Return Value
+
 <b>pfnSetDisplayModeCb</b> returns one of the following values:
 <dl>
 <dt><b>S_OK</b></dt>
@@ -86,10 +80,8 @@ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplaymode.md">D3D
 
 This function might also return other HRESULT values.
 
+## Remarks
 
-
-
-## -remarks
 After the Microsoft Direct3D runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymode.md">SetDisplayMode</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function to set the primary surface to be scanned out to the display, the user-mode display driver calls the <b>pfnSetDisplayModeCb</b> function to set the underlying primary allocation that is used for scanning out. 
 
 
@@ -101,8 +93,20 @@ After the Microsoft Direct3D runtime calls the user-mode display driver's <a hre
 
 The following code example shows how to set the allocation for scanning out to the display.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplaymode.md">D3DDDICB_SETDISPLAYMODE</a>
@@ -122,4 +126,3 @@ The following code example shows how to set the allocation for scanning out to t
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_SETDISPLAYMODECB callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

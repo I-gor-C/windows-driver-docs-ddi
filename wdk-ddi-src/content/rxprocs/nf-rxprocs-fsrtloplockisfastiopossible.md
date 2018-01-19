@@ -1,50 +1,45 @@
 ---
-UID: NF:rxprocs.FsRtlOplockIsFastIoPossible
-title: FsRtlOplockIsFastIoPossible macro
-author: windows-driver-content
-description: FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
-old-location: ifsk\fsrtloplockisfastiopossible.htm
-old-project: ifsk
-ms.assetid: ba482fbf-862c-48b4-b8f9-aaab6c5527ee
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FsRtlOplockIsFastIoPossible
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: rxprocs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FsRtlOplockIsFastIoPossible
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: *PRX_CONTEXT, RX_CONTEXT
-req.product: Windows 10 or later.
+UID : NF:rxprocs.FsRtlOplockIsFastIoPossible
+title : FsRtlOplockIsFastIoPossible macro
+author : windows-driver-content
+description : FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
+old-location : ifsk\fsrtloplockisfastiopossible.htm
+old-project : ifsk
+ms.assetid : ba482fbf-862c-48b4-b8f9-aaab6c5527ee
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FsRtlOplockIsFastIoPossible
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : rxprocs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FsRtlOplockIsFastIoPossible
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
+req.product : Windows 10 or later.
 ---
 
-# FsRtlOplockIsFastIoPossible macro
 
+# FsRtlOplockIsFastIoPossible function
+<b>FsRtlOplockIsFastIoPossible</b> checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
 
-
-## -description
-<b>FsRtlOplockIsFastIoPossible</b> checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN FsRtlOplockIsFastIoPossible(
@@ -52,15 +47,19 @@ BOOLEAN FsRtlOplockIsFastIoPossible(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Oplock [in]
-
-Opaque opportunistic lock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md">FsRtlInitializeOplock</a>. 
+`__a`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 <b>FsRtlOplockIsFastIoPossible</b> determines whether fast I/O can be performed on a file, according to the following conditions: 
 
 If the <i>Oplock</i> parameter is <b>NULL</b>, or if the value of *<i>Oplock</i> is <b>NULL</b>, there are no outstanding opportunistic locks on the file, and fast I/O can be performed on the file. 
@@ -69,10 +68,22 @@ If an exclusive opportunistic lock was granted for the file, but no oplock break
 
 For detailed information about opportunistic locks, see the Microsoft Windows SDK documentation. 
 
-Minifilters should call <a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a> instead of <b>FsRtlOplockIsFastIoPossible</b>. 
+Minifilters should call <a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a> instead of <b>FsRtlOplockIsFastIoPossible</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rxprocs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a>
@@ -122,4 +133,3 @@ Minifilters should call <a href="..\fltkernel\nf-fltkernel-fltoplockisfastioposs
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlOplockIsFastIoPossible function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

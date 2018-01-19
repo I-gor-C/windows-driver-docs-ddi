@@ -1,50 +1,43 @@
 ---
-UID: NS:ndiswwan._NDIS_WWAN_DEVICE_CAPS_EX
-title: _NDIS_WWAN_DEVICE_CAPS_EX
-author: windows-driver-content
-description: The NDIS_WWAN_DEVICE_CAPS_EX structure represents the capabilities of the MB device.
-old-location: netvista\ndis_wwan_device_caps_ex.htm
-old-project: netvista
-ms.assetid: FC801FA3-699F-4EE5-BED9-35CA696A5E52
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_DEVICE_CAPS_EX, *PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndiswwan.h
-req.include-header: Ndiswwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10, version 1703
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_WWAN_DEVICE_CAPS_EX
-req.alt-loc: ndiswwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX
+UID : NS:ndiswwan._NDIS_WWAN_DEVICE_CAPS_EX
+title : _NDIS_WWAN_DEVICE_CAPS_EX
+author : windows-driver-content
+description : The NDIS_WWAN_DEVICE_CAPS_EX structure represents the capabilities of the MB device.
+old-location : netvista\ndis_wwan_device_caps_ex.htm
+old-project : netvista
+ms.assetid : FC801FA3-699F-4EE5-BED9-35CA696A5E52
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_DEVICE_CAPS_EX, *PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndiswwan.h
+req.include-header : Ndiswwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10, version 1703
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_WWAN_DEVICE_CAPS_EX
+req.alt-loc : ndiswwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX"
 ---
 
 # _NDIS_WWAN_DEVICE_CAPS_EX structure
-
-
-
-## -description
 The <b>NDIS_WWAN_DEVICE_CAPS_EX</b> structure represents the capabilities of the MB device. <b>NDIS_WWAN_DEVICE_CAPS_EX</b> extends the capability of the existing <b>NDIS_WWAN_DEVICE_CAPS</b> structure by changing its <b>WWAN_DEVICE_CAPS</b> structure to a <b>WWAN_DEVICE_CAPS_EX</b> structure.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_WWAN_DEVICE_CAPS_EX {
   NDIS_OBJECT_HEADER  Header;
@@ -53,12 +46,12 @@ typedef struct _NDIS_WWAN_DEVICE_CAPS_EX {
 } NDIS_WWAN_DEVICE_CAPS_EX, *PNDIS_WWAN_DEVICE_CAPS_EX;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
-
-The header with type, revision, and size information about the <b>NDIS_WWAN_DEVICE_CAPS_EX</b> structure.
+            The header with type, revision, and size information about the <b>NDIS_WWAN_DEVICE_CAPS_EX</b> structure.
      The MB Service sets the header with the values that are shown in the following table when it sends the
      data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
@@ -104,12 +97,11 @@ sizeof(NDIS_WWAN_DEVICE_CAPS_EX)
  
 
 For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+        
+            `uStatus`
 
-
-### -field uStatus
-
-The status of system capability. The following table shows the possible values for
+            The status of system capability. The following table shows the possible values for
      this member.
      
 
@@ -171,22 +163,21 @@ The operation failed because the device is in the process of initializing. Retry
 </td>
 </tr>
 </table>
- 
 
 
-### -field DeviceCapsEx
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-A formatted 
-     <a href="..\wwan\ns-wwan-_wwan_device_caps_ex.md">WWAN_DEVICE_CAPS_EX</a> structure that has an <b>ExecutorIndex</b> member and Microsoft service extension member added to the existing <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a> structure.
+    ## See Also
 
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\wwan\ns-wwan-_wwan_device_caps_ex.md">WWAN_DEVICE_CAPS_EX</a>
@@ -206,4 +197,3 @@ A formatted
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

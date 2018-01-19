@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
-title: D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
-author: windows-driver-content
-description: Specifies the rate at which the video processor produces output frames from an input stream.
-old-location: display\d3d11_1ddi_video_processor_output_rate.htm
-old-project: display
-ms.assetid: ff34c208-9b42-4f72-bb2a-43f3bb44fd68
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE, D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
-req.alt-loc: D3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
+UID : NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
+title : D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
+author : windows-driver-content
+description : Specifies the rate at which the video processor produces output frames from an input stream.
+old-location : display\d3d11_1ddi_video_processor_output_rate.htm
+old-project : display
+ms.assetid : ff34c208-9b42-4f72-bb2a-43f3bb44fd68
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE, D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
+req.alt-loc : D3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE
 ---
 
-# D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE enumeration
-
-
-
-## -description
+# D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE Enumeration
 Specifies the rate at which the video processor produces output frames from an input stream.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE { 
   D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL  = 0,
@@ -53,22 +46,31 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE {
 } D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_CUSTOM</td>
+<td>The output is a custom frame rate.</td>
+</tr>
 
-The output is the normal frame rate.
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_HALF</td>
+<td>The output is half the frame rate.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL</td>
+<td>The output is the normal frame rate.</td>
+</tr>
+</table>
 
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_HALF
-
-The output is half the frame rate.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_CUSTOM
-
-The output is a custom frame rate.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |

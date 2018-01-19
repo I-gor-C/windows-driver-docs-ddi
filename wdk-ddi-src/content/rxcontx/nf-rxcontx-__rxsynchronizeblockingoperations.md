@@ -1,50 +1,45 @@
 ---
-UID: NF:rxcontx.__RxSynchronizeBlockingOperations
-title: __RxSynchronizeBlockingOperations function
-author: windows-driver-content
-description: __RxSynchronizeBlockingOperations synchronizes blocking I/O requests to the same work queue.
-old-location: ifsk\__rxsynchronizeblockingoperations.htm
-old-project: ifsk
-ms.assetid: e957f8bc-2ce3-4b9c-819e-ee068b39c4a0
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: __RxSynchronizeBlockingOperations
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: rxcontx.h
-req.include-header: Rxcontx.h
-req.target-type: Desktop
-req.target-min-winverclnt: The __RxSynchronizeBlockingOperations routine is only available on Windows Server 2003.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: __RxSynchronizeBlockingOperations
-req.alt-loc: rxcontx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
-req.product: Windows 10 or later.
+UID : NF:rxcontx.__RxSynchronizeBlockingOperations
+title : __RxSynchronizeBlockingOperations function
+author : windows-driver-content
+description : __RxSynchronizeBlockingOperations synchronizes blocking I/O requests to the same work queue.
+old-location : ifsk\__rxsynchronizeblockingoperations.htm
+old-project : ifsk
+ms.assetid : e957f8bc-2ce3-4b9c-819e-ee068b39c4a0
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : __RxSynchronizeBlockingOperations
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : rxcontx.h
+req.include-header : Rxcontx.h
+req.target-type : Desktop
+req.target-min-winverclnt : The __RxSynchronizeBlockingOperations routine is only available on Windows Server 2003.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : __RxSynchronizeBlockingOperations
+req.alt-loc : rxcontx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product : Windows 10 or later.
 ---
 
+
 # __RxSynchronizeBlockingOperations function
+<b>__RxSynchronizeBlockingOperations</b> synchronizes blocking I/O requests to the same work queue.
 
-
-
-## -description
-<b>__RxSynchronizeBlockingOperations</b> synchronizes blocking I/O requests to the same work queue. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS __RxSynchronizeBlockingOperations(
@@ -55,30 +50,27 @@ NTSTATUS __RxSynchronizeBlockingOperations(
 );
 ````
 
+## Parameters
 
-## -parameters
+`RxContext`
 
-### -param RxContext [in, out]
+A pointer to the RX_CONTEXT of the operation being synchronized.
 
-A pointer to the RX_CONTEXT of the operation being synchronized. 
+`Fcb`
 
+A pointer to the FCB.
 
-### -param Fcb [in]
+`BlockingIoQ`
 
-A pointer to the FCB. 
+A pointer to the LIST_ENTRY for the queue.
 
+`DropFcbLock`
 
-### -param BlockingIoQ [in, out]
-
-A pointer to the LIST_ENTRY for the queue. 
-
-
-### -param DropFcbLock [in]
-
-A Boolean value that indicates if the FCB resource should be released. If this parameter is <b>TRUE</b>, then the FCB resource will be released. 
+A Boolean value that indicates if the FCB resource should be released. If this parameter is <b>TRUE</b>, then the FCB resource will be released.
 
 
-## -returns
+## Return Value
+
 <b>__RxSynchronizeBlockingOperations</b> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_CANCELLED</b></dt>
@@ -87,10 +79,8 @@ A Boolean value that indicates if the FCB resource should be released. If this p
 <dt><b>STATUS_PENDING</b></dt>
 </dl>The <i>RxContext</i> was for an asynchronous operation and the <i>RxContext</i> has been added to the queue.
 
- 
+## Remarks
 
-
-## -remarks
 The<b> __RxSynchronizeBlockingOperations</b> routine synchronizes blocking I/O requests to the same work queue. RDBSS uses <b>__RxSynchronizeBlockingOperations</b> internally to synchronize named pipe operations. The work queue is the queue referenced by the file object extension (FOBX) associated with the <i>Fcb</i>. 
 
 A network mini-redirector may use <b>__RxSynchronizeBlockingOperations</b> to synchronize operations on a separate queue that is maintained by the network mini-redirector. 
@@ -105,10 +95,22 @@ The following two macros are defined on Windows Server 2003 or later for calling
 
 <b>RxSynchronizeBlockingOperations</b> - calls with the <i>DropFcbLock</i> parameter set to <b>FALSE</b>. 
 
-<b>RxSynchronizeBlockingOperationsAndDropFcbLock</b> - calls with the <i>DropFcbLock</i> parameter set to <b>TRUE</b>. 
+<b>RxSynchronizeBlockingOperationsAndDropFcbLock</b> - calls with the <i>DropFcbLock</i> parameter set to <b>TRUE</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rxcontx.h (include Rxcontx.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\rxprocs\nf-rxprocs-rxcompleterequest_real.md">RxCompleteRequest_Real</a>
@@ -140,4 +142,3 @@ The following two macros are defined on Windows Server 2003 or later for calling
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20__RxSynchronizeBlockingOperations function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

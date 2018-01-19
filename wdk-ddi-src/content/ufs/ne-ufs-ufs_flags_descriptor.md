@@ -1,51 +1,44 @@
 ---
-UID: NE:ufs.UFS_FLAGS_DESCRIPTOR
-title: UFS_FLAGS_DESCRIPTOR
-author: windows-driver-content
-description: UFS_FLAGS_DESCRIPTOR describes the different types of flags used by Universal Flash Storage (UFS) descriptors.
-old-location: storage\ufs_flags_descriptor.htm
-old-project: storage
-ms.assetid: D530355F-5824-4F7C-84C4-57D3D03A7116
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: UFS_FLAGS_DESCRIPTOR, UFS_FLAGS_DESCRIPTOR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ufs.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10, version 1709
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: UFS_FLAGS_DESCRIPTOR
-req.alt-loc: Ufs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: UFS_FLAGS_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NE:ufs.UFS_FLAGS_DESCRIPTOR
+title : UFS_FLAGS_DESCRIPTOR
+author : windows-driver-content
+description : UFS_FLAGS_DESCRIPTOR describes the different types of flags used by Universal Flash Storage (UFS) descriptors.
+old-location : storage\ufs_flags_descriptor.htm
+old-project : storage
+ms.assetid : D530355F-5824-4F7C-84C4-57D3D03A7116
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : UFS_FLAGS_DESCRIPTOR, UFS_FLAGS_DESCRIPTOR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ufs.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10, version 1709
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : UFS_FLAGS_DESCRIPTOR
+req.alt-loc : Ufs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : UFS_FLAGS_DESCRIPTOR
+req.product : Windows 10 or later.
 ---
 
-# UFS_FLAGS_DESCRIPTOR enumeration
-
-
-
-## -description
+# UFS_FLAGS_DESCRIPTOR Enumeration
 <b>UFS_FLAGS_DESCRIPTOR</b> describes the different types of flags used by Universal Flash Storage (UFS) descriptors.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _UFS_FLAGS_DESCRIPTOR { 
   UFS_Reserved1                    = 0,
@@ -65,83 +58,92 @@ typedef enum _UFS_FLAGS_DESCRIPTOR {
 } UFS_FLAGS_DESCRIPTOR;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field UFS_Reserved1
+<tr>
+<td>UFS_fBackgroundOpsEn</td>
+<td>Indicates the device is permitted to run
+background operations.</td>
+</tr>
 
-Reserved for future use.
+<tr>
+<td>UFS_fBusyRTC</td>
+<td>Indicates the device is executing internal
+operation related to Real Time Clock.</td>
+</tr>
 
+<tr>
+<td>UFS_fDeviceInit</td>
+<td>Indicates the device initialization is in progress.</td>
+</tr>
 
-### -field UFS_fDeviceInit
+<tr>
+<td>UFS_fDeviceLifeSpanModeEn</td>
+<td>Indicates Device Life Span Mode is enabled.</td>
+</tr>
 
-Indicates the device initialization is in progress.
-
-
-### -field UFS_fPermanentWPEn
-
-Indicates permanent write protection is enabled.
-
-
-### -field UFS_fPowerOnWPEn
-
-Indicates power on write protection is enabled.
-
-
-### -field UFS_fBackgroundOpsEn
-
-Indicates the device is permitted to run
-background operations.
-
-
-### -field UFS_fDeviceLifeSpanModeEn
-
-Indicates Device Life Span Mode is enabled.
-
-
-### -field UFS_fPurgeEnable
-
-Indicates Purge Operation is enabled.
-
-
-### -field UFS_Reserved2
-
-Reserved for future use.
-
-
-### -field UFS_fPhyResourceRemoval
-
-Indicates
-that the dynamic capacity operation occurs on the device's EndPointReset or
-a hardware reset. The host cannot reset this flag.
-
-
-### -field UFS_fBusyRTC
-
-Indicates the device is executing internal
-operation related to Real Time Clock.
-
-
-### -field UFS_Reserved3
-
-Reserved for the Unified Memory Extension standard..
-
-
-### -field UFS_fPermanentlyDisableFwUpdate
-
-Indicates the UFS device will permanently
+<tr>
+<td>UFS_fPermanentlyDisableFwUpdate</td>
+<td>Indicates the UFS device will permanently
 disallow future firmware updates to
-the Universal Flash Storage (UFS) device.
+the Universal Flash Storage (UFS) device.</td>
+</tr>
+
+<tr>
+<td>UFS_fPermanentWPEn</td>
+<td>Indicates permanent write protection is enabled.</td>
+</tr>
+
+<tr>
+<td>UFS_fPhyResourceRemoval</td>
+<td>Indicates
+that the dynamic capacity operation occurs on the device's EndPointReset or
+a hardware reset. The host cannot reset this flag.</td>
+</tr>
+
+<tr>
+<td>UFS_fPowerOnWPEn</td>
+<td>Indicates power on write protection is enabled.</td>
+</tr>
+
+<tr>
+<td>UFS_fPurgeEnable</td>
+<td>Indicates Purge Operation is enabled.</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved1</td>
+<td>Reserved for future use.</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved2</td>
+<td>Reserved for future use.</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved3</td>
+<td>Reserved for the Unified Memory Extension standard..</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved4</td>
+<td>Reserved for the Unified Memory Extension standard.</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved5</td>
+<td>Reserved for the Unified Memory Extension standard.</td>
+</tr>
+</table>
 
 
-### -field UFS_Reserved4
-
-Reserved for the Unified Memory Extension standard.
-
-
-### -field UFS_Reserved5
-
-Reserved for the Unified Memory Extension standard.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ufs.h |

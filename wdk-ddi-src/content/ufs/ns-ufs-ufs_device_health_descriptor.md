@@ -1,51 +1,44 @@
 ---
-UID: NS:ufs.UFS_DEVICE_HEALTH_DESCRIPTOR
-title: UFS_DEVICE_HEALTH_DESCRIPTOR
-author: windows-driver-content
-description: The UFS_DEVICE_HEALTH_DESCRIPTOR structure describes the health of a device.
-old-location: storage\ufs_device_health_descriptor.htm
-old-project: storage
-ms.assetid: 6B085DBB-2AAA-4170-A2B1-EA4D2C207A24
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ufs.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10, version 1709
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: UFS_DEVICE_HEALTH_DESCRIPTOR
-req.alt-loc: Ufs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PUFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NS:ufs.UFS_DEVICE_HEALTH_DESCRIPTOR
+title : UFS_DEVICE_HEALTH_DESCRIPTOR
+author : windows-driver-content
+description : The UFS_DEVICE_HEALTH_DESCRIPTOR structure describes the health of a device.
+old-location : storage\ufs_device_health_descriptor.htm
+old-project : storage
+ms.assetid : 6B085DBB-2AAA-4170-A2B1-EA4D2C207A24
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : UFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ufs.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10, version 1709
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : UFS_DEVICE_HEALTH_DESCRIPTOR
+req.alt-loc : Ufs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR
+req.product : Windows 10 or later.
 ---
 
 # UFS_DEVICE_HEALTH_DESCRIPTOR structure
+The <b>UFS_DEVICE_HEALTH_DESCRIPTOR</b> structure describes the health of a device.
 
-
-
-## -description
-The <b>UFS_DEVICE_HEALTH_DESCRIPTOR</b> structure describes the health of a device. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _UFS_DEVICE_HEALTH_DESCRIPTOR {
   UCHAR bLength;
@@ -57,57 +50,16 @@ typedef struct _UFS_DEVICE_HEALTH_DESCRIPTOR {
 } UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `bDescriptorIDN`
 
-### -field bLength
+            Specifies the descriptor's Identification value. <b>UFS_DEVICE_HEALTH_DESCRIPTOR </b>will have a value of <b>UFS_DESC_HEALTH_IDN</b>.
+        
+            `bDeviceLifeTimeEstA`
 
-Specifies the length, in bytes, of this descriptor.
-
-
-### -field bDescriptorIDN
-
-Specifies the descriptor's Identification value. <b>UFS_DEVICE_HEALTH_DESCRIPTOR </b>will have a value of <b>UFS_DESC_HEALTH_IDN</b>.
-
-
-### -field bPreEOLInfo
-
-Contains Pre-End of Life Information. This member supplies information about a device's life time as reflected by the average number of reserved blocks. Contains one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Member is not defined.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Normal. Consumed less than 80% of reserved blocks.</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>Consumed 80% of
-reserved blocks.</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>Critical. Consumed 90% of
-reserved blocks.</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
- 
-
-
-### -field bDeviceLifeTimeEstA
-
-<b>bDeviceLifeTimeEstA</b> provides an estimation of how much of a device's estimated life time has been used based on the amount of performed program/erase cycles. This calculation is vendor-specific and is referred as method A. Contains one of the following values:
+            <b>bDeviceLifeTimeEstA</b> provides an estimation of how much of a device's estimated life time has been used based on the amount of performed program/erase cycles. This calculation is vendor-specific and is referred as method A. Contains one of the following values:
 
 <table>
 <tr>
@@ -167,18 +119,55 @@ reserved blocks.</td>
 <td>Reserved for future use.</td>
 </tr>
 </table>
- 
+        
+            `bDeviceLifeTimeEstB`
 
+            <b>bDeviceLifeTimeEstB</b> provides an estimation of how much of a device's estimated life time has been used based on the amount of performed program/erase cycles. This calculation is vendor-specific and is referred as method B. Contains the same possible values as <b>bDeviceLifeTimeEstA</b>.
+        
+            `bLength`
 
-### -field bDeviceLifeTimeEstB
+            Specifies the length, in bytes, of this descriptor.
+        
+            `bPreEOLInfo`
 
-<b>bDeviceLifeTimeEstB</b> provides an estimation of how much of a device's estimated life time has been used based on the amount of performed program/erase cycles. This calculation is vendor-specific and is referred as method B. Contains the same possible values as <b>bDeviceLifeTimeEstA</b>.
+            Contains Pre-End of Life Information. This member supplies information about a device's life time as reflected by the average number of reserved blocks. Contains one of the following values:
 
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Member is not defined.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Normal. Consumed less than 80% of reserved blocks.</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>Consumed 80% of
+reserved blocks.</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>Critical. Consumed 90% of
+reserved blocks.</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
 
-### -field VendorPropInfo[32]
+    ## Remarks
+        The UFS Host Controller contains a series of configurable Descriptor Tables, which allow the driver to query and configure the host controller’s capabilities. Query the Requested Descriptor from the Descriptor Table on the device.</p>
 
-Reserved for vendor use.
-
-
-## -remarks
-The UFS Host Controller contains a series of configurable Descriptor Tables, which allow the driver to query and configure the host controller’s capabilities. Query the Requested Descriptor from the Descriptor Table on the device.</p>
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ufs.h |

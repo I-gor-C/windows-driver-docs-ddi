@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.CcGetDirtyPages
-title: CcGetDirtyPages function
-author: windows-driver-content
-description: The CcGetDirtyPages routine searches for dirty pages in all files that match a given log handle.
-old-location: ifsk\ccgetdirtypages.htm
-old-project: ifsk
-ms.assetid: 8ca0d683-318b-465c-95a7-dc2b5e29c9e7
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: CcGetDirtyPages
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available on Microsoft Windows XP and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CcGetDirtyPages
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.CcGetDirtyPages
+title : CcGetDirtyPages function
+author : windows-driver-content
+description : The CcGetDirtyPages routine searches for dirty pages in all files that match a given log handle.
+old-location : ifsk\ccgetdirtypages.htm
+old-project : ifsk
+ms.assetid : 8ca0d683-318b-465c-95a7-dc2b5e29c9e7
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : CcGetDirtyPages
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available on Microsoft Windows XP and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CcGetDirtyPages
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # CcGetDirtyPages function
+The <b>CcGetDirtyPages</b> routine searches for dirty pages in all files that match a given log handle.
 
-
-
-## -description
-The <b>CcGetDirtyPages</b> routine searches for dirty pages in all files that match a given log handle. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 LARGE_INTEGER CcGetDirtyPages(
@@ -54,15 +49,13 @@ LARGE_INTEGER CcGetDirtyPages(
 );
 ````
 
+## Parameters
 
-## -parameters
+`LogHandle`
 
-### -param LogHandle [in]
+Log handle stored by a previous call to <b>CcSetLogHandleForFile</b>.
 
-Log handle stored by a previous call to <b>CcSetLogHandleForFile</b>. 
-
-
-### -param DirtyPageRoutine [in]
+`DirtyPageRoutine`
 
 Pointer to a callback routine that builds up a dirty page table from the pages found. This routine, which is called for each dirty page found, is declared as follows: 
 
@@ -86,66 +79,42 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 </tr>
 </table></span></div>
 
+`Context1`
 
+First context parameter.
 
-### -param FileObject
-
-Pointer to the file object for the file containing the dirty page. 
-
-
-### -param FileOffset
-
-Pointer to a variable that specifies the starting byte offset of the dirty page within the cached file. 
-
-
-### -param Length
-
-Length, in bytes, of the dirty page. 
-
-
-### -param OldestLsn
-
-Oldest logical sequence number (LSN) found in the dirty page. 
-
-
-### -param NewestLsn
-
-Newest LSN found in the dirty page. 
-
-
-### -param Context1
-
-First context parameter. 
-
-
-### -param Context2
+`Context2`
 
 Second context parameter. 
 
 </dd>
 </dl>
 
-### -param Context1 [in]
 
-First context parameter to be passed to the <i>DirtyPageRoutine</i>. 
+## Return Value
 
+<b>CcGetDirtyPages</b> returns the oldest LSN found in the set of dirty pages. If there are no dirty pages, <b>CcGetDirtyPages</b> returns zero.
 
-### -param Context2 [in]
+## Remarks
 
-Second context parameter to be passed to the <i>DirtyPageRoutine</i>. 
-
-
-## -returns
-<b>CcGetDirtyPages</b> returns the oldest LSN found in the set of dirty pages. If there are no dirty pages, <b>CcGetDirtyPages</b> returns zero. 
-
-
-## -remarks
 File systems call <b>CcGetDirtyPages</b> to return dirty pages in all files that match a given log handle. <b>CcGetDirtyPages</b> searches for dirty pages in all files that match the given <i>LogHandle</i> and calls the <i>DirtyPageRoutine</i> for each page. 
 
-To set a log handle for a file, use <a href="..\ntifs\nf-ntifs-ccsetloghandleforfile.md">CcSetLogHandleForFile</a>. 
+To set a log handle for a file, use <a href="..\ntifs\nf-ntifs-ccsetloghandleforfile.md">CcSetLogHandleForFile</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-ccsetdirtypinneddata.md">CcSetDirtyPinnedData</a>
@@ -159,4 +128,3 @@ To set a log handle for a file, use <a href="..\ntifs\nf-ntifs-ccsetloghandlefor
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcGetDirtyPages routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisMNetPnPEvent
-title: NdisMNetPnPEvent function
-author: windows-driver-content
-description: NDIS miniport drivers (and intermediate drivers that are registered as miniport drivers) call the NdisMNetPnPEvent function to originate a network Plug and Play event, an NDIS PnP event, or Power Management event or propagate it to overlying drivers.
-old-location: netvista\ndismnetpnpevent.htm
-old-project: netvista
-ms.assetid: cbb097c1-dd20-4c6d-b23a-1e7683ac3e94
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMNetPnPEvent
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMNetPnPEvent
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Protocol_Driver_Function, NdisMNetPnPEventInOIDRequest
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMNetPnPEvent
+title : NdisMNetPnPEvent function
+author : windows-driver-content
+description : NDIS miniport drivers (and intermediate drivers that are registered as miniport drivers) call the NdisMNetPnPEvent function to originate a network Plug and Play event, an NDIS PnP event, or Power Management event or propagate it to overlying drivers.
+old-location : netvista\ndismnetpnpevent.htm
+old-project : netvista
+ms.assetid : cbb097c1-dd20-4c6d-b23a-1e7683ac3e94
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMNetPnPEvent
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMNetPnPEvent
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Protocol_Driver_Function, NdisMNetPnPEventInOIDRequest
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMNetPnPEvent function
-
-
-
-## -description
 NDIS miniport drivers (and intermediate drivers that are registered as miniport drivers) call the 
   <b>NdisMNetPnPEvent</b> function to originate a network Plug and Play event, an NDIS PnP event,
   or Power Management event or propagate it to overlying drivers.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMNetPnPEvent(
@@ -54,10 +49,9 @@ NDIS_STATUS NdisMNetPnPEvent(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterHandle [in]
+`MiniportAdapterHandle`
 
 An NDIS handle which NDIS provided at the 
      <i>MiniportAdapterHandle</i> parameter of the 
@@ -65,16 +59,13 @@ An NDIS handle which NDIS provided at the
      This handle identifies the miniport adapter that is affected by the event. If the caller is an
      intermediate driver, this is the handle of the virtual miniport.
 
-
-### -param NetPnPEvent [in]
-
-A pointer to a 
-     <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
-     NET_PNP_EVENT_NOTIFICATION</a> structure, which describes the network Plug and Play event, NDIS PnP
-     event, or Power Management event.
+`NetPnPEventNotification`
 
 
-## -returns
+
+
+## Return Value
+
 <b>NdisMNetPnPEvent</b> can return the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -118,8 +109,8 @@ If the event is
       <b>NetEventPortActivation</b> and the call fails, the caller should not use the associated ports in
       receive indications or status indications.
 
+## Remarks
 
-## -remarks
 Any miniport driver can call 
     <b>NdisMNetPnPEvent</b> to generate 
     <b>NetEventPortActivation</b> and 
@@ -183,8 +174,20 @@ For all other propagated events, the intermediate driver's
     <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function should propagate the status value that is returned by 
     <b>NdisMNetPnPEvent</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Protocol_Driver_Function, NdisMNetPnPEventInOIDRequest |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -204,4 +207,3 @@ For all other propagated events, the intermediate driver's
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMNetPnPEvent function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

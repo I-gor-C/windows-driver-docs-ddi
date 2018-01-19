@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisOpenAdapterEx
-title: NdisOpenAdapterEx function
-author: windows-driver-content
-description: A protocol driver calls the NdisOpenAdapterEx function from its ProtocolBindAdapterEx function to set up a binding between the protocol driver and an underlying driver.
-old-location: netvista\ndisopenadapterex.htm
-old-project: netvista
-ms.assetid: 2dc356e6-a2ef-4b43-abe5-7c5058c15cf5
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisOpenAdapterEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisOpenAdapterEx
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Protocol_Driver_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisOpenAdapterEx
+title : NdisOpenAdapterEx function
+author : windows-driver-content
+description : A protocol driver calls the NdisOpenAdapterEx function from its ProtocolBindAdapterEx function to set up a binding between the protocol driver and an underlying driver.
+old-location : netvista\ndisopenadapterex.htm
+old-project : netvista
+ms.assetid : 2dc356e6-a2ef-4b43-abe5-7c5058c15cf5
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisOpenAdapterEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisOpenAdapterEx
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Protocol_Driver_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisOpenAdapterEx function
-
-
-
-## -description
 A protocol driver calls the
   <b>NdisOpenAdapterEx</b> function from its 
   <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function to
   set up a binding between the protocol driver and an underlying driver.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisOpenAdapterEx(
@@ -58,38 +53,33 @@ NDIS_STATUS NdisOpenAdapterEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisProtocolHandle [in]
+`NdisProtocolHandle`
 
 The handle returned by the 
      <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
      NdisRegisterProtocolDriver</a> function.
 
-
-### -param ProtocolBindingContext [in]
+`ProtocolBindingContext`
 
 The handle for a caller-supplied context area in which the protocol driver maintains state
      information for this binding.
 
-
-### -param OpenParameters [in]
+`OpenParameters`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_open_parameters.md">NDIS_OPEN_PARAMETERS</a> structure that is
      set up by the caller.
 
-
-### -param BindContext [in]
+`BindContext`
 
 The handle that identifies the NDIS context area for the bind operation. NDIS passed this handle
      to the 
      <i>BindContext</i> parameter of the 
      <i>ProtocolBindAdapterEx</i> function.
 
-
-### -param NdisBindingHandle [out]
+`NdisBindingHandle`
 
 A pointer to a caller-supplied variable. NDIS writes a handle at 
      <i>NdisBindingHandle</i> that identifies the binding between the caller and the miniport adapter
@@ -99,7 +89,8 @@ A pointer to a caller-supplied variable. NDIS writes a handle at
      <b>Ndis<i>Xxx</i></b> functions.
 
 
-## -returns
+## Return Value
+
 <b>NdisOpenAdapterEx</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -126,10 +117,8 @@ A pointer to a caller-supplied variable. NDIS writes a handle at
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
 </dl><b>NdisOpenAdapterEx</b> failed for reasons other than those in the preceding list.
 
- 
+## Remarks
 
-
-## -remarks
 A protocol driver must call 
     <b>NdisOpenAdapterEx</b> from its 
     <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function.
@@ -159,8 +148,20 @@ After the open operation completes successfully, the caller can use the value th
     <b>SelectedMediumIndex</b> member of the 
     <i>OpenParameters</i> parameter to determine how it should interact with the underlying driver.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_open_parameters.md">NDIS_OPEN_PARAMETERS</a>
@@ -181,4 +182,3 @@ After the open operation completes successfully, the caller can use the value th
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenAdapterEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

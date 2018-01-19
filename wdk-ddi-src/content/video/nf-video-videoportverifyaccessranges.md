@@ -1,50 +1,45 @@
 ---
-UID: NF:video.VideoPortVerifyAccessRanges
-title: VideoPortVerifyAccessRanges function
-author: windows-driver-content
-description: The VideoPortVerifyAccessRanges function checks the registry for whether another driver has already claimed ownership of the specified bus-relative access ranges and any other hardware resources specified in the VIDEO_PORT_CONFIG_INFO structure.
-old-location: display\videoportverifyaccessranges.htm
-old-project: display
-ms.assetid: 067ecebb-e63c-4161-9e8f-3746ecad3259
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: VideoPortVerifyAccessRanges
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: VideoPortVerifyAccessRanges
-req.alt-loc: Videoprt.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Videoprt.lib
-req.dll: Videoprt.sys
-req.irql: PASSIVE_LEVEL
-req.typenames: VIDEO_PORT_SERVICES
-req.product: Windows 10 or later.
+UID : NF:video.VideoPortVerifyAccessRanges
+title : VideoPortVerifyAccessRanges function
+author : windows-driver-content
+description : The VideoPortVerifyAccessRanges function checks the registry for whether another driver has already claimed ownership of the specified bus-relative access ranges and any other hardware resources specified in the VIDEO_PORT_CONFIG_INFO structure.
+old-location : display\videoportverifyaccessranges.htm
+old-project : display
+ms.assetid : 067ecebb-e63c-4161-9e8f-3746ecad3259
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : VideoPortVerifyAccessRanges
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : VideoPortVerifyAccessRanges
+req.alt-loc : Videoprt.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Videoprt.lib
+req.dll : Videoprt.sys
+req.irql : PASSIVE_LEVEL
+req.typenames : VIDEO_PORT_SERVICES
+req.product : Windows 10 or later.
 ---
 
+
 # VideoPortVerifyAccessRanges function
-
-
-
-## -description
 The <b>VideoPortVerifyAccessRanges</b> function checks the registry for whether another driver has already claimed ownership of the specified bus-relative access ranges and any other hardware resources specified in the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure. If not, this function claims the given resources for the caller.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VP_STATUS VideoPortVerifyAccessRanges(
@@ -54,25 +49,23 @@ VP_STATUS VideoPortVerifyAccessRanges(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension 
+`HwDeviceExtension`
 
 Pointer to the miniport driver's device extension.
 
-
-### -param NumAccessRanges 
+`NumAccessRanges`
 
 Specifies the number of elements in the <i>AccessRanges</i> array, or zero.
 
-
-### -param AccessRanges [in, optional]
+`AccessRanges`
 
 Pointer to the miniport driver's access ranges array, or <b>NULL</b>. Each <a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>-type element in this array specifies a bus-relative range of device memory, I/O ports, or register addresses for the adapter.
 
 
-## -returns
+## Return Value
+
 <b>VideoPortVerifyAccessRanges</b> returns one of the following values:
 <dl>
 <dt><b>ERROR_INVALID_PARAMETER</b></dt>
@@ -81,10 +74,8 @@ Pointer to the miniport driver's access ranges array, or <b>NULL</b>. Each <a hr
 <dt><b>NO_ERROR</b></dt>
 </dl>The given <i>AccessRanges</i> are valid and have been claimed for use by the caller.
 
- 
+## Remarks
 
-
-## -remarks
 Every video miniport driver either must call <b>VideoPortVerifyAccessRanges</b>, or use access ranges returned by <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a> before attempting to access a video adapter during the driver (and system) initialization process.
 
 <b>VideoPortVerifyAccessRanges</b> can be called only by a miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function.
@@ -112,8 +103,20 @@ Modify the <i>AccessRanges</i> specification for the adapter so that each elemen
 
 Call <b>VideoPortVerifyAccessRanges</b> with this modified <i>AccessRanges</i> array.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
@@ -148,4 +151,3 @@ Call <b>VideoPortVerifyAccessRanges</b> with this modified <i>AccessRanges</i> a
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortVerifyAccessRanges function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

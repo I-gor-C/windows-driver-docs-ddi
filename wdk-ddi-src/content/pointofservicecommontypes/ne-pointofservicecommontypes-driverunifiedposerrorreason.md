@@ -1,50 +1,43 @@
 ---
-UID: NE:pointofservicecommontypes.DriverUnifiedPosErrorReason
-title: DriverUnifiedPosErrorReason
-author: windows-driver-content
-description: This enumeration indicates the reason for the error.
-old-location: pos\unifiedposerrorreason.htm
-old-project: pos
-ms.assetid: 2bbf5fcf-666e-4265-95cf-7e04670d59da
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: DriverUnifiedPosErrorReason, DriverUnifiedPosErrorReason
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: pointofservicecommontypes.h
-req.include-header: Pointofservicecommontypes.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DriverUnifiedPosErrorReason
-req.alt-loc: pointofservicecommontypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DriverUnifiedPosErrorReason
+UID : NE:pointofservicecommontypes.DriverUnifiedPosErrorReason
+title : DriverUnifiedPosErrorReason
+author : windows-driver-content
+description : This enumeration indicates the reason for the error.
+old-location : pos\unifiedposerrorreason.htm
+old-project : pos
+ms.assetid : 2bbf5fcf-666e-4265-95cf-7e04670d59da
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : DriverUnifiedPosErrorReason, DriverUnifiedPosErrorReason
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : pointofservicecommontypes.h
+req.include-header : Pointofservicecommontypes.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DriverUnifiedPosErrorReason
+req.alt-loc : pointofservicecommontypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at PASSIVE_LEVEL.
+req.typenames : DriverUnifiedPosErrorReason
 ---
 
-# DriverUnifiedPosErrorReason enumeration
-
-
-
-## -description
+# DriverUnifiedPosErrorReason Enumeration
 This enumeration indicates the reason for the error.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _DriverUnifiedPosErrorReason { 
   UnknownErrorReason  = 0,
@@ -61,62 +54,66 @@ typedef enum _DriverUnifiedPosErrorReason {
 } DriverUnifiedPosErrorReason;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field UnknownErrorReason
+<tr>
+<td>Busy</td>
+<td>The device is busy and cannot complete the operation.</td>
+</tr>
 
-The reason for the error is not known.
+<tr>
+<td>Closed</td>
+<td>The device is closed.</td>
+</tr>
 
+<tr>
+<td>Disabled</td>
+<td>The device must be enabled in order to perform the operation.</td>
+</tr>
 
-### -field NoService
+<tr>
+<td>Extended</td>
+<td>The device returned a vendor specified error.</td>
+</tr>
 
-Cannot communicate with the device due to the current configuration.
+<tr>
+<td>Failure</td>
+<td>The device is connected and powered on, but it failed to perform the operation.</td>
+</tr>
 
+<tr>
+<td>Illegal</td>
+<td>The function is not available or is not supported on this device.</td>
+</tr>
 
-### -field Disabled
+<tr>
+<td>NoService</td>
+<td>Cannot communicate with the device due to the current configuration.</td>
+</tr>
 
-The device must be enabled in order to perform the operation.
+<tr>
+<td>Offline</td>
+<td>The device is offline.</td>
+</tr>
 
+<tr>
+<td>Timeout</td>
+<td>The operation timed out on the device.</td>
+</tr>
 
-### -field Illegal
-
-The function is not available or is not supported on this device.
-
-
-### -field  NoHardware
-
-The physical device is not connected or not powered on.
-
-
-### -field Closed
-
-The device is closed.
-
-
-### -field Offline
-
-The device is offline.
-
-
-### -field Failure
-
-The device is connected and powered on, but it failed to perform the operation.
-
-
-### -field Timeout
-
-The operation timed out on the device.
-
-
-### -field Busy
-
-The device is busy and cannot complete the operation.
-
-
-### -field Extended
-
-The device returned a vendor specified error.
+<tr>
+<td>UnknownErrorReason</td>
+<td>The reason for the error is not known.</td>
+</tr>
+</table>
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

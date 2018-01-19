@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugClient5.EndSession
-title: IDebugClient5::EndSession method
-author: windows-driver-content
-description: The EndSession method ends the current debugger session.
-old-location: debugger\endsession.htm
-old-project: debugger
-ms.assetid: 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugClient5, IDebugClient5::EndSession, EndSession
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugClient.EndSession,IDebugClient2.EndSession,IDebugClient3.EndSession,IDebugClient4.EndSession,IDebugClient5.EndSession
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugClient5.EndSession
+title : IDebugClient5::EndSession method
+author : windows-driver-content
+description : The EndSession method ends the current debugger session.
+old-location : debugger\endsession.htm
+old-project : debugger
+ms.assetid : 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugClient5, IDebugClient5::EndSession, EndSession
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugClient.EndSession,IDebugClient2.EndSession,IDebugClient3.EndSession,IDebugClient4.EndSession,IDebugClient5.EndSession
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugClient5::EndSession method
 
-
-
-## -description
+# EndSession method
 The <b>EndSession</b> method ends the current debugger session.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT EndSession(
@@ -51,10 +46,9 @@ HRESULT EndSession(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Flags [in]
+`Flags`
 
 Specifies how to end the session.  <i>Flags</i> can be one of the following values:
 
@@ -116,21 +110,31 @@ This flag is intended for when remote clients disconnect.  It generates a server
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
 
- 
+## Remarks
 
-
-## -remarks
 This method may be called at any time with <i>Flags</i> set to DEBUG_END_REENTRANT.  If, for example, the application needs to exit but another thread is using the engine, this method can be used to perform as much cleanup as possible.
 
 Using DEBUG_END_REENTRANT may leave the engine in an indeterminate state. If this flag is used, no subsequent calls should be made to the engine.
 
 For more information about debugger sessions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

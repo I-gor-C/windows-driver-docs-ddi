@@ -1,51 +1,46 @@
 ---
-UID: NF:ndischimney.NdisMGetOffloadHandlers
-title: NdisMGetOffloadHandlers function
-author: windows-driver-content
-description: This function obtains the entry points of the NDIS functions for a particular chimney type.
-old-location: netvista\ndismgetoffloadhandlers.htm
-old-project: netvista
-ms.assetid: a78acf5d-07ec-487c-97bd-daca8d08863c
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMGetOffloadHandlers
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMGetOffloadHandlers
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NF:ndischimney.NdisMGetOffloadHandlers
+title : NdisMGetOffloadHandlers function
+author : windows-driver-content
+description : This function obtains the entry points of the NDIS functions for a particular chimney type.
+old-location : netvista\ndismgetoffloadhandlers.htm
+old-project : netvista
+ms.assetid : a78acf5d-07ec-487c-97bd-daca8d08863c
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMGetOffloadHandlers
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMGetOffloadHandlers
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
+
 # NdisMGetOffloadHandlers function
-
-
-
-## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 This function obtains the entry points of the NDIS functions for a particular chimney type.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMGetOffloadHandlers(
@@ -55,10 +50,9 @@ NDIS_STATUS NdisMGetOffloadHandlers(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisMiniportHandle [in]
+`NdisMiniportHandle`
 
 The handle to a context area that is offload target-allocated in which the offload target
      maintains state information about this instance of the adapter. The offload target provided this handle
@@ -68,25 +62,11 @@ The handle to a context area that is offload target-allocated in which the offlo
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
-
-### -param ChimneyType [in]
+`ChimneyType`
 
 A chimney type that is one of the following NDIS_CHIMNEY_OFFLOAD_TYPE values:
-     
 
-
-
-
-### -param NdisTcpChimneyOffload
-
-The TCP chimney offload type.
-
-</dd>
-</dl>
-All other NDIS_CHIMNEY_OFFLOAD_TYPE values are currently reserved.
-
-
-### -param OffloadHandlers [out]
+`OffloadHandlers`
 
 A pointer to a variable supplied by the offload target. The size of this variable is 
      sizeof(PNDIS_OFFLOAD_EVENT_HANDLERS). If the call to the 
@@ -111,17 +91,8 @@ A pointer to a variable supplied by the offload target. The size of this variabl
 This structure contains the following member:
 
 
+## Return Value
 
-
-### -param Header
-
-Specifies an NDIS object header, which is formatted as an 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.
-
-</dd>
-</dl>
-
-## -returns
 <b>NdisMGetOffloadHandlers</b> can return either of the following:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -133,10 +104,8 @@ Specifies an NDIS object header, which is formatted as an
        not return a valid 
        <i>OffloadHandlers</i> pointer.
 
- 
+## Remarks
 
-
-## -remarks
 The offload target calls this function from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function to
     get the entry points of the NDIS functions for a particular chimney type. The offload target calls 
@@ -147,7 +116,7 @@ If the call to the
     <b>NdisMGetOffloadHandlers</b> function succeeds, NDIS supplies a valid 
     <i>OffloadHandlers</i> pointer, which points to an NDIS_OFFLOAD_EVENT_HANDLERS structure. This structure
     contains an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure. The offload
+    <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure. The offload
     target examines the 
     <b>Type</b>, 
     <b>Revision</b>, and 
@@ -179,8 +148,20 @@ The chimney-specific handlers structure contains the same NDIS_OBJECT_HEADER str
 The offload target copies the entry points from the chimney-specific structure into its own internal
     data structure and then returns.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -189,7 +170,7 @@ The offload target copies the entry points from the chimney-specific structure i
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndischimney\ns-ndischimney-_ndis_tcp_offload_event_handlers.md">
@@ -201,4 +182,3 @@ The offload target copies the entry points from the chimney-specific structure i
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetOffloadHandlers function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

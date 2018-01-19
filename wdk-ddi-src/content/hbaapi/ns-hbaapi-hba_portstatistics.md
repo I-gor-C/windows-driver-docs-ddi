@@ -1,50 +1,43 @@
 ---
-UID: NS:hbaapi.HBA_PortStatistics
-title: HBA_PortStatistics
-author: windows-driver-content
-description: The HBA_PortStatistics structure contains statistical information about a port.
-old-location: storage\hba_portstatistics.htm
-old-project: storage
-ms.assetid: 3a0d6633-b4a6-4864-96ae-4f91de11daa1
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: HBA_PortStatistics, *PHBA_PORTSTATISTICS, HBA_PORTSTATISTICS, SMHBA_FCPHYSTATISTICS, *PSMHBA_FCPHYSTATISTICS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: hbaapi.h
-req.include-header: Hbaapi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HBA_PORTSTATISTICS
-req.alt-loc: hbaapi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PHBA_PORTSTATISTICS, HBA_PORTSTATISTICS
+UID : NS:hbaapi.HBA_PortStatistics
+title : HBA_PortStatistics
+author : windows-driver-content
+description : The HBA_PortStatistics structure contains statistical information about a port.
+old-location : storage\hba_portstatistics.htm
+old-project : storage
+ms.assetid : 3a0d6633-b4a6-4864-96ae-4f91de11daa1
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : HBA_PortStatistics, HBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS, *PSMHBA_FCPHYSTATISTICS, SMHBA_FCPHYSTATISTICS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : hbaapi.h
+req.include-header : Hbaapi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HBA_PORTSTATISTICS
+req.alt-loc : hbaapi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : HBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS
 ---
 
 # HBA_PortStatistics structure
+The HBA_PortStatistics structure contains statistical information about a port.
 
-
-
-## -description
-The HBA_PortStatistics structure contains statistical information about a port. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct HBA_PortStatistics {
   HBA_INT64 SecondsSinceLastReset;
@@ -65,89 +58,81 @@ typedef struct HBA_PortStatistics {
 } HBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DumpedFrames`
 
-### -field SecondsSinceLastReset
+            Reports the number of frames that were lost due to a lack of host buffers available.
+        
+            `ErrorFrames`
 
-Reports the number of seconds since the statistics were last reset.
+            Reports the number of frames that have been received in error.
+        
+            `InvalidCRCCount`
 
+            Reports the value of the invalid CRC count field of the link error status block for the specified port.
+        
+            `InvalidTxWordCount`
 
-### -field TxFrames
+            Reports the value of the invalid transmission word field of the link error status block for the specified port.
+        
+            `LinkFailureCount`
 
-Reports the number of fibre channel frames transmitted for all protocols and classes.
+            Reports the link failure count field of the error status block for the port.
+        
+            `LIPCount`
 
+            Reports the number of LIP events that have occurred on a arbitrated loop.
+        
+            `LossOfSignalCount`
 
-### -field TxWords
+            Reports the value of the loss of signal count field of the link error status block for the specified port.
+        
+            `LossOfSyncCount`
 
-Reports the number of fibre channel words transmitted for all protocols and classes. 
+            Reports the value of the loss of synchronization count field of the link error status block for the port.
+        
+            `NOSCount`
 
+            Reports the number of NOS events that have occurred on the switched fabric.
+        
+            `PrimitiveSeqProtocolErrCount`
 
-### -field RxFrames
+            Reports the value of the primitive sequence protocol error field of the link error status block for the port.
+        
+            `RxFrames`
 
-Reports the number of fibre channel frames received for all protocols and classes. 
+            Reports the number of fibre channel frames received for all protocols and classes.
+        
+            `RxWords`
 
+            Reports the number of fibre channel words received for all protocols and classes.
+        
+            `SecondsSinceLastReset`
 
-### -field RxWords
+            Reports the number of seconds since the statistics were last reset.
+        
+            `TxFrames`
 
-Reports the number of fibre channel words received for all protocols and classes. 
+            Reports the number of fibre channel frames transmitted for all protocols and classes.
+        
+            `TxWords`
 
-
-### -field LIPCount
-
-Reports the number of LIP events that have occurred on a arbitrated loop.
-
-
-### -field NOSCount
-
-Reports the number of NOS events that have occurred on the switched fabric.
-
-
-### -field ErrorFrames
-
-Reports the number of frames that have been received in error.
-
-
-### -field DumpedFrames
-
-Reports the number of frames that were lost due to a lack of host buffers available. 
-
-
-### -field LinkFailureCount
-
-Reports the link failure count field of the error status block for the port. 
-
-
-### -field LossOfSyncCount
-
-Reports the value of the loss of synchronization count field of the link error status block for the port.  
-
-
-### -field LossOfSignalCount
-
-Reports the value of the loss of signal count field of the link error status block for the specified port. 
-
-
-### -field PrimitiveSeqProtocolErrCount
-
-Reports the value of the primitive sequence protocol error field of the link error status block for the port. 
+            Reports the number of fibre channel words transmitted for all protocols and classes.
 
 
-### -field InvalidTxWordCount
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hbaapi.h (include Hbaapi.h) |
 
-Reports the value of the invalid transmission word field of the link error status block for the specified port. 
+    ## See Also
 
-
-### -field InvalidCRCCount
-
-Reports the value of the invalid CRC count field of the link error status block for the specified port. 
-
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\hbaapi\nf-hbaapi-hba_getportstatistics.md">HBA_GetPortStatistics</a>
 </dt>
@@ -157,4 +142,3 @@ Reports the value of the invalid CRC count field of the link error status block 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_PortStatistics structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_VIDEO_0032
-title: D3D12DDI_DEVICE_FUNCS_VIDEO_0032
-author: windows-driver-content
-description: Video device functions.
-old-location: display\d3d12ddi-device-funcs-video-0032.htm
-old-project: display
-ms.assetid: 2b71c48a-a028-4bfa-a8bd-ad612aa800ff
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_DEVICE_FUNCS_VIDEO_0032, D3D12DDI_DEVICE_FUNCS_VIDEO_0032
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_DEVICE_FUNCS_VIDEO_0032
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_DEVICE_FUNCS_VIDEO_0032
+UID : NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_VIDEO_0032
+title : D3D12DDI_DEVICE_FUNCS_VIDEO_0032
+author : windows-driver-content
+description : Video device functions.
+old-location : display\d3d12ddi-device-funcs-video-0032.htm
+old-project : display
+ms.assetid : 2b71c48a-a028-4bfa-a8bd-ad612aa800ff
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_DEVICE_FUNCS_VIDEO_0032, D3D12DDI_DEVICE_FUNCS_VIDEO_0032
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_DEVICE_FUNCS_VIDEO_0032
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_DEVICE_FUNCS_VIDEO_0032
 ---
 
 # D3D12DDI_DEVICE_FUNCS_VIDEO_0032 structure
-
-
-
-## -description
 Video device functions.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0032 {
   PFND3D12DDI_VIDEO_GETCAPS                         pfnGetCaps;
@@ -60,57 +53,54 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0032 {
 } D3D12DDI_DEVICE_FUNCS_VIDEO_0032, D3D12DDI_DEVICE_FUNCS_VIDEO_0032;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `pfnCalcPrivateVideoDecoderHeapSize`
 
-### -field pfnGetCaps
+            Calculate private video decoder heap size.
+        
+            `pfnCalcPrivateVideoDecoderSize`
 
-Get caps.
+            Calculate private video decoder size.
+        
+            `pfnCalcPrivateVideoProcessorSize`
 
+            Calculate private video processor size.
+        
+            `pfnCreateVideoDecoder`
 
-### -field pfnCalcPrivateVideoDecoderSize
+            Create video decoder.
+        
+            `pfnCreateVideoDecoderHeap`
 
-Calculate private video decoder size.
+            Create video decoder heap.
+        
+            `pfnCreateVideoProcessor`
 
+            Create video processor.
+        
+            `pfnDestroyVideoDecoder`
 
-### -field pfnCreateVideoDecoder
+            Destroy video decoder.
+        
+            `pfnDestroyVideoDecoderHeap`
 
-Create video decoder.
+            Destroy video decoder heap.
+        
+            `pfnDestroyVideoProcessor`
 
+            Destroy video processor.
+        
+            `pfnGetCaps`
 
-### -field pfnDestroyVideoDecoder
-
-Destroy video decoder.
-
-
-### -field pfnCalcPrivateVideoDecoderHeapSize
-
-Calculate private video decoder heap size.
-
-
-### -field pfnCreateVideoDecoderHeap
-
-Create video decoder heap.
-
-
-### -field pfnDestroyVideoDecoderHeap
-
-Destroy video decoder heap.
-
-
-### -field pfnCalcPrivateVideoProcessorSize
-
-Calculate private video processor size.
-
-
-### -field pfnCreateVideoProcessor
-
-Create video processor.
+            Get caps.
 
 
-### -field pfnDestroyVideoProcessor
-
-Destroy video processor.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

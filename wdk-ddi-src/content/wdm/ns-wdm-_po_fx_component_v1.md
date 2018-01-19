@@ -1,51 +1,44 @@
 ---
-UID: NS:wdm._PO_FX_COMPONENT_V1
-title: _PO_FX_COMPONENT_V1
-author: windows-driver-content
-description: The PO_FX_COMPONENT structure describes the power state attributes of a component in a device.
-old-location: kernel\po_fx_component.htm
-old-project: kernel
-ms.assetid: 4ACCA041-C638-4124-AFC1-3F34671C9EF8
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: _PO_FX_COMPONENT_V1, *PPO_FX_COMPONENT_V1, PO_FX_COMPONENT_V1, PO_FX_COMPONENT, *PPO_FX_COMPONENT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wdm.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PO_FX_COMPONENT_V2
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PPO_FX_COMPONENT_V1, PO_FX_COMPONENT_V1
-req.product: Windows 10 or later.
+UID : NS:wdm._PO_FX_COMPONENT_V1
+title : _PO_FX_COMPONENT_V1
+author : windows-driver-content
+description : The PO_FX_COMPONENT structure describes the power state attributes of a component in a device.
+old-location : kernel\po_fx_component.htm
+old-project : kernel
+ms.assetid : 4ACCA041-C638-4124-AFC1-3F34671C9EF8
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _PO_FX_COMPONENT_V1, *PPO_FX_COMPONENT_V1, PO_FX_COMPONENT_V1, PO_FX_COMPONENT, *PPO_FX_COMPONENT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wdm.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PO_FX_COMPONENT_V2
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : "*PPO_FX_COMPONENT_V1, PO_FX_COMPONENT_V1"
+req.product : Windows 10 or later.
 ---
 
 # _PO_FX_COMPONENT_V1 structure
-
-
-
-## -description
 The <b>PO_FX_COMPONENT</b> structure describes the power state attributes of a component in a device.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _PO_FX_COMPONENT_V2 {
   GUID                        Id;
@@ -62,46 +55,27 @@ typedef struct _PO_FX_COMPONENT_V2 {
 } PO_FX_COMPONENT_V2, *PPO_FX_COMPONENT_V2, PO_FX_COMPONENT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DeepestWakeableIdleState`
 
-### -field Id
+            The index of the deepest Fx state from which the component can wake. Specify 0 for F0, 1 for F1, and so on. This index must be less than <b>IdleStateCount</b>.
+        
+            `Id`
 
-A component ID that uniquely identifies this component with respect to the other components in the device. The driver should specify a nonzero value for this member if the power management framework (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. This member is optional. If this member is not used, it must be set to all zeros.
+            A component ID that uniquely identifies this component with respect to the other components in the device. The driver should specify a nonzero value for this member if the power management framework (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. This member is optional. If this member is not used, it must be set to all zeros.
+        
+            `IdleStateCount`
 
+            The number of elements in the array that is pointed to by the <b>IdleStates</b> member. Additionally, this member specifies the number of Fx power states that the component supports. A component must support at least one Fx state (F0).
+        
+            `IdleStates`
 
-### -field Flags
+            A pointer to a <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a> array. The length of this array is specified by the <b>IdleStateCount</b> member. Each array element specifies the attributes of an Fx power state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on.
 
-This member can be set to the following flag bit: <b>PO_FX_COMPONENT_FLAG_F0_ON_DX</b>. For more information, see Remarks.
-
-
-### -field IdleStateCount
-
-The number of elements in the array that is pointed to by the <b>IdleStates</b> member. Additionally, this member specifies the number of Fx power states that the component supports. A component must support at least one Fx state (F0).
-
-
-### -field DeepestWakeableIdleState
-
-The index of the deepest Fx state from which the component can wake. Specify 0 for F0, 1 for F1, and so on. This index must be less than <b>IdleStateCount</b>.
-
-
-### -field IdleStates
-
-A pointer to a <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a> array. The length of this array is specified by the <b>IdleStateCount</b> member. Each array element specifies the attributes of an Fx power state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on.
-
-
-### -field ProviderCount
-
-A value that specifies the number of components this component depends on. For more information, see <i>Component dependencies</i> under Remarks.
-
-
-### -field Providers
-
-A pointer to an array of component indexes this component depends on. For more information, see <i>Component dependencies</i> under Remarks.
-
-
-## -remarks
-When a device driver registers a device with PoFx, the driver supplies a <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a> structure that holds the registration information. This structure contains an array of <b>PO_FX_COMPONENT</b> structures. The elements in this array describe the power attributes of the individual components in the device. PoFx uses the information in this array to manage the power settings of these components.
+    ## Remarks
+        When a device driver registers a device with PoFx, the driver supplies a <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a> structure that holds the registration information. This structure contains an array of <b>PO_FX_COMPONENT</b> structures. The elements in this array describe the power attributes of the individual components in the device. PoFx uses the information in this array to manage the power settings of these components.
 
 The <b>Id</b> member contains a component ID that PoFx can use to uniquely identify a component. Do not confuse the component ID with the component index, which a routine such as <a href="..\wdm\nf-wdm-pofxactivatecomponent.md">PoFxActivateComponent</a> uses to identify a component in a registered device. A component index is an index into the <b>Components</b> array in the <b>PO_FX_DEVICE</b> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes are integer values in the range 0 to N–1. In contrast, a component ID is a GUID value.
 
@@ -119,10 +93,17 @@ During the component activation, PoFx asynchronously activates all providers fir
 
 When the component transitions to the idle state, PoFx first makes the dependent components idle. After the driver completes the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a> and the platform extension plug-in (PEP) is notified that the component is idle, PoFx recursively traverses the dependency graph in breadth-first traversal and asynchronously idles each provider.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450935">Component-Level Power Management</a>
 </dt>
@@ -138,4 +119,3 @@ When the component transitions to the idle state, PoFx first makes the dependent
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PO_FX_COMPONENT_V2 structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

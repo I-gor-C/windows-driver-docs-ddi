@@ -1,51 +1,44 @@
 ---
-UID: NE:wditypes._WDI_POWER_MODE_REASON_CODE
-title: _WDI_POWER_MODE_REASON_CODE
-author: windows-driver-content
-description: The WDI_POWER_MODE_REASON_CODE enumeration defines the reasons for entering the Power Save state.
-old-location: netvista\wdi_power_mode_reason_code.htm
-old-project: netvista
-ms.assetid: F9FAA622-A844-4D9F-A0E6-D919C1FAD3AB
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDI_POWER_MODE_REASON_CODE, WDI_POWER_MODE_REASON_CODE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wditypes.hpp
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WDI_POWER_MODE_REASON_CODE
-req.alt-loc: wditypes.hpp
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: WDI_POWER_MODE_REASON_CODE
-req.product: Windows 10 or later.
+UID : NE:wditypes._WDI_POWER_MODE_REASON_CODE
+title : _WDI_POWER_MODE_REASON_CODE
+author : windows-driver-content
+description : The WDI_POWER_MODE_REASON_CODE enumeration defines the reasons for entering the Power Save state.
+old-location : netvista\wdi_power_mode_reason_code.htm
+old-project : netvista
+ms.assetid : F9FAA622-A844-4D9F-A0E6-D919C1FAD3AB
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDI_POWER_MODE_REASON_CODE, WDI_POWER_MODE_REASON_CODE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wditypes.hpp
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WDI_POWER_MODE_REASON_CODE
+req.alt-loc : wditypes.hpp
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : WDI_POWER_MODE_REASON_CODE
+req.product : Windows 10 or later.
 ---
 
-# _WDI_POWER_MODE_REASON_CODE enumeration
-
-
-
-## -description
+# _WDI_POWER_MODE_REASON_CODE Enumeration
 The WDI_POWER_MODE_REASON_CODE enumeration defines the reasons for entering the Power Save state.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDI_POWER_MODE_REASON_CODE { 
   WDI_POWER_MODE_REASON_CODE_NO_CHANGE             = 0,
@@ -57,37 +50,41 @@ typedef enum _WDI_POWER_MODE_REASON_CODE {
 } WDI_POWER_MODE_REASON_CODE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field WDI_POWER_MODE_REASON_CODE_NO_CHANGE
+<tr>
+<td>WDI_POWER_MODE_REASON_CODE_COMPLIANT_AP</td>
+<td>AP is compliant.</td>
+</tr>
 
-Device is initially in this state and has not changed since.
+<tr>
+<td>WDI_POWER_MODE_REASON_CODE_COMPLIANT_P2P_DEVICE</td>
+<td>All connected WFD device can do PSM.</td>
+</tr>
 
+<tr>
+<td>WDI_POWER_MODE_REASON_CODE_LEGACY_P2P_DEVICE</td>
+<td>WFD device is legacy.</td>
+</tr>
 
-### -field WDI_POWER_MODE_REASON_CODE_NONCOMPLIANT_AP
+<tr>
+<td>WDI_POWER_MODE_REASON_CODE_NO_CHANGE</td>
+<td>Device is initially in this state and has not changed since.</td>
+</tr>
 
-AP is not compliant. As to be in CAM.
-
-
-### -field WDI_POWER_MODE_REASON_CODE_LEGACY_P2P_DEVICE
-
-WFD device is legacy.
-
-
-### -field WDI_POWER_MODE_REASON_CODE_COMPLIANT_AP
-
-AP is compliant.
-
-
-### -field WDI_POWER_MODE_REASON_CODE_COMPLIANT_P2P_DEVICE
-
-All connected WFD device can do PSM.
-
-
-### -field WDI_POWER_MODE_REASON_CODE_OTHERS
-
-Other reason.
+<tr>
+<td>WDI_POWER_MODE_REASON_CODE_OTHERS</td>
+<td>Other reason.</td>
+</tr>
+</table>
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wditypes.hpp |

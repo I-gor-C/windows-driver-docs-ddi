@@ -1,93 +1,85 @@
 ---
-UID: NC:netdma.DMA_CHANNEL_ALLOCATE_HANDLER
-title: DMA_CHANNEL_ALLOCATE_HANDLER
-author: windows-driver-content
-description: The ProviderAllocateDmaChannel function allocates a DMA channel.
-old-location: netvista\providerallocatedmachannel.htm
-old-project: netvista
-ms.assetid: 42bc0e08-3d85-424f-aaa4-4df788d3706a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: netdma.h
-req.include-header: Netdma.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProviderAllocateDmaChannel
-req.alt-loc: netdma.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
+UID : NC:netdma.DMA_CHANNEL_ALLOCATE_HANDLER
+title : DMA_CHANNEL_ALLOCATE_HANDLER
+author : windows-driver-content
+description : The ProviderAllocateDmaChannel function allocates a DMA channel.
+old-location : netvista\providerallocatedmachannel.htm
+old-project : netvista
+ms.assetid : 42bc0e08-3d85-424f-aaa4-4df788d3706a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _MIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : netdma.h
+req.include-header : Netdma.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProviderAllocateDmaChannel
+req.alt-loc : netdma.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
-# DMA_CHANNEL_ALLOCATE_HANDLER callback
+
+# DMA_CHANNEL_ALLOCATE_HANDLER callback function
 
 
+## Syntax
 
-## -description
+```
+DMA_CHANNEL_ALLOCATE_HANDLER DmaChannelAllocateHandler;
 
-## -prototype
-
-````
-DMA_CHANNEL_ALLOCATE_HANDLER ProviderAllocateDmaChannel;
-
-NTSTATUS ProviderAllocateDmaChannel(
-  _In_  PVOID                       ProviderContext,
-  _In_  PNET_DMA_CHANNEL_PARAMETERS ChannelParameters,
-  _In_  PVOID                       NetDmaChannelHandle,
-  _Out_ PVOID                       *pProviderChannelContext
+NTSTATUS DmaChannelAllocateHandler(
+  PVOID ProviderContext,
+  PNET_DMA_CHANNEL_PARAMETERS ChannelParameters,
+  PVOID NetDmaChannelHandle,
+  PVOID *pProviderChannelContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ProviderContext [in]
+`ProviderContext`
 
 A pointer that identifies a DMA provider's context area. The DMA provider driver passes this
      handle to the NetDMA interface in a call to the 
      <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
      NetDmaRegisterProvider</a> function.
 
-
-### -param ChannelParameters [in]
+`ChannelParameters`
 
 A pointer to a 
      <a href="..\netdma\ns-netdma-_net_dma_channel_parameters.md">
      NET_DMA_CHANNEL_PARAMETERS</a> structure that defines the configuration parameters for the DMA
      channel.
 
-
-### -param NetDmaChannelHandle [in]
+`NetDmaChannelHandle`
 
 A handle that identifies the DMA channel. Provider drivers pass this handle to 
      <b>NetDma<i>Xxx</i></b> functions to identify the DMA channel.
 
-
-### -param pProviderChannelContext [out]
-
-A pointer to a value that is a pointer to a DMA provider's context area for the DMA channel. The
-     DMA provider driver allocates this context area before returning from 
-     <i>ProviderAllocateDmaChannel</i>. NetDMA passes the context area pointer to 
-     <i>ProviderXxx</i> functions that require a provider channel context.
+`*pProviderChannelContext`
 
 
-## -returns
+
+
+## Return Value
+
 <i>ProviderAllocateDmaChannel</i> returns one of the following status values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -99,10 +91,8 @@ A pointer to a value that is a pointer to a DMA provider's context area for the 
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
 </dl>The operation failed for unspecified reasons.
 
- 
+## Remarks
 
-
-## -remarks
 The NetDMA interface calls a DMA provider driver's 
     <i>ProviderAllocateDmaChannel</i> function to allocate a DMA channel. The NetDMA interface calls 
     <i>ProviderAllocateDmaChannel</i> before it uses a DMA channel.
@@ -115,7 +105,7 @@ The DMA provider driver attempts to allocate a DMA channel with an interrupt CPU
     <i>ChannelParameters</i> parameter. If MSI-X is not supported or MSI-X is supported but a DMA channel with
     a matching interrupt CPU affinity is not available, the DMA provider driver allocates any available DMA
     channel and calls the 
-    <a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a> routine to
+    <a href="..\ntddk\nf-ntddk-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a> routine to
     set the target CPU of the interrupt DPC to match one of the specified affinity mask bits.
 
 The DMA provider always driver returns the CPU number that it associated with the interrupt DPC for
@@ -140,11 +130,23 @@ The NetDMA interface calls the
 NetDMA calls 
     <i>ProviderAllocateDmaChannel</i> at IRQL &lt;= DISPATCH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | netdma.h (include Netdma.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
-<a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
+<a href="..\ntddk\nf-ntddk-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
 </dt>
 <dt>
 <a href="..\netdma\ns-netdma-_net_dma_channel_parameters.md">NET_DMA_CHANNEL_PARAMETERS</a>
@@ -161,4 +163,3 @@ NetDMA calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_CHANNEL_ALLOCATE_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

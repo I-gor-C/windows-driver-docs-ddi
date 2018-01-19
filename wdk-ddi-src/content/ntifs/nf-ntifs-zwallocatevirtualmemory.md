@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwAllocateVirtualMemory
-title: ZwAllocateVirtualMemory function
-author: windows-driver-content
-description: The ZwAllocateVirtualMemory routine reserves, commits, or both, a region of pages within the user-mode virtual address space of a specified process.
-old-location: kernel\zwallocatevirtualmemory.htm
-old-project: kernel
-ms.assetid: bb82c90d-9bd3-4a23-b171-06a3208e424b
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwAllocateVirtualMemory
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwAllocateVirtualMemory,NtAllocateVirtualMemory
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwAllocateVirtualMemory
+title : ZwAllocateVirtualMemory function
+author : windows-driver-content
+description : The ZwAllocateVirtualMemory routine reserves, commits, or both, a region of pages within the user-mode virtual address space of a specified process.
+old-location : kernel\zwallocatevirtualmemory.htm
+old-project : kernel
+ms.assetid : bb82c90d-9bd3-4a23-b171-06a3208e424b
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwAllocateVirtualMemory
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwAllocateVirtualMemory,NtAllocateVirtualMemory
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwAllocateVirtualMemory function
-
-
-
-## -description
 The <b>ZwAllocateVirtualMemory</b> routine reserves, commits, or both, a region of pages within the user-mode virtual address space of a specified process.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwAllocateVirtualMemory(
@@ -56,30 +51,25 @@ NTSTATUS ZwAllocateVirtualMemory(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param ProcessHandle [in]
+`ProcessHandle`
 
 A handle for the process for which the mapping should be done. Use the <b>NtCurrentProcess</b> macro, defined in Ntddk.h, to specify the current process.
 
-
-### -param BaseAddress [in, out]
+`BaseAddress`
 
 A pointer to a variable that will receive the base address of the allocated region of pages. If the initial value of this parameter is non-<b>NULL</b>, the region is allocated starting at the specified virtual address rounded down to the next host page size address boundary. If the initial value of this parameter is <b>NULL</b>, the operating system will determine where to allocate the region.
 
-
-### -param ZeroBits [in]
+`ZeroBits`
 
 The number of high-order address bits that must be zero in the base address of the section view. This value must be less than 21 and is used only when the operating system determines where to allocate the region, as when <i>BaseAddress</i> is <b>NULL</b>.
 
+`RegionSize`
 
-### -param RegionSize [in, out]
+A pointer to a variable that will receive the actual size, in bytes, of the allocated region of pages. The initial value of this parameter specifies the size, in bytes, of the region and is rounded up to the next host page size boundary. <i>*RegionSize</i> cannot be zero on input.
 
-A pointer to a variable that will receive the actual size, in bytes, of the allocated region of pages. The initial value of this parameter specifies the size, in bytes, of the region and is rounded up to the next host page size boundary. <i>*RegionSize</i> cannot be zero on input. 
-
-
-### -param AllocationType [in]
+`AllocationType`
 
 A bitmask containing flags that specify the type of allocation to be performed. The following table describes these flags.
 
@@ -147,10 +137,8 @@ The specified region should be created at the highest virtual address possible b
 </td>
 </tr>
 </table>
- 
 
-
-### -param Protect [in]
+`Protect`
 
 A bitmask containing page protection flags that specify the protection desired for the committed region of pages. The following table describes these flags.
 
@@ -262,10 +250,10 @@ This flag is a page protection modifier, valid only when used with one of the pa
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>ZwAllocateVirtualMemory</b> returns either STATUS_SUCCESS or an error status code. Possible error status codes include the following:
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -280,7 +268,8 @@ This flag is a page protection modifier, valid only when used with one of the pa
 <dt><b>STATUS_PROCESS_IS_TERMINATING</b></dt>
 </dl>
 
-## -remarks
+## Remarks
+
 <b>ZwAllocateVirtualMemory</b> can perform the following operations:
 
 Commit a region of pages reserved by a previous call to <b>ZwAllocateVirtualMemory</b>.
@@ -311,8 +300,20 @@ For more information about memory management, see <a href="https://msdn.microsof
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
@@ -326,4 +327,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwAllocateVirtualMemory routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

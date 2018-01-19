@@ -1,74 +1,68 @@
 ---
-UID: NC:d3dkmddi.DXGKDDI_ACQUIRESWIZZLINGRANGE
-title: DXGKDDI_ACQUIRESWIZZLINGRANGE function
-author: windows-driver-content
-description: The DxgkDdiAcquireSwizzlingRange function makes an allocation accessible through the central processing unit (CPU) aperture for the given segment.
-old-location: display\dxgkddiacquireswizzlingrange.htm
-old-project: display
-ms.assetid: f861e055-70db-4e0a-9c62-87e2d41f92ae
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_ACQUIRESWIZZLINGRANGE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: d3dkmddi.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiAcquireSwizzlingRange
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKDDI_ACQUIRESWIZZLINGRANGE
+title : DXGKDDI_ACQUIRESWIZZLINGRANGE
+author : windows-driver-content
+description : The DxgkDdiAcquireSwizzlingRange function makes an allocation accessible through the central processing unit (CPU) aperture for the given segment.
+old-location : display\dxgkddiacquireswizzlingrange.htm
+old-project : display
+ms.assetid : f861e055-70db-4e0a-9c62-87e2d41f92ae
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiAcquireSwizzlingRange
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
+
 # DXGKDDI_ACQUIRESWIZZLINGRANGE function
-
-
-
-## -description
 The <i>DxgkDdiAcquireSwizzlingRange</i> function makes an allocation accessible through the central processing unit (CPU) aperture for the given segment.
 
+## Syntax
 
+```
+DXGKDDI_ACQUIRESWIZZLINGRANGE DxgkddiAcquireswizzlingrange;
 
-## -syntax
-
-````
-DXGKDDI_ACQUIRESWIZZLINGRANGE DxgkDdiAcquireSwizzlingRange;
-
-NTSTATUS APIENTRY DxgkDdiAcquireSwizzlingRange(
-  _In_    const HANDLE                        hAdapter,
-  _Inout_       DXGKARG_ACQUIRESWIZZLINGRANGE *pAcquireSwizzlingRange
+NTSTATUS DxgkddiAcquireswizzlingrange(
+  IN_CONST_HANDLE hAdapter,
+  INOUT_PDXGKARG_ACQUIRESWIZZLINGRANGE pAcquireSwizzlingRange
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hAdapter [in]
+`hAdapter`
 
 [in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
 
-
-### -param pAcquireSwizzlingRange [in, out]
+`pAcquireSwizzlingRange`
 
 [in/out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_acquireswizzlingrange.md">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure that contains information for making an allocation accessible through the CPU aperture.
 
 
-## -returns
+## Return Value
+
 <i>DxgkDdiAcquireSwizzlingRange</i> returns one of the following values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -80,10 +74,8 @@ NTSTATUS APIENTRY DxgkDdiAcquireSwizzlingRange(
 <dt><b>STATUS_GRAPHICS_UNSWIZZLING_APERTURE_UNAVAILABLE</b></dt>
 </dl><i>DxgkDdiAcquireSwizzlingRange</i> could not program the swizzling range for the allocation because another swizzling range is currently using the graphics processing unit (GPU) resources that are required. The video memory manager attempts to release a range that is currently in use and then attempts to set up the swizzling range again.
 
- 
+## Remarks
 
-
-## -remarks
 The <i>DxgkDdiAcquireSwizzlingRange</i> function is called after the user-mode display driver requests a virtual address that references the bits of an allocation (that is, after the user-mode display driver calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function with the <b>AcquireAperture</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a> structure and while the allocation is currently located in a CPU-accessible memory segment). If the <b>AcquireAperture</b> bit-field flag is not set in the call to <b>pfnLockCb</b>, <i>DxgkDdiAcquireSwizzlingRange</i> is not called, and the allocation must be in a format that the user-mode display driver or an application can process. 
 
 When <i>DxgkDdiAcquireSwizzlingRange</i> is called, the display miniport driver must make the specified allocation (that is, the <b>hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_acquireswizzlingrange.md">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure that the <i>pAcquireSwizzlingRange</i> parameter points to) accessible through the CPU aperture for the specified segment (that is, the <b>SegmentId</b> member of DXGKARG_ACQUIRESWIZZLINGRANGE). The allocation must appear exactly as it appears in computer memory after an unswizzling eviction. 
@@ -104,8 +96,20 @@ A call to <i>DxgkDdiAcquireSwizzlingRange</i> to acquire a swizzling range might
 
 <i>DxgkDdiAcquireSwizzlingRange</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a>
@@ -137,4 +141,3 @@ A call to <i>DxgkDdiAcquireSwizzlingRange</i> to acquire a swizzling range might
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_ACQUIRESWIZZLINGRANGE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

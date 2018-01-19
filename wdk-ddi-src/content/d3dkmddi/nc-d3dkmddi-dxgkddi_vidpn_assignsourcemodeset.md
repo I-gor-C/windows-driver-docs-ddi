@@ -1,80 +1,73 @@
 ---
-UID: NC:d3dkmddi.DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
-title: DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
-author: windows-driver-content
-description: The pfnAssignSourceModeSet function assigns a source mode set to a particular source in a specified VidPN.
-old-location: display\dxgk_vidpn_interface_pfnassignsourcemodeset.htm
-old-project: display
-ms.assetid: e1a2ca9e-9035-4656-bcb8-4ad956a8501d
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_UPDATEOVERLAY
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: pfnAssignSourceModeSet
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
+title : DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
+author : windows-driver-content
+description : The pfnAssignSourceModeSet function assigns a source mode set to a particular source in a specified VidPN.
+old-location : display\dxgk_vidpn_interface_pfnassignsourcemodeset.htm
+old-project : display
+ms.assetid : e1a2ca9e-9035-4656-bcb8-4ad956a8501d
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : pfnAssignSourceModeSet
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
-# DXGKDDI_VIDPN_ASSIGNSOURCEMODESET callback
 
-
-
-## -description
+# DXGKDDI_VIDPN_ASSIGNSOURCEMODESET callback function
 The <b>pfnAssignSourceModeSet</b> function assigns a source mode set to a particular source in a specified VidPN.
 
+## Syntax
 
+```
+DXGKDDI_VIDPN_ASSIGNSOURCEMODESET DxgkddiVidpnAssignsourcemodeset;
 
-## -prototype
-
-````
-DXGKDDI_VIDPN_ASSIGNSOURCEMODESET pfnAssignSourceModeSet;
-
-NTSTATUS APIENTRY pfnAssignSourceModeSet(
-  _In_       D3DKMDT_HVIDPN                 hVidPn,
-  _In_ const D3DDDI_VIDEO_PRESENT_SOURCE_ID VidPnSourceId,
-  _In_ const D3DKMDT_HVIDPNSOURCEMODESET    hVidPnSourceModeSet
+NTSTATUS DxgkddiVidpnAssignsourcemodeset(
+  IN_D3DKMDT_HVIDPN hVidPn,
+  IN_CONST_D3DDDI_VIDEO_PRESENT_SOURCE_ID VidPnSourceId,
+  IN_CONST_D3DKMDT_HVIDPNSOURCEMODESET hVidPnSourceModeSet
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hVidPn [in]
+`hVidPn`
 
 [in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn.md">DxgkDdiRecommendFunctionalVidPn</a>.
 
-
-### -param VidPnSourceId [in]
+`VidPnSourceId`
 
 [in] An integer that identifies one of the video present sources associated with the VidPN object.
 
-
-### -param hVidPnSourceModeSet [in]
+`hVidPnSourceModeSet`
 
 [in] A handle to the source mode set object that is to be assigned to the source identified by <i>VidPnSourceId</i>. The display miniport driver previously obtained this handle by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_createnewsourcemodeset.md">pfnCreateNewSourceModeSet</a>.
 
 
-## -returns
+## Return Value
+
 The <b>pfnAssignSourceModeSet</b> function returns one of the following values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -92,10 +85,8 @@ The <b>pfnAssignSourceModeSet</b> function returns one of the following values:
 <dt><b>STATUS_GRAPHICS_PINNED_MODE_MUST_REMAIN_IN_SET</b></dt>
 </dl>The source mode set you are attempting to assign does not contain the mode that was already pinned on the source.
 
- 
+## Remarks
 
-
-## -remarks
 VidPN source identifiers are assigned by the operating system. <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>, implemented by the display miniport driver, returns the number N of video present sources supported by the display adapter. Then the operating system assigns identifiers 0, 1, 2, ... N - 1.
 
 If you obtain a handle by calling <b>pfnCreateNewSourceModeSet</b> and then pass that handle to <b>pfnAssignSourceModeSet</b>, you do not need to release  the handle by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_releasesourcemodeset.md">pfnReleaseSourceModeSet</a>.
@@ -112,10 +103,22 @@ The source mode set was not created for the source that is identified by <i>VidP
 
 The D3DDDI_VIDEO_PRESENT_SOURCE_ID data type is defined in <i>D3dukmdt.h</i>.
 
-The D3DKMDT_HVIDPN and D3DKMDT_HVIDPNSOURCEMODESET data types are defined in <i>D3dkmdt.h</i>. 
+The D3DKMDT_HVIDPN and D3DKMDT_HVIDPNSOURCEMODESET data types are defined in <i>D3dkmdt.h</i>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
@@ -129,4 +132,3 @@ The D3DKMDT_HVIDPN and D3DKMDT_HVIDPNSOURCEMODESET data types are defined in <i>
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_VIDPN_ASSIGNSOURCEMODESET callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._QUERY_FILE_LAYOUT_OUTPUT
-title: _QUERY_FILE_LAYOUT_OUTPUT
-author: windows-driver-content
-description: The QUERY_FILE_LAYOUT_OUTPUT structure serves as a header for the file layout entries that are returned from a FSCTL_QUERY_FILE_LAYOUT request.
-old-location: ifsk\query_file_layout_output.htm
-old-project: ifsk
-ms.assetid: 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting in Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: QUERY_FILE_LAYOUT_OUTPUT
-req.alt-loc: Ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
+UID : NS:ntifs._QUERY_FILE_LAYOUT_OUTPUT
+title : _QUERY_FILE_LAYOUT_OUTPUT
+author : windows-driver-content
+description : The QUERY_FILE_LAYOUT_OUTPUT structure serves as a header for the file layout entries that are returned from a FSCTL_QUERY_FILE_LAYOUT request.
+old-location : ifsk\query_file_layout_output.htm
+old-project : ifsk
+ms.assetid : 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting in Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : QUERY_FILE_LAYOUT_OUTPUT
+req.alt-loc : Ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT"
 ---
 
 # _QUERY_FILE_LAYOUT_OUTPUT structure
-
-
-
-## -description
 The <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure serves as a header for the file layout entries that are returned from a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
   ULONG FileEntryCount;
@@ -54,22 +47,20 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 } QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `FileEntryCount`
 
-### -field FileEntryCount
+            The number of file entries that follow this structure.
+        
+            `FirstFileOffset`
 
-The number of file entries that follow this structure.
+            The offset in the user buffer for the first file entry.
+        
+            `Flags`
 
-
-### -field FirstFileOffset
-
-The offset in the user buffer for the first file entry.
-
-
-### -field Flags
-
-Indicates the format of layout entries returned. Can be 0 or the following:
+            Indicates the format of layout entries returned. Can be 0 or the following:
 
 <table>
 <tr>
@@ -77,26 +68,13 @@ Indicates the format of layout entries returned. Can be 0 or the following:
 <th>Meaning</th>
 </tr>
 <tr>
+        
+            `Reserved`
 
-### -field QUERY_FILE_LAYOUT_SINGLE_INSTANCED
+            Reserved.
 
-</td>
-<td width="60%">
-Single instances of stream and file layout entries are returned. When set, only one <b>STREAM_LAYOUT_ENTRY</b> structure is returned per stream and only one <b>FILE_LAYOUT_ENTRY</b> structure is returned per file. This flag is always set for NTFS.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -field Reserved
-
-Reserved.
-
-
-## -remarks
-The file layout entries that follow the <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure are determined by the flags set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a> provided as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request. A number of <b>FILE_LAYOUT_ENTRY</b> structures follow <b>QUERY_FILE_LAYOUT_OUTPUT</b>. Depending on the entries selected to return from a query, offsets in <b>FILE_LAYOUT_ENTRY</b> indicate where the additional informational entries are located in the user buffer. 
+    ## Remarks
+        The file layout entries that follow the <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure are determined by the flags set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a> provided as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request. A number of <b>FILE_LAYOUT_ENTRY</b> structures follow <b>QUERY_FILE_LAYOUT_OUTPUT</b>. Depending on the entries selected to return from a query, offsets in <b>FILE_LAYOUT_ENTRY</b> indicate where the additional informational entries are located in the user buffer. 
 
 The following entry structures are returned when their corresponding inclusion flag is set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a>.<table>
 <tr>
@@ -126,9 +104,17 @@ The following entry structures are returned when their corresponding inclusion f
 
 When multiple entries of the same type exist for a single <b>FILE_LAYOUT_ENTRY</b> structure, each informational entry structure has an offset member that indicates the location of the next entry. The chain of entry structures continues until the value of the offset member is 0.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
 </dt>
@@ -141,4 +127,3 @@ When multiple entries of the same type exist for a single <b>FILE_LAYOUT_ENTRY</
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_OUTPUT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

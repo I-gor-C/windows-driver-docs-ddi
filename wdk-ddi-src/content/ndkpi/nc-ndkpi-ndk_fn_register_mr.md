@@ -1,85 +1,74 @@
 ---
-UID: NC:ndkpi.NDK_FN_REGISTER_MR
-title: NDK_FN_REGISTER_MR
-author: windows-driver-content
-description: The NdkRegisterMr (NDK_FN_REGISTER_MR) function registers a virtually contiguous memory region with an NDK adapter.
-old-location: netvista\ndk_fn_register_mr.htm
-old-project: netvista
-ms.assetid: 082BBDE1-1B80-4306-96A1-DCD23910B0F7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndkpi.h
-req.include-header: Ndkpi.h
-req.target-type: Windows
-req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdkRegisterMr
-req.alt-loc: ndkpi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID : NC:ndkpi.NDK_FN_REGISTER_MR
+title : NDK_FN_REGISTER_MR
+author : windows-driver-content
+description : The NdkRegisterMr (NDK_FN_REGISTER_MR) function registers a virtually contiguous memory region with an NDK adapter.
+old-location : netvista\ndk_fn_register_mr.htm
+old-project : netvista
+ms.assetid : 082BBDE1-1B80-4306-96A1-DCD23910B0F7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndkpi.h
+req.include-header : Ndkpi.h
+req.target-type : Windows
+req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdkRegisterMr
+req.alt-loc : ndkpi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
-# NDK_FN_REGISTER_MR callback
 
-
-
-## -description
+# NDK_FN_REGISTER_MR callback function
 The <i>NdkRegisterMr</i> (<i>NDK_FN_REGISTER_MR</i>) function registers a virtually contiguous memory region with an NDK adapter.
 
+## Syntax
 
+```
+NDK_FN_REGISTER_MR NdkFnRegisterMr;
 
-## -prototype
-
-````
-NDK_FN_REGISTER_MR NdkRegisterMr;
-
-NTSTATUS NdkRegisterMr(
-  _In_     NDK_MR                    *pNdkMr,
-  _In_     MDL                       *Mdl,
-  _In_     SIZE_T                    Length,
-  _In_     ULONG                     Flags,
-  _In_     NDK_FN_REQUEST_COMPLETION RequestCompletion,
-  _In_opt_ PVOID                     RequestContext
+NTSTATUS NdkFnRegisterMr(
+  NDK_MR *pNdkMr,
+  MDL *Mdl,
+  SIZE_T Length,
+  ULONG Flags,
+  NDK_FN_REQUEST_COMPLETION RequestCompletion,
+  PVOID RequestContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param pNdkMr [in]
-
-A pointer to an NDK memory region (MR) object
-(<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>).
-
-
-### -param Mdl [in]
-
-An MDL or chain of MDLs that represent a virtually contiguous memory region from the starting virtual address up to the number of bytes specified in the <i>Length</i> parameter.
+`*pNdkMr`
 
 
 
-### -param Length [in]
+`*Mdl`
+
+
+
+`Length`
 
 The number of bytes to register starting from the first MDL's virtual address. The first MDL's virtual address can be obtained by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a> macro. The length must not exceed the total number of bytes represented by the MDL chain.
 
-
-### -param Flags [in]
+`Flags`
 
 A bitmask of flags that specify the access permissions for the registered memory region. The following flags can be set:
 
@@ -90,59 +79,17 @@ A bitmask of flags that specify the access permissions for the registered memory
 </tr>
 <tr>
 
-### -param NDK_MR_FLAG_ALLOW_LOCAL_READ
-### -param 0x00000000
-
-</td>
-<td width="60%"></td>
-</tr>
-<tr>
-
-### -param NDK_MR_FLAG_ALLOW_LOCAL_WRITE
-### -param 0x00000001
-
-</td>
-<td width="60%"></td>
-</tr>
-<tr>
-
-### -param NDK_MR_FLAG_ALLOW_REMOTE_READ
-### -param 0x00000002
-
-</td>
-<td width="60%"></td>
-</tr>
-<tr>
-
-### -param NDK_MR_FLAG_ALLOW_REMOTE_WRITE
-### -param 0x00000005
-
-</td>
-<td width="60%"></td>
-</tr>
-<tr>
-
-### -param NDK_MR_FLAG_RDMA_READ_SINK
-### -param 0x00000008
-
-</td>
-<td width="60%"></td>
-</tr>
-</table>
- 
-
-
-### -param RequestCompletion [in]
+`RequestCompletion`
 
 A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_request_completion.md">NDK_FN_REQUEST_COMPLETION</a>).
 
-
-### -param RequestContext [in, optional]
+`RequestContext`
 
 A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
 
 
-## -returns
+## Return Value
+
 The 
      <i>NdkRegisterMr</i> function returns one of the following NTSTATUS codes.
 <dl>
@@ -162,12 +109,10 @@ The
 </dl>The request failed due to insufficient resources. 
 <dl>
 <dt><b>Other status codes</b></dt>
-</dl>An error occurred. 
+</dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 On an <a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a> object that was created with  the <i>FastRegister</i> parameter set to FALSE, <i>NdkRegisterMr</i> is used to register a virtually contiguous memory region with the adapter. 
 
 The NDK consumer must pass an MDL or chain of MDLs that represent virtually contiguous memory region that is pinned in physical memory. The base virtual address for the memory region being registered is the virtual address indicated by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a> macro. If the MDL chain does not represent a virtually contiguous memory region from the starting virtual address up to the specified length in bytes, the NDK provider must fail the request.
@@ -184,8 +129,20 @@ If an NDK consumer passes the <b>NDK_MR_FLAG_RDMA_READ_SINK</b> flag on an adapt
 
 To deregister the memory region, use the <i>NdkDeregisterMr</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_deregister_mr.md">NDK_FN_DEREGISTER_MR</a>) function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndkpi.h (include Ndkpi.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
@@ -211,4 +168,3 @@ To deregister the memory region, use the <i>NdkDeregisterMr</i> (<a href="..\ndk
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_REGISTER_MR callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

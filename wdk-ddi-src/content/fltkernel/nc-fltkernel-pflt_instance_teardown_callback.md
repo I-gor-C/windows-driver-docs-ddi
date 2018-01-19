@@ -1,66 +1,62 @@
 ---
-UID: NC:fltkernel.PFLT_INSTANCE_TEARDOWN_CALLBACK
-title: PFLT_INSTANCE_TEARDOWN_CALLBACK
-author: windows-driver-content
-description: A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's InstanceTeardownStartCallback and InstanceTeardownCompleteCallback routines.
-old-location: ifsk\pflt_instance_teardown_callback.htm
-old-project: ifsk
-ms.assetid: d2f87c47-7f26-4c22-a5b8-2be8f309d1ba
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxpTrackReference
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PFLT_INSTANCE_TEARDOWN_CALLBACK
-req.alt-loc: fltkernel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NC:fltkernel.PFLT_INSTANCE_TEARDOWN_CALLBACK
+title : PFLT_INSTANCE_TEARDOWN_CALLBACK
+author : windows-driver-content
+description : A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's InstanceTeardownStartCallback and InstanceTeardownCompleteCallback routines.
+old-location : ifsk\pflt_instance_teardown_callback.htm
+old-project : ifsk
+ms.assetid : d2f87c47-7f26-4c22-a5b8-2be8f309d1ba
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PFLT_INSTANCE_TEARDOWN_CALLBACK
+req.alt-loc : fltkernel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : EXpsFontRestriction
 ---
 
-# PFLT_INSTANCE_TEARDOWN_CALLBACK callback
 
+# PFLT_INSTANCE_TEARDOWN_CALLBACK callback function
+A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines.
 
+## Syntax
 
-## -description
-A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines. 
+```
+PFLT_INSTANCE_TEARDOWN_CALLBACK PfltInstanceTeardownCallback;
 
+void PfltInstanceTeardownCallback(
+  PCFLT_RELATED_OBJECTS FltObjects,
+  FLT_INSTANCE_TEARDOWN_FLAGS Reason
+)
+{...}
+```
 
+## Parameters
 
-## -prototype
+`FltObjects`
 
-````
-typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
-  _In_ PCFLT_RELATED_OBJECTS       FltObjects,
-  _In_ FLT_INSTANCE_TEARDOWN_FLAGS Reason
-);
-````
+Pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O operation.
 
-
-## -parameters
-
-### -param FltObjects [in]
-
-Pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O operation. 
-
-
-### -param Reason [in]
+`Reason`
 
 Flag that indicates why the minifilter driver instance is being torn down. One of the following: 
 
@@ -120,14 +116,14 @@ If set, the volume is being dismounted. (Or the volume has already been dismount
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
-None 
+## Return Value
 
+None
 
-## -remarks
+## Remarks
+
 When a minifilter driver registers itself by calling <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine, it can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines. 
 
 To register these callback routines, the minifilter driver stores the addresses of the two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK in the <b>InstanceTeardownStartCallback</b> and <b>InstanceTeardownCompleteCallback</b> members of the <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <b>FltRegisterFilter</b>. 
@@ -172,10 +168,22 @@ If the minifilter driver instance is being torn down because the minifilter driv
 
 Note that referencing the instance (by calling <a href="..\fltkernel\nf-fltkernel-fltobjectreference.md">FltObjectReference</a>) does not prevent the <i>InstanceTeardownCompleteCallback</i> routine from being called. 
 
-The filter manager calls the <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines at IRQL PASSIVE_LEVEL. 
+The filter manager calls the <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines at IRQL PASSIVE_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a>
@@ -216,4 +224,3 @@ The filter manager calls the <i>InstanceTeardownStartCallback</i> and <i>Instanc
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_INSTANCE_TEARDOWN_CALLBACK function pointer%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

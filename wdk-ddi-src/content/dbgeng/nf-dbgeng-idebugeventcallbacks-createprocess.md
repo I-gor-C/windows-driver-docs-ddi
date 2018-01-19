@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugEventCallbacks.CreateProcess
-title: IDebugEventCallbacks::CreateProcess method
-author: windows-driver-content
-description: The CreateProcess callback method is called by the engine when a create-processdebugging event occurs in the target.
-old-location: debugger\idebugeventcallbacks_createprocess.htm
-old-project: debugger
-ms.assetid: a826782a-67ca-4b90-b7b5-caddeae6d2dc
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugEventCallbacks, IDebugEventCallbacks::CreateProcess, CreateProcess
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugEventCallbacks.CreateProcess
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugEventCallbacks.CreateProcess
+title : IDebugEventCallbacks::CreateProcess method
+author : windows-driver-content
+description : The CreateProcess callback method is called by the engine when a create-processdebugging event occurs in the target.
+old-location : debugger\idebugeventcallbacks_createprocess.htm
+old-project : debugger
+ms.assetid : a826782a-67ca-4b90-b7b5-caddeae6d2dc
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks::CreateProcess, CreateProcess
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugEventCallbacks.CreateProcess
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugEventCallbacks::CreateProcess method
 
-
-
-## -description
+# CreateProcess method
 The <b>CreateProcess</b> callback method is called by the engine when a create-processdebugging event occurs in the target.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT CreateProcess(
@@ -61,69 +56,71 @@ HRESULT CreateProcess(
 );
 ````
 
+## Parameters
 
-## -parameters
+`ImageFileHandle`
 
-### -param ImageFileHandle [in]
+Specifies the handle to the process's image file.    If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>.
 
-Specifies the handle to the process's image file.    If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>.  
+`Handle`
 
+Specifies the handle to the process.  This parameter corresponds to the <b>hProcess</b> field in the CREATE_PROCESS_DEBUG_INFO structure.  If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>.
 
-### -param Handle [in]
-
-Specifies the handle to the process.  This parameter corresponds to the <b>hProcess</b> field in the CREATE_PROCESS_DEBUG_INFO structure.  If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>.  
-
-
-### -param BaseOffset [in]
+`BaseOffset`
 
 Specifies the base address of the process's executable image in the target's memory address space.  If this information is not available, <i>BaseOffset</i> will be <b>NULL</b>.
 
-
-### -param ModuleSize [in]
+`ModuleSize`
 
 Specifies the process's executable image size in bytes.  If this information is not available, <i>ModuleSize</i> will be zero.
 
-
-### -param ModuleName [in, optional]
+`ModuleName`
 
 Specifies the simplified module name that is used by the debugger engine.  In most cases, this matches the image file name excluding the extension.  If this information is not available, <i>ModuleName</i> will be <b>NULL</b>.
 
-
-### -param ImageName [in, optional]
+`ImageName`
 
 Specifies the process's executable-image file name, which can include the path.   If this information is not available, <i>ImageName</i> will be <b>NULL</b>.
 
-
-### -param CheckSum [in]
+`CheckSum`
 
 Specifies the checksum of the process's executable image.  If this information is not available, <i>CheckSum</i> will be zero.
 
-
-### -param TimeDateStamp [in]
+`TimeDateStamp`
 
 Specifies the time and date stamp of the process's executable-image file.  If this information is not available, <i>TimeDateStamp</i> will be zero.
 
+`InitialThreadHandle`
 
-### -param InitialThreadHandle [in]
+Specifies the handle to the process's initial thread.  This parameter corresponds to the <b>hThread</b> field in the CREATE_PROCESS_DEBUG_INFO structure.  If this information is not available, <i>InitialThreadHandle</i> will be <b>NULL</b>.
 
-Specifies the handle to the process's initial thread.  This parameter corresponds to the <b>hThread</b> field in the CREATE_PROCESS_DEBUG_INFO structure.  If this information is not available, <i>InitialThreadHandle</i> will be <b>NULL</b>. 
+`ThreadDataOffset`
 
+Specifies a block of data that the operating system maintains for this thread.  The actual data in the block is operating system-specific.  If this information is not available, <i>ThreadDataOffset</i> will be <b>NULL</b>.
 
-### -param ThreadDataOffset [in]
-
-Specifies a block of data that the operating system maintains for this thread.  The actual data in the block is operating system-specific.  If this information is not available, <i>ThreadDataOffset</i> will be <b>NULL</b>. 
-
-
-### -param StartOffset [in]
+`StartOffset`
 
 Specifies the starting address of the thread in the process's virtual address space.    If this information is not available, <i>StartOffset</i> will be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 This method returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> value, which indicates how the execution of the target should proceed after the engine processes this event.  For details on how the engine treats this value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.
 
+## Remarks
 
-## -remarks
 This method is only called by the engine if the DEBUG_EVENT_CREATE_PROCESS flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.  For information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

@@ -1,81 +1,75 @@
 ---
-UID: NC:wudfinterrupt.WUDF_INTERRUPT_ENABLE
-title: WUDF_INTERRUPT_ENABLE function
-author: windows-driver-content
-description: A driver's OnInterruptEnable event callback function enables a specified hardware interrupt.
-old-location: wdf\oninterruptenable.htm
-old-project: wdf
-ms.assetid: 6C091427-59FF-4101-ACD6-353C959794F6
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WUDF_INTERRUPT_ENABLE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wudfinterrupt.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 1.11
-req.alt-api: OnInterruptEnable
-req.alt-loc: Wudfinterrupt.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: Unavailable in UMDF 2.0 and later.
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
-req.product: Windows 10 or later.
+UID : NC:wudfinterrupt.WUDF_INTERRUPT_ENABLE
+title : WUDF_INTERRUPT_ENABLE
+author : windows-driver-content
+description : A driver's OnInterruptEnable event callback function enables a specified hardware interrupt.
+old-location : wdf\oninterruptenable.htm
+old-project : wdf
+ms.assetid : 6C091427-59FF-4101-ACD6-353C959794F6
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wudfinterrupt.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 1.11
+req.alt-api : OnInterruptEnable
+req.alt-loc : Wudfinterrupt.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : Unavailable in UMDF 2.0 and later.
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS"
+req.product : Windows 10 or later.
 ---
 
+
 # WUDF_INTERRUPT_ENABLE function
-
-
-
-## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 A driver's <i>OnInterruptEnable</i> event callback function enables a specified hardware interrupt.
 
+## Syntax
 
+```
+WUDF_INTERRUPT_ENABLE WudfInterruptEnable;
 
-## -syntax
-
-````
-WUDF_INTERRUPT_ENABLE OnInterruptEnable;
-
-HRESULT OnInterruptEnable(
-  _In_ IWDFInterrupt *pInterrupt,
-  _In_ IWDFDevice    *pAssociatedDevice
+HRESULT WudfInterruptEnable(
+  IWDFInterrupt * Interrupt,
+  IWDFDevice * AssociatedDevice
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`Interrupt`
 
 
-## -parameters
 
-### -param pInterrupt [in]
-
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a> interface.
+`AssociatedDevice`
 
 
-### -param pAssociatedDevice [in]
-
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a> interface that the driver used to call <a href="https://msdn.microsoft.com/library/windows/hardware/hh451208">CreateInterrupt</a>. 
 
 
-## -returns
+## Return Value
+
 The callback function must return S_OK if the operation succeeds. Otherwise, the callback should return one of the error codes that are defined in Winerror.h.
 
+## Remarks
 
-## -remarks
 To register an <i>OnInterruptEnable</i> callback function, your driver must place the callback function's address in a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a> structure before calling <a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice::CreateInterrupt</a>.
 
 
@@ -97,8 +91,20 @@ To define an <i>OnInterruptEnable</i> callback function that is named <i>MyInter
 
 Then, implement your callback function as follows:
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** | 1.11 |
+| **Header** | wudfinterrupt.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
@@ -115,4 +121,3 @@ Then, implement your callback function as follows:
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_INTERRUPT_ENABLE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

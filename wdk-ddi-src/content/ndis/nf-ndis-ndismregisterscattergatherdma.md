@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisMRegisterScatterGatherDma
-title: NdisMRegisterScatterGatherDma function
-author: windows-driver-content
-description: Bus master miniport drivers call the NdisMRegisterScatterGatherDma function from MiniportInitializeEx to initialize a scatter/gather DMA channel.
-old-location: netvista\ndismregisterscattergatherdma.htm
-old-project: netvista
-ms.assetid: 90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMRegisterScatterGatherDma
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMRegisterScatterGatherDma
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Init_RegisterSG, Irql_Gather_DMA_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMRegisterScatterGatherDma
+title : NdisMRegisterScatterGatherDma function
+author : windows-driver-content
+description : Bus master miniport drivers call the NdisMRegisterScatterGatherDma function from MiniportInitializeEx to initialize a scatter/gather DMA channel.
+old-location : netvista\ndismregisterscattergatherdma.htm
+old-project : netvista
+ms.assetid : 90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMRegisterScatterGatherDma
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMRegisterScatterGatherDma
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Init_RegisterSG, Irql_Gather_DMA_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMRegisterScatterGatherDma function
-
-
-
-## -description
 Bus master miniport drivers call the 
   <b>NdisMRegisterScatterGatherDma</b> function from 
   <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> to initialize a
   scatter/gather DMA channel.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMRegisterScatterGatherDma(
@@ -56,16 +51,14 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterHandle [in]
+`MiniportAdapterHandle`
 
 The miniport handle that NDIS passed to 
      <i>MiniportInitializeEx</i>.
 
-
-### -param DmaDescription [in, out]
+`DmaDescription`
 
 A pointer to an NDIS_SG_DMA_DESCRIPTION structure. This structure describes the scatter/gather DMA
      properties of the miniport driver. The structure is defined as follows:
@@ -91,75 +84,15 @@ A pointer to an NDIS_SG_DMA_DESCRIPTION structure. This structure describes the 
 </table></span></div>
 This structure includes the following members:
 
-
-
-
-### -param Header
-
-The 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
-       NDIS_SG_DMA_DESCRIPTION structure. Set the 
-       <b>Type</b> member of the structure that 
-       <b>Header</b> specifies to NDIS_OBJECT_TYPE_SG_DMA_DESCRIPTION, the 
-       <b>Revision</b> member to NDIS_SG_DMA_DESCRIPTION_REVISION_1, and the 
-       <b>Size</b> member to NDIS_SIZEOF_SG_DMA_DESCRIPTION_REVISION_1.
-
-
-### -param Flags
-
-A set of bit flags that define scatter/gather characteristics. Set this member to the bitwise OR
-       of all the required flags. 
-       
-
-The NDIS_SG_DMA_64_BIT_ADDRESS flag specifies that the NIC can use 64-bit addressing for DMA
-       operations. Otherwise, the NIC uses 32-bit addressing.
-
-Set this member to zero if 64-bit addressing is not required.
-
-
-### -param MaximumPhysicalMapping
-
-The maximum number of bytes that the NIC can transfer in a single DMA operation. NDIS provides
-       this value to the hardware abstraction layer (HAL) when allocating a DMA channel, and HAL uses this
-       value to determine the maximum number of map registers to reserve for the NIC.
-
-
-### -param ProcessSGListHandler
-
-The 
-       <a href="..\ndis\nc-ndis-miniport_process_sg_list.md">MiniportProcessSGList</a> function
-       that NDIS calls when HAL is done building the scatter/gather list.
-
-
-### -param SharedMemAllocateCompleteHandler
-
-The 
-       <a href="..\ndis\nc-ndis-miniport_allocate_shared_mem_complete.md">
-       MiniportSharedMemoryAllocateComplete</a> function for miniport drivers that call 
-       <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
-       NdisMAllocateSharedMemoryAsyncEx</a>. This field is optional and it should be <b>NULL</b> if the miniport
-       driver does not call 
-       <b>NdisMAllocateSharedMemoryAsyncEx</b>.
-
-
-### -param ScatterGatherListSize
-
-The size, in bytes, of the memory that is required to hold a scatter/gather list. NDIS sets this
-       value before it returns from 
-       <b>NdisMRegisterScatterGatherDma</b>. Miniport drivers should use this size to preallocate memory for
-       each scatter/gather list.
-
-</dd>
-</dl>
-
-### -param NdisMiniportDmaHandle [out]
+`NdisMiniportDmaHandle`
 
 A pointer to a variable that the caller supplies and that NDIS fills with a handle. The handle
      identifies a context area that NDIS uses to manage this DMA resource. The miniport driver passes this
      handle to NDIS in subsequent calls to NDIS that involve this DMA resource.
 
 
-## -returns
+## Return Value
+
 <b>NdisMRegisterScatterGatherDma</b> returns one of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -185,10 +118,8 @@ A pointer to a variable that the caller supplies and that NDIS fills with a hand
        <b>Header</b> structure of 
        <i>DmaDescription</i> .
 
- 
+## Remarks
 
-
-## -remarks
 An NDIS bus-master miniport driver calls 
     <b>NdisMRegisterScatterGatherDma</b> within its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function to
@@ -235,8 +166,20 @@ Miniport drivers call the
     NdisMDeregisterScatterGatherDma</a> function to deallocate the DMA resources that 
     <b>NdisMRegisterScatterGatherDma</b> allocated.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Init_RegisterSG, Irql_Gather_DMA_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -249,7 +192,7 @@ Miniport drivers call the
    MiniportSharedMemoryAllocateComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
@@ -286,4 +229,3 @@ Miniport drivers call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterScatterGatherDma function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

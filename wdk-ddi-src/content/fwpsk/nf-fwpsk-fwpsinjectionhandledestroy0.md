@@ -1,52 +1,47 @@
 ---
-UID: NF:fwpsk.FwpsInjectionHandleDestroy0
-title: FwpsInjectionHandleDestroy0 function
-author: windows-driver-content
-description: The FwpsInjectionHandleDestroy0 function destroys an injection handle that was previously created by calling the FwpsInjectionHandleCreate0 function.Note  FwpsInjectionHandleDestroy0 is a specific version of FwpsInjectionHandleDestroy.
-old-location: netvista\fwpsinjectionhandledestroy0.htm
-old-project: netvista
-ms.assetid: 5a00917b-36e8-4e06-a001-d8e6ac2e3573
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsInjectionHandleDestroy0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsInjectionHandleDestroy0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsInjectionHandleDestroy0
+title : FwpsInjectionHandleDestroy0 function
+author : windows-driver-content
+description : The FwpsInjectionHandleDestroy0 function destroys an injection handle that was previously created by calling the FwpsInjectionHandleCreate0 function.Note  FwpsInjectionHandleDestroy0 is a specific version of FwpsInjectionHandleDestroy.
+old-location : netvista\fwpsinjectionhandledestroy0.htm
+old-project : netvista
+ms.assetid : 5a00917b-36e8-4e06-a001-d8e6ac2e3573
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsInjectionHandleDestroy0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsInjectionHandleDestroy0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsInjectionHandleDestroy0 function
-
-
-
-## -description
 The 
   <b>FwpsInjectionHandleDestroy0</b> function destroys an injection handle that was previously created by
   calling the 
   <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FwpsInjectionHandleDestroy0(
@@ -54,15 +49,15 @@ NTSTATUS FwpsInjectionHandleDestroy0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param injectionHandle [in]
+`injectionHandle`
 
 The injection handle being destroyed.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsInjectionHandleDestroy0</b> function returns one of the following NTSTATUS codes.
 <dl>
@@ -72,10 +67,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpsInjectionHandleDestroy0</b> function to destroy an injection handle that was previously created by
     calling the 
@@ -84,8 +77,20 @@ A callout driver calls the
     <b>FwpsInjectionHandleDestroy0</b> function will not return to the caller until all pending injections are
     completed.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a>
@@ -96,4 +101,3 @@ A callout driver calls the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleDestroy0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

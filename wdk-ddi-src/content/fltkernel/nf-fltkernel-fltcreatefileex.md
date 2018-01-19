@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltCreateFileEx
-title: FltCreateFileEx function
-author: windows-driver-content
-description: Minifilter drivers call FltCreateFileEx to create a new file or open an existing file.
-old-location: ifsk\fltcreatefileex.htm
-old-project: ifsk
-ms.assetid: 83b672dd-26fc-4c22-815d-72143159983d
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltCreateFileEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltCreateFileEx
-req.alt-loc: Fltmgr.lib,Fltmgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fltmgr.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltCreateFileEx
+title : FltCreateFileEx function
+author : windows-driver-content
+description : Minifilter drivers call FltCreateFileEx to create a new file or open an existing file.
+old-location : ifsk\fltcreatefileex.htm
+old-project : ifsk
+ms.assetid : 83b672dd-26fc-4c22-815d-72143159983d
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltCreateFileEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltCreateFileEx
+req.alt-loc : Fltmgr.lib,Fltmgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fltmgr.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltCreateFileEx function
-
-
-
-## -description
 Minifilter drivers call <b>FltCreateFileEx</b> to create a new file or open an existing file.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltCreateFileEx(
@@ -65,30 +60,25 @@ NTSTATUS FltCreateFileEx(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Filter`
 
-### -param Filter [in]
+An opaque filter pointer for the caller.
 
-An opaque filter pointer for the caller. 
+`Instance`
 
+An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume where the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance.
 
-### -param Instance [in, optional]
+`FileHandle`
 
-An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume where the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance. 
+A pointer to a caller-allocated variable that receives the file handle if the call to <b>FltCreateFileEx</b> is successful.
 
+`FileObject`
 
-### -param FileHandle [out]
+A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateFileEx</b> is successful. This parameter is optional and can be <b>NULL</b>.
 
-A pointer to a caller-allocated variable that receives the file handle if the call to <b>FltCreateFileEx</b> is successful. 
-
-
-### -param FileObject [out]
-
-A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateFileEx</b> is successful. This parameter is optional and can be <b>NULL</b>. 
-
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 A bitmask of flags specifying the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. 
 
@@ -300,10 +290,8 @@ The directory can be traversed: that is, it can be part of the pathname of a fil
 </td>
 </tr>
 </table>
- 
 
-
-### -param ObjectAttributes [in]
+`ObjectAttributes`
 
 A pointer to a structure already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object include the following. 
 
@@ -363,10 +351,8 @@ Is a set of flags that controls the file object attributes. If the caller is run
 </td>
 </tr>
 </table>
- 
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateFileEx</b>, the <b>Information</b> member contains one of the following values.
 
@@ -397,12 +383,11 @@ FILE_DOES_NOT_EXIST
 </dd>
 </dl>
 
-### -param AllocationSize  [in, optional]
+`AllocationSize`
 
-Optionally specifies the initial allocation size, in bytes, for the file stream. A nonzero value has no effect unless the file is being created, overwritten, or superseded. 
+Optionally specifies the initial allocation size, in bytes, for the file stream. A nonzero value has no effect unless the file is being created, overwritten, or superseded.
 
-
-### -param FileAttributes [in]
+`FileAttributes`
 
 Specifies one or more of the following FILE_ATTRIBUTE_<i>XXX</i> flags, which represent the file attributes to set if you are creating, superseding, or overwriting a file. Normally, you specify FILE_ATTRIBUTE_NORMAL, which sets the default attributes. 
 
@@ -472,10 +457,8 @@ A temporary file should be created.
 </td>
 </tr>
 </table>
- 
 
-
-### -param ShareAccess [in]
+`ShareAccess`
 
 Specifies the type of share access to the file that the caller requires, as zero or one, or a combination of the following flags. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Flags</i> parameter, the I/O manager ignores this parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when using the IO_IGNORE_SHARE_ACCESS_CHECK flag. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. 
 
@@ -515,10 +498,8 @@ The file can be opened for delete access by other threads' calls to <b>FltCreate
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateDisposition [in]
+`CreateDisposition`
 
 Specifies a value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described following. 
 
@@ -588,10 +569,8 @@ If the file already exists, open it and overwrite it. If it does not, create the
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateOptions [in]
+`CreateOptions`
 
 Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags. 
 
@@ -773,20 +752,16 @@ This flag allows an application to request a Filter opportunistic lock (oplock) 
 </td>
 </tr>
 </table>
- 
 
+`EaBuffer`
 
-### -param EaBuffer [in, optional]
+A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file.
 
-A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file. 
+`EaLength`
 
+Length, in bytes, of <i>EaBuffer</i>.
 
-### -param EaLength [in]
-
-Length, in bytes, of <i>EaBuffer</i>. 
-
-
-### -param Flags [in]
+`Flags`
 
 Specifies options to be used during the creation of the create request. The following table lists the available options. 
 
@@ -836,10 +811,10 @@ Indicates that the parameters for this call should not be validated before attem
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>FltCreateFileEx</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
@@ -853,12 +828,10 @@ Indicates that the parameters for this call should not be validated before attem
 </dl>The file or directory name contains a mount point that resolves to a volume other than the one that the specified minifilter driver instance is attached to. This is an error code. 
 <dl>
 <dt><b>STATUS_OBJECT_PATH_SYNTAX_BAD</b></dt>
-</dl>The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path. 
+</dl>The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path.
 
- 
+## Remarks
 
-
-## -remarks
 <b>FltCreateFileEx</b> is identical to <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> except for the addition of an optional <i>FileObject</i> output parameter. 
 
 File system minifilter drivers should call <b>FltCreateFileEx</b> instead of <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> to obtain a file object pointer for use with <b>Flt</b><i>Xxx</i> I/O routines such as <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> and <a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>. 
@@ -948,8 +921,20 @@ WRITE_OWNER
 SYNCHRONIZE
 <p class="note">You must not use <b>FltCreateFileEx</b> to open a handle with direct access to the storage device for the volume or you will leak system resources. If you want to open a handle with direct access to a storage device, call the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>, <a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a>, or <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> function instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include FltKernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -1020,4 +1005,3 @@ SYNCHRONIZE
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateFileEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

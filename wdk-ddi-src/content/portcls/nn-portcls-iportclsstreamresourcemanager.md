@@ -1,44 +1,41 @@
 ---
-UID: NN:portcls.IPortClsStreamResourceManager
-title: IPortClsStreamResourceManager
-author: windows-driver-content
-description: IPortClsStreamResourceManager is used to manage the registration of audio stream resources.
-old-location: audio\iportclsstreamresourcemanager.htm
-old-project: audio
-ms.assetid: FC13CB2E-2027-4BCE-AEEE-346CB0784819
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PcUnregisterIoTimeout
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: portcls.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IPortClsStreamResourceManager
-req.alt-loc: portcls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Portcls.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
+UID : NN:portcls.IPortClsStreamResourceManager
+title : IPortClsStreamResourceManager
+author : windows-driver-content
+description : IPortClsStreamResourceManager is used to manage the registration of audio stream resources.
+old-location : audio\iportclsstreamresourcemanager.htm
+old-project : audio
+ms.assetid : FC13CB2E-2027-4BCE-AEEE-346CB0784819
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : PcUnregisterIoTimeout
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : portcls.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IPortClsStreamResourceManager
+req.alt-loc : portcls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Portcls.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 # IPortClsStreamResourceManager interface
 
-
-
-## -description
 IPortClsStreamResourceManager is used to manage the registration of audio stream resources. 
 
 To help ensure glitch-free operation, audio drivers must register their streaming resources. 
@@ -56,10 +53,22 @@ This option is very useful when the same audio miniport driver must run on previ
 The audio miniport driver can query for the IID_IPortClsStreamResourceManager interface and register its resources 
 only when PortCls supports the interface.
 
+## Methods
+
+<p>The <b>IPortClsStreamResourceManager</b> interface has these methods.</p>
+
+| Method | Description |
+| ---- |:---- |
+
+## Remarks
 
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsStreamResourceManager</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
 
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | portcls.h |
+| **DLL** |  |

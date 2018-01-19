@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.RtlUnicodeStringToInteger
-title: RtlUnicodeStringToInteger function
-author: windows-driver-content
-description: The RtlUnicodeStringToInteger routine converts a Unicode string representation of a number to the equivalent integer value.
-old-location: kernel\rtlunicodestringtointeger.htm
-old-project: kernel
-ms.assetid: d9357864-d49b-44fe-b884-64c6da609789
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: RtlUnicodeStringToInteger
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlUnicodeStringToInteger
-req.alt-loc: NtosKrnl.exe,Ntdll.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql: PASSIVE_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.RtlUnicodeStringToInteger
+title : RtlUnicodeStringToInteger function
+author : windows-driver-content
+description : The RtlUnicodeStringToInteger routine converts a Unicode string representation of a number to the equivalent integer value.
+old-location : kernel\rtlunicodestringtointeger.htm
+old-project : kernel
+ms.assetid : d9357864-d49b-44fe-b884-64c6da609789
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : RtlUnicodeStringToInteger
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlUnicodeStringToInteger
+req.alt-loc : NtosKrnl.exe,Ntdll.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql : PASSIVE_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # RtlUnicodeStringToInteger function
-
-
-
-## -description
 The <b>RtlUnicodeStringToInteger</b> routine converts a Unicode string representation of a number to the equivalent integer value.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RtlUnicodeStringToInteger(
@@ -54,15 +49,13 @@ NTSTATUS RtlUnicodeStringToInteger(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param String [in]
+`String`
 
 A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the number representation to convert to the equivalent integer value.
 
-
-### -param Base [in, optional]
+`Base`
 
 A numeric value that indicates the base (or radix) of the number that the Unicode string represents. This parameter value is optional and can be set to zero.
 
@@ -84,17 +77,17 @@ If the prefix is "0b", <b>RtlUnicodeStringToInteger</b> interprets the number in
 </ul>
 If the Unicode string does not contain any of these prefixes, <b>RtlUnicodeStringToInteger</b> treats the string as a base-10 integer.
 
-
-### -param Value [out]
+`Value`
 
 A pointer to a ULONG variable to which <b>RtlUnicodeStringToInteger</b> writes the integer value that results from conversion of the Unicode string.
 
 
-## -returns
+## Return Value
+
 If the conversion is successful, the <b>RtlUnicodeStringToInteger</b> routine returns STATUS_SUCCESS and sets *<i>Value</i> to the integer value represented by the number in the Unicode string. If the string is not empty, but does not start with a valid number representation, the routine returns STATUS_SUCCESS and sets *<i>Value</i> to zero. If the string is empty, the routine fails and returns STATUS_INVALID_PARAMETER.
 
+## Remarks
 
-## -remarks
 This routine skips any white space at the start of the input string to find the start of the number.
 
 If the first non-white space character in the string is a hyphen (-), the integer value written to *<i>Value</i> is negative; otherwise, if the first character is a "+" or there is no sign character, the integer value written to *<i>Value</i> is positive.
@@ -107,8 +100,20 @@ The following table contains examples of output values that result from various 
 
 A related routine, <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>, converts an integer value to the equivalent Unicode string representation.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>
@@ -122,4 +127,3 @@ A related routine, <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlInteg
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUnicodeStringToInteger routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,53 +1,48 @@
 ---
-UID: NF:ndis.NdisAdvanceNetBufferListDataStart
-title: NdisAdvanceNetBufferListDataStart function
-author: windows-driver-content
-description: Call the NdisAdvanceNetBufferListDataStart function to release data space that was claimed in previous calls to the NdisRetreatNetBufferListDataStart function.
-old-location: netvista\ndisadvancenetbufferlistdatastart.htm
-old-project: netvista
-ms.assetid: 819ac05b-15c2-4a24-ae6b-8a47991a4e7a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAdvanceNetBufferListDataStart
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAdvanceNetBufferListDataStart
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_NetBuffer_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAdvanceNetBufferListDataStart
+title : NdisAdvanceNetBufferListDataStart function
+author : windows-driver-content
+description : Call the NdisAdvanceNetBufferListDataStart function to release data space that was claimed in previous calls to the NdisRetreatNetBufferListDataStart function.
+old-location : netvista\ndisadvancenetbufferlistdatastart.htm
+old-project : netvista
+ms.assetid : 819ac05b-15c2-4a24-ae6b-8a47991a4e7a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAdvanceNetBufferListDataStart
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAdvanceNetBufferListDataStart
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_NetBuffer_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAdvanceNetBufferListDataStart function
-
-
-
-## -description
 Call the 
   <b>NdisAdvanceNetBufferListDataStart</b> function to release data space that was claimed in previous calls
   to the 
   <a href="..\ndis\nf-ndis-ndisretreatnetbufferlistdatastart.md">
   NdisRetreatNetBufferListDataStart</a> function.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisAdvanceNetBufferListDataStart(
@@ -58,42 +53,35 @@ VOID NdisAdvanceNetBufferListDataStart(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a previously allocated 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
-
-### -param DataOffsetDelta [in]
+`DataOffsetDelta`
 
 The amount of 
      <i>used data space</i> to release.
 
-
-### -param FreeMdl [in]
+`FreeMdl`
 
 If <b>TRUE</b> and NDIS allocated memory to satisfy the corresponding 
      <b>NdisRetreatNetBufferListDataStart</b> call, this function frees the memory that was allocated and the
      associated MDL.
 
-
-### -param FreeMdlHandler [in, optional]
-
-An optional entry point for an 
-     <a href="..\ndis\nc-ndis-net_buffer_free_mdl_handler.md">NetFreeMdl</a> function. If the caller
-     specifies an entry point for the 
-     <i>NetFreeMdl</i> function, NDIS calls 
-     <i>NetFreeMdl</i> to free an MDL and memory.
+`FreeMdlMdlHandler`
 
 
-## -returns
+
+
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 <b>NdisAdvanceNetBufferListDataStart</b> releases 
     <i>used data space</i> for all the 
     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures in a 
@@ -114,8 +102,20 @@ When protocol drivers call
     MDL chain should not be modified and 
     <i>FreeMdl</i> is <b>FALSE</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
@@ -143,4 +143,3 @@ When protocol drivers call
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAdvanceNetBufferListDataStart function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

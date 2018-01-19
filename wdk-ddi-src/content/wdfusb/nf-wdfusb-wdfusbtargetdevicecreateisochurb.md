@@ -1,54 +1,49 @@
 ---
-UID: NF:wdfusb.WdfUsbTargetDeviceCreateIsochUrb
-title: WdfUsbTargetDeviceCreateIsochUrb function
-author: windows-driver-content
-description: The WdfUsbTargetDeviceCreateIsochUrb method allocates an isochronous USB request block (URB).
-old-location: wdf\wdfusbtargetdevicecreateisochurb.htm
-old-project: wdf
-ms.assetid: 2D25A276-A367-4E59-9CA0-4F480675DD77
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfUsbTargetDeviceCreateIsochUrb
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfusb.h
-req.include-header: Wdfusb.h
-req.target-type: Universal
-req.target-min-winverclnt: Windows Vista
-req.target-min-winversvr: 
-req.kmdf-ver: 1.11
-req.umdf-ver: 
-req.alt-api: WdfUsbTargetDeviceCreateIsochUrb
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DriverCreate
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfusb.WdfUsbTargetDeviceCreateIsochUrb
+title : WdfUsbTargetDeviceCreateIsochUrb function
+author : windows-driver-content
+description : The WdfUsbTargetDeviceCreateIsochUrb method allocates an isochronous USB request block (URB).
+old-location : wdf\wdfusbtargetdevicecreateisochurb.htm
+old-project : wdf
+ms.assetid : 2D25A276-A367-4E59-9CA0-4F480675DD77
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfUsbTargetDeviceCreateIsochUrb
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfusb.h
+req.include-header : Wdfusb.h
+req.target-type : Universal
+req.target-min-winverclnt : Windows Vista
+req.target-min-winversvr : 
+req.kmdf-ver : 1.11
+req.umdf-ver : 
+req.alt-api : WdfUsbTargetDeviceCreateIsochUrb
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DriverCreate
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.product : Windows 10 or later.
 ---
 
+
 # WdfUsbTargetDeviceCreateIsochUrb function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 
    The 
   <b>WdfUsbTargetDeviceCreateIsochUrb</b> method allocates an isochronous USB request block (URB).
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfUsbTargetDeviceCreateIsochUrb(
@@ -60,35 +55,31 @@ NTSTATUS WdfUsbTargetDeviceCreateIsochUrb(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param UsbDevice [in]
+`UsbDevice`
 
 A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-
-### -param Attributes [in, optional]
+`Attributes`
 
 A pointer to a caller-supplied <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new memory object.   If the driver provides this parameter, the structure's <b>ParentObject</b> member must be a USB device object (WDFUSBDEVICE) or a request object (WDFREQUEST) created by the framework, or any object whose chain of parents leads to one of these types. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-
-### -param NumberOfIsochPackets [in]
+`NumberOfIsochPackets`
 
 Specifies the number of isochronous packets for which the system allocates memory in the URB.
 
-
-### -param UrbMemory [out]
+`UrbMemory`
 
 A pointer to a WDFMEMORY-typed location that receives a handle to a framework memory object.
 
-
-### -param Urb [out, optional]
+`Urb`
 
 A pointer to an URB structure that receives the address of the new isochronous URB. The framework initializes contents of the URB structure to zero. This parameter is optional and can be NULL.
 
 
-## -returns
+## Return Value
+
 <b>WdfUsbTargetDeviceCreateIsochUrb</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -104,13 +95,13 @@ A pointer to an URB structure that receives the address of the new isochronous U
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
+## Remarks
 
-## -remarks
 Before calling <b>WdfUsbTargetDeviceCreateIsochUrb</b>, a driver must call <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>. If successful, <b>WdfUsbTargetDeviceCreateIsochUrb</b> returns a handle to a framework memory object that describes the newly allocated isochronous URB.
 
 A driver can call <b>WdfUsbTargetDeviceCreateIsochUrb</b> to allocate a URB structure before calling <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>.
 
-Typically, a driver calls <b>WdfUsbTargetDeviceCreateIsochUrb</b> from within a <a href="wdf.request_handlers">request handler</a>.
+Typically, a driver calls <b>WdfUsbTargetDeviceCreateIsochUrb</b> from within a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-handlers">request handler</a>.
 
 The memory object and its buffer are deleted when the parent object is deleted. A driver can also delete a memory object and its buffer by calling <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>.
 
@@ -118,8 +109,20 @@ For related information, see the Remarks section of <a href="..\wdfusb\nf-wdfusb
 
 The following code example is based on the PerformIsochTransfer routine in the Isorwr sample driver. The example calls <b>WdfUsbTargetDeviceCreateIsochUrb</b> to allocate an isochronous USB request block. The example determines the number  of bytes required to hold the isochronous transfer request, and then manually configures the URB header and the isochronous packets in the URB.  At this point, the driver can call <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeformatrequestforurb.md">WdfUsbTargetPipeFormatRequestForUrb</a>, as shown in the example in  <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateurb.md">WdfUsbTargetDeviceCreateUrb</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.11 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfusb.h (include Wdfusb.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | DriverCreate |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateurb.md">WdfUsbTargetDeviceCreateUrb</a>
@@ -133,4 +136,3 @@ The following code example is based on the PerformIsochTransfer routine in the I
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceCreateIsochUrb method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

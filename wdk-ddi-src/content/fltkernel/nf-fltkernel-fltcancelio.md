@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltCancelIo
-title: FltCancelIo function
-author: windows-driver-content
-description: The FltCancelIo routine cancels an I/O operation.
-old-location: ifsk\fltcancelio.htm
-old-project: ifsk
-ms.assetid: 30f2345d-6ed8-475f-879a-d3218039fded
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltCancelIo
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltCancelIo
-req.alt-loc: FltMgr.lib,FltMgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltCancelIo
+title : FltCancelIo function
+author : windows-driver-content
+description : The FltCancelIo routine cancels an I/O operation.
+old-location : ifsk\fltcancelio.htm
+old-project : ifsk
+ms.assetid : 30f2345d-6ed8-475f-879a-d3218039fded
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltCancelIo
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltCancelIo
+req.alt-loc : FltMgr.lib,FltMgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltCancelIo function
+The <b>FltCancelIo</b> routine cancels an I/O operation.
 
-
-
-## -description
-The <b>FltCancelIo</b> routine cancels an I/O operation. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN FltCancelIo(
@@ -51,19 +46,19 @@ BOOLEAN FltCancelIo(
 );
 ````
 
+## Parameters
 
-## -parameters
+`CallbackData`
 
-### -param CallbackData [in]
-
-Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. 
-
-
-## -returns
-<b>FltCancelIo</b> returns <b>TRUE</b> if the I/O operation was canceled successfully. Otherwise, it returns <b>FALSE</b>. 
+Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation.
 
 
-## -remarks
+## Return Value
+
+<b>FltCancelIo</b> returns <b>TRUE</b> if the I/O operation was canceled successfully. Otherwise, it returns <b>FALSE</b>.
+
+## Remarks
+
 A minifilter driver that initiates an I/O operation by calling a routine such as <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a> can cancel the operation by calling <b>FltCancelIo</b>. The operation must be an IRP-based I/O operation, it must not be currently posted to the minifilter driver's own work queue, and it must not have been completed. 
 
 If the IRP has a cancel routine, <b>FltCancelIo</b> sets the IRP's cancel bit and calls the cancel routine. 
@@ -84,10 +79,22 @@ To determine whether a given callback data structure represents an IRP-based I/O
 
 To specify a cancel routine for an I/O operation, call <a href="..\fltkernel\nf-fltkernel-fltsetcancelcompletion.md">FltSetCancelCompletion</a>. 
 
-To clear a cancel routine that was set for an I/O operation, call <a href="..\fltkernel\nf-fltkernel-fltclearcancelcompletion.md">FltClearCancelCompletion</a>. 
+To clear a cancel routine that was set for an I/O operation, call <a href="..\fltkernel\nf-fltkernel-fltclearcancelcompletion.md">FltClearCancelCompletion</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include FltKernel.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
@@ -116,4 +123,3 @@ To clear a cancel routine that was set for an I/O operation, call <a href="..\fl
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCancelIo routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

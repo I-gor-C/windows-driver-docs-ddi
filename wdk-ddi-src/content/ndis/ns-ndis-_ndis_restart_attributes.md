@@ -1,51 +1,44 @@
 ---
-UID: NS:ndis._NDIS_RESTART_ATTRIBUTES
-title: _NDIS_RESTART_ATTRIBUTES
-author: windows-driver-content
-description: The NDIS_RESTART_ATTRIBUTES structure identifies an attributes entry in a linked list of restart attributes.
-old-location: netvista\ndis_restart_attributes.htm
-old-project: netvista
-ms.assetid: 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_RESTART_ATTRIBUTES
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: *PNDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES
+UID : NS:ndis._NDIS_RESTART_ATTRIBUTES
+title : _NDIS_RESTART_ATTRIBUTES
+author : windows-driver-content
+description : The NDIS_RESTART_ATTRIBUTES structure identifies an attributes entry in a linked list of restart attributes.
+old-location : netvista\ndis_restart_attributes.htm
+old-project : netvista
+ms.assetid : 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_RESTART_ATTRIBUTES
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : "*PNDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES"
 ---
 
 # _NDIS_RESTART_ATTRIBUTES structure
-
-
-
-## -description
 The NDIS_RESTART_ATTRIBUTES structure identifies an attributes entry in a linked list of restart
   attributes.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_RESTART_ATTRIBUTES {
   PNDIS_RESTART_ATTRIBUTES Next;
@@ -55,42 +48,38 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
 } NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Data`
 
-### -field Next
+            A buffer that contains the information that is associated with the OID that is specified in the 
+     <b>Oid</b> member.
+        
+            `DataLength`
 
-A pointer to an NDIS_RESTART_ATTRIBUTES structure that you can use to access the next set of
+            The length, in bytes, of the information that is stored in the 
+     <b>Data</b> member.
+        
+            `Next`
+
+            A pointer to an NDIS_RESTART_ATTRIBUTES structure that you can use to access the next set of
      restart attributes in the linked list of attributes. If there are no additional attributes, this member
      is <b>NULL</b>.
+        
+            `Oid`
 
-
-### -field Oid
-
-The NDIS object identifier for the information that is in the 
+            The NDIS object identifier for the information that is in the 
      <b>Data</b> member. For example, if 
      <b>Oid</b> is 
-     <a href="netvista.oid_gen_miniport_restart_attributes">
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-miniport-restart-attributes">
      OID_GEN_MINIPORT_RESTART_ATTRIBUTES</a>, the 
      <b>Data</b> member contains an 
      <a href="..\ndis\ns-ndis-_ndis_restart_general_attributes.md">
      NDIS_RESTART_GENERAL_ATTRIBUTES</a> structure.
 
-
-### -field DataLength
-
-The length, in bytes, of the information that is stored in the 
-     <b>Data</b> member.
-
-
-### -field Data
-
-A buffer that contains the information that is associated with the OID that is specified in the 
-     <b>Oid</b> member.
-
-
-## -remarks
-When NDIS restarts a driver stack, NDIS passes a pointer to a linked list of restart attributes to
+    ## Remarks
+        When NDIS restarts a driver stack, NDIS passes a pointer to a linked list of restart attributes to
     miniport, filter, and protocol drivers.
 
 When it calls a miniport driver's 
@@ -134,9 +123,17 @@ If the restart attributes pointer is not <b>NULL</b>, the linked list of NDIS_RE
     NDIS_RESTART_GENERAL_ATTRIBUTES</a> structure. The rest of the entries, if any, contain media-specific
     attributes.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a>
 </dt>
@@ -163,7 +160,7 @@ If the restart attributes pointer is not <b>NULL</b>, the linked list of NDIS_RE
 <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="netvista.oid_gen_miniport_restart_attributes">
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-miniport-restart-attributes">
    OID_GEN_MINIPORT_RESTART_ATTRIBUTES</a>
 </dt>
 <dt>
@@ -175,4 +172,3 @@ If the restart attributes pointer is not <b>NULL</b>, the linked list of NDIS_RE
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_ATTRIBUTES structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

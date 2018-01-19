@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
-title: D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
-author: windows-driver-content
-description: The crypto session transform operations.
-old-location: display\d3d12ddi-crypto-session-transform-operation-0030.htm
-old-project: display
-ms.assetid: 20d49b34-436a-4bc3-9b32-25f03478c90a
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030, D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
+UID : NE:d3d12umddi.D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
+title : D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
+author : windows-driver-content
+description : The crypto session transform operations.
+old-location : display\d3d12ddi-crypto-session-transform-operation-0030.htm
+old-project : display
+ms.assetid : 20d49b34-436a-4bc3-9b32-25f03478c90a
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030, D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030
 ---
 
-# D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030 enumeration
-
-
-
-## -description
+# D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030 Enumeration
 The crypto session transform operations.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030 { 
   D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE,
@@ -56,37 +49,46 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030 {
 } D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE
+<tr>
+<td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT</td>
+<td>The crypto session transform operation is decrypt.</td>
+</tr>
 
-The crypto session transform operation type is not available.
+<tr>
+<td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_HEADER</td>
+<td>The crypto session transform operation is decrypt header.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_WITH_HEADER</td>
+<td>The crypto session transform operation is decrypt with header.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE</td>
+<td>The crypto session transform operation type is not available.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT</td>
+<td>The crypto session transform operation is transcrypt.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT_WITH_HEADER</td>
+<td>The crypto session transform operation is transcrypt with header.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT
-
-The crypto session transform operation is decrypt.
-
-
-### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_WITH_HEADER
-
-The crypto session transform operation is decrypt with header.
-
-
-### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT
-
-The crypto session transform operation is transcrypt.
-
-
-### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT_WITH_HEADER
-
-The crypto session transform operation is transcrypt with header.
-
-
-### -field D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_HEADER
-
-The crypto session transform operation is decrypt header.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

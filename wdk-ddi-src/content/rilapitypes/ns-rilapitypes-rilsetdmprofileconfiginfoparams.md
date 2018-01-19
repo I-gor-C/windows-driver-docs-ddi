@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILSETDMPROFILECONFIGINFOPARAMS
-title: RILSETDMPROFILECONFIGINFOPARAMS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilsetdmprofileconfiginfoparams_2.htm
-old-project: netvista
-ms.assetid: 99513338-a908-4ff7-8fd6-f4224fbdc04f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILSETDMPROFILECONFIGINFOPARAMS, *LPRILSETDMPROFILECONFIGINFOPARAMS, RILSETDMPROFILECONFIGINFOPARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILSETDMPROFILECONFIGINFOPARAMS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILSETDMPROFILECONFIGINFOPARAMS, RILSETDMPROFILECONFIGINFOPARAMS
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILSETDMPROFILECONFIGINFOPARAMS
+title : RILSETDMPROFILECONFIGINFOPARAMS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilsetdmprofileconfiginfoparams_2.htm
+old-project : netvista
+ms.assetid : 99513338-a908-4ff7-8fd6-f4224fbdc04f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILSETDMPROFILECONFIGINFOPARAMS, RILSETDMPROFILECONFIGINFOPARAMS, *LPRILSETDMPROFILECONFIGINFOPARAMS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILSETDMPROFILECONFIGINFOPARAMS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILSETDMPROFILECONFIGINFOPARAMS, *LPRILSETDMPROFILECONFIGINFOPARAMS
+req.product : Windows 10 or later.
 ---
 
 # RILSETDMPROFILECONFIGINFOPARAMS structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILSETDMPROFILECONFIGINFOPARAMS {
   DWORD                 dwExecutor;
@@ -54,16 +47,26 @@ typedef struct _RILSETDMPROFILECONFIGINFOPARAMS {
 } RILSETDMPROFILECONFIGINFOPARAMS, RILSETDMPROFILECONFIGINFOPARAMS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `dwConfigItem`
 
-### -field dwExecutor
+            
+        
+            `dwExecutor`
+
+            
+        
+            `rciValue`
+
+            
 
 
-### -field dwConfigItem
-
-
-### -field rciValue
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

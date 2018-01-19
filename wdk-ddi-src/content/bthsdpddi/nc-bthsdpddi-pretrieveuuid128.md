@@ -1,80 +1,74 @@
 ---
-UID: NC:bthsdpddi.PRETRIEVEUUID128
-title: PRETRIEVEUUID128
-author: windows-driver-content
-description: The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream.
-old-location: bltooth\sdpretrieveuuid128.htm
-old-project: bltooth
-ms.assetid: 0e317aea-3625-4511-94e1-355c476c0da6
-ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: _HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: bthsdpddi.h
-req.include-header: BthSdpddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Versions: Supported in Windows Vista, and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SdpRetrieveUuid128
-req.alt-loc: sdplib.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= PASSIVE_LEVEL
-req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID : NC:bthsdpddi.PRETRIEVEUUID128
+title : PRETRIEVEUUID128
+author : windows-driver-content
+description : The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream.
+old-location : bltooth\sdpretrieveuuid128.htm
+old-project : bltooth
+ms.assetid : 0e317aea-3625-4511-94e1-355c476c0da6
+ms.author : windowsdriverdev
+ms.date : 12/21/2017
+ms.keywords : _BTH_VENDOR_SPECIFIC_COMMAND, *PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : bthsdpddi.h
+req.include-header : BthSdpddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SdpRetrieveUuid128
+req.alt-loc : sdplib.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= PASSIVE_LEVEL
+req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
-# PRETRIEVEUUID128 callback
 
-
-
-## -description
+# PRETRIEVEUUID128 callback function
 The Bluetooth 
   <b>SdpRetrieveUuid128</b> function is used to copy an unaligned 128-bit universally unique identifier (UUID)
   from an SDP stream.
 
+## Syntax
 
+```
+PRETRIEVEUUID128 Pretrieveuuid128;
 
-## -prototype
-
-````
-PRETRIEVEUUID128 SdpRetrieveUuid128;
-
-void SdpRetrieveUuid128(
-   PUCHAR Stream,
-   GUID   *uuid128
+void Pretrieveuuid128(
+  PUCHAR Stream,
+  GUID *uuid128
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Stream 
+`Stream`
 
 A pointer to an unaligned 128-bit UUID.
 
-
-### -param uuid128 
-
-A pointer to an aligned variable to receive the 128-bit UUID.
+`*uuid128`
 
 
-## -returns
+
+
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 The 
     <b>SdpRetrieveUuid128</b> function does not search for the UUID to copy. The 
     <i>Stream</i> parameter must specify the exact address of the UUID to be extracted.
@@ -95,8 +89,20 @@ Bluetooth profile drivers can obtain a pointer to this function through the
     <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">
     BTHDDI_SDP_PARSE_INTERFACE</a> structure.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | bthsdpddi.h (include BthSdpddi.h) |
+| **Library** |  |
+| **IRQL** | <= PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
@@ -107,4 +113,3 @@ Bluetooth profile drivers can obtain a pointer to this function through the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PRETRIEVEUUID128 callback function%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

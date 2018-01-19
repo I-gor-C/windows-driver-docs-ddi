@@ -1,93 +1,84 @@
 ---
-UID: NC:video.PVIDEO_HW_FIND_ADAPTER
-title: PVIDEO_HW_FIND_ADAPTER
-author: windows-driver-content
-description: HwVidFindAdapter performs initialization of data specific to the miniport driver and devices supported by the miniport driver.
-old-location: display\hwvidfindadapter.htm
-old-project: display
-ms.assetid: 8c880eff-4b4c-439e-9239-f2343c1fe084
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwVidFindAdapter
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-req.product: Windows 10 or later.
+UID : NC:video.PVIDEO_HW_FIND_ADAPTER
+title : PVIDEO_HW_FIND_ADAPTER
+author : windows-driver-content
+description : HwVidFindAdapter performs initialization of data specific to the miniport driver and devices supported by the miniport driver.
+old-location : display\hwvidfindadapter.htm
+old-project : display
+ms.assetid : 8c880eff-4b4c-439e-9239-f2343c1fe084
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwVidFindAdapter
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VHF_CONFIG, *PVHF_CONFIG
+req.product : Windows 10 or later.
 ---
 
-# PVIDEO_HW_FIND_ADAPTER callback
 
-
-
-## -description
+# PVIDEO_HW_FIND_ADAPTER callback function
 <i>HwVidFindAdapter</i> performs initialization of data specific to the miniport driver and devices supported by the miniport driver.
 
+## Syntax
 
+```
+PVIDEO_HW_FIND_ADAPTER PvideoHwFindAdapter;
 
-## -prototype
-
-````
-PVIDEO_HW_FIND_ADAPTER HwVidFindAdapter;
-
-VP_STATUS HwVidFindAdapter(
-   PVOID                   HwDeviceExtension,
-   PVOID                   HwContext,
-   PWSTR                   ArgumentString,
-   PVIDEO_PORT_CONFIG_INFO ConfigInfo,
-   PUCHAR                  Again
+VP_STATUS PvideoHwFindAdapter(
+  PVOID HwDeviceExtension,
+  PVOID HwContext,
+  PWSTR ArgumentString,
+  PVIDEO_PORT_CONFIG_INFO ConfigInfo,
+  PUCHAR Again
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension 
+`HwDeviceExtension`
 
 Pointer to the driver's per-device storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
-
-### -param HwContext 
+`HwContext`
 
 Is <b>NULL</b> and should be ignored by the miniport driver.
 
-
-### -param ArgumentString 
+`ArgumentString`
 
 Pointer to a null-terminated ASCII string that originates with the user. This pointer can be <b>NULL</b>.
 
-
-### -param ConfigInfo 
+`ConfigInfo`
 
 Pointer to a <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure. The video port driver allocates memory for and initializes this structure with any known configuration information, such as the system IO bus number and values that the miniport driver set in the <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure.
 
-
-### -param Again 
+`Again`
 
 Should be ignored by the miniport driver.
 
 
-## -returns
+## Return Value
+
 <i>HwVidFindAdapter</i> must return one of the following status codes:
 <dl>
 <dt><b>ERROR_DEV_NOT_EXIST</b></dt>
@@ -99,10 +90,8 @@ Should be ignored by the miniport driver.
 <dt><b>NO_ERROR</b></dt>
 </dl>Indicates success.
 
- 
+## Remarks
 
-
-## -remarks
 Every video miniport driver must have an <i>HwVidFindAdapter</i> function.
 
 The video port driver does the following before it calls <i>HwVidFindAdapter</i>:
@@ -159,8 +148,20 @@ If the driver does not handle interrupts, <i>HwVidFindAdapter</i> should set bot
 
 <i>HwVidFindAdapter</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>
@@ -210,4 +211,3 @@ If the driver does not handle interrupts, <i>HwVidFindAdapter</i> should set bot
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_FIND_ADAPTER callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:scsiwmi.ScsiPortWmiFireAdapterEvent
-title: ScsiPortWmiFireAdapterEvent macro
-author: windows-driver-content
-description: The ScsiPortWmiFireAdapterEvent routine sends an event associated with an adapter unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location: storage\scsiportwmifireadapterevent.htm
-old-project: storage
-ms.assetid: cb48d1a3-65ef-49f7-b6e5-b3dabf989779
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: ScsiPortWmiFireAdapterEvent
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: scsiwmi.h
-req.include-header: Miniport.h, Scsi.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ScsiPortWmiFireAdapterEvent
-req.alt-loc: scsiwmi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product: Windows 10 or later.
+UID : NF:scsiwmi.ScsiPortWmiFireAdapterEvent
+title : ScsiPortWmiFireAdapterEvent macro
+author : windows-driver-content
+description : The ScsiPortWmiFireAdapterEvent routine sends an event associated with an adapter unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
+old-location : storage\scsiportwmifireadapterevent.htm
+old-project : storage
+ms.assetid : cb48d1a3-65ef-49f7-b6e5-b3dabf989779
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : ScsiPortWmiFireAdapterEvent
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : scsiwmi.h
+req.include-header : Miniport.h, Scsi.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ScsiPortWmiFireAdapterEvent
+req.alt-loc : scsiwmi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product : Windows 10 or later.
 ---
 
-# ScsiPortWmiFireAdapterEvent macro
 
-
-
-## -description
+# ScsiPortWmiFireAdapterEvent function
 The <b>ScsiPortWmiFireAdapterEvent</b> routine sends an event associated with an adapter unit to the port driver for delivery to WMI data consumers that have requested notification of the event.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID ScsiPortWmiFireAdapterEvent(
@@ -56,39 +51,51 @@ VOID ScsiPortWmiFireAdapterEvent(
 );
 ````
 
+## Parameters
 
-## -parameters
+`HwDeviceExtension`
 
-### -param HwDeviceExtension [in]
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. 
+`Guid`
 
+Pointer to the GUID that represents the event block.
 
-### -param Guid [in]
+`InstanceIndex`
 
-Pointer to the GUID that represents the event block. 
+If the event block has multiple instances, specifies the index of the instance.
 
-
-### -param InstanceIndex [in]
-
-If the event block has multiple instances, specifies the index of the instance. 
-
-
-### -param EventDataSize [in]
+`EventDataSize`
 
 Specifies the number of bytes of data at <i>EventData</i>, not including pad bytes at the beginning of the event data buffer. If no data is generated for an event, <i>EventDataSize</i> should be set to zero.
 
+`EventData`
 
-### -param EventData [in]
-
-Pointer to a miniport driver-allocated buffer containing data generated by the miniport driver for the event. The buffer must be at least the size of the event data plus 0x40 pad bytes at the beginning of the buffer. 
+Pointer to a miniport driver-allocated buffer containing data generated by the miniport driver for the event. The buffer must be at least the size of the event data plus 0x40 pad bytes at the beginning of the buffer.
 
 
-## -remarks
+## Return Value
+
+None
+
+## Remarks
+
 This routine is a simplified version of the <a href="..\scsiwmi\nf-scsiwmi-scsiportwmifirelogicalunitevent.md">ScsiPortWmiFireLogicalUnitEvent</a> routine. Whereas, ScsiPortWmiFireLogicalUnitEvent can be used to notify the port driver of events associated with adapters and storage devices, <b>ScsiPortWmiFireAdapterEvent</b> is used to notify the port driver of events associated with adapters only.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmifirelogicalunitevent.md">ScsiPortWmiFireLogicalUnitEvent</a>
@@ -99,4 +106,3 @@ This routine is a simplified version of the <a href="..\scsiwmi\nf-scsiwmi-scsip
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortWmiFireAdapterEvent macro%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:ndis._NDIS_FILTER_ATTRIBUTES
-title: _NDIS_FILTER_ATTRIBUTES
-author: windows-driver-content
-description: The NDIS_FILTER_ATTRIBUTES structure defines the attributes of a filter module.
-old-location: netvista\ndis_filter_attributes.htm
-old-project: netvista
-ms.assetid: a377d809-4a6f-413e-a26a-446b4eca85ab
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_FILTER_ATTRIBUTES, NDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_FILTER_ATTRIBUTES
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: NDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES
+UID : NS:ndis._NDIS_FILTER_ATTRIBUTES
+title : _NDIS_FILTER_ATTRIBUTES
+author : windows-driver-content
+description : The NDIS_FILTER_ATTRIBUTES structure defines the attributes of a filter module.
+old-location : netvista\ndis_filter_attributes.htm
+old-project : netvista
+ms.assetid : a377d809-4a6f-413e-a26a-446b4eca85ab
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES, NDIS_FILTER_ATTRIBUTES
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_FILTER_ATTRIBUTES
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : "*PNDIS_FILTER_ATTRIBUTES, NDIS_FILTER_ATTRIBUTES"
 ---
 
 # _NDIS_FILTER_ATTRIBUTES structure
-
-
-
-## -description
 The NDIS_FILTER_ATTRIBUTES structure defines the attributes of a filter module.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_FILTER_ATTRIBUTES {
   NDIS_OBJECT_HEADER Header;
@@ -52,34 +45,40 @@ typedef struct _NDIS_FILTER_ATTRIBUTES {
 } NDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Flags`
 
-### -field Header
+            Reserved. Set this member to zero.
+        
+            `Header`
 
-The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+            The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      filter attributes structure (NDIS_FILTER_ATTRIBUTES). Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_ATTRIBUTES, the 
      <b>Revision</b> member to NDIS_FILTER_ATTRIBUTES_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_FILTER_ATTRIBUTES_REVISION_1.
 
-
-### -field Flags
-
-Reserved. Set this member to zero.
-
-
-## -remarks
-A filter drivers passes an NDIS_FILTER_ATTRIBUTES structure to the 
+    ## Remarks
+        A filter drivers passes an NDIS_FILTER_ATTRIBUTES structure to the 
     <a href="..\ndis\nf-ndis-ndisfsetattributes.md">NdisFSetAttributes</a> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisfsetattributes.md">NdisFSetAttributes</a>
@@ -90,4 +89,3 @@ A filter drivers passes an NDIS_FILTER_ATTRIBUTES structure to the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_ATTRIBUTES structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

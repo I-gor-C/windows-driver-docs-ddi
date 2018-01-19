@@ -1,52 +1,47 @@
 ---
-UID: NF:sensorscx.SensorsCxSensorInitialize
-title: SensorsCxSensorInitialize function
-author: windows-driver-content
-description: This function sets the enumeration properties of a sensor.
-old-location: sensors\sensorscxsensorinitialize.htm
-old-project: sensors
-ms.assetid: D6C0B66A-58ED-4E1D-89E2-4A1AF77281C1
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: SensorsCxSensorInitialize
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: sensorscx.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SensorsCxSensorInitialize
-req.alt-loc: SensorsCx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: SensorConnectionType
-req.product: Windows 10 or later.
+UID : NF:sensorscx.SensorsCxSensorInitialize
+title : SensorsCxSensorInitialize function
+author : windows-driver-content
+description : This function sets the enumeration properties of a sensor.
+old-location : sensors\sensorscxsensorinitialize.htm
+old-project : sensors
+ms.assetid : D6C0B66A-58ED-4E1D-89E2-4A1AF77281C1
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : SensorsCxSensorInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : sensorscx.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SensorsCxSensorInitialize
+req.alt-loc : SensorsCx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : SensorConnectionType
+req.product : Windows 10 or later.
 ---
 
+
 # SensorsCxSensorInitialize function
-
-
-
-## -description
 This function sets the enumeration properties of a sensor.
 
  For more information about sensor properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>.
 
-
-
-## -syntax
+## Syntax
 
 ````
 FORCEINLINE NTSTATUS SensorsCxSensorInitialize(
@@ -55,20 +50,19 @@ FORCEINLINE NTSTATUS SensorsCxSensorInitialize(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Sensor [in]
+`Sensor`
 
 A reference to a sensor object.
 
-
-### -param pSensorConfig [in]
+`pSensorConfig`
 
 A list of enumeration properties. For more information, see <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a>.
 
 
-## -returns
+## Return Value
+
 This function returns NTSTATUS with different values. Some values that may be returned are the following:
 
 STATUS_SUCCESS is returned when the function completes successfully.
@@ -80,4 +74,14 @@ STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smalle
 STATUS_NOT_FOUND is returned if there was an error constructing the controller object context from the <b>Sensor</b> object.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | sensorscx.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

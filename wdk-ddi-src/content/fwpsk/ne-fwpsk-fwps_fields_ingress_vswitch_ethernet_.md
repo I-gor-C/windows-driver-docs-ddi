@@ -1,52 +1,45 @@
 ---
-UID: NE:fwpsk.FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_
-title: FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_
-author: windows-driver-content
-description: The FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET (formerly WPS_FIELDS_INGRESS_VSWITCH_802_3) enumeration type specifies the data field identifiers for the FWPS_LAYER_INGRESS_VSWITCH_ETHERNET run-time filtering layer.
-old-location: netvista\fwps_fields_ingress_vswitch_802_3.htm
-old-project: netvista
-ms.assetid: ec206a59-33a1-4812-8290-4a2d417e4747
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_, FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET
-req.alt-loc: fwpsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET
+UID : NE:fwpsk.FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_
+title : FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_
+author : windows-driver-content
+description : The FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET (formerly WPS_FIELDS_INGRESS_VSWITCH_802_3) enumeration type specifies the data field identifiers for the FWPS_LAYER_INGRESS_VSWITCH_ETHERNET run-time filtering layer.
+old-location : netvista\fwps_fields_ingress_vswitch_802_3.htm
+old-project : netvista
+ms.assetid : ec206a59-33a1-4812-8290-4a2d417e4747
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_, FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET
+req.alt-loc : fwpsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET
 ---
 
-# FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_ enumeration
-
-
-
-## -description
+# FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_ Enumeration
 The FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET (formerly WPS_FIELDS_INGRESS_VSWITCH_802_3) enumeration type specifies the data field identifiers for the
   FWPS_LAYER_INGRESS_VSWITCH_ETHERNET 
-  <a href="netvista.run_time_filtering_layer_identifiers">run-time filtering layer</a>.
+  <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa366492">run-time filtering layer</a>.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_ { 
   FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS,
@@ -66,77 +59,76 @@ typedef enum FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET_ {
 } FWPS_FIELDS_INGRESS_VSWITCH_ETHERNET;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_ETHER_TYPE</td>
+<td>The virtual switch ingress Ethernet EtherType field.</td>
+</tr>
 
-The virtual switch ingress MAC source address field.
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_DESTINATION_ADDRESS</td>
+<td>The virtual switch ingress MAC destination address field.</td>
+</tr>
 
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_DESTINATION_ADDRESS_TYPE</td>
+<td>The virtual switch ingress MAC destination address type field.</td>
+</tr>
 
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS_TYPE
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS</td>
+<td>The virtual switch ingress MAC source address field.</td>
+</tr>
 
-The virtual switch ingress MAC source address type field.
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS_TYPE</td>
+<td>The virtual switch ingress MAC source address type field.</td>
+</tr>
 
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAX</td>
+<td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
+</tr>
 
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_DESTINATION_ADDRESS
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VLAN_ID</td>
+<td>The virtual switch ingress virtual  LAN (VLAN) identifier field.</td>
+</tr>
 
-The virtual switch ingress MAC destination address field.
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_ID</td>
+<td>The virtual switch ingress identifier field.</td>
+</tr>
 
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_NETWORK_TYPE</td>
+<td>The virtual switch ingress network type field.</td>
+</tr>
 
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAC_DESTINATION_ADDRESS_TYPE
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_SOURCE_INTERFACE_ID</td>
+<td>The virtual switch ingress source interface identifier field.</td>
+</tr>
 
-The virtual switch ingress MAC destination address type field.
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_SOURCE_INTERFACE_TYPE</td>
+<td>The virtual switch ingress source interface type field.</td>
+</tr>
 
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_ETHER_TYPE
-
-The virtual switch ingress Ethernet EtherType field.
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VLAN_ID
-
-The virtual switch ingress virtual  LAN (VLAN) identifier field.
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_TENANT_NETWORK_ID
-
-The virtual switch ingress tenant network identifier   field.
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_ID
-
-The virtual switch ingress identifier field.
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_NETWORK_TYPE
-
-The virtual switch ingress network type field. 
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_SOURCE_INTERFACE_ID
-
-The virtual switch ingress source interface identifier field.
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_SOURCE_INTERFACE_TYPE
-
-The virtual switch ingress source interface type field.
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_SOURCE_VM_ID
-
-The virtual switch ingress source virtual machine (VM)  identifier field.
-
-
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_FLAGS
-
-The virtual switch ingress ethernet flags field.
+<tr>
+<td>FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_VSWITCH_SOURCE_VM_ID</td>
+<td>The virtual switch ingress source virtual machine (VM)  identifier field.</td>
+</tr>
+</table>
 
 
-### -field FWPS_FIELD_INGRESS_VSWITCH_ETHERNET_MAX
-
-The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |

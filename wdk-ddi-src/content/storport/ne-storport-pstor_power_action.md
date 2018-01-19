@@ -1,51 +1,44 @@
 ---
-UID: NE:storport.PSTOR_POWER_ACTION
-title: *PSTOR_POWER_ACTION
-author: windows-driver-content
-description: The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
-old-location: storage\stor_power_action.htm
-old-project: storage
-ms.assetid: ffc7c1ec-faec-4383-ab69-844cf68d054f
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: *PSTOR_POWER_ACTION, STOR_POWER_ACTION, *PSTOR_POWER_ACTION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: STOR_POWER_ACTION
-req.alt-loc: storport.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: STOR_POWER_ACTION, *PSTOR_POWER_ACTION
-req.product: Windows 10 or later.
+UID : NE:storport.PSTOR_POWER_ACTION
+title : "*PSTOR_POWER_ACTION"
+author : windows-driver-content
+description : The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
+old-location : storage\stor_power_action.htm
+old-project : storage
+ms.assetid : ffc7c1ec-faec-4383-ab69-844cf68d054f
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : "*PSTOR_POWER_ACTION, *PSTOR_POWER_ACTION, STOR_POWER_ACTION"
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : STOR_POWER_ACTION
+req.alt-loc : storport.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PSTOR_POWER_ACTION, STOR_POWER_ACTION"
+req.product : Windows 10 or later.
 ---
 
-# *PSTOR_POWER_ACTION enumeration
+# *PSTOR_POWER_ACTION Enumeration
+The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
 
-
-
-## -description
-The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum  { 
   StorPowerActionNone           = 0,
@@ -59,53 +52,62 @@ typedef enum  {
 } STOR_POWER_ACTION, *PSTOR_POWER_ACTION;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field StorPowerActionNone
+<tr>
+<td>StorPowerActionHibernate</td>
+<td>The system is entering hibernation.</td>
+</tr>
 
-No system shutdown is about to occur.
+<tr>
+<td>StorPowerActionNone</td>
+<td>No system shutdown is about to occur.</td>
+</tr>
+
+<tr>
+<td>StorPowerActionReserved</td>
+<td>Reserved.</td>
+</tr>
+
+<tr>
+<td>StorPowerActionShutdown</td>
+<td>The system is shutting down, but the type of shutdown is not known.</td>
+</tr>
+
+<tr>
+<td>StorPowerActionShutdownOff</td>
+<td>The system is shutting down and powering off.</td>
+</tr>
+
+<tr>
+<td>StorPowerActionShutdownReset</td>
+<td>The system is shutting down and resetting.</td>
+</tr>
+
+<tr>
+<td>StorPowerActionSleep</td>
+<td>The system is entering standby.</td>
+</tr>
+
+<tr>
+<td>StorPowerActionWarmEject</td>
+<td>The system is preparing for ejection.</td>
+</tr>
+</table>
 
 
-### -field StorPowerActionReserved
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
 
-Reserved.
+## See Also
 
-
-### -field StorPowerActionSleep
-
-The system is entering standby.
-
-
-### -field StorPowerActionHibernate
-
-The system is entering hibernation.
-
-
-### -field StorPowerActionShutdown
-
-The system is shutting down, but the type of shutdown is not known.
-
-
-### -field StorPowerActionShutdownReset
-
-The system is shutting down and resetting.
-
-
-### -field StorPowerActionShutdownOff
-
-The system is shutting down and powering off.
-
-
-### -field StorPowerActionWarmEject
-
-The system is preparing for ejection.
-
-
-## -remarks
-
-
-## -see-also
 <dl>
 <dt>
 <a href="..\storport\ns-storport-_scsi_power_request_block.md">SCSI_POWER_REQUEST_BLOCK</a>
@@ -116,4 +118,3 @@ The system is preparing for ejection.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POWER_ACTION enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

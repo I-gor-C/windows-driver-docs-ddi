@@ -1,73 +1,65 @@
 ---
-UID: NC:irb.IDE_ADAPTER_CONTROL
-title: IDE_ADAPTER_CONTROL
-author: windows-driver-content
-description: The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location: storage\ataadaptercontrol.htm
-old-project: storage
-ms.assetid: 50125022-7450-4582-b98d-1d597e4e96d4
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: WdmlibIoGetAffinityInterrupt
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: irb.h
-req.include-header: Irb.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: AtaAdapterControl
-req.alt-loc: irb.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: LUID
+UID : NC:irb.IDE_ADAPTER_CONTROL
+title : IDE_ADAPTER_CONTROL
+author : windows-driver-content
+description : The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location : storage\ataadaptercontrol.htm
+old-project : storage
+ms.assetid : 50125022-7450-4582-b98d-1d597e4e96d4
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : WdmlibIoGetAffinityInterrupt
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : irb.h
+req.include-header : Irb.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : AtaAdapterControl
+req.alt-loc : irb.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : LUID
 ---
 
-# IDE_ADAPTER_CONTROL callback
 
-
-
-## -description
+# IDE_ADAPTER_CONTROL callback function
 The <i>AtaAdapterControl</i> miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.
 
+## Syntax
 
+```
+IDE_ADAPTER_CONTROL IdeAdapterControl;
 
-## -prototype
-
-````
-IDE_ADAPTER_CONTROL AtaAdapterControl;
-
-BOOLEAN AtaAdapterControl(
-  _In_    PVOID              ControllerExtension,
-  _In_    IDE_CONTROL_ACTION ControlAction,
-  _Inout_ PVOID              Parameters
+BOOLEAN IdeAdapterControl(
+  PVOID ControllerExtension,
+  IDE_CONTROL_ACTION ControlAction,
+  PVOID Parameters
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ControllerExtension [in]
+`ControllerExtension`
 
 A pointer to the controller extension.
 
+`ControlAction`
 
-### -param ControlAction [in]
-
-
-      One of five actions that the miniport driver must perform as defined in the following table.
+One of five actions that the miniport driver must perform as defined in the following table.
   
 
 <table>
@@ -147,23 +139,34 @@ Indicates that the miniport driver should perform a vendor-defined control actio
 </td>
 </tr>
 </table>
- 
 
-
-### -param Parameters [in, out]
+`Parameters`
 
 Parameters associated with the given action.
 
 
-## -returns
+## Return Value
+
 The miniport driver must return <b>TRUE</b> to acknowledge the completion of the requested action. A return value of <b>FALSE</b> indicates that the miniport driver was unable to complete the action successfully. A return value of <b>FALSE</b> for certain actions might cause the device installation to fail.
 
+## Remarks
 
-## -remarks
 The port driver guarantees that there is no outstanding I/O on the adapter before it invokes the <i>AtaAdapterControl</i> routine.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | irb.h (include Irb.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\irb\ns-irb-_ide_controller_configuration.md">IDE_CONTROLLER_CONFIGURATION</a>
@@ -174,4 +177,3 @@ The port driver guarantees that there is no outstanding I/O on the adapter befor
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaAdapterControl routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

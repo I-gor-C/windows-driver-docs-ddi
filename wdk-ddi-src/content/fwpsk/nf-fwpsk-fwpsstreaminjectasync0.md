@@ -1,50 +1,45 @@
 ---
-UID: NF:fwpsk.FwpsStreamInjectAsync0
-title: FwpsStreamInjectAsync0 function
-author: windows-driver-content
-description: The FwpsStreamInjectAsync0 function injects TCP data segments into a TCP data stream.Note  FwpsStreamInjectAsync0 is a specific version of FwpsStreamInjectAsync.
-old-location: netvista\fwpsstreaminjectasync0.htm
-old-project: netvista
-ms.assetid: d72c3067-21df-40ee-a898-100fcdc5eaca
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsStreamInjectAsync0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsStreamInjectAsync0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsStreamInjectAsync0
+title : FwpsStreamInjectAsync0 function
+author : windows-driver-content
+description : The FwpsStreamInjectAsync0 function injects TCP data segments into a TCP data stream.Note  FwpsStreamInjectAsync0 is a specific version of FwpsStreamInjectAsync.
+old-location : netvista\fwpsstreaminjectasync0.htm
+old-project : netvista
+ms.assetid : d72c3067-21df-40ee-a898-100fcdc5eaca
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsStreamInjectAsync0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsStreamInjectAsync0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsStreamInjectAsync0 function
-
-
-
-## -description
 The 
   <b>FwpsStreamInjectAsync0</b> function injects TCP data segments into a TCP data stream.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsStreamInjectAsync0(
@@ -62,35 +57,30 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param injectionHandle [in]
+`injectionHandle`
 
 An injection handle that was previously created by a call to the 
      <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
      FwpsInjectionHandleCreate0</a> function.
 
-
-### -param injectionContext [in, optional]
+`injectionContext`
 
 An optional handle to the injection context.
 
-
-### -param flags [in]
+`flags`
 
 Reserved. Callout drivers should set this parameter to zero.
 
-
-### -param flowId [in]
+`flowId`
 
 A run-time identifier that specifies the data flow into which to inject the data. The run-time
      identifier for a data flow is provided to a callout driver through the FWPS_METADATA_FIELD_FLOW_HANDLE
      metadata value that the filter engine provided to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
-
-### -param calloutId [in]
+`calloutId`
 
 The run-time identifier for the callout in the filter engine. This identifier was returned when
      the callout driver called either the 
@@ -98,8 +88,7 @@ The run-time identifier for the callout in the filter engine. This identifier wa
      <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
-
-### -param layerId [in]
+`layerId`
 
 The run-time identifier for the filtering layer at which the data stream is being processed. This
      value must be either FWPS_LAYER_STREAM_V4 or FWPS_LAYER_STREAM_V6. The run-time identifier for the layer
@@ -109,8 +98,7 @@ The run-time identifier for the filtering layer at which the data stream is bein
      the filter engine passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
-
-### -param streamFlags [in]
+`streamFlags`
 
 Flags that specify characteristics of the data stream into which the data is to be injected.
      
@@ -118,73 +106,7 @@ Flags that specify characteristics of the data stream into which the data is to 
 When injecting data into an inbound data stream, a callout driver specifies one or more of the
      following flags:
 
-
-
-
-### -param FWPS_STREAM_FLAG_RECEIVE
-
-Specifies that the data is to be injected into the inbound data stream. This flag is required
-       when injecting data into an inbound data stream.
-
-
-### -param FWPS_STREAM_FLAG_RECEIVE_DISCONNECT
-
-Specifies that the FIN flag is to be set in the TCP header for the data being injected into the
-       inbound data stream.
-
-<div class="alert"><b>Note</b>  If this flag is set, the <b>FWPS_STREAM_FLAG_RECEIVE</b> flag must also be set, or else <b>STATUS_FWP_INVALID_PARAMETER</b> will be returned.</div>
-<div> </div>
-
-### -param FWPS_STREAM_FLAG_RECEIVE_EXPEDITED
-
-Specifies that the data being injected into the inbound data stream is high-priority,
-       out-of-band data.
-
-
-### -param FWPS_STREAM_FLAG_RECEIVE_PUSH
-
-Specifies that the inbound data has arrived with the PUSH flag set in the TCP header, which
-       indicates that the sender requests immediate data transfer. Unwanted delays in data transfer can occur
-       if this flag is not set. This flag is available starting with Windows Vista with SP1.
-
-</dd>
-</dl>
-When injecting data into an outbound data stream, a callout driver specifies one or more of the
-     following flags:
-
-
-
-
-### -param FWPS_STREAM_FLAG_SEND
-
-Specifies that the data is to be injected into the outbound data stream. This flag is required
-       when injecting data into an outbound data stream.
-
-
-### -param FWPS_STREAM_FLAG_SEND_EXPEDITED
-
-Specifies that the data being injected into the outbound data stream is high-priority,
-       out-of-band data.
-
-
-### -param FWPS_STREAM_FLAG_SEND_NODELAY
-
-Specifies that the callout driver requests that there is no buffering of the data being injected
-       into the outbound data stream.
-
-
-### -param FWPS_STREAM_FLAG_SEND_DISCONNECT
-
-Specifies that the stream is to be disconnected after the data being injected into the outbound
-       data stream has been sent. The network stack will set the FIN flag in the TCP header of the last
-       packet that is sent out.
-
-<div class="alert"><b>Note</b>  If this flag is set, the <b>FWPS_STREAM_FLAG_SEND</b> flag must also be set, or else <b>STATUS_FWP_INVALID_PARAMETER</b> will be returned.</div>
-<div> </div>
-</dd>
-</dl>
-
-### -param netBufferList [in, out]
+`netBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
@@ -198,13 +120,11 @@ A pointer to a
      <i>streamFlags</i> parameter is <b>FWPS_STREAM_FLAG_RECEIVE_DISCONNECT</b> or <b>FWPS_STREAM_FLAG_SEND_DISCONNECT</b>, 
      <i>netBufferList</i> can be <b>NULL</b>.
 
-
-### -param dataLength [in]
+`dataLength`
 
 The number of bytes of data being injected into the data stream.
 
-
-### -param completionFn [in]
+`completionFn`
 
 A pointer to a 
      <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a> callout function provided by
@@ -221,15 +141,15 @@ If the
 
 This parameter is required and cannot be <b>NULL</b>. If it is <b>NULL</b>, <b>STATUS_FWP_NULL_POINTER</b> will be returned.
 
-
-### -param completionContext [in, optional]
+`completionContext`
 
 A pointer to a callout driver–provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsStreamInjectAsync0</b> function an NTSTATUS code such as one of the following.
 <dl>
@@ -248,10 +168,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpsStreamInjectAsync0</b> function from within a callout's 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function to inject new
@@ -294,8 +212,20 @@ If the return value is not STATUS_SUCCESS, the completion function will not be c
     <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a> or 
     <a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
@@ -342,4 +272,3 @@ If the return value is not STATUS_SUCCESS, the completion function will not be c
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsStreamInjectAsync0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.RtlUnicodeToUTF8N
-title: RtlUnicodeToUTF8N function
-author: windows-driver-content
-description: The RtlUnicodeToUTF8N routine converts a Unicode string to a UTF-8 string.
-old-location: kernel\rtlunicodetoutf8n.htm
-old-project: kernel
-ms.assetid: fdbb5d74-25d5-4920-849c-8d4adce1d216
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: RtlUnicodeToUTF8N
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Ntifs.h, Wdm.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlUnicodeToUTF8N
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.RtlUnicodeToUTF8N
+title : RtlUnicodeToUTF8N function
+author : windows-driver-content
+description : The RtlUnicodeToUTF8N routine converts a Unicode string to a UTF-8 string.
+old-location : kernel\rtlunicodetoutf8n.htm
+old-project : kernel
+ms.assetid : fdbb5d74-25d5-4920-849c-8d4adce1d216
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : RtlUnicodeToUTF8N
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Ntifs.h, Wdm.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlUnicodeToUTF8N
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # RtlUnicodeToUTF8N function
+The <b>RtlUnicodeToUTF8N</b> routine converts a Unicode string to a UTF-8 string.
 
-
-
-## -description
-The <b>RtlUnicodeToUTF8N</b> routine converts a Unicode string to a UTF-8 string. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RtlUnicodeToUTF8N(
@@ -56,35 +51,31 @@ NTSTATUS RtlUnicodeToUTF8N(
 );
 ````
 
+## Parameters
 
-## -parameters
+`UTF8StringDestination`
 
-### -param UTF8StringDestination [out]
+A pointer to a caller-allocated destination buffer into which the routine writes the UTF-8 output string. If this parameter is <b>NULL</b>, the routine writes the required size of the output buffer to *<i>UTF8StringActualByteCount</i>.
 
-A pointer to a caller-allocated destination buffer into which the routine writes the UTF-8 output string. If this parameter is <b>NULL</b>, the routine writes the required size of the output buffer to *<i>UTF8StringActualByteCount</i>. 
+`UTF8StringMaxByteCount`
 
+Specifies the maximum number of bytes that the routine can write to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> = <b>NULL</b>, set <i>UTF8StringMaxByteCount</i> = 0.
 
-### -param UTF8StringMaxByteCount [in]
+`UTF8StringActualByteCount`
 
-Specifies the maximum number of bytes that the routine can write to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> = <b>NULL</b>, set <i>UTF8StringMaxByteCount</i> = 0. 
+A pointer to a location into which the routine writes the actual number of bytes that it has written to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> is non-<b>NULL</b>, this count never exceeds the value of <i>UTF8StringMaxByteCount</i>. If <i>UTF8StringDestination</i> is <b>NULL</b>, this count is the number of bytes that are required to contain the entire output string.
 
-
-### -param UTF8StringActualByteCount [out]
-
-A pointer to a location into which the routine writes the actual number of bytes that it has written to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> is non-<b>NULL</b>, this count never exceeds the value of <i>UTF8StringMaxByteCount</i>. If <i>UTF8StringDestination</i> is <b>NULL</b>, this count is the number of bytes that are required to contain the entire output string. 
-
-
-### -param UnicodeStringSource [in]
+`UnicodeStringSource`
 
 A pointer to the Unicode source string.
 
+`UnicodeStringByteCount`
 
-### -param UnicodeStringByteCount [in]
-
-Specifies the number of bytes in the Unicode source string that the <i>UnicodeStringSource</i> parameter points to. 
+Specifies the number of bytes in the Unicode source string that the <i>UnicodeStringSource</i> parameter points to.
 
 
-## -returns
+## Return Value
+
 <b>RtlUnicodeToUTF8N</b> returns STATUS_SUCCESS if the call is successful and all Unicode character codes in the input string were converted to the corresponding UTF-8 character codes in the output string. It returns STATUS_SOME_NOT_MAPPED if the call is successful but one or more input characters were invalid and were replaced by the Unicode replacement character, U+FFFD, before they were converted to UTF-8. Possible error return values include the following error codes:
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
@@ -97,12 +88,10 @@ Specifies the number of bytes in the Unicode source string that the <i>UnicodeSt
 </dl>The <i>UnicodeStringSource</i> parameter is <b>NULL</b>. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_5</b></dt>
-</dl><i>UnicodeStringByteCount</i> is not an integer multiple of <b>sizeof</b>(WCHAR). 
+</dl><i>UnicodeStringByteCount</i> is not an integer multiple of <b>sizeof</b>(WCHAR).
 
- 
+## Remarks
 
-
-## -remarks
 The UTF-8 output string is null-terminated only if the Unicode input string is null-terminated.
 
 The routine returns STATUS_BUFFER_TOO_SMALL if the <i>UTF8StringMaxByteCount</i> parameter specifies a buffer size that is too small to contain the entire output string. In this case, the routine writes as many UTF-8 characters as will fit in the buffer, and the *<i>UTF8StringActualByteCount</i> value specifies the number of valid bytes that the routine has written to the buffer. The partial string that is contained in the output buffer might not include a terminating null character.
@@ -113,15 +102,27 @@ You can make an initial call to <b>RtlUnicodeToUTF8N</b> to obtain the required 
 
 <b>RtlUnicodeToUTF8N</b> continues to convert the input string to an output string until it reaches the end of the source buffer or the end of the destination buffer, whichever occurs first. The routine converts any null characters in the input string to null characters in the output string. If the input string contains a terminating null character, but the null character is not located at the end of the source buffer, the routine continues past the terminating null character until it reaches the end of the available buffer space.
 
-The <a href="..\wdm\nf-wdm-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a> routine converts a UTF-8 string to a Unicode string.
+The <a href="..\ntifs\nf-ntifs-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a> routine converts a UTF-8 string to a Unicode string.
 
-You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to perform a lossless conversion of valid text strings between the Unicode and UTF-8 formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string. 
+You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to perform a lossless conversion of valid text strings between the Unicode and UTF-8 formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Ntifs.h, Wdm.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
-<a href="..\wdm\nf-wdm-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a>
+<a href="..\ntifs\nf-ntifs-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a>
 </dt>
 </dl>
  
@@ -129,4 +130,3 @@ You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to per
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUnicodeToUTF8N routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

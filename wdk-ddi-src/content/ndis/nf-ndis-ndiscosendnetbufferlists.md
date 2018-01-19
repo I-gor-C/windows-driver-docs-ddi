@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisCoSendNetBufferLists
-title: NdisCoSendNetBufferLists function
-author: windows-driver-content
-description: The NdisCoSendNetBufferLists function sends network data that is contained in a specified list of NET_BUFFER_LIST structures.
-old-location: netvista\ndiscosendnetbufferlists.htm
-old-project: netvista
-ms.assetid: 8284fdd4-26de-4622-b164-f33aee1d8742
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCoSendNetBufferLists
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 drivers in Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCoSendNetBufferLists
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Connection_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCoSendNetBufferLists
+title : NdisCoSendNetBufferLists function
+author : windows-driver-content
+description : The NdisCoSendNetBufferLists function sends network data that is contained in a specified list of NET_BUFFER_LIST structures.
+old-location : netvista\ndiscosendnetbufferlists.htm
+old-project : netvista
+ms.assetid : 8284fdd4-26de-4622-b164-f33aee1d8742
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCoSendNetBufferLists
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 drivers in Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCoSendNetBufferLists
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Connection_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCoSendNetBufferLists function
-
-
-
-## -description
 The 
   <b>NdisCoSendNetBufferLists</b> function sends network data that is contained in a specified list of 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisCoSendNetBufferLists(
@@ -55,55 +50,32 @@ VOID NdisCoSendNetBufferLists(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisVcHandle [in]
+`NdisVcHandle`
 
 A handle to a virtual connection (VC) that identifies the target of the send request.
 
-
-### -param NetBufferLists [in]
+`NetBufferLists`
 
 A pointer to a linked list of 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures. Each
      NET_BUFFER_LIST structure describes a list of 
      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures.
 
-
-### -param SendFlags [in]
+`SendFlags`
 
 Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
      operation. To clear all of the flags, set this parameter to zero. 
      <b>NdisCoSendNetBufferLists</b> supports the following flags:
-     
 
 
+## Return Value
 
-
-### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
-
-The current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
-
-
-### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
-
-NDIS should check for loopback. By default, NDIS does not loop back data to the driver that
-       submitted the send request. An overlying driver can override this behavior by setting
-       NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK. When this flag is set, NDIS identifies all of the NET_BUFFER
-       structures that contain data that matches the receive criteria for the binding. NDIS indicates
-       NET_BUFFER structures that match the criteria to the overlying driver. This flag does not affect
-       checking for loopback, or looping back, on other bindings.
-
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 After a CoNDIS protocol driver calls 
     <b>NdisCoSendNetBufferLists</b>, NDIS submits the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that the 
@@ -174,8 +146,20 @@ Until NDIS calls
     structures or any associated data after the driver calls 
     <b>NdisCoSendNetBufferLists</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Connection_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
@@ -218,4 +202,3 @@ Until NDIS calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoSendNetBufferLists function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

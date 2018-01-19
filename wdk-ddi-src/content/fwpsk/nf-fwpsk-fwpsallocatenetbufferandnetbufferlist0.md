@@ -1,51 +1,46 @@
 ---
-UID: NF:fwpsk.FwpsAllocateNetBufferAndNetBufferList0
-title: FwpsAllocateNetBufferAndNetBufferList0 function
-author: windows-driver-content
-description: The FwpsAllocateNetBufferAndNetBufferList0 function allocates a new NET_BUFFER_LIST structure.Note  FwpsAllocateNetBufferAndNetBufferList0 is a specific version of FwpsAllocateNetBufferAndNetBufferList.
-old-location: netvista\fwpsallocatenetbufferandnetbufferlist0.htm
-old-project: netvista
-ms.assetid: d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsAllocateNetBufferAndNetBufferList0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsAllocateNetBufferAndNetBufferList0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsAllocateNetBufferAndNetBufferList0
+title : FwpsAllocateNetBufferAndNetBufferList0 function
+author : windows-driver-content
+description : The FwpsAllocateNetBufferAndNetBufferList0 function allocates a new NET_BUFFER_LIST structure.Note  FwpsAllocateNetBufferAndNetBufferList0 is a specific version of FwpsAllocateNetBufferAndNetBufferList.
+old-location : netvista\fwpsallocatenetbufferandnetbufferlist0.htm
+old-project : netvista
+ms.assetid : d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsAllocateNetBufferAndNetBufferList0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsAllocateNetBufferAndNetBufferList0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsAllocateNetBufferAndNetBufferList0 function
-
-
-
-## -description
 The 
   <b>FwpsAllocateNetBufferAndNetBufferList0</b> function allocates a new 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
@@ -59,26 +54,23 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param poolHandle [in]
+`poolHandle`
 
 A 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> pool handle that was
      obtained from a previous call to the 
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">NdisAllocateNetBufferListPool</a> function.
 
-
-### -param contextSize [in]
+`contextSize`
 
 The size, in bytes, of used data space in the 
      <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a> structure
      to reserve for the callout driver. The value of this parameter must be a multiple of the value defined
      by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.
 
-
-### -param contextBackFill [in]
+`contextBackFill`
 
 The size, in bytes, of 
      unused data space (backfill space) that the callout driver requires. The 
@@ -86,34 +78,31 @@ The size, in bytes, of
      <i>ContextSize</i> parameter and allocates additional space. The value of this parameter must be a
      multiple of the value defined by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.
 
-
-### -param mdlChain [in, optional]
+`mdlChain`
 
 A pointer to an MDL chain that is used to initialize the preallocated NET_BUFFER structure. This
      parameter is optional and can be <b>NULL</b>.
 
-
-### -param dataOffset [in]
+`dataOffset`
 
 The initial offset, in bytes, from the start of the buffer to the start of the 
      used data space in the MDL chain. Data space ahead of this offset is 
      unused data space. Therefore, this value also represents the initial amount of available backfill
      space in the MDL chain.
 
-
-### -param dataLength [in]
+`dataLength`
 
 The length, in bytes, of the 
      used data space in the MDL chain.
 
-
-### -param netBufferList [out]
+`netBufferList`
 
 A pointer to a variable that receives a pointer to the new 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsAllocateNetBufferAndNetBufferList0</b> function returns one of the following NTSTATUS
      codes.
@@ -126,10 +115,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpsAllocateNetBufferAndNetBufferList0</b> function to allocate a new 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
@@ -137,15 +124,27 @@ A callout driver calls the
 This function is a wrapper around the 
     <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
     NdisAllocateNetBufferAndNetBufferList</a> function, but it is specialized for use by WFP 
-    <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>.
 
 After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure has been successfully injected into the
     network stack, the callout driver frees the new <b>NET_BUFFER_LIST</b> structure by calling the 
     <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">
     FwpsFreeNetBufferList0</a> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
@@ -165,7 +164,7 @@ After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md
 <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">Packet Injection Functions</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">Packet Injection Functions</a>
 </dt>
 </dl>
  
@@ -173,4 +172,3 @@ After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

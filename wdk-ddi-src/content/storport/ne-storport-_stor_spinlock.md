@@ -1,51 +1,44 @@
 ---
-UID: NE:storport._STOR_SPINLOCK
-title: _STOR_SPINLOCK
-author: windows-driver-content
-description: The STOR_SPINLOCK enumeration is used to specify the type of a spinlock.
-old-location: storage\stor_spinlock.htm
-old-project: storage
-ms.assetid: 73e5e994-4133-4651-bb94-1d21386be1cd
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _STOR_SPINLOCK, STOR_SPINLOCK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: STOR_SPINLOCK
-req.alt-loc: storport.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
+UID : NE:storport._STOR_SPINLOCK
+title : _STOR_SPINLOCK
+author : windows-driver-content
+description : The STOR_SPINLOCK enumeration is used to specify the type of a spinlock.
+old-location : storage\stor_spinlock.htm
+old-project : storage
+ms.assetid : 73e5e994-4133-4651-bb94-1d21386be1cd
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _STOR_SPINLOCK, STOR_SPINLOCK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : STOR_SPINLOCK
+req.alt-loc : storport.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : STOR_SPINLOCK
+req.product : Windows 10 or later.
 ---
 
-# _STOR_SPINLOCK enumeration
-
-
-
-## -description
+# _STOR_SPINLOCK Enumeration
 The STOR_SPINLOCK enumeration is used to specify the type of a spinlock.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _STOR_SPINLOCK { 
   DpcLock        = 1,
@@ -54,28 +47,37 @@ typedef enum _STOR_SPINLOCK {
 } STOR_SPINLOCK;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field DpcLock
+<tr>
+<td>DpcLock</td>
+<td>Indicates a DPC spinlock.</td>
+</tr>
 
-Indicates a DPC spinlock. 
+<tr>
+<td>InterruptLock</td>
+<td>Indicates an Interrupt spinlock.</td>
+</tr>
+
+<tr>
+<td>StartIoLock</td>
+<td>Indicates a StartIo spinlock.</td>
+</tr>
+</table>
 
 
-### -field StartIoLock
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
 
-Indicates a StartIo spinlock.  
+## See Also
 
-
-### -field InterruptLock
-
-Indicates an Interrupt spinlock.
-
-
-## -remarks
-
-
-## -see-also
 <dl>
 <dt>
 <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
@@ -86,4 +88,3 @@ Indicates an Interrupt spinlock.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_SPINLOCK enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

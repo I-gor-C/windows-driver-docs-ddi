@@ -1,65 +1,59 @@
 ---
-UID: NC:fltkernel.PFLT_CONTEXT_ALLOCATE_CALLBACK
-title: PFLT_CONTEXT_ALLOCATE_CALLBACK
-author: windows-driver-content
-description: A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's ContextAllocateCallback routine.
-old-location: ifsk\pflt_context_allocate_callback.htm
-old-project: ifsk
-ms.assetid: ca737e84-5b03-4fcd-b715-3344d8bbaaf3
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxpTrackReference
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ContextAllocateCallback
-req.alt-loc: fltkernel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NC:fltkernel.PFLT_CONTEXT_ALLOCATE_CALLBACK
+title : PFLT_CONTEXT_ALLOCATE_CALLBACK
+author : windows-driver-content
+description : A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's ContextAllocateCallback routine.
+old-location : ifsk\pflt_context_allocate_callback.htm
+old-project : ifsk
+ms.assetid : ca737e84-5b03-4fcd-b715-3344d8bbaaf3
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ContextAllocateCallback
+req.alt-loc : fltkernel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
-# PFLT_CONTEXT_ALLOCATE_CALLBACK callback
 
+# PFLT_CONTEXT_ALLOCATE_CALLBACK callback function
+A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's <i>ContextAllocateCallback</i> routine.
 
+## Syntax
 
-## -description
-A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's <i>ContextAllocateCallback</i> routine. 
+```
+PFLT_CONTEXT_ALLOCATE_CALLBACK PfltContextAllocateCallback;
 
-
-
-## -prototype
-
-````
-PFLT_CONTEXT_ALLOCATE_CALLBACK ContextAllocateCallback;
-
-PVOID ContextAllocateCallback(
-  _In_ POOL_TYPE        PoolType,
-  _In_ SIZE_T           Size,
-  _In_ FLT_CONTEXT_TYPE ContextType
+PVOID PfltContextAllocateCallback(
+  POOL_TYPE PoolType,
+  SIZE_T Size,
+  FLT_CONTEXT_TYPE ContextType
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param PoolType [in]
+`PoolType`
 
 The type of pool to allocate. This parameter is required and must be one of the following: 
 
@@ -73,15 +67,13 @@ The type of pool to allocate. This parameter is required and must be one of the 
 
 </dd>
 </dl>
-Must be <b>NonPagedPool</b> if the <i>ContextType</i> parameter is FLT_VOLUME_CONTEXT. 
+Must be <b>NonPagedPool</b> if the <i>ContextType</i> parameter is FLT_VOLUME_CONTEXT.
 
+`Size`
 
-### -param Size [in]
+The size, in bytes, of the entire context, including both the portion defined by the filter manager and the portion defined by the minifilter driver.
 
-The size, in bytes, of the entire context, including both the portion defined by the filter manager and the portion defined by the minifilter driver. 
-
-
-### -param ContextType [in]
+`ContextType`
 
 The type of context. This parameter is required and must be one of the following values: 
 
@@ -116,17 +108,31 @@ FLT_VOLUME_CONTEXT
 </dd>
 </dl>
 
-## -returns
-If not enough free pool is available to satisfy the request, this routine returns a <b>NULL</b> pointer. Otherwise, it returns a pointer to the newly allocated context. 
 
+## Return Value
 
-## -remarks
+If not enough free pool is available to satisfy the request, this routine returns a <b>NULL</b> pointer. Otherwise, it returns a pointer to the newly allocated context.
+
+## Remarks
+
 For the rare cases that a minifilter driver must perform its own context allocation, it can specify a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the <i>ContextAllocateCallback</i> routine for each context type that it registers when it calls <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. To specify this routine, the minifilter driver stores a pointer to the routine in the <i>ContextAllocateCallback</i> member of the FLT_CONTEXT_REGISTRATION structure for the context type. 
 
-For more information about context registration, see the reference entry for <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>. 
+For more information about context registration, see the reference entry for <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <=APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
@@ -149,4 +155,3 @@ For more information about context registration, see the reference entry for <a 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_CONTEXT_ALLOCATE_CALLBACK routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

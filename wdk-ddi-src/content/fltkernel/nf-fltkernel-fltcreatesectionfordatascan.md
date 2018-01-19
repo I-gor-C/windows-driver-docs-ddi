@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltCreateSectionForDataScan
-title: FltCreateSectionForDataScan function
-author: windows-driver-content
-description: The FltCreateSectionForDataScan routine creates a section object for a file. The filter manager can optionally synchronize I/O with the section created.
-old-location: ifsk\fltcreatesectionfordatascan.htm
-old-project: ifsk
-ms.assetid: D1215495-C737-45B6-BECD-8CB430C71DE8
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltCreateSectionForDataScan
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: The FltCreateSectionForDataScan routine is available starting with  Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltCreateSectionForDataScan
-req.alt-loc: FltMgr.lib,FltMgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltCreateSectionForDataScan
+title : FltCreateSectionForDataScan function
+author : windows-driver-content
+description : The FltCreateSectionForDataScan routine creates a section object for a file. The filter manager can optionally synchronize I/O with the section created.
+old-location : ifsk\fltcreatesectionfordatascan.htm
+old-project : ifsk
+ms.assetid : D1215495-C737-45B6-BECD-8CB430C71DE8
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltCreateSectionForDataScan
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : The FltCreateSectionForDataScan routine is available starting with  Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltCreateSectionForDataScan
+req.alt-loc : FltMgr.lib,FltMgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltCreateSectionForDataScan function
-
-
-
-## -description
 The <b>FltCreateSectionForDataScan</b> routine creates a section object for a file. The filter manager can optionally synchronize I/O with the section created.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltCreateSectionForDataScan(
@@ -62,25 +57,21 @@ NTSTATUS FltCreateSectionForDataScan(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Instance`
 
-### -param Instance [in]
+The opaque instance pointer for the minifilter driver instance whose context is to be retrieved.
 
-The opaque instance pointer for the minifilter driver instance whose context is to be retrieved. 
-
-
-### -param FileObject [in]
+`FileObject`
 
 The file object for an open file.  The section object will be backed by the specified file. This parameter is required and cannot be <b>NULL</b>.
 
+`SectionContext`
 
-### -param SectionContext [in]
+A pointer to a previously allocated section context.
 
-A pointer to a previously allocated section context. 
-
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 The type  of access for the section object as one or more of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags. 
 
@@ -130,20 +121,16 @@ All actions defined by the previous flags as well as that defined by STANDARD_RI
 </td>
 </tr>
 </table>
- 
 
-
-### -param ObjectAttributes [in, optional]
+`ObjectAttributes`
 
 A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro to initialize this structure. Because <b>FltCreateSectionForDataScan</b> inserts this object into the process handle table, the caller must specify the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
-
-### -param MaximumSize [in, optional]
+`MaximumSize`
 
 This parameter is reserved for future use.
 
-
-### -param SectionPageProtection [in]
+`SectionPageProtection`
 
 The protection to place on each page in the section. Specify one of the following values. This parameter is required and cannot be zero. 
 
@@ -173,10 +160,8 @@ Enables both read and write access to the committed region of pages.
 </td>
 </tr>
 </table>
- 
 
-
-### -param AllocationAttributes [in]
+`AllocationAttributes`
 
 Bitmasks of the SEC_<i>XXX</i> flags determine the allocation attributes of the section. Specify one or more of the following values. This parameter is required and cannot be zero. 
 
@@ -206,30 +191,26 @@ The file specified by the <i>FileObject</i> parameter is a mapped file.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Flags [in]
+`Flags`
 
 This parameter is reserved for future use.
 
+`SectionHandle`
 
-### -param SectionHandle [out]
+A pointer to a caller-allocated variable that receives an opaque handle to the section handle.
 
-A pointer to a caller-allocated variable that receives an opaque handle to the section handle. 
-
-
-### -param SectionObject [out]
+`SectionObject`
 
 A pointer to a caller-allocated variable that receives an opaque pointer to the section object.
 
-
-### -param SectionFileSize [out, optional]
+`SectionFileSize`
 
 A pointer to a caller-allocated variable that receives the size, in bytes, of the file at the time the section object was created. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltCreateSectionForDataScan</b> returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value, such as one of the following.
 <dl>
 <dt><b>STATUS_END_OF_FILE</b></dt>
@@ -272,10 +253,8 @@ The file specified by the <i>FileObject</i> parameter is a directory.
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
 </dl>The filter instance specified by <i>Instance</i> already has an open section for the stream. Only one section per stream, and therefore, per instance is supported.
 
- 
+## Remarks
 
-
-## -remarks
 Prior to calling <b>FltCreateSectionForDataScan</b>, a minifilter must  first register its volume for data scanning by calling <a href="..\fltkernel\nf-fltkernel-fltregisterfordatascan.md">FltRegisterForDataScan</a>. As with other filter context elements, <i>SectionContext</i> is first allocated with <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. 
 
 Certain situations can occur where holding a section open is incompatible with current file I/O. In particular, file I/O that triggers a cache purge can cause cache incoherency if the cache purge is prevented because of an open section.  A minifilter can provide an optional callback routine for notifications of these events. The minifilter driver implements a <a href="..\fltkernel\nc-fltkernel-pflt_section_conflict_notification_callback.md">PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK</a> to receive these notifications. Conflict notifications are enabled if the <b>SectionNotificationCallback</b> member of <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> is set to this callback routine when the minifilter is registered. When a notification is received, the section can be closed to allow the conflicting I/O operation to continue. 
@@ -286,8 +265,20 @@ For overview  information on creating mapped sections and views of memory, see <
 <p class="note">Minifilters must not explicitly delete a section context passed to <b>FltCreateSectionForDataScan</b>. Do not call <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a> after a section context is passed to  <b>FltCreateSectionForDataScan</b>. A section context is deallocated and removed from a stream  by calling <a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a> in this case.
 <p class="note">In general, sections should be created as read-only. In particular, if a read-only file is in a transaction  and a minifilter does not create a read-only section, a write to the section is discarded and is not included as part of the transaction.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -325,4 +316,3 @@ For overview  information on creating mapped sections and views of memory, see <
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateSectionForDataScan routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

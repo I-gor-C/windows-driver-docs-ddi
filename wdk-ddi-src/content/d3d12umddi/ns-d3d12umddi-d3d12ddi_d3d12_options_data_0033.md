@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_D3D12_OPTIONS_DATA_0033
-title: D3D12DDI_D3D12_OPTIONS_DATA_0033
-author: windows-driver-content
-description: Display options data.
-old-location: display\d3d12ddi-d3d12-options-data-0033.htm
-old-project: display
-ms.assetid: d2b90ec1-cc4c-4a2b-8f7e-d46cd39d553b
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_D3D12_OPTIONS_DATA_0033, D3D12DDI_D3D12_OPTIONS_DATA_0033
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_D3D12_OPTIONS_DATA_0033
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_D3D12_OPTIONS_DATA_0033
+UID : NS:d3d12umddi.D3D12DDI_D3D12_OPTIONS_DATA_0033
+title : D3D12DDI_D3D12_OPTIONS_DATA_0033
+author : windows-driver-content
+description : Display options data.
+old-location : display\d3d12ddi-d3d12-options-data-0033.htm
+old-project : display
+ms.assetid : d2b90ec1-cc4c-4a2b-8f7e-d46cd39d553b
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_D3D12_OPTIONS_DATA_0033, D3D12DDI_D3D12_OPTIONS_DATA_0033
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_D3D12_OPTIONS_DATA_0033
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_D3D12_OPTIONS_DATA_0033
 ---
 
 # D3D12DDI_D3D12_OPTIONS_DATA_0033 structure
-
-
-
-## -description
 Display options data.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0033 {
   D3D12DDI_RESOURCE_BINDING_TIER               ResourceBindingTier;
@@ -63,72 +56,66 @@ typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0033 {
 } D3D12DDI_D3D12_OPTIONS_DATA_0033, D3D12DDI_D3D12_OPTIONS_DATA_0033;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `BarycentricsSupported`
 
-### -field ResourceBindingTier
+            Barycentrics supported.
+        
+            `ConservativeRasterizationTier`
 
-Resource binding tier.
+            Conservative rasterization tier.
+        
+            `CopyQueueTimestampQueriesSupported`
 
+            Copy queue timestamp queries supported.
+        
+            `CrossNodeSharingTier`
 
-### -field ConservativeRasterizationTier
+            Cross node sharing tier.
+        
+            `DepthBoundsTestSupported`
 
-Conservative rasterization tier.
+            Depth bounds test supported.
+        
+            `OutputMergerLogicOp`
 
+            Output merger logic option.
+        
+            `ProgrammableSamplePositionsTier`
 
-### -field TiledResourcesTier
+            Programmable sample positions tier.
+        
+            `ResourceBindingTier`
 
-Tiled resource tier.
+            Resource binding tier.
+        
+            `ResourceHeapTier`
 
+            Resource heap tier.
+        
+            `TiledResourcesTier`
 
-### -field CrossNodeSharingTier
+            Tiled resource tier.
+        
+            `ViewInstancingTier`
 
-Cross node sharing tier.
+            View instancing tier.
+        
+            `VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation`
 
+            VP and RT array index from any shader feeding rasterizer supported without GS emulation.
+        
+            `WriteBufferImmediateQueueFlags`
 
-### -field VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation
-
-VP and RT array index from any shader feeding rasterizer supported without GS emulation.
-
-
-### -field OutputMergerLogicOp
-
-Output merger logic option.
-
-
-### -field ResourceHeapTier
-
-Resource heap tier.
-
-
-### -field DepthBoundsTestSupported
-
-Depth bounds test supported.
-
-
-### -field ProgrammableSamplePositionsTier
-
-Programmable sample positions tier.
-
-
-### -field CopyQueueTimestampQueriesSupported
-
-Copy queue timestamp queries supported.
-
-
-### -field WriteBufferImmediateQueueFlags
-
-Write buffer immediate queue flags.
+            Write buffer immediate queue flags.
 
 
-### -field ViewInstancingTier
-
-View instancing tier.
-
-
-### -field BarycentricsSupported
-
-Barycentrics supported.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

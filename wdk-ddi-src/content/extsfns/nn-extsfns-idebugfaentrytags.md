@@ -1,45 +1,42 @@
 ---
-UID: NN:extsfns.IDebugFAEntryTags
-title: IDebugFAEntryTags
-author: windows-driver-content
-description: When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins.
-old-location: debugger\idebugfaentrytags.htm
-old-project: debugger
-ms.assetid: B52DFB0E-0035-40C2-B2F5-5E16B16931C2
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugFailureAnalysis2, IDebugFailureAnalysis2::SetUlong64, SetUlong64
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: extsfns.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugFAEntryTags
-req.alt-loc: extsfns.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: FA_EXTENSION_PLUGIN_PHASE
+UID : NN:extsfns.IDebugFAEntryTags
+title : IDebugFAEntryTags
+author : windows-driver-content
+description : When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins.
+old-location : debugger\idebugfaentrytags.htm
+old-project : debugger
+ms.assetid : B52DFB0E-0035-40C2-B2F5-5E16B16931C2
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugFailureAnalysis2, IDebugFailureAnalysis2::SetUlong64, SetUlong64
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : extsfns.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugFAEntryTags
+req.alt-loc : extsfns.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : FA_EXTENSION_PLUGIN_PHASE
 ---
 
 # IDebugFAEntryTags interface
 
-
-
-## -description
- When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">!analyze</a> debugger command runs, the analysis engine
+When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">!analyze</a> debugger command runs, the analysis engine
    can load and run extension analysis plug-ins. The analysis engine creates a 
 	<b>DebugFailureAnalysisTags</b> object to organize information 
 	about the tags that are used by a particular analysis session.
@@ -136,23 +133,36 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991816">SetTy
 </td>
 </tr>
 </table>
- 
+
+## Methods
+
+<p>The <b>IDebugFAEntryTags</b> interface has these methods.</p>
+
+| Method | Description |
+| ---- |:---- |
+| [extsfns.IDebugFAEntryTags.GetProperties](nf-extsfns-idebugfaentrytags-getproperties.md) | The GetProperties method gets the name or description (or both) of a tag in a DebugFailureAnalysisTags object. |
+| [extsfns.IDebugFAEntryTags.GetTagByName](nf-extsfns-idebugfaentrytags-gettagbyname.md) | The GetTagByName method searches for a tag that has a specified name. |
+| [extsfns.IDebugFAEntryTags.GetType](nf-extsfns-idebugfaentrytags-gettype.md) | The GetType method gets the data type that is associated with a tag in a DebugFailureAnalysisTags object. |
+| [extsfns.IDebugFAEntryTags.IsValidTagToSet](nf-extsfns-idebugfaentrytags-isvalidtagtoset.md) | The IsValidTagToSet method determines whether it is OK to set the data of a specified tag. |
+| [extsfns.IDebugFAEntryTags.SetProperties](nf-extsfns-idebugfaentrytags-setproperties.md) | The SetProperties method sets the name or description (or both) of a tag in a DebugFailureAnalysisTags object. |
+| [extsfns.IDebugFAEntryTags.SetType](nf-extsfns-idebugfaentrytags-settype.md) | The SetType method sets the data type that is associated with a tag in a DebugFailureAnalysisTags object. |
+
+## Remarks
 
 
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | extsfns.h |
+| **DLL** |  |
 
+    ## See Also
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugFAEntryTags</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
-
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugFAEntryTags</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
-
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 </dt>
@@ -169,4 +179,3 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugFAEntryTags</b> interfa
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFAEntryTags interface%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

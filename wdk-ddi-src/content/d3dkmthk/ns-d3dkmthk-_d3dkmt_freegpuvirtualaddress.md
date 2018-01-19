@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmthk._D3DKMT_FREEGPUVIRTUALADDRESS
-title: _D3DKMT_FREEGPUVIRTUALADDRESS
-author: windows-driver-content
-description: D3DKMT_FREEGPUVIRTUALADDRESS is used with FreeGpuVirtualAddress to release a range of graphics processing unit (GPU) virtual addresses that were previously reserved or mapped.
-old-location: display\d3dkmt_freegpuvirtualaddress.htm
-old-project: display
-ms.assetid: BB3DD49B-7DAB-48AC-BC63-595A184374AB
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _D3DKMT_FREEGPUVIRTUALADDRESS, D3DKMT_FREEGPUVIRTUALADDRESS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmthk.h
-req.include-header: D3dkmthk.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3DKMT_FREEGPUVIRTUALADDRESS
-req.alt-loc: d3dkmthk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3DKMT_FREEGPUVIRTUALADDRESS
+UID : NS:d3dkmthk._D3DKMT_FREEGPUVIRTUALADDRESS
+title : _D3DKMT_FREEGPUVIRTUALADDRESS
+author : windows-driver-content
+description : D3DKMT_FREEGPUVIRTUALADDRESS is used with FreeGpuVirtualAddress to release a range of graphics processing unit (GPU) virtual addresses that were previously reserved or mapped.
+old-location : display\d3dkmt_freegpuvirtualaddress.htm
+old-project : display
+ms.assetid : BB3DD49B-7DAB-48AC-BC63-595A184374AB
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _D3DKMT_FREEGPUVIRTUALADDRESS, D3DKMT_FREEGPUVIRTUALADDRESS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmthk.h
+req.include-header : D3dkmthk.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3DKMT_FREEGPUVIRTUALADDRESS
+req.alt-loc : d3dkmthk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3DKMT_FREEGPUVIRTUALADDRESS
 ---
 
 # _D3DKMT_FREEGPUVIRTUALADDRESS structure
-
-
-
-## -description
 <b>D3DKMT_FREEGPUVIRTUALADDRESS</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtfreegpuvirtualaddress.md">FreeGpuVirtualAddress</a> to release a range of graphics processing unit (GPU) virtual addresses that were previously reserved or mapped.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3DKMT_FREEGPUVIRTUALADDRESS {
   D3DKMT_HANDLE          hAdapter;
@@ -53,29 +46,33 @@ typedef struct _D3DKMT_FREEGPUVIRTUALADDRESS {
 } D3DKMT_FREEGPUVIRTUALADDRESS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `BaseAddress`
 
-### -field hAdapter
+            Specifies the base virtual address, in bytes, of the range to free. Must be aligned to 4 KB.
+        
+            `hAdapter`
 
-Specifies the handle to the adapter.
+            Specifies the handle to the adapter.
+        
+            `Size`
 
-
-### -field BaseAddress
-
-Specifies the base virtual address, in bytes, of the range to free. Must be aligned to 4 KB.
-
-
-### -field Size
-
-Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
+            Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtfreegpuvirtualaddress.md">FreeGpuVirtualAddress</a>
 </dt>
@@ -85,4 +82,3 @@ Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_FREEGPUVIRTUALADDRESS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

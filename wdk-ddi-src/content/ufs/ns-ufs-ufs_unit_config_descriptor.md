@@ -1,51 +1,44 @@
 ---
-UID: NS:ufs.UFS_UNIT_CONFIG_DESCRIPTOR
-title: UFS_UNIT_CONFIG_DESCRIPTOR
-author: windows-driver-content
-description: The UFS_UNIT_CONFIG_DESCRIPTOR structure describes the user configurable parameters within the UFS_CONFIG_DESCRIPTOR.
-old-location: storage\ufs_unit_config_descriptor.htm
-old-project: storage
-ms.assetid: 09CBAD0A-CBDC-464E-908C-BF142D515969
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: UFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ufs.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10, version 1709
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: UFS_UNIT_CONFIG_DESCRIPTOR
-req.alt-loc: Ufs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PUFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NS:ufs.UFS_UNIT_CONFIG_DESCRIPTOR
+title : UFS_UNIT_CONFIG_DESCRIPTOR
+author : windows-driver-content
+description : The UFS_UNIT_CONFIG_DESCRIPTOR structure describes the user configurable parameters within the UFS_CONFIG_DESCRIPTOR.
+old-location : storage\ufs_unit_config_descriptor.htm
+old-project : storage
+ms.assetid : 09CBAD0A-CBDC-464E-908C-BF142D515969
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : UFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ufs.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10, version 1709
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : UFS_UNIT_CONFIG_DESCRIPTOR
+req.alt-loc : Ufs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : UFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR
+req.product : Windows 10 or later.
 ---
 
 # UFS_UNIT_CONFIG_DESCRIPTOR structure
-
-
-
-## -description
 The <b>UFS_UNIT_CONFIG_DESCRIPTOR</b> structure describes the user configurable parameters within the <a href="..\ufs\ns-ufs-ufs_config_descriptor.md">UFS_CONFIG_DESCRIPTOR</a>.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _UFS_UNIT_CONFIG_DESCRIPTOR {
   UCHAR bLUEnable;
@@ -61,27 +54,57 @@ typedef struct _UFS_UNIT_CONFIG_DESCRIPTOR {
 } UFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `bBootLunID`
 
-### -field bLUEnable
+            Specifies if the logical unit is a bootable logical unit.
+        
+            `bDataReliability`
 
-Specifies if the logical unit is enabled.
+            <b>bDataReliability</b> defines the device behavior
+when a power failure occurs during a write
+operation to the logical unit:
 
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>The logical unit is not protected. Logical
+unit's entire data may be lost as a result
+of a power failure during a write
+operation</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>The logical unit is protected. Logical unit's
+data is protected against power failure.</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+        
+            `bLogicalBlockSize`
 
-### -field bBootLunID
+            Specifies the logical block size.
+        
+            `bLUEnable`
 
-Specifies if the logical unit is a bootable logical unit.
+            Specifies if the logical unit is enabled.
+        
+            `bLUWriteProtect`
 
+            Specifies if the Logical Unit is write protected.
+        
+            `bMemoryType`
 
-### -field bLUWriteProtect
-
-Specifies if the Logical Unit is write protected.
-
-
-### -field bMemoryType
-
-Specifies the Memory type of the device.
+            Specifies the Memory type of the device.
 
 <table>
 <tr>
@@ -121,53 +144,10 @@ Specifies the Memory type of the device.
 <td>Reserved for future use.</td>
 </tr>
 </table>
- 
+        
+            `bProvisioningType`
 
-
-### -field dNumAllocUnits
-
-Specifies the number of allocation units assigned to the logical unit.
-
-
-### -field bDataReliability
-
-<b>bDataReliability</b> defines the device behavior
-when a power failure occurs during a write
-operation to the logical unit:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>The logical unit is not protected. Logical
-unit's entire data may be lost as a result
-of a power failure during a write
-operation</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>The logical unit is protected. Logical unit's
-data is protected against power failure.</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
- 
-
-
-### -field bLogicalBlockSize
-
-Specifies the logical block size.
-
-
-### -field bProvisioningType
-
-Specifies the provisioning type.
+            Specifies the provisioning type.
 
 <table>
 <tr>
@@ -193,17 +173,24 @@ Specifies the provisioning type.
 <td>Reserved for future use.</td>
 </tr>
 </table>
- 
+        
+            `dNumAllocUnits`
+
+            Specifies the number of allocation units assigned to the logical unit.
+        
+            `Reserved`
+
+            Reserved for future use.
+        
+            `wContextCapabilities`
+
+            Specifies the Context Capabilities.
 
 
-### -field wContextCapabilities
-
-Specifies the Context Capabilities.
-
-
-### -field Reserved
-
-Reserved for future use.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ufs.h |

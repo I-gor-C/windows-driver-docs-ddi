@@ -1,50 +1,45 @@
 ---
-UID: NF:fwpsk.FwpsInjectForwardAsync0
-title: FwpsInjectForwardAsync0 function
-author: windows-driver-content
-description: The FwpsInjectForwardAsync0 function injects packet data into the forwarding data path.Note  FwpsInjectForwardAsync0 is a specific version of FwpsInjectForwardAsync.
-old-location: netvista\fwpsinjectforwardasync0.htm
-old-project: netvista
-ms.assetid: b7cb70c6-c672-4a29-983c-c73767af72ea
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsInjectForwardAsync0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsInjectForwardAsync0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsInjectForwardAsync0
+title : FwpsInjectForwardAsync0 function
+author : windows-driver-content
+description : The FwpsInjectForwardAsync0 function injects packet data into the forwarding data path.Note  FwpsInjectForwardAsync0 is a specific version of FwpsInjectForwardAsync.
+old-location : netvista\fwpsinjectforwardasync0.htm
+old-project : netvista
+ms.assetid : b7cb70c6-c672-4a29-983c-c73767af72ea
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsInjectForwardAsync0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsInjectForwardAsync0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsInjectForwardAsync0 function
-
-
-
-## -description
 The 
   <b>FwpsInjectForwardAsync0</b> function injects packet data into the forwarding data path.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsInjectForwardAsync0(
@@ -60,17 +55,15 @@ NTSTATUS NTAPI FwpsInjectForwardAsync0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param injectionHandle [in]
+`injectionHandle`
 
 An injection handle that was previously created by a call to the 
      <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
      FwpsInjectionHandleCreate0</a> function.
 
-
-### -param injectionContext [in, optional]
+`injectionContext`
 
 An optional handle to the injection context. If specified, it can be obtained by calling the 
      <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
@@ -78,33 +71,15 @@ An optional handle to the injection context. If specified, it can be obtained by
      <a href="..\fwpsk\ne-fwpsk-fwps_packet_injection_state_.md">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.
 
-
-### -param flags [in]
+`flags`
 
 Reserved. Callout drivers must set this parameter to zero.
 
-
-### -param addressFamily [in]
+`addressFamily`
 
 One of the following address families:
-     
 
-
-
-
-### -param AF_INET
-
-The IPv4 address family.
-
-
-### -param AF_INET6
-
-The IPv6 address family.
-
-</dd>
-</dl>
-
-### -param compartmentId [in]
+`compartmentId`
 
 The identifier of the routing compartment into which the packet data is injected, specified as a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff542009">COMPARTMENT_ID</a> type. This identifier is provided
@@ -117,8 +92,7 @@ The identifier of the routing compartment into which the packet data is injected
      the 
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.
 
-
-### -param interfaceIndex [in]
+`interfaceIndex`
 
 The index of the destination interface (on which the packet data is to be sent). The index is a
      32-bit value. A callout driver should use the value of the interface index that is passed as one of the
@@ -127,8 +101,7 @@ The index of the destination interface (on which the packet data is to be sent).
      parameter if the packet is to be injected into the same interface where the original packet was
      indicated.
 
-
-### -param netBufferList [in, out]
+`netBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
@@ -140,23 +113,22 @@ A pointer to a
      FwpsAllocateNetBufferAndNetBufferList0</a> function. The NET_BUFFER_LIST structure must begin with an
      IP header.
 
-
-### -param completionFn [in]
+`completionFn`
 
 A pointer to a 
      <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a> callout function provided by
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferList</i> parameter, has been injected into the network stack.
 
-
-### -param completionContext [in, optional]
+`completionContext`
 
 A pointer to a callout driver-provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsInjectForwardAsync0</b> function returns one of the following NTSTATUS codes.
 <dl>
@@ -177,10 +149,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpsInjectForwardAsync0</b> function to inject packet data or a packet fragment into the forwarding
     data path.
@@ -206,8 +176,20 @@ IP packets or fragments can be cloned, modified, and injected back into the netw
 Forward-injected packets do not reenter the forwarding layer. Therefore, they will not be
     reclassified.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
@@ -237,7 +219,7 @@ Forward-injected packets do not reenter the forwarding layer. Therefore, they wi
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">Packet Injection Functions</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">Packet Injection Functions</a>
 </dt>
 </dl>
  
@@ -245,4 +227,3 @@ Forward-injected packets do not reenter the forwarding layer. Therefore, they wi
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectForwardAsync0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

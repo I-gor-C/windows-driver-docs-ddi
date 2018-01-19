@@ -1,82 +1,88 @@
 ---
-UID: NC:d3d10umddi.PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
-title: PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
-author: windows-driver-content
-description: The pfnSetShaderCacheSession callback function sets a shader cache session.
-old-location: display\pfnd3dwddm2_2ddi_set_shadercache_session.htm
-old-project: display
-ms.assetid: 18BA159D-5E78-41AC-8CB8-97AEC2AE9592
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3d10umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: pfnSetShaderCacheSession
-req.alt-loc: d3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
+UID : NC:d3d10umddi.PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
+title : PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
+author : windows-driver-content
+description : The pfnSetShaderCacheSession callback function sets a shader cache session.
+old-location : display\pfnd3dwddm2_2ddi_set_shadercache_session.htm
+old-project : display
+ms.assetid : 18BA159D-5E78-41AC-8CB8-97AEC2AE9592
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3d10umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : pfnSetShaderCacheSession
+req.alt-loc : d3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
-# PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION callback
 
-
-
-## -description
+# PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION callback function
 The <i>pfnSetShaderCacheSession</i> callback function sets a shader cache session.
 
+## Syntax
 
+```
+PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION Pfnd3dwddm22DdiSetShadercacheSession;
 
-## -prototype
-
-````
-PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION pfnSetShaderCacheSession;
-
-VOID APIENTRY* pfnSetShaderCacheSession(
-   D3D10DDI_HDEVICE            hDevice,
-   D3DWDDM2_2DDI_HCACHESESSION hCacheSession
+void Pfnd3dwddm22DdiSetShadercacheSession(
+   D3D10DDI_HDEVICE,
+   D3DWDDM2_2DDI_HCACHESESSION
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`D3D10DDI_HDEVICE`
 
 
-## -parameters
 
-### -param hDevice 
-
-The handle of a device.
+`D3DWDDM2_2DDI_HCACHESESSION`
 
 
-### -param hCacheSession 
-
-The handle of a cache session.
 
 
-## -returns
+## Return Value
+
 This callback function does not return a value.
 
+## Remarks
 
-## -remarks
-Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_2ddi_devicefuncs.md">D3DWDDM2_2DDI_DEVICEFUNCS</a> structure. 
+Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_2ddi_devicefuncs.md">D3DWDDM2_2DDI_DEVICEFUNCS</a> structure.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d12umddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_2ddi_devicefuncs.md">D3DWDDM2_2DDI_DEVICEFUNCS</a>
@@ -87,4 +93,3 @@ Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

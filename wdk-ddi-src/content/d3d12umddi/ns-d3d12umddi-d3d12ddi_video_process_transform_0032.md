@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
-title: D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
-author: windows-driver-content
-description: Video process transform.
-old-location: display\d3d12ddi-video-process-transform-0032.htm
-old-project: display
-ms.assetid: 7c2393e6-3e1b-4b4a-b6ea-5848c38440b0
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032, D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
+UID : NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
+title : D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
+author : windows-driver-content
+description : Video process transform.
+old-location : display\d3d12ddi-video-process-transform-0032.htm
+old-project : display
+ms.assetid : 7c2393e6-3e1b-4b4a-b6ea-5848c38440b0
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032, D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032
 ---
 
 # D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032 structure
-
-
-
-## -description
 Video process transform.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032 {
   D3D12DDI_RECT                            SourceRectangle;
@@ -53,22 +46,26 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032 {
 } D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032, D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DestinationRectangle`
 
-### -field SourceRectangle
+            Destination rectangle.
+        
+            `Orientation`
 
-Source rectangle.
+            Orientation.
+        
+            `SourceRectangle`
 
-
-### -field DestinationRectangle
-
-Destination rectangle.
-
-
-### -field Orientation
-
-Orientation.
+            Source rectangle.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

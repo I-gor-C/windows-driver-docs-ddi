@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILCALLFORWARDINGSETTINGS
-title: RILCALLFORWARDINGSETTINGS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallforwardingsettings_2.htm
-old-project: netvista
-ms.assetid: 8dacbef8-f037-4298-8a3b-cce7cf843fcf
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLFORWARDINGSETTINGS, *LPRILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLFORWARDINGSETTINGS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILCALLFORWARDINGSETTINGS
+title : RILCALLFORWARDINGSETTINGS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallforwardingsettings_2.htm
+old-project : netvista
+ms.assetid : 8dacbef8-f037-4298-8a3b-cce7cf843fcf
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS, *LPRILCALLFORWARDINGSETTINGS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLFORWARDINGSETTINGS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILCALLFORWARDINGSETTINGS, *LPRILCALLFORWARDINGSETTINGS
+req.product : Windows 10 or later.
 ---
 
 # RILCALLFORWARDINGSETTINGS structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILCALLFORWARDINGSETTINGS {
   DWORD                     cbSize;
@@ -58,28 +51,42 @@ typedef struct _RILCALLFORWARDINGSETTINGS {
 } RILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwDelayTime`
+
+            
+        
+            `dwInfoClasses`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwStatus`
+
+            
+        
+            `raAddress`
+
+            
+        
+            `rsaSubAddress`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwStatus
-
-
-### -field dwInfoClasses
-
-
-### -field raAddress
-
-
-### -field rsaSubAddress
-
-
-### -field dwDelayTime
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

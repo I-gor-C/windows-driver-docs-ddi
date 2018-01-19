@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dumddi._DDRAW_MODE_SPECIFIC_CAPS
-title: _DDRAW_MODE_SPECIFIC_CAPS
-author: windows-driver-content
-description: The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabilities that are specific to a particular display device (head) on the graphics card.
-old-location: display\ddraw_mode_specific_caps.htm
-old-project: display
-ms.assetid: 4434e2cb-af36-446b-b84e-f303ba315cd3
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DDRAW_MODE_SPECIFIC_CAPS, DDRAW_MODE_SPECIFIC_CAPS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DDRAW_MODE_SPECIFIC_CAPS
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DDRAW_MODE_SPECIFIC_CAPS
+UID : NS:d3dumddi._DDRAW_MODE_SPECIFIC_CAPS
+title : _DDRAW_MODE_SPECIFIC_CAPS
+author : windows-driver-content
+description : The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabilities that are specific to a particular display device (head) on the graphics card.
+old-location : display\ddraw_mode_specific_caps.htm
+old-project : display
+ms.assetid : 4434e2cb-af36-446b-b84e-f303ba315cd3
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DDRAW_MODE_SPECIFIC_CAPS, DDRAW_MODE_SPECIFIC_CAPS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DDRAW_MODE_SPECIFIC_CAPS
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DDRAW_MODE_SPECIFIC_CAPS
 ---
 
 # _DDRAW_MODE_SPECIFIC_CAPS structure
-
-
-
-## -description
 The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabilities that are specific to a particular display device (head) on the graphics card.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
   UINT Head;
@@ -57,17 +50,12 @@ typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
 } DDRAW_MODE_SPECIFIC_CAPS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Caps`
 
-### -field Head
-
-[in] The display device (head) on the multiple-head graphics card to retrieve capabilities about.
-
-
-### -field Caps
-
-[out] A valid bitwise OR of the following general capability bits that the driver supports.
+            [out] A valid bitwise OR of the following general capability bits that the driver supports.
 
 <table>
 <tr>
@@ -145,12 +133,10 @@ The driver supports color-control settings for an overlay. For information about
 </td>
 </tr>
 </table>
- 
+        
+            `CKeyCaps`
 
-
-### -field CKeyCaps
-
-[out] A valid bitwise OR of the following color key capability bits that the driver supports.
+            [out] A valid bitwise OR of the following color key capability bits that the driver supports.
 
 <table>
 <tr>
@@ -218,12 +204,10 @@ Overlaying operations that use the color key for the source with this overlay su
 </td>
 </tr>
 </table>
- 
+        
+            `FxCaps`
 
-
-### -field FxCaps
-
-[out] A valid bitwise OR of the following effects capability bits that the driver supports.
+            [out] A valid bitwise OR of the following effects capability bits that the driver supports.
 
 <table>
 <tr>
@@ -301,30 +285,37 @@ Deinterlacing of an overlay surface can be performed.
 </td>
 </tr>
 </table>
- 
+        
+            `Head`
 
+            [in] The display device (head) on the multiple-head graphics card to retrieve capabilities about.
+        
+            `MaxOverlayStretch`
 
-### -field MaxVisibleOverlays
+            [out] The maximum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the maximum factor to the actual maximum to which the graphics hardware can stretch the overlay. If the graphics hardware has no maximum limitation, set <b>MaxOverlayStretch</b> to 32000.
+        
+            `MaxVisibleOverlays`
 
-[out] The maximum number of visible overlays.
+            [out] The maximum number of visible overlays.
+        
+            `MinOverlayStretch`
 
+            [out] The minimum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the minimum factor to the actual minimum to which the graphics hardware can shrink the overlay. If the graphics hardware has no minimum limitation, set <b>MinOverlayStretch</b> to 1.
 
-### -field MinOverlayStretch
+    ## Remarks
+        Capabilities can change between heads of a multiple-headed graphics card and can change after a display mode change.
 
-[out] The minimum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the minimum factor to the actual minimum to which the graphics hardware can shrink the overlay. If the graphics hardware has no minimum limitation, set <b>MinOverlayStretch</b> to 1.
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
 
+    ## See Also
 
-### -field MaxOverlayStretch
-
-[out] The maximum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the maximum factor to the actual maximum to which the graphics hardware can stretch the overlay. If the graphics hardware has no maximum limitation, set <b>MaxOverlayStretch</b> to 32000.
-
-
-## -remarks
-Capabilities can change between heads of a multiple-headed graphics card and can change after a display mode change.
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
@@ -340,4 +331,3 @@ Capabilities can change between heads of a multiple-headed graphics card and can
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DDRAW_MODE_SPECIFIC_CAPS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

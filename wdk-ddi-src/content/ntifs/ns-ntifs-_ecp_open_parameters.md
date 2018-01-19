@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._ECP_OPEN_PARAMETERS
-title: _ECP_OPEN_PARAMETERS
-author: windows-driver-content
-description: The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file.
-old-location: ifsk\ecp_open_parameters.htm
-old-project: ifsk
-ms.assetid: 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ECP_OPEN_PARAMETERS
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
+UID : NS:ntifs._ECP_OPEN_PARAMETERS
+title : _ECP_OPEN_PARAMETERS
+author : windows-driver-content
+description : The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file.
+old-location : ifsk\ecp_open_parameters.htm
+old-project : ifsk
+ms.assetid : 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting with Windows 10, version 1709.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ECP_OPEN_PARAMETERS
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
 ---
 
 # _ECP_OPEN_PARAMETERS structure
+The <b>ECP_OPEN_PARAMETERS</b> structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file.
 
-
-
-## -description
-The <b>ECP_OPEN_PARAMETERS</b> structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _ECP_OPEN_PARAMETERS {
   USHORT Size;
@@ -53,22 +46,12 @@ typedef struct _ECP_OPEN_PARAMETERS {
 } ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Flags`
 
-### -field Size
-
-Specifies the size of this context structure, in bytes.
-
-
-### -field Reserved
-
-Reserved for future use. This must be initialized to 0.
-
-
-### -field Flags
-
-Flags that Specify the parameters or purpose for opening a file. Contains one of the following values:
+            Flags that Specify the parameters or purpose for opening a file. Contains one of the following values:
 
 <table>
 <tr>
@@ -92,7 +75,20 @@ Flags that Specify the parameters or purpose for opening a file. Contains one of
 <td>Opening file to delete it.</td>
 </tr>
 </table>
- 
+        
+            `Reserved`
+
+            Reserved for future use. This must be initialized to 0.
+        
+            `Size`
+
+            Specifies the size of this context structure, in bytes.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |

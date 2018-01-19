@@ -1,51 +1,44 @@
 ---
-UID: NF:d3dkmthk.D3DKMTSetDeviceLostSupport
-title: D3DKMTSetDeviceLostSupport function
-author: windows-driver-content
-description: Used to indicate that the device has lost support.
-old-location: display\d3dkmtsetdevicelostsupport.htm
-old-project: display
-ms.assetid: 9b7469cb-d489-4428-8167-91b26e1fa348
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3DKMTSetDeviceLostSupport
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: d3dkmthk.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3DKMTSetDeviceLostSupport
-req.alt-loc: d3dkmthk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3DKMT_DRIVERVERSION
+UID : NF:d3dkmthk.D3DKMTSetDeviceLostSupport
+title : D3DKMTSetDeviceLostSupport function
+author : windows-driver-content
+description : Used to indicate that the device has lost support.
+old-location : display\d3dkmtsetdevicelostsupport.htm
+old-project : display
+ms.assetid : 9b7469cb-d489-4428-8167-91b26e1fa348
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3DKMTSetDeviceLostSupport
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : d3dkmthk.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3DKMTSetDeviceLostSupport
+req.alt-loc : d3dkmthk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3DKMT_DRIVERVERSION
 ---
 
+
 # D3DKMTSetDeviceLostSupport function
+Used to indicate that the device has lost support.
 
-
-
-## -description
-
-			
-            Used to indicate that the device has lost support.
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS  D3DKMTSetDeviceLostSupport(
@@ -53,16 +46,23 @@ NTSTATUS  D3DKMTSetDeviceLostSupport(
 );
 ````
 
+## Parameters
 
-## -parameters
+This function has no parameters.
 
-### -param D3dkmt_setdevicelostsupport [in]
+## Return Value
 
-Indicates that the device has lost support.
-
-
-## -returns
-Returns STATUS_SUCCESS if completed successfully. 
+Returns STATUS_SUCCESS if completed successfully.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmthk.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

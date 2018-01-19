@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_RESOURCE_FLAGS_0003
-title: D3D12DDI_RESOURCE_FLAGS_0003
-author: windows-driver-content
-description: Specifies resource flag values.
-old-location: display\d3d12ddi_resource_flags_0003.htm
-old-project: display
-ms.assetid: 595A4177-4A18-48D6-8B5C-D7D2FBD9FE9B
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_RESOURCE_FLAGS_0003, D3D12DDI_RESOURCE_FLAGS_0003
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_RESOURCE_FLAGS_0003
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_RESOURCE_FLAGS_0003
+UID : NE:d3d12umddi.D3D12DDI_RESOURCE_FLAGS_0003
+title : D3D12DDI_RESOURCE_FLAGS_0003
+author : windows-driver-content
+description : Specifies resource flag values.
+old-location : display\d3d12ddi_resource_flags_0003.htm
+old-project : display
+ms.assetid : 595A4177-4A18-48D6-8B5C-D7D2FBD9FE9B
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_RESOURCE_FLAGS_0003, D3D12DDI_RESOURCE_FLAGS_0003
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_RESOURCE_FLAGS_0003
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_RESOURCE_FLAGS_0003
 ---
 
-# D3D12DDI_RESOURCE_FLAGS_0003 enumeration
-
-
-
-## -description
+# D3D12DDI_RESOURCE_FLAGS_0003 Enumeration
 Specifies resource flag values.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDI_RESOURCE_FLAGS_0003 { 
   D3D12DDI_RESOURCE_FLAG_0003_NONE                         = 0x0,
@@ -59,52 +52,61 @@ typedef enum D3D12DDI_RESOURCE_FLAGS_0003 {
 } D3D12DDI_RESOURCE_FLAGS_0003;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_RESOURCE_FLAG_0003_NONE
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0003_CROSS_ADAPTER</td>
+<td>Cross adapter.</td>
+</tr>
 
-Constant for no flags.
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0003_DEPTH_STENCIL</td>
+<td>Depth stencil.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0003_NONE</td>
+<td>Constant for no flags.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0003_RENDER_TARGET</td>
+<td>Render target.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0003_SHADER_RESOURCE</td>
+<td>Shader resource.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0003_SIMULTANEOUS_ACCESS</td>
+<td>Simultaneous access.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0020_CONTENT_PROTECTION</td>
+<td>Content protection.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0020_VIDEO_DECODE_REFERENCE_ONLY</td>
+<td>Video decode reference only.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_RESOURCE_FLAG_0022_UNORDERED_ACCESS</td>
+<td>Unordered access. This value is available as a resource flag for the fallback plans.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDI_RESOURCE_FLAG_0003_RENDER_TARGET
-
-Render target.
-
-
-### -field D3D12DDI_RESOURCE_FLAG_0003_DEPTH_STENCIL
-
-Depth stencil.
-
-
-### -field D3D12DDI_RESOURCE_FLAG_0003_CROSS_ADAPTER
-
-Cross adapter.
-
-
-### -field D3D12DDI_RESOURCE_FLAG_0003_SIMULTANEOUS_ACCESS
-
-Simultaneous access.
-
-
-### -field D3D12DDI_RESOURCE_FLAG_0003_SHADER_RESOURCE
-
-Shader resource.
-
-
-### -field D3D12DDI_RESOURCE_FLAG_0020_VIDEO_DECODE_REFERENCE_ONLY
-
-Video decode reference only.
-
-
-### -field D3D12DDI_RESOURCE_FLAG_0020_CONTENT_PROTECTION 
-
-Content protection.
-
-
-### -field D3D12DDI_RESOURCE_FLAG_0022_UNORDERED_ACCESS
-
-Unordered access. This value is available as a resource flag for the fallback plans.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

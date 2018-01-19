@@ -1,49 +1,44 @@
 ---
-UID: NF:ntstrsafe.RtlStringCchCopyNW
-title: RtlStringCchCopyNW function
-author: windows-driver-content
-description: The RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string.
-old-location: kernel\rtlstringcchcopyn.htm
-old-project: kernel
-ms.assetid: 86ec1a98-d70f-437c-9c8b-005bf78375ba
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: RtlStringCchCopyNW
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntstrsafe.h
-req.include-header: Ntstrsafe.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlStringCchCopyNW,RtlStringCchCopyNW,RtlStringCchCopyNW
-req.alt-loc: Ntstrsafe.lib,Ntstrsafe.dll
-req.ddi-compliance: 
-req.unicode-ansi: RtlStringCchCopyNW (Unicode) and RtlStringCchCopyNW (ANSI)
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntstrsafe.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
+UID : NF:ntstrsafe.RtlStringCchCopyNW
+title : RtlStringCchCopyNW function
+author : windows-driver-content
+description : The RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string.
+old-location : kernel\rtlstringcchcopyn.htm
+old-project : kernel
+ms.assetid : 86ec1a98-d70f-437c-9c8b-005bf78375ba
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : RtlStringCchCopyNW
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntstrsafe.h
+req.include-header : Ntstrsafe.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlStringCchCopyNW,RtlStringCchCopyNW,RtlStringCchCopyNW
+req.alt-loc : Ntstrsafe.lib,Ntstrsafe.dll
+req.ddi-compliance : 
+req.unicode-ansi : RtlStringCchCopyNW (Unicode) and RtlStringCchCopyNW (ANSI)
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntstrsafe.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
 ---
 
+
 # RtlStringCchCopyNW function
-
-
-
-## -description
 The <b>RtlStringCchCopyNW</b> and <b>RtlStringCchCopyNA</b> functions copy a character-counted string to a buffer while limiting the size of the copied string.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RtlStringCchCopyNW(
@@ -54,30 +49,27 @@ NTSTATUS RtlStringCchCopyNW(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param pszDest [out]
+`pszDest`
 
 A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i>, up to <i>cchSrc</i> characters, is copied to the buffer at <i>pszDest</i> and terminated with a null character.
 
-
-### -param cchDest [in]
+`cchDest`
 
 The size of the destination buffer, in characters. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH.
 
+`pszSrc`
 
-### -param pszSrc [in]
+A pointer to a caller-supplied, null-terminated string.
 
-A pointer to a caller-supplied, null-terminated string. 
-
-
-### -param cchSrc [in]
-
-The maximum number of characters to copy from <i>pszSrc</i> to the buffer that is supplied by <i>pszDest</i>.
+`cchToCopy`
 
 
-## -returns
+
+
+## Return Value
+
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -91,10 +83,8 @@ The function returns one of the NTSTATUS values that are listed in the following
 
 The function returns the STATUS_INVALID_PARAMETER value when:
 
- 
+## Remarks
 
-
-## -remarks
 <b>RtlStringCchCopyNW</b> and <b>RtlStringCchCopyNA</b> should be used instead of <b>strncpy</b>. 
 
 The functions copy a given number of characters from a source string. <b>RtlStringCchCopyNW</b> and <b>RtlStringCchCopyNA</b> receive the size, in characters, of the destination buffer to ensure that the functions do not write past the end of the buffer.
@@ -121,8 +111,20 @@ Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to hand
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntstrsafe.h (include Ntstrsafe.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md">RtlStringCbCopyN</a>
@@ -139,4 +141,3 @@ For more information about the safe string functions, see <a href="https://msdn.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchCopyNW function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

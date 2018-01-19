@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfdmatransaction.WdfDmaTransactionCreate
-title: WdfDmaTransactionCreate function
-author: windows-driver-content
-description: The WdfDmaTransactionCreate method creates a DMA transaction.
-old-location: wdf\wdfdmatransactioncreate.htm
-old-project: wdf
-ms.assetid: 9470e4a6-eee4-4a73-80b0-3d45f9d79934
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfDmaTransactionCreate
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdmatransaction.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WdfDmaTransactionCreate
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
-req.product: Windows 10 or later.
+UID : NF:wdfdmatransaction.WdfDmaTransactionCreate
+title : WdfDmaTransactionCreate function
+author : windows-driver-content
+description : The WdfDmaTransactionCreate method creates a DMA transaction.
+old-location : wdf\wdfdmatransactioncreate.htm
+old-project : wdf
+ms.assetid : 9470e4a6-eee4-4a73-80b0-3d45f9d79934
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfDmaTransactionCreate
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfdmatransaction.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WdfDmaTransactionCreate
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.product : Windows 10 or later.
 ---
 
+
 # WdfDmaTransactionCreate function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WdfDmaTransactionCreate</b> method creates a DMA transaction.  
+The <b>WdfDmaTransactionCreate</b> method creates a DMA transaction.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfDmaTransactionCreate(
@@ -56,25 +51,23 @@ NTSTATUS WdfDmaTransactionCreate(
 );
 ````
 
+## Parameters
 
-## -parameters
+`DmaEnabler`
 
-### -param DmaEnabler [in]
+A handle to a DMA enabler object that the driver obtained from a previous call to <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>.
 
-A handle to a DMA enabler object that the driver obtained from a previous call to <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>.  
-
-
-### -param Attributes [in, optional]
+`Attributes`
 
 A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new DMA transaction object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-
-### -param DmaTransaction [out]
+`DmaTransaction`
 
 A handle to a DMA transaction object.
 
 
-## -returns
+## Return Value
+
 <b>WdfDmaTransactionCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -93,10 +86,8 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 After your driver calls <b>WdfDmaTransactionCreate</b>, it must call <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a> or <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a> before calling <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>. 
 
 The specified DMA enabler object becomes the parent of the new DMA transaction object. The driver cannot change this parent, and the <b>ParentObject</b> member or the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure must be <b>NULL</b>.
@@ -105,8 +96,20 @@ For more information about DMA transactions, see <a href="https://msdn.microsoft
 
 For a code example that uses <b>WdfDmaTransactionCreate</b>, see <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdmatransaction.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
@@ -129,4 +132,3 @@ For a code example that uses <b>WdfDmaTransactionCreate</b>, see <a href="..\wdf
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionCreate method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.KeSetHardwareCounterConfiguration
-title: KeSetHardwareCounterConfiguration function
-author: windows-driver-content
-description: The KeSetHardwareCounterConfiguration routine specifies a list of hardware counters to use for thread profiling.
-old-location: kernel\kesethardwarecounterconfiguration.htm
-old-project: kernel
-ms.assetid: 9677dbd7-4b6f-49a9-ac38-fdcbaeb3a6f8
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KeSetHardwareCounterConfiguration
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 7.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KeSetHardwareCounterConfiguration
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.KeSetHardwareCounterConfiguration
+title : KeSetHardwareCounterConfiguration function
+author : windows-driver-content
+description : The KeSetHardwareCounterConfiguration routine specifies a list of hardware counters to use for thread profiling.
+old-location : kernel\kesethardwarecounterconfiguration.htm
+old-project : kernel
+ms.assetid : 9677dbd7-4b6f-49a9-ac38-fdcbaeb3a6f8
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : KeSetHardwareCounterConfiguration
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 7.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KeSetHardwareCounterConfiguration
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # KeSetHardwareCounterConfiguration function
-
-
-
-## -description
 The <b>KeSetHardwareCounterConfiguration</b> routine specifies a list of hardware counters to use for thread profiling.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS KeSetHardwareCounterConfiguration(
@@ -52,20 +47,19 @@ NTSTATUS KeSetHardwareCounterConfiguration(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param CounterArray [in]
+`CounterArray`
 
 A pointer to a <a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a> array that describes the hardware counter configuration to use for thread profiling. Each array element is a structure that describes a hardware counter. Before the routine returns, it copies the contents of this array into its internal data structures.
 
-
-### -param Count [in]
+`Count`
 
 Specifies the number of elements in the array that is pointed to by the <i>CounterArray</i> parameter.
 
 
-## -returns
+## Return Value
+
 <b>KeSetHardwareCounterConfiguration</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -77,10 +71,8 @@ Specifies the number of elements in the array that is pointed to by the <i>Count
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
 </dl>This routine is not implemented for the processor architecture that the caller is running on.
 
- 
+## Remarks
 
-
-## -remarks
 In Windows 7, this routine is implemented only for the x86-based, x64-based, and Itanium-based architectures. If a caller is running on a processor architecture that is not supported, the routine returns STATUS_NOT_IMPLEMENTED.
 
 This routine tells the operating system which hardware counters to use for thread profiling. Call this routine only when thread profiling is disabled. If the <i>CounterArray</i> array specifies any hardware counters that are currently being used, the routine fails and returns STATUS_WMI_ALREADY_ENABLED.
@@ -99,8 +91,20 @@ To query the operating system for the hardware counter configuration that is cur
 
 Virtualization software typically does not virtualize hardware performance counters. Thus, hardware performance counters are unlikely to be available in a virtual machine.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
@@ -120,4 +124,3 @@ Virtualization software typically does not virtualize hardware performance count
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetHardwareCounterConfiguration routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

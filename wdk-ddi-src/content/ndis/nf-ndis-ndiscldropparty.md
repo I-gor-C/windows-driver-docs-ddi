@@ -1,49 +1,44 @@
 ---
-UID: NF:ndis.NdisClDropParty
-title: NdisClDropParty function
-author: windows-driver-content
-description: NdisClDropParty drops a party from the client's multipoint VC.
-old-location: netvista\ndiscldropparty.htm
-old-project: netvista
-ms.assetid: f5d04730-a7eb-4670-9b47-f8c52267aea8
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisClDropParty
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisClDropParty
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Protocol_Driver_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisClDropParty
+title : NdisClDropParty function
+author : windows-driver-content
+description : NdisClDropParty drops a party from the client's multipoint VC.
+old-location : netvista\ndiscldropparty.htm
+old-project : netvista
+ms.assetid : f5d04730-a7eb-4670-9b47-f8c52267aea8
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisClDropParty
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisClDropParty
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Protocol_Driver_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisClDropParty function
-
-
-
-## -description
 <b>NdisClDropParty</b> drops a party from the client's multipoint VC.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisClDropParty(
@@ -53,32 +48,30 @@ NDIS_STATUS NdisClDropParty(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisPartyHandle [in]
+`NdisPartyHandle`
 
 Specifies the handle identifying the party to be dropped on the multipoint connection. The client
      obtained this handle from a preceding call to 
      <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a> or 
      <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.
 
-
-### -param Buffer [in, optional]
+`Buffer`
 
 Pointer to a caller-allocated buffer containing any data to be transmitted to close the multipoint
      connection of the party on the remote node. Depending on the underlying medium, this pointer can be
      <b>NULL</b>.
 
-
-### -param Size [in, optional]
+`Size`
 
 Specifies the size in bytes at 
      <i>Buffer</i>, zero if 
      <i>Buffer</i> is <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 When 
      <b>NdisClDropParty</b> returns anything other than NDIS_STATUS_PENDING, the client should make an
      internal call to its 
@@ -86,8 +79,8 @@ When
      ProtocolClDropPartyComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClDropPartyComplete</i> function when this operation is completed.
 
+## Remarks
 
-## -remarks
 Clients usually call 
     <b>NdisClDropParty</b> in either of the following circumstances:
 
@@ -152,8 +145,20 @@ The caller of
     ProtocolClDropPartyComplete</a> function should reset the handle variable to <b>NULL</b> if it reinitializes
     its per-party context area for reuse when the party has been dropped.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
@@ -182,4 +187,3 @@ The caller of
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClDropParty function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.PoFxNotifySurprisePowerOn
-title: PoFxNotifySurprisePowerOn function
-author: windows-driver-content
-description: The PoFxNotifySurprisePowerOn routine notifies the power management framework (PoFx) that a device was turned on as a side effect of supplying power to some other device.
-old-location: kernel\pofxnotifysurprisepoweron.htm
-old-project: kernel
-ms.assetid: AB9C7D32-D536-4B2B-9C85-DF5A0031798C
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PoFxNotifySurprisePowerOn
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: 
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PoFxNotifySurprisePowerOn
-req.alt-loc: Ntoskrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntoskrnl.lib
-req.dll: Ntoskrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.PoFxNotifySurprisePowerOn
+title : PoFxNotifySurprisePowerOn function
+author : windows-driver-content
+description : The PoFxNotifySurprisePowerOn routine notifies the power management framework (PoFx) that a device was turned on as a side effect of supplying power to some other device.
+old-location : kernel\pofxnotifysurprisepoweron.htm
+old-project : kernel
+ms.assetid : AB9C7D32-D536-4B2B-9C85-DF5A0031798C
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : PoFxNotifySurprisePowerOn
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PoFxNotifySurprisePowerOn
+req.alt-loc : Ntoskrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntoskrnl.lib
+req.dll : Ntoskrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # PoFxNotifySurprisePowerOn function
-
-
-
-## -description
 The <b>PoFxNotifySurprisePowerOn</b> routine notifies the power management framework (PoFx) that a device was turned on as a side effect of supplying power to some other device.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID PoFxNotifySurprisePowerOn(
@@ -52,19 +47,19 @@ VOID PoFxNotifySurprisePowerOn(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Pdo [in]
+`Pdo`
 
 A pointer to a <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_">physical device object</a> (PDO). This parameter points to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the physical device that was turned on as a side effect. The caller is always the bus driver that enumerated the PDO.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 Device drivers should not call this routine. This routine should be called only by bus drivers.
 
 A bus driver calls this routine to inform PoFx that a device that is not currently being used was incidentally turned on at the same time as a second device. For example, the first device might share a power rail with the second device. Thus, power cannot be supplied to the second device without supplying power, as a side effect, to the first device. Because the first device is not being used, this device should be configured to consume as little power as possible.
@@ -79,8 +74,20 @@ If the bus driver fails to call this routine when the device is turned on, the d
 
 Call <b>PoFxNotifySurprisePowerOn</b> only if the device was turned on incidentally, as a side effect of turning on some other device. If the bus driver restores power to a device in response to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a> callback or an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request for a D0 transition, call the <a href="..\wdm\nf-wdm-pofxreportdevicepoweredon.md">PoFxReportDevicePoweredOn</a> routine instead to inform PoFx when power is restored to the device.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
@@ -100,4 +107,3 @@ Call <b>PoFxNotifySurprisePowerOn</b> only if the device was turned on incidenta
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxNotifySurprisePowerOn routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

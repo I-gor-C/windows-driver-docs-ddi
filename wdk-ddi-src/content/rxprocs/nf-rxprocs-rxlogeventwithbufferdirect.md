@@ -1,50 +1,45 @@
 ---
-UID: NF:rxprocs.RxLogEventWithBufferDirect
-title: RxLogEventWithBufferDirect function
-author: windows-driver-content
-description: RxLogEventWithBufferDirect allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
-old-location: ifsk\rxlogeventwithbufferdirect.htm
-old-project: ifsk
-ms.assetid: 09a7d452-efa1-4846-8077-1f6ce60515e7
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxLogEventWithBufferDirect
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: rxprocs.h
-req.include-header: Rxprocs.h, Rxstruc.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RxLogEventWithBufferDirect
-req.alt-loc: rxprocs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: *PRX_CONTEXT, RX_CONTEXT
-req.product: Windows 10 or later.
+UID : NF:rxprocs.RxLogEventWithBufferDirect
+title : RxLogEventWithBufferDirect function
+author : windows-driver-content
+description : RxLogEventWithBufferDirect allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
+old-location : ifsk\rxlogeventwithbufferdirect.htm
+old-project : ifsk
+ms.assetid : 09a7d452-efa1-4846-8077-1f6ce60515e7
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RxLogEventWithBufferDirect
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : rxprocs.h
+req.include-header : Rxprocs.h, Rxstruc.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RxLogEventWithBufferDirect
+req.alt-loc : rxprocs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
+req.product : Windows 10 or later.
 ---
 
+
 # RxLogEventWithBufferDirect function
-
-
-
-## -description
 <b>RxLogEventWithBufferDirect</b> allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID RxLogEventWithBufferDirect(
@@ -58,57 +53,63 @@ VOID RxLogEventWithBufferDirect(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DeviceObject [in]
-
-A pointer to the RDBSS device object.
+`DeviceOrDriverObject`
 
 
-### -param OriginatorId [in]
+
+`OriginatorId`
 
 The string indicating the caller generating the error.
 
+`EventId`
 
-### -param EventId [in]
+The value indicating the I/O error log code which is different than an NTSTATUS value returned by a routine. The legal I/O error log code values are defined in the <i>ntiolog.h</i> header file included with the Microsoft Windows SDK and Visual Studio.
 
-The value indicating the I/O error log code which is different than an NTSTATUS value returned by a routine. The legal I/O error log code values are defined in the <i>ntiolog.h</i> header file included with the Microsoft Windows SDK and Visual Studio. 
-
-
-### -param Status [in]
+`Status`
 
 The value indicating the status code of a routine indicating a failure.
 
-
-### -param DataBuffer [in]
+`DataBuffer`
 
 A pointer to a data buffer to be added to the I/O error log structure.
 
-
-### -param DataBufferLength [in]
+`DataBufferLength`
 
 The length of the data buffer to be added to the I/O error log structure.
 
-
-### -param LineNumber [in]
+`LineNumber`
 
 The line number in the source code file where this failure occurred.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 <b>RxLogEventDirect</b> internally calls the <b>RxLogEventWithAnnotation</b> routine to create and write the log entry passing the <i>Status</i> and <i>LineNumber</i> parameters as the <i>Annotations</i> parameter to <b>RxLogEventWithAnnotation</b>. 
 
 The I/O error log entry size is limited to a length of 255 characters. So if the combined length of the <i>EventId</i>, <i>DataBuffer</i>, and <i>Annotations</i> parameters plus the size of the fixed part of the I/O error log entry exceeds 255, then no I/O error log entry will be created.
 
-The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to create the I/O error log entry . Consequently, <b>RxLogEventWithBufferDirect</b> can silently fail if the memory allocation fails. 
+The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to create the I/O error log entry . Consequently, <b>RxLogEventWithBufferDirect</b> can silently fail if the memory allocation fails.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rxprocs.h (include Rxprocs.h, Rxstruc.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
@@ -125,4 +126,3 @@ The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLogEventWithBufferDirect function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,103 +1,92 @@
 ---
-UID: NC:hdaudio.PTRANSFER_CODEC_VERBS
-title: PTRANSFER_CODEC_VERBS
-author: windows-driver-content
-description: The TransferCodecVerbs routine transfers one or more commands to a codec or codecs and retrieves the responses to those commands.The function pointer type for a TransferCodecVerbs routine is defined as:
-old-location: audio\transfercodecverbs.htm
-old-project: audio
-ms.assetid: 0ba92f5c-c4a3-48de-b8af-9c444b2e65b5
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: hdaudio.h
-req.include-header: Hdaudio.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: TransferCodecVerbs
-req.alt-loc: hdaudio.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
+UID : NC:hdaudio.PTRANSFER_CODEC_VERBS
+title : PTRANSFER_CODEC_VERBS
+author : windows-driver-content
+description : The TransferCodecVerbs routine transfers one or more commands to a codec or codecs and retrieves the responses to those commands.The function pointer type for a TransferCodecVerbs routine is defined as:
+old-location : audio\transfercodecverbs.htm
+old-project : audio
+ms.assetid : 0ba92f5c-c4a3-48de-b8af-9c444b2e65b5
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : hdaudio.h
+req.include-header : Hdaudio.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : TransferCodecVerbs
+req.alt-loc : hdaudio.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
-# PTRANSFER_CODEC_VERBS callback
 
-
-
-## -description
+# PTRANSFER_CODEC_VERBS callback function
 The <i>TransferCodecVerbs</i> routine transfers one or more commands to a codec or codecs and retrieves the responses to those commands.
 
 The function pointer type for a <i>TransferCodecVerbs</i> routine is defined as:
 
+## Syntax
 
+```
+PTRANSFER_CODEC_VERBS PtransferCodecVerbs;
 
-## -prototype
-
-````
-PTRANSFER_CODEC_VERBS TransferCodecVerbs;
-
-NTSTATUS TransferCodecVerbs(
-  _In_    PVOID                               context,
-  _In_    ULONG                               count,
-  _Inout_ PHDAUDIO_CODEC_TRANSFER             codecTransfer,
-  _In_    PHDAUDIO_TRANSFER_COMPLETE_CALLBACK callback,
-  _In_    PVOID                               callbackContext
+NTSTATUS PtransferCodecVerbs(
+  PVOID _context,
+  ULONG Count,
+  PHDAUDIO_CODEC_TRANSFER CodecTransfer,
+  PHDAUDIO_TRANSFER_COMPLETE_CALLBACK Callback,
+  PVOID Context
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`_context`
 
 
-## -parameters
 
-### -param context [in]
-
-Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a><u>,</u> or <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
+`Count`
 
 
-### -param count [in]
 
-Specifies the number of elements in the <i>codecTransfer</i> array.
-
-
-### -param codecTransfer [in, out]
-
-Pointer to an array of <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a> structures. Each array element is a structure that contains storage for both an output command from the caller and the corresponding input response from the codec.
+`CodecTransfer`
 
 
-### -param callback [in]
 
-Function pointer to a callback routine. This parameter is a function pointer of type HDAUDIO_TRANSFER_COMPLETE_CALLBACK. The parameter can be specified as <b>NULL</b>. For more information, see the following Remarks section.
-
-
-### -param callbackContext [in]
-
-A context value for the callback routine. The caller casts the context value to type PVOID. After completing the commands asynchronously, the HD Audio bus driver passes the context value to the callback routine as a call parameter.
+`Callback`
 
 
-## -returns
+
+`Context`
+
+
+
+
+## Return Value
+
 <i>TransferCodecVerbs</i> returns STATUS_SUCCESS if the call succeeds. Otherwise, the routine returns an appropriate error code. The following table shows a possible return status code.
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl>Indicates that the request could not be added to the command queue due to a shortage of nonpaged memory.
 
- 
+## Remarks
 
-
-## -remarks
 This routine submits one or more codec commands to the HD Audio bus driver. The bus driver issues the commands to the codecs, retrieves the codecs' responses to the commands, and outputs the responses to the caller.
 
 The caller specifies the commands in an array of HDAUDIO_CODEC_TRANSFER structures. Each structure contains storage for both a command and the codec's response to that command. Before calling <i>TransferCodecVerbs</i>, the caller fills in the commands in each of the structures in the array. As each command completes, the HD Audio bus driver retrieves the codec's response and writes it into the structure. After the last command completes, the caller can read the responses from the array.
@@ -124,8 +113,20 @@ If the <i>callback</i> parameter is <b>NULL</b>, the caller must be running at I
 
 The caller must allocate the <i>codecTransfer</i> array from the nonpaged pool.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hdaudio.h (include Hdaudio.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
@@ -145,4 +146,3 @@ The caller must allocate the <i>codecTransfer</i> array from the nonpaged pool.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PTRANSFER_CODEC_VERBS callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

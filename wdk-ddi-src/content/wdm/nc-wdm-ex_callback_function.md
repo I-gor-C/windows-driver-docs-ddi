@@ -1,76 +1,68 @@
 ---
-UID: NC:wdm.EX_CALLBACK_FUNCTION
-title: EX_CALLBACK_FUNCTION function
-author: windows-driver-content
-description: A filter driver's RegistryCallback routine can monitor, block, or modify a registry operation.
-old-location: kernel\registrycallback.htm
-old-project: kernel
-ms.assetid: 220ce3b8-2820-4753-9659-5ce7b4f4f32d
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: EX_CALLBACK_FUNCTION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported starting with Windows XP (see Return Value section).
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RegistryCallback
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at PASSIVE_LEVEL (see Remarks section).
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.EX_CALLBACK_FUNCTION
+title : EX_CALLBACK_FUNCTION
+author : windows-driver-content
+description : A filter driver's RegistryCallback routine can monitor, block, or modify a registry operation.
+old-location : kernel\registrycallback.htm
+old-project : kernel
+ms.assetid : 220ce3b8-2820-4753-9659-5ce7b4f4f32d
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported starting with Windows XP (see Return Value section).
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RegistryCallback
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at PASSIVE_LEVEL (see Remarks section).
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # EX_CALLBACK_FUNCTION function
-
-
-
-## -description
 A filter driver's <i>RegistryCallback</i> routine can monitor, block, or modify a registry operation.
 
+## Syntax
 
+```
+EX_CALLBACK_FUNCTION ExCallbackFunction;
 
-## -syntax
-
-````
-EX_CALLBACK_FUNCTION RegistryCallback;
-
-NTSTATUS RegistryCallback(
-  _In_     PVOID CallbackContext,
-  _In_opt_ PVOID Argument1,
-  _In_opt_ PVOID Argument2
+NTSTATUS ExCallbackFunction(
+  PVOID CallbackContext,
+  PVOID Argument1,
+  PVOID Argument2
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param CallbackContext [in]
+`CallbackContext`
 
 The value that the driver passed as the <i>Context</i> parameter to <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a> when it registered this <i>RegistryCallback</i> routine.
 
-
-### -param Argument1 [in, optional]
+`Argument1`
 
 A <a href="..\wdm\ne-wdm-_reg_notify_class.md">REG_NOTIFY_CLASS</a>-typed value that identifies the type of registry operation that is being performed and whether the <i>RegistryCallback</i> routine is being called before or after the registry operation is performed.
 
-
-### -param Argument2 [in, optional]
+`Argument2`
 
 A pointer to a structure that contains information that is specific to the type of registry operation. The structure type depends on the REG_NOTIFY_CLASS-typed value for <i>Argument1</i>, as shown in the following table. For information about which REG_NOTIFY_CLASS-typed values are available for which operating system versions, see <a href="..\wdm\ne-wdm-_reg_notify_class.md">REG_NOTIFY_CLASS</a>.
 
@@ -458,10 +450,9 @@ A pointer to a structure that contains information that is specific to the type 
 <td><b>REG_CREATE_KEY_INFORMATION_V1</b> and <b>REG_OPEN_KEY_INFORMATION_V1</b></td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
 
 <dl>
 <dt><a id="_and__"></a><a id="_AND__"></a>Windows XP and Windows Server 2003:</dt>
@@ -492,8 +483,8 @@ If the <i>RegistryCallback</i> routine returns a status value for which <a href=
 
 For more information about when a <i>RegistryCallback</i> routine should return each of these status values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
+## Remarks
 
-## -remarks
 To be notified of registry operations, a kernel-mode component (such as the driver component of an antivirus software package) can call <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a> to register a <i>RegistryCallback</i> routine.
 
 The <i>RegistryCallback</i> routine can inspect the contents of the input and output buffers that are supplied for registry operations. A registry operation can be initiated by a user-mode application that calls a user-mode registry routine (such as <a href="https://msdn.microsoft.com/e9ffad7f-c0b6-44ce-bf22-fbe45ca98bf4">RegCreateKeyEx</a> or <a href="https://msdn.microsoft.com/c8a590f2-3249-437f-a320-c7443d42b792">RegOpenKeyEx</a>) or by a driver that calls a kernel-mode registry routine (such as <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>). An <i>input buffer</i> is a memory buffer supplied by the initiator from which the registry reads input data for the operation. An <i>output buffer</i> is a buffer supplied by the initiator into which the registry writes output data requested by the initiator.
@@ -516,8 +507,20 @@ Then, implement your callback routine as follows:
 
 The EX_CALLBACK_FUNCTION function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EX_CALLBACK_FUNCTION function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Called at PASSIVE_LEVEL (see Remarks section). |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
@@ -540,4 +543,3 @@ The EX_CALLBACK_FUNCTION function type is defined in the Wdm.h header file. To m
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RegistryCallback routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

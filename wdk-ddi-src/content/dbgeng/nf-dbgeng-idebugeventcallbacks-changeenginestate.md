@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugEventCallbacks.ChangeEngineState
-title: IDebugEventCallbacks::ChangeEngineState method
-author: windows-driver-content
-description: The ChangeEngineState callback method is called by the engine when its state has changed.
-old-location: debugger\idebugeventcallbacks_changeenginestate.htm
-old-project: debugger
-ms.assetid: 42ad993a-b12e-49ff-8a1f-f62e2ab968d3
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugEventCallbacks, IDebugEventCallbacks::ChangeEngineState, ChangeEngineState
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugEventCallbacks.ChangeEngineState
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugEventCallbacks.ChangeEngineState
+title : IDebugEventCallbacks::ChangeEngineState method
+author : windows-driver-content
+description : The ChangeEngineState callback method is called by the engine when its state has changed.
+old-location : debugger\idebugeventcallbacks_changeenginestate.htm
+old-project : debugger
+ms.assetid : 42ad993a-b12e-49ff-8a1f-f62e2ab968d3
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks::ChangeEngineState, ChangeEngineState
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugEventCallbacks.ChangeEngineState
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugEventCallbacks::ChangeEngineState method
 
-
-
-## -description
+# ChangeEngineState method
 The <b>ChangeEngineState</b> callback method is called by the engine when its state has changed.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT ChangeEngineState(
@@ -52,10 +47,9 @@ HRESULT ChangeEngineState(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Flags [in]
+`Flags`
 
 Specifies a bit-set indicating the type of changes that occurred in the engine's state.  The following bit flags might be set:
 
@@ -215,98 +209,30 @@ Text replacements have changed.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Argument [in]
+`Argument`
 
 Provides additional information about the change to the engine's state.  If more than one bit flag is set in the <i>Flags</i> parameter, the <i>Argument</i> parameter is not used.  Otherwise, the interpretation of the value of <i>Argument</i> depends on the value of <i>Flags</i>:
 
 
+## Return Value
 
-
-### -param DEBUG_CES_CURRENT_THREAD
-
-The value of <i>Argument</i> is the current engine thread ID or--if there is no current thread--DEBUG_ANY_ID.  For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
-
-
-### -param DEBUG_CES_EFFECTIVE_PROCESSOR
-
-The value of <i>Argument</i> is the type of the effective processor.
-
-
-### -param DEBUG_CES_BREAKPOINTS
-
-The value of <i>Argument</i> is the breakpoint ID of the breakpoint that was changed or--if more than one breakpoint was changed--DEBUG_ANY_ID.  For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>.
-
-
-### -param DEBUG_CES_CODE_LEVEL
-
-The value of <i>Argument</i> is the code interpretation level.
-
-
-### -param DEBUG_CES_EXECUTION_STATUS
-
-The value of <i>Argument</i> is the execution status (as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> topic) possibly combined with the bit flag DEBUG_STATUS_INSIDE_WAIT. DEBUG_STATUS_INSIDE_WAIT is set when a <b>WaitForEvent</b> call is pending. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.
-
-
-### -param DEBUG_CES_ENGINE_OPTIONS
-
-The value of <i>Argument</i> is the engine options. 
-
-
-### -param DEBUG_CES_LOG_FILE
-
-The value of <i>Argument</i> is <b>TRUE</b> if the log file was opened and <b>FALSE</b> if the log file was closed.
-
-
-### -param DEBUG_CES_RADIX
-
-The value of <i>Argument</i> is the default radix.
-
-
-### -param DEBUG_CES_EVENT_FILTERS
-
-The value of <i>Argument</i> is the index of the event filter that was changed or--if more than one event filter was changed--DEBUG_ANY_ID.
-
-
-### -param DEBUG_CES_PROCESS_OPTIONS
-
-The value of <i>Argument</i> is the process options for the current process.
-
-
-### -param DEBUG_CES_EXTENSIONS
-
-The value of <i>Argument</i> is zero.
-
-
-### -param DEBUG_CES_SYSTEMS
-
-The value of <i>Argument</i> is the target ID of the target that was added or--if a target was removed--DEBUG_ANY_ID.
-
-
-### -param DEBUG_CES_ASSEMBLE_OPTIONS
-
-The value of <i>Argument</i> is the assemble options.
-
-
-### -param DEBUG_CES_EXPRESSION_SYNTAX
-
-The value of <i>Argument</i> is the default expression syntax.
-
-
-### -param DEBUG_CES_TEXT_REPLACEMENTS
-
-The value of <i>Argument</i> is DEBUG_ANY_ID.
-
-</dd>
-</dl>
-
-## -returns
 The return value is ignored by the engine unless it indicates a remote procedure call error; in this case the client, with which this <b>IDebugEventCallbacks</b> object is registered, is disabled.
 
+## Remarks
 
-## -remarks
 This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. </p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

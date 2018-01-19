@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisCoOidRequest
-title: NdisCoOidRequest function
-author: windows-driver-content
-description: The NdisCoOidRequest function forwards a request to targeted CoNDIS drivers to query or set OID-specified information of the target driver.
-old-location: netvista\ndiscooidrequest.htm
-old-project: netvista
-ms.assetid: 7d46f2c1-7b54-4510-968a-2e35e33cf849
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCoOidRequest
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCoOidRequest
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Connection_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCoOidRequest
+title : NdisCoOidRequest function
+author : windows-driver-content
+description : The NdisCoOidRequest function forwards a request to targeted CoNDIS drivers to query or set OID-specified information of the target driver.
+old-location : netvista\ndiscooidrequest.htm
+old-project : netvista
+ms.assetid : 7d46f2c1-7b54-4510-968a-2e35e33cf849
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCoOidRequest
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCoOidRequest
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Connection_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCoOidRequest function
-
-
-
-## -description
 The 
   <b>NdisCoOidRequest</b> function forwards a request to targeted CoNDIS drivers to query or set OID-specified
   information of the target driver.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisCoOidRequest(
@@ -57,17 +52,15 @@ NDIS_STATUS NdisCoOidRequest(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisBindingHandle [in]
+`NdisBindingHandle`
 
 A handle that the 
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function returned
      that identifies the target adapter for the binding.
 
-
-### -param NdisAfHandle [in, optional]
+`NdisAfHandle`
 
 A handle that identifies the address family (AF) that is shared among the client, call manager,
      and NDIS. This handle was obtained as follows:
@@ -91,8 +84,7 @@ If the caller is a stand-alone call manager or miniport call manager (MCM) that 
 To make a request from either a client or stand-alone call manager to the underlying miniport driver,
      this parameter must be <b>NULL</b>.
 
-
-### -param NdisVcHandle [in, optional]
+`NdisVcHandle`
 
 A handle that identifies the virtual connection (VC) the caller is requesting or setting
      information for, if the request is VC-specific. Otherwise, if this parameter is <b>NULL</b>, the request is not
@@ -106,8 +98,7 @@ A handle that identifies the virtual connection (VC) the caller is requesting or
      <i>NdisAfHandle</i> and 
      <i>NdisPartyHandle</i> are <b>NULL</b>.
 
-
-### -param NdisPartyHandle [in, optional]
+`NdisPartyHandle`
 
 A handle that identifies the party on a multipoint VC the caller is requesting or setting
      information for, if the request is party-specific. Otherwise, if this parameter is <b>NULL</b>, the request is
@@ -120,15 +111,15 @@ A handle that identifies the party on a multipoint VC the caller is requesting o
      <i>NdisAfHandle</i> is <b>NULL</b>, 
      <i>NdisPartyHandle</i> also is <b>NULL</b>.
 
-
-### -param OidRequest [in, out]
+`OidRequest`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>XXX</i> code to query or to set information.
 
 
-## -returns
+## Return Value
+
 The target driver determines which NDIS_STATUS_<i>XXX</i> code 
      <b>NdisCoOidRequest</b> returns, usually one of the following values:
 <dl>
@@ -196,10 +187,8 @@ The target driver determines which NDIS_STATUS_<i>XXX</i> code
        <a href="..\ndis\nc-ndis-miniport_cancel_oid_request.md">
        MiniportCancelOidRequest</a> function.
 
- 
+## Remarks
 
-
-## -remarks
 CoNDIS clients and stand-alone call managers can call the 
     <b>NdisCoOidRequest</b> function to send an OID request to query or set OID-specified information in a
     target driver. The target driver can be another CoNDIS protocol driver or an underlying driver.
@@ -274,8 +263,20 @@ Only clients and stand-alone call managers, which are protocol drivers, can call
     <a href="..\ndis\nf-ndis-ndismcmoidrequest.md">NdisMCmOidRequest</a> function to
     communicate with their clients.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Connection_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_cancel_oid_request.md">MiniportCancelOidRequest</a>
@@ -335,4 +336,3 @@ Only clients and stand-alone call managers, which are protocol drivers, can call
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoOidRequest function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

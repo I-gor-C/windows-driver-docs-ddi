@@ -1,50 +1,43 @@
 ---
-UID: NS:hbapiwmi._MS_SM_AdapterInformationQuery
-title: _MS_SM_AdapterInformationQuery
-author: windows-driver-content
-description: The MS_SM_AdapterInformationQuery structure is used by a WMI provider to expose attributes that are associated with a SAS adapter.
-old-location: storage\ms_sm_adapterinformationquery.htm
-old-project: storage
-ms.assetid: 81c05f47-e75a-4d67-8e77-33ebe1750c67
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: hbapiwmi.h
-req.include-header: Hbapiwmi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MS_SM_AdapterInformationQuery
-req.alt-loc: hbapiwmi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
+UID : NS:hbapiwmi._MS_SM_AdapterInformationQuery
+title : _MS_SM_AdapterInformationQuery
+author : windows-driver-content
+description : The MS_SM_AdapterInformationQuery structure is used by a WMI provider to expose attributes that are associated with a SAS adapter.
+old-location : storage\ms_sm_adapterinformationquery.htm
+old-project : storage
+ms.assetid : 81c05f47-e75a-4d67-8e77-33ebe1750c67
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : hbapiwmi.h
+req.include-header : Hbapiwmi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MS_SM_AdapterInformationQuery
+req.alt-loc : hbapiwmi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery"
 ---
 
 # _MS_SM_AdapterInformationQuery structure
-
-
-
-## -description
 The MS_SM_AdapterInformationQuery structure is used by a WMI provider to expose attributes that are associated with a SAS adapter.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _MS_SM_AdapterInformationQuery {
   ULONGLONG UniqueAdapterId;
@@ -67,92 +60,82 @@ typedef struct _MS_SM_AdapterInformationQuery {
 } MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DriverName`
 
-### -field UniqueAdapterId
+            An ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
+        
+            `DriverVersion`
 
-The unique adapter ID.
+            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
+        
+            `FirmwareVersion`
 
+            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
+        
+            `HardwareVersion`
 
-### -field HBAStatus
+            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
+        
+            `HBAStatus`
 
-The status of the operation.
+            The status of the operation.
+        
+            `HBASymbolicName`
 
+            An ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
+        
+            `Manufacturer`
 
-### -field NumberOfPorts
+            An ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
+        
+            `MfgDomain`
 
-The number of ports on the HBA.
+            The name of the HBA manufacturer.
+        
+            `Model`
 
+            An ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.
+        
+            `ModelDescription`
 
-### -field VendorSpecificID
+            An ASCII string that is 256 bytes or fewer in length and that indicates the model description.
+        
+            `NumberOfPorts`
 
-A vendor-specific ID.
+            The number of ports on the HBA.
+        
+            `OptionROMVersion`
 
+            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
+        
+            `RedundantFirmwareVersion`
 
-### -field Manufacturer
+            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
+        
+            `RedundantOptionROMVersion`
 
-An ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
+            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
+        
+            `SerialNumber`
 
+            An ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
+        
+            `UniqueAdapterId`
 
-### -field SerialNumber
+            The unique adapter ID.
+        
+            `VendorSpecificID`
 
-An ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
-
-
-### -field Model
-
-An ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.
-
-
-### -field ModelDescription
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the model description.
-
-
-### -field HardwareVersion
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
-
-
-### -field DriverVersion
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
-
-
-### -field OptionROMVersion
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
-
-
-### -field FirmwareVersion
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
-
-
-### -field DriverName
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
-
-
-### -field HBASymbolicName
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
-
-
-### -field RedundantOptionROMVersion
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
+            A vendor-specific ID.
 
 
-### -field RedundantFirmwareVersion
-
-An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
-
-
-### -field MfgDomain
-
-The name of the HBA manufacturer.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hbapiwmi.h (include Hbapiwmi.h) |

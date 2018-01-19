@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltProcessFileLock
-title: FltProcessFileLock function
-author: windows-driver-content
-description: The FltProcessFileLock routine processes and completes a file lock operation.
-old-location: ifsk\fltprocessfilelock.htm
-old-project: ifsk
-ms.assetid: 72b8aad8-39e1-4624-ac77-13eb52036b3b
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltProcessFileLock
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltProcessFileLock
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltProcessFileLock
+title : FltProcessFileLock function
+author : windows-driver-content
+description : The FltProcessFileLock routine processes and completes a file lock operation.
+old-location : ifsk\fltprocessfilelock.htm
+old-project : ifsk
+ms.assetid : 72b8aad8-39e1-4624-ac77-13eb52036b3b
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltProcessFileLock
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltProcessFileLock
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltProcessFileLock function
-
-
-
-## -description
 The <b>FltProcessFileLock</b> routine processes and completes a file lock operation.
 
-
-
-## -syntax
+## Syntax
 
 ````
 FLT_PREOP_CALLBACK_STATUS FltProcessFileLock(
@@ -53,25 +48,23 @@ FLT_PREOP_CALLBACK_STATUS FltProcessFileLock(
 );
 ````
 
+## Parameters
 
-## -parameters
+`FileLock`
 
-### -param FileLock [in]
+Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a> or <a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>.
 
-Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a> or <a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>. 
+`CallbackData`
 
+Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> operation.
 
-### -param CallbackData [in]
+`Context`
 
-Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> operation. 
-
-
-### -param Context [in, optional]
-
-Context pointer to be used when completing the operation. This context pointer is passed to the <i>CompleteLockCallbackDataRoutine</i> and <i>UnlockRoutine</i> callback routines that the minifilter driver registered in a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. This parameter is optional and can be <b>NULL</b>. 
+Context pointer to be used when completing the operation. This context pointer is passed to the <i>CompleteLockCallbackDataRoutine</i> and <i>UnlockRoutine</i> callback routines that the minifilter driver registered in a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltProcessFileLock</b> returns one of the following. 
 <dl>
 <dt><b>FLT_PREOP_COMPLETE</b></dt>
@@ -81,12 +74,10 @@ Context pointer to be used when completing the operation. This context pointer i
 </dl>The <i>CallbackData</i> represents a fast I/O operation, and a minifilter driver in the stack has disallowed the fast I/O to be used for this operation. The Filter Manager does not send the operation to any minifilter drivers below the one that disallowed the operation. In this case, the Filter Manager only calls the postoperation callback routines (and <i>CompleteLockCallbackDataRoutine</i> callbacks) of the minifilter drivers above the minifilter driver that disallowed the fast I/O operation. 
 <dl>
 <dt><b>FLT_PREOP_PENDING</b></dt>
-</dl>The lock operation has been pended. 
+</dl>The lock operation has been pended.
 
- 
+## Remarks
 
-
-## -remarks
 <b>FltProcessFileLock</b> processes a file lock (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>) operation. The lock operation can be a fast I/O or IRP-based operation. 
 
 For unlock operations, the Filter Manager calls the <i>UnlockRoutine</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551951">PUNLOCK_ROUTINE</a>) callback routine that the caller registered for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a> structure in a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. 
@@ -101,9 +92,20 @@ To allocate and initialize a new file lock structure, call <a href="..\fltkernel
 
 To free an initialized<a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a> structure, call <a href="..\fltkernel\nf-fltkernel-fltfreefilelock.md">FltFreeFileLock</a>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a>
@@ -150,4 +152,3 @@ To free an initialized<a href="https://msdn.microsoft.com/library/windows/hardwa
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltProcessFileLock routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

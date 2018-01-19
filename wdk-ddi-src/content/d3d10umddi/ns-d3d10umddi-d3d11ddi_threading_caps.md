@@ -1,62 +1,55 @@
 ---
-UID: NS:d3d10umddi.D3D11DDI_THREADING_CAPS
-title: D3D11DDI_THREADING_CAPS
-author: windows-driver-content
-description: The D3D11DDI_THREADING_CAPS structure contains display device threading capabilities.
-old-location: display\d3d11ddi_threading_caps.htm
-old-project: display
-ms.assetid: 11715852-8af2-4ae1-b3a2-c80153ef7cde
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D11DDI_THREADING_CAPS, D3D11DDI_THREADING_CAPS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: D3D11DDI_THREADING_CAPS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D11DDI_THREADING_CAPS
-req.alt-loc: d3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D11DDI_THREADING_CAPS
+UID : NS:d3d10umddi.D3D11DDI_THREADING_CAPS
+title : D3D11DDI_THREADING_CAPS
+author : windows-driver-content
+description : The D3D11DDI_THREADING_CAPS structure contains display device threading capabilities.
+old-location : display\d3d11ddi_threading_caps.htm
+old-project : display
+ms.assetid : 11715852-8af2-4ae1-b3a2-c80153ef7cde
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D11DDI_THREADING_CAPS, D3D11DDI_THREADING_CAPS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : D3D11DDI_THREADING_CAPS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D11DDI_THREADING_CAPS
+req.alt-loc : d3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D11DDI_THREADING_CAPS
 ---
 
 # D3D11DDI_THREADING_CAPS structure
+The D3D11DDI_THREADING_CAPS structure contains display device threading capabilities.
 
-
-
-## -description
-The D3D11DDI_THREADING_CAPS structure contains display device threading capabilities. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct D3D11DDI_THREADING_CAPS {
   UINT Caps;
 } D3D11DDI_THREADING_CAPS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Caps`
 
-### -field Caps
-
-[in] A valid bitwise OR of values that describe the threading capabilities of the driver. The Direct3D runtime supports the following values.
+            [in] A valid bitwise OR of values that describe the threading capabilities of the driver. The Direct3D runtime supports the following values.
 
 <table>
 <tr>
@@ -94,14 +87,19 @@ The driver supports command lists. To support D3D11DDICAPS_COMMANDLISTS_BUILD_2,
 </td>
 </tr>
 </table>
- 
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_2ddicaps_type.md">D3D10_2DDICAPS_TYPE</a>
 </dt>
@@ -114,4 +112,3 @@ The driver supports command lists. To support D3D11DDICAPS_COMMANDLISTS_BUILD_2,
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11DDI_THREADING_CAPS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,52 +1,45 @@
 ---
-UID: NE:wwan._WWAN_ACTIVATION_STATE
-title: _WWAN_ACTIVATION_STATE
-author: windows-driver-content
-description: The WWAN_ACTIVATION_STATE enumeration lists the different Packet Data Protocol (PDP) context activation states that are supported by the MB device.
-old-location: netvista\wwan_activation_state.htm
-old-project: netvista
-ms.assetid: ca5caf9d-5c73-4516-bbc9-ee3ff9511e99
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WWAN_ACTIVATION_STATE, WWAN_ACTIVATION_STATE, *PWWAN_ACTIVATION_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wwan.h
-req.include-header: Wwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WWAN_ACTIVATION_STATE
-req.alt-loc: wwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: WWAN_ACTIVATION_STATE, *PWWAN_ACTIVATION_STATE
-req.product: Windows 10 or later.
+UID : NE:wwan._WWAN_ACTIVATION_STATE
+title : _WWAN_ACTIVATION_STATE
+author : windows-driver-content
+description : The WWAN_ACTIVATION_STATE enumeration lists the different Packet Data Protocol (PDP) context activation states that are supported by the MB device.
+old-location : netvista\wwan_activation_state.htm
+old-project : netvista
+ms.assetid : ca5caf9d-5c73-4516-bbc9-ee3ff9511e99
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WWAN_ACTIVATION_STATE, *PWWAN_ACTIVATION_STATE, WWAN_ACTIVATION_STATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wwan.h
+req.include-header : Wwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WWAN_ACTIVATION_STATE
+req.alt-loc : wwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PWWAN_ACTIVATION_STATE, WWAN_ACTIVATION_STATE"
+req.product : Windows 10 or later.
 ---
 
-# _WWAN_ACTIVATION_STATE enumeration
-
-
-
-## -description
+# _WWAN_ACTIVATION_STATE Enumeration
 The WWAN_ACTIVATION_STATE enumeration lists the different Packet Data Protocol (PDP) context
   activation states that are supported by the MB device.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WWAN_ACTIVATION_STATE { 
   WwanActivationStateUnknown       = 0,
@@ -58,40 +51,43 @@ typedef enum _WWAN_ACTIVATION_STATE {
 } WWAN_ACTIVATION_STATE, *PWWAN_ACTIVATION_STATE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field WwanActivationStateUnknown
+<tr>
+<td>WwanActivationStateActivated</td>
+<td>The packet context is activated.</td>
+</tr>
 
-The activation state is unknown.
+<tr>
+<td>WwanActivationStateActivating</td>
+<td>The packet context is currently in the process of getting activated.</td>
+</tr>
 
+<tr>
+<td>WwanActivationStateDeactivated</td>
+<td>The packet context is not activated.</td>
+</tr>
 
-### -field WwanActivationStateActivated
+<tr>
+<td>WwanActivationStateDeactivating</td>
+<td>The packet context is currently in the process of getting deactivated.</td>
+</tr>
 
-The packet context is activated.
+<tr>
+<td>WwanActivationStateMax</td>
+<td>The total number of PDP activation states.</td>
+</tr>
 
+<tr>
+<td>WwanActivationStateUnknown</td>
+<td>The activation state is unknown.</td>
+</tr>
+</table>
 
-### -field WwanActivationStateActivating
+## Remarks
 
-The packet context is currently in the process of getting activated.
-
-
-### -field WwanActivationStateDeactivated
-
-The packet context is not activated.
-
-
-### -field WwanActivationStateDeactivating
-
-The packet context is currently in the process of getting deactivated.
-
-
-### -field WwanActivationStateMax
-
-The total number of PDP activation states.
-
-
-## -remarks
 Miniport drivers use the 
     <b>WwanActivationStateActivating</b> and 
     <b>WwanActivationStateDeactivating</b> transient states when responding to 
@@ -100,8 +96,16 @@ Miniport drivers use the
     <i>set</i> indications after they have successfully activated or deactivated a PDP context, and not
     immediately after receiving the request.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wwan.h (include Wwan.h) |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wwan\ns-wwan-_wwan_set_context_state.md">WWAN_SET_CONTEXT_STATE</a>
@@ -112,4 +116,3 @@ Miniport drivers use the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_ACTIVATION_STATE enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

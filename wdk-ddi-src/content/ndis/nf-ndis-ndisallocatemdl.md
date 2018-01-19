@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisAllocateMdl
-title: NdisAllocateMdl function
-author: windows-driver-content
-description: The NdisAllocateMdl function allocates an MDL that describes the memory buffer at the specified virtual address.
-old-location: netvista\ndisallocatemdl.htm
-old-project: netvista
-ms.assetid: 4863fe31-2c89-47af-99ed-02055e67621d
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAllocateMdl
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAllocateMdl
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_NetBuffer_Function, NdisAllocateMdl
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAllocateMdl
+title : NdisAllocateMdl function
+author : windows-driver-content
+description : The NdisAllocateMdl function allocates an MDL that describes the memory buffer at the specified virtual address.
+old-location : netvista\ndisallocatemdl.htm
+old-project : netvista
+ms.assetid : 4863fe31-2c89-47af-99ed-02055e67621d
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAllocateMdl
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAllocateMdl
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_NetBuffer_Function, NdisAllocateMdl
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAllocateMdl function
-
-
-
-## -description
 The 
   <b>NdisAllocateMdl</b> function allocates an MDL that describes the memory buffer at the specified virtual
   address.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PMDL NdisAllocateMdl(
@@ -55,16 +50,14 @@ PMDL NdisAllocateMdl(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisHandle [in]
+`NdisHandle`
 
 An NDIS handle that was obtained during caller initialization. For more information, see 
      <a href="https://msdn.microsoft.com/752b0d64-2ca3-4dc0-a6cd-642e96af1f8f">Obtaining Pool Handles</a>.
 
-
-### -param VirtualAddress [in]
+`VirtualAddress`
 
 A pointer to the base virtual address of the buffer that the MDL is to describe.
 
@@ -76,17 +69,18 @@ A pointer to the base virtual address of the buffer that the MDL is to describe.
 </div>
 <div> </div>
 
-### -param Length [in]
+`Length`
 
 The size, in bytes, of the memory buffer.
 
 
-## -returns
+## Return Value
+
 <b>NdisAllocateMdl</b> returns a pointer to the allocated MDL. If the allocation fails, the return value
      is <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 All MDLs that are allocated by calling 
     <b>NdisAllocateMdl</b> must be freed by calling the 
     <a href="..\ndis\nf-ndis-ndisfreemdl.md">NdisFreeMdl</a> function.
@@ -97,9 +91,20 @@ All MDLs that are allocated by calling
     <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a> or 
     <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages.</a>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function, NdisAllocateMdl |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
@@ -128,4 +133,3 @@ All MDLs that are allocated by calling
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateMdl function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,52 +1,47 @@
 ---
-UID: NF:wudfusb.IWDFUsbTargetPipe2.ConfigureContinuousReader
-title: IWDFUsbTargetPipe2::ConfigureContinuousReader method
-author: windows-driver-content
-description: The ConfigureContinuousReader method configures the framework to continuously read from a USB pipe.
-old-location: wdf\iwdfusbtargetpipe2_configurecontinuousreader.htm
-old-project: wdf
-ms.assetid: accb2690-0ab7-4623-8493-545e6e722a7a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: IWDFUsbTargetPipe2, IWDFUsbTargetPipe2::ConfigureContinuousReader, ConfigureContinuousReader
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: wudfusb.h
-req.include-header: Wudfusb.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 1.9
-req.alt-api: IWDFUsbTargetPipe2.ConfigureContinuousReader
-req.alt-loc: WUDFx.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: Unavailable in UMDF 2.0 and later.
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: WUDFx.dll
-req.irql: 
-req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
-req.product: Windows 10 or later.
+UID : NF:wudfusb.IWDFUsbTargetPipe2.ConfigureContinuousReader
+title : IWDFUsbTargetPipe2::ConfigureContinuousReader method
+author : windows-driver-content
+description : The ConfigureContinuousReader method configures the framework to continuously read from a USB pipe.
+old-location : wdf\iwdfusbtargetpipe2_configurecontinuousreader.htm
+old-project : wdf
+ms.assetid : accb2690-0ab7-4623-8493-545e6e722a7a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : IWDFUsbTargetPipe2, IWDFUsbTargetPipe2::ConfigureContinuousReader, ConfigureContinuousReader
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : wudfusb.h
+req.include-header : Wudfusb.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 1.9
+req.alt-api : IWDFUsbTargetPipe2.ConfigureContinuousReader
+req.alt-loc : WUDFx.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : Unavailable in UMDF 2.0 and later.
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : WUDFx.dll
+req.irql : 
+req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.product : Windows 10 or later.
 ---
 
-# IWDFUsbTargetPipe2::ConfigureContinuousReader method
 
-
-
-## -description
+# ConfigureContinuousReader method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>ConfigureContinuousReader</b> method configures the framework to continuously read from a USB pipe.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT ConfigureContinuousReader(
@@ -61,50 +56,43 @@ HRESULT ConfigureContinuousReader(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param TransferLength [in]
+`TransferLength`
 
 The maximum length, in bytes, of data that can be received from the device.
 
-
-### -param HeaderLength [in]
+`HeaderLength`
 
 An offset, in bytes, into the buffer that receives data from the device. The framework will store data from the device in a read buffer, beginning at the offset value. In other words, this space precedes the <i>TransferLength</i>-sized space in which the framework stores data from the device.
 
-
-### -param TrailerLength [in]
+`TrailerLength`
 
 The length, in bytes, of a trailing buffer space. This space follows the <i>TransferLength</i>-sized space in which the framework stores data from the device.
 
-
-### -param NumPendingReads [in]
+`NumPendingReads`
 
 The number of read requests that the framework will queue to receive data from the I/O target. If this value is zero, the framework uses a default number of read requests. If the specified value is greater than the permitted maximum value, the framework uses the permitted maximum value. For more information about the <i>NumPendingReads</i> parameter, see the following Remarks section.
 
-
-### -param pMemoryCleanupCallbackInterface [in, optional]
+`pMemoryCleanupCallbackInterface`
 
 A pointer to a driver-supplied <b>IUnkown</b> interface that the framework uses to access an optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a> callback function. The framework calls the callback function when it deallocates the read buffer that it creates to handle the continuous read operation. This parameter is optional and can be <b>NULL</b>.
 
+`pOnCompletion`
 
-### -param pOnCompletion [in]
+A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete.md">IUsbTargetPipeContinuousReaderCallbackReadComplete</a> interface that provides an <a href="https://msdn.microsoft.com/946e0206-7609-4dc7-91c2-a6aadad91751">OnReaderCompletion</a> callback function.
 
-A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete.md">IUsbTargetPipeContinuousReaderCallbackReadComplete</a> interface that provides an <a href="https://msdn.microsoft.com/946e0206-7609-4dc7-91c2-a6aadad91751">OnReaderCompletion</a> callback function. 
+`pCompletionContext`
 
+An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556910">IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion</a> callback function.
 
-### -param pCompletionContext [in, optional]
+`pOnFailure`
 
-An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556910">IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion</a> callback function. 
-
-
-### -param pOnFailure [in, optional]
-
-A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a> interface that provides an <a href="https://msdn.microsoft.com/ad91208e-e57a-4b80-b1a1-13b9f7eb1119">OnReaderFailure</a> callback function. 
+A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a> interface that provides an <a href="https://msdn.microsoft.com/ad91208e-e57a-4b80-b1a1-13b9f7eb1119">OnReaderFailure</a> callback function.
 
 
-## -returns
+## Return Value
+
 <b>ConfigureContinuousReader</b> returns S_OK if the operation succeeds. Otherwise, this method can return one of the following values:
 <dl>
 <dt><b>HRESULT_FROM_NT (STATUS_INVALID_DEVICE_STATE)</b></dt>
@@ -122,10 +110,8 @@ The USB pipe is not set up for bulk or interrupt input transfers.
 
 This method might return one of the other values that Winerror.h contains.
 
+## Remarks
 
-
-
-## -remarks
 You can configure a continuous reader for a bulk pipe or an interrupt pipe. The pipe must have an input endpoint.
 
 After calling <b>ConfigureContinuousReader</b> to configure a continuous reader, your driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559213">IWDFIoTargetStateManagement::Start</a> to start the reader. To stop the reader, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559217">IWDFIoTargetStateManagement::Stop</a>.
@@ -156,8 +142,20 @@ For more information about the <b>ConfigureContinuousReader</b> method and USB I
 
 The following code example configures a continuous reader. In this example, the maximum buffer size is the size of a driver-defined buffer. The header and trailer buffer offsets are set to zero, and the number of pending read operations is set to two. The example uses the target pipe's interface pointer for the <i>pCompletionContext</i> parameter, so the <a href="https://msdn.microsoft.com/946e0206-7609-4dc7-91c2-a6aadad91751">OnReaderCompletion</a> callback function can determine the pipe on which the read operation was completed.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** | 1.9 |
+| **Header** | wudfusb.h (include Wudfusb.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe2.md">IWDFUsbTargetPipe2</a>
@@ -189,4 +187,3 @@ The following code example configures a continuous reader. In this example, the 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe2::ConfigureContinuousReader method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

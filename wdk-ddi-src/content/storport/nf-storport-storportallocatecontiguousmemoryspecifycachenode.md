@@ -1,50 +1,45 @@
 ---
-UID: NF:storport.StorPortAllocateContiguousMemorySpecifyCacheNode
-title: StorPortAllocateContiguousMemorySpecifyCacheNode function
-author: windows-driver-content
-description: The StorPortAllocateContiguousMemorySpecifyCacheNode routine allocates a range of physically contiguous noncached, nonpaged memory.
-old-location: storage\storportallocatecontiguousmemoryspecifycachenode.htm
-old-project: storage
-ms.assetid: b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: StorPortAllocateContiguousMemorySpecifyCacheNode
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 7.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: StorPortAllocateContiguousMemorySpecifyCacheNode
-req.alt-loc: storport.h
-req.ddi-compliance: StorPortIrql
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
+UID : NF:storport.StorPortAllocateContiguousMemorySpecifyCacheNode
+title : StorPortAllocateContiguousMemorySpecifyCacheNode function
+author : windows-driver-content
+description : The StorPortAllocateContiguousMemorySpecifyCacheNode routine allocates a range of physically contiguous noncached, nonpaged memory.
+old-location : storage\storportallocatecontiguousmemoryspecifycachenode.htm
+old-project : storage
+ms.assetid : b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : StorPortAllocateContiguousMemorySpecifyCacheNode
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 7.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : StorPortAllocateContiguousMemorySpecifyCacheNode
+req.alt-loc : storport.h
+req.ddi-compliance : StorPortIrql
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : STOR_SPINLOCK
+req.product : Windows 10 or later.
 ---
 
+
 # StorPortAllocateContiguousMemorySpecifyCacheNode function
-
-
-
-## -description
 The <b>StorPortAllocateContiguousMemorySpecifyCacheNode</b> routine allocates a range of physically contiguous noncached, nonpaged memory.
 
-
-
-## -syntax
+## Syntax
 
 ````
 ULONG StorPortAllocateContiguousMemorySpecifyCacheNode(
@@ -59,50 +54,43 @@ ULONG StorPortAllocateContiguousMemorySpecifyCacheNode(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension [in]
+`HwDeviceExtension`
 
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-
-### -param NumberOfBytes [in]
+`NumberOfBytes`
 
 The number of bytes to allocate.
 
-
-### -param LowestAcceptableAddress [in]
+`LowestAcceptableAddress`
 
 The lowest physical address that is valid for the allocation. For example, if the device can only reference physical memory in the 8 MB to 16 MB range, this value would be set to 0x800000 (8 MB).
 
-
-### -param HighestAcceptableAddress [in]
+`HighestAcceptableAddress`
 
 The highest physical address that is valid for the allocation. For example, if the device can only reference physical memory below 16 MB, this value would be set to 0xFFFFFF (16 MB - 1).
 
-
-### -param BoundaryAddressMultiple [in, optional]
+`BoundaryAddressMultiple`
 
 The physical address multiple that this allocation must not cross.
 
-
-### -param CacheType [in]
+`CacheType`
 
 The desired cache type for the mapping.
 
-
-### -param PreferredNode [in]
+`PreferredNode`
 
 The preferred node from which the allocation should be made if pages are available on that node.
 
-
-### -param BufferPointer [out]
+`BufferPointer`
 
 The variable that receives the starting address of the allocated memory block. Upon return from this routine, if this variable is zero, a contiguous range could not be found to satisfy the request. If this variable is not <b>NULL</b>, it contains a pointer (for example, a virtual address in the nonpaged portion of the system) to the allocated physically contiguous memory.
 
 
-## -returns
+## Return Value
+
 The <b>StorPortAllocateContiguousMemorySpecifyCacheNode</b> routine returns one of the following status codes:
 <dl>
 <dt><b>STOR_STATUS_NOT_IMPLEMENTED</b></dt>
@@ -114,8 +102,18 @@ The <b>StorPortAllocateContiguousMemorySpecifyCacheNode</b> routine returns one 
 <dt><b>STOR_STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>The operation failed to allocate the requested memory because of insufficient resources.
 
- 
+## Remarks
 
-
-## -remarks
 If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | StorPortIrql |

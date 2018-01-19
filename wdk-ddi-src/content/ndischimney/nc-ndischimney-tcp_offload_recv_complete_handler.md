@@ -1,44 +1,41 @@
 ---
-UID: NC:ndischimney.TCP_OFFLOAD_RECV_COMPLETE_HANDLER
-title: TCP_OFFLOAD_RECV_COMPLETE_HANDLER
-author: windows-driver-content
-description: NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadReceiveComplete function to complete a receive operation that the driver previously initiated by calling the NdisOffloadTcpReceive function.
-old-location: netvista\protocoltcpoffloadreceivecomplete.htm
-old-project: netvista
-ms.assetid: 78201512-6b70-4b4b-9016-0f42fed41ac6
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolTcpOffloadReceiveComplete
-req.alt-loc: Ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.TCP_OFFLOAD_RECV_COMPLETE_HANDLER
+title : TCP_OFFLOAD_RECV_COMPLETE_HANDLER
+author : windows-driver-content
+description : NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadReceiveComplete function to complete a receive operation that the driver previously initiated by calling the NdisOffloadTcpReceive function.
+old-location : netvista\protocoltcpoffloadreceivecomplete.htm
+old-project : netvista
+ms.assetid : 78201512-6b70-4b4b-9016-0f42fed41ac6
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolTcpOffloadReceiveComplete
+req.alt-loc : Ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# TCP_OFFLOAD_RECV_COMPLETE_HANDLER callback
 
-
-
-## -description
+# TCP_OFFLOAD_RECV_COMPLETE_HANDLER callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 NDIS calls a protocol or intermediate driver's 
@@ -46,32 +43,28 @@ NDIS calls a protocol or intermediate driver's
   initiated by calling the 
   <a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpreceive.md">NdisOffloadTcpReceive</a> function.
 
+## Syntax
 
+```
+TCP_OFFLOAD_RECV_COMPLETE_HANDLER TcpOffloadRecvCompleteHandler;
 
-## -prototype
-
-````
-TCP_OFFLOAD_RECV_COMPLETE_HANDLER ProtocolTcpOffloadReceiveComplete;
-
-VOID ProtocolTcpOffloadReceiveComplete(
-  _In_ NDIS_HANDLE      ProtocolBindingContext,
-  _In_ PNET_BUFFER_LIST NetBufferList
+void TcpOffloadRecvCompleteHandler(
+  IN NDIS_HANDLE ProtocolBindingContext,
+  IN PNET_BUFFER_LIST NetBufferList
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ProtocolBindingContext [in]
+`ProtocolBindingContext`
 
 A handle to a context area allocated by the protocol driver. The driver maintains the per binding
      context information in this context area. The driver supplied this handle to NDIS when the driver called
      the 
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
@@ -81,11 +74,12 @@ A pointer to a
      NdisOffloadTcpReceive</a> function.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 In response to an underlying driver's or offload target's call to the 
     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_complete.md">
     NdisOffloadTcpReceiveComplete</a> function, NDIS calls the overlying protocol driver's or intermediate
@@ -108,8 +102,20 @@ In response, NDIS calls the overlying driver's
     to the 
     <b>NdisOffloadTcpReceiveComplete</b> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">MiniportTcpOffloadReceive</a>
@@ -133,4 +139,3 @@ In response, NDIS calls the overlying driver's
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_RECV_COMPLETE_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

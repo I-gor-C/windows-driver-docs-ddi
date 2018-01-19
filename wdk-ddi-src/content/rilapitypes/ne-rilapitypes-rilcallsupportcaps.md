@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILCALLSUPPORTCAPS
-title: RILCALLSUPPORTCAPS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallsupportcaps_2.htm
-old-project: netvista
-ms.assetid: f51ab865-8862-4ed2-830e-ecbef4c9c74e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLSUPPORTCAPS, RILCALLSUPPORTCAPS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLSUPPORTCAPS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILCALLSUPPORTCAPS
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILCALLSUPPORTCAPS
+title : RILCALLSUPPORTCAPS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallsupportcaps_2.htm
+old-project : netvista
+ms.assetid : f51ab865-8862-4ed2-830e-ecbef4c9c74e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLSUPPORTCAPS, RILCALLSUPPORTCAPS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLSUPPORTCAPS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILCALLSUPPORTCAPS
+req.product : Windows 10 or later.
 ---
 
-# RILCALLSUPPORTCAPS enumeration
+# RILCALLSUPPORTCAPS Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILCALLSUPPORTCAPS { 
   RIL_CAPS_CALLSUPPORT_CD,
@@ -60,34 +53,61 @@ typedef enum _RILCALLSUPPORTCAPS {
 } RILCALLSUPPORTCAPS;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_CAPS_CALLSUPPORT_CD
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_CD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_CNAP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_CUG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_EMLPP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_FM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_MSP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_USS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_USSD_PHASE2</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_CAPS_CALLSUPPORT_CNAP
-
-
-### -field RIL_CAPS_CALLSUPPORT_CUG
-
-
-### -field RIL_CAPS_CALLSUPPORT_EMLPP
-
-
-### -field RIL_CAPS_CALLSUPPORT_FM
-
-
-### -field RIL_CAPS_CALLSUPPORT_MSP
-
-
-### -field RIL_CAPS_CALLSUPPORT_USSD_PHASE2
-
-
-### -field RIL_CAPS_CALLSUPPORT_USS
-
-
-### -field RIL_CAPS_CALLSUPPORT_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

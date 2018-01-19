@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILRMCVTYPE
-title: RILRMCVTYPE
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilrmcvtype.htm
-old-project: netvista
-ms.assetid: 007c6b45-0bec-4fcf-984a-675aa5336993
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILRMCVTYPE, RILRMCVTYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILRMCVTYPE
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILRMCVTYPE
+UID : NE:ntddrilapitypes.RILRMCVTYPE
+title : RILRMCVTYPE
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilrmcvtype.htm
+old-project : netvista
+ms.assetid : 007c6b45-0bec-4fcf-984a-675aa5336993
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILRMCVTYPE, RILRMCVTYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILRMCVTYPE
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILRMCVTYPE
 ---
 
-# RILRMCVTYPE enumeration
-
-
-
-## -description
+# RILRMCVTYPE Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILRMCVTYPE { 
   RIL_RMCV_TYPE_BOOLEAN,
@@ -53,16 +46,31 @@ typedef enum _RILRMCVTYPE {
 } RILRMCVTYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_RMCV_TYPE_BOOLEAN
+<tr>
+<td>RIL_RMCV_TYPE_BOOLEAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RMCV_TYPE_DWORD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RMCV_TYPE_STRING</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_RMCV_TYPE_DWORD
-
-
-### -field RIL_RMCV_TYPE_STRING
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILCHANGEUICCLOCKPASSWORDPARAMS
-title: RILCHANGEUICCLOCKPASSWORDPARAMS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilchangeuicclockpasswordparams_2.htm
-old-project: netvista
-ms.assetid: 24c1ae3a-31e7-4b85-8c64-f376c45cb4c4
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCHANGEUICCLOCKPASSWORDPARAMS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILCHANGEUICCLOCKPASSWORDPARAMS
+title : RILCHANGEUICCLOCKPASSWORDPARAMS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilchangeuicclockpasswordparams_2.htm
+old-project : netvista
+ms.assetid : 24c1ae3a-31e7-4b85-8c64-f376c45cb4c4
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCHANGEUICCLOCKPASSWORDPARAMS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS"
+req.product : Windows 10 or later.
 ---
 
 # RILCHANGEUICCLOCKPASSWORDPARAMS structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILCHANGEUICCLOCKPASSWORDPARAMS {
   RILUICCLOCKCREDENTIAL     lockCredential;
@@ -53,13 +46,22 @@ typedef struct _RILCHANGEUICCLOCKPASSWORDPARAMS {
 } RILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `lockCredential`
 
-### -field lockCredential
+            
+        
+            `szNewPassword`
+
+            
 
 
-### -field szNewPassword
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

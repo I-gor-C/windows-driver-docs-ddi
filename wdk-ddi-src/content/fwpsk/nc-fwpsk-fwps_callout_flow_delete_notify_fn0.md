@@ -1,75 +1,68 @@
 ---
-UID: NC:fwpsk.FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0
-title: FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0
-author: windows-driver-content
-description: The filter engine calls a callout's flowDeleteFn callout function to notify the callout that a data flow that is being processed by the callout is being terminated.
-old-location: netvista\flowdeletefn.htm
-old-project: netvista
-ms.assetid: 65449a23-da5d-4884-b98e-030461eb019a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpmEngineOpen0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: flowDeleteFn
-req.alt-loc: Fwpsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
+UID : NC:fwpsk.FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0
+title : FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0
+author : windows-driver-content
+description : The filter engine calls a callout's flowDeleteFn callout function to notify the callout that a data flow that is being processed by the callout is being terminated.
+old-location : netvista\flowdeletefn.htm
+old-project : netvista
+ms.assetid : 65449a23-da5d-4884-b98e-030461eb019a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpmEngineOpen0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : flowDeleteFn
+req.alt-loc : Fwpsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 ---
 
-# FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback
 
-
-
-## -description
+# FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback function
 The filter engine calls a callout's 
   <i>flowDeleteFn</i> callout function to notify the callout that a data flow that is being processed by the
   callout is being terminated.
 
+## Syntax
 
+```
+FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 FwpsCalloutFlowDeleteNotifyFn0;
 
-## -prototype
-
-````
-FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 flowDeleteFn;
-
-void NTAPI flowDeleteFn(
-  _In_ UINT16 layerId,
-  _In_ UINT32 calloutId,
-  _In_ UINT64 flowContext
+void FwpsCalloutFlowDeleteNotifyFn0(
+  UINT16 layerId,
+  UINT32 calloutId,
+  UINT64 flowContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param layerId [in]
+`layerId`
 
 The run-time identifier for the filtering layer at which the data flow is being terminated. For
      more information, see 
-     <a href="netvista.run_time_filtering_layer_identifiers">Run-time Filtering Layer
+     <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa366492">Run-time Filtering Layer
      Identifiers</a>.
 
-
-### -param calloutId [in]
+`calloutId`
 
 The run-time identifier for the callout in the filter engine. This is the same identifier that was
      returned when the callout driver called either the 
@@ -77,18 +70,18 @@ The run-time identifier for the callout in the filter engine. This is the same i
      <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
-
-### -param flowContext [in]
+`flowContext`
 
 The most recent context that has been associated with the data flow by a call to the 
      <a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a> function.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 A callout driver registers a callout's callout functions with the filter engine by calling either the 
     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a> or 
     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions.
@@ -119,8 +112,20 @@ The FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 type is defined as a pointer to the
 The filter engine calls a callout's 
     <i>flowDeleteFn</i> callout function at IRQL &lt;= DISPATCH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\ns-fwpsk-fwps_callout0_.md">FWPS_CALLOUT0</a>
@@ -143,4 +148,3 @@ The filter engine calls a callout's
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_FLOW_DELETE_NOTIFY_FN0 callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:dbgeng._DEBUG_CACHED_SYMBOL_INFO
-title: _DEBUG_CACHED_SYMBOL_INFO
-author: windows-driver-content
-description: Defines information about cached symbols.
-old-location: debugger\debug_cached_symbol_info.htm
-old-project: debugger
-ms.assetid: CC7914B6-DCE1-45D1-84D3-5FF1449AD565
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: dbgeng.h
-req.include-header: DbgEng.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DEBUG_CACHED_SYMBOL_INFO
-req.alt-loc: DbgEng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO
+UID : NS:dbgeng._DEBUG_CACHED_SYMBOL_INFO
+title : _DEBUG_CACHED_SYMBOL_INFO
+author : windows-driver-content
+description : Defines information about cached symbols.
+old-location : debugger\debug_cached_symbol_info.htm
+old-project : debugger
+ms.assetid : CC7914B6-DCE1-45D1-84D3-5FF1449AD565
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : dbgeng.h
+req.include-header : DbgEng.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DEBUG_CACHED_SYMBOL_INFO
+req.alt-loc : DbgEng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
 ---
 
 # _DEBUG_CACHED_SYMBOL_INFO structure
-
-
-
-## -description
 Defines information about cached symbols.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DEBUG_CACHED_SYMBOL_INFO {
   ULONG64 ModBase;
@@ -55,32 +48,34 @@ typedef struct _DEBUG_CACHED_SYMBOL_INFO {
 } DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Arg1`
 
-### -field ModBase
+            An argument value.
+        
+            `Arg2`
 
-A module base.
+            An argument value.
+        
+            `Arg3`
 
+            An argument value.
+        
+            `Id`
 
-### -field Arg1
+            An ID.
+        
+            `ModBase`
 
-An argument value.
-
-
-### -field Arg2
-
-An argument value.
-
-
-### -field Id
-
-An ID.
-
-
-### -field Arg3
-
-An argument value.
+            A module base.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include DbgEng.h) |

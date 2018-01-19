@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.IoMarkIrpPending
-title: IoMarkIrpPending function
-author: windows-driver-content
-description: The IoMarkIrpPending routine marks the specified IRP, indicating that a driver's dispatch routine subsequently returned STATUS_PENDING because further processing is required by other driver routines.
-old-location: kernel\iomarkirppending.htm
-old-project: kernel
-ms.assetid: 424d5ebd-c871-40d8-b5b7-3a4a04fe60fa
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: IoMarkIrpPending
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoMarkIrpPending
-req.alt-loc: Wdm.h
-req.ddi-compliance: CompleteRequestStatusCheck, CompletionEventChecking, IrpCancelField, LowerDriverReturn, MarkDevicePower, MarkingInterlockedQueuedIrps, MarkingQueuedIrps, MarkIrpPending, MarkIrpPending2, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PendedCompletedRequest3
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.IoMarkIrpPending
+title : IoMarkIrpPending function
+author : windows-driver-content
+description : The IoMarkIrpPending routine marks the specified IRP, indicating that a driver's dispatch routine subsequently returned STATUS_PENDING because further processing is required by other driver routines.
+old-location : kernel\iomarkirppending.htm
+old-project : kernel
+ms.assetid : 424d5ebd-c871-40d8-b5b7-3a4a04fe60fa
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : IoMarkIrpPending
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoMarkIrpPending
+req.alt-loc : Wdm.h
+req.ddi-compliance : CompleteRequestStatusCheck, CompletionEventChecking, IrpCancelField, LowerDriverReturn, MarkDevicePower, MarkingInterlockedQueuedIrps, MarkingQueuedIrps, MarkIrpPending, MarkIrpPending2, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PendedCompletedRequest3
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # IoMarkIrpPending function
-
-
-
-## -description
 The <b>IoMarkIrpPending</b> routine marks the specified IRP, indicating that a driver's dispatch routine subsequently returned STATUS_PENDING because further processing is required by other driver routines.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID IoMarkIrpPending(
@@ -52,19 +47,19 @@ VOID IoMarkIrpPending(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Irp [in, out]
+`Irp`
 
 Pointer to the IRP to be marked as pending.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Unless the driver's dispatch routine completes the IRP (by calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>) or passes the IRP on to lower drivers, it must call <b>IoMarkIrpPending</b> with the IRP. Otherwise, the I/O manager attempts to complete the IRP as soon as the dispatch routine returns control.
 
 After calling <b>IoMarkIrpPending</b>, the dispatch routine must return STATUS_PENDING, even if some routine completes the IRP (by calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>) before the dispatch routine that called <b>IoMarkIrpPending</b> returns.
@@ -77,8 +72,20 @@ A driver that passes down the IRP and then waits on an event should not mark the
 
 If your driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>, be careful not to modify the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure in a way that could unintentionally affect the lower driver or the system's behavior with respect to that driver. In particular, your driver should not modify the <b>IO_STACK_LOCATION</b> structure's <b>Parameters</b> union, and should not call <b>IoMarkIrpPending</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** | CompleteRequestStatusCheck, CompletionEventChecking, IrpCancelField, LowerDriverReturn, MarkDevicePower, MarkingInterlockedQueuedIrps, MarkingQueuedIrps, MarkIrpPending, MarkIrpPending2, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PendedCompletedRequest3 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
@@ -90,7 +97,7 @@ If your driver calls <a href="https://msdn.microsoft.com/library/windows/hardwar
 <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-iostartpacket.md">IoStartPacket</a>
+<a href="..\ntifs\nf-ntifs-iostartpacket.md">IoStartPacket</a>
 </dt>
 <dt>
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
@@ -101,4 +108,3 @@ If your driver calls <a href="https://msdn.microsoft.com/library/windows/hardwar
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoMarkIrpPending routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

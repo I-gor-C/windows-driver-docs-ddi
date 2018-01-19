@@ -1,51 +1,44 @@
 ---
-UID: NE:wdm._IO_ALLOCATION_ACTION
-title: _IO_ALLOCATION_ACTION
-author: windows-driver-content
-description: The IO_ALLOCATION_ACTION enumerated type is used to specify return values for AdapterControl and ControllerControl routines.
-old-location: kernel\io_allocation_action.htm
-old-project: kernel
-ms.assetid: 245d35a1-e877-4446-a0da-e50ece3656b1
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: _IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IO_ALLOCATION_ACTION
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION
-req.product: Windows 10 or later.
+UID : NE:wdm._IO_ALLOCATION_ACTION
+title : _IO_ALLOCATION_ACTION
+author : windows-driver-content
+description : The IO_ALLOCATION_ACTION enumerated type is used to specify return values for AdapterControl and ControllerControl routines.
+old-location : kernel\io_allocation_action.htm
+old-project : kernel
+ms.assetid : 245d35a1-e877-4446-a0da-e50ece3656b1
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _IO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IO_ALLOCATION_ACTION
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION
+req.product : Windows 10 or later.
 ---
 
-# _IO_ALLOCATION_ACTION enumeration
-
-
-
-## -description
+# _IO_ALLOCATION_ACTION Enumeration
 The <b>IO_ALLOCATION_ACTION</b> enumerated type is used to specify return values for <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">ControllerControl</a> routines.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _IO_ALLOCATION_ACTION { 
   KeepObject                     = 1,
@@ -54,27 +47,38 @@ typedef enum _IO_ALLOCATION_ACTION {
 } IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field KeepObject
+<tr>
+<td>DeallocateObject</td>
+<td>Indicates that you do not want the driver to retain ownership of the adapter or controller object.</td>
+</tr>
 
-Indicates that you want the driver to retain ownership of the adapter or controller object.
+<tr>
+<td>DeallocateObjectKeepRegisters</td>
+<td><u>For adapter objects only.</u> Indicates that you do not want the driver to retain ownership of the adapter object, but you do want the driver to retain ownership of the allocated map registers.</td>
+</tr>
 
+<tr>
+<td>KeepObject</td>
+<td>Indicates that you want the driver to retain ownership of the adapter or controller object.</td>
+</tr>
+</table>
 
-### -field DeallocateObject
+## Remarks
 
-Indicates that you do not want the driver to retain ownership of the adapter or controller object.
-
-
-### -field DeallocateObjectKeepRegisters
-
-<u>For adapter objects only.</u> Indicates that you do not want the driver to retain ownership of the adapter object, but you do want the driver to retain ownership of the allocated map registers. 
-
-
-## -remarks
 If an <i>AdapterControl</i> or <i>ControllerControl</i> routine completes an IRP, or if it can set up an operation (such as a disk seek) for a target device object that could be overlapped with an operation for another device object, it should return <b>DeallocateObject</b>.
 
 If a driver uses packet-based bus-master DMA, its <i>AdapterControl</i> routine should return <b>DeallocateObjectKeepRegisters</b>.
 
 Otherwise, the driver should return <b>KeepObject</b>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h) |

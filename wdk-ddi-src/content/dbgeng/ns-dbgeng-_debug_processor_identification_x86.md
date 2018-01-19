@@ -1,50 +1,43 @@
 ---
-UID: NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_X86
-title: _DEBUG_PROCESSOR_IDENTIFICATION_X86
-author: windows-driver-content
-description: Identifies an x86 processor.
-old-location: debugger\debug_processor_identification_x86.htm
-old-project: debugger
-ms.assetid: B5AD9CE8-B0F0-49BC-984E-4372FD3BF93B
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _DEBUG_PROCESSOR_IDENTIFICATION_X86, DEBUG_PROCESSOR_IDENTIFICATION_X86, *PDEBUG_PROCESSOR_IDENTIFICATION_X86
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: dbgeng.h
-req.include-header: DbgEng.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DEBUG_PROCESSOR_IDENTIFICATION_X86
-req.alt-loc: DbgEng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DEBUG_PROCESSOR_IDENTIFICATION_X86, *PDEBUG_PROCESSOR_IDENTIFICATION_X86
+UID : NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_X86
+title : _DEBUG_PROCESSOR_IDENTIFICATION_X86
+author : windows-driver-content
+description : Identifies an x86 processor.
+old-location : debugger\debug_processor_identification_x86.htm
+old-project : debugger
+ms.assetid : B5AD9CE8-B0F0-49BC-984E-4372FD3BF93B
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _DEBUG_PROCESSOR_IDENTIFICATION_X86, *PDEBUG_PROCESSOR_IDENTIFICATION_X86, DEBUG_PROCESSOR_IDENTIFICATION_X86
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : dbgeng.h
+req.include-header : DbgEng.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DEBUG_PROCESSOR_IDENTIFICATION_X86
+req.alt-loc : DbgEng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDEBUG_PROCESSOR_IDENTIFICATION_X86, DEBUG_PROCESSOR_IDENTIFICATION_X86"
 ---
 
 # _DEBUG_PROCESSOR_IDENTIFICATION_X86 structure
+Identifies an x86 processor.
 
-
-
-## -description
-Identifies an x86 processor. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DEBUG_PROCESSOR_IDENTIFICATION_X86 {
   ULONG Family;
@@ -54,34 +47,37 @@ typedef struct _DEBUG_PROCESSOR_IDENTIFICATION_X86 {
 } DEBUG_PROCESSOR_IDENTIFICATION_X86, *PDEBUG_PROCESSOR_IDENTIFICATION_X86;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Family`
 
-### -field Family
+            The family of the processor.
+        
+            `Model`
 
-The family of the processor.
+            The model of the processor.
+        
+            `Stepping`
 
+            The stepping value of the processor.
+        
+            `VendorString`
 
-### -field Model
-
-The model of the processor.
-
-
-### -field Stepping
-
-The stepping value of the processor.
-
-
-### -field VendorString
-
-A vendor specified string.
+            A vendor specified string.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include DbgEng.h) |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_all.md">DEBUG_PROCESSOR_IDENTIFICATION_ALL</a>
 </dt>
@@ -91,4 +87,3 @@ A vendor specified string.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_PROCESSOR_IDENTIFICATION_X86 structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

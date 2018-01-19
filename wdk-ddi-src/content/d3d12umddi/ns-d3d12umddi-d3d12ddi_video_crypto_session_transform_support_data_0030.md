@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
-title: D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
-author: windows-driver-content
-description: Video crypto session transform support data.
-old-location: display\d3d12ddi-video-crypto-session-transform-support-data-0030.htm
-old-project: display
-ms.assetid: fb83a03e-56d9-4daf-93c1-407744ad134a
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
+UID : NS:d3d12umddi.D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
+title : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
+author : windows-driver-content
+description : Video crypto session transform support data.
+old-location : display\d3d12ddi-video-crypto-session-transform-support-data-0030.htm
+old-project : display
+ms.assetid : fb83a03e-56d9-4daf-93c1-407744ad134a
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
 ---
 
 # D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 structure
-
-
-
-## -description
 Video crypto session transform support data.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 {
   UINT                                                  NodeIndex;
@@ -62,67 +55,62 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 {
 } D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `BitstreamEncryption`
 
-### -field NodeIndex
+            Bitstream encryption.
+        
+            `ContentProtectionSystem`
 
-Node index.
+            Content protection system.
+        
+            `DecodeProfile`
 
+            Decode profile.
+        
+            `Flags`
 
-### -field DecodeProfile
+            Flags.
+        
+            `InputAlignment`
 
-Decode profile.
+            Input alignment.
+        
+            `InputPreambleSize`
 
+            Input preamble size.
+        
+            `NodeIndex`
 
-### -field ContentProtectionSystem
+            Node index.
+        
+            `Operation`
 
-Content protection system.
+            Operation.
+        
+            `OutputAlignment`
 
+            Output alignment.
+        
+            `OutputPreambleSize`
 
-### -field Flags
+            Output preamble size.
+        
+            `ProtectedOutputRequired`
 
-Flags.
+            Protected output required.
+        
+            `Support`
 
-
-### -field BitstreamEncryption
-
-Bitstream encryption.
-
-
-### -field Operation
-
-Operation.
-
-
-### -field ProtectedOutputRequired
-
-Protected output required.
-
-
-### -field InputAlignment
-
-Input alignment.
-
-
-### -field InputPreambleSize
-
-Input preamble size.
-
-
-### -field OutputAlignment
-
-Output alignment.
-
-
-### -field OutputPreambleSize
-
-Output preamble size.
+            Support.
 
 
-### -field Support
-
-Support.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

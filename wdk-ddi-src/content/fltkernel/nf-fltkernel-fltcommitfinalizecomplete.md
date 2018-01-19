@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltCommitFinalizeComplete
-title: FltCommitFinalizeComplete function
-author: windows-driver-content
-description: The FltCommitFinalizeComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification.
-old-location: ifsk\fltcommitfinalizecomplete.htm
-old-project: ifsk
-ms.assetid: e1bfef9f-87c8-49e0-bbc4-6bc5ea103758
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltCommitFinalizeComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista Service Pack 1 (SP1) and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltCommitFinalizeComplete
-req.alt-loc: Fltmgr.lib,Fltmgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fltmgr.lib
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltCommitFinalizeComplete
+title : FltCommitFinalizeComplete function
+author : windows-driver-content
+description : The FltCommitFinalizeComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification.
+old-location : ifsk\fltcommitfinalizecomplete.htm
+old-project : ifsk
+ms.assetid : e1bfef9f-87c8-49e0-bbc4-6bc5ea103758
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltCommitFinalizeComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows Vista Service Pack 1 (SP1) and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltCommitFinalizeComplete
+req.alt-loc : Fltmgr.lib,Fltmgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fltmgr.lib
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltCommitFinalizeComplete function
-
-
-
-## -description
 The <b>FltCommitFinalizeComplete</b> routine acknowledges a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltCommitFinalizeComplete(
@@ -53,34 +48,30 @@ NTSTATUS FltCommitFinalizeComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Instance [in]
+`Instance`
 
 Opaque pointer to an instance of a minifilter driver. This parameter is required and cannot be <b>NULL</b>.
 
-
-### -param Transaction [in]
+`Transaction`
 
 Opaque pointer to the transaction the minifilter driver is currently enlisted in. This parameter is required and cannot be <b>NULL</b>.
 
-
-### -param TransactionContext [in, optional]
+`TransactionContext`
 
 Pointer to the minifilter driver's context for the transaction. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltCommitFinalizeComplete</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as the following:
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>The minifilter driver did not set a context on the transaction. This is an error code. 
+</dl>The minifilter driver did not set a context on the transaction. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 A minifilter driver that is enlisted in a transaction can receive a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification when the transaction is fully committed (that is, when all of the <a href="http://go.microsoft.com/fwlink/p/?linkid=94490">resource managers</a> associated with the transaction, such as <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">TxF</a>, have committed). For an antivirus minifilter driver that performs scans outside of transactions, you can use this notification value to determine when the driver should begin scanning files.
 
 To send the TRANSACTION_NOTIFY_COMMIT_FINALIZE notification to the minifilter driver, the filter manager calls the minifilter driver's <i>TransactionNotificationCallback</i> routine. The minifilter driver acknowledges this notification in one of two ways:
@@ -101,10 +92,22 @@ To delete a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltdele
 
 To set a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>. 
 
-For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564815">Transaction Notifications</a>. 
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564815">Transaction Notifications</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
@@ -157,4 +160,3 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCommitFinalizeComplete routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:rxce.RxCeBuildConnectionOverMultipleTransports
-title: RxCeBuildConnectionOverMultipleTransports function
-author: windows-driver-content
-description: RxCeBuildConnectionOverMultipleTransports establishes a connection between a local RDBSS connection address and a given remote address and supports multiple transports.
-old-location: ifsk\rxcebuildconnectionovermultipletransports.htm
-old-project: ifsk
-ms.assetid: 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxCeBuildConnectionOverMultipleTransports
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: rxce.h
-req.include-header: Rxce.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RxCeBuildConnectionOverMultipleTransports
-req.alt-loc: rxce.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
-req.product: Windows 10 or later.
+UID : NF:rxce.RxCeBuildConnectionOverMultipleTransports
+title : RxCeBuildConnectionOverMultipleTransports function
+author : windows-driver-content
+description : RxCeBuildConnectionOverMultipleTransports establishes a connection between a local RDBSS connection address and a given remote address and supports multiple transports.
+old-location : ifsk\rxcebuildconnectionovermultipletransports.htm
+old-project : ifsk
+ms.assetid : 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RxCeBuildConnectionOverMultipleTransports
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : rxce.h
+req.include-header : Rxce.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RxCeBuildConnectionOverMultipleTransports
+req.alt-loc : rxce.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product : Windows 10 or later.
 ---
 
+
 # RxCeBuildConnectionOverMultipleTransports function
-
-
-
-## -description
 <b>RxCeBuildConnectionOverMultipleTransports</b> establishes a connection between a local RDBSS connection address and a given remote address and supports multiple transports. A set of local addresses are specified and this routine attempts to connect to the target server via all the transports associated with the local addresses. One connection is chosen as the winner depending on the connect options.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RxCeBuildConnectionOverMultipleTransports(
@@ -61,79 +56,51 @@ NTSTATUS RxCeBuildConnectionOverMultipleTransports(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param pMiniRedirectorDeviceObject [in, out]
+`pMiniRedirectorDeviceObject`
 
 A pointer to the mini-redirector device object.
 
-
-### -param CreateOptions [in]
-
-Create options that determine which transport will be selected for establishing a connection. These options can be one of the following enumerations for RXCE_CONNECTION_CREATE_OPTIONS:
+`CreateOption`
 
 
 
-
-### -param RxCeSelectFirstSuccessfulTransport
-
-Select the first successful transport that responds.
-
-
-### -param RxCeSelectBestSuccessfulTransport
-
-Select the best successful transport that responds.
-
-
-### -param RxCeSelectAllSuccessfulTransports
-
-Select all of the successful transports that respond.
-
-</dd>
-</dl>
-
-### -param NumberOfAddresses [in]
+`NumberOfAddresses`
 
 The number of local addresses (transports).
 
-
-### -param pLocalAddressPointers [in]
+`pLocalAddressPointers`
 
 A pointer to an array of the local address handles.
 
-
-### -param pServerName [in]
+`pServerName`
 
 A pointer to the name of the server (for connection enumeration).
 
-
-### -param pConnectionInformation [in]
+`pConnectionInformation`
 
 A pointer to the connection information that specifies the remote address.
 
-
-### -param pHandler [in]
+`pHandler`
 
 A pointer to the event handler for processing receive indications.
 
-
-### -param pEventContext [in]
+`pEventContext`
 
 A pointer to the context parameter to be passed back to the event handler and used for indications.
 
-
-### -param pCompletionRoutine [in]
+`pCompletionRoutine`
 
 A pointer to a connection completion routine when this routine completed if STATUS_PENDING is initially returned.
 
-
-### -param pCompletionContext [in, out]
+`pCompletionContext`
 
 On input, this parameter contains a pointer to an uninitialized RXCE_CONNECTION_COMPLETION_CONTEXT structure. On output when this call is successful, the virtual circuit is associated with the connection and the virtual circuit and connection are properly initialized.
 
 
-## -returns
+## Return Value
+
 <b>RxCeBuildConnectionOverMultipleTransports</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
@@ -146,22 +113,32 @@ On input, this parameter contains a pointer to an uninitialized RXCE_CONNECTION_
 </dl>One of the parameters passed to this routine was invalid. 
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>One of the asynchronous calls to the different transports passed as input parameters to the routine is still outstanding and has not been completed. 
+</dl>One of the asynchronous calls to the different transports passed as input parameters to the routine is still outstanding and has not been completed.
 
- 
+## Remarks
 
-
-## -remarks
 <b>RxCeBuildConnectionOverMultipleTransports</b> will initiate a series of asynchronous calls to all of the different transports passed in as parameters to try and build a connection. The network mini-redirector cannot be unloaded until all of these asynchronous requests are completed.
 
 <b>RxCeBuildConnectionOverMultipleTransports</b> must be called in the context of a system worker thread.
 
 When <b>RxCeBuildConnectionOverMultipleTransports</b> is successful, the virtual circuit will be properly initialized and connections will be established.
 
-<b>RXCE_CONNECTION_INFORMATION</b> is a typedef for a <b>TDI_CONNECTION_INFORMATION</b> structure. 
+<b>RXCE_CONNECTION_INFORMATION</b> is a typedef for a <b>TDI_CONNECTION_INFORMATION</b> structure.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rxce.h (include Rxce.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>
@@ -178,4 +155,3 @@ When <b>RxCeBuildConnectionOverMultipleTransports</b> is successful, the virtual
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeBuildConnectionOverMultipleTransports routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

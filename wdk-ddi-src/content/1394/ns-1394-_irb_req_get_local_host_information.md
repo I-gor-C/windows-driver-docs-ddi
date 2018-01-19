@@ -1,50 +1,43 @@
 ---
-UID: NS:1394._IRB_REQ_GET_LOCAL_HOST_INFORMATION
-title: _IRB_REQ_GET_LOCAL_HOST_INFORMATION
-author: windows-driver-content
-description: This structure contains the fields necessary for the 1394 bus driver to carry out a GetLocalHostInformation request.
-old-location: ieee\irb_req_get_local_host_information.htm
-old-project: IEEE
-ms.assetid: 172579A1-9B81-42C7-BAC9-C977C69E7E45
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IRB_REQ_GET_LOCAL_HOST_INFORMATION, IRB_REQ_GET_LOCAL_HOST_INFORMATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: 1394.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IRB_REQ_GET_LOCAL_HOST_INFORMATION
-req.alt-loc: 1394.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: IRB_REQ_GET_LOCAL_HOST_INFORMATION
+UID : NS:1394._IRB_REQ_GET_LOCAL_HOST_INFORMATION
+title : _IRB_REQ_GET_LOCAL_HOST_INFORMATION
+author : windows-driver-content
+description : This structure contains the fields necessary for the 1394 bus driver to carry out a GetLocalHostInformation request.
+old-location : ieee\irb_req_get_local_host_information.htm
+old-project : IEEE
+ms.assetid : 172579A1-9B81-42C7-BAC9-C977C69E7E45
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _IRB_REQ_GET_LOCAL_HOST_INFORMATION, IRB_REQ_GET_LOCAL_HOST_INFORMATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : 1394.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IRB_REQ_GET_LOCAL_HOST_INFORMATION
+req.alt-loc : 1394.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : IRB_REQ_GET_LOCAL_HOST_INFORMATION
 ---
 
 # _IRB_REQ_GET_LOCAL_HOST_INFORMATION structure
-
-
-
-## -description
 This structure contains the fields necessary for the 1394 bus driver to carry out a GetLocalHostInformation request.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _IRB_REQ_GET_LOCAL_HOST_INFORMATION {
   ULONG nLevel;
@@ -52,107 +45,12 @@ typedef struct _IRB_REQ_GET_LOCAL_HOST_INFORMATION {
 } IRB_REQ_GET_LOCAL_HOST_INFORMATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Information`
 
-### -field nLevel
-
-Specifies what level of information is desired from this call. The following flags are provided.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
- GET_HOST_UNIQUE_ID 
-
-</td>
-<td>
-Requests the port driver to return the 64-bit unique identifier. 
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_CAPABILITIES
-
-</td>
-<td>
-Requests the port driver to return the host controller's capability flags.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_DDI_VERSION
-
-</td>
-<td>
-Requests the DDI version of the 1394 bus driver.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_POWER_SUPPLIED
-
-</td>
-<td>
-Requests the port driver to return the power characteristics of the bus.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_PHYS_ADDR_ROUTINE
-
-</td>
-<td>
-Requests the port driver to return the host controller's physical address mapping function. 
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_CONFIG_ROM
-
-</td>
-<td>
-Requests the port driver to return the host controller's configuration ROM.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_CSR_CONTENTS
-
-</td>
-<td>
-Requests the port driver to return the speed or topology maps from the host controller's CSR. See the IEEE 1394 Specification for a description of CSRs.<div class="alert"><b>Note</b>  In Windows 7, setting <b>nLevel</b> to GET_HOST_CSR_CONTENTS and specifying the SPEED_MAP_LOCATION as <b>CsrBaseAddress</b> is not supported. The speed map is obsolete in the IEEE-1394a specification.</div>
-<div> </div>
-
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_DMA_CAPABILITIES
-
-</td>
-<td>
-Requests the port driver to return the host controller's capability flags and the size of the DMA buffer (PAGESIZE multiplied by the number of mapping registers).
-
-</td>
-</tr>
-</table>
- 
-
-
-### -field Information
-
-Points to an information block to be filled in, depending on what level of information is desired. Each block has its own particular structure.
+            Points to an information block to be filled in, depending on what level of information is desired. Each block has its own particular structure.
 
 <table>
 <tr>
@@ -256,7 +154,105 @@ GET_HOST_DDI_VERSION
 </td>
 </tr>
 </table>
- 
+        
+            `nLevel`
+
+            Specifies what level of information is desired from this call. The following flags are provided.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+ GET_HOST_UNIQUE_ID 
+
+</td>
+<td>
+Requests the port driver to return the 64-bit unique identifier. 
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_CAPABILITIES
+
+</td>
+<td>
+Requests the port driver to return the host controller's capability flags.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_DDI_VERSION
+
+</td>
+<td>
+Requests the DDI version of the 1394 bus driver.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_POWER_SUPPLIED
+
+</td>
+<td>
+Requests the port driver to return the power characteristics of the bus.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_PHYS_ADDR_ROUTINE
+
+</td>
+<td>
+Requests the port driver to return the host controller's physical address mapping function. 
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_CONFIG_ROM
+
+</td>
+<td>
+Requests the port driver to return the host controller's configuration ROM.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_CSR_CONTENTS
+
+</td>
+<td>
+Requests the port driver to return the speed or topology maps from the host controller's CSR. See the IEEE 1394 Specification for a description of CSRs.<div class="alert"><b>Note</b>  In Windows 7, setting <b>nLevel</b> to GET_HOST_CSR_CONTENTS and specifying the SPEED_MAP_LOCATION as <b>CsrBaseAddress</b> is not supported. The speed map is obsolete in the IEEE-1394a specification.</div>
+<div> </div>
 
 
-## -remarks
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_DMA_CAPABILITIES
+
+</td>
+<td>
+Requests the port driver to return the host controller's capability flags and the size of the DMA buffer (PAGESIZE multiplied by the number of mapping registers).
+
+</td>
+</tr>
+</table>
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | 1394.h |

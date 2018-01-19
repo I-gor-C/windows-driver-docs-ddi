@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmthk._D3DKMT_CREATEPROTECTEDSESSION
-title: _D3DKMT_CREATEPROTECTEDSESSION
-author: windows-driver-content
-description: Used to create a protected session.
-old-location: display\d3dkmt-createprotectedsession.htm
-old-project: display
-ms.assetid: 4ec42f5a-df33-4da3-a959-64cb400f3177
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _D3DKMT_CREATEPROTECTEDSESSION, D3DKMT_CREATEPROTECTEDSESSION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmthk.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3DKMT_CREATEPROTECTEDSESSION
-req.alt-loc: d3dkmthk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3DKMT_CREATEPROTECTEDSESSION
+UID : NS:d3dkmthk._D3DKMT_CREATEPROTECTEDSESSION
+title : _D3DKMT_CREATEPROTECTEDSESSION
+author : windows-driver-content
+description : Used to create a protected session.
+old-location : display\d3dkmt-createprotectedsession.htm
+old-project : display
+ms.assetid : 4ec42f5a-df33-4da3-a959-64cb400f3177
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _D3DKMT_CREATEPROTECTEDSESSION, D3DKMT_CREATEPROTECTEDSESSION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmthk.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3DKMT_CREATEPROTECTEDSESSION
+req.alt-loc : d3dkmthk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3DKMT_CREATEPROTECTEDSESSION
 ---
 
 # _D3DKMT_CREATEPROTECTEDSESSION structure
-
-
-
-## -description
 Used to create a protected session.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3DKMT_CREATEPROTECTEDSESSION {
   D3DKMT_HANDLE hDevice;
@@ -57,42 +50,42 @@ typedef struct _D3DKMT_CREATEPROTECTEDSESSION {
 } D3DKMT_CREATEPROTECTEDSESSION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `hDevice`
 
-### -field hDevice
+            A handle for the device.
+        
+            `hHandle`
 
-A handle for the device.
+            The protected session handle.
+        
+            `hSyncObject`
 
+            A monitored fence handle associated with the session.
+        
+            `pPrivateDriverData`
 
-### -field hSyncObject
+            Private driver data.
+        
+            `pPrivateRuntimeData`
 
-A monitored fence handle associated with the session.
+            Private runtime data.
+        
+            `PrivateDriverDataSize`
 
+            Size of private driver data.
+        
+            `PrivateRuntimeDataSize`
 
-### -field pPrivateDriverData
-
-Private driver data.
-
-
-### -field PrivateDriverDataSize
-
-Size of private driver data.
-
-
-### -field pPrivateRuntimeData
-
-Private runtime data.
-
-
-### -field PrivateRuntimeDataSize
-
-Size of private runtime data.
-
-
-### -field hHandle
-
-The protected session handle.
+            Size of private runtime data.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmthk.h |

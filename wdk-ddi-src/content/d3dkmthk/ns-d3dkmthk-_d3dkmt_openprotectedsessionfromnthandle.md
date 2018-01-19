@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmthk._D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
-title: _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
-author: windows-driver-content
-description: Used to open a protected session from the NT handle.
-old-location: display\d3dkmt-openprotectedsessionfromnthandle.htm
-old-project: display
-ms.assetid: 15937864-c6ef-4c86-b957-87c7afe1cd94
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE, D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmthk.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
-req.alt-loc: d3dkmthk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
+UID : NS:d3dkmthk._D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
+title : _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
+author : windows-driver-content
+description : Used to open a protected session from the NT handle.
+old-location : display\d3dkmt-openprotectedsessionfromnthandle.htm
+old-project : display
+ms.assetid : 15937864-c6ef-4c86-b957-87c7afe1cd94
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE, D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmthk.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
+req.alt-loc : d3dkmthk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE
 ---
 
 # _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE structure
-
-
-
-## -description
 Used to open a protected session from the NT handle.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE {
   HANDLE        hNtHandle;
@@ -52,17 +45,22 @@ typedef struct _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE {
 } D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `hHandle`
 
-### -field hNtHandle
+            The protected kernel session handle.
+        
+            `hNtHandle`
 
-The protected NT session handle.
-
-
-### -field hHandle
-
-The protected kernel session handle.
+            The protected NT session handle.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmthk.h |

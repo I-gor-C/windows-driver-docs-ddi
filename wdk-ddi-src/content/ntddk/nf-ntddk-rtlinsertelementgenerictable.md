@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.RtlInsertElementGenericTable
-title: RtlInsertElementGenericTable function
-author: windows-driver-content
-description: The RtlInsertElementGenericTable routine adds a new element to a generic table.
-old-location: ifsk\rtlinsertelementgenerictable.htm
-old-project: ifsk
-ms.assetid: 2554a212-edc0-4641-98bb-2db36ff0266f
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlInsertElementGenericTable
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlInsertElementGenericTable
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL (see Remarks section)
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.RtlInsertElementGenericTable
+title : RtlInsertElementGenericTable function
+author : windows-driver-content
+description : The RtlInsertElementGenericTable routine adds a new element to a generic table.
+old-location : ifsk\rtlinsertelementgenerictable.htm
+old-project : ifsk
+ms.assetid : 2554a212-edc0-4641-98bb-2db36ff0266f
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlInsertElementGenericTable
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlInsertElementGenericTable
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL (see Remarks section)
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # RtlInsertElementGenericTable function
+The <b>RtlInsertElementGenericTable</b> routine adds a new element to a generic table.
 
-
-
-## -description
-The <b>RtlInsertElementGenericTable</b> routine adds a new element to a generic table. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 PVOID RtlInsertElementGenericTable(
@@ -54,34 +49,31 @@ PVOID RtlInsertElementGenericTable(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Table [in]
+`Table`
 
 Pointer to the generic table (<a href="..\ntddk\ns-ntddk-_rtl_generic_table.md">RTL_GENERIC_TABLE</a>). The table must have been initialized by calling <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>.
 
+`Buffer`
 
-### -param Buffer [in]
+Pointer to a caller-allocated buffer containing data to be copied into the new element. For more information, see the description of <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>.
 
-Pointer to a caller-allocated buffer containing data to be copied into the new element. For more information, see the description of <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>. 
+`BufferSize`
 
+Number of bytes to be allocated for caller-supplied data when the new element is inserted.
 
-### -param BufferSize [in]
+`NewElement`
 
-Number of bytes to be allocated for caller-supplied data when the new element is inserted. 
-
-
-### -param NewElement [out, optional]
-
-Pointer to a variable that receives <b>TRUE</b> if a new element with the data at <i>Buffer</i> was inserted in the generic table; or <b>FALSE</b> if the new element was not inserted. 
+Pointer to a variable that receives <b>TRUE</b> if a new element with the data at <i>Buffer</i> was inserted in the generic table; or <b>FALSE</b> if the new element was not inserted.
 
 
-## -returns
-<b>RtlInsertElementGenericTable</b> returns a pointer to the newly inserted element's associated data, or it returns a pointer to the existing element's data if a matching element already exists in the generic table. If no matching element is found, but the new element cannot be inserted (for example, because the <i>AllocateRoutine</i> fails), <b>RtlInsertElementGenericTable</b> returns <b>NULL</b>. 
+## Return Value
 
+<b>RtlInsertElementGenericTable</b> returns a pointer to the newly inserted element's associated data, or it returns a pointer to the existing element's data if a matching element already exists in the generic table. If no matching element is found, but the new element cannot be inserted (for example, because the <i>AllocateRoutine</i> fails), <b>RtlInsertElementGenericTable</b> returns <b>NULL</b>.
 
-## -remarks
+## Remarks
+
 To insert an element, <b>RtlInsertElementGenericTable</b> calls the <i>CompareRoutine</i> and <i>AllocateRoutine</i> that were registered when the generic table was initialized by <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>. After inserting the new element, <b>RtlInsertElementGenericTable</b> rebalances the splay link tree.
 
 When a new element is inserted into the table, its data is copied from <i>Buffer</i> into the new element. Thus the pointer returned by <b>RtlInsertElementGenericTable</b> is never equal to <i>Buffer</i>. 
@@ -102,10 +94,22 @@ Callers of <b>RtlInsertElementGenericTable</b> must be running at IRQL &lt; DISP
 
 The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable.
 
-The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pageable code. 
+The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pageable code.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL (see Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
@@ -119,4 +123,3 @@ The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pag
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInsertElementGenericTable routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

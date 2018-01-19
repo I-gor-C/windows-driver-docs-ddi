@@ -1,79 +1,73 @@
 ---
-UID: NC:wdm.PALLOCATE_COMMON_BUFFER
-title: PALLOCATE_COMMON_BUFFER
-author: windows-driver-content
-description: The AllocateCommonBuffer routine allocates memory and maps it so that it is simultaneously accessible from both the processor and a device for DMA operations.
-old-location: kernel\allocatecommonbuffer.htm
-old-project: kernel
-ms.assetid: 4edaae35-8ac4-4a7a-949b-8a86b45ff391
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KSYNCHRONIZE_ROUTINE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: AllocateCommonBuffer
-req.alt-loc: Wdm.h
-req.ddi-compliance: IrqlDispatch
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.PALLOCATE_COMMON_BUFFER
+title : PALLOCATE_COMMON_BUFFER
+author : windows-driver-content
+description : The AllocateCommonBuffer routine allocates memory and maps it so that it is simultaneously accessible from both the processor and a device for DMA operations.
+old-location : kernel\allocatecommonbuffer.htm
+old-project : kernel
+ms.assetid : 4edaae35-8ac4-4a7a-949b-8a86b45ff391
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : AllocateCommonBuffer
+req.alt-loc : Wdm.h
+req.ddi-compliance : IrqlDispatch
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
-# PALLOCATE_COMMON_BUFFER callback
 
-
-
-## -description
+# PALLOCATE_COMMON_BUFFER callback function
 The <b>AllocateCommonBuffer</b> routine allocates memory and maps it so that it is simultaneously accessible from both the processor and a device for DMA operations.
 
+## Syntax
 
+```
+PALLOCATE_COMMON_BUFFER PallocateCommonBuffer;
 
-## -prototype
+PVOID PallocateCommonBuffer(
+  PDMA_ADAPTER DmaAdapter,
+  ULONG Length,
+  PPHYSICAL_ADDRESS LogicalAddress,
+  BOOLEAN CacheEnabled
+)
+{...}
+```
 
-````
-PVOID AllocateCommonBuffer(
-  _In_  PDMA_ADAPTER      DmaAdapter,
-  _In_  ULONG             Length,
-  _Out_ PPHYSICAL_ADDRESS LogicalAddress,
-  _In_  BOOLEAN           CacheEnabled
-);
-````
+## Parameters
 
-
-## -parameters
-
-### -param DmaAdapter [in]
+`DmaAdapter`
 
 Pointer to the <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-
-### -param Length [in]
+`Length`
 
 Specifies the number of bytes of memory to allocate.
 
-
-### -param LogicalAddress [out]
+`LogicalAddress`
 
 Pointer to a variable that receives the logical address the device can use to access the allocated buffer. Use this address rather than calling <a href="..\ntddk\nf-ntddk-mmgetphysicaladdress.md">MmGetPhysicalAddress</a> because the system can take into account any platform-specific memory restrictions.
 
-
-### -param CacheEnabled [in]
+`CacheEnabled`
 
 Specifies whether the allocated memory can be cached.
 
@@ -81,14 +75,15 @@ This parameter is ignored. The operating system determines whether to enable cac
 
 On computers with x86-based, x64-based, and Itanium-based processors, cached memory is enabled. It is assumed that all DMA operations performed by a device are coherent with the relevant CPU caches, which might be caching that memory. If your driver needs to disable caching, call <a href="..\wdm\nc-wdm-pallocate_common_buffer_ex.md">AllocateCommonBufferEx</a> instead.
 
-On computers with ARM or ARM 64-based processors, the operating system does not automatically enable cached memory for all devices. The system relies on the <b>ACPI_CCA</b> method for each device to determine whether the device is cache-coherent. 
+On computers with ARM or ARM 64-based processors, the operating system does not automatically enable cached memory for all devices. The system relies on the <b>ACPI_CCA</b> method for each device to determine whether the device is cache-coherent.
 
 
-## -returns
+## Return Value
+
 <b>AllocateCommonBuffer</b> returns the base virtual address of the allocated range. If the buffer cannot be allocated, it returns <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 <b>AllocateCommonBuffer</b>
            is not a system routine that can be called directly by name. This routine is callable only by pointer from the address returned in a 
           <b>DMA_OPERATIONS</b>
@@ -112,8 +107,20 @@ If a driver needs several pages of common buffer space, but the pages need not b
 
 Drivers typically call <b>AllocateCommonBuffer</b> as part of device start-up, during their response to a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request. After startup, it is possible that only one-page requests will succeed, if any.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | IrqlDispatch |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
@@ -133,4 +140,3 @@ Drivers typically call <b>AllocateCommonBuffer</b> as part of device start-up, d
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PALLOCATE_COMMON_BUFFER callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

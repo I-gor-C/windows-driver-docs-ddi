@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDIARG_VIDEO_GETCAPS_0020
-title: D3D12DDIARG_VIDEO_GETCAPS_0020
-author: windows-driver-content
-description: Specifies values used to get capabilities of a type.
-old-location: display\d3d12ddiarg_video_getcaps.htm
-old-project: display
-ms.assetid: 3C55B67F-043A-4747-A44A-A162D6391003
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDIARG_VIDEO_GETCAPS_0020, D3D12DDIARG_VIDEO_GETCAPS_0020
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDIARG_VIDEO_GETCAPS_0020
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDIARG_VIDEO_GETCAPS_0020
+UID : NS:d3d12umddi.D3D12DDIARG_VIDEO_GETCAPS_0020
+title : D3D12DDIARG_VIDEO_GETCAPS_0020
+author : windows-driver-content
+description : Specifies values used to get capabilities of a type.
+old-location : display\d3d12ddiarg_video_getcaps.htm
+old-project : display
+ms.assetid : 3C55B67F-043A-4747-A44A-A162D6391003
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDIARG_VIDEO_GETCAPS_0020, D3D12DDIARG_VIDEO_GETCAPS_0020
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDIARG_VIDEO_GETCAPS_0020
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDIARG_VIDEO_GETCAPS_0020
 ---
 
 # D3D12DDIARG_VIDEO_GETCAPS_0020 structure
+Specifies values used to get capabilities of a type.
 
-
-
-## -description
-Specifies values used to get capabilities of a type. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct D3D12DDIARG_VIDEO_GETCAPS {
   D3D12DDICAPS_TYPE_VIDEO_0020 Type;
@@ -54,27 +47,30 @@ typedef struct D3D12DDIARG_VIDEO_GETCAPS {
 } D3D12DDIARG_VIDEO_GETCAPS_0020;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DataSize`
 
-### -field Type
+            The size, in bytes, of the data at <b>pData</b>.
+        
+            `pData`
 
-A type. 
+            A pointer to a memory block that contains capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition specified by the <b>pInfo</b> member.
+        
+            `pInfo`
 
+            A pointer to a memory block that contains data that specifies the condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
+        
+            `Type`
 
-### -field pInfo
-
-A pointer to a memory block that contains data that specifies the condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
-
-
-### -field pData
-
-A pointer to a memory block that contains capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition specified by the <b>pInfo</b> member. 
-
-
-### -field DataSize
-
-The size, in bytes, of the data at <b>pData</b>.
+            A type.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

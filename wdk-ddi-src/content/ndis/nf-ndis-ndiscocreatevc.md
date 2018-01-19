@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisCoCreateVc
-title: NdisCoCreateVc function
-author: windows-driver-content
-description: NdisCoCreateVc sets up a connection endpoint from which a client can make outgoing calls or on which a stand-alone call manager can dispatch incoming calls.
-old-location: netvista\ndiscocreatevc.htm
-old-project: netvista
-ms.assetid: ae9175e5-c1fc-44ae-a7c9-921ac8483e33
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCoCreateVc
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCoCreateVc
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Connection_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCoCreateVc
+title : NdisCoCreateVc function
+author : windows-driver-content
+description : NdisCoCreateVc sets up a connection endpoint from which a client can make outgoing calls or on which a stand-alone call manager can dispatch incoming calls.
+old-location : netvista\ndiscocreatevc.htm
+old-project : netvista
+ms.assetid : ae9175e5-c1fc-44ae-a7c9-921ac8483e33
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCoCreateVc
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCoCreateVc
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Connection_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCoCreateVc function
-
-
-
-## -description
 <b>NdisCoCreateVc</b> sets up a connection endpoint from which a client can make outgoing calls or on which
   a stand-alone call manager can dispatch incoming calls.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisCoCreateVc(
@@ -55,17 +50,15 @@ NDIS_STATUS NdisCoCreateVc(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisBindingHandle [in]
+`NdisBindingHandle`
 
 Specifies the handle returned by 
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> that identifies the
      target NIC or virtual adapter of the next-lower driver to which the caller is bound.
 
-
-### -param NdisAfHandle [in, optional]
+`NdisAfHandle`
 
 Specifies the handle returned by 
      <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a> if
@@ -76,16 +69,14 @@ Specifies the handle returned by
      <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
      ProtocolCmRegisterSap</a> function.
 
-
-### -param ProtocolVcContext [in]
+`ProtocolVcContext`
 
 Specifies the handle to a caller-supplied resident context area in which the caller maintains
      state for this VC. NDIS passes this handle back to the VC creator in all subsequent calls concerning
      this endpoint if the call to 
      <b>NdisCoCreateVc</b> succeeds.
 
-
-### -param NdisVcHandle [in, out]
+`NdisVcHandle`
 
 Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> when 
      <b>NdisCoCreateVc</b> is called. On return from a successful call, this points to a variable that NDIS
@@ -94,7 +85,8 @@ Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> wh
      <i>Xxx</i> functions.
 
 
-## -returns
+## Return Value
+
 <b>NdisCoCreateVc</b> can return one of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -112,10 +104,8 @@ Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> wh
 </dl>The underlying miniport driver failed the creation of the VC for a miniport driver-determined
        reason, which NDIS has propagated to the caller.
 
- 
+## Remarks
 
-
-## -remarks
 A client or stand-alone call manager creates a VC with 
     <b>NdisCoCreateVc</b>, depending on whether the VC represents an outgoing or incoming call,
     respectively.
@@ -163,8 +153,20 @@ Stand-alone call managers, which register themselves with NDIS as protocol drive
     support call 
     <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>, instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Connection_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
@@ -201,4 +203,3 @@ Stand-alone call managers, which register themselves with NDIS as protocol drive
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoCreateVc function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

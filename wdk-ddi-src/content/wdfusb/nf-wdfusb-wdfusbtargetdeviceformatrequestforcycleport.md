@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfusb.WdfUsbTargetDeviceFormatRequestForCyclePort
-title: WdfUsbTargetDeviceFormatRequestForCyclePort function
-author: windows-driver-content
-description: The WdfUsbTargetDeviceFormatRequestForCyclePort method builds a power-cycle request for the port to which a specified device is attached, but it does not send the request.
-old-location: wdf\wdfusbtargetdeviceformatrequestforcycleport.htm
-old-project: wdf
-ms.assetid: f27dae6e-2fc7-4e26-84fb-4ce48da3db6b
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfUsbTargetDeviceFormatRequestForCyclePort
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfusb.h
-req.include-header: Wdfusb.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WdfUsbTargetDeviceFormatRequestForCyclePort
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfusb.WdfUsbTargetDeviceFormatRequestForCyclePort
+title : WdfUsbTargetDeviceFormatRequestForCyclePort function
+author : windows-driver-content
+description : The WdfUsbTargetDeviceFormatRequestForCyclePort method builds a power-cycle request for the port to which a specified device is attached, but it does not send the request.
+old-location : wdf\wdfusbtargetdeviceformatrequestforcycleport.htm
+old-project : wdf
+ms.assetid : f27dae6e-2fc7-4e26-84fb-4ce48da3db6b
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfUsbTargetDeviceFormatRequestForCyclePort
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfusb.h
+req.include-header : Wdfusb.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WdfUsbTargetDeviceFormatRequestForCyclePort
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.product : Windows 10 or later.
 ---
 
+
 # WdfUsbTargetDeviceFormatRequestForCyclePort function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 The <b>WdfUsbTargetDeviceFormatRequestForCyclePort</b> method builds a power-cycle request for the port to which a specified device is attached, but it does not send the request.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfUsbTargetDeviceFormatRequestForCyclePort(
@@ -55,20 +50,19 @@ NTSTATUS WdfUsbTargetDeviceFormatRequestForCyclePort(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param UsbDevice [in]
+`UsbDevice`
 
 A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-
-### -param Request [in]
+`Request`
 
 A handle to a framework request object. For more information, see the following Remarks section.
 
 
-## -returns
+## Return Value
+
 <b>WdfUsbTargetDeviceFormatRequestForCyclePort</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
@@ -83,13 +77,11 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 Use <b>WdfUsbTargetDeviceFormatRequestForCyclePort</b>, followed by <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>, to send a power-cycle request either synchronously or asynchronously. Alternatively, use the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecycleportsynchronously.md">WdfUsbTargetDeviceCyclePortSynchronously</a> method to send a request synchronously. 
 
-Before the driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>, it must call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> and it must <a href="https://msdn.microsoft.com/library/windows/hardware/hh406719">complete</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">cancel</a> all I/O requests that it has sent to the I/O target. The driver must not send additional I/O requests to the I/O target until the cycle request completes.
+Before the driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>, it must call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> and it must <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">complete</a> or <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/canceling-i-o-requests">cancel</a> all I/O requests that it has sent to the I/O target. The driver must not send additional I/O requests to the I/O target until the cycle request completes.
 
 You can forward an I/O request that your driver received in an I/O queue, or you can create and send a new request. 
 
@@ -105,8 +97,20 @@ For more information about the <b>WdfUsbTargetDeviceFormatRequestForCyclePort</b
 
 The following code example formats a power-cycle request, registers a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, and sends the request to an I/O target.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfusb.h (include Wdfusb.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
@@ -129,4 +133,3 @@ The following code example formats a power-cycle request, registers a <a href=".
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceFormatRequestForCyclePort method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

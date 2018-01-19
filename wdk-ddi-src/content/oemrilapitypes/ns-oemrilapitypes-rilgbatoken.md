@@ -1,50 +1,43 @@
 ---
-UID: NS:oemrilapitypes.RILGBATOKEN
-title: RILGBATOKEN
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilgbatoken.htm
-old-project: netvista
-ms.assetid: f842d945-1d1e-4f0b-9cc9-82a8401c170a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILGBATOKEN, RILGBATOKEN, *LPRILGBATOKEN
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: oemrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILGBATOKEN
-req.alt-loc: oemrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: RILGBATOKEN, *LPRILGBATOKEN
+UID : NS:oemrilapitypes.RILGBATOKEN
+title : RILGBATOKEN
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilgbatoken.htm
+old-project : netvista
+ms.assetid : f842d945-1d1e-4f0b-9cc9-82a8401c170a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILGBATOKEN, *LPRILGBATOKEN, RILGBATOKEN
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : oemrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILGBATOKEN
+req.alt-loc : oemrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
 # RILGBATOKEN structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILGBATOKEN {
   DWORD   cbSize;
@@ -58,31 +51,46 @@ typedef struct _RILGBATOKEN {
 } RILGBATOKEN, *LPRILGBATOKEN;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `bData`
 
-### -field cbSize
+            
+        
+            `cbBTIDSize`
+
+            
+        
+            `cbNAFKeyLifetimeSize`
+
+            
+        
+            `cbNAFKeySize`
+
+            
+        
+            `cbSize`
+
+            
+        
+            `dwBTIDOffset`
+
+            
+        
+            `dwNAFKeyLifetimeOffset`
+
+            
+        
+            `dwNAFKeyOffset`
+
+            
 
 
-### -field cbBTIDSize
-
-
-### -field dwBTIDOffset
-
-
-### -field cbNAFKeyLifetimeSize
-
-
-### -field dwNAFKeyLifetimeOffset
-
-
-### -field cbNAFKeySize
-
-
-### -field dwNAFKeyOffset
-
-
-### -field bData
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | oemrilapitypes.h |

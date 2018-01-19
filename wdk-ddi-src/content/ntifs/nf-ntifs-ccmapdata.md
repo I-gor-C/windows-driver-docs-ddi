@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.CcMapData
-title: CcMapData function
-author: windows-driver-content
-description: The CcMapData routine maps a specified byte range of a cached file to a buffer in memory.
-old-location: ifsk\ccmapdata.htm
-old-project: ifsk
-ms.assetid: dccc79ba-68d9-41cf-b86d-37adb83558a0
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: CcMapData
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CcMapData
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.CcMapData
+title : CcMapData function
+author : windows-driver-content
+description : The CcMapData routine maps a specified byte range of a cached file to a buffer in memory.
+old-location : ifsk\ccmapdata.htm
+old-project : ifsk
+ms.assetid : dccc79ba-68d9-41cf-b86d-37adb83558a0
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : CcMapData
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CcMapData
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # CcMapData function
-
-
-
-## -description
 The <b>CcMapData</b> routine maps a specified byte range of a cached file to a buffer in memory.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN CcMapData(
@@ -56,25 +51,21 @@ BOOLEAN CcMapData(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileObject [in]
+`FileObject`
 
 Pointer to a file object for the file whose data is to be mapped for read access.
 
-
-### -param FileOffset [in]
+`FileOffset`
 
 Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.
 
-
-### -param Length [in]
+`Length`
 
 Length of desired data in bytes.
 
-
-### -param Flags [in]
+`Flags`
 
 Bitmask of flags specifying how the mapping operation is to be performed. This is a bitwise OR combination of one or more of the following values: 
 
@@ -109,30 +100,21 @@ Only pages that are already resident in memory are to be mapped.
 <div class="alert"><b>Note</b>    In Windows 2000and earlier, this parameter was a BOOLEAN value named <i>Wait</i>: </div>
 <div> </div>
 
-
-
-### -param Wait
-
-Set to <b>TRUE</b> if the caller can be put into a wait state until the data has been mapped, <b>FALSE</b> otherwise.
-
-</dd>
-</dl>
-
-### -param Bcb [out]
+`Bcb`
 
 On the first call this returns a pointer to a buffer control block (BCB) structure. This pointer must be supplied as input on all subsequent calls, for this buffer.
 
-
-### -param Buffer [out]
+`Buffer`
 
 Pointer to a buffer containing the mapped data.
 
 
-## -returns
+## Return Value
+
 <b>CcMapData</b> returns <b>TRUE</b> if the data for the cached file was mapped successfully, <b>FALSE</b> otherwise.
 
+## Remarks
 
-## -remarks
 <b>CcMapData</b> maps data in a cached file for read access. Note that after <b>CcMapData</b> is called, the data is mapped; but it is not pinned. This distinction is important. Data that is mapped but not pinned cannot safely be modified. To pin the data, use <a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>, <a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>, or <a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>.
 
 Every successful call to <b>CcMapData</b> must be matched by a subsequent call to <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>. 
@@ -149,8 +131,20 @@ If any failure occurs, <b>CcMapData</b> raises a status exception for that parti
 
 To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
@@ -173,4 +167,3 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcMapData routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

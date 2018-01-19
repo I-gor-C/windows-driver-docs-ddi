@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfiotarget.WdfIoTargetFormatRequestForInternalIoctlOthers
-title: WdfIoTargetFormatRequestForInternalIoctlOthers function
-author: windows-driver-content
-description: The WdfIoTargetFormatRequestForInternalIoctlOthers method builds a non-standard internal device control request for an I/O target but does not send the request.
-old-location: wdf\wdfiotargetformatrequestforinternalioctlothers.htm
-old-project: wdf
-ms.assetid: e843eb33-f688-4963-9f35-244b4ed0ef7a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfIoTargetFormatRequestForInternalIoctlOthers
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfiotarget.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WdfIoTargetFormatRequestForInternalIoctlOthers
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE
-req.product: Windows 10 or later.
+UID : NF:wdfiotarget.WdfIoTargetFormatRequestForInternalIoctlOthers
+title : WdfIoTargetFormatRequestForInternalIoctlOthers function
+author : windows-driver-content
+description : The WdfIoTargetFormatRequestForInternalIoctlOthers method builds a non-standard internal device control request for an I/O target but does not send the request.
+old-location : wdf\wdfiotargetformatrequestforinternalioctlothers.htm
+old-project : wdf
+ms.assetid : e843eb33-f688-4963-9f35-244b4ed0ef7a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfIoTargetFormatRequestForInternalIoctlOthers
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfiotarget.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WdfIoTargetFormatRequestForInternalIoctlOthers
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfIoTargetFormatRequestForInternalIoctlOthers function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 The <b>WdfIoTargetFormatRequestForInternalIoctlOthers</b> method builds a non-standard internal device control request for an I/O target but does not send the request.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfIoTargetFormatRequestForInternalIoctlOthers(
@@ -62,55 +57,47 @@ NTSTATUS WdfIoTargetFormatRequestForInternalIoctlOthers(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param IoTarget [in]
+`IoTarget`
 
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.
 
-
-### -param Request [in]
+`Request`
 
 A handle to a framework request object. For more information, see the following Remarks section.
 
+`IoctlCode`
 
-### -param IoctlCode [in]
+An I/O control code (IOCTL) that the I/O target supports.
 
-An I/O control code (IOCTL) that the I/O target supports. 
-
-
-### -param OtherArg1 [in, optional]
+`OtherArg1`
 
 A handle to a framework memory object. This object represents a buffer that the driver uses for request-specific, driver-defined context information. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b>.
 
-
-### -param OtherArg1Offset [in, optional]
+`OtherArg1Offset`
 
 A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. Drivers can use these values to specify the beginning address and length of a segment of the context area that is specified by <i>OtherArg1</i>. This parameter is optional and can be <b>NULL</b>.
 
-
-### -param OtherArg2 [in, optional]
+`OtherArg2`
 
 A handle to a framework memory object. This object represents a buffer that the driver uses for request-specific, driver-defined context information. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b>.
 
-
-### -param OtherArg2Offset [in, optional]
+`OtherArg2Offset`
 
 A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. Drivers can use these values to specify the beginning address and length of a segment of the context area that is specified by <i>OtherArg2</i>. This parameter is optional and can be <b>NULL</b>.
 
-
-### -param OtherArg4 [in, optional]
+`OtherArg4`
 
 A handle to a framework memory object. This object represents a buffer that the driver uses for request-specific, driver-defined context information. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b>.
 
-
-### -param OtherArg4Offset [in, optional]
+`OtherArg4Offset`
 
 A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. Drivers can use these values to specify the beginning address and length of a segment of the context area that is specified by <i>OtherArg4</i>. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>WdfIoTargetFormatRequestForInternalIoctlOthers</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -131,10 +118,8 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 Use the <b>WdfIoTargetFormatRequestForInternalIoctlOthers</b> method, followed by the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a> method, to send non-standard internal device control requests either synchronously or asynchronously. Alternatively, use the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a> method to send non-standard internal device control requests synchronously. 
 
 You can forward a non-standard internal device control request that your driver received in an I/O queue, or you can create and send a new request. In either case, the framework requires a request object and some buffer space.
@@ -147,7 +132,7 @@ Use the received request's context information for the <b>WdfIoTargetFormatReque
 
 To obtain these parameter values, the driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a> and use the <b>DeviceIoControl</b> member of the <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a> structure that is returned. 
 
-For more information about forwarding an I/O request, see <a href="https://msdn.microsoft.com/75e007e3-1b97-44db-ac86-56aab78222a6">Forwarding I/O Requests</a>.
+For more information about forwarding an I/O request, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/forwarding-i-o-requests">Forwarding I/O Requests</a>.
 
 Drivers often divide received I/O requests into smaller requests that they send to an I/O target, so your driver might create new requests.
 
@@ -173,8 +158,20 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 The following code example creates a framework memory object, obtains the buffer that the memory object contains, and initializes the buffer. Then, the example formats the request, sets a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, and sends the request to an I/O target.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfiotarget.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
@@ -221,4 +218,3 @@ The following code example creates a framework memory object, obtains the buffer
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetFormatRequestForInternalIoctlOthers method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

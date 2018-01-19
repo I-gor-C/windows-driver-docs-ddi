@@ -1,53 +1,48 @@
 ---
-UID: NF:ndis.NdisAllocateNetBufferAndNetBufferList
-title: NdisAllocateNetBufferAndNetBufferList function
-author: windows-driver-content
-description: Call the NdisAllocateNetBufferAndNetBufferList function to allocate and initialize a NET_BUFFER_LIST structure that is initialized with a preallocated NET_BUFFER structure.
-old-location: netvista\ndisallocatenetbufferandnetbufferlist.htm
-old-project: netvista
-ms.assetid: b872eff3-2d0a-4f01-874d-e00e09195801
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAllocateNetBufferAndNetBufferList
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAllocateNetBufferAndNetBufferList
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_NetBuffer_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAllocateNetBufferAndNetBufferList
+title : NdisAllocateNetBufferAndNetBufferList function
+author : windows-driver-content
+description : Call the NdisAllocateNetBufferAndNetBufferList function to allocate and initialize a NET_BUFFER_LIST structure that is initialized with a preallocated NET_BUFFER structure.
+old-location : netvista\ndisallocatenetbufferandnetbufferlist.htm
+old-project : netvista
+ms.assetid : b872eff3-2d0a-4f01-874d-e00e09195801
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAllocateNetBufferAndNetBufferList
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAllocateNetBufferAndNetBufferList
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_NetBuffer_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAllocateNetBufferAndNetBufferList function
-
-
-
-## -description
 Call the 
   <b>NdisAllocateNetBufferAndNetBufferList</b> function to allocate and initialize a 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that is initialized
   with a preallocated 
   <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PNET_BUFFER_LIST NdisAllocateNetBufferAndNetBufferList(
@@ -60,10 +55,9 @@ PNET_BUFFER_LIST NdisAllocateNetBufferAndNetBufferList(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param PoolHandle [in]
+`PoolHandle`
 
 A NET_BUFFER_LIST structure pool handle that was previously returned from the 
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
@@ -73,8 +67,7 @@ A NET_BUFFER_LIST structure pool handle that was previously returned from the
      <b>NdisAllocateNetBufferListPool</b> must have been set to <b>TRUE</b> and the 
      <b>DataSize</b> member set to zero.
 
-
-### -param ContextSize [in]
+`ContextSize`
 
 The amount of 
      <i>used data space</i> in the 
@@ -82,22 +75,19 @@ The amount of
      to reserve for the caller. The 
      <i>ContextSize</i> must be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.
 
-
-### -param ContextBackFill [in]
+`ContextBackFill`
 
 The amount of 
      <i>unused data space</i> (backfill space) that the caller requires. NDIS adds this value to the 
      <i>ContextSize</i> and allocates additional space. The 
      <i>ContextBackFill</i> must be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.
 
-
-### -param MdlChain [in, optional]
+`MdlChain`
 
 A pointer to an MDL chain that NDIS uses to initialize the preallocated NET_BUFFER structure. 
      <i>MdlChain</i> can be <b>NULL</b>.
 
-
-### -param DataOffset [in]
+`DataOffset`
 
 The initial offset, in bytes, from the start of the buffer to the start of the 
      <i>used data space</i> in the MDL chain. Data space ahead of this offset is 
@@ -106,8 +96,7 @@ The initial offset, in bytes, from the start of the buffer to the start of the
      <i>MdlChain</i> is <b>NULL</b>, 
      <i>DataOffset</i> must be 0.
 
-
-### -param DataLength [in]
+`DataLength`
 
 The length, in bytes, of the 
      <i>used data space</i> in the MDL chain. If 
@@ -115,13 +104,14 @@ The length, in bytes, of the
      <i>DataLength</i> must be 0.
 
 
-## -returns
+## Return Value
+
 <b>NdisAllocateNetBufferAndNetBufferList</b> returns a pointer to the allocated NET_BUFFER_LIST
      structure. The NET_BUFFER_LIST structure includes a NET_BUFFER structure. If the allocation was
      unsuccessful, this pointer is <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 The structures that the 
     <b>NdisAllocateNetBufferAndNetBufferList</b> function allocates must come from a pool that includes 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that are paired
@@ -156,8 +146,20 @@ For example, if the original MDL chain contains <i>X</i>
     <i>CurrentMdl</i> starts with the third MDL (<i>M'</i>) in the new MDL chain, 
     <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>:
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
@@ -184,4 +186,3 @@ For example, if the original MDL chain contains <i>X</i>
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferAndNetBufferList function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

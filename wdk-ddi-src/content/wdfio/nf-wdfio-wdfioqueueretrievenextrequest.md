@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfio.WdfIoQueueRetrieveNextRequest
-title: WdfIoQueueRetrieveNextRequest function
-author: windows-driver-content
-description: The WdfIoQueueRetrieveNextRequest method retrieves the next available I/O request from a specified I/O queue.
-old-location: wdf\wdfioqueueretrievenextrequest.htm
-old-project: wdf
-ms.assetid: 1cde2e20-5ce6-4c5b-b40c-0b04da76980c
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfIoQueueRetrieveNextRequest
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfio.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: WdfIoQueueRetrieveNextRequest
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueueretrievenextrequest
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WDF_IO_QUEUE_STATE
-req.product: Windows 10 or later.
+UID : NF:wdfio.WdfIoQueueRetrieveNextRequest
+title : WdfIoQueueRetrieveNextRequest function
+author : windows-driver-content
+description : The WdfIoQueueRetrieveNextRequest method retrieves the next available I/O request from a specified I/O queue.
+old-location : wdf\wdfioqueueretrievenextrequest.htm
+old-project : wdf
+ms.assetid : 1cde2e20-5ce6-4c5b-b40c-0b04da76980c
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfIoQueueRetrieveNextRequest
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfio.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : WdfIoQueueRetrieveNextRequest
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueueretrievenextrequest
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WDF_IO_QUEUE_STATE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfIoQueueRetrieveNextRequest function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WdfIoQueueRetrieveNextRequest</b> method retrieves the next available I/O request from a specified I/O queue. 
+The <b>WdfIoQueueRetrieveNextRequest</b> method retrieves the next available I/O request from a specified I/O queue.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfIoQueueRetrieveNextRequest(
@@ -55,20 +50,19 @@ NTSTATUS WdfIoQueueRetrieveNextRequest(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Queue [in]
+`Queue`
 
 A handle to a framework queue object.
 
-
-### -param OutRequest [out]
+`OutRequest`
 
 A pointer to a location that receives a handle to a framework request object. If the queue is empty or the last request has been retrieved, this parameter receives <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>WdfIoQueueRetrieveNextRequest</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -81,7 +75,7 @@ A pointer to a location that receives a handle to a framework request object. If
 </dl>The specified I/O queue is configured for the parallel dispatching method.
 <dl>
 <dt><b>STATUS_WDF_PAUSED</b></dt>
-</dl>The specified I/O queue is <a href="wdf.using_power_managed_i_o_queues">power-managed</a> and its device is in a low-power state, or the specified queue is stopped.
+</dl>The specified I/O queue is <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-power-managed-i-o-queues">power-managed</a> and its device is in a low-power state, or the specified queue is stopped.
 
  
 
@@ -89,20 +83,30 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
+If a driver configures an I/O queue for manual dispatching of I/O requests, the driver typically calls <b>WdfIoQueueRetrieveNextRequest</b> to obtain requests from the queue. A driver that has configured an I/O queue for sequential dispatching might also call <b>WdfIoQueueRetrieveNextRequest</b>. For more information about using <b>WdfIoQueueRetrieveNextRequest</b> with the manual or sequential dispatching methods, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-methods-for-i-o-requests">Dispatching Methods for I/O Requests</a>. 
 
-
-## -remarks
-If a driver configures an I/O queue for manual dispatching of I/O requests, the driver typically calls <b>WdfIoQueueRetrieveNextRequest</b> to obtain requests from the queue. A driver that has configured an I/O queue for sequential dispatching might also call <b>WdfIoQueueRetrieveNextRequest</b>. For more information about using <b>WdfIoQueueRetrieveNextRequest</b> with the manual or sequential dispatching methods, see <a href="https://msdn.microsoft.com/3e91aa7c-bccf-4eeb-8b68-b1277a690f8c">Dispatching Methods for I/O Requests</a>. 
-
-After calling <b>WdfIoQueueRetrieveNextRequest</b> to obtain an I/O request, the driver <a href="wdf.request_ownership">owns</a> the request and must <a href="wdf.accessing_data_buffers_in_kmdf_drivers">process the I/O request</a> in some manner.
+After calling <b>WdfIoQueueRetrieveNextRequest</b> to obtain an I/O request, the driver <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-ownership">owns</a> the request and must <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">process the I/O request</a> in some manner.
 
 For more information about the <b>WdfIoQueueRetrieveNextRequest</b> method, see <a href="https://msdn.microsoft.com/83cc87c8-7e2d-4f79-a580-0519d327e7ba">Managing I/O Queues</a>.
 
 The following code example obtains a handle to the next request object that is contained in a device's I/O queue.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfio.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueueretrievenextrequest |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
@@ -116,4 +120,3 @@ The following code example obtains a handle to the next request object that is c
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueRetrieveNextRequest method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILSUPSVCINFO
-title: RILSUPSVCINFO
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilsupsvcinfo.htm
-old-project: netvista
-ms.assetid: 1f8f7c8c-f09a-4bf5-a15b-42f210122b54
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILSUPSVCINFO, RILSUPSVCINFO, *LPRILSUPSVCINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILSUPSVCINFO
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILSUPSVCINFO, *LPRILSUPSVCINFO
+UID : NS:ntddrilapitypes.RILSUPSVCINFO
+title : RILSUPSVCINFO
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilsupsvcinfo.htm
+old-project : netvista
+ms.assetid : 1f8f7c8c-f09a-4bf5-a15b-42f210122b54
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILSUPSVCINFO, RILSUPSVCINFO, *LPRILSUPSVCINFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILSUPSVCINFO
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILSUPSVCINFO, *LPRILSUPSVCINFO
 ---
 
 # RILSUPSVCINFO structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILSUPSVCINFO {
   DWORD                            cbSize;
@@ -69,64 +62,90 @@ typedef struct _RILSUPSVCINFO {
 } RILSUPSVCINFO, RILSUPSVCINFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `aiIdentifier`
 
-### -field cbSize
+            
+        
+            `callerIdSettings`
+
+            
+        
+            `callForwardSettings`
+
+            
+        
+            `cbSize`
+
+            
+        
+            `dialedIdSettings`
+
+            
+        
+            `dwCallBarringType`
+
+            
+        
+            `dwCallForwardingReason`
+
+            
+        
+            `dwExecutor`
+
+            
+        
+            `dwFailureReason`
+
+            
+        
+            `dwInfoClasses`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwSupSvcAction`
+
+            
+        
+            `dwSupSvcType`
+
+            
+        
+            `fFromNetwork`
+
+            
+        
+            `hideConnectedIdSettings`
+
+            
+        
+            `hideIdSettings`
+
+            
+        
+            `supServiceData`
+
+            
+        
+            `szCallBarringPassword`
+
+            
+        
+            `szNewCallBarringPassword`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwExecutor
-
-
-### -field fFromNetwork
-
-
-### -field dwFailureReason
-
-
-### -field dwSupSvcAction
-
-
-### -field dwCallForwardingReason
-
-
-### -field dwCallBarringType
-
-
-### -field dwSupSvcType
-
-
-### -field dwInfoClasses
-
-
-### -field aiIdentifier
-
-
-### -field szCallBarringPassword
-
-
-### -field szNewCallBarringPassword
-
-
-### -field callForwardSettings
-
-
-### -field callerIdSettings
-
-
-### -field dialedIdSettings
-
-
-### -field hideIdSettings
-
-
-### -field hideConnectedIdSettings
-
-
-### -field supServiceData
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

@@ -1,67 +1,61 @@
 ---
-UID: NC:ndis.MINIPORT_MESSAGE_INTERRUPT
-title: MINIPORT_MESSAGE_INTERRUPT function
-author: windows-driver-content
-description: NDIS calls the MiniportMessageInterrupt function when a NIC generates a message-based interrupt.
-old-location: netvista\miniportmessageinterrupt.htm
-old-project: netvista
-ms.assetid: ec2e6f49-dc40-48e8-96dc-c9440a6662a3
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: MINIPORT_MESSAGE_INTERRUPT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportMessageInterrupt
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.MINIPORT_MESSAGE_INTERRUPT
+title : MINIPORT_MESSAGE_INTERRUPT
+author : windows-driver-content
+description : NDIS calls the MiniportMessageInterrupt function when a NIC generates a message-based interrupt.
+old-location : netvista\miniportmessageinterrupt.htm
+old-project : netvista
+ms.assetid : ec2e6f49-dc40-48e8-96dc-c9440a6662a3
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportMessageInterrupt
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # MINIPORT_MESSAGE_INTERRUPT function
-
-
-
-## -description
 NDIS calls the
    <i>MiniportMessageInterrupt</i> function when a NIC generates a message-based interrupt.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 MINIPORT_MESSAGE_INTERRUPT MiniportMessageInterrupt;
 
 BOOLEAN MiniportMessageInterrupt(
-  _In_  NDIS_HANDLE MiniportInterruptContext,
-  _In_  ULONG       MessageId,
-  _Out_ PBOOLEAN    QueueDefaultInterruptDpc,
-  _Out_ PULONG      TargetProcessors
+  NDIS_HANDLE MiniportInterruptContext,
+  ULONG MessageId,
+  PBOOLEAN QueueDefaultInterruptDpc,
+  PULONG TargetProcessors
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportInterruptContext [in]
+`MiniportInterruptContext`
 
 A handle to a block of interrupt context information. The miniport driver supplied this handle in
      the 
@@ -69,8 +63,7 @@ A handle to a block of interrupt context information. The miniport driver suppli
      <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
      NdisMRegisterInterruptEx</a> function.
 
-
-### -param MessageId [in]
+`MessageId`
 
 A message-signaled interrupt (MSI) message identifier. 
      <i>MessageId</i> is an index to an 
@@ -82,8 +75,7 @@ A message-signaled interrupt (MSI) message identifier.
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
      <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function.
 
-
-### -param QueueDefaultInterruptDpc [out]
+`QueueDefaultInterruptDpc`
 
 A pointer to a Boolean variable that the miniport driver sets before returning from this call. A
      miniport driver sets this value to <b>TRUE</b> to indicate that the driver requires a DPC on the default
@@ -91,8 +83,7 @@ A pointer to a Boolean variable that the miniport driver sets before returning f
      <i>TargetProcessors</i> parameter. If set to <b>FALSE</b>, NDIS uses the value of the 
      <i>TargetProcessors</i> parameter to schedule DPCs.
 
-
-### -param TargetProcessors [out]
+`TargetProcessors`
 
 A bitmask that indicates the target processors for which NDIS should schedule a DPC. This bitmask represents the first 32 processors in processor group 0. Each bit in 
      the bitmask identifies a CPU. If the caller sets bit 0, NDIS schedules a DPC for CPU 0. If the caller sets bit 1, NDIS
@@ -103,12 +94,14 @@ A bitmask that indicates the target processors for which NDIS should schedule a 
      <a href="..\ndis\nf-ndis-ndismqueuedpcex.md">NdisMQueueDpcEx</a> function to schedule DPCs.</div>
 <div> </div>
 
-## -returns
+
+## Return Value
+
 <i>MiniportMessageInterrupt</i> returns <b>TRUE</b> if the underlying NIC generated the interrupt; otherwise, it
      returns <b>FALSE</b>.
 
+## Remarks
 
-## -remarks
 Miniport drivers that register for message-signaled interrupts (MSI) support with the 
     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
     must provide a 
@@ -143,10 +136,10 @@ The NIC generated the interrupt to signal received data and the miniport driver 
       received packets in separate DPCs.
 
 The interrupt indicates received packets and the miniport driver can process received packets in
-      separate DPCs, but <a href="netvista.ndis_receive_side_scaling2">receive side scaling (RSS)</a> is not enabled for the miniport driver. For more information, see 
-      <a href="netvista.oid_gen_receive_scale_capabilities">
+      separate DPCs, but <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-receive-side-scaling2">receive side scaling (RSS)</a> is not enabled for the miniport driver. For more information, see 
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-receive-scale-capabilities">
       OID_GEN_RECEIVE_SCALE_CAPABILITIES</a> and 
-      <a href="netvista.oid_gen_receive_scale_parameters">
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-receive-scale-parameters">
       OID_GEN_RECEIVE_SCALE_PARAMETERS</a>.
 
 Receive side scaling is enabled for the miniport driver, and the miniport driver can generate
@@ -164,7 +157,7 @@ If
     <i>MiniportXxx</i> function must call the 
     <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
     NdisMSynchronizeWithInterruptEx</a> function. This ensures that the driver's 
-    <a href="netvista.miniportsynchronizemessageinterrupt">MiniportSynchronizeMessageInterrupt</a> function accesses the shared resources in a synchronized and
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff559454">MiniportSynchronizeMessageInterrupt</a> function accesses the shared resources in a synchronized and
     multiprocessor-safe manner.
 
 A miniport driver can call the 
@@ -193,10 +186,22 @@ Then, implement your function as follows:
 
 The <b>MINIPORT_MESSAGE_INTERRUPT</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_MESSAGE_INTERRUPT</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
@@ -215,7 +220,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">MiniportMessageInterruptDPC</a>
 </dt>
 <dt>
-<a href="netvista.miniportsynchronizemessageinterrupt">MiniportSynchronizeMessageInterrupt</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff559454">MiniportSynchronizeMessageInterrupt</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
@@ -235,15 +240,15 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
    NdisMSynchronizeWithInterruptEx</a>
 </dt>
 <dt>
-<a href="netvista.oid_gen_receive_scale_capabilities">
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-receive-scale-capabilities">
    OID_GEN_RECEIVE_SCALE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="netvista.oid_gen_receive_scale_parameters">
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-receive-scale-parameters">
    OID_GEN_RECEIVE_SCALE_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_side_scaling2">Receive Side Scaling (RSS)</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-receive-side-scaling2">Receive Side Scaling (RSS)</a>
 </dt>
 </dl>
  
@@ -251,4 +256,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_MESSAGE_INTERRUPT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,52 +1,47 @@
 ---
-UID: NF:ndischimney.NdisMOffloadEventIndicate
-title: NdisMOffloadEventIndicate function
-author: windows-driver-content
-description: An offload target calls the NdisMOffloadEventIndicate function to indicate various events to the host stack.
-old-location: netvista\ndismoffloadeventindicate.htm
-old-project: netvista
-ms.assetid: 81052e73-4dce-48df-8541-5da54e2156d8
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMOffloadEventIndicate
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMOffloadEventIndicate
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NF:ndischimney.NdisMOffloadEventIndicate
+title : NdisMOffloadEventIndicate function
+author : windows-driver-content
+description : An offload target calls the NdisMOffloadEventIndicate function to indicate various events to the host stack.
+old-location : netvista\ndismoffloadeventindicate.htm
+old-project : netvista
+ms.assetid : 81052e73-4dce-48df-8541-5da54e2156d8
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMOffloadEventIndicate
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMOffloadEventIndicate
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
+
 # NdisMOffloadEventIndicate function
-
-
-
-## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 An offload target calls the 
   <b>NdisMOffloadEventIndicate</b> function to indicate various events to the host stack.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisMOffloadEventIndicate(
@@ -56,17 +51,15 @@ VOID NdisMOffloadEventIndicate(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisMiniportHandle [in]
+`NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to 
      <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a>.
 
-
-### -param OffloadBlockList [in]
+`OffloadBlockList`
 
 A pointer to an 
      <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
@@ -125,41 +118,37 @@ For all indications other than the
      <b>NeighborReachabilityQuery</b> indication, the offload target supplies an 
      <i>OffloadBlockList</i> pointer that is <b>NULL</b>.
 
-
-### -param IndicationCode [in]
+`IndicationCode`
 
 The event being indicated is specified as one of the following INDICATE_OFFLOAD_EVENT values:
-     
 
 
+## Return Value
 
-
-### -param NeighborReachabilityQuery
-
-Indicates that a neighbor cache entry (NCE) has become stale. For more information about NCEs,
-       see RFC 2461.
-
-
-### -param NeighborReachabilityInDoubt
-
-Reserved.
-
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 The host stack uses the 
     <b>NeighborReachabilityQuery</b> indication to detect neighbor unreachability for IPv4 and IPv6. For a
     detailed description of this indication, see 
-    <a href="netvista.making_a_neighborreachabilityquery_indication">Making a
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/making-a-neighborreachabilityquery-indication">Making a
     NeighborReachabilityQuery Indication</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
@@ -190,4 +179,3 @@ The host stack uses the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMOffloadEventIndicate function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

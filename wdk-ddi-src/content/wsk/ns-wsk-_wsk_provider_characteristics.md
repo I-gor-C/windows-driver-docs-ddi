@@ -1,51 +1,44 @@
 ---
-UID: NS:wsk._WSK_PROVIDER_CHARACTERISTICS
-title: _WSK_PROVIDER_CHARACTERISTICS
-author: windows-driver-content
-description: The WSK_PROVIDER_CHARACTERISTICS structure specifies the characteristics of the WSK subsystem.
-old-location: netvista\wsk_provider_characteristics.htm
-old-project: netvista
-ms.assetid: 25371620-23bb-4a98-9554-14057742b0ca
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wsk.h
-req.include-header: Wsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WSK_PROVIDER_CHARACTERISTICS
-req.alt-loc: wsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PWSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS
-req.product: Windows 10 or later.
+UID : NS:wsk._WSK_PROVIDER_CHARACTERISTICS
+title : _WSK_PROVIDER_CHARACTERISTICS
+author : windows-driver-content
+description : The WSK_PROVIDER_CHARACTERISTICS structure specifies the characteristics of the WSK subsystem.
+old-location : netvista\wsk_provider_characteristics.htm
+old-project : netvista
+ms.assetid : 25371620-23bb-4a98-9554-14057742b0ca
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wsk.h
+req.include-header : Wsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WSK_PROVIDER_CHARACTERISTICS
+req.alt-loc : wsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS
+req.product : Windows 10 or later.
 ---
 
 # _WSK_PROVIDER_CHARACTERISTICS structure
-
-
-
-## -description
 The WSK_PROVIDER_CHARACTERISTICS structure specifies the characteristics of the WSK subsystem.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WSK_PROVIDER_CHARACTERISTICS {
   USHORT HighestVersion;
@@ -53,23 +46,21 @@ typedef struct _WSK_PROVIDER_CHARACTERISTICS {
 } WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `HighestVersion`
 
-### -field HighestVersion
-
-The highest version of the WSK 
-     <a href="netvista.network_programming_interface">Network Programming Interface
+            The highest version of the WSK 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">Network Programming Interface
      (NPI)</a> that is supported by the WSK subsystem.
+        
+            `LowestVersion`
 
+            The lowest version of the WSK NPI that is supported by the WSK subsystem.
 
-### -field LowestVersion
-
-The lowest version of the WSK NPI that is supported by the WSK subsystem.
-
-
-## -remarks
-When a 
+    ## Remarks
+        When a 
     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a> call fails
     with status code STATUS_NOINTERFACE, the WSK application can use a call to 
     <a href="..\wsk\nf-wsk-wskqueryprovidercharacteristics.md">
@@ -101,12 +92,20 @@ If a WSK application determines that the WSK subsystem supports a version of the
     <b>Version</b> member of the structure.
 
 For more information about attaching a WSK application to the WSK subsystem, see 
-    <a href="netvista.registering_a_winsock_kernel_application">Registering a Winsock Kernel
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock Kernel
     Application</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wsk.h (include Wsk.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
@@ -129,4 +128,3 @@ For more information about attaching a WSK application to the WSK subsystem, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

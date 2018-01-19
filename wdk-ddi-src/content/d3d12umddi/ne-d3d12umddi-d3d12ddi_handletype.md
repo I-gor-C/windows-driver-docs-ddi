@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_HANDLETYPE
-title: D3D12DDI_HANDLETYPE
-author: windows-driver-content
-description: Contains driver handle types.
-old-location: display\d3d12ddi_handletype.htm
-old-project: display
-ms.assetid: 807CC73E-C5A5-4D49-AFAF-32A51D832F82
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_HANDLETYPE, D3D12DDI_HANDLETYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_HANDLETYPE
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_HANDLETYPE
+UID : NE:d3d12umddi.D3D12DDI_HANDLETYPE
+title : D3D12DDI_HANDLETYPE
+author : windows-driver-content
+description : Contains driver handle types.
+old-location : display\d3d12ddi_handletype.htm
+old-project : display
+ms.assetid : 807CC73E-C5A5-4D49-AFAF-32A51D832F82
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_HANDLETYPE, D3D12DDI_HANDLETYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_HANDLETYPE
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_HANDLETYPE
 ---
 
-# D3D12DDI_HANDLETYPE enumeration
-
-
-
-## -description
+# D3D12DDI_HANDLETYPE Enumeration
 Contains driver handle types.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDI_HANDLETYPE { 
   D3D12DDI_HT_COMMAND_QUEUE                  = 19,
@@ -70,107 +63,106 @@ typedef enum D3D12DDI_HANDLETYPE {
 } D3D12DDI_HANDLETYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_HT_COMMAND_QUEUE
+<tr>
+<td>D3D12DDI_HT_0010_PIPELINE_LIBRARY</td>
+<td>A pipeline library handle type.</td>
+</tr>
 
-A command queue handle type.
+<tr>
+<td>D3D12DDI_HT_0012_RESOURCE</td>
+<td>A resource handle type.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_HT_0020_VIDEO_DECODER</td>
+<td>A video decoder handle type.</td>
+</tr>
 
-### -field D3D12DDI_HT_COMMAND_ALLOCATOR
+<tr>
+<td>D3D12DDI_HT_0020_VIDEO_PROCESSOR</td>
+<td>A video processor handle type.</td>
+</tr>
 
-A command allocator handle type.
+<tr>
+<td>D3D12DDI_HT_0030_CRYPTOSESSION</td>
+<td>A crypto session handle type.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_HT_0030_CRYPTOSESSIONPOLICY</td>
+<td>A crypto session policy handle type.</td>
+</tr>
 
-### -field D3D12DDI_HT_PIPELINE_STATE
+<tr>
+<td>D3D12DDI_HT_0030_PROTECTEDRESOURCESESSION</td>
+<td>A protected resource session handle type.</td>
+</tr>
 
-A pipeline state handle type.
+<tr>
+<td>D3D12DDI_HT_0032_VIDEO_DECODER_HEAP</td>
+<td>A video decoder heap handle type.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_HT_COMMAND_ALLOCATOR</td>
+<td>A command allocator handle type.</td>
+</tr>
 
-### -field D3D12DDI_HT_COMMAND_LIST
+<tr>
+<td>D3D12DDI_HT_COMMAND_LIST</td>
+<td>A command list handle type.</td>
+</tr>
 
-A command list handle type.
+<tr>
+<td>D3D12DDI_HT_COMMAND_QUEUE</td>
+<td>A command queue handle type.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_HT_COMMAND_SIGNATURE</td>
+<td>A command signature handle type.</td>
+</tr>
 
-### -field D3D12DDI_HT_FENCE
+<tr>
+<td>D3D12DDI_HT_DESCRIPTOR_HEAP</td>
+<td>A descriptor heap handle type.</td>
+</tr>
 
-A fence handle type.
+<tr>
+<td>D3D12DDI_HT_FENCE</td>
+<td>A fence handle type.</td>
+</tr>
 
+<tr>
+<td>D3D12DDI_HT_HEAP</td>
+<td>A heap handle type.</td>
+</tr>
 
-### -field D3D12DDI_HT_DESCRIPTOR_HEAP
+<tr>
+<td>D3D12DDI_HT_PASS</td>
+<td>A pass handle type.</td>
+</tr>
 
-A descriptor heap handle type.
+<tr>
+<td>D3D12DDI_HT_PIPELINE_STATE</td>
+<td>A pipeline state handle type.</td>
+</tr>
 
-
-### -field D3D12DDI_HT_HEAP
-
-A heap handle type.
-
-
-### -field D3D12DDI_HT_QUERY_HEAP
-
-A query heap handle type.
-
-
-### -field D3D12DDI_HT_COMMAND_SIGNATURE
-
-A command signature handle type.
-
-
-### -field D3D12DDI_HT_0010_PIPELINE_LIBRARY
-
-A pipeline library handle type.
-
-
-### -field D3D12DDI_HT_0020_VIDEO_DECODER
-
-A video decoder handle type.
-
-
-### -field D3D12DDI_HT_0020_VIDEO_DECODE_STREAM
-
-A video decode stream handle type.
-
-
-### -field D3D12DDI_HT_0020_VIDEO_PROCESSOR
-
-A video processor handle type.
-
-
-### -field D3D12DDI_HT_0020_VIDEO_PROCESS_STREAM
-
-A video process stream handle type.
-
-
-### -field D3D12DDI_HT_0012_RESOURCE
-
-A resource handle type.
-
-
-### -field D3D12DDI_HT_PASS
-
-A pass handle type.
-
-
-### -field D3D12DDI_HT_0030_CRYPTOSESSION
-
-A crypto session handle type.
-
-
-### -field D3D12DDI_HT_0030_CRYPTOSESSIONPOLICY
-
-A crypto session policy handle type.
-
-
-### -field D3D12DDI_HT_0030_PROTECTEDRESOURCESESSION
-
-A protected resource session handle type.
+<tr>
+<td>D3D12DDI_HT_QUERY_HEAP</td>
+<td>A query heap handle type.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDI_HT_0032_VIDEO_DECODER_HEAP
-
-A video decoder heap handle type.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

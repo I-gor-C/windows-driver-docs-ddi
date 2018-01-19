@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILMSGCDMABROADCASTSERVICEID
-title: RILMSGCDMABROADCASTSERVICEID
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmsgcdmabroadcastserviceid_2.htm
-old-project: netvista
-ms.assetid: d991a0f6-54ba-4951-8bdb-865a537d797a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMSGCDMABROADCASTSERVICEID, RILMSGCDMABROADCASTSERVICEID
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMSGCDMABROADCASTSERVICEID
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILMSGCDMABROADCASTSERVICEID
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILMSGCDMABROADCASTSERVICEID
+title : RILMSGCDMABROADCASTSERVICEID
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmsgcdmabroadcastserviceid_2.htm
+old-project : netvista
+ms.assetid : d991a0f6-54ba-4951-8bdb-865a537d797a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMSGCDMABROADCASTSERVICEID, RILMSGCDMABROADCASTSERVICEID
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMSGCDMABROADCASTSERVICEID
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILMSGCDMABROADCASTSERVICEID
+req.product : Windows 10 or later.
 ---
 
-# RILMSGCDMABROADCASTSERVICEID enumeration
+# RILMSGCDMABROADCASTSERVICEID Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILMSGCDMABROADCASTSERVICEID { 
   RIL_1xBROADCAST_CMAS_EXTREME,
@@ -55,19 +48,36 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
 } RILMSGCDMABROADCASTSERVICEID;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_1xBROADCAST_CMAS_EXTREME
+<tr>
+<td>RIL_1xBROADCAST_CMAS_AMBER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_1xBROADCAST_CMAS_EXTREME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_1xBROADCAST_CMAS_SEVERE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_1xBROADCAST_CMAS_TEST</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_1xBROADCAST_CMAS_SEVERE
-
-
-### -field RIL_1xBROADCAST_CMAS_AMBER
-
-
-### -field RIL_1xBROADCAST_CMAS_TEST
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

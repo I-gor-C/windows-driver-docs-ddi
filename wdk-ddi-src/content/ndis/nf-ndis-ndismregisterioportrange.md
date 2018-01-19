@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisMRegisterIoPortRange
-title: NdisMRegisterIoPortRange function
-author: windows-driver-content
-description: NdisMRegisterIoPortRange sets up driver access to device I/O ports with the NdisRawReadPortXxx and NdisRawWritePortXxx functions and claims the range of I/O port addresses in the registry for that driver's NIC.
-old-location: netvista\ndismregisterioportrange.htm
-old-project: netvista
-ms.assetid: 3e7fc02b-9562-44b9-8659-793a1d96d1e9
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMRegisterIoPortRange
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMRegisterIoPortRange
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMRegisterIoPortRange
+title : NdisMRegisterIoPortRange function
+author : windows-driver-content
+description : NdisMRegisterIoPortRange sets up driver access to device I/O ports with the NdisRawReadPortXxx and NdisRawWritePortXxx functions and claims the range of I/O port addresses in the registry for that driver's NIC.
+old-location : netvista\ndismregisterioportrange.htm
+old-project : netvista
+ms.assetid : 3e7fc02b-9562-44b9-8659-793a1d96d1e9
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMRegisterIoPortRange
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMRegisterIoPortRange
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMRegisterIoPortRange function
-
-
-
-## -description
 <b>NdisMRegisterIoPortRange</b> sets up driver access to device I/O ports with the 
   <b>NdisRawReadPort<i>Xxx</i></b> and 
   <b>NdisRawWritePort<i>Xxx</i></b> functions and claims the range of I/O port addresses in the registry for that driver's
   NIC.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMRegisterIoPortRange(
@@ -57,34 +52,31 @@ NDIS_STATUS NdisMRegisterIoPortRange(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param PortOffset [out]
+`PortOffset`
 
 Specifies a caller-supplied variable in which this function returns the mapped base virtual
      address for the given bus-relative I/O port range specified by 
      <i>InitialPort</i> and 
      <i>NumberOfPorts</i> .
 
-
-### -param MiniportAdapterHandle [in]
+`MiniportAdapterHandle`
 
 Specifies the handle input to 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
 
-
-### -param InitialPort [in]
+`InitialPort`
 
 Specifies the bus-relative base port address for a range of ports to be mapped.
 
-
-### -param NumberOfPorts [in]
+`NumberOfPorts`
 
 Specifies the number of ports in the range to be mapped.
 
 
-## -returns
+## Return Value
+
 <b>NdisMRegisterIoPortRange</b> can return one of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -106,10 +98,8 @@ Specifies the number of ports in the range to be mapped.
        <i>NumberOfPorts</i> were invalid (possibly not within the I/O port space of the current
        platform).
 
- 
+## Remarks
 
-
-## -remarks
 A miniport driver calls 
     <b>NdisMRegisterIoPortRange</b> from its 
     <i>MiniportInitializeEx</i> function. 
@@ -139,8 +129,20 @@ Drivers of NICs with device registers in the host memory space call
     <b>NdisMMapIoSpace</b> and, subsequently, the 
     <b>NdisRead/WriteRegister<i>Xxx</i></b> functions to access the NIC registers.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -211,4 +213,3 @@ Drivers of NICs with device registers in the host memory space call
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterIoPortRange function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

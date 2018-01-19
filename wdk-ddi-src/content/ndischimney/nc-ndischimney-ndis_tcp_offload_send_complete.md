@@ -1,44 +1,41 @@
 ---
-UID: NC:ndischimney.NDIS_TCP_OFFLOAD_SEND_COMPLETE
-title: NDIS_TCP_OFFLOAD_SEND_COMPLETE
-author: windows-driver-content
-description: An offload target calls the NdisTcpOffloadSendComplete function to complete one or more send requests that were made to the MiniportTcpOffloadSend function of the offload target.
-old-location: netvista\ndistcpoffloadsendcomplete.htm
-old-project: netvista
-ms.assetid: 1689b6f9-88f3-456f-9a7c-c6b4e76cb336
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisTcpOffloadSendComplete
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.NDIS_TCP_OFFLOAD_SEND_COMPLETE
+title : NDIS_TCP_OFFLOAD_SEND_COMPLETE
+author : windows-driver-content
+description : An offload target calls the NdisTcpOffloadSendComplete function to complete one or more send requests that were made to the MiniportTcpOffloadSend function of the offload target.
+old-location : netvista\ndistcpoffloadsendcomplete.htm
+old-project : netvista
+ms.assetid : 1689b6f9-88f3-456f-9a7c-c6b4e76cb336
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisTcpOffloadSendComplete
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# NDIS_TCP_OFFLOAD_SEND_COMPLETE callback
 
-
-
-## -description
+# NDIS_TCP_OFFLOAD_SEND_COMPLETE callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 An offload target calls the 
@@ -46,28 +43,27 @@ An offload target calls the
   <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_send_handler.md">MiniportTcpOffloadSend</a> function of
   the offload target.
 
+## Syntax
 
+```
+NDIS_TCP_OFFLOAD_SEND_COMPLETE NdisTcpOffloadSendComplete;
 
-## -prototype
+void NdisTcpOffloadSendComplete(
+  IN NDIS_HANDLE NdisMiniportHandle,
+  IN PNET_BUFFER_LIST NetBufferList
+)
+{...}
+```
 
-````
-VOID NdisTcpOffloadSendComplete(
-  _In_ NDIS_HANDLE      NdisMiniportHandle,
-  _In_ PNET_BUFFER_LIST NetBufferList
-);
-````
+## Parameters
 
-
-## -parameters
-
-### -param NdisMiniportHandle [in]
+`NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to the 
      <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
@@ -77,11 +73,12 @@ A pointer to a
      MiniportTcpOffloadSend</a> function.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 To improve system performance, an offload target can create a linked list that contains 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures from multiple
     calls to the 
@@ -111,8 +108,20 @@ Call the
       that were transmitted by the offload target and that were acknowledged by the remote host. The 
       <i>FreeMdl</i> parameter is <b>NULL</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
@@ -139,4 +148,3 @@ Call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_SEND_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

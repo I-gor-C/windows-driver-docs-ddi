@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ClfsCreateLogFile
-title: ClfsCreateLogFile function
-author: windows-driver-content
-description: The ClfsCreateLogFile routine creates or opens a CLFS stream. If necessary, ClfsCreateLogFile also creates the underlying physical log that holds the stream's records.
-old-location: kernel\clfscreatelogfile.htm
-old-project: kernel
-ms.assetid: 297f7b03-efd0-4e9c-a758-1a3b5b89511d
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ClfsCreateLogFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ClfsCreateLogFile
-req.alt-loc: Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Clfs.lib
-req.dll: Clfs.sys
-req.irql: <= APC_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ClfsCreateLogFile
+title : ClfsCreateLogFile function
+author : windows-driver-content
+description : The ClfsCreateLogFile routine creates or opens a CLFS stream. If necessary, ClfsCreateLogFile also creates the underlying physical log that holds the stream's records.
+old-location : kernel\clfscreatelogfile.htm
+old-project : kernel
+ms.assetid : 297f7b03-efd0-4e9c-a758-1a3b5b89511d
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ClfsCreateLogFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ClfsCreateLogFile
+req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Clfs.lib
+req.dll : Clfs.sys
+req.irql : <= APC_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ClfsCreateLogFile function
-
-
-
-## -description
 The <b>ClfsCreateLogFile</b> routine creates or opens a CLFS stream. If necessary, <b>ClfsCreateLogFile</b> also creates the underlying physical log that holds the stream's records.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ClfsCreateLogFile(
@@ -62,15 +57,13 @@ NTSTATUS ClfsCreateLogFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param pplfoLog [out]
+`pplfoLog`
 
 A pointer to a variable that receives a pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents an open instance of the stream.
 
-
-### -param puszLogFileName [in]
+`puszLogFileName`
 
 A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that supplies the name of the stream or the underlying physical log. 
 
@@ -99,7 +92,7 @@ The following list gives some examples of valid names.
 </li>
 </ul>
 
-### -param fDesiredAccess [in]
+`fDesiredAccess`
 
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> that supplies the type of access the client will have (by using the pointer returned in <i>pplfoLog</i>) to the stream. If this parameter is zero, clients can query the stream for its attributes, but cannot read from or write to the stream. This parameter can be zero or any combination of the following flags:
 
@@ -139,10 +132,8 @@ The client can mark the stream for deletion.
 </td>
 </tr>
 </table>
- 
 
-
-### -param dwShareMode [in]
+`dwShareMode`
 
 The sharing mode of the stream, which can be zero (not shared) or any combination of the following flags:
 
@@ -182,15 +173,12 @@ Subsequent requests to open the stream with write access will succeed.
 </td>
 </tr>
 </table>
- 
 
+`psdLogFile`
 
-### -param psdLogFile [in, optional]
+A pointer to a <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that supplies security attributes for the stream. This parameter can be <b>NULL</b>.
 
-A pointer to a <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that supplies security attributes for the stream. This parameter can be <b>NULL</b>. 
-
-
-### -param fCreateDisposition [in]
+`fCreateDisposition`
 
 The action to take that depends on whether the stream already exists. This parameter must be set to one of the following values:
 
@@ -230,10 +218,8 @@ Open an existing stream. Create the stream if it does not already exist.
 </td>
 </tr>
 </table>
- 
 
-
-### -param fCreateOptions [in]
+`fCreateOptions`
 
 A set of flags that specify options to apply when creating or opening the stream. This parameter can be zero or a compatible combination of the following flags:
 
@@ -273,17 +259,14 @@ All operations on the stream are performed synchronously. Waits in the system th
 </td>
 </tr>
 </table>
- 
 
-
-### -param fFlagsAndAttributes [in]
+`fFlagsAndAttributes`
 
 A value that specifies whether the stream is opened for normal or read-only access. This parameter must be set to either 
 
 FILE_ATTRIBUTE_NORMAL or FILE_ATTRIBUTE_READONLY.
 
-
-### -param fLogOptionFlag [in]
+`fLogOptionFlag`
 
 A hint about the relationship between CLFS and the component creating or opening the stream. This parameter must be set to one of the following values:
 	 
@@ -344,32 +327,42 @@ The creating component is a file system minifilter driver that sends all of its 
 </td>
 </tr>
 </table>
- 
+
+`pvContext`
+
+A pointer to a context. The way the context is interpreted depends on the value passed to <i>fLogOptionsFlag</i>.
+
+`cbContext`
+
+The size, in bytes, of the context pointed to by <i>pvContext</i>. If <i>pvContext</i> is not <b>NULL</b>, this parameter must be greater than zero.
 
 
-### -param pvContext [in, optional]
+## Return Value
 
-A pointer to a context. The way the context is interpreted depends on the value passed to <i>fLogOptionsFlag</i>. 
-
-
-### -param cbContext [in]
-
-The size, in bytes, of the context pointed to by <i>pvContext</i>. If <i>pvContext</i> is not <b>NULL</b>, this parameter must be greater than zero. 
-
-
-## -returns
 <b>ClfsCreateLogFile</b> returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in Ntstatus.h.
 
+## Remarks
 
-## -remarks
 When you create a CLFS stream, it is backed by an underlying physical CLFS log. The underlying log can be either dedicated (backs only one stream) or multiplexed (backs several streams). A dedicated log cannot be converted to a multiplexed log, and a multiplexed log cannot be converted to a dedicated log.
 
 A physical CLFS log name does not include the .blf extension.
 
-For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. 
+For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-clfscloseandresetlogfile.md">ClfsCloseAndResetLogFile</a>
@@ -389,4 +382,3 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsCreateLogFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

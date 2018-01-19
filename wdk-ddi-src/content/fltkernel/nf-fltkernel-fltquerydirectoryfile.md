@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltQueryDirectoryFile
-title: FltQueryDirectoryFile function
-author: windows-driver-content
-description: The FltQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file object.
-old-location: ifsk\fltquerydirectoryfile.htm
-old-project: ifsk
-ms.assetid: d77dfcc7-a7a7-4027-9831-42b1b79738d0
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltQueryDirectoryFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltQueryDirectoryFile
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltQueryDirectoryFile
+title : FltQueryDirectoryFile function
+author : windows-driver-content
+description : The FltQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file object.
+old-location : ifsk\fltquerydirectoryfile.htm
+old-project : ifsk
+ms.assetid : d77dfcc7-a7a7-4027-9831-42b1b79738d0
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltQueryDirectoryFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltQueryDirectoryFile
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltQueryDirectoryFile function
-
-
-
-## -description
 The <b>FltQueryDirectoryFile</b> routine returns various kinds of information about files in the directory specified by a given file object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltQueryDirectoryFile(
@@ -59,30 +54,25 @@ NTSTATUS FltQueryDirectoryFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Instance [in]
+`Instance`
 
 Opaque pointer to the minifilter driver instance that initiates the I/O.
 
-
-### -param FileObject [in]
+`FileObject`
 
 Pointer to the file object that represents the directory to be scanned.
 
-
-### -param FileInformation [out]
+`FileInformation`
 
 Pointer to a buffer that receives the desired information about the file. The structure of the information returned in the buffer is defined by the <i>FileInformationClass</i> parameter.
 
-
-### -param Length [in]
+`Length`
 
 Size, in bytes, of the buffer pointed to by <i>FileInformation</i>. The caller should set this parameter according to the given <i>FileInformationClass</i>.
 
-
-### -param FileInformationClass [in]
+`FileInformationClass`
 
 Type of information to be returned about files in the directory. One of the values in the following table can be used.
 
@@ -172,36 +162,32 @@ Return a single FILE_REPARSE_POINT_INFORMATION structure for the directory.
 </td>
 </tr>
 </table>
- 
 
-
-### -param ReturnSingleEntry [in]
+`ReturnSingleEntry`
 
 Set to <b>TRUE</b> if only a single entry should be returned, <b>FALSE</b> otherwise. If this parameter is <b>TRUE</b>, <b>FltQueryDirectoryFile</b> returns only the first entry that is found.
 
-
-### -param FileName [in, optional]
+`FileName`
 
 Pointer to a caller-allocated Unicode string that contains the name of a file (or multiple files, if wildcards are used) within the directory specified by <i>FileObject</i>. This parameter is optional and can be <b>NULL</b>. 
 
 If <i>FileName</i> is not <b>NULL</b>, only files whose names match the <i>FileName</i> string are included in the directory scan. If <i>FileName</i> is <b>NULL</b>, all files are included. If <i>RestartScan</i> is <b>FALSE</b>, the value of <i>FileName</i> is ignored.
 
-
-### -param RestartScan [in]
+`RestartScan`
 
 Set to <b>TRUE</b> if the scan is to start at the first entry in the directory. Set to <b>FALSE</b> if resuming the scan from a previous call. The caller must set this parameter to <b>TRUE</b> when calling <b>FltQueryDirectoryFile </b>for the first time.
 
-
-### -param LengthReturned [out, optional]
+`LengthReturned`
 
 Receives the number of bytes actually written to the given <i>FileInformation</i> buffer.
 
 
-## -returns
+## Return Value
+
 <b>FltQueryDirectoryFile </b>returns STATUS_SUCCESS or an appropriate error status. Note that the set of error status values that can be returned is file-system-specific.
 
+## Remarks
 
-## -remarks
 <b>FltQueryDirectoryFile </b>returns information about files that are contained in the directory that is represented by <i>FileObject</i>. 
 
 The first call to <b>FltQueryDirectoryFile</b> determines the set of entries to be included in the directory scan for all subsequent calls, based on the values of <i>ReturnSingleEntry</i>, <i>FileName</i>, and <i>RestartScan</i>. If there is at least one matching entry, <b>FltQueryDirectoryFile</b> creates a FILE_<i>XXX</i>_INFORMATION structure (see the above table) for each entry in turn and stores the structure into the buffer. 
@@ -233,8 +219,20 @@ For information about other file information query routines, see <a href="https:
 
 Callers of <b>FltQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and with APCs enabled. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_both_dir_information.md">FILE_BOTH_DIR_INFORMATION</a>
@@ -278,4 +276,3 @@ Callers of <b>FltQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryDirectoryFile routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,79 +1,71 @@
 ---
-UID: NC:video.PVIDEO_HW_GET_CHILD_DESCRIPTOR
-title: PVIDEO_HW_GET_CHILD_DESCRIPTOR
-author: windows-driver-content
-description: HwVidGetVideoChildDescriptor returns a descriptor, a type, and an identification number for a particular child device of the display adapter.
-old-location: display\hwvidgetvideochilddescriptor.htm
-old-project: display
-ms.assetid: 175030c1-95d9-4a3b-976c-16e04852cb91
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwVidGetVideoChildDescriptor
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-req.product: Windows 10 or later.
+UID : NC:video.PVIDEO_HW_GET_CHILD_DESCRIPTOR
+title : PVIDEO_HW_GET_CHILD_DESCRIPTOR
+author : windows-driver-content
+description : HwVidGetVideoChildDescriptor returns a descriptor, a type, and an identification number for a particular child device of the display adapter.
+old-location : display\hwvidgetvideochilddescriptor.htm
+old-project : display
+ms.assetid : 175030c1-95d9-4a3b-976c-16e04852cb91
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwVidGetVideoChildDescriptor
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VHF_CONFIG, *PVHF_CONFIG
+req.product : Windows 10 or later.
 ---
 
-# PVIDEO_HW_GET_CHILD_DESCRIPTOR callback
 
-
-
-## -description
+# PVIDEO_HW_GET_CHILD_DESCRIPTOR callback function
 <i>HwVidGetVideoChildDescriptor</i> returns a descriptor, a type, and an identification number for a particular child device of the display adapter.
 
+## Syntax
 
+```
+PVIDEO_HW_GET_CHILD_DESCRIPTOR PvideoHwGetChildDescriptor;
 
-## -prototype
-
-````
-PVIDEO_HW_GET_CHILD_DESCRIPTOR HwVidGetVideoChildDescriptor;
-
-VP_STATUS HwVidGetVideoChildDescriptor(
-  _In_  PVOID                  HwDeviceExtension,
-  _In_  PVIDEO_CHILD_ENUM_INFO ChildEnumInfo,
-  _Out_ PVIDEO_CHILD_TYPE      VideoChildType,
-  _Out_ PUCHAR                 pChildDescriptor,
-  _Out_ PULONG                 UId,
-  _Out_ PULONG                 pUnused
+VP_STATUS PvideoHwGetChildDescriptor(
+  IN PVOID HwDeviceExtension,
+  IN PVIDEO_CHILD_ENUM_INFO ChildEnumInfo,
+  OUT PVIDEO_CHILD_TYPE VideoChildType,
+  OUT PUCHAR pChildDescriptor,
+  OUT PULONG UId,
+  OUT PULONG pUnused
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension [in]
+`HwDeviceExtension`
 
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
-
-### -param ChildEnumInfo [in]
+`ChildEnumInfo`
 
 Is a <a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO</a> structure that describes the device being enumerated.
 
-
-### -param VideoChildType [out]
+`VideoChildType`
 
 Pointer to a location in which the miniport driver returns the type of child being enumerated. This member can be one of the following from the VIDEO_CHILD_TYPE enumeration:
 
@@ -131,25 +123,22 @@ The miniport driver should return the device's PnP hardware identifier as a Unic
 </td>
 </tr>
 </table>
- 
 
-
-### -param pChildDescriptor [out]
+`pChildDescriptor`
 
 Pointer to a buffer in which the miniport driver can return data that identifies the device. The information returned depends on the child type specified in <i>VideoChildType</i>. The size of this buffer is specified by the video port driver in the <b>ChildDescriptorSize</b> member of <a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO</a>.
 
-
-### -param UId [out]
+`UId`
 
 Pointer to the location in which the miniport driver returns a unique 32-bit <a href="wdkgloss.d#wdkgloss.device_id#wdkgloss.device_id"><i>device ID</i></a> for this device. The miniport driver should set <i>UId</i> to be DISPLAY_ADAPTER_HW_ID when the device is the actual display adapter.
 
-
-### -param pUnused [out]
+`pUnused`
 
 Is unused and must be set to zero.
 
 
-## -returns
+## Return Value
+
 <i>HwVidGetVideoChildDescriptor</i> returns one of the following values:
 <dl>
 <dt><b>VIDEO_ENUM_INVALID_DEVICE</b></dt>
@@ -159,12 +148,10 @@ Is unused and must be set to zero.
 </dl>A new child device is enumerated. The video port will call <i>HwVidGetVideoChildDescriptor</i> again in this case.
 <dl>
 <dt><b>VIDEO_ENUM_NO_MORE_DEVICES</b></dt>
-</dl>The miniport driver could not enumerate the child device identified in <i>ChildEnumInfo</i>. Stop enumeration. There are no more devices to be enumerated. 
+</dl>The miniport driver could not enumerate the child device identified in <i>ChildEnumInfo</i>. Stop enumeration. There are no more devices to be enumerated.
 
- 
+## Remarks
 
-
-## -remarks
 By default, <i>HwVidGetVideoChildDescriptor</i> is not called until after the device is started by <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>. To allow the enumeration of a device's children before the device is started, set the <b>AllowEarlyEnumeration</b> member of <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>. When <b>AllowEarlyEnumeration</b> is set, <i>HwVidGetVideoChildDescriptor</i> can be called at any time.
 
 <i>HwVidGetVideoChildDescriptor</i> should do the following:
@@ -177,8 +164,20 @@ Write a 32-bit value in <i>UId</i> that uniquely identifies the child device bei
 
 <i>HwVidGetVideoChildDescriptor</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
@@ -201,4 +200,3 @@ Write a 32-bit value in <i>UId</i> that uniquely identifies the child device bei
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_GET_CHILD_DESCRIPTOR callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

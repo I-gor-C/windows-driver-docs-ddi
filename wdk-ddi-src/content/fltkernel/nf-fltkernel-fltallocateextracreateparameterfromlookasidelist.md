@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltAllocateExtraCreateParameterFromLookasideList
-title: FltAllocateExtraCreateParameterFromLookasideList function
-author: windows-driver-content
-description: The FltAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure and generates a pointer to that structure.
-old-location: ifsk\fltallocateextracreateparameterfromlookasidelist.htm
-old-project: ifsk
-ms.assetid: 33ab7ff3-d9b0-43ad-9971-62735f3240df
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltAllocateExtraCreateParameterFromLookasideList
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltAllocateExtraCreateParameterFromLookasideList
-req.alt-loc: FltMgr.lib,FltMgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltAllocateExtraCreateParameterFromLookasideList
+title : FltAllocateExtraCreateParameterFromLookasideList function
+author : windows-driver-content
+description : The FltAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure and generates a pointer to that structure.
+old-location : ifsk\fltallocateextracreateparameterfromlookasidelist.htm
+old-project : ifsk
+ms.assetid : 33ab7ff3-d9b0-43ad-9971-62735f3240df
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltAllocateExtraCreateParameterFromLookasideList
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltAllocateExtraCreateParameterFromLookasideList
+req.alt-loc : FltMgr.lib,FltMgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltAllocateExtraCreateParameterFromLookasideList function
-
-
-
-## -description
 The <b>FltAllocateExtraCreateParameterFromLookasideList </b>routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure and generates a pointer to that structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltAllocateExtraCreateParameterFromLookasideList(
@@ -57,47 +52,39 @@ NTSTATUS FltAllocateExtraCreateParameterFromLookasideList(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Filter [in]
+`Filter`
 
 Opaque filter pointer to the minifilter driver. This pointer uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded.
 
-
-### -param EcpType [in]
+`EcpType`
 
 Pointer to a GUID that indicates the type of the ECP context structure.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> for more information.
 
-
-### -param SizeOfContext [in]
+`SizeOfContext`
 
 The size, in bytes, of the ECP context structure.
 
-
-### -param Flags [in]
+`Flags`
 
 Defines pool allocation options.  If the value of the <i>SizeOfContext</i> parameter is larger than the size, in bytes, of the given lookaside list, the ECP context structure will be allocated from system pool instead of the lookaside list.  In this case, if the <i>Flags</i> parameter contains the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag value, system pool allocated by the routine will be charged against the current process' memory quota. See the <i>Flags</i> parameter of <a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameter.md">FltAllocateExtraCreateParameter</a> for more information.  In the more typical case when memory for the ECP context structure is allocated from the lookaside list, the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag is not used by the routine.
 
-
-### -param CleanupCallback [in, optional]
+`CleanupCallback`
 
 Optional pointer to a minifilter-defined cleanup callback routine of type <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>.  The cleanup callback routine is called when the ECP context structure is deleted.  Set this parameter to <b>NULL</b> if a cleanup callback routine is not applicable.
 
+`LookasideList`
 
-### -param LookasideList [in, out]
+Pointer to an initialized lookaside list in which to attempt to allocate pool from (for the ECP context structure).  To initialize the lookaside list, use the <a href="..\fltkernel\nf-fltkernel-fltinitextracreateparameterlookasidelist.md">FltInitExtraCreateParameterLookasideList</a> routine.
 
-
-      Pointer to an initialized lookaside list in which to attempt to allocate pool from (for the ECP context structure).  To initialize the lookaside list, use the <a href="..\fltkernel\nf-fltkernel-fltinitextracreateparameterlookasidelist.md">FltInitExtraCreateParameterLookasideList</a> routine.
-     
-
-
-### -param EcpContext [out]
+`EcpContext`
 
 Receives a pointer to the allocated ECP context structure.  If the routine failed to allocate sufficient pool for the ECP context structure, <i>EcpContext </i>will be <b>NULL</b> and the routine will return status code STATUS_INSUFFICIENT_RESOURCES.
 
 
-## -returns
+## Return Value
+
 The <b>FltAllocateExtraCreateParameterFromLookasideList</b> routine can return one of the following values:
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
@@ -106,10 +93,8 @@ The <b>FltAllocateExtraCreateParameterFromLookasideList</b> routine can return o
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The ECP context structure was successfully allocated.  In this case, a pointer to the allocated structure is returned by the <i>EcpContext </i>parameter.
 
- 
+## Remarks
 
-
-## -remarks
 This routine is available starting with Windows Vista. 
 
 The <b>FltAllocateExtraCreateParameterFromLookasideList</b> routine allocates memory pool for an ECP context structure from the given initialized paged or non-paged lookaside list.  However, if the size of the ECP context structure (as defined by the <i>SizeOfContext</i>  parameter) is larger than the lookaside list, the routine analogously allocates memory from paged or non-paged system pool.
@@ -122,8 +107,20 @@ Drivers must free all ECP context structures and lookaside lists they create bef
 
 For more information on using lookaside lists with drivers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565416">Using Lookaside Lists</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
@@ -173,4 +170,3 @@ For more information on using lookaside lists with drivers, see <a href="https:/
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateExtraCreateParameterFromLookasideList routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

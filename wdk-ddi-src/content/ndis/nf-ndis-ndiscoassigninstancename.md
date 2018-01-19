@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisCoAssignInstanceName
-title: NdisCoAssignInstanceName function
-author: windows-driver-content
-description: NdisCoAssignInstanceName assigns an instance name to a VC and causes NDIS to register a GUID (globally unique identifier) for the assigned name with Windows Management Instrumentation (WMI).
-old-location: netvista\ndiscoassigninstancename.htm
-old-project: netvista
-ms.assetid: 78a1808e-d244-4f23-bba1-c48a7b2e051b
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCoAssignInstanceName
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCoAssignInstanceName
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Connection_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCoAssignInstanceName
+title : NdisCoAssignInstanceName function
+author : windows-driver-content
+description : NdisCoAssignInstanceName assigns an instance name to a VC and causes NDIS to register a GUID (globally unique identifier) for the assigned name with Windows Management Instrumentation (WMI).
+old-location : netvista\ndiscoassigninstancename.htm
+old-project : netvista
+ms.assetid : 78a1808e-d244-4f23-bba1-c48a7b2e051b
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCoAssignInstanceName
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCoAssignInstanceName
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Connection_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCoAssignInstanceName function
-
-
-
-## -description
 <b>NdisCoAssignInstanceName</b> assigns an instance name to a VC and causes NDIS to register a GUID
   (globally unique identifier) for the assigned name with Windows Management Instrumentation (WMI).
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisCoAssignInstanceName(
@@ -54,10 +49,9 @@ NDIS_STATUS NdisCoAssignInstanceName(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisVcHandle [in]
+`NdisVcHandle`
 
 Specifies the handle to the VC being named. This handle was supplied by NDIS when the VC was
      originally created with 
@@ -65,8 +59,7 @@ Specifies the handle to the VC being named. This handle was supplied by NDIS whe
      preparation for making an outgoing call or by the call manager in preparation for dispatching an
      incoming call to the client.
 
-
-### -param BaseInstanceName [in]
+`BaseInstanceName`
 
 Pointer to an NDIS_STRING type that describes a caller-supplied Unicode string that specifies the
      base name of the VC. The base name can be any localizable Unicode string that uniquely identifies the VC
@@ -74,14 +67,14 @@ Pointer to an NDIS_STRING type that describes a caller-supplied Unicode string t
      later, NDIS defines the NDIS_STRING type as a 
      <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> type.
 
-
-### -param VcInstanceName [out, optional]
+`VcInstanceName`
 
 Pointer to a caller-allocated NDIS_STRING type in which this routine returns a Unicode string that
      specifies the NDIS-assigned instance name assigned for the VC.
 
 
-## -returns
+## Return Value
+
 <b>NdisCoAssignInstanceName</b> can return any of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -94,10 +87,8 @@ Pointer to a caller-allocated NDIS_STRING type in which this routine returns a U
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
 </dl>NDIS could not allocate a buffer for the instance name.
 
- 
+## Remarks
 
-
-## -remarks
 After initiating the setup of a VC with 
     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>, a call manager or
     connection-oriented client can name the VC with 
@@ -132,8 +123,20 @@ The caller is responsible for freeing the buffer containing the returned instanc
     buffer with 
     <a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Connection_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
@@ -159,4 +162,3 @@ The caller is responsible for freeing the buffer containing the returned instanc
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoAssignInstanceName function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

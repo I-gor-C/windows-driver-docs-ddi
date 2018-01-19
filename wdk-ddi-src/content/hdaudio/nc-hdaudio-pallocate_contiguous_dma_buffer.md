@@ -1,94 +1,85 @@
 ---
-UID: NC:hdaudio.PALLOCATE_CONTIGUOUS_DMA_BUFFER
-title: PALLOCATE_CONTIGUOUS_DMA_BUFFER
-author: windows-driver-content
-description: The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as:
-old-location: audio\allocatecontiguousdmabuffer.htm
-old-project: audio
-ms.assetid: 4538ce8e-fccd-4862-b226-a99fe578a5fd
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: hdaudio.h
-req.include-header: Hdaudio.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: AllocateContiguousDmaBuffer
-req.alt-loc: hdaudio.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
+UID : NC:hdaudio.PALLOCATE_CONTIGUOUS_DMA_BUFFER
+title : PALLOCATE_CONTIGUOUS_DMA_BUFFER
+author : windows-driver-content
+description : The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as:
+old-location : audio\allocatecontiguousdmabuffer.htm
+old-project : audio
+ms.assetid : 4538ce8e-fccd-4862-b226-a99fe578a5fd
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : hdaudio.h
+req.include-header : Hdaudio.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : AllocateContiguousDmaBuffer
+req.alt-loc : hdaudio.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
-# PALLOCATE_CONTIGUOUS_DMA_BUFFER callback
 
-
-
-## -description
+# PALLOCATE_CONTIGUOUS_DMA_BUFFER callback function
 The <code>AllocateContiguousDmaBuffer</code> routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.
 
 The function pointer type for an <code>AllocateContiguousDmaBuffer</code> routine is defined as:
 
+## Syntax
 
+```
+PALLOCATE_CONTIGUOUS_DMA_BUFFER PallocateContiguousDmaBuffer;
 
-## -prototype
-
-````
-PALLOCATE_CONTIGUOUS_DMA_BUFFER AllocateContiguousDmaBuffer;
-
-NTSTATUS AllocateContiguousDmaBuffer(
-  _In_  PVOID                      context,
-  _In_  HANDLE                     handle,
-        ULONG                      requestedBufferSize,
-  _Out_ PVOID                      *dataBuffer,
-  _Out_ PHDAUDIO_BUFFER_DESCRIPTOR *bdl
+NTSTATUS PallocateContiguousDmaBuffer(
+  PVOID _context,
+  HANDLE Handle,
+  ULONG RequestedBufferSize,
+  PVOID *DataBuffer,
+  PHDAUDIO_BUFFER_DESCRIPTOR *BdlBuffer
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`_context`
 
 
-## -parameters
 
-### -param context [in]
-
-Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
+`Handle`
 
 
-### -param handle [in]
 
-Handle identifying the DMA engine. This handle value was obtained from a previous call to <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a> or <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>.
-
-
-### -param requestedBufferSize 
-
-Specifies the requested buffer size in bytes.
+`RequestedBufferSize`
 
 
-### -param dataBuffer [out]
 
-Retrieves the data buffer. This parameter points to a caller-allocated PVOID variable into which the routine writes the system virtual address of the data buffer.
-
-
-### -param bdl [out]
-
-Retrieves the buffer descriptor list (BDL). This parameter points to a caller-allocated PVOID variable into which the routine writes the system virtual address of the BDL. The BDL allocation size is exactly one memory page and the BDL begins on a page boundary.
+`*DataBuffer`
 
 
-## -returns
+
+`*BdlBuffer`
+
+
+
+
+## Return Value
+
 <code>AllocateContiguousDmaBuffer</code> returns STATUS_SUCCESS if the call succeeds. Otherwise, the routine returns an appropriate error code. The following table shows some of the possible return status codes.
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
@@ -109,10 +100,8 @@ Retrieves the buffer descriptor list (BDL). This parameter points to a caller-al
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>Indicates that the stream is not in the reset state or that a buffer is already allocated for the DMA engine.
 
- 
+## Remarks
 
-
-## -remarks
 The <code>AllocateContiguousDmaBuffer</code> routine is used in conjunction with the <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a> and <a href="..\hdaudio\nc-hdaudio-pfree_contiguous_dma_buffer.md">FreeContiguousDmaBuffer</a> routines. These three routines are available only in the HDAUDIO_BUS_INTERFACE_BDL version of the HD Audio DDI. This DDI does not include the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a> and <a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer.md">FreeDmaBuffer</a> routines, which are never used in conjunction with <code>AllocateContiguousDmaBuffer</code>, <b>SetupDmaEngineWithBdl</b>, and <b>FreeContiguousDmaBuffer</b>. Unlike <b>SetupDmaEngineWithBdl</b>, which configures the DMA engine to use a previously allocated DMA buffer, <code>AllocateDmaBuffer</code> both allocates a DMA buffer and configures the DMA engine to use the buffer. For more information, see <a href="https://msdn.microsoft.com/e24071d3-9021-40c0-907a-91ada8a1306b">Differences between the Two DDI Versions</a>.
 
 <code>AllocateContiguousDmaBuffer</code> allocates a data buffer for the specified DMA engine. It also allocates a page of memory for the BDL. Depending on the host processor architecture, a typical page size might be 4,096 or 8,192 bytes. The data buffer consists of a single, contiguous block of physical memory.
@@ -133,8 +122,20 @@ Any previously allocated DMA buffer has not been freed (by calling <b>FreeContig
 
 The stream is in a state other than reset.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hdaudio.h (include Hdaudio.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
@@ -166,4 +167,3 @@ The stream is in a state other than reset.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PALLOCATE_CONTIGUOUS_DMA_BUFFER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

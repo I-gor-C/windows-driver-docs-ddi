@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisAcquireReadWriteLock
-title: NdisAcquireReadWriteLock function
-author: windows-driver-content
-description: The NdisAcquireReadWriteLock function acquires a lock that the caller uses for either write or read access to the resources that are shared among driver threads.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead of NdisAcquireReadWriteLock.
-old-location: netvista\ndisacquirereadwritelock.htm
-old-project: netvista
-ms.assetid: 563b4bff-36ee-4597-ae6e-7d3811592549
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAcquireReadWriteLock
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAcquireReadWriteLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAcquireReadWriteLock (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAcquireReadWriteLock
-req.alt-loc: ndis.sys
-req.ddi-compliance: Irql_Synch_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: Ndis.sys
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAcquireReadWriteLock
+title : NdisAcquireReadWriteLock function
+author : windows-driver-content
+description : The NdisAcquireReadWriteLock function acquires a lock that the caller uses for either write or read access to the resources that are shared among driver threads.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead of NdisAcquireReadWriteLock.
+old-location : netvista\ndisacquirereadwritelock.htm
+old-project : netvista
+ms.assetid : 563b4bff-36ee-4597-ae6e-7d3811592549
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAcquireReadWriteLock
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAcquireReadWriteLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAcquireReadWriteLock (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAcquireReadWriteLock
+req.alt-loc : ndis.sys
+req.ddi-compliance : Irql_Synch_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : Ndis.sys
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAcquireReadWriteLock function
-
-
-
-## -description
 The 
   <b>NdisAcquireReadWriteLock</b> function acquires a lock that the caller uses for either write or read
   access to the resources that are shared among driver threads.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisAcquireReadWriteLock(
@@ -55,34 +50,29 @@ VOID NdisAcquireReadWriteLock(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Lock [in, out]
+`Lock`
 
 A pointer to an opaque variable that represents a lock. The caller can use this lock to access
      shared resources.
 
-
-### -param fWrite [in]
+`fWrite`
 
 A Boolean value. If the value is <b>TRUE</b>, this function is provided with write access to shared
      resources; if the value is <b>FALSE</b>, this function is provided with read access.
 
-
-### -param LockState [out]
-
-A pointer to an opaque variable that tracks the state of the lock. This variable exists in the
-     interval between the time the caller acquires and releases the lock. The caller must use a different
-     variable of type <a href="..\ndis\ns-ndis-_lock_state.md">LOCK_STATE</a> for each attempt that it makes to acquire the lock from the same non-ISR
-     driver thread.
+`_Requires_lock_not_held_`
 
 
-## -returns
+
+
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 The driver must initialize a variable of type <a href="..\ndis\ns-ndis-_ndis_rw_lock.md">NDIS_RW_LOCK</a> using the 
     <a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">
     NdisInitializeReadWriteLock</a> function before the driver calls any other 
@@ -123,11 +113,23 @@ The driver cannot use a lock to protect resources from read or write access that
     <b>NdisAcquireReadWriteLock</b> explicitly raises the IRQL to IRQL = <b>DISPATCH_LEVEL</b>.
 
 For more information about acquiring and releasing NDIS spin locks, see 
-    <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/synchronization-and-notification-in-network-drivers">Synchronization
     and Notification in Network Drivers</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Synch_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
@@ -161,4 +163,3 @@ For more information about acquiring and releasing NDIS spin locks, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAcquireReadWriteLock function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

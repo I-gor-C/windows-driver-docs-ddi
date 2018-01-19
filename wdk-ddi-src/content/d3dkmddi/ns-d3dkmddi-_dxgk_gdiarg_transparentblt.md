@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmddi._DXGK_GDIARG_TRANSPARENTBLT
-title: _DXGK_GDIARG_TRANSPARENTBLT
-author: windows-driver-content
-description: The DXGK_GDIARG_TRANSPARENTBLT structure describes the characteristics of a GDI hardware-accelerated bit-block transfer (bitblt) operation with transparency.
-old-location: display\dxgk_gdiarg_transparentblt.htm
-old-project: display
-ms.assetid: 2536fafc-3b62-42a6-8b53-60fa8d61d5a9
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_GDIARG_TRANSPARENTBLT, DXGK_GDIARG_TRANSPARENTBLT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXGK_GDIARG_TRANSPARENTBLT
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_GDIARG_TRANSPARENTBLT
+UID : NS:d3dkmddi._DXGK_GDIARG_TRANSPARENTBLT
+title : _DXGK_GDIARG_TRANSPARENTBLT
+author : windows-driver-content
+description : The DXGK_GDIARG_TRANSPARENTBLT structure describes the characteristics of a GDI hardware-accelerated bit-block transfer (bitblt) operation with transparency.
+old-location : display\dxgk_gdiarg_transparentblt.htm
+old-project : display
+ms.assetid : 2536fafc-3b62-42a6-8b53-60fa8d61d5a9
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_GDIARG_TRANSPARENTBLT, DXGK_GDIARG_TRANSPARENTBLT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXGK_GDIARG_TRANSPARENTBLT
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DXGK_GDIARG_TRANSPARENTBLT
 ---
 
 # _DXGK_GDIARG_TRANSPARENTBLT structure
-
-
-
-## -description
 The DXGK_GDIARG_TRANSPARENTBLT structure describes the characteristics of a GDI hardware-accelerated bit-block transfer (bitblt) operation with transparency.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
   RECT                      SrcRect;
@@ -59,76 +52,53 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
 } DXGK_GDIARG_TRANSPARENTBLT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Color`
 
-### -field SrcRect
+            [in] Specifies the physical transparent color in the source surface, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration). Any pixels on the source surface that match the transparent color that is specified by <b>Color</b> are not copied.
+        
+            `DstAllocationIndex`
 
-[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. 
+            [in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>DstRect</b> destination rectangle.
+        
+            `DstRect`
 
-For more information, see the Remarks section.
-
-
-### -field DstRect
-
-[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
+            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
 
 The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the destination surface, but sub-rectangles cannot. Additionally, all sub-rectangles are guaranteed to fit inside the destination surface. Sub-rectangles can be constrained further by a bounding rectangle that is smaller than the destination rectangle. 
 
 For more information, see the Remarks section.
+        
+            `Flags`
 
+            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkm_transparentbltflags.md">D3DKM_TRANSPARENTBLTFLAGS</a> structure that specifies the display adapter's hardware-accelerated transparent bit-block transfer capabilities.
+        
+            `NumSubRects`
 
-### -field SrcAllocationIndex
+            [in] The number of sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
+        
+            `pSubRects`
 
+            [in] A pointer to the sub-rectangles in the destination surface space.
+        
+            `SrcAllocationIndex`
 
-      [in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>SrcRect</b> source rectangle.
-     
+            [in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>SrcRect</b> source rectangle.
+        
+            `SrcPitch`
 
+            [in] The pitch of the source surface, in bytes.
+        
+            `SrcRect`
 
-### -field DstAllocationIndex
+            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. 
 
+For more information, see the Remarks section.
 
-      [in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>DstRect</b> destination rectangle.
-     
-
-
-### -field Color
-
-
-      [in] Specifies the physical transparent color in the source surface, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration). Any pixels on the source surface that match the transparent color that is specified by <b>Color</b> are not copied.
-     
-
-
-### -field NumSubRects
-
-
-      [in] The number of sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
-     
-
-
-### -field pSubRects
-
-
-      [in] A pointer to the sub-rectangles in the destination surface space.
-     
-
-
-### -field Flags
-
-
-      [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkm_transparentbltflags.md">D3DKM_TRANSPARENTBLTFLAGS</a> structure that specifies the display adapter's hardware-accelerated transparent bit-block transfer capabilities.
-     
-
-
-### -field SrcPitch
-
-
-      [in] The pitch of the source surface, in bytes.
-     
-
-
-## -remarks
-The rectangles that are specified by the <b>SrcRect</b> and <b>DstRect</b> members bound all sub-rectangles in the source and destination surface spaces, respectively. The Microsoft DirectX graphics kernel subsystem will never request a transparent bit-block transfer if the source and destination rectangles overlap on the same surface.
+    ## Remarks
+        The rectangles that are specified by the <b>SrcRect</b> and <b>DstRect</b> members bound all sub-rectangles in the source and destination surface spaces, respectively. The Microsoft DirectX graphics kernel subsystem will never request a transparent bit-block transfer if the source and destination rectangles overlap on the same surface.
 
 To complete the transparent bit-block transfer operation, the color of each pixel in <b>DstRect</b> should be computed by using the following formula:
 
@@ -140,9 +110,17 @@ For more information about transparent bit-block transfers, see <a href="https:/
 
 When sub-rectangles are transformed to the source surface space, the result is guaranteed to be within the source surface. The transformation of a sub-rectangle's coordinates in the destination surface to coordinates  in the source surface is defined by the following formulas, where
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkm_transparentbltflags.md">D3DKM_TRANSPARENTBLTFLAGS</a>
 </dt>
@@ -158,4 +136,3 @@ When sub-rectangles are transformed to the source surface space, the result is g
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_GDIARG_TRANSPARENTBLT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

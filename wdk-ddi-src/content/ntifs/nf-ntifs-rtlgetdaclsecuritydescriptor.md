@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.RtlGetDaclSecurityDescriptor
-title: RtlGetDaclSecurityDescriptor function
-author: windows-driver-content
-description: The RtlGetDaclSecurityDescriptor routine returns a pointer to the discretionary ACL (DACL) for a security descriptor.
-old-location: ifsk\rtlgetdaclsecuritydescriptor.htm
-old-project: ifsk
-ms.assetid: 23184d88-2c84-4fba-9d17-c4014d0eaea5
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlGetDaclSecurityDescriptor
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlGetDaclSecurityDescriptor
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.RtlGetDaclSecurityDescriptor
+title : RtlGetDaclSecurityDescriptor function
+author : windows-driver-content
+description : The RtlGetDaclSecurityDescriptor routine returns a pointer to the discretionary ACL (DACL) for a security descriptor.
+old-location : ifsk\rtlgetdaclsecuritydescriptor.htm
+old-project : ifsk
+ms.assetid : 23184d88-2c84-4fba-9d17-c4014d0eaea5
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlGetDaclSecurityDescriptor
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlGetDaclSecurityDescriptor
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # RtlGetDaclSecurityDescriptor function
-
-
-
-## -description
 The <b>RtlGetDaclSecurityDescriptor</b> routine returns a pointer to the discretionary ACL (DACL) for a security descriptor.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RtlGetDaclSecurityDescriptor(
@@ -54,45 +49,52 @@ NTSTATUS RtlGetDaclSecurityDescriptor(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param SecurityDescriptor [in]
+`SecurityDescriptor`
 
 Pointer to the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> whose DACL is to be returned.
 
-
-### -param DaclPresent [out]
+`DaclPresent`
 
 Pointer to a Boolean variable that indicates the presence of a DACL in the specified security descriptor. If this variable receives <b>TRUE</b>, the security descriptor contains a DACL, and the remaining output parameters receive valid values. If this variable receives <b>FALSE</b>, the security descriptor does not contain a DACL, and the remaining output parameters do not receive valid values.
 
-
-### -param Dacl [out]
+`Dacl`
 
 Pointer to a variable that receives the address of the DACL for the security descriptor. If the security descriptor does not have a DACL, this variable does not receive a value. If the security descriptor has a <b>NULL</b> DACL, this variable receives <b>NULL</b>. A <b>NULL</b> DACL implicitly allows all access to an object.
 
+`DaclDefaulted`
 
-### -param DaclDefaulted [out]
-
-Pointer to a Boolean variable that receives the value of the SE_DACL_DEFAULTED flag in the security descriptor's SECURITY_DESCRIPTOR_CONTROL structure. If this flag is <b>TRUE</b>, the DACL was retrieved by a default mechanism. If it is <b>FALSE</b>, the DACL was explicitly specified by a user. This value is valid only if <i>*Dacl</i> receives a non-<b>NULL</b> value. 
+Pointer to a Boolean variable that receives the value of the SE_DACL_DEFAULTED flag in the security descriptor's SECURITY_DESCRIPTOR_CONTROL structure. If this flag is <b>TRUE</b>, the DACL was retrieved by a default mechanism. If it is <b>FALSE</b>, the DACL was explicitly specified by a user. This value is valid only if <i>*Dacl</i> receives a non-<b>NULL</b> value.
 
 
-## -returns
+## Return Value
+
 <b>RtlGetDaclSecurityDescriptor</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following:
 <dl>
 <dt><b>STATUS_UNKNOWN_REVISION</b></dt>
 </dl>The security descriptor's revision level is unknown or is not supported. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 A value of <b>TRUE</b> for <i>*DaclPresent</i> does not mean that <i>*Dacl</i> is non-<b>NULL</b>. That is, <i>*DaclPresent</i> can be <b>TRUE</b> while <i>*Dacl</i> is <b>NULL</b>, meaning that a <b>NULL</b> DACL is in effect. A <b>NULL</b> DACL implicitly allows all access to an object and is not the same as an empty DACL. An empty DACL permits no access to an object. 
 
-For more information about security and access control, see the documentation for these topics in the Microsoft Windows SDK. 
+For more information about security and access control, see the documentation for these topics in the Microsoft Windows SDK.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
@@ -118,4 +120,3 @@ For more information about security and access control, see the documentation fo
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetDaclSecurityDescriptor routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,52 +1,43 @@
 ---
-UID: NE:d3dkmddi._DXGK_MEMORY_TRANSFER_DIRECTION
-title: _DXGK_MEMORY_TRANSFER_DIRECTION
-author: windows-driver-content
-description: DXGK_MEMORY_TRANSFER_DIRECTION is used as part of an allocation transfer operation to specify the direction of the transfer.
-old-location: display\dxgk_memory_transfer_direction.htm
-old-project: display
-ms.assetid: A45411DF-AD08-4349-A134-091343E7989E
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_MEMORY_TRANSFER_DIRECTION, DXGK_MEMORY_TRANSFER_DIRECTION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXGK_MEMORY_TRANSFER_DIRECTION
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_MEMORY_TRANSFER_DIRECTION
+UID : NE:d3dkmddi._DXGK_MEMORY_TRANSFER_DIRECTION
+title : _DXGK_MEMORY_TRANSFER_DIRECTION
+author : windows-driver-content
+description : DXGK_MEMORY_TRANSFER_DIRECTION is used as part of an allocation transfer operation to specify the direction of the transfer.
+old-location : display\dxgk_memory_transfer_direction.htm
+old-project : display
+ms.assetid : A45411DF-AD08-4349-A134-091343E7989E
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_MEMORY_TRANSFER_DIRECTION, DXGK_MEMORY_TRANSFER_DIRECTION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXGK_MEMORY_TRANSFER_DIRECTION
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DXGK_MEMORY_TRANSFER_DIRECTION
 ---
 
-# _DXGK_MEMORY_TRANSFER_DIRECTION enumeration
-
-
-
-## -description
+# _DXGK_MEMORY_TRANSFER_DIRECTION Enumeration
 <b>DXGK_MEMORY_TRANSFER_DIRECTION</b> is used as part of an allocation transfer operation to specify the direction of the transfer.
 
-
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _DXGK_MEMORY_TRANSFER_DIRECTION { 
   DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM  = 0,
@@ -55,22 +46,31 @@ typedef enum _DXGK_MEMORY_TRANSFER_DIRECTION {
 } DXGK_MEMORY_TRANSFER_DIRECTION;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM
+<tr>
+<td>DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL</td>
+<td>Transfer from local GPU memory to local GPU memory.</td>
+</tr>
 
-Transfer from local GPU memory to system memory.
+<tr>
+<td>DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM</td>
+<td>Transfer from local GPU memory to system memory.</td>
+</tr>
+
+<tr>
+<td>DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL</td>
+<td>Transfer from system memory to local GPU memory.</td>
+</tr>
+</table>
 
 
-### -field DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL
-
-Transfer from system memory to local GPU memory.
-
-
-### -field DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL
-
-Transfer from local GPU memory to local GPU memory.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |

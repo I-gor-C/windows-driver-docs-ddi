@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisAllocateNetBufferMdlAndData
-title: NdisAllocateNetBufferMdlAndData function
-author: windows-driver-content
-description: NDIS drivers call the NdisAllocateNetBufferMdlAndData function to allocate a NET_BUFFER structure along with the associated MDL and data.
-old-location: netvista\ndisallocatenetbuffermdlanddata.htm
-old-project: netvista
-ms.assetid: cfac9061-a685-4e67-aaa2-ca43b7e36cfa
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAllocateNetBufferMdlAndData
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAllocateNetBufferMdlAndData
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_NetBuffer_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAllocateNetBufferMdlAndData
+title : NdisAllocateNetBufferMdlAndData function
+author : windows-driver-content
+description : NDIS drivers call the NdisAllocateNetBufferMdlAndData function to allocate a NET_BUFFER structure along with the associated MDL and data.
+old-location : netvista\ndisallocatenetbuffermdlanddata.htm
+old-project : netvista
+ms.assetid : cfac9061-a685-4e67-aaa2-ca43b7e36cfa
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAllocateNetBufferMdlAndData
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAllocateNetBufferMdlAndData
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_NetBuffer_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAllocateNetBufferMdlAndData function
-
-
-
-## -description
 NDIS drivers call the 
   <b>NdisAllocateNetBufferMdlAndData</b> function to allocate a NET_BUFFER structure along with the associated
   MDL and data.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PNET_BUFFER NdisAllocateNetBufferMdlAndData(
@@ -53,21 +48,21 @@ PNET_BUFFER NdisAllocateNetBufferMdlAndData(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param PoolHandle [in]
+`PoolHandle`
 
 A NET_BUFFER structure pool handle that was previously returned from a call to the 
      <b>NdisAllocateNetBufferPool</b> function.
 
 
-## -returns
+## Return Value
+
 <b>NdisAllocateNetBufferMdlAndData</b> returns a pointer to the NET_BUFFER structure that NDIS allocated.
      If the allocation was unsuccessful, this pointer is <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 The caller must call the 
     <b>NdisAllocateNetBufferPool</b> function and specify the maximum size of the data buffers. Given this
     value, NDIS can preallocate buffers for the caller.
@@ -86,8 +81,20 @@ NDIS uses the
 To free the NET_BUFFER and associated information, call the 
     <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
@@ -104,4 +111,3 @@ To free the NET_BUFFER and associated information, call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferMdlAndData function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

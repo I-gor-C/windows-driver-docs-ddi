@@ -1,80 +1,74 @@
 ---
-UID: NC:dispmprt.DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
-title: DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
-author: windows-driver-content
-description: Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to obtain the display information from the current power-on self-test (POST) display device or the previously running WDDM driver.
-old-location: display\DxgkCbAcquirePostDisplayOwnership.htm
-old-project: display
-ms.assetid: 6454adb3-c958-467b-acbc-b8937b98cd57
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: dispmprt.h
-req.include-header: Dispmprt.h
-req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkCbAcquirePostDisplayOwnership
-req.alt-loc: dispmprt.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID : NC:dispmprt.DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
+title : DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
+author : windows-driver-content
+description : Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to obtain the display information from the current power-on self-test (POST) display device or the previously running WDDM driver.
+old-location : display\DxgkCbAcquirePostDisplayOwnership.htm
+old-project : display
+ms.assetid : 6454adb3-c958-467b-acbc-b8937b98cd57
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : dispmprt.h
+req.include-header : Dispmprt.h
+req.target-type : Desktop
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkCbAcquirePostDisplayOwnership
+req.alt-loc : dispmprt.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
-# DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP callback
 
-
-
-## -description
+# DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP callback function
 Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to obtain the display information from the current  power-on self-test (POST) display device or the previously running WDDM driver.
 
  The driver must use this display information to optimize the initial mode change request after the display device has been started.
 
+## Syntax
 
+```
+DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP DxgkcbAcquirePostDisplayOwnership;
 
-## -prototype
-
-````
-DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP DxgkCbAcquirePostDisplayOwnership;
-
-NTSTATUS APIENTRY* DxgkCbAcquirePostDisplayOwnership(
-  _In_  HANDLE                   DeviceHandle,
-  _Out_ DXGK_DISPLAY_INFORMATION *DisplayInfo
+NTSTATUS DxgkcbAcquirePostDisplayOwnership(
+  HANDLE DeviceHandle,
+  PDXGK_DISPLAY_INFORMATION DisplayInfo
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param DeviceHandle [in]
+`DeviceHandle`
 
 A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>.
 
-
-### -param DisplayInfo [out]
+`DisplayInfo`
 
 A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_display_information.md">DXGK_DISPLAY_INFORMATION</a> structure that is allocated by the display miniport driver. If <i>DxgkCbAcquirePostDisplayOwnership</i> returns STATUS_SUCCESS, this structure contains display information for the current display device that is used for POST operations.
 
 
-## -returns
+## Return Value
+
 <i>DxgkCbAcquirePostDisplayOwnership</i> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h.
 
+## Remarks
 
-## -remarks
 The <i>DisplayInfo</i>-&gt;<b>ColorFormat</b> member must include a bitwise-OR combination of the following two formats:
 
 If the operating system reports back the <b>D3DDDIFMT_R8G8B8</b> format, the display miniport driver should ignore it.
@@ -95,8 +89,20 @@ The display miniport driver must only call the <i>DxgkCbAcquirePostDisplayOwners
 
 <i>DxgkCbAcquirePostDisplayOwnership</i> may return a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_display_information.md">DXGK_DISPLAY_INFORMATION</a> structure with the <b>Width</b> member set to zero. This indicates that either the  current display device is not capable of POST operations or the operating system does not have the current display information for the current POST device.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dispmprt.h (include Dispmprt.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_display_information.md">DXGK_DISPLAY_INFORMATION</a>
@@ -122,4 +128,3 @@ The display miniport driver must only call the <i>DxgkCbAcquirePostDisplayOwners
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

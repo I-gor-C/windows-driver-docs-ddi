@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisAllocateFragmentNetBufferList
-title: NdisAllocateFragmentNetBufferList function
-author: windows-driver-content
-description: Call the NdisAllocateFragmentNetBufferList function to create a new fragmented NET_BUFFER_LIST structure based upon the data in an existing NET_BUFFER_LIST structure.
-old-location: netvista\ndisallocatefragmentnetbufferlist.htm
-old-project: netvista
-ms.assetid: 40b6596b-7ab8-4336-8c38-21b9f32d8558
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAllocateFragmentNetBufferList
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAllocateFragmentNetBufferList
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_NetBuffer_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAllocateFragmentNetBufferList
+title : NdisAllocateFragmentNetBufferList function
+author : windows-driver-content
+description : Call the NdisAllocateFragmentNetBufferList function to create a new fragmented NET_BUFFER_LIST structure based upon the data in an existing NET_BUFFER_LIST structure.
+old-location : netvista\ndisallocatefragmentnetbufferlist.htm
+old-project : netvista
+ms.assetid : 40b6596b-7ab8-4336-8c38-21b9f32d8558
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAllocateFragmentNetBufferList
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAllocateFragmentNetBufferList
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_NetBuffer_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAllocateFragmentNetBufferList function
-
-
-
-## -description
 Call the 
   <b>NdisAllocateFragmentNetBufferList</b> function to create a new fragmented 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure based upon the data
   in an existing NET_BUFFER_LIST structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
@@ -61,49 +56,38 @@ PNET_BUFFER_LIST NdisAllocateFragmentNetBufferList(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param OriginalNetBufferList [in]
+`OriginalNetBufferList`
 
 A pointer to an existing NET_BUFFER_LIST structure.
 
-
-### -param NetBufferListPoolHandle [in, optional]
-
-A handle that was obtained from a call to the 
-     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
-     NdisAllocateNetBufferListPool</a> function.
+`NetBufferListPool`
 
 
-### -param NetBufferPoolHandle [in, optional]
 
-A NET_BUFFER structure pool handle that was previously returned from a call to 
-     <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
-     NdisAllocateNetBufferPool</a>.
+`NetBufferPool`
 
 
-### -param StartOffset [in]
+
+`StartOffset`
 
 An additional byte offset from the start of the data in each 
      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. This offset is in addition
      to the value of the 
      <b>DataOffset</b> member specified in each NET_BUFFER structure.
 
-
-### -param MaximumLength [in]
+`MaximumLength`
 
 The maximum length, in bytes, for each fragment in the new NET_BUFFER_LIST structure. Each
      fragment is described by a NET_BUFFER structure.
 
-
-### -param DataOffsetDelta [in]
+`DataOffsetDelta`
 
 The additional amount of 
      <i>used data space</i> that NDIS should make available in the new NET_BUFFER structures.
 
-
-### -param DataBackFill [in]
+`DataBackFill`
 
 The amount of data space in addition to the value of the 
      <i>DataOffsetDelta</i> parameter to allocate if allocation is necessary. If NDIS must allocate memory to
@@ -111,19 +95,19 @@ The amount of data space in addition to the value of the
      <i>DataOffsetDelta</i>, it should also allocate the additional space that 
      <i>DataBackFill</i> specifies.
 
-
-### -param AllocateFragmentFlags [in]
+`AllocateFragmentFlags`
 
 NDIS flags that can be combined with an OR operation. Set this parameter to zero. There are
      currently no flags defined for this function.
 
 
-## -returns
+## Return Value
+
 <b>NdisAllocateFragmentNetBufferList</b> returns a pointer to a new fragmented NET_BUFFER_LIST structure.
      If the allocation failed, the return value is <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 <b>NdisAllocateFragmentNetBufferList</b> allocates and initializes a new fragment 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure and 
     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures that describe the same data
@@ -174,8 +158,20 @@ Call the
     NET_BUFFER structures and MDL chains that were previously allocated by calling 
     <b>NdisAllocateFragmentNetBufferList</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
@@ -203,4 +199,3 @@ Call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateFragmentNetBufferList function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

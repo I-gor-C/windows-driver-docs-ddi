@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddk._TXN_PARAMETER_BLOCK
-title: _TXN_PARAMETER_BLOCK
-author: windows-driver-content
-description: The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation.
-old-location: ifsk\txn_parameter_block.htm
-old-project: ifsk
-ms.assetid: 973f440a-ba17-466a-a9f4-f21c07e854d8
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _TXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddk.h
-req.include-header: Ntddk.h, Ntifs.h, FltKernel.h
-req.target-type: Windows
-req.target-min-winverclnt: The TXN_PARAMETER_BLOCK structure is available on Windows Vista and later Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: TXN_PARAMETER_BLOCK
-req.alt-loc: Ntddk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK
+UID : NS:ntddk._TXN_PARAMETER_BLOCK
+title : _TXN_PARAMETER_BLOCK
+author : windows-driver-content
+description : The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation.
+old-location : ifsk\txn_parameter_block.htm
+old-project : ifsk
+ms.assetid : 973f440a-ba17-466a-a9f4-f21c07e854d8
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddk.h
+req.include-header : Ntddk.h, Ntifs.h, FltKernel.h
+req.target-type : Windows
+req.target-min-winverclnt : The TXN_PARAMETER_BLOCK structure is available on Windows Vista and later Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : TXN_PARAMETER_BLOCK
+req.alt-loc : Ntddk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK"
 ---
 
 # _TXN_PARAMETER_BLOCK structure
+The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation.
 
-
-
-## -description
-The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _TXN_PARAMETER_BLOCK {
   USHORT Length;
@@ -53,26 +46,23 @@ typedef struct _TXN_PARAMETER_BLOCK {
 } TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Length`
 
-### -field Length
+            The size, in bytes, of the TXN_PARAMETER_BLOCK structure.
+        
+            `TransactionObject`
 
-The size, in bytes, of the TXN_PARAMETER_BLOCK structure. 
+            An opaque pointer to the transaction object for the transaction.
+        
+            `TxFsContext`
 
+            The miniversion ID for the file.
 
-### -field TxFsContext
-
-The miniversion ID for the file. 
-
-
-### -field TransactionObject
-
-An opaque pointer to the transaction object for the transaction. 
-
-
-## -remarks
-A <i>miniversion</i> is a version of a file that a transacted writer creates during a transaction. (A <i>transacted writer</i> is a transacted file handle opened with any permission that is not part of generic read access, but is part of generic write access.) 
+    ## Remarks
+        A <i>miniversion</i> is a version of a file that a transacted writer creates during a transaction. (A <i>transacted writer</i> is a transacted file handle opened with any permission that is not part of generic read access, but is part of generic write access.) 
 
 If a specific miniversion number for the file is not provided, the <b>TxFsContext</b> member must be set to TXF_MINIVERSION_DEFAULT_VIEW.
 
@@ -82,11 +72,19 @@ A miniversion exists only as a point-in-time view of a file and has not yet been
 
 All miniversions created in a transaction go away when the transaction ends.  Afterwards, the file can no longer be opened by using the miniversion IDs.
 
-The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure. 
+The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h, Ntifs.h, FltKernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a>
 </dt>
@@ -100,4 +98,3 @@ The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransacti
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TXN_PARAMETER_BLOCK structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

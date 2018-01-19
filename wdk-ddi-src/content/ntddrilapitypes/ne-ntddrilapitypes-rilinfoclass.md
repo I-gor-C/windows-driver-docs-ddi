@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILINFOCLASS
-title: RILINFOCLASS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilinfoclass.htm
-old-project: netvista
-ms.assetid: 2e4bd8bd-ce7e-4eb4-ac0d-68fb8890eb26
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILINFOCLASS, RILINFOCLASS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILINFOCLASS
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILINFOCLASS
+UID : NE:ntddrilapitypes.RILINFOCLASS
+title : RILINFOCLASS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilinfoclass.htm
+old-project : netvista
+ms.assetid : 2e4bd8bd-ce7e-4eb4-ac0d-68fb8890eb26
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILINFOCLASS, RILINFOCLASS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILINFOCLASS
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILINFOCLASS
 ---
 
-# RILINFOCLASS enumeration
-
-
-
-## -description
+# RILINFOCLASS Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILINFOCLASS { 
   RIL_INFOCLASS_VOICE,
@@ -59,34 +52,61 @@ typedef enum _RILINFOCLASS {
 } RILINFOCLASS;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_INFOCLASS_VOICE
+<tr>
+<td>RIL_INFOCLASS_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_DATA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_DATACIRCUITASYNC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_DATACIRCUITSYNC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_FAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_PACKETACCESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_PADACCESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_SMS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_VOICE</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_INFOCLASS_DATA
-
-
-### -field RIL_INFOCLASS_FAX
-
-
-### -field RIL_INFOCLASS_SMS
-
-
-### -field RIL_INFOCLASS_DATACIRCUITSYNC
-
-
-### -field RIL_INFOCLASS_DATACIRCUITASYNC
-
-
-### -field RIL_INFOCLASS_PACKETACCESS
-
-
-### -field RIL_INFOCLASS_PADACCESS
-
-
-### -field RIL_INFOCLASS_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

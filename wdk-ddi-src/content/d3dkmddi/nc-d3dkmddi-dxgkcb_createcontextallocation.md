@@ -1,72 +1,64 @@
 ---
-UID: NC:d3dkmddi.DXGKCB_CREATECONTEXTALLOCATION
-title: DXGKCB_CREATECONTEXTALLOCATION
-author: windows-driver-content
-description: Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to allocate a GPU context or device-specific context.
-old-location: display\dxgkcbcreatecontextallocation.htm
-old-project: display
-ms.assetid: b6b142a4-20eb-4368-bd7f-8a25f4fe48ca
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkCbCreateContextAllocation
-req.alt-loc: D3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKCB_CREATECONTEXTALLOCATION
+title : DXGKCB_CREATECONTEXTALLOCATION
+author : windows-driver-content
+description : Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to allocate a GPU context or device-specific context.
+old-location : display\dxgkcbcreatecontextallocation.htm
+old-project : display
+ms.assetid : b6b142a4-20eb-4368-bd7f-8a25f4fe48ca
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkCbCreateContextAllocation
+req.alt-loc : D3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
-# DXGKCB_CREATECONTEXTALLOCATION callback
 
-
-
-## -description
+# DXGKCB_CREATECONTEXTALLOCATION callback function
 Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to allocate a GPU context or device-specific context.
 
+## Syntax
 
+```
+DXGKCB_CREATECONTEXTALLOCATION DxgkcbCreatecontextallocation;
 
-## -prototype
+NTSTATUS DxgkcbCreatecontextallocation(
 
-````
-DXGKCB_CREATECONTEXTALLOCATION DxgkCbCreateContextAllocation;
-
-NTSTATUS APIENTRY CALLBACK* DxgkCbCreateContextAllocation(
-  _Inout_ DXGKARGCB_CREATECONTEXTALLOCATION *ContextAllocation
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
+This function has no parameters.
 
-### -param ContextAllocation [in, out]
+## Return Value
 
-A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_createcontextallocation.md">DXGKARGCB_CREATECONTEXTALLOCATION</a> structure that specifies the attributes of the context to be allocated.
-
-
-## -returns
 <i>DxgkCbCreateContextAllocation</i> returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h.
 
+## Remarks
 
-## -remarks
 Starting with WDDM 1.2, display miniport drivers can allocate a GPU-specific context (<i>GPU context allocation</i>) or a device-specific context (<i>device context allocation</i>).
 
 A GPU context allocation allows GPUs to store context state from DMA buffers that are preempted in the middle of their execution. Drivers create allocations associated with a GPU context to save its state when it is necessary. The operating system ensures that the context allocation is resident before a command from this context is placed in the GPU's hardware execution queue.
@@ -88,9 +80,20 @@ To ensure that the operating system sets a valid (non-<b>NULL</b>) virtual addre
 <li>Page in the allocation only to aperture segments by setting  the <b>SupportedSegmentSet</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_createcontextallocation.md">DXGKARGCB_CREATECONTEXTALLOCATION</a> structure.</li>
 </ul>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
@@ -122,4 +125,3 @@ To ensure that the operating system sets a valid (non-<b>NULL</b>) virtual addre
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_CREATECONTEXTALLOCATION callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

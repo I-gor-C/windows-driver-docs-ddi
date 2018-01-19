@@ -1,51 +1,44 @@
 ---
-UID: NS:ucxroothub._UCX_ROOTHUB_CONFIG
-title: _UCX_ROOTHUB_CONFIG
-author: windows-driver-content
-description: Contains pointers to event callback functions for creating the root hub by calling UcxRootHubCreate. Initialize this structure by calling UCX_ROOTHUB_CONFIG_INIT initialization function (see Ucxclass.h).
-old-location: buses\_ucx_roothub_config.htm
-old-project: usbref
-ms.assetid: 27E54F0D-2163-4D7C-B204-336EE0227488
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: _UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ucxroothub.h
-req.include-header: Ucxclass.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: UCX_ROOTHUB_CONFIG
-req.alt-loc: ucxroothub.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
-req.product: Windows 10 or later.
+UID : NS:ucxroothub._UCX_ROOTHUB_CONFIG
+title : _UCX_ROOTHUB_CONFIG
+author : windows-driver-content
+description : Contains pointers to event callback functions for creating the root hub by calling UcxRootHubCreate. Initialize this structure by calling UCX_ROOTHUB_CONFIG_INIT initialization function (see Ucxclass.h).
+old-location : buses\_ucx_roothub_config.htm
+old-project : usbref
+ms.assetid : 27E54F0D-2163-4D7C-B204-336EE0227488
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ucxroothub.h
+req.include-header : Ucxclass.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : UCX_ROOTHUB_CONFIG
+req.alt-loc : ucxroothub.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
+req.product : Windows 10 or later.
 ---
 
 # _UCX_ROOTHUB_CONFIG structure
-
-
-
-## -description
 Contains pointers to event callback functions for creating the root hub by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>. Initialize this structure by calling <b>UCX_ROOTHUB_CONFIG_INIT</b> initialization function (see Ucxclass.h).
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _UCX_ROOTHUB_CONFIG {
   ULONG                            Size;
@@ -66,82 +59,74 @@ typedef struct _UCX_ROOTHUB_CONFIG {
 } UCX_ROOTHUB_CONFIG, *P_UCX_ROOTHUB_CONFIG;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `EvtRootHubClearHubFeature`
 
-### -field Size
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `EvtRootHubClearPortFeature`
 
-The size in bytes of this structure.
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `EvtRootHubControlUrb`
 
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `EvtRootHubGet20PortInfo`
 
-### -field NumberOfPresentedControlUrbCallbacks
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
+        
+            `EvtRootHubGet30PortInfo`
 
-The number of control requests sent to the default endpoint.
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.
+        
+            `EvtRootHubGetHubStatus`
 
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `EvtRootHubGetInfo`
 
-### -field EvtRootHubClearHubFeature
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.
+        
+            `EvtRootHubGetPortErrorCount`
 
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `EvtRootHubGetPortStatus`
 
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `EvtRootHubInterruptTx`
 
-### -field EvtRootHubClearPortFeature
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.
+        
+            `EvtRootHubSetHubFeature`
 
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `EvtRootHubSetPortFeature`
 
+            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+        
+            `NumberOfPresentedControlUrbCallbacks`
 
-### -field EvtRootHubGetHubStatus
+            The number of control requests sent to the default endpoint.
+        
+            `Size`
 
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+            The size in bytes of this structure.
+        
+            `WdfRequestAttributes`
 
-
-### -field EvtRootHubGetPortStatus
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-
-### -field EvtRootHubSetHubFeature
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-
-### -field EvtRootHubSetPortFeature
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-
-### -field EvtRootHubGetPortErrorCount
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-
-### -field EvtRootHubControlUrb
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-
-### -field EvtRootHubInterruptTx
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.
-
-
-### -field EvtRootHubGetInfo
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.
-
-
-### -field EvtRootHubGet20PortInfo
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
+            A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies initialization parameters.
 
 
-### -field EvtRootHubGet30PortInfo
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.
-
-
-### -field WdfRequestAttributes
-
-A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies initialization parameters.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ucxroothub.h (include Ucxclass.h) |

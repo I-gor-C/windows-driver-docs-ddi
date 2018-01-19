@@ -1,74 +1,68 @@
 ---
-UID: NC:d3dumddi.PFND3DDDI_BLT
-title: PFND3DDDI_BLT
-author: windows-driver-content
-description: The Blt function copies the contents of a source surface to a destination surface.
-old-location: display\blt.htm
-old-project: display
-ms.assetid: e87576c6-0173-4d8e-bbaf-b82e2907140a
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: Blt
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
+UID : NC:d3dumddi.PFND3DDDI_BLT
+title : PFND3DDDI_BLT
+author : windows-driver-content
+description : The Blt function copies the contents of a source surface to a destination surface.
+old-location : display\blt.htm
+old-project : display
+ms.assetid : e87576c6-0173-4d8e-bbaf-b82e2907140a
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : Blt
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DXGK_PTE
 ---
 
-# PFND3DDDI_BLT callback
 
-
-
-## -description
+# PFND3DDDI_BLT callback function
 The <b>Blt</b> function copies the contents of a source surface to a destination surface.
 
+## Syntax
 
+```
+PFND3DDDI_BLT Pfnd3dddiBlt;
 
-## -prototype
-
-````
-PFND3DDDI_BLT Blt;
-
-__checkReturn HRESULT APIENTRY Blt(
-  _In_       HANDLE        hDevice,
-  _In_ const D3DDDIARG_BLT *pData
+HRESULT Pfnd3dddiBlt(
+  HANDLE hDevice,
+  CONST D3DDDIARG_BLT *
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`hDevice`
+
+A handle to the display device (graphics context).
+
+`*`
 
 
-## -parameters
-
-### -param hDevice [in]
-
- A handle to the display device (graphics context).
 
 
-### -param pData [in]
+## Return Value
 
- A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_blt.md">D3DDDIARG_BLT</a> structure that describes the parameters of the bit-block transfer (bitblt).
-
-
-## -returns
 <b>Blt</b> returns one of the following values:
 <dl>
 <dt><b>S_OK</b></dt>
@@ -78,10 +72,8 @@ __checkReturn HRESULT APIENTRY Blt(
 </dl>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a> could not allocate the required memory for it to complete.
 
- 
+## Remarks
 
-
-## -remarks
 The Microsoft Direct3D runtime calls the user-mode display driver's <b>Blt</b> function to copy the contents of a source surface to a destination surface. After mapping the surface references to allocation references, the user-mode display driver should issue the appropriate hardware commands. If either the source or destination allocation is in system memory, the user-mode display driver might be required to synchronize (that is, call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function) if the outstanding hardware command stream contains references to the system-memory allocation. If both the source and destination allocations are in system memory, the driver should synchronize as necessary but should not copy the contents of the source surface. The Direct3D runtime copies the contents after the call to <b>pfnRenderCb</b> returns. 
 
 The user-mode display driver must handle the following conditions that might occur during a copy operation:
@@ -98,10 +90,22 @@ The type of bitblt to perform is indicated through the bit-field flags that are 
 
 For more information about rules that the <b>Blt</b> function must follow when converting depth-stencil values, see <a href="https://msdn.microsoft.com/b83d4e6d-5645-49ab-bbb0-c694f1410cba">Copying Depth-Stencil Values</a>.
 
-The Direct3D runtime can call the user-mode display driver's <b>Blt</b> function to copy the contents of any source surface type (such as, offscreen-plain type, render-target type, or texture type) to any other destination surface type. 
+The Direct3D runtime can call the user-mode display driver's <b>Blt</b> function to copy the contents of any source surface type (such as, offscreen-plain type, render-target type, or texture type) to any other destination surface type.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_blt.md">D3DDDIARG_BLT</a>
@@ -118,4 +122,3 @@ The Direct3D runtime can call the user-mode display driver's <b>Blt</b> function
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_BLT callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

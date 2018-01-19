@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILCALLINFO_V4
-title: RILCALLINFO_V4
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallinfo_v4.htm
-old-project: netvista
-ms.assetid: 456597d1-e24c-414c-b099-509078cafdc1
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLINFO_V4, *LPRILCALLINFO_V4, RILCALLINFO_V4
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLINFO_V4
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILCALLINFO_V4, RILCALLINFO_V4
+UID : NS:ntddrilapitypes.RILCALLINFO_V4
+title : RILCALLINFO_V4
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallinfo_v4.htm
+old-project : netvista
+ms.assetid : 456597d1-e24c-414c-b099-509078cafdc1
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLINFO_V4, *LPRILCALLINFO_V4, RILCALLINFO_V4
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLINFO_V4
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILCALLINFO_V4, RILCALLINFO_V4"
 ---
 
 # RILCALLINFO_V4 structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILCALLINFO_V4 {
   DWORD                           cbSize;
@@ -70,67 +63,94 @@ typedef struct _RILCALLINFO_V4 {
 } RILCALLINFO_V4, RILCALLINFO_V4;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwCallModificationCauseCode`
+
+            
+        
+            `dwDirection`
+
+            
+        
+            `dwDisconnectInitiator`
+
+            
+        
+            `dwDisconnectReason`
+
+            
+        
+            `dwExecutor`
+
+            
+        
+            `dwFlags`
+
+            
+        
+            `dwID`
+
+            
+        
+            `dwMultiparty`
+
+            
+        
+            `dwNamePresentationIndicator`
+
+            
+        
+            `dwNumberPresentationIndicator`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwStatus`
+
+            
+        
+            `dwType`
+
+            
+        
+            `raAddress`
+
+            
+        
+            `rchsHandoverState`
+
+            
+        
+            `rcmOfferAnswer`
+
+            
+        
+            `rsaSubAddress`
+
+            
+        
+            `stDisconnectDetails`
+
+            
+        
+            `wszDescription`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwExecutor
-
-
-### -field dwID
-
-
-### -field dwDirection
-
-
-### -field dwStatus
-
-
-### -field dwType
-
-
-### -field dwMultiparty
-
-
-### -field raAddress
-
-
-### -field rsaSubAddress
-
-
-### -field wszDescription
-
-
-### -field dwNumberPresentationIndicator
-
-
-### -field dwNamePresentationIndicator
-
-
-### -field dwFlags
-
-
-### -field dwDisconnectInitiator
-
-
-### -field dwDisconnectReason
-
-
-### -field stDisconnectDetails
-
-
-### -field rcmOfferAnswer
-
-
-### -field rchsHandoverState
-
-
-### -field dwCallModificationCauseCode
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

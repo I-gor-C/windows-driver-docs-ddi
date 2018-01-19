@@ -1,50 +1,43 @@
 ---
-UID: NS:mpiowmi._MPIO_DISK_HEALTH_CLASS
-title: _MPIO_DISK_HEALTH_CLASS
-author: windows-driver-content
-description: The MPIO_DISK_HEALTH_CLASS structure contains the health information for a multi-path disk.
-old-location: storage\mpio_disk_health_class.htm
-old-project: storage
-ms.assetid: 07b04bad-9d52-4a32-8834-48cd5803844c
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _MPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: mpiowmi.h
-req.include-header: Mpiowmi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MPIO_DISK_HEALTH_CLASS
-req.alt-loc: mpiowmi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
+UID : NS:mpiowmi._MPIO_DISK_HEALTH_CLASS
+title : _MPIO_DISK_HEALTH_CLASS
+author : windows-driver-content
+description : The MPIO_DISK_HEALTH_CLASS structure contains the health information for a multi-path disk.
+old-location : storage\mpio_disk_health_class.htm
+old-project : storage
+ms.assetid : 07b04bad-9d52-4a32-8834-48cd5803844c
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : mpiowmi.h
+req.include-header : Mpiowmi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MPIO_DISK_HEALTH_CLASS
+req.alt-loc : mpiowmi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS"
 ---
 
 # _MPIO_DISK_HEALTH_CLASS structure
-
-
-
-## -description
 The MPIO_DISK_HEALTH_CLASS structure contains the health information for a multi-path disk.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _MPIO_DISK_HEALTH_CLASS {
   WCHAR     Name[63 + 1];
@@ -66,87 +59,78 @@ typedef struct _MPIO_DISK_HEALTH_CLASS {
 } MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CreateTime`
 
-### -field Name
+            A 64-bit integer that specifies the system time when the health packet was created for this multi-path disk.
+        
+            `DeviceOffline`
 
-The name of this multi-path disk.
+            A Boolean field that indicates whether the multi-path disk is offline or has failed.
+        
+            `FailTime`
 
+            A 64-bit integer that specifies the system time when this multi-path disk went offline or failed.
+        
+            `Name`
 
-### -field NumberReads
+            The name of this multi-path disk.
+        
+            `NumberBytesRead`
 
-An unsigned 64-bitfield that specifies the number of read requests that are serviced by this multi-path disk.
+            An unsigned 64-bitfield that specifies the total number of bytes that are read from this multi-path disk.
+        
+            `NumberBytesReadWrap`
 
+            An unsigned character field that specifies the total number of times that the <i>NumberBytesRead</i> parameter has rolled around to zero.
+        
+            `NumberBytesWritten`
 
-### -field NumberWrites
+            An unsigned 64-bitfield that specifies the total number of bytes that are written to this multi-path disk.
+        
+            `NumberBytesWrittenWrap`
 
-An unsigned 64-bitfield that specifies the number of write requests that are serviced by this multi-path disk.
+            An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
+        
+            `NumberIoErrors`
 
+            An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered by this multi-path disk.
+        
+            `NumberReads`
 
-### -field NumberBytesRead
+            An unsigned 64-bitfield that specifies the number of read requests that are serviced by this multi-path disk.
+        
+            `NumberReadsWrap`
 
-An unsigned 64-bitfield that specifies the total number of bytes that are read from this multi-path disk.
+            An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.
+        
+            `NumberRetries`
 
+            An unsigned 64-bitfield that specifies the total number of retries for this multi-path disk.
+        
+            `NumberWrites`
 
-### -field NumberBytesWritten
+            An unsigned 64-bitfield that specifies the number of write requests that are serviced by this multi-path disk.
+        
+            `NumberWritesWrap`
 
-An unsigned 64-bitfield that specifies the total number of bytes that are written to this multi-path disk.
+            An unsigned character field that specifies the total number of times the <i>NumberWrites</i> parameter has rolled around to zero.
+        
+            `Pad`
 
+            Should be zero.
+        
+            `PathFailures`
 
-### -field NumberRetries
-
-An unsigned 64-bitfield that specifies the total number of retries for this multi-path disk.
-
-
-### -field NumberIoErrors
-
-An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered by this multi-path disk.
-
-
-### -field CreateTime
-
-A 64-bit integer that specifies the system time when the health packet was created for this multi-path disk.
-
-
-### -field PathFailures
-
-A 64-bit integer that specifies the total number of path failures for this multi-path disk.
-
-
-### -field FailTime
-
-A 64-bit integer that specifies the system time when this multi-path disk went offline or failed.
-
-
-### -field DeviceOffline
-
-A Boolean field that indicates whether the multi-path disk is offline or has failed.
-
-
-### -field NumberReadsWrap
-
-An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.
-
-
-### -field NumberWritesWrap
-
-An unsigned character field that specifies the total number of times the <i>NumberWrites</i> parameter has rolled around to zero.
-
-
-### -field NumberBytesReadWrap
-
-An unsigned character field that specifies the total number of times that the <i>NumberBytesRead</i> parameter has rolled around to zero.
+            A 64-bit integer that specifies the total number of path failures for this multi-path disk.
 
 
-### -field NumberBytesWrittenWrap
-
-An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
-
-
-### -field Pad
-
-Should be zero.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | mpiowmi.h (include Mpiowmi.h) |

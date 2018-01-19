@@ -1,50 +1,43 @@
 ---
-UID: NS:acpitabl._SDEV_SECURE_ACPI_INFO_ENTRY
-title: _SDEV_SECURE_ACPI_INFO_ENTRY
-author: windows-driver-content
-description: Defines an information entry for a secure ACPI device for use in a secure device table.
-old-location: acpi\sdev_secure_acpi_info_entry.htm
-old-project: acpi
-ms.assetid: A3FDE9B0-DD6E-4FF5-AD9A-7DF7BF276EFA
-ms.author: windowsdriverdev
-ms.date: 12/31/2017
-ms.keywords: _SDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: acpitabl.h
-req.include-header: Acpitabl.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SDEV_SECURE_ACPI_INFO_ENTRY
-req.alt-loc: acpitabl.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY
+UID : NS:acpitabl._SDEV_SECURE_ACPI_INFO_ENTRY
+title : _SDEV_SECURE_ACPI_INFO_ENTRY
+author : windows-driver-content
+description : Defines an information entry for a secure ACPI device for use in a secure device table.
+old-location : acpi\sdev_secure_acpi_info_entry.htm
+old-project : acpi
+ms.assetid : A3FDE9B0-DD6E-4FF5-AD9A-7DF7BF276EFA
+ms.author : windowsdriverdev
+ms.date : 12/31/2017
+ms.keywords : _SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : acpitabl.h
+req.include-header : Acpitabl.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SDEV_SECURE_ACPI_INFO_ENTRY
+req.alt-loc : acpitabl.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PSDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY"
 ---
 
 # _SDEV_SECURE_ACPI_INFO_ENTRY structure
-
-
-
-## -description
 Defines an information entry for a secure ACPI device for use in a secure device table.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _SDEV_SECURE_ACPI_INFO_ENTRY {
   SDEV_ENTRY_HEADER Header;
@@ -55,32 +48,34 @@ typedef struct _SDEV_SECURE_ACPI_INFO_ENTRY {
 } SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
+            A header.
+        
+            `IdentifierLength`
 
-A header. 
+            The length of the identifier.
+        
+            `IdentifierOffset`
 
+            An identifier offset value.
+        
+            `VendorInfoLength`
 
-### -field IdentifierOffset
+            The length of the vendor information.
+        
+            `VendorInfoOffset`
 
-An identifier offset value.
-
-
-### -field IdentifierLength
-
-The length of the identifier.
-
-
-### -field VendorInfoOffset
-
-A vendor information offset value.
-
-
-### -field VendorInfoLength
-
-The length of the vendor information. 
+            A vendor information offset value.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | acpitabl.h (include Acpitabl.h) |

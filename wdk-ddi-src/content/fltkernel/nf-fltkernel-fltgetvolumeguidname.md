@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltGetVolumeGuidName
-title: FltGetVolumeGuidName function
-author: windows-driver-content
-description: The FltGetVolumeGuidName routine returns the volume name for a given volume, in volume globally unique identifier (GUID) format.
-old-location: ifsk\fltgetvolumeguidname.htm
-old-project: ifsk
-ms.assetid: 911d8b07-1313-4c4b-8d16-188857943327
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltGetVolumeGuidName
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltGetVolumeGuidName
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: PASSIVE_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltGetVolumeGuidName
+title : FltGetVolumeGuidName function
+author : windows-driver-content
+description : The FltGetVolumeGuidName routine returns the volume name for a given volume, in volume globally unique identifier (GUID) format.
+old-location : ifsk\fltgetvolumeguidname.htm
+old-project : ifsk
+ms.assetid : 911d8b07-1313-4c4b-8d16-188857943327
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltGetVolumeGuidName
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltGetVolumeGuidName
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : PASSIVE_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltGetVolumeGuidName function
+The <b>FltGetVolumeGuidName</b> routine returns the volume name for a given volume, in volume globally unique identifier (GUID) format.
 
-
-
-## -description
-The <b>FltGetVolumeGuidName</b> routine returns the volume name for a given volume, in volume globally unique identifier (GUID) format. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltGetVolumeGuidName(
@@ -53,25 +48,23 @@ NTSTATUS FltGetVolumeGuidName(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Volume`
 
-### -param Volume [in]
+Opaque pointer for the volume. Must be a local file system volume. This parameter is required and cannot be <b>NULL</b>.
 
-Opaque pointer for the volume. Must be a local file system volume. This parameter is required and cannot be <b>NULL</b>. 
+`VolumeGuidName`
 
+Pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that receives the volume's GUID name. This parameter is required and cannot be <b>NULL</b>.
 
-### -param VolumeGuidName [out]
+`BufferSizeNeeded`
 
-Pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that receives the volume's GUID name. This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param BufferSizeNeeded [out, optional]
-
-Pointer to a caller-allocated variable that receives the size, in bytes, of the requested volume GUID name. If <b>FltGetVolumeGuidName</b> returns STATUS_BUFFER_TOO_SMALL, you can use the value of the variable to determine the required size for the structure that the <i>VolumeGuidName</i> parameter points to. This parameter is optional and can be <b>NULL</b>. 
+Pointer to a caller-allocated variable that receives the size, in bytes, of the requested volume GUID name. If <b>FltGetVolumeGuidName</b> returns STATUS_BUFFER_TOO_SMALL, you can use the value of the variable to determine the required size for the structure that the <i>VolumeGuidName</i> parameter points to. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltGetVolumeGuidName</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
@@ -84,12 +77,10 @@ Pointer to a caller-allocated variable that receives the size, in bytes, of the 
 </dl>The <i>Volume</i> parameter is a handle for a network volume. This is an error code. 
 <dl>
 <dt><b>STATUS_FLT_VOLUME_NOT_FOUND</b></dt>
-</dl>No matching volume was found. This is an error code. 
+</dl>No matching volume was found. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 The returned volume GUID name is expressed in the following format: 
 
 <b>\??\Volume{</b><i>GUID</i><b>}</b>
@@ -108,10 +99,22 @@ It is important to note that the volume GUID is not the same as the volume objec
 
 To get the volume object ID for a volume, call <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>, specifying <b>FileFsObjectIdInformation</b> for the <i>FsInformationClass</i> parameter. 
 
-<b>FltGetVolumeGuidName</b> is roughly equivalent to the Win32 <b>GetVolumeNameForVolumeMountPoint</b> function. (<b>GetVolumeNameForVolumeMountPoint</b> is documented in the Microsoft Windows SDK.) 
+<b>FltGetVolumeGuidName</b> is roughly equivalent to the Win32 <b>GetVolumeNameForVolumeMountPoint</b> function. (<b>GetVolumeNameForVolumeMountPoint</b> is documented in the Microsoft Windows SDK.)
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
@@ -131,4 +134,3 @@ To get the volume object ID for a volume, call <a href="..\ntifs\nf-ntifs-zwquer
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetVolumeGuidName routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dumddi._D3D12DDICB_RECLAIMALLOCATIONS2
-title: _D3D12DDICB_RECLAIMALLOCATIONS2
-author: windows-driver-content
-description: Describes video memory resources that are to be reclaimed and that the driver previously offered for reuse.
-old-location: display\d3d12ddicb_reclaimallocations2.htm
-old-project: display
-ms.assetid: B5ADCD5D-301C-4B02-A4B2-90A81A5FBBC9
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _D3D12DDICB_RECLAIMALLOCATIONS2, D3D12DDICB_RECLAIMALLOCATIONS2
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDICB_RECLAIMALLOCATIONS2
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDICB_RECLAIMALLOCATIONS2
+UID : NS:d3dumddi._D3D12DDICB_RECLAIMALLOCATIONS2
+title : _D3D12DDICB_RECLAIMALLOCATIONS2
+author : windows-driver-content
+description : Describes video memory resources that are to be reclaimed and that the driver previously offered for reuse.
+old-location : display\d3d12ddicb_reclaimallocations2.htm
+old-project : display
+ms.assetid : B5ADCD5D-301C-4B02-A4B2-90A81A5FBBC9
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _D3D12DDICB_RECLAIMALLOCATIONS2, D3D12DDICB_RECLAIMALLOCATIONS2
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDICB_RECLAIMALLOCATIONS2
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDICB_RECLAIMALLOCATIONS2
 ---
 
 # _D3D12DDICB_RECLAIMALLOCATIONS2 structure
-
-
-
-## -description
 Describes video memory resources that are to be reclaimed and that the driver  previously offered  for reuse.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDICB_RECLAIMALLOCATIONS2 {
   _In_ UINT                                      NumAllocations;
@@ -55,33 +48,31 @@ typedef struct _D3D12DDICB_RECLAIMALLOCATIONS2 {
 } D3D12DDICB_RECLAIMALLOCATIONS2;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `HandleList`
 
-### -field NumAllocations
+            [in]  An array of allocation handles. If non-NULL, <b>pResources</b> must be NULL.
+        
+            `NumAllocations`
 
-[in]  The number of items in <b>pDiscarded</b> and whichever of <b>pResources</b> or <b>HandleList</b> is non-NULL.
+            [in]  The number of items in <b>pDiscarded</b> and whichever of <b>pResources</b> or <b>HandleList</b> is non-NULL.
+        
+            `PagingFenceValue`
 
-
-### -field pResources
-
-[in]  An array of Direct3D runtime resource handles.
-
-
-### -field HandleList
-
-[in]  An array of allocation handles. If non-NULL, <b>pResources</b> must be NULL.
-
-
-### -field pDiscarded
-
-[out] Optional array of boolean values specifying whether each resource or allocation was discarded.
-
-
-### -field PagingFenceValue
-
-[out] The paging fence to synchronize against before submitting work to the GPU which
+            [out] The paging fence to synchronize against before submitting work to the GPU which
                                                                            references any of the resources or allocations in the provided arrays
+        
+            `pDiscarded`
+
+            [out] Optional array of boolean values specifying whether each resource or allocation was discarded.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |

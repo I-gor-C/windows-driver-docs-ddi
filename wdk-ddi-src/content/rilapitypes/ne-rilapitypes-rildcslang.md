@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILDCSLANG
-title: RILDCSLANG
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rildcslang_2.htm
-old-project: netvista
-ms.assetid: b6d50c5d-edc5-4037-9223-679fd19f195f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILDCSLANG, RILDCSLANG
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILDCSLANG
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILDCSLANG
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILDCSLANG
+title : RILDCSLANG
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rildcslang_2.htm
+old-project : netvista
+ms.assetid : b6d50c5d-edc5-4037-9223-679fd19f195f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILDCSLANG, RILDCSLANG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILDCSLANG
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILDCSLANG
+req.product : Windows 10 or later.
 ---
 
-# RILDCSLANG enumeration
+# RILDCSLANG Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILDCSLANG { 
   RIL_DCSLANG_UNKNOWN,
@@ -73,73 +66,126 @@ typedef enum _RILDCSLANG {
 } RILDCSLANG;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_DCSLANG_UNKNOWN
+<tr>
+<td>RIL_DCSLANG_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_ARABIC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_CZECH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_DANISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_DUTCH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_ENGLISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_FINNISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_FRENCH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_GERMAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_GREEK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_HEBREW</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_HUNGARIAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_ICELANDIC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_ITALIAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_NORWEGIAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_POLISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_PORTUGUESE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_RUSSIAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_SPANISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_SWEDISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_TURKISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_UNKNOWN</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_DCSLANG_GERMAN
-
-
-### -field RIL_DCSLANG_ENGLISH
-
-
-### -field RIL_DCSLANG_ITALIAN
-
-
-### -field RIL_DCSLANG_FRENCH
-
-
-### -field RIL_DCSLANG_SPANISH
-
-
-### -field RIL_DCSLANG_DUTCH
-
-
-### -field RIL_DCSLANG_SWEDISH
-
-
-### -field RIL_DCSLANG_DANISH
-
-
-### -field RIL_DCSLANG_PORTUGUESE
-
-
-### -field RIL_DCSLANG_FINNISH
-
-
-### -field RIL_DCSLANG_NORWEGIAN
-
-
-### -field RIL_DCSLANG_GREEK
-
-
-### -field RIL_DCSLANG_TURKISH
-
-
-### -field RIL_DCSLANG_HUNGARIAN
-
-
-### -field RIL_DCSLANG_POLISH
-
-
-### -field RIL_DCSLANG_CZECH
-
-
-### -field RIL_DCSLANG_HEBREW
-
-
-### -field RIL_DCSLANG_ARABIC
-
-
-### -field RIL_DCSLANG_RUSSIAN
-
-
-### -field RIL_DCSLANG_ICELANDIC
-
-
-### -field RIL_DCSLANG_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

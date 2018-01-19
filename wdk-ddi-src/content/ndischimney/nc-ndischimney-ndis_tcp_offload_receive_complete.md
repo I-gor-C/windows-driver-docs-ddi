@@ -1,44 +1,41 @@
 ---
-UID: NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
-title: NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
-author: windows-driver-content
-description: An offload target calls the NdisTcpOffloadReceiveComplete function to return posted receive requests (receive buffers) to the host stack.
-old-location: netvista\ndistcpoffloadreceivecomplete.htm
-old-project: netvista
-ms.assetid: d5b1341b-cbe0-483c-9abb-b8706f2db2dd
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisTcpOffloadReceiveComplete
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
+title : NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
+author : windows-driver-content
+description : An offload target calls the NdisTcpOffloadReceiveComplete function to return posted receive requests (receive buffers) to the host stack.
+old-location : netvista\ndistcpoffloadreceivecomplete.htm
+old-project : netvista
+ms.assetid : d5b1341b-cbe0-483c-9abb-b8706f2db2dd
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisTcpOffloadReceiveComplete
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE callback
 
-
-
-## -description
+# NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 An offload target calls the 
@@ -47,28 +44,27 @@ An offload target calls the
   <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
   MiniportTcpOffloadReceive</a> function.
 
+## Syntax
 
+```
+NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE NdisTcpOffloadReceiveComplete;
 
-## -prototype
+void NdisTcpOffloadReceiveComplete(
+  IN NDIS_HANDLE NdisMiniportHandle,
+  IN PNET_BUFFER_LIST NetBufferList
+)
+{...}
+```
 
-````
-VOID NdisTcpOffloadReceiveComplete(
-  _In_ NDIS_HANDLE      NdisMiniportHandle,
-  _In_ PNET_BUFFER_LIST NetBufferList
-);
-````
+## Parameters
 
-
-## -parameters
-
-### -param NdisMiniportHandle [in]
+`NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to the 
      <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
@@ -78,11 +74,12 @@ A pointer to a
      MiniportTcpOffloadReceive</a> function.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 An offload target should use and return preposted receive requests in the order in which the requests
     were posted to the 
     <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
@@ -154,8 +151,20 @@ Calls the
       in the memory descriptor lists (MDLs) associated with the NET_BUFFER structure. The 
       <i>FreeMdl</i> parameter should be <b>NULL</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">MiniportTcpOffloadReceive</a>
@@ -179,4 +188,3 @@ Calls the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

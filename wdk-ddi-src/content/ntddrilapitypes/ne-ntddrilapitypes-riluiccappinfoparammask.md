@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILUICCAPPINFOPARAMMASK
-title: RILUICCAPPINFOPARAMMASK
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\riluiccappinfoparammask.htm
-old-project: netvista
-ms.assetid: 0e3bac55-6de7-4572-963f-dead9664cf1d
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILUICCAPPINFOPARAMMASK, RILUICCAPPINFOPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILUICCAPPINFOPARAMMASK
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILUICCAPPINFOPARAMMASK
+UID : NE:ntddrilapitypes.RILUICCAPPINFOPARAMMASK
+title : RILUICCAPPINFOPARAMMASK
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\riluiccappinfoparammask.htm
+old-project : netvista
+ms.assetid : 0e3bac55-6de7-4572-963f-dead9664cf1d
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILUICCAPPINFOPARAMMASK, RILUICCAPPINFOPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILUICCAPPINFOPARAMMASK
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILUICCAPPINFOPARAMMASK
 ---
 
-# RILUICCAPPINFOPARAMMASK enumeration
-
-
-
-## -description
+# RILUICCAPPINFOPARAMMASK Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILUICCAPPINFOPARAMMASK { 
   RIL_PARAM_UICCAPPINFO_APPTYPE,
@@ -58,31 +51,56 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
 } RILUICCAPPINFOPARAMMASK;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_PARAM_UICCAPPINFO_APPTYPE
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_APPID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_APPIDLENGTH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_APPNAME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_APPNAMELENGTH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_APPTYPE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_NUMPINS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_PINREF</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_PARAM_UICCAPPINFO_APPIDLENGTH
-
-
-### -field RIL_PARAM_UICCAPPINFO_APPID
-
-
-### -field RIL_PARAM_UICCAPPINFO_APPNAMELENGTH
-
-
-### -field RIL_PARAM_UICCAPPINFO_APPNAME
-
-
-### -field RIL_PARAM_UICCAPPINFO_NUMPINS
-
-
-### -field RIL_PARAM_UICCAPPINFO_PINREF
-
-
-### -field RIL_PARAM_UICCAPPINFO_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

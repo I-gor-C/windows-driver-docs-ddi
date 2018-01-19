@@ -1,98 +1,83 @@
 ---
-UID: NC:video.PDRIVER_IO_PORT_USHORT
-title: PDRIVER_IO_PORT_USHORT
-author: windows-driver-content
-description: SvgaHwIoPortUshort traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data.
-old-location: display\svgahwioportushort.htm
-old-project: display
-ms.assetid: 304656b4-ebbe-4cb1-8735-2e03bec71f9f
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SvgaHwIoPortUshort
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-req.product: Windows 10 or later.
+UID : NC:video.PDRIVER_IO_PORT_USHORT
+title : PDRIVER_IO_PORT_USHORT
+author : windows-driver-content
+description : SvgaHwIoPortUshort traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data.
+old-location : display\svgahwioportushort.htm
+old-project : display
+ms.assetid : 304656b4-ebbe-4cb1-8735-2e03bec71f9f
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SvgaHwIoPortUshort
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VHF_CONFIG, *PVHF_CONFIG
+req.product : Windows 10 or later.
 ---
 
-# PDRIVER_IO_PORT_USHORT callback
 
-
-
-## -description
+# PDRIVER_IO_PORT_USHORT callback function
 <i>SvgaHwIoPortUshort</i> traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data.
 
+## Syntax
 
+```
+PDRIVER_IO_PORT_USHORT PdriverIoPortUshort;
 
-## -prototype
-
-````
-PDRIVER_IO_PORT_USHORT SvgaHwIoPortUshort;
-
-VP_STATUS SvgaHwIoPortUshort(
-   ULONG_PTR Context,
-   ULONG     Port,
-   UCHAR     AccessMode,
-   PUSHORT   Data
+VP_STATUS PdriverIoPortUshort(
+  ULONG_PTR Context,
+  ULONG Port,
+  UCHAR AccessMode,
+  PUSHORT Data
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Context 
+`Context`
 
 Specifies the miniport driver-determined context value that was set in the <b>EmulatorAccessEntriesContext</b> member of VIDEO_PORT_CONFIG_INFO.
 
-
-### -param Port 
+`Port`
 
 Specifies the mapped I/O port to be trapped.
 
-
-### -param AccessMode 
+`AccessMode`
 
 Specifies the type of access allowed, which can be one or a combination (ORed) of the following values:
 
-
-
-### -param EMULATOR_READ_ACCESS
-### -param EMULATOR_WRITE_ACCESS
-
-
-
-
-### -param Data 
+`Data`
 
 Pointer to the USHORT data to be transferred.
 
 
-## -returns
+## Return Value
+
 <i>SvgaHwIoPortUshort</i> returns the final status of the operation.
 
+## Remarks
 
-## -remarks
 Only miniport drivers of VGA-compatible SVGA adapters have <i>SvgaHwIoPortXxx</i> functions. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>.)
 
 <i>SvgaHwIoPortUshort</i> intercepts any range access attempted by a full-screen MS-DOS application issuing either or both of the instructions <b>OUT DX, AX</b> and <b>IN AX, DX</b>.
@@ -105,8 +90,20 @@ If one or more application-issued x86 <b>IN</b> or <b>OUT</b> instructions might
 
 <i>SvgaHwIoPortUshort</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\miniport\ns-miniport-_emulator_access_entry.md">EMULATOR_ACCESS_ENTRY</a>
@@ -135,4 +132,3 @@ If one or more application-issued x86 <b>IN</b> or <b>OUT</b> instructions might
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDRIVER_IO_PORT_USHORT callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

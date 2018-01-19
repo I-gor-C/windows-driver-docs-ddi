@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILADDCALLFORWARDINGPARAMS
-title: RILADDCALLFORWARDINGPARAMS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\riladdcallforwardingparams.htm
-old-project: netvista
-ms.assetid: 8918552d-6a7b-414a-ab0c-a5690f109db4
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILADDCALLFORWARDINGPARAMS
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS
+UID : NS:ntddrilapitypes.RILADDCALLFORWARDINGPARAMS
+title : RILADDCALLFORWARDINGPARAMS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\riladdcallforwardingparams.htm
+old-project : netvista
+ms.assetid : 8918552d-6a7b-414a-ab0c-a5690f109db4
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILADDCALLFORWARDINGPARAMS
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS"
 ---
 
 # RILADDCALLFORWARDINGPARAMS structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILADDCALLFORWARDINGPARAMS {
   DWORD                            dwExecutor;
@@ -53,16 +46,26 @@ typedef struct _RILADDCALLFORWARDINGPARAMS {
 } RILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `dwExecutor`
 
-### -field dwExecutor
+            
+        
+            `dwReason`
+
+            
+        
+            `rcfsSettings`
+
+            
 
 
-### -field dwReason
-
-
-### -field rcfsSettings
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

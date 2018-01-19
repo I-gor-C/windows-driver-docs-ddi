@@ -1,91 +1,83 @@
 ---
-UID: NC:wdm.PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
-title: PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
-author: windows-driver-content
-description: The ClfsLogGrowthCompleteCallback function implements the actions that the client will take when space is freed in a log that had previously been full.
-old-location: kernel\clfsloggrowthcompletecallback.htm
-old-project: kernel
-ms.assetid: f8ebeaa9-e487-461b-8d95-50094bcc2bf5
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KSYNCHRONIZE_ROUTINE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ClfsLogGrowthCompleteCallback
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at IRQL <= APC_LEVEL
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
+title : PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
+author : windows-driver-content
+description : The ClfsLogGrowthCompleteCallback function implements the actions that the client will take when space is freed in a log that had previously been full.
+old-location : kernel\clfsloggrowthcompletecallback.htm
+old-project : kernel
+ms.assetid : f8ebeaa9-e487-461b-8d95-50094bcc2bf5
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ClfsLogGrowthCompleteCallback
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at IRQL <= APC_LEVEL
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
-# PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK callback
 
-
-
-## -description
+# PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK callback function
 The <i>ClfsLogGrowthCompleteCallback</i> function implements the actions that the client will take when space is freed in a log that had previously been full.
 
+## Syntax
 
+```
+PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK PclfsClientLffHandlerCompleteCallback;
 
-## -prototype
-
-````
-PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK ClfsLogGrowthCompleteCallback;
-
-VOID ClfsLogGrowthCompleteCallback(
-  _In_ PLOG_FILE_OBJECT LogFile,
-  _In_ NTSTATUS         OperationStatus,
-  _In_ BOOLEAN          LogIsPinned,
-  _In_ PVOID            ClientData
+void PclfsClientLffHandlerCompleteCallback(
+  PLOG_FILE_OBJECT LogFile,
+  NTSTATUS OperationStatus,
+  BOOLEAN LogIsPinned,
+  PVOID ClientData
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param LogFile [in]
+`LogFile`
 
 A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents the CLFS log stream whose log has finished growing.
 
-
-### -param OperationStatus [in]
+`OperationStatus`
 
 The status of the client's earlier request to handle a log file full condition. This will be either STATUS_SUCCESS or an error status that indicates the reason that the request could not be completed successfully.
 
-
-### -param LogIsPinned [in]
+`LogIsPinned`
 
 If <b>TRUE</b>, specifies that the log tail is currently pinned;  <b>FALSE</b> if the log tail is not pinned.
 
-
-### -param ClientData [in]
+`ClientData`
 
 A pointer to client-supplied information.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Because a call to <a href="..\wdm\nf-wdm-clfsmgmthandlelogfilefull.md">ClfsMgmtHandleLogFileFull</a> completes asynchronously, any actions that the client will take when the log file full condition has been handled belong in the <i>ClfsLogGrowthCompleteCallback</i> function.
 
 If a call to the <b>ClfsMgmtHandleLogFileFull</b> routine returned returns STATUS_PENDING, then the <i>ClfsLogGrowthCompleteCallback</i> function will be invoked when the operation completes. If a different status was returned, then the <i>ClfsLogGrowthCompleteCallback</i> function will not be invoked.
@@ -98,8 +90,20 @@ If the value of the <i>OperationStatus</i> parameter is STATUS_SUCCESS, create a
 
 When a client uses the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine to register with CLFS management, the client provides both a pointer to the <i>ClfsLogGrowthCompleteCallback</i> function and the custom data that will be passed as a parameter to the <i>ClfsLogGrowthCompleteCallback</i> function when this function is called.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Called at IRQL <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-clfsmgmthandlelogfilefull.md">ClfsMgmtHandleLogFileFull</a>
@@ -113,4 +117,3 @@ When a client uses the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.PoFxIssueComponentPerfStateChangeMultiple
-title: PoFxIssueComponentPerfStateChangeMultiple function
-author: windows-driver-content
-description: The PoFxIssueComponentPerfStateChangeMultiple routine submits a request to change the performance states in multiple performance state sets simultaneously for a device component.
-old-location: kernel\pofxissuecomponentperfstatechangemultiple.htm
-old-project: kernel
-ms.assetid: 246211E7-89A9-4916-BF6E-5771B911CBA3
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PoFxIssueComponentPerfStateChangeMultiple
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: 
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 10.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PoFxIssueComponentPerfStateChangeMultiple
-req.alt-loc: Ntoskrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntoskrnl.lib
-req.dll: Ntoskrnl.exe
-req.irql: <= APC_LEVEL or <= DISPATCH_LEVEL (See Remarks section)
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.PoFxIssueComponentPerfStateChangeMultiple
+title : PoFxIssueComponentPerfStateChangeMultiple function
+author : windows-driver-content
+description : The PoFxIssueComponentPerfStateChangeMultiple routine submits a request to change the performance states in multiple performance state sets simultaneously for a device component.
+old-location : kernel\pofxissuecomponentperfstatechangemultiple.htm
+old-project : kernel
+ms.assetid : 246211E7-89A9-4916-BF6E-5771B911CBA3
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : PoFxIssueComponentPerfStateChangeMultiple
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 10.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PoFxIssueComponentPerfStateChangeMultiple
+req.alt-loc : Ntoskrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntoskrnl.lib
+req.dll : Ntoskrnl.exe
+req.irql : <= APC_LEVEL or <= DISPATCH_LEVEL (See Remarks section)
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # PoFxIssueComponentPerfStateChangeMultiple function
+The <b>PoFxIssueComponentPerfStateChangeMultiple</b> routine submits a request to change the performance states in multiple performance state sets simultaneously for a device component.
 
-
-
-## -description
-The <b>PoFxIssueComponentPerfStateChangeMultiple</b> routine submits a request to change the performance states in multiple performance state sets simultaneously for a device component. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID PoFxIssueComponentPerfStateChangeMultiple(
@@ -57,15 +52,13 @@ VOID PoFxIssueComponentPerfStateChangeMultiple(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Handle [in]
+`Handle`
 
 A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.
 
-
-### -param Flags [in]
+`Flags`
 
 The flags that modify the behavior of the performance state change operation. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_<i>XXX</i></b> bits:
 
@@ -78,55 +71,29 @@ These two flag bits are mutually exclusive. For more information, see Remarks.
 </tr>
 <tr>
 
-### -param PO_FX_FLAG_BLOCKING
-### -param 0x1
-
-</td>
-<td width="60%">
-Make the condition change synchronous. If this flag is set, the routine that requests the condition change does not return control to the calling driver until the component hardware completes the transition to the new condition. This flag can be used only if the caller is running at IRQL &lt; DISPATCH_LEVEL.
-
-</td>
-</tr>
-<tr>
-
-### -param PO_FX_FLAG_ASYNC_ONLY
-### -param 0x2
-
-</td>
-<td width="60%">
-Make the condition change fully asynchronous. If this flag is set, the calling driver's callback routine is called from a thread other than the thread in which the routine that requests the condition change is called. Thus, the routine that requests the condition change always returns asynchronously without waiting for the callback to complete.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -param Component [in]
+`Component`
 
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-
-### -param PerfChangesCount [in]
+`PerfChangesCount`
 
 The number of performance state change requests contained in the <i>PerfChanges</i> array.
 
+`PerfChanges`
 
-### -param PerfChanges [in]
+The first element in an array of <a href="..\wdm\ns-wdm-_po_fx_perf_state_change.md">PO_FX_PERF_STATE_CHANGE</a> structures that represent the performance states the driver intends to transition to. Each array element represents a single performance state change request.
 
-The first element in an array of <a href="..\wdm\ns-wdm-_po_fx_perf_state_change.md">PO_FX_PERF_STATE_CHANGE</a> structures that represent the performance states the driver intends to transition to. Each array element represents a single performance state change request. 
-
-
-### -param Context [in]
+`Context`
 
 A pointer to the context for the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a> callback routine. This parameter is optional. It is provided so that a driver or device context can be passed to the callback routine. If this parameter is not used, it must be set to NULL.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A driver calls <b>PoFxIssueComponentPerfStateChangeMultiple</b>, the power management framework (PoFx) will request the platform extension plug-in (PEP) to place 
     the component's performance state sets in the specified performance states. This routine may be used with both discrete and range-based types of performance state sets. For more information about discrete and range-based performance state sets, see <a href="..\wdm\ne-wdm-_po_fx_perf_state_type.md">PO_FX_PERF_STATE_TYPE</a>.
 
@@ -142,8 +109,20 @@ This function will always result in a call to the <a href="https://msdn.microsof
 
 Only a single call of the <b>PoFxIssueComponentPerfStateChangeMultiple</b> routine  is allowed at a time per component, regardless of whether the call is synchronous or asynchronous. After issuing a performance state change request, the driver must wait until the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a> is received before calling this routine again, even if the request involves a different performance state set.  If this routine is called again before waiting until the <i>ComponentPerfStateCallback</i> is received, a bugcheck will occur.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL or <= DISPATCH_LEVEL (See Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
@@ -166,4 +145,3 @@ Only a single call of the <b>PoFxIssueComponentPerfStateChangeMultiple</b> routi
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxIssueComponentPerfStateChangeMultiple routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

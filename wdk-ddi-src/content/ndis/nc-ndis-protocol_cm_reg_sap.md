@@ -1,93 +1,85 @@
 ---
-UID: NC:ndis.PROTOCOL_CM_REG_SAP
-title: PROTOCOL_CM_REG_SAP function
-author: windows-driver-content
-description: The ProtocolCmRegisterSap function is a required function that is called by NDIS to request that a call manager register a SAP (service access point) on behalf of a connection-oriented client.Note  You must declare the function by using the PROTOCOL_CM_REG_SAP type. For more information, see the following Examples section.
-old-location: netvista\protocolcmregistersap.htm
-old-project: netvista
-ms.assetid: 3e3e7a0e-a8d2-40b2-895b-187d24867080
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: PROTOCOL_CM_REG_SAP
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolCmRegisterSap
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.PROTOCOL_CM_REG_SAP
+title : PROTOCOL_CM_REG_SAP
+author : windows-driver-content
+description : The ProtocolCmRegisterSap function is a required function that is called by NDIS to request that a call manager register a SAP (service access point) on behalf of a connection-oriented client.Note  You must declare the function by using the PROTOCOL_CM_REG_SAP type. For more information, see the following Examples section.
+old-location : netvista\protocolcmregistersap.htm
+old-project : netvista
+ms.assetid : 3e3e7a0e-a8d2-40b2-895b-187d24867080
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolCmRegisterSap
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # PROTOCOL_CM_REG_SAP function
-
-
-
-## -description
 The 
   <i>ProtocolCmRegisterSap</i> function is a required function that is called by NDIS to request that a call
   manager register a SAP (service access point) on behalf of a connection-oriented client.
 
+## Syntax
 
+```
+PROTOCOL_CM_REG_SAP ProtocolCmRegSap;
 
-## -syntax
-
-````
-PROTOCOL_CM_REG_SAP ProtocolCmRegisterSap;
-
-NDIS_STATUS ProtocolCmRegisterSap(
-  _In_  NDIS_HANDLE  CallMgrAfContext,
-  _In_  PCO_SAP      Sap,
-  _In_  NDIS_HANDLE  NdisSapHandle,
-  _Out_ PNDIS_HANDLE CallMgrSapContext
+NDIS_STATUS ProtocolCmRegSap(
+  NDIS_HANDLE CallMgrAfContext,
+  PCO_SAP Sap,
+  NDIS_HANDLE NdisSapHandle,
+  PNDIS_HANDLE CallMgrSapContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param CallMgrAfContext [in]
+`CallMgrAfContext`
 
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-open AF state. The call manager supplied this handle to NDIS from its 
      <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
 
-
-### -param Sap [in]
+`Sap`
 
 Pointer to a media-specific CO_SAP structure that contains the specific SAP that a
      connection-oriented client is registering.
 
-
-### -param NdisSapHandle [in]
+`NdisSapHandle`
 
 Specifies a handle, supplied by NDIS, that uniquely identifies this SAP. This handle is opaque to
      the call manager and reserved for NDIS library use.
 
-
-### -param CallMgrSapContext [out]
+`CallMgrSapContext`
 
 On return, specifies the handle to a call manager-supplied context area in which the call manager
      maintains state about this SAP.
 
 
-## -returns
+## Return Value
+
 <i>ProtocolCmRegisterSap</i> returns the status of its operation(s) as one of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -115,10 +107,8 @@ On return, specifies the handle to a call manager-supplied context area in which
        connection-oriented client. The return code is appropriate to the error and could be a return code
        propagated from another NDIS library function.
 
- 
+## Remarks
 
-
-## -remarks
 <i>ProtocolCmMakeCall</i> communicates with network control devices or other media-specific agents, as
     necessary, to register the SAP, as specified at 
     <i>Sap</i>, on the network for a connection-oriented client. Such actions could include, but are not
@@ -164,10 +154,22 @@ Then, implement your function as follows:
 
 The <b>PROTOCOL_CM_REG_SAP</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CM_REG_SAP</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
@@ -190,4 +192,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_REG_SAP callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

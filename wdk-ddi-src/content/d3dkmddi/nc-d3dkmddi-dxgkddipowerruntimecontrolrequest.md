@@ -1,108 +1,97 @@
 ---
-UID: NC:d3dkmddi.DXGKDDIPOWERRUNTIMECONTROLREQUEST
-title: DXGKDDIPOWERRUNTIMECONTROLREQUEST function
-author: windows-driver-content
-description: Called by the Power Engine Plug-in (PEP) to exchange information with the display miniport driver. Also called by the Microsoft DirectX graphics kernel subsystem to notify the display miniport driver about certain events.
-old-location: display\dxgkddipowerruntimecontrolrequest.htm
-old-project: display
-ms.assetid: 56535128-3107-4fb5-b0e1-2e913c386cc2
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDIPOWERRUNTIMECONTROLREQUEST
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiPowerRuntimeControlRequest
-req.alt-loc: D3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKDDIPOWERRUNTIMECONTROLREQUEST
+title : DXGKDDIPOWERRUNTIMECONTROLREQUEST
+author : windows-driver-content
+description : Called by the Power Engine Plug-in (PEP) to exchange information with the display miniport driver. Also called by the Microsoft DirectX graphics kernel subsystem to notify the display miniport driver about certain events.
+old-location : display\dxgkddipowerruntimecontrolrequest.htm
+old-project : display
+ms.assetid : 56535128-3107-4fb5-b0e1-2e913c386cc2
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiPowerRuntimeControlRequest
+req.alt-loc : D3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
+
 # DXGKDDIPOWERRUNTIMECONTROLREQUEST function
-
-
-
-## -description
 Called by the Power Engine Plug-in (PEP) to exchange information with the display miniport driver. Also called by the Microsoft DirectX graphics kernel subsystem to notify the display miniport driver about certain events.
 
+## Syntax
 
+```
+DXGKDDIPOWERRUNTIMECONTROLREQUEST Dxgkddipowerruntimecontrolrequest;
 
-## -syntax
-
-````
-PDXGKDDIPOWERRUNTIMECONTROLREQUEST DxgkDdiPowerRuntimeControlRequest;
-
-_Check_return_ NTSTATUS APIENTRY* DxgkDdiPowerRuntimeControlRequest(
-  _In_      const HANDLE  DriverContext,
-  _In_            LPCGUID PowerControlCode,
-  _In_opt_        PVOID   InBuffer,
-  _In_            SIZE_T  InBufferSize,
-  _Out_opt_       PVOID   OutBuffer,
-  _In_            SIZE_T  OutBufferSize,
-  _Out_opt_       PSIZE_T BytesReturned
+NTSTATUS Dxgkddipowerruntimecontrolrequest(
+  IN_CONST_HANDLE DriverContext,
+  IN LPCGUID PowerControlCode,
+  IN OPTIONAL PVOID InBuffer,
+  IN SIZE_T InBufferSize,
+  OUT OPTIONAL PVOID OutBuffer,
+  IN SIZE_T OutBufferSize,
+  OUT OPTIONAL PSIZE_T BytesReturned
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param DriverContext [in]
+`DriverContext`
 
 A handle to a context block associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-
-### -param PowerControlCode [in]
+`PowerControlCode`
 
 A pointer to a GUID that defines the meaning of the PEP's control request. For more information, see Remarks.
 
-
-### -param InBuffer [in, optional]
+`InBuffer`
 
 An optional pointer to an input buffer.
 
-
-### -param InBufferSize [in]
+`InBufferSize`
 
 The size, in bytes, of the buffer that <i>InBuffer</i> points to.
 
-
-### -param OutBuffer [out, optional]
+`OutBuffer`
 
 An optional pointer to an output buffer.
 
-
-### -param OutBufferSize [in]
+`OutBufferSize`
 
 The size, in bytes, of the buffer that <i>OutBuffer</i> points to.
 
-
-### -param BytesReturned [out, optional]
+`BytesReturned`
 
 An optional pointer to a buffer that contains the number of bytes that are written by the display miniport driver to the output buffer.
 
 
-## -returns
+## Return Value
+
 Returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h.
 
+## Remarks
 
-## -remarks
 The operating system calls <i>DxgkDdiPowerRuntimeControlRequest</i> only if the display miniport driver indicates support by setting <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>.<b>SupportRuntimePowerManagement</b> to <b>TRUE</b>.
 
 The PEP uses the following GUIDs that are defined in D3dkmddi.h to exchange information with the display miniport driver. The display port driver uses these  GUIDs to issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.
@@ -218,8 +207,20 @@ This function can be called simultaneously from multiple execution threads.
 
 The operating system guarantees that this function follows the zero level synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
@@ -245,4 +246,3 @@ The operating system guarantees that this function follows the zero level synchr
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PDXGKDDIPOWERRUNTIMECONTROLREQUEST callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

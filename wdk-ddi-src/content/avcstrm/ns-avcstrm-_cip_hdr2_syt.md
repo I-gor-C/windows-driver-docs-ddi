@@ -1,50 +1,43 @@
 ---
-UID: NS:avcstrm._CIP_HDR2_SYT
-title: _CIP_HDR2_SYT
-author: windows-driver-content
-description: The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream.
-old-location: stream\cip_hdr2_syt.htm
-old-project: stream
-ms.assetid: e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _CIP_HDR2_SYT, CIP_HDR2_SYT, *PCIP_HDR2_SYT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: avcstrm.h
-req.include-header: Avcstrm.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CIP_HDR2_SYT
-req.alt-loc: avcstrm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: CIP_HDR2_SYT, *PCIP_HDR2_SYT
+UID : NS:avcstrm._CIP_HDR2_SYT
+title : _CIP_HDR2_SYT
+author : windows-driver-content
+description : The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream.
+old-location : stream\cip_hdr2_syt.htm
+old-project : stream
+ms.assetid : e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _CIP_HDR2_SYT, CIP_HDR2_SYT, *PCIP_HDR2_SYT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : avcstrm.h
+req.include-header : Avcstrm.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CIP_HDR2_SYT
+req.alt-loc : avcstrm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : CIP_HDR2_SYT, *PCIP_HDR2_SYT
 ---
 
 # _CIP_HDR2_SYT structure
-
-
-
-## -description
 The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _CIP_HDR2_SYT {
   ULONG SYT  :16;
@@ -56,44 +49,45 @@ typedef struct _CIP_HDR2_SYT {
 } CIP_HDR2_SYT, *PCIP_HDR2_SYT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Bit10`
 
-### -field SYT
+            Must be set to 1:0.
+        
+            `F5060_OR_TSF`
 
-Lower 16 bits of CYCLE_TIME. This is not used for opening a stream.
+            Specifies field encoding or time-shift flag depending on the value of FMT. This flag may be either 0 for NTSC or 1 for PAL, or 1 for TimeShiftFlag. This flag has multiple meanings (like a union) depending on the FMT member. If the FMT member indicates DV format, then this is either 50/60 flag (NTSC or PAL); if it is it MPEG-TS, then this is a time-shifting flag.
+        
+            `FMT`
 
+            CIP format ID. For example, 000000 = DV and 100000 = MPEG2TS. If this is 111111 (no data), then DBS, FN, SPH and DBC (in the first quadlet of the CIP header, <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>) are ignored.
+        
+            `RSV`
 
-### -field RSV
+            Must be set to 0:0.
+        
+            `STYPE`
 
-Must be set to 0:0.
+            Specifies the video signal type, which is used for transmitting real time data.
+        
+            `SYT`
 
-
-### -field STYPE
-
-Specifies the video signal type, which is used for transmitting real time data.
-
-
-### -field F5060_OR_TSF
-
-Specifies field encoding or time-shift flag depending on the value of FMT. This flag may be either 0 for NTSC or 1 for PAL, or 1 for TimeShiftFlag. This flag has multiple meanings (like a union) depending on the FMT member. If the FMT member indicates DV format, then this is either 50/60 flag (NTSC or PAL); if it is it MPEG-TS, then this is a time-shifting flag.
-
-
-### -field FMT
-
-CIP format ID. For example, 000000 = DV and 100000 = MPEG2TS. If this is 111111 (no data), then DBS, FN, SPH and DBC (in the first quadlet of the CIP header, <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>) are ignored.
-
-
-### -field Bit10
-
-Must be set to 1:0.
+            Lower 16 bits of CYCLE_TIME. This is not used for opening a stream.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | avcstrm.h (include Avcstrm.h) |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
 </dt>
@@ -103,4 +97,3 @@ Must be set to 1:0.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CIP_HDR2_SYT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

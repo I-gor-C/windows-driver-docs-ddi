@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILOSGEOLOCATIONINFO
-title: RILOSGEOLOCATIONINFO
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilosgeolocationinfo.htm
-old-project: netvista
-ms.assetid: 9a56152e-fb38-4470-8834-a0cbdd7b70ec
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILOSGEOLOCATIONINFO
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
+UID : NS:ntddrilapitypes.RILOSGEOLOCATIONINFO
+title : RILOSGEOLOCATIONINFO
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilosgeolocationinfo.htm
+old-project : netvista
+ms.assetid : 9a56152e-fb38-4470-8834-a0cbdd7b70ec
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILOSGEOLOCATIONINFO
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
 ---
 
 # RILOSGEOLOCATIONINFO structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILOSGEOLOCATIONINFO {
   DWORD                   cbSize;
@@ -67,58 +60,82 @@ typedef struct _RILOSGEOLOCATIONINFO {
 } RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwAccuracy`
+
+            
+        
+            `dwAltitude`
+
+            
+        
+            `dwLatitude`
+
+            
+        
+            `dwLocationInformationMask`
+
+            
+        
+            `dwLongitude`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `stTimeStamp`
+
+            
+        
+            `wszAddressLine1`
+
+            
+        
+            `wszAddressLine2`
+
+            
+        
+            `wszCity`
+
+            
+        
+            `wszCountry`
+
+            
+        
+            `wszCountryCode`
+
+            
+        
+            `wszFormattedAddress`
+
+            
+        
+            `wszPostalCode`
+
+            
+        
+            `wszRegionCode`
+
+            
+        
+            `wszState`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwLatitude
-
-
-### -field dwLongitude
-
-
-### -field dwAltitude
-
-
-### -field dwAccuracy
-
-
-### -field dwLocationInformationMask
-
-
-### -field stTimeStamp
-
-
-### -field wszAddressLine1
-
-
-### -field wszAddressLine2
-
-
-### -field wszCity
-
-
-### -field wszState
-
-
-### -field wszCountry
-
-
-### -field wszPostalCode
-
-
-### -field wszFormattedAddress
-
-
-### -field wszCountryCode
-
-
-### -field wszRegionCode
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

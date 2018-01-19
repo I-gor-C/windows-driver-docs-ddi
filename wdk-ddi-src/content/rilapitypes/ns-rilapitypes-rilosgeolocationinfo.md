@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILOSGEOLOCATIONINFO
-title: RILOSGEOLOCATIONINFO
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilosgeolocationinfo_2.htm
-old-project: netvista
-ms.assetid: 5207e880-67cb-4cd5-9884-a01e6dd20201
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILOSGEOLOCATIONINFO
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILOSGEOLOCATIONINFO
+title : RILOSGEOLOCATIONINFO
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilosgeolocationinfo_2.htm
+old-project : netvista
+ms.assetid : 5207e880-67cb-4cd5-9884-a01e6dd20201
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILOSGEOLOCATIONINFO
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
+req.product : Windows 10 or later.
 ---
 
 # RILOSGEOLOCATIONINFO structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILOSGEOLOCATIONINFO {
   DWORD                              cbSize;
@@ -68,58 +61,82 @@ typedef struct _RILOSGEOLOCATIONINFO {
 } RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwAccuracy`
+
+            
+        
+            `dwAltitude`
+
+            
+        
+            `dwLatitude`
+
+            
+        
+            `dwLocationInformationMask`
+
+            
+        
+            `dwLongitude`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `stTimeStamp`
+
+            
+        
+            `wszAddressLine1`
+
+            
+        
+            `wszAddressLine2`
+
+            
+        
+            `wszCity`
+
+            
+        
+            `wszCountry`
+
+            
+        
+            `wszCountryCode`
+
+            
+        
+            `wszFormattedAddress`
+
+            
+        
+            `wszPostalCode`
+
+            
+        
+            `wszRegionCode`
+
+            
+        
+            `wszState`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwLatitude
-
-
-### -field dwLongitude
-
-
-### -field dwAltitude
-
-
-### -field dwAccuracy
-
-
-### -field dwLocationInformationMask
-
-
-### -field stTimeStamp
-
-
-### -field wszAddressLine1
-
-
-### -field wszAddressLine2
-
-
-### -field wszCity
-
-
-### -field wszState
-
-
-### -field wszCountry
-
-
-### -field wszPostalCode
-
-
-### -field wszFormattedAddress
-
-
-### -field wszCountryCode
-
-
-### -field wszRegionCode
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

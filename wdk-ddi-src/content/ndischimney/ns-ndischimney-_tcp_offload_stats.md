@@ -1,44 +1,40 @@
 ---
-UID: NS:ndischimney._TCP_OFFLOAD_STATS
-title: _TCP_OFFLOAD_STATS
-author: windows-driver-content
-description: The TCP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a query of OID_TCP4_OFFLOAD_STATS or OID_TCP6_OFFLOAD_STATS.
-old-location: netvista\tcp_offload_stats.htm
-old-project: netvista
-ms.assetid: 959bc46a-c574-4130-a83d-22a695d0d891
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _TCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: TCP_OFFLOAD_STATS
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
+UID : NS:ndischimney._TCP_OFFLOAD_STATS
+title : _TCP_OFFLOAD_STATS
+author : windows-driver-content
+description : The TCP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a query of OID_TCP4_OFFLOAD_STATS or OID_TCP6_OFFLOAD_STATS.
+old-location : netvista\tcp_offload_stats.htm
+old-project : netvista
+ms.assetid : 959bc46a-c574-4130-a83d-22a695d0d891
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _TCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : TCP_OFFLOAD_STATS
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ---
 
 # _TCP_OFFLOAD_STATS structure
-
-
-
-## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 The TCP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a
@@ -46,10 +42,7 @@ The TCP_OFFLOAD_STATS structure contains statistics that an offload target suppl
   <a href="https://msdn.microsoft.com/library/windows/hardware/ff569800">OID_TCP4_OFFLOAD_STATS</a> or 
   <a href="https://msdn.microsoft.com/library/windows/hardware/ff569801">OID_TCP6_OFFLOAD_STATS</a>.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _TCP_OFFLOAD_STATS {
   ULONG64 InSegments;
@@ -62,59 +55,52 @@ typedef struct _TCP_OFFLOAD_STATS {
 } TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CurrentlyEstablished`
 
-### -field InSegments
+            The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT. See
+     
+     <i>tcpCurrEstab</i> in RFC 1156.
+        
+            `InErrors`
 
-The total number of segments received on offloaded TCP connections, including those received in
+            The number of packets received on offloaded TCP connections that contained one or more
+     TCP-specific errors that prevented the offload target from delivering the packets. See 
+     <i>ifInErrors</i> in RFC 1156.
+        
+            `InSegments`
+
+            The total number of segments received on offloaded TCP connections, including those received in
      error (
      <b>InErrors</b> ). This count includes segments received on currently established connections. See 
      <i>tcpInSegs</i> in RFC 1156.
+        
+            `OutResets`
 
+            The number of segments transmitted on offloaded TCP connections with the RST bit set in the TCP
+     header.
+        
+            `OutSegments`
 
-### -field OutSegments
-
-The total number of segments sent on offloaded TCP connections, including those on current
+            The total number of segments sent on offloaded TCP connections, including those on current
      connections but excluding those containing only retransmitted octets. See 
      <i>tcpOutSegs</i> in RFC 1156.
+        
+            `ResetEstablished`
 
-
-### -field CurrentlyEstablished
-
-The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT. See
-     
-     <i>tcpCurrEstab</i> in RFC 1156.
-
-
-### -field ResetEstablished
-
-The number of times that offloaded TCP connections have made a direct transition to the CLOSED
+            The number of times that offloaded TCP connections have made a direct transition to the CLOSED
      state from either the ESTABLISHED state or the CLOSE-WAIT state.
+        
+            `RetransmittedSegments`
 
-
-### -field RetransmittedSegments
-
-The total number of segments retransmitted on offloaded TCP connections--that is, the number of
+            The total number of segments retransmitted on offloaded TCP connections--that is, the number of
      TCP segments transmitted that contain one or more previously transmitted octets. See 
      <i>tcpRetransSegs</i> in RFC 1156.
 
-
-### -field InErrors
-
-The number of packets received on offloaded TCP connections that contained one or more
-     TCP-specific errors that prevented the offload target from delivering the packets. See 
-     <i>ifInErrors</i> in RFC 1156.
-
-
-### -field OutResets
-
-The number of segments transmitted on offloaded TCP connections with the RST bit set in the TCP
-     header.
-
-
-## -remarks
-The statistics in the TCP_OFFLOAD_STATS structure pertain only to offloaded TCP connections. The
+    ## Remarks
+        The statistics in the TCP_OFFLOAD_STATS structure pertain only to offloaded TCP connections. The
     offload target must not include counts for TCP segments on connections that haven't been offloaded. The
     statistics in the TCP_OFFLOAD_STATS structure pertain to a single network interface.
 
@@ -156,9 +142,17 @@ Note that the host stack supplies a TCP_OFFLOAD_STATS structure when setting OID
 All of the counters that supply the values for the TCP_OFFLOAD_STATS structure wrap (restart from
     zero) when incremented beyond their maximum counts.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569800">OID_TCP4_OFFLOAD_STATS</a>
 </dt>
@@ -171,4 +165,3 @@ All of the counters that supply the values for the TCP_OFFLOAD_STATS structure w
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

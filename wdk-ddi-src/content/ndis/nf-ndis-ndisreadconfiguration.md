@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisReadConfiguration
-title: NdisReadConfiguration function
-author: windows-driver-content
-description: The NdisReadConfiguration function returns the value of a named entry of the specified type from the registry, given the handle to an open registry key.
-old-location: netvista\ndisreadconfiguration.htm
-old-project: netvista
-ms.assetid: 74560229-9e97-40b9-961c-6bf726586e27
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisReadConfiguration
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadConfiguration (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadConfiguration (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisReadConfiguration
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Miscellaneous_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisReadConfiguration
+title : NdisReadConfiguration function
+author : windows-driver-content
+description : The NdisReadConfiguration function returns the value of a named entry of the specified type from the registry, given the handle to an open registry key.
+old-location : netvista\ndisreadconfiguration.htm
+old-project : netvista
+ms.assetid : 74560229-9e97-40b9-961c-6bf726586e27
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisReadConfiguration
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadConfiguration (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadConfiguration (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisReadConfiguration
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Miscellaneous_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisReadConfiguration function
-
-
-
-## -description
 The 
   <b>NdisReadConfiguration</b> function returns
   the value of a named entry of the specified type from the registry, given the handle to an open registry
   key. This function must be invoked serially with respect to itself and the <a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a> function.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisReadConfiguration(
@@ -58,10 +53,9 @@ VOID NdisReadConfiguration(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Status [out]
+`Status`
 
 A pointer to a caller-supplied variable in which this function returns the status of the call as
      one of the following values.
@@ -73,42 +67,7 @@ A pointer to a caller-supplied variable in which this function returns the statu
 </tr>
 <tr>
 
-### -param NDIS_STATUS_SUCCESS
-
-</td>
-<td width="60%">
-The buffer at 
-       <i>ParameterValue</i> contains the returned configuration information.
-
-</td>
-</tr>
-<tr>
-
-### -param NDIS_STATUS_RESOURCES
-
-</td>
-<td width="60%">
-NDIS could not allocate resources, usually enough memory, to return the requested
-       information.
-
-</td>
-</tr>
-<tr>
-
-### -param NDIS_STATUS_FAILURE
-
-</td>
-<td width="60%">
-The requested information could not be found under the opened registry key designated by the 
-       <i>ConfigurationHandle</i>.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -param ParameterValue [out]
+`ParameterValue`
 
 A pointer to a memory location where NDIS supplies a pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
@@ -118,8 +77,7 @@ A pointer to a memory location where NDIS supplies a pointer to an
      <b>
      NDIS_CONFIGURATION_PARAMETER</b> structure.
 
-
-### -param ConfigurationHandle [in]
+`ConfigurationHandle`
 
 The handle to a registry key that was returned by the 
      <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>, 
@@ -128,8 +86,7 @@ The handle to a registry key that was returned by the
      <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
      NdisOpenConfigurationKeyByName</a> function.
 
-
-### -param Keyword [in]
+`Keyword`
 
 A pointer to a caller-supplied NDIS_STRING type describing a counted string, in the system-default
      character set, specifying the name of the entry under the open registry key for which to return the
@@ -179,21 +136,20 @@ NdisVersion
 </td>
 </tr>
 </table>
- 
 
-
-### -param ParameterType [in]
+`ParameterType`
 
 The type of the value entry that is specified as one of the 
      <a href="..\ndis\ne-ndis-_ndis_parameter_type.md">NDIS_PARAMETER_TYPE</a> enumeration values.
      This parameter is ignored in Windows NT and later versions.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 In the configuration registry of Windows 2000 and later versions, an NDIS 
     <i>keyword</i> is a synonym for a 
     <i>value entry name</i>. Such a name is a counted sequence of Unicode characters, terminated with a
@@ -204,7 +160,7 @@ Every NDIS driver can set up configuration information in the registry for itsel
     own name as an entry with a preformatted string value that can be passed in calls to the 
     <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
     NdisRegisterProtocolDriver</a> function. For more information, see 
-    <a href="netvista.add_registry_sections_in_a_network_inf_file">Add-registry-sections in
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/add-registry-sections-in-a-network-inf-file">Add-registry-sections in
     a Network INF File</a>.
 
 Each miniport driver also has associated value entries in the registry. The value entries for any
@@ -232,11 +188,23 @@ Note that NDIS does not validate values that a driver reads from the registry. T
     caller determines that a value is out of bounds, it should use a default value instead.
 
 For more information about setup and installation files, see 
-    <a href="devinst.overview_of_device_and_driver_installation">Device Installation
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-and-driver-installation">Device Installation
     Overview</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Miscellaneous_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
@@ -296,4 +264,3 @@ For more information about setup and installation files, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadConfiguration function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.IoCheckEaBufferValidity
-title: IoCheckEaBufferValidity function
-author: windows-driver-content
-description: The IoCheckEaBufferValidity routine checks whether the specified extended attribute (EA) buffer is valid.
-old-location: ifsk\iocheckeabuffervalidity.htm
-old-project: ifsk
-ms.assetid: 1f9a4fcb-0e70-4f13-bd38-e87bee909a26
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: IoCheckEaBufferValidity
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoCheckEaBufferValidity
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.IoCheckEaBufferValidity
+title : IoCheckEaBufferValidity function
+author : windows-driver-content
+description : The IoCheckEaBufferValidity routine checks whether the specified extended attribute (EA) buffer is valid.
+old-location : ifsk\iocheckeabuffervalidity.htm
+old-project : ifsk
+ms.assetid : 1f9a4fcb-0e70-4f13-bd38-e87bee909a26
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : IoCheckEaBufferValidity
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoCheckEaBufferValidity
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # IoCheckEaBufferValidity function
-
-
-
-## -description
 The <b>IoCheckEaBufferValidity</b> routine checks whether the specified extended attribute (EA) buffer is valid.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS IoCheckEaBufferValidity(
@@ -53,29 +48,27 @@ NTSTATUS IoCheckEaBufferValidity(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param EaBuffer [in]
+`EaBuffer`
 
 Pointer to the buffer containing the EAs to be checked.
 
-
-### -param EaLength [in]
+`EaLength`
 
 Length, in bytes, of <i>EaBuffer</i>.
 
-
-### -param ErrorOffset [out]
+`ErrorOffset`
 
 Pointer to a variable that receives the offset of the offending entry in the EA buffer if an error is found. This variable is only valid if an error occurs.
 
 
-## -returns
+## Return Value
+
 <b>IoCheckEaBufferValidity</b> returns STATUS_SUCCESS if the EA buffer is valid; otherwise it returns STATUS_EA_LIST_INCONSISTENT.
 
+## Remarks
 
-## -remarks
 <b>IoCheckEaBufferValidity</b> checks each FILE_FULL_EA_INFORMATION entry in the specified EA buffer to ensure that the following conditions are met:
 
 The entire entry must fall within the buffer.
@@ -94,8 +87,20 @@ The actual buffer length is nonnegative.
 
 To be valid, the EA buffer must meet all of these conditions.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
@@ -112,4 +117,3 @@ To be valid, the EA buffer must meet all of these conditions.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCheckEaBufferValidity function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

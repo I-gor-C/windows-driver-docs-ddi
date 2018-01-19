@@ -1,50 +1,43 @@
 ---
-UID: NE:ksi.KSPROPERTY_SERVICE
-title: KSPROPERTY_SERVICE
-author: windows-driver-content
-description: .
-old-location: stream\ksproperty_service.htm
-old-project: stream
-ms.assetid: 771027AA-E64D-4AC8-9C52-D1F96A761FAD
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: KSPROPERTY_SERVICE, KSPROPERTY_SERVICE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ksi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KSPROPERTY_SERVICE
-req.alt-loc: Ksi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: KSPROPERTY_SERVICE
+UID : NE:ksi.KSPROPERTY_SERVICE
+title : KSPROPERTY_SERVICE
+author : windows-driver-content
+description : .
+old-location : stream\ksproperty_service.htm
+old-project : stream
+ms.assetid : 771027AA-E64D-4AC8-9C52-D1F96A761FAD
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : KSPROPERTY_SERVICE, KSPROPERTY_SERVICE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ksi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KSPROPERTY_SERVICE
+req.alt-loc : Ksi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : KSPROPERTY_SERVICE
 ---
 
-# KSPROPERTY_SERVICE enumeration
+# KSPROPERTY_SERVICE Enumeration
 
 
-
-## -description
-
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum  { 
   KSPROPERTY_SERVICE_BUILDCACHE,
@@ -52,13 +45,26 @@ typedef enum  {
 } KSPROPERTY_SERVICE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field KSPROPERTY_SERVICE_BUILDCACHE
+<tr>
+<td>KSPROPERTY_SERVICE_BUILDCACHE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>KSPROPERTY_SERVICE_MERIT</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field KSPROPERTY_SERVICE_MERIT
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ksi.h |

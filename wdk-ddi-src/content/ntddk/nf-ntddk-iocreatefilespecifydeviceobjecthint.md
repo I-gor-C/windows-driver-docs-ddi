@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.IoCreateFileSpecifyDeviceObjectHint
-title: IoCreateFileSpecifyDeviceObjectHint function
-author: windows-driver-content
-description: The IoCreateFileSpecifyDeviceObjectHint routine is used by file system filter drivers to send a create request only to the filters below a specified device object and to the file system.
-old-location: ifsk\iocreatefilespecifydeviceobjecthint.htm
-old-project: ifsk
-ms.assetid: b7374625-6997-44db-b43b-748dab813fcd
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: IoCreateFileSpecifyDeviceObjectHint
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h, Ntifs.h, FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: The IoCreateFileSpecifyDeviceObjectHint routine is available starting with Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoCreateFileSpecifyDeviceObjectHint
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.IoCreateFileSpecifyDeviceObjectHint
+title : IoCreateFileSpecifyDeviceObjectHint function
+author : windows-driver-content
+description : The IoCreateFileSpecifyDeviceObjectHint routine is used by file system filter drivers to send a create request only to the filters below a specified device object and to the file system.
+old-location : ifsk\iocreatefilespecifydeviceobjecthint.htm
+old-project : ifsk
+ms.assetid : b7374625-6997-44db-b43b-748dab813fcd
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : IoCreateFileSpecifyDeviceObjectHint
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h, Ntifs.h, FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : The IoCreateFileSpecifyDeviceObjectHint routine is available starting with Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoCreateFileSpecifyDeviceObjectHint
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # IoCreateFileSpecifyDeviceObjectHint function
-
-
-
-## -description
 The <b>IoCreateFileSpecifyDeviceObjectHint</b> routine is used by file system filter drivers to send a create request only to the filters below a specified device object and to the file system.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
@@ -65,15 +60,13 @@ NTSTATUS IoCreateFileSpecifyDeviceObjectHint(
 );
 ````
 
+## Parameters
 
-## -parameters
+`FileHandle`
 
-### -param FileHandle [out]
+A pointer to a variable that receives a handle for the file object if this call is successful.
 
-A pointer to a variable that receives a handle for the file object if this call is successful. 
-
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects.
 
@@ -314,7 +307,7 @@ The FILE_READ_DATA, FILE_WRITE_DATA, FILE_EXECUTE, and FILE_APPEND_DATA <i>Desir
 </dd>
 </dl>
 
-### -param ObjectAttributes [in]
+`ObjectAttributes`
 
 A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure already initialized by the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine. If the caller is running in the system process context, this parameter (<i>ObjectAttributes</i>) can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to the <b>InitializeObjectAttributes</b> routine. Members of the OBJECT_ATTRIBUTES structure for a file object include the following.
 
@@ -374,10 +367,8 @@ A set of flags that controls the file object attributes. If the caller is runnin
 </td>
 </tr>
 </table>
- 
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>IoCreateFileSpecifyDeviceObjectHint</b>, the <b>Information</b> member contains one of the following values:
 
@@ -393,13 +384,11 @@ FILE_EXISTS
 
 FILE_DOES_NOT_EXIST
 
+`AllocationSize`
 
-### -param AllocationSize [in, optional]
+Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded.
 
-Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded. 
-
-
-### -param FileAttributes [in]
+`FileAttributes`
 
 Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by any other flag or by an ORed combination of compatible flags. Possible <i>FileAttributes</i> flags include the following. 
 
@@ -469,10 +458,8 @@ A temporary file should be created.
 </td>
 </tr>
 </table>
- 
 
-
-### -param ShareAccess [in]
+`ShareAccess`
 
 Specifies the type of share access to the file that the caller would like, as zero, or one, or a combination of the following flags. To request exclusive access, set this parameter to zero. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Options</i> parameter, the I/O manager ignores this parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when using the IO_IGNORE_SHARE_ACCESS_CHECK flag. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. 
 
@@ -512,10 +499,8 @@ The file can be opened for delete access by other threads.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Disposition [in]
+`Disposition`
 
 Specifies a value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described following.
 
@@ -585,10 +570,8 @@ If the file already exists, open it and overwrite it. If it does not, create the
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateOptions [in]
+`CreateOptions`
 
 Specifies the options to be applied when creating or opening the file. These options are specified as a compatible combination of the following flags.
 
@@ -770,30 +753,24 @@ This flag allows an application to request a filter opportunistic lock (oplock) 
 </td>
 </tr>
 </table>
- 
 
+`EaBuffer`
 
-### -param EaBuffer [in, optional]
+A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file.
 
-A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer containing extended attribute (EA) information to be applied to the file. 
+`EaLength`
 
+The length, in bytes, of <i>EaBuffer</i>.
 
-### -param EaLength [in]
+`CreateFileType`
 
-The length, in bytes, of <i>EaBuffer</i>. 
+Drivers must set this parameter to CreateFileTypeNone.
 
+`InternalParameters`
 
-### -param CreateFileType [in]
+Drivers must set this parameter to <b>NULL</b>.
 
-Drivers must set this parameter to CreateFileTypeNone. 
-
-
-### -param InternalParameters [in, optional]
-
-Drivers must set this parameter to <b>NULL</b>. 
-
-
-### -param Options [in]
+`Options`
 
 Specifies options to be used during the creation of the create request. The following table lists the available options.
 
@@ -823,15 +800,14 @@ Indicates that the I/O manager should not perform share-access checks on the fil
 </td>
 </tr>
 </table>
- 
+
+`DeviceObject`
+
+A pointer to the device object to which the create request is to be sent. The device object must be a filter or file system device object in the file system driver stack for the volume on which the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request will be sent to the device object at the top of the driver stack.
 
 
-### -param DeviceObject [in, optional]
+## Return Value
 
-A pointer to the device object to which the create request is to be sent. The device object must be a filter or file system device object in the file system driver stack for the volume on which the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request will be sent to the device object at the top of the driver stack. 
-
-
-## -returns
 <b>IoCreateFileSpecifyDeviceObjectHint</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_OBJECT_PARAMETER</b></dt>
@@ -841,10 +817,10 @@ A pointer to the device object to which the create request is to be sent. The de
 </dl>The file or directory name contains a mount point that resolves to a volume other than the one to which the specified <i>DeviceObject</i> is attached. 
 <dl>
 <dt><b>STATUS_OBJECT_PATH_SYNTAX_BAD</b></dt>
-</dl> 
+</dl>
 
+## Remarks
 
-## -remarks
 This routine is used by file system filter drivers to send a create request only to the filters below a specified device object and to the file system. Filters that are attached above the specified device object in the driver stack do not receive the create request.  
 
 If you use the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> routine instead of the <b>IoCreateFileSpecifyDeviceObjectHint</b> routine, note that the <i>DriverContext</i> parameter of the <b>IoCreateFileSpecifyDeviceObjectHint</b> routine has been moved to the <b>DeviceObjectHint</b> member of the <a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a> structure.  The IO_DRIVER_CREATE_CONTEXT structure is passed into the <b>IoCreateFileEx</b> routine through its <i>DriverContext</i> parameter.
@@ -928,8 +904,20 @@ NTFS is the only Microsoft file system that implements FILE_RESERVE_OPFILTER.
 
 If the file name path that is passed to <b>IoCreateFileSpecifyDeviceObjectHint</b> contains a reparse point, the reparse point must resolve to the same volume where the file or directory resides.  If it does not, either the error STATUS_INVALID_DEVICE_OBJECT_PARAMETER or STATUS_MOUNT_POINT_NOT_RESOLVED is returned.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h, Ntifs.h, FltKernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -982,4 +970,3 @@ If the file name path that is passed to <b>IoCreateFileSpecifyDeviceObjectHint</
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateFileSpecifyDeviceObjectHint routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

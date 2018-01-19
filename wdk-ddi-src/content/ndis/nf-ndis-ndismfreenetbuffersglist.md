@@ -1,53 +1,48 @@
 ---
-UID: NF:ndis.NdisMFreeNetBufferSGList
-title: NdisMFreeNetBufferSGList function
-author: windows-driver-content
-description: Bus-master miniport drivers call the NdisMFreeNetBufferSGList function to free scatter/gather list resources that were allocated by calling the NdisMAllocateNetBufferSGList function.
-old-location: netvista\ndismfreenetbuffersglist.htm
-old-project: netvista
-ms.assetid: 22945e04-9feb-4f4b-9ca6-916dab372a64
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMFreeNetBufferSGList
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMFreeNetBufferSGList
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Gather_DMA_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMFreeNetBufferSGList
+title : NdisMFreeNetBufferSGList function
+author : windows-driver-content
+description : Bus-master miniport drivers call the NdisMFreeNetBufferSGList function to free scatter/gather list resources that were allocated by calling the NdisMAllocateNetBufferSGList function.
+old-location : netvista\ndismfreenetbuffersglist.htm
+old-project : netvista
+ms.assetid : 22945e04-9feb-4f4b-9ca6-916dab372a64
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMFreeNetBufferSGList
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMFreeNetBufferSGList
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Gather_DMA_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMFreeNetBufferSGList function
-
-
-
-## -description
 Bus-master miniport drivers call the 
   <b>NdisMFreeNetBufferSGList</b> function to free scatter/gather list resources that were allocated by
   calling the 
   <a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">
   NdisMAllocateNetBufferSGList</a> function.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisMFreeNetBufferSGList(
@@ -57,34 +52,32 @@ VOID NdisMFreeNetBufferSGList(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisMiniportDmaHandle [in]
+`NdisMiniportDmaHandle`
 
 A handle to a context area that NDIS uses to manage a DMA resource. The caller obtained this
      handle by calling the 
      <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
      NdisMRegisterScatterGatherDma</a> function.
 
-
-### -param pSGL [in]
+`pSGL`
 
 A pointer to a miniport driver scatter/gather list buffer.
 
-
-### -param NetBuffer [in]
+`NetBuffer`
 
 A pointer to the 
      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure associated with the
      specified scatter/gather list buffer.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Bus-master miniport drivers must call the 
     <b>NdisMFreeNetBufferSGList</b> function to free a scatter/gather list. A miniport driver typically calls 
     <b>NdisMFreeNetBufferSGList</b> from its 
@@ -103,8 +96,20 @@ Miniport drivers can free the buffer that was specified in the
 
 Before accessing received data, miniport drivers must call <b>NdisMFreeNetBufferSGList</b> to flush the memory cache.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Gather_DMA_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
@@ -137,4 +142,3 @@ Before accessing received data, miniport drivers must call <b>NdisMFreeNetBuffer
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMFreeNetBufferSGList function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILMSGSERVICEINFOPARAMMASK
-title: RILMSGSERVICEINFOPARAMMASK
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmsgserviceinfoparammask_2.htm
-old-project: netvista
-ms.assetid: 2c5d29da-6577-4428-ac7b-1d3ff647086a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMSGSERVICEINFOPARAMMASK, RILMSGSERVICEINFOPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMSGSERVICEINFOPARAMMASK
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILMSGSERVICEINFOPARAMMASK
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILMSGSERVICEINFOPARAMMASK
+title : RILMSGSERVICEINFOPARAMMASK
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmsgserviceinfoparammask_2.htm
+old-project : netvista
+ms.assetid : 2c5d29da-6577-4428-ac7b-1d3ff647086a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMSGSERVICEINFOPARAMMASK, RILMSGSERVICEINFOPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMSGSERVICEINFOPARAMMASK
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILMSGSERVICEINFOPARAMMASK
+req.product : Windows 10 or later.
 ---
 
-# RILMSGSERVICEINFOPARAMMASK enumeration
+# RILMSGSERVICEINFOPARAMMASK Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILMSGSERVICEINFOPARAMMASK { 
   RIL_PARAM_MSI_STOREUSED,
@@ -54,16 +47,31 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
 } RILMSGSERVICEINFOPARAMMASK;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_PARAM_MSI_STOREUSED
+<tr>
+<td>RIL_PARAM_MSI_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_MSI_STORETOTAL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_MSI_STOREUSED</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_PARAM_MSI_STORETOTAL
-
-
-### -field RIL_PARAM_MSI_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

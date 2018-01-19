@@ -1,87 +1,80 @@
 ---
-UID: NC:wdfdevice.EVT_WDF_DEVICE_USAGE_NOTIFICATION
-title: EVT_WDF_DEVICE_USAGE_NOTIFICATION function
-author: windows-driver-content
-description: A driver's EvtDeviceUsageNotification event callback function informs the driver when a device is being used for special files.
-old-location: wdf\evtdeviceusagenotification.htm
-old-project: wdf
-ms.assetid: b6b7dd80-fd91-4194-8288-4d703983a798
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: EVT_WDF_DEVICE_USAGE_NOTIFICATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: EvtDeviceUsageNotification
-req.alt-loc: Wdfdevice.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
-req.product: Windows 10 or later.
+UID : NC:wdfdevice.EVT_WDF_DEVICE_USAGE_NOTIFICATION
+title : EVT_WDF_DEVICE_USAGE_NOTIFICATION
+author : windows-driver-content
+description : A driver's EvtDeviceUsageNotification event callback function informs the driver when a device is being used for special files.
+old-location : wdf\evtdeviceusagenotification.htm
+old-project : wdf
+ms.assetid : b6b7dd80-fd91-4194-8288-4d703983a798
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WDF_REL_TIMEOUT_IN_US
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : EvtDeviceUsageNotification
+req.alt-loc : Wdfdevice.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_WDF_DEVICE_USAGE_NOTIFICATION function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceUsageNotification</i> event callback function informs the driver when a device is being used for special files.
 
+## Syntax
 
+```
+EVT_WDF_DEVICE_USAGE_NOTIFICATION EvtWdfDeviceUsageNotification;
 
-## -syntax
-
-````
-EVT_WDF_DEVICE_USAGE_NOTIFICATION EvtDeviceUsageNotification;
-
-VOID EvtDeviceUsageNotification(
-  _In_ WDFDEVICE             Device,
-  _In_ WDF_SPECIAL_FILE_TYPE NotificationType,
-  _In_ BOOLEAN               IsInNotificationPath
+void EvtWdfDeviceUsageNotification(
+  WDFDEVICE Device,
+  WDF_SPECIAL_FILE_TYPE NotificationType,
+  BOOLEAN IsInNotificationPath
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Device [in]
+`Device`
 
 A handle to a framework device object.
 
-
-### -param NotificationType [in]
+`NotificationType`
 
 A <a href="..\wdfdevice\ne-wdfdevice-_wdf_special_file_type.md">WDF_SPECIAL_FILE_TYPE</a>-typed value that identifies the type of special file that the system is storing on the specified device.
 
-
-### -param IsInNotificationPath [in]
+`IsInNotificationPath`
 
 A Boolean value which, if <b>TRUE</b>, indicates that the system has starting using the special file and, if <b>FALSE</b>, indicate that the system as finished using the special file.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 To register an <i>EvtDeviceUsageNotification</i> callback function, a driver must call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a>. 
 
 Your driver must provide an <i>EvtDeviceUsageNotification</i> callback function only if must provide driver-specific handling of special files. 
@@ -95,3 +88,15 @@ For example, to define an <i>EvtDeviceUsageNotification</i> callback function th
 Then, implement your callback function as follows:
 
 The <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_USAGE_NOTIFICATION</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfdevice.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |

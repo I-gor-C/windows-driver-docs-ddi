@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.IoReportTargetDeviceChange
-title: IoReportTargetDeviceChange function
-author: windows-driver-content
-description: The IoReportTargetDeviceChange routine notifies the PnP manager that a custom event has occurred on a device.
-old-location: kernel\ioreporttargetdevicechange.htm
-old-project: kernel
-ms.assetid: b0107cb1-4828-4ede-813e-934b929c9874
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: IoReportTargetDeviceChange
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoReportTargetDeviceChange
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.IoReportTargetDeviceChange
+title : IoReportTargetDeviceChange function
+author : windows-driver-content
+description : The IoReportTargetDeviceChange routine notifies the PnP manager that a custom event has occurred on a device.
+old-location : kernel\ioreporttargetdevicechange.htm
+old-project : kernel
+ms.assetid : b0107cb1-4828-4ede-813e-934b929c9874
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : IoReportTargetDeviceChange
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoReportTargetDeviceChange
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # IoReportTargetDeviceChange function
-
-
-
-## -description
 The <b>IoReportTargetDeviceChange</b> routine notifies the PnP manager that a custom event has occurred on a device.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS IoReportTargetDeviceChange(
@@ -53,15 +48,13 @@ NTSTATUS IoReportTargetDeviceChange(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param PhysicalDeviceObject [in]
+`PhysicalDeviceObject`
 
 Pointer to the PDO of the device being reported.
 
-
-### -param NotificationStructure [in]
+`NotificationStructure`
 
 Pointer to a caller-supplied <a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a> structure describing the custom event. The PnP manager sends this structure to drivers that registered for notification of the event.
 
@@ -70,16 +63,15 @@ Pointer to a caller-supplied <a href="..\wdm\ns-wdm-_target_device_custom_notifi
 The PnP manager fills in the <i>NotificationStructure</i>.<b>FileObject</b> field when it sends notifications to registrants.
 
 
-## -returns
+## Return Value
+
 <b>IoReportTargetDeviceChange</b> returns STATUS_SUCCESS or an appropriate error status. Possible error status values include the following.
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>The caller specified a system PnP event, such as GUID_TARGET_DEVICE_QUERY_REMOVE. This routine is only for custom events.
 
- 
+## Remarks
 
-
-## -remarks
 After <b>IoReportTargetDeviceChange</b> notifies the PnP manager that a custom event has occurred on a device, the PnP manager sends notification of the event to drivers that registered for notification on the device. Do not use this routine to report system PnP events, such as GUID_TARGET_DEVICE_REMOVE_COMPLETE.
 
 A driver that defines a custom device event calls <b>IoReportTargetDeviceChange</b> to inform the PnP manager that the custom event has occurred. Custom notification can be used for events like a volume label change.
@@ -94,8 +86,20 @@ Callers of <b>IoReportTargetDeviceChange</b> must be running at IRQL = PASSIVE_L
 
 <b>IoReportTargetDeviceChange</b> is not supported on Windows 98/Me; it returns STATUS_NOT_IMPLEMENTED.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-ioreporttargetdevicechangeasynchronous.md">IoReportTargetDeviceChangeAsynchronous</a>
@@ -109,4 +113,3 @@ Callers of <b>IoReportTargetDeviceChange</b> must be running at IRQL = PASSIVE_L
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReportTargetDeviceChange routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

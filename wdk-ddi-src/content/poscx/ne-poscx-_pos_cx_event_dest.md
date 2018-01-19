@@ -1,51 +1,44 @@
 ---
-UID: NE:poscx._POS_CX_EVENT_DEST
-title: _POS_CX_EVENT_DEST
-author: windows-driver-content
-description: The POS_CX_EVENT_DEST defines which applications receive this event.
-old-location: pos\pos_cx_event_dest.htm
-old-project: pos
-ms.assetid: 63D16B9E-82CC-4171-B80A-D0FA6F2066E2
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _POS_CX_EVENT_DEST, POS_CX_EVENT_DEST
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: poscx.h
-req.include-header: Poscx.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: POS_CX_EVENT_DEST
-req.alt-loc: poscx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: POS_CX_EVENT_DEST
-req.product: Windows 10 or later.
+UID : NE:poscx._POS_CX_EVENT_DEST
+title : _POS_CX_EVENT_DEST
+author : windows-driver-content
+description : The POS_CX_EVENT_DEST defines which applications receive this event.
+old-location : pos\pos_cx_event_dest.htm
+old-project : pos
+ms.assetid : 63D16B9E-82CC-4171-B80A-D0FA6F2066E2
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _POS_CX_EVENT_DEST, POS_CX_EVENT_DEST
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : poscx.h
+req.include-header : Poscx.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : POS_CX_EVENT_DEST
+req.alt-loc : poscx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : POS_CX_EVENT_DEST
+req.product : Windows 10 or later.
 ---
 
-# _POS_CX_EVENT_DEST enumeration
-
-
-
-## -description
+# _POS_CX_EVENT_DEST Enumeration
 The POS_CX_EVENT_DEST defines which applications receive this event.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _POS_CX_EVENT_DEST { 
   POS_CX_EVENT_DEST_INVALID       = 0,
@@ -54,22 +47,31 @@ typedef enum _POS_CX_EVENT_DEST {
 } POS_CX_EVENT_DEST;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field POS_CX_EVENT_DEST_INVALID
+<tr>
+<td>POS_CX_EVENT_DEST_ALL</td>
+<td>Specifies that the event will be broadcast to all client handles.</td>
+</tr>
 
-Specifies that no devices will receive this event.  This value should not be used.
+<tr>
+<td>POS_CX_EVENT_DEST_DEVICE_OWNER</td>
+<td>Specifies that only the current claim owner will receive this event.</td>
+</tr>
+
+<tr>
+<td>POS_CX_EVENT_DEST_INVALID</td>
+<td>Specifies that no devices will receive this event.  This value should not be used.</td>
+</tr>
+</table>
 
 
-### -field POS_CX_EVENT_DEST_DEVICE_OWNER
-
-Specifies that only the current claim owner will receive this event.
-
-
-### -field POS_CX_EVENT_DEST_ALL
-
-Specifies that the event will be broadcast to all client handles.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | poscx.h (include Poscx.h) |

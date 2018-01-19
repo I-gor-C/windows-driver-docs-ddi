@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugControl4.OutputWide
-title: IDebugControl4::OutputWide method
-author: windows-driver-content
-description: The OutputWide method formats a string and send the result to output callbacks that have been registered with the engine's clients.
-old-location: debugger\outputwide.htm
-old-project: debugger
-ms.assetid: d89ed38b-f2ab-495f-b7e6-7f58b9adc958
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugControl4, IDebugControl4::OutputWide, OutputWide
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugControl4.ControlledOutputWide
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugControl4.OutputWide
+title : IDebugControl4::OutputWide method
+author : windows-driver-content
+description : The OutputWide method formats a string and send the result to output callbacks that have been registered with the engine's clients.
+old-location : debugger\outputwide.htm
+old-project : debugger
+ms.assetid : d89ed38b-f2ab-495f-b7e6-7f58b9adc958
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugControl4, IDebugControl4::OutputWide, OutputWide
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugControl4.ControlledOutputWide
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugControl4::OutputWide method
 
-
-
-## -description
+# OutputWide method
 The <b>OutputWide</b>  method formats a string and send the result to <a href="debugger.using_input_and_output#output_callbacks#output_callbacks">output callbacks</a> that have been registered with the engine's clients.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT ControlledOutputWide(
@@ -53,15 +48,13 @@ HRESULT ControlledOutputWide(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Mask [in]
+`Mask`
 
 Specifies the output-type bit field.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a> for possible values.
 
-
-### -param Format [in]
+`Format`
 
 Specifies the format string, as in <b>printf</b>.  In general, conversion characters work exactly as in C. For the floating-point conversion characters the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
@@ -237,28 +230,37 @@ String that contains the name of the specified symbol (and displacement, if any)
 </td>
 </tr>
 </table>
- 
+
+``
 
 
-### -param ... [in]
-
-Specifies additional parameters that contain values to be inserted into the output during formatting.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
 
- 
+## Remarks
 
-
-## -remarks
 When generating very large output strings, it is possible to reach the limits of the debugger engine or of the operating system.  For example, some versions of the debugger engine have a 16K character limit for a single output.  If you find that very large output is getting truncated, you might need to split your output into multiple requests.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
@@ -281,4 +283,3 @@ When generating very large output strings, it is possible to reach the limits of
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::ControlledOutputWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

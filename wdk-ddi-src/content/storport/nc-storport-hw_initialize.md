@@ -1,73 +1,68 @@
 ---
-UID: NC:storport.HW_INITIALIZE
-title: HW_INITIALIZE
-author: windows-driver-content
-description: The HwStorInitialize routine initializes the miniport driver after a system reboot or power failure occurs.
-old-location: storage\hwstorinitialize.htm
-old-project: storage
-ms.assetid: c6c70f15-2614-4623-8979-6046cdc6239b
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwStorInitialize
-req.alt-loc: Storport.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: DIRQL (See Remarks section.)
-req.typenames: STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
-req.product: Windows 10 or later.
+UID : NC:storport.HW_INITIALIZE
+title : HW_INITIALIZE
+author : windows-driver-content
+description : The HwStorInitialize routine initializes the miniport driver after a system reboot or power failure occurs.
+old-location : storage\hwstorinitialize.htm
+old-project : storage
+ms.assetid : c6c70f15-2614-4623-8979-6046cdc6239b
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwStorInitialize
+req.alt-loc : Storport.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : DIRQL (See Remarks section.)
+req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product : Windows 10 or later.
 ---
 
-# HW_INITIALIZE callback
 
-
-
-## -description
+# HW_INITIALIZE callback function
 The <b>HwStorInitialize</b> routine initializes the miniport driver after a system reboot or power failure occurs. It is called by StorPort after <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> successfully returns. <b>HwStorInitialize</b> initializes the HBA and finds all devices that are of interest to the miniport driver.
 
+## Syntax
 
+```
+HW_INITIALIZE HwInitialize;
 
-## -prototype
-
-````
-HW_INITIALIZE HwStorInitialize;
-
-BOOLEAN HwStorInitialize(
-   IN PVOID DeviceExtension
+BOOLEAN HwInitialize(
+  PVOID DeviceExtension
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`DeviceExtension`
+
+A pointer to the miniport driver's per HBA storage area.
 
 
-## -parameters
+## Return Value
 
-### -param DeviceExtension 
+If the initialization succeeds, <b>HwStorInitialize</b> returns <b>TRUE</b>.
 
-A pointer to the miniport driver's per HBA storage area. 
+## Remarks
 
-
-## -returns
-If the initialization succeeds, <b>HwStorInitialize</b> returns <b>TRUE</b>. 
-
-
-## -remarks
 The name <b>HwStorInitialize</b> is just a placeholder. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:
 
 Because <b>HwStorInitialize</b> is called at DIRQL, as much of the initialization process as possible should be performed by <a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>. If so, you must enable the passive initialization routine via <a href="..\storport\nf-storport-storportenablepassiveinitialization.md">StorPortEnablePassiveInitialization</a>. 
@@ -88,10 +83,22 @@ To define an <b>HwStorInitialize</b> callback function, you must first provide a
 
 Then, implement your callback routine as follows:
 
-The <b>HW_INITIALIZE</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_INITIALIZE</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
+The <b>HW_INITIALIZE</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_INITIALIZE</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-us/library/jj159529.aspx">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** | DIRQL (See Remarks section.) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
@@ -111,4 +118,3 @@ The <b>HW_INITIALIZE</b> function type is defined in the Storport.h header file.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HW_INITIALIZE routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

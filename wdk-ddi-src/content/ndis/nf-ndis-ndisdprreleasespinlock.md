@@ -1,53 +1,48 @@
 ---
-UID: NF:ndis.NdisDprReleaseSpinLock
-title: NdisDprReleaseSpinLock macro
-author: windows-driver-content
-description: The NdisDprReleaseSpinLock function releases a spin lock acquired in the immediately preceding call to the NdisDprAcquireSpinLock function.
-old-location: netvista\ndisdprreleasespinlock.htm
-old-project: netvista
-ms.assetid: d6a7af70-6a1e-471b-919f-80a704d25446
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisDprReleaseSpinLock
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisDprReleaseSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisDprReleaseSpinLock (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisDprReleaseSpinLock
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Synch_Function, SpinLock, SpinLockBalanced, SpinLockDpr, SpinLockDprRelease, SpinlockRelease
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisDprReleaseSpinLock
+title : NdisDprReleaseSpinLock macro
+author : windows-driver-content
+description : The NdisDprReleaseSpinLock function releases a spin lock acquired in the immediately preceding call to the NdisDprAcquireSpinLock function.
+old-location : netvista\ndisdprreleasespinlock.htm
+old-project : netvista
+ms.assetid : d6a7af70-6a1e-471b-919f-80a704d25446
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisDprReleaseSpinLock
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisDprReleaseSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisDprReleaseSpinLock (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisDprReleaseSpinLock
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Synch_Function, SpinLock, SpinLockBalanced, SpinLockDpr, SpinLockDprRelease, SpinlockRelease
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
-# NdisDprReleaseSpinLock macro
 
-
-
-## -description
+# NdisDprReleaseSpinLock function
 The 
   <b>NdisDprReleaseSpinLock</b> function releases a spin lock acquired in the immediately preceding call to
   the 
   <a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">
   NdisDprAcquireSpinLock</a> function.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisDprReleaseSpinLock(
@@ -55,15 +50,19 @@ VOID NdisDprReleaseSpinLock(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param SpinLock [in]
-
-Pointer to the acquired spin lock to be released.
+`_SpinLock`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 Release of the spin lock allows another driver function to use the resources the lock protects after
     that function acquires the spin lock.
 
@@ -75,11 +74,23 @@ A spin lock acquired with
     <a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>.
 
 For more information about acquiring and releasing NDIS spin locks, see 
-    <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/synchronization-and-notification-in-network-drivers">Synchronization
     and Notification in Network Drivers</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Synch_Function, SpinLock, SpinLockBalanced, SpinLockDpr, SpinLockDprRelease, SpinlockRelease |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
@@ -90,4 +101,3 @@ For more information about acquiring and releasing NDIS spin locks, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprReleaseSpinLock macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltAttachVolumeAtAltitude
-title: FltAttachVolumeAtAltitude function
-author: windows-driver-content
-description: FltAttachVolumeAtAltitude is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file.
-old-location: ifsk\fltattachvolumeataltitude.htm
-old-project: ifsk
-ms.assetid: d6e6f66a-77ed-4c1c-92d5-97a806cfbd68
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltAttachVolumeAtAltitude
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltAttachVolumeAtAltitude
-req.alt-loc: FltMgr.lib,FltMgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltAttachVolumeAtAltitude
+title : FltAttachVolumeAtAltitude function
+author : windows-driver-content
+description : FltAttachVolumeAtAltitude is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file.
+old-location : ifsk\fltattachvolumeataltitude.htm
+old-project : ifsk
+ms.assetid : d6e6f66a-77ed-4c1c-92d5-97a806cfbd68
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltAttachVolumeAtAltitude
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltAttachVolumeAtAltitude
+req.alt-loc : FltMgr.lib,FltMgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltAttachVolumeAtAltitude function
+<b>FltAttachVolumeAtAltitude</b> is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file.
 
-
-
-## -description
-<b>FltAttachVolumeAtAltitude</b> is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltAttachVolumeAtAltitude(
@@ -55,35 +50,31 @@ NTSTATUS FltAttachVolumeAtAltitude(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Filter`
 
-### -param Filter [in, out]
+Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
+`Volume`
 
+Opaque volume pointer for the volume that the minifilter driver instance is to be attached to. This parameter is required and cannot be <b>NULL</b>.
 
-### -param Volume [in, out]
+`Altitude`
 
-Opaque volume pointer for the volume that the minifilter driver instance is to be attached to. This parameter is required and cannot be <b>NULL</b>. 
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.)
 
+`InstanceName`
 
-### -param Altitude [in]
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters.
 
-Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
+`RetInstance`
 
-
-### -param InstanceName [in, optional]
-
-Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters. 
-
-
-### -param RetInstance [out, optional]
-
-Pointer to a caller-allocated variable that receives an opaque instance pointer for the newly created instance. This parameter is optional and can be <b>NULL</b>. 
+Pointer to a caller-allocated variable that receives an opaque instance pointer for the newly created instance. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltAttachVolumeAtAltitude</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
@@ -102,12 +93,10 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 </dl><b>FltAttachVolumeAtAltitude</b> encountered a pool allocation failure. This is an error code. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The UNICODE_STRING structure that <i>Altitude</i> points to did not contain a valid altitude string. This is an error code. 
+</dl>The UNICODE_STRING structure that <i>Altitude</i> points to did not contain a valid altitude string. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 A minifilter driver should only use <b>FltAttachVolumeAtAltitude</b> for debugging. It should not call this routine in a retail version of the minifilter driver. 
 
 <b>FltAttachVolumeAtAltitude</b> is the kernel equivalent of the Win32 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a> function. 
@@ -126,10 +115,22 @@ The instance name specified in the <i>InstanceName</i> parameter is required to 
 
 To compare the altitudes of two minifilter driver instances attached to the same volume, call <a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>. 
 
-To detach a minifilter driver instance from a volume, call <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>. 
+To detach a minifilter driver instance from a volume, call <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a>
@@ -161,4 +162,3 @@ To detach a minifilter driver instance from a volume, call <a href="..\fltkernel
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAttachVolumeAtAltitude routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

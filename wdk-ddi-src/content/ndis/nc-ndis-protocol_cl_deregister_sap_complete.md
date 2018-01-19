@@ -1,44 +1,41 @@
 ---
-UID: NC:ndis.PROTOCOL_CL_DEREGISTER_SAP_COMPLETE
-title: PROTOCOL_CL_DEREGISTER_SAP_COMPLETE function
-author: windows-driver-content
-description: The ProtocolClDeregisterSapComplete function is used by connection-oriented NDIS clients.
-old-location: netvista\protocolclderegistersapcomplete.htm
-old-project: netvista
-ms.assetid: 93f8f74a-8ad4-42ea-83cf-ddfcd7f55ce6
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: PROTOCOL_CL_DEREGISTER_SAP_COMPLETE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProtocolClDeregisterSapComplete
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.PROTOCOL_CL_DEREGISTER_SAP_COMPLETE
+title : PROTOCOL_CL_DEREGISTER_SAP_COMPLETE
+author : windows-driver-content
+description : The ProtocolClDeregisterSapComplete function is used by connection-oriented NDIS clients.
+old-location : netvista\protocolclderegistersapcomplete.htm
+old-project : netvista
+ms.assetid : 93f8f74a-8ad4-42ea-83cf-ddfcd7f55ce6
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProtocolClDeregisterSapComplete
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # PROTOCOL_CL_DEREGISTER_SAP_COMPLETE function
-
-
-
-## -description
 The 
   <i>ProtocolClDeregisterSapComplete</i> function is used by connection-oriented NDIS clients.
   Connection-oriented NDIS clients that accept incoming calls must have 
@@ -48,70 +45,38 @@ The
   protocol driver's registered 
   <i>ProtocolClDeregisterSapComplete</i> function can simply return control.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 PROTOCOL_CL_DEREGISTER_SAP_COMPLETE ProtocolClDeregisterSapComplete;
 
-VOID ProtocolClDeregisterSapComplete(
-  _In_ NDIS_STATUS Status,
-  _In_ NDIS_HANDLE ProtocolSapContext
+void ProtocolClDeregisterSapComplete(
+  NDIS_STATUS Status,
+  NDIS_HANDLE ProtocolSapContext
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Status [in]
+`Status`
 
 Specifies the final status of the client's request to deregister its SAP, which can be one of the
      following:
-     
 
-
-
-
-### -param NDIS_STATUS_SUCCESS
-
-The SAP was closed. The 
-       <i>NdisSapHandle</i> that represented the client's previously registered SAP, which the client stored
-       in its 
-       <i>ProtocolSapContext</i> area, is now invalid.
-
-
-### -param NDIS_STATUS_FAILURE
-
-NDIS had marked the state of the AF as "closing," so the associated SAP represented by the 
-       <i>NdisSapHandle</i> was already released when the client's call to 
-       <a href="..\ndis\nf-ndis-ndisclderegistersap.md">
-       NdisClDeregisterSap</a> occurred.
-
-
-### -param NDIS_STATUS_XXX
-
-The call manager failed the request to close the SAP for some CM-determined reason, and NDIS
-       propagated the status returned by its 
-       <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
-       ProtocolCmDeregisterSap</a> function to the client.
-
-</dd>
-</dl>
-
-### -param ProtocolSapContext [in]
+`ProtocolSapContext`
 
 Specifies the client-supplied handle to its per-SAP context area, originally passed to NDIS with 
      <b>NdisClRegisterSap</b>. After the call manager has successfully deregistered this SAP, the client can
      release its context area or prepare this context area for reuse.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A call to 
     <i>ProtocolClDeregisterSapComplete</i> indicates that the client's preceding call to 
     <a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a> has been processed
@@ -133,10 +98,22 @@ Then, implement your function as follows:
 
 The <b>PROTOCOL_CL_DEREGISTER_SAP_COMPLETE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CL_DEREGISTER_SAP_COMPLETE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
@@ -166,4 +143,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CL_DEREGISTER_SAP_COMPLETE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

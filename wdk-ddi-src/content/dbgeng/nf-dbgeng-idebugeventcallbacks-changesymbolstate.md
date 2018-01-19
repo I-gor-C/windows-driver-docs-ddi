@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugEventCallbacks.ChangeSymbolState
-title: IDebugEventCallbacks::ChangeSymbolState method
-author: windows-driver-content
-description: The ChangeSymbolState callback method is called by the engine when the symbol state changes.
-old-location: debugger\idebugeventcallbacks_changesymbolstate.htm
-old-project: debugger
-ms.assetid: 5383bd49-df44-48dd-8385-c782a1b1f80a
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugEventCallbacks, IDebugEventCallbacks::ChangeSymbolState, ChangeSymbolState
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugEventCallbacks.ChangeSymbolState
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugEventCallbacks.ChangeSymbolState
+title : IDebugEventCallbacks::ChangeSymbolState method
+author : windows-driver-content
+description : The ChangeSymbolState callback method is called by the engine when the symbol state changes.
+old-location : debugger\idebugeventcallbacks_changesymbolstate.htm
+old-project : debugger
+ms.assetid : 5383bd49-df44-48dd-8385-c782a1b1f80a
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks::ChangeSymbolState, ChangeSymbolState
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugEventCallbacks.ChangeSymbolState
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugEventCallbacks::ChangeSymbolState method
 
+# ChangeSymbolState method
+The <b>ChangeSymbolState</b> callback method is called by the engine when the symbol state changes.
 
-
-## -description
-The <b>ChangeSymbolState</b> callback method is called by the engine when the symbol state changes. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT ChangeSymbolState(
@@ -52,10 +47,9 @@ HRESULT ChangeSymbolState(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Flags [in]
+`Flags`
 
 Specifies a bit-set indicating the nature of the change to the symbol state.  The following bit flags might be set.
 
@@ -125,53 +119,30 @@ The type options have changed.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Argument [in]
+`Argument`
 
 Provides additional information about the change to the symbol state.   If more than one bit flag is set in the <i>Flags</i> parameter, the <i>Argument</i> parameter is not used.  Otherwise, the value of <i>Argument</i> depends on the value of <i>Flags</i>:
 
 
+## Return Value
 
-
-### -param DEBUG_CSS_LOADS
-
-The value of <i>Argument</i> is the base location (in the target's memory address space) of the module image that the engine loaded symbols for.
-
-
-### -param DEBUG_CSS_UNLOADS
-
-The value of <i>Argument</i> is the base location (in the target's memory address space) of the module image that the engine unloaded symbols for.  If the engine unloaded symbols for more than one image, the value of <i>Argument</i> is zero.
-
-
-### -param DEBUG_CSS_SCOPE
-
-The value of <i>Argument</i> is zero.
-
-
-### -param DEBUG_CSS_PATHS
-
-The value of <i>Argument</i> is zero.
-
-
-### -param DEBUG_CSS_SYMBOL_OPTIONS
-
-The value of <i>Argument</i> is the symbol options.
-
-
-### -param DEBUG_CSS_TYPE_OPTIONS
-
-The value of <i>Argument</i> is zero.
-
-</dd>
-</dl>
-
-## -returns
 The return value is ignored by the engine unless it indicates a remote procedure call error; in this case the client, with which this <b>IDebugEventCallbacks</b> object is registered, is disabled.
 
+## Remarks
 
-## -remarks
 This method is only called by the engine if the DEBUG_EVENT_CHANGE_SYMBOL_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. </p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

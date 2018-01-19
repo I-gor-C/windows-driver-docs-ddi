@@ -1,108 +1,97 @@
 ---
-UID: NC:d3dkmddi.DXGKCB_POWERRUNTIMECONTROLREQUEST
-title: DXGKCB_POWERRUNTIMECONTROLREQUEST
-author: windows-driver-content
-description: Called by the display miniport driver to exchange information with the Power Engine Plug-in (PEP).
-old-location: display\dxgkcbpowerruntimecontrolrequest.htm
-old-project: display
-ms.assetid: 28984c89-a1d9-4720-8c4c-2b2ce34e0899
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dkmddi.h
-req.include-header: D3dkmddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkCbPowerRuntimeControlRequest
-req.alt-loc: D3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
+UID : NC:d3dkmddi.DXGKCB_POWERRUNTIMECONTROLREQUEST
+title : DXGKCB_POWERRUNTIMECONTROLREQUEST
+author : windows-driver-content
+description : Called by the display miniport driver to exchange information with the Power Engine Plug-in (PEP).
+old-location : display\dxgkcbpowerruntimecontrolrequest.htm
+old-project : display
+ms.assetid : 28984c89-a1d9-4720-8c4c-2b2ce34e0899
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dkmddi.h
+req.include-header : D3dkmddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkCbPowerRuntimeControlRequest
+req.alt-loc : D3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
-# DXGKCB_POWERRUNTIMECONTROLREQUEST callback
 
-
-
-## -description
+# DXGKCB_POWERRUNTIMECONTROLREQUEST callback function
 Called by the display miniport driver to exchange information with the Power Engine Plug-in (PEP).
 
+## Syntax
 
+```
+DXGKCB_POWERRUNTIMECONTROLREQUEST DxgkcbPowerruntimecontrolrequest;
 
-## -prototype
-
-````
-DXGKCB_POWERRUNTIMECONTROLREQUEST DxgkCbPowerRuntimeControlRequest;
-
-NTSTATUS APIENTRY CALLBACK* DxgkCbPowerRuntimeControlRequest(
-  _In_      const HANDLE  hAdapter,
-  _In_            LPCGUID PowerControlCode,
-  _In_opt_        PVOID   InBuffer,
-  _In_            SIZE_T  InBufferSize,
-  _Out_opt_       PVOID   OutBuffer,
-  _In_            SIZE_T  OutBufferSize,
-  _Out_opt_       PSIZE_T BytesReturned
+NTSTATUS DxgkcbPowerruntimecontrolrequest(
+  IN_CONST_HANDLE hAdapter,
+  IN LPCGUID,
+  IN OPTIONAL,
+  IN SIZE_T,
+  OUT OPTIONAL,
+  IN SIZE_T,
+  OUT OPTIONAL
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hAdapter [in]
+`hAdapter`
 
 A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="..\dispmprt\ns-dispmprt-_dxgkrnl_interface.md">DXGKRNL_INTERFACE</a> structure in a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
 
-
-### -param PowerControlCode [in]
-
-A pointer to a GUID that defines the meaning of the display miniport driver's control request. For more information, see Remarks.
+`LPCGUID`
 
 
-### -param InBuffer [in, optional]
 
-An optional pointer to an input buffer.
-
-
-### -param InBufferSize [in]
-
-The size, in bytes, of the buffer that <i>InBuffer</i> points to.
+`OPTIONAL`
 
 
-### -param OutBuffer [out, optional]
 
-An optional pointer to an output buffer.
-
-
-### -param OutBufferSize [in]
-
-The size, in bytes, of the buffer that <i>OutBuffer</i> points to.
+`SIZE_T`
 
 
-### -param BytesReturned [out, optional]
 
-An optional pointer to a buffer that contains the number of bytes that are written by the PEP to the output buffer.
+`OPTIONAL`
 
 
-## -returns
+
+`SIZE_T`
+
+
+
+`OPTIONAL`
+
+
+
+
+## Return Value
+
 Returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h.
 
+## Remarks
 
-## -remarks
 Although the driver can use any GUID in the <i>PowerControlCode</i> parameter, the following GUIDs that are defined in D3dkmddi.h are recommended. By using these GUIDs, the display port driver can issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.
 
 <dl>
@@ -176,8 +165,20 @@ Change the bandwidth, but the driver doesn't know if the change is an increase o
 
 These GUIDs do not imply that there is any communication protocol between the display miniport driver and the PEP, nor do they imply that there are any restrictions on the values that can be passed between the display miniport driver and the PEP.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h (include D3dkmddi.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
@@ -194,4 +195,3 @@ These GUIDs do not imply that there is any communication protocol between the di
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_POWERRUNTIMECONTROLREQUEST callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

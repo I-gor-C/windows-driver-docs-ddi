@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugSymbols3.GetFieldNameWide
-title: IDebugSymbols3::GetFieldNameWide method
-author: windows-driver-content
-description: The GetFieldNameWide method returns the name of a field within a structure.
-old-location: debugger\getfieldnamewide.htm
-old-project: debugger
-ms.assetid: e27c6af5-c9fa-4fe6-ad39-82ea59a0f27b
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugSymbols3, IDebugSymbols3::GetFieldNameWide, GetFieldNameWide
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugSymbols3.GetFieldNameWide
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugSymbols3.GetFieldNameWide
+title : IDebugSymbols3::GetFieldNameWide method
+author : windows-driver-content
+description : The GetFieldNameWide method returns the name of a field within a structure.
+old-location : debugger\getfieldnamewide.htm
+old-project : debugger
+ms.assetid : e27c6af5-c9fa-4fe6-ad39-82ea59a0f27b
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugSymbols3, IDebugSymbols3::GetFieldNameWide, GetFieldNameWide
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugSymbols3.GetFieldNameWide
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugSymbols3::GetFieldNameWide method
 
-
-
-## -description
+# GetFieldNameWide method
 The <b>GetFieldNameWide</b>  method returns the name of a field within a structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT GetFieldNameWide(
@@ -56,40 +51,35 @@ HRESULT GetFieldNameWide(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Module [in]
+`Module`
 
 Specifies the base address of the module in which the structure was defined.
 
-
-### -param TypeId [in]
+`TypeId`
 
 Specifies the type ID of the structure.
 
+`FieldIndex`
 
-### -param FieldIndex [in]
+Specifies the index of the desired field within the structure.
 
-Specifies the index of the desired field within the structure. 
-
-
-### -param NameBuffer [out, optional]
+`NameBuffer`
 
 Receives the field's name.  If <i>NameBuffer</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param NameBufferSize [in]
+`NameBufferSize`
 
 Specifies the size in characters of the buffer <i>NameBuffer</i>.
 
-
-### -param NameSize [out, optional]
+`NameSize`
 
 Receives the size in characters of the field's name.  If <i>NameSize</i> is <b>NULL</b>, this information is not returned.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -98,8 +88,18 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 <dt><b>S_FALSE</b></dt>
 </dl>The method was successful. However, <i>NameBuffer</i> was not large enough to hold the field's name and it was truncated.
 
- 
+## Remarks
 
-
-## -remarks
 For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

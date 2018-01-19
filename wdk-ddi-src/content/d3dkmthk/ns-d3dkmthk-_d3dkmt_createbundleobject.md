@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmthk._D3DKMT_CREATEBUNDLEOBJECT
-title: _D3DKMT_CREATEBUNDLEOBJECT
-author: windows-driver-content
-description: Holds information to create a bundle object.
-old-location: display\d3dkmt-createbundleobject.htm
-old-project: display
-ms.assetid: dbb01112-9d28-4dbf-88c7-3304d9d6a661
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmthk.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3DKMT_CREATEBUNDLEOBJECT
-req.alt-loc: d3dkmthk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3DKMT_CREATEBUNDLEOBJECT
+UID : NS:d3dkmthk._D3DKMT_CREATEBUNDLEOBJECT
+title : _D3DKMT_CREATEBUNDLEOBJECT
+author : windows-driver-content
+description : Holds information to create a bundle object.
+old-location : display\d3dkmt-createbundleobject.htm
+old-project : display
+ms.assetid : dbb01112-9d28-4dbf-88c7-3304d9d6a661
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmthk.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3DKMT_CREATEBUNDLEOBJECT
+req.alt-loc : d3dkmthk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3DKMT_CREATEBUNDLEOBJECT
 ---
 
 # _D3DKMT_CREATEBUNDLEOBJECT structure
-
-
-
-## -description
 Holds information to create a bundle object.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3DKMT_CREATEBUNDLEOBJECT {
   UINT                cObjects;
@@ -56,37 +49,34 @@ typedef struct _D3DKMT_CREATEBUNDLEOBJECT {
 } D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cObjects`
 
-### -field cObjects
+            The number of the DXGK object to be bundled.
+        
+            `hNtBundleHandle`
 
-The number of the DXGK object to be bundled.
+            The NT bundle handle.
+        
+            `pBundleObjectAttributes`
 
+            Object attributes for the bundled object.
+        
+            `phObjects`
 
-### -field phObjects
+            A pointer to the array of the DXGK object to be bundled.
+        
+            `ppObjectAttributes`
 
-A pointer to the array of the DXGK object to be bundled.
-
-
-### -field ppObjectAttributes
-
-An array of pointers to object attributes for DXGK objects.
-
-
-### -field pBundleObjectAttributes
-
-Object attributes for the bundled object.
-
-
-### -field  dwBundleDesiredAccess
-
-The desired access for bundle handle.
+            An array of pointers to object attributes for DXGK objects.
 
 
-### -field hNtBundleHandle
-
-The NT bundle handle.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmthk.h |

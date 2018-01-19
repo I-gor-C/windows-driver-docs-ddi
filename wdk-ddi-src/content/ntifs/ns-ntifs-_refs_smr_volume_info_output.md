@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._REFS_SMR_VOLUME_INFO_OUTPUT
-title: _REFS_SMR_VOLUME_INFO_OUTPUT
-author: windows-driver-content
-description: The REFS_SMR_VOLUME_INFO_OUTPUT structure describes a Shingled Magnetic Recording (SMR) volume's current state on space and garbage collection activities.
-old-location: ifsk\refs_smr_volume_info_output.htm
-old-project: ifsk
-ms.assetid: 0DCBAF5F-AEBC-4C4B-9DBD-F7A6FD6C7712
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: REFS_SMR_VOLUME_INFO_OUTPUT
-req.alt-loc: Ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT
+UID : NS:ntifs._REFS_SMR_VOLUME_INFO_OUTPUT
+title : _REFS_SMR_VOLUME_INFO_OUTPUT
+author : windows-driver-content
+description : The REFS_SMR_VOLUME_INFO_OUTPUT structure describes a Shingled Magnetic Recording (SMR) volume's current state on space and garbage collection activities.
+old-location : ifsk\refs_smr_volume_info_output.htm
+old-project : ifsk
+ms.assetid : 0DCBAF5F-AEBC-4C4B-9DBD-F7A6FD6C7712
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting with Windows 10, version 1709.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : REFS_SMR_VOLUME_INFO_OUTPUT
+req.alt-loc : Ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT
 ---
 
 # _REFS_SMR_VOLUME_INFO_OUTPUT structure
-
-
-
-## -description
 The <b>REFS_SMR_VOLUME_INFO_OUTPUT</b> structure describes a Shingled Magnetic Recording (SMR) volume's  current  state on space and garbage collection activities.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _REFS_SMR_VOLUME_INFO_OUTPUT {
   ULONG                    Version;
@@ -60,57 +53,50 @@ typedef struct _REFS_SMR_VOLUME_INFO_OUTPUT {
 } REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Flags`
 
-### -field Version
+            Currently ignored. Will be set to zero for now.
+        
+            `FreeSpaceInRandomlyWritableTier`
 
-Currently ignored.  Will be set to zero for now.  
+            Specifies the free space within the randomly writable tier.
+        
+            `SizeOfRandomlyWritableTier`
 
+            Specifies the total size of the randomly writable tier.
+        
+            `SizeofSMRTier`
 
-### -field Flags
+            Specifies the total size of the Shingled Magnetic Recording (SMR) tier.
+        
+            `Unused`
 
-Currently ignored. Will be set to zero for now.
+            Reserved for future use.
+        
+            `UsableFreeSpaceInSMRTier`
 
+            Specifies the usable space the Shingled Magnetic Recording (SMR) tier.
+        
+            `Version`
 
-### -field SizeOfRandomlyWritableTier
+            Currently ignored.  Will be set to zero for now.
+        
+            `VolumeGcLastStatus`
 
-Specifies the total size of the randomly writable tier.
+            Specifies the status of the last garbage collection using the specified method in <a href="..\ntifs\ne-ntifs-_refs_smr_volume_gc_method.md">REFS_SMR_VOLUME_GC_METHOD</a>.
+        
+            `VolumeGcState`
 
-
-### -field FreeSpaceInRandomlyWritableTier
-
-Specifies the free space within the randomly writable tier.
-
-
-### -field SizeofSMRTier
-
-Specifies the total size of the Shingled Magnetic Recording (SMR) tier.
-
-
-### -field  FreeSpaceInSMRTier
-
-Specifies the free space the Shingled Magnetic Recording (SMR) tier.
-
-
-### -field UsableFreeSpaceInSMRTier
-
-Specifies the usable space the Shingled Magnetic Recording (SMR) tier.
-
-
-### -field VolumeGcState
-
-Specifies the current state of the garbage collector.
+            Specifies the current state of the garbage collector.
 
 
-### -field VolumeGcLastStatus
-
-Specifies the status of the last garbage collection using the specified method in <a href="..\ntifs\ne-ntifs-_refs_smr_volume_gc_method.md">REFS_SMR_VOLUME_GC_METHOD</a>.
-
-
-### -field Unused
-
-Reserved for future use.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |

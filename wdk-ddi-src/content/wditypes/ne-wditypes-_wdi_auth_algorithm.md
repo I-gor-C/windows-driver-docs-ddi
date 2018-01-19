@@ -1,51 +1,44 @@
 ---
-UID: NE:wditypes._WDI_AUTH_ALGORITHM
-title: _WDI_AUTH_ALGORITHM
-author: windows-driver-content
-description: The WDI_AUTH_ALGORITHM enumeration defines the authentication algorithm values.
-old-location: netvista\wdi_auth_algorithm.htm
-old-project: netvista
-ms.assetid: B908A174-F977-484E-A086-6C8C9A914D6C
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDI_AUTH_ALGORITHM, WDI_AUTH_ALGORITHM
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wditypes.hpp
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WDI_AUTH_ALGORITHM
-req.alt-loc: wditypes.hpp
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: WDI_AUTH_ALGORITHM
-req.product: Windows 10 or later.
+UID : NE:wditypes._WDI_AUTH_ALGORITHM
+title : _WDI_AUTH_ALGORITHM
+author : windows-driver-content
+description : The WDI_AUTH_ALGORITHM enumeration defines the authentication algorithm values.
+old-location : netvista\wdi_auth_algorithm.htm
+old-project : netvista
+ms.assetid : B908A174-F977-484E-A086-6C8C9A914D6C
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDI_AUTH_ALGORITHM, WDI_AUTH_ALGORITHM
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wditypes.hpp
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WDI_AUTH_ALGORITHM
+req.alt-loc : wditypes.hpp
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : WDI_AUTH_ALGORITHM
+req.product : Windows 10 or later.
 ---
 
-# _WDI_AUTH_ALGORITHM enumeration
-
-
-
-## -description
+# _WDI_AUTH_ALGORITHM Enumeration
 The WDI_AUTH_ALGORITHM enumeration defines the authentication algorithm values.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDI_AUTH_ALGORITHM { 
   WDI_AUTH_ALGO_80211_OPEN        = 1,
@@ -60,60 +53,69 @@ typedef enum _WDI_AUTH_ALGORITHM {
 } WDI_AUTH_ALGORITHM;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field WDI_AUTH_ALGO_80211_OPEN
+<tr>
+<td>WDI_AUTH_ALGO_80211_OPEN</td>
+<td>Specifies an IEEE 802.11 Open System authentication algorithm.</td>
+</tr>
 
-Specifies an IEEE 802.11 Open System authentication algorithm. 
+<tr>
+<td>WDI_AUTH_ALGO_80211_SHARED_KEY</td>
+<td>Specifies an IEEE 802.11 Shared Key authentication algorithm that requires the use of a pre-shared Wired Equivalent Privacy (WEP) key for the 802.11 authentication.</td>
+</tr>
+
+<tr>
+<td>WDI_AUTH_ALGO_IHV_END</td>
+<td>Specifies the end of the range that specifies proprietary authentication algorithms that are developed by an IHV.</td>
+</tr>
+
+<tr>
+<td>WDI_AUTH_ALGO_IHV_START</td>
+<td>Specifies the start of the range that specifies proprietary authentication algorithms that are developed by an IHV.</td>
+</tr>
+
+<tr>
+<td>WDI_AUTH_ALGO_RSNA</td>
+<td>Specifies an IEEE 802.11i Robust Security Network Association (RSNA) algorithm. IEEE 802.1X port authorization is performed by the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through the authentication process. 
+
+When the RSNA algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 1 (802.1X) within the Robust Security Network (RSN) IE.</td>
+</tr>
+
+<tr>
+<td>WDI_AUTH_ALGO_RSNA_PSK</td>
+<td>Specifies an IEEE 802.11i RSNA algorithm that uses PSK. IEEE 802.1X port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived through a pre-shared key that is used on both the supplicant and authenticator. 
+
+When the RSNA PSK algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the RSN IE.</td>
+</tr>
+
+<tr>
+<td>WDI_AUTH_ALGO_WPA</td>
+<td>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through the authentication process. 
+
+When the WPA algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 1 (802.1X) within the WPA information element (IE).</td>
+</tr>
+
+<tr>
+<td>WDI_AUTH_ALGO_WPA_NONE</td>
+<td>This value is not supported.</td>
+</tr>
+
+<tr>
+<td>WDI_AUTH_ALGO_WPA_PSK</td>
+<td>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived through a preshared key that is used on both the supplicant and authenticator. 
+
+When the WPA PSK algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the WPA IE.</td>
+</tr>
+</table>
 
 
-### -field WDI_AUTH_ALGO_80211_SHARED_KEY
-
-Specifies an IEEE 802.11 Shared Key authentication algorithm that requires the use of a pre-shared Wired Equivalent Privacy (WEP) key for the 802.11 authentication.
-
-
-### -field WDI_AUTH_ALGO_WPA
-
-Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through the authentication process. 
-
-When the WPA algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 1 (802.1X) within the WPA information element (IE).
-
-
-### -field WDI_AUTH_ALGO_WPA_PSK
-
-Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived through a preshared key that is used on both the supplicant and authenticator. 
-
-When the WPA PSK algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the WPA IE.
-
-
-### -field WDI_AUTH_ALGO_WPA_NONE
-
-This value is not supported.
-
-
-### -field WDI_AUTH_ALGO_RSNA
-
-Specifies an IEEE 802.11i Robust Security Network Association (RSNA) algorithm. IEEE 802.1X port authorization is performed by the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through the authentication process. 
-
-When the RSNA algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 1 (802.1X) within the Robust Security Network (RSN) IE.
-
-
-### -field WDI_AUTH_ALGO_RSNA_PSK
-
-Specifies an IEEE 802.11i RSNA algorithm that uses PSK. IEEE 802.1X port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived through a pre-shared key that is used on both the supplicant and authenticator. 
-
-When the RSNA PSK algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the RSN IE.
-
-
-### -field WDI_AUTH_ALGO_IHV_START
-
-Specifies the start of the range that specifies proprietary authentication algorithms that are developed by an IHV. 
-
-
-### -field WDI_AUTH_ALGO_IHV_END
-
-Specifies the end of the range that specifies proprietary authentication algorithms that are developed by an IHV. 
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wditypes.hpp |

@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILCOMMANDS
-title: RILCOMMANDS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcommands.htm
-old-project: netvista
-ms.assetid: 45aae3e3-eee9-4518-b96b-eae5db7e1243
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCOMMANDS, RILCOMMANDS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCOMMANDS
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILCOMMANDS
+UID : NE:ntddrilapitypes.RILCOMMANDS
+title : RILCOMMANDS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcommands.htm
+old-project : netvista
+ms.assetid : 45aae3e3-eee9-4518-b96b-eae5db7e1243
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCOMMANDS, RILCOMMANDS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCOMMANDS
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILCOMMANDS
 ---
 
-# RILCOMMANDS enumeration
-
-
-
-## -description
+# RILCOMMANDS Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILCOMMANDS { 
   RIL_COMMAND_GETNEXTNOTIFICATION,
@@ -178,391 +171,656 @@ typedef enum _RILCOMMANDS {
 } RILCOMMANDS;
 ````
 
-
-## -enum-fields
-
-### -field RIL_COMMAND_GETNEXTNOTIFICATION
-
-
-### -field RIL_COMMAND_ENABLENOTIFICATIONS
-
-
-### -field RIL_COMMAND_DISABLENOTIFICATIONS
-
-
-### -field RIL_COMMAND_GETDRIVERVERSION
-
-
-### -field RIL_COMMAND_GETDEVCAPS
-
-
-### -field RIL_COMMAND_GETDEVICEINFO
-
-
-### -field RIL_COMMAND_GETEQUIPMENTSTATE
-
-
-### -field RIL_COMMAND_SETEQUIPMENTSTATE
-
-
-### -field RIL_COMMAND_SETNOTIFICATIONFILTERSTATE
-
-
-### -field RIL_COMMAND_GETNOTIFICATIONFILTERSTATE
-
-
-### -field RIL_COMMAND_ENUMERATESLOTS
-
-
-### -field RIL_COMMAND_GETCARDINFO
-
-
-### -field RIL_COMMAND_SETSLOTPOWER
-
-
-### -field RIL_COMMAND_GETUICCRECORDSTATUS
-
-
-### -field RIL_COMMAND_SENDRESTRICTEDUICCCMD
-
-
-### -field RIL_COMMAND_WATCHUICCFILECHANGE
-
-
-### -field RIL_COMMAND_GETUICCPRLID
-
-
-### -field RIL_COMMAND_GETIMSI
-
-
-### -field RIL_COMMAND_GETSUBSCRIBERNUMBERS
-
-
-### -field RIL_COMMAND_GETUICCLOCKSTATE
-
-
-### -field RIL_COMMAND_GETUICCSERVICELOCK
-
-
-### -field RIL_COMMAND_VERIFYUICCLOCK
-
-
-### -field RIL_COMMAND_SETUICCLOCKENABLED
-
-
-### -field RIL_COMMAND_UNBLOCKUICCLOCK
-
-
-### -field RIL_COMMAND_CHANGEUICCLOCKPASSWORD
-
-
-### -field RIL_COMMAND_GETUICCAPPPERSOCHECKSTATE
-
-
-### -field RIL_COMMAND_GETPERSODEACTIVATIONSTATE
-
-
-### -field RIL_COMMAND_DEACTIVATEPERSO
-
-
-### -field RIL_COMMAND_READPHONEBOOKENTRIES
-
-
-### -field RIL_COMMAND_WRITEPHONEBOOKENTRY
-
-
-### -field RIL_COMMAND_DELETEPHONEBOOKENTRY
-
-
-### -field RIL_COMMAND_GETPHONEBOOKOPTIONS
-
-
-### -field RIL_COMMAND_GETALLADDITIONALNUMBERSTRINGS
-
-
-### -field RIL_COMMAND_GETALLEMERGENCYNUMBERS
-
-
-### -field RIL_COMMAND_SETRADIOCONFIGURATION
-
-
-### -field RIL_COMMAND_GETRADIOCONFIGURATION
-
-
-### -field RIL_COMMAND_SETEXECUTORCONFIG
-
-
-### -field RIL_COMMAND_GETEXECUTORCONFIG
-
-
-### -field RIL_COMMAND_SETSYSTEMSELECTIONPREFS
-
-
-### -field RIL_COMMAND_GETSYSTEMSELECTIONPREFS
-
-
-### -field RIL_COMMAND_GETOPERATORLIST
-
-
-### -field RIL_COMMAND_GETPREFERREDOPERATORLIST
-
-
-### -field RIL_COMMAND_GETCURRENTREGSTATUS
-
-
-### -field RIL_COMMAND_GETSIGNALQUALITY
-
-
-### -field RIL_COMMAND_SENDUICCTOOLKITCMDRESPONSE
-
-
-### -field RIL_COMMAND_SENDUICCTOOLKITENVELOPE
-
-
-### -field RIL_COMMAND_DIAL
-
-
-### -field RIL_COMMAND_MANAGECALLS
-
-
-### -field RIL_COMMAND_EMERGENCYMODECONTROL
-
-
-### -field RIL_COMMAND_GETCALLFORWARDINGSETTINGS
-
-
-### -field RIL_COMMAND_SETCALLFORWARDINGSTATUS
-
-
-### -field RIL_COMMAND_ADDCALLFORWARDING
-
-
-### -field RIL_COMMAND_REMOVECALLFORWARDING
-
-
-### -field RIL_COMMAND_GETCALLBARRINGSTATUS
-
-
-### -field RIL_COMMAND_SETCALLBARRINGSTATUS
-
-
-### -field RIL_COMMAND_CHANGECALLBARRINGPASSWORD
-
-
-### -field RIL_COMMAND_GETCALLWAITINGSETTINGS
-
-
-### -field RIL_COMMAND_SETCALLWAITINGSTATUS
-
-
-### -field RIL_COMMAND_GETCALLERIDSETTINGS
-
-
-### -field RIL_COMMAND_GETDIALEDIDSETTINGS
-
-
-### -field RIL_COMMAND_GETHIDECONNECTEDIDSETTINGS
-
-
-### -field RIL_COMMAND_GETHIDEIDSETTINGS
-
-
-### -field RIL_COMMAND_SENDFLASH
-
-
-### -field RIL_COMMAND_SENDSUPSERVICEDATA
-
-
-### -field RIL_COMMAND_SENDDTMF
-
-
-### -field RIL_COMMAND_STARTDTMF
-
-
-### -field RIL_COMMAND_STOPDTMF
-
-
-### -field RIL_COMMAND_GETMSGSERVICEOPTIONS
-
-
-### -field RIL_COMMAND_READMSG
-
-
-### -field RIL_COMMAND_WRITEMSG
-
-
-### -field RIL_COMMAND_DELETEMSG
-
-
-### -field RIL_COMMAND_GETCELLBROADCASTMSGCONFIG
-
-
-### -field RIL_COMMAND_SETCELLBROADCASTMSGCONFIG
-
-
-### -field RIL_COMMAND_GETMSGINUICCSTATUS
-
-
-### -field RIL_COMMAND_SETMSGINUICCSTATUS
-
-
-### -field RIL_COMMAND_SETMSGMEMORYSTATUS
-
-
-### -field RIL_COMMAND_SENDMSG
-
-
-### -field RIL_COMMAND_GETSMSC
-
-
-### -field RIL_COMMAND_SETSMSC
-
-
-### -field RIL_COMMAND_GETIMSSTATUS
-
-
-### -field RIL_COMMAND_GETPOSITIONINFO
-
-
-### -field RIL_COMMAND_GETRADIOSTATEGROUPS
-
-
-### -field RIL_COMMAND_GETRADIOSTATEDETAILS
-
-
-### -field RIL_COMMAND_SETRADIOSTATEDETAILS
-
-
-### -field RIL_COMMAND_RADIOSTATEPASSWORDCOMPARE
-
-
-### -field RIL_COMMAND_RADIOSTATEGETPASSWORDRETRYCOUNT
-
-
-### -field RIL_COMMAND_DEVSPECIFIC
-
-
-### -field RIL_COMMAND_SETRFSTATE
-
-
-### -field RIL_COMMAND_GETRFSTATE
-
-
-### -field RIL_COMMAND_GETDMPROFILECONFIGINFO
-
-
-### -field RIL_COMMAND_SETDMPROFILECONFIGINFO
-
-
-### -field RIL_COMMAND_WRITEADDITIONALNUMBERSTRING
-
-
-### -field RIL_COMMAND_DELETEADDITIONALNUMBERSTRING
-
-
-### -field RIL_COMMAND_GETUICCATR
-
-
-### -field RIL_COMMAND_OPENUICCLOGICALCHANNEL
-
-
-### -field RIL_COMMAND_CLOSEUICCLOGICALCHANNEL
-
-
-### -field RIL_COMMAND_EXCHANGEUICCAPDU
-
-
-### -field RIL_COMMAND_SENDSUPSERVICEDATARESPONSE
-
-
-### -field RIL_COMMAND_CANCELSUPSERVICEDATASESSION
-
-
-### -field RIL_COMMAND_SETUICCTOOLKITPROFILE
-
-
-### -field RIL_COMMAND_GETUICCTOOLKITPROFILE
-
-
-### -field RIL_COMMAND_REGISTERUICCTOOLKITSERVICE
-
-
-### -field RIL_COMMAND_SENDMSGACK
-
-
-### -field RIL_COMMAND_CLOSEUICCLOGICALCHANNELGROUP
-
-
-### -field RIL_COMMAND_SETPREFERREDOPERATORLIST
-
-
-### -field RIL_COMMAND_GETUICCSERVICESTATE
-
-
-### -field RIL_COMMAND_SETUICCSERVICESTATE
-
-
-### -field RIL_COMMAND_GETCALLLIST
-
-
-### -field RIL_COMMAND_GETEXECUTORFOCUS
-
-
-### -field RIL_COMMAND_SETEXECUTORFOCUS
-
-
-### -field RIL_COMMAND_GETEMERGENCYMODE
-
-
-### -field RIL_COMMAND_GETEXECUTORRFSTATE
-
-
-### -field RIL_COMMAND_SETEXECUTORRFSTATE
-
-
-### -field RIL_COMMAND_RESETMODEM
-
-
-### -field RIL_COMMAND_CANCELGETOPERATORLIST
-
-
-### -field RIL_COMMAND_AVOIDCDMASYSTEM
-
-
-### -field RIL_COMMAND_SETPSMEDIACONFIGURATION
-
-
-### -field RIL_COMMAND_GETPSMEDIACONFIGURATION
-
-
-### -field RIL_COMMAND_SETGEOLOCATIONDATA
-
-
-### -field RIL_COMMAND_SETTERMINALCAPABILITY
-
-
-### -field RIL_COMMAND_GETTERMINALCAPABILITY
-
-
-### -field RIL_COMMAND_SENDRTT
-
-
-### -field RIL_COMMAND_ENABLEMODEMFILTERS
-
-
-### -field RIL_COMMAND_DISABLEMODEMFILTERS
-
-
-### -field RIL_COMMAND_STARTMODEMLOGS
-
-
-### -field RIL_COMMAND_STOPMODEMLOGS
-
-
-### -field RIL_COMMAND_DRAINMODEMLOGS
-
-
-### -field RIL_COMMAND_COUNT
-
-
-## -remarks
+## Constants
+
+<table>
+
+<tr>
+<td>RIL_COMMAND_ADDCALLFORWARDING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_AVOIDCDMASYSTEM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_CANCELGETOPERATORLIST</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_CANCELSUPSERVICEDATASESSION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_CHANGECALLBARRINGPASSWORD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_CHANGEUICCLOCKPASSWORD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_CLOSEUICCLOGICALCHANNEL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_CLOSEUICCLOGICALCHANNELGROUP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_COUNT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DEACTIVATEPERSO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DELETEADDITIONALNUMBERSTRING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DELETEMSG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DELETEPHONEBOOKENTRY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DEVSPECIFIC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DIAL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DISABLEMODEMFILTERS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DISABLENOTIFICATIONS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_DRAINMODEMLOGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_EMERGENCYMODECONTROL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_ENABLEMODEMFILTERS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_ENABLENOTIFICATIONS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_ENUMERATESLOTS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_EXCHANGEUICCAPDU</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETALLADDITIONALNUMBERSTRINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETALLEMERGENCYNUMBERS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCALLBARRINGSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCALLERIDSETTINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCALLFORWARDINGSETTINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCALLLIST</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCALLWAITINGSETTINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCARDINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCELLBROADCASTMSGCONFIG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETCURRENTREGSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETDEVCAPS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETDEVICEINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETDIALEDIDSETTINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETDMPROFILECONFIGINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETDRIVERVERSION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETEMERGENCYMODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETEQUIPMENTSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETEXECUTORCONFIG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETEXECUTORFOCUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETEXECUTORRFSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETHIDECONNECTEDIDSETTINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETHIDEIDSETTINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETIMSI</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETIMSSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETMSGINUICCSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETMSGSERVICEOPTIONS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETNEXTNOTIFICATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETNOTIFICATIONFILTERSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETOPERATORLIST</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETPERSODEACTIVATIONSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETPHONEBOOKOPTIONS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETPOSITIONINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETPREFERREDOPERATORLIST</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETPSMEDIACONFIGURATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETRADIOCONFIGURATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETRADIOSTATEDETAILS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETRADIOSTATEGROUPS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETRFSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETSIGNALQUALITY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETSMSC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETSUBSCRIBERNUMBERS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETSYSTEMSELECTIONPREFS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETTERMINALCAPABILITY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCAPPPERSOCHECKSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCATR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCLOCKSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCPRLID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCRECORDSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCSERVICELOCK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCSERVICESTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_GETUICCTOOLKITPROFILE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_MANAGECALLS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_OPENUICCLOGICALCHANNEL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_RADIOSTATEGETPASSWORDRETRYCOUNT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_RADIOSTATEPASSWORDCOMPARE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_READMSG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_READPHONEBOOKENTRIES</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_REGISTERUICCTOOLKITSERVICE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_REMOVECALLFORWARDING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_RESETMODEM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDDTMF</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDFLASH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDMSG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDMSGACK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDRESTRICTEDUICCCMD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDRTT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDSUPSERVICEDATA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDSUPSERVICEDATARESPONSE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDUICCTOOLKITCMDRESPONSE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SENDUICCTOOLKITENVELOPE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETCALLBARRINGSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETCALLFORWARDINGSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETCALLWAITINGSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETCELLBROADCASTMSGCONFIG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETDMPROFILECONFIGINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETEQUIPMENTSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETEXECUTORCONFIG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETEXECUTORFOCUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETEXECUTORRFSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETGEOLOCATIONDATA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETMSGINUICCSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETMSGMEMORYSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETNOTIFICATIONFILTERSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETPREFERREDOPERATORLIST</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETPSMEDIACONFIGURATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETRADIOCONFIGURATION</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETRADIOSTATEDETAILS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETRFSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETSLOTPOWER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETSMSC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETSYSTEMSELECTIONPREFS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETTERMINALCAPABILITY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETUICCLOCKENABLED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETUICCSERVICESTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_SETUICCTOOLKITPROFILE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_STARTDTMF</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_STARTMODEMLOGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_STOPDTMF</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_STOPMODEMLOGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_UNBLOCKUICCLOCK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_VERIFYUICCLOCK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_WATCHUICCFILECHANGE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_WRITEADDITIONALNUMBERSTRING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_WRITEMSG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_COMMAND_WRITEPHONEBOOKENTRY</td>
+<td></td>
+</tr>
+</table>
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

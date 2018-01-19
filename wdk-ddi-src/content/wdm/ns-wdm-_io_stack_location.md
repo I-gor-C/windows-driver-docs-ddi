@@ -1,51 +1,44 @@
 ---
-UID: NS:wdm._IO_STACK_LOCATION
-title: _IO_STACK_LOCATION
-author: windows-driver-content
-description: The IO_STACK_LOCATION structure defines an I/O stack location, which is an entry in the I/O stack that is associated with each IRP.
-old-location: kernel\io_stack_location.htm
-old-project: kernel
-ms.assetid: b339d6aa-71e1-4835-8ef2-a84594166bb1
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: _IO_STACK_LOCATION, IO_STACK_LOCATION, *PIO_STACK_LOCATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IO_STACK_LOCATION
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: IO_STACK_LOCATION, *PIO_STACK_LOCATION
-req.product: Windows 10 or later.
+UID : NS:wdm._IO_STACK_LOCATION
+title : _IO_STACK_LOCATION
+author : windows-driver-content
+description : The IO_STACK_LOCATION structure defines an I/O stack location, which is an entry in the I/O stack that is associated with each IRP.
+old-location : kernel\io_stack_location.htm
+old-project : kernel
+ms.assetid : b339d6aa-71e1-4835-8ef2-a84594166bb1
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _IO_STACK_LOCATION, *PIO_STACK_LOCATION, IO_STACK_LOCATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IO_STACK_LOCATION
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : "*PIO_STACK_LOCATION, IO_STACK_LOCATION"
+req.product : Windows 10 or later.
 ---
 
 # _IO_STACK_LOCATION structure
-
-
-
-## -description
 The <b>IO_STACK_LOCATION</b> structure defines an <a href="https://msdn.microsoft.com/62c8ee00-c7cb-4aa1-90ab-b8bedbd818ee">I/O stack location</a>, which is an entry in the I/O stack that is associated with each IRP. Each I/O stack location in an IRP has some common members and some request-type-specific members.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _IO_STACK_LOCATION {
   UCHAR                  MajorFunction;
@@ -258,22 +251,32 @@ typedef struct _IO_STACK_LOCATION {
 } IO_STACK_LOCATION, *PIO_STACK_LOCATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CompletionRoutine`
 
-### -field MajorFunction
+            
+        
+            `Context`
 
-The <a href="https://msdn.microsoft.com/11c5b1a9-74c0-47fb-8cce-a008ece9efae">IRP major function code</a> indicating the type of I/O operation to be performed.
+            
+        
+            `Control`
 
+            Drivers can check this member to determine whether it is set with SL_PENDING_RETURNED. Drivers have read-only access to this member.
+        
+            `DeviceObject`
 
-### -field MinorFunction
+            A pointer to the driver-created <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.
+        
+            `FileObject`
 
-A subfunction code for <b>MajorFunction</b>. The PnP manager, the power manager, file system drivers, and SCSI class drivers set this member for some requests.
+            A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure that represents the file object, if any, that is associated with <b>DeviceObject</b> pointer.
+        
+            `Flags`
 
-
-### -field Flags
-
-Request-type-specific values used almost exclusively by file system drivers. Removable-media device drivers check whether this member is set with SL_OVERRIDE_VERIFY_VOLUME for read requests to determine whether to continue the read operation even if the device object's <b>Flags</b> is set with DO_VERIFY_VOLUME. Intermediate drivers layered over a removable-media device driver must copy this member into the I/O stack location of the next-lower driver in all incoming <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> requests.
+            Request-type-specific values used almost exclusively by file system drivers. Removable-media device drivers check whether this member is set with SL_OVERRIDE_VERIFY_VOLUME for read requests to determine whether to continue the read operation even if the device object's <b>Flags</b> is set with DO_VERIFY_VOLUME. Intermediate drivers layered over a removable-media device driver must copy this member into the I/O stack location of the next-lower driver in all incoming <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> requests.
 
 Possible flag values include:
 
@@ -344,17 +347,18 @@ If the flag is set, a persistent memory driver shall not remap the physical addr
 to the LBAs.  If that means sector atomicity can't be provided, so be it.  However, the driver is more
 than welcome to provide sector atomicity as long as there is no remapping.</div>
 <div> </div>
+        
+            `MajorFunction`
 
+            The <a href="https://msdn.microsoft.com/11c5b1a9-74c0-47fb-8cce-a008ece9efae">IRP major function code</a> indicating the type of I/O operation to be performed.
+        
+            `MinorFunction`
 
+            A subfunction code for <b>MajorFunction</b>. The PnP manager, the power manager, file system drivers, and SCSI class drivers set this member for some requests.
+        
+            `Parameters`
 
-### -field Control
-
-Drivers can check this member to determine whether it is set with SL_PENDING_RETURNED. Drivers have read-only access to this member.
-
-
-### -field Parameters
-
-A union that depends on the major and minor IRP function code values contained in <b>MajorFunction</b> and <b>MinorFunction</b>. The following table shows which IRPs use the individual members of the <b>Parameters</b> union.
+            A union that depends on the major and minor IRP function code values contained in <b>MajorFunction</b> and <b>MinorFunction</b>. The following table shows which IRPs use the individual members of the <b>Parameters</b> union.
 
 <table>
 <tr>
@@ -509,164 +513,8 @@ A union that depends on the major and minor IRP function code values contained i
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550710">IRP Major Function Codes</a>.
 
-
-### -field Create
-
-
-### -field CreatePipe
-
-
-### -field CreateMailslot
-
-
-### -field Read
-
-
-### -field Write
-
-
-### -field QueryDirectory
-
-
-### -field NotifyDirectory
-
-
-### -field QueryFile
-
-
-### -field SetFile
-
-
-### -field ReplaceIfExists
-
-
-### -field AdvanceOnly
-
-
-### -field ClusterCount
-
-
-### -field DeleteHandle
-
-</dl>
-
-### -field QueryEa
-
-
-### -field SetEa
-
-
-### -field QueryVolume
-
-
-### -field SetVolume
-
-
-### -field FileSystemControl
-
-
-### -field LockControl
-
-
-### -field DeviceIoControl
-
-
-### -field QuerySecurity
-
-
-### -field SetSecurity
-
-
-### -field MountVolume
-
-
-### -field VerifyVolume
-
-
-### -field Scsi
-
-
-### -field QueryQuota
-
-
-### -field SetQuota
-
-
-### -field QueryDeviceRelations
-
-
-### -field QueryInterface
-
-
-### -field DeviceCapabilities
-
-
-### -field FilterResourceRequirements
-
-
-### -field ReadWriteConfig
-
-
-### -field SetLock
-
-
-### -field QueryId
-
-
-### -field QueryDeviceText
-
-
-### -field UsageNotification
-
-
-### -field WaitWake
-
-
-### -field PowerSequence
-
-
-### -field Power
-
-
-### -field SystemContext
-
-
-### -field SystemPowerStateContext
-
-</dl>
-
-### -field Power
-
-
-### -field StartDevice
-
-
-### -field WMI
-
-
-### -field Others
-
-</dd>
-</dl>
-
-### -field DeviceObject
-
-A pointer to the driver-created <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.
-
-
-### -field FileObject
-
-A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure that represents the file object, if any, that is associated with <b>DeviceObject</b> pointer. 
-
-
-### -field CompletionRoutine
-
-
-### -field Context
-
-
-## -remarks
-For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure.
+    ## Remarks
+        For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure.
 
 Every higher-level driver is responsible for setting up the I/O stack location for the next-lower driver in each IRP. A driver must call <a href="..\wdm\nf-wdm-iogetcurrentirpstacklocation.md">IoGetCurrentIrpStackLocation</a> to get a pointer to its own stack location for each IRP. Higher-level drivers can call <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a> to get a pointer to the next-lower driver's stack location.
 
@@ -678,9 +526,17 @@ If a higher-level driver allocates IRPs to make requests of its own, its <i>IoCo
 
 In some cases, a higher-level driver layered over a mass-storage device driver is responsible for splitting up large transfer requests for the underlying device driver. In particular, SCSI class drivers must check the <b>Parameters.Read.Length</b> and <b>Parameters.Write.Length</b>, determine whether the size of the requested transfer exceeds the underlying HBA's transfer capabilities, and, if so, split the <b>Length</b> of the original request into a sequence of partial transfers to satisfy the original IRP.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
@@ -714,4 +570,3 @@ In some cases, a higher-level driver layered over a mass-storage device driver i
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_STACK_LOCATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

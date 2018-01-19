@@ -1,50 +1,43 @@
 ---
-UID: NS:minitape._TAPE_INIT_DATA
-title: _TAPE_INIT_DATA
-author: windows-driver-content
-description: TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use TAPE_INIT_DATA_EX instead.
-old-location: storage\tape_init_data.htm
-old-project: storage
-ms.assetid: 11f5201b-ddd3-43ad-9746-a1a9885c99b1
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _TAPE_INIT_DATA, *PTAPE_INIT_DATA, TAPE_INIT_DATA
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: minitape.h
-req.include-header: Minitape.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: TAPE_INIT_DATA
-req.alt-loc: Minitape.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PTAPE_INIT_DATA, TAPE_INIT_DATA
+UID : NS:minitape._TAPE_INIT_DATA
+title : _TAPE_INIT_DATA
+author : windows-driver-content
+description : TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use TAPE_INIT_DATA_EX instead.
+old-location : storage\tape_init_data.htm
+old-project : storage
+ms.assetid : 11f5201b-ddd3-43ad-9746-a1a9885c99b1
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _TAPE_INIT_DATA, TAPE_INIT_DATA, *PTAPE_INIT_DATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : minitape.h
+req.include-header : Minitape.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : TAPE_INIT_DATA
+req.alt-loc : Minitape.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : TAPE_INIT_DATA, *PTAPE_INIT_DATA
 ---
 
 # _TAPE_INIT_DATA structure
+TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use <a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a> instead.
 
-
-
-## -description
-TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use <a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a> instead. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _TAPE_INIT_DATA { 
   TAPE_VERIFY_INQUIRY_ROUTINE     VerifyInquiry;   
@@ -69,9 +62,16 @@ typedef struct _TAPE_INIT_DATA {
 } TAPE_INIT_DATA, *PTAPE_INIT_DATA;
 ````
 
+## Members
 
-## -struct-fields
 
+    ## Remarks
+        TAPE_INIT_DATA is defined as follows.</p>
 
-## -remarks
-TAPE_INIT_DATA is defined as follows.</p>
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | minitape.h (include Minitape.h) |

@@ -1,53 +1,46 @@
 ---
-UID: NE:wdfdevice._WDF_DEVICE_PNP_STATE
-title: _WDF_DEVICE_PNP_STATE
-author: windows-driver-content
-description: The WDF_DEVICE_PNP_STATE enumeration identifies all of the states that the framework's Plug and Play state machine can enter.
-old-location: wdf\wdf_device_pnp_state.htm
-old-project: wdf
-ms.assetid: b907a1ca-d9ef-45e9-9e1b-26e58e3e1e07
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WDF_DEVICE_PNP_STATE
-req.alt-loc: wdfdevice.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
-req.product: Windows 10 or later.
+UID : NE:wdfdevice._WDF_DEVICE_PNP_STATE
+title : _WDF_DEVICE_PNP_STATE
+author : windows-driver-content
+description : The WDF_DEVICE_PNP_STATE enumeration identifies all of the states that the framework's Plug and Play state machine can enter.
+old-location : wdf\wdf_device_pnp_state.htm
+old-project : wdf
+ms.assetid : b907a1ca-d9ef-45e9-9e1b-26e58e3e1e07
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WDF_DEVICE_PNP_STATE
+req.alt-loc : wdfdevice.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : "*PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE"
+req.product : Windows 10 or later.
 ---
 
-# _WDF_DEVICE_PNP_STATE enumeration
-
-
-
-## -description
+# _WDF_DEVICE_PNP_STATE Enumeration
 <p class="CCE_Message">[Applies to KMDF only]
 
 The WDF_DEVICE_PNP_STATE enumeration identifies all of the states that the framework's Plug and Play state machine can enter.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDF_DEVICE_PNP_STATE { 
   WdfDevStatePnpInvalid                             = 0x00,
@@ -113,188 +106,319 @@ typedef enum _WDF_DEVICE_PNP_STATE {
 } WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE;
 ````
 
+## Constants
+
+<table>
+
+<tr>
+<td>WdfDevStatePnpCheckForDevicePresence</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpEjectedWaitingForRemove</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpEjectFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpEjectHardware</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpEnableInterfaces</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedInit</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedIoStarting</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedOwnHardware</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedPowerPolicyRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedStarted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedSurpriseRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFailedWaitForRemove</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFdoRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpFinal</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpHardwareAvailable</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpHardwareAvailablePowerPolicyFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpInit</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpInitQueryRemove</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpInitQueryRemoveCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpInitStarting</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpInitSurpriseRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpInvalid</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpNull</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpObjectCreated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpPdoInitFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpPdoRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpPdoRestart</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueriedRemoving</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueriedSurpriseRemove</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryRemoveAskDriver</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryRemoveEnsureDeviceAwake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryRemovePending</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryRemoveStaticCheck</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryStopAskDriver</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryStopEnsureDeviceAwake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryStopPending</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpQueryStopStaticCheck</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRemovedChildrenRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRemovedPdoSurpriseRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRemovedPdoWait</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRemovedWaitForChildren</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRemovingDisableInterfaces</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRestart</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRestartHardwareAvailable</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRestarting</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpRestartReleaseHardware</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStarted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStartedCancelRemove</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStartedCancelStop</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStartedRemoving</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStartedStopping</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStartingFromStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpStoppedWaitForStartCompletion</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpSurpriseRemove</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePnpSurpriseRemoveIoStarted</td>
+<td></td>
+</tr>
+</table>
+
+## Remarks
 
-## -enum-fields
-
-### -field WdfDevStatePnpInvalid
-
-
-### -field WdfDevStatePnpObjectCreated
-
-
-### -field WdfDevStatePnpCheckForDevicePresence
-
-
-### -field WdfDevStatePnpEjectFailed
-
-
-### -field WdfDevStatePnpEjectHardware
-
-
-### -field WdfDevStatePnpEjectedWaitingForRemove
-
-
-### -field WdfDevStatePnpInit
-
-
-### -field WdfDevStatePnpInitStarting
-
-
-### -field WdfDevStatePnpInitSurpriseRemoved
-
-
-### -field WdfDevStatePnpHardwareAvailable
-
-
-### -field WdfDevStatePnpEnableInterfaces
-
-
-### -field WdfDevStatePnpHardwareAvailablePowerPolicyFailed
-
-
-### -field WdfDevStatePnpQueryRemoveAskDriver
-
-
-### -field WdfDevStatePnpQueryRemovePending
-
-
-### -field WdfDevStatePnpQueryRemoveStaticCheck
-
-
-### -field WdfDevStatePnpQueriedRemoving
-
-
-### -field WdfDevStatePnpQueryStopAskDriver
-
-
-### -field WdfDevStatePnpQueryStopPending
-
-
-### -field WdfDevStatePnpQueryStopStaticCheck
-
-
-### -field WdfDevStatePnpQueryCanceled
-
-
-### -field WdfDevStatePnpRemoved
-
-
-### -field WdfDevStatePnpPdoRemoved
-
-
-### -field WdfDevStatePnpRemovedPdoWait
-
-
-### -field WdfDevStatePnpRemovedPdoSurpriseRemoved
-
-
-### -field WdfDevStatePnpRemovingDisableInterfaces
-
-
-### -field WdfDevStatePnpRestarting
-
-
-### -field WdfDevStatePnpStarted
-
-
-### -field WdfDevStatePnpStartedCancelStop
-
-
-### -field WdfDevStatePnpStartedCancelRemove
-
-
-### -field WdfDevStatePnpStartedRemoving
-
-
-### -field WdfDevStatePnpStartingFromStopped
-
-
-### -field WdfDevStatePnpStopped
-
-
-### -field WdfDevStatePnpStoppedWaitForStartCompletion
-
-
-### -field WdfDevStatePnpStartedStopping
-
-
-### -field WdfDevStatePnpSurpriseRemove
-
-
-### -field WdfDevStatePnpInitQueryRemove
-
-
-### -field WdfDevStatePnpInitQueryRemoveCanceled
-
-
-### -field WdfDevStatePnpFdoRemoved
-
-
-### -field WdfDevStatePnpRemovedWaitForChildren
-
-
-### -field WdfDevStatePnpQueriedSurpriseRemove
-
-
-### -field WdfDevStatePnpSurpriseRemoveIoStarted
-
-
-### -field WdfDevStatePnpFailedPowerDown
-
-
-### -field WdfDevStatePnpFailedIoStarting
-
-
-### -field WdfDevStatePnpFailedOwnHardware
-
-
-### -field WdfDevStatePnpFailed
-
-
-### -field WdfDevStatePnpFailedSurpriseRemoved
-
-
-### -field WdfDevStatePnpFailedStarted
-
-
-### -field WdfDevStatePnpFailedWaitForRemove
-
-
-### -field WdfDevStatePnpFailedInit
-
-
-### -field WdfDevStatePnpPdoInitFailed
-
-
-### -field WdfDevStatePnpRestart
-
-
-### -field WdfDevStatePnpRestartReleaseHardware
-
-
-### -field WdfDevStatePnpRestartHardwareAvailable
-
-
-### -field WdfDevStatePnpPdoRestart
-
-
-### -field WdfDevStatePnpFinal
-
-
-### -field WdfDevStatePnpRemovedChildrenRemoved
-
-
-### -field WdfDevStatePnpQueryRemoveEnsureDeviceAwake
-
-
-### -field WdfDevStatePnpQueryStopEnsureDeviceAwake
-
-
-### -field WdfDevStatePnpFailedPowerPolicyRemoved
-
-
-### -field WdfDevStatePnpNull
-
-
-## -remarks
 The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_notification_data.md">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a> method.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdevice.h (include Wdf.h) |

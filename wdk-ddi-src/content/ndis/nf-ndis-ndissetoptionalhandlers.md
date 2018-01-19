@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisSetOptionalHandlers
-title: NdisSetOptionalHandlers function
-author: windows-driver-content
-description: NDIS drivers can call the NdisSetOptionalHandlers function to set or change the entry points of driver functions.
-old-location: netvista\ndissetoptionalhandlers.htm
-old-project: netvista
-ms.assetid: 97649f4f-942a-47fc-a541-6f160c8b4eb4
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisSetOptionalHandlers
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisSetOptionalHandlers
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Miscellaneous_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisSetOptionalHandlers
+title : NdisSetOptionalHandlers function
+author : windows-driver-content
+description : NDIS drivers can call the NdisSetOptionalHandlers function to set or change the entry points of driver functions.
+old-location : netvista\ndissetoptionalhandlers.htm
+old-project : netvista
+ms.assetid : 97649f4f-942a-47fc-a541-6f160c8b4eb4
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisSetOptionalHandlers
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisSetOptionalHandlers
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Miscellaneous_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisSetOptionalHandlers function
-
-
-
-## -description
 NDIS drivers can call the 
   <b>NdisSetOptionalHandlers</b> function to set or change the entry points of driver functions.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisSetOptionalHandlers(
@@ -53,10 +48,9 @@ NDIS_STATUS NdisSetOptionalHandlers(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisHandle 
+`NdisHandle`
 
 An NDIS handle that identifies a driver or driver instance.
      
@@ -69,16 +63,15 @@ For a protocol driver, this is the
 
 For a miniport driver, this is the 
      <i>NdisDriverHandle</i> value passed to the 
-     <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a> function
 
 For a filter driver, this is the 
      <i>NdisDriverHandle</i> value passed to the 
-     <a href="netvista.filtersetoptions">FilterSetOptions</a> function or the 
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">FilterSetOptions</a> function or the 
      <i>NdisFilterHandle</i> value passed to the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
-
-### -param OptionalHandlers 
+`OptionalHandlers`
 
 A pointer to one of the following NDIS structures:
      
@@ -175,7 +168,9 @@ A pointer to one of the following NDIS structures:
 </dd>
 </dl>
 
-## -returns
+
+## Return Value
+
 <b>NdisSetOptionalHandlers</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -198,10 +193,8 @@ A pointer to one of the following NDIS structures:
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> returns <b>NDIS_STATUS_FAILURE</b> if none of the preceding values
        applies.
 
- 
+## Remarks
 
-
-## -remarks
 An NDIS driver can call 
     <b>NdisSetOptionalHandlers</b> to overwrite its default entry points. The structure types passed at 
     <i>OptionalHandlers</i> vary according to the type of driver.
@@ -249,12 +242,12 @@ In this case, the valid structures are:
 
 
 For more information on the 2 chimney offload structures, see 
-    <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/full-tcp-offload">NDIS 6.0 TCP chimney offload
     documentation</a>.
 
 Miniport drivers call 
     <b>NdisSetOptionalHandlers</b> in the context of the 
-    <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a> function.
 
 
 <a href="..\ndis\ns-ndis-_ndis_miniport_co_characteristics.md">
@@ -276,7 +269,7 @@ Miniport drivers call
 
 Filter drivers call 
     <b>NdisSetOptionalHandlers</b> in the context of the 
-    <a href="netvista.filtersetoptions">FilterSetOptions</a> function.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">FilterSetOptions</a> function.
 
 There are no optional filter driver services in the current Windows version.
 
@@ -308,11 +301,23 @@ Filter drivers can call
 
 
 For more information on the 4 chimney offload structures, see 
-    <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/full-tcp-offload">NDIS 6.0 TCP chimney offload
     documentation</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Miscellaneous_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
@@ -321,10 +326,10 @@ For more information on the 4 chimney offload structures, see
 <a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a>
 </dt>
 <dt>
-<a href="netvista.filtersetoptions">FilterSetOptions</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">FilterSetOptions</a>
 </dt>
 <dt>
-<a href="netvista.miniportsetoptions">MiniportSetOptions</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
@@ -376,4 +381,3 @@ For more information on the 4 chimney offload structures, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetOptionalHandlers function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

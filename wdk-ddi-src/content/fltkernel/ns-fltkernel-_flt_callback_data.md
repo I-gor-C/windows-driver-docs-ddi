@@ -1,50 +1,43 @@
 ---
-UID: NS:fltkernel._FLT_CALLBACK_DATA
-title: _FLT_CALLBACK_DATA
-author: windows-driver-content
-description: The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations.
-old-location: ifsk\flt_callback_data.htm
-old-project: ifsk
-ms.assetid: c526585e-aa6d-4332-9dd7-927d83293f09
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _FLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA, FLT_CALLBACK_DATA
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FLT_CALLBACK_DATA
-req.alt-loc: fltkernel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PFLT_CALLBACK_DATA, FLT_CALLBACK_DATA
+UID : NS:fltkernel._FLT_CALLBACK_DATA
+title : _FLT_CALLBACK_DATA
+author : windows-driver-content
+description : The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations.
+old-location : ifsk\flt_callback_data.htm
+old-project : ifsk
+ms.assetid : c526585e-aa6d-4332-9dd7-927d83293f09
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _FLT_CALLBACK_DATA, FLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FLT_CALLBACK_DATA
+req.alt-loc : fltkernel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : FLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA
 ---
 
 # _FLT_CALLBACK_DATA structure
+The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations.
 
-
-
-## -description
-The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _FLT_CALLBACK_DATA {
   FLT_CALLBACK_DATA_FLAGS       Flags;
@@ -63,12 +56,12 @@ typedef struct _FLT_CALLBACK_DATA {
 } FLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Flags`
 
-### -field Flags
-
-Bitmask of flags describing the I/O operation. 
+            Bitmask of flags describing the I/O operation. 
 
 
 <div class="alert"><b>Note</b>  Minifilters can set the following flag.</div>
@@ -216,51 +209,29 @@ The Filter Manager sets this flag to indicate that it is currently calling regis
 </td>
 </tr>
 </table>
- 
+        
+            `Iopb`
 
+            Pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a> structure that contains the parameters for the I/O operation.
+        
+            `IoStatus`
 
-### -field Thread
+            An <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains status and information for the I/O operation. A minifilter can modify the contents of this structure only in a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_PREOP_COMPLETE or in a postoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_POSTOP_FINISHED_PROCESSING. Otherwise, the contents of this structure are normally set by the Filter Manager.
+        
+            `RequestorMode`
 
-Pointer to the thread that initiated the I/O operation. 
+            Indicates the execution mode of the process that initiated the I/O operation, either <b>KernelMode</b> or <b>UserMode</b>.
+        
+            `TagData`
 
+            Pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_tag_data_buffer.md">FLT_TAG_DATA_BUFFER</a> structure that contains reparse point data for the I/O operation. This pointer is valid only in the post-create path. Thus only a minifilter's postoperation callback routine can change the value of this member. A minifilter's post-create callback routine can change this member to point to a different FLT_TAG_DATA_BUFFER structure. However, if it changes the member to point to a different structure, it must first free the existing structure to prevent a pool memory leak.
+        
+            `Thread`
 
-### -field Iopb
+            Pointer to the thread that initiated the I/O operation.
 
-Pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a> structure that contains the parameters for the I/O operation. 
-
-
-### -field IoStatus
-
-An <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains status and information for the I/O operation. A minifilter can modify the contents of this structure only in a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_PREOP_COMPLETE or in a postoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_POSTOP_FINISHED_PROCESSING. Otherwise, the contents of this structure are normally set by the Filter Manager. 
-
-
-### -field TagData
-
-Pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_tag_data_buffer.md">FLT_TAG_DATA_BUFFER</a> structure that contains reparse point data for the I/O operation. This pointer is valid only in the post-create path. Thus only a minifilter's postoperation callback routine can change the value of this member. A minifilter's post-create callback routine can change this member to point to a different FLT_TAG_DATA_BUFFER structure. However, if it changes the member to point to a different structure, it must first free the existing structure to prevent a pool memory leak. 
-
-
-### -field QueueLinks
-
-Queue links that a minifilter can use when the Filter Manager's callback data queue is used to pend the I/O operation. 
-
-
-### -field QueueContext
-
-Array of context information pointers that a minifilter can use when the Filter Manager's queue is used to pend the I/O operation. 
-
-
-### -field FilterContext
-
-Array of context information pointers that a minifilter can use when a queue other than the Filter Manager's queue is used to pend the I/O operation. 
-
-
-### -field RequestorMode
-
-Indicates the execution mode of the process that initiated the I/O operation, either <b>KernelMode</b> or <b>UserMode</b>. 
-
-
-## -remarks
-A minifilter registers preoperation (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines for one or more types of I/O operations. When the Filter Manager calls one of these callback routines, it passes a callback data (FLT_CALLBACK_DATA) structure as the first parameter. This structure represents the I/O operation. 
+    ## Remarks
+        A minifilter registers preoperation (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines for one or more types of I/O operations. When the Filter Manager calls one of these callback routines, it passes a callback data (FLT_CALLBACK_DATA) structure as the first parameter. This structure represents the I/O operation. 
 
 A minifilter's preoperation or postoperation callback routine can modify the contents of the callback data structure, except for the <b>Thread</b> and <b>RequestorMode</b> members. If it does, it must then call <a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>, unless it has also modified the contents of the <b>IoStatus</b> member. Otherwise, the modified values are ignored. 
 
@@ -268,11 +239,19 @@ A minifilter can initiate an I/O operation by calling a support routine such as 
 
 A minifilter-initiated I/O operation is sent only to the minifilter instances attached below the calling instance, and to the file system. Minifilters attached above the specified instance do not receive the I/O operation.  
 
-Minifilters can only initiate IRP-based I/O operations. They cannot initiate fast I/O or file system filter (FSFilter) callback operations. 
+Minifilters can only initiate IRP-based I/O operations. They cannot initiate fast I/O or file system filter (FSFilter) callback operations.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
 </dt>
@@ -345,4 +324,3 @@ Minifilters can only initiate IRP-based I/O operations. They cannot initiate fas
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CALLBACK_DATA structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

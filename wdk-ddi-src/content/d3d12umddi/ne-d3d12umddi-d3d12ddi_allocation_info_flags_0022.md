@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_ALLOCATION_INFO_FLAGS_0022
-title: D3D12DDI_ALLOCATION_INFO_FLAGS_0022
-author: windows-driver-content
-description: Contains allocation information flags.
-old-location: display\d3d12ddi_allocation_info_flags_0022.htm
-old-project: display
-ms.assetid: DE3C133C-C1A9-4735-B1C4-9F6E791845A1
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_ALLOCATION_INFO_FLAGS_0022, D3D12DDI_ALLOCATION_INFO_FLAGS_0022
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_ALLOCATION_INFO_FLAGS_0022
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_ALLOCATION_INFO_FLAGS_0022
+UID : NE:d3d12umddi.D3D12DDI_ALLOCATION_INFO_FLAGS_0022
+title : D3D12DDI_ALLOCATION_INFO_FLAGS_0022
+author : windows-driver-content
+description : Contains allocation information flags.
+old-location : display\d3d12ddi_allocation_info_flags_0022.htm
+old-project : display
+ms.assetid : DE3C133C-C1A9-4735-B1C4-9F6E791845A1
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_ALLOCATION_INFO_FLAGS_0022, D3D12DDI_ALLOCATION_INFO_FLAGS_0022
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_ALLOCATION_INFO_FLAGS_0022
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_ALLOCATION_INFO_FLAGS_0022
 ---
 
-# D3D12DDI_ALLOCATION_INFO_FLAGS_0022 enumeration
-
-
-
-## -description
+# D3D12DDI_ALLOCATION_INFO_FLAGS_0022 Enumeration
 Contains allocation information flags.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDI_ALLOCATION_INFO_FLAGS_0022 { 
   D3D12DDI_ALLOCATION_INFO_FLAGS_0022_NONE               = 0x0,
@@ -54,27 +47,36 @@ typedef enum D3D12DDI_ALLOCATION_INFO_FLAGS_0022 {
 } D3D12DDI_ALLOCATION_INFO_FLAGS_0022;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_NONE
+<tr>
+<td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_NONE</td>
+<td>No allocation information flag.</td>
+</tr>
 
-No allocation information flag.
+<tr>
+<td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY</td>
+<td>An override priority.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_PRIMARY</td>
+<td>A primary value.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_STEREO</td>
+<td>A stereo value.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_PRIMARY
-
-A primary value. 
-
-
-### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_STEREO
-
-A stereo value.
-
-
-### -field D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY
-
-An override priority. 
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

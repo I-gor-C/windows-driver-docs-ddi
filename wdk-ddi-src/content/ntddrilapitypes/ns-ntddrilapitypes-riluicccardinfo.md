@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILUICCCARDINFO
-title: RILUICCCARDINFO
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\riluicccardinfo.htm
-old-project: netvista
-ms.assetid: 761f1ab6-75e6-4c40-b79c-01f2e92df495
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILUICCCARDINFO, RILUICCCARDINFO, *LPRILUICCCARDINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILUICCCARDINFO
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILUICCCARDINFO, *LPRILUICCCARDINFO
+UID : NS:ntddrilapitypes.RILUICCCARDINFO
+title : RILUICCCARDINFO
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\riluicccardinfo.htm
+old-project : netvista
+ms.assetid : 761f1ab6-75e6-4c40-b79c-01f2e92df495
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILUICCCARDINFO, *LPRILUICCCARDINFO, RILUICCCARDINFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILUICCCARDINFO
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILUICCCARDINFO, RILUICCCARDINFO"
 ---
 
 # RILUICCCARDINFO structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILUICCCARDINFO {
   DWORD              cbSize;
@@ -56,25 +49,38 @@ typedef struct _RILUICCCARDINFO {
 } RILUICCCARDINFO, RILUICCCARDINFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AppInfo`
 
-### -field cbSize
+            
+        
+            `cbSize`
+
+            
+        
+            `dwNumApps`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `fIsVirtualCard`
+
+            
+        
+            `IccId`
+
+            
 
 
-### -field dwParams
-
-
-### -field fIsVirtualCard
-
-
-### -field IccId
-
-
-### -field dwNumApps
-
-
-### -field AppInfo
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

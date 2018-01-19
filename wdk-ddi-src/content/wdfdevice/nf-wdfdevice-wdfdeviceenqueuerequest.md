@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfdevice.WdfDeviceEnqueueRequest
-title: WdfDeviceEnqueueRequest function
-author: windows-driver-content
-description: The WdfDeviceEnqueueRequest method delivers a specified I/O request to the framework, so that the framework can subsequently add the request to one of the I/O queues that the driver has created for the specified device.
-old-location: wdf\wdfdeviceenqueuerequest.htm
-old-project: wdf
-ms.assetid: f669790f-0370-46a0-ba38-05e35cdf23b3
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfDeviceEnqueueRequest
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WdfDeviceEnqueueRequest
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <= DISPATCH_LEVEL (See remarks section)
-req.typenames: WDF_STATE_NOTIFICATION_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfdevice.WdfDeviceEnqueueRequest
+title : WdfDeviceEnqueueRequest function
+author : windows-driver-content
+description : The WdfDeviceEnqueueRequest method delivers a specified I/O request to the framework, so that the framework can subsequently add the request to one of the I/O queues that the driver has created for the specified device.
+old-location : wdf\wdfdeviceenqueuerequest.htm
+old-project : wdf
+ms.assetid : f669790f-0370-46a0-ba38-05e35cdf23b3
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfDeviceEnqueueRequest
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WdfDeviceEnqueueRequest
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : <= DISPATCH_LEVEL (See remarks section)
+req.typenames : WDF_STATE_NOTIFICATION_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfDeviceEnqueueRequest function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 The <b>WdfDeviceEnqueueRequest</b> method delivers a specified I/O request to the framework, so that the framework can subsequently add the request to one of the I/O queues that the driver has created for the specified device.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfDeviceEnqueueRequest(
@@ -55,20 +50,19 @@ NTSTATUS WdfDeviceEnqueueRequest(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Device [in]
+`Device`
 
 A handle to a framework device object.
 
-
-### -param Request [in]
+`Request`
 
 A handle to a framework request object.
 
 
-## -returns
+## Return Value
+
 If the operation succeeds, the method returns STATUS_SUCCESS. Additional return values include:
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
@@ -87,8 +81,8 @@ The method might return other <a href="https://msdn.microsoft.com/library/window
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-## -remarks
 Your driver can call <b>WdfDeviceEnqueueRequest</b> only from an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function.
 
 The <b>WdfDeviceEnqueueRequest</b> method adds the request to the driver's request-type-specific I/O queue for the device, if the driver has created one. Otherwise the method adds the request to the device's default queue, if the driver has created one.
@@ -111,8 +105,20 @@ For versions 1.0 and 1.5 of KMDF, <b>WdfDeviceEnqueueRequest</b> must be called 
 
 The following code example is an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function that looks for requests that contain the custom I/O control code, IOCTL_NONPNP_METHOD_NEITHER. If the I/O control code is not found, the callback function just returns the request to the framework. If the callback function finds the I/O control code, it preprocesses the request and then returns it to the framework. If an error is encountered, the callback function completes the request.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdevice.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL (See remarks section) |
+| **DDI compliance rules** | DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
@@ -129,4 +135,3 @@ The following code example is an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_i
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceEnqueueRequest method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,68 +1,62 @@
 ---
-UID: NC:ndischimney.W_TCP_OFFLOAD_SEND_HANDLER
-title: W_TCP_OFFLOAD_SEND_HANDLER
-author: windows-driver-content
-description: NDIS calls the MiniportTcpOffloadSend function to transmit data on an offloaded TCP connection.
-old-location: netvista\miniporttcpoffloadsend.htm
-old-project: netvista
-ms.assetid: 7c96412f-a866-4863-a06a-9eb6adb2a33b
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportTcpOffloadSend
-req.alt-loc: Ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.W_TCP_OFFLOAD_SEND_HANDLER
+title : W_TCP_OFFLOAD_SEND_HANDLER
+author : windows-driver-content
+description : NDIS calls the MiniportTcpOffloadSend function to transmit data on an offloaded TCP connection.
+old-location : netvista\miniporttcpoffloadsend.htm
+old-project : netvista
+ms.assetid : 7c96412f-a866-4863-a06a-9eb6adb2a33b
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportTcpOffloadSend
+req.alt-loc : Ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# W_TCP_OFFLOAD_SEND_HANDLER callback
 
-
-
-## -description
+# W_TCP_OFFLOAD_SEND_HANDLER callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 NDIS calls the 
   <i>MiniportTcpOffloadSend</i> function to transmit data on an offloaded TCP connection.
 
+## Syntax
 
+```
+W_TCP_OFFLOAD_SEND_HANDLER WTcpOffloadSendHandler;
 
-## -prototype
-
-````
-W_TCP_OFFLOAD_SEND_HANDLER MiniportTcpOffloadSend;
-
-NDIS_STATUS MiniportTcpOffloadSend(
-  _In_ NDIS_HANDLE      MiniportAdapterContext,
-  _In_ PVOID            MiniportOffloadContext,
-  _In_ PNET_BUFFER_LIST NetBufferList
+NDIS_STATUS WTcpOffloadSendHandler(
+  IN NDIS_HANDLE MiniportAdapterContext,
+  IN PVOID MiniportOffloadContext,
+  IN PNET_BUFFER_LIST NetBufferList
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterContext [in]
+`MiniportAdapterContext`
 
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The offload target provided this handle to NDIS when it
@@ -72,16 +66,14 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
-
-### -param MiniportOffloadContext [in]
+`MiniportOffloadContext`
 
 A pointer to a memory location that contains a PVOID value. This PVOID value references the
      miniport offload context that contains the state object for the TCP connection on which the data is to
      be transmitted. The offload target supplied this PVOID value when it offloaded the TCP connection state
      object.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
@@ -93,14 +85,15 @@ A pointer to a
      physical memory. However, they are not mapped into system memory.
 
 
-## -returns
+## Return Value
+
 NDIS_STATUS_PENDING is the only return value that is allowed. An offload target always completes a
      send request asynchronously by calling 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">
      NdisTcpOffloadSendComplete</a>.
 
+## Remarks
 
-## -remarks
 An offload target must transmit data in first in, first out (FIFO) order. The order of the linked list
     of 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that NDIS passes
@@ -142,8 +135,20 @@ The offload target should (but is not required to) set the PSH bit on each NET_B
 
 The host stack will not request the offload target to send urgent data.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -163,4 +168,3 @@ The host stack will not request the offload target to send urgent data.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_SEND_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

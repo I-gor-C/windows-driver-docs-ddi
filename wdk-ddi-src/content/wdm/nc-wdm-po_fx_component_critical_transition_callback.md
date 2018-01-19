@@ -1,85 +1,78 @@
 ---
-UID: NC:wdm.PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
-title: PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK function
-author: windows-driver-content
-description: The ComponentCriticalTransitionCallback callback routine handles a transition of the specified component between the F0 (fully on) and low-power Fx component power states.
-old-location: kernel\componentcriticaltransitioncallback.htm
-old-project: kernel
-ms.assetid: 6E551951-E903-4970-8B30-6780C9FF4FC6
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows 10.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ComponentCriticalTransitionCallback
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: TBD
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
+title : PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
+author : windows-driver-content
+description : The ComponentCriticalTransitionCallback callback routine handles a transition of the specified component between the F0 (fully on) and low-power Fx component power states.
+old-location : kernel\componentcriticaltransitioncallback.htm
+old-project : kernel
+ms.assetid : 6E551951-E903-4970-8B30-6780C9FF4FC6
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows 10.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ComponentCriticalTransitionCallback
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : TBD
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK function
-
-
-
-## -description
 The <i>ComponentCriticalTransitionCallback</i> callback routine handles a transition of the specified component between the F0 (fully on) and low-power F<i>x</i> component power states.
 
+## Syntax
 
+```
+PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK PoFxComponentCriticalTransitionCallback;
 
-## -syntax
-
-````
-PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK ComponentCriticalTransitionCallback;
-
-VOID ComponentCriticalTransitionCallback(
-  _In_ PVOID   Context,
-  _In_ ULONG   Component,
-  _In_ BOOLEAN Active
+void PoFxComponentCriticalTransitionCallback(
+  PVOID Context,
+  ULONG Component,
+  BOOLEAN Active
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Context [in]
+`Context`
 
 A pointer to the device context. The device driver uses this context to store information about the current power state of the device. This context is driver-defined and is opaque to PoFx. The driver specified this pointer in the <b>DeviceContext</b> member of the <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a> structure that the driver used to register the device with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx).
 
-
-### -param Component [in]
+`Component`
 
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <b>PO_FX_CORE_DEVICE</b> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-
-### -param Active [in]
+`Active`
 
 Indicates whether this notification is for a transition to the F0 component power state. If TRUE, the component has just completed a transition from a low-power F<i>x</i> state to F0. If FALSE, the component is about to start a transition from F0 to a low-power F<i>x</i> state.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 This callback routine is implemented by a device driver, and is called by PoFx. PoFx calls this routine to notify the driver of power transitions of device components.
 
 The <b>ComponentCriticalTransitionCallback</b> member of the <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a> structure is a pointer to a <i>ComponentCriticalTransitionCallback</i> callback routine. A pointer to a <b>PO_FX_CORE_DEVICE</b> structure is passed as an input parameter in the PoFxRegisterCoreDevice call that registers a core device with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx).
@@ -94,8 +87,20 @@ For more information about F<i>x</i> component power states, see <a href="https:
 
 A PEP can call this routine at IRQL TBD.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
+| **Library** |  |
+| **IRQL** | TBD |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
@@ -106,4 +111,3 @@ A PEP can call this routine at IRQL TBD.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ComponentCriticalTransitionCallback routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

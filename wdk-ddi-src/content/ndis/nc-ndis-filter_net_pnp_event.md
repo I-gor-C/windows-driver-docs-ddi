@@ -1,81 +1,72 @@
 ---
-UID: NC:ndis.FILTER_NET_PNP_EVENT
-title: FILTER_NET_PNP_EVENT function
-author: windows-driver-content
-description: NDIS calls a filter driver's FilterNetPnPEvent function to notify the driver of network Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_NET_PNP_EVENT type.
-old-location: netvista\filternetpnpevent.htm
-old-project: netvista
-ms.assetid: 5c52b2d2-3fba-4d28-8172-7b6854386061
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FILTER_NET_PNP_EVENT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FilterNetPnPEvent
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.FILTER_NET_PNP_EVENT
+title : FILTER_NET_PNP_EVENT
+author : windows-driver-content
+description : NDIS calls a filter driver's FilterNetPnPEvent function to notify the driver of network Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_NET_PNP_EVENT type.
+old-location : netvista\filternetpnpevent.htm
+old-project : netvista
+ms.assetid : 5c52b2d2-3fba-4d28-8172-7b6854386061
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FilterNetPnPEvent
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # FILTER_NET_PNP_EVENT function
-
-
-
-## -description
 NDIS calls a filter driver's 
   <i>FilterNetPnPEvent</i> function to notify the driver of network Plug and Play (PnP)
   and Power Management events.
 
+## Syntax
 
+```
+FILTER_NET_PNP_EVENT FilterNetPnpEvent;
 
-## -syntax
-
-````
-FILTER_NET_PNP_EVENT FilterNetPnPEvent;
-
-NDIS_STATUS FilterNetPnPEvent(
-  _In_ NDIS_HANDLE                 FilterModuleContext,
-  _In_ PNET_PNP_EVENT_NOTIFICATION NetPnPEvent
+NDIS_STATUS FilterNetPnpEvent(
+  NDIS_HANDLE FilterModuleContext,
+  PNET_PNP_EVENT_NOTIFICATION NetPnPEventNotification
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param FilterModuleContext [in]
+`FilterModuleContext`
 
 A handle to the context area for the filter module. The filter driver created and initialized this
      context area in the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
-
-### -param NetPnPEvent [in]
-
-A pointer to a 
-     <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
-     NET_PNP_EVENT_NOTIFICATION</a> structure, which describes the PnP event or Power Management event
-     being indicated to the filter driver.
+`NetPnPEventNotification`
 
 
-## -returns
+
+
+## Return Value
+
 <i>FilterNetPnPEvent</i> can return either of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -91,8 +82,8 @@ The return value is significant only when the propagated event is a
      <b>NetEventQueryRemove</b> event. For all other propagated events, the return
      value is always NDIS_STATUS_SUCCESS.
 
+## Remarks
 
-## -remarks
 <i>FilterNetPnPEvent</i> is an optional function. If a filter driver does not handle
     network PnP events, it can set the entry point for this function to <b>NULL</b> when it calls the 
     <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
@@ -130,10 +121,22 @@ Then, implement your function as follows:
 
 The <b>FILTER_NET_PNP_EVENT</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>FILTER_NET_PNP_EVENT</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
@@ -159,4 +162,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_NET_PNP_EVENT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

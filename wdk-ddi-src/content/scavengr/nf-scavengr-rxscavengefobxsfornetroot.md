@@ -1,50 +1,45 @@
 ---
-UID: NF:scavengr.RxScavengeFobxsForNetRoot
-title: RxScavengeFobxsForNetRoot function
-author: windows-driver-content
-description: RxScavengeFobxsForNetRoot scavenges all of the FOBX structures associated with a given NET_ROOT structure.
-old-location: ifsk\rxscavengefobxsfornetroot.htm
-old-project: ifsk
-ms.assetid: 2a2320e6-b114-4ea7-9f2f-27fd47fef770
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxScavengeFobxsForNetRoot
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: scavengr.h
-req.include-header: Rxprocs.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RxScavengeFobxsForNetRoot
-req.alt-loc: scavengr.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: *PRX_CONTEXT, RX_CONTEXT
-req.product: Windows 10 or later.
+UID : NF:scavengr.RxScavengeFobxsForNetRoot
+title : RxScavengeFobxsForNetRoot function
+author : windows-driver-content
+description : RxScavengeFobxsForNetRoot scavenges all of the FOBX structures associated with a given NET_ROOT structure.
+old-location : ifsk\rxscavengefobxsfornetroot.htm
+old-project : ifsk
+ms.assetid : 2a2320e6-b114-4ea7-9f2f-27fd47fef770
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RxScavengeFobxsForNetRoot
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : scavengr.h
+req.include-header : Rxprocs.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RxScavengeFobxsForNetRoot
+req.alt-loc : scavengr.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
+req.product : Windows 10 or later.
 ---
 
+
 # RxScavengeFobxsForNetRoot function
-
-
-
-## -description
 <b>RxScavengeFobxsForNetRoot</b> scavenges all of the FOBX structures associated with a given NET_ROOT structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID RxScavengeFobxsForNetRoot(
@@ -53,24 +48,27 @@ VOID RxScavengeFobxsForNetRoot(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NetRoot 
+`NetRoot`
 
 A pointer to the NET_ROOT structure for which the FOBX structures need to be scavenged.
 
-
-### -param PurgingFcb 
+`PurgingFcb`
 
 A pointer to the FCB for which the scavenging should occur.
 
-
-## -returns
-None 
+`SynchronizeWithScavenger`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 At cleanup, there are no more user handles associated with the file object. In such cases, the time window between close and cleanup is dictated by the additional references maintained by the memory manager and cache manager. On cleanup, the FOBX is put on a close pending list and removed from the corresponding list when a close operation is received. In the interim, if an open operation is failing with ACCESS_DENIED status, then RDBSS can force a purge and scavenge of the FOBX structure. This is a synchronous operation.
 
 For directory renames, all files under the directory need to be closed. So, a network mini-redirector might call <b>RxPurgeRelatedFobxs</b> and <b>RxScavengeFobxsForNetRoot</b> in response to a IRP_MJ_SET_INFORMATION request to rename a directory. By passing in the NET_ROOT structure for the directory and a <b>NULL</b> FCB, all of the FOBX structures associated with the directory would be purged and scavenged.
@@ -83,8 +81,20 @@ On checked builds, <b>RxScavengeAllFobxs</b> causes the system to ASSERT for the
 
 The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | scavengr.h (include Rxprocs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
@@ -104,4 +114,3 @@ The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxScavengeFobxsForNetRoot function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

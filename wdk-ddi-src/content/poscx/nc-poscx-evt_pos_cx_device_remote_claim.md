@@ -1,45 +1,42 @@
 ---
-UID: NC:poscx.EVT_POS_CX_DEVICE_REMOTE_CLAIM
-title: EVT_POS_CX_DEVICE_REMOTE_CLAIM function
-author: windows-driver-content
-description: The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work.
-old-location: pos\evt_pos_cx_device_remote_claim.htm
-old-project: pos
-ms.assetid: 3D8907A2-E53E-40D9-870A-AF0EB062E81F
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: EVT_POS_CX_DEVICE_REMOTE_CLAIM
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: poscx.h
-req.include-header: Poscx.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: EvtPosCxDeviceRemoteClaim
-req.alt-loc: poscx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NC:poscx.EVT_POS_CX_DEVICE_REMOTE_CLAIM
+title : EVT_POS_CX_DEVICE_REMOTE_CLAIM
+author : windows-driver-content
+description : The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work.
+old-location : pos\evt_pos_cx_device_remote_claim.htm
+old-project : pos
+ms.assetid : 3D8907A2-E53E-40D9-870A-AF0EB062E81F
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : "*PPCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR"
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : poscx.h
+req.include-header : Poscx.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : EvtPosCxDeviceRemoteClaim
+req.alt-loc : poscx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_POS_CX_DEVICE_REMOTE_CLAIM function
-
-
-
-## -description
 The 
   EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from
 unclaimed to claimed and allows the driver to do additional work. This callback is typically only used with network connected devices that require additional logic for handling ownership transitions.
@@ -47,34 +44,31 @@ unclaimed to claimed and allows the driver to do additional work. This callback 
 <i>EVT_POS_CX_DEVICE_REMOTE_CLAIM</i> and <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_release.md">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a> add support for remote devices that handle their own claim
 semantics.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 EVT_POS_CX_DEVICE_REMOTE_CLAIM EvtPosCxDeviceRemoteClaim;
 
-NTSTATUS EvtPosCxDeviceRemoteClaim(
-  _In_ WDFDEVICE device,
-  _In_ ULONG     deviceInterfaceTag
+_IRQL_requires_same_ NTSTATUS EvtPosCxDeviceRemoteClaim(
+  WDFDEVICE device,
+  ULONG deviceInterfaceTag
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param device [in]
+`device`
 
 A handle to a framework device object that represents the device.
 
-
-### -param deviceInterfaceTag [in]
+`deviceInterfaceTag`
 
 An identifier used to specify which interface is being claimed in a multi-function device.  For a single-interface device, this value should be 0.
 
 
-## -returns
+## Return Value
+
 If the operation is successful, the callback function must return STATUS_SUCCESS or another status value for which NT_SUCCESS(status) equals TRUE.
 
 If the driver is unable to complete the remote claim transaction, it should return STATUS_ACCESS_DENIED so that the failure will bubble up to the application.
@@ -90,10 +84,20 @@ The <b>EVT_POS_CX_DEVICE_REMOTE_CLAIM</b> function type is defined in the poscx.
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | poscx.h (include Poscx.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_release.md">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a>
@@ -104,4 +108,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20EVT_POS_CX_DEVICE_REMOTE_CLAIM callback function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

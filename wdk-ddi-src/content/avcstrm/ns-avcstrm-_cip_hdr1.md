@@ -1,50 +1,43 @@
 ---
-UID: NS:avcstrm._CIP_HDR1
-title: _CIP_HDR1
-author: windows-driver-content
-description: The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair).
-old-location: stream\cip_hdr1.htm
-old-project: stream
-ms.assetid: 15450f33-cb86-4c1d-87d7-2d77a1d66a81
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _CIP_HDR1, CIP_HDR1, *PCIP_HDR1
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: avcstrm.h
-req.include-header: Avcstrm.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CIP_HDR1
-req.alt-loc: avcstrm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: CIP_HDR1, *PCIP_HDR1
+UID : NS:avcstrm._CIP_HDR1
+title : _CIP_HDR1
+author : windows-driver-content
+description : The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair).
+old-location : stream\cip_hdr1.htm
+old-project : stream
+ms.assetid : 15450f33-cb86-4c1d-87d7-2d77a1d66a81
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _CIP_HDR1, CIP_HDR1, *PCIP_HDR1
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : avcstrm.h
+req.include-header : Avcstrm.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CIP_HDR1
+req.alt-loc : avcstrm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : CIP_HDR1, *PCIP_HDR1
 ---
 
 # _CIP_HDR1 structure
-
-
-
-## -description
 The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair).
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _CIP_HDR1 {
   ULONG DBC  :8;
@@ -58,54 +51,53 @@ typedef struct _CIP_HDR1 {
 } CIP_HDR1, *PCIP_HDR1;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Bit00`
 
-### -field DBC
+            Must be set to 0:0.
+        
+            `DBC`
 
-Data block counter. This is not used by subunit driver. It must be set to 0.
+            Data block counter. This is not used by subunit driver. It must be set to 0.
+        
+            `DBS`
 
+            Specifies the data block size in quadlets.
+        
+            `FN`
 
-### -field Rsv00
+            Specifies the fractional number.
+        
+            `QPC`
 
-Reserved bits. Do not use this. It must be 0:0.
+            Quadlet padding count (0..7 quadlets).
+        
+            `Rsv00`
 
+            Reserved bits. Do not use this. It must be 0:0.
+        
+            `SID`
 
-### -field SPH
+            Specifies the source node ID (ID of transmitter). Not used by the subunit driver. Must be set to 0.
+        
+            `SPH`
 
-Specifies a source packet header. A value of 1 indicates the presence of a source packet header. A value of 0 indicates no source packet header.
-
-
-### -field QPC
-
-Quadlet padding count (0..7 quadlets).
-
-
-### -field FN
-
-Specifies the fractional number.
-
-
-### -field DBS
-
-Specifies the data block size in quadlets.
-
-
-### -field SID
-
-Specifies the source node ID (ID of transmitter). Not used by the subunit driver. Must be set to 0.
+            Specifies a source packet header. A value of 1 indicates the presence of a source packet header. A value of 0 indicates no source packet header.
 
 
-### -field Bit00
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | avcstrm.h (include Avcstrm.h) |
 
-Must be set to 0:0.
+    ## See Also
 
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md">CIP_HDR2_FDF</a>
 </dt>
@@ -121,4 +113,3 @@ Must be set to 0:0.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CIP_HDR1 structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

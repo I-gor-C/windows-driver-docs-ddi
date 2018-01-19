@@ -1,82 +1,75 @@
 ---
-UID: NC:poscx.EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
-title: EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE function
-author: windows-driver-content
-description: The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine.
-old-location: pos\evt_pos_cx_device_ownership_change.htm
-old-project: pos
-ms.assetid: 9587928C-6C40-4550-820A-B77968E3E16A
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: poscx.h
-req.include-header: Poscx.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: EvtPosCxDeviceOwnershipChange
-req.alt-loc: poscx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NC:poscx.EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
+title : EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
+author : windows-driver-content
+description : The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine.
+old-location : pos\evt_pos_cx_device_ownership_change.htm
+old-project : pos
+ms.assetid : 9587928C-6C40-4550-820A-B77968E3E16A
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : "*PPCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR"
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : poscx.h
+req.include-header : Poscx.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : EvtPosCxDeviceOwnershipChange
+req.alt-loc : poscx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE function
-
-
-
-## -description
 The 
   EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE EvtPosCxDeviceOwnershipChange;
 
-VOID EvtPosCxDeviceOwnershipChange(
-  _In_     WDFDEVICE     device,
-  _In_opt_ WDFFILEOBJECT oldOwnerFileObj,
-  _In_opt_ WDFFILEOBJECT newOwnerFileObj
+_IRQL_requires_same_ VOID EvtPosCxDeviceOwnershipChange(
+  WDFDEVICE device,
+  WDFFILEOBJECT oldOwnerFileObj,
+  WDFFILEOBJECT newOwnerFileObj
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param device [in]
+`device`
 
 A handle to a framework device object that represents the device.
 
-
-### -param oldOwnerFileObj [in, optional]
+`oldOwnerFileObj`
 
 The file object of the previous claim owner. This may be NULL if no previous owner.
 
-
-### -param newOwnerFileObj [in, optional]
+`newOwnerFileObj`
 
 The file object of the new claim owner. This may be NULL if the device was released without a pending claim request.
 
 
-## -returns
+## Return Value
+
 This callback function does not return a value.
 
 To define a <b>EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE</b> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
@@ -90,4 +83,14 @@ The <b>EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE</b> function type is defined in the po
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | poscx.h (include Poscx.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

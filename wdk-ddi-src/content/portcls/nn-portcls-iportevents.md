@@ -1,44 +1,41 @@
 ---
-UID: NN:portcls.IPortEvents
-title: IPortEvents
-author: windows-driver-content
-description: The IPortEvents interface is used by miniport drivers to notify clients of hardware events.
-old-location: audio\iportevents.htm
-old-project: audio
-ms.assetid: bbbb5486-1217-4c4d-9421-96994a5fec82
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PcUnregisterIoTimeout
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: portcls.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IPortEvents
-req.alt-loc: portcls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Portcls.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
+UID : NN:portcls.IPortEvents
+title : IPortEvents
+author : windows-driver-content
+description : The IPortEvents interface is used by miniport drivers to notify clients of hardware events.
+old-location : audio\iportevents.htm
+old-project : audio
+ms.assetid : bbbb5486-1217-4c4d-9421-96994a5fec82
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : PcUnregisterIoTimeout
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : portcls.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IPortEvents
+req.alt-loc : portcls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Portcls.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 # IPortEvents interface
 
-
-
-## -description
 The <code>IPortEvents</code> interface is used by miniport drivers to notify clients of <a href="https://msdn.microsoft.com/b91e02dd-0de4-4de3-ade6-778339ce47a8">hardware events</a>. In Windows 98/Me and in Windows 2000 and later, all port drivers in portcls.sys implement this interface and expose it to miniport drivers. To determine whether a port driver supports the <code>IPortEvents</code> interface, the miniport driver calls the IPort<i>Xxx</i> object's <b>QueryInterface</b> method with REFIID <b>IID_IPortEvents</b>. <code>IPortEvents</code> inherits from the <b>IUnknown</b> interface.
 
 Drivers typically use the <code>IPortEvents</code> interface to notify the system of hardware-generated volume or mute changes, although <code>IPortEvents</code> can be used for any type of event notification. <code>IPortEvents</code> interface is an optional lower-edge port driver interface. It can be used, for example, to notify <b>mixer</b> applications of control or mixer-line changes. For information about the <b>mixer</b> API, see the Microsoft Windows SDK documentation.
@@ -70,11 +67,24 @@ This section also describes the following routine for handling event requests:
 
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
 
+## Methods
+
+<p>The <b>IPortEvents</b> interface has these methods.</p>
+
+| Method | Description |
+| ---- |:---- |
+| [portcls.IPortEvents.AddEventToEventList](nf-portcls-iportevents-addeventtoeventlist.md) | The AddEventToEventList method adds an event to the port driver's event list. |
+| [portcls.IPortEvents.GenerateEventList](nf-portcls-iportevents-generateeventlist.md) | The GenerateEventList method notifies clients through the port driver's list of event entries that a particular event has occurred. |
+
+## Remarks
 
 
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortEvents</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | portcls.h |
+| **DLL** |  |

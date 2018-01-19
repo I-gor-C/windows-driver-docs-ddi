@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d10umddi.D3D11_1DDIARG_SIGNATURE_ENTRY
-title: D3D11_1DDIARG_SIGNATURE_ENTRY
-author: windows-driver-content
-description: Describes an entry for a signature.
-old-location: display\d3d11_1ddiarg_signature_entry.htm
-old-project: display
-ms.assetid: 571ed880-a4c6-4eb1-a254-c1faf2a589d2
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D11_1DDIARG_SIGNATURE_ENTRY, D3D11_1DDIARG_SIGNATURE_ENTRY
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D11_1DDIARG_SIGNATURE_ENTRY
-req.alt-loc: D3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D11_1DDIARG_SIGNATURE_ENTRY
+UID : NS:d3d10umddi.D3D11_1DDIARG_SIGNATURE_ENTRY
+title : D3D11_1DDIARG_SIGNATURE_ENTRY
+author : windows-driver-content
+description : Describes an entry for a signature.
+old-location : display\d3d11_1ddiarg_signature_entry.htm
+old-project : display
+ms.assetid : 571ed880-a4c6-4eb1-a254-c1faf2a589d2
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D11_1DDIARG_SIGNATURE_ENTRY, D3D11_1DDIARG_SIGNATURE_ENTRY
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D11_1DDIARG_SIGNATURE_ENTRY
+req.alt-loc : D3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D11_1DDIARG_SIGNATURE_ENTRY
 ---
 
 # D3D11_1DDIARG_SIGNATURE_ENTRY structure
-
-
-
-## -description
 Describes an entry for a signature.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct D3D11_1DDIARG_SIGNATURE_ENTRY {
   D3D10_SB_NAME                    SystemValue;
@@ -55,12 +48,32 @@ typedef struct D3D11_1DDIARG_SIGNATURE_ENTRY {
 } D3D11_1DDIARG_SIGNATURE_ENTRY;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Mask`
 
-### -field SystemValue
+            [in] The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.
+        
+            `MinPrecision`
 
-[in] The <b>D3D10_SB_NAME</b>-typed value that indicates the system name of the signature entry. The <b>D3D10_SB_NAME</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file. One of the following values can be set.
+            A <b>D3D11_SB_OPERAND_MIN_PRECISION</b> type that indicates a minimum precision of source and destination operands.
+
+The <b>D3D11_SB_OPERAND_MIN_PRECISION</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
+        
+            `Register`
+
+            [in] The number of the register for the signature entry.
+        
+            `RegisterComponentType`
+
+            A  <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> type that indicates the register component type.
+
+The <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
+        
+            `SystemValue`
+
+            [in] The <b>D3D10_SB_NAME</b>-typed value that indicates the system name of the signature entry. The <b>D3D10_SB_NAME</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file. One of the following values can be set.
 
 <table>
 <tr>
@@ -168,31 +181,12 @@ Is front face.
 </td>
 </tr>
 </table>
- 
 
 
-### -field Register
-
-[in] The number of the register for the signature entry.
-
-
-### -field Mask
-
-[in] The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.
-
-
-### -field RegisterComponentType
-
-A  <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> type that indicates the register component type.
-
-The <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
-
-
-### -field MinPrecision
-
-A <b>D3D11_SB_OPERAND_MIN_PRECISION</b> type that indicates a minimum precision of source and destination operands.
-
-The <b>D3D11_SB_OPERAND_MIN_PRECISION</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |

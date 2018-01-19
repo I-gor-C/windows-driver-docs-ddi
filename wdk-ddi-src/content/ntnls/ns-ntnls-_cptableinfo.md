@@ -1,50 +1,43 @@
 ---
-UID: NS:ntnls._CPTABLEINFO
-title: _CPTABLEINFO
-author: windows-driver-content
-description: Stores the NLS file formats.
-old-location: kernel\cptableinfo.htm
-old-project: kernel
-ms.assetid: 20EE0017-760E-48A1-8658-2A0278843074
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: _CPTABLEINFO, *PCPTABLEINFO, CPTABLEINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntnls.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CPTABLEINFO
-req.alt-loc: Ntnls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PCPTABLEINFO, CPTABLEINFO
+UID : NS:ntnls._CPTABLEINFO
+title : _CPTABLEINFO
+author : windows-driver-content
+description : Stores the NLS file formats.
+old-location : kernel\cptableinfo.htm
+old-project : kernel
+ms.assetid : 20EE0017-760E-48A1-8658-2A0278843074
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _CPTABLEINFO, *PCPTABLEINFO, CPTABLEINFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntnls.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CPTABLEINFO
+req.alt-loc : Ntnls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PCPTABLEINFO, CPTABLEINFO"
 ---
 
 # _CPTABLEINFO structure
-
-
-
-## -description
 Stores the NLS file formats.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _CPTABLEINFO {
   USHORT  CodePage;
@@ -62,67 +55,62 @@ typedef struct _CPTABLEINFO {
 } CPTABLEINFO, *PCPTABLEINFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CodePage`
 
-### -field CodePage
+            Specifies the code page number.
+        
+            `DBCSCodePage`
 
-Specifies the code page number.
+            Specifies non-zero for DBCS code pages.
+        
+            `DBCSOffsets`
 
+            Specifies a pointer to DBCS offsets.
+        
+            `DBCSRanges`
 
-### -field MaximumCharacterSize
+            Specifies a pointer to DBCS ranges.
+        
+            `DefaultChar`
 
-Specifies the maximum length in bytes of a character.
+            Specifies the default character (MB).
+        
+            `LeadByte`
 
+            Specifies the lead byte ranges.
+        
+            `MaximumCharacterSize`
 
-### -field DefaultChar
+            Specifies the maximum length in bytes of a character.
+        
+            `MultiByteTable`
 
-Specifies the default character (MB).
+            Specifies a pointer to a MB translation table.
+        
+            `TransDefaultChar`
 
+            Specifies the translation of the default character (Unicode).
+        
+            `TransUniDefaultChar`
 
-### -field UniDefaultChar
+            Specifies the translation of the Unicode default character (MB).
+        
+            `UniDefaultChar`
 
-Specifies the default character (Unicode).
+            Specifies the default character (Unicode).
+        
+            `WideCharTable`
 
-
-### -field TransDefaultChar
-
-Specifies the translation of the default character (Unicode).
-
-
-### -field TransUniDefaultChar
-
-Specifies the translation of the Unicode default character (MB).
-
-
-### -field DBCSCodePage
-
-Specifies non-zero for DBCS code pages.
-
-
-### -field LeadByte
-
-Specifies the lead byte ranges.
-
-
-### -field MultiByteTable
-
-Specifies a pointer to a MB translation table.
-
-
-### -field WideCharTable
-
-Specifies a pointer to a WC translation table.
-
-
-### -field DBCSRanges
-
-Specifies a pointer to DBCS ranges.
+            Specifies a pointer to a WC translation table.
 
 
-### -field DBCSOffsets
-
-Specifies a pointer to DBCS offsets.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntnls.h |

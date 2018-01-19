@@ -1,44 +1,41 @@
 ---
-UID: NN:portcls.IDmaChannel
-title: IDmaChannel
-author: windows-driver-content
-description: The IDmaChannel interface provides an abstraction of a DMA channel and its associated DMA buffer and usage parameters.
-old-location: audio\idmachannel.htm
-old-project: audio
-ms.assetid: 85fad1fb-d088-46ad-917c-bdbc31134690
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PcUnregisterIoTimeout
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: portcls.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDmaChannel
-req.alt-loc: portcls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Portcls.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
+UID : NN:portcls.IDmaChannel
+title : IDmaChannel
+author : windows-driver-content
+description : The IDmaChannel interface provides an abstraction of a DMA channel and its associated DMA buffer and usage parameters.
+old-location : audio\idmachannel.htm
+old-project : audio
+ms.assetid : 85fad1fb-d088-46ad-917c-bdbc31134690
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : PcUnregisterIoTimeout
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : portcls.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDmaChannel
+req.alt-loc : portcls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Portcls.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 # IDmaChannel interface
 
-
-
-## -description
 The <code>IDmaChannel</code> interface provides an abstraction of a DMA channel and its associated DMA buffer and usage parameters. A WaveCyclic or WavePci port driver implements this interface and exposes it to the WaveCyclic or WavePci miniport driver. The miniport driver obtains a reference to the port driver's implementation of an <code>IDmaChannel</code> object by calling one of the port driver's New<i>Xxx</i>DmaChannel methods:
 
 
@@ -59,10 +56,22 @@ The current implementation of the <code>IDmaChannel</code> interface in Portcls.
 
 For more information, see <a href="https://msdn.microsoft.com/2064bbdf-62b7-454f-8764-b2aa21636c02">DMA Channel Objects</a>.
 
+## Methods
+
+<p>The <b>IDmaChannel</b> interface has these methods.</p>
+
+| Method | Description |
+| ---- |:---- |
+
+## Remarks
 
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDmaChannel</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
 
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | portcls.h |
+| **DLL** |  |

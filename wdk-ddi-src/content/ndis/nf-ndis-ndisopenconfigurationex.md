@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisOpenConfigurationEx
-title: NdisOpenConfigurationEx function
-author: windows-driver-content
-description: NDIS drivers call the NdisOpenConfigurationEx function to get a configuration handle that allows access to configuration parameters in the registry.
-old-location: netvista\ndisopenconfigurationex.htm
-old-project: netvista
-ms.assetid: 76539106-6d8d-4a80-9c74-a6a4ca37c40e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisOpenConfigurationEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisOpenConfigurationEx
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Miscellaneous_Function, NdisOpenConfigurationEx
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisOpenConfigurationEx
+title : NdisOpenConfigurationEx function
+author : windows-driver-content
+description : NDIS drivers call the NdisOpenConfigurationEx function to get a configuration handle that allows access to configuration parameters in the registry.
+old-location : netvista\ndisopenconfigurationex.htm
+old-project : netvista
+ms.assetid : 76539106-6d8d-4a80-9c74-a6a4ca37c40e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisOpenConfigurationEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisOpenConfigurationEx
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Miscellaneous_Function, NdisOpenConfigurationEx
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisOpenConfigurationEx function
-
-
-
-## -description
 NDIS drivers call the 
   <b>NdisOpenConfigurationEx</b> function to get a configuration handle that allows access to configuration
   parameters in the registry.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisOpenConfigurationEx(
@@ -54,24 +49,23 @@ NDIS_STATUS NdisOpenConfigurationEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param ConfigObject [in]
+`ConfigObject`
 
 A pointer to a caller-supplied and initialized 
      <a href="..\ndis\ns-ndis-_ndis_configuration_object.md">
      NDIS_CONFIGURATION_OBJECT</a> structure.
 
-
-### -param ConfigurationHandle [out]
+`ConfigurationHandle`
 
 A pointer to a caller-supplied variable in which 
      <b>NdisOpenConfigurationEx</b> returns a handle to a registry key. The registry key identifies the
      configuration parameters.
 
 
-## -returns
+## Return Value
+
 <b>NdisOpenConfigurationEx</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -85,10 +79,8 @@ A pointer to a caller-supplied variable in which
 </dl><b>NdisOpenConfigurationEx</b> returns NDIS_STATUS_FAILURE if none of the preceding values
        applies.
 
- 
+## Remarks
 
-
-## -remarks
 <b>NdisOpenConfigurationEx</b> returns a configuration handle at the 
     <i>ConfigurationHandle</i> parameter. The configuration handle is associated with a registry key that
     identifies the location of the configuration parameters. The caller can pass the configuration handle to
@@ -201,8 +193,20 @@ After a driver is done accessing the configuration information, the driver must 
     <a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a> function to
     release the configuration handle and related resources.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Miscellaneous_Function, NdisOpenConfigurationEx |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
@@ -276,4 +280,3 @@ After a driver is done accessing the configuration information, the driver must 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenConfigurationEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

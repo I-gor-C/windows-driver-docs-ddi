@@ -1,115 +1,102 @@
 ---
-UID: NC:dispmprt.DXGKDDI_SYSTEM_DISPLAY_WRITE
-title: DXGKDDI_SYSTEM_DISPLAY_WRITE function
-author: windows-driver-content
-description: Called by the operating system to request the display miniport driver to write an image block to the display device.
-old-location: display\dxgkddisystemdisplaywrite.htm
-old-project: display
-ms.assetid: 5C0F9878-522C-4DDE-A790-54C94880F119
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_SYSTEM_DISPLAY_WRITE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: dispmprt.h
-req.include-header: 
-req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiSystemDisplayWrite
-req.alt-loc: dispmprt.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level (see Remarks section)
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID : NC:dispmprt.DXGKDDI_SYSTEM_DISPLAY_WRITE
+title : DXGKDDI_SYSTEM_DISPLAY_WRITE
+author : windows-driver-content
+description : Called by the operating system to request the display miniport driver to write an image block to the display device.
+old-location : display\dxgkddisystemdisplaywrite.htm
+old-project : display
+ms.assetid : 5C0F9878-522C-4DDE-A790-54C94880F119
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : dispmprt.h
+req.include-header : 
+req.target-type : Desktop
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiSystemDisplayWrite
+req.alt-loc : dispmprt.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level (see Remarks section)
+req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
+
 # DXGKDDI_SYSTEM_DISPLAY_WRITE function
-
-
-
-## -description
 Called by the operating system to request the display miniport driver to write an image block to the display device.
 
 Starting with Windows 8, the operating system calls this function during a bugcheck operation following a system stop error. The operating system calls this function only if the display device was previously reset through a call to <a href="..\dispmprt\nc-dispmprt-dxgkddi_system_display_enable.md">DxgkDdiSystemDisplayEnable</a>.
 
+## Syntax
 
+```
+DXGKDDI_SYSTEM_DISPLAY_WRITE DxgkddiSystemDisplayWrite;
 
-## -syntax
-
-````
-DXGKDDI_SYSTEM_DISPLAY_WRITE DxgkDdiSystemDisplayWrite;
-
-VOID* DxgkDdiSystemDisplayWrite(
-  _In_ PVOID MiniportDeviceContext,
-  _In_ PVOID Source,
-  _In_ UINT  SourceWidth,
-  _In_ UINT  SourceHeight,
-  _In_ UINT  SourceStride,
-  _In_ UINT  PositionX,
-  _In_ UINT  PositionY
+void DxgkddiSystemDisplayWrite(
+  PVOID MiniportDeviceContext,
+  PVOID Source,
+  UINT SourceWidth,
+  UINT SourceHeight,
+  UINT SourceStride,
+  UINT PositionX,
+  UINT PositionY
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportDeviceContext [in]
+`MiniportDeviceContext`
 
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
-
-
-
-### -param Source [in]
+`Source`
 
 A pointer to the start address of the source image to be written to the bugcheck screen that displays information about the system stop error.
 
-
-### -param SourceWidth [in]
+`SourceWidth`
 
 A UINT value that specifies the width, in units of pixels, of the specified source image.
 
-
-### -param SourceHeight [in]
+`SourceHeight`
 
 A UINT value that specifies the height, in units of pixels, of the specified source image.
 
-
-### -param SourceStride [in]
+`SourceStride`
 
 A UINT value that specifies the number of bytes for each line of the specified source image.
 
-
-### -param PositionX [in]
+`PositionX`
 
 A UINT value that specifies the starting X coordinate that the specified source image should be written to on the display device.
 
-
-### -param PositionY [in]
+`PositionY`
 
 A UINT value that specifies the starting Y coordinate that the specified source image should be written to on the display device.
 
 
-## -returns
+## Return Value
+
 This callback function does not return a value.
 
+## Remarks
 
-## -remarks
 The display miniport driver must follow these guidelines when its <i>DxgkDdiSystemDisplayWrite</i> function is called:
 
-The color format of the source image is always in the <b>D3DDDIFMT_R8G8B8</b> (24 bits per pixel) or <b>D3DDDIFMT_A8R8G8B8</b> (32 bpp) formats of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration. The display miniport driver had previously set the display mode to enable write operations in this format when its <a href="..\dispmprt\nc-dispmprt-dxgkddi_system_display_enable.md">DxgkDdiSystemDisplayEnable</a> was called.
+The color format of the source image is always in the <b>D3DDDIFMT_R8G8B8</b> (24 bits per pixel) or <b>D3DDDIFMT_A8R8G8B8</b> (32 bpp) formats of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration. The display miniport driver had previously set the display mode to enable write operations in this format when its <a href="..\dispmprt\nc-dispmprt-dxgkddi_system_display_enable.md">DxgkDdiSystemDisplayEnable</a> was called.
 
 The source image is in non-paged memory. The display miniport driver should write this source image to the current frame buffer starting at the positions specified by the <i>PostionX</i> and <i>PositionY</i> parameters.
 
@@ -121,8 +108,20 @@ Windows kernel-mode functions might not be available while this function is bein
 
 <i>DxgkDdiSystemDisplayWrite</i> can be called at any IRQL, so it must be in nonpageable memory. <i>DxgkDdiSystemDisplayWrite</i> must not call any code that is in pageable memory and must not manipulate any data that is in pageable memory.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dispmprt.h |
+| **Library** |  |
+| **IRQL** | Any level (see Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
@@ -142,4 +141,3 @@ Windows kernel-mode functions might not be available while this function is bein
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_SYSTEM_DISPLAY_WRITE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

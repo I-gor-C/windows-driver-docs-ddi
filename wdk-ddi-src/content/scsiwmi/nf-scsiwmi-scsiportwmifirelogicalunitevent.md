@@ -1,50 +1,45 @@
 ---
-UID: NF:scsiwmi.ScsiPortWmiFireLogicalUnitEvent
-title: ScsiPortWmiFireLogicalUnitEvent function
-author: windows-driver-content
-description: The ScsiPortWmiFireLogicalUnitEvent routine sends an event associated with a logical unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location: storage\scsiportwmifirelogicalunitevent.htm
-old-project: storage
-ms.assetid: f8bfc6cb-78d4-482b-b08b-0d86631ce979
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: ScsiPortWmiFireLogicalUnitEvent
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: scsiwmi.h
-req.include-header: Miniport.h, Scsi.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ScsiPortWmiFireLogicalUnitEvent
-req.alt-loc: scsiwmi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product: Windows 10 or later.
+UID : NF:scsiwmi.ScsiPortWmiFireLogicalUnitEvent
+title : ScsiPortWmiFireLogicalUnitEvent function
+author : windows-driver-content
+description : The ScsiPortWmiFireLogicalUnitEvent routine sends an event associated with a logical unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
+old-location : storage\scsiportwmifirelogicalunitevent.htm
+old-project : storage
+ms.assetid : f8bfc6cb-78d4-482b-b08b-0d86631ce979
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : ScsiPortWmiFireLogicalUnitEvent
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : scsiwmi.h
+req.include-header : Miniport.h, Scsi.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ScsiPortWmiFireLogicalUnitEvent
+req.alt-loc : scsiwmi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product : Windows 10 or later.
 ---
 
+
 # ScsiPortWmiFireLogicalUnitEvent function
-
-
-
-## -description
 The <b>ScsiPortWmiFireLogicalUnitEvent</b> routine sends an event associated with a logical unit to the port driver for delivery to WMI data consumers that have requested notification of the event.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID ScsiPortWmiFireLogicalUnitEvent(
@@ -59,62 +54,67 @@ VOID ScsiPortWmiFireLogicalUnitEvent(
 );
 ````
 
+## Parameters
 
-## -parameters
+`HwDeviceExtension`
 
-### -param HwDeviceExtension [in]
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. 
+`PathId`
 
+Identifies the SCSI bus; SP_UNTAGGED indicates all buses controlled by the HBA.
 
-### -param PathId [in]
-
-Identifies the SCSI bus; SP_UNTAGGED indicates all buses controlled by the HBA. 
-
-
-### -param TargetId [in]
+`TargetId`
 
 Identifies the target controller or device on the given bus(es); SP_UNTAGGED indicates all targets on the bus.
 
-
-### -param Lun [in]
+`Lun`
 
 Identifies the logical unit for the given target controller or device; SP_UNTAGGED indicates all logical units for the given target controller(s) on the given bus(es).
 
+`Guid`
 
-### -param Guid [in]
+Pointer to the GUID that represents the event block.
 
-Pointer to the GUID that represents the event block. 
+`InstanceIndex`
 
+If the event block has multiple instances, specifies the index of the instance.
 
-### -param InstanceIndex [in]
-
-If the event block has multiple instances, specifies the index of the instance. 
-
-
-### -param EventDataSize [in]
+`EventDataSize`
 
 Specifies the number of bytes of data at <i>EventData</i>, not including pad bytes at the beginning of the event data buffer. If no data is generated for an event, <i>EventDataSize</i> should be set to zero.
 
-
-### -param EventData [in]
+`EventData`
 
 Pointer to a miniport driver-allocated buffer containing data generated by the miniport driver for the event. The buffer must be at least the size of the event data plus 0x40 pad bytes at the beginning of the buffer.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A miniport driver calls <b>ScsiPortWmiFireLogicalUnitEvent</b> to send an event associated with an adapter or logical unit to all data consumers that have requested notification of the event. 
 
 The miniport driver sends an event only if it has been previously enabled by the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a> routine. 
 
 The driver should write event data to the buffer pointed to by <i>EventData</i> at offset 0x40. The first 0x40 bytes are used by SCSI WMI. If no data is passed back with the event then <i>EventData</i> should be 0x40 bytes in length.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a>
@@ -125,4 +125,3 @@ The driver should write event data to the buffer pointed to by <i>EventData</i> 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortWmiFireLogicalUnitEvent routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

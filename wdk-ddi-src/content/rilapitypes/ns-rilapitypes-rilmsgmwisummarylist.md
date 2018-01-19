@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILMSGMWISUMMARYLIST
-title: RILMSGMWISUMMARYLIST
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmsgmwisummarylist_2.htm
-old-project: netvista
-ms.assetid: 85f07ef4-6306-4995-9c95-9bbae775af1c
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMSGMWISUMMARYLIST
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILMSGMWISUMMARYLIST
+title : RILMSGMWISUMMARYLIST
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmsgmwisummarylist_2.htm
+old-project : netvista
+ms.assetid : 85f07ef4-6306-4995-9c95-9bbae775af1c
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMSGMWISUMMARYLIST
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST
+req.product : Windows 10 or later.
 ---
 
 # RILMSGMWISUMMARYLIST structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILMSGMWISUMMARYLIST {
   DWORD                cbSize;
@@ -59,31 +52,46 @@ typedef struct _RILMSGMWISUMMARYLIST {
 } RILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwExecutor`
+
+            
+        
+            `dwNumberOfSummaryItems`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwReferenceNumber`
+
+            
+        
+            `dwTotalNumberOfDetailItems`
+
+            
+        
+            `stAccountAddress`
+
+            
+        
+            `stMwiSummary`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwExecutor
-
-
-### -field dwReferenceNumber
-
-
-### -field stAccountAddress
-
-
-### -field dwTotalNumberOfDetailItems
-
-
-### -field dwNumberOfSummaryItems
-
-
-### -field stMwiSummary
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

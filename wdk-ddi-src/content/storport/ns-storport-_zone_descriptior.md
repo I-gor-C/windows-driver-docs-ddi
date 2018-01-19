@@ -1,54 +1,45 @@
 ---
-UID: NS:storport._ZONE_DESCRIPTIOR
-title: _ZONE_DESCRIPTIOR
-author: windows-driver-content
-description: Note  This structure is for internal use only and should not be called from your code. .
-old-location: storage\zone_descriptior.htm
-old-project: storage
-ms.assetid: 8326f683-3952-486e-b322-80ce96759366
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: storport.h
-req.include-header: Minitape.h, Storport.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZONE_DESCRIPTIOR
-req.alt-loc: scsi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
-req.product: Windows 10 or later.
+UID : NS:storport._ZONE_DESCRIPTIOR
+title : _ZONE_DESCRIPTIOR
+author : windows-driver-content
+description : Note  This structure is for internal use only and should not be called from your code. .
+old-location : storage\zone_descriptior.htm
+old-project : storage
+ms.assetid : 8326f683-3952-486e-b322-80ce96759366
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : storport.h
+req.include-header : Minitape.h, Storport.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZONE_DESCRIPTIOR
+req.alt-loc : scsi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+req.product : Windows 10 or later.
 ---
 
 # _ZONE_DESCRIPTIOR structure
-
-
-
-## -description
-
 <div class="alert"><b>Note</b>  This  structure is for internal use only and should not be called from your code.</div>
 <div> </div>
 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _ZONE_DESCRIPTIOR {
   UCHAR      ZoneType  :4;
@@ -65,62 +56,58 @@ typedef struct _ZONE_DESCRIPTIOR {
 } ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Non_Seq`
 
-### -field ZoneType
+            N/A
+        
+            `Reserved1`
 
-N/A
+            N/A
+        
+            `Reserved2`
 
+            N/A
+        
+            `Reserved3`
 
-### -field Reserved1
+            N/A
+        
+            `Reserved4`
 
-N/A
+            N/A
+        
+            `Reset`
 
+            N/A
+        
+            `WritePointerLBA`
 
-### -field Reset
+            N/A
+        
+            `ZoneCondition`
 
-N/A
+            N/A
+        
+            `ZoneLength`
 
+            N/A
+        
+            `ZoneStartLBA`
 
-### -field Non_Seq
+            N/A
+        
+            `ZoneType`
 
-N/A
-
-
-### -field Reserved2
-
-N/A
-
-
-### -field ZoneCondition
-
-N/A
-
-
-### -field Reserved3
-
-N/A
-
-
-### -field ZoneLength
-
-N/A
-
-
-### -field ZoneStartLBA
-
-N/A
-
-
-### -field WritePointerLBA
-
-N/A
+            N/A
 
 
-### -field Reserved4
-
-N/A
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Minitape.h, Storport.h) |

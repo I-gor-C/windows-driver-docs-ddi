@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltGetFileNameInformation
-title: FltGetFileNameInformation function
-author: windows-driver-content
-description: The FltGetFileNameInformation routine returns name information for a file or directory.
-old-location: ifsk\fltgetfilenameinformation.htm
-old-project: ifsk
-ms.assetid: 707e7e83-31d8-46cf-a2ef-e53a20edaeff
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltGetFileNameInformation
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltGetFileNameInformation
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltGetFileNameInformation
+title : FltGetFileNameInformation function
+author : windows-driver-content
+description : The FltGetFileNameInformation routine returns name information for a file or directory.
+old-location : ifsk\fltgetfilenameinformation.htm
+old-project : ifsk
+ms.assetid : 707e7e83-31d8-46cf-a2ef-e53a20edaeff
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltGetFileNameInformation
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltGetFileNameInformation
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltGetFileNameInformation function
+The <b>FltGetFileNameInformation</b> routine returns name information for a file or directory.
 
-
-
-## -description
-The <b>FltGetFileNameInformation</b> routine returns name information for a file or directory. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltGetFileNameInformation(
@@ -53,16 +48,13 @@ NTSTATUS FltGetFileNameInformation(
 );
 ````
 
+## Parameters
 
-## -parameters
+`CallbackData`
 
-### -param CallbackData [in]
+A pointer to the callback data structure for the I/O operation (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>.
 
-A pointer to the callback data structure for the I/O operation (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>). This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param NameOptions [in]
-
+`NameOptions`
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a> value containing flags that specify the format of the name information to be returned, as well as the query method that the Filter Manager is to use. (Additional flags can be used by name provider minifilter drivers to specify name query options. For more information, see <b>FLT_FILE_NAME_OPTIONS</b>.) This parameter is required and cannot be <b>NULL</b>. 
 
@@ -198,15 +190,14 @@ This flag is available on Microsoft Windows Server 2003 SP1 and later. This flag
 </td>
 </tr>
 </table>
- 
+
+`FileNameInformation`
+
+A pointer to a caller-allocated variable that receives the address of a system-allocated <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>.
 
 
-### -param FileNameInformation [out]
+## Return Value
 
-A pointer to a caller-allocated variable that receives the address of a system-allocated <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a> structure containing the file name information. <b>FltGetFileNameInformation</b> allocates this structure from paged pool. This parameter is required and cannot be <b>NULL</b>. 
-
-
-## -returns
 If the name information is successfully returned, <b>FltGetFileNameInformation</b> returns STATUS_SUCCESS. Otherwise, it returns an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_INVALID_NAME_REQUEST</b></dt>
@@ -252,10 +243,8 @@ STATUS_ACCESS_DENIED is an error code.
 
 The file is a system file with all access denied.
 
- 
+## Remarks
 
-
-## -remarks
 <b>FltGetFileNameInformation</b> returns the requested name information for the file or directory that is represented by the file object that is the target of the I/O operation. 
 
 For a pre-create operation, if the <b>CallbackData</b> -&gt;<b>Iopb</b> -&gt;<b>OperationFlags</b> member contains the SL_OPEN_TARGET_DIRECTORY bitwise flag, <b>FltGetFileNameInformation</b> returns the name of the containing (parent) directory for the given file. This name is the actual path that the create operation opens.
@@ -288,8 +277,20 @@ rename(<i>name</i>, <i>newname</i>)/rename(<i>source</i>, <i>name</i>)
 
 For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
@@ -333,4 +334,3 @@ For more information about file name tunneling, see <a href="http://go.microsoft
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetFileNameInformation routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

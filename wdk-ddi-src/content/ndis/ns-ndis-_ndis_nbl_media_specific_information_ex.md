@@ -1,52 +1,45 @@
 ---
-UID: NS:ndis._NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
-title: _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
-author: windows-driver-content
-description: The NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure defines media-specific information that is associated with a NET_BUFFER_LIST structure.
-old-location: netvista\ndis_nbl_media_specific_information_ex.htm
-old-project: netvista
-ms.assetid: f2c74fc3-45e2-4541-81a1-eb022e24cede
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, *PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.20 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, *PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+UID : NS:ndis._NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+title : _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+author : windows-driver-content
+description : The NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure defines media-specific information that is associated with a NET_BUFFER_LIST structure.
+old-location : netvista\ndis_nbl_media_specific_information_ex.htm
+old-project : netvista
+ms.assetid : f2c74fc3-45e2-4541-81a1-eb022e24cede
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, *PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.20 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : "*PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX"
 ---
 
 # _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure
-
-
-
-## -description
 The <b>NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX</b> structure defines media-specific information that is
   associated with a 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX {
   NDIS_OBJECT_HEADER                             Header;
@@ -56,50 +49,46 @@ typedef struct _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX {
 } NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, *PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Data`
 
-### -field Header
+            A pointer to a buffer that contains the media-specific information.
+        
+            `Header`
 
-The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+            The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      structure (NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX). The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
      <b>Revision</b> member to NDIS_NBL_MEDIA_SPECIFIC_INFO_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_NBL_MEDIA_SPECIFIC_INFO_REVISION_1.
+        
+            `NextEntry`
 
-
-### -field NextEntry
-
-A pointer to the next NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure in a linked list of
+            A pointer to the next NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure in a linked list of
      NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structures. If this is the last structure in the list, the
      pointer is <b>NULL</b>. Drivers must use the 
-     <a href="netvista.ndis_nbl_add_media_specific_info_ex">
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566518">
      NDIS_NBL_ADD_MEDIA_SPECIFIC_INFO_EX</a>, 
-     <a href="netvista.ndis_nbl_get_media_specific_info_ex">
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566512">
      NDIS_NBL_GET_MEDIA_SPECIFIC_INFO_EX</a>, and 
-     <a href="netvista.ndis_nbl_remove_media_specific_info_ex">
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566518">
      NDIS_NBL_REMOVE_MEDIA_SPECIFIC_INFO_EX</a> macros to manipulate this list.
+        
+            `Tag`
 
-
-### -field Tag
-
-A unique value (assigned by Microsoft) that identifies the type of media-specific information.
+            A unique value (assigned by Microsoft) that identifies the type of media-specific information.
      This member is reserved for system use.
      
 
 New tags can be assigned in future system releases for new media types that require additional OOB
      data specific to a particular media type.
 
-
-### -field Data
-
-A pointer to a buffer that contains the media-specific information.
-
-
-## -remarks
-NDIS 6.20 and later drivers should use the NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure to specify
+    ## Remarks
+        NDIS 6.20 and later drivers should use the NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure to specify
     media-specific information. Any driver in an NDIS driver stack can allocate and manage media-specific
     information. The media-specific information is specified in a NULL-terminated linked list of
     NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structures, and each structure contains driver-allocated and
@@ -118,33 +107,41 @@ To get the first element in the linked list, an NDIS driver calls the
     <b>MediaSpecificInformationEx</b> information type.
 
 To add, get, and remove NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structures in the linked list, use the 
-    <a href="netvista.ndis_nbl_add_media_specific_info_ex">
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566518">
     NDIS_NBL_ADD_MEDIA_SPECIFIC_INFO_EX</a>, 
-    <a href="netvista.ndis_nbl_get_media_specific_info_ex">
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566512">
     NDIS_NBL_GET_MEDIA_SPECIFIC_INFO_EX</a>, and 
-    <a href="netvista.ndis_nbl_remove_media_specific_info_ex">
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566518">
     NDIS_NBL_REMOVE_MEDIA_SPECIFIC_INFO_EX</a> macros.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
-<a href="netvista.ndis_nbl_add_media_specific_info_ex">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566518">
    NDIS_NBL_ADD_MEDIA_SPECIFIC_INFO_EX</a>
 </dt>
 <dt>
-<a href="netvista.ndis_nbl_get_media_specific_info_ex">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566512">
    NDIS_NBL_GET_MEDIA_SPECIFIC_INFO_EX</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_nbl_media_media_specific_information.md">NDIS_NBL_MEDIA_SPECIFIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="netvista.ndis_nbl_remove_media_specific_info_ex">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566518">
    NDIS_NBL_REMOVE_MEDIA_SPECIFIC_INFO_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
@@ -161,4 +158,3 @@ To add, get, and remove NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structures in the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

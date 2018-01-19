@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltSetVolumeContext
-title: FltSetVolumeContext function
-author: windows-driver-content
-description: FltSetVolumeContext sets a context for a volume.
-old-location: ifsk\fltsetvolumecontext.htm
-old-project: ifsk
-ms.assetid: e1e8605c-b3d1-40db-bb33-fc1f7ed51617
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltSetVolumeContext
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported in Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltSetVolumeContext
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltSetVolumeContext
+title : FltSetVolumeContext function
+author : windows-driver-content
+description : FltSetVolumeContext sets a context for a volume.
+old-location : ifsk\fltsetvolumecontext.htm
+old-project : ifsk
+ms.assetid : e1e8605c-b3d1-40db-bb33-fc1f7ed51617
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltSetVolumeContext
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported in Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltSetVolumeContext
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltSetVolumeContext function
+<b>FltSetVolumeContext</b> sets a context for a volume.
 
-
-
-## -description
-<b>FltSetVolumeContext</b> sets a context for a volume. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltSetVolumeContext(
@@ -54,44 +49,27 @@ NTSTATUS FltSetVolumeContext(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Volume`
 
-### -param Volume [in]
+Opaque volume pointer for the volume.
 
-Opaque volume pointer for the volume. 
+`Operation`
 
+Flag specifying details of the operation to be performed. This parameter must be one of the following:
 
-### -param Operation [in]
+`NewContext`
 
-Flag specifying details of the operation to be performed. This parameter must be one of the following: 
+Pointer to the new context to be set for the volume. This parameter is required and cannot be <b>NULL</b>.
 
+`OldContext`
 
-
-
-### -param FLT_SET_CONTEXT_REPLACE_IF_EXISTS
-
-If a context is already set, replace it with <i>NewContext</i>. Otherwise, insert <i>NewContext</i> into the list of contexts for the volume. 
-
-
-### -param FLT_SET_CONTEXT_KEEP_IF_EXISTS
-
-If a context is already set, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, insert <i>NewContext</i> into the list of contexts for the volume. 
-
-</dd>
-</dl>
-
-### -param NewContext [in]
-
-Pointer to the new context to be set for the volume. This parameter is required and cannot be <b>NULL</b>. 
+Pointer to a caller-allocated variable that receives the address of the existing volume context for <i>Instance</i>. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.)
 
 
-### -param OldContext [out, optional]
+## Return Value
 
-Pointer to a caller-allocated variable that receives the address of the existing volume context for <i>Instance</i>. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
-
-
-## -returns
 <b>FltSetVolumeContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
@@ -110,12 +88,10 @@ The <i>NewContext</i> parameter does not point to a valid volume context.
 
 An invalid value was specified for <i>Operation</i>. 
 
-STATUS_INVALID_PARAMETER is an error code. 
+STATUS_INVALID_PARAMETER is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 A minifilter driver calls <b>FltSetVolumeContext</b> to attach a context to a volume, or to remove or replace an existing volume context. A minifilter driver can attach only one context to a volume. 
 
 A successful call to <b>FltSetVolumeContext</b> increments the reference count on <i>NewContext</i>. If <b>FltSetVolumeContext</b> fails, the reference count remains unchanged. In either case, the filter calling <b>FltSetVolumeContext</b> must call <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> to decrement the <i>NewContext</i> object. If <b>FltSetVolumeContext</b> fails and if the <i>OldContext</i> parameter is not <b>NULL</b> and does not point to NULL_CONTEXT then <i>OldContext</i> is a referenced pointer to the context currently associated with the transaction. The filter calling <b>FltSetVolumeContext</b> must call <b>FltReleaseContext</b> for <i>OldContext</i> as well.
@@ -130,8 +106,20 @@ To delete a volume context, call <a href="..\fltkernel\nf-fltkernel-fltdeletevol
 
 For more information about context reference counting, see <a href="https://msdn.microsoft.com/9ac3aedb-e057-4e19-9de5-709311072b09">Referencing Contexts</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
@@ -154,4 +142,3 @@ For more information about context reference counting, see <a href="https://msdn
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetVolumeContext function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.IoRequestDeviceEject
-title: IoRequestDeviceEject function
-author: windows-driver-content
-description: The IoRequestDeviceEject routine notifies the PnP manager that the device eject button was pressed.
-old-location: kernel\iorequestdeviceeject.htm
-old-project: kernel
-ms.assetid: ceaa6793-43ba-4998-827e-8a2c7c892e50
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: IoRequestDeviceEject
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoRequestDeviceEject
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL (see Remarks section)
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.IoRequestDeviceEject
+title : IoRequestDeviceEject function
+author : windows-driver-content
+description : The IoRequestDeviceEject routine notifies the PnP manager that the device eject button was pressed.
+old-location : kernel\iorequestdeviceeject.htm
+old-project : kernel
+ms.assetid : ceaa6793-43ba-4998-827e-8a2c7c892e50
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : IoRequestDeviceEject
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoRequestDeviceEject
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL (see Remarks section)
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # IoRequestDeviceEject function
+The <b>IoRequestDeviceEject</b> routine notifies the PnP manager that the device eject button was pressed.
 
-
-
-## -description
-The <b>IoRequestDeviceEject</b> routine notifies the PnP manager that the device eject button was pressed. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID IoRequestDeviceEject(
@@ -52,19 +47,19 @@ VOID IoRequestDeviceEject(
 );
 ````
 
+## Parameters
 
-## -parameters
+`PhysicalDeviceObject`
 
-### -param PhysicalDeviceObject [in]
-
-Pointer to the PDO for the device. 
+Pointer to the PDO for the device.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Note that this routine reports a request for device eject, not media eject.
 
 Typically, a PnP bus driver calls <b>IoRequestDeviceEject</b> to notify the PnP manager that a user pressed the device eject button on one of its child devices. 
@@ -103,10 +98,22 @@ When a device is ejected, its child devices are physically removed from the syst
 
 A user-mode application can initiate a device eject. In that case, no driver calls this routine but the operating system calls the PnP manager to initiate the steps listed above.
 
-Callers of <b>IoRequestDeviceEject</b> must be running at IRQL &lt;= DISPATCH_LEVEL. The PnP manager performs most of its device-eject tasks listed above at IRQL = PASSIVE_LEVEL. 
+Callers of <b>IoRequestDeviceEject</b> must be running at IRQL &lt;= DISPATCH_LEVEL. The PnP manager performs most of its device-eject tasks listed above at IRQL = PASSIVE_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL (see Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550853">IRP_MN_EJECT</a>
@@ -126,4 +133,3 @@ Callers of <b>IoRequestDeviceEject</b> must be running at IRQL &lt;= DISPATCH_LE
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRequestDeviceEject routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILRADIOSTATEITEM
-title: RILRADIOSTATEITEM
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilradiostateitem.htm
-old-project: netvista
-ms.assetid: 152e3b52-44e4-4ed7-bfc3-38d0c65725fd
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILRADIOSTATEITEM, RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILRADIOSTATEITEM
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
+UID : NS:ntddrilapitypes.RILRADIOSTATEITEM
+title : RILRADIOSTATEITEM
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilradiostateitem.htm
+old-project : netvista
+ms.assetid : 152e3b52-44e4-4ed7-bfc3-38d0c65725fd
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILRADIOSTATEITEM, RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILRADIOSTATEITEM
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
 ---
 
 # RILRADIOSTATEITEM structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILRADIOSTATEITEM {
   DWORD                  dwItemId;
@@ -63,46 +56,42 @@ typedef struct _RILRADIOSTATEITEM {
 } RILRADIOSTATEITEM, RILRADIOSTATEITEM;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `dwItemAttributes`
 
-### -field dwItemId
+            
+        
+            `dwItemFlag`
 
+            
+        
+            `dwItemId`
 
-### -field dwItemFlag
+            
+        
+            `itemValueUnion`
 
+            
+        
+            `RILITEMVALUEUNION`
 
-### -field dwItemAttributes
+            
+        
+            `wszFriendlyName`
 
+            
+        
+            `wszItemValueOptions`
 
-### -field RILITEMVALUEUNION
-
-
-### -field itemValueUnion
-
-
-### -field intVal
-
-
-### -field uintVal
-
-
-### -field wszVal
-
-
-### -field intArray
-
-
-### -field uintArray
-
-
-### -field byteArray
+            
 
 
-### -field wszFriendlyName
-
-
-### -field wszItemValueOptions
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

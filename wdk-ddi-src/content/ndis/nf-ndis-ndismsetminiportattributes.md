@@ -1,53 +1,48 @@
 ---
-UID: NF:ndis.NdisMSetMiniportAttributes
-title: NdisMSetMiniportAttributes function
-author: windows-driver-content
-description: A miniport driver must call the NdisMSetMiniportAttributes function from its MiniportInitializeEx function to identify a context area for miniport adapter to NDIS, and to provide NDIS with information about the miniport adapter.
-old-location: netvista\ndismsetminiportattributes.htm
-old-project: netvista
-ms.assetid: 861626af-23ea-40dc-a91a-7da42d4b0a1c
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMSetMiniportAttributes
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMSetMiniportAttributes
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMSetMiniportAttributes
+title : NdisMSetMiniportAttributes function
+author : windows-driver-content
+description : A miniport driver must call the NdisMSetMiniportAttributes function from its MiniportInitializeEx function to identify a context area for miniport adapter to NDIS, and to provide NDIS with information about the miniport adapter.
+old-location : netvista\ndismsetminiportattributes.htm
+old-project : netvista
+ms.assetid : 861626af-23ea-40dc-a91a-7da42d4b0a1c
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMSetMiniportAttributes
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMSetMiniportAttributes
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMSetMiniportAttributes function
-
-
-
-## -description
 A miniport driver must call the 
   <b>NdisMSetMiniportAttributes</b> function from its 
   <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function to
   identify a context area for miniport adapter to NDIS, and to provide NDIS with information about the
   miniport adapter.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMSetMiniportAttributes(
@@ -56,17 +51,13 @@ NDIS_STATUS NdisMSetMiniportAttributes(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisMiniportAdapterHandle [in]
-
-The miniport adapter handle that NDIS passed to the 
-     <i>MiniportAdapterHandle</i> parameter of 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
+`NdisMiniportHandle`
 
 
-### -param MiniportAttributes [in]
+
+`MiniportAttributes`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_attributes.md">
@@ -75,7 +66,8 @@ A pointer to an
      <i>MiniportAdapterHandle</i> specifies.
 
 
-## -returns
+## Return Value
+
 <b>NdisMSetMiniportAttributes</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -88,10 +80,8 @@ A pointer to an
        <b>Header</b> member at 
        <i>MiniportAttributes</i> .
 
- 
+## Remarks
 
-
-## -remarks
 A miniport driver must call 
     <b>NdisMSetMiniportAttributes</b> from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
@@ -126,8 +116,20 @@ Miniport drivers must set the attributes in the
 
 A miniport driver can also call <b>NdisMSetMiniportAttributes</b> from its <a href="..\ndis\nc-ndis-miniport_add_device.md">MiniportAddDevice</a> function. In this case, the <a href="..\ndis\ns-ndis-_ndis_miniport_add_device_registration_attributes.md">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure is used to specify the context area.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -171,4 +173,3 @@ A miniport driver can also call <b>NdisMSetMiniportAttributes</b> from its <a hr
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetMiniportAttributes function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

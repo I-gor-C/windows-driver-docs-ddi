@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisEnumerateFilterModules
-title: NdisEnumerateFilterModules function
-author: windows-driver-content
-description: The NdisEnumerateFilterModules function enumerates all the filters modules and filter intermediate driver instances in a filter stack.
-old-location: netvista\ndisenumeratefiltermodules.htm
-old-project: netvista
-ms.assetid: cab7609e-cf87-46f6-af23-891e19ef1b80
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisEnumerateFilterModules
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisEnumerateFilterModules
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Filter_Driver_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisEnumerateFilterModules
+title : NdisEnumerateFilterModules function
+author : windows-driver-content
+description : The NdisEnumerateFilterModules function enumerates all the filters modules and filter intermediate driver instances in a filter stack.
+old-location : netvista\ndisenumeratefiltermodules.htm
+old-project : netvista
+ms.assetid : cab7609e-cf87-46f6-af23-891e19ef1b80
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisEnumerateFilterModules
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisEnumerateFilterModules
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Filter_Driver_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisEnumerateFilterModules function
-
-
-
-## -description
 The 
   <b>NdisEnumerateFilterModules</b> function enumerates all the filters modules and filter intermediate driver
   instances in a filter stack.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisEnumerateFilterModules(
@@ -57,10 +52,9 @@ NDIS_STATUS NdisEnumerateFilterModules(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisHandle [in]
+`NdisHandle`
 
 An NDIS handle that was obtained during caller initialization. For more information about this
      handle, see 
@@ -78,8 +72,7 @@ If the handle is an NDIS filter module handle, NDIS returns information about al
      that are currently attached to the underlying miniport adapter to which the specified filter module is
      attached, starting with the top-most filter module.
 
-
-### -param InterfaceBuffer [in]
+`InterfaceBuffer`
 
 A pointer to a caller-allocated memory block in which NDIS returns the information for all the
      filter modules in a filter stack, starting with top-most filter. This buffer contains an 
@@ -88,28 +81,26 @@ A pointer to a caller-allocated memory block in which NDIS returns the informati
      <a href="..\ndis\ns-ndis-_ndis_filter_interface.md">NDIS_FILTER_INTERFACE</a> structures, one
      for each filter module in the stack.
 
-
-### -param InterfaceBufferLength [in]
+`InterfaceBufferLength`
 
 The length, in bytes, of the caller-supplied memory block at the 
      <b>InterfaceBuffer</b> member.
 
-
-### -param BytesNeeded [in, out]
+`BytesNeeded`
 
 A pointer to a caller-supplied variable where NDIS writes the total number of bytes that NDIS
      requires to successfully return the interface information for all the filters in the filter
      stack.
 
-
-### -param BytesWritten [in, out]
+`BytesWritten`
 
 A pointer to a caller-supplied variable where NDIS writes the total bytes that NDIS wrote in the
      memory at 
      <b>InterfaceBuffer</b>.
 
 
-## -returns
+## Return Value
+
 <b>NdisEnumerateFilterModules</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -127,10 +118,8 @@ A pointer to a caller-supplied variable where NDIS writes the total bytes that N
        <i>InterfaceBuffer</i>, the value at the 
        <i>BytesWritten</i> parameter contains the length of the partial results.
 
- 
+## Remarks
 
-
-## -remarks
 An NDIS miniport driver, protocol driver, or filter driver can call the 
     <b>NdisEnumerateFilterModules</b> function to enumerate all the filters in a filter stack.
 
@@ -142,8 +131,20 @@ An NDIS miniport driver, protocol driver, or filter driver can call the
     attached to M2, 
     <b>NdisEnumerateFilterModules</b> returns the filter list in the following order: F3, M2, F2, F1.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Filter_Driver_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_enum_filters.md">NDIS_ENUM_FILTERS</a>
@@ -157,4 +158,3 @@ An NDIS miniport driver, protocol driver, or filter driver can call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEnumerateFilterModules function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

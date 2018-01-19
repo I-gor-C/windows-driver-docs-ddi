@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwSetInformationToken
-title: ZwSetInformationToken function
-author: windows-driver-content
-description: The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information.
-old-location: kernel\zwsetinformationtoken.htm
-old-project: kernel
-ms.assetid: fdb1245c-7804-4cb9-9632-bedb9f7f7b2b
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwSetInformationToken
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwSetInformationToken,NtSetInformationToken
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwSetInformationToken
+title : ZwSetInformationToken function
+author : windows-driver-content
+description : The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information.
+old-location : kernel\zwsetinformationtoken.htm
+old-project : kernel
+ms.assetid : fdb1245c-7804-4cb9-9632-bedb9f7f7b2b
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwSetInformationToken
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwSetInformationToken,NtSetInformationToken
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwSetInformationToken function
+The <b>ZwSetInformationToken</b> routine modifies information in a specified token. The calling process must have appropriate access rights to set the information.
 
-
-
-## -description
-The <b>ZwSetInformationToken</b> routine modifies information in a specified token. The calling process must have appropriate access rights to set the information. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwSetInformationToken(
@@ -54,20 +49,17 @@ NTSTATUS ZwSetInformationToken(
 );
 ````
 
+## Parameters
 
-## -parameters
+`TokenHandle`
 
-### -param TokenHandle [in]
+Handle for an access token in which information is to be modified.
 
-Handle for an access token in which information is to be modified. 
+`TokenInformationClass`
 
+A value from the <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a> enumerated type identifying the type of information to be modified. The possible values for this parameter are listed in the <i>TokenInformationClass</i> Value column of the table shown in the description of the <i>TokenInformation</i> parameter.
 
-### -param TokenInformationClass [in]
-
-A value from the <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a> enumerated type identifying the type of information to be modified. The possible values for this parameter are listed in the <i>TokenInformationClass</i> Value column of the table shown in the description of the <i>TokenInformation</i> parameter. 
-
-
-### -param TokenInformation [in]
+`TokenInformation`
 
 Pointer to a caller-supplied buffer containing the information to be modified in the token. The structure of the information in this buffer depends upon the value of <i>TokenInformationClass</i>, as shown in the following table. All structures must be aligned on a 32-bit boundary. 
 
@@ -157,10 +149,8 @@ Not a valid information class. This information is read-only.
 </td>
 </tr>
 </table>
- 
 
-
-### -param TokenInformationLength [in]
+`TokenInformationLength`
 
 Size, in bytes, of the structure passed in the <i>TokenInformation</i> buffer. Must be greater than or equal to the minimum value given in the following table. 
 
@@ -200,10 +190,10 @@ Size, in bytes, of the structure passed in the <i>TokenInformation</i> buffer. M
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>ZwSetInformationToken</b> returns STATUS_SUCCESS or an appropriate error status. Possible error status codes include the following:
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -236,16 +226,26 @@ Size, in bytes, of the structure passed in the <i>TokenInformation</i> buffer. M
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
 </dl><i>TokenHandle</i> was not a token handle.
 
- 
+## Remarks
 
-
-## -remarks
 For more information about security and access control, see the documentation on these topics in the Windows SDK.
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
@@ -313,4 +313,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationToken routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

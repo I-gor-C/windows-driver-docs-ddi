@@ -1,49 +1,44 @@
 ---
-UID: NF:mrx.RxStartMinirdr
-title: RxStartMinirdr function
-author: windows-driver-content
-description: RxStartMinirdr is called to start up a network mini-redirector that has previously called to register with RDBSS.
-old-location: ifsk\rxstartminirdr.htm
-old-project: ifsk
-ms.assetid: d5b091fa-13bf-4761-a03d-1790e7045b69
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxStartMinirdr
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: mrx.h
-req.include-header: Mrx.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RxStartMinirdr
-req.alt-loc: mrx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
+UID : NF:mrx.RxStartMinirdr
+title : RxStartMinirdr function
+author : windows-driver-content
+description : RxStartMinirdr is called to start up a network mini-redirector that has previously called to register with RDBSS.
+old-location : ifsk\rxstartminirdr.htm
+old-project : ifsk
+ms.assetid : d5b091fa-13bf-4761-a03d-1790e7045b69
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RxStartMinirdr
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : mrx.h
+req.include-header : Mrx.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RxStartMinirdr
+req.alt-loc : mrx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
+
 # RxStartMinirdr function
-
-
-
-## -description
 <b>RxStartMinirdr</b> is called to start up a network mini-redirector that has previously called to register with RDBSS. As part of <b>RxStartMinirdr</b>, RDBSS will also register the network mini-redirector driver as a universal naming convention (UNC) provider with the Multiple UNC Provider (MUP) if the driver indicates support for UNC names.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RxStartMinirdr(
@@ -52,20 +47,19 @@ NTSTATUS RxStartMinirdr(
 );
 ````
 
+## Parameters
 
-## -parameters
+`RxContext`
 
-### -param RxContext [in]
+A pointer to the RX_CONTEXT structure to use to get the device object and determine if this is a file system process.
 
-A pointer to the RX_CONTEXT structure to use to get the device object and determine if this is a file system process. 
+`PostToFsp`
 
-
-### -param PostToFsp [out]
-
-A pointer to a logical value set to <b>TRUE</b> on return if the request must be posted for later processing by the file system process. 
+A pointer to a logical value set to <b>TRUE</b> on return if the request must be posted for later processing by the file system process.
 
 
-## -returns
+## Return Value
+
 <b>RxStartMinirdr</b> returns STATUS_SUCCESS if the startup sequence was successful or one of the following error values: 
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -81,12 +75,10 @@ A pointer to a logical value set to <b>TRUE</b> on return if the request must be
 </dl>The startup sequence for RDBSS and network mini-redirectors must be completed in the context of system process, not a user-mode application process. If the call to <b>RxStartMinirdr</b> comes from a user-mode process (a user-mode service request, for example), then the request is posted for later processing within RDBSS and STATUS_PENDING will be returned. This error can also be returned if certain internal RDBSS locks cannot be acquired without waiting. The call will be completed later from a system thread. 
 <dl>
 <dt><b>STATUS_REDIRECTOR_STARTED</b></dt>
-</dl>The network mini-redirector was already started. 
+</dl>The network mini-redirector was already started.
 
- 
+## Remarks
 
-
-## -remarks
 A network mini-redirector registers with RDBSS whenever the driver is loaded by the kernel and then unregisters with RDBSS when the driver is unloaded. A network mini-redirector informs RDBSS that it has been loaded by calling <b>RxRegisterMinirdr</b>, the registration routine exported from RDBSS. As part of this registration process, the network mini-redirector passes a parameter to <b>RxRegisterMinirdr</b> that is a pointer to a large structure, MINIRDR_DISPATCH, which contains configuration information for the network mini-redirector and a table of pointers to callback routines implemented by the network mini-redirector driver. RDBSS uses the callback routines passed in this structure to communicate with the network mini-redirector.  
 
 The network mini-redirector does not actually start operation until it receives a call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff550829">MRxStart</a> routine, one of the callback routines passed in the MINIRDR_DISPATCH structure. The <b>MrxStart</b> callback routine must be implemented by the network mini-redirector driver if it wishes to receive callback routines for operations unless the network mini-redirector preserves its own driver dispatch entry points. Otherwise, RDBSS will only allow the following I/O request packets through to the driver until <b>MrxStart</b> returns successfully:
@@ -137,10 +129,22 @@ If the calls are successful, then <b>RxStartMinirdr</b> calls the network mini-r
 
 The startup sequence for RDBSS and the network mini-redirector must be completed in the context of the system process if asynchonous operation is requested. If the call to <b>RxStartMinirdr</b> comes from a user-mode process (a user mode service request, for example), then the request will be internally posted by RDBSS to a work queue for later processing and STATUS_PENDING will be returned and the <i>PostToFsp</i> parameter will be set to <b>TRUE</b>. In addition, If certain internal RDBSS locks cannot be obtained without waiting, STATUS_PENDING is returned and <i>PostToFsp</i> is set to <b>TRUE</b>. When STATUS_PENDING is returned, <b>RxStartMinirdr</b> will be called again from within a system process. If the FSCTL or IOCTL request that initiated the call to <b>RxStartMinirdr</b> was set for asynchronous operation, then RDBSS would return STATUS_PENDING back up the call chain to the original FSCTL or IOCTL request from user mode. In contrast, if the FSCTL or IOCTL request was for synchronous operation, then the call would also be posted to a work thread for later execution, but the FSCTL or IOCTL call would not return to user mode until <b>RxStartMinirdr</b> had been executed in the context of the file system process. In this case, the caller of the FSCTL or IOCTL would never see the STATUS_PENDING error return. The more typical behavior is to initiate a synchronous request for these start/stop operations to simplify the user-mode application code.
 
-On an abnormal termination or other failure, <b>RxStartMinirdr</b> will try to undo these operations, including de-registering the UNC provider with MUP, unregistering the file system, freeing memory allocated for storing the domain name to be used by mailslot broadcasts, and updating internal RDBSS tables. 
+On an abnormal termination or other failure, <b>RxStartMinirdr</b> will try to undo these operations, including de-registering the UNC provider with MUP, unregistering the file system, freeing memory allocated for storing the domain name to be used by mailslot broadcasts, and updating internal RDBSS tables.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | mrx.h (include Mrx.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
@@ -187,4 +191,3 @@ On an abnormal termination or other failure, <b>RxStartMinirdr</b> will try to u
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxStartMinirdr function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,52 +1,45 @@
 ---
-UID: NS:bthddi._BRB_HEADER
-title: _BRB_HEADER
-author: windows-driver-content
-description: The BRB_HEADER structure contains header information about a Bluetooth request block (BRB), including information about the BRB type that the Bluetooth driver stack uses to determine which kind of BRB type to process.
-old-location: bltooth\brb_header.htm
-old-project: bltooth
-ms.assetid: c6da4cc9-294b-4cb7-80c8-8adee8d4c40b
-ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: _BRB_HEADER, BRB_HEADER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: bthddi.h
-req.include-header: Bthddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Versions: Supported in Windows Vista, and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: BRB_HEADER
-req.alt-loc: bthddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: BRB_HEADER
+UID : NS:bthddi._BRB_HEADER
+title : _BRB_HEADER
+author : windows-driver-content
+description : The BRB_HEADER structure contains header information about a Bluetooth request block (BRB), including information about the BRB type that the Bluetooth driver stack uses to determine which kind of BRB type to process.
+old-location : bltooth\brb_header.htm
+old-project : bltooth
+ms.assetid : c6da4cc9-294b-4cb7-80c8-8adee8d4c40b
+ms.author : windowsdriverdev
+ms.date : 12/21/2017
+ms.keywords : _BRB_HEADER, BRB_HEADER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : bthddi.h
+req.include-header : Bthddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : BRB_HEADER
+req.alt-loc : bthddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames : BRB_HEADER
 ---
 
 # _BRB_HEADER structure
-
-
-
-## -description
 The BRB_HEADER structure contains header information about a Bluetooth request block (BRB), including
   information about the BRB type that the Bluetooth driver stack uses to determine which kind of BRB type to
   process.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _BRB_HEADER {
   LIST_ENTRY ListEntry;
@@ -62,76 +55,16 @@ typedef struct _BRB_HEADER {
 } BRB_HEADER;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `BthportFlags`
 
-### -field ListEntry
+            For internal use only. Do not use.
+        
+            `BtStatus`
 
-A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.
-
-
-### -field Length
-
-The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
-     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
-     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
-     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
-     member.
-
-
-### -field Version
-
-For internal use only. Do not use.
-
-
-### -field Type
-
-The Bluetooth request block type. The 
-     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
-     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
-     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
-     member.Possible values include:
-     
-
-<ul>
-<li>BRB_HCI_GET_LOCAL_BD_ADDR</li>
-<li>BRB_L2CA_REGISTER_SERVER</li>
-<li>BRB_L2CA_UNREGISTER_SERVER</li>
-<li>BRB_L2CA_OPEN_CHANNEL</li>
-<li>BRB_L2CA_OPEN_CHANNEL_RESPONSE</li>
-<li>BRB_L2CA_CLOSE_CHANNEL</li>
-<li>BRB_L2CA_ACL_TRANSFER</li>
-<li>BRB_L2CA_UPDATE_CHANNEL</li>
-<li>BRB_L2CA_PING</li>
-<li>BRB_REGISTER_PSM</li>
-<li>BRB_UNREGISTER_PSM</li>
-<li>BRB_SCO_REGISTER_SERVER</li>
-<li>BRB_SCO_UNREGISTER_SERVER</li>
-<li>BRB_SCO_OPEN_CHANNEL</li>
-<li>BRB_SCO_OPEN_CHANNEL_RESPONSE</li>
-<li>BRB_SCO_CLOSE_CHANNEL</li>
-<li>BRB_SCO_TRANSFER</li>
-<li>BRB_SCO_GET_CHANNEL_INFO</li>
-<li>BRB_SCO_GET_SYSTEM_INFO</li>
-<li>BRB_SCO_FLUSH_CHANNEL</li>
-<li>BRB_ACL_GET_MODE</li>
-<li>BRB_ACL_ENTER_ACTIVE_MODE</li>
-<li>BRB_GET_DEVICE_INTERFACE_STRING</li>
-</ul>
-
-### -field BthportFlags
-
-For internal use only. Do not use.
-
-
-### -field Status
-
-The NTSTATUS code that is passed when the BRB call completes.
-
-
-### -field BtStatus
-
-The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that is passed in the 
+            The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that is passed in the 
      <b>Status</b> member. Possible values include:
      
 
@@ -179,35 +112,95 @@ The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that 
 <li>BTH_ERROR_UNSUPPORTED_LMP_PARM_VALUE</li>
 <li>BTH_ERROR_UNSUPPORTED_REMOTE_FEATURE</li>
 </ul>
+        
+            `ClientContext`
 
-### -field Context
-
-For internal use only. Do not use.
-
-
-### -field ClientContext
-
-The client context that is associated with the BRB call. The caller can use this member to store a
+            The client context that is associated with the BRB call. The caller can use this member to store a
      pointer or other information.
+        
+            `Context`
 
+            For internal use only. Do not use.
+        
+            `Length`
 
-### -field Reserved
+            The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
+     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
+     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
+     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
+     member.
+        
+            `ListEntry`
 
-Reserved for future use. Do not use.
+            A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.
+        
+            `Reserved`
 
+            Reserved for future use. Do not use.
+        
+            `Status`
 
-## -remarks
-The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
+            The NTSTATUS code that is passed when the BRB call completes.
+        
+            `Type`
+
+            The Bluetooth request block type. The 
+     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
+     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
+     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
+     member.Possible values include:
+     
+
+<ul>
+<li>BRB_HCI_GET_LOCAL_BD_ADDR</li>
+<li>BRB_L2CA_REGISTER_SERVER</li>
+<li>BRB_L2CA_UNREGISTER_SERVER</li>
+<li>BRB_L2CA_OPEN_CHANNEL</li>
+<li>BRB_L2CA_OPEN_CHANNEL_RESPONSE</li>
+<li>BRB_L2CA_CLOSE_CHANNEL</li>
+<li>BRB_L2CA_ACL_TRANSFER</li>
+<li>BRB_L2CA_UPDATE_CHANNEL</li>
+<li>BRB_L2CA_PING</li>
+<li>BRB_REGISTER_PSM</li>
+<li>BRB_UNREGISTER_PSM</li>
+<li>BRB_SCO_REGISTER_SERVER</li>
+<li>BRB_SCO_UNREGISTER_SERVER</li>
+<li>BRB_SCO_OPEN_CHANNEL</li>
+<li>BRB_SCO_OPEN_CHANNEL_RESPONSE</li>
+<li>BRB_SCO_CLOSE_CHANNEL</li>
+<li>BRB_SCO_TRANSFER</li>
+<li>BRB_SCO_GET_CHANNEL_INFO</li>
+<li>BRB_SCO_GET_SYSTEM_INFO</li>
+<li>BRB_SCO_FLUSH_CHANNEL</li>
+<li>BRB_ACL_GET_MODE</li>
+<li>BRB_ACL_ENTER_ACTIVE_MODE</li>
+<li>BRB_GET_DEVICE_INTERFACE_STRING</li>
+</ul>
+        
+            `Version`
+
+            For internal use only. Do not use.
+
+    ## Remarks
+        The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
     structure is used by all BRB structures that are used as the input buffer for 
-    <a href="https://msdn.microsoft.com/60e4ee90-81d4-47a1-aed4-ee39b9fe3174">
+    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">
     IOCTL_INTERNAL_BTH_SUBMIT_BRB</a> IOCTLs.
 
 Profile drivers should not modify any of the members of the BRB_HEADER structure except 
     <b>ClientContext</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | bthddi.h (include Bthddi.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
 </dt>
@@ -223,4 +216,3 @@ Profile drivers should not modify any of the members of the BRB_HEADER structure
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB_HEADER structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

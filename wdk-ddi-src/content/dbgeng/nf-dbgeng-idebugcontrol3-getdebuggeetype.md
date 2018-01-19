@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugControl3.GetDebuggeeType
-title: IDebugControl3::GetDebuggeeType method
-author: windows-driver-content
-description: The GetDebuggeeType method describes the nature of the current target.
-old-location: debugger\getdebuggeetype.htm
-old-project: debugger
-ms.assetid: 86f236fa-73f8-4071-b6da-6de2d276cbff
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugControl3, IDebugControl3::GetDebuggeeType, GetDebuggeeType
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugControl.GetDebuggeeType,IDebugControl2.GetDebuggeeType,IDebugControl3.GetDebuggeeType
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugControl3.GetDebuggeeType
+title : IDebugControl3::GetDebuggeeType method
+author : windows-driver-content
+description : The GetDebuggeeType method describes the nature of the current target.
+old-location : debugger\getdebuggeetype.htm
+old-project : debugger
+ms.assetid : 86f236fa-73f8-4071-b6da-6de2d276cbff
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugControl3, IDebugControl3::GetDebuggeeType, GetDebuggeeType
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugControl.GetDebuggeeType,IDebugControl2.GetDebuggeeType,IDebugControl3.GetDebuggeeType
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugControl3::GetDebuggeeType method
 
-
-
-## -description
+# GetDebuggeeType method
 The <b>GetDebuggeeType</b> method describes the nature of the current target.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT GetDebuggeeType(
@@ -52,10 +47,9 @@ HRESULT GetDebuggeeType(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Class [out]
+`Class`
 
 Receives the class of the current target.  It will be set to one of the values in the following table.
 
@@ -95,10 +89,8 @@ The current target is a user-mode target.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Qualifier [out]
+`Qualifier`
 
 Provides more details about the type of the target.  Its interpretation depends on the value of <i>Class</i>.  When class is DEBUG_CLASS_UNINITIALIZED, <i>Qualifier</i> returns zero.  The following values are applicable for kernel-mode targets.
 
@@ -218,16 +210,24 @@ The current target is a Full User-Mode Dump file.
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
 
- 
 
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

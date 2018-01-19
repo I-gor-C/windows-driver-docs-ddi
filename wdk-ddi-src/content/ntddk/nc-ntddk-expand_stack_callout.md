@@ -1,72 +1,67 @@
 ---
-UID: NC:ntddk.EXPAND_STACK_CALLOUT
-title: EXPAND_STACK_CALLOUT function
-author: windows-driver-content
-description: The ExpandedStackCall routine executes with a guaranteed stack size.
-old-location: kernel\expandedstackcall.htm
-old-project: kernel
-ms.assetid: ca9af049-f183-458c-b43f-891678a7be5e
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: EXPAND_STACK_CALLOUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Drivers can implement ExpandedStackCall routines on Windows Server 2003 for an x64-based processor, and on Windows Vista and later versions of Windows for all processors.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ExpandedStackCall
-req.alt-loc: Ntddk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+UID : NC:ntddk.EXPAND_STACK_CALLOUT
+title : EXPAND_STACK_CALLOUT
+author : windows-driver-content
+description : The ExpandedStackCall routine executes with a guaranteed stack size.
+old-location : kernel\expandedstackcall.htm
+old-project : kernel
+ms.assetid : ca9af049-f183-458c-b43f-891678a7be5e
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ntddk.h
+req.include-header : Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Drivers can implement ExpandedStackCall routines on Windows Server 2003 for an x64-based processor, and on Windows Vista and later versions of Windows for all processors.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ExpandedStackCall
+req.alt-loc : Ntddk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
+
 # EXPAND_STACK_CALLOUT function
-
-
-
-## -description
 The <i>ExpandedStackCall</i> routine executes with a guaranteed stack size.
 
+## Syntax
 
+```
+EXPAND_STACK_CALLOUT ExpandStackCallout;
 
-## -syntax
-
-````
-EXPAND_STACK_CALLOUT ExpandedStackCall;
-
-VOID ExpandedStackCall(
-  _In_opt_ PVOID Parameter
+VOID() ExpandStackCallout(
+  PVOID Parameter
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Parameter [in, optional]
+`Parameter`
 
 The value passed to the <a href="..\ntddk\nf-ntddk-keexpandkernelstackandcallout.md">KeExpandKernelStackAndCallout</a> routine that executed <i>ExpandedStackCall</i>.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 The <i>ExpandedStackCall</i> routine must handle all exceptions. Any unhandled exception causes the system to bug check with <a href="https://msdn.microsoft.com/library/windows/hardware/ff557408">Bug Check 0x1E: KMODE_EXCEPTION_NOT_HANDLED</a>.
 
 If the <i>ExpandedStackCall</i> changes the current IRQL, it must restore the original value before returning. 
@@ -79,8 +74,20 @@ Then, implement your callback routine as follows:
 
 The EXPAND_STACK_CALLOUT function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EXPAND_STACK_CALLOUT function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntddk\nf-ntddk-keexpandkernelstackandcallout.md">KeExpandKernelStackAndCallout</a>
@@ -91,4 +98,3 @@ The EXPAND_STACK_CALLOUT function type is defined in the Wdm.h header file. To m
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExpandedStackCall routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltSetTransactionContext
-title: FltSetTransactionContext function
-author: windows-driver-content
-description: The FltSetTransactionContext routine sets a context on a transaction.
-old-location: ifsk\fltsettransactioncontext.htm
-old-project: ifsk
-ms.assetid: bb68ee38-1726-4493-9c3b-71a1352dd9f2
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltSetTransactionContext
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available and supported in Windows Vista and later operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltSetTransactionContext
-req.alt-loc: FltMgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: FltMgr.sys
-req.irql: <= APC_LEVEL.
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltSetTransactionContext
+title : FltSetTransactionContext function
+author : windows-driver-content
+description : The FltSetTransactionContext routine sets a context on a transaction.
+old-location : ifsk\fltsettransactioncontext.htm
+old-project : ifsk
+ms.assetid : bb68ee38-1726-4493-9c3b-71a1352dd9f2
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltSetTransactionContext
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available and supported in Windows Vista and later operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltSetTransactionContext
+req.alt-loc : FltMgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : FltMgr.sys
+req.irql : <= APC_LEVEL.
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltSetTransactionContext function
+The <b>FltSetTransactionContext</b> routine sets a context on a transaction.
 
-
-
-## -description
-The <b>FltSetTransactionContext</b> routine sets a context on a transaction. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltSetTransactionContext(
@@ -55,20 +50,17 @@ NTSTATUS FltSetTransactionContext(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Instance`
 
-### -param Instance [in]
+Opaque instance pointer for the caller.
 
-Opaque instance pointer for the caller. 
+`Transaction`
 
+Opaque transaction pointer for the transaction on which the context is being set.
 
-### -param Transaction [in]
-
-Opaque transaction pointer for the transaction on which the context is being set. 
-
-
-### -param Operation [in]
+`Operation`
 
 Flag that specifies the details of the operation to be performed. This parameter must be one of the following: 
 
@@ -79,39 +71,17 @@ Flag that specifies the details of the operation to be performed. This parameter
 </tr>
 <tr>
 
-### -param FLT_SET_CONTEXT_REPLACE_IF_EXISTS
+`NewContext`
 
-</td>
-<td width="60%">
-If a context is already set for the transaction pointed to by the <i>Transaction</i> parameter, replace the existing context with the context pointed to by the <i>NewContext</i> parameter. Otherwise, set the context pointed to by the <i>NewContext</i> parameter as the context for the transaction pointed to by the <i>Transaction</i> parameter. 
+Pointer to the new context to be set for the instance. The context must have been allocated by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. This parameter is required and cannot be <b>NULL</b>.
 
-</td>
-</tr>
-<tr>
+`OldContext`
 
-### -param FLT_SET_CONTEXT_KEEP_IF_EXISTS
-
-</td>
-<td width="60%">
-If a context is already set for the transaction pointed to by the <i>Transaction</i> parameter, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, set the context pointed to by the <i>NewContext</i> parameter as the context for transaction pointed to by the <i>Transaction</i> parameter. 
-
-</td>
-</tr>
-</table>
- 
+Pointer to a caller-allocated variable that receives the address of the existing transaction context, if one is already set. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.)
 
 
-### -param NewContext [in]
+## Return Value
 
-Pointer to the new context to be set for the instance. The context must have been allocated by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param OldContext [out, optional]
-
-Pointer to a caller-allocated variable that receives the address of the existing transaction context, if one is already set. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
-
-
-## -returns
 <b>FltSetTransactionContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
@@ -128,12 +98,10 @@ Pointer to a caller-allocated variable that receives the address of the existing
 
 One of the following:
 
-STATUS_INVALID_PARAMETER is an error code. 
+STATUS_INVALID_PARAMETER is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 A minifilter driver calls <b>FltSetTransactionContext</b> to attach a context to a transaction or to remove or replace an existing transaction context. A minifilter driver can attach only one context to a given transaction. 
 
 Before calling <b>FltSetTransactionContext</b> to set a new transaction context, the caller must call <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a> to allocate the context object. 
@@ -150,8 +118,20 @@ To delete a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltdele
 
 For more information about context reference counting, see <a href="https://msdn.microsoft.com/9ac3aedb-e057-4e19-9de5-709311072b09">Referencing Contexts</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
@@ -192,4 +172,3 @@ For more information about context reference counting, see <a href="https://msdn
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetTransactionContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

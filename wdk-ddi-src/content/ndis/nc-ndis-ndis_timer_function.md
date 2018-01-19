@@ -1,73 +1,66 @@
 ---
-UID: NC:ndis.NDIS_TIMER_FUNCTION
-title: NDIS_TIMER_FUNCTION function
-author: windows-driver-content
-description: The NetTimerCallback function is called by NDIS after a driver sets a one-shot or periodic timer when a timer fires.Note  You must declare the function by using the NDIS_TIMER_FUNCTION type.
-old-location: netvista\nettimercallback.htm
-old-project: netvista
-ms.assetid: 76e59376-58a4-4e35-bac4-ec5938c88cd7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NDIS_TIMER_FUNCTION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NetTimerCallback
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.NDIS_TIMER_FUNCTION
+title : NDIS_TIMER_FUNCTION
+author : windows-driver-content
+description : The NetTimerCallback function is called by NDIS after a driver sets a one-shot or periodic timer when a timer fires.Note  You must declare the function by using the NDIS_TIMER_FUNCTION type.
+old-location : netvista\nettimercallback.htm
+old-project : netvista
+ms.assetid : 76e59376-58a4-4e35-bac4-ec5938c88cd7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NetTimerCallback
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # NDIS_TIMER_FUNCTION function
-
-
-
-## -description
 The 
   <i>NetTimerCallback</i> function is called by NDIS after a driver sets a one-shot or periodic timer when a
   timer fires.
 
+## Syntax
 
+```
+NDIS_TIMER_FUNCTION NdisTimerFunction;
 
-## -syntax
-
-````
-NDIS_TIMER_FUNCTION NetTimerCallback;
-
-VOID NetTimerCallback(
-  _In_ PVOID SystemSpecific1,
-  _In_ PVOID FunctionContext,
-  _In_ PVOID SystemSpecific2,
-  _In_ PVOID SystemSpecific3
+void NdisTimerFunction(
+  PVOID SystemSpecific1,
+  PVOID FunctionContext,
+  PVOID SystemSpecific2,
+  PVOID SystemSpecific3
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param SystemSpecific1 [in]
+`SystemSpecific1`
 
 A pointer to a system-specific value that is reserved for system use.
 
-
-### -param FunctionContext [in]
+`FunctionContext`
 
 A pointer to a driver-supplied context area that the driver passed to the 
      <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a> function. If the 
@@ -78,22 +71,21 @@ A pointer to a driver-supplied context area that the driver passed to the
      <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a> function
      to initialize the associated timer object.
 
+`SystemSpecific2`
 
-### -param SystemSpecific2 [in]
+A pointer to a system-specific value that is reserved for system use.
+
+`SystemSpecific3`
 
 A pointer to a system-specific value that is reserved for system use.
 
 
-### -param SystemSpecific3 [in]
+## Return Value
 
-A pointer to a system-specific value that is reserved for system use.
-
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 Any NDIS driver can have one or more 
     <i>NetTimerCallback</i> functions. Each such 
     <i>NetTimerCallback</i> function must be associated with a different driver-allocated and initialized
@@ -129,8 +121,20 @@ The <b>NDIS_TIMER_FUNCTION</b> function type is defined in the Ndis.h header fil
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
@@ -159,4 +163,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TIMER_FUNCTION callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

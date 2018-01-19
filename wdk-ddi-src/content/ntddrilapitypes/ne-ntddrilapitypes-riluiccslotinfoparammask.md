@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILUICCSLOTINFOPARAMMASK
-title: RILUICCSLOTINFOPARAMMASK
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\riluiccslotinfoparammask.htm
-old-project: netvista
-ms.assetid: f99fc76e-a569-4a7e-9f8d-3f604ccfa6a3
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILUICCSLOTINFOPARAMMASK, RILUICCSLOTINFOPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILUICCSLOTINFOPARAMMASK
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILUICCSLOTINFOPARAMMASK
+UID : NE:ntddrilapitypes.RILUICCSLOTINFOPARAMMASK
+title : RILUICCSLOTINFOPARAMMASK
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\riluiccslotinfoparammask.htm
+old-project : netvista
+ms.assetid : f99fc76e-a569-4a7e-9f8d-3f604ccfa6a3
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILUICCSLOTINFOPARAMMASK, RILUICCSLOTINFOPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILUICCSLOTINFOPARAMMASK
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILUICCSLOTINFOPARAMMASK
 ---
 
-# RILUICCSLOTINFOPARAMMASK enumeration
-
-
-
-## -description
+# RILUICCSLOTINFOPARAMMASK Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILUICCSLOTINFOPARAMMASK { 
   RIL_PARAM_SLOTINFO_SLOTSTATE,
@@ -52,13 +45,26 @@ typedef enum _RILUICCSLOTINFOPARAMMASK {
 } RILUICCSLOTINFOPARAMMASK;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_PARAM_SLOTINFO_SLOTSTATE
+<tr>
+<td>RIL_PARAM_SLOTINFO_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SLOTINFO_SLOTSTATE</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_PARAM_SLOTINFO_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

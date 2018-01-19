@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.RtlInsertAsRightChild
-title: RtlInsertAsRightChild function
-author: windows-driver-content
-description: The RtlInsertAsRightChild routine inserts a given splay link into the tree as the right child of a given node in that tree.
-old-location: ifsk\rtlinsertasrightchild.htm
-old-project: ifsk
-ms.assetid: eaeff5fe-a678-44e5-a78d-ef4816708878
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlInsertAsRightChild
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlInsertAsRightChild
-req.alt-loc: ntddk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.RtlInsertAsRightChild
+title : RtlInsertAsRightChild function
+author : windows-driver-content
+description : The RtlInsertAsRightChild routine inserts a given splay link into the tree as the right child of a given node in that tree.
+old-location : ifsk\rtlinsertasrightchild.htm
+old-project : ifsk
+ms.assetid : eaeff5fe-a678-44e5-a78d-ef4816708878
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlInsertAsRightChild
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlInsertAsRightChild
+req.alt-loc : ntddk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # RtlInsertAsRightChild function
+The <b>RtlInsertAsRightChild</b> routine inserts a given splay link into the tree as the right child of a given node in that tree.
 
-
-
-## -description
-The <b>RtlInsertAsRightChild</b> routine inserts a given splay link into the tree as the right child of a given node in that tree. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID RtlInsertAsRightChild(
@@ -52,24 +47,23 @@ VOID RtlInsertAsRightChild(
 );
 ````
 
+## Parameters
 
-## -parameters
+`ParentLinks`
 
-### -param ParentLinks [in]
+Pointer to the node in the tree at which <i>ChildLinks</i> should be inserted as the right child.
 
-Pointer to the node in the tree at which <i>ChildLinks</i> should be inserted as the right child. 
+`ChildLinks`
 
-
-### -param ChildLinks [in]
-
-Pointer to the splay link node to be inserted into the tree. The node must have been initialized by calling <b>RtlInitializeSplayLinks</b>. 
+Pointer to the splay link node to be inserted into the tree. The node must have been initialized by calling <b>RtlInitializeSplayLinks</b>.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Callers of <b>RtlInsertAsRightChild</b> are responsible for meeting the following criteria:
 
 The node at <i>ParentLinks</i> must have no right child. 
@@ -82,10 +76,22 @@ A caller can determine whether this node already has a parent by calling <b>RtlI
 
 Callers of the <b>Rtl</b> splay link routines are responsible for synchronizing access to the splay link tree. A fast mutex is the most efficient synchronization mechanism to use for this purpose. 
 
-Callers of <b>RtlInsertAsRightChild</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the splay link tree and <i>ChildLinks</i> node are nonpaged. Usually, callers are running at IRQL PASSIVE_LEVEL. 
+Callers of <b>RtlInsertAsRightChild</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the splay link tree and <i>ChildLinks</i> node are nonpaged. Usually, callers are running at IRQL PASSIVE_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
@@ -111,4 +117,3 @@ Callers of <b>RtlInsertAsRightChild</b> must be running at IRQL &lt;= DISPATCH_L
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInsertAsRightChild routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

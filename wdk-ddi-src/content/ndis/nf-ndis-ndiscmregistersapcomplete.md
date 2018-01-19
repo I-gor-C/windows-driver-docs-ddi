@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisCmRegisterSapComplete
-title: NdisCmRegisterSapComplete function
-author: windows-driver-content
-description: NdisCmRegisterSapComplete returns the final status of a client's request, for which the CM previously returned NDIS_STATUS_PENDING, to register a SAP.
-old-location: netvista\ndiscmregistersapcomplete.htm
-old-project: netvista
-ms.assetid: 0419bbf5-02aa-482f-9e2c-a435302751c4
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCmRegisterSapComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCmRegisterSapComplete
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_CallManager_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCmRegisterSapComplete
+title : NdisCmRegisterSapComplete function
+author : windows-driver-content
+description : NdisCmRegisterSapComplete returns the final status of a client's request, for which the CM previously returned NDIS_STATUS_PENDING, to register a SAP.
+old-location : netvista\ndiscmregistersapcomplete.htm
+old-project : netvista
+ms.assetid : 0419bbf5-02aa-482f-9e2c-a435302751c4
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCmRegisterSapComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCmRegisterSapComplete
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_CallManager_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCmRegisterSapComplete function
-
-
-
-## -description
 <b>NdisCmRegisterSapComplete</b> returns the final status of a client's request, for which the CM previously
   returned NDIS_STATUS_PENDING, to register a SAP.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisCmRegisterSapComplete(
@@ -54,24 +49,21 @@ VOID NdisCmRegisterSapComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Status [in]
+`Status`
 
 Specifies the final status of the client's original request to register the SAP, either
      NDIS_STATUS_SUCCESS or any CM-determined NDIS_STATUS_<i>XXX</i> except NDIS_STATUS_PENDING.
 
-
-### -param NdisSapHandle [in]
+`NdisSapHandle`
 
 Specifies the NDIS-supplied handle to the SAP if the registration is successful. The call manager
      obtained this handle as an input parameter to its 
      <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
      ProtocolCmRegisterSap</a> function.
 
-
-### -param CallMgrSapContext [in]
+`CallMgrSapContext`
 
 Specifies the handle to a caller-supplied resident context area in which the CM maintains state
      for this SAP if the registration is successful. If so, NDIS passes this handle back to the CM in all
@@ -79,11 +71,12 @@ Specifies the handle to a caller-supplied resident context area in which the CM 
      <i>Status</i> is set to something other than NDIS_STATUS_SUCCESS, NDIS ignores this parameter.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 A stand-alone call manager must call 
     <b>NdisCmRegisterSapComplete</b> if its 
     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a> function
@@ -106,8 +99,20 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
     call-management support call 
     <b>NdisMCmRegisterSapComplete</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_CallManager_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
@@ -132,4 +137,3 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterSapComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

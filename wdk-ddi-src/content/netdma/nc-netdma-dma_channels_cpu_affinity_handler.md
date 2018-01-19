@@ -1,84 +1,80 @@
 ---
-UID: NC:netdma.DMA_CHANNELS_CPU_AFFINITY_HANDLER
-title: DMA_CHANNELS_CPU_AFFINITY_HANDLER
-author: windows-driver-content
-description: The ProviderSetDmaChannelCpuAffinity function sets the CPU affinities for the DMA channels that are associated with a DMA provider.
-old-location: netvista\providersetdmachannelcpuaffinity.htm
-old-project: netvista
-ms.assetid: a53d8798-63fa-4b16-bda2-880ca3521d03
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: netdma.h
-req.include-header: Netdma.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProviderSetDmaChannelCpuAffinity
-req.alt-loc: netdma.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
+UID : NC:netdma.DMA_CHANNELS_CPU_AFFINITY_HANDLER
+title : DMA_CHANNELS_CPU_AFFINITY_HANDLER
+author : windows-driver-content
+description : The ProviderSetDmaChannelCpuAffinity function sets the CPU affinities for the DMA channels that are associated with a DMA provider.
+old-location : netvista\providersetdmachannelcpuaffinity.htm
+old-project : netvista
+ms.assetid : a53d8798-63fa-4b16-bda2-880ca3521d03
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _MIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : netdma.h
+req.include-header : Netdma.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProviderSetDmaChannelCpuAffinity
+req.alt-loc : netdma.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
-# DMA_CHANNELS_CPU_AFFINITY_HANDLER callback
+
+# DMA_CHANNELS_CPU_AFFINITY_HANDLER callback function
 
 
+## Syntax
 
-## -description
+```
+DMA_CHANNELS_CPU_AFFINITY_HANDLER DmaChannelsCpuAffinityHandler;
 
-## -prototype
-
-````
-DMA_CHANNELS_CPU_AFFINITY_HANDLER ProviderSetDmaChannelCpuAffinity;
-
-NTSTATUS ProviderSetDmaChannelCpuAffinity(
-  _In_ PVOID                         ProviderContext,
-  _In_ PNET_DMA_CHANNEL_CPU_AFFINITY CpuAffinityArray,
-  _In_ ULONG                         CpuAffinityArraySize
+NTSTATUS DmaChannelsCpuAffinityHandler(
+  PVOID ProviderContext,
+  PNET_DMA_CHANNEL_CPU_AFFINITY CpuAffinityArray,
+  ULONG CpuAffinityArraySize
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ProviderContext [in]
+`ProviderContext`
 
 A pointer that identifies a DMA provider's context area. The DMA provider driver passed this
      pointer to NetDMA in a call to the 
      <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
      NetDmaRegisterProvider</a> function.
 
-
-### -param CpuAffinityArray [in]
+`CpuAffinityArray`
 
 A pointer to an array of 
      <a href="..\netdma\ns-netdma-_net_dma_channel_cpu_affinity.md">
      NET_DMA_CHANNEL_CPU_AFFINITY</a> structures that specify the CPU affinities for the DMA channels that
      are associated with the DMA provider.
 
-
-### -param CpuAffinityArraySize [in]
+`CpuAffinityArraySize`
 
 The length, in bytes, of the buffer at 
      <i>CpuAffinityArray</i> .
 
 
-## -returns
+## Return Value
+
 <i>ProviderSetDmaChannelCpuAffinity</i> returns one of the following status values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -90,10 +86,8 @@ The length, in bytes, of the buffer at
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
 </dl>The operation failed for unspecified reasons.
 
- 
+## Remarks
 
-
-## -remarks
 The NetDMA interface calls a DMA provider driver's 
     <i>ProviderSetDmaChannelCpuAffinity</i> function to specify the CPU affinities of a DMA provider's DMA
     channels. NetDMA calls 
@@ -124,8 +118,20 @@ On computers that do support MSI-X, the DMA provider driver can specify interrup
 NetDMA calls 
     <i>ProviderSetDmaChannelCpuAffinity</i> at IRQL = PASSIVE_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | netdma.h (include Netdma.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
@@ -150,4 +156,3 @@ NetDMA calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_CHANNELS_CPU_AFFINITY_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

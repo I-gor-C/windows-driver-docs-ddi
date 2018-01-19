@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltReadFile
-title: FltReadFile function
-author: windows-driver-content
-description: FltReadFile reads data from an open file, stream, or device.
-old-location: ifsk\fltreadfile.htm
-old-project: ifsk
-ms.assetid: 3ceacb96-1c60-4310-b96f-6fb396c1d6ce
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltReadFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltReadFile
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: PASSIVE_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltReadFile
+title : FltReadFile function
+author : windows-driver-content
+description : FltReadFile reads data from an open file, stream, or device.
+old-location : ifsk\fltreadfile.htm
+old-project : ifsk
+ms.assetid : 3ceacb96-1c60-4310-b96f-6fb396c1d6ce
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltReadFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltReadFile
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : PASSIVE_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltReadFile function
-
-
-
-## -description
 <b>FltReadFile</b> reads data from an open file, stream, or device.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltReadFile(
@@ -59,20 +54,17 @@ NTSTATUS FltReadFile(
 );
 ````
 
+## Parameters
 
-## -parameters
+`InitiatingInstance`
 
-### -param InitiatingInstance [in]
+Opaque instance pointer for the minifilter driver instance that is initiating the read request. This parameter is required and cannot be <b>NULL</b>.
 
-Opaque instance pointer for the minifilter driver instance that is initiating the read request. This parameter is required and cannot be <b>NULL</b>. 
+`FileObject`
 
+Pointer to a file object for the file that the data is to be read from. This file object must be currently open. Calling <b>FltReadFile</b> when the file object is not yet open or is no longer open (for example, in a pre-create or post-cleanup callback routine) causes the system to ASSERT on a checked build. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject [in]
-
-Pointer to a file object for the file that the data is to be read from. This file object must be currently open. Calling <b>FltReadFile</b> when the file object is not yet open or is no longer open (for example, in a pre-create or post-cleanup callback routine) causes the system to ASSERT on a checked build. This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param ByteOffset [in, optional]
+`ByteOffset`
 
 Pointer to a caller-allocated variable that specifies the starting byte offset within the file where the read operation is to begin. 
 
@@ -80,20 +72,17 @@ If this offset is supplied, or if the FLTFL_IO_OPERATION_DO_NOT_UPDATE_BYTE_OFFS
 
 If the file object that <i>FileObject</i> points to was opened for synchronous I/O, the caller of <b>FltReadFile</b> can specify that the current file position offset be used instead of an explicit <i>ByteOffset</i> value by setting this parameter to <b>NULL</b>. If the current file position is used, <b>FltReadFile</b> updates the file object's <b>CurrentByteOffset</b> field by adding the number of bytes read when it completes the read operation. 
 
-If the file object that <i>FileObject</i> points to was opened for asynchronous I/O, this parameter is required and cannot be <b>NULL</b>. 
+If the file object that <i>FileObject</i> points to was opened for asynchronous I/O, this parameter is required and cannot be <b>NULL</b>.
 
+`Length`
 
-### -param Length [in]
+Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to.
 
-Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. 
+`Buffer`
 
+Pointer to a caller-allocated buffer that receives the data that is read from the file.
 
-### -param Buffer [out]
-
-Pointer to a caller-allocated buffer that receives the data that is read from the file. 
-
-
-### -param Flags [in]
+`Flags`
 
 Bitmask of flags specifying the type of read operation to be performed. 
 
@@ -146,29 +135,26 @@ This flag is available for Windows Vista and later versions of the Windows opera
 </td>
 </tr>
 </table>
- 
+
+`BytesRead`
+
+Pointer to a caller-allocated variable that receives the number of bytes read from the file. If <i>CallbackRoutine</i> is not <b>NULL</b>, this parameter is ignored. Otherwise, this parameter is optional and can be <b>NULL</b>.
+
+`CallbackRoutine`
+
+Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>-typed callback routine to call when the read operation is complete. This parameter is optional and can be <b>NULL</b>.
+
+`CallbackContext`
+
+Context pointer to be passed to the <i>CallbackRoutine</i> if one is present. This parameter is optional and can be <b>NULL</b>. If <i>CallbackRoutine</i> is <b>NULL</b>, this parameter is ignored.
 
 
-### -param BytesRead [out, optional]
+## Return Value
 
-Pointer to a caller-allocated variable that receives the number of bytes read from the file. If <i>CallbackRoutine</i> is not <b>NULL</b>, this parameter is ignored. Otherwise, this parameter is optional and can be <b>NULL</b>. 
+<b>FltReadFile</b> returns the NTSTATUS value that was returned by the file system.
 
+## Remarks
 
-### -param CallbackRoutine [in, optional]
-
-Pointer to a <a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>-typed callback routine to call when the read operation is complete. This parameter is optional and can be <b>NULL</b>. 
-
-
-### -param CallbackContext [in, optional]
-
-Context pointer to be passed to the <i>CallbackRoutine</i> if one is present. This parameter is optional and can be <b>NULL</b>. If <i>CallbackRoutine</i> is <b>NULL</b>, this parameter is ignored. 
-
-
-## -returns
-<b>FltReadFile</b> returns the NTSTATUS value that was returned by the file system. 
-
-
-## -remarks
 A minifilter driver calls <b>FltReadFile</b> to read data from an open file. 
 
 <b>FltReadFile</b> creates a read request and sends it to the minifilter driver instances attached below the initiating instance, and to the file system. The specified instance and the instances attached above it do not receive the read request. 
@@ -193,10 +179,22 @@ If the value of the <i>CallbackRoutine</i> parameter is not <b>NULL</b>, the rea
 
 If the value of the <i>CallbackRoutine</i> parameter is <b>NULL</b>, the read operation is performed synchronously. That is, <b>FltReadFile</b> waits until the read operation is complete before returning. This is true even if the file object that <i>FileObject</i> points to was opened for asynchronous I/O. 
 
-If multiple threads call <b>FltReadFile</b> for the same file object, and the file object was opened for synchronous I/O, the Filter Manager does not attempt to serialize I/O on the file. In this respect, <b>FltReadFile</b> differs from <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>. 
+If multiple threads call <b>FltReadFile</b> for the same file object, and the file object was opened for synchronous I/O, the Filter Manager does not attempt to serialize I/O on the file. In this respect, <b>FltReadFile</b> differs from <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>
@@ -231,4 +229,3 @@ If multiple threads call <b>FltReadFile</b> for the same file object, and the fi
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltReadFile function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

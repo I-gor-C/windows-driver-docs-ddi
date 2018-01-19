@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ExSetResourceOwnerPointerEx
-title: ExSetResourceOwnerPointerEx function
-author: windows-driver-content
-description: The ExSetResourceOwnerPointerEx routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner.
-old-location: kernel\exsetresourceownerpointerex.htm
-old-project: kernel
-ms.assetid: 96293fbc-0c3c-4685-8708-dd84fcc2223e
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ExSetResourceOwnerPointerEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ExSetResourceOwnerPointerEx
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ExSetResourceOwnerPointerEx
+title : ExSetResourceOwnerPointerEx function
+author : windows-driver-content
+description : The ExSetResourceOwnerPointerEx routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner.
+old-location : kernel\exsetresourceownerpointerex.htm
+old-project : kernel
+ms.assetid : 96293fbc-0c3c-4685-8708-dd84fcc2223e
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ExSetResourceOwnerPointerEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ExSetResourceOwnerPointerEx
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ExSetResourceOwnerPointerEx function
+The <b>ExSetResourceOwnerPointerEx</b> routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner.
 
-
-
-## -description
-The <b>ExSetResourceOwnerPointerEx</b> routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID ExSetResourceOwnerPointerEx(
@@ -54,20 +49,17 @@ VOID ExSetResourceOwnerPointerEx(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Resource`
 
-### -param Resource [in, out]
+A pointer to an executive resource (an opaque <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a> structure) that is owned by the calling thread. The caller previously allocated this structure and initialized it by calling the <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a> routine. For more information, see the following Remarks section.
 
-A pointer to an executive resource (an opaque <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a> structure) that is owned by the calling thread. The caller previously allocated this structure and initialized it by calling the <a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a> routine. For more information, see the following Remarks section. 
-
-
-### -param OwnerPointer [in]
+`OwnerPointer`
 
 A pointer value that identifies the resource owner. This parameter value is nominally a pointer to a value of type ERESOURCE_THREAD but is cast to type PVOID. The caller must set the two least significant bits of this pointer value to ones. For more information, see the following Remarks section.
 
-
-### -param Flags [in]
+`Flags`
 
 A set of flags that can modify the operation of this routine. Set this parameter either to zero or to the following flag value:
 
@@ -80,11 +72,12 @@ FLAG_OWNER_POINTER_IS_THREAD
 If <i>Flags</i> = FLAG_OWNER_POINTER_IS_THREAD, <i>OwnerPointer</i> must point to a value of type ERESOURCE_THREAD, which is a pointer to an opaque thread object. If <i>Flags</i> = 0, <i>OwnerPointer</i> must point to a storage object in system memory that remains allocated until the resource is released. For more information, see the following Remarks section.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 This routine is available in Windows 7 and later versions of the Windows operating system.
 
 <b>ExSetResourceOwnerPointerEx</b> enables a thread, which acts as a resource manager, to transfer ownership of an executive resource, which the thread has already acquired, to another thread, which then uses the resource. The executive resource is represented by an <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a> structure.
@@ -105,8 +98,20 @@ If <i>Flags</i> is zero, the behavior of <b>ExSetResourceOwnerPointerEx</b> is t
 
 For more information about managing executive resources, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548046">Introduction to ERESOURCE Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a>
@@ -138,4 +143,3 @@ For more information about managing executive resources, see <a href="https://ms
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetResourceOwnerPointerEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

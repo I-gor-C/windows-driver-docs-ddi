@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ExRegisterCallback
-title: ExRegisterCallback function
-author: windows-driver-content
-description: The ExRegisterCallback routine registers a given callback routine with a given callback object.
-old-location: kernel\exregistercallback.htm
-old-project: kernel
-ms.assetid: 4537447a-17d5-4431-929c-7a8fda0f2986
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ExRegisterCallback
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ExRegisterCallback
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ExRegisterCallback
+title : ExRegisterCallback function
+author : windows-driver-content
+description : The ExRegisterCallback routine registers a given callback routine with a given callback object.
+old-location : kernel\exregistercallback.htm
+old-project : kernel
+ms.assetid : 4537447a-17d5-4431-929c-7a8fda0f2986
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ExRegisterCallback
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ExRegisterCallback
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ExRegisterCallback function
-
-
-
-## -description
 The <b>ExRegisterCallback</b> routine registers a given callback routine with a given callback object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PVOID ExRegisterCallback(
@@ -54,15 +49,13 @@ PVOID ExRegisterCallback(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param CallbackObject [in, out]
+`CallbackObject`
 
 A pointer to a callback object obtained from the <a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a> routine.
 
-
-### -param CallbackFunction [in]
+`CallbackFunction`
 
 A pointer to a driver-implemented callback routine, which must be nonpageable. The callback routine must conform to the following prototype:
 
@@ -83,36 +76,17 @@ A pointer to a driver-implemented callback routine, which must be nonpageable. T
 </table></span></div>
 The callback routine parameters are as follows:
 
-
-
-
-### -param CallbackContext
+`CallbackContext`
 
 A pointer to a driver-supplied context area as specified in the <i>CallbackContext</i> parameter of <b>ExRegisterCallback</b>.
 
 
-### -param Argument1
+## Return Value
 
-A pointer to a parameter defined by the callback object.
-
-
-### -param Argument2
-
-A pointer to a parameter defined by the callback object.
-
-</dd>
-</dl>
-
-### -param CallbackContext [in, optional]
-
-A pointer to a caller-defined structure of data items to be passed as the context parameter of the callback routine each time it is called. Typically the context is part of the caller's device object extension.
-
-
-## -returns
 <b>ExRegisterCallback</b> returns a pointer to a callback registration handle that should be treated as opaque and reserved for system use. This pointer is <b>NULL</b> if <b>ExRegisterCallback</b> completes with an error.
 
+## Remarks
 
-## -remarks
 A driver calls <b>ExRegisterCallback</b> to register a callback routine with a specified callback object.
 
 If the object allows only one registered callback routine, and such a routine is already registered, <b>ExRegisterCallback</b> returns <b>NULL</b>.
@@ -165,8 +139,20 @@ For more information about callback objects, see <a href="https://msdn.microsoft
 
 The operating system calls registered callback routines at the same IRQL at which the driver that created the callback called the <a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a> routine.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
@@ -189,4 +175,3 @@ The operating system calls registered callback routines at the same IRQL at whic
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExRegisterCallback routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:video.VideoPortAllocateCommonBuffer
-title: VideoPortAllocateCommonBuffer function
-author: windows-driver-content
-description: The VideoPortAllocateCommonBuffer function allocates and maps system memory so that it is simultaneously accessible from both the processor and a device for common-buffer DMA operations.
-old-location: display\videoportallocatecommonbuffer.htm
-old-project: display
-ms.assetid: 950c2509-688e-4aaa-a12d-4106bb722bbc
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: VideoPortAllocateCommonBuffer
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: VideoPortAllocateCommonBuffer
-req.alt-loc: Videoprt.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Videoprt.lib
-req.dll: Videoprt.sys
-req.irql: PASSIVE_LEVEL
-req.typenames: VIDEO_PORT_SERVICES
-req.product: Windows 10 or later.
+UID : NF:video.VideoPortAllocateCommonBuffer
+title : VideoPortAllocateCommonBuffer function
+author : windows-driver-content
+description : The VideoPortAllocateCommonBuffer function allocates and maps system memory so that it is simultaneously accessible from both the processor and a device for common-buffer DMA operations.
+old-location : display\videoportallocatecommonbuffer.htm
+old-project : display
+ms.assetid : 950c2509-688e-4aaa-a12d-4106bb722bbc
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : VideoPortAllocateCommonBuffer
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : VideoPortAllocateCommonBuffer
+req.alt-loc : Videoprt.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Videoprt.lib
+req.dll : Videoprt.sys
+req.irql : PASSIVE_LEVEL
+req.typenames : VIDEO_PORT_SERVICES
+req.product : Windows 10 or later.
 ---
 
+
 # VideoPortAllocateCommonBuffer function
-
-
-
-## -description
 The <b>VideoPortAllocateCommonBuffer</b> function allocates and maps system memory so that it is simultaneously accessible from both the processor and a device for common-buffer DMA operations.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PVOID VideoPortAllocateCommonBuffer(
@@ -57,48 +52,55 @@ PVOID VideoPortAllocateCommonBuffer(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension [in]
+`HwDeviceExtension`
 
 Pointer to the miniport driver's device extension.
 
-
-### -param VpDmaAdapter [in]
+`VpDmaAdapter`
 
 Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a previous call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.
 
-
-### -param DesiredLength [in]
+`DesiredLength`
 
 Specifies the requested number of bytes of memory.
 
-
-### -param LogicalAddress [out]
+`LogicalAddress`
 
 Pointer to a memory location that receives the logical address to be used by the adapter to access the allocated buffer.
 
-
-### -param CacheEnabled [in]
+`CacheEnabled`
 
 Specifies whether the allocated memory can be cached.  For more information, see the description of the <i>CacheEnabled</i> parameter for <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>.
 
-
-### -param Reserved [out]
+`Reserved`
 
 Is currently ignored by the video port driver; should be set to <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>VideoPortAllocateCommonBuffer</b> returns the base virtual address of the allocated buffer if successful; otherwise, it returns <b>NULL</b> if the buffer cannot be allocated.
 
+## Remarks
 
-## -remarks
 When the buffer is no longer needed, the video miniport driver should release it by calling <a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
@@ -118,4 +120,3 @@ When the buffer is no longer needed, the video miniport driver should release it
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortAllocateCommonBuffer function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

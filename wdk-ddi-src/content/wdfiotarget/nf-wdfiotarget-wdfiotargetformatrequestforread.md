@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfiotarget.WdfIoTargetFormatRequestForRead
-title: WdfIoTargetFormatRequestForRead function
-author: windows-driver-content
-description: The WdfIoTargetFormatRequestForRead method builds a read request for an I/O target but does not send the request.
-old-location: wdf\wdfiotargetformatrequestforread.htm
-old-project: wdf
-ms.assetid: e7c770de-0508-46e8-9820-aee6716fb7a7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfIoTargetFormatRequestForRead
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfiotarget.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: WdfIoTargetFormatRequestForRead
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE
-req.product: Windows 10 or later.
+UID : NF:wdfiotarget.WdfIoTargetFormatRequestForRead
+title : WdfIoTargetFormatRequestForRead function
+author : windows-driver-content
+description : The WdfIoTargetFormatRequestForRead method builds a read request for an I/O target but does not send the request.
+old-location : wdf\wdfiotargetformatrequestforread.htm
+old-project : wdf
+ms.assetid : e7c770de-0508-46e8-9820-aee6716fb7a7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfIoTargetFormatRequestForRead
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfiotarget.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : WdfIoTargetFormatRequestForRead
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfIoTargetFormatRequestForRead function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfIoTargetFormatRequestForRead</b> method builds a read request for an I/O target but does not send the request.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfIoTargetFormatRequestForRead(
@@ -58,35 +53,31 @@ NTSTATUS WdfIoTargetFormatRequestForRead(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param IoTarget [in]
+`IoTarget`
 
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a> or <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.
 
-
-### -param Request [in]
+`Request`
 
 A handle to a framework request object. For more information, see the following Remarks section.
 
-
-### -param OutputBuffer [in, optional]
+`OutputBuffer`
 
 A handle to a framework memory object. This object represents a buffer that will receive data from the I/O target. This parameter is optional and can be <b>NULL</b>. For more information about this parameter, see the following Remarks section.
 
-
-### -param OutputBufferOffset [in, optional]
+`OutputBufferOffset`
 
 A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the output buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the output buffer, and the transfer size is the buffer size.
 
-
-### -param DeviceOffset [in, optional]
+`DeviceOffset`
 
 A pointer to a variable that specifies a starting offset for the transfer. The I/O target (that is, the next-lower driver) defines how to use this value. For example, the drivers in a disk's driver stack might specify an offset from the beginning of the disk. The I/O target obtains this information in the <b>Parameters.Read.DeviceOffset</b> member of the request's <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a> structure. This pointer is optional. Most drivers set this pointer to <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>WdfIoTargetFormatRequestForRead</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -107,10 +98,8 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 Use the <b>WdfIoTargetFormatRequestForRead</b> method, followed by the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a> method, to send read requests either synchronously or asynchronously. Alternatively, use the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendreadsynchronously.md">WdfIoTargetSendReadSynchronously</a> method to send read requests synchronously. 
 
 You can forward an I/O request that your driver received in an I/O queue, or you can create and send a new request. In either case, the framework requires a request object and some buffer space.
@@ -123,7 +112,7 @@ Use the received request's output buffer for the <b>WdfIoTargetFormatRequestForR
 
 The driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> to obtain a handle to a framework memory object that represents the request's output buffer and must use that handle as the value for <i>OutputBuffer</i>.
 
-For more information about forwarding an I/O request, see <a href="https://msdn.microsoft.com/75e007e3-1b97-44db-ac86-56aab78222a6">Forwarding I/O Requests</a>.
+For more information about forwarding an I/O request, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/forwarding-i-o-requests">Forwarding I/O Requests</a>.
 
 Drivers often divide received I/O requests into smaller requests that they send to an I/O target, so your driver might create new requests.
 
@@ -153,8 +142,20 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 The following code example creates a framework memory object for a read request's output buffer, formats the read request, registers a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, and sends the read request to an I/O target.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfiotarget.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
@@ -201,4 +202,3 @@ The following code example creates a framework memory object for a read request'
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoTargetFormatRequestForRead method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

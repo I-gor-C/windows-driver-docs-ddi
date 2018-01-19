@@ -1,51 +1,44 @@
 ---
-UID: NS:wudfwdm._OBJECT_ATTRIBUTES
-title: _OBJECT_ATTRIBUTES
-author: windows-driver-content
-description: The OBJECT_ATTRIBUTES structure specifies attributes that can be applied to objects or object handles by routines that create objects and/or return handles to objects.
-old-location: kernel\object_attributes.htm
-old-project: kernel
-ms.assetid: 08f5a141-abce-4890-867c-5fe8c4239905
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: _OBJECT_ATTRIBUTES, OBJECT_ATTRIBUTES, *POBJECT_ATTRIBUTES
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wudfwdm.h
-req.include-header: D3dkmthk.h, Ntdef.h, Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: OBJECT_ATTRIBUTES
-req.alt-loc: wudfwdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: OBJECT_ATTRIBUTES
-req.product: Windows 10 or later.
+UID : NS:wudfwdm._OBJECT_ATTRIBUTES
+title : _OBJECT_ATTRIBUTES
+author : windows-driver-content
+description : The OBJECT_ATTRIBUTES structure specifies attributes that can be applied to objects or object handles by routines that create objects and/or return handles to objects.
+old-location : kernel\object_attributes.htm
+old-project : kernel
+ms.assetid : 08f5a141-abce-4890-867c-5fe8c4239905
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _OBJECT_ATTRIBUTES, OBJECT_ATTRIBUTES, *POBJECT_ATTRIBUTES
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wudfwdm.h
+req.include-header : D3dkmthk.h, Ntdef.h, Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : OBJECT_ATTRIBUTES
+req.alt-loc : wudfwdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : OBJECT_ATTRIBUTES
+req.product : Windows 10 or later.
 ---
 
 # _OBJECT_ATTRIBUTES structure
-
-
-
-## -description
 The <b>OBJECT_ATTRIBUTES</b> structure specifies attributes that can be applied to objects or object handles by routines that create objects and/or return handles to objects.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _OBJECT_ATTRIBUTES {
   ULONG           Length;
@@ -57,27 +50,12 @@ typedef struct _OBJECT_ATTRIBUTES {
 }  OBJECT_ATTRIBUTES, *POBJECT_ATTRIBUTES;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Attributes`
 
-### -field Length
-
-The number of bytes of data contained in this structure. The <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro sets this member to <b>sizeof</b>(<b>OBJECT_ATTRIBUTES</b>).
-
-
-### -field RootDirectory
-
-Optional handle to the root object directory for the path name specified by the <b>ObjectName</b> member. If <b>RootDirectory</b> is <b>NULL</b>, <b>ObjectName</b> must point to a fully qualified object name that includes the full path to the target object. If <b>RootDirectory</b> is non-<b>NULL</b>, <b>ObjectName</b> specifies an object name relative to the <b>RootDirectory</b> directory. The <b>RootDirectory</b> handle can refer to a file system directory or an object directory in the object manager namespace.
-
-
-### -field ObjectName
-
-Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">Unicode string</a> that contains the name of the object for which a handle is to be opened. This must either be a fully qualified object name, or a relative path name to the directory specified by the <b>RootDirectory</b> member.
-
-
-### -field Attributes
-
-Bitmask of flags that specify object handle attributes. This member can contain one or more of the flags in the following table.
+            Bitmask of flags that specify object handle attributes. This member can contain one or more of the flags in the following table.
 
 <table>
 <tr>
@@ -177,21 +155,29 @@ Reserved.
 </td>
 </tr>
 </table>
- 
+        
+            `Length`
 
+            The number of bytes of data contained in this structure. The <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro sets this member to <b>sizeof</b>(<b>OBJECT_ATTRIBUTES</b>).
+        
+            `ObjectName`
 
-### -field SecurityDescriptor
+            Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">Unicode string</a> that contains the name of the object for which a handle is to be opened. This must either be a fully qualified object name, or a relative path name to the directory specified by the <b>RootDirectory</b> member.
+        
+            `RootDirectory`
 
-Specifies a security descriptor (<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>) for the object when the object is created. If this member is <b>NULL</b>, the object will receive default security settings.
+            Optional handle to the root object directory for the path name specified by the <b>ObjectName</b> member. If <b>RootDirectory</b> is <b>NULL</b>, <b>ObjectName</b> must point to a fully qualified object name that includes the full path to the target object. If <b>RootDirectory</b> is non-<b>NULL</b>, <b>ObjectName</b> specifies an object name relative to the <b>RootDirectory</b> directory. The <b>RootDirectory</b> handle can refer to a file system directory or an object directory in the object manager namespace.
+        
+            `SecurityDescriptor`
 
+            Specifies a security descriptor (<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>) for the object when the object is created. If this member is <b>NULL</b>, the object will receive default security settings.
+        
+            `SecurityQualityOfService`
 
-### -field SecurityQualityOfService
+            Optional quality of service to be applied to the object when it is created. Used to indicate the security impersonation level and context tracking mode (dynamic or static). Currently, the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro sets this member to <b>NULL</b>.
 
-Optional quality of service to be applied to the object when it is created. Used to indicate the security impersonation level and context tracking mode (dynamic or static). Currently, the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro sets this member to <b>NULL</b>.
-
-
-## -remarks
-Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro to initialize the members of the <b>OBJECT_ATTRIBUTES</b> structure. Note that <b>InitializeObjectAttributes</b> initializes the <b>SecurityQualityOfService</b> member to <b>NULL</b>. If you must specify a non-<b>NULL</b> value, set the <b>SecurityQualityOfService</b> member after initialization.
+    ## Remarks
+        Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro to initialize the members of the <b>OBJECT_ATTRIBUTES</b> structure. Note that <b>InitializeObjectAttributes</b> initializes the <b>SecurityQualityOfService</b> member to <b>NULL</b>. If you must specify a non-<b>NULL</b> value, set the <b>SecurityQualityOfService</b> member after initialization.
 
 To apply the attributes contained in this structure to an object or object handle, pass a pointer to this structure to a routine that accesses objects or returns object handles, such as <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwcreatedirectoryobject.md">ZwCreateDirectoryObject</a>.
 
@@ -199,9 +185,17 @@ All members of this structure are read-only. If a member of this structure is a 
 
 Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE flag for the <b>Attributes</b> member (by using the <b>InitializeObjectAttributes</b> macro). This restricts the use of a handle opened for that object to processes running only in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wudfwdm.h (include D3dkmthk.h, Ntdef.h, Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltcreatecommunicationport.md">FltCreateCommunicationPort</a>
 </dt>
@@ -238,4 +232,3 @@ Driver routines that run in a process context other than that of the system proc
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20OBJECT_ATTRIBUTES structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

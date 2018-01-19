@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
-title: _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
-author: windows-driver-content
-description: Used in a call to the DxgkDdiCheckMultiPlaneOverlaySupport3 function to check details on hardware support for multi-plane overlays.
-old-location: display\dxgkarg_checkmultiplaneoverlaysupport3.htm
-old-project: display
-ms.assetid: 21FE4E54-5B7D-4068-AC83-A7AFFA739169
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
-req.alt-loc: d3dkmddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+UID : NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+title : _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+author : windows-driver-content
+description : Used in a call to the DxgkDdiCheckMultiPlaneOverlaySupport3 function to check details on hardware support for multi-plane overlays.
+old-location : display\dxgkarg_checkmultiplaneoverlaysupport3.htm
+old-project : display
+ms.assetid : 21FE4E54-5B7D-4068-AC83-A7AFFA739169
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+req.alt-loc : d3dkmddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
 ---
 
 # _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 structure
-
-
-
-## -description
 Used in a call to the DxgkDdiCheckMultiPlaneOverlaySupport3 function to check details on hardware support for multi-plane overlays.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 {
   UINT                                                    PlaneCount;
@@ -56,37 +49,38 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 {
 } DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `PlaneCount`
 
-### -field PlaneCount
+            The number of input planes to be enabled.
+        
+            `PostCompositionCount`
 
-The number of input planes to be enabled.
+            The number of VidPnSources for which we want to apply post composition transforms.
+        
+            `ppPlanes`
 
+            An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE3 structure that specifies support attributes that the hardware provides for multi-plane overlays.
+        
+            `ppPostComposition`
 
-### -field ppPlanes
+            An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_POST_COMPSOTION_WITH_SOURCE structure that specifies transforms that should be applied after the planes are composed.
+        
+            `ReturnInfo`
 
-An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE3 structure that specifies support attributes that the hardware provides for multi-plane overlays.
+            Specifies additional information
+        
+            `Supported`
 
-
-### -field PostCompositionCount
-
-The number of VidPnSources for which we want to apply post composition transforms.
-
-
-### -field ppPostComposition
-
-An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_POST_COMPSOTION_WITH_SOURCE structure that specifies transforms that should be applied after the planes are composed.
-
-
-### -field Supported
-
-TRUE if the multi-plane overlay configuration can be supported, otherwise FALSE.
-
-
-### -field ReturnInfo
-
-Specifies additional information
+            TRUE if the multi-plane overlay configuration can be supported, otherwise FALSE.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmddi.h |

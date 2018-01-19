@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfrequest.WdfRequestSend
-title: WdfRequestSend function
-author: windows-driver-content
-description: The WdfRequestSend method sends a specified I/O request to a specified I/O target.
-old-location: wdf\wdfrequestsend.htm
-old-project: wdf
-ms.assetid: a0f4d4a4-f636-44df-911f-e3a615144fa9
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfRequestSend
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfrequest.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: WdfRequestSend
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, ReqCompletionRoutine, ReqMarkCancelableSend, ReqSendFail, ReqSendWhileSpinlock, RequestCompleted, RequestCompletedLocal, RequestFormattedValid, RequestGetStatusValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, SyncReqSend2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: WDF_REQUEST_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfrequest.WdfRequestSend
+title : WdfRequestSend function
+author : windows-driver-content
+description : The WdfRequestSend method sends a specified I/O request to a specified I/O target.
+old-location : wdf\wdfrequestsend.htm
+old-project : wdf
+ms.assetid : a0f4d4a4-f636-44df-911f-e3a615144fa9
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfRequestSend
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfrequest.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : WdfRequestSend
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, ReqCompletionRoutine, ReqMarkCancelableSend, ReqSendFail, ReqSendWhileSpinlock, RequestCompleted, RequestCompletedLocal, RequestFormattedValid, RequestGetStatusValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, SyncReqSend2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : WDF_REQUEST_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfRequestSend function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfRequestSend</b> method sends a specified I/O request to a specified I/O target.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN WdfRequestSend(
@@ -56,32 +51,30 @@ BOOLEAN WdfRequestSend(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Request [in]
+`Request`
 
 A handle to a framework request object.
 
+`Target`
 
-### -param Target [in]
+A handle to a framework I/O target object. For more information about how to obtain this handle, see the following Remarks section.
 
-A handle to a framework I/O target object. For more information about how to obtain this handle, see the following Remarks section. 
-
-
-### -param RequestOptions [in, optional]
-
-A pointer to a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a> structure that contains caller-supplied request options. This parameter is optional and can be <b>NULL</b> if you do not want to enable any request options.
+`Options`
 
 
-## -returns
+
+
+## Return Value
+
 <b>WdfRequestSend</b> returns <b>TRUE</b> if the request was sent to the target. Otherwise, this method returns <b>FALSE</b>.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-## -remarks
-The request object that the driver specifies for the <i>Request</i> parameter can be one that it <a href="wdf.receiving_i_o_requests">received</a> or one that it created by calling the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a> method.
+The request object that the driver specifies for the <i>Request</i> parameter can be one that it <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/receiving-i-o-requests">received</a> or one that it created by calling the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a> method.
 
 To obtain a handle to an I/O target object, the driver can do one of the following:
 
@@ -102,14 +95,26 @@ If the driver supplies a time-out value, it should call <a href="..\wdfrequest\n
  If the driver sets the <b>WDF_REQUEST_SEND_OPTION_SYNCHRONOUS</b> flag, it must call <b>WdfRequestSend</b> at IRQL = PASSIVE_LEVEL. If this flag is not set, the driver must call this method  at IRQL &lt;= DISPATCH_LEVEL.
           <b>WdfRequestSend</b> sends the request at the caller's IRQL.
 
-A driver cannot call <b>WdfRequestSend</b> to send an I/O request to a USB pipe, if the driver has configured a <a href="wdf.working_with_usb_pipes">continuous reader</a> for the pipe.
+A driver cannot call <b>WdfRequestSend</b> to send an I/O request to a USB pipe, if the driver has configured a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">continuous reader</a> for the pipe.
 
-For more information about <b>WdfRequestSend</b>, see <a href="https://msdn.microsoft.com/75e007e3-1b97-44db-ac86-56aab78222a6">Forwarding I/O Requests</a>.
+For more information about <b>WdfRequestSend</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/forwarding-i-o-requests">Forwarding I/O Requests</a>.
 
 The following code example is a shortened version of an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_write.md">EvtIoWrite</a> callback function from the <a href="http://go.microsoft.com/fwlink/p/?linkid=256131">kmdf_fx2</a> sample driver. The function validates the request's buffer length, obtains a handle to the buffer, formats the request for a USB target, and sends the request.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfrequest.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** | DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, ReqCompletionRoutine, ReqMarkCancelableSend, ReqSendFail, ReqSendWhileSpinlock, RequestCompleted, RequestCompletedLocal, RequestFormattedValid, RequestGetStatusValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, SyncReqSend2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
@@ -135,4 +140,3 @@ The following code example is a shortened version of an <a href="..\wdfio\nc-wdf
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestSend method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

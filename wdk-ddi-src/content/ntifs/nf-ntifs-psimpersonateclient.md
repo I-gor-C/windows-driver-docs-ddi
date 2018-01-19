@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.PsImpersonateClient
-title: PsImpersonateClient function
-author: windows-driver-content
-description: The PsImpersonateClient routine causes a server thread to impersonate a client.
-old-location: ifsk\psimpersonateclient.htm
-old-project: ifsk
-ms.assetid: 69cc1253-07eb-43cf-abc7-5ad02ecb014d
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: PsImpersonateClient
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PsImpersonateClient
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.PsImpersonateClient
+title : PsImpersonateClient function
+author : windows-driver-content
+description : The PsImpersonateClient routine causes a server thread to impersonate a client.
+old-location : ifsk\psimpersonateclient.htm
+old-project : ifsk
+ms.assetid : 69cc1253-07eb-43cf-abc7-5ad02ecb014d
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : PsImpersonateClient
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PsImpersonateClient
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # PsImpersonateClient function
+The <b>PsImpersonateClient</b> routine causes a server thread to impersonate a client.
 
-
-
-## -description
-The <b>PsImpersonateClient</b> routine causes a server thread to impersonate a client. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS PsImpersonateClient(
@@ -55,35 +50,31 @@ NTSTATUS PsImpersonateClient(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Thread`
 
-### -param Thread [in, out]
+Pointer to the server thread that is to impersonate the client.
 
-Pointer to the server thread that is to impersonate the client. 
+`Token`
 
+Pointer to the token to be assigned as the impersonation token. This token can be a primary token or an impersonation token. Set to <b>NULL</b> to end the impersonation.
 
-### -param Token [in]
+`CopyOnOpen`
 
-Pointer to the token to be assigned as the impersonation token. This token can be a primary token or an impersonation token. Set to <b>NULL</b> to end the impersonation. 
+Specifies whether the token can be opened directly. Set to <b>TRUE</b> to specify that the token cannot be opened directly. In this case, the token must be duplicated, and the duplicate token used instead. Set to <b>FALSE</b> to allow the token to be opened directly.
 
-
-### -param CopyOnOpen [in]
-
-Specifies whether the token can be opened directly. Set to <b>TRUE</b> to specify that the token cannot be opened directly. In this case, the token must be duplicated, and the duplicate token used instead. Set to <b>FALSE</b> to allow the token to be opened directly. 
-
-
-### -param EffectiveOnly [in]
+`EffectiveOnly`
 
 Set to <b>FALSE</b> to allow the server to enable groups and privileges that are currently disabled in the client security context, <b>TRUE</b> otherwise.
 
+`ImpersonationLevel`
 
-### -param ImpersonationLevel [in]
-
-A <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a> value that specifies the impersonation level at which the server is to access the token. 
+A <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a> value that specifies the impersonation level at which the server is to access the token.
 
 
-## -returns
+## Return Value
+
 <b>PsImpersonateClient</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as the following: 
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -92,10 +83,8 @@ A <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPE
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl>There was insufficient memory to complete the operation.
 
- 
+## Remarks
 
-
-## -remarks
 <b>PsImpersonateClient</b> causes the specified server thread to impersonate the specified client. 
 
 The server thread could already be impersonating a client when <b>PsImpersonateClient</b> is called. If this is the case, the reference count on the token representing that client is decremented. To preserve this token for later use, drivers should call <a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a> before calling <b>PsImpersonateClient</b> and save the pointer that is returned by <b>PsReferenceImpersonationToken</b>. 
@@ -112,13 +101,25 @@ In cases where a higher privilege state is required, the task should be dispatch
 
 The <a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a> routine can be used to cause a thread to impersonate a user.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. 
+For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 <dt>
 <a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
@@ -138,4 +139,3 @@ For more information about security and access control, see the documentation on
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PsImpersonateClient routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:fwpsk.FwpsInjectNetworkReceiveAsync0
-title: FwpsInjectNetworkReceiveAsync0 function
-author: windows-driver-content
-description: The FwpsInjectNetworkReceiveAsync0 function injects packet data into the receive data path.Note  FwpsInjectNetworkReceiveAsync0 is a specific version of FwpsInjectNetworkReceiveAsync.
-old-location: netvista\fwpsinjectnetworkreceiveasync0.htm
-old-project: netvista
-ms.assetid: c34b2be1-fe1c-4a99-ac9c-ddd40b97d8d0
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsInjectNetworkReceiveAsync0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsInjectNetworkReceiveAsync0
-req.alt-loc: fwpkclnt.lib,fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsInjectNetworkReceiveAsync0
+title : FwpsInjectNetworkReceiveAsync0 function
+author : windows-driver-content
+description : The FwpsInjectNetworkReceiveAsync0 function injects packet data into the receive data path.Note  FwpsInjectNetworkReceiveAsync0 is a specific version of FwpsInjectNetworkReceiveAsync.
+old-location : netvista\fwpsinjectnetworkreceiveasync0.htm
+old-project : netvista
+ms.assetid : c34b2be1-fe1c-4a99-ac9c-ddd40b97d8d0
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsInjectNetworkReceiveAsync0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsInjectNetworkReceiveAsync0
+req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsInjectNetworkReceiveAsync0 function
-
-
-
-## -description
 The 
   <b>FwpsInjectNetworkReceiveAsync0</b> function injects packet data into the receive data path.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
@@ -60,30 +55,26 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param injectionHandle [in]
+`injectionHandle`
 
 An injection handle that was previously created by a call to the 
      <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function with the 
      <i>flags</i> parameter set to FWPS_INJECTION_TYPE_NETWORK.
 
-
-### -param injectionContext [in, optional]
+`injectionContext`
 
 An optional handle to the injection context. If specified, it can be obtained by calling the 
      <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a> function when the packet injection state 
      <a href="..\fwpsk\ne-fwpsk-fwps_packet_injection_state_.md">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.
 
-
-### -param flags [in]
+`flags`
 
 Reserved. Callout drivers must set this parameter to zero.
 
-
-### -param compartmentId [in]
+`compartmentId`
 
 The identifier of the routing compartment into which the packet data is injected, specified as a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff542009">COMPARTMENT_ID</a> type. This identifier is provided
@@ -96,8 +87,7 @@ The identifier of the routing compartment into which the packet data is injected
      the 
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.
 
-
-### -param interfaceIndex [in]
+`interfaceIndex`
 
 The index of the interface on which the original packet data was received. A callout driver should
      use the value of the interface index that is passed as one of the incoming data values to its 
@@ -105,8 +95,7 @@ The index of the interface on which the original packet data was received. A cal
      parameter if the packet is to be injected into the same interface where the original packet was
      indicated.
 
-
-### -param subInterfaceIndex [in]
+`subInterfaceIndex`
 
 The index of the subinterface on which the original packet data was received. A callout driver
      should use the value of the subinterface index that is passed as one of the incoming data values to its 
@@ -114,8 +103,7 @@ The index of the subinterface on which the original packet data was received. A 
      parameter if the packet is to be injected into the same subinterface where the original packet was
      indicated.
 
-
-### -param netBufferList [in, out]
+`netBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
@@ -127,23 +115,22 @@ A pointer to a
      FwpsAllocateNetBufferAndNetBufferList0</a> function. The NET_BUFFER_LIST structure must begin with an
      IP header.
 
-
-### -param completionFn [in]
+`completionFn`
 
 A pointer to a 
      <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a> callout function provided by
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferList</i> parameter, has been injected into the network stack.
 
-
-### -param completionContext [in, optional]
+`completionContext`
 
 A pointer to a callout driver–provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsInjectNetworkReceiveAsync0</b> function returns one of the following NTSTATUS codes.
 <dl>
@@ -170,10 +157,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 A callout driver calls the 
     <b>FwpsInjectNetworkReceiveAsync0</b> function to inject packet data or a packet fragment into the receive
     data path. This function can execute asynchronously. Callout drivers normally inject data into the
@@ -197,8 +182,20 @@ The injected packet can be indicated to the callout driver again. To prevent inf
     <a href="..\fwpsk\ne-fwpsk-fwps_packet_injection_state_.md">FWPS_PACKET_INJECTION_STATE</a> set to
     <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b> to pass through unaltered.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
@@ -246,4 +243,3 @@ The injected packet can be indicated to the callout driver again. To prevent inf
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkReceiveAsync0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

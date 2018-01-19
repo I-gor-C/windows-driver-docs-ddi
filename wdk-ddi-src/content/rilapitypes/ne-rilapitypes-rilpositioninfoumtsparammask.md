@@ -1,48 +1,44 @@
 ---
-UID: NE:rilapitypes.RILPOSITIONINFOUMTSPARAMMASK
-title: RILPOSITIONINFOUMTSPARAMMASK
-author: windows-driver-content
-description: This enumeration describes the RILPOSITIONINFOUMTSPARAMMASK.
-old-location: netvista\rilpositioninfoumtsparammask.htm
-old-project: netvista
-ms.assetid: fde2eb3f-ea12-45e6-93d1-7bdb0ea8c6b2
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILPOSITIONINFOUMTSPARAMMASK, RILPOSITIONINFOUMTSPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: Rilapitypes.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILPOSITIONINFOUMTSPARAMMASK
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILPOSITIONINFOUMTSPARAMMASK
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILPOSITIONINFOUMTSPARAMMASK
+title : RILPOSITIONINFOUMTSPARAMMASK
+author : windows-driver-content
+description : This enumeration describes the RILPOSITIONINFOUMTSPARAMMASK.
+old-location : netvista\rilpositioninfoumtsparammask.htm
+old-project : netvista
+ms.assetid : fde2eb3f-ea12-45e6-93d1-7bdb0ea8c6b2
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILPOSITIONINFOUMTSPARAMMASK, RILPOSITIONINFOUMTSPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : Rilapitypes.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILPOSITIONINFOUMTSPARAMMASK
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILPOSITIONINFOUMTSPARAMMASK
+req.product : Windows 10 or later.
 ---
 
-# RILPOSITIONINFOUMTSPARAMMASK enumeration
+# RILPOSITIONINFOUMTSPARAMMASK Enumeration
 
 
-
-## -description
-
-## -syntax
-
+## Syntax
 ````
 enum RILPOSITIONINFOUMTSPARAMMASK {
   RIL_PARAM_POSITION_UMTS_MCC          = 0x00000001, 
@@ -62,49 +58,73 @@ enum RILPOSITIONINFOUMTSPARAMMASK {
 };
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_PARAM_POSITION_UMTS_MCC
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_ALL</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_CELLID</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_POSITION_UMTS_MNC
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_ECNO</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_FREQINFO_DL</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_POSITION_UMTS_LAC
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_FREQINFO_NT</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_FREQINFO_UL</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_POSITION_UMTS_CELLID
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_LAC</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_MCC</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_POSITION_UMTS_FREQINFO_UL
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_MNC</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_PATHLOSS</td>
+<td></td>
+</tr>
 
-### -field RIL_PARAM_POSITION_UMTS_FREQINFO_DL
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_PRIMARY_SC</td>
+<td></td>
+</tr>
 
+<tr>
+<td>RIL_PARAM_POSITION_UMTS_RSCP</td>
+<td></td>
+</tr>
+</table>
 
-### -field RIL_PARAM_POSITION_UMTS_FREQINFO_NT
+## Remarks
 
-
-### -field  RIL_PARAM_POSITION_UMTS_UARFCN
-
-
-### -field RIL_PARAM_POSITION_UMTS_PRIMARY_SC
-
-
-### -field RIL_PARAM_POSITION_UMTS_RSCP
-
-
-### -field RIL_PARAM_POSITION_UMTS_ECNO
-
-
-### -field RIL_PARAM_POSITION_UMTS_PATHLOSS
-
-
-### -field RIL_PARAM_POSITION_UMTS_ALL
-
-
-## -remarks
 Networks will vary, but the following table summarizes which items are returned for common UMTS networks. 
 
 <b>Serving network</b>
@@ -169,8 +189,16 @@ WCDMA layer frequency
 
 –25 through −120
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
@@ -181,4 +209,3 @@ WCDMA layer frequency
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFOUMTSPARAMMASK enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

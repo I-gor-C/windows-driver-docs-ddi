@@ -1,52 +1,45 @@
 ---
-UID: NS:d3d12umddi.D3D12DDIARG_CREATE_PIPELINE_STATE_0033
-title: D3D12DDIARG_CREATE_PIPELINE_STATE_0033
-author: windows-driver-content
-description: Creates a pipeline state.
-old-location: display\d3d12ddiarg-create-pipeline-state-0033.htm
-old-project: display
-ms.assetid: 2a9108ab-5852-4053-9a7a-266ae1b1dced
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDIARG_CREATE_PIPELINE_STATE_0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDIARG_CREATE_PIPELINE_STATE_0033
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDIARG_CREATE_PIPELINE_STATE_0033
+UID : NS:d3d12umddi.D3D12DDIARG_CREATE_PIPELINE_STATE_0033
+title : D3D12DDIARG_CREATE_PIPELINE_STATE_0033
+author : windows-driver-content
+description : Creates a pipeline state.
+old-location : display\d3d12ddiarg-create-pipeline-state-0033.htm
+old-project : display
+ms.assetid : 2a9108ab-5852-4053-9a7a-266ae1b1dced
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDIARG_CREATE_PIPELINE_STATE_0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDIARG_CREATE_PIPELINE_STATE_0033
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDIARG_CREATE_PIPELINE_STATE_0033
 ---
 
 # D3D12DDIARG_CREATE_PIPELINE_STATE_0033 structure
-
-
-
-## -description
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Creates a pipeline state.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDIARG_CREATE_PIPELINE_STATE_0033 {
   D3D12DDI_HSHADER                       hComputeShader;
@@ -73,112 +66,98 @@ typedef struct _D3D12DDIARG_CREATE_PIPELINE_STATE_0033 {
 } D3D12DDIARG_CREATE_PIPELINE_STATE_0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DSVFormat`
 
-### -field hComputeShader
+            The DSV format.
+        
+            `hBlendState`
 
-The compute shader.
+            The blend state.
+        
+            `hComputeShader`
 
+            The compute shader.
+        
+            `hDepthStencilState`
 
-### -field hVertexShader
+            The depth stencil state.
+        
+            `hDomainShader`
 
-The vertex shader.
+            The domain shader.
+        
+            `hElementLayout`
 
+            The element layout.
+        
+            `hGeometryShader`
 
-### -field hPixelShader
+            The geometry shader.
+        
+            `hHullShader`
 
-The pixel shader.
+            The hull shader.
+        
+            `hPixelShader`
 
+            The pixel shader.
+        
+            `hRasterizerState`
 
-### -field hDomainShader
+            The rasterizer state.
+        
+            `hRootSignature`
 
-The domain shader.
+            The root signature.
+        
+            `hVertexShader`
 
+            The vertex shader.
+        
+            `IBStripCutValue`
 
-### -field hHullShader
+            The index buffer strip cut value.
+        
+            `LibraryReference`
 
-The hull shader.
+            The library reference.
+        
+            `NodeMask`
 
+            Represents the set of nodes.
+        
+            `NumRenderTargets`
 
-### -field hGeometryShader
+            The number of render targets.
+        
+            `PrimitiveTopologyType`
 
-The geometry shader.
+            The primitive topology type.
+        
+            `RTVFormats`
 
+            The RTV formats.
+        
+            `SampleDesc`
 
-### -field hRootSignature
+            The sample description.
+        
+            `SampleMask`
 
-The root signature.
+            The sample mask.
+        
+            `ViewInstancingDesc`
 
+            The view instancing description.
 
-### -field hBlendState
 
-The blend state.
-
-
-### -field SampleMask
-
-The sample mask.
-
-
-### -field hRasterizerState
-
-The rasterizer state.
-
-
-### -field hDepthStencilState
-
-The depth stencil state.
-
-
-### -field hElementLayout
-
-The element layout.
-
-
-### -field IBStripCutValue
-
-The index buffer strip cut value.
-
-
-### -field PrimitiveTopologyType
-
-The primitive topology type.
-
-
-### -field NumRenderTargets
-
-The number of render targets.
-
-
-### -field RTVFormats
-
-The RTV formats.
-
-
-### -field DSVFormat
-
-The DSV format.
-
-
-### -field SampleDesc
-
-The sample description.
-
-
-### -field NodeMask
-
-Represents the set of nodes.
-
-
-### -field LibraryReference
-
-The library reference.
-
-
-### -field ViewInstancingDesc
-
-The view instancing description.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

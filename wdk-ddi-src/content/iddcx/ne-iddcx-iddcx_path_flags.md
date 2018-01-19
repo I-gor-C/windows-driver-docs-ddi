@@ -1,52 +1,43 @@
 ---
-UID: NE:iddcx.IDDCX_PATH_FLAGS
-title: IDDCX_PATH_FLAGS
-author: windows-driver-content
-description: Indicates the state of the path.
-old-location: display\iddcx_path_flags.htm
-old-project: display
-ms.assetid: f7a9b20a-753c-487d-a2d5-3e1c08317519
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: IDDCX_PATH_FLAGS,
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: iddcx.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDDCX_PATH_FLAGS
-req.alt-loc: iddcx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: _requires_same_
-req.typenames: 
+UID : NE:iddcx.IDDCX_PATH_FLAGS
+title : IDDCX_PATH_FLAGS
+author : windows-driver-content
+description : Indicates the state of the path.
+old-location : display\iddcx_path_flags.htm
+old-project : display
+ms.assetid : f7a9b20a-753c-487d-a2d5-3e1c08317519
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : IDDCX_PATH_FLAGS,
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : iddcx.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDDCX_PATH_FLAGS
+req.alt-loc : iddcx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : _requires_same_
+req.typenames : 
 ---
 
-# IDDCX_PATH_FLAGS enumeration
-
-
-
-## -description
+# IDDCX_PATH_FLAGS Enumeration
 Indicates the state of the path.
-                    
-                
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _IDDCX_PATH_FLAGS { 
   IDDCX_PATH_FLAGS_NONE     = 0,
@@ -55,28 +46,31 @@ typedef enum _IDDCX_PATH_FLAGS {
 } IDDCX_PATH_FLAGS;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field IDDCX_PATH_FLAGS_NONE
+<tr>
+<td>IDDCX_PATH_FLAGS_ACTIVE</td>
+<td>Indicates if this path is active</td>
+</tr>
 
+<tr>
+<td>IDDCX_PATH_FLAGS_CHANGED</td>
+<td>Indicates if this path has changed</td>
+</tr>
 
-                        
-                    Indicates that the path is not active and has not changed.
-
-
-### -field IDDCX_PATH_FLAGS_CHANGED
-
-
-                        Indicates if this path has changed
-                    
-
-
-### -field IDDCX_PATH_FLAGS_ACTIVE
-
-
-                        Indicates if this path is active
-                    
+<tr>
+<td>IDDCX_PATH_FLAGS_NONE</td>
+<td>Indicates that the path is not active and has not changed.</td>
+</tr>
+</table>
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | iddcx.h |

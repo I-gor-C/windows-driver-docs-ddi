@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.SeEtwWriteKMCveEvent
-title: SeEtwWriteKMCveEvent function
-author: windows-driver-content
-description: The SeEtwWriteKMCveEvent function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.
-old-location: devtest\seetwwritekmcveevent.htm
-old-project: devtest
-ms.assetid: 9CF6C8FC-869A-4667-9859-845BFF093549
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: SeEtwWriteKMCveEvent
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 10 and later versions of Windows
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SeEtwWriteKMCveEvent
-req.alt-loc: Ntoskrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntoskrnl.lib
-req.dll: Ntoskrnl.exe
-req.irql: 
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.SeEtwWriteKMCveEvent
+title : SeEtwWriteKMCveEvent function
+author : windows-driver-content
+description : The SeEtwWriteKMCveEvent function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.
+old-location : devtest\seetwwritekmcveevent.htm
+old-project : devtest
+ms.assetid : 9CF6C8FC-869A-4667-9859-845BFF093549
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : SeEtwWriteKMCveEvent
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 10 and later versions of Windows
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SeEtwWriteKMCveEvent
+req.alt-loc : Ntoskrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntoskrnl.lib
+req.dll : Ntoskrnl.exe
+req.irql : 
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # SeEtwWriteKMCveEvent function
+The <b> 	SeEtwWriteKMCveEvent</b> function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.
 
-
-
-## -description
-The <b> 	SeEtwWriteKMCveEvent</b> function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.   
-
-
-
-## -syntax
+## Syntax
 
 ````
 __checkReturn HRESULT NTStatus SeEtwWriteKMCveEvent(
@@ -53,20 +48,19 @@ __checkReturn HRESULT NTStatus SeEtwWriteKMCveEvent(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param CveId [in]
+`CveId`
 
 A pointer to a string mentioning the CVE-ID associated with the vulnerability for which this event is being raised. Technical guidance for handling the CVE-ID is shared <a href="ttp://go.microsoft.com/fwlink/?LinkId=798519">here</a>
 
-
-### -param AdditionalDetails [in, optional]
+`AdditionalDetails`
 
 A pointer to a string giving additional details that the event producer may want to provide to the consumer of this event.
 
 
-## -returns
+## Return Value
+
 <b>SeEtwWriteKMCveEvent</b> returns one of the following values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -75,10 +69,8 @@ A pointer to a string giving additional details that the event producer may want
 <dt><b>ERROR_INVALID_PARAMETER</b></dt>
 </dl>Invalid pointer to CVE-ID passed
 
- 
+## Remarks
 
-
-## -remarks
 The <b> 	SeEtwWriteKMCveEvent</b> function publishes a CVE-based event. This function should be called only in scenarios where an attempt to exploit a known, patched vulnerability is detected by the application. Ideally, this function call should be added as part of the fix (update) itself. 
  The default consumer for this event is EventLog-System. To enable another consumer, the provider can be added to the consumer session.
 
@@ -86,3 +78,15 @@ The <b> 	SeEtwWriteKMCveEvent</b> function publishes a CVE-based event. This fun
 Provider GUID: 85a62a0d-7e17-485f-9d4f-749a287193a6
 
 Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

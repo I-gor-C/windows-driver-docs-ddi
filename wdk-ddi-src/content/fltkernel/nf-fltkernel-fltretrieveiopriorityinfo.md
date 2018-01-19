@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltRetrieveIoPriorityInfo
-title: FltRetrieveIoPriorityInfo function
-author: windows-driver-content
-description: The FltRetrieveIoPriorityInfo routine is used by a minifilter driver to retrieve priority information from a thread.
-old-location: ifsk\fltretrieveiopriorityinfo.htm
-old-project: ifsk
-ms.assetid: b764e55e-e58b-4a4f-a32f-84e3cfd5f8c4
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltRetrieveIoPriorityInfo
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltRetrieveIoPriorityInfo
-req.alt-loc: FltMgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fltmgr.lib
-req.dll: FltMgr.sys
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltRetrieveIoPriorityInfo
+title : FltRetrieveIoPriorityInfo function
+author : windows-driver-content
+description : The FltRetrieveIoPriorityInfo routine is used by a minifilter driver to retrieve priority information from a thread.
+old-location : ifsk\fltretrieveiopriorityinfo.htm
+old-project : ifsk
+ms.assetid : b764e55e-e58b-4a4f-a32f-84e3cfd5f8c4
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltRetrieveIoPriorityInfo
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltRetrieveIoPriorityInfo
+req.alt-loc : FltMgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fltmgr.lib
+req.dll : FltMgr.sys
+req.irql : <= DISPATCH_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltRetrieveIoPriorityInfo function
-
-
-
-## -description
 The <b>FltRetrieveIoPriorityInfo</b> routine is used by a minifilter driver to retrieve priority information from a thread.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltRetrieveIoPriorityInfo(
@@ -54,36 +49,31 @@ NTSTATUS FltRetrieveIoPriorityInfo(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Data`
 
-### -param Data [in, optional]
+An optional pointer to a <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> structure, which represents an I/O operation.  This parameter can be <b>NULL</b>.
 
-
-      An optional pointer to a <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> structure, which represents an I/O operation.  This parameter can be <b>NULL</b>.
-     
-
-
-### -param FileObject [in, optional]
+`FileObject`
 
 An optional pointer to the file object associated with the I/O operation.  This parameter can be <b>NULL</b>.
 
-
-### -param Thread [in, optional]
+`Thread`
 
 An optional pointer to the thread in which to retrieve priority information from.  This parameter can be <b>NULL</b>.
 
-
-### -param PriorityInfo [in, out]
+`PriorityInfo`
 
 A pointer to an <a href="..\ntifs\ns-ntifs-_io_priority_info.md">IO_PRIORITY_INFO</a> structure used to receive the priority information from the given thread.  The IO_PRIORITY_INFO structure must be initialized by an appropriate routine before it can be used by this routine. See the following Remarks section for more information.
 
 
-## -returns
+## Return Value
+
 The <b>FltRetrieveIoPriorityInfo</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value.
 
+## Remarks
 
-## -remarks
 The <b>FltRetrieveIoPriorityInfo</b> routine retrieves priority information and saves the information in the structure pointed to by the <i>PriorityInfo</i> parameter.
 
 Typically, the <b>FltRetrieveIoPriorityInfo</b> routine is used in conjunction with the <a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a> routine to save and then set a thread's I/O priority, paging priority, and thread priority.
@@ -97,9 +87,20 @@ The following pseudo-code example describes what I/O priority value is retrieved
      If the IO_PRIORITY_INFO structure pointed to by the <i>PriorityInfo</i> parameter has not been initialized, you must do so prior to calling this routine, by calling the <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a> routine.</div>
 <div> </div>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
@@ -138,7 +139,7 @@ The following pseudo-code example describes what I/O priority value is retrieved
 <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a>
 </dt>
 <dt>
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
  
@@ -146,4 +147,3 @@ The following pseudo-code example describes what I/O priority value is retrieved
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltRetrieveIoPriorityInfo routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

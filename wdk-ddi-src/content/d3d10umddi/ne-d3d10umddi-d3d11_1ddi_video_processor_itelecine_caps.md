@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
-title: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
-author: windows-driver-content
-description: Specifies the inverse telecine (IVTC) capabilities of a video processor.
-old-location: display\d3d11_1ddi_video_processor_itelecine_caps.htm
-old-project: display
-ms.assetid: 866203d9-9621-4458-b146-be90e67c1c7c
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
-req.alt-loc: D3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
+UID : NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
+title : D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
+author : windows-driver-content
+description : Specifies the inverse telecine (IVTC) capabilities of a video processor.
+old-location : display\d3d11_1ddi_video_processor_itelecine_caps.htm
+old-project : display
+ms.assetid : 866203d9-9621-4458-b146-be90e67c1c7c
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
+req.alt-loc : D3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
 ---
 
-# D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS enumeration
-
-
-
-## -description
+# D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS Enumeration
 Specifies the inverse telecine (IVTC) capabilities of a video processor.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS { 
   D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32            = 0x1,
@@ -60,57 +53,66 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS {
 } D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22</td>
+<td>The video processor can reverse 2:2 pulldown.</td>
+</tr>
 
-The video processor can reverse 3:2 pulldown.
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223</td>
+<td>The video processor can reverse 2:2:2:2:2:2:2:2:2:2:2:3 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2224</td>
+<td>The video processor can reverse 2:2:2:4 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2332</td>
+<td>The video processor can reverse 2:3:3:2 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32</td>
+<td>The video processor can reverse 3:2 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32322</td>
+<td>The video processor can reverse 3:2:3:2:2 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_55</td>
+<td>The video processor can reverse 5:5 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_64</td>
+<td>The video processor can reverse 6:4 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_87</td>
+<td>The video processor can reverse 8:7 pulldown.</td>
+</tr>
+
+<tr>
+<td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_OTHER</td>
+<td>The video processor can reverse other telecine modes not listed here.</td>
+</tr>
+</table>
 
 
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22
-
-The video processor can reverse 2:2 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2224
-
-The video processor can reverse 2:2:2:4 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2332
-
-The video processor can reverse 2:3:3:2 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32322
-
-The video processor can reverse 3:2:3:2:2 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_55
-
-The video processor can reverse 5:5 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_64
-
-The video processor can reverse 6:4 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_87
-
-The video processor can reverse 8:7 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223
-
-The video processor can reverse 2:2:2:2:2:2:2:2:2:2:2:3 pulldown.
-
-
-### -field D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_OTHER
-
-The video processor can reverse other telecine modes not listed here.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |

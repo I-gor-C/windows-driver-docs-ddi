@@ -1,80 +1,72 @@
 ---
-UID: NC:ndis.MINIPORT_INITIALIZE
-title: MINIPORT_INITIALIZE function
-author: windows-driver-content
-description: NDIS calls a miniport driver's MiniportInitializeEx function to initialize a miniport adapter for network I/O operations.
-old-location: netvista\miniportinitializeex.htm
-old-project: netvista
-ms.assetid: b146fa81-005b-4a6c-962d-4cb023ea790e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: MINIPORT_INITIALIZE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportInitializeEx
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.MINIPORT_INITIALIZE
+title : MINIPORT_INITIALIZE
+author : windows-driver-content
+description : NDIS calls a miniport driver's MiniportInitializeEx function to initialize a miniport adapter for network I/O operations.
+old-location : netvista\miniportinitializeex.htm
+old-project : netvista
+ms.assetid : b146fa81-005b-4a6c-962d-4cb023ea790e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportInitializeEx
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # MINIPORT_INITIALIZE function
-
-
-
-## -description
 NDIS calls a miniport driver's
    <i>MiniportInitializeEx</i> function to initialize a miniport adapter for network I/O operations.
 
+## Syntax
 
+```
+MINIPORT_INITIALIZE MiniportInitialize;
 
-## -syntax
-
-````
-MINIPORT_INITIALIZE MiniportInitializeEx;
-
-NDIS_STATUS MiniportInitializeEx(
-  _In_ NDIS_HANDLE                    NdisMiniportHandle,
-  _In_ NDIS_HANDLE                    MiniportDriverContext,
-  _In_ PNDIS_MINIPORT_INIT_PARAMETERS MiniportInitParameters
+NDIS_STATUS MiniportInitialize(
+  NDIS_HANDLE NdisMiniportHandle,
+  NDIS_HANDLE MiniportDriverContext,
+  PNDIS_MINIPORT_INIT_PARAMETERS MiniportInitParameters
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param NdisMiniportHandle [in]
+`NdisMiniportHandle`
 
 An NDIS-supplied handle that identifies the miniport adapter that the miniport driver should
      initialize.
 
-
-### -param MiniportDriverContext [in]
+`MiniportDriverContext`
 
 A handle to a driver-allocated context area where the driver maintains state and configuration
      information. The miniport driver passed this context area to the 
      <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function.
 
-
-### -param MiniportInitParameters [in]
+`MiniportInitParameters`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">
@@ -82,7 +74,8 @@ A pointer to an
      miniport adapter.
 
 
-## -returns
+## Return Value
+
 <i>MiniportInitializeEx</i> can return one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -107,10 +100,8 @@ A pointer to an
        should call 
        <b>NdisWriteErrorLogEntry</b> with parameters that specify the reason for the failure.
 
- 
+## Remarks
 
-
-## -remarks
 NDIS calls 
     <i>MiniportInitializeEx</i> as part of a system PnP operation. Drivers specify the 
     <i>MiniportInitializeEx</i> entry point by calling the 
@@ -119,7 +110,7 @@ NDIS calls
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. NDIS can call 
     <i>MiniportInitializeEx</i> after 
     <b>DriverEntry</b> returns. For more information, see 
-    <a href="netvista.driverentry_of_ndis_miniport_drivers">DriverEntry of NDIS
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548818">DriverEntry of NDIS
     Miniport Drivers</a>.
 
 For NDIS intermediate drivers, NDIS can call 
@@ -315,10 +306,22 @@ Then, implement your function as follows:
 
 The <b>MINIPORT_INITIALIZE</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_INITIALIZE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
@@ -444,4 +447,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_INITIALIZE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

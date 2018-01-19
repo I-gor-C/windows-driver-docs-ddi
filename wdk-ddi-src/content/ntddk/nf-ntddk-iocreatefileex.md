@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.IoCreateFileEx
-title: IoCreateFileEx function
-author: windows-driver-content
-description: The IoCreateFileEx routine either causes a new file or directory to be created, or opens an existing file, device, directory, or volume and gives the caller a handle for the file object.
-old-location: ifsk\iocreatefileex.htm
-old-project: ifsk
-ms.assetid: 47d5e7e2-bc97-4413-b1ca-ef958288902c
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: IoCreateFileEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h, Ntifs.h, FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoCreateFileEx
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.IoCreateFileEx
+title : IoCreateFileEx function
+author : windows-driver-content
+description : The IoCreateFileEx routine either causes a new file or directory to be created, or opens an existing file, device, directory, or volume and gives the caller a handle for the file object.
+old-location : ifsk\iocreatefileex.htm
+old-project : ifsk
+ms.assetid : 47d5e7e2-bc97-4413-b1ca-ef958288902c
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : IoCreateFileEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h, Ntifs.h, FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoCreateFileEx
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # IoCreateFileEx function
-
-
-
-## -description
 The <b>IoCreateFileEx</b> routine either causes a new file or directory to be created, or opens an existing file, device, directory, or volume and gives the caller a handle for the file object.  File system filter drivers (legacy filter drivers) call this routine.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS IoCreateFileEx(
@@ -65,15 +60,13 @@ NTSTATUS IoCreateFileEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileHandle [out]
+`FileHandle`
 
 A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> as soon as the handle is no longer being used.
 
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 A bitmask of flags (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>) that specifies the type of access that the caller requires to the file or directory. This set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects.
 
@@ -289,11 +282,9 @@ The directory can be traversed, that is, it can be part of the pathname of a fil
 
 The FILE_READ_DATA, FILE_WRITE_DATA, FILE_EXECUTE, and FILE_APPEND_DATA <i>DesiredAccess</i> flags are incompatible with creating or opening a directory file.
 
+`ObjectAttributes`
 
-### -param ObjectAttributes [in]
-
-
-      A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure already initialized by the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object include the following.
+A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure already initialized by the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object include the following.
       
 
 <table>
@@ -352,10 +343,8 @@ A set of flags that controls the file object attributes. If the caller is runnin
 </td>
 </tr>
 </table>
- 
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to a variable of type <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> that receives the final completion status and information about the requested operation. On return from <b>IoCreateFileEx</b>, the <b>Information</b> member of the variable contains one of the following values:
 
@@ -368,12 +357,11 @@ A pointer to a variable of type <a href="..\wdm\ns-wdm-_io_status_block.md">IO_S
 <li>FILE_DOES_NOT_EXIST</li>
 </ul>
 
-### -param AllocationSize [in, optional]
+`AllocationSize`
 
 Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded.
 
-
-### -param FileAttributes [in]
+`FileAttributes`
 
 Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by any other flag or by a combination (through a bitwise OR operation) of compatible flags. Possible <i>FileAttributes</i> flags include the following.
 
@@ -443,10 +431,8 @@ A temporary file should be created.
 </td>
 </tr>
 </table>
- 
 
-
-### -param ShareAccess [in]
+`ShareAccess`
 
 Specifies the type of share access to the file that the caller would like, as zero, or one, or a combination of the following flags. To request exclusive access, set this parameter to zero. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Options</i> parameter, the I/O manager ignores the <i>ShareAccess</i> parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when you use the IO_IGNORE_SHARE_ACCESS_CHECK flag. To help you avoid sharing violation errors, specify all the following share access flags.
 
@@ -490,8 +476,7 @@ The file can be opened for delete access by other threads' calls to <b>IoCreateF
 
 Device drivers and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.
 
-
-### -param Disposition [in]
+`Disposition`
 
 One of the following values can be used to specify how the file should be handled when the file already exists.
 
@@ -561,10 +546,8 @@ If the file already exists, open it and overwrite it. If it does not, create the
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateOptions [in]
+`CreateOptions`
 
 Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags.
 
@@ -746,30 +729,24 @@ This flag allows an application to request a filter opportunistic lock (oplock) 
 </td>
 </tr>
 </table>
- 
 
-
-### -param EaBuffer [in, optional]
+`EaBuffer`
 
 A pointer to a caller-supplied variable of type <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a> that contains extended attribute (EA) information to be applied to the file.  For device and intermediate drivers, this parameter must be <b>NULL</b>.
 
-
-### -param EaLength [in]
+`EaLength`
 
 Length, in bytes, of <i>EaBuffer</i>.  For device drivers and intermediate drivers, this parameter must be zero.
 
-
-### -param CreateFileType [in]
+`CreateFileType`
 
 Drivers must set this parameter to CreateFileTypeNone.
 
-
-### -param InternalParameters [in, optional]
+`InternalParameters`
 
 Drivers must set this parameter to <b>NULL</b>.
 
-
-### -param Options [in]
+`Options`
 
 Specifies options to be used during the generation of the create request. Zero or more of the following bit flag values can be used.
 
@@ -829,15 +806,14 @@ Open the file's parent directory.
 </td>
 </tr>
 </table>
- 
 
-
-### -param DriverContext [in, optional]
+`DriverContext`
 
 An optional pointer to an <a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a> structure that was previously initialized by the <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine.  The IO_DRIVER_CREATE_CONTEXT structure can be used to pass additional parameters to the <b>IoCreateFileEx</b> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routines.  See the following Remarks section for more information.
 
 
-## -returns
+## Return Value
+
 <b>IoCreateFileEx</b> either returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_OBJECT_PARAMETER</b></dt>
@@ -860,11 +836,8 @@ An optional pointer to an <a href="..\ntddk\ns-ntddk-_io_driver_create_context.m
 
 If the <b>IoCreateFileEx</b> routine returns an error status, the caller can find additional information about the cause of the failure by checking the <i>IoStatusBlock</i> parameter.
 
+## Remarks
 
-
-
-
-## -remarks
 The <b>IoCreateFileEx</b> routine is similar to both the <a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a> routine and the <a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a> routine but offers additional functionality including access to extra create parameters (ECPs), device objects hints, and transaction information through the <b>IoCreateFileEx</b> routine's <i>DriverContext</i> parameter.  For more information about these structure based parameters, see <a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a>.
 
 File system filter drivers call <b>IoCreateFileEx</b> to send a create request only to a specified device object, the filters attached below it, and the file system. Filters attached above the specified device object in the driver stack do not receive the create request.  However, if the <b>DeviceObjectHint</b> member of the IO_DRIVER_CREATE_CONTEXT structure (passed through the <i>DriverContext</i> parameter) is <b>NULL</b>, the request goes to the top of the stack and is received by all filters and the file system.
@@ -945,8 +918,20 @@ If the I/O request does not go to the top of the driver stack, that is if the <i
 
  If the file name path that is passed to the <b>IoCreateFileEx</b> routine contains a mount point, the mount point must resolve to the same volume where the file or directory resides.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h, Ntifs.h, FltKernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -1017,4 +1002,3 @@ If the I/O request does not go to the top of the driver stack, that is if the <i
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCreateFileEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

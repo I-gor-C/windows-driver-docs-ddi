@@ -1,261 +1,89 @@
 ---
-UID: NN:dbgeng.IDebugSymbolGroup2
-title: IDebugSymbolGroup2
-author: windows-driver-content
-description: IDebugSymbolGroup2 interface
-old-location: debugger\idebugsymbolgroup2.htm
-old-project: debugger
-ms.assetid: d702fe69-966c-4b9a-aa0e-b8376288cb79
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitThreadDataOffset, SetImplicitThreadDataOffset
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugSymbolGroup2
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NN:dbgeng.IDebugSymbolGroup2
+title : IDebugSymbolGroup2
+author : windows-driver-content
+description : IDebugSymbolGroup2 interface
+old-location : debugger\idebugsymbolgroup2.htm
+old-project : debugger
+ms.assetid : d702fe69-966c-4b9a-aa0e-b8376288cb79
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitThreadDataOffset, SetImplicitThreadDataOffset
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugSymbolGroup2
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 # IDebugSymbolGroup2 interface
 
 
 
-## -description
+## Methods
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbolGroup2</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>. <b>IDebugSymbolGroup2</b> also has these types of members:
+<p>The <b>IDebugSymbolGroup2</b> interface has these methods.</p>
 
-The <b>IDebugSymbolGroup2</b> interface has these methods.
+| Method | Description |
+| ---- |:---- |
+| [dbgeng.IDebugSymbolGroup2.AddSymbol](nf-dbgeng-idebugsymbolgroup2-addsymbol.md) | The AddSymbol method adds a symbol to a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.AddSymbolWide](nf-dbgeng-idebugsymbolgroup2-addsymbolwide.md) | The AddSymbolWide method adds a symbol to a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.ExpandSymbol](nf-dbgeng-idebugsymbolgroup2-expandsymbol.md) | The ExpandSymbol method adds or removes the children of a symbol from a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.GetNumberSymbols](nf-dbgeng-idebugsymbolgroup2-getnumbersymbols.md) | The GetNumberSymbols method returns the number of symbols that are contained in a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolEntryInformation](nf-dbgeng-idebugsymbolgroup2-getsymbolentryinformation.md) | The GetSymbolEntryInformation method returns information about a symbol in a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolName](nf-dbgeng-idebugsymbolgroup2-getsymbolname.md) | The GetSymbolName method returns the name of a symbol in a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolNameWide](nf-dbgeng-idebugsymbolgroup2-getsymbolnamewide.md) | The GetSymbolNameWide method returns the name of a symbol in a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolOffset](nf-dbgeng-idebugsymbolgroup2-getsymboloffset.md) | The GetSymbolOffset method retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolParameters](nf-dbgeng-idebugsymbolgroup2-getsymbolparameters.md) | The GetSymbolParameters method returns the symbol parameters that describe the specified symbols in a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolRegister](nf-dbgeng-idebugsymbolgroup2-getsymbolregister.md) | The GetSymbolRegister method returns the register that contains the value or a pointer to the value of a symbol in a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolSize](nf-dbgeng-idebugsymbolgroup2-getsymbolsize.md) | The GetSymbolSize method returns the size of a symbol's value. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolTypeName](nf-dbgeng-idebugsymbolgroup2-getsymboltypename.md) | The GetSymbolTypeName methods return the name of the specified symbol's type. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolTypeNameWide](nf-dbgeng-idebugsymbolgroup2-getsymboltypenamewide.md) | The GetSymbolTypeNameWide method returns the name of the specified symbol's type. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolValueText](nf-dbgeng-idebugsymbolgroup2-getsymbolvaluetext.md) | The GetSymbolValueText method returns a string that represents the value of a symbol. |
+| [dbgeng.IDebugSymbolGroup2.GetSymbolValueTextWide](nf-dbgeng-idebugsymbolgroup2-getsymbolvaluetextwide.md) | The GetSymbolValueTextWide method returns a string that represents the value of a symbol. |
+| [dbgeng.IDebugSymbolGroup2.OutputAsType](nf-dbgeng-idebugsymbolgroup2-outputastype.md) | The OutputAsType method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type. |
+| [dbgeng.IDebugSymbolGroup2.OutputAsTypeWide](nf-dbgeng-idebugsymbolgroup2-outputastypewide.md) | The OutputAsTypeWide method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type. |
+| [dbgeng.IDebugSymbolGroup2.OutputSymbols](nf-dbgeng-idebugsymbolgroup2-outputsymbols.md) | The OutputSymbols method prints the specified symbols to the debugger console. |
+| [dbgeng.IDebugSymbolGroup2.RemoveSymbolByIndex](nf-dbgeng-idebugsymbolgroup2-removesymbolbyindex.md) | The RemoveSymbolByIndex method removes the specified symbol from a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.RemoveSymbolByName](nf-dbgeng-idebugsymbolgroup2-removesymbolbyname.md) | The RemoveSymbolByName method removes the specified symbol from a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.RemoveSymbolByNameWide](nf-dbgeng-idebugsymbolgroup2-removesymbolbynamewide.md) | The RemoveSymbolByNameWide method removes the specified symbol from a symbol group. |
+| [dbgeng.IDebugSymbolGroup2.WriteSymbol](nf-dbgeng-idebugsymbolgroup2-writesymbol.md) | The WriteSymbol methods set the value of the specified symbol. |
+| [dbgeng.IDebugSymbolGroup2.WriteSymbolWide](nf-dbgeng-idebugsymbolgroup2-writesymbolwide.md) | The WriteSymbolWide method sets the value of the specified symbol. |
 
-Adds a symbol to a symbol group.
-
-
-Returns information about a symbol in a symbol group.
-
-Returns the name of a symbol in a symbol group.
-
-
-Retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address.
-
-Returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
-
-
-Returns the size of a symbol's value.
-
-Returns the name of the specified symbol's type.
-(ANSI version)
-
-Returns the name of the specified symbol's type.
-(Unicode version)
-
-Returns a string that represents the value of a symbol.
-(ANSI version)
-
-Returns a string that represents the value of a symbol.
-(Unicode version)
-
-Changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
-
-Removes the specified symbol from a symbol group.
+## Remarks
 
 
-Sets the value of the specified symbol.
 
- 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **DLL** |  |
 
+    ## See Also
 
-## -members
-The <b>IDebugSymbolGroup2</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537934">AddSymbolWide</a>
-</td>
-<td align="left" width="63%">
-Adds a symbol to a symbol group.
-
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548484">GetSymbolEntryInformation</a>
-</td>
-<td align="left" width="63%">
-Returns information about a symbol in a symbol group.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549129">GetSymbolNameWide</a>
-</td>
-<td align="left" width="63%">
-Returns the name of a symbol in a symbol group.
-
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549135">GetSymbolOffset</a>
-</td>
-<td align="left" width="63%">
-Retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549165">GetSymbolRegister</a>
-</td>
-<td align="left" width="63%">
-Returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
-
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549169">GetSymbolSize</a>
-</td>
-<td align="left" width="63%">
-Returns the size of a symbol's value.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549188">GetSymbolTypeName</a>
-</td>
-<td align="left" width="63%">
-Returns the name of the specified symbol's type.
-(ANSI version)
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549192">GetSymbolTypeNameWide</a>
-</td>
-<td align="left" width="63%">
-Returns the name of the specified symbol's type.
-(Unicode version)
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
-</td>
-<td align="left" width="63%">
-Returns a string that represents the value of a symbol.
-(ANSI version)
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549208">GetSymbolValueTextWide</a>
-</td>
-<td align="left" width="63%">
-Returns a string that represents the value of a symbol.
-(Unicode version)
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553198">OutputAsTypeWide</a>
-</td>
-<td align="left" width="63%">
-Changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554526">RemoveSymbolByNameWide</a>
-</td>
-<td align="left" width="63%">
-Removes the specified symbol from a symbol group.
-
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561460">WriteSymbolWide</a>
-</td>
-<td align="left" width="63%">
-Sets the value of the specified symbol.
-
-</td>
-</tr>
-</table>Adds a symbol to a symbol group.
-
-
-Returns information about a symbol in a symbol group.
-
-Returns the name of a symbol in a symbol group.
-
-
-Retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address.
-
-Returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
-
-
-Returns the size of a symbol's value.
-
-Returns the name of the specified symbol's type.
-(ANSI version)
-
-Returns the name of the specified symbol's type.
-(Unicode version)
-
-Returns a string that represents the value of a symbol.
-(ANSI version)
-
-Returns a string that represents the value of a symbol.
-(Unicode version)
-
-Changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
-
-Removes the specified symbol from a symbol group.
-
-
-Sets the value of the specified symbol.
-
- 
-
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 </dt>
@@ -265,4 +93,3 @@ Sets the value of the specified symbol.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2 interface%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

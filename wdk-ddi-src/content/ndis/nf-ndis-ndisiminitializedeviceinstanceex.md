@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisIMInitializeDeviceInstanceEx
-title: NdisIMInitializeDeviceInstanceEx function
-author: windows-driver-content
-description: The NdisIMInitializeDeviceInstanceEx function initiates the initialization operation for a virtual miniport and optionally sets up state information about the virtual miniport for subsequently bound protocol drivers.
-old-location: netvista\ndisiminitializedeviceinstanceex.htm
-old-project: netvista
-ms.assetid: f65c2974-4bf4-4948-ac07-527e69c96303
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisIMInitializeDeviceInstanceEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMInitializeDeviceInstanceEx (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisIMInitializeDeviceInstanceEx (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisIMInitializeDeviceInstanceEx
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_IM_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisIMInitializeDeviceInstanceEx
+title : NdisIMInitializeDeviceInstanceEx function
+author : windows-driver-content
+description : The NdisIMInitializeDeviceInstanceEx function initiates the initialization operation for a virtual miniport and optionally sets up state information about the virtual miniport for subsequently bound protocol drivers.
+old-location : netvista\ndisiminitializedeviceinstanceex.htm
+old-project : netvista
+ms.assetid : f65c2974-4bf4-4948-ac07-527e69c96303
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisIMInitializeDeviceInstanceEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMInitializeDeviceInstanceEx (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisIMInitializeDeviceInstanceEx (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisIMInitializeDeviceInstanceEx
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_IM_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisIMInitializeDeviceInstanceEx function
-
-
-
-## -description
 The
   <b>NdisIMInitializeDeviceInstanceEx</b> function initiates the initialization operation for a virtual
   miniport and optionally sets up state information about the virtual miniport for subsequently bound
   protocol drivers.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisIMInitializeDeviceInstanceEx(
@@ -56,18 +51,16 @@ NDIS_STATUS NdisIMInitializeDeviceInstanceEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DriverHandle [in]
+`DriverHandle`
 
 The miniport driver handle that the 
      <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function returns at 
      <i>NdisMiniportDriverHandle</i> .
 
-
-### -param DriverInstance [in]
+`DriverInstance`
 
 A pointer to an NDIS_STRING type that describes a caller-initialized counted string in the
      system-default character set. The string contains the name of the registry key in which the driver
@@ -76,8 +69,7 @@ A pointer to an NDIS_STRING type that describes a caller-initialized counted str
      later, NDIS defines the NDIS_STRING type as a 
      <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> type.
 
-
-### -param DeviceContext [in, optional]
+`DeviceContext`
 
 A pointer to caller-supplied memory to be set up with driver-defined device context information
      about the virtual miniport, which still higher level protocol drivers that subsequently bind themselves
@@ -85,7 +77,8 @@ A pointer to caller-supplied memory to be set up with driver-defined device cont
      device context area.
 
 
-## -returns
+## Return Value
+
 <b>NdisIMInitializeDeviceInstanceEx</b> can return either of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -96,10 +89,8 @@ A pointer to caller-supplied memory to be set up with driver-defined device cont
 </dl><b>NdisIMInitializeDeviceInstanceEx</b> failed because the device specified by 
        <i>DriverHandle</i> has already been initialized.
 
- 
+## Remarks
 
-
-## -remarks
 An NDIS intermediate driver should call 
     <b>NdisIMInitializeDeviceInstanceEx</b> from its 
     <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function. A
@@ -165,8 +156,20 @@ After NDIS calls an intermediate driver's
     <a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
     NdisIMDeInitializeDeviceInstance</a> to reverse the initialization operation.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_IM_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
@@ -217,4 +220,3 @@ After NDIS calls an intermediate driver's
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMInitializeDeviceInstanceEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltCreateFileEx2
-title: FltCreateFileEx2 function
-author: windows-driver-content
-description: Minifilter drivers call FltCreateFileEx2 to create a new file or open an existing file. This routine also includes an optional create context parameter.
-old-location: ifsk\fltcreatefileex2.htm
-old-project: ifsk
-ms.assetid: e662472d-4d72-449e-91d7-119bd59e0943
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltCreateFileEx2
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltCreateFileEx2
-req.alt-loc: Fltmgr.lib,Fltmgr.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fltmgr.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltCreateFileEx2
+title : FltCreateFileEx2 function
+author : windows-driver-content
+description : Minifilter drivers call FltCreateFileEx2 to create a new file or open an existing file. This routine also includes an optional create context parameter.
+old-location : ifsk\fltcreatefileex2.htm
+old-project : ifsk
+ms.assetid : e662472d-4d72-449e-91d7-119bd59e0943
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltCreateFileEx2
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltCreateFileEx2
+req.alt-loc : Fltmgr.lib,Fltmgr.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fltmgr.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltCreateFileEx2 function
-
-
-
-## -description
 Minifilter drivers call <b>FltCreateFileEx2</b> to create a new file or open an existing file.  This routine also includes an optional create context parameter.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltCreateFileEx2(
@@ -66,30 +61,25 @@ NTSTATUS FltCreateFileEx2(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Filter`
 
-### -param Filter [in]
+An opaque filter pointer for the caller.
 
-An opaque filter pointer for the caller. 
+`Instance`
 
+An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume where the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If this parameter is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance.
 
-### -param Instance [in, optional]
+`FileHandle`
 
-An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume where the file or directory resides. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If this parameter is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance. 
+A pointer to a caller-allocated variable that receives the file handle if the call to <b>FltCreateFileEx2</b> is successful.
 
+`FileObject`
 
-### -param FileHandle [out]
+A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateFileEx2</b> is successful. This parameter is optional and can be <b>NULL</b>.
 
-A pointer to a caller-allocated variable that receives the file handle if the call to <b>FltCreateFileEx2</b> is successful. 
-
-
-### -param FileObject [out, optional]
-
-A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateFileEx2</b> is successful. This parameter is optional and can be <b>NULL</b>. 
-
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. 
 
@@ -301,10 +291,8 @@ The directory can be traversed: that is, it can be part of the pathname of a fil
 </td>
 </tr>
 </table>
- 
 
-
-### -param ObjectAttributes [in]
+`ObjectAttributes`
 
 A pointer to an opaque <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that is already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object are listed in the following table. 
 
@@ -364,10 +352,8 @@ A set of flags that controls the file object attributes. If the caller is runnin
 </td>
 </tr>
 </table>
- 
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateFileEx2</b>, the <b>Information</b> member of the variable contains one of the following values.
 
@@ -398,12 +384,11 @@ FILE_DOES_NOT_EXIST
 </dd>
 </dl>
 
-### -param AllocationSize [in, optional]
+`AllocationSize`
 
-Optionally specifies the initial allocation size, in bytes, for the file stream. A nonzero value has no effect unless the file is being created, overwritten, or superseded. 
+Optionally specifies the initial allocation size, in bytes, for the file stream. A nonzero value has no effect unless the file is being created, overwritten, or superseded.
 
-
-### -param FileAttributes [in]
+`FileAttributes`
 
 Specifies one or more of the following FILE_ATTRIBUTE_<i>XXX</i> flags, which represent the file attributes to set if you are creating, superseding, or overwriting a file. Normally, you specify FILE_ATTRIBUTE_NORMAL, which sets the default attributes. 
 
@@ -473,10 +458,8 @@ A temporary file should be created.
 </td>
 </tr>
 </table>
- 
 
-
-### -param ShareAccess [in]
+`ShareAccess`
 
 Specifies the type of share access to the file that the caller requires, as zero or one, or a combination of the following flags. If the IO_IGNORE_SHARE_ACCESS_CHECK flag is specified in the <i>Flags</i> parameter, the I/O manager ignores this parameter. However, the file system might still perform access checks. Thus, it is important to specify the sharing mode you would like for this parameter, even when using the IO_IGNORE_SHARE_ACCESS_CHECK flag. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. 
 
@@ -516,10 +499,8 @@ The file can be opened for delete access by other threads' calls to <b>FltCreate
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateDisposition [in]
+`CreateDisposition`
 
 Specifies a value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described in the following table. 
 
@@ -589,10 +570,8 @@ If the file already exists, open it and overwrite it. If it does not, create the
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateOptions [in]
+`CreateOptions`
 
 Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags. 
 
@@ -774,20 +753,16 @@ This flag allows an application to request a Filter opportunistic lock (oplock) 
 </td>
 </tr>
 </table>
- 
 
+`EaBuffer`
 
-### -param EaBuffer [in, optional]
+A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a> buffer that contains extended attribute (EA) information to be applied to the file.
 
-A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a> buffer that contains extended attribute (EA) information to be applied to the file. 
+`EaLength`
 
+Length, in bytes, of <i>EaBuffer</i>.
 
-### -param EaLength [in]
-
-Length, in bytes, of <i>EaBuffer</i>. 
-
-
-### -param Flags [in]
+`Flags`
 
 Specifies options to be used during the creation of the create request. The following table lists the available options. 
 
@@ -837,15 +812,14 @@ Indicates that the parameters for this call should not be validated before attem
 </td>
 </tr>
 </table>
- 
 
-
-### -param DriverContext [in, optional]
+`DriverContext`
 
 Optional pointer to an <a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a> structure already initialized by <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>.
 
 
-## -returns
+## Return Value
+
 <b>FltCreateFileEx2</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
@@ -863,10 +837,8 @@ Optional pointer to an <a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>This value will be returned if the <i>DriverContext</i> parameter points to a valid IO_DRIVER_CREATE_CONTEXT structure and the <b>DeviceObjectHint</b> member of this structure is not <b>NULL</b>. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 <b>FltCreateFileEx2</b> is similar to <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>, except that it supports the new <i>DriverContext</i> input parameter.
 
 To specify an extra create parameter (ECP) as part of a create operation, initialize the <b>ExtraCreateParameter</b> member of the IO_DRIVER_CREATE_CONTEXT structure with the <a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a> routine.  If ECPs are used, they must be created, manipulated, and freed using the appropriate routines - the following <i>See Also</i> section lists these routines.  Upon returning from the call of <b>FltCreateFileEx2</b>, the ECP list is unchanged and may be passed to additional calls of <b>FltCreateFileEx2</b> for other create operations.  Note that the operating system does not automatically deallocate the ECP list structure - the caller of <b>FltCreateFileEx2</b> must deallocate this structure by calling the <a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a> routine.
@@ -962,8 +934,20 @@ SYNCHRONIZE
 
 When a caller of <b>FltCreateFileEx2</b> wishes to  enable reparsing for a volume target, a <a href="..\fltkernel\ns-fltkernel-_flt_createfile_target_ecp_context.md">FLT_CREATEFILE_TARGET_ECP_CONTEXT</a> can be included as an ECP to the ECP list in the <i>DriverContext</i> parameter.  If this ECP is present, <b>FltCreateFileEx2</b> will adjust the target device for the create operation and attempt for find a filtered instance  of a volume appropriate for the given file information. Use of this ECP is available starting with Windows 8.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include FltKernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -1076,4 +1060,3 @@ When a caller of <b>FltCreateFileEx2</b> wishes to  enable reparsing for a volum
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCreateFileEx2 routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

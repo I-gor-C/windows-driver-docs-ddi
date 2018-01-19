@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILCALLINFO_V2
-title: RILCALLINFO_V2
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallinfo_v2.htm
-old-project: netvista
-ms.assetid: 02eaaaa4-fe88-4f07-bfbf-1ba52d0c1362
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLINFO_V2, *LPRILCALLINFO_V2, RILCALLINFO_V2
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLINFO_V2
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILCALLINFO_V2, RILCALLINFO_V2
+UID : NS:ntddrilapitypes.RILCALLINFO_V2
+title : RILCALLINFO_V2
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallinfo_v2.htm
+old-project : netvista
+ms.assetid : 02eaaaa4-fe88-4f07-bfbf-1ba52d0c1362
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLINFO_V2, *LPRILCALLINFO_V2, RILCALLINFO_V2
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLINFO_V2
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILCALLINFO_V2, RILCALLINFO_V2"
 ---
 
 # RILCALLINFO_V2 structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILCALLINFO_V2 {
   DWORD                           cbSize;
@@ -67,58 +60,82 @@ typedef struct _RILCALLINFO_V2 {
 } RILCALLINFO_V2, RILCALLINFO_V2;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwDirection`
+
+            
+        
+            `dwDisconnectInitiator`
+
+            
+        
+            `dwDisconnectReason`
+
+            
+        
+            `dwExecutor`
+
+            
+        
+            `dwFlags`
+
+            
+        
+            `dwID`
+
+            
+        
+            `dwMultiparty`
+
+            
+        
+            `dwNamePresentationIndicator`
+
+            
+        
+            `dwNumberPresentationIndicator`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwStatus`
+
+            
+        
+            `dwType`
+
+            
+        
+            `raAddress`
+
+            
+        
+            `rsaSubAddress`
+
+            
+        
+            `stDisconnectDetails`
+
+            
+        
+            `wszDescription`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwExecutor
-
-
-### -field dwID
-
-
-### -field dwDirection
-
-
-### -field dwStatus
-
-
-### -field dwType
-
-
-### -field dwMultiparty
-
-
-### -field raAddress
-
-
-### -field rsaSubAddress
-
-
-### -field wszDescription
-
-
-### -field dwNumberPresentationIndicator
-
-
-### -field dwNamePresentationIndicator
-
-
-### -field dwFlags
-
-
-### -field dwDisconnectInitiator
-
-
-### -field dwDisconnectReason
-
-
-### -field stDisconnectDetails
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

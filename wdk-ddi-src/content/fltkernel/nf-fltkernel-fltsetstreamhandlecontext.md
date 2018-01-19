@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltSetStreamHandleContext
-title: FltSetStreamHandleContext function
-author: windows-driver-content
-description: The FltSetStreamHandleContext routine sets a context for a stream handle.
-old-location: ifsk\fltsetstreamhandlecontext.htm
-old-project: ifsk
-ms.assetid: 92c75e9c-ea29-40f5-84b2-bfe406075717
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltSetStreamHandleContext
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported on Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltSetStreamHandleContext
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fltmgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltSetStreamHandleContext
+title : FltSetStreamHandleContext function
+author : windows-driver-content
+description : The FltSetStreamHandleContext routine sets a context for a stream handle.
+old-location : ifsk\fltsetstreamhandlecontext.htm
+old-project : ifsk
+ms.assetid : 92c75e9c-ea29-40f5-84b2-bfe406075717
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltSetStreamHandleContext
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported on Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltSetStreamHandleContext
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fltmgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltSetStreamHandleContext function
+The <b>FltSetStreamHandleContext</b> routine sets a context for a stream handle.
 
-
-
-## -description
-The <b>FltSetStreamHandleContext</b> routine sets a context for a stream handle. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltSetStreamHandleContext(
@@ -55,49 +50,31 @@ NTSTATUS FltSetStreamHandleContext(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Instance`
 
-### -param Instance [in]
+An opaque instance pointer for the minifilter driver instance whose context is to be inserted into, removed from, or replaced in the list of contexts attached to the stream handle.
 
-An opaque instance pointer for the minifilter driver instance whose context is to be inserted into, removed from, or replaced in the list of contexts attached to the stream handle. 
+`FileObject`
 
+A pointer to a file object for the file stream.
 
-### -param FileObject [in]
+`Operation`
 
-A pointer to a file object for the file stream. 
+A flag that specifies details of the operation to be performed. This parameter must be one of the following:
 
+`NewContext`
 
-### -param Operation [in]
+A pointer to the new context to be set for the stream handle. This parameter is required and cannot be <b>NULL</b>.
 
-A flag that specifies details of the operation to be performed. This parameter must be one of the following: 
+`OldContext`
 
-
-
-
-### -param FLT_SET_CONTEXT_REPLACE_IF_EXISTS
-
-If a context is already set for this <i>Instance</i>, replace it with <i>NewContext</i>. Otherwise, insert <i>NewContext</i> into the list of contexts for the stream handle. 
+A pointer to a caller-allocated variable that receives the address of the existing stream handle context for the <i>Instance </i>parameter. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.)
 
 
-### -param FLT_SET_CONTEXT_KEEP_IF_EXISTS
+## Return Value
 
-If a context is already set for this <i>Instance</i>, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, insert <i>NewContext</i> into the list of contexts for the stream handle. 
-
-</dd>
-</dl>
-
-### -param NewContext [in]
-
-A pointer to the new context to be set for the stream handle. This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param OldContext [out, optional]
-
-A pointer to a caller-allocated variable that receives the address of the existing stream handle context for the <i>Instance </i>parameter. This parameter is optional and can be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) 
-
-
-## -returns
 The <b>FltSetStreamHandleContext</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
@@ -119,12 +96,10 @@ An invalid value was specified for <i>Operation</i>.
 STATUS_INVALID_PARAMETER is an error code.
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The file system does not support per-stream contexts for this file stream. This is an error code. 
+</dl>The file system does not support per-stream contexts for this file stream. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 The <b>FltSetStreamHandleContext</b> routine adds, removes, or replaces a context for a minifilter driver instance on a stream handle. A minifilter driver can attach one context per minifilter driver instance to the stream handle. 
 
 A successful call to <b>FltSetStreamHandleContext</b> increments the reference count on <i>NewContext</i>. When the context pointed to by <i>NewContext</i> is no longer needed, the minifilter must call <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> to decrement its reference count.
@@ -145,8 +120,20 @@ To delete a stream handle context, call <a href="..\fltkernel\nf-fltkernel-fltde
 
 For more information about context reference counting, see <a href="https://msdn.microsoft.com/9ac3aedb-e057-4e19-9de5-709311072b09">Referencing Contexts</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
@@ -169,4 +156,3 @@ For more information about context reference counting, see <a href="https://msdn
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetStreamHandleContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

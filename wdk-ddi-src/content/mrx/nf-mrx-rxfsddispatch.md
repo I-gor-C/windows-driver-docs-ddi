@@ -1,49 +1,44 @@
 ---
-UID: NF:mrx.RxFsdDispatch
-title: RxFsdDispatch function
-author: windows-driver-content
-description: RxFsdDispatch implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP).
-old-location: ifsk\rxfsddispatch.htm
-old-project: ifsk
-ms.assetid: 92b9b22a-0fe7-4c95-a4fc-5f5f5558b4cf
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxFsdDispatch
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: mrx.h
-req.include-header: Mrx.h, Rxstruc.h, Struchdr.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RxFsdDispatch
-req.alt-loc: mrx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= APC_LEVEL
-req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
+UID : NF:mrx.RxFsdDispatch
+title : RxFsdDispatch function
+author : windows-driver-content
+description : RxFsdDispatch implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP).
+old-location : ifsk\rxfsddispatch.htm
+old-project : ifsk
+ms.assetid : 92b9b22a-0fe7-4c95-a4fc-5f5f5558b4cf
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RxFsdDispatch
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : mrx.h
+req.include-header : Mrx.h, Rxstruc.h, Struchdr.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RxFsdDispatch
+req.alt-loc : mrx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= APC_LEVEL
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
+
 # RxFsdDispatch function
+<b>RxFsdDispatch</b> implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP). A pointer to this routine is copied over the device driver dispatch table for the network mini-redirector driver by the <b>RxDriverEntry</b> routine when RDBSS is initialized.
 
-
-
-## -description
-<b>RxFsdDispatch</b> implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP). A pointer to this routine is copied over the device driver dispatch table for the network mini-redirector driver by the <b>RxDriverEntry</b> routine when RDBSS is initialized. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RxFsdDispatch(
@@ -52,20 +47,19 @@ NTSTATUS RxFsdDispatch(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param RxDeviceObject [in]
+`RxDeviceObject`
 
 A pointer to the RDBSS device object for this network mini-redirector.
 
-
-### -param Irp [in]
+`Irp`
 
 A pointer to the I/O request packet being processed.
 
 
-## -returns
+## Return Value
+
 <b>RxFsdDispatch</b> returns one of the following values: 
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
@@ -80,10 +74,8 @@ A pointer to the I/O request packet being processed.
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The <b>RxFsdDispatch</b> routine call was successful.
 
- 
+## Remarks
 
-
-## -remarks
 <b>RxFsdDispatch</b> is called by RDBSS to process an I/O request packet (IRP). These IRPs are normally received by RDBSS in response to a user-mode application requesting operations on a file. It is also possible for another kernel driver to issue such an IRP. 
 
 A pointer to <b>RxFsdDispatch</b> routine is copied over the driver dispatch table for a network mini-redirector driver when the <b>RxDriverEntry</b> routine is called to initialize RDBSS. 
@@ -98,10 +90,22 @@ If the IRP is an IRP_MJ_CREATE request, then <b>RxFsdDispatch</b> will use a com
 
 <b>RxFsdDispatch</b> calls internal routines to process the standard IRPs most of which result in a call to one of the callback routines implemented by the network mini-redirector driver. 
 
-A few IRPs are treated as special and handled internally by RDBSS. For example, the IRP_MJ_SYSTEM_CONTROL is used internally if WMI is enabled. IRP_MJ_CREATE_MAILSLOT or IRP_MJ_CREATE_NAMED_PIPE requests are treated specially and rejected (a STATUS_OBJECT_NAME_INVALID error is returned). 
+A few IRPs are treated as special and handled internally by RDBSS. For example, the IRP_MJ_SYSTEM_CONTROL is used internally if WMI is enabled. IRP_MJ_CREATE_MAILSLOT or IRP_MJ_CREATE_NAMED_PIPE requests are treated specially and rejected (a STATUS_OBJECT_NAME_INVALID error is returned).
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | mrx.h (include Mrx.h, Rxstruc.h, Struchdr.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\rxprocs\nf-rxprocs-rxdriverentry.md">RxDriverEntry</a>
@@ -112,4 +116,3 @@ A few IRPs are treated as special and handled internally by RDBSS. For example, 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFsdDispatch routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

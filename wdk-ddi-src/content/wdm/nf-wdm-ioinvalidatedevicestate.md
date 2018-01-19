@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.IoInvalidateDeviceState
-title: IoInvalidateDeviceState function
-author: windows-driver-content
-description: The IoInvalidateDeviceState routine notifies the PnP manager that some aspect of the PnP state of a device has changed.
-old-location: kernel\ioinvalidatedevicestate.htm
-old-project: kernel
-ms.assetid: ca27e8d3-80ee-467c-9c88-19770cd86d94
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: IoInvalidateDeviceState
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoInvalidateDeviceState
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.IoInvalidateDeviceState
+title : IoInvalidateDeviceState function
+author : windows-driver-content
+description : The IoInvalidateDeviceState routine notifies the PnP manager that some aspect of the PnP state of a device has changed.
+old-location : kernel\ioinvalidatedevicestate.htm
+old-project : kernel
+ms.assetid : ca27e8d3-80ee-467c-9c88-19770cd86d94
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : IoInvalidateDeviceState
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoInvalidateDeviceState
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # IoInvalidateDeviceState function
+The <b>IoInvalidateDeviceState</b> routine notifies the PnP manager that some aspect of the PnP state of a device has changed.
 
-
-
-## -description
-The <b>IoInvalidateDeviceState</b> routine notifies the PnP manager that some aspect of the PnP state of a device has changed. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 VOID IoInvalidateDeviceState(
@@ -52,19 +47,19 @@ VOID IoInvalidateDeviceState(
 );
 ````
 
+## Parameters
 
-## -parameters
+`PhysicalDeviceObject`
 
-### -param PhysicalDeviceObject [in]
-
-Pointer to the PDO for the device. 
+Pointer to the PDO for the device.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Drivers call this routine to indicate that something has changed with respect to one of the following aspects of a device's PnP state:
 
 PNP_DEVICE_DISABLED
@@ -83,8 +78,20 @@ For descriptions of the preceding constants, see <a href="https://msdn.microsoft
 
 In response to this routine, the PnP manager sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551698">IRP_MN_QUERY_PNP_DEVICE_STATE</a> request to the device stack, to determine the current PnP state of the device.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551698">IRP_MN_QUERY_PNP_DEVICE_STATE</a>
@@ -98,4 +105,3 @@ In response to this routine, the PnP manager sends an <a href="https://msdn.micr
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoInvalidateDeviceState routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

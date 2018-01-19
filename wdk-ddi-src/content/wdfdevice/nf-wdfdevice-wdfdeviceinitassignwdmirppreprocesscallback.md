@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfdevice.WdfDeviceInitAssignWdmIrpPreprocessCallback
-title: WdfDeviceInitAssignWdmIrpPreprocessCallback function
-author: windows-driver-content
-description: The WdfDeviceInitAssignWdmIrpPreprocessCallback method registers a callback function to handle an IRP major function code and, optionally, one or more minor function codes that are associated with the major function code.
-old-location: wdf\wdfdeviceinitassignwdmirppreprocesscallback.htm
-old-project: wdf
-ms.assetid: 9c17a5e2-dcf2-493a-9851-11d47adbfc82
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfDeviceInitAssignWdmIrpPreprocessCallback
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WdfDeviceInitAssignWdmIrpPreprocessCallback
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WDF_STATE_NOTIFICATION_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfdevice.WdfDeviceInitAssignWdmIrpPreprocessCallback
+title : WdfDeviceInitAssignWdmIrpPreprocessCallback function
+author : windows-driver-content
+description : The WdfDeviceInitAssignWdmIrpPreprocessCallback method registers a callback function to handle an IRP major function code and, optionally, one or more minor function codes that are associated with the major function code.
+old-location : wdf\wdfdeviceinitassignwdmirppreprocesscallback.htm
+old-project : wdf
+ms.assetid : 9c17a5e2-dcf2-493a-9851-11d47adbfc82
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfDeviceInitAssignWdmIrpPreprocessCallback
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WdfDeviceInitAssignWdmIrpPreprocessCallback
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WDF_STATE_NOTIFICATION_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfDeviceInitAssignWdmIrpPreprocessCallback function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WdfDeviceInitAssignWdmIrpPreprocessCallback</b> method registers a callback function to handle an IRP major function code and, optionally, one or more minor function codes that are associated with the major function code. 
+The <b>WdfDeviceInitAssignWdmIrpPreprocessCallback</b> method registers a callback function to handle an IRP major function code and, optionally, one or more minor function codes that are associated with the major function code.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfDeviceInitAssignWdmIrpPreprocessCallback(
@@ -58,35 +53,31 @@ NTSTATUS WdfDeviceInitAssignWdmIrpPreprocessCallback(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DeviceInit [in]
+`DeviceInit`
 
 A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure.
 
-
-### -param EvtDeviceWdmIrpPreprocess [in]
+`EvtDeviceWdmIrpPreprocess`
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a> callback function.
 
+`MajorFunction`
 
-### -param MajorFunction [in]
+One of the IRP major function codes that are defined in <i>wdm.h</i>.
 
-One of the IRP major function codes that are defined in <i>wdm.h</i>. 
-
-
-### -param MinorFunctions [in, optional]
+`MinorFunctions`
 
 A pointer to an array of one or more IRP minor function codes that are associated with the specified major function code. This parameter is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-
-### -param NumMinorFunctions [in]
+`NumMinorFunctions`
 
 The number of minor function codes that are contained in the <i>MinorFunctions</i> array.
 
 
-## -returns
+## Return Value
+
 If the operation succeeds, the method returns STATUS_SUCCESS. Additional return values include:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -102,8 +93,8 @@ If the operation succeeds, the method returns STATUS_SUCCESS. Additional return 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
+## Remarks
 
-## -remarks
 Drivers can call the <b>WdfDeviceInitAssignWdmIrpPreprocessCallback</b> method for either of two reasons:
 
 To handle an IRP major or minor function code that the framework does not support. 
@@ -128,8 +119,20 @@ For more information about the <b>WdfDeviceInitAssignWdmIrpPreprocessCallback</b
 
 The following code example defines an <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a> event callback function, and then registers the callback function to handle <a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a> IRPs.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdevice.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchpreprocessedirp.md">WdfDeviceWdmDispatchPreprocessedIrp</a>
@@ -140,4 +143,3 @@ The following code example defines an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitAssignWdmIrpPreprocessCallback method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugClient5.GetIdentityWide
-title: IDebugClient5::GetIdentityWide method
-author: windows-driver-content
-description: The GetIdentityWide method returns a string describing the computer and user this client represents.
-old-location: debugger\getidentitywide.htm
-old-project: debugger
-ms.assetid: 8e55f829-2f55-4b83-8e0d-2554246a5d59
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugClient5, IDebugClient5::GetIdentityWide, GetIdentityWide
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugClient5.GetIdentityWide
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugClient5.GetIdentityWide
+title : IDebugClient5::GetIdentityWide method
+author : windows-driver-content
+description : The GetIdentityWide method returns a string describing the computer and user this client represents.
+old-location : debugger\getidentitywide.htm
+old-project : debugger
+ms.assetid : 8e55f829-2f55-4b83-8e0d-2554246a5d59
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugClient5, IDebugClient5::GetIdentityWide, GetIdentityWide
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugClient5.GetIdentityWide
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugClient5::GetIdentityWide method
 
-
-
-## -description
+# GetIdentityWide method
 The <b>GetIdentityWide</b> method returns a string describing the computer and user this client represents.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT GetIdentityWide(
@@ -53,25 +48,23 @@ HRESULT GetIdentityWide(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Buffer [out, optional]
+`Buffer`
 
 Specifies the buffer to receive the string.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param BufferSize [in]
+`BufferSize`
 
 Specifies the size of the buffer <i>Buffer</i>.
 
-
-### -param IdentitySize [out, optional]
+`IdentitySize`
 
 Receives the size of the string. If <i>IdentitySize</i> is <b>NULL</b>, this information is not returned.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -80,16 +73,26 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 <dt><b>S_FALSE</b></dt>
 </dl>The size of the string was greater than the size of the buffer, so it was truncated to fit into the buffer.
 
- 
+## Remarks
 
-
-## -remarks
 The specific content of the string varies with the operating system.  If the client is remotely connected, some network information may also be present.
 
 For more information about client objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539140">Client Objects</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
@@ -103,4 +106,3 @@ For more information about client objects, see <a href="https://msdn.microsoft.c
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5::GetIdentityWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

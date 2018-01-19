@@ -1,50 +1,45 @@
 ---
-UID: NF:storport.StorPortSetDeviceQueueDepth
-title: StorPortSetDeviceQueueDepth function
-author: windows-driver-content
-description: The StorPortSetDeviceQueueDepth routine sets the maximum depth of the device queue for the indicated device.
-old-location: storage\storportsetdevicequeuedepth.htm
-old-project: storage
-ms.assetid: e79b4294-5ba4-4fcc-97e2-69613b65f574
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: StorPortSetDeviceQueueDepth
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: StorPortSetDeviceQueueDepth
-req.alt-loc: Storport.lib,Storport.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Storport.lib
-req.dll: 
-req.irql: 
-req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
+UID : NF:storport.StorPortSetDeviceQueueDepth
+title : StorPortSetDeviceQueueDepth function
+author : windows-driver-content
+description : The StorPortSetDeviceQueueDepth routine sets the maximum depth of the device queue for the indicated device.
+old-location : storage\storportsetdevicequeuedepth.htm
+old-project : storage
+ms.assetid : e79b4294-5ba4-4fcc-97e2-69613b65f574
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : StorPortSetDeviceQueueDepth
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : StorPortSetDeviceQueueDepth
+req.alt-loc : Storport.lib,Storport.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Storport.lib
+req.dll : 
+req.irql : 
+req.typenames : STOR_SPINLOCK
+req.product : Windows 10 or later.
 ---
 
+
 # StorPortSetDeviceQueueDepth function
+The <b>StorPortSetDeviceQueueDepth</b> routine sets the maximum depth of the device queue for the indicated device.
 
-
-
-## -description
-The <b>StorPortSetDeviceQueueDepth</b> routine sets the maximum depth of the device queue for the indicated device. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 STORPORT_API BOOLEAN StorPortSetDeviceQueueDepth(
@@ -56,39 +51,47 @@ STORPORT_API BOOLEAN StorPortSetDeviceQueueDepth(
 );
 ````
 
+## Parameters
 
-## -parameters
+`HwDeviceExtension`
 
-### -param HwDeviceExtension [in]
+A pointer to the miniport driver's per-HBA storage area.
 
-A pointer to the miniport driver's per-HBA storage area. 
+`PathId`
 
+Contains the path ID of the target device.
 
-### -param PathId [in]
+`TargetId`
 
-Contains the path ID of the target device. 
+Contains the device number of the target device.
 
+`Lun`
 
-### -param TargetId [in]
+Contains the logical unit number of the target device.
 
-Contains the device number of the target device. 
-
-
-### -param Lun [in]
-
-Contains the logical unit number of the target device. 
-
-
-### -param Depth [in]
+`Depth`
 
 Supplies the depth to which the queue is to be set. This value is always &gt; 0.
 
 
-## -returns
-<b>StorPortSetDeviceQueueDepth</b> returns <b>TRUE</b> if the queue depth was successfully set, or <b>FALSE</b> if the operation failed. 
+## Return Value
 
+<b>StorPortSetDeviceQueueDepth</b> returns <b>TRUE</b> if the queue depth was successfully set, or <b>FALSE</b> if the operation failed.
 
-## -remarks
+## Remarks
+
 Before the first call to <b>StorPortSetDeviceQueueDepth</b>, the device queue depth is set to the default value. The following conditional description determines the default queue depth.
 
 The <b>StorPortSetDeviceQueueDepth</b> routine should be called when the miniport driver receives the first SCSI Inquiry command for the specified LUN, or at any time thereafter (but not before), as long as the LUN is valid.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

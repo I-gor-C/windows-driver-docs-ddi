@@ -1,50 +1,43 @@
 ---
-UID: NS:ndiswwan._NDIS_WWAN_PRESHUTDOWN_STATE
-title: _NDIS_WWAN_PRESHUTDOWN_STATE
-author: windows-driver-content
-description: The NDIS_WWAN_PRESHUTDOWN_STATE structure contains the pre-shutdown status.
-old-location: netvista\ndis_wwan_preshutdown_state.htm
-old-project: netvista
-ms.assetid: 39653A36-FFED-4F6A-9365-17E9D35DB46E
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_PRESHUTDOWN_STATE, *PNDIS_WWAN_PRESHUTDOWN_STATE, NDIS_WWAN_PRESHUTDOWN_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndiswwan.h
-req.include-header: Ndiswwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting with  Windows 10, version 1511.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_WWAN_PRESHUTDOWN_STATE
-req.alt-loc: ndiswwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_WWAN_PRESHUTDOWN_STATE, NDIS_WWAN_PRESHUTDOWN_STATE
+UID : NS:ndiswwan._NDIS_WWAN_PRESHUTDOWN_STATE
+title : _NDIS_WWAN_PRESHUTDOWN_STATE
+author : windows-driver-content
+description : The NDIS_WWAN_PRESHUTDOWN_STATE structure contains the pre-shutdown status.
+old-location : netvista\ndis_wwan_preshutdown_state.htm
+old-project : netvista
+ms.assetid : 39653A36-FFED-4F6A-9365-17E9D35DB46E
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_PRESHUTDOWN_STATE, *PNDIS_WWAN_PRESHUTDOWN_STATE, NDIS_WWAN_PRESHUTDOWN_STATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndiswwan.h
+req.include-header : Ndiswwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting with  Windows 10, version 1511.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_WWAN_PRESHUTDOWN_STATE
+req.alt-loc : ndiswwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PNDIS_WWAN_PRESHUTDOWN_STATE, NDIS_WWAN_PRESHUTDOWN_STATE"
 ---
 
 # _NDIS_WWAN_PRESHUTDOWN_STATE structure
-
-
-
-## -description
 The NDIS_WWAN_PRESHUTDOWN_STATE structure contains the pre-shutdown status.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_WWAN_PRESHUTDOWN_STATE {
   NDIS_OBJECT_HEADER Header;
@@ -52,12 +45,12 @@ typedef struct _NDIS_WWAN_PRESHUTDOWN_STATE {
 } NDIS_WWAN_PRESHUTDOWN_STATE, *PNDIS_WWAN_PRESHUTDOWN_STATE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
-
-The header with type, revision, and size information about the NDIS_WWAN_PRESHUTDOWN_STATE
+            The header with type, revision, and size information about the NDIS_WWAN_PRESHUTDOWN_STATE
      structure. 
 
 <table>
@@ -99,12 +92,11 @@ sizeof(NDIS_WWAN_PRESHUTDOWN_STATE)
  
 
 For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+        
+            `uStatus`
 
-
-### -field uStatus
-
-The following table shows the possible status codes.
+            The following table shows the possible status codes.
 
 <table>
 <tr>
@@ -132,14 +124,19 @@ The modem does not support pre-shutdown notifications.
 </td>
 </tr>
 </table>
- 
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndiswwan.h (include Ndiswwan.h) |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt593233">NDIS_STATUS_WWAN_PRESHUTDOWN_STATE</a>
 </dt>
@@ -152,4 +149,3 @@ The modem does not support pre-shutdown notifications.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PRESHUTDOWN_STATE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.KeCancelTimer
-title: KeCancelTimer function
-author: windows-driver-content
-description: The KeCancelTimer routine dequeues a timer object before the timer interval, if any was set, expires.
-old-location: kernel\kecanceltimer.htm
-old-project: kernel
-ms.assetid: aefbf6d6-c107-4bf2-993d-d7ba8ea7ffcd
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KeCancelTimer
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KeCancelTimer
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.KeCancelTimer
+title : KeCancelTimer function
+author : windows-driver-content
+description : The KeCancelTimer routine dequeues a timer object before the timer interval, if any was set, expires.
+old-location : kernel\kecanceltimer.htm
+old-project : kernel
+ms.assetid : aefbf6d6-c107-4bf2-993d-d7ba8ea7ffcd
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : KeCancelTimer
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KeCancelTimer
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # KeCancelTimer function
-
-
-
-## -description
 The <b>KeCancelTimer</b> routine dequeues a timer object before the timer interval, if any was set, expires.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN KeCancelTimer(
@@ -52,19 +47,16 @@ BOOLEAN KeCancelTimer(
 );
 ````
 
+## Parameters
 
-## -parameters
+This function has no parameters.
 
-### -param Timer [in, out]
+## Return Value
 
-Pointer to an initialized timer object, for which the caller provides the storage.
-
-
-## -returns
 If the specified timer object is in the system timer queue, <b>KeCancelTimer</b> returns <b>TRUE</b>.
 
+## Remarks
 
-## -remarks
 If the timer object is currently in the system timer queue, it is removed from the queue. If a DPC object is associated with the timer, it too is canceled. Otherwise, no operation is performed.
 
 The routine returns <b>TRUE</b> if the timer is still in the timer queue. A nonperiodic timer is removed from the system queue as soon as it expires. Thus, for nonperiodic timers, <b>KeCancelTimer</b> returns <b>FALSE</b> if the timer DPC has been queued. Periodic timers are always in the timer queue, so <b>KeCancelTimer</b> always returns <b>TRUE</b> for periodic timers. 
@@ -77,8 +69,20 @@ Drivers do not need to synchronize for data stored in global variables or driver
 
 For more information about timer objects, see <a href="https://msdn.microsoft.com/b58487de-6e9e-45f4-acb8-9233c8718ee2">Timer Objects and DPCs</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | IrqlKeDispatchLte, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
@@ -95,4 +99,3 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeCancelTimer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

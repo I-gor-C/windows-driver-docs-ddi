@@ -1,78 +1,72 @@
 ---
-UID: NC:irb.IDE_HW_BUILDIO
-title: IDE_HW_BUILDIO
-author: windows-driver-content
-description: The IdeHwBuildIo miniport driver routine is called one time for every incoming I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location: storage\idehwbuildio.htm
-old-project: storage
-ms.assetid: 057fb78f-6f1c-4b16-b9fa-6fcff299a90d
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: WdmlibIoGetAffinityInterrupt
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: irb.h
-req.include-header: Irb.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IdeHwBuildIo
-req.alt-loc: irb.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: LUID
+UID : NC:irb.IDE_HW_BUILDIO
+title : IDE_HW_BUILDIO
+author : windows-driver-content
+description : The IdeHwBuildIo miniport driver routine is called one time for every incoming I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location : storage\idehwbuildio.htm
+old-project : storage
+ms.assetid : 057fb78f-6f1c-4b16-b9fa-6fcff299a90d
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : WdmlibIoGetAffinityInterrupt
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : irb.h
+req.include-header : Irb.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IdeHwBuildIo
+req.alt-loc : irb.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : LUID
 ---
 
-# IDE_HW_BUILDIO callback
 
-
-
-## -description
+# IDE_HW_BUILDIO callback function
 The <b><i>IdeHwBuildIo</i></b> miniport driver routine is called one time for every incoming I/O request.
 
+## Syntax
 
+```
+IDE_HW_BUILDIO IdeHwBuildio;
 
-## -prototype
-
-````
-IDE_HW_BUILDIO IdeHwBuildIo;
-
-BOOLEAN IdeHwBuildIo(
-  _In_ PVOID              ChannelExtension,
-  _In_ PIDE_REQUEST_BLOCK Irb
+BOOLEAN IdeHwBuildio(
+  PVOID ChannelExtension,
+  PIDE_REQUEST_BLOCK Irb
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param ChannelExtension [in]
+`ChannelExtension`
 
 A pointer to the miniport driver channel extension.
 
-
-### -param Irb [in]
+`Irb`
 
 A pointer to a structure of type <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a> that defines the Integrated Device Electronics (IDE) input/output request block (IRB) to process.
 
 
-## -returns
+## Return Value
+
 <b><i>IdeHwBuildIo</i></b> returns <b>TRUE</b> to acknowledge the receipt of the <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a> structure. The port driver ignores a return value of <b>FALSE</b>.
 
+## Remarks
 
-## -remarks
 Miniport drivers provide an <b><i>AtaHwBuildlo</i></b> routine that performs unsynchronized I/O processing with interrupts enabled. After <b><i>IdeHwBuildIo</i></b> completes all unsynchronized processing of a request, it returns to the port driver, and the port driver passes the request to the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a> routine, which performs the tasks that require synchronization. 
 
 The miniport driver must observe certain restrictions while it executes the <b><i>IdeHwBuildIo</i></b> routine. The miniport driver calls <b><i>IdeHwBuildIo</i></b> without holding any locks. In particular, the miniport driver must not touch any shared data in its channel extension, nor can it call any of the routines exported by the ATA port driver.
@@ -85,8 +79,20 @@ The <b><i>IdeHwBuildIo</i></b> routine resembles Storport's <a href="..\storport
 
 <b><i>IdeHwBuildIo</i></b> is an optional routine.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | irb.h (include Irb.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
@@ -100,4 +106,3 @@ The <b><i>IdeHwBuildIo</i></b> routine resembles Storport's <a href="..\storport
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IdeHwBuildIo routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

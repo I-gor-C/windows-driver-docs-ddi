@@ -1,51 +1,44 @@
 ---
-UID: NS:ufs.UFS_GEOMETRY_DESCRIPTOR
-title: UFS_GEOMETRY_DESCRIPTOR
-author: windows-driver-content
-description: UFS_GEOMETRY_DESCRIPTOR describes a device's geometric parameters.
-old-location: storage\ufs_geometry_descriptor.htm
-old-project: storage
-ms.assetid: DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ufs.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10, version 1709
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: UFS_GEOMETRY_DESCRIPTOR
-req.alt-loc: Ufs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NS:ufs.UFS_GEOMETRY_DESCRIPTOR
+title : UFS_GEOMETRY_DESCRIPTOR
+author : windows-driver-content
+description : UFS_GEOMETRY_DESCRIPTOR describes a device's geometric parameters.
+old-location : storage\ufs_geometry_descriptor.htm
+old-project : storage
+ms.assetid : DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ufs.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10, version 1709
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : UFS_GEOMETRY_DESCRIPTOR
+req.alt-loc : Ufs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR"
+req.product : Windows 10 or later.
 ---
 
 # UFS_GEOMETRY_DESCRIPTOR structure
-
-
-
-## -description
 <b>UFS_GEOMETRY_DESCRIPTOR</b> describes a device's geometric parameters.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _UFS_GEOMETRY_DESCRIPTOR {
   UCHAR bLength;
@@ -85,129 +78,16 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
 } UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `bAllocationUnitSize`
 
-### -field bLength
+            Specifies the allocation unit size in number of segments.
+        
+            `bDataOrdering`
 
-Specifies the length of the descriptor.
-
-
-### -field bDescriptorIDN
-
-Specifies the type of the descriptor. This descriptor will have a value of<b> UFS_DESC_GEOMETRY_IDN</b>.
-
-
-
-
-### -field bMediaTechnology
-
-Reserved for future use.
-
-
-### -field Reserved1
-
-Reserved for future use.
-
-
-### -field  qTotalRawDeviceCapacity
-
-Specifies the total raw device capacity. Expressed in units of 512 bytes.
-
-
-### -field bMaxNumberLU
-
-Specifies the maximum number of logical unit(s) supported by the UFS (Universal Flash Storage). Contains one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>8 logical units.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>32 logical units.</td>
-</tr>
-<tr>
-<td>Other Values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
- 
-
-
-### -field dSegmentSize
-
-Specifies the segment size of the device in units of 512 bytes.
-
-
-### -field bAllocationUnitSize
-
-Specifies the allocation unit size in number of segments.
-
-
-### -field bMinAddrBlockSize
-
-Specifies the minimum addressable block size in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
-
-
-### -field bOptimalReadBlockSize
-
-Specifies the optimal read block size in units of 512 bytes.
-
-
-### -field bOptimalWriteBlockSize
-
-Specifies the optimal write block size in units of 512 bytes. <b>bOptimalWriteBlockSize</b> is equal to or greater than <b>bMinAddrBlockSize</b>.
-
-
-### -field bMaxInBufferSize
-
-Specifies the max size of the data-in buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
-
-
-### -field bMaxOutBufferSize
-
-Specifies the max size of the data-out buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
-
-
-### -field bRPMB_ReadWriteSize
-
-Specifies the maximum number of Replay Protected Memory Block (RPMB) frames allowed in Security Protocol In and Security
-Protocol Out. Each frame is 256-bytes. 
-
-
-### -field bDynamicCapacityResourcePolicy
-
-Specifies a device's spare blocks
-resource management policy. Contains one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Spare blocks resource management policy is
-per logical unit.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Spare blocks resource management policy is
-per memory type.</td>
-</tr>
-</table>
- 
-
-
-### -field bDataOrdering
-
-Specifies if a device supports out-of-order data transfer. Contains one of the following values:
+            Specifies if a device supports out-of-order data transfer. Contains one of the following values:
 
 <table>
 <tr>
@@ -227,29 +107,96 @@ Specifies if a device supports out-of-order data transfer. Contains one of the f
 <td>Reserved for future use.</td>
 </tr>
 </table>
- 
+        
+            `bDescriptorIDN`
 
+            Specifies the type of the descriptor. This descriptor will have a value of<b> UFS_DESC_GEOMETRY_IDN</b>.
+        
+            `bDynamicCapacityResourcePolicy`
 
-### -field bMaxContexIDNumber
+            Specifies a device's spare blocks
+resource management policy. Contains one of the following values:
 
-Specifies the max number of contexts supported by a device. This number must be greater than 5.
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Spare blocks resource management policy is
+per logical unit.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Spare blocks resource management policy is
+per memory type.</td>
+</tr>
+</table>
+        
+            `bLength`
 
+            Specifies the length of the descriptor.
+        
+            `bMaxContexIDNumber`
 
-### -field bSysDataTagUnitSize
+            Specifies the max number of contexts supported by a device. This number must be greater than 5.
+        
+            `bMaxInBufferSize`
 
-Specifies the system data tag
-unit size.
+            Specifies the max size of the data-in buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+        
+            `bMaxNumberLU`
 
+            Specifies the maximum number of logical unit(s) supported by the UFS (Universal Flash Storage). Contains one of the following values:
 
-### -field bSysDataTagResSize
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>8 logical units.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>32 logical units.</td>
+</tr>
+<tr>
+<td>Other Values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+        
+            `bMaxOutBufferSize`
 
-Specifies the maximum size in bytes allocated by
-the device to handle system data.
+            Specifies the max size of the data-out buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+        
+            `bMediaTechnology`
 
+            Reserved for future use.
+        
+            `bMinAddrBlockSize`
 
-### -field bSupportedSecRTypes
+            Specifies the minimum addressable block size in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+        
+            `bOptimalReadBlockSize`
 
-Specifies the supported Secure Removal types. The first 3 bits of the variable are flags that represent different supported Secure Removal types. 
+            Specifies the optimal read block size in units of 512 bytes.
+        
+            `bOptimalWriteBlockSize`
+
+            Specifies the optimal write block size in units of 512 bytes. <b>bOptimalWriteBlockSize</b> is equal to or greater than <b>bMinAddrBlockSize</b>.
+        
+            `bRPMB_ReadWriteSize`
+
+            Specifies the maximum number of Replay Protected Memory Block (RPMB) frames allowed in Security Protocol In and Security
+Protocol Out. Each frame is 256-bytes.
+        
+            `bSupportedSecRTypes`
+
+            Specifies the supported Secure Removal types. The first 3 bits of the variable are flags that represent different supported Secure Removal types. 
 
 <table>
 <tr>
@@ -282,12 +229,84 @@ mechanism.</td>
 <td>Reserved for future use.</td>
 </tr>
 </table>
- 
+        
+            `bSysDataTagResSize`
 
+            Specifies the maximum size in bytes allocated by
+the device to handle system data.
+        
+            `bSysDataTagUnitSize`
 
-### -field wSupportedMemoryTypes
+            Specifies the system data tag
+unit size.
+        
+            `dEnhanced1MaxNAllocU`
 
-Specifies the supported memory types in a bitmap.
+            specifies the max number of Allocation Units for the enhanced
+memory type 1.
+        
+            `dEnhanced2MaxNAllocU`
+
+            specifies the max number of Allocation Units for the enhanced
+memory type 2.
+        
+            `dEnhanced3MaxNAllocU`
+
+            specifies the max number of Allocation Units for the enhanced
+memory type 3.
+        
+            `dEnhanced4MaxNAllocU`
+
+            specifies the max number of Allocation Units for the enhanced
+memory type 4.
+        
+            `dNonPersistMaxNAllocU`
+
+            Species the maximum number of Allocation Units for a non-persistent memory type.
+        
+            `dOptimalLogicalBlockSize`
+
+            Specifies the optimal logical block size.
+        
+            `dSegmentSize`
+
+            Specifies the segment size of the device in units of 512 bytes.
+        
+            `dSystemCodeMaxNAllocU`
+
+            Specifies the maximum number of allocation units for the System Code for a device.
+        
+            `Reserved1`
+
+            Reserved for future use.
+        
+            `wEnhanced1CapAdjFac`
+
+            specifies the Capacity Adjustment Factor for the enhanced
+memory type 1.
+        
+            `wEnhanced2CapAdjFac`
+
+            specifies the Capacity Adjustment Factor for the enhanced
+memory type 2.
+        
+            `wEnhanced3CapAdjFac`
+
+            specifies the Capacity Adjustment Factor for the enhanced
+memory type 3.
+        
+            `wEnhanced4CapAdjFac`
+
+            specifies the Capacity Adjustment Factor for the enhanced
+memory type 4.
+        
+            `wNonPersistCapAdjFac`
+
+            Specifies the capacity adjustment factor for the non-persistent memory type.
+        
+            `wSupportedMemoryTypes`
+
+            Specifies the supported memory types in a bitmap.
 
 <table>
 <tr>
@@ -331,84 +350,21 @@ Specifies the supported memory types in a bitmap.
 <td>A RPMB memory type is supported.</td>
 </tr>
 </table>
- 
+        
+            `wSystemCodeCapAdjFac`
 
-
-### -field dSystemCodeMaxNAllocU
-
-Specifies the maximum number of allocation units for the System Code for a device.
-
-
-### -field wSystemCodeCapAdjFac
-
-Species the Capacity Adjustment Factor for the System Code
+            Species the Capacity Adjustment Factor for the System Code
 memory type.
 
-
-### -field dNonPersistMaxNAllocU
-
-Species the maximum number of Allocation Units for a non-persistent memory type.
-
-
-### -field wNonPersistCapAdjFac
-
-Specifies the capacity adjustment factor for the non-persistent memory type.
-
-
-### -field dEnhanced1MaxNAllocU
-
-specifies the max number of Allocation Units for the enhanced
-memory type 1.
-
-
-### -field wEnhanced1CapAdjFac
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 1.
-
-
-### -field dEnhanced2MaxNAllocU
-
-specifies the max number of Allocation Units for the enhanced
-memory type 2.
-
-
-### -field wEnhanced2CapAdjFac
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 2.
-
-
-### -field dEnhanced3MaxNAllocU
-
-specifies the max number of Allocation Units for the enhanced
-memory type 3.
-
-
-### -field wEnhanced3CapAdjFac
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 3.
-
-
-### -field dEnhanced4MaxNAllocU
-
-specifies the max number of Allocation Units for the enhanced
-memory type 4.
-
-
-### -field wEnhanced4CapAdjFac
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 4.
-
-
-### -field dOptimalLogicalBlockSize
-
-Specifies the optimal logical block size.
-
-
-## -remarks
-If the size of the data transferred exceeds the number of frames <b>bRPMB_ReadWriteSize</b>, it will be done in multiple Security commands.
+    ## Remarks
+        If the size of the data transferred exceeds the number of frames <b>bRPMB_ReadWriteSize</b>, it will be done in multiple Security commands.
 
 The Capacity Adjustment Factor value for a normal memory type is equal to 1.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ufs.h |

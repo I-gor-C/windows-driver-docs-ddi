@@ -1,74 +1,68 @@
 ---
-UID: NC:d3dumddi.PFND3DDDI_ESCAPECB
-title: PFND3DDDI_ESCAPECB
-author: windows-driver-content
-description: The pfnEscapeCb callback function shares information with the display miniport driver.
-old-location: display\pfnescapecb.htm
-old-project: display
-ms.assetid: 66c0347f-2cf3-42fc-8641-47c731e958c9
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: pfnEscapeCb
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
+UID : NC:d3dumddi.PFND3DDDI_ESCAPECB
+title : PFND3DDDI_ESCAPECB
+author : windows-driver-content
+description : The pfnEscapeCb callback function shares information with the display miniport driver.
+old-location : display\pfnescapecb.htm
+old-project : display
+ms.assetid : 66c0347f-2cf3-42fc-8641-47c731e958c9
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : pfnEscapeCb
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DXGK_PTE
 ---
 
-# PFND3DDDI_ESCAPECB callback
 
-
-
-## -description
+# PFND3DDDI_ESCAPECB callback function
 The <b>pfnEscapeCb</b> callback function shares information with the display miniport driver.
 
+## Syntax
 
+```
+PFND3DDDI_ESCAPECB Pfnd3dddiEscapecb;
 
-## -prototype
-
-````
-PFND3DDDI_ESCAPECB pfnEscapeCb;
-
-__checkReturn HRESULT APIENTRY CALLBACK pfnEscapeCb(
-  _In_          HANDLE          hAdapter,
-  _Inout_ const D3DDDICB_ESCAPE *pData
+HRESULT Pfnd3dddiEscapecb(
+  HANDLE hAdapter,
+  CONST D3DDDICB_ESCAPE *
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hAdapter [in]
+`hAdapter`
 
 A handle to the graphics adapter object.
 
-
-### -param pData [in, out]
-
-A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_escape.md">D3DDDICB_ESCAPE</a> structure that describes the shared information.
+`*`
 
 
-## -returns
+
+
+## Return Value
+
 <b>pfnEscapeCb</b> returns one of the following values:
 <dl>
 <dt><b>S_OK</b></dt>
@@ -93,14 +87,26 @@ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_escape.md">D3DDDICB_ES
 
 This function might also return other HRESULT values.
 
+## Remarks
 
-## -remarks
 A user-mode display driver calls <b>pfnEscapeCb</b> to share miscellaneous information with the display miniport driver in a way that is not supported by any other driver communication. The user-mode display driver can send miscellaneous information to the display miniport driver or can retrieve information from the display miniport driver. 
 
 <b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnEscapeCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
@@ -117,4 +123,3 @@ A user-mode display driver calls <b>pfnEscapeCb</b> to share miscellaneous infor
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_ESCAPECB callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILRADIOPRESENCE
-title: RILRADIOPRESENCE
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilradiopresence_2.htm
-old-project: netvista
-ms.assetid: 0fd02d1a-e6c4-418d-b890-9b60f4f0c1ce
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILRADIOPRESENCE, RILRADIOPRESENCE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILRADIOPRESENCE
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILRADIOPRESENCE
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILRADIOPRESENCE
+title : RILRADIOPRESENCE
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilradiopresence_2.htm
+old-project : netvista
+ms.assetid : 0fd02d1a-e6c4-418d-b890-9b60f4f0c1ce
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILRADIOPRESENCE, RILRADIOPRESENCE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILRADIOPRESENCE
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILRADIOPRESENCE
+req.product : Windows 10 or later.
 ---
 
-# RILRADIOPRESENCE enumeration
+# RILRADIOPRESENCE Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILRADIOPRESENCE { 
   RIL_RADIOPRESENCE_PRESENT,
@@ -53,13 +46,26 @@ typedef enum _RILRADIOPRESENCE {
 } RILRADIOPRESENCE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_RADIOPRESENCE_PRESENT
+<tr>
+<td>RIL_RADIOPRESENCE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RADIOPRESENCE_PRESENT</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_RADIOPRESENCE_MAX
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

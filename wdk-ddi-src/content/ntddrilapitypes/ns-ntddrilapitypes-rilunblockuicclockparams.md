@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILUNBLOCKUICCLOCKPARAMS
-title: RILUNBLOCKUICCLOCKPARAMS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilunblockuicclockparams.htm
-old-project: netvista
-ms.assetid: 48d1deeb-8862-4e01-aa22-119a53aa4aba
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILUNBLOCKUICCLOCKPARAMS
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS
+UID : NS:ntddrilapitypes.RILUNBLOCKUICCLOCKPARAMS
+title : RILUNBLOCKUICCLOCKPARAMS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilunblockuicclockparams.htm
+old-project : netvista
+ms.assetid : 48d1deeb-8862-4e01-aa22-119a53aa4aba
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILUNBLOCKUICCLOCKPARAMS
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS"
 ---
 
 # RILUNBLOCKUICCLOCKPARAMS structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILUNBLOCKUICCLOCKPARAMS {
   RILUICCLOCKCREDENTIAL  lockCredential;
@@ -52,13 +45,22 @@ typedef struct _RILUNBLOCKUICCLOCKPARAMS {
 } RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `lockCredential`
 
-### -field lockCredential
+            
+        
+            `szNewPassword`
+
+            
 
 
-### -field szNewPassword
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

@@ -1,62 +1,61 @@
 ---
-UID: NS:mpiowmi._ClearPathHealthCounters_IN
-title: _ClearPathHealthCounters_IN
-author: windows-driver-content
-description: The ClearPathHealthCounters_IN structure is used to provide an input parameter to the ClearPathHealthCounters method.
-old-location: storage\clearpathhealthcounters_in.htm
-old-project: storage
-ms.assetid: 12c4462a-886b-4446-ace4-128af0af5dc0
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _ClearPathHealthCounters_IN, ClearPathHealthCounters_IN, *PClearPathHealthCounters_IN
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: mpiowmi.h
-req.include-header: Mpiowmi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ClearPathHealthCounters_IN
-req.alt-loc: mpiowmi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: ClearPathHealthCounters_IN, *PClearPathHealthCounters_IN
+UID : NS:mpiowmi._ClearPathHealthCounters_IN
+title : _ClearPathHealthCounters_IN
+author : windows-driver-content
+description : The ClearPathHealthCounters_IN structure is used to provide an input parameter to the ClearPathHealthCounters method.
+old-location : storage\clearpathhealthcounters_in.htm
+old-project : storage
+ms.assetid : 12c4462a-886b-4446-ace4-128af0af5dc0
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _ClearPathHealthCounters_IN, *PClearPathHealthCounters_IN, ClearPathHealthCounters_IN
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : mpiowmi.h
+req.include-header : Mpiowmi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ClearPathHealthCounters_IN
+req.alt-loc : mpiowmi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PClearPathHealthCounters_IN, ClearPathHealthCounters_IN"
 ---
 
 # _ClearPathHealthCounters_IN structure
-
-
-
-## -description
 The ClearPathHealthCounters_IN structure is used to provide an input parameter to the ClearPathHealthCounters method.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _ClearPathHealthCounters_IN {
   ULONGLONG PathID;
 } ClearPathHealthCounters_IN, *PClearPathHealthCounters_IN;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `PathID`
 
-### -field PathID
-
-A 64-bitfield that specifies the path that is associated with the device.
+            A 64-bitfield that specifies the path that is associated with the device.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | mpiowmi.h (include Mpiowmi.h) |

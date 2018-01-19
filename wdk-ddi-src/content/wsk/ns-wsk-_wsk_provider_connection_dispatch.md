@@ -1,52 +1,45 @@
 ---
-UID: NS:wsk._WSK_PROVIDER_CONNECTION_DISPATCH
-title: _WSK_PROVIDER_CONNECTION_DISPATCH
-author: windows-driver-content
-description: The WSK_PROVIDER_CONNECTION_DISPATCH structure specifies the WSK subsystem's table of functions for a connection-oriented socket.
-old-location: netvista\wsk_provider_connection_dispatch.htm
-old-project: netvista
-ms.assetid: 70a86809-07f2-4723-9e50-4dbdd31ff900
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WSK_PROVIDER_CONNECTION_DISPATCH, WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wsk.h
-req.include-header: Wsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WSK_PROVIDER_CONNECTION_DISPATCH
-req.alt-loc: wsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH
-req.product: Windows 10 or later.
+UID : NS:wsk._WSK_PROVIDER_CONNECTION_DISPATCH
+title : _WSK_PROVIDER_CONNECTION_DISPATCH
+author : windows-driver-content
+description : The WSK_PROVIDER_CONNECTION_DISPATCH structure specifies the WSK subsystem's table of functions for a connection-oriented socket.
+old-location : netvista\wsk_provider_connection_dispatch.htm
+old-project : netvista
+ms.assetid : 70a86809-07f2-4723-9e50-4dbdd31ff900
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH, WSK_PROVIDER_CONNECTION_DISPATCH
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wsk.h
+req.include-header : Wsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WSK_PROVIDER_CONNECTION_DISPATCH
+req.alt-loc : wsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : "*PWSK_PROVIDER_CONNECTION_DISPATCH, WSK_PROVIDER_CONNECTION_DISPATCH"
+req.product : Windows 10 or later.
 ---
 
 # _WSK_PROVIDER_CONNECTION_DISPATCH structure
-
-
-
-## -description
 The WSK_PROVIDER_CONNECTION_DISPATCH structure specifies the WSK subsystem's table of functions for a
   connection-oriented socket.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
   WSK_PROVIDER_BASIC_DISPATCH          Basic;
@@ -62,77 +55,67 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
 } WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Basic`
 
-### -field Basic
-
-The members of the 
+            The members of the 
      <a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">
      WSK_PROVIDER_BASIC_DISPATCH</a> structure are included as members of the 
      <b>WSK_PROVIDER_CONNECTION_DISPATCH</b> structure.
+        
+            `WskBind`
 
-
-### -field WskBind
-
-A pointer to the WSK subsystem's 
+            A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a> function for the socket.
+        
+            `WskConnect`
 
-
-### -field WskConnect
-
-A pointer to the WSK subsystem's 
+            A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a> function for the socket.
+        
+            `WskConnectEx`
 
-
-### -field WskGetLocalAddress
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_get_local_address.md">WskGetLocalAddress</a> function for the
-     socket.
-
-
-### -field WskGetRemoteAddress
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_get_remote_address.md">WskGetRemoteAddress</a> function for the
-     socket.
-
-
-### -field WskSend
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a> function for the socket.
-
-
-### -field WskReceive
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a> function for the socket.
-
-
-### -field WskDisconnect
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a> function for the
-     socket.
-
-
-### -field WskRelease
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a> function for the socket.
-
-
-### -field WskConnectEx
-
-A pointer to the WSK subsystem's 
+            A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_connect_ex.md">WskConnectEx</a> function for the
      socket.
+        
+            `WskDisconnect`
 
+            A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a> function for the
+     socket.
+        
+            `WskGetLocalAddress`
 
-## -remarks
-The member list of the WSK_PROVIDER_CONNECTION_DISPATCH structure includes an unnamed 
+            A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_get_local_address.md">WskGetLocalAddress</a> function for the
+     socket.
+        
+            `WskGetRemoteAddress`
+
+            A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_get_remote_address.md">WskGetRemoteAddress</a> function for the
+     socket.
+        
+            `WskReceive`
+
+            A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a> function for the socket.
+        
+            `WskRelease`
+
+            A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a> function for the socket.
+        
+            `WskSend`
+
+            A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a> function for the socket.
+
+    ## Remarks
+        The member list of the WSK_PROVIDER_CONNECTION_DISPATCH structure includes an unnamed 
     <a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">
     WSK_PROVIDER_BASIC_DISPATCH</a> structure. The compiler that is included with the WDK supports a
     Microsoft-specific extension to the C language that allows unnamed structures within structure
@@ -165,9 +148,17 @@ The pointer to the WSK_PROVIDER_CONNECTION_DISPATCH structure is contained in th
     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that is received from the
     WSK subsystem.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wsk.h (include Wsk.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 </dt>
@@ -226,4 +217,3 @@ The pointer to the WSK_PROVIDER_CONNECTION_DISPATCH structure is contained in th
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CONNECTION_DISPATCH structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

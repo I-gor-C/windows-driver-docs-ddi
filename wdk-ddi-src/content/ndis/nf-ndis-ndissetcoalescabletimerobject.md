@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisSetCoalescableTimerObject
-title: NdisSetCoalescableTimerObject function
-author: windows-driver-content
-description: The NdisSetCoalescableTimerObject function sets a timer object that the operating system coordinates with other timers, typically to reduce power consumption, when the exact expiration of the timer is not important to driver operation.
-old-location: netvista\ndissetcoalescabletimerobject.htm
-old-project: netvista
-ms.assetid: f6f50bba-cda5-41ed-9e0b-1aea5113a22b
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisSetCoalescableTimerObject
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.20 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisSetCoalescableTimerObject
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisSetCoalescableTimerObject
+title : NdisSetCoalescableTimerObject function
+author : windows-driver-content
+description : The NdisSetCoalescableTimerObject function sets a timer object that the operating system coordinates with other timers, typically to reduce power consumption, when the exact expiration of the timer is not important to driver operation.
+old-location : netvista\ndissetcoalescabletimerobject.htm
+old-project : netvista
+ms.assetid : f6f50bba-cda5-41ed-9e0b-1aea5113a22b
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisSetCoalescableTimerObject
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.20 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisSetCoalescableTimerObject
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisSetCoalescableTimerObject function
-
-
-
-## -description
 The 
   <b>NdisSetCoalescableTimerObject</b> function sets a timer object that the operating system coordinates with
   other timers, typically to reduce power consumption, when the exact expiration of the timer is not
   important to driver operation.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN NdisSetCoalescableTimerObject(
@@ -58,17 +53,15 @@ BOOLEAN NdisSetCoalescableTimerObject(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param TimerObject [in]
+`TimerObject`
 
 A handle to a timer object that NDIS provides when a driver calls the 
      <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">
      NdisAllocateTimerObject</a> function.
 
-
-### -param DueTime [in]
+`DueTime`
 
 The absolute or relative time at which the timer will expire. If the value of the 
      <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time.
@@ -76,8 +69,7 @@ The absolute or relative time at which the timer will expire. If the value of th
      (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative
      expiration times are not affected by system time changes.
 
-
-### -param MillisecondsPeriod [in, optional]
+`MillisecondsPeriod`
 
 The optional periodic time interval, in milliseconds, that elapses between every instance when the
      timer fires and the next call to the 
@@ -85,8 +77,7 @@ The optional periodic time interval, in milliseconds, that elapses between every
      than or equal to MAXLONG. This parameter can be set to zero to indicate that the timer is
      non-periodic.
 
-
-### -param FunctionContext [in, optional]
+`FunctionContext`
 
 A pointer to a caller-supplied context area that NDIS passes to the associated 
      <i>NetTimerCallback</i> function when a timer fires. If this parameter is <b>NULL</b>, NDIS uses the default
@@ -94,8 +85,7 @@ A pointer to a caller-supplied context area that NDIS passes to the associated
      <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">
      NDIS_TIMER_CHARACTERISTICS</a> structure.
 
-
-### -param Tolerance [in, optional]
+`Tolerance`
 
 The tolerance, in milliseconds, between the timer period specified by 
      <i>MillisecondsPeriod</i> and the initial time interval specified by 
@@ -111,12 +101,13 @@ The tolerance, in milliseconds, between the timer period specified by
      <i>Tolerance</i> ).
 
 
-## -returns
+## Return Value
+
 <b>NdisSetCoalescableTimerObject</b> returns <b>TRUE</b> if the timer object was already in the system timer
      queue; otherwise, it returns <b>FALSE</b>.
 
+## Remarks
 
-## -remarks
 A timer object set by this function operates the same as a timer set by 
     <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>, with an additional
     tolerance value added to the expiration parameter 
@@ -174,8 +165,20 @@ For more information about timer behavior, see
 To cancel a timer, call the 
     <a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
@@ -201,4 +204,3 @@ To cancel a timer, call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetCoalescableTimerObject function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

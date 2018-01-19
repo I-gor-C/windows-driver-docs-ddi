@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._REPARSE_GUID_DATA_BUFFER
-title: _REPARSE_GUID_DATA_BUFFER
-author: windows-driver-content
-description: The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point.
-old-location: ifsk\reparse_guid_data_buffer.htm
-old-project: ifsk
-ms.assetid: 9acb3b65-46c7-4b29-8d7a-c5d8fcd4563d
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h, Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: REPARSE_GUID_DATA_BUFFER
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER
+UID : NS:ntifs._REPARSE_GUID_DATA_BUFFER
+title : _REPARSE_GUID_DATA_BUFFER
+author : windows-driver-content
+description : The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point.
+old-location : ifsk\reparse_guid_data_buffer.htm
+old-project : ifsk
+ms.assetid : 9acb3b65-46c7-4b29-8d7a-c5d8fcd4563d
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _REPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h, Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : REPARSE_GUID_DATA_BUFFER
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER
 ---
 
 # _REPARSE_GUID_DATA_BUFFER structure
+The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point.
 
-
-
-## -description
-The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _REPARSE_GUID_DATA_BUFFER {
   ULONG  ReparseTag;
@@ -57,41 +50,31 @@ typedef struct _REPARSE_GUID_DATA_BUFFER {
 } REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `GenericReparseBuffer`
 
-### -field ReparseTag
+            
+        
+            `ReparseDataLength`
 
-Reparse point tag that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.) 
+            Size, in bytes, of the reparse data in the <b>DataBuffer</b> member.
+        
+            `ReparseGuid`
 
+            GUID that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.)
+        
+            `ReparseTag`
 
-### -field ReparseDataLength
+            Reparse point tag that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.)
+        
+            `Reserved`
 
-Size, in bytes, of the reparse data in the <b>DataBuffer</b> member. 
+            Reserved; do not use.
 
-
-### -field Reserved
-
-Reserved; do not use. 
-
-
-### -field ReparseGuid
-
-GUID that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.) 
-
-
-### -field GenericReparseBuffer
-
-
-### -field DataBuffer
-
-User-defined data for the reparse point. The format of this data is defined by the owner of the reparse point. 
-
-</dd>
-</dl>
-
-## -remarks
-The REPARSE_GUID_DATA_BUFFER structure is used by all third-party file systems, filters, and minifilters, as well as some Microsoft file systems, filters, and minifilters to store data for a reparse point. Each reparse point contains one REPARSE_GUID_DATA_BUFFER structure. 
+    ## Remarks
+        The REPARSE_GUID_DATA_BUFFER structure is used by all third-party file systems, filters, and minifilters, as well as some Microsoft file systems, filters, and minifilters to store data for a reparse point. Each reparse point contains one REPARSE_GUID_DATA_BUFFER structure. 
 
 Microsoft reparse points can use the <a href="..\ntifs\ns-ntifs-_reparse_data_buffer.md">REPARSE_DATA_BUFFER</a> structure instead of the REPARSE_GUID_DATA_BUFFER structure. However, third-party reparse points are required to use the REPARSE_GUID_DATA_BUFFER structure. 
 
@@ -103,11 +86,19 @@ Minifilters can set or delete a reparse point by calling <a href="..\fltkernel\n
 
 File systems and filter drivers can retrieve, set, or delete a reparse point by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a> control codes. These codes can be sent to the file system by calling <a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>. 
 
-For more information about reparse points and reparse point tags, see the Windows SDK documentation.  
+For more information about reparse points and reparse point tags, see the Windows SDK documentation.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a>
 </dt>
@@ -153,4 +144,3 @@ For more information about reparse points and reparse point tags, see the Window
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_GUID_DATA_BUFFER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

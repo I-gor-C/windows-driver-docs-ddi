@@ -1,93 +1,85 @@
 ---
-UID: NC:wdm.DRIVER_CONTROL
-title: DRIVER_CONTROL function
-author: windows-driver-content
-description: This routine starts a DMA data-transfer or a data transfer operation.
-old-location: kernel\adaptercontrol.htm
-old-project: kernel
-ms.assetid: b75b8937-793d-4d75-9bb7-2226096044f0
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: DRIVER_CONTROL
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MyControl
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at DISPATCH_LEVEL.
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.DRIVER_CONTROL
+title : DRIVER_CONTROL
+author : windows-driver-content
+description : This routine starts a DMA data-transfer or a data transfer operation.
+old-location : kernel\adaptercontrol.htm
+old-project : kernel
+ms.assetid : b75b8937-793d-4d75-9bb7-2226096044f0
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MyControl
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at DISPATCH_LEVEL.
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # DRIVER_CONTROL function
+This routine starts a DMA data-transfer or a data transfer operation.
 
+## Syntax
 
+```
+DRIVER_CONTROL DriverControl;
 
-## -description
-This routine starts a DMA data-transfer or a data transfer operation. 
-
-
-
-## -syntax
-
-````
-DRIVER_CONTROL MyControl;
-
-IO_ALLOCATION_ACTION MyControl(
-  _In_    struct _DEVICE_OBJECT *DeviceObject,
-  _Inout_ struct _IRP           *Irp,
-  _In_    PVOID                 MapRegisterBase,
-  _In_    PVOID                 Context
+_IRQL_requires_same_ IO_ALLOCATION_ACTION DriverControl(
+  _DEVICE_OBJECT * DeviceObject,
+  _IRP * Irp,
+  PVOID MapRegisterBase,
+  PVOID Context
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param DeviceObject [in]
+`DeviceObject`
 
 Caller-supplied pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <i>AddDevice</i> routine.
 
-
-### -param Irp [in, out]
+`Irp`
 
 Caller-supplied pointer to an <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure. <i>Irp</i> is equal to the value of the <b>CurrentIrp</b> member of <i>DeviceObject</i> when the callback routine was registered.
 
-
-### -param MapRegisterBase [in]
+`MapRegisterBase`
 
 In the case of <i>AdapterControl</i>, this is a caller-supplied opaque value that represents  the map registers that the system has assigned for this transfer operation. The driver passes this value to <a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>, <a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>, and <a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>.
 
 In the case of <i>ControllerControl</i>, this is not used.
 
-
-### -param Context [in]
+`Context`
 
 Caller-supplied pointer to driver-defined context information, specified in a previous call to <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>.
 
 
-## -returns
+## Return Value
+
 The routine must return one of the values defined by the <a href="..\wdm\ne-wdm-_io_allocation_action.md">IO_ALLOCATION_ACTION</a> enumeration. Drivers of bus-master devices return either <b>DeallocateObject</b> or <b>DeallocateObjectKeepRegisters</b>; drivers that use system DMA return <b>KeepObject</b>.
 
+## Remarks
 
-## -remarks
 <b>About implementing <i>AdapterControl</i>:  </b><p class="note">To register an <i>AdapterControl</i> routine for a specific device object, a driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> to obtain an adapter object, then call <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a> to request use of the adapter and to supply the <i>AdapterControl</i> routine's address. When the adapter is free, the system calls the <i>AdapterControl</i> routine.
 
 <p class="note">If <i>AdapterControl</i> has been registered by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a> routine, then the <i>Irp</i> parameter is guaranteed to point to the IRP currently being processed by the <i>StartIo</i> routine. Otherwise, drivers must set the <b>CurrentIrp</b> member of the device object structure before calling <b>AllocateAdapterChannel</b>.
@@ -121,8 +113,20 @@ For example, to define an <i>AdapterControl</i> callback routine that is named <
 
 Then, implement your callback routine as follows:
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Called at DISPATCH_LEVEL. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
@@ -133,4 +137,3 @@ Then, implement your callback routine as follows:
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DRIVER_CONTROL routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,91 +1,83 @@
 ---
-UID: NC:videoagp.PAGP_COMMIT_VIRTUAL
-title: PAGP_COMMIT_VIRTUAL
-author: windows-driver-content
-description: The AgpCommitVirtual function maps reserved virtual memory to an associated range of AGP-decodable physical addresses.
-old-location: display\agpcommitvirtual.htm
-old-project: display
-ms.assetid: 8a3e7fcd-d838-47ad-a42b-7eb070f81418
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: videoagp.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: AgpCommitVirtual
-req.alt-loc: videoagp.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-req.product: Windows 10 or later.
+UID : NC:videoagp.PAGP_COMMIT_VIRTUAL
+title : PAGP_COMMIT_VIRTUAL
+author : windows-driver-content
+description : The AgpCommitVirtual function maps reserved virtual memory to an associated range of AGP-decodable physical addresses.
+old-location : display\agpcommitvirtual.htm
+old-project : display
+ms.assetid : 8a3e7fcd-d838-47ad-a42b-7eb070f81418
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : videoagp.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : AgpCommitVirtual
+req.alt-loc : videoagp.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.product : Windows 10 or later.
 ---
 
-# PAGP_COMMIT_VIRTUAL callback
 
-
-
-## -description
+# PAGP_COMMIT_VIRTUAL callback function
 The <b>AgpCommitVirtual</b> function maps reserved virtual memory to an associated range of AGP-decodable physical addresses.
 
+## Syntax
 
+```
+PAGP_COMMIT_VIRTUAL PagpCommitVirtual;
 
-## -prototype
-
-````
-PAGP_COMMIT_VIRTUAL AgpCommitVirtual;
-
-PVOID APIENTRY AgpCommitVirtual(
-  _In_ PVOID HwDeviceExtension,
-  _In_ PVOID VirtualReserveContext,
-  _In_ ULONG Pages,
-  _In_ ULONG Offset
+PVOID PagpCommitVirtual(
+  IN PVOID HwDeviceExtension,
+  IN PVOID VirtualReserveContext,
+  IN ULONG Pages,
+  IN ULONG Offset
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension [in]
+`HwDeviceExtension`
 
 Pointer to the device extension of the miniport driver'.
 
-
-### -param VirtualReserveContext [in]
+`VirtualReserveContext`
 
 Identifies a reserved virtual address range. The context handle was obtained from <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a>.
 
-
-### -param Pages [in]
+`Pages`
 
 Specifies the number of pages of virtual memory to map.
 
-
-### -param Offset [in]
+`Offset`
 
 Specifies the page offset at which to commit the pages. The offset is applied to the reserved virtual address range that is identified by <b>VirtualReserveContext</b>.
 
 
-## -returns
+## Return Value
+
 <b>AgpCommitVirtual</b> returns the virtual address for the base of the committed pages if the mapping succeeded; otherwise returns <b>NULL</b>.
 
+## Remarks
 
-## -remarks
 Before calling <b>AgpCommitVirtual</b> to commit a range of virtual pages, you must do the following:
 
 Call <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> to reserve a range of physical addresses for the GPU to use.
@@ -102,8 +94,20 @@ On Windows XP and later, <b>AgpCommitVirtual</b> automatically expands the commi
 
 When a miniport driver calls <b>AgpCommitVirtual</b>, a portion of the virtual address range identified by <b>VirtualReserveContext</b> is mapped to physical addresses. The mapped portion begins <i>Offset</i> pages into the virtual address range that is identified by <b>VirtualReserveContext</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | videoagp.h (include Video.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a>
@@ -120,4 +124,3 @@ When a miniport driver calls <b>AgpCommitVirtual</b>, a portion of the virtual a
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PAGP_COMMIT_VIRTUAL callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

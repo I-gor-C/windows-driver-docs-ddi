@@ -1,50 +1,43 @@
 ---
-UID: NS:fltkernel._FLT_IO_PARAMETER_BLOCK
-title: _FLT_IO_PARAMETER_BLOCK
-author: windows-driver-content
-description: The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (FLT_CALLBACK_DATA) structure.
-old-location: ifsk\flt_io_parameter_block.htm
-old-project: ifsk
-ms.assetid: a62f6db3-baca-492a-b485-062fcc69f563
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _FLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FLT_IO_PARAMETER_BLOCK
-req.alt-loc: fltkernel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK
+UID : NS:fltkernel._FLT_IO_PARAMETER_BLOCK
+title : _FLT_IO_PARAMETER_BLOCK
+author : windows-driver-content
+description : The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (FLT_CALLBACK_DATA) structure.
+old-location : ifsk\flt_io_parameter_block.htm
+old-project : ifsk
+ms.assetid : a62f6db3-baca-492a-b485-062fcc69f563
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FLT_IO_PARAMETER_BLOCK
+req.alt-loc : fltkernel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK"
 ---
 
 # _FLT_IO_PARAMETER_BLOCK structure
+The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure.
 
-
-
-## -description
-The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _FLT_IO_PARAMETER_BLOCK {
   ULONG          IrpFlags;
@@ -58,12 +51,12 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 } FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `IrpFlags`
 
-### -field IrpFlags
-
-A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The following table shows flag values. 
+            A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The following table shows flag values. 
 
 <table>
 <tr>
@@ -241,22 +234,18 @@ The operation originated from a user mode driver.
 </td>
 </tr>
 </table>
- 
+        
+            `MajorFunction`
 
+            The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
+        
+            `MinorFunction`
 
-### -field MajorFunction
+            The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
+        
+            `OperationFlags`
 
-The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
-
-
-### -field MinorFunction
-
-The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>. 
-
-
-### -field OperationFlags
-
-A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The following table shows the most commonly used flag values.
+            A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The following table shows the most commonly used flag values.
 
 <table>
 <tr>
@@ -394,31 +383,25 @@ Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">
 </td>
 </tr>
 </table>
- 
+        
+            `Parameters`
 
+            An <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members.
+        
+            `Reserved`
 
-### -field Reserved
+            Reserved for system use. Do not use.
+        
+            `TargetFileObject`
 
-Reserved for system use. Do not use. 
+            A file object pointer for the file or directory that is the target for this I/O operation.
+        
+            `TargetInstance`
 
+            An opaque instance pointer for the minifilter that is the target for this I/O operation.
 
-### -field TargetFileObject
-
-A file object pointer for the file or directory that is the target for this I/O operation. 
-
-
-### -field TargetInstance
-
-An opaque instance pointer for the minifilter that is the target for this I/O operation. 
-
-
-### -field Parameters
-
-An <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members. 
-
-
-## -remarks
-The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure. The callback data structure contains a pointer to the FLT_IO_PARAMETER_BLOCK structure in its  <b>Iopb</b> member. 
+    ## Remarks
+        The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure. The callback data structure contains a pointer to the FLT_IO_PARAMETER_BLOCK structure in its  <b>Iopb</b> member. 
 
 A minifilter receives a pointer to the callback data structure as the <i>Data</i> or <i>CallbackData</i> input parameter to the following callback routine types: 
 
@@ -463,10 +446,17 @@ A minifilter cannot safely change the value of the <b>MajorFunction</b> member. 
 A minifilter can initiate an I/O operation by calling a support routine such as <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> or by calling <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a> to allocate a callback data structure; initializing the I/O parameters in the <b>FLT_IO_PARAMETER_BLOCK</b> structure, and passing the callback data structure to <a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a> or <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>. <div class="alert"><b>Note</b>  Use support routines wherever possible when initiating I/O operations.  A minifilter should allocate its own callback data only if there is no support function for a particular I/O operation.</div>
 <div> </div>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
 
+    ## See Also
 
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
@@ -587,4 +577,3 @@ A minifilter can initiate an I/O operation by calling a support routine such as 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_IO_PARAMETER_BLOCK structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

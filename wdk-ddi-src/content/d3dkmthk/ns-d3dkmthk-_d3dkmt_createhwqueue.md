@@ -1,50 +1,43 @@
 ---
-UID: NS:d3dkmthk._D3DKMT_CREATEHWQUEUE
-title: _D3DKMT_CREATEHWQUEUE
-author: windows-driver-content
-description: A structure holding information to create a hardware queue.
-old-location: display\d3dkmt_createhwqueue.htm
-old-project: display
-ms.assetid: DBD99353-4798-4540-89DB-EA08521B276E
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _D3DKMT_CREATEHWQUEUE, D3DKMT_CREATEHWQUEUE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3dkmthk.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3DKMT_CREATEHWQUEUE
-req.alt-loc: d3dkmthk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3DKMT_CREATEHWQUEUE
+UID : NS:d3dkmthk._D3DKMT_CREATEHWQUEUE
+title : _D3DKMT_CREATEHWQUEUE
+author : windows-driver-content
+description : A structure holding information to create a hardware queue.
+old-location : display\d3dkmt_createhwqueue.htm
+old-project : display
+ms.assetid : DBD99353-4798-4540-89DB-EA08521B276E
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _D3DKMT_CREATEHWQUEUE, D3DKMT_CREATEHWQUEUE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3dkmthk.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3DKMT_CREATEHWQUEUE
+req.alt-loc : d3dkmthk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3DKMT_CREATEHWQUEUE
 ---
 
 # _D3DKMT_CREATEHWQUEUE structure
-
-
-
-## -description
 A structure holding information to create a hardware queue.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3DKMT_CREATEHWQUEUE {
   D3DKMT_HANDLE             hHwContext;
@@ -58,49 +51,46 @@ typedef struct _D3DKMT_CREATEHWQUEUE {
 } D3DKMT_CREATEHWQUEUE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Flags`
 
-### -field hHwContext
+            Hardware queue creation flags.
+        
+            `hHwContext`
 
-Handle to the hardware context the queue is associated with.
+            Handle to the hardware context the queue is associated with.
+        
+            `hHwQueue`
 
+            Handle to the hardware queue object to submit work to.
+        
+            `hHwQueueProgressFence`
 
+            Handle to the monitored fence object used to monitor the queue progress.
+        
+            `HwQueueProgressFenceCPUVirtualAddress`
 
-### -field Flags
+            Read-only mapping of the queue progress fence value for the CPU.
+        
+            `HwQueueProgressFenceGPUVirtualAddress`
 
-Hardware queue creation flags.
+            Read/write mapping of the queue progress fence value for the GPU.
+        
+            `pPrivateDriverData`
 
+            Private driver data.
+        
+            `PrivateDriverDataSize`
 
-
-### -field PrivateDriverDataSize
-
-Size of private driver data.
-
-
-### -field pPrivateDriverData
-
-Private driver data.
-
-
-### -field hHwQueue
-
-Handle to the hardware queue object to submit work to.
-
-
-### -field hHwQueueProgressFence
-
-Handle to the monitored fence object used to monitor the queue progress.
-
-
-### -field HwQueueProgressFenceCPUVirtualAddress
-
-Read-only mapping of the queue progress fence value for the CPU.
+            Size of private driver data.
 
 
-### -field HwQueueProgressFenceGPUVirtualAddress
-
-Read/write mapping of the queue progress fence value for the GPU.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dkmthk.h |

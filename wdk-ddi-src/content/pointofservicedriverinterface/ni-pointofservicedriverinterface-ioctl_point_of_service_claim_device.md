@@ -1,75 +1,64 @@
 ---
-UID: NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
-title: IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
-author: windows-driver-content
-description: The I/O control function claims the device for exclusive access.
-old-location: pos\ioctl_point_of_service_claim_device.htm
-old-project: pos
-ms.assetid: e9dfa630-d3ac-4228-ae2a-02ff5a0fd558
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _PosPropertyId, PosPropertyId
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: ioctl
-req.header: pointofservicedriverinterface.h
-req.include-header: Pointofservicedriverinterface.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
-req.alt-loc: pointofservicedriverinterface.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: PosPropertyId
+UID : NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
+title : IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
+author : windows-driver-content
+description : The I/O control function claims the device for exclusive access.
+old-location : pos\ioctl_point_of_service_claim_device.htm
+old-project : pos
+ms.assetid : e9dfa630-d3ac-4228-ae2a-02ff5a0fd558
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _PosPropertyId, PosPropertyId
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : ioctl
+req.header : pointofservicedriverinterface.h
+req.include-header : Pointofservicedriverinterface.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
+req.alt-loc : pointofservicedriverinterface.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : PosPropertyId
 ---
 
 # IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE IOCTL
-
-
-
-## -description
 The I/O control function claims the device for exclusive access.
 
+### Major Code
+[IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
-
-## -ioctlparameters
-
-### -input-buffer
+### Input Buffer
 Not used with this operation; set to <b>NULL</b>.
 
-
-### -input-buffer-length
+### Input Buffer Length
 Not used with this operation; set to <b>0</b> (zero).
 
-
-### -output-buffer
+### Output Buffer
 Not used with this operation; set to <b>NULL</b>.
 
-
-### -output-buffer-length
+### Output Buffer Length
 Not used with this operation; set to <b>0</b> (zero).
 
-
-### -in-out-buffer
-
+### Input / Output Buffer
 <text></text>
 
-### -inout-buffer-length
-
+### Input / Output Buffer Length
 <text></text>
 
-### -status-block
+### Status Block
 I/O Status block
 Returns <b>TRUE</b> if successful; otherwise, returns <b>FALSE</b>.
 
@@ -84,4 +73,9 @@ The POS library is not initialized.
 The claim request was queued.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
+| **IRQL** |  |

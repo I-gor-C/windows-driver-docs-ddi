@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.KeReleaseSemaphore
-title: KeReleaseSemaphore function
-author: windows-driver-content
-description: The KeReleaseSemaphore routine releases the specified semaphore object.
-old-location: kernel\kereleasesemaphore.htm
-old-project: kernel
-ms.assetid: 357a97e6-cb19-43df-9b90-db199c712878
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KeReleaseSemaphore
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KeReleaseSemaphore
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: See Remarks section.
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.KeReleaseSemaphore
+title : KeReleaseSemaphore function
+author : windows-driver-content
+description : The KeReleaseSemaphore routine releases the specified semaphore object.
+old-location : kernel\kereleasesemaphore.htm
+old-project : kernel
+ms.assetid : 357a97e6-cb19-43df-9b90-db199c712878
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : KeReleaseSemaphore
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KeReleaseSemaphore
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : See Remarks section.
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # KeReleaseSemaphore function
+The <b>KeReleaseSemaphore</b> routine releases the specified semaphore object.
 
-
-
-## -description
-The <b>KeReleaseSemaphore</b> routine releases the specified semaphore object. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 LONG KeReleaseSemaphore(
@@ -55,34 +50,31 @@ LONG KeReleaseSemaphore(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Semaphore [in, out]
+`Semaphore`
 
 A pointer to an initialized semaphore object for which the caller provides the storage.
 
-
-### -param Increment [in]
+`Increment`
 
 Specifies the priority increment to be applied if releasing the semaphore causes a wait to be satisfied.
 
-
-### -param Adjustment [in]
+`Adjustment`
 
 Specifies a value to be added to the current semaphore count. This value must be positive.
 
+`Wait`
 
-### -param Wait [in]
-
-Specifies whether the call to <b>KeReleaseSemaphore</b> is to be followed <u>immediately</u> by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeReleaseSemaphore</b> call must be followed by a call to <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>, or <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>. For more information, see the following Remarks section. 
-
-
-## -returns
-If the return value is zero, the previous state of the semaphore object is not-signaled. 
+Specifies whether the call to <b>KeReleaseSemaphore</b> is to be followed <u>immediately</u> by a call to one of the <b>KeWait<i>Xxx</i></b> routines. If <b>TRUE</b>, the <b>KeReleaseSemaphore</b> call must be followed by a call to <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>, or <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>. For more information, see the following Remarks section.
 
 
-## -remarks
+## Return Value
+
+If the return value is zero, the previous state of the semaphore object is not-signaled.
+
+## Remarks
+
 <b>KeReleaseSemaphore</b> supplies a run-time priority boost for waiting threads. If this call sets the semaphore to the signaled state, the semaphore count is augmented by the specified value. The caller can also specify whether it will call one of the <b>KeWait<i>Xxx</i></b> routines as soon as <b>KeReleaseSemaphore</b> returns control.
 
 Releasing a semaphore object causes the semaphore count to be augmented by the value of the <i>Adjustment</i> parameter. If the resulting value is greater than the limit of the semaphore object, the count is not adjusted and an exception, STATUS_SEMAPHORE_LIMIT_EXCEEDED, is raised.
@@ -99,8 +91,20 @@ For more information about semaphore objects, see <a href="https://msdn.microsof
 
 Callers of <b>KeReleaseSemaphore</b> must be running at IRQL &lt;= DISPATCH_LEVEL provided that <i>Wait</i> is set to <b>FALSE</b>. Otherwise, the caller must be running at IRQL = PASSIVE_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
@@ -123,4 +127,3 @@ Callers of <b>KeReleaseSemaphore</b> must be running at IRQL &lt;= DISPATCH_LEVE
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeReleaseSemaphore routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

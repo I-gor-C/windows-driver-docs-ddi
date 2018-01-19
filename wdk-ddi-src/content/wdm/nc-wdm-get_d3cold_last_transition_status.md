@@ -1,70 +1,63 @@
 ---
-UID: NC:wdm.GET_D3COLD_LAST_TRANSITION_STATUS
-title: GET_D3COLD_LAST_TRANSITION_STATUS function
-author: windows-driver-content
-description: The GetLastTransitionStatus routine enables the driver for a device to query whether the most recent transition to the D3hot substate was followed by a transition to the D3cold substate.
-old-location: kernel\getlasttransitionstatus.htm
-old-project: kernel
-ms.assetid: 2ED5A28B-8668-411D-9462-8D6ED2F08B35
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: GET_D3COLD_LAST_TRANSITION_STATUS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: GetLastTransitionStatus
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.GET_D3COLD_LAST_TRANSITION_STATUS
+title : GET_D3COLD_LAST_TRANSITION_STATUS
+author : windows-driver-content
+description : The GetLastTransitionStatus routine enables the driver for a device to query whether the most recent transition to the D3hot substate was followed by a transition to the D3cold substate.
+old-location : kernel\getlasttransitionstatus.htm
+old-project : kernel
+ms.assetid : 2ED5A28B-8668-411D-9462-8D6ED2F08B35
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : GetLastTransitionStatus
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # GET_D3COLD_LAST_TRANSITION_STATUS function
-
-
-
-## -description
 The <i>GetLastTransitionStatus</i> routine enables the driver for a device to query whether the most recent transition to the D3hot substate was followed by a transition to the D3cold substate.
 
+## Syntax
 
+```
+GET_D3COLD_LAST_TRANSITION_STATUS GetD3coldLastTransitionStatus;
 
-## -syntax
-
-````
-GET_D3COLD_LAST_TRANSITION_STATUS GetLastTransitionStatus;
-
-VOID GetLastTransitionStatus(
-  _In_opt_ PVOID                          Context,
-  _Out_    PD3COLD_LAST_TRANSITION_STATUS LastTransitionStatus
+void GetD3coldLastTransitionStatus(
+  PVOID Context,
+  PD3COLD_LAST_TRANSITION_STATUS LastTransitionStatus
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Context [in, optional]
+`Context`
 
 A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
-
-### -param LastTransitionStatus [out]
+`LastTransitionStatus`
 
 A pointer to a variable into which the routine writes one of the following <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
 
@@ -76,17 +69,30 @@ A pointer to a variable into which the routine writes one of the following <a hr
  The <b>LastDStateTransitionD3cold</b> value indicates that the most recent transition to D3hot was followed by a transition to D3cold. For more information, see Remarks.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 This routine tries to get the information needed to answer the caller's query from the parent bus driver and platform firmware. If this information is not available, the routine writes the value <b>LastDStateTransitionStatusUnknown</b> to the location pointed to by <i>the LastTransitionStatus</i> parameter.
 
 For more information, see <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a>
@@ -100,4 +106,3 @@ For more information, see <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_D3COLD_LAST_TRANSITION_STATUS routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

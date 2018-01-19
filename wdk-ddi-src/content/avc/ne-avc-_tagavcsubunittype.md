@@ -1,50 +1,43 @@
 ---
-UID: NE:avc._tagAvcSubunitType
-title: _tagAvcSubunitType
-author: windows-driver-content
-description: The AvcSubunitType enumeration type is used to indicate the type of AV/C subunit.
-old-location: stream\avcsubunittype.htm
-old-project: stream
-ms.assetid: c99db45c-2d99-4bf7-98f8-4d9501ac81c0
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _tagAvcSubunitType, AvcSubunitType
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: avc.h
-req.include-header: Avc.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: AvcSubunitType
-req.alt-loc: avc.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: AvcSubunitType
+UID : NE:avc._tagAvcSubunitType
+title : _tagAvcSubunitType
+author : windows-driver-content
+description : The AvcSubunitType enumeration type is used to indicate the type of AV/C subunit.
+old-location : stream\avcsubunittype.htm
+old-project : stream
+ms.assetid : c99db45c-2d99-4bf7-98f8-4d9501ac81c0
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _tagAvcSubunitType, AvcSubunitType
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : avc.h
+req.include-header : Avc.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : AvcSubunitType
+req.alt-loc : avc.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : AvcSubunitType
 ---
 
-# _tagAvcSubunitType enumeration
-
-
-
-## -description
+# _tagAvcSubunitType Enumeration
 The AvcSubunitType enumeration type is used to indicate the type of AV/C subunit.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _tagAvcSubunitType { 
   AVC_SUBUNITTYPE_VIDEO_MONITOR  = 0x00,
@@ -65,82 +58,91 @@ typedef enum _tagAvcSubunitType {
 } AvcSubunitType;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field AVC_SUBUNITTYPE_VIDEO_MONITOR
+<tr>
+<td>AVC_SUBUNITTYPE_AUDIO</td>
+<td>Specifies an audio subunit type.</td>
+</tr>
 
-Specifies a video monitor subunit type.
+<tr>
+<td>AVC_SUBUNITTYPE_BULLETINBOARD</td>
+<td>Specifies a bulletin board subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_CA</td>
+<td>Specifies a conditional access (CA) subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_CAMERASTORAGE</td>
+<td>Specifies a camera storage subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_DISC_PLAYER</td>
+<td>Specifies a disc player subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_EXTENDED</td>
+<td>Specifies an extended subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_EXTENDED_FULL</td>
+<td>This is used only in extension bytes</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_PANEL</td>
+<td>Specifies a panel subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_PRINTER</td>
+<td>Specifies a printer subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_TAPE_PLAYER</td>
+<td>Specifies a tape player subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_TUNER</td>
+<td>Specifies a tuner subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_UNIT</td>
+<td>Specifies a generic subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_VENDOR_UNIQUE</td>
+<td>Specifies a vendor unique subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_VIDEO_CAMERA</td>
+<td>Specifies a video camera subunit type.</td>
+</tr>
+
+<tr>
+<td>AVC_SUBUNITTYPE_VIDEO_MONITOR</td>
+<td>Specifies a video monitor subunit type.</td>
+</tr>
+</table>
 
 
-### -field AVC_SUBUNITTYPE_AUDIO
-
-Specifies an audio subunit type.
-
-
-### -field AVC_SUBUNITTYPE_PRINTER
-
-Specifies a printer subunit type.
-
-
-### -field AVC_SUBUNITTYPE_DISC_PLAYER
-
-Specifies a disc player subunit type.
-
-
-### -field AVC_SUBUNITTYPE_TAPE_PLAYER
-
-Specifies a tape player subunit type.
-
-
-### -field AVC_SUBUNITTYPE_TUNER
-
-Specifies a tuner subunit type.
-
-
-### -field AVC_SUBUNITTYPE_CA
-
-Specifies a conditional access (CA) subunit type.
-
-
-### -field AVC_SUBUNITTYPE_VIDEO_CAMERA
-
-Specifies a video camera subunit type.
-
-
-### -field AVC_SUBUNITTYPE_PANEL
-
-Specifies a panel subunit type.
-
-
-### -field AVC_SUBUNITTYPE_BULLETINBOARD
-
-Specifies a bulletin board subunit type.
-
-
-### -field AVC_SUBUNITTYPE_CAMERASTORAGE
-
-Specifies a camera storage subunit type.
-
-
-### -field AVC_SUBUNITTYPE_VENDOR_UNIQUE
-
-Specifies a vendor unique subunit type.
-
-
-### -field AVC_SUBUNITTYPE_EXTENDED
-
-Specifies an extended subunit type.
-
-
-### -field AVC_SUBUNITTYPE_EXTENDED_FULL
-
-This is used only in extension bytes
-
-
-### -field AVC_SUBUNITTYPE_UNIT
-
-Specifies a generic subunit type.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | avc.h (include Avc.h) |

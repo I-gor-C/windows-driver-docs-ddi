@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugControl3.ControlledOutputVaList
-title: IDebugControl3::ControlledOutputVaList method
-author: windows-driver-content
-description: The ControlledOutputVaList method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
-old-location: debugger\controlledoutputvalist.htm
-old-project: debugger
-ms.assetid: 5fd3c915-77e0-4f81-9131-0eaf9d3493a3
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugControl3, IDebugControl3::ControlledOutputVaList, ControlledOutputVaList
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h, Stdarg.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugControl.ControlledOutputVaList,IDebugControl2.ControlledOutputVaList,IDebugControl3.ControlledOutputVaList
-req.alt-loc: Dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugControl3.ControlledOutputVaList
+title : IDebugControl3::ControlledOutputVaList method
+author : windows-driver-content
+description : The ControlledOutputVaList method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+old-location : debugger\controlledoutputvalist.htm
+old-project : debugger
+ms.assetid : 5fd3c915-77e0-4f81-9131-0eaf9d3493a3
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugControl3, IDebugControl3::ControlledOutputVaList, ControlledOutputVaList
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h, Stdarg.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugControl.ControlledOutputVaList,IDebugControl2.ControlledOutputVaList,IDebugControl3.ControlledOutputVaList
+req.alt-loc : Dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugControl3::ControlledOutputVaList method
 
-
-
-## -description
+# ControlledOutputVaList method
 The <b>ControlledOutputVaList</b>  method formats a string and sends the result to <a href="debugger.using_input_and_output#output_callbacks#output_callbacks">output callbacks</a> that were registered with some of the engine's clients.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT ControlledOutputVaList(
@@ -54,20 +49,17 @@ HRESULT ControlledOutputVaList(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param OutputControl [in]
+`OutputControl`
 
 Specifies an output control that determines which client's output callbacks will receive the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.
 
-
-### -param Mask [in]
+`Mask`
 
 Specifies the output-type bit field.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a> for possible values.
 
-
-### -param Format [in]
+`Format`
 
 Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
@@ -412,14 +404,13 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 </tr>
 </table></span></div>
 
-
-
-### -param Args [in]
+`Args`
 
 Specifies additional parameters that represent values to be inserted into the output during formatting.  <i>Args</i> must be initialized using <b>va_start</b>.  This method does not call <b>va_end</b>.
 
 
-## -returns
+## Return Value
+
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
@@ -428,14 +419,26 @@ Specifies additional parameters that represent values to be inserted into the ou
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
+## Remarks
 
-## -remarks
 When generating very large output strings, it is possible to reach the limits of the debugger engine or of the operating system.  For example, some versions of the debugger engine have a 16K character limit for a single output.  If you find that very large output is getting truncated, you might need to split your output into multiple requests.
 
 The macros <b>va_list</b>, <b>va_start</b>, and <b>va_end</b> are defined in Stdarg.h.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h, Stdarg.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
@@ -461,4 +464,3 @@ The macros <b>va_list</b>, <b>va_start</b>, and <b>va_end</b> are defined in Std
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::ControlledOutputVaList method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

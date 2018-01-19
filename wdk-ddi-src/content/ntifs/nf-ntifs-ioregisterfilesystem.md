@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.IoRegisterFileSystem
-title: IoRegisterFileSystem function
-author: windows-driver-content
-description: The IoRegisterFileSystem routine adds a file system's control device object to the global file system queue.
-old-location: ifsk\ioregisterfilesystem.htm
-old-project: ifsk
-ms.assetid: 19d53afd-b63c-4fd3-9b08-c51e2a1247af
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: IoRegisterFileSystem
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoRegisterFileSystem
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.IoRegisterFileSystem
+title : IoRegisterFileSystem function
+author : windows-driver-content
+description : The IoRegisterFileSystem routine adds a file system's control device object to the global file system queue.
+old-location : ifsk\ioregisterfilesystem.htm
+old-project : ifsk
+ms.assetid : 19d53afd-b63c-4fd3-9b08-c51e2a1247af
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : IoRegisterFileSystem
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoRegisterFileSystem
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # IoRegisterFileSystem function
-
-
-
-## -description
 The <b>IoRegisterFileSystem</b> routine adds a file system's control device object to the global file system queue.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID IoRegisterFileSystem(
@@ -51,19 +46,19 @@ VOID IoRegisterFileSystem(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DeviceObject [in]
+`DeviceObject`
 
 Pointer to the control device object for the file system.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 <b>IoRegisterFileSystem</b> registers a file system as an active file system by inserting the file system's control device object into the global file system queue, and increments the reference count on the file system's control device object.
 
 The file system control device object's device type must be one of the following:
@@ -82,8 +77,20 @@ If the DO_LOW_PRIORITY_FILESYSTEM flag is set on the file system's control devic
 
 <b>IoRegisterFileSystem</b> calls the notification routines of file system filter drivers that have registered for this notification by calling <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a> or <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
@@ -103,4 +110,3 @@ If the DO_LOW_PRIORITY_FILESYSTEM flag is set on the file system's control devic
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoRegisterFileSystem routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

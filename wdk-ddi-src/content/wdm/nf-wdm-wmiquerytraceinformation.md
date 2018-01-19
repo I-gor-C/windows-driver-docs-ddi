@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.WmiQueryTraceInformation
-title: WmiQueryTraceInformation function
-author: windows-driver-content
-description: The WmiQueryTraceInformation routine returns information about a WMI event trace.
-old-location: kernel\wmiquerytraceinformation.htm
-old-project: kernel
-ms.assetid: 8a6a930a-4267-47be-be00-ab9c102560c4
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: WmiQueryTraceInformation
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WmiQueryTraceInformation
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: See Remarks section.
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.WmiQueryTraceInformation
+title : WmiQueryTraceInformation function
+author : windows-driver-content
+description : The WmiQueryTraceInformation routine returns information about a WMI event trace.
+old-location : kernel\wmiquerytraceinformation.htm
+old-project : kernel
+ms.assetid : 8a6a930a-4267-47be-be00-ab9c102560c4
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : WmiQueryTraceInformation
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WmiQueryTraceInformation
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : See Remarks section.
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # WmiQueryTraceInformation function
-
-
-
-## -description
 The <b>WmiQueryTraceInformation</b> routine returns information about a <a href="https://msdn.microsoft.com/72505a9a-830a-4529-ba73-31af0fedfeec">WMI event trace</a>.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WmiQueryTraceInformation(
@@ -56,35 +51,31 @@ NTSTATUS WmiQueryTraceInformation(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param TraceInformationClass [in]
+`TraceInformationClass`
 
 Specifies a <a href="..\wdm\ne-wdm-_trace_information_class.md">TRACE_INFORMATION_CLASS</a> enumerator that indicates the type of information to return about an event trace.
 
-
-### -param TraceInformation [out]
+`TraceInformation`
 
 A pointer to a caller-allocated output buffer where the routine returns the event trace information specified by <i>TraceInformationClass</i>.
 
-
-### -param TraceInformationLength [in]
+`TraceInformationLength`
 
 Specifies the size, in bytes, of the <i>TraceInformation</i> buffer.
 
-
-### -param RequiredLength [out, optional]
+`RequiredLength`
 
 A pointer to the value returned by the routine that specifies the required size, in bytes, of the <i>TraceInformation</i> buffer. The caller should set <i>RequiredLength</i> to <b>NULL</b> if it does not use the required length information.
 
+`Buffer`
 
-### -param Buffer [in, optional]
-
-A pointer to the query-specific input information that a caller supplies. If caller-supplied information is not required, the caller should set <i>Buffer</i> to <b>NULL</b>. 
+A pointer to the query-specific input information that a caller supplies. If caller-supplied information is not required, the caller should set <i>Buffer</i> to <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>Success
@@ -110,10 +101,8 @@ A pointer to the query-specific input information that a caller supplies. If cal
 <dt><b>STATUS_NOT_FOUND</b></dt>
 </dl>A global logger was not found.
 
- 
+## Remarks
 
-
-## -remarks
 For each type of event trace information specified by <i>TraceInformationClass</i>, the following table provides:
 
 Input requirements
@@ -184,8 +173,20 @@ If the caller supplies a non-<b>NULL</b> <i>RequiredLength</i> pointer, <b>WmiQu
 
 <b>WmiQueryTraceInformation</b> runs at the IRQL of the caller.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a>
@@ -208,4 +209,3 @@ If the caller supplies a non-<b>NULL</b> <i>RequiredLength</i> pointer, <b>WmiQu
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiQueryTraceInformation routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

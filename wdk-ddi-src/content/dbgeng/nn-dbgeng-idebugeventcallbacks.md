@@ -1,246 +1,66 @@
 ---
-UID: NN:dbgeng.IDebugEventCallbacks
-title: IDebugEventCallbacks
-author: windows-driver-content
-description: IDebugEventCallbacks interface
-old-location: debugger\idebugeventcallbacks.htm
-old-project: debugger
-ms.assetid: f5e51d0e-0967-4e35-b24b-4bd99c975569
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitThreadDataOffset, SetImplicitThreadDataOffset
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugEventCallbacks
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NN:dbgeng.IDebugEventCallbacks
+title : IDebugEventCallbacks
+author : windows-driver-content
+description : IDebugEventCallbacks interface
+old-location : debugger\idebugeventcallbacks.htm
+old-project : debugger
+ms.assetid : f5e51d0e-0967-4e35-b24b-4bd99c975569
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitThreadDataOffset, SetImplicitThreadDataOffset
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugEventCallbacks
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 # IDebugEventCallbacks interface
 
 
 
-## -description
+## Methods
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugEventCallbacks</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IDebugEventCallbacks</b> also has these types of members:
+<p>The <b>IDebugEventCallbacks</b> interface has these methods.</p>
 
-The <b>IDebugEventCallbacks</b> interface has these methods.
+| Method | Description |
+| ---- |:---- |
+| [dbgeng.IDebugEventCallbacks.Breakpoint](nf-dbgeng-idebugeventcallbacks-breakpoint.md) | The Breakpoint callback method is called by the engine when the target issues a breakpointexception. |
+| [dbgeng.IDebugEventCallbacks.ChangeDebuggeeState](nf-dbgeng-idebugeventcallbacks-changedebuggeestate.md) | The ChangeDebuggeeState callback method is called by the engine when it makes or detects changes to the target. |
+| [dbgeng.IDebugEventCallbacks.ChangeEngineState](nf-dbgeng-idebugeventcallbacks-changeenginestate.md) | The ChangeEngineState callback method is called by the engine when its state has changed. |
+| [dbgeng.IDebugEventCallbacks.ChangeSymbolState](nf-dbgeng-idebugeventcallbacks-changesymbolstate.md) | The ChangeSymbolState callback method is called by the engine when the symbol state changes. |
+| [dbgeng.IDebugEventCallbacks.CreateProcess](nf-dbgeng-idebugeventcallbacks-createprocess.md) | The CreateProcess callback method is called by the engine when a create-processdebugging event occurs in the target. |
+| [dbgeng.IDebugEventCallbacks.CreateThread](nf-dbgeng-idebugeventcallbacks-createthread.md) | The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target. |
+| [dbgeng.IDebugEventCallbacks.Exception](nf-dbgeng-idebugeventcallbacks-exception.md) | The Exception callback method is called by the engine when an exceptiondebugging event occurs in the target. |
+| [dbgeng.IDebugEventCallbacks.ExitProcess](nf-dbgeng-idebugeventcallbacks-exitprocess.md) | The ExitProcess callback method is called by the engine when an exit-processdebugging event occurs in the target. |
+| [dbgeng.IDebugEventCallbacks.ExitThread](nf-dbgeng-idebugeventcallbacks-exitthread.md) | The ExitThread callback method is called by the engine when an exit-threaddebugging event occurs in the target. |
+| [dbgeng.IDebugEventCallbacks.GetInterestMask](nf-dbgeng-idebugeventcallbacks-getinterestmask.md) | The GetInterestMask callback method is called to determine which events the IDebugEventCallbacks object is interested in. The engine calls GetInterestMask when the object is registered with a client by using SetEventCallbacks. |
+| [dbgeng.IDebugEventCallbacks.LoadModule](nf-dbgeng-idebugeventcallbacks-loadmodule.md) | The LoadModule callback method is called by the engine when a module-load debugging event occurs in the target. |
+| [dbgeng.IDebugEventCallbacks.SessionStatus](nf-dbgeng-idebugeventcallbacks-sessionstatus.md) | The SessionStatus callback method is called by the engine when a change occurs in the debugger session. |
+| [dbgeng.IDebugEventCallbacks.SystemError](nf-dbgeng-idebugeventcallbacks-systemerror.md) | The SystemError callback method is called by the engine when a system error occurs in the target. |
+| [dbgeng.IDebugEventCallbacks.UnloadModule](nf-dbgeng-idebugeventcallbacks-unloadmodule.md) | The UnloadModule callback method is called by the engine when a module-unload debugging event occurs in the target. |
 
- This method is called by the engine when the target issues a breakpoint exception.
+## Remarks
 
-This method is called by the engine when it makes or detects changes to the target.
-
-This method is called by the engine when its state has changed.
-
-This method is called by the engine when the symbol state changes.
-
-This method is called by the engine when a create-process debugging event occurs in the target.
-
-This method is called by the engine when a create-thread debugging event occurs in the target.
-
-This method is called by the engine when an exception debugging event occurs in the target.
-
-This method is called by the engine when an exit-process debugging event occurs in the target.
-
-This method is called by the engine when an exit-thread debugging event occurs in the target.
-
-This method is called to determine which events the <b>IDebugEventCallbacks</b> object is interested in.
-
-This method is called by the engine when a module-load debugging event occurs in the target.
-
-This method is called by the engine when a change occurs in the debugger session.
-
-This method is called by the engine when a system error occurs in the target.
-
-This method is called by the engine when a module-unload debugging event occurs in the target.
-
- 
-
-
-## -members
-The <b>IDebugEventCallbacks</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/76b9aca2-4630-45e2-bed4-f701018c86a5">Breakpoint</a>
-</td>
-<td align="left" width="63%">
- This method is called by the engine when the target issues a breakpoint exception.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/157a420a-18ad-46cf-ae93-603e9226ee4f">ChangeDebuggeeState</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when it makes or detects changes to the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/42ad993a-b12e-49ff-8a1f-f62e2ab968d3">ChangeEngineState</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when its state has changed.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/5383bd49-df44-48dd-8385-c782a1b1f80a">ChangeSymbolState</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when the symbol state changes.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539321">CreateProcess</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when a create-process debugging event occurs in the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/c3b2cbaa-33b9-4784-922d-d1209fc23dfd">CreateThread</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when a create-thread debugging event occurs in the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/93f915ab-1f9e-453c-b76e-8260eecd7298">Exception</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when an exception debugging event occurs in the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/050b747e-5570-4e25-81e4-eccdde4f6995">ExitProcess</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when an exit-process debugging event occurs in the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/03ff46cb-dfc5-409a-b652-bef8f2b37b59">ExitThread</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when an exit-thread debugging event occurs in the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/165c83cb-c0be-4a09-9220-a5208f660308">GetInterestMask</a>
-</td>
-<td align="left" width="63%">
-This method is called to determine which events the <b>IDebugEventCallbacks</b> object is interested in.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/f4efcbf3-f78a-4e0e-9741-4f9b68814e5b">LoadModule</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when a module-load debugging event occurs in the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/127c4e48-87db-4735-8d3d-e01fed6a9cf0">SessionStatus</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when a change occurs in the debugger session.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/651f5207-36c8-4d46-8305-950efb2365bf">SystemError</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when a system error occurs in the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/2afdaee6-7714-42d4-a402-3cb85ef3b970">UnloadModule</a>
-</td>
-<td align="left" width="63%">
-This method is called by the engine when a module-unload debugging event occurs in the target.
-
-</td>
-</tr>
-</table> This method is called by the engine when the target issues a breakpoint exception.
-
-This method is called by the engine when it makes or detects changes to the target.
-
-This method is called by the engine when its state has changed.
-
-This method is called by the engine when the symbol state changes.
-
-This method is called by the engine when a create-process debugging event occurs in the target.
-
-This method is called by the engine when a create-thread debugging event occurs in the target.
-
-This method is called by the engine when an exception debugging event occurs in the target.
-
-This method is called by the engine when an exit-process debugging event occurs in the target.
-
-This method is called by the engine when an exit-thread debugging event occurs in the target.
-
-This method is called to determine which events the <b>IDebugEventCallbacks</b> object is interested in.
-
-This method is called by the engine when a module-load debugging event occurs in the target.
-
-This method is called by the engine when a change occurs in the debugger session.
-
-This method is called by the engine when a system error occurs in the target.
-
-This method is called by the engine when a module-unload debugging event occurs in the target.
-
- 
-
-
-## -remarks
 The <a href="..\dbgeng\nn-dbgeng-idebugeventcallbackswide.md">IDebugEventCallbacksWide</a> interface includes Unicode versions of these methods; the Unicode methods share the same names as those used by the methods in <b>IDebugEventCallbacks</b>.
 
 
@@ -352,3 +172,12 @@ DEBUG_EVENT_CHANGE_SYMBOL_STATE
 
 
 The symbol state has changed.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **DLL** |  |

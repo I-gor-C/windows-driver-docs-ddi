@@ -1,51 +1,44 @@
 ---
-UID: NE:strmini._SRB_COMMAND
-title: _SRB_COMMAND
-author: windows-driver-content
-description: .
-old-location: stream\srb_command.htm
-old-project: stream
-ms.assetid: 2A72D3B5-286A-4C20-AFEC-77EDCDD56B6A
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _SRB_COMMAND, SRB_COMMAND
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: strmini.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SRB_COMMAND
-req.alt-loc: Strmini.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: SRB_COMMAND
-req.product: Windows 10 or later.
+UID : NE:strmini._SRB_COMMAND
+title : _SRB_COMMAND
+author : windows-driver-content
+description : .
+old-location : stream\srb_command.htm
+old-project : stream
+ms.assetid : 2A72D3B5-286A-4C20-AFEC-77EDCDD56B6A
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _SRB_COMMAND, SRB_COMMAND
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : strmini.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SRB_COMMAND
+req.alt-loc : Strmini.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : SRB_COMMAND
+req.product : Windows 10 or later.
 ---
 
-# _SRB_COMMAND enumeration
+# _SRB_COMMAND Enumeration
 
 
-
-## -description
-
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _SRB_COMMAND { 
   SRB_READ_DATA,
@@ -92,178 +85,191 @@ typedef enum _SRB_COMMAND {
 #endif } SRB_COMMAND;
 ````
 
-
-## -enum-fields
-
-### -field SRB_READ_DATA
-
-Stream-specific code that specifies to read data from hardware.
-
-
-### -field SRB_WRITE_DATA
-
-Stream-specific code that specifies to write data to the hardware.
-
-
-### -field SRB_GET_STREAM_STATE
-
-Stream-specific code that specifies to get the state of the stream.
-
-
-### -field SRB_SET_STREAM_STATE
-
-Stream-specific code that specifies to set the state of the stream.
-
-
-### -field SRB_SET_STREAM_PROPERTY
-
-Stream-specific code that specifies to set a property of the stream.
-
-
-### -field SRB_GET_STREAM_PROPERTY
-
-Stream-specific code that specifies to get a property value for the stream.
-
-
-### -field SRB_OPEN_MASTER_CLOCK
-
-Stream-specific code that indicates that the master clock is on this stream.
-
-
-### -field SRB_INDICATE_MASTER_CLOCK
-
-Stream-specific code that specifies that the handle is supplied to the master clock.
-
-
-### -field SRB_UNKNOWN_STREAM_COMMAND
-
-Stream-specific code that specifies that the IRP function is unknown to the class driver.
-
-
-### -field SRB_SET_STREAM_RATE
-
-Stream-specific code that specifies that the rate is set at which the stream should run.
-
-
-### -field SRB_PROPOSE_DATA_FORMAT
-
-Stream-specific code that specifies that a new rate is proposed, it does not change the rate.
-
-
-### -field SRB_CLOSE_MASTER_CLOCK
-
-Stream-specific code that indicates that the master clock is closed.
-
-
-### -field SRB_PROPOSE_STREAM_RATE
-
-Stream-specific code that indicates a new rate is proposed, it does not change the rate.
-
-
-### -field SRB_SET_DATA_FORMAT
-
-Stream-specific code that sets a new data format.
-
-
-### -field SRB_GET_DATA_FORMAT
-
-Stream-specific code that returns the current data format.
-
-
-### -field SRB_BEGIN_FLUSH
-
-Stream-specific code that begins the flush state.
-
-
-### -field SRB_END_FLUSH
-
-Stream-specific code that ends the flush state.
-
-
-### -field SRB_GET_STREAM_INFO 
-
-Device instance-specific code that gets the stream information structure.
-
-
-### -field SRB_OPEN_STREAM
-
-Device instance-specific code that opens the specified stream.
-
-
-### -field SRB_CLOSE_STREAM
-
-Device instance-specific code that closes the specific stream.
-
-
-### -field SRB_OPEN_DEVICE_INSTANCE
-
-Device instance-specific code that opens an instance of the device.
-
-
-### -field SRB_CLOSE_DEVICE_INSTANCE
-
-Device instance-specific code that closes an instance of the device.
-
-
-### -field SRB_GET_DEVICE_PROPERTY
-
-Device instance-specific code that gets the property of the device.
-
-
-### -field SRB_SET_DEVICE_PROPERTY
-
-Device instance-specific code that sets the property of the device.
-
-
-### -field SRB_INITIALIZE_DEVICE
-
-Device instance-specific code that initializes the device.
-
-
-### -field SRB_CHANGE_POWER_STATE
-
-Device instance-specific code that changes the power state.
-
-
-### -field SRB_UNINITIALIZE_DEVICE
-
-Device instance-specific code that uninitializes the device.
-
-
-### -field SRB_UNKNOWN_DEVICE_COMMAND
-
-Device instance-specific code that specifies that the IRP function is unknown to the class driver.
-
-
-### -field SRB_PAGING_OUT_DRIVER
-
-Device instance-specific code that indicates that the driver is to be paged out only if it is enabled in the registry. Board ints should be disabled and STATUS_SUCCESS returned.
-
-
-### -field SRB_GET_DATA_INTERSECTION
-
-Device instance-specific code that returns stream data intersection.
-
-
-### -field SRB_INITIALIZATION_COMPLETE
-
-Device instance-specific code that indicates that the initialization sequence has completed.
-
-
-### -field SRB_SURPRISE_REMOVAL
-
-Device instance-specific code that indicates a surprise removal of hardware has occurred.
-
-
-### -field SRB_DEVICE_METHOD
-
-
-### -field SRB_STREAM_METHOD
-
-
-### -field SRB_NOTIFY_IDLE_STATE
-
-Device instance-specific code that specifies to call on first open and last close.
-
-
-## -remarks
+## Constants
+
+<table>
+
+<tr>
+<td>SRB_BEGIN_FLUSH</td>
+<td>Stream-specific code that begins the flush state.</td>
+</tr>
+
+<tr>
+<td>SRB_CHANGE_POWER_STATE</td>
+<td>Device instance-specific code that changes the power state.</td>
+</tr>
+
+<tr>
+<td>SRB_CLOSE_DEVICE_INSTANCE</td>
+<td>Device instance-specific code that closes an instance of the device.</td>
+</tr>
+
+<tr>
+<td>SRB_CLOSE_MASTER_CLOCK</td>
+<td>Stream-specific code that indicates that the master clock is closed.</td>
+</tr>
+
+<tr>
+<td>SRB_CLOSE_STREAM</td>
+<td>Device instance-specific code that closes the specific stream.</td>
+</tr>
+
+<tr>
+<td>SRB_DEVICE_METHOD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>SRB_END_FLUSH</td>
+<td>Stream-specific code that ends the flush state.</td>
+</tr>
+
+<tr>
+<td>SRB_GET_DATA_FORMAT</td>
+<td>Stream-specific code that returns the current data format.</td>
+</tr>
+
+<tr>
+<td>SRB_GET_DATA_INTERSECTION</td>
+<td>Device instance-specific code that returns stream data intersection.</td>
+</tr>
+
+<tr>
+<td>SRB_GET_DEVICE_PROPERTY</td>
+<td>Device instance-specific code that gets the property of the device.</td>
+</tr>
+
+<tr>
+<td>SRB_GET_STREAM_INFO</td>
+<td>Device instance-specific code that gets the stream information structure.</td>
+</tr>
+
+<tr>
+<td>SRB_GET_STREAM_PROPERTY</td>
+<td>Stream-specific code that specifies to get a property value for the stream.</td>
+</tr>
+
+<tr>
+<td>SRB_GET_STREAM_STATE</td>
+<td>Stream-specific code that specifies to get the state of the stream.</td>
+</tr>
+
+<tr>
+<td>SRB_INDICATE_MASTER_CLOCK</td>
+<td>Stream-specific code that specifies that the handle is supplied to the master clock.</td>
+</tr>
+
+<tr>
+<td>SRB_INITIALIZATION_COMPLETE</td>
+<td>Device instance-specific code that indicates that the initialization sequence has completed.</td>
+</tr>
+
+<tr>
+<td>SRB_INITIALIZE_DEVICE</td>
+<td>Device instance-specific code that initializes the device.</td>
+</tr>
+
+<tr>
+<td>SRB_NOTIFY_IDLE_STATE</td>
+<td>Device instance-specific code that specifies to call on first open and last close.</td>
+</tr>
+
+<tr>
+<td>SRB_OPEN_DEVICE_INSTANCE</td>
+<td>Device instance-specific code that opens an instance of the device.</td>
+</tr>
+
+<tr>
+<td>SRB_OPEN_MASTER_CLOCK</td>
+<td>Stream-specific code that indicates that the master clock is on this stream.</td>
+</tr>
+
+<tr>
+<td>SRB_OPEN_STREAM</td>
+<td>Device instance-specific code that opens the specified stream.</td>
+</tr>
+
+<tr>
+<td>SRB_PAGING_OUT_DRIVER</td>
+<td>Device instance-specific code that indicates that the driver is to be paged out only if it is enabled in the registry. Board ints should be disabled and STATUS_SUCCESS returned.</td>
+</tr>
+
+<tr>
+<td>SRB_PROPOSE_DATA_FORMAT</td>
+<td>Stream-specific code that specifies that a new rate is proposed, it does not change the rate.</td>
+</tr>
+
+<tr>
+<td>SRB_PROPOSE_STREAM_RATE</td>
+<td>Stream-specific code that indicates a new rate is proposed, it does not change the rate.</td>
+</tr>
+
+<tr>
+<td>SRB_READ_DATA</td>
+<td>Stream-specific code that specifies to read data from hardware.</td>
+</tr>
+
+<tr>
+<td>SRB_SET_DATA_FORMAT</td>
+<td>Stream-specific code that sets a new data format.</td>
+</tr>
+
+<tr>
+<td>SRB_SET_DEVICE_PROPERTY</td>
+<td>Device instance-specific code that sets the property of the device.</td>
+</tr>
+
+<tr>
+<td>SRB_SET_STREAM_PROPERTY</td>
+<td>Stream-specific code that specifies to set a property of the stream.</td>
+</tr>
+
+<tr>
+<td>SRB_SET_STREAM_RATE</td>
+<td>Stream-specific code that specifies that the rate is set at which the stream should run.</td>
+</tr>
+
+<tr>
+<td>SRB_SET_STREAM_STATE</td>
+<td>Stream-specific code that specifies to set the state of the stream.</td>
+</tr>
+
+<tr>
+<td>SRB_STREAM_METHOD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>SRB_SURPRISE_REMOVAL</td>
+<td>Device instance-specific code that indicates a surprise removal of hardware has occurred.</td>
+</tr>
+
+<tr>
+<td>SRB_UNINITIALIZE_DEVICE</td>
+<td>Device instance-specific code that uninitializes the device.</td>
+</tr>
+
+<tr>
+<td>SRB_UNKNOWN_DEVICE_COMMAND</td>
+<td>Device instance-specific code that specifies that the IRP function is unknown to the class driver.</td>
+</tr>
+
+<tr>
+<td>SRB_UNKNOWN_STREAM_COMMAND</td>
+<td>Stream-specific code that specifies that the IRP function is unknown to the class driver.</td>
+</tr>
+
+<tr>
+<td>SRB_WRITE_DATA</td>
+<td>Stream-specific code that specifies to write data to the hardware.</td>
+</tr>
+</table>
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | strmini.h |

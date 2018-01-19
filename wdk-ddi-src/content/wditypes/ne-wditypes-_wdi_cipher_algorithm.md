@@ -1,51 +1,44 @@
 ---
-UID: NE:wditypes._WDI_CIPHER_ALGORITHM
-title: _WDI_CIPHER_ALGORITHM
-author: windows-driver-content
-description: The WDI_CIPHER_ALGORITHM enumeration defines the cipher algorithm values.
-old-location: netvista\wdi_cipher_algorithm.htm
-old-project: netvista
-ms.assetid: 08413358-DFBC-4AC3-97B3-380D98EFFBF3
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDI_CIPHER_ALGORITHM, WDI_CIPHER_ALGORITHM
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wditypes.hpp
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WDI_CIPHER_ALGORITHM
-req.alt-loc: wditypes.hpp
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: WDI_CIPHER_ALGORITHM
-req.product: Windows 10 or later.
+UID : NE:wditypes._WDI_CIPHER_ALGORITHM
+title : _WDI_CIPHER_ALGORITHM
+author : windows-driver-content
+description : The WDI_CIPHER_ALGORITHM enumeration defines the cipher algorithm values.
+old-location : netvista\wdi_cipher_algorithm.htm
+old-project : netvista
+ms.assetid : 08413358-DFBC-4AC3-97B3-380D98EFFBF3
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDI_CIPHER_ALGORITHM, WDI_CIPHER_ALGORITHM
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wditypes.hpp
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WDI_CIPHER_ALGORITHM
+req.alt-loc : wditypes.hpp
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : WDI_CIPHER_ALGORITHM
+req.product : Windows 10 or later.
 ---
 
-# _WDI_CIPHER_ALGORITHM enumeration
-
-
-
-## -description
+# _WDI_CIPHER_ALGORITHM Enumeration
 The WDI_CIPHER_ALGORITHM enumeration defines the cipher algorithm values.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDI_CIPHER_ALGORITHM { 
   WDI_CIPHER_ALGO_NONE           = 0x00,
@@ -63,75 +56,78 @@ typedef enum _WDI_CIPHER_ALGORITHM {
 } WDI_CIPHER_ALGORITHM;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field WDI_CIPHER_ALGO_NONE
+<tr>
+<td>WDI_CIPHER_ALGO_BIP</td>
+<td>Specifies a BIP cipher algorithm.</td>
+</tr>
 
-Specifies that no cipher algorithm is enabled or supported.
+<tr>
+<td>WDI_CIPHER_ALGO_CCMP</td>
+<td>Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610. Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.</td>
+</tr>
 
+<tr>
+<td>WDI_CIPHER_ALGO_GCMP</td>
+<td>Added in Windows 10, version 1607, WDI version 1.0.21.
 
-### -field WDI_CIPHER_ALGO_WEP40
+Specifies a GCMP (Galois/Counter Mode Protocol) cipher algorithm. It is the only encryption protocol supported for 802.11ad (DMG) Phy.</td>
+</tr>
 
-Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a 40-bit cipher key.
+<tr>
+<td>WDI_CIPHER_ALGO_IHV_END</td>
+<td>Specifies the end of the range that is used to define proprietary authentication algorithms that are developed by an IHV.</td>
+</tr>
 
+<tr>
+<td>WDI_CIPHER_ALGO_IHV_START</td>
+<td>Specifies the start of the range that is used to define proprietary cipher algorithms that are developed by an independent hardware vendor (IHV).</td>
+</tr>
 
-### -field WDI_CIPHER_ALGO_TKIP
+<tr>
+<td>WDI_CIPHER_ALGO_NONE</td>
+<td>Specifies that no cipher algorithm is enabled or supported.</td>
+</tr>
 
-Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004 standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery protection.
+<tr>
+<td>WDI_CIPHER_ALGO_RSN_USE_GROUP</td>
+<td>Specifies a Robust Security Network (RSN) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.</td>
+</tr>
 
+<tr>
+<td>WDI_CIPHER_ALGO_TKIP</td>
+<td>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004 standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery protection.</td>
+</tr>
 
-### -field WDI_CIPHER_ALGO_CCMP
+<tr>
+<td>WDI_CIPHER_ALGO_WEP</td>
+<td>Specifies a WEP cipher algorithm with a cipher key of any length.</td>
+</tr>
 
-Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610. Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.
+<tr>
+<td>WDI_CIPHER_ALGO_WEP104</td>
+<td>Specifies a WEP cipher algorithm with a 104-bit cipher key.</td>
+</tr>
 
+<tr>
+<td>WDI_CIPHER_ALGO_WEP40</td>
+<td>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a 40-bit cipher key.</td>
+</tr>
 
-### -field WDI_CIPHER_ALGO_WEP104
-
-Specifies a WEP cipher algorithm with a 104-bit cipher key.
-
-
-### -field WDI_CIPHER_ALGO_BIP
-
-Specifies a BIP cipher algorithm.
-
-
-### -field WDI_CIPHER_ALGO_GCMP
-
-Added in Windows 10, version 1607, WDI version 1.0.21.
-
-Specifies a GCMP (Galois/Counter Mode Protocol) cipher algorithm. It is the only encryption protocol supported for 802.11ad (DMG) Phy.
-
-
-### -field WDI_CIPHER_ALGO_WPA_USE_GROUP
-
-Specifies a Wi-Fi Protected Access (WPA) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.
-
-
-
-
-### -field WDI_CIPHER_ALGO_RSN_USE_GROUP
-
-Specifies a Robust Security Network (RSN) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.
-
-
-
-
-### -field WDI_CIPHER_ALGO_WEP
-
-Specifies a WEP cipher algorithm with a cipher key of any length. 
-
-
-### -field WDI_CIPHER_ALGO_IHV_START
-
-Specifies the start of the range that is used to define proprietary cipher algorithms that are developed by an independent hardware vendor (IHV). 
-
-
-
-
-### -field WDI_CIPHER_ALGO_IHV_END
-
-Specifies the end of the range that is used to define proprietary authentication algorithms that are developed by an IHV.  
+<tr>
+<td>WDI_CIPHER_ALGO_WPA_USE_GROUP</td>
+<td>Specifies a Wi-Fi Protected Access (WPA) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.</td>
+</tr>
+</table>
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wditypes.hpp |

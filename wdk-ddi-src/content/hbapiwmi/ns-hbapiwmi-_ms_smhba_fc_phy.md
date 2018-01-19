@@ -1,50 +1,43 @@
 ---
-UID: NS:hbapiwmi._MS_SMHBA_FC_PHY
-title: _MS_SMHBA_FC_PHY
-author: windows-driver-content
-description: The MS_SMHBA_FC_PHY structure is used to report the physical attributes of a fibre channel port.
-old-location: storage\ms_smhba_fc_phy.htm
-old-project: storage
-ms.assetid: 7fb199b6-dcdb-41fc-b1c4-4eef2177018e
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _MS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: hbapiwmi.h
-req.include-header: Hbapiwmi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MS_SMHBA_FC_PHY
-req.alt-loc: hbapiwmi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
+UID : NS:hbapiwmi._MS_SMHBA_FC_PHY
+title : _MS_SMHBA_FC_PHY
+author : windows-driver-content
+description : The MS_SMHBA_FC_PHY structure is used to report the physical attributes of a fibre channel port.
+old-location : storage\ms_smhba_fc_phy.htm
+old-project : storage
+ms.assetid : 7fb199b6-dcdb-41fc-b1c4-4eef2177018e
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : hbapiwmi.h
+req.include-header : Hbapiwmi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MS_SMHBA_FC_PHY
+req.alt-loc : hbapiwmi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY"
 ---
 
 # _MS_SMHBA_FC_PHY structure
-
-
-
-## -description
 The MS_SMHBA_FC_PHY structure is used to report the physical attributes of a fibre channel port.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _MS_SMHBA_FC_PHY {
   ULONG PhySupportSpeed;
@@ -54,17 +47,16 @@ typedef struct _MS_SMHBA_FC_PHY {
 } MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `MaxFrameSize`
 
-### -field PhySupportSpeed
+            The maximum frame size, in bytes, that is supported by PortWWN.
+        
+            `PhySpeed`
 
-The signaling bit rates at which the port can operate. For a list of the values that this member supports, see PhySpeed.
-
-
-### -field PhySpeed
-
-The signaling bit rates at which PortWWN is currently operating. This member must have one of the values in the following table.
+            The signaling bit rates at which PortWWN is currently operating. This member must have one of the values in the following table.
 
 <table>
 <tr>
@@ -138,12 +130,14 @@ The speed at which the port will operate has not yet been established.
 </td>
 </tr>
 </table>
- 
+        
+            `PhySupportSpeed`
 
+            The signaling bit rates at which the port can operate. For a list of the values that this member supports, see PhySpeed.
+        
+            `PhyType`
 
-### -field PhyType
-
-The port type. This member must have one of the values in the following table.
+            The port type. This member must have one of the values in the following table.
 
 <table>
 <tr>
@@ -267,12 +261,12 @@ Point to point.
 </td>
 </tr>
 </table>
- 
 
 
-### -field MaxFrameSize
-
-The maximum frame size, in bytes, that is supported by PortWWN.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hbapiwmi.h (include Hbapiwmi.h) |

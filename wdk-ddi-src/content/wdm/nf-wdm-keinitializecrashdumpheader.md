@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.KeInitializeCrashDumpHeader
-title: KeInitializeCrashDumpHeader function
-author: windows-driver-content
-description: The KeInitializeCrashDumpHeader routine supplies the header information the system requires for a crash dump file.
-old-location: kernel\keinitializecrashdumpheader.htm
-old-project: kernel
-ms.assetid: 6fa0cf86-35f4-4e5d-bced-ebd2ec499b64
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KeInitializeCrashDumpHeader
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: 
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Server 2003 with SP1.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KeInitializeCrashDumpHeader
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: Any level
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.KeInitializeCrashDumpHeader
+title : KeInitializeCrashDumpHeader function
+author : windows-driver-content
+description : The KeInitializeCrashDumpHeader routine supplies the header information the system requires for a crash dump file.
+old-location : kernel\keinitializecrashdumpheader.htm
+old-project : kernel
+ms.assetid : 6fa0cf86-35f4-4e5d-bced-ebd2ec499b64
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : KeInitializeCrashDumpHeader
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Server 2003 with SP1.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KeInitializeCrashDumpHeader
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : Any level
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # KeInitializeCrashDumpHeader function
-
-
-
-## -description
 The <b>KeInitializeCrashDumpHeader</b> routine supplies the header information the system requires for a crash dump file.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS KeInitializeCrashDumpHeader(
@@ -56,39 +51,35 @@ NTSTATUS KeInitializeCrashDumpHeader(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DumpType [in]
+`DumpType`
 
 Specifies the type of dump file. The only valid value is DUMP_TYPE_FULL.
 
-
-### -param Flags [in]
+`Flags`
 
 Specifies flags for the dump file. The only valid value is 0.
 
-
-### -param Buffer [out]
+`Buffer`
 
 Pointer to the buffer that receives the header information.
 
-
-### -param BufferSize [in]
+`BufferSize`
 
 Specifies the size in bytes of the buffer pointed to by <i>Buffer</i>.
 
-
-### -param BufferNeeded [out, optional]
+`BufferNeeded`
 
 Optionally, a pointer to a variable that receives the size necessary to hold the complete header information.
 
 
-## -returns
-<b>KeInitializeCrashDumpHeader</b> returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on failure.   
+## Return Value
 
+<b>KeInitializeCrashDumpHeader</b> returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on failure.
 
-## -remarks
+## Remarks
+
 Drivers can use this routine to manually create a crash dump file. The file can be created at any time, and used by a debugger to examine the state of the system.
 
 To create a crash-dump file, call <b>KeInitializeCrashDumpHeader</b> to create the header, then append the contents of memory to the header. Note that the driver is not required to record the contents of memory immediately after calling the routine: the header can normally be created at any time before the crash-dump file is written.
@@ -106,3 +97,15 @@ Starting with Windows 8, <b>KeInitializeCrashDumpHeader</b> always writes the b
 In earlier versions of Windows, <b>KeInitializeCrashDumpHeader</b> writes the base address of the page directory of the caller's current process context to the crash-dump header. Thus, <b>KeInitializeCrashDumpHeader</b> must be called from the system process. Otherwise, the debugger will be unable to access the crash-dump file in the process context in which the file was saved.
 
 Starting with Windows 8, <b>KeInitializeCrashDumpHeader</b> is declared in the Wdm.h header file in the Windows Driver Kit (WDK). To use this routine with earlier versions of the WDK, include the following function declaration in your driver code:</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |

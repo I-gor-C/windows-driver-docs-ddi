@@ -1,73 +1,66 @@
 ---
-UID: NC:wdm.GET_VIRTUAL_FUNCTION_PROBED_BARS
-title: GET_VIRTUAL_FUNCTION_PROBED_BARS function
-author: windows-driver-content
-description: The GetVirtualFunctionProbedBars routine returns the values of the PCI Express (PCIe) Base Address Registers (BARs) of a device that supports the single root I/O virtualization (SR-IOV) interface.
-old-location: pci\getvirtualfunctionprobedbars.htm
-old-project: PCI
-ms.assetid: 02A86A3E-D543-4F0F-9985-7D42F381F8F1
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: GET_VIRTUAL_FUNCTION_PROBED_BARS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in Windows Server 2012 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: GetVirtualFunctionProbedBars
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.GET_VIRTUAL_FUNCTION_PROBED_BARS
+title : GET_VIRTUAL_FUNCTION_PROBED_BARS
+author : windows-driver-content
+description : The GetVirtualFunctionProbedBars routine returns the values of the PCI Express (PCIe) Base Address Registers (BARs) of a device that supports the single root I/O virtualization (SR-IOV) interface.
+old-location : pci\getvirtualfunctionprobedbars.htm
+old-project : PCI
+ms.assetid : 02A86A3E-D543-4F0F-9985-7D42F381F8F1
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in Windows Server 2012 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : GetVirtualFunctionProbedBars
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # GET_VIRTUAL_FUNCTION_PROBED_BARS function
-
-
-
-## -description
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451140">GetVirtualFunctionProbedBars</a> routine returns the values of the PCI Express (PCIe) Base Address Registers (BARs) of a device that supports the single root I/O virtualization (SR-IOV) interface. 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451140">GetVirtualFunctionProbedBars</a> returns the BAR values that were reported by the device after a query that was performed by the PCI bus driver. This query determines the memory or I/O address space that is required by the device.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 GET_VIRTUAL_FUNCTION_PROBED_BARS GetVirtualFunctionProbedBars;
 
 NTSTATUS GetVirtualFunctionProbedBars(
-  _Inout_ PVOID  Context,
-  _Out_   PULONG BaseRegisterValues
+  PVOID Context,
+  PULONG BaseRegisterValues
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Context [in, out]
+`Context`
 
 A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406642">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.
 
-
-### -param BaseRegisterValues [out]
+`BaseRegisterValues`
 
 A pointer to an array of ULONG values. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451140">GetVirtualFunctionProbedBars</a> routine returns a value for each BAR of the device.
 
@@ -75,7 +68,9 @@ A pointer to an array of ULONG values. The <a href="https://msdn.microsoft.com/l
 </div>
 <div> </div>
 
-## -returns
+
+## Return Value
+
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451140">GetVirtualFunctionProbedBars</a> routine returns one of the following NTSTATUS values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -84,10 +79,8 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451140">GetVi
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
 </dl>The device does not support the SR-IOV interface.
 
- 
+## Remarks
 
-
-## -remarks
 The PCI bus driver. which runs in the management operating system  of the Hyper-V parent partition, queries the memory or I/O address space requirements of each  BAR of the device. The PCI bus driver performs this query when the it first detects the adapter on the bus. 
 
 Through this BAR query, the PCI bus driver determines the following:
@@ -113,8 +106,20 @@ The SR-IOV interface does not require that the BARs of a PCIe VF comply with the
 	The VPCI driver requires the size of the memory or I/O
 address space for each BAR after the physical device has started. At that point, the PCI driver cannot perform a BAR query  on the device without altering the current value of the BAR. Therefore, when the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451140">GetVirtualFunctionProbedBars</a> routine is called by the VPCI driver, the PCI driver returns the BAR information that it obtained during the BAR query. The PCI driver performed this query when the device was first detected on the bus.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt><b></b></dt>
 <dt>
@@ -129,4 +134,3 @@ address space for each BAR after the physical device has started. At that point,
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\pci]:%20GET_VIRTUAL_FUNCTION_PROBED_BARS routine%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

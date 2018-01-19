@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisAcquireRWLockWrite
-title: NdisAcquireRWLockWrite function
-author: windows-driver-content
-description: The NdisAcquireRWLockWrite function obtains a write lock that the caller uses for write access to resources that are shared between driver threads.
-old-location: netvista\ndisacquirerwlockwrite.htm
-old-project: netvista
-ms.assetid: 124302d7-0776-4025-b71f-ce6300f97f49
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAcquireRWLockWrite
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.20 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAcquireRWLockWrite
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAcquireRWLockWrite
+title : NdisAcquireRWLockWrite function
+author : windows-driver-content
+description : The NdisAcquireRWLockWrite function obtains a write lock that the caller uses for write access to resources that are shared between driver threads.
+old-location : netvista\ndisacquirerwlockwrite.htm
+old-project : netvista
+ms.assetid : 124302d7-0776-4025-b71f-ce6300f97f49
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAcquireRWLockWrite
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.20 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAcquireRWLockWrite
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAcquireRWLockWrite function
-
-
-
-## -description
 The 
   <b>NdisAcquireRWLockWrite</b> function obtains a write lock that the caller uses for write access to
   resources that are shared between driver threads.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisAcquireRWLockWrite(
@@ -55,18 +50,16 @@ VOID NdisAcquireRWLockWrite(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Lock [in]
+`Lock`
 
 A pointer to an opaque 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> variable that represents a
      lock. The caller can use this lock to gain write or read access to resources that are shared between
      non-ISR driver threads.
 
-
-### -param LockState [out]
+`LockState`
 
 A pointer to an opaque 
      <a href="..\ndis\ns-ndis-_lock_state_ex.md">LOCK_STATE_EX</a> variable that tracks the state
@@ -74,8 +67,7 @@ A pointer to an opaque
      the lock. The caller must use a different variable of type <b>LOCK_STATE_EX</b> for each attempt that it makes to
      obtain the lock from the same non-ISR driver thread.
 
-
-### -param Flags [in]
+`Flags`
 
 A <b>ULONG</b> value that contains lock flags. Set this parameter to <b>NDIS_RWL_AT_DISPATCH_LEVEL</b> if the
      caller's current IRQL is <b>DISPATCH_LEVEL</b>. Otherwise, set this parameter to zero. For more information
@@ -85,11 +77,13 @@ A <b>ULONG</b> value that contains lock flags. Set this parameter to <b>NDIS_RWL
 <div class="alert"><b>Note</b>  If the caller knows the current IRQL is <b>DISPATCH_LEVEL</b>, set this parameter to <b>NDIS_RWL_AT_DISPATCH_LEVEL</b>.  This flag makes the lock even more efficient by causing it to omit a check for the current IRQL.  If the current IRQL is unknown, do not test the current IRQL with <a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a> solely to determine whether to set this flag, as it is more efficient to allow the <b>NdisAcquireRWLockWrite</b> function to test the IRQL itself.</div>
 <div> </div>
 
-## -returns
+
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 NDIS drivers call the 
     <b>NdisAcquireRWLockWrite</b> function to modify resources that are shared between driver threads.
 
@@ -131,8 +125,20 @@ The driver cannot use a lock to protect resources from read or write access that
 
 <b>NdisAcquireRWLockWrite</b> raises the IRQL to <b>DISPATCH_LEVEL</b> by obtaining a spin lock.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_lock_state_ex.md">LOCK_STATE_EX</a>
@@ -169,4 +175,3 @@ The driver cannot use a lock to protect resources from read or write access that
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAcquireRWLockWrite function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

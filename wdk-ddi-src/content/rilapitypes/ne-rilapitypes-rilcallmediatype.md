@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILCALLMEDIATYPE
-title: RILCALLMEDIATYPE
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallmediatype_2.htm
-old-project: netvista
-ms.assetid: f4ecaf9a-1d8d-4a56-afa0-b893eb0c4c62
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLMEDIATYPE, RILCALLMEDIATYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLMEDIATYPE
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILCALLMEDIATYPE
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILCALLMEDIATYPE
+title : RILCALLMEDIATYPE
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallmediatype_2.htm
+old-project : netvista
+ms.assetid : f4ecaf9a-1d8d-4a56-afa0-b893eb0c4c62
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLMEDIATYPE, RILCALLMEDIATYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLMEDIATYPE
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILCALLMEDIATYPE
+req.product : Windows 10 or later.
 ---
 
-# RILCALLMEDIATYPE enumeration
+# RILCALLMEDIATYPE Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILCALLMEDIATYPE { 
   RIL_CALLMEDIATYPE_AUDIO,
@@ -55,19 +48,36 @@ typedef enum _RILCALLMEDIATYPE {
 } RILCALLMEDIATYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_CALLMEDIATYPE_AUDIO
+<tr>
+<td>RIL_CALLMEDIATYPE_AUDIO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIATYPE_CUSTOM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIATYPE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIATYPE_VIDEO</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_CALLMEDIATYPE_VIDEO
-
-
-### -field RIL_CALLMEDIATYPE_CUSTOM
-
-
-### -field RIL_CALLMEDIATYPE_MAX
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

@@ -1,0 +1,97 @@
+---
+UID : NF:ks.KsFilterCreateNode
+title : KsFilterCreateNode function
+author : windows-driver-content
+description : The KsFilterCreateNode function creates a new topology node on the specified filter.
+old-location : stream\ksfiltercreatenode.htm
+old-project : stream
+ms.assetid : 2a796bb9-7d55-47da-9a57-2829cd193e23
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : KsFilterCreateNode
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ks.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KsFilterCreateNode
+req.alt-loc : Ks.lib,Ks.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ks.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : 
+---
+
+
+# KsFilterCreateNode function
+The<b> KsFilterCreateNode</b> function creates a new topology node on the specified filter.
+
+## Syntax
+
+````
+KSDDKAPI NTSTATUS NTAPI KsFilterCreateNode(
+  _In_        PKSFILTER         Filter,
+  _In_  const KSNODE_DESCRIPTOR *NodeDescriptor,
+  _Out_       PULONG            NodeID
+);
+````
+
+## Parameters
+
+`Filter`
+
+A pointer to a <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure on which to create a new topology node.
+
+`NodeDescriptor`
+
+A pointer to a <a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a> structure that describes the new node.
+
+`NodeID`
+
+A pointer to a ULONG where AVStream places the ID of the new node.
+
+
+## Return Value
+
+<b>KsFilterCreateNode</b>  returns the success or failure of creating the node. The call may fail because of invalid parameters, low memory, or other reasons.
+
+## Remarks
+
+Note that the filter control mutex must be held before calling this function. For more information, see <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">Filter Control Mutex in AVStream</a>.
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ks.h |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
+
+## See Also
+
+<dl>
+<dt>
+<a href="..\ks\nf-ks-ksfiltercreatepinfactory.md">KsFilterCreatePinFactory</a>
+</dt>
+</dl>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterCreateNode function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

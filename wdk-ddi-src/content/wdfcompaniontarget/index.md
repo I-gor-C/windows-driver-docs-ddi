@@ -1,20 +1,40 @@
 ---
-UID: NA:wdfcompaniontarget
-ms.assetid: 1b9244b9-b343-3a04-bd61-91ac23ea3ef8
-ms.author: windowsdriverdev
-ms.date: 01/16/18
-ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
+UID : NA:wdfcompaniontarget
+ms.assetid : 1b9244b9-b343-3a04-bd61-91ac23ea3ef8
+ms.author : windowsdriverdev
+ms.date : 01/18/18
+ms.keywords : 
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : portal
 ---
 
-# Wdfcompaniontarget.h header
+# wdfcompaniontarget.h header
 
 
 
-This header is used by Windows Driver Framework. For more information, see
-- [Windows Driver Framework](../_wdf/index.md)
+wdfcompaniontarget.h contains the following programming interfaces:
 
-Wdfcompaniontarget.h contain these programming interfaces:
 
+
+
+
+## Functions
+| Title | Description |
+| ---- |:---- |
+| [WDF_TASK_SEND_OPTIONS_INIT](nf-wdfcompaniontarget-wdf_task_send_options_init.md) | For internal use only. |
+| [WdfCompanionTargetSendTaskSynchronously](nf-wdfcompaniontarget-wdfcompaniontargetsendtasksynchronously.md) | For internal use only. |
+| [WdfCompanionTargetWdmGetCompanionProcess](nf-wdfcompaniontarget-wdfcompaniontargetwdmgetcompanionprocess.md) | For internal use only. |
+
+
+
+## Structures
+| Title | Description |
+| ---- |:---- |
+| [_WDF_TASK_SEND_OPTIONS](ns-wdfcompaniontarget-_wdf_task_send_options.md) | For internal use only. |
+
+
+## Enumerations
+| Title | Description |
+| ---- |:---- |
+| [_WDF_TASK_SEND_OPTIONS_FLAGS](ne-wdfcompaniontarget-_wdf_task_send_options_flags.md) | For internal use only. |

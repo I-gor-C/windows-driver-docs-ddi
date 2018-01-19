@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.IoCreateFile
-title: IoCreateFile function
-author: windows-driver-content
-description: The IoCreateFile routine either causes a new file or directory to be created, or it opens an existing file, device, directory, or volume, giving the caller a handle for the file object.
-old-location: kernel\iocreatefile.htm
-old-project: kernel
-ms.assetid: 928f16d4-19cb-4d80-96a6-d25357bfdc30
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: IoCreateFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoCreateFile
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.IoCreateFile
+title : IoCreateFile function
+author : windows-driver-content
+description : The IoCreateFile routine either causes a new file or directory to be created, or it opens an existing file, device, directory, or volume, giving the caller a handle for the file object.
+old-location : kernel\iocreatefile.htm
+old-project : kernel
+ms.assetid : 928f16d4-19cb-4d80-96a6-d25357bfdc30
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : IoCreateFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoCreateFile
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # IoCreateFile function
-
-
-
-## -description
 The <b>IoCreateFile</b> routine either causes a new file or directory to be created, or it opens an existing file, device, directory, or volume, giving the caller a handle for the file object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS IoCreateFile(
@@ -65,25 +60,21 @@ NTSTATUS IoCreateFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileHandle [out]
+`FileHandle`
 
 A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> once the handle is no longer in use.
 
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access that the caller requires to the file or directory. See <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> for a description of the possible values for this parameter.
 
-
-### -param ObjectAttributes [in]
+`ObjectAttributes`
 
 A pointer to a structure that specifies the object's attributes, which has already been initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is not running in the system process context, it must set the OBJ_KERNEL_HANDLE attribute for <i>ObjectAttributes</i>.
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to a variable that receives the final completion status and information about the requested operation. On return from <b>IoCreateFile</b>, the <b>Information</b> member contains one of the following values:
 
@@ -114,17 +105,15 @@ FILE_DOES_NOT_EXIST
 </li>
 </ul>
 
-### -param AllocationSize [in, optional]
+`AllocationSize`
 
 Optionally specifies the initial allocation size in bytes for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded.
 
-
-### -param FileAttributes [in]
+`FileAttributes`
 
 Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by an ORed combination of one or more FILE_ATTRIBUTE_<i>XXX</i> flags, which are defined in Wdm.h. For a list of flags that can be used with <b>IoCreateFile</b>, see <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> in the Microsoft Windows SDK documentation.
 
-
-### -param ShareAccess [in]
+`ShareAccess`
 
 Specifies the type of share access that the caller would like to the file, as zero, or as one or a combination of the following:
 
@@ -168,8 +157,7 @@ The file can be opened for delete access by other threads' calls to <b>IoCreateF
 
 Device and intermediate drivers usually set <i>ShareAccess</i> to zero, which gives the caller exclusive access to the open file.
 
-
-### -param Disposition [in]
+`Disposition`
 
 Specifies what to do, depending on whether the file already exists, as one of the following:
 
@@ -239,10 +227,8 @@ If the file already exists, open it and overwrite it. If it does not, create the
 </td>
 </tr>
 </table>
- 
 
-
-### -param CreateOptions [in]
+`CreateOptions`
 
 Specifies the options to be applied when creating or opening the file, as a compatible combination of the following flags:
 
@@ -424,30 +410,24 @@ This flag allows an application to request a filter opportunistic lock (oplock) 
 </td>
 </tr>
 </table>
- 
 
-
-### -param EaBuffer [in, optional]
+`EaBuffer`
 
 For device and intermediate drivers, this parameter must be a <b>NULL</b> pointer.
 
-
-### -param EaLength [in]
+`EaLength`
 
 For device and intermediate drivers, this parameter must be zero.
 
-
-### -param CreateFileType [in]
+`CreateFileType`
 
 Drivers must set this parameter to <b>CreateFileTypeNone</b>.
 
-
-### -param InternalParameters [in, optional]
+`InternalParameters`
 
 Drivers must set this parameter to <b>NULL</b>.
 
-
-### -param Options [in]
+`Options`
 
 Specifies options to be used during the creation of the create request. These options can be from the following list:
 
@@ -497,14 +477,14 @@ Open the file's parent directory.
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>IoCreateFile</b> either returns STATUS_SUCCESS or an appropriate error status. If it returns an error status, the caller can find additional information about the cause of the failure by checking the <i>IoStatusBlock</i>.
 
+## Remarks
 
-## -remarks
 The handle, obtained by <b>IoCreateFile</b>, can be used by subsequent calls to manipulate data within the file or the file object's state or attributes.
 
 There are two alternate ways to specify the name of the file to be created or opened with <b>IoCreateFile</b>:
@@ -581,8 +561,20 @@ NTFS is the only Microsoft file system that implements FILE_RESERVE_OPFILTER.
 
 Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE attribute for the <i>ObjectAttributes</i> parameter of <b>IoCreateFile</b>. This restricts the use of the handle returned by <b>IoCreateFile</b> to processes running only in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running. Drivers can call <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to set the OBJ_KERNEL_HANDLE attribute as follows.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -596,4 +588,3 @@ Driver routines that run in a process context other than that of the system proc
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

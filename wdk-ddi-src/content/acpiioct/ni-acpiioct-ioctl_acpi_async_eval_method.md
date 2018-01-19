@@ -1,51 +1,46 @@
 ---
-UID: NI:acpiioct.IOCTL_ACPI_ASYNC_EVAL_METHOD
-title: IOCTL_ACPI_ASYNC_EVAL_METHOD
-author: windows-driver-content
-description: A driver for a device can use the IOCTL_ACPI_ASYNC_EVAL_METHOD device control request to asynchronously evaluate an ACPI control method that is supported by the device.
-old-location: acpi\ioctl_acpi_async_eval_method.htm
-old-project: acpi
-ms.assetid: 43dcbd78-97c6-469e-9f66-f50959dc60e2
-ms.author: windowsdriverdev
-ms.date: 12/31/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: ioctl
-req.header: acpiioct.h
-req.include-header: Acpiioct.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows Vista and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IOCTL_ACPI_ASYNC_EVAL_METHOD
-req.alt-loc: Acpiioct.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID : NI:acpiioct.IOCTL_ACPI_ASYNC_EVAL_METHOD
+title : IOCTL_ACPI_ASYNC_EVAL_METHOD
+author : windows-driver-content
+description : A driver for a device can use the IOCTL_ACPI_ASYNC_EVAL_METHOD device control request to asynchronously evaluate an ACPI control method that is supported by the device.
+old-location : acpi\ioctl_acpi_async_eval_method.htm
+old-project : acpi
+ms.assetid : 43dcbd78-97c6-469e-9f66-f50959dc60e2
+ms.author : windowsdriverdev
+ms.date : 12/31/2017
+ms.keywords : _UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : ioctl
+req.header : acpiioct.h
+req.include-header : Acpiioct.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows Vista and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IOCTL_ACPI_ASYNC_EVAL_METHOD
+req.alt-loc : Acpiioct.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS"
 ---
 
 # IOCTL_ACPI_ASYNC_EVAL_METHOD IOCTL
+A driver for a device can use the IOCTL_ACPI_ASYNC_EVAL_METHOD device control request to asynchronously evaluate an ACPI control method that is supported by the device. The driver should call <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request.
 
+### Major Code
+[IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
-
-## -description
-A driver for a device can use the IOCTL_ACPI_ASYNC_EVAL_METHOD device control request to asynchronously evaluate an ACPI control method that is supported by the device. The driver should call <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request. 
-
-
-
-## -ioctlparameters
-
-### -input-buffer
+### Input Buffer
 Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
 
 <i>IoControlCode</i> is set to IOCTL_ACPI_ASYNC_EVAL_METHOD.
@@ -62,40 +57,33 @@ Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
 
 <i>Event</i> is set to <b>NULL</b>.
 
-
-### -input-buffer-length
+### Input Buffer Length
 <i>InputBufferLength</i> is set to the size, in bytes, of the input buffer that is supplied by <i>InputBuffer</i>.
 
-
-### -output-buffer
+### Output Buffer
 Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:
 
 <i>OutputBuffer</i> supplies a pointer to an <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a> structure that contains the output arguments from the control method.
 
 <i>IoStatusBlock</i> is set to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure.
 
-
-### -output-buffer-length
+### Output Buffer Length
 <i>OutputBufferLength</i> supplies the size, in bytes, of the output buffer that is supplied by <i>OutputBuffer</i>.
 
-
-### -in-out-buffer
-
+### Input / Output Buffer
 <text></text>
 
-### -inout-buffer-length
-
+### Input / Output Buffer Length
 <text></text>
 
-### -status-block
+### Status Block
 I/O Status block
 If the request succeeds, <i>IoStatusBlock</i>-&gt;<b>Status</b> is set to STATUS_SUCCESS; otherwise, the <b>Status</b> member is set to an error code. If the output buffer is not large enough to contain the output buffer header, the <b>Status</b> member is set to STATUS_BUFFER_TOO_SMALL. If the output buffer is large enough to contain the output buffer header, but is not large enough to contain all the output arguments from the control method, the <b>Status</b> member is set to STATUS_BUFFER_OVERFLOW, and <i>OutputBuffer</i>-&gt;<b>Length</b> is set to the required length of the output buffer.
 
 If the request succeeds, the <i>IoStatusBlock</i>-&gt;<b>Information</b> member is set to the number of bytes that is returned in the output buffer; otherwise, the <b>Information</b> member is set to zero.
 
-
-## -remarks
-A driver for a device can use IOCTL_ACPI_ASYNC_EVAL_METHOD to asynchronously evaluate a control method that the device supports. For example, if the device is named 'ABCD' in an ACPI namespace and the 'ABCD' device supports a method named '_FOO,' this IOCTL can be used to evaluate control method '_FOO' by sending the request to the 'ABCD' device and supplying the control method name '_FOO.' 
+    ## Remarks
+        A driver for a device can use IOCTL_ACPI_ASYNC_EVAL_METHOD to asynchronously evaluate a control method that the device supports. For example, if the device is named 'ABCD' in an ACPI namespace and the 'ABCD' device supports a method named '_FOO,' this IOCTL can be used to evaluate control method '_FOO' by sending the request to the 'ABCD' device and supplying the control method name '_FOO.' 
 
 IOCTL_ACPI_ASYNC_EVAL_METHOD supports the following types of input buffer structures:
 
@@ -121,9 +109,16 @@ For information about how to evaluate ACPI control methods synchronously, see <a
 
 IOCTL_ACPI_ASYNC_EVAL_METHOD can be used only at IRQL &lt;= DISPATCH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Header** | acpiioct.h (include Acpiioct.h) |
+| **IRQL** |  |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_v1.md">ACPI_EVAL_INPUT_BUFFER</a>
 </dt>
@@ -154,4 +149,3 @@ IOCTL_ACPI_ASYNC_EVAL_METHOD can be used only at IRQL &lt;= DISPATCH_LEVEL.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20IOCTL_ACPI_ASYNC_EVAL_METHOD control code%20 RELEASE:%20(12/31/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

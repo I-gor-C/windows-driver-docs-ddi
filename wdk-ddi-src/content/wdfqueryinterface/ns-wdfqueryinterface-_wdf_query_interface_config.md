@@ -1,53 +1,46 @@
 ---
-UID: NS:wdfqueryinterface._WDF_QUERY_INTERFACE_CONFIG
-title: _WDF_QUERY_INTERFACE_CONFIG
-author: windows-driver-content
-description: The WDF_QUERY_INTERFACE_CONFIG structure describes a driver-defined interface.
-old-location: wdf\wdf_query_interface_config.htm
-old-project: wdf
-ms.assetid: 2f7112fc-7f3e-415d-9994-ffd93f456d97
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wdfqueryinterface.h
-req.include-header: Wdf.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WDF_QUERY_INTERFACE_CONFIG
-req.alt-loc: Wdfqueryinterface.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG
-req.product: Windows 10 or later.
+UID : NS:wdfqueryinterface._WDF_QUERY_INTERFACE_CONFIG
+title : _WDF_QUERY_INTERFACE_CONFIG
+author : windows-driver-content
+description : The WDF_QUERY_INTERFACE_CONFIG structure describes a driver-defined interface.
+old-location : wdf\wdf_query_interface_config.htm
+old-project : wdf
+ms.assetid : 2f7112fc-7f3e-415d-9994-ffd93f456d97
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wdfqueryinterface.h
+req.include-header : Wdf.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WDF_QUERY_INTERFACE_CONFIG
+req.alt-loc : Wdfqueryinterface.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product : Windows 10 or later.
 ---
 
 # _WDF_QUERY_INTERFACE_CONFIG structure
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 The <b>WDF_QUERY_INTERFACE_CONFIG</b> structure describes a driver-defined interface.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WDF_QUERY_INTERFACE_CONFIG {
   ULONG                                          Size;
@@ -59,43 +52,37 @@ typedef struct _WDF_QUERY_INTERFACE_CONFIG {
 } WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `EvtDeviceProcessQueryInterfaceRequest`
 
-### -field Size
+            A pointer to your driver's <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a> event callback function, which is called when another driver requests the interface.
+        
+            `ImportInterface`
 
-The size, in bytes, of this structure.
+            If <b>TRUE</b>, the interface supports two-way communication between your driver and drivers that request the interface. 
 
+If this member is <b>FALSE</b>, the interface supports one-way communication from your driver to drivers that request the interface.
+        
+            `Interface`
 
-### -field Interface
+            A pointer to an <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure that describes the driver-defined interface.
+        
+            `InterfaceType`
 
-A pointer to an <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure that describes the driver-defined interface. 
+            A pointer to the GUID that identifies the interface.
+        
+            `SendQueryToParentStack`
 
+            If <b>TRUE</b>, and if your driver specifies a device object that represents a physical device object (PDO) when it calls <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>, the framework sends requests for the interface to the top of the parent device's driver stack. If this member is <b>FALSE</b>, or if the device object does not represent a PDO, the framework does not send requests to the parent device's stack. For more information, see the following Remarks section.
+        
+            `Size`
 
-### -field InterfaceType
+            The size, in bytes, of this structure.
 
-A pointer to the GUID that identifies the interface.
-
-
-### -field SendQueryToParentStack
-
-If <b>TRUE</b>, and if your driver specifies a device object that represents a physical device object (PDO) when it calls <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>, the framework sends requests for the interface to the top of the parent device's driver stack. If this member is <b>FALSE</b>, or if the device object does not represent a PDO, the framework does not send requests to the parent device's stack. For more information, see the following Remarks section.
-
-
-### -field EvtDeviceProcessQueryInterfaceRequest
-
-A pointer to your driver's <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a> event callback function, which is called when another driver requests the interface.
-
-
-### -field ImportInterface
-
-If <b>TRUE</b>, the interface supports two-way communication between your driver and drivers that request the interface. 
-
-If this member is <b>FALSE</b>, the interface supports one-way communication from your driver to drivers that request the interface. 
-
-
-## -remarks
-The <b>WDF_QUERY_INTERFACE_CONFIG</b> structure is used as input to the <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a> method. 
+    ## Remarks
+        The <b>WDF_QUERY_INTERFACE_CONFIG</b> structure is used as input to the <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a> method. 
 
 For each driver-defined interface that your driver exports, you must allocate a WDF_QUERY_INTERFACE_CONFIG structure that represents the interface. Other drivers can request access to the interface by calling <a href="..\wdffdo\nf-wdffdo-wdffdoqueryforinterface.md">WdfFdoQueryForInterface</a>. 
 
@@ -121,11 +108,19 @@ The framework provides two reference/dereference methods that you can use with y
 
 Drivers should initialize this structure by calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdf_query_interface_config_init.md">WDF_QUERY_INTERFACE_CONFIG_INIT</a>.
 
-For more information about driver-defined interfaces, see <a href="https://msdn.microsoft.com/ad96add6-c982-429b-b815-d7adf6fed8cc">Using Driver-Defined Interfaces</a>.
+For more information about driver-defined interfaces, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-driver-defined-interfaces">Using Driver-Defined Interfaces</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfqueryinterface.h (include Wdf.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a>
 </dt>
@@ -153,4 +148,3 @@ For more information about driver-defined interfaces, see <a href="https://msdn.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_QUERY_INTERFACE_CONFIG structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

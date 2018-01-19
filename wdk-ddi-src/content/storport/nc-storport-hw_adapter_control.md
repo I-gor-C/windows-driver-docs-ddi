@@ -1,71 +1,64 @@
 ---
-UID: NC:storport.HW_ADAPTER_CONTROL
-title: HW_ADAPTER_CONTROL
-author: windows-driver-content
-description: A miniport driver's HwStorAdapterControl routine is called to perform synchronous operations to control the state or behavior of an adapter, such as stopping or restarting the HBA for power management.
-old-location: storage\hwstoradaptercontrol.htm
-old-project: storage
-ms.assetid: e1944f1b-97db-4ac2-848e-e69359c09589
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwStorAdapterControl
-req.alt-loc: Storport.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
-req.product: Windows 10 or later.
+UID : NC:storport.HW_ADAPTER_CONTROL
+title : HW_ADAPTER_CONTROL
+author : windows-driver-content
+description : A miniport driver's HwStorAdapterControl routine is called to perform synchronous operations to control the state or behavior of an adapter, such as stopping or restarting the HBA for power management.
+old-location : storage\hwstoradaptercontrol.htm
+old-project : storage
+ms.assetid : e1944f1b-97db-4ac2-848e-e69359c09589
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwStorAdapterControl
+req.alt-loc : Storport.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product : Windows 10 or later.
 ---
 
-# HW_ADAPTER_CONTROL callback
 
-
-
-## -description
+# HW_ADAPTER_CONTROL callback function
 A miniport driver's <b>HwStorAdapterControl</b> routine is called to perform synchronous operations to control the state or behavior of an adapter, such as stopping or restarting the HBA for power management.
 
+## Syntax
 
+```
+HW_ADAPTER_CONTROL HwAdapterControl;
 
-## -prototype
-
-````
-HW_ADAPTER_CONTROL HwStorAdapterControl;
-
-SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
-  _In_ PVOID                     DeviceExtension,
-  _In_ SCSI_ADAPTER_CONTROL_TYPE ControlType,
-  _In_ PVOID                     Parameters
+SCSI_ADAPTER_CONTROL_STATUS HwAdapterControl(
+  PVOID DeviceExtension,
+  SCSI_ADAPTER_CONTROL_TYPE ControlType,
+  PVOID Parameters
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
+`DeviceExtension`
 
-### -param DeviceExtension [in]
+A pointer to the miniport driver's per-HBA storage area.
 
-A pointer to the miniport driver's per-HBA storage area. 
-
-
-### -param ControlType [in]
+`ControlType`
 
 Specifies  an adapter-control operation. Each control type initiates an action by the miniport driver. The following are the  control types and their meanings. Also  listed, are the current IRQL and the spinlock acquired when the control type issued.
 
@@ -353,10 +346,8 @@ None
 </td>
 </tr>
 </table>
- 
 
-
-### -param Parameters [in]
+`Parameters`
 
 Contains information related to the <i>ControlType</i>.  
 
@@ -388,502 +379,8 @@ Caller-allocated SCSI_SUPPORTED_CONTROL_TYPE_LIST structure.
 </table></span></div>
 
 
+## Return Value
 
-### -param MaxControlType
-
-Specifies the number of entries in the <b>SupportedTypeList</b> array.
-
-
-### -param SupportedTypeList
-
-Points to a caller-allocated array of BOOLEAN values that indicate the control types implemented by the miniport driver. The port driver initializes each element to <b>FALSE</b>. 
-
-The miniport driver sets the corresponding array element to <b>TRUE</b> for each operation it supports:
-
-
-
-### -param SupportedTypeList[ScsiQuerySupportedControlTypes]
-### -param SupportedTypeList[ScsiStopAdapter]
-### -param SupportedTypeList[ScsiRestartAdapter]
-### -param SupportedTypeList[ScsiSetBootConfig] 
-### -param SupportedTypeList[ScsiSetRunningConfig]
-### -param SupportedTypeList[ScsiPowerSettingNotification]
-### -param SupportedTypeList[ScsiAdapterPower]
-### -param SupportedTypeList[ScsiAdapterPoFxPowerRequired]
-### -param SupportedTypeList[ScsiAdapterPoFxPowerActive]
-### -param SupportedTypeList[ScsiAdapterPoFxPowerSetFState]
-### -param SupportedTypeList[ScsiAdapterPoFxPowerControl]
-### -param SupportedTypeList[ScsiAdapterPrepareForBusReScan]
-### -param SupportedTypeList[ScsiAdapterSystemPowerHints]
-
-
-
-The miniport driver must not set any element beyond <b>SupportedTypeList</b>[<b>MaxControlType</b> - 1].
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiStopAdapter</b>
-
-</td>
-<td>
-NULL
-
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiRestartAdapter</b>
-
-</td>
-<td>
-NULL
-
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiSetBootConfig</b>
-
-</td>
-<td>
-NULL
-
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiSetRunningConfig</b>
-
-</td>
-<td>
-NULL
-
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiPowerSettingNotification</b>
-
-</td>
-<td>
-Caller-allocated STOR_POWER_SETTING_INFO structure.
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _STOR_POWER_SETTING_INFO {
-    GUID  PowerSettingGuid;
-    PVOID Value;
-    ULONG ValueLength;
-} STOR_POWER_SETTING_INFO, *PSTOR_POWER_SETTING_INFO;
-</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-
-### -param PowerSettingGuid
-
-The GUID of the power setting that changed.
-
-
-### -param Value
-
-Data representing the new value for the power setting.
-
-
-### -param ValueLength
-
-Length in bytes of the data pointed to by <b>Value.</b>
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterFilterResourceRequirements</b>
-
-</td>
-<td>
-Caller-allocated STOR_FILTER_RESOURCE_REQUIREMENTS structure.
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _STOR_FILTER_RESOURCE_REQUIREMENTS {
-    ULONG Version;
-    ULONG Size;
-    PIO_RESOURCE_REQUIREMENTS_LIST IoResourceRequirementsList;
-} STOR_FILTER_RESOURCE_REQUIREMENTS, *PSTOR_FILTER_RESOURCE_REQUIREMENTS;
-   
-#define STOR_FILTER_RESOURCE_REQUIREMENTS_V1 0x1
-</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-
-### -param Version
-
-The version of the filter. This is currently set to STOR_FILTER_RESOURCE_REQUIREMENTS_V1.
-
-
-### -param Size
-
-The size of this structure.
-
-
-### -param IoResourceRequirementsList
-
-The IO resource requirements list. For more information see the <a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterPower</b>
-
-</td>
-<td>
-Caller-allocated STOR_ADAPTER_CONTROL_POWER structure.
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _STOR_ADAPTER_CONTROL_POWER {
-    STOR_POWER_CONTROL_HEADER   Header;
-    STOR_POWER_ACTION           PowerAction;
-    STOR_DEVICE_POWER_STATE     PowerState;
-} STOR_ADAPTER_CONTROL_POWER, *PSTOR_ADAPTER_CONTROL_POWER;
-</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-
-### -param Header
-
-The power control header structure.
-
-
-### -param PowerAction
-
-The power action indicator. For a runtime power transition, <b>PowerAction</b> set to <b>StorPowerActionNone</b>.
-
-
-### -param PowerState
-
-The current adapter power state. This is either <b>StorPowerDeviceD0</b> or <b>StorPowerDeviceD3</b> for  the power on or power of states respectively.
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterPoFxPowerRequired</b>
-
-</td>
-<td>
-A <b>BOOLEAN</b> which is <b>TRUE</b> if the adapter component requires power. Otherwise, <b>FALSE.</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterPoFxPowerActive</b>
-
-</td>
-<td>
-Caller-allocated STOR_POFX_ACTIVE_CONTEXT structure.
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _STOR_POFX_ACTIVE_CONTEXT {
-    STOR_POWER_CONTROL_HEADER   Header;
-    ULONG                       ComponentIndex;
-    BOOLEAN                     Active;
-} STOR_POFX_ACTIVE_CONTEXT, *PSTOR_POFX_ACTIVE_CONTEXT;
-</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-
-### -param Header
-
-The power control header structure.
-
-
-### -param ComponentIndex
-
-Index of the device component with the active status. The component index is always 0 for an adapter.
-
-
-### -param Active
-
-The active status of the component. <b>Active</b> is always set to <b>TRUE</b>.
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterPoFxPowerSetFState</b>
-
-</td>
-<td>
-Caller-allocated STOR_POFX_FSTATE_CONTEXT structure.
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _STOR_POFX_FSTATE_CONTEXT {
-    STOR_POWER_CONTROL_HEADER   Header;
-    ULONG                       ComponentIndex;
-    ULONG                       FState;
-} STOR_POFX_FSTATE_CONTEXT, *PSTOR_POFX_FSTATE_CONTEXT;
-</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-
-### -param Header
-
-The power control header structure.
-
-
-### -param ComponentIndex
-
-Index of the device component with the active status. The component index is always 0 for an adapter.
-
-
-### -param FState
-
-The F-state to set for the adapter component. The F0 state is the only component power state set for an adapter.
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterPoFxPowerControl</b>
-
-</td>
-<td>
-Caller-allocated STOR_POFX_POWER_CONTROL structure.
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _STOR_POFX_POWER_CONTROL {
-    STOR_POWER_CONTROL_HEADER   Header;
-    LPCGUID                     PowerControlCode;
-    SIZE_T                      InBufferSize;
-    SIZE_T                      OutBufferSize;
-    PVOID                       InBuffer;
-    PVOID                       OutBuffer;
-    PSIZE_T                     BytesReturned;
-} STOR_POFX_POWER_CONTROL, *PSTOR_POFX_POWER_CONTROL;
-</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-
-### -param Header
-
-The power control header structure.
-
-
-### -param PowerControlCode
-
-A power control code GUID identifying the private control private control operation to execute for the adapter.
-
-
-### -param InBufferSize
-
-The size, in bytes, of the input buffer at <i>InBuffer</i>.
-
-
-### -param OutBufferSize
-
-The size, in bytes, of the output buffer at <i>OutBuffer</i>.
-
-
-### -param InBuffer
-
-The buffer containing input parameters and data for the private power control call.
-
-
-### -param OutBuffer
-
-The buffer where the resulting output parameters and data are returned for the private power control call.
-
-
-### -param BytesReturned
-
-The size, in bytes, of the data returned in <i>OutBuffer</i>.
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterPrepareForBusReScan</b>
-
-</td>
-<td>
-NULL
-
-</td>
-</tr>
-<tr>
-<td>
-<b>ScsiAdapterSystemPowerHints</b>
-
-</td>
-<td>
-Caller-allocated STOR_SYSTEM_POWER_HINTS structure.
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _STOR_SYSTEM_POWER_HINTS {
-    ULONG Version;
-    ULONG Size;
-    RAID_SYSTEM_POWER SystemPower;
-    ULONG ResumeLatencyMSec;
-} STOR_SYSTEM_POWER_HINTS, *PSTOR_SYSTEM_POWER_HINTS;
-</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-<table>
-<tr>
-<th>Term</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<a id="Version"></a><a id="version"></a><a id="VERSION"></a><b>Version</b>
-
-</td>
-<td width="60%">
-The version of this structure. Currently set to STOR_SYSTEM_POWER_HINTS_V1.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<a id="Size"></a><a id="size"></a><a id="SIZE"></a><b>Size</b>
-
-</td>
-<td width="60%">
-The size of this structure. Set to <b>sizeof</b>(STOR_SYSTEM_POWER_HINTS).
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<a id="SystemPower"></a><a id="systempower"></a><a id="SYSTEMPOWER"></a><b>SystemPower</b>
-
-</td>
-<td width="60%">
-A system power usage indicator. This is one of the following values.
-
-
-
-
-### -param RaidSystemPowerUnknown
-
-Unknown power usage.
-
-
-### -param RaidSystemPowerLowest
-
-Lowest power usage.
-
-
-### -param RaidSystemPowerLow
-
-Low power usage.
-
-
-### -param RaidSystemPowerMedium
-
-Medium power usage.
-
-
-### -param RaidSystemPowerHigh
-
-High power usage.
-
-</dd>
-</dl>
-</td>
-</tr>
-<tr>
-<td width="40%">
-<a id="ResumeLatencyMSec"></a><a id="resumelatencymsec"></a><a id="RESUMELATENCYMSEC"></a><b>ResumeLatencyMSec</b>
-
-</td>
-<td width="60%">
-The resume latency, in milliseconds, of the device.
-
-</td>
-</tr>
-</table>
- 
-
-</td>
-</tr>
-</table>
- 
-
-
-## -returns
 Depending on the control type, <b>HwStorAdapterControl</b> returns one of the following SCSI_ADAPTER_CONTROL_STATUS values:
 <dl>
 <dt><b>
@@ -894,10 +391,8 @@ Depending on the control type, <b>HwStorAdapterControl</b> returns one of the fo
         ScsiAdapterControlUnsuccessful</b></dt>
 </dl>The adapter control operation was not successful.
 
- 
+## Remarks
 
-
-## -remarks
 Because miniport drivers that work with the Storport driver must support Plug and Play (PnP), this function is required. The control types, <b>ScsiStopAdapter</b> and <b>ScsiRestartAdapter</b>, must be supported.
 
 The name <b>HwStorAdapterControl</b>  is just a placeholder. The actual prototype of this routine is defined in <i>storport.h</i> as follows:
@@ -908,10 +403,22 @@ To define an <b>HwStorAdapterControl</b> callback function, you must first provi
 
 Then, implement your callback routine as follows:
 
-The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_ADAPTER_CONTROL</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
+The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_ADAPTER_CONTROL</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-us/library/jj159529.aspx">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
@@ -934,4 +441,3 @@ The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HW_ADAPTER_CONTROL routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

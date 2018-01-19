@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ClfsCreateScanContext
-title: ClfsCreateScanContext function
-author: windows-driver-content
-description: The ClfsCreateScanContext routine creates a scan context that can be used to iterate over the containers of a specified CLFS log.
-old-location: kernel\clfscreatescancontext.htm
-old-project: kernel
-ms.assetid: f3392e43-8463-4d21-9206-34d09f3c7f59
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ClfsCreateScanContext
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ClfsCreateScanContext
-req.alt-loc: Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Clfs.lib
-req.dll: Clfs.sys
-req.irql: <= APC_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ClfsCreateScanContext
+title : ClfsCreateScanContext function
+author : windows-driver-content
+description : The ClfsCreateScanContext routine creates a scan context that can be used to iterate over the containers of a specified CLFS log.
+old-location : kernel\clfscreatescancontext.htm
+old-project : kernel
+ms.assetid : f3392e43-8463-4d21-9206-34d09f3c7f59
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ClfsCreateScanContext
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ClfsCreateScanContext
+req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Clfs.lib
+req.dll : Clfs.sys
+req.irql : <= APC_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ClfsCreateScanContext function
-
-
-
-## -description
 The <b>ClfsCreateScanContext</b> routine creates a scan context that can be used to iterate over the containers of a specified CLFS log.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ClfsCreateScanContext(
@@ -56,27 +51,23 @@ NTSTATUS ClfsCreateScanContext(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param plfoLog [in]
+`plfoLog`
 
 A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The scan context is created for the log that provides the underlying storage for that stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.
 
-
-### -param cFromContainer [in]
+`cFromContainer`
 
 The index of the first container to be scanned. Containers are indexed starting at zero.
 
-
-### -param cContainers [in]
+`cContainers`
 
 The number of containers to be scanned with each call to <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>.
 
+`eScanMode`
 
-### -param eScanMode [in]
-
- A set of flags that specify whether the scan context is set up for scanning forward or backward and whether the scan context should be reinitialized. The following three flags are available for callers of this routine.
+A set of flags that specify whether the scan context is set up for scanning forward or backward and whether the scan context should be reinitialized. The following three flags are available for callers of this routine.
 
 <table>
 <tr>
@@ -120,21 +111,33 @@ If <i>pcxScan</i> points to a CLFS_SCAN_CONTEXT structure that is being passed t
 
 If <i>pcxScan</i> points to a CLFS_SCAN_CONTEXT structure that has been passed to this routine previously, the CLFS_SCAN_INIT flag must be set. Also, one and only one of the direction flags (CLFS_SCAN_FORWARD or CLFS_SCAN_BACKWARD) must be set.
 
-
-### -param pcxScan [in, out]
+`pcxScan`
 
 A pointer to a caller-allocated <a href="..\wdm\ns-wdm-_cls_scan_context.md">CLFS_SCAN_CONTEXT</a> structure whose members are initialized by this routine. This structure is later passed to <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>.
 
 
-## -returns
+## Return Value
+
 <b>ClfsCreateScanContext</b> returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes in Ntstatus.h.
 
+## Remarks
 
-## -remarks
-For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. 
+For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>
@@ -145,4 +148,3 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsCreateScanContext routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

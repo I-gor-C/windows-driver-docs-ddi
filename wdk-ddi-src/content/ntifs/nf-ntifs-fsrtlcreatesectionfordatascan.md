@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.FsRtlCreateSectionForDataScan
-title: FsRtlCreateSectionForDataScan function
-author: windows-driver-content
-description: The FsRtlCreateSectionForDataScan routine creates a section object.
-old-location: ifsk\fsrtlcreatesectionfordatascan.htm
-old-project: ifsk
-ms.assetid: 2bf6fb1b-e2d6-496d-808e-e739951cc7c5
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FsRtlCreateSectionForDataScan
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: The FsRtlCreateSectionForDataScan routine is available on Microsoft Windows Server 2003 SP1 and later, the Update Rollup for Windows 2000 Service Pack 4 (SP4), and the Filter Manager Rollup for Windows XP Service Pack 2 (SP2).
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FsRtlCreateSectionForDataScan
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.FsRtlCreateSectionForDataScan
+title : FsRtlCreateSectionForDataScan function
+author : windows-driver-content
+description : The FsRtlCreateSectionForDataScan routine creates a section object.
+old-location : ifsk\fsrtlcreatesectionfordatascan.htm
+old-project : ifsk
+ms.assetid : 2bf6fb1b-e2d6-496d-808e-e739951cc7c5
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FsRtlCreateSectionForDataScan
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : The FsRtlCreateSectionForDataScan routine is available on Microsoft Windows Server 2003 SP1 and later, the Update Rollup for Windows 2000 Service Pack 4 (SP4), and the Filter Manager Rollup for Windows XP Service Pack 2 (SP2).
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FsRtlCreateSectionForDataScan
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # FsRtlCreateSectionForDataScan function
-
-
-
-## -description
 The <b>FsRtlCreateSectionForDataScan</b> routine creates a section object. Use this routine with extreme caution. (See the following <i>Remarks</i> section.)
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FsRtlCreateSectionForDataScan(
@@ -60,30 +55,25 @@ NTSTATUS FsRtlCreateSectionForDataScan(
 );
 ````
 
+## Parameters
 
-## -parameters
+`SectionHandle`
 
-### -param SectionHandle [out]
+Pointer to a caller-allocated variable that receives an opaque handle to the section object.
 
-Pointer to a caller-allocated variable that receives an opaque handle to the section object. 
-
-
-### -param SectionObject [out]
+`SectionObject`
 
 Pointer to a caller-allocated variable that receives an opaque pointer to the section object.
 
-
-### -param SectionFileSize [out, optional]
+`SectionFileSize`
 
 Pointer to a caller-allocated variable that receives the size, in bytes, of the file at the time the section object was created. This parameter is optional and can be <b>NULL</b>.
 
-
-### -param FileObject [in]
+`FileObject`
 
 File object for an open file.  The section object will be backed by the specified file. This parameter is required and cannot be <b>NULL</b>.
 
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 Specifies the desired access for the section object as one or more of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags. 
 
@@ -133,20 +123,16 @@ All actions defined by the previous flags as well as that defined by STANDARD_RI
 </td>
 </tr>
 </table>
- 
 
-
-### -param ObjectAttributes [in, optional]
+`ObjectAttributes`
 
 Pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro to initialize this structure. Because <b>FsRtlCreateSectionForDataScan</b> inserts this object into the process handle table, the caller must specify the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
-
-### -param MaximumSize [in, optional]
+`MaximumSize`
 
 This parameter is reserved for future use.
 
-
-### -param SectionPageProtection [in]
+`SectionPageProtection`
 
 Specifies the protection to place on each page in the section. Specify one of the following values. This parameter is required and cannot be zero. 
 
@@ -176,10 +162,8 @@ Enables both read and write access to the committed region of pages.
 </td>
 </tr>
 </table>
- 
 
-
-### -param AllocationAttributes [in]
+`AllocationAttributes`
 
 Bitmasks of the SEC_<i>XXX</i> flags determine the allocation attributes of the section. Specify one or more of the following values. This parameter is required and cannot be zero. 
 
@@ -209,15 +193,14 @@ The file specified by the <i>FileObject</i> parameter is a mapped file.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Flags [in]
+`Flags`
 
 This parameter is reserved for future use.
 
 
-## -returns
+## Return Value
+
 <b>FsRtlCreateSectionForDataScan</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following:
 <dl>
 <dt><b>STATUS_END_OF_FILE</b></dt>
@@ -248,18 +231,28 @@ The caller specified an invalid value for the AllocationAttributes parameter. Th
 <dl>
 <dt><b>STATUS_PRIVILEGE_NOT_HELD</b></dt>
 </dl>
-The caller did not have the required privilege to create a section object with the access specified in the DesiredAccess parameter. This is an error code. 
+The caller did not have the required privilege to create a section object with the access specified in the DesiredAccess parameter. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 Once the section object created by this routine is no longer necessary, be sure to close the section object's handle (<i>SectionHandle</i>) by calling the <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> routine and dereference the section object itself (<i>SectionObject</i>) by calling the <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> routine.
 
-For more information on creating mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563684">Section Objects and Views</a>. Also see the documentation for the <b>CreateFileMapping</b> routine in the Microsoft Windows SDK. 
+For more information on creating mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563684">Section Objects and Views</a>. Also see the documentation for the <b>CreateFileMapping</b> routine in the Microsoft Windows SDK.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -282,4 +275,3 @@ For more information on creating mapped sections and views of memory, see <a hre
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCreateSectionForDataScan routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

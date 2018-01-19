@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILEVDOKIND
-title: RILEVDOKIND
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilevdokind.htm
-old-project: netvista
-ms.assetid: 9887342b-85bd-4161-b9de-06ceb56014e5
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILEVDOKIND, RILEVDOKIND
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILEVDOKIND
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILEVDOKIND
+UID : NE:ntddrilapitypes.RILEVDOKIND
+title : RILEVDOKIND
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilevdokind.htm
+old-project : netvista
+ms.assetid : 9887342b-85bd-4161-b9de-06ceb56014e5
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILEVDOKIND, RILEVDOKIND
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILEVDOKIND
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILEVDOKIND
 ---
 
-# RILEVDOKIND enumeration
-
-
-
-## -description
+# RILEVDOKIND Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILEVDOKIND { 
   RIL_EVDOKIND_REVA,
@@ -53,16 +46,31 @@ typedef enum _RILEVDOKIND {
 } RILEVDOKIND;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_EVDOKIND_REVA
+<tr>
+<td>RIL_EVDOKIND_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_EVDOKIND_REVA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_EVDOKIND_REVB</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_EVDOKIND_REVB
-
-
-### -field RIL_EVDOKIND_MAX
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

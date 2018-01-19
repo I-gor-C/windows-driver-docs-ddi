@@ -1,50 +1,43 @@
 ---
-UID: NE:netdispumdddi.MIRACAST_PROTOCOL_EVENT
-title: MIRACAST_PROTOCOL_EVENT
-author: windows-driver-content
-description: Specifies the types of wireless display (Miracast) protocol event that the user-mode display driver should report.
-old-location: display\miracast_protocol_event.htm
-old-project: display
-ms.assetid: 7a47acf7-93a9-4bb2-a120-17c32c852ea9
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: MIRACAST_PROTOCOL_EVENT, MIRACAST_PROTOCOL_EVENT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: netdispumdddi.h
-req.include-header: Netdispumdddi.h
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MIRACAST_PROTOCOL_EVENT
-req.alt-loc: Netdispumdddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: MIRACAST_PROTOCOL_EVENT
+UID : NE:netdispumdddi.MIRACAST_PROTOCOL_EVENT
+title : MIRACAST_PROTOCOL_EVENT
+author : windows-driver-content
+description : Specifies the types of wireless display (Miracast) protocol event that the user-mode display driver should report.
+old-location : display\miracast_protocol_event.htm
+old-project : display
+ms.assetid : 7a47acf7-93a9-4bb2-a120-17c32c852ea9
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : MIRACAST_PROTOCOL_EVENT, MIRACAST_PROTOCOL_EVENT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : netdispumdddi.h
+req.include-header : Netdispumdddi.h
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8.1
+req.target-min-winversvr : Windows Server 2012 R2
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MIRACAST_PROTOCOL_EVENT
+req.alt-loc : Netdispumdddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : MIRACAST_PROTOCOL_EVENT
 ---
 
-# MIRACAST_PROTOCOL_EVENT enumeration
-
-
-
-## -description
+# MIRACAST_PROTOCOL_EVENT Enumeration
 Specifies the types of wireless display (Miracast) protocol event that the user-mode display driver should report.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum  { 
   MIRACAST_PROTOCOL_EVENT_IFRAME_RQ                          = 0,
@@ -55,32 +48,41 @@ typedef enum  {
 } MIRACAST_PROTOCOL_EVENT;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field MIRACAST_PROTOCOL_EVENT_IFRAME_RQ
+<tr>
+<td>MIRACAST_PROTOCOL_EVENT_FORCE_UINT32</td>
+<td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
+</tr>
 
-The driver received a request for a new IDR type of I-frame from the Miracast sink.
+<tr>
+<td>MIRACAST_PROTOCOL_EVENT_IFRAME_RQ</td>
+<td>The driver received a request for a new IDR type of I-frame from the Miracast sink.</td>
+</tr>
+
+<tr>
+<td>MIRACAST_PROTOCOL_EVENT_MONITOR_ARRIVE</td>
+<td>The driver received a monitor connection event from the Miracast sink.</td>
+</tr>
+
+<tr>
+<td>MIRACAST_PROTOCOL_EVENT_MONITOR_DEPART</td>
+<td>The driver received a monitor disconnection event from the Miracast sink.</td>
+</tr>
+
+<tr>
+<td>MIRACAST_PROTOCOL_EVENT_SINK_FAILED_PREFERRED_MODE_CHANGE</td>
+<td>Reserved for system use. Do not use in your driver.</td>
+</tr>
+</table>
 
 
-### -field MIRACAST_PROTOCOL_EVENT_MONITOR_ARRIVE
-
-The driver received a monitor connection event from the Miracast sink.
-
-
-### -field MIRACAST_PROTOCOL_EVENT_MONITOR_DEPART
-
-The driver received a monitor disconnection event from the Miracast sink.
-
-
-### -field MIRACAST_PROTOCOL_EVENT_SINK_FAILED_PREFERRED_MODE_CHANGE
-
-Reserved for system use. Do not use in your driver.
-
-
-### -field MIRACAST_PROTOCOL_EVENT_FORCE_UINT32
-
-Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | netdispumdddi.h (include Netdispumdddi.h) |

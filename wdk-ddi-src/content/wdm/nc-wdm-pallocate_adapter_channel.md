@@ -1,93 +1,84 @@
 ---
-UID: NC:wdm.PALLOCATE_ADAPTER_CHANNEL
-title: PALLOCATE_ADAPTER_CHANNEL
-author: windows-driver-content
-description: The AllocateAdapterChannel routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied AdapterControl routine to carry out the DMA operation.
-old-location: kernel\allocateadapterchannel.htm
-old-project: kernel
-ms.assetid: d3339754-1a54-48f0-90c8-6c7db59fb7cc
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KSYNCHRONIZE_ROUTINE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: AllocateAdapterChannel
-req.alt-loc: wdm.h
-req.ddi-compliance: IrqlDispatch, IrqlDispatch(storport)
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.PALLOCATE_ADAPTER_CHANNEL
+title : PALLOCATE_ADAPTER_CHANNEL
+author : windows-driver-content
+description : The AllocateAdapterChannel routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied AdapterControl routine to carry out the DMA operation.
+old-location : kernel\allocateadapterchannel.htm
+old-project : kernel
+ms.assetid : d3339754-1a54-48f0-90c8-6c7db59fb7cc
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : AllocateAdapterChannel
+req.alt-loc : wdm.h
+req.ddi-compliance : IrqlDispatch, IrqlDispatch(storport)
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
-# PALLOCATE_ADAPTER_CHANNEL callback
 
+# PALLOCATE_ADAPTER_CHANNEL callback function
+The <b>AllocateAdapterChannel</b> routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine to carry out the DMA operation.
 
+## Syntax
 
-## -description
-The <b>AllocateAdapterChannel</b> routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine to carry out the DMA operation. 
+```
+PALLOCATE_ADAPTER_CHANNEL PallocateAdapterChannel;
 
-
-
-## -prototype
-
-````
-PALLOCATE_ADAPTER_CHANNEL AllocateAdapterChannel;
-
-NTSTATUS AllocateAdapterChannel(
-  _In_ PDMA_ADAPTER    DmaAdapter,
-  _In_ PDEVICE_OBJECT  DeviceObject,
-  _In_ ULONG           NumberOfMapRegisters,
-  _In_ PDRIVER_CONTROL ExecutionRoutine,
-  _In_ PVOID           Context
+NTSTATUS PallocateAdapterChannel(
+  PDMA_ADAPTER DmaAdapter,
+  PDEVICE_OBJECT DeviceObject,
+  ULONG NumberOfMapRegisters,
+  PDRIVER_CONTROL ExecutionRoutine,
+  PVOID Context
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param DmaAdapter [in]
+`DmaAdapter`
 
 Pointer to the <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-
-### -param DeviceObject [in]
+`DeviceObject`
 
 Pointer to the device object that represents the target device for a requested DMA operation.
 
+`NumberOfMapRegisters`
 
-### -param NumberOfMapRegisters [in]
+Specifies the number of map registers to be used in the transfer. This value is the lesser of the number of map registers needed to satisfy the current transfer request, and the number of available map registers returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>.
 
-Specifies the number of map registers to be used in the transfer. This value is the lesser of the number of map registers needed to satisfy the current transfer request, and the number of available map registers returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>. 
-
-
-### -param ExecutionRoutine [in]
+`ExecutionRoutine`
 
 Pointer to a driver-supplied <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine. The routine is called when the system DMA controller or bus-master adapter becomes available.
 
+`Context`
 
-### -param Context [in]
-
-Pointer to the driver-determined context to be passed to the <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine. 
+Pointer to the driver-determined context to be passed to the <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine.
 
 
-## -returns
+## Return Value
+
 This routine can return one of the following NTSTATUS values. 
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -96,10 +87,8 @@ This routine can return one of the following NTSTATUS values.
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>The <i>NumberOfMapRegisters</i> is larger than the value returned by <b>IoGetDmaAdapter</b>. The <i>AdapterControl</i> routine will not be called.
 
- 
+## Remarks
 
-
-## -remarks
 <b>AllocateAdapterChannel</b>
            is not a system routine that can be called directly by name. This routine is callable only by pointer from the address returned in a 
           <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
@@ -115,10 +104,22 @@ This routine reserves exclusive access to a DMA controller channel and map regis
 
 Only one DMA request can be queued for a device object at any one time. Therefore, the driver should not call <b>AllocateAdapterChannel</b> again for another DMA operation on the same device object until the <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine has completed execution. In addition, a driver must not call <b>AllocateAdapterChannel</b> from within its <i>AdapterControl</i> routine.
 
-The system passes the value of the <b>CurrentIrp</b> member of <i>DeviceObject</i> as the <i>Irp</i> parameter of <i>AdapterControl</i>. If <b>AllocateAdapterChannel</b> is called from a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a> routine, this is guaranteed to point to the IRP that <i>StartIo</i> was called to process. Otherwise, to use the <i>Irp</i> parameter of <i>AdapterControl</i>, the driver must set <b>CurrentIrp</b> to point to the current IRP before calling <b>AllocateAdapterChannel</b>. 
+The system passes the value of the <b>CurrentIrp</b> member of <i>DeviceObject</i> as the <i>Irp</i> parameter of <i>AdapterControl</i>. If <b>AllocateAdapterChannel</b> is called from a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a> routine, this is guaranteed to point to the IRP that <i>StartIo</i> was called to process. Otherwise, to use the <i>Irp</i> parameter of <i>AdapterControl</i>, the driver must set <b>CurrentIrp</b> to point to the current IRP before calling <b>AllocateAdapterChannel</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** | IrqlDispatch, IrqlDispatch(storport) |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
@@ -153,4 +154,3 @@ The system passes the value of the <b>CurrentIrp</b> member of <i>DeviceObject</
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PALLOCATE_ADAPTER_CHANNEL callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugDataSpaces4.ReadDebuggerData
-title: IDebugDataSpaces4::ReadDebuggerData method
-author: windows-driver-content
-description: The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session.
-old-location: debugger\readdebuggerdata.htm
-old-project: debugger
-ms.assetid: 54e4d3b9-db9d-4844-938f-c8ca8819d182
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::ReadDebuggerData, ReadDebuggerData
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugDataSpaces.ReadDebuggerData,IDebugDataSpaces2.ReadDebuggerData,IDebugDataSpaces3.ReadDebuggerData,IDebugDataSpaces4.ReadDebuggerData
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugDataSpaces4.ReadDebuggerData
+title : IDebugDataSpaces4::ReadDebuggerData method
+author : windows-driver-content
+description : The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session.
+old-location : debugger\readdebuggerdata.htm
+old-project : debugger
+ms.assetid : 54e4d3b9-db9d-4844-938f-c8ca8819d182
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugDataSpaces4, IDebugDataSpaces4::ReadDebuggerData, ReadDebuggerData
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugDataSpaces.ReadDebuggerData,IDebugDataSpaces2.ReadDebuggerData,IDebugDataSpaces3.ReadDebuggerData,IDebugDataSpaces4.ReadDebuggerData
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugDataSpaces4::ReadDebuggerData method
 
-
-
-## -description
+# ReadDebuggerData method
 The <b>ReadDebuggerData</b> method returns information about the target that the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> has queried or determined during the current session.  The available information includes the locations of certain key target kernel locations, specific status values, and a number of other things.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT ReadDebuggerData(
@@ -54,10 +49,9 @@ HRESULT ReadDebuggerData(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Index [in]
+`Index`
 
 Specifies the index of the data to retrieve.  The following values are valid:
 
@@ -1601,25 +1595,22 @@ Returns the address of the kernel variable <b>KdPrintBufferSize</b>.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Buffer [out]
+`Buffer`
 
 Receives the value of the specified debugger data.  The "Return Type" column in the above table specifies the data type that is returned.  The data can be accessed by casting <i>Buffer</i> to a pointer to that type.
 
-
-### -param BufferSize [in]
+`BufferSize`
 
 Specifies the size in bytes of the buffer <i>Buffer</i>.
 
-
-### -param DataSize [out, optional]
+`DataSize`
 
 Receives the number of bytes used in the buffer <i>Buffer</i>.  If <i>DataSize</i> is <b>NULL</b>, this information is not returned.
 
 
-## -returns
+## Return Value
+
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
@@ -1628,8 +1619,20 @@ Receives the number of bytes used in the buffer <i>Buffer</i>.  If <i>DataSize</
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
+## Remarks
 
-## -remarks
 Some or all of the values may be unavailable in certain debugging sessions.  For example, some of the values are only available for particular versions of the operating system.
 
 For details on the different values returned by <b>ReadDebuggerData</b>, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich, the Microsoft Windows SDK, and the Windows Driver Kit (WDK).</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

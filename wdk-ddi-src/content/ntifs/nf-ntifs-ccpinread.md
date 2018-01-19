@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.CcPinRead
-title: CcPinRead function
-author: windows-driver-content
-description: The CcPinRead routine pins the specified byte range of a cached file and reads the pinned data into a buffer in memory.
-old-location: ifsk\ccpinread.htm
-old-project: ifsk
-ms.assetid: 46b0e05e-f7e2-4a9b-bec0-26bcaf31b013
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: CcPinRead
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CcPinRead
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.CcPinRead
+title : CcPinRead function
+author : windows-driver-content
+description : The CcPinRead routine pins the specified byte range of a cached file and reads the pinned data into a buffer in memory.
+old-location : ifsk\ccpinread.htm
+old-project : ifsk
+ms.assetid : 46b0e05e-f7e2-4a9b-bec0-26bcaf31b013
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : CcPinRead
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CcPinRead
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # CcPinRead function
-
-
-
-## -description
 The <b>CcPinRead</b> routine pins the specified byte range of a cached file and reads the pinned data into a buffer in memory.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN CcPinRead(
@@ -56,25 +51,21 @@ BOOLEAN CcPinRead(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileObject [in]
+`FileObject`
 
 Pointer to a file object for the cached file in which a range of data is to be pinned.
 
-
-### -param FileOffset [in]
+`FileOffset`
 
 Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.
 
-
-### -param Length [in]
+`Length`
 
 Length of desired data in bytes.
 
-
-### -param Flags [in]
+`Flags`
 
 Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: 
 
@@ -124,24 +115,22 @@ The data is to be pinned only if a BCB already exists. Otherwise, the pin fails 
 </td>
 </tr>
 </table>
- 
 
-
-### -param Bcb [out]
+`Bcb`
 
 On the first call this returns a pointer to a buffer control block (BCB). This pointer must be supplied as input on all subsequent calls for this buffer.
 
-
-### -param Buffer [out]
+`Buffer`
 
 Pointer to a buffer containing the pinned data.
 
 
-## -returns
+## Return Value
+
 <b>CcPinRead</b> returns <b>TRUE</b> if the data for the cached file was pinned and read successfully, <b>FALSE</b> otherwise.
 
+## Remarks
 
-## -remarks
 If the PIN_WAIT flag is set, <b>CcPinRead</b> is guaranteed to complete the pinning request and return <b>TRUE</b>. If the required pages of the cached file are already resident in memory, the data is pinned immediately and no blocking occurs. If any needed pages are not resident, the caller is put in a wait state until all required pages have been made resident and the data can be pinned. If the PIN_WAIT flag is not set, but the data cannot be pinned immediately, <b>CcPinRead</b> returns <b>FALSE</b>, and its output parameter values are meaningless.
 
 If the caller subsequently modifies the data read by <b>CcPinRead</b>, it must also call <a href="..\ntifs\nf-ntifs-ccsetdirtypinneddata.md">CcSetDirtyPinnedData</a> so that the modified data will eventually be written to disk.
@@ -158,8 +147,20 @@ If any failure occurs, <b>CcPinRead</b> raises a status exception for that parti
 
 To map data for a cached file, use the <a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a> routine. To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
@@ -185,4 +186,3 @@ To map data for a cached file, use the <a href="..\ntifs\nf-ntifs-ccmapdata.md">
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPinRead routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

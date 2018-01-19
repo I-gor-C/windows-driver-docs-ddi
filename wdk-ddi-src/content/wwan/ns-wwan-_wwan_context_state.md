@@ -1,52 +1,45 @@
 ---
-UID: NS:wwan._WWAN_CONTEXT_STATE
-title: _WWAN_CONTEXT_STATE
-author: windows-driver-content
-description: The WWAN_CONTEXT_STATE structure represents the Packet Data Protocol (PDP) context state of the MB device.
-old-location: netvista\wwan_context_state.htm
-old-project: netvista
-ms.assetid: 0b2a2a94-6c1a-439f-8d54-cc43e79b3b15
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE, *PWWAN_CONTEXT_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wwan.h
-req.include-header: Wwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WWAN_CONTEXT_STATE
-req.alt-loc: wwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: WWAN_CONTEXT_STATE, *PWWAN_CONTEXT_STATE
-req.product: Windows 10 or later.
+UID : NS:wwan._WWAN_CONTEXT_STATE
+title : _WWAN_CONTEXT_STATE
+author : windows-driver-content
+description : The WWAN_CONTEXT_STATE structure represents the Packet Data Protocol (PDP) context state of the MB device.
+old-location : netvista\wwan_context_state.htm
+old-project : netvista
+ms.assetid : 0b2a2a94-6c1a-439f-8d54-cc43e79b3b15
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WWAN_CONTEXT_STATE, *PWWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wwan.h
+req.include-header : Wwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WWAN_CONTEXT_STATE
+req.alt-loc : wwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PWWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE"
+req.product : Windows 10 or later.
 ---
 
 # _WWAN_CONTEXT_STATE structure
-
-
-
-## -description
 The WWAN_CONTEXT_STATE structure represents the Packet Data Protocol (PDP) context state of the MB
   device.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WWAN_CONTEXT_STATE {
   ULONG                 uNwError;
@@ -57,12 +50,26 @@ typedef struct _WWAN_CONTEXT_STATE {
 } WWAN_CONTEXT_STATE, *PWWAN_CONTEXT_STATE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `ActivationState`
 
-### -field uNwError
+            The current activation state of the device.
+        
+            `ConnectionId`
 
-A network-specific error. The following table shows the connection failure values as documented in
+            The MB Service specifies a value for this member at the time of the connect request by using
+     OID_WWAN_CONNECT. Miniport drivers must copy this value and use it when they notify the MB Service on
+     subsequent connection state changes.
+        
+            `IPType`
+
+            A value from the WWAN_IP_TYPE enumeration that specifies the type of IP.
+        
+            `uNwError`
+
+            A network-specific error. The following table shows the connection failure values as documented in
      the 
      <i>3GPP TS 24.008 Specification</i>.
      
@@ -153,33 +160,13 @@ No APN or unknown APN is provided in the activation request.
 </td>
 </tr>
 </table>
- 
+        
+            `VoiceCallState`
 
+            The current voice call state of the device.
 
-### -field ConnectionId
-
-The MB Service specifies a value for this member at the time of the connect request by using
-     OID_WWAN_CONNECT. Miniport drivers must copy this value and use it when they notify the MB Service on
-     subsequent connection state changes.
-
-
-### -field ActivationState
-
-The current activation state of the device.
-
-
-### -field VoiceCallState
-
-The current voice call state of the device.
-
-
-### -field IPType
-
-A value from the WWAN_IP_TYPE enumeration that specifies the type of IP.
-
-
-## -remarks
-<i>Set</i> OID requests as well as unsolicited status events use the 
+    ## Remarks
+        <i>Set</i> OID requests as well as unsolicited status events use the 
     <b>uNwError</b> member. If there is no network specific error or the network specific error is not known,
     miniport drivers should set this member to 0.
 
@@ -209,9 +196,17 @@ Miniport drivers can provide additional error codes as defined by the GSM standa
 In case of response to the NDIS_WWAN_SET_CONTEXT_STATE, use this member to provide additional error
     codes returned by the network.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wwan.h (include Wwan.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wwan\ne-wwan-_wwan_activation_state.md">WWAN_ACTIVATION_STATE</a>
 </dt>
@@ -227,4 +222,3 @@ In case of response to the NDIS_WWAN_SET_CONTEXT_STATE, use this member to provi
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_STATE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

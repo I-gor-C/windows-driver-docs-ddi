@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.IoIsWdmVersionAvailable
-title: IoIsWdmVersionAvailable function
-author: windows-driver-content
-description: The IoIsWdmVersionAvailable routine checks whether a given WDM version is supported by the operating system.
-old-location: kernel\ioiswdmversionavailable.htm
-old-project: kernel
-ms.assetid: 80b72de0-02a6-4891-b74a-c41cb14fa629
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: IoIsWdmVersionAvailable
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoIsWdmVersionAvailable
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.IoIsWdmVersionAvailable
+title : IoIsWdmVersionAvailable function
+author : windows-driver-content
+description : The IoIsWdmVersionAvailable routine checks whether a given WDM version is supported by the operating system.
+old-location : kernel\ioiswdmversionavailable.htm
+old-project : kernel
+ms.assetid : 80b72de0-02a6-4891-b74a-c41cb14fa629
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : IoIsWdmVersionAvailable
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoIsWdmVersionAvailable
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # IoIsWdmVersionAvailable function
-
-
-
-## -description
 The <b>IoIsWdmVersionAvailable</b> routine checks whether a given WDM version is supported by the operating system.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN IoIsWdmVersionAvailable(
@@ -53,24 +48,23 @@ BOOLEAN IoIsWdmVersionAvailable(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param MajorVersion [in]
+`MajorVersion`
 
 Specifies the major version number of WDM that is requested.
 
-
-### -param MinorVersion [in]
+`MinorVersion`
 
 Specifies the minor version number of WDM that is requested.
 
 
-## -returns
+## Return Value
+
 <b>IoIsWdmVersionAvailable</b> returns <b>TRUE</b> if the version of WDM that the operating system provides is greater than or equal to the version number of WDM being requested. Otherwise, it returns <b>FALSE</b>.
 
+## Remarks
 
-## -remarks
 Drivers should use the <a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a> routine instead of the <b>IoIsWdmVersionAvailable</b> routine.
 
 Cross-platform drivers should use this routine to check the WDM version before performing any operations that vary by platform or are not supported in all versions of WDM.
@@ -119,8 +113,20 @@ The following example shows how a driver can dynamically detect the current oper
 
 As the example shows, calling <b>IoIsWdmVersionAvailable</b>(1, 5) returns <b>TRUE</b> on Windows Me, Windows 2000, and any succeeding operating systems, but <b>FALSE</b> on Windows 98 and Windows 98 SE.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a>
@@ -131,4 +137,3 @@ As the example shows, calling <b>IoIsWdmVersionAvailable</b>(1, 5) returns <b>TR
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoIsWdmVersionAvailable routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

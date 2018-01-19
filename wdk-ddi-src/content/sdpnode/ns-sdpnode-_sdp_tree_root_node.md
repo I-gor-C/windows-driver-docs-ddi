@@ -1,70 +1,62 @@
 ---
-UID: NS:sdpnode._SDP_TREE_ROOT_NODE
-title: _SDP_TREE_ROOT_NODE
-author: windows-driver-content
-description: The SDP_TREE_ROOT_NODE structure is the root element of a tree-based representation of an SDP record.
-old-location: bltooth\sdp_tree_root_node.htm
-old-project: bltooth
-ms.assetid: bde75364-387b-4f57-8942-1cf32652c02d
-ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: _SDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: sdpnode.h
-req.include-header: Sdpnode.h
-req.target-type: Windows
-req.target-min-winverclnt: Versions: Supported in Windows Vista, and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SDP_TREE_ROOT_NODE
-req.alt-loc: sdpnode.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= PASSIVE_LEVEL
-req.typenames: SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
-req.product: Windows 10 or later.
+UID : NS:sdpnode._SDP_TREE_ROOT_NODE
+title : _SDP_TREE_ROOT_NODE
+author : windows-driver-content
+description : The SDP_TREE_ROOT_NODE structure is the root element of a tree-based representation of an SDP record.
+old-location : bltooth\sdp_tree_root_node.htm
+old-project : bltooth
+ms.assetid : bde75364-387b-4f57-8942-1cf32652c02d
+ms.author : windowsdriverdev
+ms.date : 12/21/2017
+ms.keywords : _SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : sdpnode.h
+req.include-header : Sdpnode.h
+req.target-type : Windows
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SDP_TREE_ROOT_NODE
+req.alt-loc : sdpnode.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= PASSIVE_LEVEL
+req.typenames : "*PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE"
+req.product : Windows 10 or later.
 ---
 
 # _SDP_TREE_ROOT_NODE structure
-
-
-
-## -description
 The SDP_TREE_ROOT_NODE structure is the root element of a tree-based representation of an SDP
   record.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _SDP_TREE_ROOT_NODE {
   SDP_NODE RootNode;
 } SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `RootNode`
 
-### -field RootNode
-
-An 
+            An 
      <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure that represents the root node of
      a tree-based representation of an SDP record.
 
-
-## -remarks
-Several SDP functions access or output this structure when they build a tree-based SDP record or
+    ## Remarks
+        Several SDP functions access or output this structure when they build a tree-based SDP record or
     convert a raw SDP record stream into a tree-based record.
 
 The 
@@ -93,9 +85,17 @@ The
     <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a> function
     searches a populated SDP_TREE_ROOT_NODE structure for an SDP attribute value.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | sdpnode.h (include Sdpnode.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 </dt>
@@ -120,4 +120,3 @@ The
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_TREE_ROOT_NODE structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

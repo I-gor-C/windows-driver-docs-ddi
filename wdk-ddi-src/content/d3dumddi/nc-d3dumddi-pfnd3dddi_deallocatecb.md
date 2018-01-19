@@ -1,74 +1,68 @@
 ---
-UID: NC:d3dumddi.PFND3DDDI_DEALLOCATECB
-title: PFND3DDDI_DEALLOCATECB
-author: windows-driver-content
-description: The pfnDeallocateCb callback function releases allocations or a kernel-mode resource object if the resource object was created.
-old-location: display\pfndeallocatecb.htm
-old-project: display
-ms.assetid: 2ffa0367-0451-45d2-be05-e450c45be116
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: pfnDeallocateCb
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
+UID : NC:d3dumddi.PFND3DDDI_DEALLOCATECB
+title : PFND3DDDI_DEALLOCATECB
+author : windows-driver-content
+description : The pfnDeallocateCb callback function releases allocations or a kernel-mode resource object if the resource object was created.
+old-location : display\pfndeallocatecb.htm
+old-project : display
+ms.assetid : 2ffa0367-0451-45d2-be05-e450c45be116
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : pfnDeallocateCb
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DXGK_PTE
 ---
 
-# PFND3DDDI_DEALLOCATECB callback
 
-
-
-## -description
+# PFND3DDDI_DEALLOCATECB callback function
 The <b>pfnDeallocateCb</b> callback function releases allocations or a kernel-mode resource object if the resource object was created.
 
+## Syntax
 
+```
+PFND3DDDI_DEALLOCATECB Pfnd3dddiDeallocatecb;
 
-## -prototype
-
-````
-PFND3DDDI_DEALLOCATECB pfnDeallocateCb;
-
-__checkReturn HRESULT APIENTRY CALLBACK pfnDeallocateCb(
-  _In_       HANDLE              hDevice,
-  _In_ const D3DDDICB_DEALLOCATE *pData
+HRESULT Pfnd3dddiDeallocatecb(
+  HANDLE hDevice,
+  CONST D3DDDICB_DEALLOCATE *
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hDevice [in]
+`hDevice`
 
 A handle to the display device (graphics context).
 
-
-### -param pData [in]
-
-A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_deallocate.md">D3DDDICB_DEALLOCATE</a> structure that describes the resource to release.
+`*`
 
 
-## -returns
+
+
+## Return Value
+
 <b>pfnDeallocateCb</b> returns one of the following values:
 <dl>
 <dt><b>S_OK</b></dt>
@@ -81,8 +75,8 @@ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_deallocate.md">D3DDDIC
 
 This function might also return other HRESULT values.
 
+## Remarks
 
-## -remarks
 The user-mode display driver can release allocations in the following ways: 
 
 Individually, by setting the <b>hResource</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_deallocate.md">D3DDDICB_DEALLOCATE</a> structure that is pointed to by <i>pData </i>to <b>NULL</b> and populating the array in the <b>HandleList</b> member of D3DDDICB_DEALLOCATE with handles of the allocations to release 
@@ -99,8 +93,20 @@ Note that the <b>pfnDeallocateCb</b> function is distinct from the user-mode dis
 
 The following code example shows how to release a resource.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_deallocate.md">D3DDDICB_DEALLOCATE</a>
@@ -123,4 +129,3 @@ The following code example shows how to release a resource.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_DEALLOCATECB callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

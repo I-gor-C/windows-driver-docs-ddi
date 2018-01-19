@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisDprAcquireReadWriteLock
-title: NdisDprAcquireReadWriteLock function
-author: windows-driver-content
-description: The NdisDprAcquireReadWriteLock function acquires a lock that the caller uses for either write or read access to the resources that are shared among driver threads.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite (setting NDIS_RWL_AT_DISPATCH_LEVEL in the Flags parameter) instead of NdisDprAcquireReadWriteLock.
-old-location: netvista\ndisdpracquirereadwritelock.htm
-old-project: netvista
-ms.assetid: 09B574FA-BCBA-4370-8F9F-BF30CE0BE52D
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisDprAcquireReadWriteLock
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead of NdisDprAcquireReadWriteLock. Supported in NDIS 6.0 and 6.1.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisDprAcquireReadWriteLock
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: = DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisDprAcquireReadWriteLock
+title : NdisDprAcquireReadWriteLock function
+author : windows-driver-content
+description : The NdisDprAcquireReadWriteLock function acquires a lock that the caller uses for either write or read access to the resources that are shared among driver threads.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite (setting NDIS_RWL_AT_DISPATCH_LEVEL in the Flags parameter) instead of NdisDprAcquireReadWriteLock.
+old-location : netvista\ndisdpracquirereadwritelock.htm
+old-project : netvista
+ms.assetid : 09B574FA-BCBA-4370-8F9F-BF30CE0BE52D
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisDprAcquireReadWriteLock
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead of NdisDprAcquireReadWriteLock. Supported in NDIS 6.0 and 6.1.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisDprAcquireReadWriteLock
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : = DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisDprAcquireReadWriteLock function
-
-
-
-## -description
 The 
   <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a> function acquires a lock that the caller uses for either write or read
   access to the resources that are shared among driver threads.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisDprAcquireReadWriteLock(
@@ -55,34 +50,29 @@ VOID NdisDprAcquireReadWriteLock(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Lock [in, out]
+`Lock`
 
 A pointer to an opaque variable that represents a lock. The caller can use this lock to access
      shared resources.
 
-
-### -param fWrite [in]
+`fWrite`
 
 A Boolean value. If the value is TRUE, this function is provided with write access to shared
      resources; if the value is FALSE, this function is provided with read access.
 
-
-### -param LockState [out]
-
-A pointer to an opaque variable that tracks the state of the lock. This variable exists in the
-     interval between the time the caller acquires and releases the lock. The caller must use a different
-     variable of type <a href="..\ndis\ns-ndis-_lock_state.md">LOCK_STATE</a> for each attempt that it makes to acquire the lock from the same non-ISR
-     driver thread.
+``
 
 
-## -returns
+
+
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 The driver must initialize a variable of type <a href="..\ndis\ns-ndis-_ndis_rw_lock.md">NDIS_RW_LOCK</a> using the 
     <a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">
     NdisInitializeReadWriteLock</a> function before the driver calls any other 
@@ -121,11 +111,23 @@ The driver cannot use a lock to protect resources from read or write access that
     MiniportDisableInterruptEx</i> functions do.
 
 For more information about acquiring and releasing NDIS spin locks, see 
-    <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/synchronization-and-notification-in-network-drivers">Synchronization
     and Notification in Network Drivers</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | = DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\ns-ndis-_lock_state.md">LOCK_STATE</a>
@@ -162,4 +164,3 @@ For more information about acquiring and releasing NDIS spin locks, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprAcquireReadWriteLock function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

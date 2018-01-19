@@ -1,50 +1,43 @@
 ---
-UID: NS:hbapiwmi._GetFcpTargetMapping_OUT
-title: _GetFcpTargetMapping_OUT
-author: windows-driver-content
-description: The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the GetFcpTargetMapping WMI method to the WMI client.
-old-location: storage\getfcptargetmapping_out.htm
-old-project: storage
-ms.assetid: a3a3050a-6fa2-4ace-87f2-41b8364f4d30
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _GetFcpTargetMapping_OUT, GetFcpTargetMapping_OUT, *PGetFcpTargetMapping_OUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: hbapiwmi.h
-req.include-header: Hbapiwmi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: GetFcpTargetMapping_OUT
-req.alt-loc: hbapiwmi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: GetFcpTargetMapping_OUT, *PGetFcpTargetMapping_OUT
+UID : NS:hbapiwmi._GetFcpTargetMapping_OUT
+title : _GetFcpTargetMapping_OUT
+author : windows-driver-content
+description : The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the GetFcpTargetMapping WMI method to the WMI client.
+old-location : storage\getfcptargetmapping_out.htm
+old-project : storage
+ms.assetid : a3a3050a-6fa2-4ace-87f2-41b8364f4d30
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _GetFcpTargetMapping_OUT, *PGetFcpTargetMapping_OUT, GetFcpTargetMapping_OUT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : hbapiwmi.h
+req.include-header : Hbapiwmi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : GetFcpTargetMapping_OUT
+req.alt-loc : hbapiwmi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PGetFcpTargetMapping_OUT, GetFcpTargetMapping_OUT"
 ---
 
 # _GetFcpTargetMapping_OUT structure
+The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method to the WMI client.
 
-
-
-## -description
-The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method to the WMI client. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _GetFcpTargetMapping_OUT {
   ULONG           HBAStatus;
@@ -54,37 +47,41 @@ typedef struct _GetFcpTargetMapping_OUT {
 } GetFcpTargetMapping_OUT, *PGetFcpTargetMapping_OUT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Entry`
 
-### -field HBAStatus
+            Contains an array of structures of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpscsientry.md">HBAFCPScsiEntry</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers.
+        
+            `HBAStatus`
 
-Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>. 
+            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+        
+            `OutEntryCount`
 
+            Indicates the total number of mappings retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>.
+        
+            `TotalEntryCount`
 
-### -field TotalEntryCount
+            Indicates the total number of persistent bindings associated with the HBA..
 
-Indicates the total number of persistent bindings associated with the HBA..
-
-
-### -field OutEntryCount
-
-Indicates the total number of mappings retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>. 
-
-
-### -field Entry
-
-Contains an array of structures of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpscsientry.md">HBAFCPScsiEntry</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers. 
-
-
-## -remarks
-The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method reports mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for these logical units.
+    ## Remarks
+        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method reports mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for these logical units.
 
 The WMI tool suite generates a declaration of the GetFcpTargetMapping_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a>
 </dt>
@@ -103,4 +100,3 @@ The WMI tool suite generates a declaration of the GetFcpTargetMapping_OUT struct
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GetFcpTargetMapping_OUT structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

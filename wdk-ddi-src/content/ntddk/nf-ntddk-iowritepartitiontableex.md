@@ -1,49 +1,44 @@
 ---
-UID: NF:ntddk.IoWritePartitionTableEx
-title: IoWritePartitionTableEx function
-author: windows-driver-content
-description: The IoWritePartitionTableEx routine writes partition tables from the entries in the partition list buffer for each partition on the disk represented by the given device object.
-old-location: storage\iowritepartitiontableex.htm
-old-project: storage
-ms.assetid: b49ea2db-bb1e-4293-bfac-cbb3e62bca91
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IoWritePartitionTableEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntddk.h
-req.include-header: Ntddk.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IoWritePartitionTableEx
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
+UID : NF:ntddk.IoWritePartitionTableEx
+title : IoWritePartitionTableEx function
+author : windows-driver-content
+description : The IoWritePartitionTableEx routine writes partition tables from the entries in the partition list buffer for each partition on the disk represented by the given device object.
+old-location : storage\iowritepartitiontableex.htm
+old-project : storage
+ms.assetid : b49ea2db-bb1e-4293-bfac-cbb3e62bca91
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IoWritePartitionTableEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntddk.h
+req.include-header : Ntddk.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IoWritePartitionTableEx
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
+
 # IoWritePartitionTableEx function
-
-
-
-## -description
 The <b>IoWritePartitionTableEx</b> routine writes partition tables from the entries in the partition list buffer for each partition on the disk represented by the given device object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS IoWritePartitionTableEx(
@@ -52,20 +47,19 @@ NTSTATUS IoWritePartitionTableEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DeviceObject [in]
+`DeviceObject`
 
 Pointer to the device object representing the disk whose partition tables are to be written.
 
-
-### -param PartitionBuffer [in]
-
-Pointer to the drive layout buffer that contains the partition list entries. For more detailed information see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552662">DRIVE_LAYOUT_INFORMATION_EX</a>.
+`DriveLayout`
 
 
-## -returns
+
+
+## Return Value
+
 <b>IoWritePartitionTabloEx</b> returns a status code of STATUS_SUCCESS if all writes were completed without error. In case of failure, the error codes returned by <b>IoWritePartitionTableEx</b> might include, but are not limited to, the following list:
 <dl>
 <dt><b>STATUS_DEVICE_NOT_READY</b></dt>
@@ -77,13 +71,11 @@ Pointer to the drive layout buffer that contains the partition list entries. For
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
 </dl>Indicates that sector zero did not have the expected MBR disk signature.
 
- 
+## Remarks
 
-
-## -remarks
 <b>IoWritePartitionTableEx</b> replaces the obsolete routine <a href="..\ntddk\nf-ntddk-iowritepartitiontable.md">IoWritePartitionTable</a>. Unlike the older routine, it can write to GUID Partition Tables as well as Master Boot Record Partition Tables. 
 
-<b>IoWritePartitionTableEx</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560411">IOCTL_DISK_SET_DRIVE_LAYOUT_EX</a> disk I/O request instead.
+<b>IoWritePartitionTableEx</b> must only be used by disk drivers. Other drivers should use the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_set_drive_layout_ex.md">IOCTL_DISK_SET_DRIVE_LAYOUT_EX</a> disk I/O request instead.
 
 When a disk device driver receives an IRP_MJ_DEVICE_CONTROL request to set the partition type in a partition table entry, or to repartition the disk, it should call <b>IoWritePartionTableEx</b>. The device control request is generally issued by the format utility, which performs I/O control functions on the partitions and disks in the machine.
 
@@ -93,8 +85,20 @@ In order tot create or delete partitions a full description of the system must b
 
 <b>IoWritePartitionTableEx</b> is synchronous. It must be called by the disk driver's Dispatch routine or by a driver thread. Thus, all user and file system threads must be prepared to enter a wait state when issuing the device control request to reset partition types for the device.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
@@ -111,4 +115,3 @@ In order tot create or delete partitions a full description of the system must b
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IoWritePartitionTableEx routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

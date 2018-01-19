@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisMAllocateNetBufferSGList
-title: NdisMAllocateNetBufferSGList function
-author: windows-driver-content
-description: Bus-master miniport drivers call the NdisMAllocateNetBufferSGList function to obtain a scatter/gather list for the network data that is associated with a NET_BUFFER structure.
-old-location: netvista\ndismallocatenetbuffersglist.htm
-old-project: netvista
-ms.assetid: 3fd8d121-a249-433a-a93d-4027a4bfcb61
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMAllocateNetBufferSGList
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMAllocateNetBufferSGList
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Gather_DMA_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMAllocateNetBufferSGList
+title : NdisMAllocateNetBufferSGList function
+author : windows-driver-content
+description : Bus-master miniport drivers call the NdisMAllocateNetBufferSGList function to obtain a scatter/gather list for the network data that is associated with a NET_BUFFER structure.
+old-location : netvista\ndismallocatenetbuffersglist.htm
+old-project : netvista
+ms.assetid : 3fd8d121-a249-433a-a93d-4027a4bfcb61
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMAllocateNetBufferSGList
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMAllocateNetBufferSGList
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Gather_DMA_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMAllocateNetBufferSGList function
-
-
-
-## -description
 Bus-master miniport drivers call the 
   <b>NdisMAllocateNetBufferSGList</b> function to obtain a scatter/gather list for the network data that is
   associated with a 
   <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMAllocateNetBufferSGList(
@@ -59,18 +54,16 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisMiniportDmaHandle [in]
+`NdisMiniportDmaHandle`
 
 A handle to a context area that NDIS uses to manage a DMA resource. The caller obtained this
      handle by calling the 
      <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
      NdisMRegisterScatterGatherDma</a> function.
 
-
-### -param NetBuffer [in]
+`NetBuffer`
 
 A pointer to a NET_BUFFER structure. 
      <b>NdisMAllocateNetBufferSGList</b> allocates a scatter/gather list for the network data that is
@@ -79,15 +72,13 @@ A pointer to a NET_BUFFER structure.
      <b>CurrentMdl</b> member of the associated 
      <a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a> structure.
 
-
-### -param Context [in]
+`Context`
 
 A pointer to a context area that the caller created. HAL passes this pointer to 
      <a href="..\ndis\nc-ndis-miniport_process_sg_list.md">MiniportProcessSGList</a> after HAL
      creates the scatter/gather list. The caller can use this context area for its own purposes.
 
-
-### -param Flags [in]
+`Flags`
 
 NDIS flags that can be combined with an OR operation. To clear all the flags, set this member to
      zero. This function supports the NDIS_SG_LIST_WRITE_TO_DEVICE flag which; if set, indicates the
@@ -97,15 +88,13 @@ NDIS flags that can be combined with an OR operation. To clear all the flags, se
      from the device to a pre-allocated NET_BUFFER, for example chimney offload capable NICs during receive
      operations, should clear this flag.
 
-
-### -param ScatterGatherListBuffer [in, optional]
+`ScatterGatherListBuffer`
 
 If not <b>NULL</b>, 
      <i>ScatterGatherListBuffer</i> specifies a pointer to storage that the caller allocates to hold the
      scatter/gather list. If <b>NULL</b>, NDIS allocates storage for the scatter/gather list.
 
-
-### -param ScatterGatherListBufferSize [in]
+`ScatterGatherListBufferSize`
 
 If the 
      <i>ScatterGatherListBuffer</i> parameter is not <b>NULL</b>, 
@@ -114,7 +103,8 @@ If the
      <i>ScatterGatherListBuffer</i> parameter is <b>NULL</b>, this parameter is not used.
 
 
-## -returns
+## Return Value
+
 <b>NdisMAllocateNetBufferSGList</b> returns one of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -124,10 +114,8 @@ If the
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
 </dl><b>NdisMAllocateNetBufferSGList</b> failed due to insufficient resources.
 
- 
+## Remarks
 
-
-## -remarks
 An NDIS bus-master miniport driver calls 
     <b>NdisMAllocateNetBufferSGList</b> from its 
     <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
@@ -176,8 +164,20 @@ Miniport drivers must call the
     <a href="..\ndis\nf-ndis-ndismfreenetbuffersglist.md">NdisMFreeNetBufferSGList</a> function
     to free a scatter/gather list.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Gather_DMA_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_process_sg_list.md">MiniportProcessSGList</a>
@@ -216,4 +216,3 @@ Miniport drivers must call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateNetBufferSGList function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

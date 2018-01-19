@@ -1,73 +1,68 @@
 ---
-UID: NC:video.PVIDEO_HW_INITIALIZE
-title: PVIDEO_HW_INITIALIZE
-author: windows-driver-content
-description: HwVidInitialize performs the first initialization of the adapter, after the HAL has given up control of the video hardware to the video port driver.
-old-location: display\hwvidinitialize.htm
-old-project: display
-ms.assetid: 0e43de21-59e5-4368-8ea2-34fa52e99950
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwVidInitialize
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-req.product: Windows 10 or later.
+UID : NC:video.PVIDEO_HW_INITIALIZE
+title : PVIDEO_HW_INITIALIZE
+author : windows-driver-content
+description : HwVidInitialize performs the first initialization of the adapter, after the HAL has given up control of the video hardware to the video port driver.
+old-location : display\hwvidinitialize.htm
+old-project : display
+ms.assetid : 0e43de21-59e5-4368-8ea2-34fa52e99950
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwVidInitialize
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VHF_CONFIG, *PVHF_CONFIG
+req.product : Windows 10 or later.
 ---
 
-# PVIDEO_HW_INITIALIZE callback
 
-
-
-## -description
+# PVIDEO_HW_INITIALIZE callback function
 <i>HwVidInitialize</i> performs the first initialization of the adapter, after the HAL has given up control of the video hardware to the video port driver.
 
+## Syntax
 
+```
+PVIDEO_HW_INITIALIZE PvideoHwInitialize;
 
-## -prototype
-
-````
-PVIDEO_HW_INITIALIZE HwVidInitialize;
-
-BOOLEAN HwVidInitialize(
-   PVOID HwDeviceExtension
+BOOLEAN PvideoHwInitialize(
+  PVOID HwDeviceExtension
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension 
+`HwDeviceExtension`
 
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
 
-## -returns
+## Return Value
+
 If the initialization succeeds, <i>HwVidInitialize</i> returns <b>TRUE</b>.
 
+## Remarks
 
-## -remarks
 Every video miniport driver must have a <i>HwVidInitialize</i> function.
 
 The video port driver calls <i>HwVidInitialize</i> in response to an open request by the corresponding display driver. As soon as <i>HwVidInitialize</i> is called, the miniport driver can change the state of the adapter, unlike the miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function, which must leave the adapter in VGA mode. On return from <i>HwVidInitialize</i>, the adapter must be initialized to a state equivalent to that set up by the miniport driver's <a href="..\video\nc-video-pvideo_hw_reset_hw.md">HwVidResetHw</a> function. This feature is used by autodetection to get mode information from the miniport driver.
@@ -76,8 +71,20 @@ If at all possible, <i>HwVidInitialize</i> should avoid programming the device h
 
 <i>HwVidInitialize</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
@@ -94,4 +101,3 @@ If at all possible, <i>HwVidInitialize</i> should avoid programming the device h
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_INITIALIZE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

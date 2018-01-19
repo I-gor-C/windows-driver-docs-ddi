@@ -1,198 +1,106 @@
 ---
-UID: NN:dbgeng.IDebugDataSpaces4
-title: IDebugDataSpaces4
-author: windows-driver-content
-description: IDebugDataSpaces4 interface
-old-location: debugger\idebugdataspaces4.htm
-old-project: debugger
-ms.assetid: e03202a5-2e4a-43f8-8183-fdd26df6ff8f
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitThreadDataOffset, SetImplicitThreadDataOffset
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugDataSpaces4
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NN:dbgeng.IDebugDataSpaces4
+title : IDebugDataSpaces4
+author : windows-driver-content
+description : IDebugDataSpaces4 interface
+old-location : debugger\idebugdataspaces4.htm
+old-project : debugger
+ms.assetid : e03202a5-2e4a-43f8-8183-fdd26df6ff8f
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitThreadDataOffset, SetImplicitThreadDataOffset
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugDataSpaces4
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 # IDebugDataSpaces4 interface
 
 
 
-## -description
+## Methods
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugDataSpaces4</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>. <b>IDebugDataSpaces4</b> also has these types of members:
+<p>The <b>IDebugDataSpaces4</b> interface has these methods.</p>
 
-The <b>IDebugDataSpaces4</b> interface has these methods.
+| Method | Description |
+| ---- |:---- |
+| [dbgeng.IDebugDataSpaces4.CheckLowMemory](nf-dbgeng-idebugdataspaces4-checklowmemory.md) | The CheckLowMemory method checks for memory corruption in the low 4 GB of memory. |
+| [dbgeng.IDebugDataSpaces4.EndEnumTagged](nf-dbgeng-idebugdataspaces4-endenumtagged.md) | The EndEnumTagged method releases the resources used by the specified enumeration. |
+| [dbgeng.IDebugDataSpaces4.FillPhysical](nf-dbgeng-idebugdataspaces4-fillphysical.md) | The FillPhysical method writes a pattern of bytes to the target's physical memory. The pattern is written repeatedly until the specified memory range is filled. |
+| [dbgeng.IDebugDataSpaces4.FillVirtual](nf-dbgeng-idebugdataspaces4-fillvirtual.md) | The FillVirtual method writes a pattern of bytes to the target's virtual memory. The pattern is written repeatedly until the specified memory range is filled. |
+| [dbgeng.IDebugDataSpaces4.GetNextDifferentlyValidOffsetVirtual](nf-dbgeng-idebugdataspaces4-getnextdifferentlyvalidoffsetvirtual.md) | The GetNextDifferentlyValidOffsetVirtual method returns the offset of the next address whose validity might be different from the validity of the specified address. |
+| [dbgeng.IDebugDataSpaces4.GetNextTagged](nf-dbgeng-idebugdataspaces4-getnexttagged.md) | The GetNextTagged method returns the GUID for the next block of tagged data in the enumeration. |
+| [dbgeng.IDebugDataSpaces4.GetOffsetInformation](nf-dbgeng-idebugdataspaces4-getoffsetinformation.md) | The GetOffsetInformation method provides general information about an address in a process's data space. |
+| [dbgeng.IDebugDataSpaces4.GetValidRegionVirtual](nf-dbgeng-idebugdataspaces4-getvalidregionvirtual.md) | The GetValidRegionVirtual method locates the first valid region of memory in a specified memory range. |
+| [dbgeng.IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets](nf-dbgeng-idebugdataspaces4-getvirtualtranslationphysicaloffsets.md) | The GetVirtualTranslationPhysicalOffsets method returns the physical addresses of the system paging structures at different levels of the paging hierarchy. |
+| [dbgeng.IDebugDataSpaces4.ReadBusData](nf-dbgeng-idebugdataspaces4-readbusdata.md) | The ReadBusData method reads data from a system bus. |
+| [dbgeng.IDebugDataSpaces4.ReadControl](nf-dbgeng-idebugdataspaces4-readcontrol.md) | The ReadControl method reads implementation-specific system data. |
+| [dbgeng.IDebugDataSpaces4.ReadDebuggerData](nf-dbgeng-idebugdataspaces4-readdebuggerdata.md) | The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session. |
+| [dbgeng.IDebugDataSpaces4.ReadHandleData](nf-dbgeng-idebugdataspaces4-readhandledata.md) | The ReadHandleData method retrieves information about a system object specified by a system handle. |
+| [dbgeng.IDebugDataSpaces4.ReadImageNtHeaders](nf-dbgeng-idebugdataspaces4-readimagentheaders.md) | The ReadImageNtHeaders method returns the NT headers for the specified image loaded in the target. |
+| [dbgeng.IDebugDataSpaces4.ReadIo](nf-dbgeng-idebugdataspaces4-readio.md) | The ReadIo method reads from the system and bus I/O memory. |
+| [dbgeng.IDebugDataSpaces4.ReadMsr](nf-dbgeng-idebugdataspaces4-readmsr.md) | The ReadMsr method reads a specified Model-Specific Register (MSR). |
+| [dbgeng.IDebugDataSpaces4.ReadMultiByteStringVirtual](nf-dbgeng-idebugdataspaces4-readmultibytestringvirtual.md) | The ReadMultiByteStringVirtual method reads a null-terminated, multibyte string from the target. |
+| [dbgeng.IDebugDataSpaces4.ReadMultiByteStringVirtualWide](nf-dbgeng-idebugdataspaces4-readmultibytestringvirtualwide.md) | The ReadMultiByteStringVirtualWide method reads a null-terminated, multibyte string from the target and converts it to Unicode. |
+| [dbgeng.IDebugDataSpaces4.ReadPhysical](nf-dbgeng-idebugdataspaces4-readphysical.md) | The ReadPhysical method reads the target's memory from the specified physical address. |
+| [dbgeng.IDebugDataSpaces4.ReadPhysical2](nf-dbgeng-idebugdataspaces4-readphysical2.md) | The ReadPhysical2 method reads the target's memory from the specified physical address. |
+| [dbgeng.IDebugDataSpaces4.ReadPointersVirtual](nf-dbgeng-idebugdataspaces4-readpointersvirtual.md) | The ReadPointersVirtual method is a convenience method for reading pointers from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces4.ReadProcessorSystemData](nf-dbgeng-idebugdataspaces4-readprocessorsystemdata.md) | The ReadProcessorSystemData method returns data about the specified processor. |
+| [dbgeng.IDebugDataSpaces4.ReadTagged](nf-dbgeng-idebugdataspaces4-readtagged.md) | The ReadTagged method reads the tagged data that might be associated with a debugger session. |
+| [dbgeng.IDebugDataSpaces4.ReadUnicodeStringVirtual](nf-dbgeng-idebugdataspaces4-readunicodestringvirtual.md) | The ReadUnicodeStringVirtual method reads a null-terminated, Unicode string from the target and converts it to a multibyte string. |
+| [dbgeng.IDebugDataSpaces4.ReadUnicodeStringVirtualWide](nf-dbgeng-idebugdataspaces4-readunicodestringvirtualwide.md) | The ReadUnicodeStringVirtualWide method reads a null-terminated, Unicode string from the target. |
+| [dbgeng.IDebugDataSpaces4.ReadVirtual](nf-dbgeng-idebugdataspaces4-readvirtual.md) | The ReadVirtual method reads memory from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces4.ReadVirtualUncached](nf-dbgeng-idebugdataspaces4-readvirtualuncached.md) | The ReadVirtualUncached method reads memory from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces4.SearchVirtual](nf-dbgeng-idebugdataspaces4-searchvirtual.md) | The SearchVirtual method searches the target's virtual memory for a specified pattern of bytes. |
+| [dbgeng.IDebugDataSpaces4.SearchVirtual2](nf-dbgeng-idebugdataspaces4-searchvirtual2.md) | The SearchVirtual2 method searches the process's virtual memory for a specified pattern of bytes. |
+| [dbgeng.IDebugDataSpaces4.StartEnumTagged](nf-dbgeng-idebugdataspaces4-startenumtagged.md) | The StartEnumTagged method initializes a enumeration over the tagged data associated with a debugger session. |
+| [dbgeng.IDebugDataSpaces4.VirtualToPhysical](nf-dbgeng-idebugdataspaces4-virtualtophysical.md) | The VirtualToPhysical method translates a location in the target's virtual address space into a physical memory address. |
+| [dbgeng.IDebugDataSpaces4.WriteBusData](nf-dbgeng-idebugdataspaces4-writebusdata.md) | The WriteBusData method writes data to a system bus. |
+| [dbgeng.IDebugDataSpaces4.WriteControl](nf-dbgeng-idebugdataspaces4-writecontrol.md) | The WriteControl method writes implementation-specific system data. |
+| [dbgeng.IDebugDataSpaces4.WriteIo](nf-dbgeng-idebugdataspaces4-writeio.md) | The WriteIo method writes to the system and bus I/O memory. |
+| [dbgeng.IDebugDataSpaces4.WriteMsr](nf-dbgeng-idebugdataspaces4-writemsr.md) | The WriteMsr method writes a value to the specified Model-Specific Register (MSR). |
+| [dbgeng.IDebugDataSpaces4.WritePhysical](nf-dbgeng-idebugdataspaces4-writephysical.md) | The WritePhysical method writes data to the specified physical address in the target's memory. |
+| [dbgeng.IDebugDataSpaces4.WritePhysical2](nf-dbgeng-idebugdataspaces4-writephysical2.md) | The WritePhysical2 method writes data to the specified physical address in the target's memory. |
+| [dbgeng.IDebugDataSpaces4.WritePointersVirtual](nf-dbgeng-idebugdataspaces4-writepointersvirtual.md) | The WritePointersVirtual method is a convenience method for writing pointers to the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces4.WriteVirtual](nf-dbgeng-idebugdataspaces4-writevirtual.md) | The WriteVirtual method writes data to the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces4.WriteVirtualUncached](nf-dbgeng-idebugdataspaces4-writevirtualuncached.md) | The WriteVirtualUncached method writes data to the target's virtual address space. |
 
-Returns the offset of the next address whose validity might be different from the validity of the specified address.
-
-Provides general information about an address in a process's data space.
-
-Locates the first valid region of memory in a specified memory range.
-
-Reads a null-terminated, multibyte string from the target.
-
-Reads a null-terminated, multibyte string from the target and converts it to Unicode.
-
-Reads the target's memory from the specified physical address.
-
-Reads a null-terminated, Unicode string from the target and converts it to a multibyte string.
-
-Reads a null-terminated, Unicode string from the target.
-
-Searches the process's virtual memory for a specified pattern of bytes.
-
-Writes data to the specified physical address in the target's memory.
-
- 
-
-
-## -members
-The <b>IDebugDataSpaces4</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547847">GetNextDifferentlyValidOffsetVirtual</a>
-</td>
-<td align="left" width="63%">
-Returns the offset of the next address whose validity might be different from the validity of the specified address.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548055">GetOffsetInformation</a>
-</td>
-<td align="left" width="63%">
-Provides general information about an address in a process's data space.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549471">GetValidRegionVirtual</a>
-</td>
-<td align="left" width="63%">
-Locates the first valid region of memory in a specified memory range.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554300">ReadMultiByteStringVirtual</a>
-</td>
-<td align="left" width="63%">
-Reads a null-terminated, multibyte string from the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554304">ReadMultiByteStringVirtualWide</a>
-</td>
-<td align="left" width="63%">
-Reads a null-terminated, multibyte string from the target and converts it to Unicode.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554311">ReadPhysical2</a>
-</td>
-<td align="left" width="63%">
-Reads the target's memory from the specified physical address.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554351">ReadUnicodeStringVirtual</a>
-</td>
-<td align="left" width="63%">
-Reads a null-terminated, Unicode string from the target and converts it to a multibyte string.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554357">ReadUnicodeStringVirtualWide</a>
-</td>
-<td align="left" width="63%">
-Reads a null-terminated, Unicode string from the target.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554755">SearchVirtual2</a>
-</td>
-<td align="left" width="63%">
-Searches the process's virtual memory for a specified pattern of bytes.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561441">WritePhysical2</a>
-</td>
-<td align="left" width="63%">
-Writes data to the specified physical address in the target's memory.
-
-</td>
-</tr>
-</table>Returns the offset of the next address whose validity might be different from the validity of the specified address.
-
-Provides general information about an address in a process's data space.
-
-Locates the first valid region of memory in a specified memory range.
-
-Reads a null-terminated, multibyte string from the target.
-
-Reads a null-terminated, multibyte string from the target and converts it to Unicode.
-
-Reads the target's memory from the specified physical address.
-
-Reads a null-terminated, Unicode string from the target and converts it to a multibyte string.
-
-Reads a null-terminated, Unicode string from the target.
-
-Searches the process's virtual memory for a specified pattern of bytes.
-
-Writes data to the specified physical address in the target's memory.
-
- 
+## Remarks
 
 
-## -remarks
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **DLL** |  |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces.md">IDebugDataSpaces</a>
 </dt>
@@ -208,4 +116,3 @@ Writes data to the specified physical address in the target's memory.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4 interface%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

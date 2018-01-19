@@ -1,49 +1,44 @@
 ---
-UID: NF:portcls.IAdapterPowerManagement.PowerChangeState
-title: IAdapterPowerManagement::PowerChangeState method
-author: windows-driver-content
-description: The PowerChangeState method requests that the device change to a new power state.
-old-location: audio\iadapterpowermanagement_powerchangestate.htm
-old-project: audio
-ms.assetid: b3e0fca7-d5ab-4d52-9702-dae83c540a71
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: IAdapterPowerManagement, IAdapterPowerManagement::PowerChangeState, PowerChangeState
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: portcls.h
-req.include-header: Portcls.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IAdapterPowerManagement.PowerChangeState
-req.alt-loc: portcls.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
+UID : NF:portcls.IAdapterPowerManagement.PowerChangeState
+title : IAdapterPowerManagement::PowerChangeState method
+author : windows-driver-content
+description : The PowerChangeState method requests that the device change to a new power state.
+old-location : audio\iadapterpowermanagement_powerchangestate.htm
+old-project : audio
+ms.assetid : b3e0fca7-d5ab-4d52-9702-dae83c540a71
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : IAdapterPowerManagement, IAdapterPowerManagement::PowerChangeState, PowerChangeState
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : portcls.h
+req.include-header : Portcls.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IAdapterPowerManagement.PowerChangeState
+req.alt-loc : portcls.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
-# IAdapterPowerManagement::PowerChangeState method
 
-
-
-## -description
+# PowerChangeState method
 The <code>PowerChangeState</code> method requests that the device change to a new power state.
 
-
-
-## -syntax
+## Syntax
 
 ````
 void PowerChangeState(
@@ -51,10 +46,9 @@ void PowerChangeState(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NewState [in]
+`NewState`
 
 Specifies the new power state being requested for the device. This parameter is a union of type POWER_STATE. The new power state (<i>NewState</i>.<b>DeviceState</b>) can be one of the DEVICE_POWER_STATE enumeration values shown in the following table.
 
@@ -104,14 +98,14 @@ A full hibernation state and is the longest latency sleep state. The driver cann
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 PortCls calls the <code>PowerChangeState</code> method in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> power IRP. This call must not fail. PortCls and the system use the <code>PowerChangeState</code> call to place the device in the desired power state. When the system attempts to suspend or resume an active audio stream, the driver must be capable of saving or restoring its device context appropriately.
 
 To assist the driver, PortCls will pause any active audio streams prior to calling this method to place the device in a sleep state. After calling this method, PortCls will unpause active audio streams, to wake the device up. Miniports can opt for additional notification by utilizing the <a href="..\portcls\nn-portcls-ipowernotify.md">IPowerNotify</a> interface.
@@ -124,8 +118,20 @@ While powered down, a miniport driver is never asked to create a miniport driver
 
 The code for this method must reside in paged memory.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | portcls.h (include Portcls.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
@@ -142,4 +148,3 @@ The code for this method must reside in paged memory.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IAdapterPowerManagement::PowerChangeState method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

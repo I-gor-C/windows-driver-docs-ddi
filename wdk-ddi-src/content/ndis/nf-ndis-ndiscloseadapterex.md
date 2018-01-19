@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisCloseAdapterEx
-title: NdisCloseAdapterEx function
-author: windows-driver-content
-description: A protocol driver calls the NdisCloseAdapterEx function to release the binding and the resources that were allocated when the driver called the NdisOpenAdapterEx function.
-old-location: netvista\ndiscloseadapterex.htm
-old-project: netvista
-ms.assetid: 8e3c6373-e39d-4f9b-b874-e3a9c93791b9
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCloseAdapterEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCloseAdapterEx
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Protocol_Driver_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCloseAdapterEx
+title : NdisCloseAdapterEx function
+author : windows-driver-content
+description : A protocol driver calls the NdisCloseAdapterEx function to release the binding and the resources that were allocated when the driver called the NdisOpenAdapterEx function.
+old-location : netvista\ndiscloseadapterex.htm
+old-project : netvista
+ms.assetid : 8e3c6373-e39d-4f9b-b874-e3a9c93791b9
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCloseAdapterEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCloseAdapterEx
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Protocol_Driver_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCloseAdapterEx function
-
-
-
-## -description
 A protocol driver calls the 
   <b>NdisCloseAdapterEx</b> function to release the binding and the resources that were allocated when the
   driver called the 
   <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisCloseAdapterEx(
@@ -54,17 +49,17 @@ NDIS_STATUS NdisCloseAdapterEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisBindingHandle [in]
+`NdisBindingHandle`
 
 The handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of 
      <b>NdisOpenAdapterEx</b>. This handle identifies the binding that NDIS should close.
 
 
-## -returns
+## Return Value
+
 <b>NdisCloseAdapterEx</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -76,10 +71,8 @@ The handle that NDIS provided at the
        <a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
        ProtocolCloseAdapterCompleteEx</a> function when the operation is complete.
 
- 
+## Remarks
 
-
-## -remarks
 A protocol driver typically calls 
     <b>NdisCloseAdapterEx</b> from its 
     <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
@@ -105,8 +98,20 @@ As soon as the driver calls
     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function at the 
     <i>NdisBindingHandle</i> parameter becomes invalid.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
@@ -130,4 +135,3 @@ As soon as the driver calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCloseAdapterEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ExSetTimer
-title: ExSetTimer function
-author: windows-driver-content
-description: The ExSetTimer routine starts a timer operation and sets the timer to expire at the specified due time.
-old-location: kernel\exsettimer.htm
-old-project: kernel
-ms.assetid: 0320AB36-CA88-40E7-859E-B940401474DD
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ExSetTimer
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.1.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ExSetTimer
-req.alt-loc: ntoskrnl.lib,ntoskrnl.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntoskrnl.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ExSetTimer
+title : ExSetTimer function
+author : windows-driver-content
+description : The ExSetTimer routine starts a timer operation and sets the timer to expire at the specified due time.
+old-location : kernel\exsettimer.htm
+old-project : kernel
+ms.assetid : 0320AB36-CA88-40E7-859E-B940401474DD
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ExSetTimer
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 8.1.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ExSetTimer
+req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntoskrnl.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ExSetTimer function
-
-
-
-## -description
 The <b>ExSetTimer</b> routine starts a timer operation and sets the timer to expire at the specified due time.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN ExSetTimer(
@@ -55,36 +50,33 @@ BOOLEAN ExSetTimer(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Timer`
 
-### -param Timer [in]
+A pointer to an <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/exxxxtimer-routines-and-ex-timer-objects">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine.
 
-A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine.
-
-
-### -param DueTime [in]
+`DueTime`
 
 The absolute or relative time at which the timer is to expire. If the value of the <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes. An absolute time is expressed as the amount of time passed, in system time units, since the start of the year 1601.
 
 The <i>DueTime</i> parameter for a <a href="https://msdn.microsoft.com/B8F2B28C-A02B-4015-B392-3D30BC0229B8">high-resolution timer</a> must be a relative time (negative value), or the routine bug checks.
 
-
-### -param Period [in]
+`Period`
 
 An optional period for the timer in system time units (100-nanosecond intervals). Must be less than or equal to MAXLONG. For a timer that is one-shot instead of periodic, set <i>Period</i> to zero.
 
-
-### -param Parameters [in, optional]
+`Parameters`
 
 A pointer to an <a href="..\wdm\ns-wdm-_ext_set_parameters_v0.md">EXT_SET_PARAMETERS</a> structure. The calling driver previously called the <a href="..\wdm\nf-wdm-exinitializesettimerparameters.md">ExInitializeSetTimerParameters</a> routine to initialize this structure.
 
 
-## -returns
+## Return Value
+
 This routine returns <b>TRUE</b> if it cancels a timer that was pending at the time that the routine was called. Otherwise, the routine returns <b>FALSE</b>. For more information, see Remarks.
 
+## Remarks
 
-## -remarks
 Your driver can call this routine to set a timer to expire at a future time. The driver can then wait for the timer to expire. Or, the driver can implement a callback routine that is called when the timer expires.
 
 After a driver calls <b>ExSetTimer</b>, the driver can call a routine such as <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a> or or <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a> to wait for the timer to expire. When the timer expires, the operating system signals the timer object.
@@ -105,8 +97,20 @@ To avoid excessive power consumption, a driver should not set the period of a lo
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265198">ExXxxTimer Routines and EX_TIMER Objects</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a>
@@ -115,7 +119,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 <a href="..\wdm\nf-wdm-exinitializesettimerparameters.md">ExInitializeSetTimerParameters</a>
 </dt>
 <dt>
-<a href="kernel.ex_timer">EX_TIMER</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/exxxxtimer-routines-and-ex-timer-objects">EX_TIMER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a>
@@ -135,4 +139,3 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetTimer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

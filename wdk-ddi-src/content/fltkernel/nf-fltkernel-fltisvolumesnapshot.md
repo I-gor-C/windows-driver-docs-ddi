@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltIsVolumeSnapshot
-title: FltIsVolumeSnapshot function
-author: windows-driver-content
-description: The FltIsVolumeSnapshot routine determines whether a volume or minifilter driver instance is attached to a snapshot volume.
-old-location: ifsk\fltisvolumesnapshot.htm
-old-project: ifsk
-ms.assetid: eb35e108-577e-4897-8f8c-f3c54753c1f7
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltIsVolumeSnapshot
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltIsVolumeSnapshot
-req.alt-loc: FltMgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fltmgr.lib
-req.dll: FltMgr.sys
-req.irql: PASSIVE_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltIsVolumeSnapshot
+title : FltIsVolumeSnapshot function
+author : windows-driver-content
+description : The FltIsVolumeSnapshot routine determines whether a volume or minifilter driver instance is attached to a snapshot volume.
+old-location : ifsk\fltisvolumesnapshot.htm
+old-project : ifsk
+ms.assetid : eb35e108-577e-4897-8f8c-f3c54753c1f7
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltIsVolumeSnapshot
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltIsVolumeSnapshot
+req.alt-loc : FltMgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fltmgr.lib
+req.dll : FltMgr.sys
+req.irql : PASSIVE_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltIsVolumeSnapshot function
-
-
-
-## -description
 The <b>FltIsVolumeSnapshot</b> routine determines whether a volume or minifilter driver instance is attached to a snapshot volume.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltIsVolumeSnapshot(
@@ -52,20 +47,19 @@ NTSTATUS FltIsVolumeSnapshot(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FltObject [in]
+`FltObject`
 
 An opaque pointer to the volume or instance.
 
-
-### -param IsSnapshotVolume [out]
+`IsSnapshotVolume`
 
 A pointer to a caller-allocated Boolean variable that receives <b>TRUE</b> if the volume or instance is attached to a snapshot volume. Otherwise, the variable receives <b>FALSE</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltIsVolumeSnapshot</b> returns one of the following NTSTATUS values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -80,8 +74,18 @@ A pointer to a caller-allocated Boolean variable that receives <b>TRUE</b> if th
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><b>FltIsVolumeSnapshot</b> encountered a memory allocation failure. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 If the volume or instance object does not support snapshots, <b>FltIsVolumeSnapshot</b> returns STATUS_SUCCESS and <i>IsSnapshotVolume</i> is <b>FALSE</b>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |

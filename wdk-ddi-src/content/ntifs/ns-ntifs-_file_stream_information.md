@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._FILE_STREAM_INFORMATION
-title: _FILE_STREAM_INFORMATION
-author: windows-driver-content
-description: The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file.
-old-location: ifsk\file_stream_information.htm
-old-project: ifsk
-ms.assetid: 03472920-cb22-42e1-b0e5-488c0319fc03
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _FILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION, *PFILE_STREAM_INFORMATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h, Fltkernel.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FILE_STREAM_INFORMATION
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: FILE_STREAM_INFORMATION, *PFILE_STREAM_INFORMATION
+UID : NS:ntifs._FILE_STREAM_INFORMATION
+title : _FILE_STREAM_INFORMATION
+author : windows-driver-content
+description : The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file.
+old-location : ifsk\file_stream_information.htm
+old-project : ifsk
+ms.assetid : 03472920-cb22-42e1-b0e5-488c0319fc03
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _FILE_STREAM_INFORMATION, *PFILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h, Fltkernel.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FILE_STREAM_INFORMATION
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PFILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION"
 ---
 
 # _FILE_STREAM_INFORMATION structure
+The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file.
 
-
-
-## -description
-The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _FILE_STREAM_INFORMATION {
   ULONG         NextEntryOffset;
@@ -55,36 +48,31 @@ typedef struct _FILE_STREAM_INFORMATION {
 } FILE_STREAM_INFORMATION, *PFILE_STREAM_INFORMATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `NextEntryOffset`
 
-### -field NextEntryOffset
+            The offset of the next FILE_STREAM_INFORMATION entry. This member is zero if no other entries follow this one.
+        
+            `StreamAllocationSize`
 
-The offset of the next FILE_STREAM_INFORMATION entry. This member is zero if no other entries follow this one. 
+            File stream allocation size, in bytes. Usually this value is a multiple of the sector or cluster size of the underlying physical device.
+        
+            `StreamName`
 
+            Unicode string that contains the name of the stream.
+        
+            `StreamNameLength`
 
-### -field StreamNameLength
+            Length, in bytes, of the <b>StreamName</b> string.
+        
+            `StreamSize`
 
-Length, in bytes, of the <b>StreamName</b> string. 
+            Size, in bytes, of the stream.
 
-
-### -field StreamSize
-
-Size, in bytes, of the stream. 
-
-
-### -field StreamAllocationSize
-
-File stream allocation size, in bytes. Usually this value is a multiple of the sector or cluster size of the underlying physical device. 
-
-
-### -field StreamName
-
-Unicode string that contains the name of the stream. 
-
-
-## -remarks
-The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file. This operation can be performed in either of the following ways: 
+    ## Remarks
+        The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file. This operation can be performed in either of the following ways: 
 
 By calling <a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a> or <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> and specifying FileStreamInformation for the <i>FileInformationClass</i> parameter. On return, the <i>FileInformation</i> buffer contains a FILE_STREAM_INFORMATION structure for each file stream. 
 
@@ -110,11 +98,19 @@ By calling <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQ
 
 By sending an IRP_MJ_QUERY_VOLUME_INFORMATION request to the file system and specifying FileFsAttributeInformation for the <i>FsInformationClass</i> parameter. On return, <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a FILE_FS_ATTRIBUTE_INFORMATION structure. If the FILE_NAMED_STREAMS bit is set in the <b>FileSystemAttributes</b> member of this structure, the file system supports named streams. 
 
-The FILE_STREAM_INFORMATION structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary. 
+The FILE_STREAM_INFORMATION structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </dt>
@@ -142,4 +138,3 @@ The FILE_STREAM_INFORMATION structure must be aligned on a LONGLONG (8-byte) bou
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_STREAM_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

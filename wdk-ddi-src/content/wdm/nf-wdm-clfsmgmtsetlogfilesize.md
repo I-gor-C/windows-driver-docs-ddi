@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ClfsMgmtSetLogFileSize
-title: ClfsMgmtSetLogFileSize function
-author: windows-driver-content
-description: The ClfsMgmtSetLogFileSize routine adds containers to a log or deletes containers from a log.
-old-location: kernel\clfsmgmtsetlogfilesize.htm
-old-project: kernel
-ms.assetid: 76588bdd-ceb8-4c8b-bcd7-23184feacf86
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ClfsMgmtSetLogFileSize
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows Server 2003 R2 and Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ClfsMgmtSetLogFileSize
-req.alt-loc: Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Clfs.lib
-req.dll: Clfs.sys
-req.irql: <= APC_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ClfsMgmtSetLogFileSize
+title : ClfsMgmtSetLogFileSize function
+author : windows-driver-content
+description : The ClfsMgmtSetLogFileSize routine adds containers to a log or deletes containers from a log.
+old-location : kernel\clfsmgmtsetlogfilesize.htm
+old-project : kernel
+ms.assetid : 76588bdd-ceb8-4c8b-bcd7-23184feacf86
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ClfsMgmtSetLogFileSize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows Server 2003 R2 and Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ClfsMgmtSetLogFileSize
+req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Clfs.lib
+req.dll : Clfs.sys
+req.irql : <= APC_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ClfsMgmtSetLogFileSize function
-
-
-
-## -description
 The <b>ClfsMgmtSetLogFileSize</b> routine adds containers to a log or deletes containers from a log.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ClfsMgmtSetLogFileSize(
@@ -56,15 +51,13 @@ NTSTATUS ClfsMgmtSetLogFileSize(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param LogFile [in]
+`LogFile`
 
 A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents the CLFS log, or a stream within the log, to which containers are being added or deleted.
 
-
-### -param NewSizeInContainers [in]
+`NewSizeInContainers`
 
 A pointer to the requested log size. The caller sets this parameter to one of the following values.
 
@@ -121,23 +114,21 @@ If a maximum size policy is installed, the log expands to the maximum number of 
 
 To determine the actual log size, which might be different from the requested size, use the <i>ResultingSizeInContainers</i> parameter.
 
-
-### -param ResultingSizeInContainers [out]
+`ResultingSizeInContainers`
 
 A pointer to the resulting log size. If successful, the routine writes the actual size of the log, expressed as the number of containers in the log, to the location pointed to by this parameter.
 
+`CompletionRoutine`
 
-### -param CompletionRoutine [in, optional]
+Not used.  Set to NULL.
 
- Not used.  Set to NULL.
+`CompletionRoutineData`
 
-
-### -param CompletionRoutineData [in, optional]
-
- Not used. Set to NULL.
+Not used. Set to NULL.
 
 
-## -returns
+## Return Value
+
 The <b>ClfsMgmtSetLogFileSize</b> routine returns one of the following NTSTATUS values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -165,12 +156,24 @@ The <b>ClfsMgmtSetLogFileSize</b> routine returns one of the following NTSTATUS 
 
 This routine might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS Values</a>.
 
+## Remarks
 
-## -remarks
 The <b>ClfsMgmtSetLogFileSize</b> routine is typically used only when a client starts or stops. Do not call the <b>ClfsMgmtSetLogFileSize</b> routine from within your <a href="..\wdm\nc-wdm-pclfs_client_advance_tail_callback.md">ClfsAdvanceTailCallback</a> function.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-clfsmgmtinstallpolicy.md">ClfsMgmtInstallPolicy</a>
@@ -184,4 +187,3 @@ The <b>ClfsMgmtSetLogFileSize</b> routine is typically used only when a client s
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtSetLogFileSize routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

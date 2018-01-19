@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._ACE_HEADER
-title: _ACE_HEADER
-author: windows-driver-content
-description: The ACE_HEADER structure describes the type and size of an access-control entry (ACE).
-old-location: ifsk\ace_header.htm
-old-project: ifsk
-ms.assetid: f5f39310-8b15-4d6b-a985-3f25522a16b1
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _ACE_HEADER, ACE_HEADER, *PACE_HEADER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ACE_HEADER
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: ACE_HEADER
+UID : NS:ntifs._ACE_HEADER
+title : _ACE_HEADER
+author : windows-driver-content
+description : The ACE_HEADER structure describes the type and size of an access-control entry (ACE).
+old-location : ifsk\ace_header.htm
+old-project : ifsk
+ms.assetid : f5f39310-8b15-4d6b-a985-3f25522a16b1
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _ACE_HEADER, ACE_HEADER, *PACE_HEADER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ACE_HEADER
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : ACE_HEADER
 ---
 
 # _ACE_HEADER structure
+The ACE_HEADER structure describes the type and size of an access-control entry (ACE).
 
-
-
-## -description
-The ACE_HEADER structure describes the type and size of an access-control entry (ACE). 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _ACE_HEADER {
   UCHAR  AceType;
@@ -53,55 +46,12 @@ typedef struct _ACE_HEADER {
 } ACE_HEADER, *PACE_HEADER;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AceFlags`
 
-### -field AceType
-
-ACE type. This member can be one of the following values: 
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ACCESS_ALLOWED_ACE_TYPE
-
-</td>
-<td>
-Access-allowed ACE that uses the ACCESS_ALLOWED_ACE structure.
-
-</td>
-</tr>
-<tr>
-<td>
-ACCESS_DENIED_ACE_TYPE
-
-</td>
-<td>
-Access-denied ACE that uses the ACCESS_DENIED_ACE structure.
-
-</td>
-</tr>
-<tr>
-<td>
-SYSTEM_AUDIT_ACE_TYPE
-
-</td>
-<td>
-System-audit ACE that uses the SYSTEM_AUDIT_ACE structure.
-
-</td>
-</tr>
-</table>
- 
-
-
-### -field AceFlags
-
-Set of ACE type-specific control flags. This member can be a combination of the following values: 
+            Set of ACE type-specific control flags. This member can be a combination of the following values: 
 
 <table>
 <tr>
@@ -183,22 +133,68 @@ Used with system-audit ACEs in a SACL to generate audit messages for successful 
 </td>
 </tr>
 </table>
- 
+        
+            `AceSize`
 
+            Size, in bytes, of the ACE.
+        
+            `AceType`
 
-### -field AceSize
+            ACE type. This member can be one of the following values: 
 
-Size, in bytes, of the ACE. 
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+ACCESS_ALLOWED_ACE_TYPE
 
+</td>
+<td>
+Access-allowed ACE that uses the ACCESS_ALLOWED_ACE structure.
 
-## -remarks
-The ACE_HEADER structure is the first member of the various types of ACE structures, such as ACCESS_ALLOWED_ACE. 
+</td>
+</tr>
+<tr>
+<td>
+ACCESS_DENIED_ACE_TYPE
 
-System-alarm ACEs are not currently supported. The <b>AceType</b> member cannot specify the SYSTEM_ALARM_ACE_TYPE. Do not use the SYSTEM_ALARM_ACE structure. 
+</td>
+<td>
+Access-denied ACE that uses the ACCESS_DENIED_ACE structure.
 
+</td>
+</tr>
+<tr>
+<td>
+SYSTEM_AUDIT_ACE_TYPE
 
-## -see-also
-<dl>
+</td>
+<td>
+System-audit ACE that uses the SYSTEM_AUDIT_ACE structure.
+
+</td>
+</tr>
+</table>
+
+    ## Remarks
+        The ACE_HEADER structure is the first member of the various types of ACE structures, such as ACCESS_ALLOWED_ACE. 
+
+System-alarm ACEs are not currently supported. The <b>AceType</b> member cannot specify the SYSTEM_ALARM_ACE_TYPE. Do not use the SYSTEM_ALARM_ACE structure.
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_access_allowed_ace.md">ACCESS_ALLOWED_ACE</a>
 </dt>
@@ -223,4 +219,3 @@ System-alarm ACEs are not currently supported. The <b>AceType</b> member cannot 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACE_HEADER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

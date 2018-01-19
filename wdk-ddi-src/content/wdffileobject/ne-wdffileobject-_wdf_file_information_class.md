@@ -1,53 +1,46 @@
 ---
-UID: NE:wdffileobject._WDF_FILE_INFORMATION_CLASS
-title: _WDF_FILE_INFORMATION_CLASS
-author: windows-driver-content
-description: The WDF_FILE_INFORMATION_CLASS enumeration identifies the types of file information that a driver can obtain or set.
-old-location: wdf\wdf_file_information_class.htm
-old-project: wdf
-ms.assetid: d9d6ce1b-8bc1-4ba7-8ee5-3172a780d52c
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wdffileobject.h
-req.include-header: Wudfddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 1.9
-req.alt-api: WDF_FILE_INFORMATION_CLASS
-req.alt-loc: Wudfddi_types.h,Wdffileobject.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: Unavailable in UMDF 2.0 and later.
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
-req.product: Windows 10 or later.
+UID : NE:wdffileobject._WDF_FILE_INFORMATION_CLASS
+title : _WDF_FILE_INFORMATION_CLASS
+author : windows-driver-content
+description : The WDF_FILE_INFORMATION_CLASS enumeration identifies the types of file information that a driver can obtain or set.
+old-location : wdf\wdf_file_information_class.htm
+old-project : wdf
+ms.assetid : d9d6ce1b-8bc1-4ba7-8ee5-3172a780d52c
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wdffileobject.h
+req.include-header : Wudfddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 1.9
+req.alt-api : WDF_FILE_INFORMATION_CLASS
+req.alt-loc : Wudfddi_types.h,Wdffileobject.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : Unavailable in UMDF 2.0 and later.
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product : Windows 10 or later.
 ---
 
-# _WDF_FILE_INFORMATION_CLASS enumeration
-
-
-
-## -description
+# _WDF_FILE_INFORMATION_CLASS Enumeration
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration identifies the types of file information that a driver can obtain or set.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDF_FILE_INFORMATION_CLASS { 
   WdfFileInformationDirectory                 = 1,
@@ -106,177 +99,294 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
 } WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS;
 ````
 
+## Constants
+
+<table>
+
+<tr>
+<td>WdfFileInformationAccess</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationAlignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationAll</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationAllocation</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationAlternateName</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationAttributeCache</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationAttributeTag</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationBasic</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationBothDirectory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationCompletion</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationCompression</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationDirectory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationDisposition</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationEa</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationEndOfFile</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationFullDirectory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationFullEa</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationHardLink</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationIdBothDirectory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationIdFullDirectory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationIdGlobalTxDirectory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationInternal</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationIoCompletionNotification</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationIoPriorityHint</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationIoStatusBlockRange</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationIsRemoteDevice</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationLink</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationMailslotQuery</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationMailslotSet</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationMaximum</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationMode</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationMoveCluster</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationName</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationNames</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationNetworkOpen</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationNetworkPhysicalName</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationNormalizedName</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationObjectId</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationPipe</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationPipeLocal</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationPipeRemote</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationPosition</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationProcessIdsUsingFile</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationQuota</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationRename</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationReparsePoint</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationSfioReserve</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationSfioVolume</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationShortName</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationStandard</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationStream</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationTracking</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfFileInformationValidDataLength</td>
+<td></td>
+</tr>
+</table>
+
+## Remarks
 
-## -enum-fields
-
-### -field WdfFileInformationDirectory
-
-
-### -field WdfFileInformationFullDirectory
-
-
-### -field WdfFileInformationBothDirectory
-
-
-### -field WdfFileInformationBasic
-
-
-### -field WdfFileInformationStandard
-
-
-### -field WdfFileInformationInternal
-
-
-### -field WdfFileInformationEa
-
-
-### -field WdfFileInformationAccess
-
-
-### -field WdfFileInformationName
-
-
-### -field WdfFileInformationRename
-
-
-### -field WdfFileInformationLink
-
-
-### -field WdfFileInformationNames
-
-
-### -field WdfFileInformationDisposition
-
-
-### -field WdfFileInformationPosition
-
-
-### -field WdfFileInformationFullEa
-
-
-### -field WdfFileInformationMode
-
-
-### -field WdfFileInformationAlignment
-
-
-### -field WdfFileInformationAll
-
-
-### -field WdfFileInformationAllocation
-
-
-### -field WdfFileInformationEndOfFile
-
-
-### -field WdfFileInformationAlternateName
-
-
-### -field WdfFileInformationStream
-
-
-### -field WdfFileInformationPipe
-
-
-### -field WdfFileInformationPipeLocal
-
-
-### -field WdfFileInformationPipeRemote
-
-
-### -field WdfFileInformationMailslotQuery
-
-
-### -field WdfFileInformationMailslotSet
-
-
-### -field WdfFileInformationCompression
-
-
-### -field WdfFileInformationObjectId
-
-
-### -field WdfFileInformationCompletion
-
-
-### -field WdfFileInformationMoveCluster
-
-
-### -field WdfFileInformationQuota
-
-
-### -field WdfFileInformationReparsePoint
-
-
-### -field WdfFileInformationNetworkOpen
-
-
-### -field WdfFileInformationAttributeTag
-
-
-### -field WdfFileInformationTracking
-
-
-### -field WdfFileInformationIdBothDirectory
-
-
-### -field WdfFileInformationIdFullDirectory
-
-
-### -field WdfFileInformationValidDataLength
-
-
-### -field WdfFileInformationShortName
-
-
-### -field WdfFileInformationIoCompletionNotification
-
-
-### -field WdfFileInformationIoStatusBlockRange
-
-
-### -field WdfFileInformationIoPriorityHint
-
-
-### -field WdfFileInformationSfioReserve
-
-
-### -field WdfFileInformationSfioVolume
-
-
-### -field WdfFileInformationHardLink
-
-
-### -field WdfFileInformationProcessIdsUsingFile
-
-
-### -field WdfFileInformationNormalizedName
-
-
-### -field WdfFileInformationNetworkPhysicalName
-
-
-### -field WdfFileInformationIdGlobalTxDirectory
-
-
-### -field WdfFileInformationIsRemoteDevice
-
-
-### -field WdfFileInformationAttributeCache
-
-
-### -field WdfFileInformationMaximum
-
-
-## -remarks
 The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration is used as an input value to <a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a> and as an output value from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>.
 
 For most values that the <b>WDF_FILE_INFORMATION_CLASS</b> enumeration defines, the wdm.h or ntifs.h header file defines a FILE_XXXX_INFORMATION-named structure that the driver can use when obtaining or setting the file information.
 
 For more information about the enumeration value and associated structures, see the description of the <i>FileInformationClass</i> parameter of <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> and <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** | 1.9 |
+| **Header** | wdffileobject.h (include Wudfddi.h) |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a>
@@ -290,4 +400,3 @@ For more information about the enumeration value and associated structures, see 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILE_INFORMATION_CLASS enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

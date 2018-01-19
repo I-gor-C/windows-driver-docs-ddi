@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwOpenDirectoryObject
-title: ZwOpenDirectoryObject function
-author: windows-driver-content
-description: The ZwOpenDirectoryObject routine opens an existing directory object.
-old-location: kernel\zwopendirectoryobject.htm
-old-project: kernel
-ms.assetid: ddff6e6e-d22f-4e22-af13-aca889eee0d4
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwOpenDirectoryObject
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntdef.h, Ntifs.h, Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwOpenDirectoryObject,NtCreateDirectoryObject
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwOpenDirectoryObject
+title : ZwOpenDirectoryObject function
+author : windows-driver-content
+description : The ZwOpenDirectoryObject routine opens an existing directory object.
+old-location : kernel\zwopendirectoryobject.htm
+old-project : kernel
+ms.assetid : ddff6e6e-d22f-4e22-af13-aca889eee0d4
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwOpenDirectoryObject
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntdef.h, Ntifs.h, Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwOpenDirectoryObject,NtCreateDirectoryObject
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwOpenDirectoryObject function
+The <b>ZwOpenDirectoryObject</b> routine opens an existing directory object.
 
-
-
-## -description
-The <b>ZwOpenDirectoryObject</b> routine opens an existing directory object. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwOpenDirectoryObject(
@@ -53,15 +48,13 @@ NTSTATUS ZwOpenDirectoryObject(
 );
 ````
 
+## Parameters
 
-## -parameters
+`DirectoryHandle`
 
-### -param DirectoryHandle [out]
+Handle for the newly opened directory object.
 
-Handle for the newly opened directory object. 
-
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure specifying the requested types of access being requested for this directory object. A caller can specify one or a combination of the following.
 
@@ -125,13 +118,13 @@ All of the preceding rights plus STANDARD_RIGHTS_REQUIRED.
 
 These requested access types are compared with the object's discretionary access-control list (<a href="..\wdm\ns-wdm-_acl.md">DACL</a>) to determine which accesses are granted or denied.
 
+`ObjectAttributes`
 
-### -param ObjectAttributes [in]
-
-Specified attributes for the directory object supplied by the caller. This parameter is initialized by calling the <b>InitializeObjectAttributes</b> macro. 
+Specified attributes for the directory object supplied by the caller. This parameter is initialized by calling the <b>InitializeObjectAttributes</b> macro.
 
 
-## -returns
+## Return Value
+
 <b>ZwOpenDirectoryObject</b> returns STATUS_SUCCESS or an appropriate error status. The most common error status codes include the following: 
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
@@ -156,8 +149,8 @@ Specified attributes for the directory object supplied by the caller. This param
 
 The <b>ZwOpenDirectoryObject</b> routine throws an exception if the <i>DirectoryHandle</i> parameter is an illegal pointer.
 
+## Remarks
 
-## -remarks
 <b>ZwOpenDirectoryObject</b> opens an existing directory object and returns a handle to the object. 
 
 The <b>ZwOpenDirectoryObject</b> routine is called after the <b>InitializeObjectAttributes</b> macro is used to initialize specific attributes of the <b>OBJECT_ATTRIBUTES</b> structure for the object to be opened. 
@@ -168,8 +161,20 @@ For more information about security and access control, see the documentation on
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntdef.h, Ntifs.h, Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -195,4 +200,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwOpenDirectoryObject routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

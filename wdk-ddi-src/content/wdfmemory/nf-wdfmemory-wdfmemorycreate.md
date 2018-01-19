@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfmemory.WdfMemoryCreate
-title: WdfMemoryCreate function
-author: windows-driver-content
-description: The WdfMemoryCreate method creates a framework memory object and allocates a memory buffer of a specified size.
-old-location: wdf\wdfmemorycreate.htm
-old-project: wdf
-ms.assetid: d2071ea0-737d-4a61-90d6-614d77983f0b
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfMemoryCreate
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfmemory.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: WdfMemoryCreate
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheck
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: See Remarks section.
-req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfmemory.WdfMemoryCreate
+title : WdfMemoryCreate function
+author : windows-driver-content
+description : The WdfMemoryCreate method creates a framework memory object and allocates a memory buffer of a specified size.
+old-location : wdf\wdfmemorycreate.htm
+old-project : wdf
+ms.assetid : d2071ea0-737d-4a61-90d6-614d77983f0b
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfMemoryCreate
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfmemory.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : WdfMemoryCreate
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheck
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfMemoryCreate function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WdfMemoryCreate</b> method creates a framework memory object and allocates a memory buffer of a specified size. 
+The <b>WdfMemoryCreate</b> method creates a framework memory object and allocates a memory buffer of a specified size.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfMemoryCreate(
@@ -59,20 +54,17 @@ NTSTATUS WdfMemoryCreate(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Attributes [in, optional]
+`Attributes`
 
 A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
+`PoolType`
 
-### -param PoolType [in]
+A <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated.
 
-A <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated. 
-
-
-### -param PoolTag [in, optional]
+`PoolTag`
 
 A driver-defined pool tag for the allocated memory. Debuggers display this tag. Drivers typically specify a character string of up to four characters, delimited by single quotation marks, in reverse order (for example, 'dcba'). The ASCII value of each character in the tag must be between 0 and 127. Debugging your driver is easier if each pool tag is unique. 
 
@@ -80,23 +72,21 @@ If <i>PoolTag</i> is zero, the framework provides a default pool tag that uses t
 
 For KMDF versions 1.5 and later, your driver can use the <b>DriverPoolTag</b> member of the <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a> structure to specify a default pool tag.
 
+`BufferSize`
 
-### -param BufferSize [in]
+The nonzero specified size, in bytes, of the buffer.
 
-The nonzero specified size, in bytes, of the buffer. 
-
-
-### -param Memory [out]
+`Memory`
 
 A pointer to a location that receives a handle to the new memory object.
 
-
-### -param Buffer [out, optional]
+`Buffer`
 
 A pointer to a location that receives a pointer to the buffer that is associated with the new memory object. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>WdfMemoryCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -113,8 +103,8 @@ For a list of other return values that the <b>WdfMemoryCreate</b> method might r
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
+## Remarks
 
-## -remarks
 The <b>WdfMemoryCreate</b> method allocates a buffer of the size that the <i>BufferSize</i> parameter specifies and creates a framework memory object that represents the buffer. 
 
 To obtain the buffer's address, your driver can supply a non-<b>NULL</b> value for the <b>WdfMemoryCreate</b> function's <i>Buffer</i> parameter, or the driver can call <a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>.
@@ -127,14 +117,26 @@ If <i>BufferSize</i> is less than PAGE_SIZE, the operating system gives the call
 
 If <i>BufferSize</i> is PAGE_SIZE or greater, the system allocates a page-aligned buffer. If the <i>PoolType</i> parameter is <b>NonPagedPool</b>, the system allocates the number of pages that are necessary to hold all of the bytes. Any unused bytes on the last-allocated page are essentially wasted.
 
-For more information about framework memory objects, see <a href="https://msdn.microsoft.com/f5699837-f1ba-4088-82b3-d7e27341fb46">Using Memory Buffers</a>.
+For more information about framework memory objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-memory-buffers">Using Memory Buffers</a>.
 
 If your driver specifies <b>PagedPool</b> for <i>PoolType</i>, the <b>WdfMemoryCreate</b> method must be called at IRQL &lt;= APC_LEVEL. Otherwise, the method can be called at IRQL &lt;= DISPATCH_LEVEL.
 
-The following code example creates a framework memory object and allocates a buffer whose size is WRITE_BUFFER_SIZE. The memory object's parent is a request object. 
+The following code example creates a framework memory object and allocates a buffer whose size is WRITE_BUFFER_SIZE. The memory object's parent is a request object.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfmemory.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | See Remarks section. |
+| **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheck |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
@@ -163,4 +165,3 @@ The following code example creates a framework memory object and allocates a buf
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryCreate method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

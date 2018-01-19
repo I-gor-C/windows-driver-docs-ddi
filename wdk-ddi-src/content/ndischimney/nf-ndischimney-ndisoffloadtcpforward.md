@@ -1,53 +1,48 @@
 ---
-UID: NF:ndischimney.NdisOffloadTcpForward
-title: NdisOffloadTcpForward function
-author: windows-driver-content
-description: A protocol driver or an intermediate driver calls the NdisOffloadTcpForward function to forward unacknowledged received TCP segments to an underlying driver or offload target.
-old-location: netvista\ndisoffloadtcpforward.htm
-old-project: netvista
-ms.assetid: ca4e26c5-5fea-42ab-aee6-3ecf4cce3798
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisOffloadTcpForward
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisOffloadTcpForward
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: 
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NF:ndischimney.NdisOffloadTcpForward
+title : NdisOffloadTcpForward function
+author : windows-driver-content
+description : A protocol driver or an intermediate driver calls the NdisOffloadTcpForward function to forward unacknowledged received TCP segments to an underlying driver or offload target.
+old-location : netvista\ndisoffloadtcpforward.htm
+old-project : netvista
+ms.assetid : ca4e26c5-5fea-42ab-aee6-3ecf4cce3798
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisOffloadTcpForward
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisOffloadTcpForward
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : 
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
+
 # NdisOffloadTcpForward function
-
-
-
-## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 A protocol driver or an intermediate driver calls the 
   <b>NdisOffloadTcpForward</b> function to forward unacknowledged received TCP segments to an underlying
   driver or offload target.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisOffloadTcpForward(
@@ -56,19 +51,17 @@ NDIS_STATUS NdisOffloadTcpForward(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisOffloadHandle [in]
+`NdisOffloadHandle`
 
 A handle to an 
      <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a> structure in the
      caller's context for the offloaded TCP connection. For more information, see 
-     <a href="netvista.referencing_offloaded_state_through_an_intermediate_driver">
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/referencing-offloaded-state-through-an-intermediate-driver">
      Referencing Offloaded State Through an Intermediate Driver</a>.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
@@ -82,13 +75,14 @@ A pointer to a
      memory.
 
 
-## -returns
+## Return Value
+
 The 
      <b>NdisOffloadTcpForward</b> function always returns NDIS_STATUS_PENDING. The forward operation is always
      completed asynchronously.
 
+## Remarks
 
-## -remarks
 In response to a call to its 
     <i>MiniportTcpOffloadForward</i> function, an intermediate driver calls the 
     <b>NdisOffloadTcpForward</b> function to propagate the forward operation to the underlying driver or
@@ -101,7 +95,7 @@ To the
 An 
       <i>NdisOffloadHandle</i> function that references the NDIS_OFFLOAD_HANDLE structure stored in the
       intermediate driver's context for the offloaded TCP connection. For more information, see 
-      <a href="netvista.referencing_offloaded_state_through_an_intermediate_driver">
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/referencing-offloaded-state-through-an-intermediate-driver">
       Referencing Offloaded State Through an Intermediate Driver</a>.
 
 The same PNET_BUFFER_LIST pointer that NDIS passed to the intermediate driver's 
@@ -114,8 +108,20 @@ When the underlying driver or offload target subsequently completes the forward 
     <i>ProtocolOffloadForwardComplete</i> function. The intermediate driver then calls the 
     <b>NdisTcpOffloadForwardComplete</b> function to propagate the completion of the forward operation.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_forward_handler.md">MiniportTcpOffloadForward</a>
@@ -143,4 +149,3 @@ When the underlying driver or offload target subsequently completes the forward 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpForward function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,88 +1,80 @@
 ---
-UID: NC:dispmprt.DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
-title: DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
-author: windows-driver-content
-description: The DxgkDdiOPMGetCOPPCompatibleInformation function retrieves information that is compatible with the Certified Output Protection Protocol (COPP) from the given protected output object.
-old-location: display\dxgkddiopmgetcoppcompatibleinformation.htm
-old-project: display
-ms.assetid: 9f15df1e-bdf5-4634-97f1-78515664b594
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: DXGKDDI_NOTIFY_SURPRISE_REMOVAL
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: dispmprt.h
-req.include-header: Dispmprt.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DxgkDdiOPMGetCOPPCompatibleInformation
-req.alt-loc: dispmprt.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID : NC:dispmprt.DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
+title : DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
+author : windows-driver-content
+description : The DxgkDdiOPMGetCOPPCompatibleInformation function retrieves information that is compatible with the Certified Output Protection Protocol (COPP) from the given protected output object.
+old-location : display\dxgkddiopmgetcoppcompatibleinformation.htm
+old-project : display
+ms.assetid : 9f15df1e-bdf5-4634-97f1-78515664b594
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : dispmprt.h
+req.include-header : Dispmprt.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DxgkDdiOPMGetCOPPCompatibleInformation
+req.alt-loc : dispmprt.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
-# DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION callback
 
-
-
-## -description
+# DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION callback function
 The<i> DxgkDdiOPMGetCOPPCompatibleInformation</i> function retrieves information that is compatible with the Certified Output Protection Protocol (COPP) from the given protected output object.
 
+## Syntax
 
+```
+DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION DxgkddiOpmGetCoppCompatibleInformation;
 
-## -prototype
-
-````
-DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION DxgkDdiOPMGetCOPPCompatibleInformation;
-
-NTSTATUS DxgkDdiOPMGetCOPPCompatibleInformation(
-  _In_        PVOID                                            MiniportDeviceContext,
-  _In_        HANDLE                                           ProtectedOutputHandle,
-  _In_  const PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS Parameters,
-  _Out_       PDXGKMDT_OPM_REQUESTED_INFORMATION               RequestedInformation
+NTSTATUS DxgkddiOpmGetCoppCompatibleInformation(
+  PVOID MiniportDeviceContext,
+  HANDLE ProtectedOutputHandle,
+  CONST PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS,
+  PDXGKMDT_OPM_REQUESTED_INFORMATION RequestedInformation
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportDeviceContext [in]
+`MiniportDeviceContext`
 
 A handle to a context block associated with a display adapter. Previously, the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function provided this handle to the DirectX graphics kernel subsystem.
 
-
-### -param ProtectedOutputHandle [in]
+`ProtectedOutputHandle`
 
 The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object. The protected output object that corresponds to this handle should have COPP semantics.
 
-
-### -param Parameters [in]
-
-A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that contains the type of COPP-compatible information to retrieve from the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> determines if the parameters contain a valid request from the application that indirectly created the protected output object. For more information, see the Remarks section. 
+`PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS`
 
 
-### -param RequestedInformation [out]
+
+`RequestedInformation`
 
 A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_requested_information.md">DXGKMDT_OPM_REQUESTED_INFORMATION</a> structure that receives the protected output object's COPP-compatible information if <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> returns successfully.
 
 If <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> fails, the value that <i>RequestedInformation</i> points to is unchanged.
 
 
-## -returns
+## Return Value
+
 <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> returns one of the following values.
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -170,8 +162,8 @@ The protected output object whose handle is specified in the <i>ProtectedOutputH
 
 OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:
 
+## Remarks
 
-## -remarks
 The DirectX graphics kernel subsystem should call <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> only if the output has COPP semantics.
 
 Before the DirectX graphics kernel subsystem passes the protected output handle to the <i>ProtectedOutputHandle</i> parameter in a call to <i>DxgkDdiOPMGetCOPPCompatibleInformation</i>, the DirectX graphics kernel subsystem always passes the protected output handle to the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> and <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_random_number.md">DxgkDdiOPMGetRandomNumber</a> functions. 
@@ -182,8 +174,20 @@ The DirectX graphics kernel subsystem can pass a handle to a protected output on
 
 The <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to is not signed.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dispmprt.h (include Dispmprt.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
@@ -215,4 +219,3 @@ The <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_paramet
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

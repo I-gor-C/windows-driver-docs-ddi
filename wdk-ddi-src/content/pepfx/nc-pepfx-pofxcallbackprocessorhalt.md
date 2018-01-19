@@ -1,65 +1,59 @@
 ---
-UID: NC:pepfx.POFXCALLBACKPROCESSORHALT
-title: POFXCALLBACKPROCESSORHALT
-author: windows-driver-content
-description: The ProcessorHalt routine prepares the processor to be halted.
-old-location: kernel\processorhalt.htm
-old-project: kernel
-ms.assetid: DEBE74B2-DFBD-43D7-8B14-86B4DA7D4C98
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PEPCALLBACKPOWERONCRASHDUMPDEVICE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: pepfx.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows 10.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ProcessorHalt
-req.alt-loc: pepfx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= HIGH_LEVEL
-req.typenames: *PVPCI_PNP_ID, VPCI_PNP_ID
+UID : NC:pepfx.POFXCALLBACKPROCESSORHALT
+title : POFXCALLBACKPROCESSORHALT
+author : windows-driver-content
+description : The ProcessorHalt routine prepares the processor to be halted.
+old-location : kernel\processorhalt.htm
+old-project : kernel
+ms.assetid : DEBE74B2-DFBD-43D7-8B14-86B4DA7D4C98
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : pepfx.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows 10.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ProcessorHalt
+req.alt-loc : pepfx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= HIGH_LEVEL
+req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
-# POFXCALLBACKPROCESSORHALT callback
 
-
-
-## -description
+# POFXCALLBACKPROCESSORHALT callback function
 The <b>ProcessorHalt</b> routine prepares the processor to be halted.
 
+## Syntax
 
+```
+POFXCALLBACKPROCESSORHALT Pofxcallbackprocessorhalt;
 
-## -prototype
-
-````
-POFXCALLBACKPROCESSORHALT ProcessorHalt;
-
-NTSTATUS ProcessorHalt(
-  _In_        ULONG                   Flags,
-  _Inout_opt_ PVOID                   Context,
-  _In_        PPROCESSOR_HALT_ROUTINE Halt
+NTSTATUS Pofxcallbackprocessorhalt(
+  ULONG Flags,
+  PVOID Context,
+  PPROCESSOR_HALT_ROUTINE Halt
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Flags [in]
+`Flags`
 
 Flags that indicate the properties of the idle state that the processor will enter. The <i>Flags</i> parameter is set to zero or to the bitwise-OR of one or more of the following flag bits.
 
@@ -95,20 +89,18 @@ Flags that indicate the properties of the idle state that the processor will ent
 <td></td>
 </tr>
 </table>
- 
 
-
-### -param Context [in, out, optional]
+`Context`
 
 A pointer to a PEP-defined processor-halt context. This pointer is passed as a parameter to the <i>Halt</i> callback routine. This context is opaque to the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx).
 
-
-### -param Halt [in]
+`Halt`
 
 A pointer to a PEP-implemented <i>Halt</i> callback routine. PoFx calls this routine after preparations to halt the processor have been completed. During this callback, the PEP is expected to transition the processor to the <i>halted</i> state.
 
 
-## -returns
+## Return Value
+
 <b>ProcessorHalt</b> returns STATUS_SUCCESS if the processor is successfully prepared to be halted. Possible error return values include the following status code.
 <dl>
 <dt>STATUS_INVALID_PARAMETER</dt>
@@ -117,15 +109,13 @@ A pointer to a PEP-implemented <i>Halt</i> callback routine. PoFx calls this rou
 <dt>STATUS_UNSUCCESSFUL</dt>
 </dl>The PEP's <i>Halt</i> callback routine unexpectedly returned from an idle state in which the processor's hardware context was not preserved.
 
- 
+## Remarks
 
-
-## -remarks
 This routine is implemented by the power management framework (PoFx) and is called by the platform extension plug-in (PEP). The <b>ProcessorHalt</b> member of the <a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a> structure is a pointer to a <b>ProcessorHalt</b> routine.
 
 Before halting the processor, the PEP calls the <b>ProcessorHalt</b> routine to give PoFx an opportunity to save the processor's hardware context. If necessary, <b>ProcessorHalt</b> saves this state internally in PoFx so that the state can later be restored when the processor exits the idle state. After preparing the processor to enter the idle state, <b>ProcessorHalt</b> calls the PEP's <i>Halt</i> callback routine to halt the processor.
 
-As part of the PEP's handling of a  <a href="kernel.pep_notify_ppm_idle_execute">PEP_NOTIFY_PPM_IDLE_EXECUTE</a> notification, the PEP must transition the processor to the idle state that the PEP has selected. The following are the two ways to enter the processor idle state:
+As part of the PEP's handling of a  <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186807">PEP_NOTIFY_PPM_IDLE_EXECUTE</a> notification, the PEP must transition the processor to the idle state that the PEP has selected. The following are the two ways to enter the processor idle state:
 
 The following combinations of flag bits are illegal:
 
@@ -149,14 +139,26 @@ If the <i>Flags</i> parameter contains an illegal combination of flag bits, <b>P
 
 The PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | pepfx.h |
+| **Library** |  |
+| **IRQL** | <= HIGH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
 </dt>
 <dt>
-<a href="kernel.pep_notify_ppm_idle_execute">PEP_NOTIFY_PPM_IDLE_EXECUTE</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186807">PEP_NOTIFY_PPM_IDLE_EXECUTE</a>
 </dt>
 </dl>
  
@@ -164,4 +166,3 @@ The PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20POFXCALLBACKPROCESSORHALT routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

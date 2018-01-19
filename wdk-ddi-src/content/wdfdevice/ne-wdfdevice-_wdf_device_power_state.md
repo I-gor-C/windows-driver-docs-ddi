@@ -1,53 +1,46 @@
 ---
-UID: NE:wdfdevice._WDF_DEVICE_POWER_STATE
-title: _WDF_DEVICE_POWER_STATE
-author: windows-driver-content
-description: The WDF_DEVICE_POWER_STATE enumeration identifies all of the states that the framework's power state machine can enter.
-old-location: wdf\wdf_device_power_state.htm
-old-project: wdf
-ms.assetid: 06bb6465-afc6-4b92-b3d7-1c66f6c6c33d
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDF_DEVICE_POWER_STATE, *PWDF_DEVICE_POWER_STATE, WDF_DEVICE_POWER_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WDF_DEVICE_POWER_STATE
-req.alt-loc: wdfdevice.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_DEVICE_POWER_STATE, WDF_DEVICE_POWER_STATE
-req.product: Windows 10 or later.
+UID : NE:wdfdevice._WDF_DEVICE_POWER_STATE
+title : _WDF_DEVICE_POWER_STATE
+author : windows-driver-content
+description : The WDF_DEVICE_POWER_STATE enumeration identifies all of the states that the framework's power state machine can enter.
+old-location : wdf\wdf_device_power_state.htm
+old-project : wdf
+ms.assetid : 06bb6465-afc6-4b92-b3d7-1c66f6c6c33d
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDF_DEVICE_POWER_STATE, WDF_DEVICE_POWER_STATE, *PWDF_DEVICE_POWER_STATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WDF_DEVICE_POWER_STATE
+req.alt-loc : wdfdevice.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : WDF_DEVICE_POWER_STATE, *PWDF_DEVICE_POWER_STATE
+req.product : Windows 10 or later.
 ---
 
-# _WDF_DEVICE_POWER_STATE enumeration
-
-
-
-## -description
+# _WDF_DEVICE_POWER_STATE Enumeration
 <p class="CCE_Message">[Applies to KMDF only]
 
 The <b>WDF_DEVICE_POWER_STATE</b> enumeration identifies all of the states that the framework's power state machine can enter.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDF_DEVICE_POWER_STATE { 
   WdfDevStatePowerInvalid                             = 0x00,
@@ -154,311 +147,524 @@ typedef enum _WDF_DEVICE_POWER_STATE {
 } WDF_DEVICE_POWER_STATE, *PWDF_DEVICE_POWER_STATE;
 ````
 
+## Constants
+
+<table>
+
+<tr>
+<td>WdfDevStatePowerCheckDeviceType</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerCheckDeviceTypeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerCheckParentState</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerCheckParentStateArmedForWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerCheckParentStateArmedForWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerCheckParentStateNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0ArmedForWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0ArmedForWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0BusWakeOwner</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0BusWakeOwnerNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0DisarmingWakeAtBus</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0DisarmingWakeAtBusNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0NP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0Starting</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0StartingConnectInterrupt</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0StartingDmaEnable</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerD0StartingStartSelfManagedIo</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDecideD0State</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDx</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxArmedForWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxArmedForWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxDisablingWakeAtBus</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxDisablingWakeAtBusNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxStoppedArmForWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxStoppedArmForWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxStoppedDecideDxState</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxStoppedDisarmWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerDxStoppedDisarmWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerEnablingWakeAtBus</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerEnablingWakeAtBusNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerFinal</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerFinalPowerDownFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoD3Stopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDx</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxArmedForWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxArmedForWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxIoStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxIoStoppedArmedForWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxIoStoppedArmedForWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxIoStoppedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxNPFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxStoppedDisableInterrupt</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoDxStoppedDisableInterruptNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoImplicitD3DisarmWakeAtBus</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerGotoStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInitialConnectInterruptFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInitialDmaEnableFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInitialPowerUpFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInitialPowerUpFailedDerefParent</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInitialPowerUpFailedPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInitialSelfManagedIoFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInitialSelfManagedIoFailedStarted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerInvalid</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerNotifyingD0EntryToWakeInterrupts</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerNotifyingD0EntryToWakeInterruptsNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerNotifyingD0ExitToWakeInterrupts</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerNotifyingD0ExitToWakeInterruptsNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerNull</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerObjectCreated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerPowerFailedPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerReportPowerDownFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerReportPowerUpFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerReportPowerUpFailedDerefParent</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartingCheckDeviceType</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartingChild</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartSelfManagedIo</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartSelfManagedIoFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartSelfManagedIoFailedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartSelfManagedIoFailedStarted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartSelfManagedIoFailedStartedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStartSelfManagedIoNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerStoppedCompleteDx</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerUpFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerUpFailedDerefParent</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerUpFailedDerefParentNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerUpFailedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerUpFailedPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerUpFailedPowerDownNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWaitForParent</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWaitForParentArmedForWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWaitForParentArmedForWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWaitForParentNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakePending</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakePendingNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWaking</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingConnectInterrupt</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingConnectInterruptFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingConnectInterruptFailedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingConnectInterruptNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingDmaEnable</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingDmaEnableFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingDmaEnableFailedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingDmaEnableNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePowerWakingNP</td>
+<td></td>
+</tr>
+</table>
+
+## Remarks
 
-## -enum-fields
-
-### -field WdfDevStatePowerInvalid
-
-
-### -field WdfDevStatePowerObjectCreated
-
-
-### -field WdfDevStatePowerCheckDeviceType
-
-
-### -field WdfDevStatePowerCheckDeviceTypeNP
-
-
-### -field WdfDevStatePowerCheckParentState
-
-
-### -field WdfDevStatePowerCheckParentStateNP
-
-
-### -field WdfDevStatePowerEnablingWakeAtBus
-
-
-### -field WdfDevStatePowerEnablingWakeAtBusNP
-
-
-### -field WdfDevStatePowerD0
-
-
-### -field WdfDevStatePowerD0NP
-
-
-### -field WdfDevStatePowerD0BusWakeOwner
-
-
-### -field WdfDevStatePowerD0BusWakeOwnerNP
-
-
-### -field WdfDevStatePowerD0ArmedForWake
-
-
-### -field WdfDevStatePowerD0ArmedForWakeNP
-
-
-### -field WdfDevStatePowerD0DisarmingWakeAtBus
-
-
-### -field WdfDevStatePowerD0DisarmingWakeAtBusNP
-
-
-### -field WdfDevStatePowerD0Starting
-
-
-### -field WdfDevStatePowerD0StartingConnectInterrupt
-
-
-### -field WdfDevStatePowerD0StartingDmaEnable
-
-
-### -field WdfDevStatePowerD0StartingStartSelfManagedIo
-
-
-### -field WdfDevStatePowerDecideD0State
-
-
-### -field WdfDevStatePowerGotoD3Stopped
-
-
-### -field WdfDevStatePowerStopped
-
-
-### -field WdfDevStatePowerStartingCheckDeviceType
-
-
-### -field WdfDevStatePowerStartingChild
-
-
-### -field WdfDevStatePowerDxDisablingWakeAtBus
-
-
-### -field WdfDevStatePowerDxDisablingWakeAtBusNP
-
-
-### -field WdfDevStatePowerGotoDx
-
-
-### -field WdfDevStatePowerGotoDxNP
-
-
-### -field WdfDevStatePowerGotoDxIoStopped
-
-
-### -field WdfDevStatePowerGotoDxIoStoppedNP
-
-
-### -field WdfDevStatePowerGotoDxNPFailed
-
-
-### -field WdfDevStatePowerDx
-
-
-### -field WdfDevStatePowerDxNP
-
-
-### -field WdfDevStatePowerGotoDxArmedForWake
-
-
-### -field WdfDevStatePowerGotoDxArmedForWakeNP
-
-
-### -field WdfDevStatePowerGotoDxIoStoppedArmedForWake
-
-
-### -field WdfDevStatePowerGotoDxIoStoppedArmedForWakeNP
-
-
-### -field WdfDevStatePowerDxArmedForWake
-
-
-### -field WdfDevStatePowerDxArmedForWakeNP
-
-
-### -field WdfDevStatePowerCheckParentStateArmedForWake
-
-
-### -field WdfDevStatePowerCheckParentStateArmedForWakeNP
-
-
-### -field WdfDevStatePowerWaitForParentArmedForWake
-
-
-### -field WdfDevStatePowerWaitForParentArmedForWakeNP
-
-
-### -field WdfDevStatePowerStartSelfManagedIo
-
-
-### -field WdfDevStatePowerStartSelfManagedIoNP
-
-
-### -field WdfDevStatePowerStartSelfManagedIoFailed
-
-
-### -field WdfDevStatePowerStartSelfManagedIoFailedNP
-
-
-### -field WdfDevStatePowerWaitForParent
-
-
-### -field WdfDevStatePowerWaitForParentNP
-
-
-### -field WdfDevStatePowerWakePending
-
-
-### -field WdfDevStatePowerWakePendingNP
-
-
-### -field WdfDevStatePowerWaking
-
-
-### -field WdfDevStatePowerWakingNP
-
-
-### -field WdfDevStatePowerWakingConnectInterrupt
-
-
-### -field WdfDevStatePowerWakingConnectInterruptNP
-
-
-### -field WdfDevStatePowerWakingConnectInterruptFailed
-
-
-### -field WdfDevStatePowerWakingConnectInterruptFailedNP
-
-
-### -field WdfDevStatePowerWakingDmaEnable
-
-
-### -field WdfDevStatePowerWakingDmaEnableNP
-
-
-### -field WdfDevStatePowerWakingDmaEnableFailed
-
-
-### -field WdfDevStatePowerWakingDmaEnableFailedNP
-
-
-### -field WdfDevStatePowerReportPowerUpFailedDerefParent
-
-
-### -field WdfDevStatePowerReportPowerUpFailed
-
-
-### -field WdfDevStatePowerPowerFailedPowerDown
-
-
-### -field WdfDevStatePowerReportPowerDownFailed
-
-
-### -field WdfDevStatePowerInitialConnectInterruptFailed
-
-
-### -field WdfDevStatePowerInitialDmaEnableFailed
-
-
-### -field WdfDevStatePowerInitialSelfManagedIoFailed
-
-
-### -field WdfDevStatePowerInitialPowerUpFailedDerefParent
-
-
-### -field WdfDevStatePowerInitialPowerUpFailed
-
-
-### -field WdfDevStatePowerDxStoppedDisarmWake
-
-
-### -field WdfDevStatePowerDxStoppedDisarmWakeNP
-
-
-### -field WdfDevStatePowerGotoDxStoppedDisableInterruptNP
-
-
-### -field WdfDevStatePowerGotoDxStopped
-
-
-### -field WdfDevStatePowerDxStopped
-
-
-### -field WdfDevStatePowerGotoStopped
-
-
-### -field WdfDevStatePowerStoppedCompleteDx
-
-
-### -field WdfDevStatePowerDxStoppedDecideDxState
-
-
-### -field WdfDevStatePowerDxStoppedArmForWake
-
-
-### -field WdfDevStatePowerDxStoppedArmForWakeNP
-
-
-### -field WdfDevStatePowerFinalPowerDownFailed
-
-
-### -field WdfDevStatePowerFinal
-
-
-### -field WdfDevStatePowerGotoImplicitD3DisarmWakeAtBus
-
-
-### -field WdfDevStatePowerUpFailed
-
-
-### -field WdfDevStatePowerUpFailedDerefParent
-
-
-### -field WdfDevStatePowerGotoDxFailed
-
-
-### -field WdfDevStatePowerGotoDxStoppedDisableInterrupt
-
-
-### -field WdfDevStatePowerUpFailedNP
-
-
-### -field WdfDevStatePowerUpFailedDerefParentNP
-
-
-### -field WdfDevStatePowerNotifyingD0ExitToWakeInterrupts
-
-
-### -field WdfDevStatePowerNotifyingD0EntryToWakeInterrupts
-
-
-### -field WdfDevStatePowerNotifyingD0ExitToWakeInterruptsNP
-
-
-### -field WdfDevStatePowerNotifyingD0EntryToWakeInterruptsNP
-
-
-### -field WdfDevStatePowerInitialPowerUpFailedPowerDown
-
-
-### -field WdfDevStatePowerUpFailedPowerDown
-
-
-### -field WdfDevStatePowerUpFailedPowerDownNP
-
-
-### -field WdfDevStatePowerInitialSelfManagedIoFailedStarted
-
-
-### -field WdfDevStatePowerStartSelfManagedIoFailedStarted
-
-
-### -field WdfDevStatePowerStartSelfManagedIoFailedStartedNP
-
-
-### -field WdfDevStatePowerNull
-
-
-## -remarks
 The <b>WDF_DEVICE_POWER_STATE</b> enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a> method.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdevice.h (include Wdf.h) |

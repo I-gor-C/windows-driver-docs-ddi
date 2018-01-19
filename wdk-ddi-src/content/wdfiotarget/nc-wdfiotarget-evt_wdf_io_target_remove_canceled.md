@@ -1,75 +1,70 @@
 ---
-UID: NC:wdfiotarget.EVT_WDF_IO_TARGET_REMOVE_CANCELED
-title: EVT_WDF_IO_TARGET_REMOVE_CANCELED function
-author: windows-driver-content
-description: A driver's EvtIoTargetRemoveCanceled event callback function performs operations when the removal of a specified remote I/O target is canceled.
-old-location: wdf\evtiotargetremovecanceled.htm
-old-project: wdf
-ms.assetid: 9f275a2c-6f40-461d-bd2c-767b2494ad1c
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: EVT_WDF_IO_TARGET_REMOVE_CANCELED
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfiotarget.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: EvtIoTargetRemoveCanceled
-req.alt-loc: WdfIoTarget.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
-req.product: Windows 10 or later.
+UID : NC:wdfiotarget.EVT_WDF_IO_TARGET_REMOVE_CANCELED
+title : EVT_WDF_IO_TARGET_REMOVE_CANCELED
+author : windows-driver-content
+description : A driver's EvtIoTargetRemoveCanceled event callback function performs operations when the removal of a specified remote I/O target is canceled.
+old-location : wdf\evtiotargetremovecanceled.htm
+old-project : wdf
+ms.assetid : 9f275a2c-6f40-461d-bd2c-767b2494ad1c
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdfiotarget.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : EvtIoTargetRemoveCanceled
+req.alt-loc : WdfIoTarget.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY"
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_WDF_IO_TARGET_REMOVE_CANCELED function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtIoTargetRemoveCanceled</i> event callback function performs operations when the removal of a specified remote I/O target is canceled.
 
+## Syntax
 
+```
+EVT_WDF_IO_TARGET_REMOVE_CANCELED EvtWdfIoTargetRemoveCanceled;
 
-## -syntax
-
-````
-EVT_WDF_IO_TARGET_REMOVE_CANCELED EvtIoTargetRemoveCanceled;
-
-VOID EvtIoTargetRemoveCanceled(
-  _In_ WDFIOTARGET IoTarget
+void EvtWdfIoTargetRemoveCanceled(
+  WDFIOTARGET IoTarget
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`IoTarget`
+
+A handle to an I/O target object.
 
 
-## -parameters
+## Return Value
 
-### -param IoTarget [in]
-
-A handle to an I/O target object. 
-
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 To register an <i>EvtIoTargetRemoveCanceled</i> callback function, place the callback function's address in the I/O target's <a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a> structure. 
 
 If the driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_query_remove.md">EvtIoTargetQueryRemove</a> callback function called <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcloseforqueryremove.md">WdfIoTargetCloseForQueryRemove</a>, the driver's <i>EvtIoTargetRemoveCanceled</i> callback function must call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a> to re-enable sending I/O requests to the I/O target. When the driver calls <b>WdfIoTargetOpen</b>, it can specify <b>WdfIoTargetOpenReopen</b> for the <b>Type</b> member of the <a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a> structure.
@@ -88,8 +83,20 @@ Then, implement your callback function as follows:
 
 The <b>EVT_WDF_IO_TARGET_REMOVE_CANCELED</b> function type is defined in the WdfIoTarget.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_IO_TARGET_REMOVE_CANCELED</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfiotarget.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_complete.md">EvtIoTargetRemoveComplete</a>
@@ -112,4 +119,3 @@ The <b>EVT_WDF_IO_TARGET_REMOVE_CANCELED</b> function type is defined in the Wdf
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDF_IO_TARGET_REMOVE_CANCELED callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,44 @@
 ---
-UID: NS:wdbgexts._DBGKD_GET_VERSION64
-title: _DBGKD_GET_VERSION64
-author: windows-driver-content
-description: The IG_GET_KERNEL_VERSION Ioctl operation receives information related to the operating system version of the target.
-old-location: debugger\ig_get_kernel_version.htm
-old-project: debugger
-ms.assetid: 692e58b5-74ea-48f3-a9c2-81953b7d600d
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wdbgexts.h
-req.include-header: Wdbgexts.h, Dbgeng.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DBGKD_GET_VERSION64
-req.alt-loc: wdbgexts.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64
-req.product: Windows 10 or later.
+UID : NS:wdbgexts._DBGKD_GET_VERSION64
+title : _DBGKD_GET_VERSION64
+author : windows-driver-content
+description : The IG_GET_KERNEL_VERSION Ioctl operation receives information related to the operating system version of the target.
+old-location : debugger\ig_get_kernel_version.htm
+old-project : debugger
+ms.assetid : 692e58b5-74ea-48f3-a9c2-81953b7d600d
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _DBGKD_GET_VERSION64, DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wdbgexts.h
+req.include-header : Wdbgexts.h, Dbgeng.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DBGKD_GET_VERSION64
+req.alt-loc : wdbgexts.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64
+req.product : Windows 10 or later.
 ---
 
 # _DBGKD_GET_VERSION64 structure
-
-
-
-## -description
 The IG_GET_KERNEL_VERSION <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation receives information related to the operating system version of the target.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_GET_KERNEL_VERSION, <i>IpvData</i> should contain an instance of the DBGKD_GET_VERSION64 structure.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DBGKD_GET_VERSION64 {
   USHORT  MajorVersion;
@@ -65,32 +58,16 @@ typedef struct _DBGKD_GET_VERSION64 {
 } DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DebuggerDataList`
 
-### -field MajorVersion
+            Receives the value of the kernel variable <b>KdDebuggerDataBlock</b>.  This a pointer to either a KDDEBUGGER_DATA64 structure or a KDDEBUGGER_DATA32 structure.  Use the function <a href="..\wdbgexts\nf-wdbgexts-getdebuggerdata.md">GetDebuggerData</a> to fetch this structure.
+        
+            `Flags`
 
-Receives 0xF if the target's operating system is a free build, and 0xC if it is a checked build.
-
-
-### -field MinorVersion
-
-Receives the build number for the target's operating system.
-
-
-### -field ProtocolVersion
-
-Receives the version of the debugger protocol that is used to communicate between the debugger and the target.
-
-
-### -field KdSecondaryVersion
-
-Receives a secondary version number that is used to distinguish among older, deprecated contexts.
-
-
-### -field Flags
-
-Receives a set of bit flags for the current debugging session.  The following flags can be present.
+            Receives a set of bit flags for the current debugging session.  The following flags can be present.
 
 <table>
 <tr>
@@ -158,12 +135,18 @@ Multiple operating system partitions exist.
 </td>
 </tr>
 </table>
- 
+        
+            `KdSecondaryVersion`
 
+            Receives a secondary version number that is used to distinguish among older, deprecated contexts.
+        
+            `KernBase`
 
-### -field MachineType
+            Receives the base address of the kernel image.
+        
+            `MachineType`
 
-Receives the type of the target's processor.  Possible processor types are listed in the following table.
+            Receives the type of the target's processor.  Possible processor types are listed in the following table.
 
 <table>
 <tr>
@@ -221,27 +204,38 @@ EFI byte code architecture
 </td>
 </tr>
 </table>
- 
+        
+            `MajorVersion`
 
+            Receives 0xF if the target's operating system is a free build, and 0xC if it is a checked build.
+        
+            `MaxManipulate`
 
-### -field MaxPacketType
+            Receives one more that the highest number, recognized by the target, for a command to manipulate the target.
+        
+            `MaxPacketType`
 
-Receives one plus the highest number for a debugger packet type recognized by the target.
+            Receives one plus the highest number for a debugger packet type recognized by the target.
+        
+            `MaxStateChange`
 
+            Receives one plus the highest number for a state change generated by the target.
+        
+            `MinorVersion`
 
-### -field MaxStateChange
+            Receives the build number for the target's operating system.
+        
+            `ProtocolVersion`
 
-Receives one plus the highest number for a state change generated by the target.
+            Receives the version of the debugger protocol that is used to communicate between the debugger and the target.
+        
+            `PsLoadedModuleList`
 
+            Receives the value of the kernel variable <b>PsLoadedModuleList</b>.
+        
+            `Simulation`
 
-### -field MaxManipulate
-
-Receives one more that the highest number, recognized by the target, for a command to manipulate the target.
-
-
-### -field Simulation
-
-Receives an indication if the target is in simulated execution.  Possible values are listed in the following table.
+            Receives an indication if the target is in simulated execution.  Possible values are listed in the following table.
 
 <table>
 <tr>
@@ -269,37 +263,27 @@ EXDI simulation is used.
 </td>
 </tr>
 </table>
- 
+        
+            `Unused`
 
+            Unused.
 
-### -field Unused
-
-Unused.
-
-
-### -field KernBase
-
-Receives the base address of the kernel image.
-
-
-### -field PsLoadedModuleList
-
-Receives the value of the kernel variable <b>PsLoadedModuleList</b>.
-
-
-### -field DebuggerDataList
-
-Receives the value of the kernel variable <b>KdDebuggerDataBlock</b>.  This a pointer to either a KDDEBUGGER_DATA64 structure or a KDDEBUGGER_DATA32 structure.  Use the function <a href="..\wdbgexts\nf-wdbgexts-getdebuggerdata.md">GetDebuggerData</a> to fetch this structure.
-
-
-## -remarks
-The parameters for the IG_GET_KERNEL_VERSION <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the DBGKD_GET_VERSION64 structure.
+    ## Remarks
+        The parameters for the IG_GET_KERNEL_VERSION <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the DBGKD_GET_VERSION64 structure.
 
 This operation is only available in kernel-mode debugging.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 </dt>
@@ -312,4 +296,3 @@ This operation is only available in kernel-mode debugging.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DBGKD_GET_VERSION64 structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

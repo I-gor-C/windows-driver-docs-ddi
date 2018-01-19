@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDICAPS_TYPE_VIDEO_0020
-title: D3D12DDICAPS_TYPE_VIDEO_0020
-author: windows-driver-content
-description: Contains capability types for video.
-old-location: display\d3d12ddicaps_type_video_0020.htm
-old-project: display
-ms.assetid: 3B95996D-EB7C-4DCF-B00C-BA5AFEFD4110
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDICAPS_TYPE_VIDEO_0020, D3D12DDICAPS_TYPE_VIDEO_0020
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDICAPS_TYPE_VIDEO_0020
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDICAPS_TYPE_VIDEO_0020
+UID : NE:d3d12umddi.D3D12DDICAPS_TYPE_VIDEO_0020
+title : D3D12DDICAPS_TYPE_VIDEO_0020
+author : windows-driver-content
+description : Contains capability types for video.
+old-location : display\d3d12ddicaps_type_video_0020.htm
+old-project : display
+ms.assetid : 3B95996D-EB7C-4DCF-B00C-BA5AFEFD4110
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDICAPS_TYPE_VIDEO_0020, D3D12DDICAPS_TYPE_VIDEO_0020
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDICAPS_TYPE_VIDEO_0020
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDICAPS_TYPE_VIDEO_0020
 ---
 
-# D3D12DDICAPS_TYPE_VIDEO_0020 enumeration
-
-
-
-## -description
+# D3D12DDICAPS_TYPE_VIDEO_0020 Enumeration
 Contains capability types for video.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 { 
   D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT                       = 0,
@@ -58,47 +51,56 @@ typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 {
 } D3D12DDICAPS_TYPE_VIDEO_0020;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES</td>
+<td>Retrieve the list of bitstream encryption schemes supported by the adapter.</td>
+</tr>
 
-Check if a decode profile, bitstream encryption, resolution, and format are supported
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT</td>
+<td>Check whether a colorspace conversion, format conversion, and scale are supported.</td>
+</tr>
+
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS</td>
+<td>Retrieves the supported decode formats.</td>
+</tr>
+
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_PROFILES</td>
+<td>Retrieve the list of decode profiles supported by the adapter.</td>
+</tr>
+
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT</td>
+<td>Check if a decode profile, bitstream encryption, resolution, and format are supported</td>
+</tr>
+
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_MAX_INPUT_STREAMS</td>
+<td>The maximum number of streams that can be enabled at the same time.</td>
+</tr>
+
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_REFERENCE_INFO</td>
+<td>Retrieves the number of past and future frames required for a given deinterlace mode, filters, frame rate conversion, and features.</td>
+</tr>
+
+<tr>
+<td>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT</td>
+<td>Retrieves the video processor capabilities.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_PROFILES
-
-Retrieve the list of decode profiles supported by the adapter.  
-
-
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS
-
- Retrieves the supported decode formats. 
-
-
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT
-
-Check whether a colorspace conversion, format conversion, and scale are supported.  
-
-
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES
-
-Retrieve the list of bitstream encryption schemes supported by the adapter. 
-
-
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT
-
-Retrieves the video processor capabilities.  
-
-
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_MAX_INPUT_STREAMS
-
-The maximum number of streams that can be enabled at the same time.
-
-
-### -field D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_REFERENCE_INFO
-
-Retrieves the number of past and future frames required for a given deinterlace mode, filters, frame rate conversion, and features.  
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

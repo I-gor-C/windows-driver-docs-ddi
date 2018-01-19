@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILWRITEPHONEBOOKENTRYPARAMS
-title: RILWRITEPHONEBOOKENTRYPARAMS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilwritephonebookentryparams_2.htm
-old-project: netvista
-ms.assetid: ae92f321-d6dc-4e48-8107-1a6fbd3bb15a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILWRITEPHONEBOOKENTRYPARAMS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILWRITEPHONEBOOKENTRYPARAMS
+title : RILWRITEPHONEBOOKENTRYPARAMS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilwritephonebookentryparams_2.htm
+old-project : netvista
+ms.assetid : ae92f321-d6dc-4e48-8107-1a6fbd3bb15a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILWRITEPHONEBOOKENTRYPARAMS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product : Windows 10 or later.
 ---
 
 # RILWRITEPHONEBOOKENTRYPARAMS structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILWRITEPHONEBOOKENTRYPARAMS {
   HUICCAPP                    hUiccApp;
@@ -56,22 +49,34 @@ typedef struct _RILWRITEPHONEBOOKENTRYPARAMS {
 } RILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `dwStoreLocation`
 
-### -field hUiccApp
+            
+        
+            `fHasLockVerification`
+
+            
+        
+            `hUiccApp`
+
+            
+        
+            `lockVerification`
+
+            
+        
+            `pbEntry`
+
+            
 
 
-### -field dwStoreLocation
-
-
-### -field fHasLockVerification
-
-
-### -field lockVerification
-
-
-### -field pbEntry
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

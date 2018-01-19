@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
-title: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
-author: windows-driver-content
-description: Command list functions for video decode.
-old-location: display\d3d12ddi-command-list-funcs-video-decode-0030.htm
-old-project: display
-ms.assetid: ca1b9c07-0195-4e0d-9917-96def0a8ea47
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
+UID : NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
+title : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
+author : windows-driver-content
+description : Command list functions for video decode.
+old-location : display\d3d12ddi-command-list-funcs-video-decode-0030.htm
+old-project : display
+ms.assetid : ca1b9c07-0195-4e0d-9917-96def0a8ea47
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030
 ---
 
 # D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030 structure
-
-
-
-## -description
 Command list functions for video decode.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030 {
   PFND3D12DDI_CLOSECOMMANDLIST                  pfnCloseCommandList;
@@ -61,62 +54,58 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030 {
 } D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `pfnBeginQuery`
 
-### -field pfnCloseCommandList
+            Begin query.
+        
+            `pfnCloseCommandList`
 
-Close command list.
+            Close command list.
+        
+            `pfnDecodeFrame`
 
+            Decode frame.
+        
+            `pfnDiscardResource`
 
-### -field pfnResetCommandList
+            Discard resource.
+        
+            `pfnEndQuery`
 
-Reset command list.
+            End query.
+        
+            `pfnResetCommandList`
 
+            Reset command list.
+        
+            `pfnResolveQueryData`
 
-### -field pfnDiscardResource
+            Resolve query data.
+        
+            `pfnResourceBarrier`
 
-Discard resource.
+            Resource barrier.
+        
+            `pfnSetMarker`
 
+            Set marker.
+        
+            `pfnSetPredication`
 
-### -field pfnSetMarker
+            Set predication.
+        
+            `pfnSetProtectedResourceSession`
 
-Set marker.
-
-
-### -field pfnSetPredication
-
-Set predication.
-
-
-### -field pfnBeginQuery
-
-Begin query.
-
-
-### -field pfnEndQuery
-
-End query.
-
-
-### -field pfnResolveQueryData
-
-Resolve query data.
-
-
-### -field pfnResourceBarrier
-
-Resource barrier.
-
-
-### -field pfnDecodeFrame
-
-Decode frame.
+            Set protected resource session.
 
 
-### -field pfnSetProtectedResourceSession
-
-Set protected resource session.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

@@ -1,53 +1,48 @@
 ---
-UID: NF:wdfdevice.WdfDeviceInitSetRemoveLockOptions
-title: WdfDeviceInitSetRemoveLockOptions function
-author: windows-driver-content
-description: The WdfDeviceInitSetRemoveLockOptions method causes the framework to acquire a remove lock before delivering an IRP of any type to the driver.
-old-location: wdf\wdfdeviceinitsetremovelockoptions.htm
-old-project: wdf
-ms.assetid: 0BCF4141-BE4E-42C0-8986-BE039B27F5D5
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfDeviceInitSetRemoveLockOptions
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.11
-req.umdf-ver: 
-req.alt-api: WdfDeviceInitSetRemoveLockOptions
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DriverCreate
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WDF_STATE_NOTIFICATION_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfdevice.WdfDeviceInitSetRemoveLockOptions
+title : WdfDeviceInitSetRemoveLockOptions function
+author : windows-driver-content
+description : The WdfDeviceInitSetRemoveLockOptions method causes the framework to acquire a remove lock before delivering an IRP of any type to the driver.
+old-location : wdf\wdfdeviceinitsetremovelockoptions.htm
+old-project : wdf
+ms.assetid : 0BCF4141-BE4E-42C0-8986-BE039B27F5D5
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfDeviceInitSetRemoveLockOptions
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.11
+req.umdf-ver : 
+req.alt-api : WdfDeviceInitSetRemoveLockOptions
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DriverCreate
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WDF_STATE_NOTIFICATION_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfDeviceInitSetRemoveLockOptions function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 
    The <b>WdfDeviceInitSetRemoveLockOptions</b> method causes the framework to acquire a remove lock before delivering an IRP of any type to the driver.
 
-
-
-## -syntax
+## Syntax
 
 ````
 void WdfDeviceInitSetRemoveLockOptions(
@@ -56,24 +51,23 @@ void WdfDeviceInitSetRemoveLockOptions(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DeviceInit [in]
+`DeviceInit`
 
 A caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure.
 
-
-### -param Options [in]
+`Options`
 
 A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a> structure.
 
 
-## -returns
+## Return Value
+
 This method does not return a value.
 
+## Remarks
 
-## -remarks
 By default, the framework acquires a remove lock before it delivers IRPs of the following major types to the driver:
 
 <dl>
@@ -96,8 +90,20 @@ For more information about remove locks, see <a href="https://msdn.microsoft.com
 
 This code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a> structure and calls <b>WdfDeviceInitSetRemoveLockOptions</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.11 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdevice.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | DriverCreate |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a>
@@ -114,4 +120,3 @@ This code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_l
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceInitSetRemoveLockOptions method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

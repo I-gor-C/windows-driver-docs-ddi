@@ -1,51 +1,46 @@
 ---
-UID: NF:ntifs.FsRtlQueryKernelEaFile
-title: FsRtlQueryKernelEaFile function
-author: windows-driver-content
-description: The routine FsRtlQueryKernelEaFile is used to build an explicit QueryEA request and synchronously wait for it to complete, returning the result. This allows the caller to do this by FileObject instead of a handle.
-old-location: ifsk\fsrtlquerykerneleafile.htm
-old-project: ifsk
-ms.assetid: B57BC3A4-6116-48EA-905A-CFA7AC0A5E8F
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FsRtlQueryKernelEaFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FsRtlQueryKernelEaFile
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.FsRtlQueryKernelEaFile
+title : FsRtlQueryKernelEaFile function
+author : windows-driver-content
+description : The routine FsRtlQueryKernelEaFile is used to build an explicit QueryEA request and synchronously wait for it to complete, returning the result. This allows the caller to do this by FileObject instead of a handle.
+old-location : ifsk\fsrtlquerykerneleafile.htm
+old-project : ifsk
+ms.assetid : B57BC3A4-6116-48EA-905A-CFA7AC0A5E8F
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FsRtlQueryKernelEaFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FsRtlQueryKernelEaFile
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : TOKEN_TYPE
 ---
 
+
 # FsRtlQueryKernelEaFile function
-
-
-
-## -description
 The routine <b>FsRtlQueryKernelEaFile</b> is used to build an explicit QueryEA request and synchronously wait
     for it to complete, returning the result. This allows the caller to do
     this by FileObject instead of a handle.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FsRtlQueryKernelEaFile(
@@ -61,60 +56,52 @@ NTSTATUS FsRtlQueryKernelEaFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileObject [in]
+`FileObject`
 
 A pointer to a <b>FileObject</b> to send the QueryEA request to.
 
-
-### -param ReturnedEaData [out]
+`ReturnedEaData`
 
 A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured output buffer, where the extended attribute values are to be returned.
 
-
-### -param Length [in]
+`Length`
 
 Specifies the length, in bytes, of <b>ReturnedEaData</b>
 
-
-### -param ReturnSingleEntry [in]
+`ReturnSingleEntry`
 
 Specifies whether only a single entry should be returned
         rather than filling the buffer with as many EAs as possible.
 
-
-### -param EaList [in]
+`EaList`
 
 A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs-_file_get_ea_information.md">FILE_GET_EA_INFORMATION</a>-structured input buffer, which specifies the extended attributes to be queried. This parameter is optional and can be<b> NULL</b>.
 
-
-### -param EaListLength [in]
+`EaListLength`
 
 Specifies the length of <b>EaList</b>, if an EA list was
         supplied.
 
-
-### -param EaIndex [in, optional]
+`EaIndex`
 
 Supplies the optional index of an EA whose value is to be
         returned.  If specified, then only that EA is returned.
 
-
-### -param RestartScan [in]
+`RestartScan`
 
 Specifies whether the scan of the EAs should be restarted
         from the beginning.
 
-
-### -param LengthReturned [out, optional]
+`LengthReturned`
 
 Specifies the amount of valid data that is returned in the
         <b>ReturnedEaData</b> buffer.
 
 
-## -returns
+## Return Value
+
 The routine <b>FsRtlQueryKernelEaFile</b> returns one of the status codes:
 <dl>
 <dt><b>STATUS_EAS_NOT_SUPPORTED </b></dt>
@@ -129,14 +116,24 @@ The routine <b>FsRtlQueryKernelEaFile</b> returns one of the status codes:
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The request was successful.
 
- 
+## Remarks
 
+This routine <b>FsRtlQueryKernelEaFile </b>assumes all passed in buffers are from kernel mode as it  requires that the given Input and Output buffers if specified, be kernel mode addresses.  The operation will fail if a user mode address is specified.
 
-## -remarks
-This routine <b>FsRtlQueryKernelEaFile </b>assumes all passed in buffers are from kernel mode as it  requires that the given Input and Output buffers if specified, be kernel mode addresses.  The operation will fail if a user mode address is specified. 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD">FsRtlSetKernelEaFile</a>
@@ -153,4 +150,3 @@ This routine <b>FsRtlQueryKernelEaFile </b>assumes all passed in buffers are fro
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlQueryKernelEaFile routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

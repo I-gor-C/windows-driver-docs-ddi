@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisCoGetTapiCallId
-title: NdisCoGetTapiCallId function
-author: windows-driver-content
-description: NdisCoGetTapiCallId retrieves a string that TAPI applications can use to identify a particular NDIS virtual connection (VC).
-old-location: netvista\ndiscogettapicallid.htm
-old-project: netvista
-ms.assetid: 3cb47545-177f-46ef-aff6-33ad8c9a6974
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisCoGetTapiCallId
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisCoGetTapiCallId
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Connection_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisCoGetTapiCallId
+title : NdisCoGetTapiCallId function
+author : windows-driver-content
+description : NdisCoGetTapiCallId retrieves a string that TAPI applications can use to identify a particular NDIS virtual connection (VC).
+old-location : netvista\ndiscogettapicallid.htm
+old-project : netvista
+ms.assetid : 3cb47545-177f-46ef-aff6-33ad8c9a6974
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisCoGetTapiCallId
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisCoGetTapiCallId
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Connection_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisCoGetTapiCallId function
-
-
-
-## -description
 <b>NdisCoGetTapiCallId</b> retrieves a string that TAPI applications can use to identify a particular NDIS
   virtual connection (VC).
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisCoGetTapiCallId(
@@ -53,24 +48,23 @@ NDIS_STATUS NdisCoGetTapiCallId(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisVcHandle [in]
+`NdisVcHandle`
 
 Specifies the NDIS handle to the VC. This handle was supplied by NDIS when the VC was originally
      created with the 
      <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> function.
 
-
-### -param TapiCallId [in, out]
+`TapiCallId`
 
 Pointer to a caller-allocated buffer that receives a data structure of type VAR_STRING. Upon
      successful return, this structure describes a string that TAPI applications can use to identify the
      VC.
 
 
-## -returns
+## Return Value
+
 Returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -87,10 +81,8 @@ Returns one of the following status values:
 </dl>The handle to the VC specified by 
        <i>NdisVcHandle</i> is not valid.
 
- 
+## Remarks
 
-
-## -remarks
 Suppose a call manager calls 
     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> to create a VC for a TAPI
     call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
@@ -109,8 +101,20 @@ The client creates a context for each VC that it manages. The client uses
 For more information about the VAR_STRING structure, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564235">TAPI Objects</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Connection_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
@@ -125,4 +129,3 @@ For more information about the VAR_STRING structure, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoGetTapiCallId function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

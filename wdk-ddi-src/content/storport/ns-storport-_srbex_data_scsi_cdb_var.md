@@ -1,51 +1,44 @@
 ---
-UID: NS:storport._SRBEX_DATA_SCSI_CDB_VAR
-title: _SRBEX_DATA_SCSI_CDB_VAR
-author: windows-driver-content
-description: The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB).
-old-location: storage\srbex_data_scsi_cdb_var.htm
-old-project: storage
-ms.assetid: 8D3BD2E0-02EA-4745-AA1C-86D829E6BA81
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _SRBEX_DATA_SCSI_CDB_VAR, *PSRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: storport.h
-req.include-header: Storport.h, Srb.h
-req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SRBEX_DATA_SCSI_CDB_VAR
-req.alt-loc: Storport.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PSRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR
-req.product: Windows 10 or later.
+UID : NS:storport._SRBEX_DATA_SCSI_CDB_VAR
+title : _SRBEX_DATA_SCSI_CDB_VAR
+author : windows-driver-content
+description : The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB).
+old-location : storage\srbex_data_scsi_cdb_var.htm
+old-project : storage
+ms.assetid : 8D3BD2E0-02EA-4745-AA1C-86D829E6BA81
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _SRBEX_DATA_SCSI_CDB_VAR, *PSRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : storport.h
+req.include-header : Storport.h, Srb.h
+req.target-type : Windows
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SRBEX_DATA_SCSI_CDB_VAR
+req.alt-loc : Storport.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PSRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR"
+req.product : Windows 10 or later.
 ---
 
 # _SRBEX_DATA_SCSI_CDB_VAR structure
-
-
-
-## -description
 The <b>SRBEX_DATA_SCSI_CDB_VAR</b> structure contains the extended SRB data for a variable length SCSI command data block (CDB).
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _SRBEX_DATA_SCSI_CDB_VAR {
   SRBEXDATATYPE       Type;
@@ -60,68 +53,67 @@ typedef struct _SRBEX_DATA_SCSI_CDB_VAR {
 } SRBEX_DATA_SCSI_CDB_VAR, *PSRBEX_DATA_SCSI_CDB_VAR;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Cdb`
 
-### -field Type
+            A variable length array containing the CDB buffer.
+        
+            `CdbLength`
 
-Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdbVar</b>.
+            The length of the CDB data, in bytes, of the <b>Cdb</b> array.
+        
+            `Length`
 
+            Length of the data in this structure starting with the <b>ScsiStatus</b> member. This value ranges between SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN and SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX.
+        
+            `Reserved`
 
-### -field Length
+            This member is reserved. Contains zeros.
+        
+            `Reserved1`
 
-Length of the data in this structure starting with the <b>ScsiStatus</b> member. This value ranges between SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN and SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX.
+            This member is reserved. Contains zeros.
+        
+            `ScsiStatus`
 
+            The SCSI status code returned for the submitted SRB.
+        
+            `SenseInfoBuffer`
 
-### -field ScsiStatus
+            A pointer to a buffer containing any returned sense information.
+        
+            `SenseInfoBufferLength`
 
-The SCSI status code returned for the submitted SRB.
+            The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.
+        
+            `Type`
 
+            Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdbVar</b>.
 
-### -field SenseInfoBufferLength
+    ## Remarks
+        For CDB data sizes less than 32 bytes, the <a href="..\srb\ns-srb-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="..\srb\ns-srb-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.
 
-The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h, Srb.h) |
 
+    ## See Also
 
-### -field Reserved
-
-This member is reserved. Contains zeros.
-
-
-### -field CdbLength
-
-The length of the CDB data, in bytes, of the <b>Cdb</b> array.
-
-
-### -field Reserved1
-
-This member is reserved. Contains zeros.
-
-
-### -field SenseInfoBuffer
-
-A pointer to a buffer containing any returned sense information.
-
-
-### -field Cdb
-
-A variable length array containing the CDB buffer.
-
-
-## -remarks
-For CDB data sizes less than 32 bytes, the <a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
-<a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\srb\ns-srb-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
 </dt>
 <dt>
-<a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\srb\ns-srb-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
  
@@ -129,4 +121,3 @@ For CDB data sizes less than 32 bytes, the <a href="..\storport\ns-storport-_srb
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA_SCSI_CDB_VAR structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

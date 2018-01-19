@@ -1,65 +1,58 @@
 ---
-UID: NS:wsk._WSK_SOCKET
-title: _WSK_SOCKET
-author: windows-driver-content
-description: The WSK_SOCKET structure defines a socket object for a socket.
-old-location: netvista\wsk_socket.htm
-old-project: netvista
-ms.assetid: dce4a087-a14b-400b-bdc1-944c1d4d492a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WSK_SOCKET, *PWSK_SOCKET, WSK_SOCKET
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: wsk.h
-req.include-header: Wsk.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WSK_SOCKET
-req.alt-loc: wsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PWSK_SOCKET, WSK_SOCKET
-req.product: Windows 10 or later.
+UID : NS:wsk._WSK_SOCKET
+title : _WSK_SOCKET
+author : windows-driver-content
+description : The WSK_SOCKET structure defines a socket object for a socket.
+old-location : netvista\wsk_socket.htm
+old-project : netvista
+ms.assetid : dce4a087-a14b-400b-bdc1-944c1d4d492a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WSK_SOCKET, WSK_SOCKET, *PWSK_SOCKET
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : wsk.h
+req.include-header : Wsk.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WSK_SOCKET
+req.alt-loc : wsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WSK_SOCKET, *PWSK_SOCKET
+req.product : Windows 10 or later.
 ---
 
 # _WSK_SOCKET structure
-
-
-
-## -description
 The WSK_SOCKET structure defines a socket object for a socket.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WSK_SOCKET {
   const VOID *Dispatch;
 } WSK_SOCKET, *PWSK_SOCKET;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Dispatch`
 
-### -field Dispatch
-
-A pointer to a constant provider dispatch structure. This structure is a dispatch table that
+            A pointer to a constant provider dispatch structure. This structure is a dispatch table that
      contains pointers to a socket's functions. Depending on the WSK 
-     <a href="netvista.winsock_kernel_socket_categories">socket category</a> of the
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/winsock-kernel-socket-categories">socket category</a> of the
      socket, this pointer is a pointer to one of the following structures:
      
 
@@ -134,11 +127,9 @@ Stream socket
 </td>
 </tr>
 </table>
- 
 
-
-## -remarks
-The WSK subsystem allocates and fills in a WSK_SOCKET structure whenever a new socket is created. A
+    ## Remarks
+        The WSK subsystem allocates and fills in a WSK_SOCKET structure whenever a new socket is created. A
     WSK application receives a pointer to the WSK_SOCKET structure for a socket from the WSK subsystem in one
     of the following ways:
 
@@ -165,9 +156,17 @@ The WSK subsystem frees the memory for the WSK_SOCKET structure when the WSK app
     <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
     socket.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wsk.h (include Wsk.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 </dt>
@@ -206,4 +205,3 @@ The WSK subsystem frees the memory for the WSK_SOCKET structure when the WSK app
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_SOCKET structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

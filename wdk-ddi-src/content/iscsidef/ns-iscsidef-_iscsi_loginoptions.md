@@ -1,50 +1,43 @@
 ---
-UID: NS:iscsidef._ISCSI_LoginOptions
-title: _ISCSI_LoginOptions
-author: windows-driver-content
-description: The ISCSI_LoginOptions structure defines the characteristics of a logon session. The LoginToTarget_IN routines use these defined characteristics while it logs into an iSCSI target.
-old-location: storage\iscsi_loginoptions.htm
-old-project: storage
-ms.assetid: 2440999a-e10c-4a27-b076-a0b640c2ca7f
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: _ISCSI_LoginOptions, *PISCSI_LoginOptions, ISCSI_LoginOptions
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: iscsidef.h
-req.include-header: Iscsidef.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ISCSI_LoginOptions
-req.alt-loc: iscsidef.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PISCSI_LoginOptions, ISCSI_LoginOptions
+UID : NS:iscsidef._ISCSI_LoginOptions
+title : _ISCSI_LoginOptions
+author : windows-driver-content
+description : The ISCSI_LoginOptions structure defines the characteristics of a logon session. The LoginToTarget_IN routines use these defined characteristics while it logs into an iSCSI target.
+old-location : storage\iscsi_loginoptions.htm
+old-project : storage
+ms.assetid : 2440999a-e10c-4a27-b076-a0b640c2ca7f
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : _ISCSI_LoginOptions, ISCSI_LoginOptions, *PISCSI_LoginOptions
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : iscsidef.h
+req.include-header : Iscsidef.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ISCSI_LoginOptions
+req.alt-loc : iscsidef.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : ISCSI_LoginOptions, *PISCSI_LoginOptions
 ---
 
 # _ISCSI_LoginOptions structure
-
-
-
-## -description
 The ISCSI_LoginOptions structure defines the characteristics of a logon session. The LoginToTarget_IN routines use these defined characteristics while it logs into an iSCSI target.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _ISCSI_LoginOptions {
   ULONG InformationSpecified;
@@ -58,12 +51,32 @@ typedef struct _ISCSI_LoginOptions {
 } ISCSI_LoginOptions, *PISCSI_LoginOptions;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AuthType`
 
-### -field InformationSpecified
+            A <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a> value that indicates the authentication method that is used to establish a logon connection.
+        
+            `DataDigest`
 
-A bitmap that indicates which members of the ISCSI_LoginOptions structure contain valid data. The following table describes the possible values: 
+            A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the data digest in a logon PDU.
+        
+            `DefaultTime2Retain`
+
+            The maximum time, in seconds, to reassign a connection after the initial wait that is indicated in <b>DefaultTime2Wait</b> has elapsed. The initiator and target negotiate to determine this value.
+        
+            `DefaultTime2Wait`
+
+            The minimum time to wait, in seconds, before the initiator attempts to reconnect or reassign a connection (or task) that has been dropped after an unexpected connection termination or reset. The initiator and target negotiate to determine this value.
+        
+            `HeaderDigest`
+
+            A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the header digest in a logon PDU.
+        
+            `InformationSpecified`
+
+            A bitmap that indicates which members of the ISCSI_LoginOptions structure contain valid data. The following table describes the possible values: 
 
 <table>
 <tr>
@@ -151,37 +164,10 @@ The password to be used during logon.
 </td>
 </tr>
 </table>
- 
+        
+            `LoginFlags`
 
-
-### -field HeaderDigest
-
-A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the header digest in a logon PDU.
-
-
-### -field DataDigest
-
-A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the data digest in a logon PDU.
-
-
-### -field MaximumConnections
-
-A value between 1 and 65535 that specifies the maximum number of connections to target devices that can be associated with a single logon session. A value of 0 indicates that there is no limit to the number of connections. 
-
-
-### -field DefaultTime2Wait
-
-The minimum time to wait, in seconds, before the initiator attempts to reconnect or reassign a connection (or task) that has been dropped after an unexpected connection termination or reset. The initiator and target negotiate to determine this value.
-
-
-### -field DefaultTime2Retain
-
-The maximum time, in seconds, to reassign a connection after the initial wait that is indicated in <b>DefaultTime2Wait</b> has elapsed. The initiator and target negotiate to determine this value.
-
-
-### -field LoginFlags
-
-A bitwise OR of logon flags that define certain characteristics of the logon session. The following table indicates the values that you can assign to this member.
+            A bitwise OR of logon flags that define certain characteristics of the logon session. The following table indicates the values that you can assign to this member.
 
 <table>
 <tr>
@@ -249,19 +235,23 @@ Use RADIUS to verify CHAP response.
 </td>
 </tr>
 </table>
- 
+        
+            `MaximumConnections`
+
+            A value between 1 and 65535 that specifies the maximum number of connections to target devices that can be associated with a single logon session. A value of 0 indicates that there is no limit to the number of connections.
 
 
-### -field AuthType
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | iscsidef.h (include Iscsidef.h) |
 
-A <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a> value that indicates the authentication method that is used to establish a logon connection. 
+    ## See Also
 
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a>
 </dt>
@@ -277,4 +267,3 @@ A <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a> va
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_LoginOptions structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

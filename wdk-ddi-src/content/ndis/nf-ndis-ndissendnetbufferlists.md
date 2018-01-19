@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisSendNetBufferLists
-title: NdisSendNetBufferLists function
-author: windows-driver-content
-description: Protocol drivers call the NdisSendNetBufferLists function to send network data that is contained in a list of NET_BUFFER_LIST structures.
-old-location: netvista\ndissendnetbufferlists.htm
-old-project: netvista
-ms.assetid: f615acc4-7e3e-4390-8a6a-e68663fcc162
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisSendNetBufferLists
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisSendNetBufferLists
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_SendRcv_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisSendNetBufferLists
+title : NdisSendNetBufferLists function
+author : windows-driver-content
+description : Protocol drivers call the NdisSendNetBufferLists function to send network data that is contained in a list of NET_BUFFER_LIST structures.
+old-location : netvista\ndissendnetbufferlists.htm
+old-project : netvista
+ms.assetid : f615acc4-7e3e-4390-8a6a-e68663fcc162
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisSendNetBufferLists
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisSendNetBufferLists
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_SendRcv_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisSendNetBufferLists function
-
-
-
-## -description
 Protocol drivers call the 
   <b>NdisSendNetBufferLists</b> function to send network data that is contained in a list of 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisSendNetBufferLists(
@@ -56,63 +51,39 @@ VOID NdisSendNetBufferLists(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisBindingHandle [in]
+`NdisBindingHandle`
 
 A handle that identifies the target adapter. A previous call to 
      <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> returned this
      handle.
 
-
-### -param NetBufferLists [in]
+`NetBufferLists`
 
 A pointer to a linked list of 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures. Each
      NET_BUFFER_LIST structure describes a list of 
      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures.
 
-
-### -param PortNumber [in]
+`PortNumber`
 
 A port number that identifies a miniport adapter port. The default port number of a miniport
      adapter is zero. Protocol drivers that do not use miniport adapter ports should specify the default
      port.
 
-
-### -param SendFlags [in]
+`SendFlags`
 
 Flags that define attributes for the send operation. The flags can be combined with an OR
      operation. To clear all the flags, set this member to zero. This function supports the following flags:
-     
 
 
+## Return Value
 
-
-### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
-
-Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
-
-
-### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
-
-Specifies that NDIS should check for loopback. By default, NDIS does not loop back data to the
-       driver that submitted the send request. An overlying driver can override this behavior by setting this
-       flag. When this flag is set, NDIS identifies all the NET_BUFFER structures that contain data that
-       matches the receive criteria for the binding. NDIS indicates NET_BUFFER structures that match the
-       criteria to the overlying driver. This flag has no affect on checking for loopback, or looping back,
-       on other bindings.
-
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 After a protocol driver calls 
     <b>NdisSendNetBufferLists</b>, NDIS submits the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures to an underlying
@@ -184,8 +155,20 @@ Until NDIS calls
     after calling 
     <b>NdisSendNetBufferLists</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_SendRcv_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
@@ -233,4 +216,3 @@ Until NDIS calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSendNetBufferLists function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

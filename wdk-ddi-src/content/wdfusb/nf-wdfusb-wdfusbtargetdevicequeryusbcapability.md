@@ -1,53 +1,48 @@
 ---
-UID: NF:wdfusb.WdfUsbTargetDeviceQueryUsbCapability
-title: WdfUsbTargetDeviceQueryUsbCapability function
-author: windows-driver-content
-description: The WdfUsbTargetDeviceQueryUsbCapability method determines whether the host controller and USB driver stack support a specific capability.
-old-location: wdf\wdfusbtargetdevicequeryusbcapability.htm
-old-project: wdf
-ms.assetid: B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfUsbTargetDeviceQueryUsbCapability
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfusb.h
-req.include-header: Wdfusb.h
-req.target-type: Universal
-req.target-min-winverclnt: Windows Vista
-req.target-min-winversvr: 
-req.kmdf-ver: 1.11
-req.umdf-ver: 2.0
-req.alt-api: WdfUsbTargetDeviceQueryUsbCapability
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DriverCreate
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfusb.WdfUsbTargetDeviceQueryUsbCapability
+title : WdfUsbTargetDeviceQueryUsbCapability function
+author : windows-driver-content
+description : The WdfUsbTargetDeviceQueryUsbCapability method determines whether the host controller and USB driver stack support a specific capability.
+old-location : wdf\wdfusbtargetdevicequeryusbcapability.htm
+old-project : wdf
+ms.assetid : B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfUsbTargetDeviceQueryUsbCapability
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfusb.h
+req.include-header : Wdfusb.h
+req.target-type : Universal
+req.target-min-winverclnt : Windows Vista
+req.target-min-winversvr : 
+req.kmdf-ver : 1.11
+req.umdf-ver : 2.0
+req.alt-api : WdfUsbTargetDeviceQueryUsbCapability
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DriverCreate
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.product : Windows 10 or later.
 ---
 
+
 # WdfUsbTargetDeviceQueryUsbCapability function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 
    The <b>WdfUsbTargetDeviceQueryUsbCapability</b> method determines whether the host controller and USB driver stack support a specific capability.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfUsbTargetDeviceQueryUsbCapability(
@@ -59,15 +54,13 @@ NTSTATUS WdfUsbTargetDeviceQueryUsbCapability(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param UsbDevice [in]
+`UsbDevice`
 
 A handle to a USB device object.
 
-
-### -param CapabilityType [in]
+`CapabilityType`
 
 A pointer to a GUID that represents the capability about which the client driver wants to retrieve information. The possible  <i>PGUID</i>  values are  as follows:
 
@@ -83,24 +76,22 @@ A pointer to a GUID that represents the capability about which the client driver
 </ul>
 See more information in Remarks.
 
-
-### -param CapabilityBufferLength [in]
+`CapabilityBufferLength`
 
 Length, in bytes, of the buffer pointed to by <i>CapabilityBuffer</i>.
 
-
-### -param CapabilityBuffer [out, optional]
+`CapabilityBuffer`
 
 A pointer to a caller-allocated buffer to receive the requested USB capability. This parameter is optional. If 
                        <i>CapabilityBufferLength</i> is zero, this parameter must be NULL. Similarly, if <i>CapabilityBufferLength</i> is nonzero, this parameter must be supplied. This parameter corresponds to the <i>OutputBuffer</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a> routine.
 
-
-### -param ResultLength [out, optional]
+`ResultLength`
 
 A pointer to a location containing the size, in bytes, of the returned capability. This parameter is optional.
 
 
-## -returns
+## Return Value
+
 <b>WdfUsbTargetDeviceQueryUsbCapability</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
@@ -122,8 +113,8 @@ A pointer to a location containing the size, in bytes, of the returned capabilit
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
+## Remarks
 
-## -remarks
 Before calling <b>WdfUsbTargetDeviceQueryUsbCapability</b>, the driver must call  <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a> to register with the underlying USB driver stack.
 
 <b>WdfUsbTargetDeviceQueryUsbCapability</b> must be called after the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> callback function has been called. 
@@ -153,8 +144,20 @@ This GUID applies to KMDF and UMDF drivers.
 
 Determines whether the bus is operating at SuperSpeed or higher.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.11 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfusb.h (include Wdfusb.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | DriverCreate |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
@@ -168,4 +171,3 @@ Determines whether the bus is operating at SuperSpeed or higher.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceQueryUsbCapability method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

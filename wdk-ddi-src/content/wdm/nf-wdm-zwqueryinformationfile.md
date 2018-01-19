@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ZwQueryInformationFile
-title: ZwQueryInformationFile function
-author: windows-driver-content
-description: The ZwQueryInformationFile routine returns various kinds of information about a file object.
-old-location: kernel\zwqueryinformationfile.htm
-old-project: kernel
-ms.assetid: 007df07e-685b-4224-b9d6-55e87cf0bd5c
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwQueryInformationFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwQueryInformationFile,NtQueryInformationFile
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ZwQueryInformationFile
+title : ZwQueryInformationFile function
+author : windows-driver-content
+description : The ZwQueryInformationFile routine returns various kinds of information about a file object.
+old-location : kernel\zwqueryinformationfile.htm
+old-project : kernel
+ms.assetid : 007df07e-685b-4224-b9d6-55e87cf0bd5c
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwQueryInformationFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwQueryInformationFile,NtQueryInformationFile
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ZwQueryInformationFile function
-
-
-
-## -description
 The <b>ZwQueryInformationFile</b> routine returns various kinds of information about a file object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwQueryInformationFile(
@@ -56,30 +51,25 @@ NTSTATUS ZwQueryInformationFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileHandle [in]
+`FileHandle`
 
 Handle to a file object. The handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>.
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 Pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. The <b>Information</b> member receives the number of bytes that this routine actually writes to the <i>FileInformation</i> buffer.
 
-
-### -param FileInformation [out]
+`FileInformation`
 
 Pointer to a caller-allocated buffer into which the routine writes the requested information about the file object. The <i>FileInformationClass</i> parameter specifies the type of information that the caller requests.
 
-
-### -param Length [in]
+`Length`
 
 The size, in bytes, of the buffer pointed to by <i>FileInformation</i>.
 
-
-### -param FileInformationClass [in]
+`FileInformationClass`
 
 Specifies the type of information to be returned about the file, in the buffer that <i>FileInformation</i> points to. Device and intermediate drivers can specify any of the following <a href="..\wdm\ne-wdm-_file_information_class.md">FILE_INFORMATION_CLASS</a> values.
 
@@ -231,14 +221,14 @@ A <a href="..\wdm\ns-wdm-_file_is_remote_device_information.md">FILE_IS_REMOTE_D
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>ZwQueryInformationFile </b>returns STATUS_SUCCESS or an appropriate NTSTATUS error code.
 
+## Remarks
 
-## -remarks
 <b>ZwQueryInformationFile</b> returns information about the specified file object. Note that it returns zero in any member of a <b>FILE_<i>XXX</i>_INFORMATION</b> structure that is not supported by a particular device or file system.
 
 When <i>FileInformationClass</i> = <b>FileNameInformation</b>, the file name is returned in the <a href="..\ntddk\ns-ntddk-_file_name_information.md">FILE_NAME_INFORMATION</a> structure. The precise syntax of the file name depends on a number of factors:
@@ -261,8 +251,20 @@ Callers of <b>ZwQueryInformationFile</b> must be running at IRQL = PASSIVE_LEVEL
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_access_information.md">FILE_ACCESS_INFORMATION</a>
@@ -321,4 +323,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

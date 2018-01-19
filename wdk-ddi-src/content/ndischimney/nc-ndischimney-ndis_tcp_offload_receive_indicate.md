@@ -1,67 +1,64 @@
 ---
-UID: NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
-title: NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
-author: windows-driver-content
-description: An offload target calls the NdisTcpOffloadReceiveHandler function to indicate that received network data is available for consumption by a client application.
-old-location: netvista\ndistcpoffloadreceivehandler.htm
-old-project: netvista
-ms.assetid: a45dede9-6559-4207-a49f-d9627054433a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisTcpOffloadReceiveHandler
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID : NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
+title : NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
+author : windows-driver-content
+description : An offload target calls the NdisTcpOffloadReceiveHandler function to indicate that received network data is available for consumption by a client application.
+old-location : netvista\ndistcpoffloadreceivehandler.htm
+old-project : netvista
+ms.assetid : a45dede9-6559-4207-a49f-d9627054433a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisTcpOffloadReceiveHandler
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
-# NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback
 
-
-
-## -description
+# NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback function
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 An offload target calls the 
   <b>NdisTcpOffloadReceiveHandler</b> function to indicate that received network data is available for
   consumption by a client application.
 
+## Syntax
 
+```
+NDIS_TCP_OFFLOAD_RECEIVE_INDICATE NdisTcpOffloadReceiveIndicate;
 
-## -prototype
+NDIS_STATUS NdisTcpOffloadReceiveIndicate(
+  IN NDIS_HANDLE NdisOffloadHandle,
+  IN PNET_BUFFER_LIST NetBufferList,
+  IN NDIS_STATUS Status,
+  OUT PULONG BytesConsumed
+)
+{...}
+```
 
-````
-NDIS_STATUS NdisTcpOffloadReceiveHandler(
-  _In_  NDIS_HANDLE      NdisOffloadHandle,
-  _In_  PNET_BUFFER_LIST NetBufferList,
-  _In_  NDIS_STATUS      Status,
-  _Out_ PULONG           BytesConsumed
-);
-````
+## Parameters
 
-
-## -parameters
-
-### -param NdisOffloadHandle [in]
+`NdisOffloadHandle`
 
 A handle that identifies the offloaded TCP connection on which the indication is being made. When
      the connection was offloaded, this handle was supplied in the 
@@ -69,8 +66,7 @@ A handle that identifies the offloaded TCP connection on which the indication is
      <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.
 
-
-### -param NetBufferList [in]
+`NetBufferList`
 
 A pointer to a 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. Each 
@@ -93,32 +89,18 @@ The
       <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> in an offload receive
       indication.
 
-
-### -param Status [in]
+`Status`
 
 The offload target must supply the following status value:
-     
 
-
-
-
-### -param NDIS_STATUS_SUCCESS
-
-This indicates that the host stack can retain ownership of the NET_BUFFER_LIST structures and
-       associated structures until it returns these structures to the 
-       <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_return_handler.md">
-       MiniportTcpOffloadReceiveReturn</a> function of the offload target.
-
-</dd>
-</dl>
-
-### -param BytesConsumed [out]
+`BytesConsumed`
 
 A pointer to a ULONG-typed variable that receives the number of bytes that were consumed by the
      client application.
 
 
-## -returns
+## Return Value
+
 The 
      <b>NdisTcpOffloadReceiveHandler</b> function can return one of the following values:
 <dl>
@@ -133,10 +115,8 @@ The
        bytes, that was consumed by the client application is returned in the variable specified by the 
        <i>BytesConsumed</i> parameter.
 
- 
+## Remarks
 
-
-## -remarks
 Receive buffers are posted to the 
     <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
     MiniportTcpOffloadReceive</a> function of the offload target. If preposted receive requests (buffers
@@ -177,7 +157,7 @@ During initialization, the offload target should allocate two pools of buffers, 
 Each allocated NET_BUFFER_LIST structure must have only one NET_BUFFER structure associated with it.
     The number of such structures to allocate is up to the driver writer. For more information about
     allocating such structures, see 
-    <a href="netvista.miniport_driver_buffer_management">Miniport Driver Buffer
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/miniport-driver-buffer-management">Miniport Driver Buffer
     Management</a>.
 
 Provided that it is not making a delayed acknowledgment, the offload target should acknowledge
@@ -228,11 +208,23 @@ In the
     <b>RcvIndicationSize</b> member of the TCP_OFFLOAD_STATE_CACHED structure, the host stack can specify the
     optimum number of data bytes that the offload target should supply in a single call to the 
     <b>NdisTcpOffloadReceiveHandler</b> function. For more information, see 
-    <a href="netvista.using_the_specified_receive_indication_size">Using the Specified
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff564606">Using the Specified
     Receive Indication Size</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
@@ -262,4 +254,3 @@ In the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

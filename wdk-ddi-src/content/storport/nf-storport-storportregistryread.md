@@ -1,50 +1,45 @@
 ---
-UID: NF:storport.StorPortRegistryRead
-title: StorPortRegistryRead function
-author: windows-driver-content
-description: The StorPortRegistryRead routine reads the registry data for the indicated device and value.
-old-location: storage\storportregistryread.htm
-old-project: storage
-ms.assetid: 16f13973-c1c1-4123-8fa4-20187ec2c204
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: StorPortRegistryRead
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: storport.h
-req.include-header: Storport.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: StorPortRegistryRead
-req.alt-loc: Storport.lib,Storport.dll
-req.ddi-compliance: StorPortIrql
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Storport.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
+UID : NF:storport.StorPortRegistryRead
+title : StorPortRegistryRead function
+author : windows-driver-content
+description : The StorPortRegistryRead routine reads the registry data for the indicated device and value.
+old-location : storage\storportregistryread.htm
+old-project : storage
+ms.assetid : 16f13973-c1c1-4123-8fa4-20187ec2c204
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : StorPortRegistryRead
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : storport.h
+req.include-header : Storport.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : StorPortRegistryRead
+req.alt-loc : Storport.lib,Storport.dll
+req.ddi-compliance : StorPortIrql
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Storport.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : STOR_SPINLOCK
+req.product : Windows 10 or later.
 ---
 
+
 # StorPortRegistryRead function
+The <b>StorPortRegistryRead</b> routine reads the registry data for the indicated device and value.
 
-
-
-## -description
-The <b>StorPortRegistryRead</b> routine reads the registry data for the indicated device and value. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN StorPortRegistryRead(
@@ -57,25 +52,21 @@ BOOLEAN StorPortRegistryRead(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension 
+`HwDeviceExtension`
 
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.
 
+`ValueName`
 
-### -param ValueName 
+Pointer to a UCHAR that specifies the registry value name whose content is to be read.
 
-Pointer to a UCHAR that specifies the registry value name whose content is to be read. 
+`Global`
 
+Indicates, when nonzero, that the port driver reads the contents of the registry value specified by <i>ValueName</i> under the Parameters\Device subkey. The values under the Device key apply to all adapters in the system. When <i>Global</i> is zero, the port driver reads the contents of the registry value specified by <i>ValueName</i> under the Parameters\Device(d) subkey, where (d) is a decimal value that corresponds to the port number of a particular adapter. In this case, the data retrieved is adapter-specific.
 
-### -param Global 
-
-Indicates, when nonzero, that the port driver reads the contents of the registry value specified by <i>ValueName</i> under the Parameters\Device subkey. The values under the Device key apply to all adapters in the system. When <i>Global</i> is zero, the port driver reads the contents of the registry value specified by <i>ValueName</i> under the Parameters\Device(d) subkey, where (d) is a decimal value that corresponds to the port number of a particular adapter. In this case, the data retrieved is adapter-specific. 
-
-
-### -param Type 
+`Type`
 
 Indicates the data type of registry value. This parameter must have one of the values in the following table.
 
@@ -227,30 +218,40 @@ Indicates that the registry value contains a 64-bit number. This is the same dat
 </td>
 </tr>
 </table>
- 
+
+`Buffer`
+
+Pointer to the buffer where the retrieved registry information is to be reported.
+
+`BufferLength`
+
+Pointer to a ULONG that contains the size, in bytes, of the registry data returned.
 
 
-### -param Buffer 
+## Return Value
 
-Pointer to the buffer where the retrieved registry information is to be reported. 
+<b>StorPortRegistryRead</b> returns a Boolean value of <b>TRUE</b> if the data pointed to by <i>ValueName</i> is successfully converted into ASCII and copied into the buffer. This routine returns <b>FALSE</b> in the event of an error.
 
+## Remarks
 
-### -param BufferLength 
-
-Pointer to a ULONG that contains the size, in bytes, of the registry data returned. 
-
-
-## -returns
-<b>StorPortRegistryRead</b> returns a Boolean value of <b>TRUE</b> if the data pointed to by <i>ValueName</i> is successfully converted into ASCII and copied into the buffer. This routine returns <b>FALSE</b> in the event of an error. 
-
-
-## -remarks
 If <b>StorPortRegistryRead</b> returns <b>FALSE</b> with a nonzero value in the <i>BufferLength</i> parameter, the buffer that was passed was too small and the <i>BufferLength</i> parameter reflects the correct buffer size that should be used. If the routine returns <b>FALSE</b> with the <i>BufferLength</i> parameter set to zero, another error has occurred.
 
 The buffer used in this routine is allocated by calling <a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a> and freed by calling <a href="..\storport\nf-storport-storportfreeregistrybuffer.md">StorPortFreeRegistryBuffer</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | storport.h (include Storport.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | StorPortIrql |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a>
@@ -264,4 +265,3 @@ The buffer used in this routine is allocated by calling <a href="..\storport\nf-
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortRegistryRead routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

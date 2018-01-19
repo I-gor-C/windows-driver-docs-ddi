@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisMCmAddPartyComplete
-title: NdisMCmAddPartyComplete macro
-author: windows-driver-content
-description: NdisMCmAddPartyComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to add a party on an established multipoint VC.
-old-location: netvista\ndismcmaddpartycomplete.htm
-old-project: netvista
-ms.assetid: 5bbcd552-00c2-4085-8222-c514eb92e654
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMCmAddPartyComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMCmAddPartyComplete
-req.alt-loc: ndis.h
-req.ddi-compliance: Irql_MCM_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMCmAddPartyComplete
+title : NdisMCmAddPartyComplete macro
+author : windows-driver-content
+description : NdisMCmAddPartyComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to add a party on an established multipoint VC.
+old-location : netvista\ndismcmaddpartycomplete.htm
+old-project : netvista
+ms.assetid : 5bbcd552-00c2-4085-8222-c514eb92e654
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMCmAddPartyComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMCmAddPartyComplete
+req.alt-loc : ndis.h
+req.ddi-compliance : Irql_MCM_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
-# NdisMCmAddPartyComplete macro
 
-
-
-## -description
+# NdisMCmAddPartyComplete function
 <b>NdisMCmAddPartyComplete</b> returns the final status of a client's request, for which the MCM driver
   previously returned NDIS_STATUS_PENDING, to add a party on an established multipoint VC.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisMCmAddPartyComplete(
@@ -55,38 +50,31 @@ VOID NdisMCmAddPartyComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Status [in]
-
-Specifies the final status of the MCM driver's add-party operation, either NDIS_STATUS_SUCCESS or
-     any NDIS_STATUS_<i>XXX</i><u>except</u> NDIS_STATUS_PENDING.
+`_S_`
 
 
-### -param NdisPartyHandle [in]
 
-Specifies the handle identifying the party. The MCM driver obtained this handle as input parameter
-     to its 
-     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
+`_H_`
 
 
-### -param CallMgrPartyContext [in, optional]
 
-Specifies the handle to a caller-allocated resident context area in which the MCM driver will
-     maintain party-specific state information if the add-party operation succeeded. Otherwise, this
-     parameter can be <b>NULL</b> because it is ignored by NDIS if 
-     <i>Status</i> is anything other than NDIS_STATUS_SUCCESS.
+`_C_`
 
 
-### -param CallParameters [in]
 
-Pointer to a structure of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a> that contains the call
-     parameters, originally supplied by the client, for the party to be added.
+`_P_`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 If an MCM driver's 
     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function returns
     NDIS_STATUS_PENDING, the driver must call 
@@ -130,8 +118,20 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
     protocol drivers, call 
     <b>NdisCmAddPartyComplete</b> instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_MCM_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
@@ -161,4 +161,3 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmAddPartyComplete macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

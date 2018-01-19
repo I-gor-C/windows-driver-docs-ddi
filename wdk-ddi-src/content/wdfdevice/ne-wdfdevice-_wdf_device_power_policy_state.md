@@ -1,53 +1,46 @@
 ---
-UID: NE:wdfdevice._WDF_DEVICE_POWER_POLICY_STATE
-title: _WDF_DEVICE_POWER_POLICY_STATE
-author: windows-driver-content
-description: The WDF_DEVICE_POWER_POLICY_STATE enumeration identifies all of the states that the framework's power policy state machine can enter.
-old-location: wdf\wdf_device_power_policy_state.htm
-old-project: wdf
-ms.assetid: 87fa78f7-417a-4720-9520-0eb90486630a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDF_DEVICE_POWER_POLICY_STATE, *PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: WDF_DEVICE_POWER_POLICY_STATE
-req.alt-loc: wdfdevice.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: *PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE
-req.product: Windows 10 or later.
+UID : NE:wdfdevice._WDF_DEVICE_POWER_POLICY_STATE
+title : _WDF_DEVICE_POWER_POLICY_STATE
+author : windows-driver-content
+description : The WDF_DEVICE_POWER_POLICY_STATE enumeration identifies all of the states that the framework's power policy state machine can enter.
+old-location : wdf\wdf_device_power_policy_state.htm
+old-project : wdf
+ms.assetid : 87fa78f7-417a-4720-9520-0eb90486630a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDF_DEVICE_POWER_POLICY_STATE, *PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : WDF_DEVICE_POWER_POLICY_STATE
+req.alt-loc : wdfdevice.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section.
+req.typenames : "*PWDF_DEVICE_POWER_POLICY_STATE, WDF_DEVICE_POWER_POLICY_STATE"
+req.product : Windows 10 or later.
 ---
 
-# _WDF_DEVICE_POWER_POLICY_STATE enumeration
-
-
-
-## -description
+# _WDF_DEVICE_POWER_POLICY_STATE Enumeration
 <p class="CCE_Message">[Applies to KMDF only]
 
 The WDF_DEVICE_POWER_POLICY_STATE enumeration identifies all of the states that the framework's power policy state machine can enter.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDF_DEVICE_POWER_POLICY_STATE { 
   WdfDevStatePwrPolInvalid                                                     = 0x00,
@@ -208,473 +201,794 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
 } WDF_DEVICE_POWER_POLICY_STATE, *PWDF_DEVICE_POWER_POLICY_STATE;
 ````
 
+## Constants
+
+<table>
+
+<tr>
+<td>WdfDevStatePwrPolCancelingUsbSSForSystemSleep</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolCancelingWakeForSystemSleep</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolCancelingWakeForSystemSleepWakeCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolCancelUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolCheckPowerPageable</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolDeviceD0PowerRequestFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolDeviceIdleReturnToActive</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolDeviceIdleSleeping</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolDeviceIdleStopping</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolDevicePowerRequestFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolDisarmingWakeForSystemSleepCompletePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolDx</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolFinal</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolGotoD0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolGotoD0InD0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolGotoDx</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolGotoDxInDx</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolIdleCapableDeviceIdle</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolInvalid</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolIoPresentArmed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolIoPresentArmedWakeCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolNull</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolObjectCreated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolPowerUpForSystemSleepFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolPowerUpForSystemSleepNotSeen</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolRestarting</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolRestartingFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolS0NoWakeCompletePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolS0NoWakePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolS0WakeCompletePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolS0WakeDisarm</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleeping</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingNoWakeCompletePowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingNoWakeDxRequestFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingNoWakePowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingPowerDownNotProcessed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingSendWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingWakePowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingWakePowerDownFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingWakePowerDownFailedWakeCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingWakeRevertArmWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingWakeRevertArmWakeNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingWakeWakeArrived</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSleepingWakeWakeArrivedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStarted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedCancelTimer</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedIdleCapable</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedIdleCapableCancelTimerForSleep</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedIdleCapableWaitForIdleTimeout</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedWaitForIdleTimeout</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedWakeCapable</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedWakeCapableCancelTimerForSleep</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedWakeCapableSleepingUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartedWakeCapableWaitForIdleTimeout</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStarting</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartingDecideS0Wake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartingFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartingPoweredUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartingPoweredUpFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStartingSucceeded</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStopped</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppedRemoving</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStopping</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingCancelTimer</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingCancelUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingCancelWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingD0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingD0CancelUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingD0Failed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingDisarmWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingDisarmWakeCancelWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingDisarmWakeWakeCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingPoweringDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingPoweringUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingResetDevice</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingResetDeviceCompletePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingResetDeviceFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingSendStatus</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingWaitForIdleTimeout</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingWaitForUsbSSCompletion</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolStoppingWaitingForImplicitPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemAsleepNoWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemAsleepWakeArmed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemAsleepWakeArmedNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemSleepFromDeviceWaitingUnarmed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemSleepNeedWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemSleepNeedWakeCompletePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemSleepPowerRequestFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceToD0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceToD0CompletePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeCompletePowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeDisabled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeDisarm</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeDisarmNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceledNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFired</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFiredNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggered</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0NP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWokeDisarm</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeDeviceWokeDisarmNP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolSystemWakeQueryIdle</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredDecideUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredNoWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredNoWakeCompletePowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredNoWakePowerDownNotProcessed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredNoWakePoweredDownDisableIdleTimer</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredNoWakeReturnToActive</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredNoWakeUndoPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableCancelWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableCleanup</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableDxAllocFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedCancelWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeInterruptArrived</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownNotProcessed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableSendWake</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableUndoPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeArrived</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeCanceled</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeFailed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeInterruptArrived</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeSucceeded</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCompletedDisarm</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCompletedHardwareStarted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCompletedPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeCompletedPowerUp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolTimerExpiredWakeSucceeded</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedIoPresentCancelUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedQueryIdle</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedStoppingCancelUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedWakeFailedCancelUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedWakeInterruptFired</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedWakeInterruptFiredDuringPowerDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingArmedWakeSucceededCancelUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingUnarmed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWaitingUnarmedQueryIdle</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWakeCapableDeviceIdle</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWakeCapableUsbSSCompleted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWakeFailedUsbSS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWokeFromS0</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWokeFromS0NotifyDriver</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WdfDevStatePwrPolWokeFromS0UsbSS</td>
+<td></td>
+</tr>
+</table>
+
+## Remarks
 
-## -enum-fields
-
-### -field WdfDevStatePwrPolInvalid
-
-
-### -field WdfDevStatePwrPolObjectCreated
-
-
-### -field WdfDevStatePwrPolStarting
-
-
-### -field WdfDevStatePwrPolStartingSucceeded
-
-
-### -field WdfDevStatePwrPolStartingFailed
-
-
-### -field WdfDevStatePwrPolStartingDecideS0Wake
-
-
-### -field WdfDevStatePwrPolStartedIdleCapable
-
-
-### -field WdfDevStatePwrPolTimerExpiredNoWake
-
-
-### -field WdfDevStatePwrPolTimerExpiredNoWakeCompletePowerDown
-
-
-### -field WdfDevStatePwrPolWaitingUnarmed
-
-
-### -field WdfDevStatePwrPolWaitingUnarmedQueryIdle
-
-
-### -field WdfDevStatePwrPolS0NoWakePowerUp
-
-
-### -field WdfDevStatePwrPolS0NoWakeCompletePowerUp
-
-
-### -field WdfDevStatePwrPolSystemSleepFromDeviceWaitingUnarmed
-
-
-### -field WdfDevStatePwrPolSystemSleepNeedWake
-
-
-### -field WdfDevStatePwrPolSystemSleepNeedWakeCompletePowerUp
-
-
-### -field WdfDevStatePwrPolSystemSleepPowerRequestFailed
-
-
-### -field WdfDevStatePwrPolCheckPowerPageable
-
-
-### -field WdfDevStatePwrPolSleepingWakeWakeArrived
-
-
-### -field WdfDevStatePwrPolSleepingWakeRevertArmWake
-
-
-### -field WdfDevStatePwrPolSystemAsleepWakeArmed
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabled
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceled
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeDisarm
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggered
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWokeDisarm
-
-
-### -field WdfDevStatePwrPolSleepingWakeWakeArrivedNP
-
-
-### -field WdfDevStatePwrPolSleepingWakeRevertArmWakeNP
-
-
-### -field WdfDevStatePwrPolSleepingWakePowerDownFailed
-
-
-### -field WdfDevStatePwrPolSleepingWakePowerDownFailedWakeCanceled
-
-
-### -field WdfDevStatePwrPolSystemAsleepWakeArmedNP
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabledNP
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceledNP
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeDisarmNP
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredNP
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0NP
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWokeDisarmNP
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeCompletePowerUp
-
-
-### -field WdfDevStatePwrPolSleeping
-
-
-### -field WdfDevStatePwrPolSleepingNoWakePowerDown
-
-
-### -field WdfDevStatePwrPolSleepingNoWakeCompletePowerDown
-
-
-### -field WdfDevStatePwrPolSleepingNoWakeDxRequestFailed
-
-
-### -field WdfDevStatePwrPolSleepingWakePowerDown
-
-
-### -field WdfDevStatePwrPolSleepingSendWake
-
-
-### -field WdfDevStatePwrPolSystemAsleepNoWake
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeDisabled
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceToD0
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceToD0CompletePowerUp
-
-
-### -field WdfDevStatePwrPolSystemWakeQueryIdle
-
-
-### -field WdfDevStatePwrPolStartedWakeCapable
-
-
-### -field WdfDevStatePwrPolTimerExpiredDecideUsbSS
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDown
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableSendWake
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableUsbSS
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeArrived
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableCancelWake
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeCanceled
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableCleanup
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableDxAllocFailed
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCompletedPowerDown
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCompletedPowerUp
-
-
-### -field WdfDevStatePwrPolWaitingArmedUsbSS
-
-
-### -field WdfDevStatePwrPolWaitingArmed
-
-
-### -field WdfDevStatePwrPolWaitingArmedQueryIdle
-
-
-### -field WdfDevStatePwrPolIoPresentArmed
-
-
-### -field WdfDevStatePwrPolIoPresentArmedWakeCanceled
-
-
-### -field WdfDevStatePwrPolS0WakeDisarm
-
-
-### -field WdfDevStatePwrPolS0WakeCompletePowerUp
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeSucceeded
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCompletedDisarm
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeSucceeded
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeFailed
-
-
-### -field WdfDevStatePwrPolWakeFailedUsbSS
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedCancelWake
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeCanceled
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedUsbSS
-
-
-### -field WdfDevStatePwrPolCancelingWakeForSystemSleep
-
-
-### -field WdfDevStatePwrPolCancelingWakeForSystemSleepWakeCanceled
-
-
-### -field WdfDevStatePwrPolDisarmingWakeForSystemSleepCompletePowerUp
-
-
-### -field WdfDevStatePwrPolPowerUpForSystemSleepFailed
-
-
-### -field WdfDevStatePwrPolWokeFromS0UsbSS
-
-
-### -field WdfDevStatePwrPolWokeFromS0
-
-
-### -field WdfDevStatePwrPolWokeFromS0NotifyDriver
-
-
-### -field WdfDevStatePwrPolStoppingResetDevice
-
-
-### -field WdfDevStatePwrPolStoppingResetDeviceCompletePowerUp
-
-
-### -field WdfDevStatePwrPolStoppingResetDeviceFailed
-
-
-### -field WdfDevStatePwrPolStoppingD0
-
-
-### -field WdfDevStatePwrPolStoppingD0Failed
-
-
-### -field WdfDevStatePwrPolStoppingDisarmWake
-
-
-### -field WdfDevStatePwrPolStoppingDisarmWakeCancelWake
-
-
-### -field WdfDevStatePwrPolStoppingDisarmWakeWakeCanceled
-
-
-### -field WdfDevStatePwrPolStopping
-
-
-### -field WdfDevStatePwrPolStoppingFailed
-
-
-### -field WdfDevStatePwrPolStoppingSendStatus
-
-
-### -field WdfDevStatePwrPolStoppingCancelTimer
-
-
-### -field WdfDevStatePwrPolStoppingWaitForIdleTimeout
-
-
-### -field WdfDevStatePwrPolStoppingCancelUsbSS
-
-
-### -field WdfDevStatePwrPolStoppingWaitForUsbSSCompletion
-
-
-### -field WdfDevStatePwrPolStoppingCancelWake
-
-
-### -field WdfDevStatePwrPolStopped
-
-
-### -field WdfDevStatePwrPolCancelUsbSS
-
-
-### -field WdfDevStatePwrPolStarted
-
-
-### -field WdfDevStatePwrPolStartedCancelTimer
-
-
-### -field WdfDevStatePwrPolStartedWaitForIdleTimeout
-
-
-### -field WdfDevStatePwrPolStartedWakeCapableCancelTimerForSleep
-
-
-### -field WdfDevStatePwrPolStartedWakeCapableWaitForIdleTimeout
-
-
-### -field WdfDevStatePwrPolStartedWakeCapableSleepingUsbSS
-
-
-### -field WdfDevStatePwrPolStartedIdleCapableCancelTimerForSleep
-
-
-### -field WdfDevStatePwrPolStartedIdleCapableWaitForIdleTimeout
-
-
-### -field WdfDevStatePwrPolDeviceD0PowerRequestFailed
-
-
-### -field WdfDevStatePwrPolDevicePowerRequestFailed
-
-
-### -field WdfDevStatePwrPolGotoDx
-
-
-### -field WdfDevStatePwrPolGotoDxInDx
-
-
-### -field WdfDevStatePwrPolDx
-
-
-### -field WdfDevStatePwrPolGotoD0
-
-
-### -field WdfDevStatePwrPolGotoD0InD0
-
-
-### -field WdfDevStatePwrPolFinal
-
-
-### -field WdfDevStatePwrPolSleepingPowerDownNotProcessed
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownNotProcessed
-
-
-### -field WdfDevStatePwrPolTimerExpiredNoWakePowerDownNotProcessed
-
-
-### -field WdfDevStatePwrPolTimerExpiredNoWakePoweredDownDisableIdleTimer
-
-
-### -field WdfDevStatePwrPolStoppingWaitingForImplicitPowerDown
-
-
-### -field WdfDevStatePwrPolStoppingPoweringUp
-
-
-### -field WdfDevStatePwrPolStoppingPoweringDown
-
-
-### -field WdfDevStatePwrPolPowerUpForSystemSleepNotSeen
-
-
-### -field WdfDevStatePwrPolWaitingArmedStoppingCancelUsbSS
-
-
-### -field WdfDevStatePwrPolWaitingArmedWakeFailedCancelUsbSS
-
-
-### -field WdfDevStatePwrPolWaitingArmedIoPresentCancelUsbSS
-
-
-### -field WdfDevStatePwrPolWaitingArmedWakeSucceededCancelUsbSS
-
-
-### -field WdfDevStatePwrPolCancelingUsbSSForSystemSleep
-
-
-### -field WdfDevStatePwrPolStoppingD0CancelUsbSS
-
-
-### -field WdfDevStatePwrPolStartingPoweredUp
-
-
-### -field WdfDevStatePwrPolIdleCapableDeviceIdle
-
-
-### -field WdfDevStatePwrPolDeviceIdleReturnToActive
-
-
-### -field WdfDevStatePwrPolDeviceIdleSleeping
-
-
-### -field WdfDevStatePwrPolDeviceIdleStopping
-
-
-### -field WdfDevStatePwrPolTimerExpiredNoWakeUndoPowerDown
-
-
-### -field WdfDevStatePwrPolWakeCapableDeviceIdle
-
-
-### -field WdfDevStatePwrPolWakeCapableUsbSSCompleted
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableUndoPowerDown
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCompletedHardwareStarted
-
-
-### -field WdfDevStatePwrPolStoppedRemoving
-
-
-### -field WdfDevStatePwrPolRemoved
-
-
-### -field WdfDevStatePwrPolRestarting
-
-
-### -field WdfDevStatePwrPolRestartingFailed
-
-
-### -field WdfDevStatePwrPolStartingPoweredUpFailed
-
-
-### -field WdfDevStatePwrPolTimerExpiredNoWakeReturnToActive
-
-
-### -field WdfDevStatePwrPolWaitingArmedWakeInterruptFired
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFired
-
-
-### -field WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFiredNP
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapableWakeInterruptArrived
-
-
-### -field WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeInterruptArrived
-
-
-### -field WdfDevStatePwrPolWaitingArmedWakeInterruptFiredDuringPowerDown
-
-
-### -field WdfDevStatePwrPolNull
-
-
-## -remarks
 The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_notification_data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a> method.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdevice.h (include Wdf.h) |

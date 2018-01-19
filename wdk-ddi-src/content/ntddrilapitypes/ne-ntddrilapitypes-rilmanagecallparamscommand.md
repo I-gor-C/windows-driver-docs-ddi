@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILMANAGECALLPARAMSCOMMAND
-title: RILMANAGECALLPARAMSCOMMAND
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmanagecallparamscommand.htm
-old-project: netvista
-ms.assetid: d0344812-811e-47f6-a03b-bb753cce912a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMANAGECALLPARAMSCOMMAND, RILMANAGECALLPARAMSCOMMAND
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMANAGECALLPARAMSCOMMAND
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILMANAGECALLPARAMSCOMMAND
+UID : NE:ntddrilapitypes.RILMANAGECALLPARAMSCOMMAND
+title : RILMANAGECALLPARAMSCOMMAND
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmanagecallparamscommand.htm
+old-project : netvista
+ms.assetid : d0344812-811e-47f6-a03b-bb753cce912a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMANAGECALLPARAMSCOMMAND, RILMANAGECALLPARAMSCOMMAND
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMANAGECALLPARAMSCOMMAND
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILMANAGECALLPARAMSCOMMAND
 ---
 
-# RILMANAGECALLPARAMSCOMMAND enumeration
-
-
-
-## -description
+# RILMANAGECALLPARAMSCOMMAND Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILMANAGECALLPARAMSCOMMAND { 
   RIL_CALLCMD_RELEASECALL,
@@ -66,55 +59,96 @@ typedef enum _RILMANAGECALLPARAMSCOMMAND {
 } RILMANAGECALLPARAMSCOMMAND;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_CALLCMD_RELEASECALL
+<tr>
+<td>RIL_CALLCMD_ACCEPTINCOMINGCALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_ADDHELDTOCONF</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_ANSWERMEDIAOFFER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_ASSUREDCALLTRANSFER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_BLINDCALLTRANSFER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_CONSULTATIVECALLTRANSFER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_HOLDACTIVE_ACCEPTHELD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_HOLDALLBUTONE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_OFFERMEDIA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_RELEASEALLCALLS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_RELEASECALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_RELEASEHELDCONFCALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_RELEASEPROCEEDING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_RTT</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_CALLCMD_HOLDACTIVE_ACCEPTHELD
-
-
-### -field RIL_CALLCMD_HOLDALLBUTONE
-
-
-### -field RIL_CALLCMD_ADDHELDTOCONF
-
-
-### -field RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT
-
-
-### -field RIL_CALLCMD_RELEASEPROCEEDING
-
-
-### -field RIL_CALLCMD_RELEASEALLCALLS
-
-
-### -field RIL_CALLCMD_RELEASEHELDCONFCALL
-
-
-### -field RIL_CALLCMD_ACCEPTINCOMINGCALL
-
-
-### -field RIL_CALLCMD_OFFERMEDIA
-
-
-### -field RIL_CALLCMD_ANSWERMEDIAOFFER
-
-
-### -field RIL_CALLCMD_BLINDCALLTRANSFER
-
-
-### -field RIL_CALLCMD_ASSUREDCALLTRANSFER
-
-
-### -field RIL_CALLCMD_CONSULTATIVECALLTRANSFER
-
-
-### -field RIL_CALLCMD_RTT
-
-
-### -field RIL_CALLCMD_MAX
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

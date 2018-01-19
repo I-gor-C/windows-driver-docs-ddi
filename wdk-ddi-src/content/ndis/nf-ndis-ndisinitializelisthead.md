@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisInitializeListHead
-title: NdisInitializeListHead macro
-author: windows-driver-content
-description: The NdisInitializeListHead function initializes a doubly linked, driver-maintained queue.
-old-location: netvista\ndisinitializelisthead.htm
-old-project: netvista
-ms.assetid: da3f5f28-2794-491b-a359-be8508b050bf
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisInitializeListHead
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeListHead (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeListHead (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisInitializeListHead
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level (see Remarks section)
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisInitializeListHead
+title : NdisInitializeListHead macro
+author : windows-driver-content
+description : The NdisInitializeListHead function initializes a doubly linked, driver-maintained queue.
+old-location : netvista\ndisinitializelisthead.htm
+old-project : netvista
+ms.assetid : da3f5f28-2794-491b-a359-be8508b050bf
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisInitializeListHead
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeListHead (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeListHead (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisInitializeListHead
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level (see Remarks section)
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
-# NdisInitializeListHead macro
 
-
-
-## -description
+# NdisInitializeListHead function
 The 
   <b>NdisInitializeListHead</b> function initializes a doubly linked, driver-maintained queue.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisInitializeListHead(
@@ -52,20 +47,23 @@ VOID NdisInitializeListHead(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param ListHead [in]
-
-A pointer to driver-allocated nonpaged storage for the head of the interlocked queue or
-     list.
+`_ListHead`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 <b>NdisInitializeListHead</b> can be called from a 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function or
     from a protocol driver's 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine
+    <a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry</a> routine
     if the driver queues requests internally. However, miniport drivers seldom set up internal queues because
     the NDIS library serializes requests and packets sent to miniport drivers.
 
@@ -83,11 +81,23 @@ For an interlocked queue, the driver also must provide nonpaged storage for a sp
 
 Callers of <b>NdisInitializeListHead</b> can be running at any IRQL. If <b>NdisInitializeListHead</b> is called at IRQL &gt;= DISPATCH_LEVEL the storage for <i>ListHead</i> must be resident.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | Any level (see Remarks section) |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
-<a href="netvista.driverentry_of_ndis_protocol_drivers">DriverEntry of NDIS Protocol
+<a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry of NDIS Protocol
    Drivers</a>
 </dt>
 <dt>
@@ -114,4 +124,3 @@ Callers of <b>NdisInitializeListHead</b> can be running at any IRQL. If <b>NdisI
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitializeListHead macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisAllocateNetBufferPool
-title: NdisAllocateNetBufferPool function
-author: windows-driver-content
-description: Call the NdisAllocateNetBufferPool function to allocate a pool of NET_BUFFER structures.
-old-location: netvista\ndisallocatenetbufferpool.htm
-old-project: netvista
-ms.assetid: bc27758a-a793-48a1-a6ab-bd193aa9c61a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAllocateNetBufferPool
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAllocateNetBufferPool
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_NetBuffer_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAllocateNetBufferPool
+title : NdisAllocateNetBufferPool function
+author : windows-driver-content
+description : Call the NdisAllocateNetBufferPool function to allocate a pool of NET_BUFFER structures.
+old-location : netvista\ndisallocatenetbufferpool.htm
+old-project : netvista
+ms.assetid : bc27758a-a793-48a1-a6ab-bd193aa9c61a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAllocateNetBufferPool
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAllocateNetBufferPool
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_NetBuffer_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAllocateNetBufferPool function
-
-
-
-## -description
 Call the
   <b>NdisAllocateNetBufferPool</b> function to allocate a pool of 
   <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_HANDLE NdisAllocateNetBufferPool(
@@ -54,15 +49,13 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisHandle [in, optional]
+`NdisHandle`
 
 An NDIS handle that was obtained during caller initialization.
 
-
-### -param Parameters [in]
+`Parameters`
 
 A pointer to a NET_BUFFER_POOL_PARAMETERS structure that defines the parameters for the pool. The
      structure is defined as follows:
@@ -85,47 +78,14 @@ A pointer to a NET_BUFFER_POOL_PARAMETERS structure that defines the parameters 
 This structure includes the following members:
 
 
+## Return Value
 
-
-### -param Header
-
-The 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
-       NET_BUFFER_POOL_PARAMETERS structure. Set the 
-       <b>Type</b> member of the structure that 
-       <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
-       <b>Revision</b> member to NET_BUFFER_POOL_PARAMETERS_REVISION_1, and the 
-       <b>Size</b> member to NDIS_SIZEOF_NET_BUFFER_POOL_PARAMETERS_REVISION_1.
-
-
-### -param PoolTag
-
-A kernel pool tag that the caller uses when it allocates 
-       <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures from this pool. The tag
-       is a string, delimited by single quotation marks, with up to four characters, usually specified in
-       reverse order. The kernel pool tag helps NDIS to identify the owner of the NET_BUFFER structures that
-       are allocated from this pool.
-
-
-### -param DataSize
-
-The default data size for data buffers associated with this pool. The caller must set this value
-       if it calls the 
-       <a href="..\ndis\nf-ndis-ndisallocatenetbuffermdlanddata.md">
-       NdisAllocateNetBufferMdlAndData</a> function. NDIS uses this value to set the size of the data
-       buffer that it allocates for the NET_BUFFER structure. If the caller does not use this feature, this
-       value should be set to zero.
-
-</dd>
-</dl>
-
-## -returns
 <b>NdisAllocateNetBufferPool</b> returns a handle to the NET_BUFFER structure pool that NDIS allocates.
      If the allocation was unsuccessful, this handle is <b>NULL</b>. This handle is a required parameter in
      subsequent calls to NDIS functions that allocate and free NET_BUFFER structures from this pool.
 
+## Remarks
 
-## -remarks
 Call the following functions to allocate 
     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures from the NET_BUFFER
     structure pool.
@@ -155,8 +115,20 @@ Call the
     free NET_BUFFER structure pools that are created with 
     <b>NdisAllocateNetBufferPool</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_NetBuffer_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
@@ -183,4 +155,3 @@ Call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferPool function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

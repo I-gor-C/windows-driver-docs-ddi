@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltIs32bitProcess
-title: FltIs32bitProcess function
-author: windows-driver-content
-description: The FltIs32bitProcess routine checks whether the originator of the current I/O operation is a 32-bit user-mode application.
-old-location: ifsk\fltis32bitprocess.htm
-old-project: ifsk
-ms.assetid: 0ba4d101-5eba-4258-9526-9e9dc3fd142a
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltIs32bitProcess
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: The FltIs32bitProcess routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltIs32bitProcess
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltIs32bitProcess
+title : FltIs32bitProcess function
+author : windows-driver-content
+description : The FltIs32bitProcess routine checks whether the originator of the current I/O operation is a 32-bit user-mode application.
+old-location : ifsk\fltis32bitprocess.htm
+old-project : ifsk
+ms.assetid : 0ba4d101-5eba-4258-9526-9e9dc3fd142a
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltIs32bitProcess
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : The FltIs32bitProcess routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltIs32bitProcess
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltIs32bitProcess function
-
-
-
-## -description
 The <b>FltIs32bitProcess</b> routine checks whether the originator of the current I/O operation is a 32-bit user-mode application.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN FltIs32bitProcess(
@@ -51,19 +46,19 @@ BOOLEAN FltIs32bitProcess(
 );
 ````
 
+## Parameters
 
-## -parameters
+`CallbackData`
 
-### -param CallbackData [in, optional]
-
-Pointer to the callback data structure for the current I/O operation (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>). This parameter is optional and can be <b>NULL</b>. 
+Pointer to the callback data structure for the current I/O operation (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>). This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
+## Return Value
+
 <b>FltIs32bitProcess</b> returns <b>TRUE</b> if the originator of the current I/O operation is a 32-bit user-mode process, <b>FALSE</b> otherwise.
 
+## Remarks
 
-## -remarks
 Minifilter drivers call <b>FltIs32bitProcess</b> to determine whether an I/O request is likely to contain data elements that need to be converted, or "thunked," before they can be used in a 64-bit driver. For more information about thunking and other 64-bit driver issues, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559923">Programming Issues for 64-Bit Drivers</a>. 
 
 On a 32-bit system, <b>FltIs32bitProcess</b> always returns <b>TRUE</b>. 
@@ -84,8 +79,20 @@ To determine whether a callback data structure represents a fast I/O operation, 
 
 To determine whether a callback data structure represents a file system filter (FSFilter) callback operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544648">FLT_IS_FS_FILTER_OPERATION</a> macro.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
@@ -105,4 +112,3 @@ To determine whether a callback data structure represents a file system filter (
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltIs32bitProcess routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,79 +1,73 @@
 ---
-UID: NC:video.PVIDEO_HW_QUERY_INTERFACE
-title: PVIDEO_HW_QUERY_INTERFACE
-author: windows-driver-content
-description: HwVidQueryInterface returns a miniport driver-implemented functional interface that a child device can call.
-old-location: display\hwvidqueryinterface.htm
-old-project: display
-ms.assetid: f16a7fa3-3471-4ccb-b1b4-982d33f930d3
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwVidQueryInterface
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-req.product: Windows 10 or later.
+UID : NC:video.PVIDEO_HW_QUERY_INTERFACE
+title : PVIDEO_HW_QUERY_INTERFACE
+author : windows-driver-content
+description : HwVidQueryInterface returns a miniport driver-implemented functional interface that a child device can call.
+old-location : display\hwvidqueryinterface.htm
+old-project : display
+ms.assetid : f16a7fa3-3471-4ccb-b1b4-982d33f930d3
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwVidQueryInterface
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VHF_CONFIG, *PVHF_CONFIG
+req.product : Windows 10 or later.
 ---
 
-# PVIDEO_HW_QUERY_INTERFACE callback
 
-
-
-## -description
+# PVIDEO_HW_QUERY_INTERFACE callback function
 <i>HwVidQueryInterface</i> returns a miniport driver-implemented functional interface that a child device can call.
 
+## Syntax
 
+```
+PVIDEO_HW_QUERY_INTERFACE PvideoHwQueryInterface;
 
-## -prototype
-
-````
-PVIDEO_HW_QUERY_INTERFACE HwVidQueryInterface;
-
-VP_STATUS HwVidQueryInterface(
-   PVOID            HwDeviceExtension,
-   PQUERY_INTERFACE QueryInterface
+VP_STATUS PvideoHwQueryInterface(
+  PVOID HwDeviceExtension,
+  PQUERY_INTERFACE QueryInterface
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension 
+`HwDeviceExtension`
 
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
-
-### -param QueryInterface 
+`QueryInterface`
 
 Pointer to a <a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a> structure in which the miniport driver should return information about the interface it supports.
 
 
-## -returns
+## Return Value
+
 <i>HwVidQueryInterface</i> should return NO_ERROR upon success; otherwise it should return the appropriate error code. For example, a miniport driver should return ERROR_OUTOFMEMORY if it cannot allocate memory to complete the operation.
 
+## Remarks
 
-## -remarks
 <i>HwVidQueryInterface</i> exposes a communication mechanism between the video miniport driver and the driver of a child device. A miniport driver that exposes such a mechanism should implement this function.
 
 The video port calls <i>HwVidQueryInterface</i> when it receives an IRP_MN_QUERY_INTERFACE request. If the miniport driver fails the call, the video port driver passes the request to the parent of the miniport driver's device.
@@ -98,8 +92,20 @@ A child device is enumerated by <a href="..\video\nc-video-pvideo_hw_get_child_d
 
 <i>HwVidQueryInterface</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a>
@@ -119,4 +125,3 @@ A child device is enumerated by <a href="..\video\nc-video-pvideo_hw_get_child_d
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_QUERY_INTERFACE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

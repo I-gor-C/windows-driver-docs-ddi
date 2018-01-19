@@ -1,104 +1,88 @@
 ---
-UID: NC:d3d10umddi.PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL
-title: PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL
-author: windows-driver-content
-description: Queries an authenticated channel for capability and state information. Implemented by a Windows Display Driver Model (WDDM) 1.2 or later user-mode display driver.
-old-location: display\queryauthenticatedchannel1.htm
-old-project: display
-ms.assetid: bb152e3d-497f-4798-86cc-6f300e24a05c
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3d10umddi.h
-req.include-header: D3d10umddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: QueryAuthenticatedChannel
-req.alt-loc: D3d10umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
+UID : NC:d3d10umddi.PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL
+title : PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL
+author : windows-driver-content
+description : Queries an authenticated channel for capability and state information. Implemented by a Windows Display Driver Model (WDDM) 1.2 or later user-mode display driver.
+old-location : display\queryauthenticatedchannel1.htm
+old-project : display
+ms.assetid : bb152e3d-497f-4798-86cc-6f300e24a05c
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3d10umddi.h
+req.include-header : D3d10umddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : Windows 8
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : QueryAuthenticatedChannel
+req.alt-loc : D3d10umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
-# PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL callback
 
-
-
-## -description
+# PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL callback function
 Queries an authenticated channel for capability and state information. Implemented by a Windows Display Driver Model (WDDM) 1.2 or later user-mode display driver.
 
+## Syntax
 
+```
+PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL Pfnd3d111DdiQueryauthenticatedchannel;
 
-## -prototype
-
-````
-PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL QueryAuthenticatedChannel;
-
-HRESULT APIENTRY* QueryAuthenticatedChannel(
-  _In_        D3D10DDI_HDEVICE        hDevice,
-  _In_        D3D11_1DDI_HAUTHCHANNEL hCAuthChannel,
-  _In_        UINT                    InputDataSize,
-  _Out_ const VOID                    *pInputData,
-  _In_        UINT                    OutputDataSize,
-  _Out_       VOID                    *pOutputData
+HRESULT Pfnd3d111DdiQueryauthenticatedchannel(
+  D3D10DDI_HDEVICE hDevice,
+  D3D11_1DDI_HAUTHCHANNEL hCAuthChannel,
+  UINT InputDataSize,
+  CONST VOID *pInputData,
+  UINT OutputDataSize,
+  VOID *pOutputData
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param hDevice [in]
+`hDevice`
 
 A handle to the display device (graphics context).
 
-
-
-
-### -param hCAuthChannel [in]
+`hCAuthChannel`
 
 A handle to an authenticated channel object that was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.
 
-
-### -param InputDataSize [in]
+`InputDataSize`
 
 The size, in bytes, of the data in the <i>pInputData</i> array.
 
+`*pInputData`
 
 
 
-### -param pInputData [out]
-
-A pointer to a buffer that describes the information to query. The data in this buffer is formatted as a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure.
-
-
-### -param OutputDataSize [in]
+`OutputDataSize`
 
 The size, in bytes, of the data in the <i>pOutputData</i> array.
 
+`*pOutputData`
 
 
 
-### -param pOutputData [out]
 
-A pointer to a buffer that contains the queried information. For more information, see the Remarks section.
+## Return Value
 
-
-## -returns
 Returns one of the following values:
 <dl>
 <dt><b>S_OK</b></dt>
@@ -114,10 +98,8 @@ Returns one of the following values:
 </dl>
         Memory was not available to complete the operation.
 
- 
+## Remarks
 
-
-## -remarks
 The <i>pInputData</i> parameter references a buffer that contains a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure. This structure contains the driver's handle to the authenticated channel, a sequence number, and a GUID that indicates the type of query to perform.  The driver must return  <b>E_INVALIDARG</b> if the sequence number was not previously initialized by using the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a> function.  The driver must  also return  <b>E_INVALIDARG</b> if the sequence number is not greater than the sequence number of the previous query call.
 
 
@@ -202,8 +184,20 @@ The sequence number has not yet been initialized by a call to the <a href="..\d3
 
 The <i>OutputDataSize</i> parameter is less than size of the structure specified by the  <b>D3D11_1DDI_AUTHENTICATED_CONFIGURE_INPUT.QueryType</b> member.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a>
@@ -223,4 +217,3 @@ The <i>OutputDataSize</i> parameter is less than size of the structure specified
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D11_1DDI_QUERYAUTHENTICATEDCHANNEL callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

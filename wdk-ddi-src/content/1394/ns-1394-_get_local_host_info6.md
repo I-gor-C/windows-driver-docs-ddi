@@ -1,50 +1,43 @@
 ---
-UID: NS:1394._GET_LOCAL_HOST_INFO6
-title: _GET_LOCAL_HOST_INFO6
-author: windows-driver-content
-description: The GET_LOCAL_HOST_INFO6 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_HOST_CSR_CONTENTS.
-old-location: ieee\get_local_host_info6.htm
-old-project: IEEE
-ms.assetid: d5da15b9-a020-42bf-8876-cec9edf3119f
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: 1394.h
-req.include-header: 1394.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: GET_LOCAL_HOST_INFO6
-req.alt-loc: 1394.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6
+UID : NS:1394._GET_LOCAL_HOST_INFO6
+title : _GET_LOCAL_HOST_INFO6
+author : windows-driver-content
+description : The GET_LOCAL_HOST_INFO6 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_HOST_CSR_CONTENTS.
+old-location : ieee\get_local_host_info6.htm
+old-project : IEEE
+ms.assetid : d5da15b9-a020-42bf-8876-cec9edf3119f
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _GET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : 1394.h
+req.include-header : 1394.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : GET_LOCAL_HOST_INFO6
+req.alt-loc : 1394.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6
 ---
 
 # _GET_LOCAL_HOST_INFO6 structure
-
-
-
-## -description
 The GET_LOCAL_HOST_INFO6 structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_HOST_CSR_CONTENTS.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _GET_LOCAL_HOST_INFO6 {
   ADDRESS_OFFSET CsrBaseAddress;
@@ -53,12 +46,12 @@ typedef struct _GET_LOCAL_HOST_INFO6 {
 } GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CsrBaseAddress`
 
-### -field CsrBaseAddress
-
-Specifies the base address to examine in the CSR. <b>CsrBaseAddress.Off_High</b> must be INITIAL_REGISTER_SPACE_HI. The possible values of <b>CsrBaseAddress.Off_Low</b> are as follows.
+            Specifies the base address to examine in the CSR. <b>CsrBaseAddress.Off_High</b> must be INITIAL_REGISTER_SPACE_HI. The possible values of <b>CsrBaseAddress.Off_Low</b> are as follows.
 
 <table>
 <tr>
@@ -88,25 +81,29 @@ The current topology map. The bus driver converts this from big-endian to machin
 </td>
 </tr>
 </table>
- 
+        
+            `CsrDataBuffer`
 
+            Pointer to the buffer where the bus driver returns the requested CSR data.
+        
+            `CsrDataLength`
 
-### -field CsrDataLength
+            Specifies the length in bytes of the buffer that <b>CsrDataBuffer</b> points to.
 
-Specifies the length in bytes of the buffer that <b>CsrDataBuffer</b> points to.
+    ## Remarks
+        When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>CsrDataLength</b> is smaller than the size of the requested data, STATUS_INVALID_BUFFER_SIZE is returned. In this case, the correct buffer size is filled in the <b>CsrDataLength</b> member.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | 1394.h (include 1394.h) |
 
-### -field CsrDataBuffer
+    ## See Also
 
-Pointer to the buffer where the bus driver returns the requested CSR data.
-
-
-## -remarks
-When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>CsrDataLength</b> is smaller than the size of the requested data, STATUS_INVALID_BUFFER_SIZE is returned. In this case, the correct buffer size is filled in the <b>CsrDataLength</b> member.
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
 </dt>
@@ -119,4 +116,3 @@ When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>CsrDataLength
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20GET_LOCAL_HOST_INFO6 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

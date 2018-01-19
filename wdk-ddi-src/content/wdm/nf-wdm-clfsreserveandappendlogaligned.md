@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.ClfsReserveAndAppendLogAligned
-title: ClfsReserveAndAppendLogAligned function
-author: windows-driver-content
-description: The ClfsReserveAndAppendLogAligned routine reserves space in a marshalling area or appends a record to a marshalling area or does both atomically. The record's data is aligned on specified boundaries.
-old-location: kernel\clfsreserveandappendlogaligned.htm
-old-project: kernel
-ms.assetid: 4502c9bd-d03c-4f29-b46e-ba4532b838bb
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ClfsReserveAndAppendLogAligned
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ClfsReserveAndAppendLogAligned
-req.alt-loc: Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Clfs.lib
-req.dll: Clfs.sys
-req.irql: <= APC_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.ClfsReserveAndAppendLogAligned
+title : ClfsReserveAndAppendLogAligned function
+author : windows-driver-content
+description : The ClfsReserveAndAppendLogAligned routine reserves space in a marshalling area or appends a record to a marshalling area or does both atomically. The record's data is aligned on specified boundaries.
+old-location : kernel\clfsreserveandappendlogaligned.htm
+old-project : kernel
+ms.assetid : 4502c9bd-d03c-4f29-b46e-ba4532b838bb
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ClfsReserveAndAppendLogAligned
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ClfsReserveAndAppendLogAligned
+req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Clfs.lib
+req.dll : Clfs.sys
+req.irql : <= APC_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # ClfsReserveAndAppendLogAligned function
-
-
-
-## -description
 The <b>ClfsReserveAndAppendLogAligned</b> routine reserves space in a marshalling area or appends a record to a marshalling area or does both atomically. The record's data is aligned on specified boundaries.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ClfsReserveAndAppendLogAligned(
@@ -61,50 +56,41 @@ NTSTATUS ClfsReserveAndAppendLogAligned(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param pvMarshalContext [in]
+`pvMarshalContext`
 
 A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.
 
-
-### -param rgWriteEntries [in, optional]
+`rgWriteEntries`
 
 A pointer to an array of <a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a> structures, each of which holds a pointer to a buffer of data that will become part of the record that is appended to the log. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.
 
-
-### -param cWriteEntries [in]
+`cWriteEntries`
 
 The number of elements in the array pointed to by <i>rgWriteEntries</i>. This parameter must be zero if <i>rgWriteEntries</i> is <b>NULL</b>.
 
-
-### -param cbEntryAlignment [in]
+`cbEntryAlignment`
 
 The byte alignment of the data entries pointed to by <i>rgWriteEntries</i> as they are marshaled into a single record. A value of one specifies simple concatenation (see <a href="..\wdm\nf-wdm-clfsreserveandappendlog.md">ClfsReserveAndAppendLog</a>). A value larger than one can result in zeros being placed between entries in the record. The value of this parameter must be greater than zero.
 
-
-### -param plsnUndoNext [in, optional]
+`plsnUndoNext`
 
 A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that supplies the undo-next LSN of the record to be appended.
 
-
-### -param plsnPrevious [in, optional]
+`plsnPrevious`
 
 A pointer to a CLFS_LSN structure that supplies the previous LSN of the record to be appended.
 
-
-### -param cReserveRecords [in]
+`cReserveRecords`
 
 The number of elements in the array pointed to by <i>rgcbReservation</i>. This parameter must be zero if <i>rgcbReservation</i> is <b>NULL</b> or the CLFS_FLAG_USE_RESERVATION flag of <i>fFlags</i> is set.
 
-
-### -param rgcbReservation [in, out]
+`rgcbReservation`
 
 A pointer to an array of LONGLONG-typed variables. The caller sets each element of the array to the size, in bytes, of a record that must have space reserve for it. On return, each array element receives that actual size of the space reserved for the record. This includes the space required for headers and alignment. If the reservation value is negative, a reserved record that most nearly matches the absolute value of the provided negative value will be freed. This parameter can be <b>NULL</b> if <i>cReserveRecords</i> is zero and must be <b>NULL</b> if the CLFS_FLAG_USE_RESERVATION flag of <i>fFlags</i> is set.
 
-
-### -param fFlags [in]
+`fFlags`
 
 This parameter can be any combination of the following flags.
 
@@ -144,19 +130,18 @@ The current record is placed in reserved space in an I/O block. The number of re
 </td>
 </tr>
 </table>
- 
 
-
-### -param plsn [out, optional]
+`plsn`
 
 A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that receives the LSN of the appended record. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.
 
 
-## -returns
+## Return Value
+
 <b>ClfsReserveAndAppendLogAligned</b> returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in Ntstatus.h.
 
+## Remarks
 
-## -remarks
 The <b>ClfsReserveAndAppendLogAligned</b> routine changes its fundamental behavior based on the presence of optional parameters and the state of the CLFS_USE_RESERVATION flag. The following table summarizes common scenarios.
 
 <i>cWriteEntries</i> = 0.
@@ -193,10 +178,22 @@ CLFS_USE_RESERVATION flag is cleared.
 
 Appends a record to the marshalling area by reserving new space. Also reserves space for a set of records that are not appended at this time. The <i>rgcbReservation</i> parameter gives the size of each record that needs space reserved. Increases the number of reserved record spaces by the value of <i>cReserveRecords</i>.
 
-For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. 
+For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
@@ -216,4 +213,3 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReserveAndAppendLogAligned routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

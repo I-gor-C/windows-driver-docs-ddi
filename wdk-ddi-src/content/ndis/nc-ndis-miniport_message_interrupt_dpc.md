@@ -1,70 +1,65 @@
 ---
-UID: NC:ndis.MINIPORT_MESSAGE_INTERRUPT_DPC
-title: MINIPORT_MESSAGE_INTERRUPT_DPC function
-author: windows-driver-content
-description: A miniport driver must provide a MiniportMessageInterruptDPC handler if the driver calls the NdisMRegisterInterruptEx function to register an interrupt.
-old-location: netvista\miniportmessageinterruptdpc.htm
-old-project: netvista
-ms.assetid: c1eca20b-eda1-442c-8644-798fa864d5d7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: MINIPORT_MESSAGE_INTERRUPT_DPC
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportMessageInterruptDPC
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.MINIPORT_MESSAGE_INTERRUPT_DPC
+title : MINIPORT_MESSAGE_INTERRUPT_DPC
+author : windows-driver-content
+description : A miniport driver must provide a MiniportMessageInterruptDPC handler if the driver calls the NdisMRegisterInterruptEx function to register an interrupt.
+old-location : netvista\miniportmessageinterruptdpc.htm
+old-project : netvista
+ms.assetid : c1eca20b-eda1-442c-8644-798fa864d5d7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportMessageInterruptDPC
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # MINIPORT_MESSAGE_INTERRUPT_DPC function
-
-
-
-## -description
 A miniport driver must provide a
    <i>MiniportMessageInterruptDPC</i> handler if the driver calls the 
    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
    to register an interrupt.
 
+## Syntax
 
+```
+MINIPORT_MESSAGE_INTERRUPT_DPC MiniportMessageInterruptDpc;
 
-## -syntax
-
-````
-MINIPORT_MESSAGE_INTERRUPT_DPC MiniportMessageInterruptDPC;
-
-VOID MiniportMessageInterruptDPC(
-  _In_ NDIS_HANDLE MiniportInterruptContext,
-  _In_ ULONG       MessageId,
-  _In_ PVOID       MiniportDpcContext,
-  _In_ PVOID       ReceiveThrottleParameters,
-  _In_ PVOID       NdisReserved2
+void MiniportMessageInterruptDpc(
+  NDIS_HANDLE MiniportInterruptContext,
+  ULONG MessageId,
+  PVOID MiniportDpcContext,
+  PVOID ReceiveThrottleParameters,
+  PVOID NdisReserved2 PULONG NdisReserved1,
+  PULONG NdisReserved2
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportInterruptContext [in]
+`MiniportInterruptContext`
 
 A handle to a block of interrupt context information. The miniport driver supplied this handle in
      the 
@@ -72,8 +67,7 @@ A handle to a block of interrupt context information. The miniport driver suppli
      <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
      NdisMRegisterInterruptEx</a> function.
 
-
-### -param MessageId [in]
+`MessageId`
 
 A message-signaled interrupt (MSI) message identifier. 
      <i>MessageId</i> is an index to an 
@@ -85,8 +79,7 @@ A message-signaled interrupt (MSI) message identifier.
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
      <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function.
 
-
-### -param MiniportDpcContext [in]
+`MiniportDpcContext`
 
 A pointer to a context area that the miniport driver supplied when it called the 
      <a href="..\ndis\nf-ndis-ndismqueuedpcex.md">NdisMQueueDpcEx</a> or 
@@ -97,8 +90,7 @@ A pointer to a context area that the miniport driver supplied when it called the
      MiniportMessageInterrupt</a> function, then 
      <i>MiniportDpcContext</i> is <b>NULL</b>.
 
-
-### -param ReceiveThrottleParameters [in]
+`ReceiveThrottleParameters`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_receive_throttle_parameters.md">
@@ -109,18 +101,24 @@ A pointer to an
 <div class="alert"><b>Note</b>  In NDIS 6.1 and earlier, this parameter is named <i>NdisReserved1</i>, its datatype is <b>PULONG</b>, and it is reserved for NDIS.</div>
 <div> </div>
 
-### -param NdisReserved2 [in]
+`NdisReserved1`
+
+
+
+`NdisReserved2`
 
 Reserved for NDIS.
 
 <div class="alert"><b>Note</b>  In NDIS 6.1 and earlier, this parameter's datatype is <b>PULONG</b>.</div>
 <div> </div>
 
-## -returns
+
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Miniport drivers that register a message-signaled interrupt with the 
     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
     must provide a 
@@ -139,7 +137,7 @@ Miniport drivers determine the source of each interrupt and take appropriate act
     new link status to NDIS. If there are outstanding receive packets, the miniport driver indicates the
     packets to NDIS.
 
-A miniport driver that supports <a href="netvista.ndis_receive_side_scaling2">receive side scaling (RSS)</a>, and has the feature enabled, examines its
+A miniport driver that supports <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-receive-side-scaling2">receive side scaling (RSS)</a>, and has the feature enabled, examines its
     receive queues in 
     <i>MiniportMessageInterruptDPC</i>. The NIC could have already queued received packets on separate queues
     based on hash values, if the NIC provides such capabilities. Otherwise, the miniport driver can sort the
@@ -195,10 +193,22 @@ Then, implement your function as follows:
 
 The <b>MINIPORT_MESSAGE_INTERRUPT_DPC</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_MESSAGE_INTERRUPT_DPC</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
@@ -244,7 +254,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_side_scaling2">Receive Side Scaling (RSS)</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-receive-side-scaling2">Receive Side Scaling (RSS)</a>
 </dt>
 </dl>
  
@@ -252,4 +262,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_MESSAGE_INTERRUPT_DPC callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

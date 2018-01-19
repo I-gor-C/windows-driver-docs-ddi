@@ -1,69 +1,62 @@
 ---
-UID: NC:fltkernel.PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
-title: PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
-author: windows-driver-content
-description: A minifilter driver can register a routine of type PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE as the minifilter driver's CompleteLockCallbackDataRoutine callback routine for a FILE_LOCK structure.
-old-location: ifsk\pflt_complete_lock_callback_data_routine.htm
-old-project: ifsk
-ms.assetid: 5b6fe740-22bb-4620-86a2-1e3be1f380f3
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RxpTrackReference
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CompleteLockCallbackDataRoutine
-req.alt-loc: fltkernel.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NC:fltkernel.PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
+title : PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
+author : windows-driver-content
+description : A minifilter driver can register a routine of type PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE as the minifilter driver's CompleteLockCallbackDataRoutine callback routine for a FILE_LOCK structure.
+old-location : ifsk\pflt_complete_lock_callback_data_routine.htm
+old-project : ifsk
+ms.assetid : 5b6fe740-22bb-4620-86a2-1e3be1f380f3
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CompleteLockCallbackDataRoutine
+req.alt-loc : fltkernel.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
-# PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE callback
 
+# PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE callback function
+A minifilter driver can register a routine of type <b>PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</b> as the minifilter driver's <i>CompleteLockCallbackDataRoutine</i> callback routine for a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a> structure.
 
+## Syntax
 
-## -description
-A minifilter driver can register a routine of type <b>PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</b> as the minifilter driver's <i>CompleteLockCallbackDataRoutine</i> callback routine for a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a> structure. 
+```
+PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE PfltCompleteLockCallbackDataRoutine;
 
-
-
-## -prototype
-
-````
-PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE CompleteLockCallbackDataRoutine;
-
-NTSTATUS CompleteLockCallbackDataRoutine(
-  _In_opt_ PVOID              Context,
-  _In_     PFLT_CALLBACK_DATA CallbackData
+NTSTATUS PfltCompleteLockCallbackDataRoutine(
+  PVOID Context,
+  PFLT_CALLBACK_DATA CallbackData
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
+`Context`
 
-### -param Context [in, optional]
+Context pointer that was passed to <a href="..\fltkernel\nf-fltkernel-fltprocessfilelock.md">FltProcessFileLock</a>.
 
-Context pointer that was passed to <a href="..\fltkernel\nf-fltkernel-fltprocessfilelock.md">FltProcessFileLock</a>. 
-
-
-### -param CallbackData [in]
+`CallbackData`
 
 Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> operation that is being completed. The lock request type will be one of the following: 
 
@@ -86,17 +79,31 @@ IRP_MN_UNLOCK_SINGLE
 </dd>
 </dl>
 
-## -returns
-This routine returns STATUS_SUCCESS or an appropriate <b>NTSTATUS</b> value. If it returns an <b>NTSTATUS</b> value that is not a success code, the file lock is removed from the file. 
 
+## Return Value
 
-## -remarks
+This routine returns STATUS_SUCCESS or an appropriate <b>NTSTATUS</b> value. If it returns an <b>NTSTATUS</b> value that is not a success code, the file lock is removed from the file.
+
+## Remarks
+
 A minifilter driver can optionally specify a routine of type <b>PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</b> as the minifilter driver's <i>CompleteLockCallbackDataRoutine</i> routine for a byte-range file lock. To specify this routine, the minifilter driver passes a pointer to the routine as the <i>CompleteLockCallbackDataRoutine</i> parameter for <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. 
 
 When completing the an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> operation for the file lock, filter manager calls this routine, if specified, as a notification to the minifilter.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <=APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a>
@@ -134,4 +141,3 @@ When completing the an <a href="https://msdn.microsoft.com/library/windows/hardw
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

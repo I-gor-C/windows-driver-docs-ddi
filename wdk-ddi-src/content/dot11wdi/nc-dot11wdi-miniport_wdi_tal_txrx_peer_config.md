@@ -1,89 +1,81 @@
 ---
-UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
-title: MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
-author: windows-driver-content
-description: The MiniportWdiTalTxRxPeerConfig handler function specifies the port ID, peer ID, and peer capabilities (for example, QoS capabilities). It is invoked after the peer has associated, which involves creation of the peer object in the TAL.
-old-location: netvista\miniportwditaltxrxpeerconfig.htm
-old-project: netvista
-ms.assetid: 48BB554D-A19E-46C0-8278-690A686A731D
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: dot11wdi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportWdiTalTxRxPeerConfig
-req.alt-loc: dot11wdi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PSYNTH_STATS, SYNTH_STATS
+UID : NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
+title : MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
+author : windows-driver-content
+description : The MiniportWdiTalTxRxPeerConfig handler function specifies the port ID, peer ID, and peer capabilities (for example, QoS capabilities). It is invoked after the peer has associated, which involves creation of the peer object in the TAL.
+old-location : netvista\miniportwditaltxrxpeerconfig.htm
+old-project : netvista
+ms.assetid : 48BB554D-A19E-46C0-8278-690A686A731D
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : dot11wdi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportWdiTalTxRxPeerConfig
+req.alt-loc : dot11wdi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : SYNTH_STATS, *PSYNTH_STATS
 ---
 
-# MINIPORT_WDI_TAL_TXRX_PEER_CONFIG callback
 
-
-
-## -description
+# MINIPORT_WDI_TAL_TXRX_PEER_CONFIG callback function
 The 
   MiniportWdiTalTxRxPeerConfig handler function specifies the port ID, peer ID,  and peer capabilities  (for example, QoS capabilities). It is invoked after the peer has associated, which involves creation of the peer object in the TAL.
 
 This is a WDI miniport handler inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>.
 
+## Syntax
 
+```
+MINIPORT_WDI_TAL_TXRX_PEER_CONFIG MiniportWdiTalTxrxPeerConfig;
 
-## -prototype
-
-````
-MINIPORT_WDI_TAL_TXRX_PEER_CONFIG MiniportWdiTalTxRxPeerConfig;
-
-VOID MiniportWdiTalTxRxPeerConfig(
-  _In_ TAL_TXRX_HANDLE    MiniportTalTxRxContext,
-  _In_ WDI_PORT_ID        PortId,
-  _In_ WDI_PEER_ID        PeerId,
-  _In_ PWDI_TXRX_PEER_CFG pPeerCfg
+void MiniportWdiTalTxrxPeerConfig(
+  TAL_TXRX_HANDLE MiniportTalTxRxContext,
+  WDI_PORT_ID PortId,
+  WDI_PEER_ID PeerId,
+  PWDI_TXRX_PEER_CFG pPeerCfg
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportTalTxRxContext [in]
+`MiniportTalTxRxContext`
 
 TAL device handle returned by the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a>.
 
-
-### -param PortId [in]
+`PortId`
 
 Port ID associated with the peer.
 
-
-### -param PeerId [in]
+`PeerId`
 
 Peer ID for the peer.
 
-
-### -param pPeerCfg [in]
+`pPeerCfg`
 
 Pointer to a <a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_peer_cfg.md">WDI_TXRX_PEER_CFG</a> structure that contains negotiated QoS settings.
 
 
-## -returns
+## Return Value
+
 This callback function does not return a value.
 
 To define a MiniportWdiTalTxRxPeerConfig function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
@@ -97,10 +89,20 @@ The <b>MINIPORT_WDI_TAL_TXRX_PEER_CONFIG</b> function type is defined in the dot
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dot11wdi.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>
@@ -123,4 +125,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_WDI_TAL_TXRX_PEER_CONFIG callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

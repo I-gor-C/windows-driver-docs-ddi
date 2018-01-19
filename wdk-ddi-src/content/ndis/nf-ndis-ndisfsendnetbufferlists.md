@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisFSendNetBufferLists
-title: NdisFSendNetBufferLists function
-author: windows-driver-content
-description: Filter drivers call the NdisFSendNetBufferLists function to send a list of network data buffers.
-old-location: netvista\ndisfsendnetbufferlists.htm
-old-project: netvista
-ms.assetid: fe0896ab-2d20-465f-a8bc-bfc0033701d6
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisFSendNetBufferLists
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisFSendNetBufferLists
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Filter_Driver_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisFSendNetBufferLists
+title : NdisFSendNetBufferLists function
+author : windows-driver-content
+description : Filter drivers call the NdisFSendNetBufferLists function to send a list of network data buffers.
+old-location : netvista\ndisfsendnetbufferlists.htm
+old-project : netvista
+ms.assetid : fe0896ab-2d20-465f-a8bc-bfc0033701d6
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisFSendNetBufferLists
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisFSendNetBufferLists
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Filter_Driver_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisFSendNetBufferLists function
-
-
-
-## -description
 Filter drivers call the 
   <b>NdisFSendNetBufferLists</b> function to send a list of network data buffers.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisFSendNetBufferLists(
@@ -55,84 +50,37 @@ VOID NdisFSendNetBufferLists(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisFilterHandle [in]
+`NdisFilterHandle`
 
 The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
-
-### -param NetBufferLists [in]
-
-A pointer to a linked list of 
-     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures. Each
-     <b>NET_BUFFER_LIST</b> structure describes a list of 
-     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures.
+`NetBufferList`
 
 
-### -param PortNumber [in]
+
+`PortNumber`
 
 A port number that identifies a miniport adapter port. Miniport adapter port numbers are assigned
      by calling the 
      <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function. A zero
      value identifies the default port of a miniport adapter.
 
-
-### -param SendFlags [in]
+`SendFlags`
 
 Flags that define attributes for the send operation. The flags can be combined with an OR
      operation. To clear all the flags, set this member to zero. This function supports the following flags:
-     
 
 
+## Return Value
 
-
-### -param NDIS_SEND_FLAGS_DISPATCH_LEVEL
-
-Specifies that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
-       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
-
-
-### -param NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
-
-Specifies that NDIS should check for loopback. By default, NDIS does not loop back data to the
-       driver that submitted the send request. An overlying driver can override this behavior by setting this
-       flag. When this flag is set, NDIS identifies all the <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures that contain data that
-       matches the receive criteria for the binding. NDIS indicates NET_BUFFER structures that match the
-       criteria to the overlying driver. This flag has no affect on checking for loopback, or looping back,
-       on other bindings.
-
-
-### -param NDIS_SEND_FLAGS_SWITCH_SINGLE_SOURCE
-
-If this flag is set, all packets in a linked list of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.
-
-For more information, see <a href="https://msdn.microsoft.com/FBA506EC-4E9F-4964-9C9C-FF4910DDA908">Hyper-V Extensible Switch Send and Receive Flags</a>.
-
-<div class="alert"><b>Note</b>  If each packet in the linked list of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_SEND_COMPLETE_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>SendCompleteFlags</i> parameter of <a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">NdisFSendNetBufferListsComplete</a> when it completes the send request.</div>
-<div> </div>
-<div class="alert"><b>Note</b>  This flag is available in NDIS 6.30 and later.</div>
-<div> </div>
-
-### -param NDIS_SEND_FLAGS_SWITCH_DESTINATION_GROUP
-
-If this flag is set, all packets in a linked list of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures are to be forwarded to the same extensible switch destination port.
-
-For more information, see <a href="https://msdn.microsoft.com/FBA506EC-4E9F-4964-9C9C-FF4910DDA908">Hyper-V Extensible Switch Send and Receive Flags</a>.
-
-<div class="alert"><b>Note</b>  This flag is available in NDIS 6.30 and later.</div>
-<div> </div>
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 After a filter driver calls the 
     <b>NdisFSendNetBufferLists</b> function, NDIS submits the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures to the underlying
@@ -183,8 +131,20 @@ Until NDIS calls
     structures or any associated data after calling 
     <b>NdisFSendNetBufferLists</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Filter_Driver_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
@@ -214,4 +174,3 @@ Until NDIS calls
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFSendNetBufferLists function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

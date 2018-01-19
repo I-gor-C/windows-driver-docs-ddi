@@ -1,50 +1,43 @@
 ---
-UID: NS:hdaudio._HDAUDIO_BUS_INTERFACE
-title: _HDAUDIO_BUS_INTERFACE
-author: windows-driver-content
-description: The HDAUDIO_BUS_INTERFACE structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE version of the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE_BDL structure.
-old-location: audio\hdaudio_bus_interface.htm
-old-project: audio
-ms.assetid: 6b3bc5ce-05d2-45e0-91d8-6bb34e58777f
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: hdaudio.h
-req.include-header: Hdaudio.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HDAUDIO_BUS_INTERFACE
-req.alt-loc: hdaudio.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL.
-req.typenames: *PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE
+UID : NS:hdaudio._HDAUDIO_BUS_INTERFACE
+title : _HDAUDIO_BUS_INTERFACE
+author : windows-driver-content
+description : The HDAUDIO_BUS_INTERFACE structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE version of the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE_BDL structure.
+old-location : audio\hdaudio_bus_interface.htm
+old-project : audio
+ms.assetid : 6b3bc5ce-05d2-45e0-91d8-6bb34e58777f
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _HDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : hdaudio.h
+req.include-header : Hdaudio.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HDAUDIO_BUS_INTERFACE
+req.alt-loc : hdaudio.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL.
+req.typenames : HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE
 ---
 
 # _HDAUDIO_BUS_INTERFACE structure
-
-
-
-## -description
 The HDAUDIO_BUS_INTERFACE structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE version of the HD Audio DDI. Another variant of this DDI is specified by the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _HDAUDIO_BUS_INTERFACE {
   USHORT                       Size;
@@ -69,106 +62,87 @@ typedef struct _HDAUDIO_BUS_INTERFACE {
 } HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AllocateCaptureDmaEngine`
 
-### -field Size
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a> routine.
+        
+            `AllocateDmaBuffer`
 
-Specifies the size in bytes of the HDAUDIO_BUS_INTERFACE structure.
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a> routine.
+        
+            `AllocateRenderDmaEngine`
 
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a> routine.
+        
+            `ChangeBandwidthAllocation`
 
-### -field Version
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routine.
+        
+            `Context`
 
-Specifies the version of the baseline HD Audio DDI.
+            Pointer to interface-specific context information.
+        
+            `FreeDmaBuffer`
 
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer.md">FreeDmaBuffer</a> routine.
+        
+            `FreeDmaEngine`
 
-### -field Context
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_engine.md">FreeDmaEngine</a> routine.
+        
+            `GetDeviceInformation`
 
-Pointer to interface-specific context information.
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine.
+        
+            `GetLinkPositionRegister`
 
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_link_position_register.md">GetLinkPositionRegister</a> routine.
+        
+            `GetResourceInformation`
 
-### -field InterfaceReference
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a> routine.
+        
+            `GetWallClockRegister`
 
-Pointer to a driver-supplied routine that increments the interface's reference count.
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_wall_clock_register.md">GetWallClockRegister</a> routine.
+        
+            `InterfaceDereference`
 
+            Pointer to a driver-supplied routine that decrements the interface's reference count.
+        
+            `InterfaceReference`
 
-### -field InterfaceDereference
+            Pointer to a driver-supplied routine that increments the interface's reference count.
+        
+            `RegisterEventCallback`
 
-Pointer to a driver-supplied routine that decrements the interface's reference count.
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a> routine.
+        
+            `SetDmaEngineState`
 
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a> routine.
+        
+            `Size`
 
-### -field TransferCodecVerbs
+            Specifies the size in bytes of the HDAUDIO_BUS_INTERFACE structure.
+        
+            `TransferCodecVerbs`
 
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine.
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine.
+        
+            `UnregisterEventCallback`
 
+            Function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister_event_callback.md">UnregisterEventCallback</a> routine.
+        
+            `Version`
 
-### -field AllocateCaptureDmaEngine
+            Specifies the version of the baseline HD Audio DDI.
 
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a> routine.
-
-
-### -field AllocateRenderDmaEngine
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a> routine.
-
-
-### -field ChangeBandwidthAllocation
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routine.
-
-
-### -field AllocateDmaBuffer
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a> routine.
-
-
-### -field FreeDmaBuffer
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer.md">FreeDmaBuffer</a> routine.
-
-
-### -field FreeDmaEngine
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_engine.md">FreeDmaEngine</a> routine.
-
-
-### -field SetDmaEngineState
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a> routine.
-
-
-### -field GetWallClockRegister
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_wall_clock_register.md">GetWallClockRegister</a> routine.
-
-
-### -field GetLinkPositionRegister
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_link_position_register.md">GetLinkPositionRegister</a> routine.
-
-
-### -field RegisterEventCallback
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a> routine.
-
-
-### -field UnregisterEventCallback
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister_event_callback.md">UnregisterEventCallback</a> routine.
-
-
-### -field GetDeviceInformation
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine.
-
-
-### -field GetResourceInformation
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a> routine.
-
-
-## -remarks
-The <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> IOCTL uses this structure to provide interface information to a client that is querying the HD Audio bus driver for the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE_BDL structure.
+    ## Remarks
+        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> IOCTL uses this structure to provide interface information to a client that is querying the HD Audio bus driver for the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE_BDL structure.
 
 The HDAUDIO_BUS_INTERFACE and HDAUDIO_BUS_INTERFACE_BDL structures are similar but have the following differences:
 
@@ -180,9 +154,17 @@ For more information, see <a href="https://msdn.microsoft.com/e24071d3-9021-40c0
 
 The names and definitions of the first five members (<b>Size</b>, <b>Version</b>, <b>Context</b>, <b>InterfaceReference</b>, and <b>InterfaceDereference</b>) are the same as in the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure. The remaining members are specific to the baseline HD Audio DDI and specify function pointers to the routines in the DDI. For more information, see <a href="https://msdn.microsoft.com/78667254-62a6-41fe-af36-43dbdea63aa8">Obtaining an HDAUDIO_BUS_INTERFACE DDI Object</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | hdaudio.h (include Hdaudio.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
 </dt>
@@ -234,4 +216,3 @@ The names and definitions of the first five members (<b>Size</b>, <b>Version</b>
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_BUS_INTERFACE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

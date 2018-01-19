@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltEnlistInTransaction
-title: FltEnlistInTransaction function
-author: windows-driver-content
-description: The FltEnlistInTransaction routine enlists a minifilter driver in a given transaction.
-old-location: ifsk\fltenlistintransaction.htm
-old-project: ifsk
-ms.assetid: c4b82596-824f-488e-96cd-17bd850494e5
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltEnlistInTransaction
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Windows Vista and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltEnlistInTransaction
-req.alt-loc: FltMgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: FltMgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltEnlistInTransaction
+title : FltEnlistInTransaction function
+author : windows-driver-content
+description : The FltEnlistInTransaction routine enlists a minifilter driver in a given transaction.
+old-location : ifsk\fltenlistintransaction.htm
+old-project : ifsk
+ms.assetid : c4b82596-824f-488e-96cd-17bd850494e5
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltEnlistInTransaction
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available on Windows Vista and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltEnlistInTransaction
+req.alt-loc : FltMgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : FltMgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltEnlistInTransaction function
+The <b>FltEnlistInTransaction</b> routine enlists a minifilter driver in a given transaction.
 
-
-
-## -description
-The <b>FltEnlistInTransaction</b> routine enlists a minifilter driver in a given transaction. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltEnlistInTransaction(
@@ -54,25 +49,21 @@ NTSTATUS FltEnlistInTransaction(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Instance`
 
-### -param Instance [in]
+An opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-An opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>. 
+`Transaction`
 
+An opaque transaction pointer for the transaction.
 
-### -param Transaction [in]
+`TransactionContext`
 
-An opaque transaction pointer for the transaction. 
+A pointer to the minifilter driver's transaction context. This parameter is required and cannot be <b>NULL</b>.
 
-
-### -param TransactionContext [in]
-
-A pointer to the minifilter driver's transaction context. This parameter is required and cannot be <b>NULL</b>. 
-
-
-### -param NotificationMask [in]
+`NotificationMask`
 
 Specifies the type of notifications that the filter manager is to send to the minifilter driver, as one or more of the values listed in the following table. This parameter is required and cannot be zero. 
 
@@ -142,10 +133,10 @@ TRANSACTION_NOTIFY_COMMIT | TRANSACTION_NOTIFY_PREPARE | TRANSACTION_NOTIFY_PREP
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <b>FltEnlistInTransaction</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_FLT_ALREADY_ENLISTED</b></dt>
@@ -161,12 +152,10 @@ TRANSACTION_NOTIFY_COMMIT | TRANSACTION_NOTIFY_PREPARE | TRANSACTION_NOTIFY_PREP
 </dl>The caller did not register a <i>TransactionNotificationCallback</i> routine. This is an error code. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_4</b></dt>
-</dl>The caller specified an invalid value for the <i>NotificationMask</i> parameter. This is an error code. 
+</dl>The caller specified an invalid value for the <i>NotificationMask</i> parameter. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 A minifilter driver calls <b>FltEnlistInTransaction</b> to enlist in a transaction. Before calling <b>FltEnlistInTransaction</b>, the minifilter driver must have registered a <i>TransactionNotificationCallback</i> routine. Otherwise, the call to <b>FltEnlistInTransaction</b> will fail. 
 
 To register a <i>TransactionNotificationCallback</i> routine, a minifilter driver stores the address of a routine of type <a href="..\fltkernel\nc-fltkernel-pflt_transaction_notification_callback.md">PFLT_TRANSACTION_NOTIFICATION_CALLBACK</a> in the <b>TransactionNotificationCallback</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. 
@@ -179,10 +168,22 @@ To retrieve a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltge
 
 To delete a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a> or <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>. 
 
-To set a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>. 
+To set a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
@@ -229,4 +230,3 @@ To set a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltsettran
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnlistInTransaction routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

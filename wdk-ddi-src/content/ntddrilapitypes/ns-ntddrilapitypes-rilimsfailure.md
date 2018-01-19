@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddrilapitypes.RILIMSFAILURE
-title: RILIMSFAILURE
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilimsfailure.htm
-old-project: netvista
-ms.assetid: 8be10470-3761-4120-8987-00d6fcc9a989
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILIMSFAILURE, *LPRILIMSFAILURE, RILIMSFAILURE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILIMSFAILURE
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILIMSFAILURE, RILIMSFAILURE
+UID : NS:ntddrilapitypes.RILIMSFAILURE
+title : RILIMSFAILURE
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilimsfailure.htm
+old-project : netvista
+ms.assetid : 8be10470-3761-4120-8987-00d6fcc9a989
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILIMSFAILURE, *LPRILIMSFAILURE, RILIMSFAILURE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILIMSFAILURE
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*LPRILIMSFAILURE, RILIMSFAILURE"
 ---
 
 # RILIMSFAILURE structure
-
-
-
-## -description
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILIMSFAILURE {
   DWORD                     cbSize;
@@ -57,28 +50,42 @@ typedef struct _RILIMSFAILURE {
 } RILIMSFAILURE, RILIMSFAILURE;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwErrorCode`
+
+            
+        
+            `dwExecutor`
+
+            
+        
+            `dwMessageSubType`
+
+            
+        
+            `dwMessageType`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `wszErrorString`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwExecutor
-
-
-### -field dwMessageType
-
-
-### -field dwMessageSubType
-
-
-### -field dwErrorCode
-
-
-### -field wszErrorString
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

@@ -1,50 +1,43 @@
 ---
-UID: NS:ntddk._WHEA_AER_ROOTPORT_DESCRIPTOR
-title: _WHEA_AER_ROOTPORT_DESCRIPTOR
-author: windows-driver-content
-description: The WHEA_AER_ROOTPORT_DESCRIPTOR structure describes a PCI Express (PCIe) root port error source.
-old-location: whea\whea_aer_rootport_descriptor.htm
-old-project: whea
-ms.assetid: 0c92e8d5-eb98-4789-a221-ebf891cd3876
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WHEA_AER_ROOTPORT_DESCRIPTOR, WHEA_AER_ROOTPORT_DESCRIPTOR, *PWHEA_AER_ROOTPORT_DESCRIPTOR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntddk.h
-req.include-header: Ntddk.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WHEA_AER_ROOTPORT_DESCRIPTOR
-req.alt-loc: ntddk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WHEA_AER_ROOTPORT_DESCRIPTOR, *PWHEA_AER_ROOTPORT_DESCRIPTOR
+UID : NS:ntddk._WHEA_AER_ROOTPORT_DESCRIPTOR
+title : _WHEA_AER_ROOTPORT_DESCRIPTOR
+author : windows-driver-content
+description : The WHEA_AER_ROOTPORT_DESCRIPTOR structure describes a PCI Express (PCIe) root port error source.
+old-location : whea\whea_aer_rootport_descriptor.htm
+old-project : whea
+ms.assetid : 0c92e8d5-eb98-4789-a221-ebf891cd3876
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : _WHEA_AER_ROOTPORT_DESCRIPTOR, *PWHEA_AER_ROOTPORT_DESCRIPTOR, WHEA_AER_ROOTPORT_DESCRIPTOR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntddk.h
+req.include-header : Ntddk.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WHEA_AER_ROOTPORT_DESCRIPTOR
+req.alt-loc : ntddk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PWHEA_AER_ROOTPORT_DESCRIPTOR, WHEA_AER_ROOTPORT_DESCRIPTOR"
 ---
 
 # _WHEA_AER_ROOTPORT_DESCRIPTOR structure
-
-
-
-## -description
 The WHEA_AER_ROOTPORT_DESCRIPTOR structure describes a PCI Express (PCIe) root port error source.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WHEA_AER_ROOTPORT_DESCRIPTOR {
   USHORT                        Type;
@@ -62,42 +55,32 @@ typedef struct _WHEA_AER_ROOTPORT_DESCRIPTOR {
 } WHEA_AER_ROOTPORT_DESCRIPTOR, *PWHEA_AER_ROOTPORT_DESCRIPTOR;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AdvancedCapsAndControl`
 
-### -field Type
+            The contents of the root port's Advanced Error Capabilities and Control register.
+        
+            `BusNumber`
 
-The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_AERROOTPORT.
+            The root port's bus number.
+        
+            `CorrectableErrorMask`
 
+            The contents of the root port's Correctable Error Mask register.
+        
+            `DeviceControl`
 
-### -field Enabled
+            The contents of the root port's Device Control register.
+        
+            `Enabled`
 
-A Boolean value that indicates if the error source is enabled.
+            A Boolean value that indicates if the error source is enabled.
+        
+            `Flags`
 
-
-### -field Reserved
-
-Reserved for system use.
-
-
-### -field BusNumber
-
-The root port's bus number.
-
-
-### -field Slot
-
-A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the root port is located in the system.
-
-
-### -field DeviceControl
-
-The contents of the root port's Device Control register.
-
-
-### -field Flags
-
-An AER_ROOTPORT_DESCRIPTOR_FLAGS union that indicates which of the members of the WHEA_AER_ROOTPORT_DESCRIPTOR structure can be written to by the operating system. The AER_ROOTPORT_DESCRIPTOR_FLAGS union is defined as follows:
+            An AER_ROOTPORT_DESCRIPTOR_FLAGS union that indicates which of the members of the WHEA_AER_ROOTPORT_DESCRIPTOR structure can be written to by the operating system. The AER_ROOTPORT_DESCRIPTOR_FLAGS union is defined as follows:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -119,77 +102,45 @@ An AER_ROOTPORT_DESCRIPTOR_FLAGS union that indicates which of the members of th
 </td>
 </tr>
 </table></span></div>
+        
+            `Reserved`
 
+            Reserved for system use.
+        
+            `RootErrorCommand`
 
+            The contents of the root port's Root Error Command register.
+        
+            `Slot`
 
-### -field UncorrectableErrorMaskRW
+            A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the root port is located in the system.
+        
+            `Type`
 
-A single bit that indicates that the operating system can write to the <b>UncorrectableErrorMask</b> member of the WHEA_AER_ROOTPORT_DESCRIPTOR structure.
+            The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_AERROOTPORT.
+        
+            `UncorrectableErrorMask`
 
+            The contents of the root port's Uncorrectable Error Mask register.
+        
+            `UncorrectableErrorSeverity`
 
-### -field UncorrectableErrorSeverityRW
+            The contents of the root port's Uncorrectable Error Severity register.
 
-A single bit that indicates that the operating system can write to the <b>UncorrectableErrorSeverity </b>member of the WHEA_AER_ROOTPORT_DESCRIPTOR structure.
+    ## Remarks
+        A WHEA_AER_ROOTPORT_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddk.h (include Ntddk.h) |
 
-### -field CorrectableErrorMaskRW
+    ## See Also
 
-A single bit that indicates that the operating system can write to the <b>CorrectableErrorMask</b> member of the WHEA_AER_ROOTPORT_DESCRIPTOR structure.
-
-
-### -field AdvancedCapsAndControlRW
-
-A single bit that indicates that the operating system can write to the <b>AdvancedCapsAndControl</b> member of the WHEA_AER_ROOTPORT_DESCRIPTOR structure.
-
-
-### -field RootErrorCommandRW
-
-A single bit that indicates that the operating system can write to the <b>RootErrorCommand</b> member of the WHEA_AER_ROOTPORT_DESCRIPTOR structure.
-
-
-### -field Reserved
-
-Reserved for system use.
-
-
-### -field AsUSHORT
-
-A USHORT representation of the contents of the AER_ROOTPORT_DESCRIPTOR_FLAGS union.
-
-</dd>
-</dl>
-
-### -field UncorrectableErrorMask
-
-The contents of the root port's Uncorrectable Error Mask register.
-
-
-### -field UncorrectableErrorSeverity
-
-The contents of the root port's Uncorrectable Error Severity register.
-
-
-### -field CorrectableErrorMask
-
-The contents of the root port's Correctable Error Mask register.
-
-
-### -field AdvancedCapsAndControl
-
-The contents of the root port's Advanced Error Capabilities and Control register.
-
-
-### -field RootErrorCommand
-
-The contents of the root port's Root Error Command register.
-
-
-## -remarks
-A WHEA_AER_ROOTPORT_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
@@ -202,4 +153,3 @@ A WHEA_AER_ROOTPORT_DESCRIPTOR structure is contained within the <a href="..\ntd
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_AER_ROOTPORT_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

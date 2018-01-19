@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.FsRtlAllocateExtraCreateParameterList
-title: FsRtlAllocateExtraCreateParameterList function
-author: windows-driver-content
-description: The FsRtlAllocateExtraCreateParameterList routine allocates paged pool memory for an ECP_LIST structure and generates a pointer to that structure.
-old-location: ifsk\fsrtlallocateextracreateparameterlist.htm
-old-project: ifsk
-ms.assetid: 93888920-73b2-41e4-8d49-e5235ee93307
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FsRtlAllocateExtraCreateParameterList
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: The FsRtlAllocateExtraCreateParameterList routine is available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FsRtlAllocateExtraCreateParameterList
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= APC_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.FsRtlAllocateExtraCreateParameterList
+title : FsRtlAllocateExtraCreateParameterList function
+author : windows-driver-content
+description : The FsRtlAllocateExtraCreateParameterList routine allocates paged pool memory for an ECP_LIST structure and generates a pointer to that structure.
+old-location : ifsk\fsrtlallocateextracreateparameterlist.htm
+old-project : ifsk
+ms.assetid : 93888920-73b2-41e4-8d49-e5235ee93307
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FsRtlAllocateExtraCreateParameterList
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : The FsRtlAllocateExtraCreateParameterList routine is available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FsRtlAllocateExtraCreateParameterList
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= APC_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # FsRtlAllocateExtraCreateParameterList function
-
-
-
-## -description
 The <b>FsRtlAllocateExtraCreateParameterList</b> routine allocates paged pool memory for an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> structure and generates a pointer to that structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FsRtlAllocateExtraCreateParameterList(
@@ -52,20 +47,19 @@ NTSTATUS FsRtlAllocateExtraCreateParameterList(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Flags [in]
+`Flags`
 
 Defines pool allocation options.  If the FSRTL_ALLOCATE_ECPLIST_FLAG_CHARGE_QUOTA flag is combined with the <i>Flags</i> parameter by using a bitwise OR operation, any pool allocated by <b>FsRtlAllocateExtraCreateParameterList</b>  will be charged against the current process' memory quota.
 
-
-### -param EcpList [out]
+`EcpList`
 
 Receives a pointer to an initialized ECP list structure.  If <b>FsRtlAllocateExtraCreateParameterList</b>  failed to allocate sufficient pool, <i>*EcpList</i> will be <b>NULL</b> and <b>FsRtlAllocateExtraCreateParameterList</b>  will return status code STATUS_INSUFFICIENT_RESOURCES.
 
 
-## -returns
+## Return Value
+
 <b>FsRtlAllocateExtraCreateParameterList</b> can return one of the following values:
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
@@ -74,10 +68,8 @@ Receives a pointer to an initialized ECP list structure.  If <b>FsRtlAllocateExt
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The memory for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> structure was successfully allocated and initialized.  In this case, a pointer to the initialized list structure is returned in the <i>EcpList</i> parameter.
 
- 
+## Remarks
 
-
-## -remarks
 Whether the operating system automatically frees memory that <b>FsRtlAllocateExtraCreateParameterList</b> allocates depends on when <b>FsRtlAllocateExtraCreateParameterList</b> is called, as shown in the following situations:
 
 A caller can invoke <b>FsRtlAllocateExtraCreateParameterList</b> to allocate the ECP_LIST and add one or more ECP context structures before the caller invokes the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> routine. In this situation, the operating system does not free any of the ECP context structures. Therefore, the caller can make multiple calls to <b>IoCreateFileEx</b> with the same ECP set. When the caller is done with the ECP_LIST, the caller must call the <a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameterlist.md">FsRtlFreeExtraCreateParameterList</a> routine to free the ECP_LIST.
@@ -86,8 +78,20 @@ While a file system or file system filter driver processes an <a href="https://m
 
 If the FSRTL_ALLOCATE_ECPLIST_FLAG_CHARGE_QUOTA flag is used with the <i>Flags</i> parameter, a pageable pool is allocated. Otherwise, a pageable pool is allocated by using an internal lookaside list.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
@@ -128,4 +132,3 @@ If the FSRTL_ALLOCATE_ECPLIST_FLAG_CHARGE_QUOTA flag is used with the <i>Flags</
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameterList routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

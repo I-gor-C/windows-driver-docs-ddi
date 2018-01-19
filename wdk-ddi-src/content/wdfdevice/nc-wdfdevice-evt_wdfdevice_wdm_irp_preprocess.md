@@ -1,77 +1,71 @@
 ---
-UID: NC:wdfdevice.EVT_WDFDEVICE_WDM_IRP_PREPROCESS
-title: EVT_WDFDEVICE_WDM_IRP_PREPROCESS function
-author: windows-driver-content
-description: A driver's EvtDeviceWdmIrpPreprocess event callback function receives an IRP before the framework processes the IRP.
-old-location: wdf\evtdevicewdmirppreprocess.htm
-old-project: wdf
-ms.assetid: aff9cb60-d61b-47a8-aae4-6ffd2a1b7a9a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: EVT_WDFDEVICE_WDM_IRP_PREPROCESS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 
-req.alt-api: EvtDeviceWdmIrpPreprocess
-req.alt-loc: Wdfdevice.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
-req.product: Windows 10 or later.
+UID : NC:wdfdevice.EVT_WDFDEVICE_WDM_IRP_PREPROCESS
+title : EVT_WDFDEVICE_WDM_IRP_PREPROCESS
+author : windows-driver-content
+description : A driver's EvtDeviceWdmIrpPreprocess event callback function receives an IRP before the framework processes the IRP.
+old-location : wdf\evtdevicewdmirppreprocess.htm
+old-project : wdf
+ms.assetid : aff9cb60-d61b-47a8-aae4-6ffd2a1b7a9a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WDF_REL_TIMEOUT_IN_US
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 
+req.alt-api : EvtDeviceWdmIrpPreprocess
+req.alt-loc : Wdfdevice.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_WDFDEVICE_WDM_IRP_PREPROCESS function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
 A driver's <i>EvtDeviceWdmIrpPreprocess</i> event callback function receives an IRP before the framework processes the IRP.
 
+## Syntax
 
+```
+EVT_WDFDEVICE_WDM_IRP_PREPROCESS EvtWdfdeviceWdmIrpPreprocess;
 
-## -syntax
-
-````
-EVT_WDFDEVICE_WDM_IRP_PREPROCESS EvtDeviceWdmIrpPreprocess;
-
-NTSTATUS EvtDeviceWdmIrpPreprocess(
-  _In_    WDFDEVICE Device,
-  _Inout_ PIRP      Irp
+NTSTATUS EvtWdfdeviceWdmIrpPreprocess(
+  WDFDEVICE Device,
+  PIRP Irp
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Device [in]
+`Device`
 
 A handle to a framework device object.
 
-
-### -param Irp [in, out]
+`Irp`
 
 A pointer to an <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure.
 
 
-## -returns
+## Return Value
+
 The <i>EvtDeviceWdmIrpPreprocess</i> callback function must:
 
 
@@ -84,9 +78,8 @@ The <i>EvtDeviceWdmIrpPreprocess</i> callback function must:
 </li>
 </ul>
 
+## Remarks
 
-
-## -remarks
 To register an <i>EvtDeviceWdmIrpPreprocess</i> callback function, your driver must call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignwdmirppreprocesscallback.md">WdfDeviceInitAssignWdmIrpPreprocessCallback</a>. 
 
 Your driver can use an <i>EvtDeviceWdmIrpPreprocess</i> callback function to do any, or all, of the following:
@@ -113,8 +106,20 @@ Then, implement your callback function as follows:
 
 The <b>EVT_WDFDEVICE_WDM_IRP_PREPROCESS</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDFDEVICE_WDM_IRP_PREPROCESS</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfdevice.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignwdmirppreprocesscallback.md">WdfDeviceInitAssignWdmIrpPreprocessCallback</a>
@@ -128,4 +133,3 @@ The <b>EVT_WDFDEVICE_WDM_IRP_PREPROCESS</b> function type is defined in the Wdfd
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20EVT_WDFDEVICE_WDM_IRP_PREPROCESS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

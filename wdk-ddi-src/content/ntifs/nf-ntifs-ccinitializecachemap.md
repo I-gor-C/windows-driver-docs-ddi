@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.CcInitializeCacheMap
-title: CcInitializeCacheMap function
-author: windows-driver-content
-description: File systems call the CcInitializeCacheMap routine to cache a file.
-old-location: ifsk\ccinitializecachemap.htm
-old-project: ifsk
-ms.assetid: a76027d9-b486-4596-bbe4-0a801ed73256
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: CcInitializeCacheMap
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: CcInitializeCacheMap
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: 
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.CcInitializeCacheMap
+title : CcInitializeCacheMap function
+author : windows-driver-content
+description : File systems call the CcInitializeCacheMap routine to cache a file.
+old-location : ifsk\ccinitializecachemap.htm
+old-project : ifsk
+ms.assetid : a76027d9-b486-4596-bbe4-0a801ed73256
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : CcInitializeCacheMap
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : CcInitializeCacheMap
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : 
+req.typenames : TOKEN_TYPE
 ---
 
+
 # CcInitializeCacheMap function
-
-
-
-## -description
 File systems call the <b>CcInitializeCacheMap</b> routine to cache a file.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID CcInitializeCacheMap(
@@ -55,15 +50,13 @@ VOID CcInitializeCacheMap(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileObject [in]
+`FileObject`
 
 Pointer to a file object for the file.
 
-
-### -param FileSizes [in]
+`FileSizes`
 
 Pointer to a CC_FILE_SIZES structure containing <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> for the file. This structure is defined as follows:
 
@@ -117,15 +110,12 @@ New valid data length for the file.
 </td>
 </tr>
 </table>
- 
 
-
-### -param PinAccess [in]
+`PinAccess`
 
 Set to <b>TRUE</b> if <b>CcPin</b><i>Xxx</i> routines will be used on the file.
 
-
-### -param Callbacks [in]
+`Callbacks`
 
 Pointer to a structure allocated from nonpaged pool, containing entry points of caller-supplied read-ahead and write-behind callback routines.This structure and its members are defined as follows:
 
@@ -163,16 +153,17 @@ VOID (*PRELEASE_FROM_READ_AHEAD) (
 </tr>
 </table></span></div>
 
-### -param LazyWriteContext [in]
+`LazyWriteContext`
 
 Pointer to context information to be passed to the callback routines specified in <i>Callbacks</i>.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 <b>CcInitializeCacheMap</b> creates the data structures required for file data caching.
 
 If any failure occurs, <b>CcInitializeCacheMap</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcInitializeCacheMap</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcInitializeCacheMap</b> in a <b>try-except</b> or <b>try-finally</b> statement.
@@ -187,8 +178,20 @@ The <b>CcIsFileCached</b> macro determines whether a file is cached or not.
 
 Parameters
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
@@ -202,4 +205,3 @@ Parameters
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcInitializeCacheMap routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILMESSAGEPARAMMASK
-title: RILMESSAGEPARAMMASK
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmessageparammask.htm
-old-project: netvista
-ms.assetid: 718c9d10-fd89-4d31-815e-da4dea0a3f34
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMESSAGEPARAMMASK, RILMESSAGEPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMESSAGEPARAMMASK
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILMESSAGEPARAMMASK
+UID : NE:ntddrilapitypes.RILMESSAGEPARAMMASK
+title : RILMESSAGEPARAMMASK
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmessageparammask.htm
+old-project : netvista
+ms.assetid : 718c9d10-fd89-4d31-815e-da4dea0a3f34
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMESSAGEPARAMMASK, RILMESSAGEPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMESSAGEPARAMMASK
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILMESSAGEPARAMMASK
 ---
 
-# RILMESSAGEPARAMMASK enumeration
-
-
-
-## -description
+# RILMESSAGEPARAMMASK Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILMESSAGEPARAMMASK { 
   RIL_PARAM_M_TYPE,
@@ -111,190 +104,321 @@ typedef enum _RILMESSAGEPARAMMASK {
 } RILMESSAGEPARAMMASK;
 ````
 
-
-## -enum-fields
-
-### -field RIL_PARAM_M_TYPE
-
-
-### -field RIL_PARAM_M_FLAGS
-
-
-### -field RIL_PARAM_M_ORIGADDRESS
-
-
-### -field RIL_PARAM_M_TGTRECIPADDRESS
-
-
-### -field RIL_PARAM_M_DESTADDRESS
-
-
-### -field RIL_PARAM_M_SCRECEIVETIME
-
-
-### -field RIL_PARAM_M_TGTSCRECEIVETIME
-
-
-### -field RIL_PARAM_M_TGTDISCHARGETIME
-
-
-### -field RIL_PARAM_M_PROTOCOLID
-
-
-### -field RIL_PARAM_M_DATACODING
-
-
-### -field RIL_PARAM_M_TGTDLVSTATUS
-
-
-### -field RIL_PARAM_M_VPFORMAT
-
-
-### -field RIL_PARAM_M_VP
-
-
-### -field RIL_PARAM_M_GEOSCOPE
-
-
-### -field RIL_PARAM_M_MSGCODE
-
-
-### -field RIL_PARAM_M_UPDATENUMBER
-
-
-### -field RIL_PARAM_M_ID
-
-
-### -field RIL_PARAM_M_TOTALPAGES
-
-
-### -field RIL_PARAM_M_PAGENUMBER
-
-
-### -field RIL_PARAM_M_HDRLENGTH
-
-
-### -field RIL_PARAM_M_SERIALNUMBER
-
-
-### -field RIL_PARAM_M_MSGLENGTH
-
-
-### -field RIL_PARAM_M_HDR
-
-
-### -field RIL_PARAM_M_MSG
-
-
-### -field RIL_PARAM_M_WARNINGTYPE
-
-
-### -field RIL_PARAM_M_EUSERALERT
-
-
-### -field RIL_PARAM_M_POPUP
-
-
-### -field RIL_PARAM_M_MSGID
-
-
-### -field RIL_PARAM_M_ORIGSUBADDRESS
-
-
-### -field RIL_PARAM_M_DESTSUBADDRESS
-
-
-### -field RIL_PARAM_M_DIGIT
-
-
-### -field RIL_PARAM_M_PRIVACY
-
-
-### -field RIL_PARAM_M_PRIORITY
-
-
-### -field RIL_PARAM_M_TELESERVICE
-
-
-### -field RIL_PARAM_M_LANG
-
-
-### -field RIL_PARAM_M_VALIDITYPERIODABS
-
-
-### -field RIL_PARAM_M_VALIDITYPERIODREL
-
-
-### -field RIL_PARAM_M_DEFERREDDELTIMEABS
-
-
-### -field RIL_PARAM_M_DEFERREDDELTIMEREL
-
-
-### -field RIL_PARAM_M_ENCODING
-
-
-### -field RIL_PARAM_M_USERRESPONSECODE
-
-
-### -field RIL_PARAM_M_DISPLAYMODE
-
-
-### -field RIL_PARAM_M_CALLBACKNUM
-
-
-### -field RIL_PARAM_M_NUMMSGS
-
-
-### -field RIL_PARAM_M_CAUSECODE
-
-
-### -field RIL_PARAM_M_REPLYSEQNUMBER
-
-
-### -field RIL_PARAM_M_SERVICEID
-
-
-### -field RIL_PARAM_M_USERACK
-
-
-### -field RIL_PARAM_M_DELIVERYACK
-
-
-### -field RIL_PARAM_M_ALERTONMSGDELIVERY
-
-
-### -field RIL_PARAM_M_HDRLENGTHCDMA
-
-
-### -field RIL_PARAM_M_MSGSTATUSTYPE
-
-
-### -field RIL_PARAM_M_BEARERREPLYACK
-
-
-### -field RIL_PARAM_M_ALL_IN_DELIVER
-
-
-### -field RIL_PARAM_M_ALL_IN_STATUS
-
-
-### -field RIL_PARAM_M_ALL_OUT_SUBMIT
-
-
-### -field RIL_PARAM_M_ALL_BC_GENERAL
-
-
-### -field RIL_PARAM_M_ALL_IN_IS637DELIVER
-
-
-### -field RIL_PARAM_M_ALL_OUT_IS637SUBMIT
-
-
-### -field RIL_PARAM_M_ALL_IN_IS637STATUS
-
-
-### -field RIL_PARAM_M_ALL_OUT_IS637STATUS
-
-
-## -remarks
+## Constants
+
+<table>
+
+<tr>
+<td>RIL_PARAM_M_ALERTONMSGDELIVERY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_BC_GENERAL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_IN_DELIVER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_IN_IS637DELIVER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_IN_IS637STATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_IN_STATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_OUT_IS637STATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_OUT_IS637SUBMIT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ALL_OUT_SUBMIT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_BEARERREPLYACK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_CALLBACKNUM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_CAUSECODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DATACODING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DEFERREDDELTIMEABS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DEFERREDDELTIMEREL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DELIVERYACK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DESTADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DESTSUBADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DIGIT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_DISPLAYMODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ENCODING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_EUSERALERT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_FLAGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_GEOSCOPE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_HDR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_HDRLENGTH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_HDRLENGTHCDMA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_LANG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_MSG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_MSGCODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_MSGID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_MSGLENGTH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_MSGSTATUSTYPE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_NUMMSGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ORIGADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_ORIGSUBADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_PAGENUMBER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_POPUP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_PRIORITY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_PRIVACY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_PROTOCOLID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_REPLYSEQNUMBER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_SCRECEIVETIME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_SERIALNUMBER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_SERVICEID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_TELESERVICE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_TGTDISCHARGETIME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_TGTDLVSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_TGTRECIPADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_TGTSCRECEIVETIME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_TOTALPAGES</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_TYPE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_UPDATENUMBER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_USERACK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_USERRESPONSECODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_VALIDITYPERIODABS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_VALIDITYPERIODREL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_VP</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_VPFORMAT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_M_WARNINGTYPE</td>
+<td></td>
+</tr>
+</table>
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

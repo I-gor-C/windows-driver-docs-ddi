@@ -1,49 +1,44 @@
 ---
-UID: NF:ndis.NdisClDeregisterSap
-title: NdisClDeregisterSap function
-author: windows-driver-content
-description: NdisClDeregisterSap releases a previously registered SAP.
-old-location: netvista\ndisclderegistersap.htm
-old-project: netvista
-ms.assetid: ee3eb668-04f5-4731-b0bd-5cc8a9d4407f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisClDeregisterSap
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisClDeregisterSap
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Protocol_Driver_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisClDeregisterSap
+title : NdisClDeregisterSap function
+author : windows-driver-content
+description : NdisClDeregisterSap releases a previously registered SAP.
+old-location : netvista\ndisclderegistersap.htm
+old-project : netvista
+ms.assetid : ee3eb668-04f5-4731-b0bd-5cc8a9d4407f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisClDeregisterSap
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisClDeregisterSap
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Protocol_Driver_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisClDeregisterSap function
-
-
-
-## -description
 <b>NdisClDeregisterSap</b> releases a previously registered SAP.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisClDeregisterSap(
@@ -51,16 +46,16 @@ NDIS_STATUS NdisClDeregisterSap(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisSapHandle [in]
+`NdisSapHandle`
 
 Specifies the handle returned by 
      <b>NdisClRegisterSap</b>.
 
 
-## -returns
+## Return Value
+
 <b>NdisClDeregisterSap</b> can return one of the following:
 <dl>
 <dt><b>NDIS_STATUS_PENDING</b></dt>
@@ -77,10 +72,8 @@ Specifies the handle returned by
        internal call to its 
        <i>ProtocolClRegisterSapComplete</i> function.
 
- 
+## Remarks
 
-
-## -remarks
 <b>NdisClDeregisterSap</b> releases a SAP on which the client previously registered itself to receive
     incoming calls with 
     <b>NdisClRegisterSap</b>.
@@ -89,8 +82,20 @@ The client should consider the given
     <i>NdisSapHandle</i> invalid as soon as it calls 
     <b>NdisClDeregisterSap</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
@@ -114,4 +119,3 @@ The client should consider the given
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClDeregisterSap function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.RtlUnicodeToMultiByteN
-title: RtlUnicodeToMultiByteN function
-author: windows-driver-content
-description: The RtlUnicodeToMultiByteN routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set.
-old-location: ifsk\rtlunicodetomultibyten.htm
-old-project: ifsk
-ms.assetid: e50199d2-948d-4572-8688-89d92961f85b
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlUnicodeToMultiByteN
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Fltkernel.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlUnicodeToMultiByteN
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.RtlUnicodeToMultiByteN
+title : RtlUnicodeToMultiByteN function
+author : windows-driver-content
+description : The RtlUnicodeToMultiByteN routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set.
+old-location : ifsk\rtlunicodetomultibyten.htm
+old-project : ifsk
+ms.assetid : e50199d2-948d-4572-8688-89d92961f85b
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlUnicodeToMultiByteN
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Fltkernel.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlUnicodeToMultiByteN
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # RtlUnicodeToMultiByteN function
+The <b>RtlUnicodeToMultiByteN</b> routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set.
 
-
-
-## -description
-The <b>RtlUnicodeToMultiByteN</b> routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RtlUnicodeToMultiByteN(
@@ -55,39 +50,35 @@ NTSTATUS RtlUnicodeToMultiByteN(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param MultiByteString [out]
+`MultiByteString`
 
 Pointer to a caller-allocated buffer to receive the translated string. <i>MultiByteString </i>buffer must not overlap with <i>UnicodeString </i>buffer.
 
+`MaxBytesInMultiByteString`
 
-### -param MaxBytesInMultiByteString [in]
+Maximum number of bytes to be written to <i>MultiByteString</i>. If this value causes the translated string to be truncated, <b>RtlUnicodeToMultiByteN</b> does not return an error status.
 
-Maximum number of bytes to be written to <i>MultiByteString</i>. If this value causes the translated string to be truncated, <b>RtlUnicodeToMultiByteN</b> does not return an error status. 
+`BytesInMultiByteString`
 
+Pointer to a caller-allocated variable that receives the length, in bytes, of the translated string. This parameter is optional and can be <b>NULL</b>.
 
-### -param BytesInMultiByteString [out, optional]
+`UnicodeString`
 
-Pointer to a caller-allocated variable that receives the length, in bytes, of the translated string. This parameter is optional and can be <b>NULL</b>. 
+Pointer to the Unicode source string to be translated.
 
+`BytesInUnicodeString`
 
-### -param UnicodeString [in]
-
-Pointer to the Unicode source string to be translated. 
-
-
-### -param BytesInUnicodeString [in]
-
-Size, in bytes, of the string at <i>UnicodeString</i>. 
+Size, in bytes, of the string at <i>UnicodeString</i>.
 
 
-## -returns
-<b>RtlUnicodeToMultiByteN</b> returns STATUS_SUCCESS. 
+## Return Value
 
+<b>RtlUnicodeToMultiByteN</b> returns STATUS_SUCCESS.
 
-## -remarks
+## Remarks
+
 <b>RtlUnicodeToMultiByteN</b> translates the given Unicode string using the current system ANSI code page that was installed at system boot time. 
 
 Although <i>BytesInMultiByteString</i> is optional and can be <b>NULL</b>, callers should provide storage for it, because the received length can be used to determine whether the conversion was successful.
@@ -96,10 +87,22 @@ This routine does not modify the source string. It returns a null-terminated mul
 
 Like <b>RtlUnicodeToMultiByteSize</b>, <b>RtlUnicodeToMultiByteN</b> supports only precomposed Unicode characters that are mapped to the current system ANSI code page installed at system boot. 
 
-For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. 
+For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-rtlmultibytetounicoden.md">RtlMultiByteToUnicodeN</a>
@@ -116,4 +119,3 @@ For information about other string-handling routines, see <a href="https://msdn.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlUnicodeToMultiByteN routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

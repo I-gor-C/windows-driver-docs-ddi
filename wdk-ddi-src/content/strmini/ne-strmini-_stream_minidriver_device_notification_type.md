@@ -1,51 +1,44 @@
 ---
-UID: NE:strmini._STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
-title: _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
-author: windows-driver-content
-description: .
-old-location: stream\stream_minidriver_device_notification_type.htm
-old-project: stream
-ms.assetid: 34DAA236-ACD0-4C25-BB45-00A81D2F131D
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: strmini.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
-req.alt-loc: Strmini.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
-req.product: Windows 10 or later.
+UID : NE:strmini._STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
+title : _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
+author : windows-driver-content
+description : .
+old-location : stream\stream_minidriver_device_notification_type.htm
+old-project : stream
+ms.assetid : 34DAA236-ACD0-4C25-BB45-00A81D2F131D
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : strmini.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
+req.alt-loc : Strmini.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE
+req.product : Windows 10 or later.
 ---
 
-# _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE enumeration
+# _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE Enumeration
 
 
-
-## -description
-
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE { 
   ReadyForNextDeviceRequest,
@@ -60,32 +53,51 @@ typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE {
 } STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field ReadyForNextDeviceRequest
+<tr>
+<td>DeleteDeviceEvent</td>
+<td></td>
+</tr>
 
-Indicates that the minidriver is ready for the next device request.
+<tr>
+<td>DeviceNotificationMaximum</td>
+<td></td>
+</tr>
+
+<tr>
+<td>DeviceRequestComplete</td>
+<td>Indicates that the specified device SRB has completed.</td>
+</tr>
+
+<tr>
+<td>ReadyForNextDeviceRequest</td>
+<td>Indicates that the minidriver is ready for the next device request.</td>
+</tr>
+
+<tr>
+<td>SignalDeviceEvent</td>
+<td></td>
+</tr>
+
+<tr>
+<td>SignalMultipleDeviceEvents</td>
+<td></td>
+</tr>
+
+<tr>
+<td>SignalMultipleDeviceInstanceEvents</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field DeviceRequestComplete
-
-Indicates that the specified device SRB has completed.
-
-
-### -field SignalMultipleDeviceEvents
-
-
-### -field SignalDeviceEvent
-
-
-### -field DeleteDeviceEvent
-
-
-### -field SignalMultipleDeviceInstanceEvents
-
-
-### -field DeviceNotificationMaximum
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | strmini.h |

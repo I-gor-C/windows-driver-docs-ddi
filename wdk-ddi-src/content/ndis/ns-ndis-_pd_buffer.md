@@ -1,50 +1,43 @@
 ---
-UID: NS:ndis._PD_BUFFER
-title: _PD_BUFFER
-author: windows-driver-content
-description: This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
-old-location: netvista\pd_buffer.htm
-old-project: netvista
-ms.assetid: 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _PD_BUFFER, PD_BUFFER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PD_BUFFER
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: PD_BUFFER
+UID : NS:ndis._PD_BUFFER
+title : _PD_BUFFER
+author : windows-driver-content
+description : This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
+old-location : netvista\pd_buffer.htm
+old-project : netvista
+ms.assetid : 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _PD_BUFFER, PD_BUFFER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PD_BUFFER
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : PD_BUFFER
 ---
 
 # _PD_BUFFER structure
-
-
-
-## -description
 This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _PD_BUFFER {
   PD_BUFFER                                                       *NextPDBuffer;
@@ -116,59 +109,12 @@ typedef struct _PD_BUFFER {
 } PD_BUFFER, *PPD_BUFFER;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Attributes`
 
-### -field NextPDBuffer
-
-A pointer to the next <b>PD_BUFFER</b> structure in the queue.
-
-
-### -field NextPartialPDBuffer
-
-A pointer to the next partial <b>PD_BUFFER</b> structure in the queue.
-
-
-### -field PDClientReserved
-
-Reserved for system use. Do not use.
-
-
-### -field PDClientContext
-
-The client and the provider are not allowed to modify this field.      If a client has allocated the <b>PD_BUFFER</b> with a non-zero value for      ClientContextSize, then the PDClientContext refers to a buffer size      of ClientContextSize. Otherwise, this field is NULL.
-
-
-### -field DataBufferVirtualAddress
-
-This field represents the address that hosts and software can use to access/modify the packet contents. The actual packet data is always at  DataBufferVirtualAddress+DataStart. The provider and the      platform never modify the value of this field after the <b>PD_BUFFER</b>      initialization.
-
-
-### -field DataBufferDmaLogicalAddress
-
-This field represents the logical memory location used for storing the packet data. The provider
-must use for DMA. The actual packet data is always at
-    DataBufferDmaLogicalAddress+DataStart. The provider and the
-    platform must never modify the value of this field after the <b>PD_BUFFER</b>
-    initialization.
-
-
-### -field DataBufferSize
-
-This is the total size of the allocated data buffer. The provider and the platform must never modify the value of this field
-    after the <b>PD_BUFFER</b> initialization. This data type is <b>ULONG</b> instead of
-    <b>USHORT</b> because of large send offload.
-
-
-### -field PDClientContextSize
-
-When this value is non-zero, it is the size of the buffer pointed to by PDClientContext.
-    The value of this field must only be modified by the platform. The platform does not change the value of this field after the <b>PD_BUFFER</b> allocation.
-
-
-### -field Attributes
-
-The attributes must never be modified by the provider. The table below lists attributes that this <b>PD_BUFFER</b> structure can have.
+            The attributes must never be modified by the provider. The table below lists attributes that this <b>PD_BUFFER</b> structure can have.
 
 <table>
 <tr>
@@ -182,12 +128,41 @@ this attribute set. The <b>PD_BUFFER</b> attributes must never be modified by cl
 or providers.</td>
 </tr>
 </table>
- 
+        
+            `DataBufferDmaLogicalAddress`
 
+            This field represents the logical memory location used for storing the packet data. The provider
+must use for DMA. The actual packet data is always at
+    DataBufferDmaLogicalAddress+DataStart. The provider and the
+    platform must never modify the value of this field after the <b>PD_BUFFER</b>
+    initialization.
+        
+            `DataBufferSize`
 
-### -field Flags
+            This is the total size of the allocated data buffer. The provider and the platform must never modify the value of this field
+    after the <b>PD_BUFFER</b> initialization. This data type is <b>ULONG</b> instead of
+    <b>USHORT</b> because of large send offload.
+        
+            `DataBufferVirtualAddress`
 
-The following table lists flags that this <b>PD_BUFFER</b> structure can have.
+            This field represents the address that hosts and software can use to access/modify the packet contents. The actual packet data is always at  DataBufferVirtualAddress+DataStart. The provider and the      platform never modify the value of this field after the <b>PD_BUFFER</b>      initialization.
+        
+            `DataLength`
+
+            The length of the this packet or partial packet data.
+        
+            `DataStart`
+
+            This field denotes where the packet starts relative to the original starting address of the allocated data buffer. The provider must never modify this field. The provider adds this value to the
+    DataBufferDmaLogicalAddress value to derive the actual
+    target DMA address for packet reception/transmission. For example, the
+    target DMA address value in the hardware receive/transmit descriptor
+    must be set to DataBufferDmaLogicalAddress+DataStart when a <b>PD_BUFFER</b>
+    is posted to a receive/transmit queue.
+        
+            `Flags`
+
+            The following table lists flags that this <b>PD_BUFFER</b> structure can have.
 
 <table>
 <tr>
@@ -199,226 +174,30 @@ The following table lists flags that this <b>PD_BUFFER</b> structure can have.
 <td>Indicates that this buffer is the head of partial packets.</td>
 </tr>
 </table>
- 
+        
+            `NextPartialPDBuffer`
 
+            A pointer to the next partial <b>PD_BUFFER</b> structure in the queue.
+        
+            `NextPDBuffer`
 
-### -field DataStart
+            A pointer to the next <b>PD_BUFFER</b> structure in the queue.
+        
+            `PDClientContext`
 
-This field denotes where the packet starts relative to the original starting address of the allocated data buffer. The provider must never modify this field. The provider adds this value to the
-    DataBufferDmaLogicalAddress value to derive the actual
-    target DMA address for packet reception/transmission. For example, the
-    target DMA address value in the hardware receive/transmit descriptor
-    must be set to DataBufferDmaLogicalAddress+DataStart when a <b>PD_BUFFER</b>
-    is posted to a receive/transmit queue.
+            The client and the provider are not allowed to modify this field.      If a client has allocated the <b>PD_BUFFER</b> with a non-zero value for      ClientContextSize, then the PDClientContext refers to a buffer size      of ClientContextSize. Otherwise, this field is NULL.
+        
+            `PDClientContextSize`
 
+            When this value is non-zero, it is the size of the buffer pointed to by PDClientContext.
+    The value of this field must only be modified by the platform. The platform does not change the value of this field after the <b>PD_BUFFER</b> allocation.
+        
+            `PDClientReserved`
 
-### -field DataLength
+            Reserved for system use. Do not use.
 
-The length of the this packet or partial packet data.
-
-
-### -field MetaDataV0
-
-
-### -field RxFilterContext
-
-The provider sets this to the filter context value obtained
-                from the matched filter that steered the packet to the receive
-                queue. Filter context values are specified by the clients
-                when configuring filters.
-
-
-### -field GftFlowEntryId
-
-If one of the RxGftExceptionPacket or RxGftCopyPacket or RxGftSamplePacket bits are set, the RxFilterContext value is
-                overwritten with a GFT flow entry Id value.
-
-
-### -field RxHashValue
-
-The hash value computed for the incoming packet
-            that is steered to the receive queue using RSS.
-
-
-### -field RxIPHeaderChecksumSucceeded
-
-A common RX offload field that indicates if the IP header checksum succeeded.
-
-
-### -field RxTCPChecksumSucceeded
-
-A common RX offload field that indicates if the TCP checksum succeeded.
-
-
-### -field RxUDPChecksumSucceeded
-
-A common RX offload field that indicates if the UDP checksum succeeded.
-
-
-### -field RxIPHeaderChecksumFailed
-
-A common RX offload field that indicates if the IP header checksum failed.
-
-
-### -field RxTCPChecksumFailed
-
-A common RX offload field that indicates if the TCP checksum failed.
-
-
-### -field RxUDPChecksumFailed
-
-A common RX offload field that indicates if the UDP checksum failed.
-
-
-### -field RxHashComputed
-
-A common RX offload field that indicates if the hash is computed.
-
-
-### -field RxHashWithL4PortNumbers
-
-A common RX offload field that indicates the hash is computed with L4 port numbers.
-
-
-### -field RxGftExceptionPacket
-
-A common RX offload field that indicates this is a GFT exception packet.
-
-
-### -field RxGftCopyPacket
-
-A common RX offload field that indicates this is a GFT copy packet.
-
-
-### -field RxGftSamplePacket
-
-A common RX offload field that indicates this is a GFT sample packet.
-
-
-### -field RxReserved1
-
-Reserved.
-
-
-### -field RxCoalescedSegCount
-
-A common RX offload field that contains the amount of coalesced segments.
-
-
-### -field RxRscTcpTimestampDelta
-
-A common RX offload field that contains RSC and TCP timestamp difference.
-
-
-### -field RxOffloads
-
-RX offloads for this buffer.
-
-
-### -field TxIsIPv4
-
-A common TX offload field that indicates this packet is IPv4.
-
-
-### -field TxIsIPv6
-
-A common TX offload field that indicates this packet is IPv6.
-
-
-### -field TxTransportHeaderOffset
-
-A common TX offload field that contains the packet's header offset.
-
-
-### -field TxMSS
-
-A common TX offload field that contains the maximum segment size of this packet.
-
-
-### -field TxComputeIPHeaderChecksum
-
-A common TX offload field that indicates the IP header checksum is computed.
-
-
-### -field TxComputeTCPChecksum
-
-A common TX offload field that indicates the TCP checksum is computed.
-
-
-### -field TxComputeUDPChecksum
-
-A common TX offload field that indicates the UDP checksum is computed.
-
-
-### -field TxIsEncapsulatedPacket
-
-A common TX offload field that indicates the packet is encapsulated.
-
-
-### -field TxInnerPacketOffsetsValid
-
-A common TX offload field that indicates the inner packet offsets are valid.
-
-
-### -field TxReserved1
-
-Reserved.
-
-
-### -field TxInnerFrameOffset
-
-A common TX offload field that contains the inner frame offset.
-
-
-### -field TxInnerIpHeaderRelativeOffset
-
-A common TX offload field that contains the inner IP header relative offset.
-
-
-### -field TxInnerIsIPv6
-
-A common TX offload field that indicates the inner packet is IPv6.
-
-
-### -field TxInnerTcpOptionsPresent
-
-A common TX offload field that indicates the inner TCP options are present.
-
-
-### -field TxOffloads
-
-TX offloads for this buffer.
-
-
-### -field VirtualSubnetInfo
-
-The virtual subnet information.
-
-
-### -field Ieee8021qInfo
-
-The IEEE 802.1Q information.
-
-
-### -field GftSourceVPortId
-
-The GFT source virtual port ID.
-
-
-### -field Reserved
-
-Reserved for system use.
-
-
-### -field ProviderScratch
-
-A scratch field that the PD provider can use for its own purposes while the PD_BUFFER is sitting in the provider queue (in other words, posted by the client but not yet drained back by the client). Once the PD_BUFFER is drained by the client, there is no guarantee that the contents of this field will be preserved.
-
-</dd>
-</dl>
-
-## -remarks
-If an L2 packet is represented by multiple <b>PD_BUFFER</b> structures, the first <b>PD_BUFFER</b>
+    ## Remarks
+        If an L2 packet is represented by multiple <b>PD_BUFFER</b> structures, the first <b>PD_BUFFER</b>
 must have the PD_BUFFER_ATTR_BUILT_IN_DATA_BUFFER flag set and the
 NextPartialPDBuffer field must point to the partial <b>PD_BUFFER</b> structures that
 constitute the whole packet. Each of the partial <b>PD_BUFFER</b> structures must point to the next partial <b>PD_BUFFER</b> by using the NextPartialPDBuffer as opposed to the NextPDBuffer field. The NextPDBuffer field must be NULL in all partial <b>PD_BUFFER</b> structures except
@@ -437,3 +216,11 @@ When posting <b>PD_BUFFER</b> structures to receive queues, DataLength is ignore
     When posting <b>PD_BUFFER</b> structures to transmit queues, DataLength denotes the length
     of the packet to be sent. When draining completed <b>PD_BUFFER</b> structures from
     transmit queues, the provider leaves the DataLength field unmodified.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h |

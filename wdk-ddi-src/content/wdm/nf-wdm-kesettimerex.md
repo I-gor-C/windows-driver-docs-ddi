@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.KeSetTimerEx
-title: KeSetTimerEx function
-author: windows-driver-content
-description: The KeSetTimerEx routine sets the absolute or relative interval at which a timer object is to be set to a signaled state, optionally supplies a CustomTimerDpc routine to be executed when that interval expires, and optionally supplies a recurring interval for the timer.
-old-location: kernel\kesettimerex.htm
-old-project: kernel
-ms.assetid: 9a2a092d-f9b5-42a2-9be4-bc934a9304fb
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KeSetTimerEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KeSetTimerEx
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.KeSetTimerEx
+title : KeSetTimerEx function
+author : windows-driver-content
+description : The KeSetTimerEx routine sets the absolute or relative interval at which a timer object is to be set to a signaled state, optionally supplies a CustomTimerDpc routine to be executed when that interval expires, and optionally supplies a recurring interval for the timer.
+old-location : kernel\kesettimerex.htm
+old-project : kernel
+ms.assetid : 9a2a092d-f9b5-42a2-9be4-bc934a9304fb
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : KeSetTimerEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KeSetTimerEx
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # KeSetTimerEx function
-
-
-
-## -description
 The <b>KeSetTimerEx</b> routine sets the absolute or relative interval at which a timer object is to be set to a signaled state, optionally supplies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542983">CustomTimerDpc</a> routine to be executed when that interval expires, and optionally supplies a recurring interval for the timer.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN KeSetTimerEx(
@@ -55,34 +50,31 @@ BOOLEAN KeSetTimerEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Timer [in, out]
+`Timer`
 
 Pointer to a timer object that was initialized with <a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a> or <a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>.
 
-
-### -param DueTime [in]
+`DueTime`
 
 Specifies the absolute or relative time at which the timer is to expire. If the value of the <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. The expiration time is expressed in system time units (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes.
 
-
-### -param Period [in]
+`Period`
 
 Specifies an optional recurring interval for the timer in milliseconds. Must be a value that is greater than or equal to zero. If the value of this parameter is zero, the timer is a nonperiodic timer that does not automatically re-queue itself.
 
+`Dpc`
 
-### -param Dpc [in, optional]
-
-Pointer to a DPC object that was initialized by <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>. This parameter is optional. 
+Pointer to a DPC object that was initialized by <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>. This parameter is optional.
 
 
-## -returns
+## Return Value
+
 If the timer object was already in the system timer queue, <b>KeSetTimerEx</b> returns <b>TRUE</b>.
 
+## Remarks
 
-## -remarks
 The <b>KeSetTimerEx</b> routine does the following:
 
 Computes the expiration time.
@@ -109,8 +101,20 @@ Drivers must cancel any active timers in their <a href="https://msdn.microsoft.c
 
 For more information about timer objects, see <a href="https://msdn.microsoft.com/b58487de-6e9e-45f4-acb8-9233c8718ee2">Timer Objects and DPCs</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | IrqlKeDispatchLte, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
@@ -139,4 +143,3 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetTimerEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

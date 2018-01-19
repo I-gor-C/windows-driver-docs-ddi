@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisAllocateSpinLock
-title: NdisAllocateSpinLock function
-author: windows-driver-content
-description: The NdisAllocateSpinLock function initializes a variable of type NDIS_SPIN_LOCK, used to synchronize access to resources shared among non-ISR driver functions.
-old-location: netvista\ndisallocatespinlock.htm
-old-project: netvista
-ms.assetid: e6199eab-a1e8-428f-8a3c-4828d3899cec
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisAllocateSpinLock
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisAllocateSpinLock
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: SpinLockDpr, SpinLockDprRelease, SpinlockRelease
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: Any level (see Remarks section)
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisAllocateSpinLock
+title : NdisAllocateSpinLock function
+author : windows-driver-content
+description : The NdisAllocateSpinLock function initializes a variable of type NDIS_SPIN_LOCK, used to synchronize access to resources shared among non-ISR driver functions.
+old-location : netvista\ndisallocatespinlock.htm
+old-project : netvista
+ms.assetid : e6199eab-a1e8-428f-8a3c-4828d3899cec
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisAllocateSpinLock
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisAllocateSpinLock
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : SpinLockDpr, SpinLockDprRelease, SpinlockRelease
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : Any level (see Remarks section)
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisAllocateSpinLock function
-
-
-
-## -description
 The 
   <b>NdisAllocateSpinLock</b> function initializes a variable of type NDIS_SPIN_LOCK, used to synchronize
   access to resources shared among non-ISR driver functions.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisAllocateSpinLock(
@@ -53,19 +48,19 @@ VOID NdisAllocateSpinLock(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param SpinLock [out]
+`SpinLock`
 
 Pointer to an opaque variable that represents a spin lock.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Before a driver calls 
     <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>, 
     <a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>, or any of
@@ -137,18 +132,30 @@ Freeing a spin lock and releasing a spin lock are potentially confusing.
     another thread of execution to acquire that spin lock.
 
 For more information about acquiring and releasing NDIS spin locks, see 
-    <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/synchronization-and-notification-in-network-drivers">Synchronization
     and Notification in Network Drivers</a>.
 
 Callers of 
     <b>NdisAllocateSpinLock</b> can run at any IRQL. Usually a caller is running at IRQL = PASSIVE_LEVEL
     during initialization.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | Any level (see Remarks section) |
+| **DDI compliance rules** | SpinLockDpr, SpinLockDprRelease, SpinlockRelease |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
-<a href="netvista.driverentry_of_ndis_protocol_drivers">DriverEntry of NDIS Protocol
+<a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry of NDIS Protocol
    Drivers</a>
 </dt>
 <dt>
@@ -206,4 +213,3 @@ Callers of
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateSpinLock function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

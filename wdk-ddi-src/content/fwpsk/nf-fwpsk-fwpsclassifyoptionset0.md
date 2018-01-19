@@ -1,52 +1,47 @@
 ---
-UID: NF:fwpsk.FwpsClassifyOptionSet0
-title: FwpsClassifyOptionSet0 function
-author: windows-driver-content
-description: The FwpsClassifyOptionSet0 function is called by a callout filter's classifyFn function to specify additional information that affects the characteristics of permitted filtering operations.Note  FwpsClassifyOptionSet0 is a specific version of FwpsClassifyOptionSet. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location: netvista\fwpsclassifyoptionset0.htm
-old-project: netvista
-ms.assetid: 8653fac0-8b2f-4e77-9588-2854ae168c1a
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FwpsClassifyOptionSet0
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fwpsk.h
-req.include-header: Fwpsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FwpsClassifyOptionSet0
-req.alt-loc: Fwpkclnt.lib,Fwpkclnt.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Fwpkclnt.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: FWPS_VSWITCH_EVENT_TYPE
+UID : NF:fwpsk.FwpsClassifyOptionSet0
+title : FwpsClassifyOptionSet0 function
+author : windows-driver-content
+description : The FwpsClassifyOptionSet0 function is called by a callout filter's classifyFn function to specify additional information that affects the characteristics of permitted filtering operations.Note  FwpsClassifyOptionSet0 is a specific version of FwpsClassifyOptionSet. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location : netvista\fwpsclassifyoptionset0.htm
+old-project : netvista
+ms.assetid : 8653fac0-8b2f-4e77-9588-2854ae168c1a
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : FwpsClassifyOptionSet0
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fwpsk.h
+req.include-header : Fwpsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows Vista.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FwpsClassifyOptionSet0
+req.alt-loc : Fwpkclnt.lib,Fwpkclnt.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Fwpkclnt.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
+
 # FwpsClassifyOptionSet0 function
-
-
-
-## -description
 The 
   <b>FwpsClassifyOptionSet0</b> function is called by a callout filter's 
   <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function to specify additional
   information that affects the characteristics of permitted filtering operations.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS NTAPI FwpsClassifyOptionSet0(
@@ -56,17 +51,15 @@ NTSTATUS NTAPI FwpsClassifyOptionSet0(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param inMetadataValues [in]
+`inMetadataValues`
 
 A pointer to an 
      <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">FWPS_INCOMING_METADATA_VALUES0</a> structure. This structure contains the values for each of the
      metadata fields at the layer that is being filtered.
 
-
-### -param option [in]
+`option`
 
 An 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff552428">FWP_CLASSIFY_OPTION_TYPE</a> enumeration
@@ -74,8 +67,7 @@ An
      <i>newValue</i> parameter refers to unicast, multicast, or loose source mapping states, or to data
      time-out values. For more information, see Remarks.
 
-
-### -param newValue [in]
+`newValue`
 
 A pointer to an array of 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff552450">FWP_VALUE0</a> structures. Each structure in the
@@ -83,7 +75,8 @@ A pointer to an array of
      Remarks.
 
 
-## -returns
+## Return Value
+
 The 
      <b>FwpsClassifyOptionSet0</b> function returns one of the following NTSTATUS codes.
 <dl>
@@ -112,10 +105,8 @@ The
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 This function should be called only by a callout filter's 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function.
 
@@ -175,8 +166,20 @@ The first (highest weight) caller to set a particular option will be granted tha
     if callout A sets the multicast state option, callout B will not be able to do so, but callout B can set
     other options.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fwpsk.h (include Fwpsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
@@ -203,4 +206,3 @@ The first (highest weight) caller to set a particular option will be granted tha
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsClassifyOptionSet0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

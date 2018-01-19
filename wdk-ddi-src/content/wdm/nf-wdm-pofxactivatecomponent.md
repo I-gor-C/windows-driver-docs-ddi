@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.PoFxActivateComponent
-title: PoFxActivateComponent function
-author: windows-driver-content
-description: The PoFxActivateComponent routine increments the activation reference count on the specified component.
-old-location: kernel\pofxactivatecomponent.htm
-old-project: kernel
-ms.assetid: B964B836-68C1-4254-963C-8D46ACE64107
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PoFxActivateComponent
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: 
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with  Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PoFxActivateComponent
-req.alt-loc: Ntoskrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ntoskrnl.lib
-req.dll: Ntoskrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.PoFxActivateComponent
+title : PoFxActivateComponent function
+author : windows-driver-content
+description : The PoFxActivateComponent routine increments the activation reference count on the specified component.
+old-location : kernel\pofxactivatecomponent.htm
+old-project : kernel
+ms.assetid : B964B836-68C1-4254-963C-8D46ACE64107
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : PoFxActivateComponent
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : 
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with  Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PoFxActivateComponent
+req.alt-loc : Ntoskrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ntoskrnl.lib
+req.dll : Ntoskrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # PoFxActivateComponent function
-
-
-
-## -description
 The <b>PoFxActivateComponent</b> routine increments the activation reference count on the specified component.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID PoFxActivateComponent(
@@ -54,20 +49,17 @@ VOID PoFxActivateComponent(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Handle [in]
+`Handle`
 
 A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.
 
-
-### -param Component [in]
+`Component`
 
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-
-### -param Flags [in]
+`Flags`
 
 The flags for the activation operation. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_<i>XXX</i></b> bits:
 
@@ -80,35 +72,13 @@ These two flag bits are mutually exclusive. For more information, see Remarks.
 </tr>
 <tr>
 
-### -param PO_FX_FLAG_BLOCKING
-### -param 0x1
 
-</td>
-<td width="60%">
-Make the condition change synchronous. If this flag is set, the routine that requests the condition change does not return control to the calling driver until the component hardware completes the transition to the new condition. This flag can be used only if the caller is running at IRQL &lt; DISPATCH_LEVEL.
+## Return Value
 
-</td>
-</tr>
-<tr>
-
-### -param PO_FX_FLAG_ASYNC_ONLY
-### -param 0x2
-
-</td>
-<td width="60%">
-Make the condition change fully asynchronous. If this flag is set, the calling driver's callback routine is called from a thread other than the thread in which the routine that requests the condition change is called. Thus, the routine that requests the condition change always returns asynchronously without waiting for the callback to complete.
-
-</td>
-</tr>
-</table>
- 
-
-
-## -returns
 None.
 
+## Remarks
 
-## -remarks
 Before a device driver can access a component in a device, the driver must first call <b>PoFxActivateComponent</b> to obtain an activation reference to the component. If the component is not already in the active condition, this call initiates a transition from the idle condition to the active condition. When this transition completes, PoFx calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a> routine to notify the driver. The driver can access the hardware registers in a component only when the component is in the active condition.
 
 If the component is already in the active condition when <b>PoFxActivateComponent</b> is called, no transition is required, and the <i>ComponentActiveConditionCallback</i> routine is not called.
@@ -129,8 +99,20 @@ When a <b>PoFxActivateComponent</b> call causes the activation reference count t
 
 PoFx notifies the driver when a transition between the active condition and idle condition occurs. A <i>ComponentActiveConditionCallback</i> callback notifies the driver of a transition to the active condition, and a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a> callback notifies the driver of a transition to the idle condition. When a <b>PoFxActivateComponent</b> or <b>PoFxIdleComponent</b> call simply increments or decrements the activation reference count without causing such a transition, the driver receives no notification.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a>
@@ -153,4 +135,3 @@ PoFx notifies the driver when a transition between the active condition and idle
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxActivateComponent routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

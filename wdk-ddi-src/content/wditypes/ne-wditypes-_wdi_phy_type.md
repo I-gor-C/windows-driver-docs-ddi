@@ -1,51 +1,44 @@
 ---
-UID: NE:wditypes._WDI_PHY_TYPE
-title: _WDI_PHY_TYPE
-author: windows-driver-content
-description: The WDI_PHY_TYPE enumeration defines the PHY types.
-old-location: netvista\wdi_phy_type.htm
-old-project: netvista
-ms.assetid: BDA90056-6DAA-4FC8-82EC-3062087E02C4
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDI_PHY_TYPE, WDI_PHY_TYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: wditypes.hpp
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WDI_PHY_TYPE
-req.alt-loc: wditypes.hpp
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: WDI_PHY_TYPE
-req.product: Windows 10 or later.
+UID : NE:wditypes._WDI_PHY_TYPE
+title : _WDI_PHY_TYPE
+author : windows-driver-content
+description : The WDI_PHY_TYPE enumeration defines the PHY types.
+old-location : netvista\wdi_phy_type.htm
+old-project : netvista
+ms.assetid : BDA90056-6DAA-4FC8-82EC-3062087E02C4
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDI_PHY_TYPE, WDI_PHY_TYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : wditypes.hpp
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WDI_PHY_TYPE
+req.alt-loc : wditypes.hpp
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : WDI_PHY_TYPE
+req.product : Windows 10 or later.
 ---
 
-# _WDI_PHY_TYPE enumeration
-
-
-
-## -description
+# _WDI_PHY_TYPE Enumeration
 The WDI_PHY_TYPE enumeration defines the PHY types.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _WDI_PHY_TYPE { 
   WDI_PHY_TYPE_UNKNOWN     = 0,
@@ -64,80 +57,83 @@ typedef enum _WDI_PHY_TYPE {
 } WDI_PHY_TYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field WDI_PHY_TYPE_UNKNOWN
+<tr>
+<td>WDI_PHY_TYPE_ANY</td>
+<td>Specifies an unknown or uninitialized PHY type.</td>
+</tr>
 
-Specifies an unknown or uninitialized PHY type.
+<tr>
+<td>WDI_PHY_TYPE_DMG</td>
+<td>Added in Windows 10, version 1607, WDI version 1.0.21.
 
+Specifies an 802.11ad PHY.</td>
+</tr>
 
-### -field WDI_PHY_TYPE_ANY
+<tr>
+<td>WDI_PHY_TYPE_DSSS</td>
+<td>Specifies a direct sequence spread spectrum (DSSS) PHY.</td>
+</tr>
 
-Specifies an unknown or uninitialized PHY type.
+<tr>
+<td>WDI_PHY_TYPE_ERP</td>
+<td>Specifies an extended-rate 802.11g PHY (ERP).</td>
+</tr>
 
+<tr>
+<td>WDI_PHY_TYPE_FHSS</td>
+<td>Specifies a frequency-hopping spread-spectrum (FHSS) PHY.</td>
+</tr>
 
-### -field WDI_PHY_TYPE_FHSS
+<tr>
+<td>WDI_PHY_TYPE_HRDSSS</td>
+<td>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</td>
+</tr>
 
-Specifies a frequency-hopping spread-spectrum (FHSS) PHY.
+<tr>
+<td>WDI_PHY_TYPE_HT</td>
+<td>Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is specified as this PHY type.</td>
+</tr>
 
+<tr>
+<td>WDI_PHY_TYPE_IHV_END</td>
+<td>Specifies the end of the range that is used to define proprietary PHY types that are developed by an IHV.</td>
+</tr>
 
-### -field WDI_PHY_TYPE_DSSS
+<tr>
+<td>WDI_PHY_TYPE_IHV_START</td>
+<td>Specifies the start of the range that is used to define proprietary PHY types that are developed by an independent hardware vendor (IHV).</td>
+</tr>
 
-Specifies a direct sequence spread spectrum (DSSS) PHY.
+<tr>
+<td>WDI_PHY_TYPE_IRBASEBAND</td>
+<td>Specifies an infrared (IR) baseband PHY.</td>
+</tr>
 
+<tr>
+<td>WDI_PHY_TYPE_OFDM</td>
+<td>Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.</td>
+</tr>
 
-### -field WDI_PHY_TYPE_IRBASEBAND
+<tr>
+<td>WDI_PHY_TYPE_UNKNOWN</td>
+<td>Specifies an unknown or uninitialized PHY type.</td>
+</tr>
 
-Specifies an infrared (IR) baseband PHY.
-
-
-### -field WDI_PHY_TYPE_OFDM
-
-Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.
-
-
-### -field WDI_PHY_TYPE_HRDSSS
-
-Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.
-
-
-### -field WDI_PHY_TYPE_ERP
-
-Specifies an extended-rate 802.11g PHY (ERP).
-
-
-### -field WDI_PHY_TYPE_HT
-
-Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is specified as this PHY type.
-
-
-
-
-### -field WDI_PHY_TYPE_VHT
-
-Specifies a very high-throughput (VHT) 802.11ac PHY.
-
-
-### -field WDI_PHY_TYPE_DMG
-
-Added in Windows 10, version 1607, WDI version 1.0.21.
-
-Specifies an 802.11ad PHY.
-
-
-### -field WDI_PHY_TYPE_IHV_START
-
-Specifies the start of the range that is used to define proprietary PHY types that are developed by an independent hardware vendor (IHV). 
-
-
-
-
-### -field WDI_PHY_TYPE_IHV_END
-
-Specifies the end of the range that is used to define proprietary PHY types that are developed by an IHV. 
-
+<tr>
+<td>WDI_PHY_TYPE_VHT</td>
+<td>Specifies a very high-throughput (VHT) 802.11ac PHY.</td>
+</tr>
+</table>
 
 
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wditypes.hpp |

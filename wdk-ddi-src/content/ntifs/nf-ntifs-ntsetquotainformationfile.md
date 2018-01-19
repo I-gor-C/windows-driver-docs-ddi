@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.NtSetQuotaInformationFile
-title: NtSetQuotaInformationFile function
-author: windows-driver-content
-description: The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume.
-old-location: kernel\zwsetquotainformationfile.htm
-old-project: kernel
-ms.assetid: 40c7a74c-eace-4d01-8a55-2c3c8bace8fb
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: NtSetQuotaInformationFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h, FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows operating systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwSetQuotaInformationFile,NtSetQuotaInformationFile
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.NtSetQuotaInformationFile
+title : NtSetQuotaInformationFile function
+author : windows-driver-content
+description : The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume.
+old-location : kernel\zwsetquotainformationfile.htm
+old-project : kernel
+ms.assetid : 40c7a74c-eace-4d01-8a55-2c3c8bace8fb
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : NtSetQuotaInformationFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h, FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 7 and later versions of Windows operating systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwSetQuotaInformationFile,NtSetQuotaInformationFile
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # NtSetQuotaInformationFile function
+The <b>ZwSetQuotaInformationFile</b> routine changes quota entries for the volume associated with the <i>FileHandle</i> parameter. All of the quota entries in the specified buffer are applied to the volume.
 
-
-
-## -description
-The <b>ZwSetQuotaInformationFile</b> routine changes quota entries for the volume associated with the <i>FileHandle</i> parameter. All of the quota entries in the specified buffer are applied to the volume. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwSetQuotaInformationFile(
@@ -54,30 +49,27 @@ NTSTATUS ZwSetQuotaInformationFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileHandle [in]
+`FileHandle`
 
 A handle for the file object that represents the file or volume for which the quota information is to be modified.
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 The address of the caller's I/O status block.
 
-
-### -param Buffer [in]
+`Buffer`
 
 A buffer containing the new quota entries that should be applied to the volume. The quota information must be formatted as one or more <a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a> structures. The <b>NextEntryOffset</b> field in the <b>FILE_QUOTA_INFORMATION</b> structure contains the offset, in bytes, of the next quota entry in the list. If there are no more entries after the current one, this member is zero.
 
+`Length`
 
-### -param Length [in]
-
-The length in bytes of the buffer. 
+The length in bytes of the buffer.
 
 
-## -returns
+## Return Value
+
 The <b>ZwSetQuotaInformationFile</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES </b></dt>
@@ -87,12 +79,10 @@ The <b>ZwSetQuotaInformationFile</b> routine returns STATUS_SUCCESS or an approp
 </dl>Quotas are not enabled on the volume. This is an error code.
 <dl>
 <dt><b>STATUS_MEDIA_WRITE_PROTECTED</b></dt>
-</dl>The volume is read only. This is an error code. 
+</dl>The volume is read only. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 The <b>ZwSetQuotaInformationFile</b> routine applies all of the quota entries in the specified <i>Buffer</i> parameter to the volume.
 
 The <b>IoCheckQuotaBufferValidity</b> function can check whether the specified quota buffer passed as the <i>Buffer</i> parameter is valid.
@@ -103,8 +93,20 @@ If the underlying file system does not support quota information (FAT and CDFS f
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
@@ -136,4 +138,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetQuotaInformationFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

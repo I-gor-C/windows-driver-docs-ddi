@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.RtlFreeHeap
-title: RtlFreeHeap function
-author: windows-driver-content
-description: The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap.
-old-location: ifsk\rtlfreeheap.htm
-old-project: ifsk
-ms.assetid: 5e8b6bd7-71e7-45ad-985c-fe197693ce05
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlFreeHeap
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlFreeHeap
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.RtlFreeHeap
+title : RtlFreeHeap function
+author : windows-driver-content
+description : The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap.
+old-location : ifsk\rtlfreeheap.htm
+old-project : ifsk
+ms.assetid : 5e8b6bd7-71e7-45ad-985c-fe197693ce05
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlFreeHeap
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlFreeHeap
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # RtlFreeHeap function
+The <b>RtlFreeHeap</b> routine frees a memory block that was allocated from a heap by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>.
 
-
-
-## -description
-The <b>RtlFreeHeap</b> routine frees a memory block that was allocated from a heap by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN RtlFreeHeap(
@@ -53,15 +48,13 @@ BOOLEAN RtlFreeHeap(
 );
 ````
 
+## Parameters
 
-## -parameters
+`HeapHandle`
 
-### -param HeapHandle [in]
+A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>.
 
-A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. 
-
-
-### -param Flags [in, optional]
+`Flags`
 
 A set of flags that controls aspects of freeing a memory block. Specifying the following value overrides the corresponding value that was specified in the <i>Flags</i> parameter when the heap was created by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. 
 
@@ -81,15 +74,14 @@ Mutual exclusion will not be used when <b>RtlFreeHeap</b> is accessing the heap.
 </td>
 </tr>
 </table>
- 
+
+`BaseAddress`
 
 
-### -param HeapBase [in]
-
-A pointer to the memory block to free. This pointer is returned by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. 
 
 
-## -returns
+## Return Value
+
 <b>RtlFreeHeap</b> returns <b>TRUE</b> if the block was freed successfully;   <b> FALSE</b> otherwise.
 
 
@@ -97,11 +89,20 @@ A pointer to the memory block to free. This pointer is returned by <a href="..\n
 <div> </div>
 
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -remarks
+## See Also
 
-
-## -see-also
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
@@ -118,4 +119,3 @@ A pointer to the memory block to free. This pointer is returned by <a href="..\n
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFreeHeap routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

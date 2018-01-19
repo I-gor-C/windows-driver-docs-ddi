@@ -1,49 +1,44 @@
 ---
-UID: NF:ndis.NdisSynchronousOidRequest
-title: NdisSynchronousOidRequest function
-author: windows-driver-content
-description: Protocol drivers call the NdisSynchronousOidRequest function to originate a new Synchronous OID request and issue it to underlying drivers.
-old-location: netvista\ndissynchronousoidrequest.htm
-old-project: netvista
-ms.assetid: BF539DDA-59ED-4010-88BC-3C7D8DC475EF
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisSynchronousOidRequest
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Windows 10, version 1709
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisSynchronousOidRequest
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisSynchronousOidRequest
+title : NdisSynchronousOidRequest function
+author : windows-driver-content
+description : Protocol drivers call the NdisSynchronousOidRequest function to originate a new Synchronous OID request and issue it to underlying drivers.
+old-location : netvista\ndissynchronousoidrequest.htm
+old-project : netvista
+ms.assetid : BF539DDA-59ED-4010-88BC-3C7D8DC475EF
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisSynchronousOidRequest
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Windows 10, version 1709
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisSynchronousOidRequest
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisSynchronousOidRequest function
-
-
-
-## -description
 Protocol drivers call the <b>NdisSynchronousOidRequest</b> function to originate a new Synchronous OID request and issue it to underlying drivers.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisSynchronousOidRequest(
@@ -52,22 +47,21 @@ NDIS_STATUS NdisSynchronousOidRequest(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisBindingHandle [in]
+`NdisBindingHandle`
 
 The handle returned by the <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function that identifies the target miniport adapter on the binding.
 
-
-### -param OidRequest [in]
+`OidRequest`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>Xxx</i> code. The structure can specify an OID query, set, or method request.
 
 
-## -returns
+## Return Value
+
 The underlying driver determines which NDIS_STATUS_<i>XXX</i> code 
      <b>NdisSynchronousOidRequest</b> returns, but it is usually one of the following values:
 <dl>
@@ -121,10 +115,8 @@ The underlying driver determines which NDIS_STATUS_<i>XXX</i> code
 </dl>This value typically is a non-specific default, returned when none of the more specific
        NDIS_STATUS_<i>Xxx</i> values caused the underlying driver to fail the request.
 
- 
+## Remarks
 
-
-## -remarks
 The <b>NdisSynchronousOidRequest</b> function cannot be used for general OID requests. For general OID requests, use the <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function instead. <b>NdisSynchronousOidRequest</b> can be used only for OIDs that NDIS supports for use with the Synchronous OID interface. Most protocol drivers do not need to call <b>NdisSynchronousOidRequest</b>
 
 Protocol drivers must not close the adapter binding until any Synchronous OID requests originated by the protocol driver are completed.
@@ -132,8 +124,20 @@ Protocol drivers must not close the adapter binding until any Synchronous OID re
 
 Protocol drivers are not required to implement <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">ProtocolOidRequestComplete</a> or <a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">ProtocolDirectOidRequestComplete</a> in order to call <b>NdisSynchronousOidRequest</b>. As its name suggests, a Synchronous OID request always completes synchronously, so there is no asynchronous callback.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
@@ -159,4 +163,3 @@ Protocol drivers are not required to implement <a href="..\ndis\nc-ndis-protocol
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSynchronousOidRequest function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

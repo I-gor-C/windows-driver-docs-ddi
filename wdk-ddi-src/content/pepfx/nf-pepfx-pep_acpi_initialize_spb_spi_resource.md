@@ -1,49 +1,44 @@
 ---
-UID: NF:pepfx.PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE
-title: PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE function
-author: windows-driver-content
-description: The PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_SPB_SPI_RESOURCE structure.
-old-location: kernel\pep_acpi_initialize_spb_spi_resource.htm
-old-project: kernel
-ms.assetid: 76568167-283C-4966-B7FC-0E8CDCD19B60
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: pepfx.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with Windows 10.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE
-req.alt-loc: pepfx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
+UID : NF:pepfx.PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE
+title : PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE function
+author : windows-driver-content
+description : The PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_SPB_SPI_RESOURCE structure.
+old-location : kernel\pep_acpi_initialize_spb_spi_resource.htm
+old-project : kernel
+ms.assetid : 76568167-283C-4966-B7FC-0E8CDCD19B60
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : pepfx.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with Windows 10.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE
+req.alt-loc : pepfx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
+
 # PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE function
-
-
-
-## -description
 The <b>PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_spi_resource.md">PEP_ACPI_SPB_SPI_RESOURCE</a> structure.
 
-
-
-## -syntax
+## Syntax
 
 ````
 FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE(
@@ -65,101 +60,97 @@ FORCEINLINE VOID PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param DeviceSelection [in]
+`DeviceSelection`
 
 The device selection value. This value is
 specific to the device and may refer to a chip-select line, GPIO
 line, or other line selection mechanism.
 
-
-### -param DeviceSelectionPolarity [in]
+`DeviceSelectionPolarity`
 
 The polarity of the clock. If zero, this indicates the
 clock is low during the first phase. If 1, this indicates the
 clock is high during the first phase.
 
-
-### -param WireMode [in]
+`WireMode`
 
 When zero, indicates that this device produces and consumes this resource. Otherwise, this device only consumes this resource.
 
-
-### -param DataBitLength [in]
+`DataBitLength`
 
 The size, in bits, of the smallest unit of transfer.
 
-
-### -param SlaveMode [in]
+`SlaveMode`
 
 Indicates if the resource is operating in slave mode.
 
-
-### -param ConnectionSpeed [in]
+`ConnectionSpeed`
 
 The maximum speed, in hertz, supported by this connection.
 
-
-### -param ClockPolarity [in]
+`ClockPolarity`
 
 The polarity of the clock. If zero, this indicates the
 clock is low during the first phase. If 1, this indicates the
 clock is high during the first phase.
 
-
-### -param ClockPhase [in]
+`ClockPhase`
 
 The phase of the clock pulse on which to capture data.
 
-
-### -param ResourceSource [in]
+`ResourceSource`
 
 The name of the serial bus controller device to which this
 connection descriptor applies. The name can be a fully
 qualified path, a relative path, or a simple name segment
 that utilizes the namespace search rules.
 
-
-### -param ResourceSourceIndex [in]
+`ResourceSourceIndex`
 
 This parameter should always be set to zero.
 
-
-### -param ResourceUsage [in]
+`ResourceUsage`
 
 Indicates if the resource is in use.
 
-
-### -param SharedMode [in]
+`SharedMode`
 
 Indicates if the resource is shared.
 
-
-### -param VendorData [in]
+`VendorData`
 
 A pointer to optional data that is specific to the serial bus connection type.
 
-
-### -param VendorDataLength [in]
+`VendorDataLength`
 
 The length of the buffer pointed to by the <i>VendorData</i> parameter.
 
-
-### -param Resource [out]
+`Resource`
 
 A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_spi_resource.md">PEP_ACPI_SPB_SPI_RESOURCE</a>.
 
 
-## -returns
+## Return Value
+
 This function does not return a value.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | pepfx.h |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_spi_resource.md">PEP_ACPI_SPB_SPI_RESOURCE</a>
@@ -170,4 +161,3 @@ This function does not return a value.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_INITIALIZE_SPB_SPI_RESOURCE function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

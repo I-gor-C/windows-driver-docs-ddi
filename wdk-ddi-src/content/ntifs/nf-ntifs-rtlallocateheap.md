@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.RtlAllocateHeap
-title: RtlAllocateHeap function
-author: windows-driver-content
-description: The RtlAllocateHeap routine allocates a block of memory from a heap.
-old-location: ifsk\rtlallocateheap.htm
-old-project: ifsk
-ms.assetid: 38f4c2b7-f9cd-42f2-b75e-725976b6b9dd
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlAllocateHeap
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlAllocateHeap
-req.alt-loc: NtosKrnl.exe,ntdll.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: < DISPATCH_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.RtlAllocateHeap
+title : RtlAllocateHeap function
+author : windows-driver-content
+description : The RtlAllocateHeap routine allocates a block of memory from a heap.
+old-location : ifsk\rtlallocateheap.htm
+old-project : ifsk
+ms.assetid : 38f4c2b7-f9cd-42f2-b75e-725976b6b9dd
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlAllocateHeap
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlAllocateHeap
+req.alt-loc : NtosKrnl.exe,ntdll.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : < DISPATCH_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # RtlAllocateHeap function
+The <b>RtlAllocateHeap</b> routine allocates a block of memory from a heap.
 
-
-
-## -description
-The <b>RtlAllocateHeap</b> routine allocates a block of memory from a heap. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 PVOID RtlAllocateHeap(
@@ -53,15 +48,13 @@ PVOID RtlAllocateHeap(
 );
 ````
 
+## Parameters
 
-## -parameters
+`HeapHandle`
 
-### -param HeapHandle [in]
+Handle for a private heap from which the memory will be allocated. This parameter is a handle returned from a successful call to <b>RtlCreateHeap</b>.
 
-Handle for a private heap from which the memory will be allocated. This parameter is a handle returned from a successful call to <b>RtlCreateHeap</b>. 
-
-
-### -param Flags [in, optional]
+`Flags`
 
 Specifies several controllable aspects of heap allocation. Specifying any of these values will override the corresponding value specified when the heap was created with <b>RtlCreateHeap</b>. This parameter can be one or more of the following values. 
 
@@ -101,15 +94,14 @@ Specifies that the allocated memory will be initialized to zero. Otherwise, the 
 </td>
 </tr>
 </table>
- 
+
+`Size`
+
+Number of bytes to be allocated. If the heap, specified by the <i>HeapHandle</i> parameter, is a nongrowable heap, <i>Size</i> must be less than or equal to the heap's virtual memory threshold. (For more information, see the <b>VirtualMemoryThreshold</b> member of the <i>Parameters</i> parameter to <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>.)
 
 
-### -param Size [in]
+## Return Value
 
-Number of bytes to be allocated. If the heap, specified by the <i>HeapHandle</i> parameter, is a nongrowable heap, <i>Size</i> must be less than or equal to the heap's virtual memory threshold. (For more information, see the <b>VirtualMemoryThreshold</b> member of the <i>Parameters</i> parameter to <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>.) 
-
-
-## -returns
 If the call to <b>RtlAllocateHeap</b> succeeds, the return value is a pointer to the newly-allocated block. 
 <dl>
 <dt><b>STATUS_ACCESS_VIOLATION</b></dt>
@@ -119,12 +111,10 @@ If the call to <b>RtlAllocateHeap</b> succeeds, the return value is a pointer to
 </dl>The allocation attempt failed because the heap is nongrowable and the requested <i>Size</i> was greater than the heap's virtual memory threshold. 
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl>The allocation attempt failed because of a lack of available memory or heap corruption. 
+</dl>The allocation attempt failed because of a lack of available memory or heap corruption.
 
- 
+## Remarks
 
-
-## -remarks
 <b>RtlAllocateHeap</b> allocates a block of memory of the specified size from the specified heap. 
 
 To free a block of memory allocated by <b>RtlAllocateHeap</b>, call <b>RtlFreeHeap</b>. 
@@ -137,10 +127,22 @@ The process has only one thread.
 
 The process has multiple threads, but only one thread calls the heap functions for a specific heap. 
 
-The process has multiple threads, and the application provides its own mechanism for mutual exclusion to a specific heap. 
+The process has multiple threads, and the application provides its own mechanism for mutual exclusion to a specific heap.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | < DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
@@ -157,4 +159,3 @@ The process has multiple threads, and the application provides its own mechanism
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAllocateHeap routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

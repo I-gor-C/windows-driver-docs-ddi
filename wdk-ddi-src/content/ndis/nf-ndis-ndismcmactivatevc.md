@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisMCmActivateVc
-title: NdisMCmActivateVc function
-author: windows-driver-content
-description: NdisMCmActivateVc notifies NDIS that an MCM driver is ready to make transfers on a particular VC.
-old-location: netvista\ndismcmactivatevc.htm
-old-project: netvista
-ms.assetid: 2c2e4f7d-578a-4429-baca-ebe45423afff
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMCmActivateVc
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMCmActivateVc
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_MCM_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMCmActivateVc
+title : NdisMCmActivateVc function
+author : windows-driver-content
+description : NdisMCmActivateVc notifies NDIS that an MCM driver is ready to make transfers on a particular VC.
+old-location : netvista\ndismcmactivatevc.htm
+old-project : netvista
+ms.assetid : 2c2e4f7d-578a-4429-baca-ebe45423afff
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMCmActivateVc
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMCmActivateVc
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_MCM_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMCmActivateVc function
-
-
-
-## -description
 <b>NdisMCmActivateVc</b> notifies NDIS that an MCM driver is ready to make transfers on a particular
   VC.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMCmActivateVc(
@@ -53,22 +48,21 @@ NDIS_STATUS NdisMCmActivateVc(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisVcHandle [in]
+`NdisVcHandle`
 
 Specifies the handle identifying the VC.
 
-
-### -param CallParameters [in]
+`CallParameters`
 
 Pointer to a caller-allocated buffer, formatted as a structure of type 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>, containing all the
      media-specific parameters that the miniport driver uses for the activated VC.
 
 
-## -returns
+## Return Value
+
 When 
      <b>NdisMCmActivateVc</b> returns anything other than NDIS_STATUS_PENDING, the MCM driver should make an
      internal call to its 
@@ -76,8 +70,8 @@ When
      ProtocolCmActivateVcComplete</a> function. Otherwise, NDIS calls the MCM driver's 
      <i>ProtocolCmActivateVcComplete</i> function when this operation is completed.
 
+## Remarks
 
-## -remarks
 <b>NdisMCmActivateVc</b> informs NDIS that an MCM driver has set up call and media parameters on a newly
     created VC or changed the call parameters on an established VC.
 
@@ -124,8 +118,20 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
     drivers, call 
     <b>NdisCmActivateVc</b> instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_MCM_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
@@ -160,4 +166,3 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmActivateVc function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

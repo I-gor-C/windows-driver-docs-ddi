@@ -1,75 +1,69 @@
 ---
-UID: NC:wsk.PFN_WSK_GET_ADDRESS_INFO
-title: PFN_WSK_GET_ADDRESS_INFO
-author: windows-driver-content
-description: The WskGetAddressInfo function performs protocol-independent translation from a host name to a transport address.
-old-location: netvista\wskgetaddressinfo.htm
-old-project: netvista
-ms.assetid: 688619b9-ab0b-4459-8f1b-74815043a190
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: wsk.h
-req.include-header: Wsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WskGetAddressInfo
-req.alt-loc: wsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-req.product: Windows 10 or later.
+UID : NC:wsk.PFN_WSK_GET_ADDRESS_INFO
+title : PFN_WSK_GET_ADDRESS_INFO
+author : windows-driver-content
+description : The WskGetAddressInfo function performs protocol-independent translation from a host name to a transport address.
+old-location : netvista\wskgetaddressinfo.htm
+old-project : netvista
+ms.assetid : 688619b9-ab0b-4459-8f1b-74815043a190
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wsk.h
+req.include-header : Wsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WskGetAddressInfo
+req.alt-loc : wsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO"
+req.product : Windows 10 or later.
 ---
 
-# PFN_WSK_GET_ADDRESS_INFO callback
 
-
-
-## -description
+# PFN_WSK_GET_ADDRESS_INFO callback function
 The 
   <i>WskGetAddressInfo</i> function performs protocol-independent translation from a host name to a transport
   address.
 
+## Syntax
 
+```
+PFN_WSK_GET_ADDRESS_INFO PfnWskGetAddressInfo;
 
-## -prototype
-
-````
-PFN_WSK_GET_ADDRESS_INFO WskGetAddressInfo;
-
-NTSTATUS WSKAPI * WskGetAddressInfo(
-  _In_     PWSK_CLIENT     Client,
-  _In_opt_ PUNICODE_STRING NodeName,
-  _In_opt_ PUNICODE_STRING ServiceName,
-  _In_opt_ ULONG           NameSpace,
-  _In_opt_ GUID            *Provider,
-  _In_opt_ PADDRINFOEXW    Hints,
-  _Out_    PADDRINFOEXW    *Result,
-  _In_opt_ PEPROCESS       OwningProcess,
-  _In_opt_ PETHREAD        OwningThread,
-  _Inout_  PIRP            Irp
+NTSTATUS PfnWskGetAddressInfo(
+  PWSK_CLIENT Client,
+  PUNICODE_STRING NodeName,
+  PUNICODE_STRING ServiceName,
+  ULONG NameSpace,
+  GUID *Provider,
+  PADDRINFOEXW Hints,
+  PADDRINFOEXW *Result,
+  PEPROCESS OwningProcess,
+  PETHREAD OwningThread,
+  PIRP Irp
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Client [in]
+`Client`
 
 [in] A pointer to a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
@@ -78,8 +72,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
      WskCaptureProviderNPI</a> function.
 
-
-### -param NodeName [in, optional]
+`NodeName`
 
 [in] An optional pointer to a 
      <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a
@@ -87,26 +80,22 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      protocol, the numeric host address string is a dotted-decimal IPv4 address or an IPv6 hexadecimal
      address.
 
-
-### -param ServiceName [in, optional]
+`ServiceName`
 
 [in] An optional pointer to a 
      <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a service name or a port number.
 
-
-### -param NameSpace [in, optional]
+`NameSpace`
 
 [in] An optional namespace identifier that specifies the namespace providers that are queried.
      Only namespace providers that support the specified namespace can be queried successfully.
 
-
-### -param Provider [in, optional]
-
-[in] An optional pointer to a GUID of a specific namespace provider to be queried.
+`*Provider`
 
 
-### -param Hints [in, optional]
+
+`Hints`
 
 [in] An optional pointer to an <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure that provides hints about the type of socket
      that the caller supports.
@@ -122,27 +111,11 @@ The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">AD
      Ws2def.h directly.</div>
 <div> </div>
 
-### -param Result [out]
+`*Result`
 
-[out] A pointer to a caller-allocated buffer that receives a linked list of one or more
-     <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structures that represent response information about the host.
-     
 
-<div class="alert"><b>Note</b>  The caller must call the 
-     <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a> function to free
-     this pointer.</div>
-<div> </div>
-The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
-     Ws2def.h header. It is identical to the 
-     <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
 
-<div class="alert"><b>Important</b>  The 
-     Ws2def.h header file is automatically included in 
-     Wsk.h. Do not use 
-     Ws2def.h directly.</div>
-<div> </div>
-
-### -param OwningProcess [in, optional]
+`OwningProcess`
 
 [in] An optional pointer to the process from which the function retrieves the security context.
      This security context indicates the user account context in which the function processes the name
@@ -155,8 +128,7 @@ If this parameter is <b>NULL</b>, the function processes the name resolution req
 If this parameter is not <b>NULL</b> and an impersonation token is in effect for the calling thread, this
      function fails and returns STATUS_INVALID_PARAMETER.
 
-
-### -param OwningThread [in, optional]
+`OwningThread`
 
 [in] An optional pointer to the thread from which the function retrieves the security context.
      This parameter can be non-<b>NULL</b> only if 
@@ -166,8 +138,7 @@ If this parameter is not <b>NULL</b> and an impersonation token is in effect for
 If this parameter is not <b>NULL</b> and an impersonation token is in effect for the calling thread, this
      function fails and returns STATUS_INVALID_PARAMETER.
 
-
-### -param Irp [in, out]
+`Irp`
 
 [in/out] A pointer to an I/O request packet (IRP) to use to complete the request asynchronously.
      Upon completion of the request, 
@@ -175,7 +146,8 @@ If this parameter is not <b>NULL</b> and an impersonation token is in effect for
      <b>Iostatus.Information</b> will hold the returned status code.
 
 
-## -returns
+## Return Value
+
 <b>WskGetAddressInfo</b> returns one of the following NTSTATUS codes:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -198,18 +170,28 @@ If this parameter is not <b>NULL</b> and an impersonation token is in effect for
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred. The IRP will be completed with failure status.
 
- 
+## Remarks
 
-
-## -remarks
 The process to which the 
     <i>OwningProcess</i> parameter points, or the thread to which the 
     <i>OwningThread</i> process points, indicates the security context for this function. The user account
     that is indicated by the security context indicates the context for the function's name resolution
     request.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wsk.h (include Wsk.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
@@ -229,4 +211,3 @@ The process to which the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_ADDRESS_INFO callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

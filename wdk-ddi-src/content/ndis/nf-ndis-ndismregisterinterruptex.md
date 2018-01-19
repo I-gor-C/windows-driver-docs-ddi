@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisMRegisterInterruptEx
-title: NdisMRegisterInterruptEx function
-author: windows-driver-content
-description: NDIS miniport drivers call the NdisMRegisterInterruptEx function to register an interrupt.
-old-location: netvista\ndismregisterinterruptex.htm
-old-project: netvista
-ms.assetid: db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMRegisterInterruptEx
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMRegisterInterruptEx
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Init_DeRegisterInterrupt, Init_RegisterInterrupt, Irql_Interrupt_Function, NdisMDeregisterInterruptEx
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMRegisterInterruptEx
+title : NdisMRegisterInterruptEx function
+author : windows-driver-content
+description : NDIS miniport drivers call the NdisMRegisterInterruptEx function to register an interrupt.
+old-location : netvista\ndismregisterinterruptex.htm
+old-project : netvista
+ms.assetid : db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMRegisterInterruptEx
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMRegisterInterruptEx
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Init_DeRegisterInterrupt, Init_RegisterInterrupt, Irql_Interrupt_Function, NdisMDeregisterInterruptEx
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMRegisterInterruptEx function
-
-
-
-## -description
 NDIS miniport drivers call the 
   <b>NdisMRegisterInterruptEx</b> function to register an interrupt.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMRegisterInterruptEx(
@@ -55,24 +50,21 @@ NDIS_STATUS NdisMRegisterInterruptEx(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterHandle [in]
+`MiniportAdapterHandle`
 
 The miniport adapter handle that NDIS passed to the 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
 
-
-### -param MiniportInterruptContext [in]
+`MiniportInterruptContext`
 
 A pointer to a block of context information. The miniport driver allocates this memory to store
      information about the interrupt. NDIS passes the context information block in subsequent calls to other
      functions that are associated with the interrupt.
 
-
-### -param MiniportInterruptCharacteristics [in]
+`MiniportInterruptCharacteristics`
 
 A pointer to an 
      <a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
@@ -80,15 +72,15 @@ A pointer to an
      initializes this structure with handler entry points and configuration parameters that define the
      interrupt characteristics.
 
-
-### -param NdisInterruptHandle [out]
+`NdisInterruptHandle`
 
 A pointer to an NDIS handle. NDIS writes the handle for the newly created interrupt object to the
      address that the 
      <i>NdisInterruptHandle</i> pointer specifies.
 
 
-## -returns
+## Return Value
+
 <b>NdisMRegisterInterruptEx</b> can return one of the following values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -103,10 +95,8 @@ A pointer to an NDIS handle. NDIS writes the handle for the newly created interr
 </dl>The attempt to initialize the interrupt object failed for reasons other than those in the
        preceding list.
 
- 
+## Remarks
 
-
-## -remarks
 A miniport driver must call 
     <b>NdisMRegisterInterruptEx</b> from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function if
@@ -178,8 +168,20 @@ Drivers call the
     NdisMDeregisterInterruptEx</a> function to release resources that were previously allocated with 
     <b>NdisMRegisterInterruptEx</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Init_DeRegisterInterrupt, Init_RegisterInterrupt, Irql_Interrupt_Function, NdisMDeregisterInterruptEx |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
@@ -226,4 +228,3 @@ Drivers call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterInterruptEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.MmLockPagableCodeSection
-title: MmLockPagableCodeSection macro
-author: windows-driver-content
-description: The MmLockPagableCodeSection routine locks a section of driver code, containing a set of driver routines marked with a special compiler directive, into system space.
-old-location: kernel\mmlockpagablecodesection.htm
-old-project: kernel
-ms.assetid: dd2764d0-5775-4a89-8cdd-ba6806fb867d
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: MmLockPagableCodeSection
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MmLockPagableCodeSection
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.MmLockPagableCodeSection
+title : MmLockPagableCodeSection macro
+author : windows-driver-content
+description : The MmLockPagableCodeSection routine locks a section of driver code, containing a set of driver routines marked with a special compiler directive, into system space.
+old-location : kernel\mmlockpagablecodesection.htm
+old-project : kernel
+ms.assetid : dd2764d0-5775-4a89-8cdd-ba6806fb867d
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : MmLockPagableCodeSection
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MmLockPagableCodeSection
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <=APC_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
-# MmLockPagableCodeSection macro
 
-
-
-## -description
+# MmLockPagableCodeSection function
 The <b>MmLockPagableCodeSection </b>routine locks a section of driver code, containing a set of driver routines marked with a special compiler directive, into system space.
 
-
-
-## -syntax
+## Syntax
 
 ````
 PVOID MmLockPagableCodeSection(
@@ -52,15 +47,19 @@ PVOID MmLockPagableCodeSection(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param AddressWithinSection [in]
-
-Specifies a symbolic address. This address is typically the name of a driver function within a section of driver code that has been marked with something like <b>#pragma alloc_text (PAGExxxx, driverfunction)</b>. All functions in the <b>PAGExxxx</b> section are then guaranteed to be locked down when this function returns. 
+`Address`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 The <b>MmLockPagableCodeSection</b> routine and <b>MmUnlockPagableImageSection</b> (the routine that performs the opposite action) support drivers that can do the following:
 
 Defer loading a subset of driver routines into resident memory until incoming I/O requests for the driver's devices make it necessary for these routines to process IRPs.
@@ -99,10 +98,22 @@ Note that routines in a pageable section marked with the compiler directive <b>#
 
 The memory manager maintains an internal lock count on any driver's pageable section. Calls to <b>MmLockPagableCodeSection</b> increment this count and the reciprocal <b>MmUnlockPagableImageSection</b> decrements the count. A driver's pageable section is not available to be paged out unless this count is zero.
 
-For more information about creating pageable code sections, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554346">Making Drivers Pageable</a>. 
+For more information about creating pageable code sections, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554346">Making Drivers Pageable</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | <=APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-mmunlockpagableimagesection.md">MmUnlockPagableImageSection</a>
@@ -125,4 +136,3 @@ For more information about creating pageable code sections, see <a href="https:/
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmLockPagableCodeSection routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

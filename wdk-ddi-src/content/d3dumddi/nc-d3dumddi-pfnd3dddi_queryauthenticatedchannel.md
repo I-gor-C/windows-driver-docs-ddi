@@ -1,74 +1,68 @@
 ---
-UID: NC:d3dumddi.PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
-title: PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
-author: windows-driver-content
-description: The QueryAuthenticatedChannel function queries an authenticated channel for capability and state information.
-old-location: display\queryauthenticatedchannel.htm
-old-project: display
-ms.assetid: 13b65b5a-9512-4d67-b629-479bdd74674e
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: d3dumddi.h
-req.include-header: D3dumddi.h
-req.target-type: Desktop
-req.target-min-winverclnt: QueryAuthenticatedChannel is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: QueryAuthenticatedChannel
-req.alt-loc: d3dumddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
+UID : NC:d3dumddi.PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
+title : PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
+author : windows-driver-content
+description : The QueryAuthenticatedChannel function queries an authenticated channel for capability and state information.
+old-location : display\queryauthenticatedchannel.htm
+old-project : display
+ms.assetid : 13b65b5a-9512-4d67-b629-479bdd74674e
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : d3dumddi.h
+req.include-header : D3dumddi.h
+req.target-type : Desktop
+req.target-min-winverclnt : QueryAuthenticatedChannel is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : QueryAuthenticatedChannel
+req.alt-loc : d3dumddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : DXGK_PTE
 ---
 
-# PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback
 
+# PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback function
+The <i>QueryAuthenticatedChannel</i> function queries an authenticated channel for capability and state information.
 
+## Syntax
 
-## -description
-The <i>QueryAuthenticatedChannel</i> function queries an authenticated channel for capability and state information. 
+```
+PFND3DDDI_QUERYAUTHENTICATEDCHANNEL Pfnd3dddiQueryauthenticatedchannel;
 
-
-
-## -prototype
-
-````
-PFND3DDDI_QUERYAUTHENTICATEDCHANNEL QueryAuthenticatedChannel;
-
-__checkReturn HRESULT APIENTRY QueryAuthenticatedChannel(
-  _In_          HANDLE                              hDevice,
-  _Inout_ const D3DDDIARG_QUERYAUTHENTICATEDCHANNEL *pData
+HRESULT Pfnd3dddiQueryauthenticatedchannel(
+  HANDLE hDevice,
+  CONST D3DDDIARG_QUERYAUTHENTICATEDCHANNEL *
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`hDevice`
+
+A handle to the display device (graphics context).
+
+`*`
 
 
-## -parameters
-
-### -param hDevice [in]
-
- A handle to the display device (graphics context).
 
 
-### -param pData [in, out]
+## Return Value
 
- A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_queryauthenicatedchannel.md">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a> structure that describes authenticated-channel information to query. This structure contains an input buffer that describes the query and an output buffer to return the queried information. 
-
-
-## -returns
 <i>QueryAuthenticatedChannel</i> returns one of the following values:
 <dl>
 <dt><b>S_OK</b></dt>
@@ -77,10 +71,8 @@ __checkReturn HRESULT APIENTRY QueryAuthenticatedChannel(
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl><i>QueryAuthenticatedChannel</i> could not allocate the required memory for it to complete.
 
- 
+## Remarks
 
-
-## -remarks
 The input buffer contains the driver's handle to the authenticated channel, a sequence number, and a GUID that indicates the type of query. The driver should fail all queries if the driver did not previously initialize the sequence number through a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a> function. The driver should also fail the query if the sequence number is not greater than the sequence number of the previous query call. 
 
 The driver should duplicate the input data in the structure of the output buffer and should sign the output structure identically to how it currently handles <a href="https://msdn.microsoft.com/2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2">Output Protection Manager</a> (OPM) queries.
@@ -157,10 +149,22 @@ A new OPM query (DXGKMDT_OPM_GET_OUTPUT_ID) requests the driver to return the id
 
 The input buffer points to a D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_INPUT structure.
 
-The output buffer points to a D3DAUTHENTICATEDCHANNEL_QUERYROUTPUTID_OUTPUT structure. 
+The output buffer points to a D3DAUTHENTICATEDCHANNEL_QUERYROUTPUTID_OUTPUT structure.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3dumddi.h (include D3dumddi.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a>
@@ -174,4 +178,3 @@ The output buffer points to a D3DAUTHENTICATEDCHANNEL_QUERYROUTPUTID_OUTPUT stru
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

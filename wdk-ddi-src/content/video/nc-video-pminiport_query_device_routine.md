@@ -1,82 +1,74 @@
 ---
-UID: NC:video.PMINIPORT_QUERY_DEVICE_ROUTINE
-title: PMINIPORT_QUERY_DEVICE_ROUTINE
-author: windows-driver-content
-description: HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure.
-old-location: display\hwvidquerydevicecallback.htm
-old-project: display
-ms.assetid: 81c3f484-427e-43b8-b7dd-12017533560b
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: video.h
-req.include-header: Video.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: HwVidQueryDeviceCallback
-req.alt-loc: video.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
-req.product: Windows 10 or later.
+UID : NC:video.PMINIPORT_QUERY_DEVICE_ROUTINE
+title : PMINIPORT_QUERY_DEVICE_ROUTINE
+author : windows-driver-content
+description : HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure.
+old-location : display\hwvidquerydevicecallback.htm
+old-project : display
+ms.assetid : 81c3f484-427e-43b8-b7dd-12017533560b
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : video.h
+req.include-header : Video.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : HwVidQueryDeviceCallback
+req.alt-loc : video.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : VHF_CONFIG, *PVHF_CONFIG
+req.product : Windows 10 or later.
 ---
 
-# PMINIPORT_QUERY_DEVICE_ROUTINE callback
 
-
-
-## -description
+# PMINIPORT_QUERY_DEVICE_ROUTINE callback function
 <i>HwVidQueryDeviceCallback</i> uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure.
 
+## Syntax
 
+```
+PMINIPORT_QUERY_DEVICE_ROUTINE PminiportQueryDeviceRoutine;
 
-## -prototype
-
-````
-PMINIPORT_QUERY_DEVICE_ROUTINE HwVidQueryDeviceCallback;
-
-VP_STATUS HwVidQueryDeviceCallback(
-   PVOID                  HwDeviceExtension,
-   PVOID                  Context,
-   VIDEO_DEVICE_DATA_TYPE DeviceDataType,
-   PVOID                  Identifier,
-   ULONG                  IdentifierLength,
-   PVOID                  ConfigurationData,
-   ULONG                  ConfigurationDataLength,
-   PVOID                  ComponentInformation,
-   ULONG                  ComponentInformationLength
+VP_STATUS PminiportQueryDeviceRoutine(
+  PVOID HwDeviceExtension,
+  PVOID Context,
+  VIDEO_DEVICE_DATA_TYPE DeviceDataType,
+  PVOID Identifier,
+  ULONG IdentiferLength,
+  PVOID ConfigurationData,
+  ULONG ConfigurationDataLength,
+  PVOID ComponentInformation,
+  ULONG ComponentInformationLength
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param HwDeviceExtension 
+`HwDeviceExtension`
 
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>.
 
-
-### -param Context 
+`Context`
 
 Pointer to the context value set up by <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>. Usually, it points to the VIDEO_PORT_CONFIG_INFO buffer or to an offset in that buffer.
 
-
-### -param DeviceDataType 
+`DeviceDataType`
 
 Specifies the type of configuration information that was requested, which is one of the following:
 
@@ -102,44 +94,39 @@ Specifies the type of configuration information that was requested, which is one
 
 </dd>
 </dl>
-Miniport drivers of x86-type video adapters usually specify <b>VpBusData</b>, particularly for adapters on EISA buses. The <b>VpControllerData</b> and <b>VpMonitorData</b> values have meaning only on ARC-compliant platforms. The <b>VpCmosData</b> and <b>VpMachineData</b> values are seldom used.  
+Miniport drivers of x86-type video adapters usually specify <b>VpBusData</b>, particularly for adapters on EISA buses. The <b>VpControllerData</b> and <b>VpMonitorData</b> values have meaning only on ARC-compliant platforms. The <b>VpCmosData</b> and <b>VpMachineData</b> values are seldom used.
 
-
-### -param Identifier 
+`Identifier`
 
 Pointer to the name of the device as determined by the ARC firmware. This parameter should be used only on ARC-compliant platforms. Otherwise, this pointer should be <b>NULL</b>.
 
-
-### -param IdentifierLength 
-
-Specifies the size in bytes of the buffered <i>Identifier</i> string<i>.</i> The value should be zero if the machine is not ARC-compliant.
+`IdentiferLength`
 
 
-### -param ConfigurationData 
+
+`ConfigurationData`
 
 Pointer to hardware configuration data. The format of this data is determined by the specified <i>DeviceDataType</i> and by the <b>AdapterInterfaceType</b> value in the VIDEO_PORT_CONFIG_INFO.
 
-
-### -param ConfigurationDataLength 
+`ConfigurationDataLength`
 
 Specifies the size in bytes of the <i>ConfigurationData</i> buffer. In effect, this indicates how much information was collected from the registry and stored in the <i>ConfigurationData</i> buffer allocated by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.
 
+`ComponentInformation`
 
-### -param ComponentInformation 
+Reserved for system use.
+
+`ComponentInformationLength`
 
 Reserved for system use.
 
 
-### -param ComponentInformationLength 
+## Return Value
 
-Reserved for system use.
-
-
-## -returns
 <i>HwVidQueryDeviceCallback</i> returns the status of the operation.
 
+## Remarks
 
-## -remarks
 <i>HwVidQueryDeviceCallback</i> is passed in a call to <a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a> from the miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function. <b>VideoPortGetDeviceData</b> calls <i>HwVidQueryDeviceCallback</i> after collecting available configuration information under the <b>\Registry\Machine\Hardware\Description</b> node of the registry.
 
 <i>HwVidQueryDeviceCallback</i> examines the <i>ConfigurationData</i>, collected from the registry by <b>VideoPortGetDeviceData</b>. It uses this information to configure its adapter, and, possibly, to fill in missing configuration information in the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure.
@@ -154,8 +141,20 @@ If it cannot get bus-relative access ranges values by calling <b>VideoPortGetDev
 
 <i>HwVidQueryDeviceCallback</i> should be made pageable.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | video.h (include Video.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
@@ -178,4 +177,3 @@ If it cannot get bus-relative access ranges values by calling <b>VideoPortGetDev
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_QUERY_DEVICE_ROUTINE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

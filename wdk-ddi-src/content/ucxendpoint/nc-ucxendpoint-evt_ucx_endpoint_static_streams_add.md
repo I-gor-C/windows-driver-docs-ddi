@@ -1,88 +1,79 @@
 ---
-UID: NC:ucxendpoint.EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
-title: EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD function
-author: windows-driver-content
-description: The client driver's implementation that UCX calls to create static streams.
-old-location: buses\evt_ucx_endpoint_static_streams_add.htm
-old-project: usbref
-ms.assetid: 76f94f19-894a-47af-a407-8e14263f1143
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ucxendpoint.h
-req.include-header: Ucxclass.h, Ucxendpoint.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: PEVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
-req.alt-loc: ucxendpoint.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
-req.product: Windows 10 or later.
+UID : NC:ucxendpoint.EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
+title : EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
+author : windows-driver-content
+description : The client driver's implementation that UCX calls to create static streams.
+old-location : buses\evt_ucx_endpoint_static_streams_add.htm
+old-project : usbref
+ms.assetid : 76f94f19-894a-47af-a407-8e14263f1143
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ucxendpoint.h
+req.include-header : Ucxclass.h, Ucxendpoint.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : PEVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
+req.alt-loc : ucxendpoint.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
+req.product : Windows 10 or later.
 ---
 
+
 # EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD function
-
-
-
-## -description
 The client driver's implementation that UCX calls to create static streams.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD EvtUcxEndpointStaticStreamsAdd;
 
 NTSTATUS EvtUcxEndpointStaticStreamsAdd(
-  _In_ UCXENDPOINT       Endpoint,
-  _In_ ULONG             NumberOfStreams,
-  _In_ PUCXSSTREAMS_INIT UcxStaticStreamsInit
+  UCXENDPOINT UcxEndpoint,
+  ULONG NumberOfStreams,
+  PUCXSSTREAMS_INIT UcxStaticStreamsInit
 )
-{ ... }
+{...}
+```
 
-typedef EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD PEVT_UCX_ENDPOINT_STATIC_STREAMS_ADD;
-````
+## Parameters
 
-
-## -parameters
-
-### -param Endpoint [in]
-
-A handle to a UCXENDPOINT object that represents the endpoint.
+`UcxEndpoint`
 
 
-### -param NumberOfStreams [in]
+
+`NumberOfStreams`
 
 The number of non-default streams to create.
 
-
-### -param UcxStaticStreamsInit [in]
+`UcxStaticStreamsInit`
 
 A pointer to an opaque structure containing
         initialization information.  This structure is managed by UCX.
 
 
-## -returns
+## Return Value
+
 If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.
 
+## Remarks
 
-## -remarks
 The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
  method.
 
@@ -92,3 +83,15 @@ This callback function creates a UCX static streams object by calling the <a hre
 
 A static streams object is not enabled
     until UCX calls the client driver's <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |

@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisMCmDeactivateVc
-title: NdisMCmDeactivateVc function
-author: windows-driver-content
-description: NdisMCmDeactivateVc notifies NDIS that there will be no further transfers on a particular active VC.
-old-location: netvista\ndismcmdeactivatevc.htm
-old-project: netvista
-ms.assetid: e18f6326-621e-4bed-aa82-b326f3b1422d
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMCmDeactivateVc
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDeactivateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDeactivateVc (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMCmDeactivateVc
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_MCM_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMCmDeactivateVc
+title : NdisMCmDeactivateVc function
+author : windows-driver-content
+description : NdisMCmDeactivateVc notifies NDIS that there will be no further transfers on a particular active VC.
+old-location : netvista\ndismcmdeactivatevc.htm
+old-project : netvista
+ms.assetid : e18f6326-621e-4bed-aa82-b326f3b1422d
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMCmDeactivateVc
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDeactivateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDeactivateVc (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMCmDeactivateVc
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_MCM_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisMCmDeactivateVc function
-
-
-
-## -description
 <b>NdisMCmDeactivateVc</b> notifies NDIS that there will be no further transfers on a particular active
   VC.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisMCmDeactivateVc(
@@ -52,10 +47,9 @@ NDIS_STATUS NdisMCmDeactivateVc(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param NdisVcHandle [in]
+`NdisVcHandle`
 
 Specifies the handle identifying the VC. This handle was supplied by NDIS to the MCM driver either
      when it called 
@@ -65,7 +59,8 @@ Specifies the handle identifying the VC. This handle was supplied by NDIS to the
      the VC for a client-initiated outgoing call.
 
 
-## -returns
+## Return Value
+
 <b>NdisMCmDeactivateVc</b> can return one of the following:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -74,10 +69,8 @@ Specifies the handle identifying the VC. This handle was supplied by NDIS to the
 <dt><b>NDIS_STATUS_NOT_ACCEPTED</b></dt>
 </dl>The VC is already deactivated, so this call is redundant.
 
- 
+## Remarks
 
-
-## -remarks
 An MCM driver calls 
     <b>NdisMCmDeactivateVc</b> as an essential step in closing a call, usually after the packet exchange with
     network components that tears down the connection.
@@ -115,8 +108,20 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
     drivers, call 
     <b>NdisCmDeactivateVc</b> instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_MCM_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
@@ -151,4 +156,3 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDeactivateVc function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

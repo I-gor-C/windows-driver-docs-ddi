@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugAdvanced3.Request
-title: IDebugAdvanced3::Request method
-author: windows-driver-content
-description: The Request method performs a variety of different operations.
-old-location: debugger\request.htm
-old-project: debugger
-ms.assetid: efb3c93c-5405-418b-a063-afa8e5e9e59a
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugAdvanced3, IDebugAdvanced3::Request, Request
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugAdvanced2.Request,IDebugAdvanced3.Request
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugAdvanced3.Request
+title : IDebugAdvanced3::Request method
+author : windows-driver-content
+description : The Request method performs a variety of different operations.
+old-location : debugger\request.htm
+old-project : debugger
+ms.assetid : efb3c93c-5405-418b-a063-afa8e5e9e59a
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugAdvanced3, IDebugAdvanced3::Request, Request
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugAdvanced2.Request,IDebugAdvanced3.Request
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugAdvanced3::Request method
 
-
-
-## -description
+# Request method
 The <b>Request</b> method performs a variety of different operations.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT Request(
@@ -56,10 +51,9 @@ HRESULT Request(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Request [in]
+`Request`
 
 Specifies which operation to perform.  <b>Request</b> can be one of the values in the following table.  Details of each operation can be found by following the link in the "Request" column.
 
@@ -225,35 +219,30 @@ Perform a variety of different operations that aid in the interpretation of type
 </td>
 </tr>
 </table>
- 
 
-
-### -param InBuffer [in, optional]
+`InBuffer`
 
 Specifies the input to this method.  The type and interpretation of the input depends on the <i>Request</i> parameter.
 
-
-### -param InBufferSize [in]
+`InBufferSize`
 
 Specifies the size of the input buffer <i>InBuffer</i>.  If the request requires no input, <i>InBufferSize</i> should be set to zero.
 
-
-### -param OutBuffer [out, optional]
+`OutBuffer`
 
 Receives the output from this method.  The type and interpretation of the output depends on the <i>Request</i> parameter.  If <i>OutBuffer</i> is <b>NULL</b>, the output is not returned.
 
-
-### -param OutBufferSize [in]
+`OutBufferSize`
 
 Specifies the size of the output buffer <i>OutBufferSize</i>.  If the type of the output returned to <i>OutBuffer</i> has a known size, <i>OutBufferSize</i> is usually expected to be exactly that size, even if <i>OutBuffer</i> is set to <b>NULL</b>.
 
-
-### -param OutSize [out, optional]
+`OutSize`
 
 Receives the size of the output returned in the output buffer <i>OutBuffer</i>.  If <i>OutSize</i> is <b>NULL</b>, this information is not returned.
 
 
-## -returns
+## Return Value
+
 The interpretation of the return value depends on the value of the <i>Request</i> parameter.  Unless otherwise stated, the following values may be returned.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -270,10 +259,20 @@ The interpretation of the return value depends on the value of the <i>Request</i
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
@@ -323,4 +322,3 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::Request method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

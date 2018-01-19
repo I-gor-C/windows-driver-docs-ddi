@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.SeQueryInformationToken
-title: SeQueryInformationToken function
-author: windows-driver-content
-description: The SeQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
-old-location: ifsk\sequeryinformationtoken.htm
-old-project: ifsk
-ms.assetid: 97e28b53-8b4c-4f76-b6bb-21dad2233463
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: SeQueryInformationToken
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of the operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SeQueryInformationToken
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.SeQueryInformationToken
+title : SeQueryInformationToken function
+author : windows-driver-content
+description : The SeQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
+old-location : ifsk\sequeryinformationtoken.htm
+old-project : ifsk
+ms.assetid : 97e28b53-8b4c-4f76-b6bb-21dad2233463
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : SeQueryInformationToken
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later versions of the operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SeQueryInformationToken
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # SeQueryInformationToken function
+The <b>SeQueryInformationToken</b> routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
 
-
-
-## -description
-The <b>SeQueryInformationToken</b> routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. 
-
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS SeQueryInformationToken(
@@ -53,20 +48,17 @@ NTSTATUS SeQueryInformationToken(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Token`
 
-### -param Token [in]
+A pointer to an access token from which information is to be retrieved. If <i>TokenInformationClass</i> is set to <i>TokenSource</i>, the handle must have TOKEN_QUERY_SOURCE access. For all other <i>TokenInformationClass</i> values, the handle must have TOKEN_QUERY access.
 
-A pointer to an access token from which information is to be retrieved. If <i>TokenInformationClass</i> is set to <i>TokenSource</i>, the handle must have TOKEN_QUERY_SOURCE access. For all other <i>TokenInformationClass</i> values, the handle must have TOKEN_QUERY access. 
+`TokenInformationClass`
 
+A value from the <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a> enumerated type that identifies the type of information to be retrieved.
 
-### -param TokenInformationClass [in]
-
-A value from the <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a> enumerated type that identifies the type of information to be retrieved. 
-
-
-### -param TokenInformation [out]
+`TokenInformation`
 
 If STATUS_SUCCESS is returned, 
 	  <i>TokenInformation</i> receives a pointer to a 
@@ -77,7 +69,7 @@ If STATUS_SUCCESS is returned,
 	  <b>SeQueryInformationToken</b> 
 	  from paged pool. This buffer must eventually be freed by the caller by 
 	  using either 
-	  <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or 
+	  <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or 
 	  <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.
 	  
 
@@ -207,25 +199,35 @@ The buffer receives a <b>DWORD</b> value (not a pointer to it) that specifies th
 </td>
 </tr>
 </table>
- 
 
 
-## -returns
+## Return Value
+
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The call to <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> succeeded.
 <dl>
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
-</dl>An invalid value was supplied for <i>TokenInformationClass</i>. 
+</dl>An invalid value was supplied for <i>TokenInformationClass</i>.
 
- 
+## Remarks
 
-
-## -remarks
 For more information about security and access control, see the documentation about these topics in the Microsoft Windows SDK.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
@@ -287,4 +289,3 @@ For more information about security and access control, see the documentation ab
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeQueryInformationToken routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

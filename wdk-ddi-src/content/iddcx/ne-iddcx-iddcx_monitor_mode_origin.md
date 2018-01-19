@@ -1,52 +1,43 @@
 ---
-UID: NE:iddcx.IDDCX_MONITOR_MODE_ORIGIN
-title: IDDCX_MONITOR_MODE_ORIGIN
-author: windows-driver-content
-description: Used to describe a mode the monitor supports based on the monitor description.
-old-location: display\iddcx_monitor_mode_origin.htm
-old-project: display
-ms.assetid: 96aac09b-c6fc-43a7-a6d8-36f642e0f5d7
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: IDDCX_MONITOR_MODE_ORIGIN,
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: iddcx.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDDCX_MONITOR_MODE_ORIGIN
-req.alt-loc: iddcx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: _requires_same_
-req.typenames: 
+UID : NE:iddcx.IDDCX_MONITOR_MODE_ORIGIN
+title : IDDCX_MONITOR_MODE_ORIGIN
+author : windows-driver-content
+description : Used to describe a mode the monitor supports based on the monitor description.
+old-location : display\iddcx_monitor_mode_origin.htm
+old-project : display
+ms.assetid : 96aac09b-c6fc-43a7-a6d8-36f642e0f5d7
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : IDDCX_MONITOR_MODE_ORIGIN,
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : iddcx.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDDCX_MONITOR_MODE_ORIGIN
+req.alt-loc : iddcx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : _requires_same_
+req.typenames : 
 ---
 
-# IDDCX_MONITOR_MODE_ORIGIN enumeration
+# IDDCX_MONITOR_MODE_ORIGIN Enumeration
+Used to describe a mode the monitor supports based on the monitor description.
 
-
-
-## -description
-
-                     Used to describe a mode the monitor supports based on the monitor description.
-                
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _IDDCX_MONITOR_MODE_ORIGIN { 
   IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED      = 0,
@@ -55,28 +46,31 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
 } IDDCX_MONITOR_MODE_ORIGIN;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED
+<tr>
+<td>IDDCX_MONITOR_MODE_ORIGIN_DRIVER</td>
+<td>Indicates that the driver did not add this mode as a direct resolution of processing the modes/ supported by the monitor but because of separate additional knowledge it has about the monitor</td>
+</tr>
 
+<tr>
+<td>IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR</td>
+<td>Indicates that the driver added this mode from directly processing the monitor description</td>
+</tr>
 
-                        
-                    Indicates that an <b>IDDCX_MONITOR_MODE_ORIGIN</b> variable has not yet been assigned a meaningful value.
-
-
-### -field IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR
-
-
-                        Indicates that the driver added this mode from directly processing the monitor description
-                    
-
-
-### -field IDDCX_MONITOR_MODE_ORIGIN_DRIVER
-
-
-                        Indicates that the driver did not add this mode as a direct resolution of processing the modes/ supported by the monitor but because of separate additional knowledge it has about the monitor
-                    
+<tr>
+<td>IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED</td>
+<td>Indicates that an <b>IDDCX_MONITOR_MODE_ORIGIN</b> variable has not yet been assigned a meaningful value.</td>
+</tr>
+</table>
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | iddcx.h |

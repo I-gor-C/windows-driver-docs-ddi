@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugRegisters2.GetDescription
-title: IDebugRegisters2::GetDescription method
-author: windows-driver-content
-description: The GetDescription method returns the description of a register.
-old-location: debugger\getdescription.htm
-old-project: debugger
-ms.assetid: 895d18e7-673e-41bb-a3be-eb5b4a778880
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugRegisters2, IDebugRegisters2::GetDescription, GetDescription
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: DbgEng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugRegisters.GetDescription,IDebugRegisters2.GetDescription
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugRegisters2.GetDescription
+title : IDebugRegisters2::GetDescription method
+author : windows-driver-content
+description : The GetDescription method returns the description of a register.
+old-location : debugger\getdescription.htm
+old-project : debugger
+ms.assetid : 895d18e7-673e-41bb-a3be-eb5b4a778880
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugRegisters2, IDebugRegisters2::GetDescription, GetDescription
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : DbgEng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugRegisters.GetDescription,IDebugRegisters2.GetDescription
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugRegisters2::GetDescription method
 
-
-
-## -description
+# GetDescription method
 The <b>GetDescription</b>  method returns the description of a register.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT GetDescription(
@@ -55,35 +50,31 @@ HRESULT GetDescription(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Register [in]
+`Register`
 
 Specifies the index of the register for which the description is requested.
 
-
-### -param NameBuffer [out, optional]
+`NameBuffer`
 
 Specifies the buffer in which to store the name of the register.  If <i>NameBuffer</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param NameBufferSize [in]
+`NameBufferSize`
 
 Specifies the size, in characters, of the buffer that  <i>NameBuffer</i> specifies.
 
-
-### -param NameSize [out, optional]
+`NameSize`
 
 Receives the size, in characters, of the register's name in <i>NameBuffer</i> buffer.  If <i>NameSize</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param Desc [out, optional]
+`Desc`
 
 Receives the description of the register.  See <a href="..\dbgeng\ns-dbgeng-_debug_register_description.md">DEBUG_REGISTER_DESCRIPTION</a> for more details.
 
 
-## -returns
+## Return Value
+
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -98,8 +89,18 @@ This list does not contain all the errors that might occur.  For a list of possi
 <dt><b>E_INVALIDARG</b></dt>
 </dl>The index of the register requested is greater than the total number of registers on the target's machine.
 
- 
+## Remarks
 
-
-## -remarks
 For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a> interface and other register-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include DbgEng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

@@ -1,52 +1,47 @@
 ---
-UID: NF:ndis.NdisMCmOpenAddressFamilyComplete
-title: NdisMCmOpenAddressFamilyComplete macro
-author: windows-driver-content
-description: NdisMCmOpenAddressFamilyComplete returns the final status of a client's request, for which the MCM driver's ProtocolCmOpenAf function returned NDIS_STATUS_PENDING, to open the MCM driver's address family.
-old-location: netvista\ndismcmopenaddressfamilycomplete.htm
-old-project: netvista
-ms.assetid: e2d6c7db-09b3-4e5a-a6da-607c67e03054
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMCmOpenAddressFamilyComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMCmOpenAddressFamilyComplete
-req.alt-loc: ndis.h
-req.ddi-compliance: Irql_MCM_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMCmOpenAddressFamilyComplete
+title : NdisMCmOpenAddressFamilyComplete macro
+author : windows-driver-content
+description : NdisMCmOpenAddressFamilyComplete returns the final status of a client's request, for which the MCM driver's ProtocolCmOpenAf function returned NDIS_STATUS_PENDING, to open the MCM driver's address family.
+old-location : netvista\ndismcmopenaddressfamilycomplete.htm
+old-project : netvista
+ms.assetid : e2d6c7db-09b3-4e5a-a6da-607c67e03054
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMCmOpenAddressFamilyComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMCmOpenAddressFamilyComplete
+req.alt-loc : ndis.h
+req.ddi-compliance : Irql_MCM_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
-# NdisMCmOpenAddressFamilyComplete macro
 
-
-
-## -description
+# NdisMCmOpenAddressFamilyComplete function
 <b>NdisMCmOpenAddressFamilyComplete</b> returns the final status of a client's request, for which the MCM
   driver's 
   <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function returned
   NDIS_STATUS_PENDING, to open the MCM driver's address family.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisMCmOpenAddressFamilyComplete(
@@ -56,30 +51,27 @@ VOID NdisMCmOpenAddressFamilyComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Status [in]
-
-Specifies the final status of the client's request to open the AF, either NDIS_STATUS_SUCCESS or
-     any caller-determined NDIS_STATUS_
-     <i>XXX</i> except NDIS_STATUS_PENDING.
+`_S_`
 
 
-### -param NdisAfHandle [in]
 
-Specifies the NDIS-supplied handle that was input to the MCM driver's 
-     <i>ProtocolCmOpenAf</i> function, which returned NDIS_STATUS_PENDING.
+`_H_`
 
 
-### -param CallMgrAfContext [in]
 
-Specifies the handle to a caller-allocated resident context area, in which the MCM driver
-     maintains state about this client's open of the address family, including the 
-     <i>NdisAfHandle</i>, if the open succeeded. Otherwise, NDIS ignores this parameter.
+`_C_`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 An MCM driver must call 
     <b>NdisMCmOpenAddressFamilyComplete</b> if its 
     <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function previously
@@ -113,8 +105,20 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
     as protocol drivers, call 
     <b>NdisCmOpenAddressFamilyComplete</b> instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_MCM_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
@@ -139,4 +143,3 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmOpenAddressFamilyComplete macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

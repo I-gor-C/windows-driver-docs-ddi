@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfdriver.WdfDriverOpenParametersRegistryKey
-title: WdfDriverOpenParametersRegistryKey function
-author: windows-driver-content
-description: The WdfDriverOpenParametersRegistryKey method opens the driver's Parameters registry key and retrieves a handle to a framework registry-key object that represents the key.
-old-location: wdf\wdfdriveropenparametersregistrykey.htm
-old-project: wdf
-ms.assetid: e0f22096-3d82-4e1c-9398-d5e441fbb473
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfDriverOpenParametersRegistryKey
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdriver.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.0
-req.umdf-ver: 2.0
-req.alt-api: WdfDriverOpenParametersRegistryKey
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
-req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WDF_DRIVER_INIT_FLAGS
-req.product: Windows 10 or later.
+UID : NF:wdfdriver.WdfDriverOpenParametersRegistryKey
+title : WdfDriverOpenParametersRegistryKey function
+author : windows-driver-content
+description : The WdfDriverOpenParametersRegistryKey method opens the driver's Parameters registry key and retrieves a handle to a framework registry-key object that represents the key.
+old-location : wdf\wdfdriveropenparametersregistrykey.htm
+old-project : wdf
+ms.assetid : e0f22096-3d82-4e1c-9398-d5e441fbb473
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfDriverOpenParametersRegistryKey
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfdriver.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.0
+req.umdf-ver : 2.0
+req.alt-api : WdfDriverOpenParametersRegistryKey
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
+req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDF_DRIVER_INIT_FLAGS
+req.product : Windows 10 or later.
 ---
 
+
 # WdfDriverOpenParametersRegistryKey function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfDriverOpenParametersRegistryKey</b> method opens the driver's <b>Parameters</b> registry key and retrieves a handle to a framework registry-key object that represents the key.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfDriverOpenParametersRegistryKey(
@@ -57,15 +52,13 @@ NTSTATUS WdfDriverOpenParametersRegistryKey(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Driver [in]
+`Driver`
 
 A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a> or <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>.
 
-
-### -param DesiredAccess [in]
+`DesiredAccess`
 
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>-typed value that specifies an access mask for the <b>Parameters</b> registry key.
 
@@ -75,18 +68,17 @@ If you are writing a UMDF driver, use <b>KEY_READ</b> or <b>KEY_READ | KEY_SET_V
 
 As a best practice, ask for only the types of access that your driver needs.
 
-
-### -param KeyAttributes [in, optional]
+`KeyAttributes`
 
 A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-
-### -param Key [out]
+`Key`
 
 A pointer to a location that receives a handle to a framework registry-key object.
 
 
-## -returns
+## Return Value
+
 <b>WdfDriverOpenParametersRegistryKey</b> returns STATUS_SUCCESS if the operation succeeds. Additional return values include:
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
@@ -107,12 +99,24 @@ This method might also return other <a href="https://msdn.microsoft.com/library/
 
 A system bug check occurs if a KMDF driver specifies an invalid handle in <i>Driver</i>.
 
+## Remarks
 
-## -remarks
-The driver's <b>Parameters</b> key is located in the registry's <a href="https://msdn.microsoft.com/library/windows/hardware/dn926947">Services</a> tree. If the driver's <b>Parameters</b> key does not exist, the <b>WdfDriverOpenParametersRegistryKey</b> method creates it. 
+The driver's <b>Parameters</b> key is located in the registry's <a href="https://msdn.microsoft.com/library/windows/hardware/dn926947">Services</a> tree. If the driver's <b>Parameters</b> key does not exist, the <b>WdfDriverOpenParametersRegistryKey</b> method creates it.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.0 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfdriver.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
@@ -138,4 +142,3 @@ The driver's <b>Parameters</b> key is located in the registry's <a href="https:/
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDriverOpenParametersRegistryKey method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

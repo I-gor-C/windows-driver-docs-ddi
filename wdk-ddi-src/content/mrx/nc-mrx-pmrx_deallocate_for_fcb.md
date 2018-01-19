@@ -1,76 +1,83 @@
 ---
-UID: NC:mrx.PMRX_DEALLOCATE_FOR_FCB
-title: PMRX_DEALLOCATE_FOR_FCB
-author: windows-driver-content
-description: The MRxDeallocateForFcb routine is called by RDBSS to request that the network mini-redirector deallocate an FCB structure. This call is in response to a request to close a file system object.
-old-location: ifsk\mrxdeallocateforfcb.htm
-old-project: ifsk
-ms.assetid: 4347f481-cd8f-4a88-92e0-f6bc7a4b7ffb
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: mrx.h
-req.include-header: Mrx.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MRxDeallocateForFcb
-req.alt-loc: mrx.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
+UID : NC:mrx.PMRX_DEALLOCATE_FOR_FCB
+title : PMRX_DEALLOCATE_FOR_FCB
+author : windows-driver-content
+description : The MRxDeallocateForFcb routine is called by RDBSS to request that the network mini-redirector deallocate an FCB structure. This call is in response to a request to close a file system object.
+old-location : ifsk\mrxdeallocateforfcb.htm
+old-project : ifsk
+ms.assetid : 4347f481-cd8f-4a88-92e0-f6bc7a4b7ffb
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : mrx.h
+req.include-header : Mrx.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MRxDeallocateForFcb
+req.alt-loc : mrx.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
-# PMRX_DEALLOCATE_FOR_FCB callback
 
+# PMRX_DEALLOCATE_FOR_FCB callback function
+The<i> MRxDeallocateForFcb</i> routine is called by <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/the-rdbss-driver-and-library">RDBSS</a> to request that the network mini-redirector deallocate an FCB structure. This call is in response to a request to close a file system object.
 
+## Syntax
 
-## -description
-The<i> MRxDeallocateForFcb</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request that the network mini-redirector deallocate an FCB structure. This call is in response to a request to close a file system object.
+```
+PMRX_DEALLOCATE_FOR_FCB PmrxDeallocateForFcb;
 
-
-
-## -prototype
-
-````
-PMRX_DEALLOCATE_FOR_FCB MRxDeallocateForFcb;
-
-NTSTATUS MRxDeallocateForFcb(
-  _Inout_ PMRX_FCB pFcb
+NTSTATUS PmrxDeallocateForFcb(
+  IN OUT PMRX_FCB Fcb
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`Fcb`
 
 
-## -parameters
-
-### -param pFcb [in, out]
-
-A pointer to the FCB structure to deallocate.
 
 
-## -returns
+## Return Value
+
 <i>MRxDeallocateForFcb</i> returns STATUS_SUCCESS.
 
+## Remarks
 
-## -remarks
 <i>MRxDeallocateForFcb</i> is called by <a href="..\rxprocs\nf-rxprocs-rxfinalizenetfcb.md">RxFinalizeNetFCB</a> as part of the process to finalize an FCB structure. The calls to <b>RxFinalizeNetFCB</b> and <i>MRxDeallocateForFcb</i> occur when an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> request is received.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | mrx.h (include Mrx.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
@@ -123,4 +130,3 @@ A pointer to the FCB structure to deallocate.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxDeallocateForFcb routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

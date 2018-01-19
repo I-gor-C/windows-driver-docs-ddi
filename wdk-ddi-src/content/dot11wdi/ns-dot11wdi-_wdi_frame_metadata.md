@@ -1,51 +1,44 @@
 ---
-UID: NS:dot11wdi._WDI_FRAME_METADATA
-title: _WDI_FRAME_METADATA
-author: windows-driver-content
-description: The WDI_FRAME_METADATA structure defines the frame metadata.
-old-location: netvista\wdi_frame_metadata.htm
-old-project: netvista
-ms.assetid: 34733e8f-cbe0-4fcd-abcf-6791e298282f
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WDI_FRAME_METADATA, WDI_FRAME_METADATA, *PWDI_FRAME_METADATA
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: dot11wdi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WDI_FRAME_METADATA
-req.alt-loc: dot11wdi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WDI_FRAME_METADATA, *PWDI_FRAME_METADATA
+UID : NS:dot11wdi._WDI_FRAME_METADATA
+title : _WDI_FRAME_METADATA
+author : windows-driver-content
+description : The WDI_FRAME_METADATA structure defines the frame metadata.
+old-location : netvista\wdi_frame_metadata.htm
+old-project : netvista
+ms.assetid : 34733e8f-cbe0-4fcd-abcf-6791e298282f
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WDI_FRAME_METADATA, WDI_FRAME_METADATA, *PWDI_FRAME_METADATA
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : dot11wdi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WDI_FRAME_METADATA
+req.alt-loc : dot11wdi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDI_FRAME_METADATA, *PWDI_FRAME_METADATA
 ---
 
 # _WDI_FRAME_METADATA structure
-
-
-
-## -description
 The 
   WDI_FRAME_METADATA structure defines the frame metadata.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _WDI_FRAME_METADATA {
   LIST_ENTRY       Linkage;
@@ -62,54 +55,45 @@ typedef struct _WDI_FRAME_METADATA {
 } WDI_FRAME_METADATA, *PWDI_FRAME_METADATA;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `dPad`
 
-### -field Linkage
+            Padding.
+        
+            `FrameID`
 
-Reserved for use by the Microsoft component.
+            Filled in by the Microsoft component.
+        
+            `Linkage`
 
+            Reserved for use by the Microsoft component.
+        
+            `pNBL`
 
-### -field pNBL
+            Set by the LE on RX path and the UE on TX path when the metadata is associated with an NBL.
+        
+            `u`
 
-Set by the LE on RX path and the UE on TX path when the metadata is associated with an NBL.
+            
+        
+            `wPad`
 
-
-### -field FrameID
-
-Filled in by the Microsoft component.
-
-
-### -field wPad
-
-Padding.
-
-
-### -field dPad
-
-Padding.
-
-
-### -field u
+            Padding.
 
 
-### -field txMetaData
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dot11wdi.h |
 
-TX metadata.
+    ## See Also
 
-
-### -field rxMetaData
-
-RX metadata.
-
-</dd>
-</dl>
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
 </dt>
@@ -131,4 +115,3 @@ RX metadata.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_FRAME_METADATA structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

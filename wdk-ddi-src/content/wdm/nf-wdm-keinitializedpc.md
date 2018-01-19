@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.KeInitializeDpc
-title: KeInitializeDpc function
-author: windows-driver-content
-description: The KeInitializeDpc routine initializes a DPC object, and registers a CustomDpc routine for that object.
-old-location: kernel\keinitializedpc.htm
-old-project: kernel
-ms.assetid: 5dd82086-d39c-4ebc-9e2a-73ef504f873c
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KeInitializeDpc
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: KeInitializeDpc
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: Any level
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.KeInitializeDpc
+title : KeInitializeDpc function
+author : windows-driver-content
+description : The KeInitializeDpc routine initializes a DPC object, and registers a CustomDpc routine for that object.
+old-location : kernel\keinitializedpc.htm
+old-project : kernel
+ms.assetid : 5dd82086-d39c-4ebc-9e2a-73ef504f873c
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : KeInitializeDpc
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : KeInitializeDpc
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : Any level
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # KeInitializeDpc function
-
-
-
-## -description
 The <b>KeInitializeDpc</b> routine initializes a DPC object, and registers a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a> routine for that object.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID KeInitializeDpc(
@@ -54,35 +49,45 @@ VOID KeInitializeDpc(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Dpc [out]
+`Dpc`
 
 Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that represents the DPC object to initialize. The caller must allocate storage for the structure from resident memory.
 
-
-### -param DeferredRoutine [in]
+`DeferredRoutine`
 
 Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a> routine to associate with the DPC.
 
+`DeferredContext`
 
-### -param DeferredContext [in, optional]
-
-Specifies the value to pass as the <i>DeferredContext</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>. 
+Specifies the value to pass as the <i>DeferredContext</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 The caller can queue an initialized DPC with <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>. The caller also can set up a timer object associated with the initialized DPC object and queue the DPC with <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>.
 
 Storage for the DPC object must be resident: in the device extension of a driver-created device object, in the controller extension of a driver-created controller object, or in nonpaged pool allocated by the caller.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Any level |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>
@@ -102,4 +107,3 @@ Storage for the DPC object must be resident: in the device extension of a driver
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInitializeDpc routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

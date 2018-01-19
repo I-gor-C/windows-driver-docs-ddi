@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDICAPS_TYPE
-title: D3D12DDICAPS_TYPE
-author: windows-driver-content
-description: Specifies a capability type.
-old-location: display\d3d12ddicaps_type.htm
-old-project: display
-ms.assetid: C74697BF-A191-4371-9F23-7F655EBC53B3
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDICAPS_TYPE, D3D12DDICAPS_TYPE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDICAPS_TYPE
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDICAPS_TYPE
+UID : NE:d3d12umddi.D3D12DDICAPS_TYPE
+title : D3D12DDICAPS_TYPE
+author : windows-driver-content
+description : Specifies a capability type.
+old-location : display\d3d12ddicaps_type.htm
+old-project : display
+ms.assetid : C74697BF-A191-4371-9F23-7F655EBC53B3
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDICAPS_TYPE, D3D12DDICAPS_TYPE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDICAPS_TYPE
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDICAPS_TYPE
 ---
 
-# D3D12DDICAPS_TYPE enumeration
+# D3D12DDICAPS_TYPE Enumeration
+Specifies a capability type.
 
-
-
-## -description
-Specifies a capability type. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDICAPS_TYPE { 
   D3D12DDICAPS_TYPE_TEXTURE_LAYOUT                         = 1000,
@@ -68,97 +61,91 @@ typedef enum D3D12DDICAPS_TYPE {
 } D3D12DDICAPS_TYPE;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT
+<tr>
+<td>D3D12DDICAPS_TYPE_0011_SHADER_MODELS</td>
+<td>Shader models.</td>
+</tr>
 
-Texture layout.
+<tr>
+<td>D3D12DDICAPS_TYPE_0022_CPU_PAGE_TABLE_FALSE_POSITIVES</td>
+<td>CPU page table false positives.</td>
+</tr>
 
+<tr>
+<td>D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN</td>
+<td>Swizzle pattern.</td>
+</tr>
 
-### -field D3D12DDICAPS_TYPE_SWIZZLE_PATTERN
+<tr>
+<td>D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT</td>
+<td>Texture layout.</td>
+</tr>
 
-Swizzle pattern.
+<tr>
+<td>D3D12DDICAPS_TYPE_0023_UMD_BASED_COMMAND_QUEUE_PRIORITY</td>
+<td>UMD-based command queue priority.</td>
+</tr>
 
+<tr>
+<td>D3D12DDICAPS_TYPE_3DPIPELINESUPPORT</td>
+<td>Support for 3D pipeline.</td>
+</tr>
 
-### -field D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE
+<tr>
+<td>D3D12DDICAPS_TYPE_ARCHITECTURE_INFO</td>
+<td>Architecture information.</td>
+</tr>
 
-Memory architecture.
+<tr>
+<td>D3D12DDICAPS_TYPE_D3D12_OPTIONS</td>
+<td>Options for D3D12.</td>
+</tr>
 
+<tr>
+<td>D3D12DDICAPS_TYPE_GPUVA_CAPS</td>
+<td>GPU video acceleration capabilities.</td>
+</tr>
 
-### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS
+<tr>
+<td>D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE</td>
+<td>Memory architecture.</td>
+</tr>
 
-Texture layout sets.
+<tr>
+<td>D3D12DDICAPS_TYPE_SHADER</td>
+<td>Shader.</td>
+</tr>
 
+<tr>
+<td>D3D12DDICAPS_TYPE_SWIZZLE_PATTERN</td>
+<td>Swizzle pattern.</td>
+</tr>
 
-### -field D3D12DDICAPS_TYPE_SHADER
+<tr>
+<td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT</td>
+<td>Texture layout.</td>
+</tr>
 
-Shader.
+<tr>
+<td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS</td>
+<td>Texture layout sets.</td>
+</tr>
 
-
-### -field D3D12DDICAPS_TYPE_ARCHITECTURE_INFO
-
-Architecture information.
-
-
-### -field D3D12DDICAPS_TYPE_D3D12_OPTIONS
-
-Options for D3D12.
-
-
-### -field D3D12DDICAPS_TYPE_3DPIPELINESUPPORT
-
-Support for 3D pipeline.
-
-
-### -field D3D12DDICAPS_TYPE_JPEG_OPTIONS
-
-JPEG options.
-
-
-### -field D3D12DDICAPS_TYPE_GPUVA_CAPS
-
-GPU video acceleration capabilities.
-
-
-### -field D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1
-
-Texture layout.
-
-
-### -field D3D12DDICAPS_TYPE_0011_SHADER_MODELS
-
-Shader models.
-
-
-### -field D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_SUPPORT
-
-Content protection support.
-
-
-### -field D3D12DDICAPS_TYPE_0020_CONTENT_PROTECTION_DRM_SUPPORT
-
-Content protection digital rights management (DRM) support.
-
-
-### -field D3D12DDICAPS_TYPE_0022_CPU_PAGE_TABLE_FALSE_POSITIVES
-
-CPU page table false positives.
-
-
-### -field D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT
-
-Texture layout.
+<tr>
+<td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1</td>
+<td>Texture layout.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN
-
-Swizzle pattern.
-
-
-### -field D3D12DDICAPS_TYPE_0023_UMD_BASED_COMMAND_QUEUE_PRIORITY
-
-UMD-based command queue priority. 
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

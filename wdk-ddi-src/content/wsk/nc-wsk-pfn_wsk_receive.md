@@ -1,166 +1,88 @@
 ---
-UID: NC:wsk.PFN_WSK_RECEIVE
-title: PFN_WSK_RECEIVE
-author: windows-driver-content
-description: The WskReceive function receives data over a connection-oriented or stream socket from a remote transport address.
-old-location: netvista\wskreceive.htm
-old-project: netvista
-ms.assetid: 7fe65842-8ddb-4aca-931f-03b35dd2b039
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: wsk.h
-req.include-header: Wsk.h
-req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: WskReceive
-req.alt-loc: wsk.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
-req.product: Windows 10 or later.
+UID : NC:wsk.PFN_WSK_RECEIVE
+title : PFN_WSK_RECEIVE
+author : windows-driver-content
+description : The WskReceive function receives data over a connection-oriented or stream socket from a remote transport address.
+old-location : netvista\wskreceive.htm
+old-project : netvista
+ms.assetid : 7fe65842-8ddb-4aca-931f-03b35dd2b039
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wsk.h
+req.include-header : Wsk.h
+req.target-type : Universal
+req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : WskReceive
+req.alt-loc : wsk.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : "*PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO"
+req.product : Windows 10 or later.
 ---
 
-# PFN_WSK_RECEIVE callback
 
-
-
-## -description
+# PFN_WSK_RECEIVE callback function
 The 
   <b>WskReceive</b> function receives data over a connection-oriented or stream socket from a remote transport
   address.
 
+## Syntax
 
+```
+PFN_WSK_RECEIVE PfnWskReceive;
 
-## -prototype
-
-````
-PFN_WSK_RECEIVE WskReceive;
-
-NTSTATUS WSKAPI * WskReceive(
-  _In_    PWSK_SOCKET Socket,
-  _In_    PWSK_BUF    Buffer,
-  _In_    ULONG       Flags,
-  _Inout_ PIRP        Irp
+NTSTATUS PfnWskReceive(
+  PWSK_SOCKET Socket,
+  PWSK_BUF Buffer,
+  ULONG Flags,
+  PIRP Irp
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Socket [in]
+`Socket`
 
 A pointer to a 
      <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket from which to receive the data.
 
-
-### -param Buffer [in]
+`Buffer`
 
 A pointer to an initialized 
      <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a> structure that describes the data buffer
      that receives the data from the socket.
 
-
-### -param Flags [in]
+`Flags`
 
 A ULONG value that contains a bitwise OR of a combination of the following flags:
-     
 
-
-
-
-### -param WSK_FLAG_WAITALL
-
-Wait until the data buffer is completely filled. If this flag is specified, the IRP specified in
-       the 
-       <i>Irp</i> parameter will not be completed until one of the following events occurs:
-       
-
-<ul>
-<li>
-The data buffer that is described by the WSK_BUF structure that is pointed to by the 
-         <i>Buffer</i> parameter is completely filled.
-
-</li>
-<li>
-The connection is gracefully disconnected by the remote sender.
-
-</li>
-<li>
-The connection is abortively disconnected by either the WSK application or by the remote
-         sender.
-
-</li>
-<li>
-The specified IRP is canceled.
-
-</li>
-</ul>
-This flag is supported by the Microsoft TCP/IP transport protocol. This flag might not be supported
-       by other transport protocols.
-
-
-### -param WSK_FLAG_DRAIN
-
-Wait until the socket is disconnected, discarding any data that is received on the socket. If
-       this flag is specified, the specified IRP will not be completed until one of the following events
-       occurs:
-       
-
-<ul>
-<li>
-The connection is gracefully disconnected by the remote sender.
-
-</li>
-<li>
-The connection is abortively disconnected by either the WSK application or by the remote
-         sender.
-
-</li>
-<li>
-The specified IRP is canceled.
-
-</li>
-</ul>
-Any received data is discarded by the WSK subsystem. No received data will be copied into the data
-       buffer. The 
-       <i>Buffer</i> parameter is still required when this flag is specified, but the length of the buffer
-       that is described by the WSK_BUF structure must be zero.
-
-This flag is supported by the Microsoft TCP/IP transport protocol. This flag might not be supported
-       by other transport protocols.
-
-</dd>
-</dl>
-The WSK_FLAG_WAITALL and WSK_FLAG_DRAIN flags are mutually exclusive. A WSK application should not
-     specify both of these flags at the same time.
-
-
-### -param Irp [in, out]
+`Irp`
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the receive operation
      asynchronously. For more information about using IRPs with WSK functions, see 
-     <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
      Kernel Functions</a>.
 
 
-## -returns
+## Return Value
+
 <b>WskReceive</b> returns one of the following NTSTATUS codes:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
@@ -188,10 +110,8 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred. The IRP will be completed with failure status.
 
- 
+## Remarks
 
-
-## -remarks
 A WSK application can call the 
     <b>WskReceive</b> function only on a connection-oriented or stream socket that has been previously connected to a
     remote transport address. A connection-oriented socket is connected to a remote transport address by one
@@ -245,8 +165,20 @@ If the
     structure that is pointed to by the 
     <i>Buffer</i> parameter must remain locked in memory until the IRP is completed.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wsk.h (include Wsk.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
@@ -276,4 +208,3 @@ If the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_RECEIVE callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

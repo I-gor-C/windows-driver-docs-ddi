@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILSUPSERVICEDATAPARAMMASK
-title: RILSUPSERVICEDATAPARAMMASK
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilsupservicedataparammask.htm
-old-project: netvista
-ms.assetid: 2b0ff5a7-02b3-4a22-98da-d13825bc2f45
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILSUPSERVICEDATAPARAMMASK, RILSUPSERVICEDATAPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILSUPSERVICEDATAPARAMMASK
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILSUPSERVICEDATAPARAMMASK
+UID : NE:ntddrilapitypes.RILSUPSERVICEDATAPARAMMASK
+title : RILSUPSERVICEDATAPARAMMASK
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilsupservicedataparammask.htm
+old-project : netvista
+ms.assetid : 2b0ff5a7-02b3-4a22-98da-d13825bc2f45
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILSUPSERVICEDATAPARAMMASK, RILSUPSERVICEDATAPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILSUPSERVICEDATAPARAMMASK
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILSUPSERVICEDATAPARAMMASK
 ---
 
-# RILSUPSERVICEDATAPARAMMASK enumeration
-
-
-
-## -description
+# RILSUPSERVICEDATAPARAMMASK Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILSUPSERVICEDATAPARAMMASK { 
   RIL_PARAM_SSDI_STATUS,
@@ -57,28 +50,51 @@ typedef enum _RILSUPSERVICEDATAPARAMMASK {
 } RILSUPSERVICEDATAPARAMMASK;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_PARAM_SSDI_STATUS
+<tr>
+<td>RIL_PARAM_SSDI_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SSDI_CC_ERROR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SSDI_DATA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SSDI_DATASIZE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SSDI_SS_ERROR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SSDI_STATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SSDI_VENDOR_ERROR</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_PARAM_SSDI_SS_ERROR
-
-
-### -field RIL_PARAM_SSDI_CC_ERROR
-
-
-### -field RIL_PARAM_SSDI_VENDOR_ERROR
-
-
-### -field RIL_PARAM_SSDI_DATASIZE
-
-
-### -field RIL_PARAM_SSDI_DATA
-
-
-### -field RIL_PARAM_SSDI_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

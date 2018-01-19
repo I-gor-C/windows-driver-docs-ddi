@@ -1,44 +1,41 @@
 ---
-UID: NN:keyworddetectoroemadapter.IKeywordDetectorOemAdapter
-title: IKeywordDetectorOemAdapter
-author: windows-driver-content
-description: IKeywordDetectorOemAdapter is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The IKeywordDetectorOemAdapter interface is supported in Windows 10 and later versions of Windows.
-old-location: audio\ikeyworddetectoroemadapter.htm
-old-project: audio
-ms.assetid: FB243792-C0B0-4BCA-B4C4-B6E17FDB615C
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: interface
-req.header: keyworddetectoroemadapter.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IKeywordDetectorOemAdapter
-req.alt-loc: keyworddetectoroemadapter.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: KEYWORDID
+UID : NN:keyworddetectoroemadapter.IKeywordDetectorOemAdapter
+title : IKeywordDetectorOemAdapter
+author : windows-driver-content
+description : IKeywordDetectorOemAdapter is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The IKeywordDetectorOemAdapter interface is supported in Windows 10 and later versions of Windows.
+old-location : audio\ikeyworddetectoroemadapter.htm
+old-project : audio
+ms.assetid : FB243792-C0B0-4BCA-B4C4-B6E17FDB615C
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : keyworddetectoroemadapter.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IKeywordDetectorOemAdapter
+req.alt-loc : keyworddetectoroemadapter.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : KEYWORDID
 ---
 
 # IKeywordDetectorOemAdapter interface
 
-
-
-## -description
 <b>IKeywordDetectorOemAdapter</b> is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The <b>IKeywordDetectorOemAdapter</b> interface is supported 
 in Windows 10 and later versions of Windows.
 
@@ -54,11 +51,27 @@ The operating supplies a proxy-stub for <b>IKeywordDetectorOemAdapter</b>. The O
 The interface design attempts to keep the object implementation stateless. In other words, the implementation should require no state to be stored between method calls. 
 In fact, internal C++ classes likely do not need any member variables beyond those required to implement a COM object in general.
 
+## Methods
+
+<p>The <b>IKeywordDetectorOemAdapter</b> interface has these methods.</p>
+
+| Method | Description |
+| ---- |:---- |
+| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.BuildArmingPatternData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-buildarmingpatterndata.md) | The BuildArmingPatternData method is called by the operating system to build OEM-specific pattern data that includes any keyword and user-specific model data for detection. |
+| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ComputeAndAddUserModelData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-computeandaddusermodeldata.md) | The ComputeAndAddUserModelData method is used by the training user experience to compute the user-specific information relative to the user-independent keyword. |
+| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.GetCapabilities](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-getcapabilities.md) | The GetCapabilities method returns the keywords and languages supported by the object. |
+| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ParseDetectionResultData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-parsedetectionresultdata.md) | The ParseDetectionResultData method is called by the operating system after handling a keyword detection event and after retrieving the result data from KSPROPERTY_SOUNDDETECTOR_MATCHRESULT. |
+| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.VerifyUserKeyword](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-verifyuserkeyword.md) | The VerifyUserKeyword method is used by the training user experience to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance. |
+
+## Remarks
 
 
 
-## -inheritance
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKeywordDetectorOemAdapter</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum UMDF version** |  |
+| **Header** | keyworddetectoroemadapter.h |
+| **DLL** |  |

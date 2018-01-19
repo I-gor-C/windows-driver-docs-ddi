@@ -1,48 +1,44 @@
 ---
-UID: NE:rilapitypes.RILNOTIFICATIONS
-title: RILNOTIFICATIONS
-author: windows-driver-content
-description: This enumeration describes RILNOTIFICATIONS.
-old-location: netvista\rilnotifications.htm
-old-project: netvista
-ms.assetid: a1737655-856d-430e-bce8-ef6c9b66ee54
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILNOTIFICATIONS, RILNOTIFICATIONS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: Rilapitypes.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILNOTIFICATIONS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILNOTIFICATIONS
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILNOTIFICATIONS
+title : RILNOTIFICATIONS
+author : windows-driver-content
+description : This enumeration describes RILNOTIFICATIONS.
+old-location : netvista\rilnotifications.htm
+old-project : netvista
+ms.assetid : a1737655-856d-430e-bce8-ef6c9b66ee54
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILNOTIFICATIONS, RILNOTIFICATIONS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : Rilapitypes.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILNOTIFICATIONS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILNOTIFICATIONS
+req.product : Windows 10 or later.
 ---
 
-# RILNOTIFICATIONS enumeration
+# RILNOTIFICATIONS Enumeration
 
 
-
-## -description
-
-## -syntax
-
+## Syntax
 ````
 enum RILNOTIFICATIONS  {
   RIL_NOTIFY_OEM_MAX                        = 0x000000FF | RIL_NCLASS_NOTIFICATIONS, 
@@ -96,154 +92,252 @@ enum RILNOTIFICATIONS  {
 };
 ````
 
+## Constants
+
+<table>
+
+<tr>
+<td>RIL_NOTIFY_ADDITIONALNUMBERSTRINGUPDATED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_CALLMODIFICATIONINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_CALLPROGRESSINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_CALLWAITING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_CARDAPPADDED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_CARDAPPREMOVED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_CLEARIDLEMODETEXT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_COUNT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_DIALEDID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_DISPLAY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_EMERGENCYMODEENTERED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_EMERGENCYMODEEXITED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_EMERGENCYNUMBERLISTCHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_EXECUTORSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_FORWARDBURSTDTMF</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_FORWARDSTARTDTMF</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_FORWARDSTOPDTMF</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_IMSSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_LINECONTROL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_LOCATIONUPDATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_MANAGED_ROAMING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_MESSAGE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_MESSAGE_IN_UICC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_MESSAGE_STORAGE_FULL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_NETWORKCODECHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_OEM_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_PHONEBOOKENTRYDELETED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_PHONEBOOKENTRYSTORED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_PHONEBOOKREADYSTATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_PROVISION_STATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_RADIOEQUIPMENTSTATECHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_RADIOPRESENCECHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_REGSTATUSCHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_SIGNALQUALITY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_SLOTINFOCHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_SUPSERVICEDATA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_SUPSERVICEDATATERMINATED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_SUPSVCINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_SYSTEMPREFSCHANGED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_TONESIGNAL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_UICCAPP_DATACHANGE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_UICCAPPPERSOCHECKSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_UICCFILE_DATACHANGE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_UICCLOCKSTATUS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_UICCTOOLKITCMD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NOTIFY_UNSOLICITEDSS</td>
+<td></td>
+</tr>
+</table>
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h (include Rilapitypes.h) |
+
+## See Also
 
-## -enum-fields
-
-### -field RIL_NOTIFY_OEM_MAX
-
-
-### -field RIL_NOTIFY_RADIOEQUIPMENTSTATECHANGED
-
-
-### -field RIL_NOTIFY_RADIOPRESENCECHANGED
-
-
-### -field RIL_NOTIFY_UICCFILE_DATACHANGE
-
-
-### -field RIL_NOTIFY_UICCAPP_DATACHANGE
-
-
-### -field RIL_NOTIFY_SLOTINFOCHANGED
-
-
-### -field RIL_NOTIFY_CARDAPPREMOVED
-
-
-### -field RIL_NOTIFY_CARDAPPADDED
-
-
-### -field RIL_NOTIFY_UICCLOCKSTATUS
-
-
-### -field RIL_NOTIFY_UICCAPPPERSOCHECKSTATUS
-
-
-### -field RIL_NOTIFY_PHONEBOOKENTRYDELETED
-
-
-### -field RIL_NOTIFY_PHONEBOOKENTRYSTORED
-
-
-### -field RIL_NOTIFY_PHONEBOOKREADYSTATE
-
-
-### -field RIL_NOTIFY_EMERGENCYNUMBERLISTCHANGED
-
-
-### -field RIL_NOTIFY_REGSTATUSCHANGED
-
-
-### -field RIL_NOTIFY_LOCATIONUPDATE
-
-
-### -field RIL_NOTIFY_NETWORKCODECHANGED
-
-
-### -field RIL_NOTIFY_PROVISION_STATUS
-
-
-### -field RIL_NOTIFY_SYSTEMPREFSCHANGED
-
-
-### -field RIL_NOTIFY_EXECUTORSTATE
-
-
-### -field RIL_NOTIFY_MANAGED_ROAMING
-
-
-### -field RIL_NOTIFY_SIGNALQUALITY
-
-
-### -field  RIL_NOTIFY_NITZ
-
-
-### -field RIL_NOTIFY_UICCTOOLKITCMD
-
-
-### -field RIL_NOTIFY_CALLMODIFICATIONINFO
-
-
-### -field RIL_NOTIFY_CALLPROGRESSINFO
-
-
-### -field RIL_NOTIFY_EMERGENCYMODEENTERED
-
-
-### -field RIL_NOTIFY_EMERGENCYMODEEXITED
-
-
-### -field RIL_NOTIFY_CALLWAITING
-
-
-### -field RIL_NOTIFY_DIALEDID
-
-
-### -field RIL_NOTIFY_DISPLAY
-
-
-### -field RIL_NOTIFY_SUPSVCINFO
-
-
-### -field RIL_NOTIFY_SUPSERVICEDATA
-
-
-### -field RIL_NOTIFY_UNSOLICITEDSS
-
-
-### -field RIL_NOTIFY_LINECONTROL
-
-
-### -field RIL_NOTIFY_MESSAGE
-
-
-### -field RIL_NOTIFY_MESSAGE_IN_UICC
-
-
-### -field RIL_NOTIFY_IMSSTATUS
-
-
-### -field RIL_NOTIFY_ADDITIONALNUMBERSTRINGUPDATED
-
-
-### -field RIL_NOTIFY_SUPSERVICEDATATERMINATED
-
-
-### -field RIL_NOTIFY_CLEARIDLEMODETEXT
-
-
-### -field RIL_NOTIFY_MESSAGE_STORAGE_FULL
-
-
-### -field RIL_NOTIFY_TONESIGNAL
-
-
-### -field RIL_NOTIFY_FORWARDSTARTDTMF
-
-
-### -field RIL_NOTIFY_FORWARDSTOPDTMF
-
-
-### -field RIL_NOTIFY_FORWARDBURSTDTMF
-
-
-### -field RIL_NOTIFY_COUNT
-
-
-## -remarks
-
-
-## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
@@ -254,4 +348,3 @@ enum RILNOTIFICATIONS  {
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILNOTIFICATIONS enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugSymbols3.GetOffsetByName
-title: IDebugSymbols3::GetOffsetByName method
-author: windows-driver-content
-description: The GetOffsetByName method returns the location of a symbol identified by name.
-old-location: debugger\getoffsetbyname.htm
-old-project: debugger
-ms.assetid: b6915215-3654-446b-b30d-b891f439a379
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugSymbols3, IDebugSymbols3::GetOffsetByName, GetOffsetByName
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugSymbols.GetOffsetByName,IDebugSymbols2.GetOffsetByName,IDebugSymbols3.GetOffsetByName
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugSymbols3.GetOffsetByName
+title : IDebugSymbols3::GetOffsetByName method
+author : windows-driver-content
+description : The GetOffsetByName method returns the location of a symbol identified by name.
+old-location : debugger\getoffsetbyname.htm
+old-project : debugger
+ms.assetid : b6915215-3654-446b-b30d-b891f439a379
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugSymbols3, IDebugSymbols3::GetOffsetByName, GetOffsetByName
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugSymbols.GetOffsetByName,IDebugSymbols2.GetOffsetByName,IDebugSymbols3.GetOffsetByName
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugSymbols3::GetOffsetByName method
 
-
-
-## -description
+# GetOffsetByName method
 The <b>GetOffsetByName</b>  method returns the location of a symbol identified by name.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT GetOffsetByName(
@@ -52,20 +47,19 @@ HRESULT GetOffsetByName(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Symbol [in]
+`Symbol`
 
 Specifies the name of the symbol to locate.  The name may be qualified by a module name (for example, <b>mymodule!main</b>).
 
-
-### -param Offset [out]
+`Offset`
 
 Receives the location in the target's memory address space of the base of the symbol's memory allocation.
 
 
-## -returns
+## Return Value
+
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -77,10 +71,8 @@ This method may also return other error values.  See <a href="https://msdn.micro
 <dt><b>E_FAIL</b></dt>
 </dl>No symbol could be found with the specified name.
 
- 
+## Remarks
 
-
-## -remarks
 If the name <i>Symbol</i> is not unique and <b>GetOffsetByName</b> finds multiple symbols with that name, then the ambiguity will be resolved arbitrarily.  In this case the value S_FALSE will be returned.  <a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a> can be used to initiate a search to determine which is the desired result.
 
 <b>GetNameByOffset</b> does not support pattern matching (e.g. wildcards).  To find a symbol using pattern matching use <b>StartSymbolMatch</b>.
@@ -89,8 +81,20 @@ If the module name for the symbol is known, it is best to qualify the symbol nam
 
 For more information about symbols and symbol names, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
@@ -110,4 +114,3 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::GetOffsetByName method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

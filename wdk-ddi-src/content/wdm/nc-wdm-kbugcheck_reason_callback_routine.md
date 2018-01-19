@@ -1,45 +1,42 @@
 ---
-UID: NC:wdm.KBUGCHECK_REASON_CALLBACK_ROUTINE
-title: KBUGCHECK_REASON_CALLBACK_ROUTINE function
-author: windows-driver-content
-description: Driver-implemented callback functions that the system executes when it issues a bug check.
-old-location: kernel\bugcheckaddpagescallback.htm
-old-project: kernel
-ms.assetid: a3d33a3a-efe7-4346-82bc-555c57ae7b74
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: KBUGCHECK_REASON_CALLBACK_ROUTINE
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported starting with Windows Server 2008.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MyBugCheckCallback
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Called at HIGH_LEVEL.
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.KBUGCHECK_REASON_CALLBACK_ROUTINE
+title : KBUGCHECK_REASON_CALLBACK_ROUTINE
+author : windows-driver-content
+description : Driver-implemented callback functions that the system executes when it issues a bug check.
+old-location : kernel\bugcheckaddpagescallback.htm
+old-project : kernel
+ms.assetid : a3d33a3a-efe7-4346-82bc-555c57ae7b74
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported starting with Windows Server 2008.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MyBugCheckCallback
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Called at HIGH_LEVEL.
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # KBUGCHECK_REASON_CALLBACK_ROUTINE function
-
-
-
-## -description
 Driver-implemented callback functions that the system executes when it issues a bug check.
 
 The <i>BugCheckAddPagesCallback</i> routine adds one or more pages of data to the crash dump file when the operating system issues a bug check.
@@ -48,26 +45,23 @@ The <i>BugCheckDumpIoCallback</i> routine is executed each time the system write
 
 The <i>BugCheckSecondaryDumpDataCallback</i> routine provides data to the system to append to the crash dump file when the system issues a bug check.
 
+## Syntax
 
+```
+KBUGCHECK_REASON_CALLBACK_ROUTINE KbugcheckReasonCallbackRoutine;
 
-## -syntax
-
-````
-KBUGCHECK_REASON_CALLBACK_ROUTINE MyBugCheckCallback;
-
-VOID MyBugCheckCallback(
-  _In_    KBUGCHECK_CALLBACK_REASON                Reason,
-  _In_    struct _KBUGCHECK_REASON_CALLBACK_RECORD *Record,
-  _Inout_ PVOID                                    ReasonSpecificData,
-  _In_    ULONG                                    ReasonSpecificDataLength
+_IRQL_requires_same_ VOID KbugcheckReasonCallbackRoutine(
+  KBUGCHECK_CALLBACK_REASON Reason,
+  _KBUGCHECK_REASON_CALLBACK_RECORD * Record,
+  PVOID ReasonSpecificData,
+  ULONG ReasonSpecificDataLength
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Reason [in]
+`Reason`
 
 Specifies the reason for the call to the callback routine. This value can be one of the following as defined in  <a href="..\wdm\ne-wdm-_kbugcheck_callback_reason.md">KBUGCHECK_CALLBACK_REASON</a>
 
@@ -78,17 +72,15 @@ Specifies the reason for the call to the callback routine. This value can be one
 <li><b>KbCallbackSecondaryDumpData</b>: This callback function provides data to the system to append to the crash dump file when the system issues a bug check.</li>
 </ul>
 
-### -param Record [in]
+`Record`
 
 A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a> structure that the driver supplied when it registered this callback. For more information, see the description of the <i>CallbackRecord</i> parameter in <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>.
 
-
-### -param ReasonSpecificData [in, out]
+`ReasonSpecificData`
 
 A pointer to a <a href="..\wdm\ns-wdm-_kbugcheck_add_pages.md">KBUGCHECK_ADD_PAGES</a> structure. This pointer is cast to type PVOID. Certain members of this structure are filled in by the operating system before it calls the callback routine, and other members must be filled in by the callback routine. For more information, see the following Remarks section.
 
-
-### -param ReasonSpecificDataLength [in]
+`ReasonSpecificDataLength`
 
 Specifies the size, in bytes, of the buffer that the <i>ReasonSpecificData</i> parameter points to. 
 
@@ -98,11 +90,13 @@ Specifies the size, in bytes, of the buffer that the <i>ReasonSpecificData</i> p
 <li><b>KbCallbackSecondaryDumpData</b>: <b>sizeof</b>(<b>KBUGCHECK_SECONDARY_DUMP_DATA</b>). </li>
 </ul>
 
-## -returns
+
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 <b>About implementing <i>BugCheckAddPagesCallback</i>:  </b>A kernel-mode driver can implement a <i>BugCheckAddPagesCallback</i> callback routine to add one or more pages of data to a crash dump file when a bug check occurs. To register this routine with the operating system, the driver calls the <a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a> routine. Before the driver unloads, it must call the <a href="..\wdm\nf-wdm-kederegisterbugcheckreasoncallback.md">KeDeregisterBugCheckReasonCallback</a> routine to remove the registration.
 
 Starting with Windows 8, a registered <i>BugCheckAddPagesCallback</i> routine is called during a <a href="http://go.microsoft.com/fwlink/p/?linkid=178118">kernel memory dump</a> or a <a href="http://go.microsoft.com/fwlink/p/?linkid=178119">complete memory dump</a>. In earlier versions of Windows, a registered <i>BugCheckAddPagesCallback</i> routine is called during a kernel memory dump, but not during a complete memory dump. By default, a kernel memory dump includes only the physical pages that are being used by the Windows kernel at the time that the bug check occurs, whereas a complete memory dump includes all of the physical memory that is used by Windows. A complete memory dump does not, by default, include physical memory that is used by the platform firmware.
@@ -223,8 +217,20 @@ Then, implement your callback routine as follows:
 
 The KBUGCHECK_REASON_CALLBACK_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the KBUGCHECK_REASON_CALLBACK_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Called at HIGH_LEVEL. |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
@@ -250,4 +256,3 @@ The KBUGCHECK_REASON_CALLBACK_ROUTINE function type is defined in the Wdm.h head
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KBUGCHECK_REASON_CALLBACK_ROUTINE callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

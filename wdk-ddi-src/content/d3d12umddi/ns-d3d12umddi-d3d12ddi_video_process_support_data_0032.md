@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
-title: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
-author: windows-driver-content
-description: Video process support data.
-old-location: display\d3d12ddi-video-process-support-data-0032.htm
-old-project: display
-ms.assetid: ea2dabc5-6853-4491-8c1f-f3f5ae516952
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
-req.alt-loc: d3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
+UID : NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
+title : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
+author : windows-driver-content
+description : Video process support data.
+old-location : display\d3d12ddi-video-process-support-data-0032.htm
+old-project : display
+ms.assetid : ea2dabc5-6853-4491-8c1f-f3f5ae516952
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
+req.alt-loc : d3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 ---
 
 # D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 structure
-
-
-
-## -description
 Video process support data.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 {
   UINT                                                                               NodeIndex;
@@ -65,82 +58,74 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 {
 } D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `AutoProcessingSupport`
 
-### -field NodeIndex
+            Auto processing support.
+        
+            `DeinterlaceSupport`
 
-Node index.
+            Deinterlace support.
+        
+            `FeatureSupport`
 
+            Feature support.
+        
+            `FilterRangeSupport`
 
-### -field InputSample
+            Filter range support.
+        
+            `FilterSupport`
 
-Input sample.
+            Filter support.
+        
+            `InputFieldType`
 
+            Input field type.
+        
+            `InputFrameRate`
 
-### -field InputFieldType
+            Input frame rate.
+        
+            `InputSample`
 
-Input field type.
+            Input sample.
+        
+            `InputStereoFormat`
 
+            Input stereo format.
+        
+            `NodeIndex`
 
-### -field InputStereoFormat
+            Node index.
+        
+            `OutputFormat`
 
-Input stereo format.
+            Output format.
+        
+            `OutputFrameRate`
 
+            Output frame rate.
+        
+            `OutputStereoFormat`
 
-### -field InputFrameRate
+            Output stereo format.
+        
+            `ScaleSupport`
 
-Input frame rate.
+            Scale support.
+        
+            `SupportFlags`
 
-
-### -field OutputFormat
-
-Output format.
-
-
-### -field OutputStereoFormat
-
-Output stereo format.
-
-
-### -field OutputFrameRate
-
-Output frame rate.
-
-
-### -field SupportFlags
-
-Support flags.
-
-
-### -field ScaleSupport
-
-Scale support.
-
-
-### -field FeatureSupport
-
-Feature support.
-
-
-### -field DeinterlaceSupport
-
-Deinterlace support.
-
-
-### -field AutoProcessingSupport
-
-Auto processing support.
+            Support flags.
 
 
-### -field FilterSupport
-
-Filter support.
-
-
-### -field FilterRangeSupport
-
-Filter range support.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h |

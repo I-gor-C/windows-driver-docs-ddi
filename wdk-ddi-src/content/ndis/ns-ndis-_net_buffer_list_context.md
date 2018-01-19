@@ -1,51 +1,44 @@
 ---
-UID: NS:ndis._NET_BUFFER_LIST_CONTEXT
-title: _NET_BUFFER_LIST_CONTEXT
-author: windows-driver-content
-description: The NET_BUFFER_LIST_CONTEXT structure stores context information for a NET_BUFFER_LIST structure.
-old-location: netvista\net_buffer_list_context.htm
-old-project: netvista
-ms.assetid: e5d70be6-daa5-4d2e-94fd-5739edd8821e
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NET_BUFFER_LIST_CONTEXT, *PNET_BUFFER_LIST_CONTEXT, NET_BUFFER_LIST_CONTEXT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NET_BUFFER_LIST_CONTEXT
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: *PNET_BUFFER_LIST_CONTEXT, NET_BUFFER_LIST_CONTEXT
+UID : NS:ndis._NET_BUFFER_LIST_CONTEXT
+title : _NET_BUFFER_LIST_CONTEXT
+author : windows-driver-content
+description : The NET_BUFFER_LIST_CONTEXT structure stores context information for a NET_BUFFER_LIST structure.
+old-location : netvista\net_buffer_list_context.htm
+old-project : netvista
+ms.assetid : e5d70be6-daa5-4d2e-94fd-5739edd8821e
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NET_BUFFER_LIST_CONTEXT, NET_BUFFER_LIST_CONTEXT, *PNET_BUFFER_LIST_CONTEXT
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NET_BUFFER_LIST_CONTEXT
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : NET_BUFFER_LIST_CONTEXT, *PNET_BUFFER_LIST_CONTEXT
 ---
 
 # _NET_BUFFER_LIST_CONTEXT structure
-
-
-
-## -description
 The NET_BUFFER_LIST_CONTEXT structure stores context information for a 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NET_BUFFER_LIST_CONTEXT {
   PNET_BUFFER_LIST_CONTEXT Next;
@@ -55,37 +48,33 @@ typedef struct _NET_BUFFER_LIST_CONTEXT {
 } NET_BUFFER_LIST_CONTEXT, *PNET_BUFFER_LIST_CONTEXT;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `ContextData`
 
-### -field Next
+            The context data buffer. The context data can include any information that a driver
+     requires.
+        
+            `Next`
 
-A pointer to the next NET_BUFFER_LIST_CONTEXT structure in a linked list of
+            A pointer to the next NET_BUFFER_LIST_CONTEXT structure in a linked list of
      NET_BUFFER_LIST_CONTEXT structures.
+        
+            `Offset`
 
-
-### -field Size
-
-The size, in bytes, of the entire context space in the NET_BUFFER_LIST_CONTEXT structure,
-     including the used and unused context space.
-
-
-### -field Offset
-
-The offset, in bytes, from the beginning of the context data buffer to the start of the context
+            The offset, in bytes, from the beginning of the context data buffer to the start of the context
      data in the NET_BUFFER_LIST_CONTEXT structure. The 
      <b>Offset</b> member also specifies the size in bytes of the unused context space in the
      NET_BUFFER_LIST_CONTEXT structure.
+        
+            `Size`
 
+            The size, in bytes, of the entire context space in the NET_BUFFER_LIST_CONTEXT structure,
+     including the used and unused context space.
 
-### -field ContextData
-
-The context data buffer. The context data can include any information that a driver
-     requires.
-
-
-## -remarks
-Every 
+    ## Remarks
+        Every 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure can include a
     preallocated NET_BUFFER_LIST_CONTEXT structure. As a NET_BUFFER_LIST structure travels through the driver
     stack, the linked list of NET_BUFFER_LIST_CONTEXT structures can expand to accommodate additional data
@@ -105,12 +94,12 @@ Drivers should use the following NDIS macros and functions to access and manipul
 
 
 
-<a href="netvista.net_buffer_list_context_data_start">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568391">
        NET_BUFFER_LIST_CONTEXT_DATA_START</a>
 
 
 
-<a href="netvista.net_buffer_list_context_data_size">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568390">
        NET_BUFFER_LIST_CONTEXT_DATA_SIZE</a>
 
 
@@ -139,17 +128,25 @@ NDIS drivers call the
     NdisFreeNetBufferListContext</a> function to free the buffer space.
 
 Use the 
-    <a href="netvista.net_buffer_list_context_data_size">
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568390">
     NET_BUFFER_LIST_CONTEXT_DATA_SIZE</a> macro to obtain the size of the used context space. Use the 
-    <a href="netvista.net_buffer_list_context_data_start">
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568391">
     NET_BUFFER_LIST_CONTEXT_DATA_START</a> macro to get the starting address of the used context space.
 
 For more information on how to use net buffers, see 
     <a href="https://msdn.microsoft.com/97cddcd1-7242-4cc5-9af9-fe82a2ef995f">NET_BUFFER Architecture</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
    NdisAllocateNetBufferListContext</a>
@@ -168,11 +165,11 @@ For more information on how to use net buffers, see
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_context_data_start">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568391">
    NET_BUFFER_LIST_CONTEXT_DATA_START</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_context_data_size">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568390">
    NET_BUFFER_LIST_CONTEXT_DATA_SIZE</a>
 </dt>
 </dl>
@@ -181,4 +178,3 @@ For more information on how to use net buffers, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_LIST_CONTEXT structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

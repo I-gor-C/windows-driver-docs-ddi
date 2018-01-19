@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugAdvanced3.GetSymbolInformation
-title: IDebugAdvanced3::GetSymbolInformation method
-author: windows-driver-content
-description: The GetSymbolInformation method returns specified information about a symbol.
-old-location: debugger\getsymbolinformation.htm
-old-project: debugger
-ms.assetid: 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugAdvanced3, IDebugAdvanced3::GetSymbolInformation, GetSymbolInformation
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugAdvanced2.GetSymbolInformation,IDebugAdvanced3.GetSymbolInformation
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugAdvanced3.GetSymbolInformation
+title : IDebugAdvanced3::GetSymbolInformation method
+author : windows-driver-content
+description : The GetSymbolInformation method returns specified information about a symbol.
+old-location : debugger\getsymbolinformation.htm
+old-project : debugger
+ms.assetid : 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugAdvanced3, IDebugAdvanced3::GetSymbolInformation, GetSymbolInformation
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugAdvanced2.GetSymbolInformation,IDebugAdvanced3.GetSymbolInformation
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugAdvanced3::GetSymbolInformation method
 
-
-
-## -description
+# GetSymbolInformation method
 The <b>GetSymbolInformation</b> method returns specified information about a symbol.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT GetSymbolInformation(
@@ -59,10 +54,9 @@ HRESULT GetSymbolInformation(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Which [in]
+`Which`
 
 Specifies the piece of information to return.  <i>Which</i> can take one of the values in the follow table.
 
@@ -114,98 +108,42 @@ Returns a list of symbol names and offsets for the symbols in the specified modu
 </td>
 </tr>
 </table>
- 
 
-
-### -param Arg64 [in]
+`Arg64`
 
 Specifies a 64-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:
 
-
-
-
-### -param DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE
-
-Ignored.
-
-
-### -param DEBUG_SYMINFO_IMAGEHLP_MODULEW64
-
-The base address of the module whose description is being requested.
-
-
-### -param DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
-
-Specifies the address in the target's memory of the symbol whose name is being requested.
-
-
-### -param DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
-
-Specifies the module whose symbols are requested.  <i>Arg64</i> is a location within the memory allocation of the module.
-
-</dd>
-</dl>
-
-### -param Arg32 [in]
+`Arg32`
 
 Specifies a 32-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:
 
-
-
-
-### -param DEBUG_SYMINFO_BREAKPOINT_SOURCE_LINE
-
-The engine breakpoint ID of the desired breakpoint.
-
-
-### -param DEBUG_SYMINFO_IMAGEHLP_MODULEW64
-
-Set to zero.
-
-
-### -param DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
-
-The PDB classification of the symbol.  <i>Arg32</i> must be one of the values in the <b>SymTagEnum</b> enumeration defined in Dbghelp.h.  For more information, see PDB documentation.
-
-
-### -param DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
-
-The PDB classification of the symbol.  <i>Arg32</i> must be one of the values in the <b>SymTagEnum</b> enumeration defined in Dbghelp.h.  For more information, see PDB documentation.
-
-</dd>
-</dl>
-
-### -param Buffer [out, optional]
+`Buffer`
 
 Receives the requested symbol information.  The type of the data returned depends on the value of <i>Which</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param BufferSize [in]
+`BufferSize`
 
 Specifies the size, in bytes, of the buffer <i>Buffer</i>.
 
-
-### -param InfoSize [out, optional]
+`InfoSize`
 
 If this method returns <b>S_OK</b>, <i>InfoSize</i> receives the size, in bytes, of the symbol information returned to <i>Buffer</i>.  If this method returns <b>S_FALSE</b>, the supplied buffer is not big enough, and <i>InfoSize</i> receives the required buffer size. If <i>InfoSize</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param StringBuffer [out, optional]
+`StringBuffer`
 
 Receives the requested string.  The interpretation of this string depends on the value of <i>Which</i>.  If <i>StringBuffer</i> is <b>NULL</b>, this information is not returned.
 
-
-### -param StringBufferSize [in]
+`StringBufferSize`
 
 Specifies the size, in characters, of the string buffer <i>StringBuffer</i>.
 
-
-### -param StringSize [out, optional]
+`StringSize`
 
 Receives the size, in characters, of the string returned to <i>StringBuffer</i>.  If <i>StringSize</i> is <b>NULL</b>, this information is not returned.
 
 
-## -returns
+## Return Value
+
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
@@ -214,7 +152,15 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 <dt><b>S_FALSE</b></dt>
 </dl>The method was successful. However, the information would not fit in the buffer <i>Buffer</i> or the string would not fit in the buffer <i>StringBuffer</i>, so the information or name was truncated.
 
- 
 
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

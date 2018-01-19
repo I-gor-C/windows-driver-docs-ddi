@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.MmAllocateMdlForIoSpace
-title: MmAllocateMdlForIoSpace function
-author: windows-driver-content
-description: The MmAllocateMdlForIoSpace routine allocates an MDL and initializes this MDL to describe a set of physical address ranges in I/O address space.
-old-location: kernel\mmallocatemdlforiospace.htm
-old-project: kernel
-ms.assetid: 198ECC2A-1AC0-44FA-8E5C-84F1C8BEE246
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: MmAllocateMdlForIoSpace
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MmAllocateMdlForIoSpace
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.MmAllocateMdlForIoSpace
+title : MmAllocateMdlForIoSpace function
+author : windows-driver-content
+description : The MmAllocateMdlForIoSpace routine allocates an MDL and initializes this MDL to describe a set of physical address ranges in I/O address space.
+old-location : kernel\mmallocatemdlforiospace.htm
+old-project : kernel
+ms.assetid : 198ECC2A-1AC0-44FA-8E5C-84F1C8BEE246
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : MmAllocateMdlForIoSpace
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MmAllocateMdlForIoSpace
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : <= DISPATCH_LEVEL
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # MmAllocateMdlForIoSpace function
-
-
-
-## -description
 The <b>MmAllocateMdlForIoSpace</b> routine allocates an <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> and initializes this MDL to describe a set of physical address ranges in I/O address space.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS MmAllocateMdlForIoSpace(
@@ -54,25 +49,23 @@ NTSTATUS MmAllocateMdlForIoSpace(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param PhysicalAddressList [in]
+`PhysicalAddressList`
 
 A pointer to an array of <a href="..\wdm\ns-wdm-_mm_physical_address_list.md">MM_PHYSICAL_ADDRESS_LIST</a> structures that describe the physical address ranges to include in the allocated MDL.
 
-
-### -param NumberOfEntries [in]
+`NumberOfEntries`
 
 The number of elements in the <b>MM_PHYSICAL_ADDRESS_LIST</b> array pointed to by <i>PhysicalAddressList</i>.
 
-
-### -param NewMdl [out]
+`NewMdl`
 
 A pointer to a location to which the routine writes a pointer to the newly allocated MDL.
 
 
-## -returns
+## Return Value
+
 <b>MmAllocateMdlForIoSpace</b> returns STATUS_SUCCESS if it is successful. Possible error return values include the following status codes.
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_1</b></dt>
@@ -85,8 +78,8 @@ A pointer to a location to which the routine writes a pointer to the newly alloc
 
 Do not assume that the preceding list of error return codes is exhaustive. The routine might return error codes that do not appear in the list.
 
+## Remarks
 
-## -remarks
 This routine accepts, as an input parameter, an array of <b>MM_PHYSICAL_ADDRESS_LIST</b> structures that describe a set of physical address ranges in I/O address space, and allocates an MDL that describes these ranges. Consecutive physical address ranges in the array are not required to be contiguous.
 
 The physical address ranges in the <i>PhysicalAddressList</i> array must satisfy the following conditions:
@@ -103,8 +96,20 @@ The following code example shows how to construct an array of <a href="..\wdm\ns
 
 In this example, the starting physical address is specified by the <code>BasePhysicalAddress</code> variable. The number of bytes in each physical address range is specified by the <code>ChunkSize</code> variable. The byte offset from the start of one physical range to the start of the next is specified by the <code>Stride</code> variable. <code>BasePhysicalAddress</code> must be aligned to a page boundary in memory, and <code>ChunkSize</code> and <code>Stride</code> must be multiples of the page size.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
@@ -127,4 +132,3 @@ In this example, the starting physical address is specified by the <code>BasePhy
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocateMdlForIoSpace routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

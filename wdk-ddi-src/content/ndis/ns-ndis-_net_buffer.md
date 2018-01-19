@@ -1,50 +1,43 @@
 ---
-UID: NS:ndis._NET_BUFFER
-title: _NET_BUFFER
-author: windows-driver-content
-description: The NET_BUFFER structure specifies data that is transmitted or received over the network.
-old-location: netvista\net_buffer.htm
-old-project: netvista
-ms.assetid: 66a725f9-ae72-41b4-8840-63c9ff89ace7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NET_BUFFER, NET_BUFFER, *PNET_BUFFER
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NET_BUFFER
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: NET_BUFFER, *PNET_BUFFER
+UID : NS:ndis._NET_BUFFER
+title : _NET_BUFFER
+author : windows-driver-content
+description : The NET_BUFFER structure specifies data that is transmitted or received over the network.
+old-location : netvista\net_buffer.htm
+old-project : netvista
+ms.assetid : 66a725f9-ae72-41b4-8840-63c9ff89ace7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NET_BUFFER, *PNET_BUFFER, NET_BUFFER
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NET_BUFFER
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : "*PNET_BUFFER, NET_BUFFER"
 ---
 
 # _NET_BUFFER structure
-
-
-
-## -description
 The NET_BUFFER structure specifies data that is transmitted or received over the network.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NET_BUFFER {
   NET_BUFFER_HEADER     NetBufferHeader;
@@ -64,53 +57,17 @@ typedef struct _NET_BUFFER {
 } NET_BUFFER, *PNET_BUFFER;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `ChecksumBias`
 
-### -field NetBufferHeader
-
-A 
-     <a href="..\ndis\ns-ndis-_net_buffer_header.md">NET_BUFFER_HEADER</a> structure.
-
-
-### -field ChecksumBias
-
-The number of bytes to skip over from the beginning of the data buffer when computing a checksum.
+            The number of bytes to skip over from the beginning of the data buffer when computing a checksum.
      This member is used by the TCP/IP protocol.
+        
+            `DataPhysicalAddress`
 
-
-### -field Reserved
-
-Reserved for future use.
-
-
-### -field NdisPoolHandle
-
-A pool handle that identifies the NET_BUFFER pool from which the NET_BUFFER structure was
-     allocated.
-
-
-### -field NdisReserved
-
-Reserved for NDIS.
-
-
-### -field ProtocolReserved
-
-Reserved for use by protocol drivers. Protocol drivers and NDIS intermediate drivers can use this
-     area for their own purposes. Intermediate drivers can use this member only if it is not already in
-     use.
-
-
-### -field MiniportReserved
-
-Reserved for use by miniport drivers. Miniport drivers and NDIS intermediate drivers can use this
-     area for their own purposes.
-
-
-### -field DataPhysicalAddress
-
-<div class="alert"><b>Note</b>  The name of this member is 
+            <div class="alert"><b>Note</b>  The name of this member is 
       <b>NdisReserved1</b> for NDIS 6.0 drivers and is 
       <b>DataPhysicalAddress</b> for NDIS 6.1 and later drivers. For NDIS 6.0 drivers, this member is reserved
       for NDIS.</div>
@@ -128,21 +85,33 @@ The physical address of the data portion of a frame. This member should be to ze
       with a split frame. In this case, 
       <b>DataPhysicalAddress</b> contains the physical address of the header MDL.</div>
 <div> </div>
+        
+            `MiniportReserved`
 
-### -field SharedMemoryInfo
+            Reserved for use by miniport drivers. Miniport drivers and NDIS intermediate drivers can use this
+     area for their own purposes.
+        
+            `NdisPoolHandle`
 
-A pointer to an 
-      <a href="..\ndis\ns-ndis-_net_buffer_shared_memory.md">
-      NET_BUFFER_SHARED_MEMORY</a> structure.
+            A pool handle that identifies the NET_BUFFER pool from which the NET_BUFFER structure was
+     allocated.
+        
+            `NdisReserved`
 
+            Reserved for NDIS.
+        
+            `ProtocolReserved`
 
-### -field ScatterGatherList
+            Reserved for use by protocol drivers. Protocol drivers and NDIS intermediate drivers can use this
+     area for their own purposes. Intermediate drivers can use this member only if it is not already in
+     use.
+        
+            `Reserved`
 
-The SCATTER_GATHER_LIST structure describes a scatter/gather list for DMA.
+            Reserved for future use.
 
-
-## -remarks
-NDIS drivers can call the following functions to allocate and initialize a NET_BUFFER structure:
+    ## Remarks
+        NDIS drivers can call the following functions to allocate and initialize a NET_BUFFER structure:
 
 
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
@@ -218,7 +187,7 @@ To access members of the NET_BUFFER structure, use the following macros and func
 
 
 
-<a href="netvista.net_buffer_current_mdl_offset">
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568380">
        NET_BUFFER_CURRENT_MDL_OFFSET</a>
 
 
@@ -229,9 +198,17 @@ To access members of the NET_BUFFER structure, use the following macros and func
 For more information on how to use net buffers, see 
     <a href="https://msdn.microsoft.com/97cddcd1-7242-4cc5-9af9-fe82a2ef995f">NET_BUFFER Architecture</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 </dt>
@@ -265,7 +242,7 @@ For more information on how to use net buffers, see
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568379">NET_BUFFER_CURRENT_MDL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568380">NET_BUFFER_CURRENT_MDL_OFFSET</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568380">NET_BUFFER_CURRENT_MDL_OFFSET</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568382">NET_BUFFER_DATA_LENGTH</a>
@@ -303,4 +280,3 @@ For more information on how to use net buffers, see
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

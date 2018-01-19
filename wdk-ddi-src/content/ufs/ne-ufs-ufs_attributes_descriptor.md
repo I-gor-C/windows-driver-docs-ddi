@@ -1,51 +1,44 @@
 ---
-UID: NE:ufs.UFS_ATTRIBUTES_DESCRIPTOR
-title: UFS_ATTRIBUTES_DESCRIPTOR
-author: windows-driver-content
-description: UFS_ATTRIBUTES_DESCRIPTOR describes the different types of attributes used by Universal Flash Storage (UFS) descriptors.
-old-location: storage\ufs_attributes_descriptor.htm
-old-project: storage
-ms.assetid: 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: UFS_ATTRIBUTES_DESCRIPTOR, UFS_ATTRIBUTES_DESCRIPTOR
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ufs.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: Windows 10, version 1709
-req.target-min-winversvr: Windows Server 2016
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: UFS_ATTRIBUTES_DESCRIPTOR
-req.alt-loc: Ufs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: UFS_ATTRIBUTES_DESCRIPTOR
-req.product: Windows 10 or later.
+UID : NE:ufs.UFS_ATTRIBUTES_DESCRIPTOR
+title : UFS_ATTRIBUTES_DESCRIPTOR
+author : windows-driver-content
+description : UFS_ATTRIBUTES_DESCRIPTOR describes the different types of attributes used by Universal Flash Storage (UFS) descriptors.
+old-location : storage\ufs_attributes_descriptor.htm
+old-project : storage
+ms.assetid : 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : UFS_ATTRIBUTES_DESCRIPTOR, UFS_ATTRIBUTES_DESCRIPTOR
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ufs.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : Windows 10, version 1709
+req.target-min-winversvr : Windows Server 2016
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : UFS_ATTRIBUTES_DESCRIPTOR
+req.alt-loc : Ufs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : UFS_ATTRIBUTES_DESCRIPTOR
+req.product : Windows 10 or later.
 ---
 
-# UFS_ATTRIBUTES_DESCRIPTOR enumeration
-
-
-
-## -description
+# UFS_ATTRIBUTES_DESCRIPTOR Enumeration
 <b>UFS_ATTRIBUTES_DESCRIPTOR</b> describes the different types of attributes used by Universal Flash Storage (UFS) descriptors.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _UFS_ATTRIBUTES_DESCRIPTOR { 
   UFS_bBootLunEn              = 0,
@@ -74,22 +67,58 @@ typedef enum _UFS_ATTRIBUTES_DESCRIPTOR {
 } UFS_ATTRIBUTES_DESCRIPTOR;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field UFS_bBootLunEn
+<tr>
+<td>UFS_bActiveICCLevel</td>
+<td>Specifies the maximum
+current consumption allowed during
+Active Mode. Value ranges from 0x00 to 0x0F.</td>
+</tr>
 
-Indicates if the Boot Logical Unit Number(LUN) is enabled.
+<tr>
+<td>UFS_bBackgroundOpStatus</td>
+<td>Specifies if the device has a need for background operations. Contains one of the following values:
 
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Device requires no background operations.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Device has a non-critical need of background operations.</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>Device has a performance impacted-based need of background operations.</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>Device has a critical need of background operations. </td>
+</tr>
+</table></td>
+</tr>
 
-### -field UFS_Reserved01
+<tr>
+<td>UFS_bBootLunEn</td>
+<td>Indicates if the Boot Logical Unit Number(LUN) is enabled.</td>
+</tr>
 
-Reserved for future use.
+<tr>
+<td>UFS_bConfigDescrLock</td>
+<td>Specifies if the configuration descriptor is locked.</td>
+</tr>
 
-
-### -field UFS_bCurrentPowerMode
-
-Indicates the current power mode. Contains one of the following values:
+<tr>
+<td>UFS_bCurrentPowerMode</td>
+<td>Indicates the current power mode. Contains one of the following values:
 
 <table>
 <tr>
@@ -128,184 +157,12 @@ Indicates the current power mode. Contains one of the following values:
 <td>All other values</td>
 <td>Reserved for future use.</td>
 </tr>
-</table>
- 
-
-
-### -field UFS_bActiveICCLevel
-
-Specifies the maximum
-current consumption allowed during
-Active Mode. Value ranges from 0x00 to 0x0F.
-
-
-### -field UFS_bOutOfOrderDataEn
-
-Specifies if out-of-order data transfer is
-enabled
-
-
-### -field UFS_bBackgroundOpStatus
-
-Specifies if the device has a need for background operations. Contains one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
+</table></td>
 </tr>
+
 <tr>
-<td>0x00</td>
-<td>Device requires no background operations.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Device has a non-critical need of background operations.</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>Device has a performance impacted-based need of background operations.</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>Device has a critical need of background operations. </td>
-</tr>
-</table>
- 
-
-
-### -field UFS_bPurgeStatus
-
-Specifies the current purge operation's status.
-
-
-### -field UFS_bMaxDataInSize
-
-Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPIU). This parameter can be written by the
-host only when all logical unit task queues are
-empty.
-
-
-### -field UFS_bMaxDataOutSize
-
-Specifies the maximum data-out size. This parameter can be written by the
-host only when all logical unit task queues are
-empty.
-
-
-### -field UFS_dDynCapNeeded
-
-Specifies the dynamic capacity need.
-
-
-### -field UFS_bRefClkFreq
-
-Specifies the reference clock frequency value.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>19.2 MHz</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>26 MHz</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>38.4 MHz</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>52 MHz</td>
-</tr>
-</table>
- 
-
-
-### -field UFS_bConfigDescrLock
-
-Specifies if the configuration descriptor is locked.
-
-
-### -field UFS_bMaxNumOfRTT
-
-Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
-allowed. This value can be set by the host.
-
-
-### -field UFS_wExceptionEventControl
-
-Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enables the setting of the
-<b>EVENT_ALERT</b> bit in the Device
-Information field, which is contained in
-the RESPONSE UPIU.
-
-
-### -field UFS_wExceptionEventStatus
-
-Specifies a bitmap of each exception event status.A bit will be set only if the
-relevant event has occurred
-(regardless of the
-<b>UFS_wExceptionEventControl</b> status). Contains the following bits:
-
-<table>
-<tr>
-<th>Bit</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>0</td>
-<td>DYNCAP_NEEDED</td>
-</tr>
-<tr>
-<td>1</td>
-<td>SYSPOOL_EXHAUSTED</td>
-</tr>
-<tr>
-<td>2</td>
-<td>URGENT_BKOPS</td>
-</tr>
-<tr>
-<td>3 to 15</td>
-<td>Reserved.</td>
-</tr>
-</table>
- 
-
-
-### -field UFS_dSecondsPassed
-
-Specifies the time passed in seconds.
-
-
-### -field UFS_wContextConf
-
-Specifies the context attribute.
-
-
-### -field UFS_Obsolete
-
-Obselete
-
-
-### -field UFS_Reserved02
-
-Reserved for future use.
-
-
-### -field UFS_Reserved03
-
-Reserved for future use.
-
-
-### -field UFS_bDeviceFFUStatus
-
-Specifies the Device Field Firmware Update (FFU) status.
+<td>UFS_bDeviceFFUStatus</td>
+<td>Specifies the Device Field Firmware Update (FFU) status.
 
 <table>
 <tr>
@@ -340,13 +197,38 @@ Specifies the Device Field Firmware Update (FFU) status.
 <td>0xFF</td>
 <td>General Error.</td>
 </tr>
-</table>
- 
+</table></td>
+</tr>
 
+<tr>
+<td>UFS_bMaxDataInSize</td>
+<td>Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPIU). This parameter can be written by the
+host only when all logical unit task queues are
+empty.</td>
+</tr>
 
-### -field UFS_bPSAState
+<tr>
+<td>UFS_bMaxDataOutSize</td>
+<td>Specifies the maximum data-out size. This parameter can be written by the
+host only when all logical unit task queues are
+empty.</td>
+</tr>
 
-Specifies the current Product State Awareness (PSA) State.
+<tr>
+<td>UFS_bMaxNumOfRTT</td>
+<td>Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
+allowed. This value can be set by the host.</td>
+</tr>
+
+<tr>
+<td>UFS_bOutOfOrderDataEn</td>
+<td>Specifies if out-of-order data transfer is
+enabled</td>
+</tr>
+
+<tr>
+<td>UFS_bPSAState</td>
+<td>Specifies the current Product State Awareness (PSA) State.
 
 <table>
 <tr>
@@ -382,28 +264,144 @@ Device to indicate it is in a post-soldering state. This attribute
 is locked after it is in
 ‘Soldered’ state.</td>
 </tr>
-</table>
- 
+</table></td>
+</tr>
 
+<tr>
+<td>UFS_bPurgeStatus</td>
+<td>Specifies the current purge operation's status.</td>
+</tr>
 
-### -field UFS_dPSADataSize
+<tr>
+<td>UFS_bRefClkFreq</td>
+<td>Specifies the reference clock frequency value.
 
-Specifies the amount of data that the host plans
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>19.2 MHz</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>26 MHz</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>38.4 MHz</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>52 MHz</td>
+</tr>
+</table></td>
+</tr>
+
+<tr>
+<td>UFS_dDynCapNeeded</td>
+<td>Specifies the dynamic capacity need.</td>
+</tr>
+
+<tr>
+<td>UFS_dPSADataSize</td>
+<td>Specifies the amount of data that the host plans
 to load to all logical units with
-<b>bPSASensitive</b> set to 1.
+<b>bPSASensitive</b> set to 1.</td>
+</tr>
 
+<tr>
+<td>UFS_dSecondsPassed</td>
+<td>Specifies the time passed in seconds.</td>
+</tr>
 
-## -remarks
+<tr>
+<td>UFS_Obsolete</td>
+<td>Obselete</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved01</td>
+<td>Reserved for future use.</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved02</td>
+<td>Reserved for future use.</td>
+</tr>
+
+<tr>
+<td>UFS_Reserved03</td>
+<td>Reserved for future use.</td>
+</tr>
+
+<tr>
+<td>UFS_wContextConf</td>
+<td>Specifies the context attribute.</td>
+</tr>
+
+<tr>
+<td>UFS_wExceptionEventControl</td>
+<td>Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enables the setting of the
+<b>EVENT_ALERT</b> bit in the Device
+Information field, which is contained in
+the RESPONSE UPIU.</td>
+</tr>
+
+<tr>
+<td>UFS_wExceptionEventStatus</td>
+<td>Specifies a bitmap of each exception event status.A bit will be set only if the
+relevant event has occurred
+(regardless of the
+<b>UFS_wExceptionEventControl</b> status). Contains the following bits:
+
+<table>
+<tr>
+<th>Bit</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>0</td>
+<td>DYNCAP_NEEDED</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SYSPOOL_EXHAUSTED</td>
+</tr>
+<tr>
+<td>2</td>
+<td>URGENT_BKOPS</td>
+</tr>
+<tr>
+<td>3 to 15</td>
+<td>Reserved.</td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+## Remarks
+
 <b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
 is not in Active power mode or Idle power mode, a <b>QUERY REQUEST UPIU</b> to access descriptors, flags, or attributes other than <b>bCurrentPowerMode</b> may fail.
 
 <b>UFS_bDeviceFFUStatu</b>s value is kept after power cycle, hardware reset or any other type of reset. This attribute may change value when a
 microcode activation event occurs.
 
-<b>UFS_bMaxDataInSize</b> is equal to <b>bMaxInBufferSize</b> when a UFS device is shipped. 
+<b>UFS_bMaxDataInSize</b> is equal to <b>bMaxInBufferSize</b> when a UFS device is shipped.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ufs.h |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ufs\ns-ufs-ufs_config_descriptor.md">UFS_CONFIG_DESCRIPTOR</a>
@@ -441,4 +439,3 @@ microcode activation event occurs.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_ATTRIBUTES_DESCRIPTOR enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:dbgeng.IDebugDataSpaces4.WritePhysical2
-title: IDebugDataSpaces4::WritePhysical2 method
-author: windows-driver-content
-description: The WritePhysical2 method writes data to the specified physical address in the target's memory.
-old-location: debugger\writephysical2.htm
-old-project: debugger
-ms.assetid: 15a83343-b95b-4f79-b4f2-ed2ad60d170e
-ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WritePhysical2, WritePhysical2
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: method
-req.header: dbgeng.h
-req.include-header: Dbgeng.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: IDebugDataSpaces4.WritePhysical2
-req.alt-loc: dbgeng.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID : NF:dbgeng.IDebugDataSpaces4.WritePhysical2
+title : IDebugDataSpaces4::WritePhysical2 method
+author : windows-driver-content
+description : The WritePhysical2 method writes data to the specified physical address in the target's memory.
+old-location : debugger\writephysical2.htm
+old-project : debugger
+ms.assetid : 15a83343-b95b-4f79-b4f2-ed2ad60d170e
+ms.author : windowsdriverdev
+ms.date : 1/10/2018
+ms.keywords : IDebugDataSpaces4, IDebugDataSpaces4::WritePhysical2, WritePhysical2
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : method
+req.header : dbgeng.h
+req.include-header : Dbgeng.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : IDebugDataSpaces4.WritePhysical2
+req.alt-loc : dbgeng.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
-# IDebugDataSpaces4::WritePhysical2 method
 
-
-
-## -description
+# WritePhysical2 method
 The <b>WritePhysical2</b> method writes data to the specified physical address in the target's memory.
 
-
-
-## -syntax
+## Syntax
 
 ````
 HRESULT WritePhysical2(
@@ -55,15 +50,13 @@ HRESULT WritePhysical2(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Offset [in]
+`Offset`
 
 Specifies the physical address of the memory to write the data to.
 
-
-### -param Flags [in]
+`Flags`
 
 Specifies the properties of the physical memory to be written to.  This must match the way the physical memory was advertised to the operating system on the target.  Possible values are listed in the following table.
 
@@ -113,40 +106,47 @@ The physical memory is write-combined.
 </td>
 </tr>
 </table>
- 
 
-
-### -param Buffer [in]
+`Buffer`
 
 Specifies the data to write.
 
-
-### -param BufferSize [in]
+`BufferSize`
 
 Specifies the size, in bytes, of the <i>Buffer</i> buffer.  This is the maximum number of bytes that will be written.
 
-
-### -param BytesWritten [out, optional]
+`BytesWritten`
 
 Receives the number of bytes written to the target's memory.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.
 
 
-## -returns
+## Return Value
+
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>The method was successful.
 
- 
+## Remarks
 
-
-## -remarks
 This method is only available in kernel-mode debugging.
 
 The flags DEBUG_PHYSICAL_CACHED, DEBUG_PHYSICAL_UNCACHED, and DEBUG_PHYSICAL_WRITE_COMBINED can only be used when the target is a live kernel target that is being debugged in the standard way (using a COM port, 1394 bus, or named pipe).
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dbgeng.h (include Dbgeng.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
@@ -163,4 +163,3 @@ The flags DEBUG_PHYSICAL_CACHED, DEBUG_PHYSICAL_UNCACHED, and DEBUG_PHYSICAL_WRI
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4::WritePhysical2 method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

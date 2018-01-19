@@ -1,50 +1,43 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
-title: D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
-author: windows-driver-content
-description: Specifies texture layout capabilities.
-old-location: display\d3d12ddi_texture_layout_caps_0001.htm
-old-project: display
-ms.assetid: CFA0C474-129A-4A05-B426-520B96C318D8
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_TEXTURE_LAYOUT_CAPS_0001, D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
+UID : NS:d3d12umddi.D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
+title : D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
+author : windows-driver-content
+description : Specifies texture layout capabilities.
+old-location : display\d3d12ddi_texture_layout_caps_0001.htm
+old-project : display
+ms.assetid : CFA0C474-129A-4A05-B426-520B96C318D8
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_TEXTURE_LAYOUT_CAPS_0001, D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_TEXTURE_LAYOUT_CAPS_0001
 ---
 
 # D3D12DDI_TEXTURE_LAYOUT_CAPS_0001 structure
-
-
-
-## -description
 Specifies texture layout capabilities.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct D3D12DDI_TEXTURE_LAYOUT_CAPS_0001 {
   UINT DeviceDependentLayoutCount;
@@ -53,22 +46,26 @@ typedef struct D3D12DDI_TEXTURE_LAYOUT_CAPS_0001 {
 } D3D12DDI_TEXTURE_LAYOUT_CAPS_0001;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DeviceDependentLayoutCount`
 
-### -field DeviceDependentLayoutCount
+            A device dependent layout count. This must be the number of device-dependent layouts supported by the adapter.
+        
+            `DeviceDependentSwizzleCount`
 
-A device dependent layout count. This must be the number of device-dependent layouts supported by the adapter. 
+            A device dependent swizzle count. This must be the number of device-dependent swizzle patterns supported by the adapter.
+        
+            `Supports64KStandardSwizzle`
 
-
-### -field DeviceDependentSwizzleCount
-
-A device dependent swizzle count. This must be the number of device-dependent swizzle patterns supported by the adapter. 
-
-
-### -field Supports64KStandardSwizzle
-
-Whether the texture layout supports 64K standard swizzle.
+            Whether the texture layout supports 64K standard swizzle.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

@@ -1,50 +1,43 @@
 ---
-UID: NS:ntifs._FILE_PIPE_LOCAL_INFORMATION
-title: _FILE_PIPE_LOCAL_INFORMATION
-author: windows-driver-content
-description: The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe.
-old-location: ifsk\file_pipe_local_information.htm
-old-project: ifsk
-ms.assetid: 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: _FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ntifs.h
-req.include-header: FltKernel.h, Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FILE_PIPE_LOCAL_INFORMATION
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION
+UID : NS:ntifs._FILE_PIPE_LOCAL_INFORMATION
+title : _FILE_PIPE_LOCAL_INFORMATION
+author : windows-driver-content
+description : The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe.
+old-location : ifsk\file_pipe_local_information.htm
+old-project : ifsk
+ms.assetid : 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : _FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ntifs.h
+req.include-header : FltKernel.h, Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating system.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FILE_PIPE_LOCAL_INFORMATION
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : "*PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION"
 ---
 
 # _FILE_PIPE_LOCAL_INFORMATION structure
-
-
-
-## -description
 The <b>FILE_PIPE_LOCAL_INFORMATION</b> structure contains information about the local end of a named pipe.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _FILE_PIPE_LOCAL_INFORMATION {
   ULONG NamedPipeType;
@@ -60,33 +53,24 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 } FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CurrentInstances`
 
-### -field NamedPipeType
+            The number of current named pipe instances.
+        
+            `InboundQuota`
 
-One of the following named pipe types. 
+            The inbound quota, in bytes, for the named pipe.
+        
+            `MaximumInstances`
 
-<table>
-<tr>
-<th>Value </th>
-<th>Meaning </th>
-</tr>
-<tr>
-<td>FILE_PIPE_BYTE_STREAM_TYPE (0x00000000)</td>
-<td>Data is read from the pipe as a stream of bytes.</td>
-</tr>
-<tr>
-<td>FILE_PIPE_MESSAGE_TYPE (0x00000001)</td>
-<td>Data is read from the pipe as a stream of messages.</td>
-</tr>
-</table>
- 
+            The maximum number of instances that can be created for this pipe. The first instance of the pipe must specify this value.
+        
+            `NamedPipeConfiguration`
 
-
-### -field NamedPipeConfiguration
-
-One of the following named pipe configurations.
+            One of the following named pipe configurations.
 
 
 <table>
@@ -113,53 +97,31 @@ One of the following named pipe configurations.
 <td>The pipe is bidirectional; both server and client processes can read from and write to the pipe. </td>
 </tr>
 </table>
- 
+        
+            `NamedPipeEnd`
 
+            The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
 
-### -field MaximumInstances
+<table>
+<tr>
+<th>Value </th>
+<th>Meaning </th>
+</tr>
+<tr>
+<td>FILE_PIPE_CLIENT_END
+(0x00000000)</td>
+<td>This is the client end of a named pipe.</td>
+</tr>
+<tr>
+<td>FILE_PIPE_SERVER_END
+(0x00000001)</td>
+<td>This is the server end of a named pipe.</td>
+</tr>
+</table>
+        
+            `NamedPipeState`
 
-
-The maximum number of instances that can be created for this pipe. The first instance of the pipe must specify this value.
-
-
-
-### -field CurrentInstances
-
-
-The number of current named pipe instances.
-
-
-
-### -field InboundQuota
-
- 
-The inbound quota, in bytes, for the named pipe.
-
-
-
-### -field ReadDataAvailable
-
-
-The amount of data available, in bytes, to be read from the named pipe.
-
-
-### -field OutboundQuota
-
-
-The outbound quota, in bytes, for the named pipe.
-
-
-
-### -field WriteQuotaAvailable
-
-
-
-The write quota, in bytes, for the named pipe.
-
-
-### -field NamedPipeState
-
-The connection status for the named pipe. This state has one of the following values.
+            The connection status for the named pipe. This state has one of the following values.
 
 <table>
 <tr>
@@ -188,12 +150,10 @@ The connection status for the named pipe. This state has one of the following va
 <td>Named pipe is in the process of being closed.</td>
 </tr>
 </table>
- 
+        
+            `NamedPipeType`
 
-
-### -field NamedPipeEnd
-
-The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
+            One of the following named pipe types. 
 
 <table>
 <tr>
@@ -201,18 +161,34 @@ The type of the named pipe end, which specifies whether this is the client or th
 <th>Meaning </th>
 </tr>
 <tr>
-<td>FILE_PIPE_CLIENT_END
-(0x00000000)</td>
-<td>This is the client end of a named pipe.</td>
+<td>FILE_PIPE_BYTE_STREAM_TYPE (0x00000000)</td>
+<td>Data is read from the pipe as a stream of bytes.</td>
 </tr>
 <tr>
-<td>FILE_PIPE_SERVER_END
-(0x00000001)</td>
-<td>This is the server end of a named pipe.</td>
+<td>FILE_PIPE_MESSAGE_TYPE (0x00000001)</td>
+<td>Data is read from the pipe as a stream of messages.</td>
 </tr>
 </table>
- 
+        
+            `OutboundQuota`
 
+            The outbound quota, in bytes, for the named pipe.
+        
+            `ReadDataAvailable`
 
-## -remarks
-For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.</p>
+            The amount of data available, in bytes, to be read from the named pipe.
+        
+            `WriteQuotaAvailable`
+
+            The write quota, in bytes, for the named pipe.
+
+    ## Remarks
+        For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.</p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |

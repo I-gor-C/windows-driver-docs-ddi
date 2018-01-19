@@ -1,50 +1,45 @@
 ---
-UID: NF:upssvc.UPSGetState
-title: UPSGetState function
-author: windows-driver-content
-description: The UPSGetState function returns the operational state of the UPS.
-old-location: battery\upsgetstate.htm
-old-project: battery
-ms.assetid: c60284ff-ebbd-455d-949c-e6d31ce65d5d
-ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: UPSGetState
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: upssvc.h
-req.include-header: Upssvc.h
-req.target-type: Desktop
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: UPSGetState
-req.alt-loc: Upssvc.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: UMDETW_ALLOCATION_USAGE
-req.product: Windows 10 or later.
+UID : NF:upssvc.UPSGetState
+title : UPSGetState function
+author : windows-driver-content
+description : The UPSGetState function returns the operational state of the UPS.
+old-location : battery\upsgetstate.htm
+old-project : battery
+ms.assetid : c60284ff-ebbd-455d-949c-e6d31ce65d5d
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : UPSGetState
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : upssvc.h
+req.include-header : Upssvc.h
+req.target-type : Desktop
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : UPSGetState
+req.alt-loc : Upssvc.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : UMDETW_ALLOCATION_USAGE
+req.product : Windows 10 or later.
 ---
 
+
 # UPSGetState function
-
-
-
-## -description
 The <b>UPSGetState</b> function returns the operational state of the UPS.
 
-
-
-## -syntax
+## Syntax
 
 ````
 DWORD UPSGetState(
@@ -52,15 +47,12 @@ DWORD UPSGetState(
 );
 ````
 
+## Parameters
 
-## -parameters
+This function has no parameters.
 
-### -param  
+## Return Value
 
-None
-
-
-## -returns
 The <b>UPSGetState</b> function returns one of the following DWORD values:
 <dl>
 <dt><b>UPS_ONLINE </b></dt>
@@ -75,8 +67,18 @@ The <b>UPSGetState</b> function returns one of the following DWORD values:
 <dt><b>UPS_NOCOMM</b></dt>
 </dl>Communication with the UPS is not currently established.
 
- 
+## Remarks
 
-
-## -remarks
 This is a nonblocking call. </p>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | upssvc.h (include Upssvc.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

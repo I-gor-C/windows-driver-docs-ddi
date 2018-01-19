@@ -1,128 +1,76 @@
 ---
-UID: NC:ndis.MINIPORT_HALT
-title: MINIPORT_HALT function
-author: windows-driver-content
-description: NDIS calls a miniport driver's MiniportHaltEx function to free resources when a miniport adapter is removed, and to stop the hardware.
-old-location: netvista\miniporthaltex.htm
-old-project: netvista
-ms.assetid: b8d452b4-bef3-4991-87cf-fac15bedfde4
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: MINIPORT_HALT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MiniportHaltEx
-req.alt-loc: Ndis.h
-req.ddi-compliance: WlanAssociation, WlanConnectionRoaming, WlanDisassociation, WlanTimedAssociation, WlanTimedConnectionRoaming, WlanTimedConnectRequest, WlanTimedLinkQuality, WlanTimedScan
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.MINIPORT_HALT
+title : MINIPORT_HALT
+author : windows-driver-content
+description : NDIS calls a miniport driver's MiniportHaltEx function to free resources when a miniport adapter is removed, and to stop the hardware.
+old-location : netvista\miniporthaltex.htm
+old-project : netvista
+ms.assetid : b8d452b4-bef3-4991-87cf-fac15bedfde4
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MiniportHaltEx
+req.alt-loc : Ndis.h
+req.ddi-compliance : WlanAssociation, WlanConnectionRoaming, WlanDisassociation, WlanTimedAssociation, WlanTimedConnectionRoaming, WlanTimedConnectRequest, WlanTimedLinkQuality, WlanTimedScan
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # MINIPORT_HALT function
-
-
-
-## -description
 NDIS calls a miniport driver's 
    <i>MiniportHaltEx</i> function to free resources when a miniport adapter is
    removed, and to stop the hardware. This function puts the miniport into the Halted state, where no other callback can occur (including <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a>). For more information about miniport driver states, see <a href="https://msdn.microsoft.com/b47e2cbe-9da3-4600-9afe-b082e60b87fb">Miniport Adapter States and Operations</a>.
 
+## Syntax
 
+```
+MINIPORT_HALT MiniportHalt;
 
-## -syntax
-
-````
-MINIPORT_HALT MiniportHaltEx;
-
-VOID MiniportHaltEx(
-  _In_ NDIS_HANDLE      MiniportAdapterContext,
-  _In_ NDIS_HALT_ACTION HaltAction
+void MiniportHalt(
+  NDIS_HANDLE MiniportAdapterContext,
+  NDIS_HALT_ACTION HaltAction
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param MiniportAdapterContext [in]
+`MiniportAdapterContext`
 
 A handle to a context area that the miniport driver allocated in its 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
-
-### -param HaltAction [in]
+`HaltAction`
 
 The reason for halting the miniport adapter. It can be one of the following values:
-     
 
 
+## Return Value
 
-
-### -param NdisHaltDeviceDisabled
-
-NDIS is halting the miniport adapter in response to a Plug and Play (PnP) remove message.
-
-
-### -param NdisHaltDeviceInstanceDeInitialized
-
-NDIS is halting the miniport adapter in response to an intermediate driver calling the 
-       <a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
-       NdisIMDeInitializeDeviceInstance</a> function.
-
-
-### -param NdisHaltDevicePoweredDown
-
-NDIS is halting the miniport adapter because the system is going to a sleeping state.
-
-
-### -param NdisHaltDeviceSurpriseRemoved
-
-The miniport adapter has been surprise removed and the hardware is not present.
-
-
-### -param NdisHaltDeviceFailed
-
-The miniport adapter is being removed because of a hardware failure. Either the miniport driver
-       called the 
-       <a href="..\ndis\nf-ndis-ndismremoveminiport.md">NdisMRemoveMiniport</a> function or a
-       bus driver did not power up the NIC on resume.
-
-
-### -param NdisHaltDeviceInitializationFailed
-
-NDIS could not initialize the miniport adapter for an unknown reason after the 
-       <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function completed successfully.
-
-
-### -param NdisHaltDeviceStopped
-
-NDIS is halting the miniport adapter in response to a PnP stop device message.
-
-</dd>
-</dl>
-
-## -returns
 None
 
+## Remarks
 
-## -remarks
 A driver specifies the 
     <i>MiniportHaltEx</i> entry point when it calls the 
     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
@@ -195,10 +143,22 @@ Then, implement your function as follows:
 
 The <b>MINIPORT_HALT</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_HALT</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | WlanAssociation, WlanConnectionRoaming, WlanDisassociation, WlanTimedAssociation, WlanTimedConnectionRoaming, WlanTimedConnectRequest, WlanTimedLinkQuality, WlanTimedScan |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -256,4 +216,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_HALT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

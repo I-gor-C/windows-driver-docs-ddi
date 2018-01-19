@@ -1,49 +1,44 @@
 ---
-UID: NF:ndis.NdisWriteEventLogEntry
-title: NdisWriteEventLogEntry function
-author: windows-driver-content
-description: NdisWriteEventLogEntry logs an event to the Win32 event log.
-old-location: netvista\ndiswriteeventlogentry.htm
-old-project: netvista
-ms.assetid: 1f3fbcf1-e6f4-4117-a795-f4b14ef9fc96
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisWriteEventLogEntry
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisWriteEventLogEntry
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Miscellaneous_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisWriteEventLogEntry
+title : NdisWriteEventLogEntry function
+author : windows-driver-content
+description : NdisWriteEventLogEntry logs an event to the Win32 event log.
+old-location : netvista\ndiswriteeventlogentry.htm
+old-project : netvista
+ms.assetid : 1f3fbcf1-e6f4-4117-a795-f4b14ef9fc96
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisWriteEventLogEntry
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Universal
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisWriteEventLogEntry
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Miscellaneous_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisWriteEventLogEntry function
-
-
-
-## -description
 <b>NdisWriteEventLogEntry</b> logs an event to the Win32 event log.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisWriteEventLogEntry(
@@ -57,54 +52,48 @@ NDIS_STATUS NdisWriteEventLogEntry(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param LogHandle [in]
+`LogHandle`
 
 Pointer to the driver object of the protocol that is logging this event.
 
-
-### -param EventCode [in]
+`EventCode`
 
 Specifies the NDIS_STATUS_<i>XXX</i> code describing the event.
 
-
-### -param UniqueEventValue [in]
+`UniqueEventValue`
 
 Identifies this instance of the error message.
 
-
-### -param NumStrings [in]
+`NumStrings`
 
 Specifies the number of pointers to Unicode strings in the optional 
      <i>StringsList</i>. If 
      <i>StringsList</i> is <b>NULL</b>, 
      <i>NumStrings</i> must be zero.
 
-
-### -param StringsList [in, optional]
+`StringsList`
 
 Either <b>NULL</b> or points to buffered Unicode strings. These strings, which describe the event, are
      inserted into the Win32 event log and can be examined with the Win32 event viewer. Each string must be a
      NUL-terminated Unicode string.
 
-
-### -param DataSize [in]
+`DataSize`
 
 Specifies the number of bytes in the buffer for the binary data at 
      <i>Data</i> . If 
      <i>Data</i> is <b>NULL</b>, 
      <i>DataSize</i> must be zero.
 
-
-### -param Data [in, optional]
+`Data`
 
 Either <b>NULL</b> or points to buffered binary dump data that is useful for understanding the event.
      This data can be examined with the Win32 event viewer.
 
 
-## -returns
+## Return Value
+
 <b>NdisWriteEventLogEntry</b> can return one of the following values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -117,10 +106,8 @@ Either <b>NULL</b> or points to buffered binary dump data that is useful for und
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
 </dl>NDIS was unable to allocate memory for the I/O error log record.
 
- 
+## Remarks
 
-
-## -remarks
 <b>NdisWriteEventLogEntry</b> allocates an I/O error log record, fills in the record with the supplied
     information about the event, and then writes the record to the I/O error log file. A user can view the
     logged event, including an optional description of the event and/or optional binary dump data, with the
@@ -148,8 +135,20 @@ The system limits the total size of the optional data supplied to
 <b>NdisWriteEventLogEntry</b> is called only by protocol drivers. Miniport drivers should call 
     <b>NdisWriteErrorLogEntry</b> to log events and errors.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_Miscellaneous_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -169,4 +168,3 @@ The system limits the total size of the optional data supplied to
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteEventLogEntry function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

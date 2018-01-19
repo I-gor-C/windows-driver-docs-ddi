@@ -1,50 +1,43 @@
 ---
-UID: NE:d3d12umddi.D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
-title: D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
-author: windows-driver-content
-description: Input stream flags.
-old-location: display\d3d12ddi_video_process_input_stream_flags.htm
-old-project: display
-ms.assetid: 6BF1C31E-45F8-4921-87A2-53331530EAC4
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020, D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: d3d12umddi.h
-req.include-header: D3d12umddi.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
-req.alt-loc: D3d12umddi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
+UID : NE:d3d12umddi.D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
+title : D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
+author : windows-driver-content
+description : Input stream flags.
+old-location : display\d3d12ddi_video_process_input_stream_flags.htm
+old-project : display
+ms.assetid : 6BF1C31E-45F8-4921-87A2-53331530EAC4
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020, D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : d3d12umddi.h
+req.include-header : D3d12umddi.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
+req.alt-loc : D3d12umddi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020
 ---
 
-# D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020 enumeration
-
-
-
-## -description
+# D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020 Enumeration
 Input stream flags.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020 { 
   D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_NONE                 = 0x0,
@@ -53,22 +46,31 @@ typedef enum D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020 {
 } D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_NONE
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_FRAME_DISCONTINUITY</td>
+<td>The application must set this flag when not processing frames in order, such as seeking between frames.  This should be a hint that cached filter processing from previous calls to process frames is invalid.</td>
+</tr>
 
-No flags specified.
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_FRAME_REPEAT</td>
+<td>The application must set this flag when it applies video process operations to the same set of inputs.  For example, paused video where the window is being resized causing a scale.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_NONE</td>
+<td>No flags specified.</td>
+</tr>
+</table>
 
 
-### -field D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_FRAME_DISCONTINUITY
-
-The application must set this flag when not processing frames in order, such as seeking between frames.  This should be a hint that cached filter processing from previous calls to process frames is invalid.
-
-
-### -field D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_FRAME_REPEAT
-
-The application must set this flag when it applies video process operations to the same set of inputs.  For example, paused video where the window is being resized causing a scale.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | d3d12umddi.h (include D3d12umddi.h) |

@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisMCmModifyCallQoSComplete
-title: NdisMCmModifyCallQoSComplete macro
-author: windows-driver-content
-description: NdisMCmModifyCallQoSComplete indicates the completion of the client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to modify the quality of service on a VC.
-old-location: netvista\ndismcmmodifycallqoscomplete.htm
-old-project: netvista
-ms.assetid: 66157bc7-8094-481f-8aae-a438031b61d0
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisMCmModifyCallQoSComplete
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisMCmModifyCallQoSComplete
-req.alt-loc: ndis.h
-req.ddi-compliance: Irql_MCM_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisMCmModifyCallQoSComplete
+title : NdisMCmModifyCallQoSComplete macro
+author : windows-driver-content
+description : NdisMCmModifyCallQoSComplete indicates the completion of the client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to modify the quality of service on a VC.
+old-location : netvista\ndismcmmodifycallqoscomplete.htm
+old-project : netvista
+ms.assetid : 66157bc7-8094-481f-8aae-a438031b61d0
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisMCmModifyCallQoSComplete
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisMCmModifyCallQoSComplete
+req.alt-loc : ndis.h
+req.ddi-compliance : Irql_MCM_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
-# NdisMCmModifyCallQoSComplete macro
 
-
-
-## -description
+# NdisMCmModifyCallQoSComplete function
 <b>NdisMCmModifyCallQoSComplete</b> indicates the completion of the client's request, for which the MCM
   driver previously returned NDIS_STATUS_PENDING, to modify the quality of service on a VC.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID NdisMCmModifyCallQoSComplete(
@@ -54,32 +49,27 @@ VOID NdisMCmModifyCallQoSComplete(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Status [in]
-
-Specifies the final status of the client's request to modify the QoS on this VC, either
-     NDIS_STATUS_SUCCESS or any caller-determined NDIS_STATUS_<i>XXX</i><u>except</u> NDIS_STATUS_PENDING.
+`_S_`
 
 
-### -param NdisVcHandle [in]
 
-Specifies the handle to the VC, obtained from the per-VC state designated by the 
-     <i>CallMgrVcContext</i> passed in to the MCM driver's 
-     <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">
-     ProtocolCmModifyCallQoS</a> function for this request.
+`_H_`
 
 
-### -param CallParameters [in]
 
-Pointer to a structure of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a> specifying a QoS
-     acceptable to the MCM driver if 
-     <i>Status</i> is set to NDIS_STATUS_SUCCESS.
+`_P_`
 
 
-## -remarks
+
+
+## Return Value
+
+None
+
+## Remarks
+
 A call to 
     <b>NdisMCmModifyCallQoSComplete</b> causes NDIS to call the client's 
     <a href="..\ndis\nc-ndis-protocol_cl_modify_call_qos_complete.md">
@@ -101,8 +91,20 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
     protocol drivers, call 
     <b>NdisCmModifyCallQoSComplete</b> instead.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** | Irql_MCM_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
@@ -129,4 +131,3 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmModifyCallQoSComplete macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

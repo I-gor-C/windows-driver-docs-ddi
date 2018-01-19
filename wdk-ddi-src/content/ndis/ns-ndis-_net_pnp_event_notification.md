@@ -1,51 +1,44 @@
 ---
-UID: NS:ndis._NET_PNP_EVENT_NOTIFICATION
-title: _NET_PNP_EVENT_NOTIFICATION
-author: windows-driver-content
-description: The NET_PNP_EVENT_NOTIFICATION structure describes a network Plug and Play (PnP) event, an NDIS PnP event, or a power management event.
-old-location: netvista\net_pnp_event_notification.htm
-old-project: netvista
-ms.assetid: 58d3baf3-a1fa-42ae-b795-2774a148aeda
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NET_PNP_EVENT_NOTIFICATION, NET_PNP_EVENT_NOTIFICATION, *PNET_PNP_EVENT_NOTIFICATION
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NET_PNP_EVENT_NOTIFICATION
-req.alt-loc: ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: See Remarks section
-req.typenames: NET_PNP_EVENT_NOTIFICATION, *PNET_PNP_EVENT_NOTIFICATION
+UID : NS:ndis._NET_PNP_EVENT_NOTIFICATION
+title : _NET_PNP_EVENT_NOTIFICATION
+author : windows-driver-content
+description : The NET_PNP_EVENT_NOTIFICATION structure describes a network Plug and Play (PnP) event, an NDIS PnP event, or a power management event.
+old-location : netvista\net_pnp_event_notification.htm
+old-project : netvista
+ms.assetid : 58d3baf3-a1fa-42ae-b795-2774a148aeda
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NET_PNP_EVENT_NOTIFICATION, *PNET_PNP_EVENT_NOTIFICATION, NET_PNP_EVENT_NOTIFICATION
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NET_PNP_EVENT_NOTIFICATION
+req.alt-loc : ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : See Remarks section
+req.typenames : "*PNET_PNP_EVENT_NOTIFICATION, NET_PNP_EVENT_NOTIFICATION"
 ---
 
 # _NET_PNP_EVENT_NOTIFICATION structure
-
-
-
-## -description
 The NET_PNP_EVENT_NOTIFICATION structure describes a network Plug and Play (PnP) event, an NDIS PnP
   event, or a power management event.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NET_PNP_EVENT_NOTIFICATION {
   NDIS_OBJECT_HEADER Header;
@@ -54,35 +47,32 @@ typedef struct _NET_PNP_EVENT_NOTIFICATION {
 } NET_PNP_EVENT_NOTIFICATION, *PNET_PNP_EVENT_NOTIFICATION;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
-
-The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+            The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NET_PNP_EVENT_NOTIFICATION structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
      <b>Revision</b> member to NET_PNP_EVENT_NOTIFICATION_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_NET_PNP_EVENT_NOTIFICATION_REVISION_1.
+        
+            `NetPnPEvent`
 
-
-### -field PortNumber
-
-The source port of the event notification. If the status indication is not specific to a port, 
-     <b>PortNumber</b> is zero.
-
-
-### -field NetPnPEvent
-
-A
+            A
      <a href="..\ndis\ns-ndis-_net_pnp_event.md">NET_PNP_EVENT</a> structure that describes the
      event.
+        
+            `PortNumber`
 
+            The source port of the event notification. If the status indication is not specific to a port, 
+     <b>PortNumber</b> is zero.
 
-## -remarks
-When the operating system issues a system PnP event or a power management event to a target device
+    ## Remarks
+        When the operating system issues a system PnP event or a power management event to a target device
     object that represents an adapter, NDIS translates the event into a NET_PNP_EVENT_NOTIFICATION
     structure.
 
@@ -110,9 +100,17 @@ NDIS passes a pointer to a NET_PNP_EVENT_NOTIFICATION structure to the
     <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function of
     overlying protocol drivers.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_net_pnp_event.md">FilterNetPnPEvent</a>
 </dt>
@@ -120,7 +118,7 @@ NDIS passes a pointer to a NET_PNP_EVENT_NOTIFICATION structure to the
 <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_net_pnp_event.md">NET_PNP_EVENT</a>
@@ -131,4 +129,3 @@ NDIS passes a pointer to a NET_PNP_EVENT_NOTIFICATION structure to the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_PNP_EVENT_NOTIFICATION structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

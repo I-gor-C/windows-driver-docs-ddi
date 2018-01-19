@@ -1,50 +1,43 @@
 ---
-UID: NS:dispmprt._DXGK_INTEGRATED_DISPLAY_CHILD
-title: _DXGK_INTEGRATED_DISPLAY_CHILD
-author: windows-driver-content
-description: Gives information about the connected integrated display.
-old-location: display\dxgk_integrated_display_child.htm
-old-project: display
-ms.assetid: A3E28664-B286-4E4A-85DD-4EAAC7D257F0
-ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: dispmprt.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: DXGK_INTEGRATED_DISPLAY_CHILD
-req.alt-loc: dispmprt.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD
+UID : NS:dispmprt._DXGK_INTEGRATED_DISPLAY_CHILD
+title : _DXGK_INTEGRATED_DISPLAY_CHILD
+author : windows-driver-content
+description : Gives information about the connected integrated display.
+old-location : display\dxgk_integrated_display_child.htm
+old-project : display
+ms.assetid : A3E28664-B286-4E4A-85DD-4EAAC7D257F0
+ms.author : windowsdriverdev
+ms.date : 12/29/2017
+ms.keywords : _DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : dispmprt.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : DXGK_INTEGRATED_DISPLAY_CHILD
+req.alt-loc : dispmprt.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : "*PDXGK_INTEGRATED_DISPLAY_CHILD, DXGK_INTEGRATED_DISPLAY_CHILD"
 ---
 
 # _DXGK_INTEGRATED_DISPLAY_CHILD structure
-
-
-
-## -description
 Gives information about the connected integrated display.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _DXGK_INTEGRATED_DISPLAY_CHILD {
   D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY InterfaceTechnology;
@@ -52,12 +45,16 @@ typedef struct _DXGK_INTEGRATED_DISPLAY_CHILD {
 } DXGK_INTEGRATED_DISPLAY_CHILD, *PDXGK_INTEGRATED_DISPLAY_CHILD;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `DescriptorLength`
 
-### -field InterfaceTechnology
+            The size in bytes of the descriptor which will be in the Descriptor field of the DXGK_QUERYINTEGRATEDDISPLAYOUT structure.
+        
+            `InterfaceTechnology`
 
-Provides the type of connection used for the integrated display.  Typically, this would be one of the inherently internal display types:
+            Provides the type of connection used for the integrated display.  Typically, this would be one of the inherently internal display types:
 
 <ul>
 <li>D3DKMDT_VOT_INTERNAL</li>
@@ -76,9 +73,11 @@ However, since it has become common to use external connector types to connect i
 <li>D3DKMDT_VOT_UDI_EXTERNAL</li>
 </ul>
 
-### -field DescriptorLength
 
-The size in bytes of the descriptor which will be in the Descriptor field of the DXGK_QUERYINTEGRATEDDISPLAYOUT structure.
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | dispmprt.h |

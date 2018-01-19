@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltInitializePushLock
-title: FltInitializePushLock function
-author: windows-driver-content
-description: The FltInitializePushLock routine initializes a push lock variable.
-old-location: ifsk\fltinitializepushlock.htm
-old-project: ifsk
-ms.assetid: 49b624d6-ef06-4e73-98ac-b0be1669afc7
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltInitializePushLock
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltInitializePushLock
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltInitializePushLock
+title : FltInitializePushLock function
+author : windows-driver-content
+description : The FltInitializePushLock routine initializes a push lock variable.
+old-location : ifsk\fltinitializepushlock.htm
+old-project : ifsk
+ms.assetid : 49b624d6-ef06-4e73-98ac-b0be1669afc7
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltInitializePushLock
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltInitializePushLock
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltInitializePushLock function
-
-
-
-## -description
 The <b>FltInitializePushLock</b> routine initializes a push lock variable.
 
-
-
-## -syntax
+## Syntax
 
 ````
 VOID FltInitializePushLock(
@@ -51,19 +46,19 @@ VOID FltInitializePushLock(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param PushLock [out]
+`PushLock`
 
 Pointer to the caller-supplied storage, which must be at least the value of <b>sizeof(</b>EX_PUSH_LOCK<b>)</b>, for the push lock variable to be initialized. The storage must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 Push locks are similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff544281">ERESOURCE structures</a> (also called "resources") in the following ways: 
 
 Push locks can be used for synchronization by a set of threads. 
@@ -94,10 +89,22 @@ To acquire a push lock for shared access, call <a href="..\fltkernel\nf-fltkerne
 
 To release a push lock, call <a href="..\fltkernel\nf-fltkernel-fltreleasepushlock.md">FltReleasePushLock</a>. 
 
-To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock.md">FltDeletePushLock</a>. 
+To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock.md">FltDeletePushLock</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-exisresourceacquiredexclusivelite.md">ExIsResourceAcquiredExclusiveLite</a>
@@ -120,4 +127,3 @@ To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltInitializePushLock routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

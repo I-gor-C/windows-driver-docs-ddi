@@ -1,50 +1,45 @@
 ---
-UID: NF:wdm.MmGetMdlByteCount
-title: MmGetMdlByteCount macro
-author: windows-driver-content
-description: The MmGetMdlByteCount macro returns the length, in bytes, of the buffer described by the specified MDL.
-old-location: kernel\mmgetmdlbytecount.htm
-old-project: Benchmark
-ms.assetid: a0493418-2ce2-4917-bf9f-e4dc726a3847
-ms.author: windowsdriverdev
-ms.date: 1/12/2018
-ms.keywords: MmGetMdlByteCount
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 2000.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: MmGetMdlByteCount
-req.alt-loc: Wdm.h
-req.ddi-compliance: MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: Any level (see Remarks section)
-req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdm.MmGetMdlByteCount
+title : MmGetMdlByteCount macro
+author : windows-driver-content
+description : The MmGetMdlByteCount macro returns the length, in bytes, of the buffer described by the specified MDL.
+old-location : kernel\mmgetmdlbytecount.htm
+old-project : Benchmark
+ms.assetid : a0493418-2ce2-4917-bf9f-e4dc726a3847
+ms.author : windowsdriverdev
+ms.date : 1/12/2018
+ms.keywords : MmGetMdlByteCount
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : wdm.h
+req.include-header : Wdm.h, Ntddk.h, Ntifs.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 2000.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : MmGetMdlByteCount
+req.alt-loc : Wdm.h
+req.ddi-compliance : MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : Any level (see Remarks section)
+req.typenames : WORK_QUEUE_TYPE
+req.product : Windows 10 or later.
 ---
 
-# MmGetMdlByteCount macro
 
-
-
-## -description
+# MmGetMdlByteCount function
 The <b>MmGetMdlByteCount</b> macro returns the length, in bytes, of the buffer described by the specified MDL.
 
-
-
-## -syntax
+## Syntax
 
 ````
 ULONG MmGetMdlByteCount(
@@ -52,19 +47,35 @@ ULONG MmGetMdlByteCount(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Mdl [in]
+`Mdl`
 
 A pointer to an <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> structure that describes the layout of a virtual memory buffer in physical memory. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
 
 
-## -remarks
+## Return Value
+
+None
+
+## Remarks
+
 Callers of <b>MmGetMdlByteCount</b> can be running at any IRQL. Usually, callers are running at IRQL &lt;= DISPATCH_LEVEL.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Library** |  |
+| **IRQL** | Any level (see Remarks section) |
+| **DDI compliance rules** | MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
@@ -73,7 +84,3 @@ Callers of <b>MmGetMdlByteCount</b> can be running at any IRQL. Usually, callers
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
 </dt>
 </dl>
- 
-
- 
-

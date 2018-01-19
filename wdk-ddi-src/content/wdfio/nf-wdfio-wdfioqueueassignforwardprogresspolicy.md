@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfio.WdfIoQueueAssignForwardProgressPolicy
-title: WdfIoQueueAssignForwardProgressPolicy function
-author: windows-driver-content
-description: The WdfIoQueueAssignForwardProgressPolicy method enables the framework's ability to guarantee forward progress for a specified I/O queue.
-old-location: wdf\wdfioqueueassignforwardprogresspolicy.htm
-old-project: wdf
-ms.assetid: 9512ecf2-ca59-4df8-bb60-c644444bc6fa
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfIoQueueAssignForwardProgressPolicy
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfio.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.9
-req.umdf-ver: 
-req.alt-api: WdfIoQueueAssignForwardProgressPolicy
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: DriverCreate
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WDF_IO_QUEUE_STATE
-req.product: Windows 10 or later.
+UID : NF:wdfio.WdfIoQueueAssignForwardProgressPolicy
+title : WdfIoQueueAssignForwardProgressPolicy function
+author : windows-driver-content
+description : The WdfIoQueueAssignForwardProgressPolicy method enables the framework's ability to guarantee forward progress for a specified I/O queue.
+old-location : wdf\wdfioqueueassignforwardprogresspolicy.htm
+old-project : wdf
+ms.assetid : 9512ecf2-ca59-4df8-bb60-c644444bc6fa
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfIoQueueAssignForwardProgressPolicy
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfio.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.9
+req.umdf-ver : 
+req.alt-api : WdfIoQueueAssignForwardProgressPolicy
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : DriverCreate
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDF_IO_QUEUE_STATE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfIoQueueAssignForwardProgressPolicy function
-
-
-
-## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WdfIoQueueAssignForwardProgressPolicy</b> method enables the framework's ability to <a href="wdf.guaranteeing_forward_progress_of_i_o_operations">guarantee forward progress</a> for a specified I/O queue. 
+The <b>WdfIoQueueAssignForwardProgressPolicy</b> method enables the framework's ability to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/guaranteeing-forward-progress-of-i-o-operations">guarantee forward progress</a> for a specified I/O queue.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS WdfIoQueueAssignForwardProgressPolicy(
@@ -55,20 +50,19 @@ NTSTATUS WdfIoQueueAssignForwardProgressPolicy(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Queue [in]
+`Queue`
 
 A handle to a framework queue object.
 
-
-### -param ForwardProgressPolicy [in]
+`ForwardProgressPolicy`
 
 A pointer to a driver-allocated <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
 
 
-## -returns
+## Return Value
+
 <b>WdfIoQueueAssignForwardProgressPolicy</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of these values:
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -86,15 +80,13 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+## Remarks
 
-
-
-## -remarks
 The<b>WdfIoQueueAssignForwardProgressPolicy</b> method creates request objects that the framework reserves for low-memory situations and registers callback functions that the framework calls to handle low-memory situations.
 
 In KMDF version 1.9, the I/O queue that the <i>Queue</i> parameter represents must be a device's default I/O queue, or a queue for which your driver has called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurerequestdispatching.md">WdfDeviceConfigureRequestDispatching</a>. The driver can call <b>WdfIoQueueAssignForwardProgressPolicy</b> any time after it has called <b>WdfDeviceConfigureRequestDispatching</b>.
 
-In KMDF versions 1.11 and later,  the I/O queue that the <i>Queue</i> parameter represents can be any queue that receives a request directly from the framework. For example, the driver might specify a queue to which it will <a href="wdf.dispatching_irps_to_i_o_queues">dynamically forward IRPs</a>.
+In KMDF versions 1.11 and later,  the I/O queue that the <i>Queue</i> parameter represents can be any queue that receives a request directly from the framework. For example, the driver might specify a queue to which it will <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-irps-to-i-o-queues">dynamically forward IRPs</a>.
 
 Before <b>WdfIoQueueAssignForwardProgressPolicy</b> returns, the framework does the following:
 
@@ -108,12 +100,24 @@ After the driver has called <b>WdfIoQueueAssignForwardProgressPolicy</b> to crea
 
 The framework deletes its reserved request objects only when it deletes the framework queue object that they belong to. If your driver calls <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a> and specifies an <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> or <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a> callback function for its request objects, the framework calls these callback functions for its reserved request objects when it deletes the objects.
 
-For more information about the <b>WdfIoQueueAssignForwardProgressPolicy</b> method and how to use the framework's guaranteed forward progress capability, see <a href="https://msdn.microsoft.com/e230eb3b-54ac-43b1-ac2b-8fa137cee43e">Guaranteeing Forward Progress of I/O Operations</a>.
+For more information about the <b>WdfIoQueueAssignForwardProgressPolicy</b> method and how to use the framework's guaranteed forward progress capability, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/guaranteeing-forward-progress-of-i-o-operations">Guaranteeing Forward Progress of I/O Operations</a>.
 
 This code example configures a previously created I/O queue to receive write requests, and then it enables guaranteed forward progress for the queue.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.9 |
+| **Minimum UMDF version** |  |
+| **Header** | wdfio.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | DriverCreate |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_allocate_resources_for_reserved_request.md">EvtIoAllocateResourcesForReservedRequest</a>
@@ -130,4 +134,3 @@ This code example configures a previously created I/O queue to receive write req
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueAssignForwardProgressPolicy method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

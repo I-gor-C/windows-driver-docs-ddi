@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.ZwLockFile
-title: ZwLockFile function
-author: windows-driver-content
-description: The ZwLockFile routine requests a byte-range lock for the specified file.
-old-location: kernel\zwlockfile.htm
-old-project: kernel
-ms.assetid: d5d4d13c-93d9-4531-85ff-d3fa0e52ecc1
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ZwLockFile
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h, FltKernel.h
-req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 7.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: ZwLockFile,NtLockFile
-req.alt-loc: NtosKrnl.exe
-req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.ZwLockFile
+title : ZwLockFile function
+author : windows-driver-content
+description : The ZwLockFile routine requests a byte-range lock for the specified file.
+old-location : kernel\zwlockfile.htm
+old-project : kernel
+ms.assetid : d5d4d13c-93d9-4531-85ff-d3fa0e52ecc1
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : ZwLockFile
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h, FltKernel.h
+req.target-type : Universal
+req.target-min-winverclnt : Available starting with Windows 7.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : ZwLockFile,NtLockFile
+req.alt-loc : NtosKrnl.exe
+req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe
+req.irql : PASSIVE_LEVEL (see Remarks section)
+req.typenames : TOKEN_TYPE
 ---
 
+
 # ZwLockFile function
-
-
-
-## -description
 The <b>ZwLockFile</b> routine requests a byte-range lock for the specified file.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS ZwLockFile(
@@ -60,60 +55,51 @@ NTSTATUS ZwLockFile(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param FileHandle [in]
+`FileHandle`
 
 A handle for the file on which a byte-range lock is requested.
 
-
-### -param Event [in, optional]
+`Event`
 
 A handle to a caller-created event. If not <b>NULL</b>, the caller is placed into a wait state until the operation succeeds, at which time the event is set into the Signaled state.
 
-
-### -param ApcRoutine [in, optional]
+`ApcRoutine`
 
 A pointer to a caller-supplied APC routine that is executed after the operation completes. Can be <b>NULL</b>.
 
-
-### -param ApcContext [in, optional]
+`ApcContext`
 
 A pointer to a caller-specified context for the APC routine. This value is passed to the APC routine when it is executed. Can be <b>NULL</b>.
 
-
-### -param IoStatusBlock [out]
+`IoStatusBlock`
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains the final status.
 
-
-### -param ByteOffset [in]
+`ByteOffset`
 
 A pointer to a variable that specifies the starting byte offset of the range to lock.
 
-
-### -param Length [in]
+`Length`
 
 A pointer to a variable that specifies the length in bytes of the range to lock.
 
-
-### -param Key [in]
+`Key`
 
 A caller-assigned value used to describe groups of related locks. This value should be set to zero.
 
-
-### -param FailImmediately [in]
+`FailImmediately`
 
 If <b>TRUE</b>, immediately return if the file cannot be locked. If <b>FALSE</b>, wait for the lock request to be granted.
 
-
-### -param ExclusiveLock [in]
+`ExclusiveLock`
 
 If <b>TRUE</b>, byte-range lock is exclusive; otherwise, shared lock.
 
 
-## -returns
+## Return Value
+
 The <b>ZwLockFile</b> routine returns STATUS_SUCCESS or an appropriate error NTSTATUS value. Possible NTSTATUS values include the following:
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
@@ -122,16 +108,26 @@ The <b>ZwLockFile</b> routine returns STATUS_SUCCESS or an appropriate error NTS
 <dt><b>STATUS_LOCK_NOT_GRANTED</b></dt>
 </dl>The byte-range lock was not granted for the specified file.
 
- 
+## Remarks
 
-
-## -remarks
 Callers of <b>ZwLockFile</b> must be running at IRQL = PASSIVE_LEVEL and <a href="https://msdn.microsoft.com/0578df31-1467-4bad-ba62-081d61278deb">with special kernel APCs enabled</a>.
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL (see Remarks section) |
+| **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
@@ -145,4 +141,3 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwLockFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

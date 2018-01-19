@@ -1,80 +1,73 @@
 ---
-UID: NC:ndkpi.NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS
-title: NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS
-author: windows-driver-content
-description: The NdkGetSharedEndpointLocalAddress (NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS) function returns the local address for an NDK shared endpoint.
-old-location: netvista\ndk_fn_get_shared_endpoint_local_address.htm
-old-project: netvista
-ms.assetid: C7B6B7DC-359D-44C2-8348-EC1EE5965800
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: callback
-req.header: ndkpi.h
-req.include-header: Ndkpi.h
-req.target-type: Windows
-req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr: Windows Server 2012
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdkGetSharedEndpointLocalAddress
-req.alt-loc: ndkpi.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <=DISPATCH_LEVEL
-req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID : NC:ndkpi.NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS
+title : NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS
+author : windows-driver-content
+description : The NdkGetSharedEndpointLocalAddress (NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS) function returns the local address for an NDK shared endpoint.
+old-location : netvista\ndk_fn_get_shared_endpoint_local_address.htm
+old-project : netvista
+ms.assetid : C7B6B7DC-359D-44C2-8348-EC1EE5965800
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndkpi.h
+req.include-header : Ndkpi.h
+req.target-type : Windows
+req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr : Windows Server 2012
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdkGetSharedEndpointLocalAddress
+req.alt-loc : ndkpi.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <=DISPATCH_LEVEL
+req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
-# NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS callback
 
-
-
-## -description
+# NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS callback function
 The <i>NdkGetSharedEndpointLocalAddress</i> (<i>NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS</i>) function returns the local address for an NDK  shared endpoint.
 
+## Syntax
 
+```
+NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS NdkFnGetSharedEndpointLocalAddress;
 
-## -prototype
-
-````
-NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS NdkGetSharedEndpointLocalAddress;
-
-NTSTATUS NdkGetSharedEndpointLocalAddress(
-  _In_ NDK_SHARED_ENDPOINT                                                   *pNdkSharedEndpoint,
-       _Out_writes_bytes_to_opt_(*pAddressLength, *pAddressLength) PSOCKADDR pAddress,
-       _Inout_ ULONG                                                         *pAddressLength
+NTSTATUS NdkFnGetSharedEndpointLocalAddress(
+  NDK_SHARED_ENDPOINT *pNdkSharedEndpoint,
+  PSOCKADDR pAddress,
+  ULONG *pAddressLength
 )
-{ ... }
-````
+{...}
+```
+
+## Parameters
+
+`*pNdkSharedEndpoint`
 
 
-## -parameters
 
-### -param pNdkSharedEndpoint [in]
-
-A pointer to an NDK shared endpoint object  (<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>).
-
-
-### -param pAddress 
+`pAddress`
 
 A local address is returned in this buffer.
 
-
-### -param pAddressLength 
-
-The size, in bytes, of the address buffer for input, and the size, in bytes, of the actual address written into the buffer for output.
+`*pAddressLength`
 
 
-## -returns
+
+
+## Return Value
+
 The 
      <i>NdkGetSharedEndpointLocalAddress</i> function returns one of the following NTSTATUS codes.
 <dl>
@@ -85,16 +78,26 @@ The
 </dl>The buffer size specified in the <i>*pAddressLength</i> parameter input is too small. <i>*pAddressLength</i> output value is updated with the required buffer size.
 <dl>
 <dt><b>Other status codes</b></dt>
-</dl>An error occurred. 
+</dl>An error occurred.
 
- 
+## Remarks
 
-
-## -remarks
 <i>NdkGetSharedEndpointLocalAddress</i> returns the local address for a shared endpoint. <i>NdkGetSharedEndpointLocalAddress</i> retrieves port information for an AF_INET or AF_INET6  shared endpoint. That is, if the NDK consumer specifies zero as the ND port number in a shared endpoint creation request, the NDK provider picks a port. An NDK consumer can determine the port that the provider picked with <i>NdkGetSharedEndpointLocalAddress</i>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndkpi.h (include Ndkpi.h) |
+| **Library** |  |
+| **IRQL** | <=DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>
@@ -105,4 +108,3 @@ The
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

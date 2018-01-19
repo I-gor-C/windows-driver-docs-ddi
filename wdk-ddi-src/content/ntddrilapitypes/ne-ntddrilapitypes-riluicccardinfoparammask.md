@@ -1,50 +1,43 @@
 ---
-UID: NE:ntddrilapitypes.RILUICCCARDINFOPARAMMASK
-title: RILUICCCARDINFOPARAMMASK
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\riluicccardinfoparammask.htm
-old-project: netvista
-ms.assetid: e206ed8b-89c3-4503-a4c7-57d29c9c00ff
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILUICCCARDINFOPARAMMASK, RILUICCCARDINFOPARAMMASK
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: ntddrilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILUICCCARDINFOPARAMMASK
-req.alt-loc: ntddrilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILUICCCARDINFOPARAMMASK
+UID : NE:ntddrilapitypes.RILUICCCARDINFOPARAMMASK
+title : RILUICCCARDINFOPARAMMASK
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\riluicccardinfoparammask.htm
+old-project : netvista
+ms.assetid : e206ed8b-89c3-4503-a4c7-57d29c9c00ff
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILUICCCARDINFOPARAMMASK, RILUICCCARDINFOPARAMMASK
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : ntddrilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILUICCCARDINFOPARAMMASK
+req.alt-loc : ntddrilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILUICCCARDINFOPARAMMASK
 ---
 
-# RILUICCCARDINFOPARAMMASK enumeration
-
-
-
-## -description
+# RILUICCCARDINFOPARAMMASK Enumeration
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILUICCCARDINFOPARAMMASK { 
   RIL_PARAM_CARDINFO_ICCID,
@@ -54,19 +47,36 @@ typedef enum _RILUICCCARDINFOPARAMMASK {
 } RILUICCCARDINFOPARAMMASK;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_PARAM_CARDINFO_ICCID
+<tr>
+<td>RIL_PARAM_CARDINFO_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_CARDINFO_APPINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_CARDINFO_ICCID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_CARDINFO_NUMAPPS</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_PARAM_CARDINFO_NUMAPPS
-
-
-### -field RIL_PARAM_CARDINFO_APPINFO
-
-
-### -field RIL_PARAM_CARDINFO_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntddrilapitypes.h |

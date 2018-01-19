@@ -1,54 +1,47 @@
 ---
-UID: NS:ndischimney._NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
-title: _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
-author: windows-driver-content
-description: The NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure provides TCP chimney offload information in the OID_TCP_CONNECTION_OFFLOAD_PARAMETERS OIDs:
-old-location: netvista\ndis_tcp_connection_offload_parameters.htm
-old-project: netvista
-ms.assetid: f8d3f971-2abc-425d-9929-518f093262a7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndischimney.h
-req.include-header: Ndischimney.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
-req.alt-loc: ndischimney.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+UID : NS:ndischimney._NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+title : _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+author : windows-driver-content
+description : The NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure provides TCP chimney offload information in the OID_TCP_CONNECTION_OFFLOAD_PARAMETERS OIDs:
+old-location : netvista\ndis_tcp_connection_offload_parameters.htm
+old-project : netvista
+ms.assetid : f8d3f971-2abc-425d-9929-518f093262a7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndischimney.h
+req.include-header : Ndischimney.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+req.alt-loc : ndischimney.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
 ---
 
 # _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure
-
-
-
-## -description
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 The NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure provides TCP chimney offload information in the 
-  <a href="netvista.oid_tcp_connection_offload_parameters">
+  <a href="https://msdn.microsoft.com/en-us/library/gg158102.aspx">
   OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</a> OIDs:
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
   NDIS_OBJECT_HEADER         Header;
@@ -68,13 +61,29 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
 } NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `CongestionAlgorithm`
 
-### -field Header
+            Reserved for future use.
+     
 
-The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+If you are an independent hardware vendor (IHV) and you want to implement nondefault congestion
+     control algorithms, for example Compound TCP, contact Microsoft at 
+     <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.
+        
+            `Encapsulation`
+
+            An 
+     <a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">
+     NDIS_OFFLOAD_ENCAPSULATION</a> structure that contains encapsulation settings for TCP chimney
+     offload.
+        
+            `Header`
+
+            The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to 
@@ -83,41 +92,42 @@ The
      <b>NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS_ 1</b>, and the 
      <b>Size</b> member to 
      <code>sizeof(NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS)</code>.
+        
+            `NceStaleTicks`
 
+            A ULONG value that the TCP/IP driver stack sets to indicate the number of ticks of inactivity that
+     make a neighbor state object stale. An offload target must support this member.
+        
+            `TcpAckFrequency`
 
-### -field Encapsulation
-
-An 
-     <a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">
-     NDIS_OFFLOAD_ENCAPSULATION</a> structure that contains encapsulation settings for TCP chimney
-     offload.
-
-
-### -field TicksPerSecond
-
-A ULONG value that the TCP/IP driver stack sets to specify how many ticks of the host's clock
-     equal one second. The default value is 1000 (that is, 1 tick = 1 millisecond). An offload target must
-     support this member.
-
-
-### -field TcpAckFrequency
-
-A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of segments that the
+            A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of segments that the
      offload target can receive before the target sends an ACK. An offload target must support this
      member.
+        
+            `TcpDelayedAckTicks`
 
-
-### -field TcpDelayedAckTicks
-
-A UCHAR value that the TCP/IP driver stack sets to specify how many ticks, starting from the
+            A UCHAR value that the TCP/IP driver stack sets to specify how many ticks, starting from the
      reception of a segment, that the offload target should wait for additional receive segments before the
      target sends an ACK. An offload target uses this value to initialize its delayed-ACK timer. An offload
      target must support this member.
+        
+            `TcpDoubtReachabilityRetransmissions`
 
+            A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
+     offload target should retransmit a segment before the target indicates to the TCP/IP driver stack that
+     the reachability of a neighbor is in doubt. For more information about this indication, see 
+     <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>. An
+     offload target should support this member.
+        
+            `TcpDuplicateAckThreshold`
 
-### -field TcpMaximumRetransmissions
+            A ULONG value that the TCP/IP driver stack sets to specify the number of duplicate acknowledgments
+     that the offload target must receive before the target performs a fast retransmission. An offload target
+     must support this member.
+        
+            `TcpMaximumRetransmissions`
 
-A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
+            A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
      offload target should retransmit a segment on a TCP connection. When the retransmit counter for a TCP
      connection exceeds this limit, the offload target can call the 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
@@ -125,63 +135,34 @@ A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of
      <b>EventType</b> parameter of 
      <b>TcpIndicateRetrieve</b> to request that the TCP/IP driver stack terminate the
      offload of the connection. An offload target must support this member.
+        
+            `TcpPushTicks`
 
-
-### -field TcpDoubtReachabilityRetransmissions
-
-A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
-     offload target should retransmit a segment before the target indicates to the TCP/IP driver stack that
-     the reachability of a neighbor is in doubt. For more information about this indication, see 
-     <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>. An
-     offload target should support this member.
-
-
-### -field TcpSwsPreventionTicks
-
-A ULONG value that the TCP/IP driver stack sets to specify the number of ticks for the offload
-     target's silly window syndrome (SWS) send and receive timers. When the SWS send timer times out, the
-     offload target sends a partial segment. When the SWS receive timer times out, the offload target sends a
-     window update. An offload target should support this member.
-
-
-### -field TcpDuplicateAckThreshold
-
-A ULONG value that the TCP/IP driver stack sets to specify the number of duplicate acknowledgments
-     that the offload target must receive before the target performs a fast retransmission. An offload target
-     must support this member.
-
-
-### -field TcpPushTicks
-
-A ULONG value that the TCP/IP driver stack sets to specify the number of ticks that an offload
+            A ULONG value that the TCP/IP driver stack sets to specify the number of ticks that an offload
      target must wait before the target completes a pre-posted receive buffer. This interval starts
      immediately after the offload target places the first byte in the pre-posted receive buffer. An offload
      target uses this value to initialize its push timer. An offload target must support this member.
+        
+            `TcpSwsPreventionTicks`
 
+            A ULONG value that the TCP/IP driver stack sets to specify the number of ticks for the offload
+     target's silly window syndrome (SWS) send and receive timers. When the SWS send timer times out, the
+     offload target sends a partial segment. When the SWS receive timer times out, the offload target sends a
+     window update. An offload target should support this member.
+        
+            `TicksPerSecond`
 
-### -field NceStaleTicks
+            A ULONG value that the TCP/IP driver stack sets to specify how many ticks of the host's clock
+     equal one second. The default value is 1000 (that is, 1 tick = 1 millisecond). An offload target must
+     support this member.
 
-A ULONG value that the TCP/IP driver stack sets to indicate the number of ticks of inactivity that
-     make a neighbor state object stale. An offload target must support this member.
-
-
-### -field CongestionAlgorithm
-
-Reserved for future use.
-     
-
-If you are an independent hardware vendor (IHV) and you want to implement nondefault congestion
-     control algorithms, for example Compound TCP, contact Microsoft at 
-     <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.
-
-
-## -remarks
-In NDIS 6.0 and later versions, the NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure specifies the
+    ## Remarks
+        In NDIS 6.0 and later versions, the NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure specifies the
     current or requested parameters that a miniport adapter provides for TCP chimney offload.
 
 To specify various offload parameter settings, NDIS and overlying drivers supply an
     NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure when they set the 
-    <a href="netvista.oid_tcp_connection_offload_parameters">
+    <a href="https://msdn.microsoft.com/en-us/library/gg158102.aspx">
     OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</a> OID.
 
 To obtain the current settings of various offload parameters, NDIS and overlying drivers query
@@ -191,17 +172,25 @@ To obtain the current settings of various offload parameters, NDIS and overlying
 The 
     <b>Encapsulation</b> member of NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS defines the TCP
     chimney offload encapsulation settings for the miniport adapter. For more information, see the 
-    <a href="netvista.full_tcp_offload">NDIS 6.0 TCP chimney offload
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/full-tcp-offload">NDIS 6.0 TCP chimney offload
     documentation</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndischimney.h (include Ndischimney.h) |
 
-## -see-also
-<dl>
+    ## See Also
+
+        <dl>
 <dt>
-<a href="https://msdn.microsoft.com/a940617a-b848-430d-8da1-acd946feba1b">Full TCP Offload</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/full-tcp-offload">Full TCP Offload</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">NDIS_OFFLOAD_ENCAPSULATION</a>
@@ -213,7 +202,7 @@ The
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
 </dt>
 <dt>
-<a href="netvista.oid_tcp_connection_offload_parameters">
+<a href="https://msdn.microsoft.com/en-us/library/gg158102.aspx">
    OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</a>
 </dt>
 </dl>
@@ -222,4 +211,3 @@ The
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

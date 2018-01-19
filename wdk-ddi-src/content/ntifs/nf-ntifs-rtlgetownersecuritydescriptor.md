@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.RtlGetOwnerSecurityDescriptor
-title: RtlGetOwnerSecurityDescriptor function
-author: windows-driver-content
-description: The RtlGetOwnerSecurityDescriptor routine returns the owner information for a given security descriptor.
-old-location: ifsk\rtlgetownersecuritydescriptor.htm
-old-project: ifsk
-ms.assetid: 64c1b899-5737-474c-92ee-f18f7f2f06f5
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlGetOwnerSecurityDescriptor
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlGetOwnerSecurityDescriptor
-req.alt-loc: NtosKrnl.exe,Ntdll.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql: PASSIVE_LEVEL
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.RtlGetOwnerSecurityDescriptor
+title : RtlGetOwnerSecurityDescriptor function
+author : windows-driver-content
+description : The RtlGetOwnerSecurityDescriptor routine returns the owner information for a given security descriptor.
+old-location : ifsk\rtlgetownersecuritydescriptor.htm
+old-project : ifsk
+ms.assetid : 64c1b899-5737-474c-92ee-f18f7f2f06f5
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlGetOwnerSecurityDescriptor
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Universal
+req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlGetOwnerSecurityDescriptor
+req.alt-loc : NtosKrnl.exe,Ntdll.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : NtosKrnl.lib
+req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql : PASSIVE_LEVEL
+req.typenames : TOKEN_TYPE
 ---
 
+
 # RtlGetOwnerSecurityDescriptor function
-
-
-
-## -description
 The <b>RtlGetOwnerSecurityDescriptor</b> routine returns the owner information for a given security descriptor.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS RtlGetOwnerSecurityDescriptor(
@@ -53,38 +48,46 @@ NTSTATUS RtlGetOwnerSecurityDescriptor(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param SecurityDescriptor [in]
+`SecurityDescriptor`
 
 Pointer to the security descriptor.
 
-
-### -param Owner [out]
+`Owner`
 
 Pointer to an address to receive a pointer to the owner security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>). If the security descriptor does not currently contain an owner SID, <i>Owner</i> receives <b>NULL</b>.
 
-
-### -param OwnerDefaulted [out]
+`OwnerDefaulted`
 
 Pointer to a Boolean variable that receives <b>TRUE</b> if the owner information is derived from a default mechanism, rather than by the original provider of the security descriptor explicitly, <b>FALSE</b> otherwise. Valid only if <i>Owner</i> receives a non-<b>NULL</b> value.
 
 
-## -returns
+## Return Value
+
 <b>RtlGetOwnerSecurityDescriptor</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 <dl>
 <dt><b>STATUS_UNKNOWN_REVISION</b></dt>
-</dl>The security descriptor's revision level is not known or is not supported. This is an error code. 
+</dl>The security descriptor's revision level is not known or is not supported. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
@@ -113,4 +116,3 @@ For more information about security and access control, see the documentation on
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetOwnerSecurityDescriptor routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

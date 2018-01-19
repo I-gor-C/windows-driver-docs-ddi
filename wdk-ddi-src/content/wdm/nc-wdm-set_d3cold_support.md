@@ -1,79 +1,73 @@
 ---
-UID: NC:wdm.SET_D3COLD_SUPPORT
-title: SET_D3COLD_SUPPORT function
-author: windows-driver-content
-description: The SetD3ColdSupport routine enables or disables transitions to the D3cold device power state.
-old-location: kernel\setd3coldsupport.htm
-old-project: kernel
-ms.assetid: 423C621D-0AE3-468A-94A0-AA3922B410F0
-ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: SET_D3COLD_SUPPORT
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdm.h
-req.include-header: Wdm.h
-req.target-type: Desktop
-req.target-min-winverclnt: Available starting with Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: SetD3ColdSupport
-req.alt-loc: Wdm.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
-req.product: Windows 10 or later.
+UID : NC:wdm.SET_D3COLD_SUPPORT
+title : SET_D3COLD_SUPPORT
+author : windows-driver-content
+description : The SetD3ColdSupport routine enables or disables transitions to the D3cold device power state.
+old-location : kernel\setd3coldsupport.htm
+old-project : kernel
+ms.assetid : 423C621D-0AE3-468A-94A0-AA3922B410F0
+ms.author : windowsdriverdev
+ms.date : 1/4/2018
+ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : wdm.h
+req.include-header : Wdm.h
+req.target-type : Desktop
+req.target-min-winverclnt : Available starting with Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : SetD3ColdSupport
+req.alt-loc : Wdm.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product : Windows 10 or later.
 ---
 
+
 # SET_D3COLD_SUPPORT function
-
-
-
-## -description
 The <i>SetD3ColdSupport</i> routine enables or disables transitions to the D3cold device power state.
 
+## Syntax
 
+```
+SET_D3COLD_SUPPORT SetD3coldSupport;
 
-## -syntax
-
-````
-SET_D3COLD_SUPPORT SetD3ColdSupport;
-
-VOID SetD3ColdSupport(
-  _In_opt_ PVOID   Context,
-  _In_     BOOLEAN D3ColdSupport
+void SetD3coldSupport(
+  PVOID Context,
+  BOOLEAN D3ColdSupport
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param Context [in, optional]
+`Context`
 
 A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
-
-### -param D3ColdSupport [in]
+`D3ColdSupport`
 
 Whether to allow transitions from D3hot to D3cold. Set to <b>TRUE</b> to enable these transitions. Otherwise, set to <b>FALSE.</b> For more information, see Remarks.
 
 
-## -returns
+## Return Value
+
 None.
 
+## Remarks
 
-## -remarks
 The driver that is the power policy owner (PPO) for a device can call this routine to enable or disable transitions to the D3cold substate that might occur when the computer is in the S0 (working) system power state and is not preparing to exit S0.
 
 If a device must be able to signal a wake event from any low-power Dx state that it enters, the driver for this device should not enable transitions to the D3cold substate unless the device can signal a wake event from this substate. Otherwise, after entering D3cold, the device will be unavailable until the computer restarts or wakes from a sleeping state.
@@ -106,8 +100,20 @@ By default, before the first call to the <i>SetD3ColdSupport</i> routine, D3hot-
 
 Windows 8 is the first version of Windows to support devices that can enter and exit the D3cold substate while the computer remains in the S0 state. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543186">Device Low-Power States</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | wdm.h (include Wdm.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
@@ -130,4 +136,3 @@ Windows 8 is the first version of Windows to support devices that can enter and
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SET_D3COLD_SUPPORT routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

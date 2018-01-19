@@ -1,51 +1,44 @@
 ---
-UID: NS:rilapitypes.RILCALLINFO_V5
-title: RILCALLINFO_V5
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilcallinfo_v5_2.htm
-old-project: netvista
-ms.assetid: a2cadee5-40e4-4044-b631-1824099e2fd7
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILCALLINFO_V5, *LPRILCALLINFO_V5, *LPRILCALLINFO, RILCALLINFO_V5, RILCALLINFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILCALLINFO_V5
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: *LPRILCALLINFO_V5, *LPRILCALLINFO, RILCALLINFO_V5, RILCALLINFO
-req.product: Windows 10 or later.
+UID : NS:rilapitypes.RILCALLINFO_V5
+title : RILCALLINFO_V5
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilcallinfo_v5_2.htm
+old-project : netvista
+ms.assetid : a2cadee5-40e4-4044-b631-1824099e2fd7
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILCALLINFO_V5, RILCALLINFO_V5, RILCALLINFO, *LPRILCALLINFO, *LPRILCALLINFO_V5
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILCALLINFO_V5
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILCALLINFO_V5, RILCALLINFO, *LPRILCALLINFO, *LPRILCALLINFO_V5
+req.product : Windows 10 or later.
 ---
 
 # RILCALLINFO_V5 structure
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _RILCALLINFO_V5 {
   DWORD                           cbSize;
@@ -72,70 +65,98 @@ typedef struct _RILCALLINFO_V5 {
 } RILCALLINFO_V5, RILCALLINFO_V5;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `cbSize`
 
-### -field cbSize
+            
+        
+            `dwCallModificationCauseCode`
+
+            
+        
+            `dwDirection`
+
+            
+        
+            `dwDisconnectInitiator`
+
+            
+        
+            `dwDisconnectReason`
+
+            
+        
+            `dwExecutor`
+
+            
+        
+            `dwFlags`
+
+            
+        
+            `dwID`
+
+            
+        
+            `dwMultiparty`
+
+            
+        
+            `dwNamePresentationIndicator`
+
+            
+        
+            `dwNumberPresentationIndicator`
+
+            
+        
+            `dwParams`
+
+            
+        
+            `dwStatus`
+
+            
+        
+            `dwType`
+
+            
+        
+            `raAddress`
+
+            
+        
+            `rchsHandoverState`
+
+            
+        
+            `rcmOfferAnswer`
+
+            
+        
+            `rsaSubAddress`
+
+            
+        
+            `stDisconnectDetails`
+
+            
+        
+            `stRTTInfo`
+
+            
+        
+            `wszDescription`
+
+            
 
 
-### -field dwParams
-
-
-### -field dwExecutor
-
-
-### -field dwID
-
-
-### -field dwDirection
-
-
-### -field dwStatus
-
-
-### -field dwType
-
-
-### -field dwMultiparty
-
-
-### -field raAddress
-
-
-### -field rsaSubAddress
-
-
-### -field wszDescription
-
-
-### -field dwNumberPresentationIndicator
-
-
-### -field dwNamePresentationIndicator
-
-
-### -field dwFlags
-
-
-### -field dwDisconnectInitiator
-
-
-### -field dwDisconnectReason
-
-
-### -field stDisconnectDetails
-
-
-### -field rcmOfferAnswer
-
-
-### -field rchsHandoverState
-
-
-### -field dwCallModificationCauseCode
-
-
-### -field stRTTInfo
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

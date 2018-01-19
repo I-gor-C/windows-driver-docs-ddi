@@ -1,51 +1,44 @@
 ---
-UID: NE:rilapitypes.RILMESSAGEFLAGS
-title: RILMESSAGEFLAGS
-author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilmessageflags_2.htm
-old-project: netvista
-ms.assetid: 49f8bd1b-5c8a-47d3-a5d5-817216562559
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: RILMESSAGEFLAGS, RILMESSAGEFLAGS
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: enum
-req.header: rilapitypes.h
-req.include-header: 
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RILMESSAGEFLAGS
-req.alt-loc: rilapitypes.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: RILMESSAGEFLAGS
-req.product: Windows 10 or later.
+UID : NE:rilapitypes.RILMESSAGEFLAGS
+title : RILMESSAGEFLAGS
+author : windows-driver-content
+description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location : netvista\rilmessageflags_2.htm
+old-project : netvista
+ms.assetid : 49f8bd1b-5c8a-47d3-a5d5-817216562559
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RILMESSAGEFLAGS, RILMESSAGEFLAGS
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : enum
+req.header : rilapitypes.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RILMESSAGEFLAGS
+req.alt-loc : rilapitypes.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : RILMESSAGEFLAGS
+req.product : Windows 10 or later.
 ---
 
-# RILMESSAGEFLAGS enumeration
+# RILMESSAGEFLAGS Enumeration
+This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
-
-
-## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
-
-## -syntax
-
+## Syntax
 ````
 typedef enum _RILMESSAGEFLAGS { 
   RIL_MSGFLAG_MORETOSEND,
@@ -59,31 +52,56 @@ typedef enum _RILMESSAGEFLAGS {
 } RILMESSAGEFLAGS;
 ````
 
+## Constants
 
-## -enum-fields
+<table>
 
-### -field RIL_MSGFLAG_MORETOSEND
+<tr>
+<td>RIL_MSGFLAG_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_CAUSEDBYCOMMAND</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_HEADER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_MORETOSEND</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_REJECTDUPS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_REPLYPATH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_STATUSREPORTREQUESTED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_STATUSREPORTRETURNED</td>
+<td></td>
+</tr>
+</table>
 
 
-### -field RIL_MSGFLAG_REPLYPATH
-
-
-### -field RIL_MSGFLAG_HEADER
-
-
-### -field RIL_MSGFLAG_REJECTDUPS
-
-
-### -field RIL_MSGFLAG_STATUSREPORTRETURNED
-
-
-### -field RIL_MSGFLAG_STATUSREPORTREQUESTED
-
-
-### -field RIL_MSGFLAG_CAUSEDBYCOMMAND
-
-
-### -field RIL_MSGFLAG_ALL
-
-
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | rilapitypes.h |

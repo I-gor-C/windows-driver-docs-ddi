@@ -1,72 +1,65 @@
 ---
-UID: NC:ndis.FILTER_CANCEL_DIRECT_OID_REQUEST
-title: FILTER_CANCEL_DIRECT_OID_REQUEST function
-author: windows-driver-content
-description: NDIS calls a filter driver's FilterCancelDirectOidRequest function to cancel a direct OID request.Note  You must declare the function by using the FILTER_CANCEL_DIRECT_OID_REQUEST type.
-old-location: netvista\filtercanceldirectoidrequest.htm
-old-project: netvista
-ms.assetid: 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: FILTER_CANCEL_DIRECT_OID_REQUEST
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported in NDIS 6.1 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FilterCancelDirectOidRequest
-req.alt-loc: Ndis.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: <= DISPATCH_LEVEL
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID : NC:ndis.FILTER_CANCEL_DIRECT_OID_REQUEST
+title : FILTER_CANCEL_DIRECT_OID_REQUEST
+author : windows-driver-content
+description : NDIS calls a filter driver's FilterCancelDirectOidRequest function to cancel a direct OID request.Note  You must declare the function by using the FILTER_CANCEL_DIRECT_OID_REQUEST type.
+old-location : netvista\filtercanceldirectoidrequest.htm
+old-project : netvista
+ms.assetid : 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : RxNameCacheInitialize
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : callback
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported in NDIS 6.1 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FilterCancelDirectOidRequest
+req.alt-loc : Ndis.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : <= DISPATCH_LEVEL
+req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
+
 # FILTER_CANCEL_DIRECT_OID_REQUEST function
-
-
-
-## -description
 NDIS calls a filter driver's 
   <i>FilterCancelDirectOidRequest</i> function to cancel a direct OID request.
 
+## Syntax
 
-
-## -syntax
-
-````
+```
 FILTER_CANCEL_DIRECT_OID_REQUEST FilterCancelDirectOidRequest;
 
-VOID FilterCancelDirectOidRequest(
-  _In_ NDIS_HANDLE FilterModuleContext,
-  _In_ PVOID       RequestId
+void FilterCancelDirectOidRequest(
+  NDIS_HANDLE FilterModuleContext,
+  PVOID RequestId
 )
-{ ... }
-````
+{...}
+```
 
+## Parameters
 
-## -parameters
-
-### -param FilterModuleContext [in]
+`FilterModuleContext`
 
 A handle to the context area for the filter module that is the target of this request. The filter
      driver created and initialized this context area in the 
      <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
-
-### -param RequestId [in]
+`RequestId`
 
 A cancellation identifier for the request. This identifier specifies the direct OID requests that
      match this value in the 
@@ -74,11 +67,12 @@ A cancellation identifier for the request. This identifier specifies the direct 
      <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure.
 
 
-## -returns
+## Return Value
+
 None
 
+## Remarks
 
-## -remarks
 <i>FilterCancelDirectOidRequest</i> is an optional function. If a filter driver does
     not use direct OID requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
     <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
@@ -119,10 +113,22 @@ Then, implement your function as follows:
 
 The <b>FILTER_CANCEL_DIRECT_OID_REQUEST</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>FILTER_CANCEL_DIRECT_OID_REQUEST</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. 
+For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | <= DISPATCH_LEVEL |
+| **DDI compliance rules** |  |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
@@ -146,4 +152,3 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_CANCEL_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

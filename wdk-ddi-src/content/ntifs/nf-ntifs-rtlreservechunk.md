@@ -1,49 +1,44 @@
 ---
-UID: NF:ntifs.RtlReserveChunk
-title: RtlReserveChunk function
-author: windows-driver-content
-description: Reserved for system use.
-old-location: ifsk\rtlreservechunk.htm
-old-project: ifsk
-ms.assetid: d6cd676c-32ed-457f-84a3-999246eba0d8
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: RtlReserveChunk
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ntifs.h
-req.include-header: Ntifs.h
-req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: RtlReserveChunk
-req.alt-loc: ntifs.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: 
-req.typenames: TOKEN_TYPE
+UID : NF:ntifs.RtlReserveChunk
+title : RtlReserveChunk function
+author : windows-driver-content
+description : Reserved for system use.
+old-location : ifsk\rtlreservechunk.htm
+old-project : ifsk
+ms.assetid : d6cd676c-32ed-457f-84a3-999246eba0d8
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : RtlReserveChunk
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ntifs.h
+req.include-header : Ntifs.h
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : RtlReserveChunk
+req.alt-loc : ntifs.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : 
+req.typenames : TOKEN_TYPE
 ---
 
+
 # RtlReserveChunk function
+The <b>RtlReserveChunk</b> routine is reserved for system use.
 
-
-
-## -description
-The <b>RtlReserveChunk</b> routine is reserved for system use. 
-
-
-
-## -syntax
+## Syntax
 
 ````
   RtlReserveChunk(
@@ -51,12 +46,42 @@ The <b>RtlReserveChunk</b> routine is reserved for system use.
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param  
-
-Reserved.
+`CompressionFormat`
 
 
-## -remarks
+
+`CompressedBuffer`
+
+
+
+`EndOfCompressedBufferPlus1`
+
+
+
+`ChunkBuffer`
+
+
+
+`ChunkSize`
+
+
+
+
+## Return Value
+
+None
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Windows |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ntifs.h (include Ntifs.h) |
+| **Library** |  |
+| **IRQL** |  |
+| **DDI compliance rules** |  |

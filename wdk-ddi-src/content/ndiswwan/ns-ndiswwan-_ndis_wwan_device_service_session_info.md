@@ -1,50 +1,43 @@
 ---
-UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
-title: _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
-author: windows-driver-content
-description: The NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure represents the status of a device service session.
-old-location: netvista\ndis_wwan_device_service_session_info.htm
-old-project: netvista
-ms.assetid: B357E186-FE99-448A-B242-13A21A729BC9
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: struct
-req.header: ndiswwan.h
-req.include-header: Ndiswwan.h
-req.target-type: Windows
-req.target-min-winverclnt: Supported starting with  Windows 8.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
-req.alt-loc: ndiswwan.h
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+title : _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+author : windows-driver-content
+description : The NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure represents the status of a device service session.
+old-location : netvista\ndis_wwan_device_service_session_info.htm
+old-project : netvista
+ms.assetid : B357E186-FE99-448A-B242-13A21A729BC9
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : struct
+req.header : ndiswwan.h
+req.include-header : Ndiswwan.h
+req.target-type : Windows
+req.target-min-winverclnt : Supported starting with  Windows 8.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+req.alt-loc : ndiswwan.h
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure
-
-
-
-## -description
 The NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure represents the status of a device service session.
 
-
-
-## -syntax
-
+## Syntax
 ````
 typedef struct _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO {
   NDIS_OBJECT_HEADER          Header;
@@ -53,12 +46,12 @@ typedef struct _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO {
 } NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO;
 ````
 
+## Members
 
-## -struct-fields
+        
+            `Header`
 
-### -field Header
-
-The header with type, revision, and size information about the NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+            The header with type, revision, and size information about the NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
      structure. The MB Service sets the header with the values that are shown in the following table when it
      sends the data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
@@ -104,24 +97,28 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO)
  
 
 For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+        
+            `Session`
+
+            The session to obtain status of.
+        
+            `uStatus`
+
+            The status of the device service session state operation.
 
 
-### -field uStatus
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-The status of the device service session state operation.
+    ## See Also
 
-
-### -field Session
-
-The session to obtain status of.
-
-
-## -remarks
-
-
-## -see-also
-<dl>
+        <dl>
 <dt>
 <a href="..\wwan\ns-wwan-_wwan_device_service_session.md">WWAN_DEVICE_SERVICE_SESSION</a>
 </dt>
@@ -131,4 +128,3 @@ The session to obtain status of.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

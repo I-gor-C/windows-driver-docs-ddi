@@ -1,51 +1,46 @@
 ---
-UID: NF:ndis.NdisEqualUnicodeString
-title: NdisEqualUnicodeString macro
-author: windows-driver-content
-description: The NdisEqualUnicodeString function compares two Unicode strings and returns whether they are equal.
-old-location: netvista\ndisequalunicodestring.htm
-old-project: netvista
-ms.assetid: 8f3abf40-bb47-4fa6-862b-6126edb00b36
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisEqualUnicodeString
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: macro
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisEqualUnicodeString
-req.alt-loc: ndis.h
-req.ddi-compliance: Irql_Miscellaneous_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisEqualUnicodeString
+title : NdisEqualUnicodeString macro
+author : windows-driver-content
+description : The NdisEqualUnicodeString function compares two Unicode strings and returns whether they are equal.
+old-location : netvista\ndisequalunicodestring.htm
+old-project : netvista
+ms.assetid : 8f3abf40-bb47-4fa6-862b-6126edb00b36
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisEqualUnicodeString
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : macro
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisEqualUnicodeString
+req.alt-loc : ndis.h
+req.ddi-compliance : Irql_Miscellaneous_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : 
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
-# NdisEqualUnicodeString macro
 
-
-
-## -description
+# NdisEqualUnicodeString function
 The
   <b>NdisEqualUnicodeString</b> function compares two Unicode strings and returns whether they are
   equal.
 
-
-
-## -syntax
+## Syntax
 
 ````
 BOOLEAN NdisEqualUnicodeString(
@@ -55,32 +50,45 @@ BOOLEAN NdisEqualUnicodeString(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param String1 [in]
-
-A pointer to an NDIS_STRING type that describes the first Unicode string.
+`_String1`
 
 
-### -param String2 [in]
 
-A pointer to an NDIS_STRING type that describes the second Unicode string.
-
-
-### -param CaseInSensitive [in]
-
-A Boolean value that is <b>TRUE</b>, if case should be ignored when doing the comparison. Otherwise, it
-     is <b>FALSE</b>.
+`_String2`
 
 
-## -remarks
+
+`_CaseInsensitive`
+
+
+
+
+## Return Value
+
+None
+
+## Remarks
+
 Starting with Windows 2000 and later drivers, a string of type NDIS_STRING is a counted,
     null-terminated Unicode string. That is, NDIS defines the NDIS_STRING type as a 
     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> type.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Miscellaneous_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
@@ -91,4 +99,3 @@ Starting with Windows 2000 and later drivers, a string of type NDIS_STRING is a 
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEqualUnicodeString macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

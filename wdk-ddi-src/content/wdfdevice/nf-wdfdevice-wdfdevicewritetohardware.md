@@ -1,52 +1,47 @@
 ---
-UID: NF:wdfdevice.WdfDeviceWriteToHardware
-title: WdfDeviceWriteToHardware function
-author: windows-driver-content
-description: The WdfDeviceWriteToHardware method is used internally by the framework. Do not use.
-old-location: wdf\wdfdevicewritetohardware.htm
-old-project: wdf
-ms.assetid: D79F1D98-E326-4401-86B8-2C3D071DF27C
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WdfDeviceWriteToHardware
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: wdfdevice.h
-req.include-header: Wdf.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 1.11
-req.umdf-ver: 2.0
-req.alt-api: WdfDeviceWriteToHardware
-req.alt-loc: Wdf01000.sys,Wdf01000.sys.dll
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Wdf01000.sys (see Framework Library Versioning.)
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: WDF_STATE_NOTIFICATION_TYPE
-req.product: Windows 10 or later.
+UID : NF:wdfdevice.WdfDeviceWriteToHardware
+title : WdfDeviceWriteToHardware function
+author : windows-driver-content
+description : The WdfDeviceWriteToHardware method is used internally by the framework. Do not use.
+old-location : wdf\wdfdevicewritetohardware.htm
+old-project : wdf
+ms.assetid : D79F1D98-E326-4401-86B8-2C3D071DF27C
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : WdfDeviceWriteToHardware
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : wdfdevice.h
+req.include-header : Wdf.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 1.11
+req.umdf-ver : 2.0
+req.alt-api : WdfDeviceWriteToHardware
+req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Wdf01000.sys (see Framework Library Versioning.)
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : WDF_STATE_NOTIFICATION_TYPE
+req.product : Windows 10 or later.
 ---
 
+
 # WdfDeviceWriteToHardware function
-
-
-
-## -description
 The <b>WdfDeviceWriteToHardware</b> method is used internally by the framework. Do not use.
 
 Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265662">WDF Register/Port Access Functions</a>.
 
-
-
-## -syntax
+## Syntax
 
 ````
 void WdfDeviceWriteToHardware(
@@ -60,38 +55,56 @@ void WdfDeviceWriteToHardware(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param Device [in]
-
-
-### -param Type [in]
+`Device`
 
 
-### -param Size [in]
+
+`Type`
 
 
-### -param TargetAddress [in]
+
+`Size`
 
 
-### -param Value [in]
+
+`TargetAddress`
 
 
-### -param Buffer [in, optional]
+
+`Value`
 
 
-### -param Count [in, optional]
+
+`Buffer`
 
 
-## -returns
+
+`Count`
+
+
+
+
+## Return Value
+
 This method does not return a value.
 
 
-## -remarks
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** | 1.11 |
+| **Minimum UMDF version** | 2.0 |
+| **Header** | wdfdevice.h (include Wdf.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="https://msdn.microsoft.com/55FBE72C-E74E-4116-9602-6D491592350F">WriteToHardware</a>
@@ -102,4 +115,3 @@ This method does not return a value.
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceWriteToHardware method%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

@@ -1,49 +1,44 @@
 ---
-UID: NF:fltkernel.FltAllocateContext
-title: FltAllocateContext function
-author: windows-driver-content
-description: The FltAllocateContext routine allocates a context structure for a specified context type.
-old-location: ifsk\fltallocatecontext.htm
-old-project: ifsk
-ms.assetid: 34be4ca1-9484-41c5-9382-4785c36fca1a
-ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FltAllocateContext
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: fltkernel.h
-req.include-header: Fltkernel.h
-req.target-type: Universal
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: FltAllocateContext
-req.alt-loc: fltmgr.sys
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: FltMgr.lib
-req.dll: Fltmgr.sys
-req.irql: <= APC_LEVEL
-req.typenames: FA_ENTRY, *PFA_ENTRY
+UID : NF:fltkernel.FltAllocateContext
+title : FltAllocateContext function
+author : windows-driver-content
+description : The FltAllocateContext routine allocates a context structure for a specified context type.
+old-location : ifsk\fltallocatecontext.htm
+old-project : ifsk
+ms.assetid : 34be4ca1-9484-41c5-9382-4785c36fca1a
+ms.author : windowsdriverdev
+ms.date : 1/9/2018
+ms.keywords : FltAllocateContext
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : fltkernel.h
+req.include-header : Fltkernel.h
+req.target-type : Universal
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : FltAllocateContext
+req.alt-loc : fltmgr.sys
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : FltMgr.lib
+req.dll : Fltmgr.sys
+req.irql : <= APC_LEVEL
+req.typenames : EXpsFontRestriction
 ---
 
+
 # FltAllocateContext function
-
-
-
-## -description
 The <b>FltAllocateContext</b> routine allocates a context structure for a specified context type.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NTSTATUS FltAllocateContext(
@@ -55,15 +50,13 @@ NTSTATUS FltAllocateContext(
 );
 ````
 
+## Parameters
 
-## -parameters
+`Filter`
 
-### -param Filter [in]
+An opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. (Setting this parameter to an invalid value causes the system to execute an ASSERT on a checked build.)
 
-An opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>. (Setting this parameter to an invalid value causes the system to execute an ASSERT on a checked build.) 
-
-
-### -param ContextType [in]
+`ContextType`
 
 The type of context to allocate. One of the following: 
 
@@ -98,12 +91,11 @@ FLT_VOLUME_CONTEXT
 </dd>
 </dl>
 
-### -param ContextSize [in]
+`ContextSize`
 
-The size, in bytes, of the portion of the context defined by the minifilter driver. Must be greater than zero and less than or equal to <b>MAXUSHORT</b>. A minifilter driver uses this portion of the context to maintain context information specific to the minifilter driver. The filter manager treats this portion of the context structure as opaque. This parameter is required and cannot be zero. 
+The size, in bytes, of the portion of the context defined by the minifilter driver. Must be greater than zero and less than or equal to <b>MAXUSHORT</b>. A minifilter driver uses this portion of the context to maintain context information specific to the minifilter driver. The filter manager treats this portion of the context structure as opaque. This parameter is required and cannot be zero.
 
-
-### -param PoolType [in]
+`PoolType`
 
 The type of pool to allocate. This parameter is required and must be one of the following: 
 
@@ -113,15 +105,15 @@ The type of pool to allocate. This parameter is required and must be one of the 
 
 Must be <b>NonPagedPool</b> if <i>ContextType</i> is FLT_VOLUME_CONTEXT. 
 
-Setting this parameter to an invalid value causes the system to execute an ASSERT on a checked build. 
+Setting this parameter to an invalid value causes the system to execute an ASSERT on a checked build.
+
+`ReturnedContext`
+
+A pointer to a caller-allocated variable that receives the address of the newly allocated context. The caller is responsible for calling <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> to release this context when it is no longer needed.
 
 
-### -param ReturnedContext [out]
+## Return Value
 
-A pointer to a caller-allocated variable that receives the address of the newly allocated context. The caller is responsible for calling <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> to release this context when it is no longer needed. 
-
-
-## -returns
 <b>FltAllocateContext</b> returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value, such as one of the following. 
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALLOCATION_NOT_FOUND</b></dt>
@@ -138,12 +130,10 @@ A pointer to a caller-allocated variable that receives the address of the newly 
 </dl>An invalid value was specified for the <i>ContextType</i> or the <i>ContextSize</i> parameter. This is an error code. 
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The file system does not support per-stream contexts. This is an error code. 
+</dl>The file system does not support per-stream contexts. This is an error code.
 
- 
+## Remarks
 
-
-## -remarks
 <b>FltAllocateContext</b> allocates a context of the specified type from the specified pool. The contents of the returned context are not zeroed. 
 
 After the context is allocated, it can be set on an object by passing the <i>ReturnedContext</i> pointer to the appropriate set-context routine from the following table. 
@@ -248,9 +238,20 @@ Because contexts are reference-counted, it is not usually necessary to delete th
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Universal |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | fltkernel.h (include Fltkernel.h) |
+| **Library** |  |
+| **IRQL** | <= APC_LEVEL |
+| **DDI compliance rules** |  |
 
+## See Also
 
-## -see-also
 <dl>
 <dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
@@ -339,4 +340,3 @@ Because contexts are reference-counted, it is not usually necessary to delete th
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-

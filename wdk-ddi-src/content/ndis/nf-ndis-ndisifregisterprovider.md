@@ -1,50 +1,45 @@
 ---
-UID: NF:ndis.NdisIfRegisterProvider
-title: NdisIfRegisterProvider function
-author: windows-driver-content
-description: The NdisIfRegisterProvider function registers an NDIS network interface provider.
-old-location: netvista\ndisifregisterprovider.htm
-old-project: netvista
-ms.assetid: 1624426b-9e67-4aa2-83d8-f1e6fa484858
-ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: NdisIfRegisterProvider
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: function
-req.header: ndis.h
-req.include-header: Ndis.h
-req.target-type: Desktop
-req.target-min-winverclnt: Supported in NDIS 6.0 and later.
-req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.alt-api: NdisIfRegisterProvider
-req.alt-loc: ndis.lib,ndis.dll
-req.ddi-compliance: Irql_Interfaces_Function
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
-req.lib: Ndis.lib
-req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
+UID : NF:ndis.NdisIfRegisterProvider
+title : NdisIfRegisterProvider function
+author : windows-driver-content
+description : The NdisIfRegisterProvider function registers an NDIS network interface provider.
+old-location : netvista\ndisifregisterprovider.htm
+old-project : netvista
+ms.assetid : 1624426b-9e67-4aa2-83d8-f1e6fa484858
+ms.author : windowsdriverdev
+ms.date : 1/11/2018
+ms.keywords : NdisIfRegisterProvider
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : function
+req.header : ndis.h
+req.include-header : Ndis.h
+req.target-type : Desktop
+req.target-min-winverclnt : Supported in NDIS 6.0 and later.
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.alt-api : NdisIfRegisterProvider
+req.alt-loc : ndis.lib,ndis.dll
+req.ddi-compliance : Irql_Interfaces_Function
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : Ndis.lib
+req.dll : 
+req.irql : PASSIVE_LEVEL
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
+
 # NdisIfRegisterProvider function
-
-
-
-## -description
 The 
   <b>NdisIfRegisterProvider</b> function registers an NDIS network interface provider.
 
-
-
-## -syntax
+## Syntax
 
 ````
 NDIS_STATUS NdisIfRegisterProvider(
@@ -54,31 +49,27 @@ NDIS_STATUS NdisIfRegisterProvider(
 );
 ````
 
+## Parameters
 
-## -parameters
-
-### -param ProviderCharacteristics [in]
+`ProviderCharacteristics`
 
 A pointer to a caller-provided 
      <a href="..\ndis\ns-ndis-_ndis_if_provider_characteristics.md">
      NDIS_IF_PROVIDER_CHARACTERISTICS</a> structure. This structure defines the characteristics of the
      provider, including the entry points for its provider callback functions.
 
-
-### -param IfProviderContext [in]
+`IfProviderContext`
 
 A handle to a caller-provided context area for this network interface provider. Set this parameter
      to <b>NULL</b> if there is no context area.
 
-
-### -param pNdisProviderHandle [out]
-
-A pointer to a caller-provided handle variable. If the registration operation succeeds, NDIS
-     writes a handle to this variable that identifies the network interface provider. The interface provider
-     should retain this handle for use in subsequent calls that require an interface provider handle.
+`pNdisIfProviderHandle`
 
 
-## -returns
+
+
+## Return Value
+
 <b>NdisIfRegisterProvider</b> returns one of the following status values:
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
@@ -98,17 +89,15 @@ A pointer to a caller-provided handle variable. If the registration operation su
        <b>Header</b> member in NDIS_IF_PROVIDER_CHARACTERISTICS specifies a structure version that is not
        supported.
 
- 
+## Remarks
 
-
-## -remarks
 NDIS drivers call the 
     <b>NdisIfRegisterProvider</b> function once during initialization to register as an NDIS interface
     provider. For example, the driver can call 
     <b>NdisIfRegisterProvider</b> from its 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. An interface provider is a
     software component that manages network interfaces to support the MIB (
-    <a href="netvista.overview_of_ndis_network_interfaces">RFC 2863</a>).
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/overview-of-ndis-network-interfaces">RFC 2863</a>).
 
 To handle interface provider OID requests, interface providers provide entry points for callback
     functions in the 
@@ -133,8 +122,20 @@ A component that is no longer an interface provider can call the
     allocated when the driver called 
     <b>NdisIfRegisterProvider</b>.
 
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows Driver kit version** |  |
+| **Target platform** | Desktop |
+| **Minimum KMDF version** |  |
+| **Minimum UMDF version** |  |
+| **Header** | ndis.h (include Ndis.h) |
+| **Library** |  |
+| **IRQL** | PASSIVE_LEVEL |
+| **DDI compliance rules** | Irql_Interfaces_Function |
 
-## -see-also
+## See Also
+
 <dl>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
@@ -155,4 +156,3 @@ A component that is no longer an interface provider can call the
  
 
 <a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterProvider function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-
