@@ -31,7 +31,7 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+req.typenames : "MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE"
 ---
 
 
