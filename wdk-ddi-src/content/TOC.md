@@ -32,4 +32,3 @@
 ## [Windows Driver Framework](_wdf/index.md)
 ## [Windows Hardware Error Architecture (WHEA)](_whea/index.md)
 ## [Windows kernel](_kernel/index.md)
-## [benchmark](_benchmark/index.md)
