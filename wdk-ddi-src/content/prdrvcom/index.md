@@ -1,20 +1,28 @@
 ---
-UID: NA:prdrvcom
-ms.assetid: 6d969209-8a48-364c-a65e-9376eb7fc29c
-ms.author: windowsdriverdev
-ms.date: 01/19/18
-ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
+UID : NA:prdrvcom
+ms.assetid : 6d969209-8a48-364c-a65e-9376eb7fc29c
+ms.author : windowsdriverdev
+ms.date : 01/18/18
+ms.keywords : 
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : portal
 ---
 
-# Prdrvcom.h header
+# prdrvcom.h header
 
 
 
-This header is used by print. For more information, see
-- [print](../_print/index.md)
+prdrvcom.h contains the following programming interfaces:
 
-Prdrvcom.h contain these programming interfaces:
 
+
+
+
+
+
+
+## Enumerations
+| Title | Description |
+| ---- |:---- |
+| [tagSHIMOPTS](ne-prdrvcom-tagshimopts.md) | . |

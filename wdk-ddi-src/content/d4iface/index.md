@@ -1,20 +1,27 @@
 ---
-UID: NA:d4iface
-ms.assetid: 2f0a7093-3d26-3bc3-9fb3-f2806adf417f
-ms.author: windowsdriverdev
-ms.date: 01/19/18
-ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
+UID : NA:d4iface
+ms.assetid : 2f0a7093-3d26-3bc3-9fb3-f2806adf417f
+ms.author : windowsdriverdev
+ms.date : 01/18/18
+ms.keywords : 
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : portal
 ---
 
-# D4Iface.h header
+# d4iface.h header
 
 
 
-This header is used by print. For more information, see
-- [print](../_print/index.md)
+d4iface.h contains the following programming interfaces:
 
-D4Iface.h contain these programming interfaces:
 
+
+
+
+
+
+## Structures
+| Title | Description |
+| ---- |:---- |
+| [_DOT4_ACTIVITY](ns-d4iface-_dot4_activity.md) | . |

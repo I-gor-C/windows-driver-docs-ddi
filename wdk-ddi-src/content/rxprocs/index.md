@@ -1,20 +1,49 @@
 ---
-UID: NA:rxprocs
-ms.assetid: 9182db0e-0b5c-3344-9496-2d7af4c52636
-ms.author: windowsdriverdev
-ms.date: 01/19/18
-ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
+UID : NA:rxprocs
+ms.assetid : 9182db0e-0b5c-3344-9496-2d7af4c52636
+ms.author : windowsdriverdev
+ms.date : 01/18/18
+ms.keywords : 
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : portal
 ---
 
-# Rxprocs.h header
+# rxprocs.h header
 
 
 
-This header is used by Installable file system. For more information, see
-- [Installable file system](../_ifsk/index.md)
+rxprocs.h contains the following programming interfaces:
 
-Rxprocs.h contain these programming interfaces:
 
+
+
+
+## Functions
+| Title | Description |
+| ---- |:---- |
+| [FsRtlCheckOplock](nf-rxprocs-fsrtlcheckoplock.md) | The FsRtlCheckOplock routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state. |
+| [FsRtlNotifyFullChangeDirectory](nf-rxprocs-fsrtlnotifyfullchangedirectory.md) | The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list. |
+| [FsRtlOplockIsFastIoPossible](nf-rxprocs-fsrtloplockisfastiopossible.md) | FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file. |
+| [RxChangeBufferingState](nf-rxprocs-rxchangebufferingstate.md) | RxChangeBufferingState is called to process a buffering state change request. |
+| [RxCompleteRequest](nf-rxprocs-rxcompleterequest.md) | RxCompleteRequest completes the IRP request associated with an RX_CONTEXT structure. |
+| [RxCompleteRequest_Real](nf-rxprocs-rxcompleterequest_real.md) | RxCompleteRequest_Real completes the IRP request associated with an RX_CONTEXT structure. |
+| [RxDereference](nf-rxprocs-rxdereference.md) | RxDereference decrements the NodeReferenceCount member of a structure by one for several reference counted data structures used by RDBSS. |
+| [RxDriverEntry](nf-rxprocs-rxdriverentry.md) | RxDriverEntry is called by a monolithic network mini-redirector driver from its DriverEntry routine to initialize the RDBSS static library. |
+| [RxFinalizeConnection](nf-rxprocs-rxfinalizeconnection.md) | RxFinalizeConnection deletes a connection to a share. |
+| [RxFinalizeNetFcb](nf-rxprocs-rxfinalizenetfcb.md) | RxFinalizeNetFCB finalizes the given FCB structure. The caller must have an exclusive lock on the NET_ROOT associated with FCB. |
+| [RxForceFinalizeAllVNetRoots](nf-rxprocs-rxforcefinalizeallvnetroots.md) | RxForceFinalizeAllVNetRoots force finalizes all the V_NET_ROOT structures associated with a given NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object. |
+| [RxFsdPostRequest](nf-rxprocs-rxfsdpostrequest.md) | RxFsdPostRequest queues the I/O request packet (IRP) specified by an RX_CONTEXT structure to the worker queue for processing by the file system process (FSP). |
+| [RxIndicateChangeOfBufferingState](nf-rxprocs-rxindicatechangeofbufferingstate.md) | RxIndicateChangeOfBufferingState is called to register a change buffering state request (an oplock break indication, for example) for later processing. If necessary, worker thread routines for further processing are activated. |
+| [RxIndicateChangeOfBufferingStateForSrvOpen](nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen.md) | RxIndicateChangeOfBufferingStateForSrvOpen is called to register a change buffering state request (an oplock break indication, for example) for later processing. If the necessary preconditions are satisfied, the oplock is processed further. |
+| [RxIsThisACscAgentOpen](nf-rxprocs-rxisthisacscagentopen.md) | RxIsThisACscAgentOpen determines if a file open was made by a user-mode client-side caching agent. |
+| [RxLockEnumerator](nf-rxprocs-rxlockenumerator.md) | RxLockEnumerator is called from a network mini-redirector to enumerate the file locks on an FCB. |
+| [RxLogEventDirect](nf-rxprocs-rxlogeventdirect.md) | RxLogEventDirect is called to log an error to the I/O error log. It is recommended that the RXLogEvent macro or the RxLogFailure macro be used instead of calling this routine directly. |
+| [RxLogEventWithAnnotation](nf-rxprocs-rxlogeventwithannotation.md) | RxLogEventWithAnnotation allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log. |
+| [RxLogEventWithBufferDirect](nf-rxprocs-rxlogeventwithbufferdirect.md) | RxLogEventWithBufferDirect allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log. |
+| [RxMapSystemBuffer](nf-rxprocs-rxmapsystembuffer.md) | RxMapSystemBuffer returns the system buffer address from the IRP. |
+| [RxPrepareToReparseSymbolicLink](nf-rxprocs-rxpreparetoreparsesymboliclink.md) | RxPrepareToReparseSymbolicLink sets up the file object name to facilitate a reparse. This routine is used by the network mini-redirectors to traverse symbolic links. |
+| [RxPurgeAllFobxs](nf-rxprocs-rxpurgeallfobxs.md) | RxPurgeAllFobxs purges all of the FOBX structures associated with a network mini-redirector. |
+| [RxReference](nf-rxprocs-rxreference.md) | RxReference increments the NodeReferenceCount member of a structure by one for several of the reference counted data structures used by RDBSS. |
+| [RxScavengeAllFobxs](nf-rxprocs-rxscavengeallfobxs.md) | RxScavengeAllFobxs scavenges all of the FOBX structures associated with a network mini-redirector device object. |
+| [RxSetSrvCallDomainName](nf-rxprocs-rxsetsrvcalldomainname.md) | RxSetSrvCallDomainName is called by a network mini-redirector driver to set the domain name associated with any given server (SRV_CALL structure). |

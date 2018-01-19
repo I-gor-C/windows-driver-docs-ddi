@@ -1,20 +1,39 @@
 ---
-UID: NA:aux_klib
-ms.assetid: c8496ac9-e318-30df-baca-c0ea009e04d1
-ms.author: windowsdriverdev
-ms.date: 01/19/18
-ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
+UID : NA:aux_klib
+ms.assetid : c8496ac9-e318-30df-baca-c0ea009e04d1
+ms.author : windowsdriverdev
+ms.date : 01/18/18
+ms.keywords : 
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : portal
 ---
 
-# Aux_Klib.h header
+# aux_klib.h header
 
 
 
-This header is used by Windows kernel. For more information, see
-- [Windows kernel](../_kernel/index.md)
+aux_klib.h contains the following programming interfaces:
 
-Aux_Klib.h contain these programming interfaces:
 
+
+
+
+## Functions
+| Title | Description |
+| ---- |:---- |
+| [AuxKlibEnumerateSystemFirmwareTables](nf-aux_klib-auxklibenumeratesystemfirmwaretables.md) | The AuxKlibEnumerateSystemFirmwareTables routine enumerates all system firmware tables of the specified type. |
+| [AuxKlibGetBugCheckData](nf-aux_klib-auxklibgetbugcheckdata.md) | The AuxKlibGetBugCheckData routine retrieves information about a bug check that has just occurred. |
+| [AuxKlibGetImageExportDirectory](nf-aux_klib-auxklibgetimageexportdirectory.md) | The AuxKlibGetImageExportDirectory routine returns an image module's export directory. |
+| [AuxKlibGetSystemFirmwareTable](nf-aux_klib-auxklibgetsystemfirmwaretable.md) | The AuxKlibGetSystemFirmwareTable routine retrieves the specified firmware table from the firmware table provider. |
+| [AuxKlibInitialize](nf-aux_klib-auxklibinitialize.md) | The AuxKlibInitialize routine initializes the Auxiliary Kernel-Mode Library. |
+| [AuxKlibQueryModuleInformation](nf-aux_klib-auxklibquerymoduleinformation.md) | The AuxKlibQueryModuleInformation routine retrieves information about the image modules that the operating system has loaded. |
+
+
+
+## Structures
+| Title | Description |
+| ---- |:---- |
+| [_AUX_MODULE_BASIC_INFO](ns-aux_klib-_aux_module_basic_info.md) | The AUX_MODULE_BASIC_INFO structure contains basic information about a loaded image module. |
+| [_AUX_MODULE_EXTENDED_INFO](ns-aux_klib-_aux_module_extended_info.md) | The AUX_MODULE_EXTENDED_INFO structure contains extended information about a loaded image module. |
+| [_KBUGCHECK_DATA](ns-aux_klib-_kbugcheck_data.md) | The KBUGCHECK_DATA structure contains bug check parameters. |
