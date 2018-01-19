@@ -1,3 +1,114 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+  - name: Windows Hardware
+    tocHref: /windows-hardware/
+    topicHref: "https://docs.microsoft.com/windows/#pivot=hardware-dev"
+    items:
+    - name: Programming reference for Windows Driver Kit
+      tocHref: /windows-hardware/drivers/ddi/content/
+      topicHref: /windows-hardware/drivers/ddi/content/index
+      items:
+      - name: ACPI
+        tocHref: /windows-hardware/drivers/ddi/content/_acpi/
+        topicHref: /windows-hardware/drivers/ddi/content/_acpi/index
+      - name: Audio
+        tocHref: /windows-hardware/drivers/ddi/content/_audio/
+        topicHref: /windows-hardware/drivers/ddi/content/_audio/index
+      - name: Battery
+        tocHref: /windows-hardware/drivers/ddi/content/_battery/
+        topicHref: /windows-hardware/drivers/ddi/content/_battery/index
+      - name: benchmark
+        tocHref: /windows-hardware/drivers/ddi/content/_benchmark/
+        topicHref: /windows-hardware/drivers/ddi/content/_benchmark/index
+      - name: Biometric
+        tocHref: /windows-hardware/drivers/ddi/content/_biometric/
+        topicHref: /windows-hardware/drivers/ddi/content/_biometric/index
+      - name: Bluetooth
+        tocHref: /windows-hardware/drivers/ddi/content/_bltooth/
+        topicHref: /windows-hardware/drivers/ddi/content/_bltooth/index
+      - name: Debugger
+        tocHref: /windows-hardware/drivers/ddi/content/_debugger/
+        topicHref: /windows-hardware/drivers/ddi/content/_debugger/index
+      - name: Driver test tools
+        tocHref: /windows-hardware/drivers/ddi/content/_devtest/
+        topicHref: /windows-hardware/drivers/ddi/content/_devtest/index
+      - name: Display
+        tocHref: /windows-hardware/drivers/ddi/content/_display/
+        topicHref: /windows-hardware/drivers/ddi/content/_display/index
+      - name: General-purpose I/O (GPIO) controllers
+        tocHref: /windows-hardware/drivers/ddi/content/_gpio/
+        topicHref: /windows-hardware/drivers/ddi/content/_gpio/index
+      - name: Hardware Notifications
+        tocHref: /windows-hardware/drivers/ddi/content/_gpiobtn/
+        topicHref: /windows-hardware/drivers/ddi/content/_gpiobtn/index
+      - name: Human Interface Devices (HID)
+        tocHref: /windows-hardware/drivers/ddi/content/_hid/
+        topicHref: /windows-hardware/drivers/ddi/content/_hid/index
+      - name: IEEE 1394 bus
+        tocHref: /windows-hardware/drivers/ddi/content/_ieee/
+        topicHref: /windows-hardware/drivers/ddi/content/_ieee/index
+      - name: Installable file system
+        tocHref: /windows-hardware/drivers/ddi/content/_ifsk/
+        topicHref: /windows-hardware/drivers/ddi/content/_ifsk/index
+      - name: Imaging devices
+        tocHref: /windows-hardware/drivers/ddi/content/_image/
+        topicHref: /windows-hardware/drivers/ddi/content/_image/index
+      - name: Windows kernel
+        tocHref: /windows-hardware/drivers/ddi/content/_kernel/
+        topicHref: /windows-hardware/drivers/ddi/content/_kernel/index
+      - name: Networking drivers for Windows Vista and later
+        tocHref: /windows-hardware/drivers/ddi/content/_netvista/
+        topicHref: /windows-hardware/drivers/ddi/content/_netvista/index
+      - name: Near field communications (NFC)
+        tocHref: /windows-hardware/drivers/ddi/content/_nfpdrivers/
+        topicHref: /windows-hardware/drivers/ddi/content/_nfpdrivers/index
+      - name: Parallel Ports
+        tocHref: /windows-hardware/drivers/ddi/content/_parports/
+        topicHref: /windows-hardware/drivers/ddi/content/_parports/index
+      - name: PCI bus drivers
+        tocHref: /windows-hardware/drivers/ddi/content/_pci/
+        topicHref: /windows-hardware/drivers/ddi/content/_pci/index
+      - name: PCMCIA bus drivers
+        tocHref: /windows-hardware/drivers/ddi/content/_pcmcia/
+        topicHref: /windows-hardware/drivers/ddi/content/_pcmcia/index
+      - name: Point of Service (POS)
+        tocHref: /windows-hardware/drivers/ddi/content/_pos/
+        topicHref: /windows-hardware/drivers/ddi/content/_pos/index
+      - name: Power metering
+        tocHref: /windows-hardware/drivers/ddi/content/_powermeter/
+        topicHref: /windows-hardware/drivers/ddi/content/_powermeter/index
+      - name: Print devices
+        tocHref: /windows-hardware/drivers/ddi/content/_print/
+        topicHref: /windows-hardware/drivers/ddi/content/_print/index
+      - name: Secure Digital (SD) card
+        tocHref: /windows-hardware/drivers/ddi/content/_sd/
+        topicHref: /windows-hardware/drivers/ddi/content/_sd/index
+      - name: Sensors
+        tocHref: /windows-hardware/drivers/ddi/content/_sensors/
+        topicHref: /windows-hardware/drivers/ddi/content/_sensors/index
+      - name: Serial port
+        tocHref: /windows-hardware/drivers/ddi/content/_serports/
+        topicHref: /windows-hardware/drivers/ddi/content/_serports/index
+      - name: Smart Card Reader Devices
+        tocHref: /windows-hardware/drivers/ddi/content/_smartcrd/
+        topicHref: /windows-hardware/drivers/ddi/content/_smartcrd/index
+      - name: Simple Peripheral Bus (SPB)
+        tocHref: /windows-hardware/drivers/ddi/content/_spb/
+        topicHref: /windows-hardware/drivers/ddi/content/_spb/index
+      - name: Storage
+        tocHref: /windows-hardware/drivers/ddi/content/_storage/
+        topicHref: /windows-hardware/drivers/ddi/content/_storage/index
+      - name: Streaming media devices
+        tocHref: /windows-hardware/drivers/ddi/content/_stream/
+        topicHref: /windows-hardware/drivers/ddi/content/_stream/index
+      - name: Universal Serial Bus (USB)
+        tocHref: /windows-hardware/drivers/ddi/content/_usbref/
+        topicHref: /windows-hardware/drivers/ddi/content/_usbref/index
+      - name: Windows Driver Frameworks
+        tocHref: /windows-hardware/drivers/ddi/content/_wdf/
+        topicHref: /windows-hardware/drivers/ddi/content/_wdf/index
+      - name: Windows Hardware Error Architecture (WHEA)
+        tocHref: /windows-hardware/drivers/ddi/content/_whea/
+        topicHref: /windows-hardware/drivers/ddi/content/_whea/index
