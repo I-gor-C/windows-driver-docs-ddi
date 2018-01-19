@@ -1,0 +1,7 @@
+# [Biometric](../_biometric/index.md)
+## [Winbio_Types.h](index.md)
+### [None](../winbio_types/ns-winbio_types-_winbio_bir.md)
+### [None](../winbio_types/ns-winbio_types-_winbio_bir_data.md)
+### [None](../winbio_types/ns-winbio_types-_winbio_bir_header.md)
+### [None](../winbio_types/ns-winbio_types-_winbio_registered_format.md)
+### [None](../winbio_types/ns-winbio_types-_winbio_version.md)

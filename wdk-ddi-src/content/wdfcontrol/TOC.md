@@ -1,0 +1,6 @@
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfcontrol.h](index.md)
+### [None](../wdfcontrol/ne-wdfcontrol-_wdf_device_shutdown_flags.md)
+### [None](../wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate.md)
+### [None](../wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md)
+### [None](../wdfcontrol/nf-wdfcontrol-wdfcontrolfinishinitializing.md)

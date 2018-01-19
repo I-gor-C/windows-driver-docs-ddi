@@ -1,0 +1,5 @@
+# [ACPI](../_acpi/index.md)
+## [Oprghdlr.h](index.md)
+### [None](../oprghdlr/nc-oprghdlr-acpi_op_region_handler.md)
+### [None](../oprghdlr/nf-oprghdlr-deregisteropregionhandler.md)
+### [None](../oprghdlr/nf-oprghdlr-registeropregionhandler.md)

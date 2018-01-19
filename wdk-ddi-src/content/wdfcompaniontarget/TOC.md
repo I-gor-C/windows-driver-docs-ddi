@@ -1,0 +1,7 @@
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfcompaniontarget.h](index.md)
+### [None](../wdfcompaniontarget/ne-wdfcompaniontarget-_wdf_task_send_options_flags.md)
+### [None](../wdfcompaniontarget/nf-wdfcompaniontarget-wdfcompaniontargetsendtasksynchronously.md)
+### [None](../wdfcompaniontarget/nf-wdfcompaniontarget-wdfcompaniontargetwdmgetcompanionprocess.md)
+### [None](../wdfcompaniontarget/nf-wdfcompaniontarget-wdf_task_send_options_init.md)
+### [None](../wdfcompaniontarget/ns-wdfcompaniontarget-_wdf_task_send_options.md)

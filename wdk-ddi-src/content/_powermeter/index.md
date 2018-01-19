@@ -2,7 +2,7 @@
 UID: TP:powermeter
 ms.assetid: 87d19931-d859-3aff-b7ce-1b0060d965a5
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,12 +42,12 @@ For the programming guide, see [Power metering](https://docs.microsoft.com/en-us
 
 | Title   | Description   |
 | ---- |:---- |
-| [PMI_CAPABILITIES_TYPE enumeration](..\pmi\ne-pmi-pmi_capabilities_type.md) | The PMI_CAPABILITIES_TYPE enumeration defines the type of capabilities data that is referenced by the Capability member of the PMI_CAPABILITIES structure. |
-| [PMI_CONFIGURATION_TYPE enumeration](..\pmi\ne-pmi-pmi_configuration_type.md) | The PMI_CONFIGURATION_TYPE enumeration defines the type of PMI configuration data that is referenced by the Configuration member of the PMI_CONFIGURATION structure. |
-| [PMI_EVENT_TYPE enumeration](..\pmi\ne-pmi-pmi_event_type.md) | The PMI_EVENT_TYPE enumeration defines the type of PMI power meter event that is returned through the successful completion of an IOCTL_PMI_REGISTER_EVENT_NOTIFY request. |
-| [PMI_MEASUREMENT_TYPE enumeration](..\pmi\ne-pmi-pmi_measurement_type.md) | The PMI_MEASUREMENT_TYPE enumeration defines the source of the PMI measurement data. |
-| [PMI_MEASUREMENT_UNIT enumeration](..\pmi\ne-pmi-pmi_measurement_unit.md) | The PMI_MEASUREMENT_UNIT enumeration defines the units of the PMI measurement data. |
-| [_HPMI_HINT_BOOL enumeration](..\hpmi\ne-hpmi-_hpmi_hint_bool.md) | Boolean type value used to track availability of HPMI hint data. |
+| [PMI_CAPABILITIES_TYPE Enumeration](..\pmi\ne-pmi-pmi_capabilities_type.md) | The PMI_CAPABILITIES_TYPE enumeration defines the type of capabilities data that is referenced by the Capability member of the PMI_CAPABILITIES structure. |
+| [PMI_CONFIGURATION_TYPE Enumeration](..\pmi\ne-pmi-pmi_configuration_type.md) | The PMI_CONFIGURATION_TYPE enumeration defines the type of PMI configuration data that is referenced by the Configuration member of the PMI_CONFIGURATION structure. |
+| [PMI_EVENT_TYPE Enumeration](..\pmi\ne-pmi-pmi_event_type.md) | The PMI_EVENT_TYPE enumeration defines the type of PMI power meter event that is returned through the successful completion of an IOCTL_PMI_REGISTER_EVENT_NOTIFY request. |
+| [PMI_MEASUREMENT_TYPE Enumeration](..\pmi\ne-pmi-pmi_measurement_type.md) | The PMI_MEASUREMENT_TYPE enumeration defines the source of the PMI measurement data. |
+| [PMI_MEASUREMENT_UNIT Enumeration](..\pmi\ne-pmi-pmi_measurement_unit.md) | The PMI_MEASUREMENT_UNIT enumeration defines the units of the PMI measurement data. |
+| [_HPMI_HINT_BOOL Enumeration](..\hpmi\ne-hpmi-_hpmi_hint_bool.md) | Boolean type value used to track availability of HPMI hint data. |
 
 ## I/O control codes
 

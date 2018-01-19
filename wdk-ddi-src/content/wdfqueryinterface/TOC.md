@@ -1,0 +1,7 @@
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfqueryinterface.h](index.md)
+### [None](../wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md)
+### [None](../wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceinterfacedereferencenoop.md)
+### [None](../wdfqueryinterface/nf-wdfqueryinterface-wdfdeviceinterfacereferencenoop.md)
+### [None](../wdfqueryinterface/nf-wdfqueryinterface-wdf_query_interface_config_init.md)
+### [None](../wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config.md)

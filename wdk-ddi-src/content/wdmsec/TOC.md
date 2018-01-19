@@ -1,0 +1,5 @@
+# [Windows kernel](../_kernel/index.md)
+## [Wdmsec.h](index.md)
+### [None](../wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure.md)
+### [None](../wdmsec/nf-wdmsec-wdmlibiovalidatedeviceiocontrolaccess.md)
+### [None](../wdmsec/nf-wdmsec-wdmlibrtlinitunicodestringex.md)

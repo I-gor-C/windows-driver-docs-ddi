@@ -2,7 +2,7 @@
 UID: TP:whea
 ms.assetid: 069ae67e-570f-3fce-99d4-d889f7094ff1
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -38,20 +38,20 @@ For the programming guide, see [Windows Hardware Error Architecture (WHEA)](http
 
 | Title   | Description   |
 | ---- |:---- |
-| [PSHED_PI_ATTEMPT_ERROR_RECOVERY callback](..\ntddk\nc-ntddk-pshed_pi_attempt_error_recovery.md) | A PSHED plug-in's AttemptRecovery callback function attempts to recover from a recoverable hardware error. |
-| [PSHED_PI_CLEAR_ERROR_RECORD callback](..\ntddk\nc-ntddk-pshed_pi_clear_error_record.md) | A PSHED plug-in's ClearErrorRecord callback function clears the specified error record from the system's persistent data storage. |
-| [PSHED_PI_CLEAR_ERROR_STATUS callback](..\ntddk\nc-ntddk-pshed_pi_clear_error_status.md) | A PSHED plug-in's ClearErrorStatus callback function clears any platform-specific error status registers for a corrected hardware error condition. |
-| [PSHED_PI_DISABLE_ERROR_SOURCE callback](..\ntddk\nc-ntddk-pshed_pi_disable_error_source.md) | A PSHED plug-in's DisableErrorSource callback function disables an error source. |
-| [PSHED_PI_ENABLE_ERROR_SOURCE callback](..\ntddk\nc-ntddk-pshed_pi_enable_error_source.md) | A PSHED plug-in's EnableErrorSource callback function enables an error source. |
-| [PSHED_PI_FINALIZE_ERROR_RECORD callback](..\ntddk\nc-ntddk-pshed_pi_finalize_error_record.md) | A PSHED plug-in's FinalizeErrorRecord callback function adds supplementary error record sections to an error record that more fully describe the error condition. |
-| [PSHED_PI_GET_ALL_ERROR_SOURCES callback](..\ntddk\nc-ntddk-pshed_pi_get_all_error_sources.md) | A PSHED plug-in's GetAllErrorSources callback function returns a list of error source descriptor structures that represents all of the error sources that are implemented by the hardware platform. |
-| [PSHED_PI_GET_ERROR_SOURCE_INFO callback](..\ntddk\nc-ntddk-pshed_pi_get_error_source_info.md) | A PSHED plug-in's GetErrorSourceInfo callback function returns an error source descriptor structure that represents a particular error source that is implemented by the hardware platform. |
-| [PSHED_PI_GET_INJECTION_CAPABILITIES callback](..\ntddk\nc-ntddk-pshed_pi_get_injection_capabilities.md) | A PSHED plug-in's GetInjectionCapabilities callback function returns an error injection capabilities union that describes the types of hardware errors that can be injected into the hardware platform. |
-| [PSHED_PI_INJECT_ERROR callback](..\ntddk\nc-ntddk-pshed_pi_inject_error.md) | A PSHED plug-in's InjectError callback function injects an error into the hardware platform. |
-| [PSHED_PI_READ_ERROR_RECORD callback](..\ntddk\nc-ntddk-pshed_pi_read_error_record.md) | A PSHED plug-in's ReadErrorRecord callback function reads an error record from the system's persistent data storage. |
-| [PSHED_PI_RETRIEVE_ERROR_INFO callback](..\ntddk\nc-ntddk-pshed_pi_retrieve_error_info.md) | A PSHED plug-in's RetrieveErrorInfo callback function retrieves platform-specific error information about a hardware error that has occurred. |
-| [PSHED_PI_SET_ERROR_SOURCE_INFO callback](..\ntddk\nc-ntddk-pshed_pi_set_error_source_info.md) | A PSHED plug-in's SetErrorSourceInfo callback function configures an error source. |
-| [PSHED_PI_WRITE_ERROR_RECORD callback](..\ntddk\nc-ntddk-pshed_pi_write_error_record.md) | A PSHED plug-in's WriteErrorRecord callback function writes an error record to the system's persistent data storage. |
+| [PSHED_PI_ATTEMPT_ERROR_RECOVERY callback function](..\ntddk\nc-ntddk-pshed_pi_attempt_error_recovery.md) | A PSHED plug-in's AttemptRecovery callback function attempts to recover from a recoverable hardware error. |
+| [PSHED_PI_CLEAR_ERROR_RECORD callback function](..\ntddk\nc-ntddk-pshed_pi_clear_error_record.md) | A PSHED plug-in's ClearErrorRecord callback function clears the specified error record from the system's persistent data storage. |
+| [PSHED_PI_CLEAR_ERROR_STATUS callback function](..\ntddk\nc-ntddk-pshed_pi_clear_error_status.md) | A PSHED plug-in's ClearErrorStatus callback function clears any platform-specific error status registers for a corrected hardware error condition. |
+| [PSHED_PI_DISABLE_ERROR_SOURCE callback function](..\ntddk\nc-ntddk-pshed_pi_disable_error_source.md) | A PSHED plug-in's DisableErrorSource callback function disables an error source. |
+| [PSHED_PI_ENABLE_ERROR_SOURCE callback function](..\ntddk\nc-ntddk-pshed_pi_enable_error_source.md) | A PSHED plug-in's EnableErrorSource callback function enables an error source. |
+| [PSHED_PI_FINALIZE_ERROR_RECORD callback function](..\ntddk\nc-ntddk-pshed_pi_finalize_error_record.md) | A PSHED plug-in's FinalizeErrorRecord callback function adds supplementary error record sections to an error record that more fully describe the error condition. |
+| [PSHED_PI_GET_ALL_ERROR_SOURCES callback function](..\ntddk\nc-ntddk-pshed_pi_get_all_error_sources.md) | A PSHED plug-in's GetAllErrorSources callback function returns a list of error source descriptor structures that represents all of the error sources that are implemented by the hardware platform. |
+| [PSHED_PI_GET_ERROR_SOURCE_INFO callback function](..\ntddk\nc-ntddk-pshed_pi_get_error_source_info.md) | A PSHED plug-in's GetErrorSourceInfo callback function returns an error source descriptor structure that represents a particular error source that is implemented by the hardware platform. |
+| [PSHED_PI_GET_INJECTION_CAPABILITIES callback function](..\ntddk\nc-ntddk-pshed_pi_get_injection_capabilities.md) | A PSHED plug-in's GetInjectionCapabilities callback function returns an error injection capabilities union that describes the types of hardware errors that can be injected into the hardware platform. |
+| [PSHED_PI_INJECT_ERROR callback function](..\ntddk\nc-ntddk-pshed_pi_inject_error.md) | A PSHED plug-in's InjectError callback function injects an error into the hardware platform. |
+| [PSHED_PI_READ_ERROR_RECORD callback function](..\ntddk\nc-ntddk-pshed_pi_read_error_record.md) | A PSHED plug-in's ReadErrorRecord callback function reads an error record from the system's persistent data storage. |
+| [PSHED_PI_RETRIEVE_ERROR_INFO callback function](..\ntddk\nc-ntddk-pshed_pi_retrieve_error_info.md) | A PSHED plug-in's RetrieveErrorInfo callback function retrieves platform-specific error information about a hardware error that has occurred. |
+| [PSHED_PI_SET_ERROR_SOURCE_INFO callback function](..\ntddk\nc-ntddk-pshed_pi_set_error_source_info.md) | A PSHED plug-in's SetErrorSourceInfo callback function configures an error source. |
+| [PSHED_PI_WRITE_ERROR_RECORD callback function](..\ntddk\nc-ntddk-pshed_pi_write_error_record.md) | A PSHED plug-in's WriteErrorRecord callback function writes an error record to the system's persistent data storage. |
 
 ## Structures
 
@@ -121,10 +121,10 @@ For the programming guide, see [Windows Hardware Error Architecture (WHEA)](http
 
 | Title   | Description   |
 | ---- |:---- |
-| [_SOC_SUBSYSTEM_TYPE enumeration](..\ntddk\ne-ntddk-_soc_subsystem_type.md) | The SOC_SYBSYSTEM_TYPE enumeration defines different types of System on a Chip (SoC) subsystems. |
-| [_WHEA_ERROR_PACKET_DATA_FORMAT enumeration](..\ntddk\ne-ntddk-_whea_error_packet_data_format.md) | The WHEA_ERROR_PACKET_DATA_FORMAT enumeration defines the raw hardware error data format in a hardware error packet. |
-| [_WHEA_ERROR_SEVERITY enumeration](..\ntddk\ne-ntddk-_whea_error_severity.md) | The WHEA_ERROR_SEVERITY enumeration defines the possible severity levels of a hardware error condition. |
-| [_WHEA_ERROR_SOURCE_STATE enumeration](..\ntddk\ne-ntddk-_whea_error_source_state.md) | The WHEA_ERROR_SOURCE_STATE enumeration defines the different runtime states for an error source. |
-| [_WHEA_ERROR_SOURCE_TYPE enumeration](..\ntddk\ne-ntddk-_whea_error_source_type.md) | The WHEA_ERROR_SOURCE_TYPE enumeration defines the different types of error sources that can report hardware errors. |
-| [_WHEA_ERROR_TYPE enumeration](..\ntddk\ne-ntddk-_whea_error_type.md) | The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error. |
-| [_WHEA_RAW_DATA_FORMAT enumeration](..\ntddk\ne-ntddk-_whea_raw_data_format.md) | The WHEA_RAW_DATA_FORMAT enumeration defines the possible formats that raw hardware error data can be encoded in a hardware error packet. |
+| [_SOC_SUBSYSTEM_TYPE Enumeration](..\ntddk\ne-ntddk-_soc_subsystem_type.md) | The SOC_SYBSYSTEM_TYPE enumeration defines different types of System on a Chip (SoC) subsystems. |
+| [_WHEA_ERROR_PACKET_DATA_FORMAT Enumeration](..\ntddk\ne-ntddk-_whea_error_packet_data_format.md) | The WHEA_ERROR_PACKET_DATA_FORMAT enumeration defines the raw hardware error data format in a hardware error packet. |
+| [_WHEA_ERROR_SEVERITY Enumeration](..\ntddk\ne-ntddk-_whea_error_severity.md) | The WHEA_ERROR_SEVERITY enumeration defines the possible severity levels of a hardware error condition. |
+| [_WHEA_ERROR_SOURCE_STATE Enumeration](..\ntddk\ne-ntddk-_whea_error_source_state.md) | The WHEA_ERROR_SOURCE_STATE enumeration defines the different runtime states for an error source. |
+| [_WHEA_ERROR_SOURCE_TYPE Enumeration](..\ntddk\ne-ntddk-_whea_error_source_type.md) | The WHEA_ERROR_SOURCE_TYPE enumeration defines the different types of error sources that can report hardware errors. |
+| [_WHEA_ERROR_TYPE Enumeration](..\ntddk\ne-ntddk-_whea_error_type.md) | The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error. |
+| [_WHEA_RAW_DATA_FORMAT Enumeration](..\ntddk\ne-ntddk-_whea_raw_data_format.md) | The WHEA_RAW_DATA_FORMAT enumeration defines the possible formats that raw hardware error data can be encoded in a hardware error packet. |

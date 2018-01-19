@@ -1,0 +1,6 @@
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Ndisndk.h](index.md)
+### [None](../ndisndk/nc-ndisndk-close_ndk_adapter_handler.md)
+### [None](../ndisndk/nc-ndisndk-open_ndk_adapter_handler.md)
+### [None](../ndisndk/ns-ndisndk-_ndis_ndk_provider_characteristics.md)
+### [None](../ndisndk/ns-ndisndk-_ndis_open_ndk_adapter_parameters.md)

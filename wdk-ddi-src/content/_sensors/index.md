@@ -2,7 +2,7 @@
 UID: TP:sensors
 ms.assetid: 8a7a095d-53d4-30a8-a1d2-4ef29c8a344d
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,10 +47,10 @@ For the programming guide, see [Sensors](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_SENSOR_DRIVER_DISABLE_WAKE callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_disable_wake.md) | Callback to disable wake for the sensor. |
-| [EVT_SENSOR_DRIVER_ENABLE_WAKE callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_enable_wake.md) | Callback to enable wake for the sensor. |
-| [EVT_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_start_state_change_notification.md) | Used to start a state change notification. |
-| [EVT_SENSOR_DRIVER_STOP_STATE_CHANGE_NOTIFICATION callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_stop_state_change_notification.md) | Used to stop a state change notification. |
+| [EVT_SENSOR_DRIVER_DISABLE_WAKE function](..\sensorscx\nc-sensorscx-evt_sensor_driver_disable_wake.md) | Callback to disable wake for the sensor. |
+| [EVT_SENSOR_DRIVER_ENABLE_WAKE function](..\sensorscx\nc-sensorscx-evt_sensor_driver_enable_wake.md) | Callback to enable wake for the sensor. |
+| [EVT_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION function](..\sensorscx\nc-sensorscx-evt_sensor_driver_start_state_change_notification.md) | Used to start a state change notification. |
+| [EVT_SENSOR_DRIVER_STOP_STATE_CHANGE_NOTIFICATION function](..\sensorscx\nc-sensorscx-evt_sensor_driver_stop_state_change_notification.md) | Used to stop a state change notification. |
 
 ## Structures
 
@@ -113,27 +113,27 @@ For the programming guide, see [Sensors](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
-| [ACTIVITY_STATE enumeration](..\sensorsdef\ne-sensorsdef-activity_state.md) | This enumeration represents the activity states reported by the activity detection sensor. |
-| [GNSS_AGNSS_REQUEST_TYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_agnss_request_type.md) | This enumeration indicates the type of AGNSS injection request represented by the GNSS_AGNSS_REQUEST_PARAM structure. |
-| [GNSS_DRIVERCOMMAND_TYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_drivercommand_type.md) | This enumeration indicates the type of driver command or configuration for the GNSS driver provided in the GNSS_DRIVERCOMMAND_PARAM structure. |
-| [GNSS_DRIVER_REQUEST enumeration](..\gnssdriver\ne-gnssdriver-gnss_driver_request.md) | GNSS_DRIVER_REQUEST enumerates the GNSS driver data request types. |
-| [GNSS_EVENT_TYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_event_type.md) | This enumeration indicates the type of an event and is used by the GNSS_EVENT structure. |
-| [GNSS_FIXSESSIONTYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_fixsessiontype.md) | This enumeration indicates the type of location fix needed by the GNSS adapter when it issues an IOCTL_GNSS_START_FIXSESSION control code. This enumeration is set within the GNSS_FIXSESSION_PARAM structure. |
-| [GNSS_GEOFENCE_STATE enumeration](..\gnssdriver\ne-gnssdriver-gnss_geofence_state.md) | GNSS_GEOFENCE_STATE enumerates the various states of a single geofence. |
-| [GNSS_GEOREGIONTYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_georegiontype.md) | This enumeration is used for defining a geographical shape. A shape is used to define a geofence. Windows 10 currently only supports circular geofences. |
-| [GNSS_NI_NOTIFICATION_TYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md) | GNSS_NI_NOTIFICATION_TYPE enumerates network-initialized (NI) notification types. |
-| [GNSS_NI_PLANE_TYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md) | This enumeration indicates the plane type of a network initiated (NI) request represented by the GNSS_NI_REQUEST_PARAM structure. |
-| [GNSS_NI_REQUEST_TYPE enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md) | This enumeration indicates the network initiated (NI) request type represented by the GNSS_NI_REQUEST_PARAM structure. |
-| [GNSS_NI_USER_RESPONSE enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_user_response.md) | This enumeration indicates the user’s response to a network initiated (NI) request, which is represented by the GNSS_NI_RESPONSE structure. |
-| [GNSS_SUPL_CERT_ACTION enumeration](..\gnssdriver\ne-gnssdriver-gnss_supl_cert_action.md) | This enumeration indicates the action to take upon receipt of the SUPL certificate, which is defined by the GNSS_SUPL_CERT_CONFIG structure. |
-| [LOCATION_DESIRED_ACCURACY enumeration](..\sensorsclassextension\ne-sensorsclassextension-location_desired_accuracy.md) | The LOCATION_DESIRED_ACCURACY enumeration type defines values for the SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY property. |
-| [MAGNETOMETER_ACCURACY enumeration](..\sensorsdef\ne-sensorsdef-magnetometer_accuracy.md) | This enumeration represents the accuracy states of the magnetometer. |
-| [MagnetometerAccuracy enumeration](..\sensorsclassextension\ne-sensorsclassextension-magnetometeraccuracy.md) | Specifies the accuracy of the magnetometer. |
-| [PEDOMETER_STEP_TYPE enumeration](..\sensorsdef\ne-sensorsdef-pedometer_step_type.md) | This enumeration represents the step types reported by the pedometer. |
-| [PEDOMETER_STEP_TYPE_COUNT enumeration](..\sensorsdef\ne-sensorsdef-pedometer_step_type_count.md) | This enumeration represents the number of step types that can be detected by the pedometer. |
-| [SENSOR_STATE enumeration](..\sensorsdef\ne-sensorsdef-sensor_state.md) | This enumeration represents the valid states of a sensor. |
-| [__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001 enumeration](..\sensorsclassextension\ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001.md) | The SensorState enumeration type specifies the current operational state of a sensor. |
-| [__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002 enumeration](..\sensorsclassextension\ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002.md) | The SensorConnectionType enumeration type defines values for the SENSOR_CONNECTION_TYPE property. |
+| [ACTIVITY_STATE Enumeration](..\sensorsdef\ne-sensorsdef-activity_state.md) | This enumeration represents the activity states reported by the activity detection sensor. |
+| [GNSS_AGNSS_REQUEST_TYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_agnss_request_type.md) | This enumeration indicates the type of AGNSS injection request represented by the GNSS_AGNSS_REQUEST_PARAM structure. |
+| [GNSS_DRIVERCOMMAND_TYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_drivercommand_type.md) | This enumeration indicates the type of driver command or configuration for the GNSS driver provided in the GNSS_DRIVERCOMMAND_PARAM structure. |
+| [GNSS_DRIVER_REQUEST Enumeration](..\gnssdriver\ne-gnssdriver-gnss_driver_request.md) | GNSS_DRIVER_REQUEST enumerates the GNSS driver data request types. |
+| [GNSS_EVENT_TYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_event_type.md) | This enumeration indicates the type of an event and is used by the GNSS_EVENT structure. |
+| [GNSS_FIXSESSIONTYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_fixsessiontype.md) | This enumeration indicates the type of location fix needed by the GNSS adapter when it issues an IOCTL_GNSS_START_FIXSESSION control code. This enumeration is set within the GNSS_FIXSESSION_PARAM structure. |
+| [GNSS_GEOFENCE_STATE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_geofence_state.md) | GNSS_GEOFENCE_STATE enumerates the various states of a single geofence. |
+| [GNSS_GEOREGIONTYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_georegiontype.md) | This enumeration is used for defining a geographical shape. A shape is used to define a geofence. Windows 10 currently only supports circular geofences. |
+| [GNSS_NI_NOTIFICATION_TYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md) | GNSS_NI_NOTIFICATION_TYPE enumerates network-initialized (NI) notification types. |
+| [GNSS_NI_PLANE_TYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md) | This enumeration indicates the plane type of a network initiated (NI) request represented by the GNSS_NI_REQUEST_PARAM structure. |
+| [GNSS_NI_REQUEST_TYPE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md) | This enumeration indicates the network initiated (NI) request type represented by the GNSS_NI_REQUEST_PARAM structure. |
+| [GNSS_NI_USER_RESPONSE Enumeration](..\gnssdriver\ne-gnssdriver-gnss_ni_user_response.md) | This enumeration indicates the user’s response to a network initiated (NI) request, which is represented by the GNSS_NI_RESPONSE structure. |
+| [GNSS_SUPL_CERT_ACTION Enumeration](..\gnssdriver\ne-gnssdriver-gnss_supl_cert_action.md) | This enumeration indicates the action to take upon receipt of the SUPL certificate, which is defined by the GNSS_SUPL_CERT_CONFIG structure. |
+| [LOCATION_DESIRED_ACCURACY Enumeration](..\sensorsclassextension\ne-sensorsclassextension-location_desired_accuracy.md) | The LOCATION_DESIRED_ACCURACY enumeration type defines values for the SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY property. |
+| [MAGNETOMETER_ACCURACY Enumeration](..\sensorsdef\ne-sensorsdef-magnetometer_accuracy.md) | This enumeration represents the accuracy states of the magnetometer. |
+| [MagnetometerAccuracy Enumeration](..\sensorsclassextension\ne-sensorsclassextension-magnetometeraccuracy.md) | Specifies the accuracy of the magnetometer. |
+| [PEDOMETER_STEP_TYPE Enumeration](..\sensorsdef\ne-sensorsdef-pedometer_step_type.md) | This enumeration represents the step types reported by the pedometer. |
+| [PEDOMETER_STEP_TYPE_COUNT Enumeration](..\sensorsdef\ne-sensorsdef-pedometer_step_type_count.md) | This enumeration represents the number of step types that can be detected by the pedometer. |
+| [SENSOR_STATE Enumeration](..\sensorsdef\ne-sensorsdef-sensor_state.md) | This enumeration represents the valid states of a sensor. |
+| [__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001 Enumeration](..\sensorsclassextension\ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001.md) | The SensorState enumeration type specifies the current operational state of a sensor. |
+| [__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002 Enumeration](..\sensorsclassextension\ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002.md) | The SensorConnectionType enumeration type defines values for the SENSOR_CONNECTION_TYPE property. |
 
 ## I/O control codes
 
@@ -179,21 +179,21 @@ For the programming guide, see [Sensors](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
-| [ISensorClassExtension::CleanupFile method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-cleanupfile.md) | The ISensorClassExtension |
-| [ISensorClassExtension::Initialize method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-initialize.md) | The ISensorClassExtension |
-| [ISensorClassExtension::PostEvent method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-postevent.md) | The ISensorClassExtension |
-| [ISensorClassExtension::PostStateChange method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-poststatechange.md) | The ISensorClassExtension |
-| [ISensorClassExtension::ProcessIoControl method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-processiocontrol.md) | The ISensorClassExtension |
-| [ISensorClassExtension::Uninitialize method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-uninitialize.md) | The ISensorClassExtension |
-| [ISensorDriver::OnClientConnect method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientconnect.md) | The ISensorDriver |
-| [ISensorDriver::OnClientDisconnect method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientdisconnect.md) | The ISensorDriver |
-| [ISensorDriver::OnClientSubscribeToEvents method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientsubscribetoevents.md) | The ISensorDriver |
-| [ISensorDriver::OnClientUnsubscribeFromEvents method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientunsubscribefromevents.md) | The ISensorDriver |
-| [ISensorDriver::OnGetDataFields method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetdatafields.md) | The ISensorDriver |
-| [ISensorDriver::OnGetProperties method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetproperties.md) | The ISensorDriver |
-| [ISensorDriver::OnGetSupportedDataFields method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupporteddatafields.md) | The ISensorDriver |
-| [ISensorDriver::OnGetSupportedEvents method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupportedevents.md) | The ISensorDriver |
-| [ISensorDriver::OnGetSupportedProperties method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupportedproperties.md) | The ISensorDriver |
-| [ISensorDriver::OnGetSupportedSensorObjects method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects.md) | The ISensorDriver |
-| [ISensorDriver::OnProcessWpdMessage method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onprocesswpdmessage.md) | The ISensorDriver |
-| [ISensorDriver::OnSetProperties method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onsetproperties.md) | The ISensorDriver |
+| [CleanupFile method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-cleanupfile.md) | The ISensorClassExtension |
+| [Initialize method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-initialize.md) | The ISensorClassExtension |
+| [OnClientConnect method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientconnect.md) | The ISensorDriver |
+| [OnClientDisconnect method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientdisconnect.md) | The ISensorDriver |
+| [OnClientSubscribeToEvents method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientsubscribetoevents.md) | The ISensorDriver |
+| [OnClientUnsubscribeFromEvents method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onclientunsubscribefromevents.md) | The ISensorDriver |
+| [OnGetDataFields method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetdatafields.md) | The ISensorDriver |
+| [OnGetProperties method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetproperties.md) | The ISensorDriver |
+| [OnGetSupportedDataFields method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupporteddatafields.md) | The ISensorDriver |
+| [OnGetSupportedEvents method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupportedevents.md) | The ISensorDriver |
+| [OnGetSupportedProperties method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupportedproperties.md) | The ISensorDriver |
+| [OnGetSupportedSensorObjects method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects.md) | The ISensorDriver |
+| [OnProcessWpdMessage method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onprocesswpdmessage.md) | The ISensorDriver |
+| [OnSetProperties method](..\sensorsclassextension\nf-sensorsclassextension-isensordriver-onsetproperties.md) | The ISensorDriver |
+| [PostEvent method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-postevent.md) | The ISensorClassExtension |
+| [PostStateChange method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-poststatechange.md) | The ISensorClassExtension |
+| [ProcessIoControl method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-processiocontrol.md) | The ISensorClassExtension |
+| [Uninitialize method](..\sensorsclassextension\nf-sensorsclassextension-isensorclassextension-uninitialize.md) | The ISensorClassExtension |

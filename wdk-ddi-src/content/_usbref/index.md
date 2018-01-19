@@ -2,7 +2,7 @@
 UID: TP:usbref
 ms.assetid: 3ef75da3-dd0a-3f40-b741-d6c381f1ed78
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -210,80 +210,80 @@ For the programming guide, see [Universal Serial Bus(USB)](https://docs.microsof
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_UCM_CONNECTOR_SET_DATA_ROLE callback](..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_data_role.md) | The client driver's implementation of the EVT_UCM_CONNECTOR_SET_DATA_ROLE event callback function that swaps the data role of the connector to the specified role when attached to a partner connector. |
-| [EVT_UCM_CONNECTOR_SET_POWER_ROLE callback](..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_power_role.md) | The client driver's implementation of the EVT_UCM_CONNECTOR_SET_POWER_ROLE event callback function that sets the power role of the connector to the specified role when attached to a partner connector. |
-| [EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_current_framenumber.md) | The client driver's implementation that UCX calls to retrieve the current 32-bit frame number. |
-| [EVT_UCX_CONTROLLER_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_frame_number_and_qpc_for_time_sync.md) | UCX invokes this callback to retrieves the system query performance counter (QPC) value synchronized with the frame and microframe. |
-| [EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_transport_characteristics.md) | UCX invokes this callback to retrieve the host controller characteristics. |
-| [EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_query_usb_capability.md) | The client driver's implementation to determine if the controller supports a specific capability. |
-| [EVT_UCX_CONTROLLER_RESET callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_reset.md) | The client driver's implementation that UCX calls to reset the controller. |
-| [EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_set_transport_characteristics_change_notification.md) | UCX invokes this callback function to specify its preference in transport characteristics for which the client driver must send notifications when changes occur. |
-| [EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_start_tracking_for_time_sync.md) | UCX invokes this callback function to the start time tracking functionality in the controller. |
-| [EVT_UCX_CONTROLLER_STOP_TRACKING_FOR_TIME_SYNC callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_stop_tracking_for_time_sync.md) | UCX invokes this callback function to the stop time tracking functionality in the controller. |
-| [EVT_UCX_CONTROLLER_USBDEVICE_ADD callback](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md) | The client driver's implementation that UCX calls when a new USB device is detected. |
-| [EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_default_endpoint_update.md) | The client driver's implementation that UCX calls with information about the default endpoint. |
-| [EVT_UCX_ENDPOINT_ABORT callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_abort.md) | The client driver's implementation that UCX calls to abort the queue associated with the endpoint. |
-| [EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_get_isoch_transfer_path_delays.md) | UCX invokes this callback function to get information about transfer path delays for an isochronous endpoint. |
-| [EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_ok_to_cancel_transfers.md) | The client driver's implementation that UCX calls to notify the controller driver that it can complete cancelled transfers on the endpoint. |
-| [EVT_UCX_ENDPOINT_PURGE callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_purge.md) | The client driver's implementation that completes all outstanding I/O requests on the endpoint. |
-| [EVT_UCX_ENDPOINT_RESET callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_reset.md) | The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint. |
-| [EVT_UCX_ENDPOINT_SET_CHARACTERISTIC callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_set_characteristic.md) | UCX invokes this callback function to set the priority on an endpoint. |
-| [EVT_UCX_ENDPOINT_START callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_start.md) | The client driver's implementation that UCX calls to start the queue associated with the endpoint. |
-| [EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md) | The client driver's implementation that UCX calls to create static streams. |
-| [EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_disable.md) | The client driver's implementation that UCX calls to release controller resources for all streams for an endpoint. |
-| [EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE callback](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md) | The client driver's implementation that UCX calls to enable the static streams. |
-| [EVT_UCX_ROOTHUB_CONTROL_URB callback](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md) | The client driver uses this callback type to implement handlers that UCX calls when it receives feature control requests on the USB hub. |
-| [EVT_UCX_ROOTHUB_GET_20PORT_INFO callback](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md) | The client driver's implementation that UCX calls when it receives a request for information about USB 2.0 ports on the root hub. |
-| [EVT_UCX_ROOTHUB_GET_30PORT_INFO callback](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md) | The client driver's implementation that UCX calls when it receives a request for information about USB 3.0 ports on the root hub. |
-| [EVT_UCX_ROOTHUB_GET_INFO callback](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md) | The client driver's implementation that UCX calls when it receives a request for information about the root hub. |
-| [EVT_UCX_ROOTHUB_INTERRUPT_TX callback](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md) | The client driver's implementation that UCX calls when it receives a request for information about changed ports. |
-| [EVT_UCX_USBDEVICE_ADDRESS callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_address.md) | The client driver's implementation that UCX calls to address the USB device. |
-| [EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add.md) | The client driver's implementation that UCX calls to add a new default endpoint for a USB device. |
-| [EVT_UCX_USBDEVICE_DISABLE callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_disable.md) | The client driver's implementation that UCX calls to release controller resources associated with the device and its default endpoint. |
-| [EVT_UCX_USBDEVICE_ENABLE callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_enable.md) | The client driver's implementation that UCX calls to program information about the device and its default control endpoint into the controller. |
-| [EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure.md) | The client driver's implementation that UCX calls to configure endpoints in the controller. |
-| [EVT_UCX_USBDEVICE_ENDPOINT_ADD callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md) | The client driver's implementation that UCX calls to add a new endpoint for a USB device. |
-| [EVT_UCX_USBDEVICE_GET_CHARACTERISTIC callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md) | UCX invokes this callback to retrieve the device characteristics. |
-| [EVT_UCX_USBDEVICE_HUB_INFO callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_hub_info.md) | The client driver's implementation that UCX calls to retrieve hub properties. |
-| [EVT_UCX_USBDEVICE_RESET callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_reset.md) | The client driver's implementation that UCX calls when the port to which the device is attached is reset. |
-| [EVT_UCX_USBDEVICE_RESUME callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_resume.md) | UCX invokes this callback function to resume a device from suspend state. |
-| [EVT_UCX_USBDEVICE_SUSPEND callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_suspend.md) | UCX invokes this callback function to send a device suspend state. |
-| [EVT_UCX_USBDEVICE_UPDATE callback](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_update.md) | The client driver's implementation that UCX calls to update device properties. |
-| [EVT_UDECX_USB_DEVICE_D0_ENTRY callback](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_entry.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to bring the virtual USB device out of a low power state to working state. |
-| [EVT_UDECX_USB_DEVICE_D0_EXIT callback](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to send the virtual USB device to a low power state. |
-| [EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD callback](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_default_endpoint_add.md) | The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create the default control endpoint on the virtual USB device. |
-| [EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE callback](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md) | The USB device emulation class extension (UdeCx) invokes this callback function to change the configuration by selecting an alternate setting, disabling current endpoints, or adding dynamic endpoints. |
-| [EVT_UDECX_USB_DEVICE_ENDPOINT_ADD callback](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoint_add.md) | The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create a dynamic endpoint on the virtual USB device. |
-| [EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE callback](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_set_function_suspend_and_wake.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to change the function state of the specified interface of the virtual USB 3.0 device. |
-| [EVT_UDECX_USB_ENDPOINT_PURGE callback](..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_purge.md) | The USB device emulation class extension (UdeCx) invokes this callback function to stop queuing I/O requests to the endpoint's queue and cancel unprocessed requests. |
-| [EVT_UDECX_USB_ENDPOINT_RESET callback](..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_reset.md) | The USB device emulation class extension (UdeCx) invokes this callback function to reset an endpoint of the virtual USB device. |
-| [EVT_UDECX_USB_ENDPOINT_START callback](..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_start.md) | The USB device emulation class extension (UdeCx) invokes this callback function to start processing I/O requests on the specified endpoint of the virtual USB device. |
-| [EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY callback](..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_query_usb_capability.md) | The UDE client driver's implementation to determine the capabilities that are supported by the emulated USB host controller. |
-| [EVT_UDECX_WDF_DEVICE_RESET callback](..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md) | The UDE client driver's implementation to reset the emulated host controller or the devices attached to it. |
-| [EVT_UFX_DEVICE_ADDRESSED callback](..\ufxclient\nc-ufxclient-evt_ufx_device_addressed.md) | The client driver's implementation to assign an address on the function controller. |
-| [EVT_UFX_DEVICE_CONTROLLER_RESET callback](..\ufxclient\nc-ufxclient-evt_ufx_device_controller_reset.md) | The client driver's implementation to reset the function controller to its initial state. |
-| [EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD callback](..\ufxclient\nc-ufxclient-evt_ufx_device_default_endpoint_add.md) | The client driver's implementation to create a default control endpoint. |
-| [EVT_UFX_DEVICE_ENDPOINT_ADD callback](..\ufxclient\nc-ufxclient-evt_ufx_device_endpoint_add.md) | The client driver's implementation to create a default endpoint object. |
-| [EVT_UFX_DEVICE_HOST_CONNECT callback](..\ufxclient\nc-ufxclient-evt_ufx_device_host_connect.md) | The client driver's implementation to initiate connection with the host. |
-| [EVT_UFX_DEVICE_HOST_DISCONNECT callback](..\ufxclient\nc-ufxclient-evt_ufx_device_host_disconnect.md) | The client driver's implementation to disable the function controller's communication with the host. |
-| [EVT_UFX_DEVICE_PORT_CHANGE callback](..\ufxclient\nc-ufxclient-evt_ufx_device_port_change.md) | The client driver's implementation to update the type of the new port to which the USB device is connected. |
-| [EVT_UFX_DEVICE_PORT_DETECT callback](..\ufxclient\nc-ufxclient-evt_ufx_device_port_detect.md) | The client driver's implementation to initiate port detection. |
-| [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_DETECT callback](..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md) | The client driver's implementation to initiate proprietary charger detection. |
-| [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET callback](..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_reset.md) | The client driver's implementation to resets proprietary charger. |
-| [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY callback](..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_set_property.md) | The client driver's implementation to set charger information that it uses to enable charging over USB. |
-| [EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL callback](..\ufxclient\nc-ufxclient-evt_ufx_device_remote_wakeup_signal.md) | The client driver's implementation to initiate remote wake-up on the function controller. |
-| [EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback](..\ufxclient\nc-ufxclient-evt_ufx_device_super_speed_power_feature.md) | The client driver's implementation to set or clear the specified power feature on the function controller. |
-| [EVT_UFX_DEVICE_TEST_MODE_SET callback](..\ufxclient\nc-ufxclient-evt_ufx_device_test_mode_set.md) | The client driver's implementation to set the test mode of the function controller. |
-| [EVT_UFX_DEVICE_USB_STATE_CHANGE callback](..\ufxclient\nc-ufxclient-evt_ufx_device_usb_state_change.md) | The client driver's implementation to update the state of the USB device. |
-| [EVT_URS_SET_ROLE callback](..\ursdevice\nc-ursdevice-evt_urs_set_role.md) | The URS class extension invokes this event callback when it requires the client driver to change the role of the controller. |
-| [UFX_PROPRIETARY_CHARGER_ABORT_OPERATION callback](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_abort_operation.md) | The filter driver's implementation to abort a charger operation. |
-| [UFX_PROPRIETARY_CHARGER_DETECT callback](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_detect.md) | The filter driver's implementation to detect if a charger is attached and get details about the charger. |
-| [UFX_PROPRIETARY_CHARGER_RESET_OPERATION callback](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_reset_operation.md) | The filter driver's implementation to reset a charger operation. |
-| [UFX_PROPRIETARY_CHARGER_SET_PROPERTY callback](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_set_property.md) | The filter driver's implementation to set a configurable property on the charger. |
-| [USBC_START_DEVICE_CALLBACK callback](..\usbbusif\nc-usbbusif-usbc_start_device_callback.md) | The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device. |
-| [USBFN_GET_ATTACH_ACTION callback](..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md) | The filter driver's implementation that gets invoked when charger is attached to the port. |
-| [USBFN_GET_ATTACH_ACTION_ABORT callback](..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action_abort.md) | The filter driver's implementation to abort an attach-detect operation. |
-| [USBFN_SET_DEVICE_STATE callback](..\usbfnattach\nc-usbfnattach-usbfn_set_device_state.md) | The filter driver's implementation to set the device state and operating bus speed. |
+| [EVT_UCM_CONNECTOR_SET_DATA_ROLE function](..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_data_role.md) | The client driver's implementation of the EVT_UCM_CONNECTOR_SET_DATA_ROLE event callback function that swaps the data role of the connector to the specified role when attached to a partner connector. |
+| [EVT_UCM_CONNECTOR_SET_POWER_ROLE function](..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_power_role.md) | The client driver's implementation of the EVT_UCM_CONNECTOR_SET_POWER_ROLE event callback function that sets the power role of the connector to the specified role when attached to a partner connector. |
+| [EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_current_framenumber.md) | The client driver's implementation that UCX calls to retrieve the current 32-bit frame number. |
+| [EVT_UCX_CONTROLLER_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_frame_number_and_qpc_for_time_sync.md) | UCX invokes this callback to retrieves the system query performance counter (QPC) value synchronized with the frame and microframe. |
+| [EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_transport_characteristics.md) | UCX invokes this callback to retrieve the host controller characteristics. |
+| [EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_query_usb_capability.md) | The client driver's implementation to determine if the controller supports a specific capability. |
+| [EVT_UCX_CONTROLLER_RESET function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_reset.md) | The client driver's implementation that UCX calls to reset the controller. |
+| [EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_set_transport_characteristics_change_notification.md) | UCX invokes this callback function to specify its preference in transport characteristics for which the client driver must send notifications when changes occur. |
+| [EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_start_tracking_for_time_sync.md) | UCX invokes this callback function to the start time tracking functionality in the controller. |
+| [EVT_UCX_CONTROLLER_STOP_TRACKING_FOR_TIME_SYNC function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_stop_tracking_for_time_sync.md) | UCX invokes this callback function to the stop time tracking functionality in the controller. |
+| [EVT_UCX_CONTROLLER_USBDEVICE_ADD function](..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md) | The client driver's implementation that UCX calls when a new USB device is detected. |
+| [EVT_UCX_DEFAULT_ENDPOINT_UPDATE function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_default_endpoint_update.md) | The client driver's implementation that UCX calls with information about the default endpoint. |
+| [EVT_UCX_ENDPOINT_ABORT function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_abort.md) | The client driver's implementation that UCX calls to abort the queue associated with the endpoint. |
+| [EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_get_isoch_transfer_path_delays.md) | UCX invokes this callback function to get information about transfer path delays for an isochronous endpoint. |
+| [EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_ok_to_cancel_transfers.md) | The client driver's implementation that UCX calls to notify the controller driver that it can complete cancelled transfers on the endpoint. |
+| [EVT_UCX_ENDPOINT_PURGE function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_purge.md) | The client driver's implementation that completes all outstanding I/O requests on the endpoint. |
+| [EVT_UCX_ENDPOINT_RESET function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_reset.md) | The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint. |
+| [EVT_UCX_ENDPOINT_SET_CHARACTERISTIC function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_set_characteristic.md) | UCX invokes this callback function to set the priority on an endpoint. |
+| [EVT_UCX_ENDPOINT_START function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_start.md) | The client driver's implementation that UCX calls to start the queue associated with the endpoint. |
+| [EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md) | The client driver's implementation that UCX calls to create static streams. |
+| [EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_disable.md) | The client driver's implementation that UCX calls to release controller resources for all streams for an endpoint. |
+| [EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE function](..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md) | The client driver's implementation that UCX calls to enable the static streams. |
+| [EVT_UCX_ROOTHUB_CONTROL_URB function](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md) | The client driver uses this callback type to implement handlers that UCX calls when it receives feature control requests on the USB hub. |
+| [EVT_UCX_ROOTHUB_GET_20PORT_INFO function](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md) | The client driver's implementation that UCX calls when it receives a request for information about USB 2.0 ports on the root hub. |
+| [EVT_UCX_ROOTHUB_GET_30PORT_INFO function](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md) | The client driver's implementation that UCX calls when it receives a request for information about USB 3.0 ports on the root hub. |
+| [EVT_UCX_ROOTHUB_GET_INFO function](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md) | The client driver's implementation that UCX calls when it receives a request for information about the root hub. |
+| [EVT_UCX_ROOTHUB_INTERRUPT_TX function](..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md) | The client driver's implementation that UCX calls when it receives a request for information about changed ports. |
+| [EVT_UCX_USBDEVICE_ADDRESS function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_address.md) | The client driver's implementation that UCX calls to address the USB device. |
+| [EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add.md) | The client driver's implementation that UCX calls to add a new default endpoint for a USB device. |
+| [EVT_UCX_USBDEVICE_DISABLE function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_disable.md) | The client driver's implementation that UCX calls to release controller resources associated with the device and its default endpoint. |
+| [EVT_UCX_USBDEVICE_ENABLE function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_enable.md) | The client driver's implementation that UCX calls to program information about the device and its default control endpoint into the controller. |
+| [EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure.md) | The client driver's implementation that UCX calls to configure endpoints in the controller. |
+| [EVT_UCX_USBDEVICE_ENDPOINT_ADD function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md) | The client driver's implementation that UCX calls to add a new endpoint for a USB device. |
+| [EVT_UCX_USBDEVICE_GET_CHARACTERISTIC function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md) | UCX invokes this callback to retrieve the device characteristics. |
+| [EVT_UCX_USBDEVICE_HUB_INFO function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_hub_info.md) | The client driver's implementation that UCX calls to retrieve hub properties. |
+| [EVT_UCX_USBDEVICE_RESET function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_reset.md) | The client driver's implementation that UCX calls when the port to which the device is attached is reset. |
+| [EVT_UCX_USBDEVICE_RESUME function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_resume.md) | UCX invokes this callback function to resume a device from suspend state. |
+| [EVT_UCX_USBDEVICE_SUSPEND function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_suspend.md) | UCX invokes this callback function to send a device suspend state. |
+| [EVT_UCX_USBDEVICE_UPDATE function](..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_update.md) | The client driver's implementation that UCX calls to update device properties. |
+| [EVT_UDECX_USB_DEVICE_D0_ENTRY function](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_entry.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to bring the virtual USB device out of a low power state to working state. |
+| [EVT_UDECX_USB_DEVICE_D0_EXIT function](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to send the virtual USB device to a low power state. |
+| [EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD function](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_default_endpoint_add.md) | The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create the default control endpoint on the virtual USB device. |
+| [EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE function](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md) | The USB device emulation class extension (UdeCx) invokes this callback function to change the configuration by selecting an alternate setting, disabling current endpoints, or adding dynamic endpoints. |
+| [EVT_UDECX_USB_DEVICE_ENDPOINT_ADD function](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoint_add.md) | The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create a dynamic endpoint on the virtual USB device. |
+| [EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE function](..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_set_function_suspend_and_wake.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to change the function state of the specified interface of the virtual USB 3.0 device. |
+| [EVT_UDECX_USB_ENDPOINT_PURGE function](..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_purge.md) | The USB device emulation class extension (UdeCx) invokes this callback function to stop queuing I/O requests to the endpoint's queue and cancel unprocessed requests. |
+| [EVT_UDECX_USB_ENDPOINT_RESET function](..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_reset.md) | The USB device emulation class extension (UdeCx) invokes this callback function to reset an endpoint of the virtual USB device. |
+| [EVT_UDECX_USB_ENDPOINT_START function](..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_start.md) | The USB device emulation class extension (UdeCx) invokes this callback function to start processing I/O requests on the specified endpoint of the virtual USB device. |
+| [EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY function](..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_query_usb_capability.md) | The UDE client driver's implementation to determine the capabilities that are supported by the emulated USB host controller. |
+| [EVT_UDECX_WDF_DEVICE_RESET function](..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md) | The UDE client driver's implementation to reset the emulated host controller or the devices attached to it. |
+| [EVT_UFX_DEVICE_ADDRESSED function](..\ufxclient\nc-ufxclient-evt_ufx_device_addressed.md) | The client driver's implementation to assign an address on the function controller. |
+| [EVT_UFX_DEVICE_CONTROLLER_RESET function](..\ufxclient\nc-ufxclient-evt_ufx_device_controller_reset.md) | The client driver's implementation to reset the function controller to its initial state. |
+| [EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD function](..\ufxclient\nc-ufxclient-evt_ufx_device_default_endpoint_add.md) | The client driver's implementation to create a default control endpoint. |
+| [EVT_UFX_DEVICE_ENDPOINT_ADD function](..\ufxclient\nc-ufxclient-evt_ufx_device_endpoint_add.md) | The client driver's implementation to create a default endpoint object. |
+| [EVT_UFX_DEVICE_HOST_CONNECT function](..\ufxclient\nc-ufxclient-evt_ufx_device_host_connect.md) | The client driver's implementation to initiate connection with the host. |
+| [EVT_UFX_DEVICE_HOST_DISCONNECT function](..\ufxclient\nc-ufxclient-evt_ufx_device_host_disconnect.md) | The client driver's implementation to disable the function controller's communication with the host. |
+| [EVT_UFX_DEVICE_PORT_CHANGE function](..\ufxclient\nc-ufxclient-evt_ufx_device_port_change.md) | The client driver's implementation to update the type of the new port to which the USB device is connected. |
+| [EVT_UFX_DEVICE_PORT_DETECT function](..\ufxclient\nc-ufxclient-evt_ufx_device_port_detect.md) | The client driver's implementation to initiate port detection. |
+| [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_DETECT function](..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md) | The client driver's implementation to initiate proprietary charger detection. |
+| [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET function](..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_reset.md) | The client driver's implementation to resets proprietary charger. |
+| [EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY function](..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_set_property.md) | The client driver's implementation to set charger information that it uses to enable charging over USB. |
+| [EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL function](..\ufxclient\nc-ufxclient-evt_ufx_device_remote_wakeup_signal.md) | The client driver's implementation to initiate remote wake-up on the function controller. |
+| [EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE function](..\ufxclient\nc-ufxclient-evt_ufx_device_super_speed_power_feature.md) | The client driver's implementation to set or clear the specified power feature on the function controller. |
+| [EVT_UFX_DEVICE_TEST_MODE_SET function](..\ufxclient\nc-ufxclient-evt_ufx_device_test_mode_set.md) | The client driver's implementation to set the test mode of the function controller. |
+| [EVT_UFX_DEVICE_USB_STATE_CHANGE function](..\ufxclient\nc-ufxclient-evt_ufx_device_usb_state_change.md) | The client driver's implementation to update the state of the USB device. |
+| [EVT_URS_SET_ROLE function](..\ursdevice\nc-ursdevice-evt_urs_set_role.md) | The URS class extension invokes this event callback when it requires the client driver to change the role of the controller. |
+| [UFX_PROPRIETARY_CHARGER_ABORT_OPERATION function](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_abort_operation.md) | The filter driver's implementation to abort a charger operation. |
+| [UFX_PROPRIETARY_CHARGER_DETECT function](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_detect.md) | The filter driver's implementation to detect if a charger is attached and get details about the charger. |
+| [UFX_PROPRIETARY_CHARGER_RESET_OPERATION function](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_reset_operation.md) | The filter driver's implementation to reset a charger operation. |
+| [UFX_PROPRIETARY_CHARGER_SET_PROPERTY function](..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_set_property.md) | The filter driver's implementation to set a configurable property on the charger. |
+| [USBC_START_DEVICE_CALLBACK callback function](..\usbbusif\nc-usbbusif-usbc_start_device_callback.md) | The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device. |
+| [USBFN_GET_ATTACH_ACTION function](..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md) | The filter driver's implementation that gets invoked when charger is attached to the port. |
+| [USBFN_GET_ATTACH_ACTION_ABORT function](..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action_abort.md) | The filter driver's implementation to abort an attach-detect operation. |
+| [USBFN_SET_DEVICE_STATE function](..\usbfnattach\nc-usbfnattach-usbfn_set_device_state.md) | The filter driver's implementation to set the device state and operating bus speed. |
 
 ## Structures
 
@@ -477,49 +477,49 @@ For the programming guide, see [Universal Serial Bus(USB)](https://docs.microsof
 
 | Title   | Description   |
 | ---- |:---- |
-| [_CONTROLLER_TYPE enumeration](..\ucxroothub\ne-ucxroothub-_controller_type.md) | This enumeration specifies if the USB host controller is an eXtensible Host Controller Interface (xHCI) controller. |
-| [_ENDPOINT_RESET_FLAGS enumeration](..\ucxendpoint\ne-ucxendpoint-_endpoint_reset_flags.md) | Defines parameters for a request to reset an endpoint. |
-| [_TRISTATE enumeration](..\ucxroothub\ne-ucxroothub-_tristate.md) | The TRISTATE enumeration indicates generic state values for true or false. |
-| [_UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE enumeration](..\ucmtcpciportcontroller\ne-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_type.md) | Defines generic alert values that are used to indicate the type of hardware alert received on the port controller. |
-| [_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_display_out_status.md) | Defines values to determine whether a display out status for a DisplayPort device is enabled. |
-| [_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_hpd_status.md) | Defines values to determine whether a DisplayPort device is plugged in. |
-| [_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_pin_assignment.md) | TBD. |
-| [_UCMTCPCI_PORT_CONTROLLER_IOCTL enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_ioctl.md) | Defines the various device I/O control requests that are sent to the client driver for the port controller. This indicates the type of IOCTL in WPP. |
-| [_UCM_CHARGING_STATE enumeration](..\ucmtypes\ne-ucmtypes-_ucm_charging_state.md) | Defines the charging state of a Type-C connector. |
-| [_UCM_PD_CONN_STATE enumeration](..\ucmtypes\ne-ucmtypes-_ucm_pd_conn_state.md) | Defines power delivery (PD) negotiation states of a Type-C port. |
-| [_UCM_PD_POWER_DATA_OBJECT_TYPE enumeration](..\ucmtypes\ne-ucmtypes-_ucm_pd_power_data_object_type.md) | Defines Power Data Object types. |
-| [_UCM_POWER_ROLE enumeration](..\ucmtypes\ne-ucmtypes-_ucm_power_role.md) | Defines power roles of USB Type-C connected devices. |
-| [_UCM_TYPEC_CURRENT enumeration](..\ucmtypes\ne-ucmtypes-_ucm_typec_current.md) | Defines different Type-C current levels, as defined in the Type-C specification. |
-| [_UCM_TYPEC_OPERATING_MODE enumeration](..\ucmtypes\ne-ucmtypes-_ucm_typec_operating_mode.md) | Defines operating modes of a USB Type-C connector. |
-| [_UCM_TYPEC_PARTNER enumeration](..\ucmtypes\ne-ucmtypes-_ucm_typec_partner.md) | Defines the state of the Type-C connector. |
-| [_UCX_CONTROLLER_PARENT_BUS_TYPE enumeration](..\ucxcontroller\ne-ucxcontroller-_ucx_controller_parent_bus_type.md) | The UCX_CONTROLLER_PARENT_BUS_TYPE enumeration defines the parent bus type. |
-| [_UCX_CONTROLLER_STATE enumeration](..\ucxcontroller\ne-ucxcontroller-_ucx_controller_state.md) | This enumeration provides values to specify the UCX controller state after a reset. |
-| [_UCX_ENDPOINT_CHARACTERISTIC_PRIORITY enumeration](..\ucxendpoint\ne-ucxendpoint-_ucx_endpoint_characteristic_priority.md) | Indicates the priority of endpoints. |
-| [_UCX_ENDPOINT_CHARACTERISTIC_TYPE enumeration](..\ucxendpoint\ne-ucxendpoint-_ucx_endpoint_characteristic_type.md) | Defines values that indicates the type of endpoint characteristic. |
-| [_UCX_USBDEVICE_CHARACTERISTIC_TYPE enumeration](..\ucxusbdevice\ne-ucxusbdevice-_ucx_usbdevice_characteristic_type.md) | Defines values that indicates the type of device characteristic. |
-| [_UDECX_ENDPOINTS_CONFIGURE_TYPE enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_endpoints_configure_type.md) | Defines values for endpoint configuration options. |
-| [_UDECX_ENDPOINT_TYPE enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_endpoint_type.md) | Defines values for endpoint types supported by a virtual USB device. |
-| [_UDECX_USB_DEVICE_FUNCTION_POWER enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_usb_device_function_power.md) | Defines values for function wake capability of a virtual USB 3.0 device. |
-| [_UDECX_USB_DEVICE_SPEED enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_usb_device_speed.md) | Defines values for USB device speeds. |
-| [_UDECX_USB_DEVICE_WAKE_SETTING enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_usb_device_wake_setting.md) | Defines values for remote wake capability of a virtual USB device. |
-| [_UDECX_WDF_DEVICE_RESET_ACTION enumeration](..\udecxwdfdevice\ne-udecxwdfdevice-_udecx_wdf_device_reset_action.md) | Defines values that indicate the types of reset operation supported by an emulated USB host controller. |
-| [_URS_HARDWARE_EVENT enumeration](..\urstypes\ne-urstypes-_urs_hardware_event.md) | Defines values for the hardware events that a client driver for a USB dual-role controller can report. |
-| [_URS_HOST_INTERFACE_TYPE enumeration](..\urstypes\ne-urstypes-_urs_host_interface_type.md) | Defines values for the various types of USB host controllers. |
-| [_URS_ROLE enumeration](..\urstypes\ne-urstypes-_urs_role.md) | Defines values for roles supported by a USB dual-role controller. |
-| [_USBD_ENDPOINT_OFFLOAD_MODE enumeration](..\usb\ne-usb-_usbd_endpoint_offload_mode.md) | Defines values for endpoint offloading options in the USB device or host controller. |
-| [_USBD_PIPE_TYPE enumeration](..\usb\ne-usb-_usbd_pipe_type.md) | The USBD_PIPE_TYPE enumerator indicates the type of pipe. |
-| [_USBFN_ACTION enumeration](..\ufxbase\ne-ufxbase-_usbfn_action.md) | Defines special actions UFX should take when the client driver calls the UfxDevicePortDetectCompleteEx function. |
-| [_USBFN_ATTACH_ACTION enumeration](..\usbfnattach\ne-usbfnattach-_usbfn_attach_action.md) | Defines the actions that the Universal Serial Bus (USB) function stack takes when a device is attached to a USB port. |
-| [_USBFN_BUS_SPEED enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_bus_speed.md) | The USBFN_BUS_SPEED enumeration defines possible bus speeds. |
-| [_USBFN_DEVICE_STATE enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_device_state.md) | Defines the Universal Serial Bus (USB) device states for the device/controller. These states correspond to the USB device states as defined in section 9.1 of the USB 2.0 Specification. |
-| [_USBFN_DIRECTION enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_direction.md) | Defines the USB data transfer direction types. |
-| [_USBFN_EVENT enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_event.md) | Defines notifications sent to class drivers. |
-| [_USBFN_PORT_TYPE enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md) | Defines the possible port types that can be returned by the client driver during port detection. |
-| [_USB_CONNECTION_STATUS enumeration](..\usbioctl\ne-usbioctl-_usb_connection_status.md) | The USB_CONNECTION_STATUS enumerator indicates the status of the connection to a device on a USB hub port. |
-| [_USB_CONTROLLER_FLAVOR enumeration](..\usb\ne-usb-_usb_controller_flavor.md) | The USB_CONTROLLER_FLAVOR enumeration specifies the type of USB host controller. |
-| [_USB_DEVICE_SPEED enumeration](..\usbspec\ne-usbspec-_usb_device_speed.md) | The USB_DEVICE_SPEED enumeration defines constants for USB device speeds. |
-| [_USB_HUB_NODE enumeration](..\usbioctl\ne-usbioctl-_usb_hub_node.md) | The USB_HUB_NODE enumerator indicates whether a device is a hub or a composite device. |
-| [_USB_HUB_TYPE enumeration](..\usbioctl\ne-usbioctl-_usb_hub_type.md) | The USB_HUB_TYPE enumeration defines constants that indicate the type of USB hub. The hub type is retrieved by the IOCTL_USB_GET_HUB_INFORMATION_EX I/O control request. |
+| [_CONTROLLER_TYPE Enumeration](..\ucxroothub\ne-ucxroothub-_controller_type.md) | This enumeration specifies if the USB host controller is an eXtensible Host Controller Interface (xHCI) controller. |
+| [_ENDPOINT_RESET_FLAGS Enumeration](..\ucxendpoint\ne-ucxendpoint-_endpoint_reset_flags.md) | Defines parameters for a request to reset an endpoint. |
+| [_TRISTATE Enumeration](..\ucxroothub\ne-ucxroothub-_tristate.md) | The TRISTATE enumeration indicates generic state values for true or false. |
+| [_UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE Enumeration](..\ucmtcpciportcontroller\ne-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_type.md) | Defines generic alert values that are used to indicate the type of hardware alert received on the port controller. |
+| [_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS Enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_display_out_status.md) | Defines values to determine whether a display out status for a DisplayPort device is enabled. |
+| [_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS Enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_hpd_status.md) | Defines values to determine whether a DisplayPort device is plugged in. |
+| [_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT Enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_pin_assignment.md) | TBD. |
+| [_UCMTCPCI_PORT_CONTROLLER_IOCTL Enumeration](..\ucmtcpciportcontrollerrequests\ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_ioctl.md) | Defines the various device I/O control requests that are sent to the client driver for the port controller. This indicates the type of IOCTL in WPP. |
+| [_UCM_CHARGING_STATE Enumeration](..\ucmtypes\ne-ucmtypes-_ucm_charging_state.md) | Defines the charging state of a Type-C connector. |
+| [_UCM_PD_CONN_STATE Enumeration](..\ucmtypes\ne-ucmtypes-_ucm_pd_conn_state.md) | Defines power delivery (PD) negotiation states of a Type-C port. |
+| [_UCM_PD_POWER_DATA_OBJECT_TYPE Enumeration](..\ucmtypes\ne-ucmtypes-_ucm_pd_power_data_object_type.md) | Defines Power Data Object types. |
+| [_UCM_POWER_ROLE Enumeration](..\ucmtypes\ne-ucmtypes-_ucm_power_role.md) | Defines power roles of USB Type-C connected devices. |
+| [_UCM_TYPEC_CURRENT Enumeration](..\ucmtypes\ne-ucmtypes-_ucm_typec_current.md) | Defines different Type-C current levels, as defined in the Type-C specification. |
+| [_UCM_TYPEC_OPERATING_MODE Enumeration](..\ucmtypes\ne-ucmtypes-_ucm_typec_operating_mode.md) | Defines operating modes of a USB Type-C connector. |
+| [_UCM_TYPEC_PARTNER Enumeration](..\ucmtypes\ne-ucmtypes-_ucm_typec_partner.md) | Defines the state of the Type-C connector. |
+| [_UCX_CONTROLLER_PARENT_BUS_TYPE Enumeration](..\ucxcontroller\ne-ucxcontroller-_ucx_controller_parent_bus_type.md) | The UCX_CONTROLLER_PARENT_BUS_TYPE enumeration defines the parent bus type. |
+| [_UCX_CONTROLLER_STATE Enumeration](..\ucxcontroller\ne-ucxcontroller-_ucx_controller_state.md) | This enumeration provides values to specify the UCX controller state after a reset. |
+| [_UCX_ENDPOINT_CHARACTERISTIC_PRIORITY Enumeration](..\ucxendpoint\ne-ucxendpoint-_ucx_endpoint_characteristic_priority.md) | Indicates the priority of endpoints. |
+| [_UCX_ENDPOINT_CHARACTERISTIC_TYPE Enumeration](..\ucxendpoint\ne-ucxendpoint-_ucx_endpoint_characteristic_type.md) | Defines values that indicates the type of endpoint characteristic. |
+| [_UCX_USBDEVICE_CHARACTERISTIC_TYPE Enumeration](..\ucxusbdevice\ne-ucxusbdevice-_ucx_usbdevice_characteristic_type.md) | Defines values that indicates the type of device characteristic. |
+| [_UDECX_ENDPOINTS_CONFIGURE_TYPE Enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_endpoints_configure_type.md) | Defines values for endpoint configuration options. |
+| [_UDECX_ENDPOINT_TYPE Enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_endpoint_type.md) | Defines values for endpoint types supported by a virtual USB device. |
+| [_UDECX_USB_DEVICE_FUNCTION_POWER Enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_usb_device_function_power.md) | Defines values for function wake capability of a virtual USB 3.0 device. |
+| [_UDECX_USB_DEVICE_SPEED Enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_usb_device_speed.md) | Defines values for USB device speeds. |
+| [_UDECX_USB_DEVICE_WAKE_SETTING Enumeration](..\udecxusbdevice\ne-udecxusbdevice-_udecx_usb_device_wake_setting.md) | Defines values for remote wake capability of a virtual USB device. |
+| [_UDECX_WDF_DEVICE_RESET_ACTION Enumeration](..\udecxwdfdevice\ne-udecxwdfdevice-_udecx_wdf_device_reset_action.md) | Defines values that indicate the types of reset operation supported by an emulated USB host controller. |
+| [_URS_HARDWARE_EVENT Enumeration](..\urstypes\ne-urstypes-_urs_hardware_event.md) | Defines values for the hardware events that a client driver for a USB dual-role controller can report. |
+| [_URS_HOST_INTERFACE_TYPE Enumeration](..\urstypes\ne-urstypes-_urs_host_interface_type.md) | Defines values for the various types of USB host controllers. |
+| [_URS_ROLE Enumeration](..\urstypes\ne-urstypes-_urs_role.md) | Defines values for roles supported by a USB dual-role controller. |
+| [_USBD_ENDPOINT_OFFLOAD_MODE Enumeration](..\usb\ne-usb-_usbd_endpoint_offload_mode.md) | Defines values for endpoint offloading options in the USB device or host controller. |
+| [_USBD_PIPE_TYPE Enumeration](..\usb\ne-usb-_usbd_pipe_type.md) | The USBD_PIPE_TYPE enumerator indicates the type of pipe. |
+| [_USBFN_ACTION Enumeration](..\ufxbase\ne-ufxbase-_usbfn_action.md) | Defines special actions UFX should take when the client driver calls the UfxDevicePortDetectCompleteEx function. |
+| [_USBFN_ATTACH_ACTION Enumeration](..\usbfnattach\ne-usbfnattach-_usbfn_attach_action.md) | Defines the actions that the Universal Serial Bus (USB) function stack takes when a device is attached to a USB port. |
+| [_USBFN_BUS_SPEED Enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_bus_speed.md) | The USBFN_BUS_SPEED enumeration defines possible bus speeds. |
+| [_USBFN_DEVICE_STATE Enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_device_state.md) | Defines the Universal Serial Bus (USB) device states for the device/controller. These states correspond to the USB device states as defined in section 9.1 of the USB 2.0 Specification. |
+| [_USBFN_DIRECTION Enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_direction.md) | Defines the USB data transfer direction types. |
+| [_USBFN_EVENT Enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_event.md) | Defines notifications sent to class drivers. |
+| [_USBFN_PORT_TYPE Enumeration](..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md) | Defines the possible port types that can be returned by the client driver during port detection. |
+| [_USB_CONNECTION_STATUS Enumeration](..\usbioctl\ne-usbioctl-_usb_connection_status.md) | The USB_CONNECTION_STATUS enumerator indicates the status of the connection to a device on a USB hub port. |
+| [_USB_CONTROLLER_FLAVOR Enumeration](..\usb\ne-usb-_usb_controller_flavor.md) | The USB_CONTROLLER_FLAVOR enumeration specifies the type of USB host controller. |
+| [_USB_DEVICE_SPEED Enumeration](..\usbspec\ne-usbspec-_usb_device_speed.md) | The USB_DEVICE_SPEED enumeration defines constants for USB device speeds. |
+| [_USB_HUB_NODE Enumeration](..\usbioctl\ne-usbioctl-_usb_hub_node.md) | The USB_HUB_NODE enumerator indicates whether a device is a hub or a composite device. |
+| [_USB_HUB_TYPE Enumeration](..\usbioctl\ne-usbioctl-_usb_hub_type.md) | The USB_HUB_TYPE enumeration defines constants that indicate the type of USB hub. The hub type is retrieved by the IOCTL_USB_GET_HUB_INFORMATION_EX I/O control request. |
 
 ## I/O control codes
 
@@ -619,6 +619,6 @@ For the programming guide, see [Universal Serial Bus(USB)](https://docs.microsof
 
 | Title   | Description   |
 | ---- |:---- |
-| [GET_ISO_URB_SIZE macro](..\usbdlib\nf-usbdlib-get_iso_urb_size.md) | The GET_ISO_URB_SIZE macro returns the number of bytes required to hold an isochronous transfer request. |
-| [UsbBuildGetStatusRequest macro](..\usbdlib\nf-usbdlib-usbbuildgetstatusrequest.md) | The UsbBuildGetStatusRequest macro formats an URB to obtain status from a device, interface, endpoint, or other device-defined target on a USB device. |
-| [UsbBuildInterruptOrBulkTransferRequest macro](..\usbdlib\nf-usbdlib-usbbuildinterruptorbulktransferrequest.md) | The UsbBuildInterruptOrBulkTransferRequest macro formats an URB to send or receive data on a bulk pipe, or to receive data from an interrupt pipe. |
+| [GET_ISO_URB_SIZE function](..\usbdlib\nf-usbdlib-get_iso_urb_size.md) | The GET_ISO_URB_SIZE macro returns the number of bytes required to hold an isochronous transfer request. |
+| [UsbBuildGetStatusRequest function](..\usbdlib\nf-usbdlib-usbbuildgetstatusrequest.md) | The UsbBuildGetStatusRequest macro formats an URB to obtain status from a device, interface, endpoint, or other device-defined target on a USB device. |
+| [UsbBuildInterruptOrBulkTransferRequest function](..\usbdlib\nf-usbdlib-usbbuildinterruptorbulktransferrequest.md) | The UsbBuildInterruptOrBulkTransferRequest macro formats an URB to send or receive data on a bulk pipe, or to receive data from an interrupt pipe. |

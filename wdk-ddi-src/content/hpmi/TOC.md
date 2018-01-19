@@ -1,0 +1,8 @@
+# [Power metering](../_powermeter/index.md)
+## [Hpmi.h](index.md)
+### [None](../hpmi/ne-hpmi-_hpmi_hint_bool.md)
+### [None](../hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint.md)
+### [None](../hpmi/ni-hpmi-ioctl_hpmi_query_capabilities.md)
+### [None](../hpmi/ns-hpmi-_hpmi_battery_utilization_hint.md)
+### [None](../hpmi/ns-hpmi-_hpmi_query_capabilities.md)
+### [None](../hpmi/ns-hpmi-_hpmi_query_capabilities_response.md)

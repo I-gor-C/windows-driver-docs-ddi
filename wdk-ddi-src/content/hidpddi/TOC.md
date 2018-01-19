@@ -1,0 +1,7 @@
+# [Human Interface Devices (HID)](../_hid/index.md)
+## [Hidpddi.h](index.md)
+### [None](../hidpddi/nf-hidpddi-hidp_getcollectiondescription.md)
+### [None](../hidpddi/ns-hidpddi-_hidp_collection_desc.md)
+### [None](../hidpddi/ns-hidpddi-_hidp_device_desc.md)
+### [None](../hidpddi/ns-hidpddi-_hidp_getcoldesc_dbg.md)
+### [None](../hidpddi/ns-hidpddi-_hidp_report_ids.md)

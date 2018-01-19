@@ -2,7 +2,7 @@
 UID: TP:image
 ms.assetid: 7b3b278b-3cff-355c-a263-9be80b8afde3
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -173,10 +173,10 @@ For the programming guide, see [Imaging devices](https://docs.microsoft.com/en-u
 
 | Title   | Description   |
 | ---- |:---- |
-| [PIPE_TYPE enumeration](..\usbscan\ne-usbscan-pipe_type.md) | The PIPE_TYPE data type is used as input to the DeviceIoControl function, if the I/O control code is IOCTL_CANCEL_IO or IOCTL_RESET_PIPE. |
-| [SKIP_AMOUNT enumeration](..\wiautil\ne-wiautil-skip_amount.md) | The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over. |
-| [_RAW_PIPE_TYPE enumeration](..\usbscan\ne-usbscan-_raw_pipe_type.md) | The RAW_PIPE_TYPE data type is used to specify the type of a USB pipe. |
-| [_STI_DEVICE_MJ_TYPE enumeration](..\sti\ne-sti-_sti_device_mj_type.md) | The STI_DEVICE_TYPE type identifies the device type of a still image device.The DWORD is divided into a HIWORD containing the major device type, and a LOWORD containing a vendor-defined subtype. |
+| [PIPE_TYPE Enumeration](..\usbscan\ne-usbscan-pipe_type.md) | The PIPE_TYPE data type is used as input to the DeviceIoControl function, if the I/O control code is IOCTL_CANCEL_IO or IOCTL_RESET_PIPE. |
+| [SKIP_AMOUNT Enumeration](..\wiautil\ne-wiautil-skip_amount.md) | The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over. |
+| [_RAW_PIPE_TYPE Enumeration](..\usbscan\ne-usbscan-_raw_pipe_type.md) | The RAW_PIPE_TYPE data type is used to specify the type of a USB pipe. |
+| [_STI_DEVICE_MJ_TYPE Enumeration](..\sti\ne-sti-_sti_device_mj_type.md) | The STI_DEVICE_TYPE type identifies the device type of a still image device.The DWORD is divided into a HIWORD containing the major device type, and a LOWORD containing a vendor-defined subtype. |
 
 ## I/O control codes
 
@@ -218,119 +218,59 @@ For the programming guide, see [Imaging devices](https://docs.microsoft.com/en-u
 
 | Title   | Description   |
 | ---- |:---- |
-| [WIAS_ASSERT macro](..\wiamdef\nf-wiamdef-wias_assert.md) | The WIAS_ASSERT macro writes a diagnostic message to the Wiatrace.log file. |
-| [WIAS_ERROR macro](..\wiamdef\nf-wiamdef-wias_error.md) | The WIAS_ERROR macro writes a diagnostic message to the Wiatrace.log file. |
-| [WIAS_HRESULT macro](..\wiamdef\nf-wiamdef-wias_hresult.md) | The WIAS_HRESULT macro writes a diagnostic message to the Wiatrace.log file. |
-| [WIAS_LERROR macro](..\wiamdef\nf-wiamdef-wias_lerror.md) | The WIAS_LERROR macro is obsolete for Windows Vista and later. It is recommended that the WIAS_ERROR macro be used instead.The WIAS_LERROR macro writes a diagnostic WIA_ERROR message to the log file. |
-| [WIAS_LHRESULT macro](..\wiamdef\nf-wiamdef-wias_lhresult.md) | The WIAS_LHRESULT macro is obsolete for Windows Vista and later. It is recommended that the WIAS_HRESULT macro be used instead. The WIAS_LHRESULT macro translates an HRESULT value into a string and writes the string to the diagnostic log file. |
-| [WIAS_LTRACE macro](..\wiamdef\nf-wiamdef-wias_ltrace.md) | The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the WIAS_TRACE macro be used instead.The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file. |
-| [WIAS_LWARNING macro](..\wiamdef\nf-wiamdef-wias_lwarning.md) | The WIAS_LWARNING macro is obsolete for Windows Vista and later.The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file. |
-| [WIAS_TRACE macro](..\wiamdef\nf-wiamdef-wias_trace.md) | The WIAS_TRACE macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_ASSERT function](..\wiamdef\nf-wiamdef-wias_assert.md) | The WIAS_ASSERT macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_ERROR function](..\wiamdef\nf-wiamdef-wias_error.md) | The WIAS_ERROR macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_HRESULT function](..\wiamdef\nf-wiamdef-wias_hresult.md) | The WIAS_HRESULT macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_LERROR function](..\wiamdef\nf-wiamdef-wias_lerror.md) | The WIAS_LERROR macro is obsolete for Windows Vista and later. It is recommended that the WIAS_ERROR macro be used instead.The WIAS_LERROR macro writes a diagnostic WIA_ERROR message to the log file. |
+| [WIAS_LHRESULT function](..\wiamdef\nf-wiamdef-wias_lhresult.md) | The WIAS_LHRESULT macro is obsolete for Windows Vista and later. It is recommended that the WIAS_HRESULT macro be used instead. The WIAS_LHRESULT macro translates an HRESULT value into a string and writes the string to the diagnostic log file. |
+| [WIAS_LTRACE function](..\wiamdef\nf-wiamdef-wias_ltrace.md) | The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the WIAS_TRACE macro be used instead.The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file. |
+| [WIAS_LWARNING function](..\wiamdef\nf-wiamdef-wias_lwarning.md) | The WIAS_LWARNING macro is obsolete for Windows Vista and later.The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file. |
+| [WIAS_TRACE function](..\wiamdef\nf-wiamdef-wias_trace.md) | The WIAS_TRACE macro writes a diagnostic message to the Wiatrace.log file. |
 
 ## Methods
 
 | Title   | Description   |
 | ---- |:---- |
-| [CWiaLogProc::CWiaLogProc method](..\wiamdef\nf-wiamdef-cwialogproc-cwialogproc.md) | The CWiaLogProc constructor is called when the function or method being logged is entered. |
-| [CWiaLogProc::~CWiaLogProc method](..\wiamdef\nf-wiamdef-cwialogproc-~cwialogproc.md) | The ~CWiaLogProc destructor is called when the function or method being logged is exited. |
-| [CWiaLogProcEx::CWiaLogProcEx method](..\wiamdef\nf-wiamdef-cwialogprocex-cwialogprocex.md) | The CWiaLogProcEx constructor is called when the function or method being logged is entered. |
-| [CWiaLogProcEx::~CWiaLogProcEx method](..\wiamdef\nf-wiamdef-cwialogprocex-~cwialogprocex.md) | The~CWiaLogProcEx destructor is called when the function or method being logged is exited. |
-| [CWiauDbgFn::CWiauDbgFn method](..\wiautil\nf-wiautil-cwiaudbgfn-cwiaudbgfn.md) | The CWiauDbgFn |
-| [CWiauDbgFn::~CWiauDbgFn method](..\wiautil\nf-wiautil-cwiaudbgfn-~cwiaudbgfn.md) | The CWiauDbgFn |
-| [CWiauFormatConverter::CWiauFormatConverter method](..\wiautil\nf-wiautil-cwiauformatconverter-cwiauformatconverter.md) | The CWiauFormatConverter |
-| [CWiauFormatConverter::ConvertToBmp method](..\wiautil\nf-wiautil-cwiauformatconverter-converttobmp.md) | The CWiauFormatConverter |
-| [CWiauFormatConverter::Init method](..\wiautil\nf-wiautil-cwiauformatconverter-init.md) | The CWiauFormatConverter |
-| [CWiauFormatConverter::IsFormatSupported method](..\wiautil\nf-wiautil-cwiauformatconverter-isformatsupported.md) | The CWiauFormatConverter |
-| [CWiauFormatConverter::~CWiauFormatConverter method](..\wiautil\nf-wiautil-cwiauformatconverter-~cwiauformatconverter.md) | The CWiauFormatConverter |
-| [CWiauPropertyList::CWiauPropertyList method](..\wiautil\nf-wiautil-cwiaupropertylist-cwiaupropertylist.md) | The CWiauPropertyList |
-| [CWiauPropertyList::DefineProperty method](..\wiautil\nf-wiautil-cwiaupropertylist-defineproperty.md) | The CWiauPropertyList |
-| [CWiauPropertyList::GetPropId method](..\wiautil\nf-wiautil-cwiaupropertylist-getpropid.md) | The CWiauPropertyList |
-| [CWiauPropertyList::Init method](..\wiautil\nf-wiautil-cwiaupropertylist-init.md) | The CWiauPropertyList |
-| [CWiauPropertyList::LookupPropId method](..\wiautil\nf-wiautil-cwiaupropertylist-lookuppropid.md) | The CWiauPropertyList |
-| [CWiauPropertyList::SendToWia method](..\wiautil\nf-wiautil-cwiaupropertylist-sendtowia.md) | The CWiauPropertyList |
-| [CWiauPropertyList::SetAccessSubType method](..\wiautil\nf-wiautil-cwiaupropertylist-setaccesssubtype.md) | The CWiauPropertyList |
-| [CWiauPropertyList::~CWiauPropertyList method](..\wiautil\nf-wiautil-cwiaupropertylist-~cwiaupropertylist.md) | The CWiauPropertyList |
-| [IStiDevice::DeviceReset method](..\sti\nf-sti-istidevice-devicereset.md) | The IStiDevice |
-| [IStiDevice::Diagnostic method](..\sti\nf-sti-istidevice-diagnostic.md) | The IStiDevice |
-| [IStiDevice::Escape method](..\sti\nf-sti-istidevice-escape.md) | The IStiDevice |
-| [IStiDevice::GetCapabilities method](..\sti\nf-sti-istidevice-getcapabilities.md) | The IStiDevice |
-| [IStiDevice::GetLastError method](..\sti\nf-sti-istidevice-getlasterror.md) | The IStiDevice |
-| [IStiDevice::GetLastErrorInfo method](..\sti\nf-sti-istidevice-getlasterrorinfo.md) | The IStiDevice |
-| [IStiDevice::GetLastNotificationData method](..\sti\nf-sti-istidevice-getlastnotificationdata.md) | The IStiDevice |
-| [IStiDevice::GetStatus method](..\sti\nf-sti-istidevice-getstatus.md) | The IStiDevice |
-| [IStiDevice::Initialize method](..\sti\nf-sti-istidevice-initialize.md) | The IStiDevice |
-| [IStiDevice::LockDevice method](..\sti\nf-sti-istidevice-lockdevice.md) | The IStiDevice |
-| [IStiDevice::RawReadCommand method](..\sti\nf-sti-istidevice-rawreadcommand.md) | The IStiDevice |
-| [IStiDevice::RawReadData method](..\sti\nf-sti-istidevice-rawreaddata.md) | The IStiDevice |
-| [IStiDevice::RawWriteCommand method](..\sti\nf-sti-istidevice-rawwritecommand.md) | The IStiDevice |
-| [IStiDevice::RawWriteData method](..\sti\nf-sti-istidevice-rawwritedata.md) | The IStiDevice |
-| [IStiDevice::Release method](..\sti\nf-sti-istidevice-release.md) | The IStiDevice |
-| [IStiDevice::Subscribe method](..\sti\nf-sti-istidevice-subscribe.md) | The IStiDevice |
-| [IStiDevice::UnLockDevice method](..\sti\nf-sti-istidevice-unlockdevice.md) | The IStiDevice |
-| [IStiDevice::UnSubscribe method](..\sti\nf-sti-istidevice-unsubscribe.md) | The IStiDevice |
-| [IStiDeviceControl::AddRef method](..\stiusd\nf-stiusd-istidevicecontrol-addref.md) | The IStiDeviceControl |
-| [IStiDeviceControl::GetMyDeviceHandle method](..\stiusd\nf-stiusd-istidevicecontrol-getmydevicehandle.md) | This topic describes the GetMyDeviceHandle method. |
-| [IStiDeviceControl::GetMyDeviceOpenMode method](..\stiusd\nf-stiusd-istidevicecontrol-getmydeviceopenmode.md) | The IStiDeviceControl |
-| [IStiDeviceControl::GetMyDevicePortName method](..\stiusd\nf-stiusd-istidevicecontrol-getmydeviceportname.md) | The IStiDeviceControl |
-| [IStiDeviceControl::RawDeviceControl method](..\stiusd\nf-stiusd-istidevicecontrol-rawdevicecontrol.md) | This topic describes the RawDeviceControl method. |
-| [IStiDeviceControl::Release method](..\stiusd\nf-stiusd-istidevicecontrol-release.md) | The IStiDeviceControl |
-| [IStiDeviceControl::WriteToErrorLog method](..\stiusd\nf-stiusd-istidevicecontrol-writetoerrorlog.md) | The IStiDeviceControl |
-| [IStiUSD::DeviceReset method](..\stiusd\nf-stiusd-istiusd-devicereset.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::Diagnostic method](..\stiusd\nf-stiusd-istiusd-diagnostic.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::Escape method](..\stiusd\nf-stiusd-istiusd-escape.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetCapabilities method](..\stiusd\nf-stiusd-istiusd-getcapabilities.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetLastError method](..\stiusd\nf-stiusd-istiusd-getlasterror.md) | The IStiUSD |
-| [IStiUSD::GetLastErrorInfo method](..\stiusd\nf-stiusd-istiusd-getlasterrorinfo.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetNotificationData method](..\stiusd\nf-stiusd-istiusd-getnotificationdata.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::GetStatus method](..\stiusd\nf-stiusd-istiusd-getstatus.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::Initialize method](..\stiusd\nf-stiusd-istiusd-initialize.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::LockDevice method](..\stiusd\nf-stiusd-istiusd-lockdevice.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::RawReadCommand method](..\stiusd\nf-stiusd-istiusd-rawreadcommand.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::RawReadData method](..\stiusd\nf-stiusd-istiusd-rawreaddata.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::RawWriteCommand method](..\stiusd\nf-stiusd-istiusd-rawwritecommand.md) | A still image minidriver's IStiDevice |
-| [IStiUSD::RawWriteData method](..\stiusd\nf-stiusd-istiusd-rawwritedata.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::SetNotificationHandle method](..\stiusd\nf-stiusd-istiusd-setnotificationhandle.md) | A still image minidriver's IStiUSD |
-| [IStiUSD::UnLockDevice method](..\stiusd\nf-stiusd-istiusd-unlockdevice.md) | A still image minidriver's IStiUSD |
-| [IWiaDrvItem::AddItemToFolder method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-additemtofolder.md) | The AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree. |
-| [IWiaDrvItem::DumpItemData method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-dumpitemdata.md) | The IWiaDrvItem |
-| [IWiaDrvItem::FindChildItemByName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-findchilditembyname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::FindItemByName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-finditembyname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetDeviceSpecContext method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getdevicespeccontext.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetFirstChildItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getfirstchilditem.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetFullItemName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getfullitemname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetItemFlags method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getitemflags.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetItemName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getitemname.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetNextSiblingItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getnextsiblingitem.md) | The IWiaDrvItem |
-| [IWiaDrvItem::GetParentItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getparentitem.md) | The IWiaDrvItem |
-| [IWiaDrvItem::RemoveItemFromFolder method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-removeitemfromfolder.md) | The IWiaDrvItem |
-| [IWiaDrvItem::UnlinkItemTree method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-unlinkitemtree.md) | The IWiaDrvItem |
-| [IWiaErrorHandler::GetStatusDescription method](..\wia_lh\nf-wia_lh-iwiaerrorhandler-getstatusdescription.md) | The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension. |
-| [IWiaErrorHandler::ReportStatus method](..\wia_lh\nf-wia_lh-iwiaerrorhandler-reportstatus.md) | The ReportStatus method displays information about an error or status during a transfer. In some cases this method allows the user to recover from an error. |
-| [IWiaImageFilter::FilterPreviewImage method](..\wia_lh\nf-wia_lh-iwiaimagefilter-filterpreviewimage.md) | The IWiaImageFilter |
-| [IWiaImageFilter::InitializeFilter method](..\wia_lh\nf-wia_lh-iwiaimagefilter-initializefilter.md) | The IWiaImageFilter |
-| [IWiaLog::InitializeLog method](..\wia_lh\nf-wia_lh-iwialog-initializelog.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.The IWiaLog |
-| [IWiaLog::Log method](..\wia_lh\nf-wia_lh-iwialog-log.md) | The IWiaLog interface is obsolete for Windows XP and later, and is no longer supported. Use the Diagnostic Log Macros instead.The IWiaLog |
-| [IWiaLog::hResult method](..\wia_lh\nf-wia_lh-iwialog-hresult.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. |
-| [IWiaMiniDrv::drvAcquireItemData method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvAnalyzeItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvanalyzeitem.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvDeleteItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvdeleteitem.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvDeviceCommand method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvdevicecommand.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvFreeDrvItemContext method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvfreedrvitemcontext.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvGetCapabilities method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvGetDeviceErrorStr method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvgetdeviceerrorstr.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvGetWiaFormatInfo method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvInitItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvinititemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvInitializeWia method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvinitializewia.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvLockWiaDevice method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvlockwiadevice.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvNotifyPnpEvent method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvnotifypnpevent.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvReadItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvUnInitializeWia method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvuninitializewia.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvUnLockWiaDevice method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvunlockwiadevice.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvValidateItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrv::drvWriteItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvwriteitemproperties.md) | The IWiaMiniDrv |
-| [IWiaMiniDrvCallBack::MiniDrvCallback method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback.md) | The MiniDrvCallback method provides a callback method for WIA minidrivers to use during a callback data transfer. |
-| [IWiaMiniDrvTransferCallback::GetNextStream method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrvtransfercallback-getnextstream.md) | Called by the WIA mini-driver to obtain a stream for the current data transfer (download or upload). |
-| [IWiaMiniDrvTransferCallback::SendMessage method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrvtransfercallback-sendmessage.md) | Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer. |
-| [IWiaSegmentationFilter::DetectRegions method](..\wia_lh\nf-wia_lh-iwiasegmentationfilter-detectregions.md) | The IWiaSegmentationFilter |
-| [IWiaTransferCallback::GetNextStream method](..\wia_lh\nf-wia_lh-iwiatransfercallback-getnextstream.md) | The IWiaTransferCallback |
-| [IWiaTransferCallback::TransferCallback method](..\wia_lh\nf-wia_lh-iwiatransfercallback-transfercallback.md) | The IWiaTransferCallback |
+| [AddItemToFolder method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-additemtofolder.md) | The AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree. |
+| [DetectRegions method](..\wia_lh\nf-wia_lh-iwiasegmentationfilter-detectregions.md) | The IWiaSegmentationFilter |
+| [DumpItemData method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-dumpitemdata.md) | The IWiaDrvItem |
+| [FilterPreviewImage method](..\wia_lh\nf-wia_lh-iwiaimagefilter-filterpreviewimage.md) | The IWiaImageFilter |
+| [FindChildItemByName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-findchilditembyname.md) | The IWiaDrvItem |
+| [FindItemByName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-finditembyname.md) | The IWiaDrvItem |
+| [GetDeviceSpecContext method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getdevicespeccontext.md) | The IWiaDrvItem |
+| [GetFirstChildItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getfirstchilditem.md) | The IWiaDrvItem |
+| [GetFullItemName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getfullitemname.md) | The IWiaDrvItem |
+| [GetItemFlags method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getitemflags.md) | The IWiaDrvItem |
+| [GetItemName method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getitemname.md) | The IWiaDrvItem |
+| [GetNextSiblingItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getnextsiblingitem.md) | The IWiaDrvItem |
+| [GetNextStream method](..\wia_lh\nf-wia_lh-iwiatransfercallback-getnextstream.md) | The IWiaTransferCallback |
+| [GetNextStream method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrvtransfercallback-getnextstream.md) | Called by the WIA mini-driver to obtain a stream for the current data transfer (download or upload). |
+| [GetParentItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-getparentitem.md) | The IWiaDrvItem |
+| [GetStatusDescription method](..\wia_lh\nf-wia_lh-iwiaerrorhandler-getstatusdescription.md) | The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension. |
+| [InitializeFilter method](..\wia_lh\nf-wia_lh-iwiaimagefilter-initializefilter.md) | The IWiaImageFilter |
+| [InitializeLog method](..\wia_lh\nf-wia_lh-iwialog-initializelog.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.The IWiaLog |
+| [Log method](..\wia_lh\nf-wia_lh-iwialog-log.md) | The IWiaLog interface is obsolete for Windows XP and later, and is no longer supported. Use the Diagnostic Log Macros instead.The IWiaLog |
+| [MiniDrvCallback method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback.md) | The MiniDrvCallback method provides a callback method for WIA minidrivers to use during a callback data transfer. |
+| [RemoveItemFromFolder method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-removeitemfromfolder.md) | The IWiaDrvItem |
+| [ReportStatus method](..\wia_lh\nf-wia_lh-iwiaerrorhandler-reportstatus.md) | The ReportStatus method displays information about an error or status during a transfer. In some cases this method allows the user to recover from an error. |
+| [SendMessage method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrvtransfercallback-sendmessage.md) | Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer. |
+| [TransferCallback method](..\wia_lh\nf-wia_lh-iwiatransfercallback-transfercallback.md) | The IWiaTransferCallback |
+| [UnlinkItemTree method](..\wiamindr_lh\nf-wiamindr_lh-iwiadrvitem-unlinkitemtree.md) | The IWiaDrvItem |
+| [drvAcquireItemData method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata.md) | The IWiaMiniDrv |
+| [drvAnalyzeItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvanalyzeitem.md) | The IWiaMiniDrv |
+| [drvDeleteItem method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvdeleteitem.md) | The IWiaMiniDrv |
+| [drvDeviceCommand method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvdevicecommand.md) | The IWiaMiniDrv |
+| [drvFreeDrvItemContext method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvfreedrvitemcontext.md) | The IWiaMiniDrv |
+| [drvGetCapabilities method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities.md) | The IWiaMiniDrv |
+| [drvGetDeviceErrorStr method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvgetdeviceerrorstr.md) | The IWiaMiniDrv |
+| [drvGetWiaFormatInfo method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo.md) | The IWiaMiniDrv |
+| [drvInitItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvinititemproperties.md) | The IWiaMiniDrv |
+| [drvInitializeWia method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvinitializewia.md) | The IWiaMiniDrv |
+| [drvLockWiaDevice method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvlockwiadevice.md) | The IWiaMiniDrv |
+| [drvNotifyPnpEvent method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvnotifypnpevent.md) | The IWiaMiniDrv |
+| [drvReadItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties.md) | The IWiaMiniDrv |
+| [drvUnInitializeWia method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvuninitializewia.md) | The IWiaMiniDrv |
+| [drvUnLockWiaDevice method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvunlockwiadevice.md) | The IWiaMiniDrv |
+| [drvValidateItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties.md) | The IWiaMiniDrv |
+| [drvWriteItemProperties method](..\wiamindr_lh\nf-wiamindr_lh-iwiaminidrv-drvwriteitemproperties.md) | The IWiaMiniDrv |
+| [hResult method](..\wia_lh\nf-wia_lh-iwialog-hresult.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. |

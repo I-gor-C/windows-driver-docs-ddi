@@ -1,0 +1,8 @@
+# [Imaging devices](../_image/index.md)
+## [Wiadef.h](index.md)
+### [None](../wiadef/ns-wiadef-_wia_barcodes.md)
+### [None](../wiadef/ns-wiadef-_wia_barcode_info.md)
+### [None](../wiadef/ns-wiadef-_wia_micr.md)
+### [None](../wiadef/ns-wiadef-_wia_micr_info.md)
+### [None](../wiadef/ns-wiadef-_wia_patch_codes.md)
+### [None](../wiadef/ns-wiadef-_wia_patch_code_info.md)

@@ -1,0 +1,7 @@
+# [Windows Driver Framework](../_wdf/index.md)
+## [Wdfsync.h](index.md)
+### [None](../wdfsync/nc-wdfsync-pfn_wdfobjectacquirelock.md)
+### [None](../wdfsync/nc-wdfsync-pfn_wdfobjectreleaselock.md)
+### [None](../wdfsync/nf-wdfsync-wdfspinlockcreate.md)
+### [None](../wdfsync/nf-wdfsync-wdfwaitlockacquire.md)
+### [None](../wdfsync/nf-wdfsync-wdfwaitlockcreate.md)

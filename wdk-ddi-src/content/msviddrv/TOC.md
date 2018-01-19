@@ -1,0 +1,6 @@
+# [Streaming media devices](../_stream/index.md)
+## [Msviddrv.h](index.md)
+### [None](../msviddrv/ns-msviddrv-tag_video_configure_parms.md)
+### [None](../msviddrv/ns-msviddrv-tag_video_geterrortext_parms.md)
+### [None](../msviddrv/ns-msviddrv-tag_video_open_parms.md)
+### [None](../msviddrv/ns-msviddrv-tag_video_stream_init_parms.md)

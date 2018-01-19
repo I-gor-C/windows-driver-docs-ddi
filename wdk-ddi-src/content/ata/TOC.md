@@ -1,0 +1,6 @@
+# [Storage](../_storage/index.md)
+## [Ata.h](index.md)
+### [None](../ata/ns-ata-_ata_zone_descriptor.md)
+### [None](../ata/ns-ata-_identify_device_data.md)
+### [None](../ata/ns-ata-_identify_device_data_log_page_zoned_device_info.md)
+### [None](../ata/ns-ata-_report_zones_ext_data.md)

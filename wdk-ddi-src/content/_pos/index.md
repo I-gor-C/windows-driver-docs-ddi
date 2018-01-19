@@ -2,7 +2,7 @@
 UID: TP:pos
 ms.assetid: 01ba4b30-aac9-383a-b7a2-32c112dfd250
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,10 +48,10 @@ For the programming guide, see [Point of Service (POS)](https://docs.microsoft.c
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback](..\poscx\nc-poscx-evt_pos_cx_device_ownership_change.md) | The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine. |
-| [EVT_POS_CX_DEVICE_REMOTE_CLAIM callback](..\poscx\nc-poscx-evt_pos_cx_device_remote_claim.md) | The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work. |
-| [EVT_POS_CX_DEVICE_REMOTE_RELEASE callback](..\poscx\nc-poscx-evt_pos_cx_device_remote_release.md) | The EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left with no owner and allows the driver to do additional work. |
-| [EVT_POS_CX_DEVICE_REMOTE_RETAIN callback](..\poscx\nc-poscx-evt_pos_cx_device_remote_retain.md) | The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE function](..\poscx\nc-poscx-evt_pos_cx_device_ownership_change.md) | The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine. |
+| [EVT_POS_CX_DEVICE_REMOTE_CLAIM function](..\poscx\nc-poscx-evt_pos_cx_device_remote_claim.md) | The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_REMOTE_RELEASE function](..\poscx\nc-poscx-evt_pos_cx_device_remote_release.md) | The EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left with no owner and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_REMOTE_RETAIN function](..\poscx\nc-poscx-evt_pos_cx_device_remote_retain.md) | The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work. |
 
 ## Structures
 
@@ -90,37 +90,37 @@ For the programming guide, see [Point of Service (POS)](https://docs.microsoft.c
 
 | Title   | Description   |
 | ---- |:---- |
-| [DriverMagneticStripeReaderAuthenticationLevel enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-drivermagneticstripereaderauthenticationlevel.md) | This enumeration defines the levels of magnetic stripe reader (MSR) authentication support. |
-| [DriverUnifiedPosErrorReason enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorreason.md) | This enumeration indicates the reason for the error. |
-| [DriverUnifiedPosErrorSeverity enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorseverity.md) | This enumeration indicates the severity of the error. |
-| [DriverUnifiedPosHealthCheckLevel enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposhealthchecklevel.md) | This enumeration indicates the type of health check to be performed when CheckHealthAsync is called on a POS device. |
-| [DriverUnifiedPosPowerReportingType enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md) | This enumeration defines the type of power reporting that is supported by the device (for example, advanced, standard, and so on). |
-| [DriverUnifiedPosPowerState enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerstate.md) | This enumeration is not implemented. |
-| [LineDisplayBitmapWidth enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplaybitmapwidth.md) | This enumeration is not implemented. |
-| [LineDisplayCursorCapabilities enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplaycursorcapabilities.md) | This enumeration is not implemented. |
-| [LineDisplayCursorTypeFlags enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplaycursortypeflags.md) | This enumeration is not implemented. |
-| [LineDisplayHorizontalBitmapAlignment enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplayhorizontalbitmapalignment.md) | This enumeration is not implemented. |
-| [LineDisplayVerticalBitmapAlignment enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplayverticalbitmapalignment.md) | This enumeration is not implemented. |
-| [_BarcodeStatus enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodestatus.md) | This enumeration indicates barcode scanner status values. |
-| [_BarcodeSymbology enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md) | This enumeration defines the barcode symbologies. |
-| [_BarcodeSymbologyDecodeLengthType enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbologydecodelengthtype.md) | The BarcodeSymbologyDecodeLengthType enum describes values for the decode length which can be set to support a range, two discrete values, or be set to any length. |
-| [_LineDisplayMarqueeFormatType enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_linedisplaymarqueeformattype.md) | This enumeration is not implemented. |
-| [_LineDisplayMarqueeTypeType enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_linedisplaymarqueetypetype.md) | This enumeration is not implemented. |
-| [_LineDisplayStatusType enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_linedisplaystatustype.md) | This enumeration is not implemented. |
-| [_MsrCardType enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrcardtype.md) | This enumeration defines the kinds of magnetic stripe cards. |
-| [_MsrDataEncryption enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md) | This enumeration defines the kind of encryption algorithm supported by the magnetic stripe reader (MSR). |
-| [_MsrErrorReportingType enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrerrorreportingtype.md) | This enumeration defines the constants that indicate the error reporting type for the magnetic stripe reader (MSR). |
-| [_MsrStatisticsEntryType enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrstatisticsentrytype.md) | This enumeration defines the kinds of magnetic stripe reader statistics. |
-| [_MsrStatusUpdateType enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrstatusupdatetype.md) | This enumeration defines the constants that indicate the magnetic stripe reader (MSR) status. |
-| [_MsrTrackErrorType enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrtrackerrortype.md) | This enumeration defines the kinds of magnetic stripe reader track errors. |
-| [_MsrTrackIds enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrtrackids.md) | Defines the constants that represent the magnetic stripe reader (MSR) tracks. |
-| [_POS_CX_EVENT_ATTRIBUTES enumeration](..\poscx\ne-poscx-_pos_cx_event_attributes.md) | The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in POS_CX_EVENT_DEST and POS_CX_EVENT_PRIORITY. |
-| [_POS_CX_EVENT_DEST enumeration](..\poscx\ne-poscx-_pos_cx_event_dest.md) | The POS_CX_EVENT_DEST defines which applications receive this event. |
-| [_POS_CX_EVENT_PRIORITY enumeration](..\poscx\ne-poscx-_pos_cx_event_priority.md) | The POS_CX_EVENT_PRIORITY defines the importance of the event and the order it will be delivered to the client application. |
-| [_PosDeviceControlType enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_posdevicecontroltype.md) | This enumeration defines values for the IOCTLs of the scanner driver and magnetic stripe reader (MSR) driver. |
-| [_PosDeviceType enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_posdevicetype.md) | This enumeration defines values used in the PosDeviceBasicsType structure to indicate the type of device (for instance, barcode scanner or magnetic stripe reader). |
-| [_PosEventType enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_poseventtype.md) | This enumeration defines values used in the PosEventDataHeader structure to indicate the type of event that was raised. |
-| [_PosPropertyId enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_pospropertyid.md) | This enumeration defines the property identifiers for the properties that device drivers need to handle to be considered a barcode scanner or a magnetic strip reader (MSR). |
+| [DriverMagneticStripeReaderAuthenticationLevel Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-drivermagneticstripereaderauthenticationlevel.md) | This enumeration defines the levels of magnetic stripe reader (MSR) authentication support. |
+| [DriverUnifiedPosErrorReason Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorreason.md) | This enumeration indicates the reason for the error. |
+| [DriverUnifiedPosErrorSeverity Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorseverity.md) | This enumeration indicates the severity of the error. |
+| [DriverUnifiedPosHealthCheckLevel Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposhealthchecklevel.md) | This enumeration indicates the type of health check to be performed when CheckHealthAsync is called on a POS device. |
+| [DriverUnifiedPosPowerReportingType Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md) | This enumeration defines the type of power reporting that is supported by the device (for example, advanced, standard, and so on). |
+| [DriverUnifiedPosPowerState Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerstate.md) | This enumeration is not implemented. |
+| [LineDisplayBitmapWidth Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplaybitmapwidth.md) | This enumeration is not implemented. |
+| [LineDisplayCursorCapabilities Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplaycursorcapabilities.md) | This enumeration is not implemented. |
+| [LineDisplayCursorTypeFlags Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplaycursortypeflags.md) | This enumeration is not implemented. |
+| [LineDisplayHorizontalBitmapAlignment Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplayhorizontalbitmapalignment.md) | This enumeration is not implemented. |
+| [LineDisplayVerticalBitmapAlignment Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-linedisplayverticalbitmapalignment.md) | This enumeration is not implemented. |
+| [_BarcodeStatus Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodestatus.md) | This enumeration indicates barcode scanner status values. |
+| [_BarcodeSymbology Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md) | This enumeration defines the barcode symbologies. |
+| [_BarcodeSymbologyDecodeLengthType Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbologydecodelengthtype.md) | The BarcodeSymbologyDecodeLengthType enum describes values for the decode length which can be set to support a range, two discrete values, or be set to any length. |
+| [_LineDisplayMarqueeFormatType Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_linedisplaymarqueeformattype.md) | This enumeration is not implemented. |
+| [_LineDisplayMarqueeTypeType Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_linedisplaymarqueetypetype.md) | This enumeration is not implemented. |
+| [_LineDisplayStatusType Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_linedisplaystatustype.md) | This enumeration is not implemented. |
+| [_MsrCardType Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrcardtype.md) | This enumeration defines the kinds of magnetic stripe cards. |
+| [_MsrDataEncryption Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md) | This enumeration defines the kind of encryption algorithm supported by the magnetic stripe reader (MSR). |
+| [_MsrErrorReportingType Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrerrorreportingtype.md) | This enumeration defines the constants that indicate the error reporting type for the magnetic stripe reader (MSR). |
+| [_MsrStatisticsEntryType Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrstatisticsentrytype.md) | This enumeration defines the kinds of magnetic stripe reader statistics. |
+| [_MsrStatusUpdateType Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrstatusupdatetype.md) | This enumeration defines the constants that indicate the magnetic stripe reader (MSR) status. |
+| [_MsrTrackErrorType Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrtrackerrortype.md) | This enumeration defines the kinds of magnetic stripe reader track errors. |
+| [_MsrTrackIds Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrtrackids.md) | Defines the constants that represent the magnetic stripe reader (MSR) tracks. |
+| [_POS_CX_EVENT_ATTRIBUTES Enumeration](..\poscx\ne-poscx-_pos_cx_event_attributes.md) | The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in POS_CX_EVENT_DEST and POS_CX_EVENT_PRIORITY. |
+| [_POS_CX_EVENT_DEST Enumeration](..\poscx\ne-poscx-_pos_cx_event_dest.md) | The POS_CX_EVENT_DEST defines which applications receive this event. |
+| [_POS_CX_EVENT_PRIORITY Enumeration](..\poscx\ne-poscx-_pos_cx_event_priority.md) | The POS_CX_EVENT_PRIORITY defines the importance of the event and the order it will be delivered to the client application. |
+| [_PosDeviceControlType Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_posdevicecontroltype.md) | This enumeration defines values for the IOCTLs of the scanner driver and magnetic stripe reader (MSR) driver. |
+| [_PosDeviceType Enumeration](..\pointofservicecommontypes\ne-pointofservicecommontypes-_posdevicetype.md) | This enumeration defines values used in the PosDeviceBasicsType structure to indicate the type of device (for instance, barcode scanner or magnetic stripe reader). |
+| [_PosEventType Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_poseventtype.md) | This enumeration defines values used in the PosEventDataHeader structure to indicate the type of event that was raised. |
+| [_PosPropertyId Enumeration](..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_pospropertyid.md) | This enumeration defines the property identifiers for the properties that device drivers need to handle to be considered a barcode scanner or a magnetic strip reader (MSR). |
 
 ## I/O control codes
 

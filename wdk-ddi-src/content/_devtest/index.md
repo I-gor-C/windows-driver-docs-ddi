@@ -2,7 +2,7 @@
 UID: TP:devtest
 ms.assetid: df82015f-ea9d-3150-8041-fb2c5ed17afc
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,8 +60,8 @@ For the programming guide, see [Driver test tools](https://docs.microsoft.com/en
 
 | Title   | Description   |
 | ---- |:---- |
-| [ETWENABLECALLBACK callback](..\wdm\nc-wdm-etwenablecallback.md) | The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications. |
-| [PCW_CALLBACK callback](..\wdm\nc-wdm-pcw_callback.md) | Providers can implement a PCW_CALLBACK function to receive notification when consumers perform certain actions, such as adding or removing counters from a query. |
+| [ETWENABLECALLBACK function](..\wdm\nc-wdm-etwenablecallback.md) | The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications. |
+| [PCW_CALLBACK callback function](..\wdm\nc-wdm-pcw_callback.md) | Providers can implement a PCW_CALLBACK function to receive notification when consumers perform certain actions, such as adding or removing counters from a query. |
 
 ## Structures
 
@@ -81,20 +81,20 @@ For the programming guide, see [Driver test tools](https://docs.microsoft.com/en
 
 | Title   | Description   |
 | ---- |:---- |
-| [_PCW_CALLBACK_TYPE enumeration](..\wdm\ne-wdm-_pcw_callback_type.md) | The PCW_CALLBACK_TYPE enumeration defines the notification type to send to the registered provider of the counter set. A provider passes a pointer to this enumeration as a parameter to the PcwCallback function. |
+| [_PCW_CALLBACK_TYPE Enumeration](..\wdm\ne-wdm-_pcw_callback_type.md) | The PCW_CALLBACK_TYPE enumeration defines the notification type to send to the registered provider of the counter set. A provider passes a pointer to this enumeration as a parameter to the PcwCallback function. |
 
 ## Macros
 
 | Title   | Description   |
 | ---- |:---- |
-| [ASSERTMSG macro](..\wdm\nf-wdm-assertmsg.md) | ASSERTMSG tests an expression. If the expression is false, it breaks into the kernel debugger and sends it the specified message. |
-| [KdBreakPointWithStatus macro](..\wdm\nf-wdm-kdbreakpointwithstatus.md) | The KdBreakPointWithStatus macro breaks into the kernel debugger and sends the value of Status to the debugger. |
-| [KdPrint macro](..\wdm\nf-wdm-kdprint.md) | The KdPrint macro sends a message to the kernel debugger. |
-| [KdPrintEx macro](..\wdm\nf-wdm-kdprintex.md) | The KdPrintEx macro sends a string to the kernel debugger if the conditions you specify are met.A call to KdPrintEx requires double parentheses. |
-| [WppRecorderConfigure macro](..\wpprecorder\nf-wpprecorder-wpprecorderconfigure.md) | The WppRecorderConfigure method enables or disables the default log to which WPP prints. |
-| [WppRecorderDumpLiveDriverData macro](..\wpprecorder\nf-wpprecorder-wpprecorderdumplivedriverdata.md) | The WppRecorderDumpLiveDriverData method gets the buffer associated with the specified Inflight Trace Recorder log. |
-| [WppRecorderGetTriageInfo macro](..\wpprecorder\nf-wpprecorder-wpprecordergettriageinfo.md) | The WppRecorderGetTriageInfo. |
-| [WppRecorderLinkCounters macro](..\wpprecorder\nf-wpprecorder-wpprecorderlinkcounters.md) | The WppRecorderLinkCounters. |
-| [WppRecorderLogCreate macro](..\wpprecorder\nf-wpprecorder-wpprecorderlogcreate.md) | The WppRecorderLogCreate method creates a buffer to contain the recorder log. |
-| [WppRecorderLogDelete macro](..\wpprecorder\nf-wpprecorder-wpprecorderlogdelete.md) | The WppRecorderLogDelete method deletes the specified recorder log. |
-| [WppRecorderLogSetIdentifier macro](..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.md) | The WppRecorderLogSetIdentifier method sets a string identifier for the recorder log. |
+| [ASSERTMSG function](..\wdm\nf-wdm-assertmsg.md) | ASSERTMSG tests an expression. If the expression is false, it breaks into the kernel debugger and sends it the specified message. |
+| [KdBreakPointWithStatus function](..\wdm\nf-wdm-kdbreakpointwithstatus.md) | The KdBreakPointWithStatus macro breaks into the kernel debugger and sends the value of Status to the debugger. |
+| [KdPrint function](..\wdm\nf-wdm-kdprint.md) | The KdPrint macro sends a message to the kernel debugger. |
+| [KdPrintEx function](..\wdm\nf-wdm-kdprintex.md) | The KdPrintEx macro sends a string to the kernel debugger if the conditions you specify are met.A call to KdPrintEx requires double parentheses. |
+| [WppRecorderConfigure function](..\wpprecorder\nf-wpprecorder-wpprecorderconfigure.md) | The WppRecorderConfigure method enables or disables the default log to which WPP prints. |
+| [WppRecorderDumpLiveDriverData function](..\wpprecorder\nf-wpprecorder-wpprecorderdumplivedriverdata.md) | The WppRecorderDumpLiveDriverData method gets the buffer associated with the specified Inflight Trace Recorder log. |
+| [WppRecorderGetTriageInfo function](..\wpprecorder\nf-wpprecorder-wpprecordergettriageinfo.md) | The WppRecorderGetTriageInfo. |
+| [WppRecorderLinkCounters function](..\wpprecorder\nf-wpprecorder-wpprecorderlinkcounters.md) | The WppRecorderLinkCounters. |
+| [WppRecorderLogCreate function](..\wpprecorder\nf-wpprecorder-wpprecorderlogcreate.md) | The WppRecorderLogCreate method creates a buffer to contain the recorder log. |
+| [WppRecorderLogDelete function](..\wpprecorder\nf-wpprecorder-wpprecorderlogdelete.md) | The WppRecorderLogDelete method deletes the specified recorder log. |
+| [WppRecorderLogSetIdentifier function](..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.md) | The WppRecorderLogSetIdentifier method sets a string identifier for the recorder log. |

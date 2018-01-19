@@ -2,7 +2,7 @@
 UID: TP:bltooth
 ms.assetid: a24d2124-fb4a-3c14-aeb8-83c46e9ed71c
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,23 +58,23 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 
 | Title   | Description   |
 | ---- |:---- |
-| [PBYTESWAPUINT128 callback](..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md) | The Bluetooth SdpByteSwapUint128 function is used to reverse the byte order of an unsigned 128-bit integer. |
-| [PBYTESWAPUINT64 callback](..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md) | The Bluetooth SdpByteSwapUint64 function is used to reverse the byte order of an unsigned 64-bit integer. |
-| [PBYTESWAPUUID128 callback](..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md) | The Bluetooth SdpByteSwapUuid128 function is used to reverse the byte order of a 128-bit universally unique identifier (UUID). |
-| [PCONVERTSTREAMTOTREE callback](..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md) | The Bluetooth SdpConvertStreamToTree function is used to create a Microsoft proprietary tree-based representation of an SDP record, while leaving the original stream-based representation unmodified. |
-| [PCONVERTTREETOSTREAM callback](..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md) | The Bluetooth SdpConvertTreeToStream function is used to produce a raw bytestream representation of an SDP record from a tree representation. The raw bytestream version is suitable for publication on a local SDP server. |
-| [PFNBTHPORT_INDICATION_CALLBACK callback](..\bthddi\nc-bthddi-pfnbthport_indication_callback.md) | Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and any changes to the status of a currently open L2CAP connection. |
-| [PFNBTHPORT_INDICATION_CALLBACK_ENHANCED callback](..\bthddi\nc-bthddi-pfnbthport_indication_callback_enhanced.md) | Profile drivers implement an enhanced L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about any changes to the status of a currently open L2CAP or eL2CAP connection. |
-| [PFNBTH_ALLOCATE_BRB callback](..\bthddi\nc-bthddi-pfnbth_allocate_brb.md) | The BthAllocateBrb function allocates a Bluetooth request block (BRB) of the specified type. |
-| [PFNBTH_FREE_BRB callback](..\bthddi\nc-bthddi-pfnbth_free_brb.md) | The BthFreeBrb function frees a Bluetooth request block (BRB) that was allocated previously with BthAllocateBrb. |
-| [PFNBTH_INITIALIZE_BRB callback](..\bthddi\nc-bthddi-pfnbth_initialize_brb.md) | The BthInitializeBrb function initializes a Bluetooth request block (BRB) allocated on the local stack. |
-| [PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback](..\bthddi\nc-bthddi-pfnbth_is_bluetooth_version_available.md) | The IsBluetoothVersionAvailable function checks whether a given Bluetooth version is supported by the operating system. |
-| [PFNBTH_REUSE_BRB callback](..\bthddi\nc-bthddi-pfnbth_reuse_brb.md) | The BthReuseBrb function reinitializes a Bluetooth request block (BRB) to be reused. |
-| [PFNSCO_INDICATION_CALLBACK callback](..\bthddi\nc-bthddi-pfnsco_indication_callback.md) | Profile drivers implement a SCO callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming SCO connection requests from remote devices, and any changes to the status of a currently open SCO connection. |
-| [PGETNEXTELEMENT callback](..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md) | The Bluetooth SdpGetNextElement function is used to iterate through the entries found in an SDP record stream. |
-| [PRETRIEVEUINT64 callback](..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md) | The Bluetooth SdpRetrieveUint128 function is used to copy an unaligned 128-bit integer from an SDP stream. |
-| [PRETRIEVEUUID128 callback](..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md) | The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream. |
-| [PVALIDATESTREAM callback](..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md) | The Bluetooth SdpValidateStream function is used to parse a raw SDP record and determine if it contains errors. |
+| [PBYTESWAPUINT128 callback function](..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md) | The Bluetooth SdpByteSwapUint128 function is used to reverse the byte order of an unsigned 128-bit integer. |
+| [PBYTESWAPUINT64 callback function](..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md) | The Bluetooth SdpByteSwapUint64 function is used to reverse the byte order of an unsigned 64-bit integer. |
+| [PBYTESWAPUUID128 callback function](..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md) | The Bluetooth SdpByteSwapUuid128 function is used to reverse the byte order of a 128-bit universally unique identifier (UUID). |
+| [PCONVERTSTREAMTOTREE callback function](..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md) | The Bluetooth SdpConvertStreamToTree function is used to create a Microsoft proprietary tree-based representation of an SDP record, while leaving the original stream-based representation unmodified. |
+| [PCONVERTTREETOSTREAM callback function](..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md) | The Bluetooth SdpConvertTreeToStream function is used to produce a raw bytestream representation of an SDP record from a tree representation. The raw bytestream version is suitable for publication on a local SDP server. |
+| [PFNBTHPORT_INDICATION_CALLBACK callback function](..\bthddi\nc-bthddi-pfnbthport_indication_callback.md) | Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and any changes to the status of a currently open L2CAP connection. |
+| [PFNBTHPORT_INDICATION_CALLBACK_ENHANCED callback function](..\bthddi\nc-bthddi-pfnbthport_indication_callback_enhanced.md) | Profile drivers implement an enhanced L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about any changes to the status of a currently open L2CAP or eL2CAP connection. |
+| [PFNBTH_ALLOCATE_BRB callback function](..\bthddi\nc-bthddi-pfnbth_allocate_brb.md) | The BthAllocateBrb function allocates a Bluetooth request block (BRB) of the specified type. |
+| [PFNBTH_FREE_BRB callback function](..\bthddi\nc-bthddi-pfnbth_free_brb.md) | The BthFreeBrb function frees a Bluetooth request block (BRB) that was allocated previously with BthAllocateBrb. |
+| [PFNBTH_INITIALIZE_BRB callback function](..\bthddi\nc-bthddi-pfnbth_initialize_brb.md) | The BthInitializeBrb function initializes a Bluetooth request block (BRB) allocated on the local stack. |
+| [PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback function](..\bthddi\nc-bthddi-pfnbth_is_bluetooth_version_available.md) | The IsBluetoothVersionAvailable function checks whether a given Bluetooth version is supported by the operating system. |
+| [PFNBTH_REUSE_BRB callback function](..\bthddi\nc-bthddi-pfnbth_reuse_brb.md) | The BthReuseBrb function reinitializes a Bluetooth request block (BRB) to be reused. |
+| [PFNSCO_INDICATION_CALLBACK callback function](..\bthddi\nc-bthddi-pfnsco_indication_callback.md) | Profile drivers implement a SCO callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming SCO connection requests from remote devices, and any changes to the status of a currently open SCO connection. |
+| [PGETNEXTELEMENT callback function](..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md) | The Bluetooth SdpGetNextElement function is used to iterate through the entries found in an SDP record stream. |
+| [PRETRIEVEUINT64 callback function](..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md) | The Bluetooth SdpRetrieveUint128 function is used to copy an unaligned 128-bit integer from an SDP stream. |
+| [PRETRIEVEUUID128 callback function](..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md) | The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream. |
+| [PVALIDATESTREAM callback function](..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md) | The Bluetooth SdpValidateStream function is used to parse a raw SDP record and determine if it contains errors. |
 
 ## Structures
 
@@ -148,21 +148,21 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 
 | Title   | Description   |
 | ---- |:---- |
-| [_ACL_MODE enumeration](..\bthddi\ne-bthddi-_acl_mode.md) | The ACL_MODE enumeration type is used to list the possible states of an ACL connection. |
-| [_BRB_TYPE enumeration](..\bthddi\ne-bthddi-_brb_type.md) | The BRB_TYPE enumeration type is used to determine the Bluetooth request block when a profile driver builds and sends a BRB. |
-| [_BRB_VERSION enumeration](..\bthddi\ne-bthddi-_brb_version.md) | Reserved for internal use. |
-| [_BTHX_HCI_PACKET_TYPE enumeration](..\bthxddi\ne-bthxddi-_bthx_hci_packet_type.md) | The BTHX_HCI_PACKET_TYPE enumeration lists the different types of packets being sent from the Bluetooth stack to the transport driver. |
-| [_BTHX_SCO_SUPPORT enumeration](..\bthxddi\ne-bthxddi-_bthx_sco_support.md) | The BTHX_SCO_SUPPORT enumeration lists the different types of SCO supported by the transport driver. |
-| [_CODING_FORMAT enumeration](..\bthddi\ne-bthddi-_coding_format.md) | This enumeration is for internal use only. |
-| [_ENUMERATOR_ACTION enumeration](..\bthddi\ne-bthddi-_enumerator_action.md) | Reserved for internal use. |
-| [_ENUMERATOR_TYPE enumeration](..\bthddi\ne-bthddi-_enumerator_type.md) | The ENUMERATOR_TYPE enumeration type is used to determine whether the enumerated device is associated with a service or a protocol. The ENUMERATOR_TYPE enumeration is intended for internal use only and should not be used by profile drivers. |
-| [_INDICATION_CODE enumeration](..\bthddi\ne-bthddi-_indication_code.md) | The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred. |
-| [_L2CAP_DISCONNECT_REASON enumeration](..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md) | The L2CAP_DISCONNECT_REASON enumeration type gives the reason an L2CAP channel has been disconnected. |
-| [_PCM_DATA_FORMAT enumeration](..\bthddi\ne-bthddi-_pcm_data_format.md) | This enumeration is for internal use only. |
-| [_SCO_DISCONNECT_REASON enumeration](..\bthddi\ne-bthddi-_sco_disconnect_reason.md) | The SCO_DISCONNECT_REASON enumeration type gives the reason an SCO channel has been disconnected. |
-| [_SCO_INDICATION_CODE enumeration](..\bthddi\ne-bthddi-_sco_indication_code.md) | The SCO_INDICATION_CODE enumeration type describes the type of an incoming SCO connection or bonding state change. The Bluetooth driver stack passes a value from this enumeration in the Indication argument of a profile driver's SCO Callback Function. |
-| [_SCO_LINK_TYPE enumeration](..\bthddi\ne-bthddi-_sco_link_type.md) | The SCO_LINK_TYPE enumeration type describes the type of link used by the SCO connection when a ScoIndicationRemoteConnect indication event is processed. |
-| [_SCO_RETRANSMISSION_EFFORT enumeration](..\bthddi\ne-bthddi-_sco_retransmission_effort.md) | The SCO_RETRANSMISSION_EFFORT enumeration type is used to determine the retransmission policies of a SCO channel. |
+| [_ACL_MODE Enumeration](..\bthddi\ne-bthddi-_acl_mode.md) | The ACL_MODE enumeration type is used to list the possible states of an ACL connection. |
+| [_BRB_TYPE Enumeration](..\bthddi\ne-bthddi-_brb_type.md) | The BRB_TYPE enumeration type is used to determine the Bluetooth request block when a profile driver builds and sends a BRB. |
+| [_BRB_VERSION Enumeration](..\bthddi\ne-bthddi-_brb_version.md) | Reserved for internal use. |
+| [_BTHX_HCI_PACKET_TYPE Enumeration](..\bthxddi\ne-bthxddi-_bthx_hci_packet_type.md) | The BTHX_HCI_PACKET_TYPE enumeration lists the different types of packets being sent from the Bluetooth stack to the transport driver. |
+| [_BTHX_SCO_SUPPORT Enumeration](..\bthxddi\ne-bthxddi-_bthx_sco_support.md) | The BTHX_SCO_SUPPORT enumeration lists the different types of SCO supported by the transport driver. |
+| [_CODING_FORMAT Enumeration](..\bthddi\ne-bthddi-_coding_format.md) | This enumeration is for internal use only. |
+| [_ENUMERATOR_ACTION Enumeration](..\bthddi\ne-bthddi-_enumerator_action.md) | Reserved for internal use. |
+| [_ENUMERATOR_TYPE Enumeration](..\bthddi\ne-bthddi-_enumerator_type.md) | The ENUMERATOR_TYPE enumeration type is used to determine whether the enumerated device is associated with a service or a protocol. The ENUMERATOR_TYPE enumeration is intended for internal use only and should not be used by profile drivers. |
+| [_INDICATION_CODE Enumeration](..\bthddi\ne-bthddi-_indication_code.md) | The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred. |
+| [_L2CAP_DISCONNECT_REASON Enumeration](..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md) | The L2CAP_DISCONNECT_REASON enumeration type gives the reason an L2CAP channel has been disconnected. |
+| [_PCM_DATA_FORMAT Enumeration](..\bthddi\ne-bthddi-_pcm_data_format.md) | This enumeration is for internal use only. |
+| [_SCO_DISCONNECT_REASON Enumeration](..\bthddi\ne-bthddi-_sco_disconnect_reason.md) | The SCO_DISCONNECT_REASON enumeration type gives the reason an SCO channel has been disconnected. |
+| [_SCO_INDICATION_CODE Enumeration](..\bthddi\ne-bthddi-_sco_indication_code.md) | The SCO_INDICATION_CODE enumeration type describes the type of an incoming SCO connection or bonding state change. The Bluetooth driver stack passes a value from this enumeration in the Indication argument of a profile driver's SCO Callback Function. |
+| [_SCO_LINK_TYPE Enumeration](..\bthddi\ne-bthddi-_sco_link_type.md) | The SCO_LINK_TYPE enumeration type describes the type of link used by the SCO connection when a ScoIndicationRemoteConnect indication event is processed. |
+| [_SCO_RETRANSMISSION_EFFORT Enumeration](..\bthddi\ne-bthddi-_sco_retransmission_effort.md) | The SCO_RETRANSMISSION_EFFORT enumeration type is used to determine the retransmission policies of a SCO channel. |
 
 ## I/O control codes
 

@@ -1,0 +1,8 @@
+# [Near field communications (NFC)](../_nfpdrivers/index.md)
+## [Nfcradiodev.h](index.md)
+### [None](../nfcradiodev/ni-nfcradiodev-ioctl_nfcrm_query_radio_state.md)
+### [None](../nfcradiodev/ni-nfcradiodev-ioctl_nfcrm_set_radio_state.md)
+### [None](../nfcradiodev/ni-nfcradiodev-ioctl_nfcserm_query_radio_state.md)
+### [None](../nfcradiodev/ni-nfcradiodev-ioctl_nfcserm_set_radio_state.md)
+### [None](../nfcradiodev/ns-nfcradiodev-_nfcrm_radio_state.md)
+### [None](../nfcradiodev/ns-nfcradiodev-_nfcrm_set_radio_state.md)

@@ -1,0 +1,5 @@
+# [Display](../_display/index.md)
+## [D3Dcaps.h](index.md)
+### [None](../d3dcaps/ns-d3dcaps-_d3dlightingcaps.md)
+### [None](../d3dcaps/ns-d3dcaps-_d3dprimcaps.md)
+### [None](../d3dcaps/ns-d3dcaps-_d3dtransformcaps.md)

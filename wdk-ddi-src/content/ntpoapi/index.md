@@ -1,33 +1,21 @@
 ---
-UID : NA:ntpoapi
-ms.assetid : 05cffe50-bcb4-3779-8086-d9ec44f199f9
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:ntpoapi
+ms.assetid: 05cffe50-bcb4-3779-8086-d9ec44f199f9
+ms.author: windowsdriverdev
+ms.date: 01/19/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
-# ntpoapi.h header
+# Ntpoapi.h header
 
 
 
-ntpoapi.h contains the following programming interfaces:
+This header is used by Windows Driver Framework, Battery. For more information, see
+- [Windows Driver Framework](../_wdf/index.md)
+- [Battery](../_battery/index.md)
 
+Ntpoapi.h contain these programming interfaces:
 
-
-
-
-
-
-## Structures
-| Title | Description |
-| ---- |:---- |
-| [BATTERY_REPORTING_SCALE](ns-ntpoapi-battery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
-
-
-## Enumerations
-| Title | Description |
-| ---- |:---- |
-| [*PPOWER_ACTION](ne-ntpoapi-ppower_action.md) | The POWER_ACTION enumeration identifies the system power actions that can occur on a computer. |

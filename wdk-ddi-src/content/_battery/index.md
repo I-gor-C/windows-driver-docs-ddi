@@ -2,7 +2,7 @@
 UID: TP:battery
 ms.assetid: 7433fa8b-bcff-3cc7-a61e-27c29a2f632b
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ For the programming guide, see [Battery](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
-| [_POWERSOURCEID enumeration](..\charging\ne-charging-_powersourceid.md) | This enum is for internal use only. |
+| [_POWERSOURCEID Enumeration](..\charging\ne-charging-_powersourceid.md) | This enum is for internal use only. |
 
 ## I/O control codes
 

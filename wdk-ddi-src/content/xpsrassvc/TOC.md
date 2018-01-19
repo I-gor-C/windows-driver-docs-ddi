@@ -1,0 +1,8 @@
+# [Print devices](../_print/index.md)
+## [Xpsrassvc.h](index.md)
+### [None](../xpsrassvc/ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md)
+### [None](../xpsrassvc/ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0003_0001.md)
+### [None](../xpsrassvc/ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0004_0001.md)
+### [None](../xpsrassvc/nf-xpsrassvc-ixpsrasterizationfactory2-createrasterizer.md)
+### [None](../xpsrassvc/nn-xpsrassvc-ixpsrasterizationfactory1.md)
+### [None](../xpsrassvc/nn-xpsrassvc-ixpsrasterizationfactory2.md)

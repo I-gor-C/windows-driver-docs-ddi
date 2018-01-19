@@ -1,0 +1,5 @@
+# [Networking drivers for Windows Vista and later](../_netvista/index.md)
+## [Knetpwrdepbroker.h](index.md)
+### [None](../knetpwrdepbroker/nf-knetpwrdepbroker-npdbrokeracquirewithtimeout.md)
+### [None](../knetpwrdepbroker/nf-knetpwrdepbroker-npdbrokerinitialize.md)
+### [None](../knetpwrdepbroker/nf-knetpwrdepbroker-npdbrokeruninitialize.md)

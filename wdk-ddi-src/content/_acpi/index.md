@@ -2,7 +2,7 @@
 UID: TP:acpi
 ms.assetid: 6eb30b27-568a-3203-bd11-0f238870d174
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 01/19/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -33,7 +33,7 @@ For the programming guide, see [ACPI](https://docs.microsoft.com/en-us/windows-h
 
 | Title   | Description   |
 | ---- |:---- |
-| [ACPI_OP_REGION_HANDLER callback](..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md) | An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function driver to provide access by the ACPI driver to the device's operation region. |
+| [ACPI_OP_REGION_HANDLER callback function](..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md) | An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function driver to provide access by the ACPI driver to the device's operation region. |
 
 ## Structures
 
