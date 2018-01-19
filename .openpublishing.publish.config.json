@@ -9,7 +9,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -21,7 +21,7 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/_git/drivers",
+  "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/DefaultCollection/drivers/_git/wdk-ddi/",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
   "contribution_branch_mappings": {},
