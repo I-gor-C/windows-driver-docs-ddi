@@ -1,3 +1,3 @@
 # [Imaging devices](../_image/index.md)
 ## [Stiusd.h](index.md)
-### [None](../stiusd/ns-stiusd-_sti_usd_caps.md)
+### [_STI_USD_CAPS structure](../stiusd/ns-stiusd-_sti_usd_caps.md)

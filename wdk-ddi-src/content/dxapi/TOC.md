@@ -1,4 +1,4 @@
 # [Display](../_display/index.md)
 ## [Dxapi.h](index.md)
-### [None](../dxapi/nf-dxapi-dxapi.md)
-### [None](../dxapi/nf-dxapi-dxapigetversion.md)
+### [DxApi function](../dxapi/nf-dxapi-dxapi.md)
+### [DxApiGetVersion function](../dxapi/nf-dxapi-dxapigetversion.md)

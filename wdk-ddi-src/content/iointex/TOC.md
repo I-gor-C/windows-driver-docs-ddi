@@ -1,5 +1,5 @@
 # [Windows kernel](../_kernel/index.md)
 ## [Iointex.h](index.md)
-### [None](../iointex/nf-iointex-wdmlibioconnectinterruptex.md)
-### [None](../iointex/nf-iointex-wdmlibiodisconnectinterruptex.md)
-### [None](../iointex/nf-iointex-wdmlibiogetaffinityinterrupt.md)
+### [WdmlibIoConnectInterruptEx function](../iointex/nf-iointex-wdmlibioconnectinterruptex.md)
+### [WdmlibIoDisconnectInterruptEx function](../iointex/nf-iointex-wdmlibiodisconnectinterruptex.md)
+### [WdmlibIoGetAffinityInterrupt function](../iointex/nf-iointex-wdmlibiogetaffinityinterrupt.md)

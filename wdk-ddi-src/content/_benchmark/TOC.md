@@ -1,3 +1,3 @@
 # [benchmark](index.md)
 ## [Wdm.h](../wdm/index.md)
-### [None](../wdm/nf-wdm-mmgetmdlbytecount.md)
+### [MmGetMdlByteCount function](../wdm/nf-wdm-mmgetmdlbytecount.md)
