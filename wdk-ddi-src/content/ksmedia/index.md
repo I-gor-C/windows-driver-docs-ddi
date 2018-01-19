@@ -13,9 +13,9 @@ ms.topic: portal
 
 
 
-This header is used by Audio, Streaming media devices, Display. For more information, see
-- [Audio](../_audio/index.md)
+This header is used by Streaming media devices, Audio, Display. For more information, see
 - [Streaming media devices](../_stream/index.md)
+- [Audio](../_audio/index.md)
 - [Display](../_display/index.md)
 
 Ksmedia.h contain these programming interfaces:

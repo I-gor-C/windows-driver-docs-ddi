@@ -13,9 +13,9 @@ ms.topic: portal
 
 
 
-This header is used by Windows kernel, Battery. For more information, see
-- [Windows kernel](../_kernel/index.md)
+This header is used by Battery, Windows kernel. For more information, see
 - [Battery](../_battery/index.md)
+- [Windows kernel](../_kernel/index.md)
 
 Poclass.h contain these programming interfaces:
 

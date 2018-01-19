@@ -13,9 +13,9 @@ ms.topic: portal
 
 
 
-This header is used by Windows Driver Framework, Battery. For more information, see
-- [Windows Driver Framework](../_wdf/index.md)
+This header is used by Battery, Windows Driver Framework. For more information, see
 - [Battery](../_battery/index.md)
+- [Windows Driver Framework](../_wdf/index.md)
 
 Ntpoapi.h contain these programming interfaces:
 

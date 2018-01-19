@@ -13,9 +13,9 @@ ms.topic: portal
 
 
 
-This header is used by Near field communications (NFC), Smart Card Reader Devices. For more information, see
-- [Near field communications (NFC)](../_nfpdrivers/index.md)
+This header is used by Smart Card Reader Devices, Near field communications (NFC). For more information, see
 - [Smart Card Reader Devices](../_smartcrd/index.md)
+- [Near field communications (NFC)](../_nfpdrivers/index.md)
 
 Winsmcrd.h contain these programming interfaces:
 

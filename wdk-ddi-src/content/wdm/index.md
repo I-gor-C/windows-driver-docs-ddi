@@ -13,11 +13,11 @@ ms.topic: portal
 
 
 
-This header is used by Windows kernel, Installable file system, Driver test tools, PCI, Benchmark. For more information, see
+This header is used by Windows kernel, PCI, Driver test tools, Installable file system, Benchmark. For more information, see
 - [Windows kernel](../_kernel/index.md)
-- [Installable file system](../_ifsk/index.md)
-- [Driver test tools](../_devtest/index.md)
 - [PCI](../_PCI/index.md)
+- [Driver test tools](../_devtest/index.md)
+- [Installable file system](../_ifsk/index.md)
 - [Benchmark](../_Benchmark/index.md)
 
 Wdm.h contain these programming interfaces:
