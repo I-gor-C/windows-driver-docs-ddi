@@ -15,7 +15,7 @@ ms.topic : struct
 req.header : sdpnode.h
 req.include-header : Sdpnode.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
+req.target-min-winverclnt : Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

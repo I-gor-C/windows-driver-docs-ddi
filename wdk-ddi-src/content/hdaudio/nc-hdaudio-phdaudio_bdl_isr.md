@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PHDAUDIO_BDL_ISR
 title : PHDAUDIO_BDL_ISR
 author : windows-driver-content
-description : The HDAudioBdlIsr routine is the ISR that the HD Audio bus driver calls each time an IOC interrupt occurs on the stream. It is a function pointer of type PHDAUDIO_BDL_ISR, which is defined as:
+description : The HDAudioBdlIsr routine is the ISR that the HD Audio bus driver calls each time an IOC interrupt occurs on the stream. It is a function pointer of type PHDAUDIO_BDL_ISR, which is defined as
 old-location : audio\phdaudio_bdl_isr.htm
 old-project : audio
 ms.assetid : 9DC36C2E-6609-46C8-870E-44845020A4B2

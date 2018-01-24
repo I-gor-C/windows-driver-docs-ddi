@@ -15,7 +15,7 @@ ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Available in Windows Vista, and later versions of Windows.
+req.target-min-winverclnt : Available in Windows Vista, and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

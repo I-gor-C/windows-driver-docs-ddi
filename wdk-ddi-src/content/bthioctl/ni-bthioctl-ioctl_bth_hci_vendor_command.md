@@ -15,7 +15,7 @@ ms.topic : ioctl
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Available on Microsoft Windows Vista SP2 and later operating system   versions.
+req.target-min-winverclnt : Available on Microsoft Windows Vista SP2 and later operating system   versions.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

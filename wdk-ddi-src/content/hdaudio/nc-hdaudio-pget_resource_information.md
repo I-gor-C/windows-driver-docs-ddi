@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PGET_RESOURCE_INFORMATION
 title : PGET_RESOURCE_INFORMATION
 author : windows-driver-content
-description : The GetResourceInformation routine retrieves information about hardware resources.The function pointer type for a GetResourceInformation routine is defined as:
+description : The GetResourceInformation routine retrieves information about hardware resources.The function pointer type for a GetResourceInformation routine is defined as
 old-location : audio\getresourceinformation.htm
 old-project : audio
 ms.assetid : ba1f0fa2-77dd-4ec3-86c8-c5d74465743f

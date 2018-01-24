@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PGET_DEVICE_INFORMATION
 title : PGET_DEVICE_INFORMATION
 author : windows-driver-content
-description : The GetDeviceInformation routine retrieves information about the HD Audio controller device.The function pointer type for a GetDeviceInformation routine is defined as:
+description : The GetDeviceInformation routine retrieves information about the HD Audio controller device.The function pointer type for a GetDeviceInformation routine is defined as
 old-location : audio\getdeviceinformation.htm
 old-project : audio
 ms.assetid : bdd08133-0641-4eea-bfa3-75f700356132

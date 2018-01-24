@@ -15,7 +15,7 @@ ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Supported in Windows 8 and later versions of Windows
+req.target-min-winverclnt : Supported in Windows 8 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

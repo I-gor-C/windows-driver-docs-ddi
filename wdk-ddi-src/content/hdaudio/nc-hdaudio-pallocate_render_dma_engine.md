@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PALLOCATE_RENDER_DMA_ENGINE
 title : PALLOCATE_RENDER_DMA_ENGINE
 author : windows-driver-content
-description : The AllocateRenderDmaEngine routine allocates a DMA engine for a render stream.The function pointer type for an AllocateRenderDmaEngine routine is defined as:
+description : The AllocateRenderDmaEngine routine allocates a DMA engine for a render stream.The function pointer type for an AllocateRenderDmaEngine routine is defined as
 old-location : audio\allocaterenderdmaengine.htm
 old-project : audio
 ms.assetid : fb2a64ca-7e8e-4352-86c6-b9500e535c75
