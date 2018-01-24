@@ -30,7 +30,7 @@ req.assembly :
 req.type-library : 
 req.lib : Stream.lib
 req.dll : 
-req.irql : > DISPATCH_LEVEL
+req.irql : "> DISPATCH_LEVEL"
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---

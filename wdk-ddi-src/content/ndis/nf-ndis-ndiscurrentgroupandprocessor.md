@@ -30,7 +30,7 @@ req.assembly :
 req.type-library : 
 req.lib : Ndis.lib
 req.dll : 
-req.irql : >= DISPATCH_LEVEL
+req.irql : ">= DISPATCH_LEVEL"
 req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 

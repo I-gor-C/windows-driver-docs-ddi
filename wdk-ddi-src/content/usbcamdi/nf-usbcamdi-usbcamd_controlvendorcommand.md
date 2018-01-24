@@ -30,7 +30,7 @@ req.assembly :
 req.type-library : 
 req.lib : Usbcamd2.lib
 req.dll : 
-req.irql : >= PASSIVE_LEVEL (See Remarks section)
+req.irql : ">= PASSIVE_LEVEL (See Remarks section)"
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---

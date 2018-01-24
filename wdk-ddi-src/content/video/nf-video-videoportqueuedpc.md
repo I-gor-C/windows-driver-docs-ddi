@@ -30,7 +30,7 @@ req.assembly :
 req.type-library : 
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
-req.irql : >= DISPATCH_LEVEL
+req.irql : ">= DISPATCH_LEVEL"
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
