@@ -33,7 +33,6 @@ topictype :
 apitype : 
 apilocation : 
 apiname : 
--	IBidiSpl.IBidiSpl : MultiSendRecv
 product : Windows
 targetos : Windows
 req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
