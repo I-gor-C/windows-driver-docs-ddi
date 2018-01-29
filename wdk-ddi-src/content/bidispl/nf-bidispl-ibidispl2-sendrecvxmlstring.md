@@ -33,7 +33,7 @@ topictype :
 apitype : 
 apilocation : 
 apiname : 
--	IBidiSpl2.IBidiSpl2 : :SendRecvXMLString
+-	IBidiSpl2.IBidiSpl2 : SendRecvXMLString
 product : Windows
 targetos : Windows
 req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE

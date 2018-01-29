@@ -33,7 +33,7 @@ topictype :
 apitype : 
 apilocation : 
 apiname : 
--	IBidiRequest.IBidiRequest : :SetInputData
+-	IBidiRequest.IBidiRequest : SetInputData
 product : Windows
 targetos : Windows
 req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
