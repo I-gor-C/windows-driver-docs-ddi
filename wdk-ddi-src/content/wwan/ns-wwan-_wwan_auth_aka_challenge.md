@@ -15,7 +15,7 @@ ms.topic : struct
 req.header : wwan.h
 req.include-header : Wwan.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Supported in Windows 8 and later versions of Windows.
+req.target-min-winverclnt : Supported in Windows 8 and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

@@ -15,7 +15,7 @@ ms.topic : struct
 req.header : windot11.h
 req.include-header : Windot11.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Supported in Windows 8
+req.target-min-winverclnt : Supported in Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

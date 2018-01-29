@@ -15,7 +15,7 @@ ms.topic : enum
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Supported in Windows Vista and later versions of Windows.
+req.target-min-winverclnt : Supported in Windows Vista and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

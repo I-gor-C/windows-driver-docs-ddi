@@ -15,7 +15,7 @@ ms.topic : enum
 req.header : bthxddi.h
 req.include-header : BthXDDI.h
 req.target-type : Windows
-req.target-min-winverclnt : Versions: Supported starting with  Windows 8.
+req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
